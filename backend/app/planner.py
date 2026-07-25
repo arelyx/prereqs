@@ -202,6 +202,24 @@ def evaluate_requirements(requirements: dict, taken: set[str], ctx: ValidationCo
         rules_out = []
         for rule in section.get("rules", []):
             rules_out.append(_evaluate_rule(rule, taken, ctx))
+        # n_of drawing from following list pools (CS BS electives, EE
+        # electives): count taken courses against the union of later lists.
+        raw_rules = section.get("rules", [])
+        for i, r in enumerate(rules_out):
+            if r["op"] == "n_of" and raw_rules[i].get("from_following_lists"):
+                pool = set(r.get("courses") or [])  # self-pool parents carry courses
+                pool |= {
+                    c
+                    for r2 in raw_rules[i + 1:]
+                    if r2.get("op") == "list"
+                    for c in (r2.get("courses") or [])
+                }
+                have = sorted(pool & taken)
+                n = r.get("needed") or r.get("n") or 0
+                r["have"] = have
+                r["done"] = min(len(have), n)
+                r["satisfied"] = len(have) >= n
+                r["from_following_lists"] = True
         # section_choice: satisfied when any FOLLOWING rule in the section is
         # (CS BS Comprehensive: capstone list OR senior thesis). The
         # alternatives keep their own rows; mark them so the UI can group.
