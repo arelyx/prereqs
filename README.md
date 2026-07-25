@@ -4,7 +4,9 @@ A full-stack academic planner that unifies scattered, unstructured university da
 
 University data is ingested by **LLM pipelines**: deterministic scrapers pull raw pages, a small local model (qwen3:4b via Ollama) structures the messy parts (prerequisite logic, requirement rules) under strict schema guards, and everything is snapshotted for auditability and rollback. Pipelines are **fail-fast**: if an upstream page changes shape, the pipeline halts without touching served data.
 
-**Supported universities:** UC Santa Cruz (full support). UC Davis / UC San Diego (preliminary pipeline research, not integrated).
+**Supported universities:** UC Santa Cruz (full support — 6,172 courses, 22 years of offering history, 75 majors + 44 minors with structured requirements, 7 majors hand-verified). UC Davis / UC San Diego (research + prototype pipelines, not integrated).
+
+**Status:** end-to-end working. `docker compose up` + loaded snapshots gives you: course search and detail with prerequisite structure and a React Flow prereq/unlocks graph, quarter-by-quarter planning with live validation (missing prereqs, never-offered-that-quarter warnings, GE progress, major requirement progress), instructor predictions from 22 years of history + the SOE's planned schedule, and optional accounts that sync the anonymous localStorage plan. Verified by a 6-test Playwright e2e suite against the full dataset.
 
 ## Architecture
 
