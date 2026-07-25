@@ -61,10 +61,16 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
   ).toBeVisible()
 })
 
-test('program requirements progress renders with unverified badge', async ({ page }) => {
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. (unverified)' })
+test('program requirements progress renders; verified and unverified badges', async ({ page }) => {
+  // CS BS is hand-verified (verified.json) — no warning badge.
+  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
   await expect(page.getByRole('heading', { name: 'Computer Science B.S.' })).toBeVisible()
   await expect(page.getByText('Lower-Division').first()).toBeVisible()
+
+  // An unverified program shows the warning badge.
+  await page.getByRole('combobox').selectOption({ label: 'History B.A. (unverified)' })
+  await expect(page.getByRole('heading', { name: 'History B.A.' })).toBeVisible()
+  await expect(page.getByText('unverified', { exact: true })).toBeVisible()
 })
 
 test('auth lifecycle: register imports plan, sign out, sign in, delete', async ({ page }) => {
