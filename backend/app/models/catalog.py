@@ -130,7 +130,7 @@ class CourseOffering(Base):
     modality: Mapped[str | None] = mapped_column(Text)
     enrolled: Mapped[int | None] = mapped_column(Integer)
     capacity: Mapped[int | None] = mapped_column(Integer)
-    status: Mapped[str | None] = mapped_column(String(16))
+    status: Mapped[str | None] = mapped_column(Text)  # 'Closed with Wait List' etc.
     source: Mapped[str] = mapped_column(String(8))  # pisa|soe
     is_planned: Mapped[bool] = mapped_column(Boolean, default=False)
 

@@ -28,6 +28,31 @@ RECENCY_DECAY = 0.7
 SCHEDULED_SCORE = 1.0
 
 
+def _name_key(name: str) -> tuple[str, str]:
+    """Cross-source identity key: pisa 'Ahmad,I.' == SOE 'Ishtiyaque Ahmad'.
+
+    Both formats reduce to (lowercase last name, first initial). Collisions
+    are possible but rare within one course's instructor pool.
+    """
+    if "," in name:
+        last, _, rest = name.partition(",")
+        first_initial = rest.strip()[:1]
+    else:
+        parts = name.split()
+        last = parts[-1] if parts else name
+        first_initial = parts[0][:1] if len(parts) > 1 else ""
+    return last.strip().lower(), first_initial.lower()
+
+
+def _better_display(a: str, b: str) -> str:
+    """Prefer the fuller human-readable form (SOE 'Ishtiyaque Ahmad' over
+    pisa 'Ahmad,I.')."""
+    a_full, b_full = "," not in a, "," not in b
+    if a_full != b_full:
+        return a if a_full else b
+    return a if len(a) >= len(b) else b
+
+
 def _current_term_int(now: datetime) -> int:
     # Good-enough mapping of today to a pisa-style code for past/future splits.
     month = now.month
@@ -67,8 +92,10 @@ def compute_availability(db: Session, university_id: str) -> None:
 
         season_terms: dict[str, set[str]] = defaultdict(set)
         next_planned: dict[str, dict] = {}
-        instructor_score: dict[str, float] = defaultdict(float)
-        instructor_terms: dict[str, list[str]] = defaultdict(list)
+        instructor_score: dict[tuple, float] = defaultdict(float)
+        instructor_terms: dict[tuple, list[str]] = defaultdict(list)
+        display_name: dict[tuple, str] = {}
+        scheduled_keys: set[tuple] = set()
         last_offered: str | None = None
 
         for off in offs:
@@ -80,6 +107,11 @@ def compute_availability(db: Session, university_id: str) -> None:
                 for i in (off.instructors or [])
                 if i.get("name") and i.get("name") != "Staff"
             ]
+            keys = []
+            for n in names:
+                k = _name_key(n)
+                display_name[k] = _better_display(display_name.get(k, n), n)
+                keys.append(k)
             if is_future or off.is_planned:
                 entry = next_planned.setdefault(
                     term.code,
@@ -88,11 +120,11 @@ def compute_availability(db: Session, university_id: str) -> None:
                 )
                 if off.source not in entry["sources"]:
                     entry["sources"].append(off.source)
-                for n in names:
-                    if n not in entry["instructors"]:
-                        entry["instructors"].append(n)
-                    instructor_score[n] = max(instructor_score[n], SCHEDULED_SCORE)
-                    instructor_terms[n].append(term.code)
+                for k, n in zip(keys, names):
+                    entry["instructors"].append(n)  # unified in the rebuild pass
+                    scheduled_keys.add(k)
+                    instructor_score[k] = max(instructor_score[k], SCHEDULED_SCORE)
+                    instructor_terms[k].append(term.code)
                 continue
 
             # Historical record (pisa, past term)
@@ -102,21 +134,26 @@ def compute_availability(db: Session, university_id: str) -> None:
             if last_offered is None or code_int > int(last_offered):
                 last_offered = term.code
             weight = RECENCY_DECAY ** years_ago
-            for n in names:
-                instructor_score[n] += weight
-                instructor_terms[n].append(term.code)
+            for k in keys:
+                instructor_score[k] += weight
+                instructor_terms[k].append(term.code)
+
+        # Rebuild planned-term instructor lists from unified display names.
+        for entry in next_planned.values():
+            seen: dict[tuple, str] = {}
+            for n in entry["instructors"]:
+                seen[_name_key(n)] = display_name.get(_name_key(n), n)
+            entry["instructors"] = list(seen.values())
 
         predicted = [
             {
-                "name": name,
+                "name": display_name[key],
                 "score": round(min(score, 3.0) / 3.0, 3),
-                "scheduled": any(
-                    name in e["instructors"] for e in next_planned.values()
-                ),
-                "times_taught": len(instructor_terms[name]),
-                "last_term": max(instructor_terms[name], key=int),
+                "scheduled": key in scheduled_keys,
+                "times_taught": len(instructor_terms[key]),
+                "last_term": max(instructor_terms[key], key=int),
             }
-            for name, score in sorted(
+            for key, score in sorted(
                 instructor_score.items(), key=lambda kv: kv[1], reverse=True
             )[:5]
         ]
