@@ -64,6 +64,27 @@ def test_courselistheader_routes_to_extra_fields():
     assert "A note about" not in cse3["description"]
 
 
+def test_identical_duplicate_blocks_deduped():
+    # CMS emits some course blocks twice, byte-identical (MATH 24 in 2026-27).
+    start = FIXTURE.find('<h2 class="course-name"')
+    second = FIXTURE.find('<h2 class="course-name"', start + 10)
+    third = FIXTURE.find('<h2 class="course-name"', second + 10)
+    html = FIXTURE[:third] + FIXTURE[second:third] + FIXTURE[third:]  # dup CSE101 block
+    d = parse.parse_department(html, "cse", "CSE", "url")
+    assert [c["code"] for c in d.courses] == ["CSE3", "CSE101", "CSE185E", "CSE293"]
+    assert d.duplicate_codes == ["CSE101"]
+
+
+def test_differing_duplicate_blocks_abort():
+    start = FIXTURE.find('<h2 class="course-name"')
+    second = FIXTURE.find('<h2 class="course-name"', start + 10)
+    third = FIXTURE.find('<h2 class="course-name"', second + 10)
+    altered = FIXTURE[second:third].replace("Introduction to Data Structures", "Changed Title")
+    html = FIXTURE[:third] + altered + FIXTURE[third:]
+    with pytest.raises(ScrapeDriftError, match="differing content"):
+        parse.parse_department(html, "cse", "CSE", "url")
+
+
 def test_unknown_class_detection():
     html = FIXTURE.replace('class="genEd"', 'class="brandNewThing"', 1)
     d = parse.parse_department(html, "cse", "CSE", "url")

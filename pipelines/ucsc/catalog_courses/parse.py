@@ -54,6 +54,7 @@ class ParsedDept:
     url: str
     courses: list[dict] = field(default_factory=list)
     cross_listed_tail: list[str] = field(default_factory=list)  # display codes
+    duplicate_codes: list[str] = field(default_factory=list)  # identical CMS dup blocks
     unknown_classes: set = field(default_factory=set)
     unknown_extra_labels: set = field(default_factory=set)
 
@@ -106,6 +107,26 @@ def parse_department(html: str, slug: str, name: str, url: str) -> ParsedDept:
         course = _parse_course_block(h2, dept)
         if course:
             dept.courses.append(course)
+
+    # The CMS sometimes emits the same course block twice on one page
+    # (byte-identical; e.g. MATH 24, ANTH 2, HIS 139M in 2026-27). Keep the
+    # first; a same-code block with DIFFERENT content is real drift.
+    by_code: dict[str, dict] = {}
+    deduped: list[dict] = []
+    for course in dept.courses:
+        prev = by_code.get(course["code"])
+        if prev is None:
+            by_code[course["code"]] = course
+            deduped.append(course)
+        else:
+            expect(
+                prev == course,
+                "same course code twice in one department with differing content",
+                dept=dept.slug,
+                code=course["code"],
+            )
+            dept.duplicate_codes.append(course["code"])
+    dept.courses = deduped
     return dept
 
 

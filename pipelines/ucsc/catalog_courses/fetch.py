@@ -90,6 +90,7 @@ def _run_inner(session: PoliteSession, writer: SnapshotWriter, dept_filter: str 
                 **dept,
                 "courses": len(parsed.courses),
                 "cross_listed_tail": parsed.cross_listed_tail,
+                "duplicate_codes": parsed.duplicate_codes,
                 "unknown_extra_labels": sorted(parsed.unknown_extra_labels),
             }
         )
