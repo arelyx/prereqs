@@ -41,7 +41,28 @@ KNOWN_NARRATIVE_SLUGS = {
     "either-this-course",
     "or-these-courses",
     "or-this-course",
+    "one-of-these-courses",
+    "either-one-of-these-courses",
+    "and",
+    "or",
 }
+
+# Narrative grammar (semantics verified against Biology B.A. / BMEB pages):
+#   either-these-courses / either-this-course  -> open OR-block, first branch
+#                                                 (rows in a branch are a
+#                                                 package: ALL required)
+#   or-these-courses / or-this-course / or     -> next branch; if no block is
+#                                                 open, the PREVIOUS required
+#                                                 row becomes the first branch
+#                                                 ("STAT 5 / or STAT 7+7L")
+#   one-of-these-courses /                     -> open OR-block in pick mode:
+#     either-one-of-these-courses                 every row is its own branch
+#   and                                        -> close the OR-block; following
+#                                                 rows are plain requirements
+BRANCH_OPENERS = {"either-these-courses", "either-this-course"}
+BRANCH_CONTINUERS = {"or-these-courses", "or-this-course", "or"}
+PICK_OPENERS = {"one-of-these-courses", "either-one-of-these-courses"}
+BLOCK_CLOSERS = {"and"}
 COURSE_CODE_TEXT_RE = re.compile(r"^[A-Z]{2,5} \d{1,3}[A-Z]{0,2}$")
 
 # h2/h3 titles that delimit the requirements zone vs policies/planners.
@@ -172,8 +193,23 @@ def _new_section(prog: SegmentedProgram, title: str, h2_context: str) -> RawSect
 
 
 def _parse_course_table(table: Tag, rule: RawRule, prog: SegmentedProgram) -> None:
-    """Extract course rows; narrative pseudo-rows split the table into branches."""
+    """Extract course rows via the narrative-marker state machine.
+
+    Emits into the rule: plain requirements into rule.courses, each OR-block's
+    branches into rule.branches. Pick-mode blocks put every row in its own
+    branch. An 'or' marker with no open block converts the previous required
+    row into the first branch of a new block.
+    """
+    mode: str | None = None  # None (required) | 'package' | 'pick'
     branch: list[dict] | None = None
+
+    def open_block(first_branch: list[dict], label: str, new_mode: str) -> list[dict]:
+        rule.branches.append(first_branch)
+        rule.branch_labels.append(label)
+        nonlocal mode
+        mode = new_mode
+        return first_branch
+
     for tr in table.find_all("tr"):
         num_cell = tr.find("td", class_="sc-coursenumber")
         if num_cell is None:
@@ -191,9 +227,32 @@ def _parse_course_table(table: Tag, rule: RawRule, prog: SegmentedProgram) -> No
             )
             title_cell = tr.find("td", class_="sc-coursetitle")
             label = title_cell.get_text(" ", strip=True) if title_cell else slug
-            branch = []
-            rule.branches.append(branch)
-            rule.branch_labels.append(label)
+
+            if slug in BLOCK_CLOSERS:
+                mode, branch = None, None
+            elif slug in BRANCH_OPENERS:
+                branch = open_block([], label, "package")
+            elif slug in PICK_OPENERS:
+                # No branch is pre-created: every following row makes its own.
+                mode, branch = "pick", None
+            elif slug in BRANCH_CONTINUERS:
+                if mode is None:
+                    # "STAT 5 / or STAT 7 + 7L": previous required row is
+                    # retroactively the first branch of a new block.
+                    expect(
+                        bool(rule.courses),
+                        "or-marker with no open block and no prior course row",
+                        program=prog.name,
+                        heading=rule.heading,
+                    )
+                    open_block([rule.courses.pop()], label, "package")
+                # A continuer's rows are a package branch even inside a
+                # pick-mode block ("One of these: A, B; or these courses: C, D"
+                # = pick(A|B) or package(C+D)).
+                mode = "package"
+                branch = []
+                rule.branches.append(branch)
+                rule.branch_labels.append(label)
             continue
 
         for xl in num_cell.find_all(class_="sc-crosslisted"):
@@ -216,7 +275,10 @@ def _parse_course_table(table: Tag, rule: RawRule, prog: SegmentedProgram) -> No
             "credits": credits_el.get_text(strip=True) if credits_el else "",
             "href": href,
         }
-        if branch is not None:
+        if mode == "pick":
+            rule.branches.append([row])  # every row its own single-course branch
+            rule.branch_labels.append("")
+        elif mode == "package" and branch is not None:
             branch.append(row)
         else:
             rule.courses.append(row)
