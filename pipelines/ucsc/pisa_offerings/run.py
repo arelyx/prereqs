@@ -40,12 +40,12 @@ def run(term_codes: list[str], min_interval: float = 1.5) -> Path:
     session = PoliteSession(min_interval=min_interval, timeout=120, retries=5)  # ~5-7 MB pages; upstream 504s/timeouts under backfill load
     writer = SnapshotWriter("ucsc", "pisa_offerings")
     try:
-        htmls = fetch.fetch_terms(session, term_codes, writer)
+        rows_by_term = fetch.fetch_terms(session, term_codes, writer)
 
         offerings: list[dict] = []
         term_rows: list[dict] = []
         for code in term_codes:
-            rows = parse.parse_results(htmls[code], code)
+            rows = rows_by_term[code]
             year, season = terms.parse_code(code)
 
             if not rows:

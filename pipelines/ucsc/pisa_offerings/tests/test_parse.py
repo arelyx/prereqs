@@ -103,12 +103,23 @@ def test_count_line_total_mismatch_is_drift(fixture_html):
 
 
 def test_truncated_single_page_is_drift(fixture_html):
-    # Count line says more rows exist than the page covered => rec_dur too low.
+    # parse_results (single-page contract): count line must cover the total.
     broken = fixture_html.replace(
         "<b>1</b> - <b>10</b> of <b>10</b>", "<b>1</b> - <b>10</b> of <b>20</b>"
     )
-    with pytest.raises(ScrapeDriftError, match="rec_dur"):
+    with pytest.raises(ScrapeDriftError, match="single request did not cover"):
         parse.parse_results(broken, "2262")
+
+
+def test_parse_page_mid_window(fixture_html):
+    # Paginated fetches see mid-window count lines; the rowpanel count must
+    # equal the window size, and (first, last, total) are returned.
+    windowed = fixture_html.replace(
+        "<b>1</b> - <b>10</b> of <b>10</b>", "<b>11</b> - <b>20</b> of <b>30</b>"
+    )
+    rows, first, last, total = parse.parse_page(windowed, "2262")
+    assert (first, last, total) == (11, 20, 30)
+    assert len(rows) == 10
 
 
 def test_heading_shape_change_is_drift(fixture_html):

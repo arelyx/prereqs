@@ -42,11 +42,13 @@ HEADING_RE = re.compile(r"^([A-Z]+) (\S+) - ([0-9A-Z]{1,4})$")
 ENROLLED_RE = re.compile(r"(\d+) of (\d+) Enrolled")
 
 
-def parse_results(html: str, term_code: str) -> list[dict]:
-    """Parse a full results page. Returns [] only for a genuine zero-results page.
+def parse_page(html: str, term_code: str) -> tuple[list[dict], int, int, int]:
+    """Parse one results page (any window). Returns (rows, first, last, total).
 
-    Caller decides whether zero results is acceptable (future term) — this
-    function only distinguishes "empty" from "changed shape".
+    (rows, 0, 0, 0) only for a genuine zero-results page — the caller decides
+    whether that is acceptable (future term); this function only distinguishes
+    "empty" from "changed shape". The rowpanel count must equal the count
+    line's window size.
     """
     count = COUNT_LINE_RE.search(html)
     if count is None:
@@ -55,24 +57,31 @@ def parse_results(html: str, term_code: str) -> list[dict]:
             "results page has neither a count line nor the zero-results marker",
             term=term_code,
         )
-        return []
+        return [], 0, 0, 0
 
     first, last, total = (int(g) for g in count.groups())
-    expect(first == 1, "count line does not start at row 1", term=term_code, first=first)
-    expect(
-        last == total,
-        "single request did not cover all rows — raise rec_dur",
-        term=term_code, covered=last, total=total,
-    )
-
     soup = BeautifulSoup(html, "html.parser")
     panels = soup.find_all("div", id=ROWPANEL_ID_RE)
     expect(
-        len(panels) == total,
-        "rowpanel count != count-line total",
-        term=term_code, panels=len(panels), total=total,
+        len(panels) == last - first + 1,
+        "rowpanel count != count-line window",
+        term=term_code, panels=len(panels), first=first, last=last,
     )
-    return [_parse_panel(panel, term_code) for panel in panels]
+    return [_parse_panel(panel, term_code) for panel in panels], first, last, total
+
+
+def parse_results(html: str, term_code: str) -> list[dict]:
+    """Parse a results page that must cover ALL rows (single-page terms)."""
+    rows, first, last, total = parse_page(html, term_code)
+    if total == 0:
+        return []
+    expect(first == 1, "count line does not start at row 1", term=term_code, first=first)
+    expect(
+        last == total,
+        "single request did not cover all rows",
+        term=term_code, covered=last, total=total,
+    )
+    return rows
 
 
 def _parse_panel(panel: Tag, term_code: str) -> dict:
