@@ -17,7 +17,10 @@ Why the query is shaped this way:
 
 from __future__ import annotations
 
-from common.guards import expect
+import sys
+import time
+
+from common.guards import ScrapeDriftError, expect
 from common.http import PoliteSession
 from common.snapshot import SnapshotWriter
 
@@ -94,10 +97,21 @@ def fetch_terms(
     a finalized snapshot always carries the exact bytes the parse saw.
     """
     htmls: dict[str, str] = {}
-    for code in term_codes:
-        html = fetch_term_html(session, code)
+    for i, code in enumerate(term_codes):
+        try:
+            html = fetch_term_html(session, code)
+        except ScrapeDriftError as exc:
+            # Long backfills stress the server (observed: 504s after ~10 big
+            # requests). One cooldown retry per term before the fail-fast
+            # abort — 504 pressure is transient, page drift is not.
+            print(f"  {code}: {exc}; cooling down 90s and retrying once",
+                  file=sys.stderr, flush=True)
+            time.sleep(90)
+            html = fetch_term_html(session, code)
         path = writer.path(f"raw/{code}.html")
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(html, encoding="utf-8")
         htmls[code] = html
+        print(f"  fetched {code} ({i + 1}/{len(term_codes)}, {len(html) // 1024} KB)",
+              file=sys.stderr, flush=True)
     return htmls

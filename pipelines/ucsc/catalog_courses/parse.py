@@ -33,6 +33,8 @@ KNOWN_BLOCK_CLASSES = {
     "extraFields",
     "crosslisted",  # bare h4 preceding p.sc-crosslisted
     "sc-crosslisted",
+    "courseListHeader",  # bare h3 label ('Notes' on HAVC); routes following desc divs
+
     "cross-listed",  # tail container of other-department duplicates
     "course-name",
 }
@@ -52,6 +54,7 @@ class ParsedDept:
     url: str
     courses: list[dict] = field(default_factory=list)
     cross_listed_tail: list[str] = field(default_factory=list)  # display codes
+    duplicate_codes: list[str] = field(default_factory=list)  # identical CMS dup blocks
     unknown_classes: set = field(default_factory=set)
     unknown_extra_labels: set = field(default_factory=set)
 
@@ -104,6 +107,26 @@ def parse_department(html: str, slug: str, name: str, url: str) -> ParsedDept:
         course = _parse_course_block(h2, dept)
         if course:
             dept.courses.append(course)
+
+    # The CMS sometimes emits the same course block twice on one page
+    # (byte-identical; e.g. MATH 24, ANTH 2, HIS 139M in 2026-27). Keep the
+    # first; a same-code block with DIFFERENT content is real drift.
+    by_code: dict[str, dict] = {}
+    deduped: list[dict] = []
+    for course in dept.courses:
+        prev = by_code.get(course["code"])
+        if prev is None:
+            by_code[course["code"]] = course
+            deduped.append(course)
+        else:
+            expect(
+                prev == course,
+                "same course code twice in one department with differing content",
+                dept=dept.slug,
+                code=course["code"],
+            )
+            dept.duplicate_codes.append(course["code"])
+    dept.courses = deduped
     return dept
 
 
@@ -157,6 +180,7 @@ def _parse_course_block(h2: Tag, dept: ParsedDept) -> dict | None:
     }
 
     pending_crosslist_header = False
+    pending_list_label: str | None = None
     for sib in h2.next_siblings:
         if not isinstance(sib, Tag):
             continue
@@ -169,9 +193,19 @@ def _parse_course_block(h2: Tag, dept: ParsedDept) -> dict | None:
             dept.unknown_classes.update(unknown)
             continue
 
-        if "desc" in sib_classes:
+        if "desc" not in sib_classes:
+            pending_list_label = None
+
+        if "courseListHeader" in sib_classes:
+            # Bare label header (observed: 'Notes' on HAVC); the following
+            # desc div(s) carry its content, not the course description.
+            pending_list_label = sib.get_text(strip=True)
+        elif "desc" in sib_classes:
             text = sib.get_text(" ", strip=True)
-            if text and not course["description"]:
+            if text and pending_list_label:
+                existing = course["extra_fields"].get(pending_list_label, "")
+                course["extra_fields"][pending_list_label] = (existing + " " + text).strip()
+            elif text and not course["description"]:
                 course["description"] = text
         elif "sc-credithours" in sib_classes:
             credits = sib.select_one(".credits")

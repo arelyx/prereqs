@@ -202,6 +202,16 @@ def evaluate_requirements(requirements: dict, taken: set[str], ctx: ValidationCo
         rules_out = []
         for rule in section.get("rules", []):
             rules_out.append(_evaluate_rule(rule, taken, ctx))
+        # section_choice: satisfied when any FOLLOWING rule in the section is
+        # (CS BS Comprehensive: capstone list OR senior thesis). The
+        # alternatives keep their own rows; mark them so the UI can group.
+        for i, r in enumerate(rules_out):
+            if r["op"] == "section_choice":
+                later = [x for x in rules_out[i + 1:] if x.get("satisfied") is not None]
+                r["satisfied"] = any(x["satisfied"] for x in later)
+                r["needed"], r["done"] = 1, 1 if r["satisfied"] else 0
+                for x in rules_out[i + 1:]:
+                    x["alternative"] = True
         sections_out.append({
             "kind": section.get("kind"),
             "title": section.get("title"),
@@ -257,6 +267,11 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         # Membership is a described category we can't resolve mechanically.
         result |= {"needed": rule.get("n"), "done": None, "satisfied": None,
                    "unevaluated": True}
+    elif op in ("info", "list"):
+        # Policy prose / named course pool: display-only, never a blocker.
+        result |= {"satisfied": None, "informational": True}
+    elif op == "section_choice":
+        result |= {"satisfied": None}  # resolved by the section post-pass
     else:  # distribution | external | unknown
         result |= {"satisfied": None, "unevaluated": True}
     return result
