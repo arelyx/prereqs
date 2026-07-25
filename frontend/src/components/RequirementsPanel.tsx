@@ -7,23 +7,36 @@ import { api, displayCode } from '../api'
 import type { ProgramSummary, RuleProgress } from '../api'
 import { useStore } from '../store'
 
+const OP_LABELS: Record<string, (r: RuleProgress) => string> = {
+  all_of: (r) => `All of ${r.courses.length}`,
+  one_of: () => 'One of',
+  n_of: (r) => (r.courses.length ? `${r.n} of ${r.courses.length}` : `${r.n} from the lists below`),
+  options: () => 'One full option',
+  range: (r) => `${r.n ?? '?'} from range`,
+  category_count: (r) => `${r.n ?? '?'} from category`,
+  section_choice: () => 'One of the paths below',
+  list: () => 'Course pool',
+  info: () => 'Note',
+}
+
 function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCourse: (c: string) => void }) {
   const satisfied = rule.satisfied === true
-  const unevaluated = rule.satisfied === null
-  const label =
-    rule.op === 'all_of'
-      ? `All of ${rule.courses.length}`
-      : rule.op === 'one_of'
-        ? 'One of'
-        : rule.op === 'n_of'
-          ? `${rule.n} of ${rule.courses.length}`
-          : rule.op === 'options'
-            ? 'One full option'
-            : rule.op === 'range'
-              ? `${rule.n ?? '?'} from range`
-              : rule.op === 'category_count'
-                ? `${rule.n ?? '?'} from category`
-                : rule.op
+  const informational = rule.op === 'list' || rule.op === 'info'
+  const unevaluated = rule.satisfied === null && !informational
+  const label = (OP_LABELS[rule.op] ?? (() => rule.op))(rule)
+
+  if (rule.op === 'info' && rule.courses.length === 0) {
+    // Policy prose: render compactly, no status dot.
+    const text = rule.source?.prose?.join(' ') ?? ''
+    if (!text && rule.notes.length === 0) return null
+    return (
+      <div className="rounded-md bg-slate-50 p-2 text-[11px] text-slate-500">
+        {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
+        {text.slice(0, 280)}
+        {text.length > 280 ? '…' : ''}
+      </div>
+    )
+  }
 
   return (
     <div className="rounded-md border border-slate-200 p-2">
