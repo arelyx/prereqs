@@ -32,7 +32,16 @@ from common.guards import expect
 from common import codes
 
 HEADING_CLASS_RE = re.compile(r"sc-RequiredCoursesHeading([1-4])")
-KNOWN_NARRATIVE_SLUGS = {"either-these-courses", "or-these-courses", "or-this-course"}
+# Observed live: the research sample had the first three; the full-catalog run
+# surfaced 'either-this-course' (singular starter) on ~12 programs
+# (Agroecology, Anthropology, Applied Math/Physics, BMB, ...). All four share
+# the same semantics: start a new OR-branch. A NEW slug still hard-fails.
+KNOWN_NARRATIVE_SLUGS = {
+    "either-these-courses",
+    "either-this-course",
+    "or-these-courses",
+    "or-this-course",
+}
 COURSE_CODE_TEXT_RE = re.compile(r"^[A-Z]{2,5} \d{1,3}[A-Z]{0,2}$")
 
 # h2/h3 titles that delimit the requirements zone vs policies/planners.
