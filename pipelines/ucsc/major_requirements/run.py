@@ -23,7 +23,7 @@ from . import segment, structure
 
 def run(
     fetch_snapshot: Path | None = None,
-    model: str = DEFAULT_MODEL,
+    model: str | None = DEFAULT_MODEL,
     only_slugs: list[str] | None = None,
 ) -> None:
     src = fetch_snapshot or latest("ucsc", "major_requirements")
@@ -114,12 +114,16 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--fetch-snapshot", type=Path)
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument(
+        "--no-llm", action="store_true",
+        help="deterministic classification only; unmatched headings stay 'unknown'",
+    )
     ap.add_argument("--slugs", help="comma-separated program slugs")
     args = ap.parse_args()
     try:
         run(
             fetch_snapshot=args.fetch_snapshot,
-            model=args.model,
+            model=None if args.no_llm else args.model,
             only_slugs=args.slugs.split(",") if args.slugs else None,
         )
     except PipelineAbort as exc:
