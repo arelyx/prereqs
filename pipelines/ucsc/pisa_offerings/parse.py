@@ -111,7 +111,9 @@ def _parse_panel(panel: Tag, term_code: str) -> dict:
         "heading text does not split into code/title on triple-nbsp",
         term=term_code, panel=panel_id, heading=link.get_text(),
     )
-    m = HEADING_RE.match(parts[0].strip())
+    # Upstream typos exist: Spring 2022 has 'PHYE 15B - 03`' (stray backtick
+    # on the section). Strip trailing punctuation junk before matching.
+    m = HEADING_RE.match(parts[0].strip().rstrip("`'´."))
     expect(
         m is not None,
         "heading code part does not match 'SUBJ CATNBR - SECT'",
