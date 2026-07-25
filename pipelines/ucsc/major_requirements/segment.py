@@ -169,7 +169,16 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
             if el.find_parent("table"):
                 continue
             text = el.get_text(" ", strip=True)
-            if text and current_rule is not None:
+            if not text:
+                continue
+            if current_rule is None and current_section is not None:
+                # Prose-only programs exist (History Minor: zero course tables
+                # in the whole document — requirements are entirely prose).
+                # Synthesize a rule so the section survives and the prose is
+                # classified (category_count / info) instead of quarantining.
+                current_rule = RawRule(heading=current_section.title, heading_class=2)
+                current_section.rules.append(current_rule)
+            if current_rule is not None:
                 current_rule.prose.append(text)
 
     prog.sections = [s for s in prog.sections if s.rules]
@@ -219,14 +228,57 @@ def _parse_course_table(table: Tag, rule: RawRule, prog: SegmentedProgram) -> No
 
         if "narrative-courses/" in href:
             slug = href.rstrip("/").split("/")[-1]
-            expect(
-                slug in KNOWN_NARRATIVE_SLUGS,
-                "unknown narrative-courses slug (OR semantics changed)",
-                slug=slug,
-                program=prog.name,
-            )
+            anchor_text = link.get_text(" ", strip=True) if link else ""
             title_cell = tr.find("td", class_="sc-coursetitle")
-            label = title_cell.get_text(" ", strip=True) if title_cell else slug
+            label = (
+                (title_cell.get_text(" ", strip=True) if title_cell else "")
+                or anchor_text
+                or slug
+            )
+
+            # CMS quirk: a REAL course row whose link is mispointed at
+            # narrative-courses (GCH B.S.: 'METX 41' / 'Physiology of
+            # Disease'). Narrative markers always have empty anchor code text.
+            if COURSE_CODE_TEXT_RE.match(anchor_text):
+                row = {
+                    "code": codes.normalize(anchor_text),
+                    "display_code": anchor_text,
+                    "title": title_cell.get_text(" ", strip=True) if title_cell else "",
+                    "credits": "",
+                    "href": href,
+                }
+                if mode == "pick":
+                    rule.branches.append([row])
+                    rule.branch_labels.append("")
+                elif mode == "package" and branch is not None:
+                    branch.append(row)
+                else:
+                    rule.courses.append(row)
+                continue
+
+            if slug not in KNOWN_NARRATIVE_SLUGS:
+                # Free-form markers exist ('or any three of these courses',
+                # 'or any 5-credit biomolecular engineering graduate course').
+                # or/either-prefixed text is safely a block continuation/opener;
+                # the label is preserved as a note because its fine semantics
+                # (counts, category membership) need human/LLM review.
+                low = label.lower()
+                expect(
+                    low.startswith("or") or low.startswith("either"),
+                    "unknown narrative-courses slug (OR semantics changed)",
+                    slug=slug,
+                    label=label,
+                    program=prog.name,
+                )
+                rule.notes.append(f"[unstructured alternative] {label}")
+                if mode is None and rule.courses:
+                    open_block([rule.courses.pop()], label, "package")
+                mode = "pick" if re.search(r"\bone of\b|\bany\b", low) else "package"
+                if mode == "package":
+                    branch = []
+                    rule.branches.append(branch)
+                    rule.branch_labels.append(label)
+                continue
 
             if slug in BLOCK_CLOSERS:
                 mode, branch = None, None
@@ -260,6 +312,34 @@ def _parse_course_table(table: Tag, rule: RawRule, prog: SegmentedProgram) -> No
         code_text = num_cell.get_text(" ", strip=True)
         if not code_text:
             continue
+
+        # Slash-alternative rows ('SPAN 130 / SPAN 6 / SPHS 6' on the Legal
+        # Studies / Spanish Studies minors): equivalent alternates for one
+        # entry. Both live occurrences sit inside large choice pools, where
+        # splitting into individual rows is semantically exact; the note
+        # records the equivalence for audit.
+        if "/" in code_text:
+            parts = [p.strip() for p in code_text.split("/") if p.strip()]
+            if len(parts) >= 2 and all(COURSE_CODE_TEXT_RE.match(p) for p in parts):
+                rule.notes.append(f"[equivalent alternates, one entry] {code_text}")
+                title_cell = tr.find("td", class_="sc-coursetitle")
+                for p in parts:
+                    row = {
+                        "code": codes.normalize(p),
+                        "display_code": p,
+                        "title": title_cell.get_text(" ", strip=True) if title_cell else "",
+                        "credits": "",
+                        "href": href,
+                    }
+                    if mode == "pick":
+                        rule.branches.append([row])
+                        rule.branch_labels.append("")
+                    elif mode == "package" and branch is not None:
+                        branch.append(row)
+                    else:
+                        rule.courses.append(row)
+                continue
+
         expect(
             COURSE_CODE_TEXT_RE.match(code_text) is not None,
             "course code in requirements table has unexpected shape",
@@ -282,3 +362,10 @@ def _parse_course_table(table: Tag, rule: RawRule, prog: SegmentedProgram) -> No
             branch.append(row)
         else:
             rule.courses.append(row)
+
+    # Free-form category markers can open branches that never receive course
+    # rows ('or any 5-credit BME graduate course') — drop the empties; the
+    # alternative survives as the note recorded above.
+    keep = [(b, l) for b, l in zip(rule.branches, rule.branch_labels) if b]
+    rule.branches = [b for b, _ in keep]
+    rule.branch_labels = [l for _, l in keep]
