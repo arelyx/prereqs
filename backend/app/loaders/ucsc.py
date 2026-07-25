@@ -149,7 +149,22 @@ def load_courses(db: Session, snapshot_dir: Path) -> None:
     print(f"  courses: {len(courses)} loaded")
 
 
-def load_offerings(db: Session, pisa_dir: Path | None, soe_dir: Path | None) -> None:
+def _union_pisa_offerings(pisa_dirs: list[Path]) -> list[dict]:
+    """Union offerings across snapshots; for each term the NEWEST snapshot
+    containing it wins whole. Lets backfills land in chunks (the upstream
+    server 504s under long runs) and future single-term refreshes supersede
+    older data without a monolithic re-scrape."""
+    by_term: dict[str, list[dict]] = {}
+    for d in sorted(pisa_dirs):  # oldest -> newest; newest overwrites per term
+        rows = snapshots.read_json(d, "offerings.json")
+        terms_here: dict[str, list[dict]] = {}
+        for o in rows:
+            terms_here.setdefault(o["term_code"], []).append(o)
+        by_term.update(terms_here)
+    return [o for rows in by_term.values() for o in rows]
+
+
+def load_offerings(db: Session, pisa_dirs: list[Path], soe_dir: Path | None) -> None:
     db.execute(delete(CourseOffering).where(CourseOffering.university_id == UNIVERSITY_ID))
     id_by_code = {
         c.code: c.id
@@ -157,8 +172,8 @@ def load_offerings(db: Session, pisa_dir: Path | None, soe_dir: Path | None) -> 
     }
 
     total = 0
-    if pisa_dir is not None:
-        offerings = snapshots.read_json(pisa_dir, "offerings.json")
+    if pisa_dirs:
+        offerings = _union_pisa_offerings(pisa_dirs)
         term_ids = ensure_terms(db, {o["term_code"] for o in offerings})
         for o in offerings:
             db.add(
@@ -182,7 +197,8 @@ def load_offerings(db: Session, pisa_dir: Path | None, soe_dir: Path | None) -> 
                 )
             )
         total += len(offerings)
-        _record_run(db, "pisa_offerings", pisa_dir, snapshots.manifest(pisa_dir))
+        for d in pisa_dirs:
+            _record_run(db, "pisa_offerings", d, snapshots.manifest(d))
 
     if soe_dir is not None:
         planned = snapshots.read_json(soe_dir, "planned.json")
@@ -254,7 +270,9 @@ def main() -> None:
     args = ap.parse_args()
 
     courses_dir = args.courses or snapshots.latest(UNIVERSITY_ID, "catalog_courses_structured")
-    pisa_dir = args.offerings or snapshots.latest(UNIVERSITY_ID, "pisa_offerings")
+    pisa_dirs = [args.offerings] if args.offerings else snapshots.all_finalized(
+        UNIVERSITY_ID, "pisa_offerings"
+    )
     soe_dir = args.soe or snapshots.latest(UNIVERSITY_ID, "soe_schedule")
     programs_dir = args.programs or snapshots.latest(
         UNIVERSITY_ID, "major_requirements_structured"
@@ -268,8 +286,8 @@ def main() -> None:
                 else:
                     print("WARNING: no structured courses snapshot; skipping", file=sys.stderr)
             if args.only in (None, "offerings"):
-                if pisa_dir or soe_dir:
-                    load_offerings(db, pisa_dir, soe_dir)
+                if pisa_dirs or soe_dir:
+                    load_offerings(db, pisa_dirs, soe_dir)
                 else:
                     print("WARNING: no offerings snapshots; skipping", file=sys.stderr)
             if args.only in (None, "programs"):
