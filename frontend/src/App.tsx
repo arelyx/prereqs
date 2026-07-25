@@ -1,122 +1,110 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { api } from './api'
+import AuthModal from './components/AuthModal'
+import CoursePanel from './components/CoursePanel'
+import CourseSearch from './components/CourseSearch'
+import GEPanel from './components/GEPanel'
+import Planner from './components/Planner'
+import RequirementsPanel from './components/RequirementsPanel'
+import { StoreProvider, useStore } from './store'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function NavBar({ onAuth }: { onAuth: () => void }) {
+  const store = useStore()
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5">
+        <div className="flex items-baseline gap-3">
+          <h1 className="text-lg font-black tracking-tight text-slate-900">prereqs</h1>
+          <span className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-900">
+            UC Santa Cruz
+          </span>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        {store.email ? (
+          <div className="flex items-center gap-3 text-sm">
+            <span className="text-slate-600">{store.email}</span>
+            <button className="text-slate-500 hover:underline" onClick={store.signOut}>
+              sign out
+            </button>
+            <button
+              className="text-red-500 hover:underline"
+              onClick={() => {
+                if (confirm('Delete your account and all saved plans? This cannot be undone.')) {
+                  api.deleteAccount().then(store.accountDeleted).catch(() => {})
+                }
+              }}
+            >
+              delete account
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={onAuth}
+            className="rounded-md bg-sky-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-sky-500"
+          >
+            Sign in to save your plan
+          </button>
+        )}
+      </div>
+    </header>
   )
 }
 
-export default App
+function Dashboard() {
+  const [openCourse, setOpenCourse] = useState<string | null>(null)
+  const [authOpen, setAuthOpen] = useState(false)
+  const store = useStore()
+  const errorCount =
+    store.validation?.issues.filter((i) => i.severity === 'error').length ?? 0
+
+  return (
+    <div className="min-h-screen">
+      <NavBar onAuth={() => setAuthOpen(true)} />
+      <main className="mx-auto max-w-7xl px-4 py-4">
+        <div className="mb-4 flex items-center gap-4">
+          <div className="w-96">
+            <CourseSearch
+              placeholder="Explore any course (e.g. CSE 101)…"
+              onSelect={(c) => setOpenCourse(c.code)}
+            />
+          </div>
+          {store.validating ? (
+            <span className="text-xs text-slate-400">checking plan…</span>
+          ) : errorCount > 0 ? (
+            <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-700">
+              {errorCount} blocking issue{errorCount > 1 ? 's' : ''}
+            </span>
+          ) : (
+            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700">
+              plan looks valid
+            </span>
+          )}
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-[1fr_340px]">
+          <Planner onOpenCourse={setOpenCourse} />
+          <div className="space-y-3">
+            <GEPanel />
+            <RequirementsPanel onOpenCourse={setOpenCourse} />
+          </div>
+        </div>
+      </main>
+
+      {openCourse && (
+        <CoursePanel
+          code={openCourse}
+          onClose={() => setOpenCourse(null)}
+          onOpenCourse={setOpenCourse}
+        />
+      )}
+      {authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <StoreProvider>
+      <Dashboard />
+    </StoreProvider>
+  )
+}
