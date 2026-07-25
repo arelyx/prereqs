@@ -247,12 +247,16 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         result |= {"needed": n, "done": min(len(have), n), "satisfied": len(have) >= n}
     elif op == "options":
         best = 0.0
-        satisfied = False
+        branch_ok = False
         for branch in branches:
             got = sum(1 for c in branch if c in taken)
             if branch and got == len(branch):
-                satisfied = True
+                branch_ok = True
             best = max(best, got / len(branch) if branch else 0)
+        # Mixed tables (Biology: required core rows AND an OR-block in one
+        # table) put plain requirements in `courses` alongside the branches.
+        courses_ok = all(c in taken for c in courses) if courses else True
+        satisfied = branch_ok and courses_ok
         result |= {"needed": 1, "done": 1 if satisfied else 0,
                    "satisfied": satisfied, "best_branch_progress": round(best, 2)}
     elif op == "range":

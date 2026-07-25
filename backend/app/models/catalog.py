@@ -125,7 +125,9 @@ class CourseOffering(Base):
     instructors: Mapped[list | None] = mapped_column(JSONVariant)  # [{name, cruzid?}]
     days_times: Mapped[str | None] = mapped_column(Text)
     location: Mapped[str | None] = mapped_column(Text)
-    modality: Mapped[str | None] = mapped_column(String(32))
+    # Free text: SOE modality notes include arbitrary strings ("Class Topic:
+    # ...", spelling variants, upstream test artifacts) — never enum-parse.
+    modality: Mapped[str | None] = mapped_column(Text)
     enrolled: Mapped[int | None] = mapped_column(Integer)
     capacity: Mapped[int | None] = mapped_column(Integer)
     status: Mapped[str | None] = mapped_column(String(16))

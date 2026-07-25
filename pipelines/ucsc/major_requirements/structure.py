@@ -38,7 +38,11 @@ ALL_OF_RE = re.compile(
     r"|all of these|^these courses",
     re.IGNORECASE,
 )
-ONE_OF_RE = re.compile(r"\bone of the following|choose one\b|one of these", re.IGNORECASE)
+ONE_OF_RE = re.compile(
+    r"\bone of the following|choose one\b|one of these"
+    r"|an? additional course from the following",  # CS BS DC phrasing
+    re.IGNORECASE,
+)
 # Named course pools ("General Economics Electives", "List of B.S. electives:",
 # "Breadth courses requiring CSE 101"): membership lists whose count/constraint
 # lives in a sibling rule's prose. Not themselves a countable requirement.
@@ -81,7 +85,8 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
     text = heading + " " + " ".join(rule.prose[:2])
     if rule.branches:
         return ("options", None)
-    for scope in (heading, text):
+
+    def match_scope(scope: str, is_heading: bool) -> tuple[str, int | None] | None:
         if ONE_OF_RE.search(scope):
             return ("one_of", None)
         if ALL_OF_RE.search(scope):
@@ -94,12 +99,24 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
                 return ("one_of", None)
             if n and rule.courses:
                 return ("n_of", n)
-            if n and not rule.courses and scope is heading:
+            if n and not rule.courses and is_heading:
                 return ("category_count", n)
-    if RANGE_RE.search(text) and not rule.courses:
-        return ("range", None)
+        return None
+
+    # Heading first (deliberate vocabulary), then the POOL check, then prose.
+    # Pools must outrank prose-scope matching: pool prose describes range
+    # memberships ('between 100 and 189, except ... courses') whose numbers
+    # would otherwise be read as counts (observed: n_of/100).
+    r = match_scope(heading, is_heading=True)
+    if r is not None:
+        return r
     if POOL_RE.search(heading) and rule.courses:
         return ("list", None)
+    r = match_scope(text, is_heading=False)
+    if r is not None:
+        return r
+    if RANGE_RE.search(text) and not rule.courses:
+        return ("range", None)
     if not rule.courses and not rule.branches:
         # Prose-only policy/informational block (GPA thresholds, appeal
         # process, transfer notes). Kept verbatim, never a course rule.

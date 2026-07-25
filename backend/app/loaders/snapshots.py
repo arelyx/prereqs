@@ -28,6 +28,18 @@ def latest(university: str, source: str) -> Path | None:
     return dirs[-1] if dirs else None
 
 
+def all_finalized(university: str, source: str) -> list[Path]:
+    """Every finalized snapshot dir for a source, oldest first."""
+    root = DATA_ROOT / university / source
+    if not root.exists():
+        return []
+    return sorted(
+        d
+        for d in root.iterdir()
+        if d.is_dir() and not d.name.endswith(".staging") and (d / "manifest.json").exists()
+    )
+
+
 def manifest(snapshot_dir: Path) -> dict:
     return json.loads((snapshot_dir / "manifest.json").read_text())
 
