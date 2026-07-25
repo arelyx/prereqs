@@ -35,7 +35,8 @@ WORD_NUMBERS = {
 ALL_OF_RE = re.compile(
     r"all of the following|take the following|the following courses?\b|both of these"
     r"|plus the following|complete the following|following course is required"
-    r"|all of these|^these courses",
+    r"|all of these|^these courses|core requirements"
+    r"|satisfied by\b",  # 'satisfied by completing one of...' hits ONE_OF first
     re.IGNORECASE,
 )
 ONE_OF_RE = re.compile(
@@ -47,7 +48,8 @@ ONE_OF_RE = re.compile(
 # "Breadth courses requiring CSE 101"): membership lists whose count/constraint
 # lives in a sibling rule's prose. Not themselves a countable requirement.
 POOL_RE = re.compile(
-    r"electives?:?$|^list of|breadth courses|courses (requiring|not requiring)",
+    r"electives?:?$|^list of|^approved elective|breadth courses"
+    r"|courses (requiring|not requiring)",
     re.IGNORECASE,
 )
 N_OF_RE = re.compile(
@@ -58,6 +60,21 @@ N_OF_RE = re.compile(
     re.IGNORECASE,
 )
 OR_SIBLING_RE = re.compile(r"^or\b", re.IGNORECASE)
+_NUM = r"(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d{1,2})"
+# Tight count-noun binding for the pools conversion: 'Three Electives are
+# Required', 'Four courses must be completed', 'Plus five economics
+# electives:', 'Three courses from the list'. Loose N_OF_RE is NOT safe here —
+# pool prose contains range descriptions ('number between 100 and 189, except
+# for the DC courses') whose numbers must never be read as counts.
+COUNT_FROM_RE = re.compile(
+    rf"\b{_NUM}\s+(?:\w+\s+)?(?:additional\s+)?(?:courses?|electives?)\b"
+    rf"|(?:complete|choose|take)\s+{_NUM}\b",
+    re.IGNORECASE,
+)
+FROM_LISTS_GATE_RE = re.compile(
+    r"from (?:the|either)\b[^.]{0,60}\blists?\b|chosen from|are required|must be completed",
+    re.IGNORECASE,
+)
 RANGE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3})\s?-\s?(\d{1,3})\b")
 EXCLUDING_RE = re.compile(r"exclud\w+[^.]*", re.IGNORECASE)
 
@@ -66,7 +83,7 @@ SECTION_KIND_RE = [
     (re.compile(r"comprehensive|capstone", re.IGNORECASE), "comprehensive"),
     (re.compile(r"lower[- ]division", re.IGNORECASE), "lower_div"),
     (re.compile(r"upper[- ]division", re.IGNORECASE), "upper_div"),
-    (re.compile(r"elective", re.IGNORECASE), "electives"),
+    (re.compile(r"elective|breadth", re.IGNORECASE), "electives"),
     (re.compile(r"concentration|track", re.IGNORECASE), "concentration"),
     (re.compile(r"qualification|declaration", re.IGNORECASE), "qualification"),
     (re.compile(r"screening|transfer", re.IGNORECASE), "screening"),
@@ -95,8 +112,12 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
         if m:
             word = m.group(1).lower()
             n = WORD_NUMBERS.get(word) or (int(word) if word.isdigit() else None)
-            if n == 1:
+            if n == 1 and (rule.courses or rule.branches):
                 return ("one_of", None)
+            if n == 1 and is_heading:
+                # 'Plus one upper-division or graduate elective' with no
+                # table: a category pick, not an (unsatisfiable) empty one_of.
+                return ("category_count", 1)
             if n and rule.courses:
                 return ("n_of", n)
             if n and not rule.courses and is_heading:
@@ -124,6 +145,28 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
     return None
 
 
+RECOMMENDED_RE = re.compile(r"recommend|suggested|preparation|optional", re.IGNORECASE)
+
+
+def default_for_section(rule: RawRule, section_kind: str) -> tuple[str, int | None] | None:
+    """Division-section fallback: a bare subject-heading table is required.
+
+    SmartCatalog convention (verified on EE/CE/CS pages): inside
+    Lower-/Upper-Division blocks, course tables under plain subject headings
+    ('Electrical and Computer Engineering', 'Physics') with no operator
+    wording list required courses. Never applied to electives/qualification
+    sections or recommendation-flavored headings.
+    """
+    if (
+        section_kind in ("lower_div", "upper_div")
+        and rule.courses
+        and not rule.branches
+        and not RECOMMENDED_RE.search(rule.heading)
+    ):
+        return ("all_of", None)
+    return None
+
+
 def stated_numbers(rule: RawRule) -> set[int]:
     """Every count literally stated in the rule's heading/prose."""
     text = (rule.heading + " " + " ".join(rule.prose)).lower()
@@ -137,6 +180,7 @@ def interpret_rule(
     llm_stats: dict,
     budget: FailureBudget,
     model: str | None = DEFAULT_MODEL,
+    section_kind: str = "other",
 ) -> dict:
     """RawRule → typed rule node (docs/DATA_MODEL.md shape)."""
     node: dict = {
@@ -154,7 +198,7 @@ def interpret_rule(
     # Range rules resolve deterministically to bounds + exclusions.
     text = rule.heading + " " + " ".join(rule.prose)
     range_m = RANGE_RE.search(text)
-    det = classify_heading(rule)
+    det = classify_heading(rule) or default_for_section(rule, section_kind)
     if det is not None:
         node["op"], node["n"] = det
     elif model is None:
@@ -227,7 +271,7 @@ def build_program(
         for kind, title, rules, concentration in subsections:
             typed_rules: list[dict] = []
             for rule in rules:
-                node = interpret_rule(rule, llm_stats, budget, model=model)
+                node = interpret_rule(rule, llm_stats, budget, model=model, section_kind=kind)
                 # Sibling-heading OR: "Or all of the following courses" merges
                 # into an options node with the previous rule.
                 if OR_SIBLING_RE.match(rule.heading) and typed_rules:
@@ -244,6 +288,9 @@ def build_program(
                             "notes": prev["notes"],
                             "needs_review": prev["needs_review"],
                             "_sibling_or": True,
+                            # preserve depth or the section_choice conversion
+                            # can't see this node as a child alternative
+                            "_hclass": prev.get("_hclass", 0),
                         }
                     typed_rules[-1]["branches"].append(node["courses"])
                     typed_rules[-1]["notes"].extend(node["notes"])
@@ -254,17 +301,38 @@ def build_program(
             # B.S. electives:' pool): info rule with a stated count followed
             # by list rules becomes n_of drawing from those lists.
             for i, r in enumerate(typed_rules):
-                if r["op"] != "info":
+                # Count-carrying parents: intro prose (info), a category count
+                # ('Plus five economics electives:'), or a pool whose own
+                # prose states the count (Math BS: table directly under
+                # 'Electives' + 'Three Electives are Required... chosen from').
+                if r["op"] not in ("info", "category_count", "list"):
                     continue
-                if not any(r2["op"] == "list" for r2 in typed_rules[i + 1:]):
+                prose_text = r["source"]["heading"] + " " + " ".join(r["source"]["prose"])
+                m = COUNT_FROM_RE.search(prose_text)
+                if not m or not FROM_LISTS_GATE_RE.search(prose_text):
                     continue
-                m = N_OF_RE.search(" ".join(r["source"]["prose"]))
-                if m:
-                    word = m.group(1).lower()
-                    n = WORD_NUMBERS.get(word) or (int(word) if word.isdigit() else None)
-                    if n:
-                        r["op"], r["n"] = "n_of", n
-                        r["from_following_lists"] = True
+                word = (m.group(1) or m.group(2)).lower()
+                n = WORD_NUMBERS.get(word) or (int(word) if word.isdigit() else None)
+                if not n:
+                    continue
+                # Following course-bearing rules without their own stated
+                # count ARE the lists being drawn from (CS BS 'List of B.S.
+                # electives'; EE's per-concentration subject lists).
+                converted = False
+                for r2 in typed_rules[i + 1:]:
+                    if r2["courses"] and r2.get("n") is None and r2["op"] in (
+                        "list", "one_of", "unknown", "all_of", "n_of"
+                    ):
+                        r2["op"], r2["needs_review"] = "list", False
+                        converted = True
+                if converted or r["courses"]:
+                    # A self-pool parent (op 'list' with the count in its own
+                    # prose) keeps its courses; the planner unions them with
+                    # any later lists.
+                    r["op"], r["n"] = "n_of", n
+                    r["from_following_lists"] = True
+                    r["needs_review"] = False
+                    break  # one count parent per subsection is the pattern
 
             # A choice among named sub-blocks (CS BS Comprehensive: prose
             # "one of the following" with 'Capstone Courses' / 'Senior

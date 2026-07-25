@@ -14,6 +14,7 @@ with no snapshot is skipped with a warning.)
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -229,14 +230,28 @@ def load_offerings(db: Session, pisa_dirs: list[Path], soe_dir: Path | None) -> 
     print(f"  offerings: {total} loaded")
 
 
+def _verified_slugs() -> dict[str, dict]:
+    """Hand-verification registry maintained next to the pipeline."""
+    path = (
+        Path(__file__).resolve().parents[3]
+        / "pipelines" / "ucsc" / "major_requirements" / "verified.json"
+    )
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text())
+    return {v["slug"]: v for v in data.get("verified", [])}
+
+
 def load_programs(db: Session, snapshot_dir: Path) -> None:
     manifest = snapshots.manifest(snapshot_dir)
     programs = snapshots.read_json(snapshot_dir, "programs.json")
+    verified = _verified_slugs()
     db.execute(delete(Program).where(Program.university_id == UNIVERSITY_ID))
     loaded = 0
     for p in programs:
         if p.get("requirements") is None:
             continue  # quarantined program: keep it out of the app entirely
+        v = verified.get(p["slug"])
         db.add(
             Program(
                 university_id=UNIVERSITY_ID,
@@ -249,7 +264,11 @@ def load_programs(db: Session, snapshot_dir: Path) -> None:
                 url=p["url"],
                 catalog_year=manifest.get("catalog_year"),
                 requirements=p["requirements"],
-                verification="unverified",
+                verification="verified" if v else "unverified",
+                verified_at=datetime.fromisoformat(v["date"]).replace(
+                    tzinfo=timezone.utc
+                ) if v else None,
+                verification_notes=v["notes"] if v else None,
             )
         )
         loaded += 1

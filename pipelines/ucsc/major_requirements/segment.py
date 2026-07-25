@@ -31,7 +31,9 @@ from bs4 import BeautifulSoup, Tag
 from common.guards import expect
 from common import codes
 
-HEADING_CLASS_RE = re.compile(r"sc-RequiredCoursesHeading([1-4])")
+# Levels 1-4 were documented by the research pass; EE B.S. uses Heading5
+# ('And one of the following' under a Heading4 group). Accept up to 6.
+HEADING_CLASS_RE = re.compile(r"sc-RequiredCoursesHeading([1-6])")
 # Observed live: the research sample had the first three; the full-catalog run
 # surfaced 'either-this-course' (singular starter) on ~12 programs
 # (Agroecology, Anthropology, Applied Math/Physics, BMB, ...). All four share
