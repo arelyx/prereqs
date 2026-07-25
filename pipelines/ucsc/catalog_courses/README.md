@@ -26,6 +26,10 @@ python -m ucsc.catalog_courses.structure --resume data/.../<ts>.staging  # conti
   walks direct children only (regression-tested).
 - **Unstaffed instructor fields** render as comma/space runs (`",   ,   ,"`) —
   normalized to null.
+- **HAVC `courseListHeader` label headers:** history of art uses a bare
+  `<h3 class="courseListHeader">Notes</h3>` whose content lives in the
+  *following* `div.desc` — caught live by the unknown-class guard on the first
+  full run (exactly as designed). Routed into `extra_fields['Notes']`.
 - **Departments churn on edition rolls** (CLST 404s in 2026-27; HTEC added).
   Removal of ≤5 depts vs the previous snapshot is reported, more aborts.
   Per-dept course counts are guarded at ±15% vs the previous snapshot.

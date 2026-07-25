@@ -48,6 +48,22 @@ def test_dept_discovery_from_fixture_nav():
     assert parse.catalog_year(FIXTURE).startswith("20")
 
 
+def test_courselistheader_routes_to_extra_fields():
+    # HAVC pattern: h3.courseListHeader 'Notes' + following desc div = note
+    # content, not the course description.
+    html = FIXTURE.replace(
+        '<div class="sc-credithours">',
+        '<h3 class="courseListHeader">Notes</h3>'
+        '<div class="desc">A note about the course.</div>'
+        '<div class="sc-credithours">',
+        1,
+    )
+    d = parse.parse_department(html, "cse", "CSE", "url")
+    cse3 = d.courses[0]
+    assert cse3["extra_fields"].get("Notes") == "A note about the course."
+    assert "A note about" not in cse3["description"]
+
+
 def test_unknown_class_detection():
     html = FIXTURE.replace('class="genEd"', 'class="brandNewThing"', 1)
     d = parse.parse_department(html, "cse", "CSE", "url")

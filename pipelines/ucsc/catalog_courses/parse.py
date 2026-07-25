@@ -33,6 +33,8 @@ KNOWN_BLOCK_CLASSES = {
     "extraFields",
     "crosslisted",  # bare h4 preceding p.sc-crosslisted
     "sc-crosslisted",
+    "courseListHeader",  # bare h3 label ('Notes' on HAVC); routes following desc divs
+
     "cross-listed",  # tail container of other-department duplicates
     "course-name",
 }
@@ -157,6 +159,7 @@ def _parse_course_block(h2: Tag, dept: ParsedDept) -> dict | None:
     }
 
     pending_crosslist_header = False
+    pending_list_label: str | None = None
     for sib in h2.next_siblings:
         if not isinstance(sib, Tag):
             continue
@@ -169,9 +172,19 @@ def _parse_course_block(h2: Tag, dept: ParsedDept) -> dict | None:
             dept.unknown_classes.update(unknown)
             continue
 
-        if "desc" in sib_classes:
+        if "desc" not in sib_classes:
+            pending_list_label = None
+
+        if "courseListHeader" in sib_classes:
+            # Bare label header (observed: 'Notes' on HAVC); the following
+            # desc div(s) carry its content, not the course description.
+            pending_list_label = sib.get_text(strip=True)
+        elif "desc" in sib_classes:
             text = sib.get_text(" ", strip=True)
-            if text and not course["description"]:
+            if text and pending_list_label:
+                existing = course["extra_fields"].get(pending_list_label, "")
+                course["extra_fields"][pending_list_label] = (existing + " " + text).strip()
+            elif text and not course["description"]:
                 course["description"] = text
         elif "sc-credithours" in sib_classes:
             credits = sib.select_one(".credits")
