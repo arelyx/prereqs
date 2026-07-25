@@ -62,7 +62,7 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
 })
 
 test('program requirements progress renders with unverified badge', async ({ page }) => {
-  await page.getByRole('combobox').selectOption({ label: /Computer Science B\.S\./ })
+  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. (unverified)' })
   await expect(page.getByRole('heading', { name: 'Computer Science B.S.' })).toBeVisible()
   await expect(page.getByText('Lower-Division').first()).toBeVisible()
 })
