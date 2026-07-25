@@ -24,7 +24,8 @@ See `docs/ARCHITECTURE.md` for the full design and `docs/universities/ucsc/` for
 
 ```bash
 docker compose up --build
-# frontend: http://localhost:5173   backend: http://localhost:8000/docs
+# frontend: http://localhost:5273   backend: http://localhost:8200/docs
+# (non-default ports: this dev host runs other projects on 5173/8000/5432)
 ```
 
 The app is usable without an account (plans persist in localStorage); creating an account syncs plans to the server.

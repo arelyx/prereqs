@@ -1,0 +1,45 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: prereqs
+      POSTGRES_PASSWORD: prereqs
+      POSTGRES_DB: prereqs
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U prereqs"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://prereqs:prereqs@db:5432/prereqs
+    ports:
+      - "8200:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/srv/backend
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  frontend:
+    build:
+      context: ./frontend
+      target: dev
+    environment:
+      VITE_API_URL: http://localhost:8200
+    ports:
+      - "5273:5173"
+    volumes:
+      - ./frontend:/srv/frontend
+      - /srv/frontend/node_modules
+    command: npm run dev -- --host 0.0.0.0
+
+volumes:
+  pgdata:
