@@ -37,7 +37,7 @@ ROW_COUNT_RANGE: dict[str, tuple[int, int]] = {
 def run(term_codes: list[str], min_interval: float = 1.5) -> Path:
     """Fetch, parse, and snapshot the given terms. Returns the snapshot dir."""
     term_codes = sorted(set(term_codes), key=terms.sort_key)
-    session = PoliteSession(min_interval=min_interval, timeout=120, retries=3)  # historical results pages are ~5 MB and can be slow
+    session = PoliteSession(min_interval=min_interval, timeout=120, retries=5)  # ~5-7 MB pages; upstream 504s/timeouts under backfill load
     writer = SnapshotWriter("ucsc", "pisa_offerings")
     try:
         htmls = fetch.fetch_terms(session, term_codes, writer)
