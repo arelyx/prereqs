@@ -48,6 +48,26 @@ def test_pool_and_info():
     assert classify(rule("Appeal Process", prose=["Appeals are reviewed by..."])) == ("info", None)
 
 
+def test_pool_prose_numbers_are_not_counts():
+    # CS BS elective pool: '...between 100 and 189, except for the DC courses...'
+    # once produced n_of/100. Pool identity (heading) must outrank prose counts.
+    r = rule(
+        "List of B.S. electives:",
+        prose=["Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E."],
+        courses=25,
+    )
+    assert classify(r) == ("list", None)
+
+
+def test_dc_additional_course_phrasing():
+    r = rule(
+        "Disciplinary Communication (DC) Requirement",
+        prose=["The DC requirement is satisfied by completing an additional course from the following options."],
+        courses=3,
+    )
+    assert classify(r) == ("one_of", None)
+
+
 def test_llm_count_must_be_stated():
     nums = structure.stated_numbers(rule("Plus five electives", prose=["At least three from list A."]))
     assert {5, 3} <= nums
