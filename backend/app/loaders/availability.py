@@ -23,7 +23,7 @@ from sqlalchemy.orm import Session
 
 from ..models import Course, CourseAvailability, CourseOffering, Term
 
-HISTORY_YEARS = 8
+HISTORY_YEARS = 5  # product decision 2026-07-25: ~5 years of history suffices
 RECENCY_DECAY = 0.7
 SCHEDULED_SCORE = 1.0
 

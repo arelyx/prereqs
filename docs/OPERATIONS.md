@@ -20,7 +20,9 @@ cd pipelines && source .venv/bin/activate
 python -m ucsc.catalog_courses.fetch
 python -m ucsc.catalog_courses.structure            # resumable: --resume <staging>
 
-# 2. Offerings history (1 POST per term; full backfill --from 2048 --to 2268)
+# 2. Offerings history — product scope is ~5 years (chunked driver; skips
+#    terms already covered by finalized snapshots)
+python -m ucsc.pisa_offerings.backfill --from 2218 --to 2268
 python -m ucsc.pisa_offerings.run --terms 2270      # typical incremental run
 
 # 3. SOE planned schedule (10 requests)
