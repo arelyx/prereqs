@@ -44,6 +44,7 @@ def run(term_codes: list[str], min_interval: float = 1.5) -> Path:
 
         offerings: list[dict] = []
         term_rows: list[dict] = []
+        skipped_by_term: dict[str, dict] = {}
         for code in term_codes:
             rows = rows_by_term[code]
             year, season = terms.parse_code(code)
@@ -60,13 +61,23 @@ def run(term_codes: list[str], min_interval: float = 1.5) -> Path:
                 lo, hi = ROW_COUNT_RANGE[season]
                 expect_range(len(rows), lo, hi, f"row count for {season} term", term=code)
 
-            for row in rows:
+            # UCSC Extension (UNEX) listings appear in some historical terms
+            # with X-prefixed subjects and 4-digit numbering (XANT L6076).
+            # They are not degree-planning courses: filter them out, record
+            # counts, and only abort if non-campus codes are a large share
+            # (which would mean the code format itself drifted).
+            campus_rows = [r for r in rows if codes.is_course_id(r["course_code"])]
+            skipped = [r["course_code"] for r in rows if not codes.is_course_id(r["course_code"])]
+            if skipped:
                 expect(
-                    codes.is_course_id(row["course_code"]),
-                    "course code does not match the canonical code regex",
-                    term=code, course_code=row["course_code"],
-                    class_number=row["class_number"],
+                    len(skipped) / len(rows) < 0.05,
+                    "too many non-campus course codes (code format drift?)",
+                    term=code, sample=skipped[:8], skipped=len(skipped),
                 )
+                skipped_by_term[code] = {"count": len(skipped), "sample": skipped[:10]}
+                print(f"  {code}: skipped {len(skipped)} extension/non-campus rows",
+                      file=sys.stderr, flush=True)
+            rows = campus_rows
 
             offerings.extend(rows)
             term_rows.append({
@@ -88,6 +99,7 @@ def run(term_codes: list[str], min_interval: float = 1.5) -> Path:
                 "offerings": len(offerings),
                 "rows_per_term": {t["term_code"]: t["row_count"] for t in term_rows},
             },
+            "skipped_non_campus": skipped_by_term,
         })
     except BaseException:
         writer.abort()
