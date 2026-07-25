@@ -1,0 +1,38 @@
+# Architecture
+
+## Problem shape
+
+University data is scattered (catalog, class search, department pages), unstructured (prose prerequisites, per-major requirement pages with exceptions), and unstable (pages change without notice). The application therefore separates three layers with hard boundaries:
+
+1. **Acquisition (pipelines/)** — deterministic scrapers fetch raw pages and write immutable, timestamped snapshots. A small local LLM (qwen3:4b via Ollama) structures only the parts that genuinely need interpretation (prerequisite prose, requirement rules), under strict JSON-schema guards with automatic retry and hard failure.
+2. **Storage (Postgres)** — the serving database. Loaded *only* from a structured snapshot that passed every guard. Pipeline runs are recorded with provenance (`pipeline_runs` table: source, snapshot id, git sha, model, pass/fail).
+3. **Serving (backend/ + frontend/)** — reads the database; never touches the network or the LLM at request time.
+
+## Fail-fast contract
+
+Scrapers assert their expectations about page structure (selector hit counts, required fields, plausible totals vs. the previous snapshot). Any violation **aborts the run before the database is touched**. The previous snapshot and the serving DB remain intact. Failures are for a human/frontier-LLM audit, not for silent recovery — a page-shape change usually means the university changed something semantically (new major, new requirement) that needs review, not a retry.
+
+LLM outputs are similarly guarded: schema validation, cross-reference checks (every referenced course id must exist in the scraped catalog), and plausibility checks (unit counts, group sizes). A course/major that fails guards is quarantined and reported; a failure rate above threshold aborts the run.
+
+## Multi-university isolation
+
+Each university is a self-contained pipeline package (`pipelines/<univ>/`) that must produce the same *normalized* output schema (courses, offerings, programs, requirements — see `DATA_MODEL.md`). University quirks (quarter vs semester, stale course listings, missing prereqs) are handled and documented inside the university package; nothing university-specific leaks into the backend or frontend, which only speak the normalized schema. The `universities` table scopes every data row; users pick one university.
+
+## Backup / rollback
+
+Three data classes, each independently restorable:
+
+- **User data** (accounts, plans): `pg_dump` of user-owned tables via `ops/backup`.
+- **Raw scrapes**: immutable snapshot dirs `data/<univ>/<source>/<timestamp>/` — rollback = point the loader at an older snapshot.
+- **Structured LLM output**: same snapshot scheme, one dir per structuring run, with a `manifest.json` (source snapshot, model, prompt version, guard results).
+
+The DB loader is idempotent and transactional per university: loading an old snapshot restores served data without touching user data.
+
+## LLM roles
+
+- **Frontier LLM (build/audit time)**: writes and refines this code; when a pipeline aborts, analyzes the diff between page and expectations and adapts the pipeline.
+- **Small LLM (run time, qwen3:4b)**: narrow, schema-constrained structuring tasks only. Never free-form. Prompts live next to their pipeline with versioned prompt ids so output snapshots record exactly which prompt produced them.
+
+## Auth
+
+Token-based (opaque bearer tokens, hashed at rest), register/login/delete, no password recovery. Clerk planned later — auth is isolated in `backend/app/auth/` so it can be swapped. Anonymous users get full planner functionality via localStorage; on signup the client offers to import the local plan.

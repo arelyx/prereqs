@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Data snapshots (raw scrapes, LLM output) — versioned locally, not in git
+data/
+!data/README.md
+
+# Env / secrets
+.env
+*.local
+
+# Misc
+.DS_Store
+*.log
