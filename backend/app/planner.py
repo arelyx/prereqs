@@ -278,12 +278,13 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         result |= {"needed": 1, "done": 1 if satisfied else 0,
                    "satisfied": satisfied, "best_branch_progress": round(best, 2)}
     elif op == "range":
-        rng = rule.get("range") or {}
-        subject, lo, hi = rng.get("subject"), rng.get("lo", 0), rng.get("hi", 0)
-        exclude = set(rng.get("exclude") or [])
-        matching = [c for c in taken if _range_match(ctx.courses.get(c), subject, lo, hi, exclude, c)]
+        course_filter = rule.get("filter") or {}
+        matching = [
+            c for c in taken if _filter_match(ctx.courses.get(c), c, course_filter)
+        ]
         n = rule.get("n")
         result |= {"needed": n, "done": len(matching), "matching": sorted(matching),
+                   "filter": course_filter,
                    "satisfied": (len(matching) >= n) if n else None}
     elif op == "category_count":
         # Membership is a described category we can't resolve mechanically.
@@ -299,8 +300,29 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
     return result
 
 
-def _range_match(course, subject, lo, hi, exclude, code) -> bool:
-    if course is None or course.subject != subject or code in exclude:
+def _filter_match(course, code: str, course_filter: dict) -> bool:
+    """Prose-defined membership: include ranges/series minus exclusions.
+
+    Range bounds compare on the numeric part only (FILM 170A..179B ⇒
+    170..179); series match on number prefix (FILM 194 series ⇒ FILM 194,
+    194A, 194B, ...).
+    """
+    if course is None:
         return False
     digits = "".join(ch for ch in course.number if ch.isdigit())
-    return bool(digits) and lo <= int(digits) <= hi
+    if not digits:
+        return False
+    num = int(digits)
+
+    def in_range(r: dict) -> bool:
+        return course.subject == r.get("subject") and r.get("lo", 0) <= num <= r.get("hi", -1)
+
+    included = any(in_range(r) for r in course_filter.get("include_ranges") or []) or any(
+        course.subject == s.get("subject") and course.number.startswith(s.get("prefix", "\0"))
+        for s in course_filter.get("include_series") or []
+    )
+    if not included:
+        return False
+    if code in (course_filter.get("exclude_codes") or []):
+        return False
+    return not any(in_range(r) for r in course_filter.get("exclude_ranges") or [])

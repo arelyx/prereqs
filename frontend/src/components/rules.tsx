@@ -8,7 +8,7 @@ const OP_LABELS: Record<string, (r: RuleProgress) => string> = {
   one_of: () => 'One of',
   n_of: (r) => (r.courses.length ? `${r.n} of ${r.courses.length}` : `${r.n} from the lists below`),
   options: () => 'One full option',
-  range: (r) => `${r.n ?? '?'} from range`,
+  range: (r) => `${r.n ?? '?'} from the ranges below`,
   category_count: (r) => `${r.n ?? '?'} from category`,
   section_choice: () => 'One of the paths below',
   list: () => 'Course pool',
@@ -55,6 +55,40 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
       </div>
       {rule.source?.heading && (
         <p className="mt-0.5 text-[11px] italic text-slate-400">“{rule.source.heading}”</p>
+      )}
+      {rule.op === 'range' && rule.filter && (
+        <div className="mt-1 text-[11px] text-slate-600">
+          <span className="font-medium">Counts: </span>
+          {(rule.filter.include_ranges ?? [])
+            .map((r) => `${r.subject} ${r.lo}–${r.hi}`)
+            .concat((rule.filter.include_series ?? []).map((s) => `${s.subject} ${s.prefix} series`))
+            .join(', ')}
+          {((rule.filter.exclude_codes?.length ?? 0) > 0 ||
+            (rule.filter.exclude_ranges?.length ?? 0) > 0) && (
+            <>
+              {' '}
+              <span className="font-medium">excluding </span>
+              {(rule.filter.exclude_ranges ?? [])
+                .map((r) => `${r.subject} ${r.lo}–${r.hi}`)
+                .concat((rule.filter.exclude_codes ?? []).map(displayCode))
+                .join(', ')}
+            </>
+          )}
+          {(rule.matching?.length ?? 0) > 0 && (
+            <div className="mt-1 flex flex-wrap gap-1">
+              <span className="text-[10px] font-semibold text-emerald-700">yours:</span>
+              {rule.matching!.map((c) => (
+                <button
+                  key={c}
+                  onClick={() => onOpenCourse(c)}
+                  className="rounded bg-emerald-100 px-1.5 py-0.5 text-[11px] font-medium text-emerald-800 hover:underline"
+                >
+                  {displayCode(c)}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       )}
       {rule.courses.length > 0 && (
         <div className="mt-1 flex flex-wrap gap-1">

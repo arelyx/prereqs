@@ -68,6 +68,41 @@ def test_dc_additional_course_phrasing():
     assert classify(r) == ("one_of", None)
 
 
+def test_film_minor_elective_filter():
+    r = rule(
+        "And three electives",
+        prose=[
+            "Students take three additional 5-credit, upper-division film and digital media "
+            "critical studies courses numbered FILM 100-149, FILM 152 -169, FILM 180 -189, "
+            "or from the FILM 194 series. Production studio courses ( FILM 150 , FILM 151 , "
+            "and FILM 170A through FILM 179B ) may not be used to satisfy this requirement.",
+        ],
+    )
+    node = structure.interpret_rule(r, {"calls": 0, "fallbacks": 0}, FailureBudget(total=1), model=None)
+    assert node["op"] == "range" and node["n"] == 3
+    f = node["filter"]
+    assert {(x["subject"], x["lo"], x["hi"]) for x in f["include_ranges"]} == {
+        ("FILM", 100, 149), ("FILM", 152, 169), ("FILM", 180, 189),
+    }
+    assert f["include_series"] == [{"subject": "FILM", "prefix": "194"}]
+    assert {(x["lo"], x["hi"]) for x in f["exclude_ranges"]} == {(170, 179)}
+    assert set(f["exclude_codes"]) == {"FILM150", "FILM151"}
+
+
+def test_literature_style_single_range_with_exclusions():
+    r = rule(
+        "Electives",
+        prose=[
+            "Students take seven 5-credit upper-division electives chosen from LIT 109-189, "
+            "excluding courses LIT 179A and LIT 179B.",
+        ],
+    )
+    node = structure.interpret_rule(r, {"calls": 0, "fallbacks": 0}, FailureBudget(total=1), model=None)
+    assert node["op"] == "range" and node["n"] == 7
+    assert node["filter"]["include_ranges"] == [{"subject": "LIT", "lo": 109, "hi": 189}]
+    assert set(node["filter"]["exclude_codes"]) == {"LIT179A", "LIT179B"}
+
+
 def test_llm_count_must_be_stated():
     nums = structure.stated_numbers(rule("Plus five electives", prose=["At least three from list A."]))
     assert {5, 3} <= nums

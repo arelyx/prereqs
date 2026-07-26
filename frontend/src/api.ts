@@ -83,18 +83,26 @@ export interface ValidationIssue {
   severity: 'error' | 'warning' | 'info'
 }
 
+export interface CourseFilter {
+  include_ranges?: { subject: string; lo: number; hi: number }[]
+  include_series?: { subject: string; prefix: string }[]
+  exclude_ranges?: { subject: string; lo: number; hi: number }[]
+  exclude_codes?: string[]
+}
+
 export interface RuleProgress {
   op: string
   n: number | null
   courses: string[]
   branches: string[][] | null
   have: string[]
+  filter?: CourseFilter
+  matching?: string[]
   needed?: number | null
   done?: number | null
   satisfied: boolean | null
   unevaluated?: boolean
   best_branch_progress?: number
-  matching?: string[]
   source?: { heading?: string; prose?: string[] }
   notes: string[]
   constraints: { type: string; text: string }[]
