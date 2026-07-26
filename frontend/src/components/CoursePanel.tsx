@@ -3,12 +3,72 @@
 
 import { useEffect, useState } from 'react'
 import { api, displayCode } from '../api'
-import type { CourseDetail } from '../api'
+import type { CourseDetail, OfferingHistoryRow } from '../api'
 import { useStore } from '../store'
-import { termLabel } from '../terms'
+import { academicYearOf, ayLabel, termLabel } from '../terms'
 import GraphView from './GraphView'
 
 const SEASONS = ['fall', 'winter', 'spring', 'summer']
+
+function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
+  // Pivot: academic-year rows × quarter columns — when a course runs is
+  // visible as a column pattern at a glance.
+  const byYear = new Map<number, Map<string, OfferingHistoryRow>>()
+  for (const h of history) {
+    const ay = academicYearOf(h.term_code)
+    if (!byYear.has(ay)) byYear.set(ay, new Map())
+    byYear.get(ay)!.set(h.season, h)
+  }
+  const years = [...byYear.keys()].sort((a, b) => b - a) // newest first
+
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b border-slate-200 text-left text-xs uppercase tracking-wide text-slate-400">
+            <th className="py-1 pr-3 font-semibold">Year</th>
+            {SEASONS.map((s) => (
+              <th key={s} className="py-1 pr-2 font-semibold capitalize">
+                {s}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {years.map((ay) => (
+            <tr key={ay} className="border-b border-slate-100 align-top">
+              <td className="py-1.5 pr-3 font-medium whitespace-nowrap">{ayLabel(ay)}</td>
+              {SEASONS.map((s) => {
+                const h = byYear.get(ay)!.get(s)
+                if (!h) return <td key={s} className="py-1.5 pr-2 text-slate-300">—</td>
+                return (
+                  <td
+                    key={s}
+                    className={`py-1.5 pr-2 ${h.planned ? 'rounded bg-sky-50' : ''}`}
+                  >
+                    {h.instructors.length > 0 ? (
+                      <span>{h.instructors.join(', ')}</span>
+                    ) : (
+                      <span className="text-slate-400">TBD</span>
+                    )}
+                    {h.sections > 1 && (
+                      <span className="ml-1 text-[10px] text-slate-400">×{h.sections}</span>
+                    )}
+                    {h.planned && (
+                      <span className="ml-1 rounded bg-sky-100 px-1 text-[10px] font-medium text-sky-700">
+                        scheduled
+                      </span>
+                    )}
+                  </td>
+                )
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
 
 export default function CoursePanel({ code, onClose, onOpenCourse }: {
   code: string
@@ -89,38 +149,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
               </div>
             )}
             {detail.offering_history.length > 0 ? (
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-slate-200 text-left text-xs uppercase tracking-wide text-slate-400">
-                    <th className="py-1 pr-2 font-semibold">Quarter</th>
-                    <th className="py-1 pr-2 font-semibold">Instructor(s)</th>
-                    <th className="py-1 font-semibold">Sections</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {detail.offering_history.map((h) => (
-                    <tr
-                      key={h.term_code}
-                      className={`border-b border-slate-100 ${h.planned ? 'bg-sky-50/60' : ''}`}
-                    >
-                      <td className="py-1 pr-2 whitespace-nowrap">
-                        {termLabel(h.term_code)}
-                        {h.planned && (
-                          <span className="ml-1.5 rounded bg-sky-100 px-1 text-[10px] font-medium text-sky-700 align-middle">
-                            scheduled
-                          </span>
-                        )}
-                      </td>
-                      <td className="py-1 pr-2">
-                        {h.instructors.length > 0 ? h.instructors.join(', ') : (
-                          <span className="text-slate-400">TBD</span>
-                        )}
-                      </td>
-                      <td className="py-1 text-slate-500">{h.sections}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <HistoryGrid history={detail.offering_history} />
             ) : (
               <p className="text-sm text-slate-400">
                 No offering records in the last five years — verify with the registrar before

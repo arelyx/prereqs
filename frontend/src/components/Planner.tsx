@@ -6,7 +6,7 @@ import { useMemo } from 'react'
 import { displayCode } from '../api'
 import type { ValidationIssue } from '../api'
 import { useStore } from '../store'
-import { academicYearOf, ayLabel, ayTermCodes, parseTermCode } from '../terms'
+import { academicYearOf, ayLabel, ayTermCodes, parseTermCode, upcomingAcademicYear } from '../terms'
 import CourseSearch from './CourseSearch'
 
 const SEVERITY_STYLE: Record<string, string> = {
@@ -139,38 +139,72 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
         </div>
       </section>
 
-      {years.map((year) => (
-        <section key={year} className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
-          <div className="mb-2 flex items-center justify-between">
-            <h3 className="text-sm font-bold text-slate-800">{ayLabel(year)}</h3>
-            <button
-              className="text-xs text-slate-400 hover:text-red-600"
-              onClick={() => store.removeYear(year)}
-              title="Remove this academic year and its courses"
-            >
-              remove year
-            </button>
-          </div>
-          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
-            {ayTermCodes(year).map((termCode) => (
-              <QuarterCell
-                key={termCode}
-                termCode={termCode}
-                courses={byTerm.get(termCode) ?? []}
-                issuesFor={issuesFor}
-                onOpenCourse={onOpenCourse}
-              />
-            ))}
-          </div>
-        </section>
+      {years[0] !== undefined && years[0] > upcomingAcademicYear() && (
+        <GapAddButton year={years[0] - 1} onAdd={store.addYear} />
+      )}
+
+      {years.map((year, i) => (
+        <div key={year} className="space-y-3">
+          <section className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
+            <div className="mb-2 flex items-center justify-between">
+              <h3 className="text-sm font-bold text-slate-800">{ayLabel(year)}</h3>
+              <button
+                className="text-xs text-slate-400 hover:text-red-600"
+                onClick={() => {
+                  const count = ayTermCodes(year).reduce(
+                    (n, tc) => n + (byTerm.get(tc)?.length ?? 0),
+                    0,
+                  )
+                  if (
+                    count === 0 ||
+                    confirm(
+                      `Remove ${ayLabel(year)}? It has ${count} planned course${count > 1 ? 's' : ''} that will be removed with it.`,
+                    )
+                  ) {
+                    store.removeYear(year)
+                  }
+                }}
+                title="Remove this academic year and its courses"
+              >
+                remove year
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
+              {ayTermCodes(year).map((termCode) => (
+                <QuarterCell
+                  key={termCode}
+                  termCode={termCode}
+                  courses={byTerm.get(termCode) ?? []}
+                  issuesFor={issuesFor}
+                  onOpenCourse={onOpenCourse}
+                />
+              ))}
+            </div>
+          </section>
+          {/* Gap between this year and the next: offer to restore the missing year. */}
+          {i < years.length - 1 && years[i + 1] > year + 1 && (
+            <GapAddButton year={year + 1} onAdd={store.addYear} />
+          )}
+        </div>
       ))}
 
       <button
-        onClick={store.addYear}
+        onClick={() => store.addYear()}
         className="w-full rounded-lg border-2 border-dashed border-slate-300 py-3 text-sm text-slate-500 hover:border-sky-400 hover:text-sky-600"
       >
         + Add academic year
       </button>
     </div>
+  )
+}
+
+function GapAddButton({ year, onAdd }: { year: number; onAdd: (y: number) => void }) {
+  return (
+    <button
+      onClick={() => onAdd(year)}
+      className="w-full rounded-lg border border-dashed border-slate-300 py-1.5 text-xs text-slate-400 hover:border-sky-400 hover:text-sky-600"
+    >
+      + Add {ayLabel(year)}
+    </button>
   )
 }
