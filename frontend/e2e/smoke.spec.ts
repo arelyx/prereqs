@@ -110,7 +110,8 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
   await expect(mfTile).toBeVisible()
   // Expanding a category lists the courses that satisfy it.
   await mfTile.click()
-  await expect(page.getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
+  // Second match: the completed-courses chip is also a 'CSE 16' button.
+  await expect(page.getByRole('button', { name: 'CSE 16', exact: true }).nth(1)).toBeVisible()
 })
 
 test('program: requirements in main fold, general info in sidebar', async ({ page }) => {
