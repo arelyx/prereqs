@@ -58,6 +58,18 @@ export interface ProgramSummary {
   verification: string
 }
 
+export interface InfoSection {
+  title: string
+  paragraphs: string[]
+}
+
+export interface ProgramDetail extends ProgramSummary {
+  department: string | null
+  url: string
+  catalog_year: string | null
+  requirements: { sections: unknown[]; info_sections?: InfoSection[] } | null
+}
+
 export interface PlanContent {
   completed: string[]
   terms: { term_code: string; courses: string[] }[]
@@ -154,6 +166,7 @@ export const api = {
   courseGraph: (code: string, depth = 3) =>
     request<GraphPayload>(`/u/${UNIVERSITY}/courses/${code}/graph?depth=${depth}`),
   programs: () => request<ProgramSummary[]>(`/u/${UNIVERSITY}/programs`),
+  programDetail: (id: number) => request<ProgramDetail>(`/u/${UNIVERSITY}/programs/${id}`),
   validate: (content: PlanContent, programIds: number[]) =>
     request<ValidationResult>(`/u/${UNIVERSITY}/validate`, {
       method: 'POST',

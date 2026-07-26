@@ -42,6 +42,12 @@ class PoliteSession:
             try:
                 resp = self.session.request(method, url, timeout=self.timeout, **kwargs)
                 if resp.status_code == 200:
+                    # Servers that omit charset get latin-1 per requests'
+                    # RFC default, mojibake-ing UTF-8 pages ('â' for '—').
+                    # Modern university sites are UTF-8; trust that over the
+                    # legacy default when no charset is declared.
+                    if "charset" not in resp.headers.get("content-type", "").lower():
+                        resp.encoding = "utf-8"
                     return resp
                 last_err = ScrapeDriftError(
                     f"{method} {url} returned HTTP {resp.status_code}"

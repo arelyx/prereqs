@@ -13,7 +13,7 @@ export default function GEPanel() {
           {done}/{ge.length}
         </span>
       </div>
-      <div className="grid grid-cols-2 gap-1.5">
+      <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-5">
         {ge.map((g) => (
           <div
             key={g.category}

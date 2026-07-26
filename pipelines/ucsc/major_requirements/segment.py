@@ -90,6 +90,7 @@ class RawSection:
     kind: str  # course_requirements | qualification | concentration_container
     title: str
     concentration: str | None
+    h2_context: str = ""
     rules: list[RawRule] = field(default_factory=list)
 
 
@@ -98,6 +99,10 @@ class SegmentedProgram:
     name: str
     url: str
     sections: list[RawSection] = field(default_factory=list)
+    # Unclassed prose subsections of 'Information and Policies' (Introduction,
+    # Program Learning Outcomes, ...): [{title, paragraphs}] for display, not
+    # for requirement evaluation.
+    info_sections: list[dict] = field(default_factory=list)
     hazards: list[str] = field(default_factory=list)
 
 
@@ -118,6 +123,7 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
     current_rule: RawRule | None = None
     current_h2 = ""
     in_planners = False
+    current_info: dict | None = None  # open unclassed info subsection
 
     for el in main.descendants:
         if not isinstance(el, Tag):
@@ -127,6 +133,7 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
             in_planners = False
             current_rule = None
             current_section = None
+            current_info = None
             continue
         if el.name in ("h3", "h4", "h5", "h6"):
             title = el.get_text(" ", strip=True)
@@ -135,9 +142,11 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
             if PLANNER_TITLE_RE.search(title):
                 in_planners = True
                 current_rule = None
+                current_info = None
                 continue
             if m:
                 in_planners = False
+                current_info = None
                 level = int(m.group(1))
                 if level == 1:
                     current_section = _new_section(prog, title, current_h2)
@@ -148,7 +157,20 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
                     current_rule = RawRule(heading=title, heading_class=level)
                     current_section.rules.append(current_rule)
                 continue
-            # Non-classed heading inside a section: prose context boundary.
+            # Unclassed h3 under 'Information and Policies' (Introduction,
+            # Program Learning Outcomes, ...): general program info, collected
+            # for display and excluded from requirement evaluation.
+            if el.name == "h3" and "information" in current_h2.lower():
+                current_info = {"title": title, "paragraphs": []}
+                prog.info_sections.append(current_info)
+                current_section = None
+                current_rule = None
+            continue
+
+        if current_info is not None and el.name in ("p", "li") and not el.find_parent("table"):
+            text = el.get_text(" ", strip=True)
+            if text:
+                current_info["paragraphs"].append(text)
             continue
 
         if in_planners or current_section is None:
@@ -184,6 +206,24 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
                 current_rule.prose.append(text)
 
     prog.sections = [s for s in prog.sections if s.rules]
+
+    # 'Information and Policies' sections that produced no course content
+    # (Introduction, Program Learning Outcomes, Academic Advising, ...) are
+    # general program info, not requirements. The headings are classed
+    # sc-RequiredCoursesHeading1 like real sections — content decides.
+    def is_prose_only(s: RawSection) -> bool:
+        return all(not r.courses and not r.branches for r in s.rules)
+
+    kept: list[RawSection] = []
+    for s in prog.sections:
+        if "information" in s.h2_context.lower() and is_prose_only(s):
+            paragraphs = [p for r in s.rules for p in (r.prose + r.notes)]
+            if paragraphs:
+                prog.info_sections.append({"title": s.title, "paragraphs": paragraphs})
+        else:
+            kept.append(s)
+    prog.sections = kept
+    prog.info_sections = [i for i in prog.info_sections if i["paragraphs"]]
     expect(bool(prog.sections), "no requirement sections found", url=url)
     return prog
 
@@ -198,7 +238,9 @@ def _new_section(prog: SegmentedProgram, title: str, h2_context: str) -> RawSect
     concentration = None
     if "concentration" in h2_context.lower():
         concentration = h2_context
-    section = RawSection(kind=kind, title=title, concentration=concentration)
+    section = RawSection(
+        kind=kind, title=title, concentration=concentration, h2_context=h2_context
+    )
     prog.sections.append(section)
     return section
 

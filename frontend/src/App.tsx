@@ -5,7 +5,8 @@ import CoursePanel from './components/CoursePanel'
 import CourseSearch from './components/CourseSearch'
 import GEPanel from './components/GEPanel'
 import Planner from './components/Planner'
-import RequirementsPanel from './components/RequirementsPanel'
+import ProgramRequirements from './components/ProgramRequirements'
+import ProgramsSidebar from './components/ProgramsSidebar'
 import { StoreProvider, useStore } from './store'
 
 function NavBar({ onAuth }: { onAuth: () => void }) {
@@ -80,12 +81,13 @@ function Dashboard() {
           )}
         </div>
 
-        <div className="grid grid-cols-1 gap-4 xl:grid-cols-[1fr_340px]">
-          <Planner onOpenCourse={setOpenCourse} />
-          <div className="space-y-3">
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-[1fr_320px]">
+          <div className="space-y-4">
+            <Planner onOpenCourse={setOpenCourse} />
             <GEPanel />
-            <RequirementsPanel onOpenCourse={setOpenCourse} />
+            <ProgramRequirements onOpenCourse={setOpenCourse} />
           </div>
+          <ProgramsSidebar />
         </div>
       </main>
 
