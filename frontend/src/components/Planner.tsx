@@ -192,7 +192,7 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
 
       <button
         onClick={() => store.addYear()}
-        className="w-full rounded-lg border-2 border-dashed border-slate-300 py-3 text-sm text-slate-500 hover:border-sky-400 hover:text-sky-600"
+        className="w-full rounded-lg border border-dashed border-slate-300 py-1.5 text-xs text-slate-400 hover:border-sky-400 hover:text-sky-600"
       >
         + Add academic year
       </button>
