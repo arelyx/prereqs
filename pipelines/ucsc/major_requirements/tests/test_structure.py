@@ -184,6 +184,115 @@ def test_narrative_and_returns_to_required():
     assert [[c["code"] for c in b] for b in r.branches] == [["CHEM3BL"], ["CHEM4AL"]]
 
 
+def _build(rules_list):
+    from ucsc.major_requirements.segment import RawSection, SegmentedProgram
+
+    seg = SegmentedProgram(name="T", url="u")
+    sec = RawSection(kind="course_requirements", title="X", concentration=None)
+    sec.rules = rules_list
+    seg.sections = [sec]
+    out = structure.build_program(seg, {"slug": "t"}, FailureBudget(total=len(rules_list)), model=None)
+    return out["requirements"]["sections"][0]["rules"]
+
+
+def test_satisfied_by_two_of_is_n_of():
+    # Biology B.A. DC: 'satisfied by completing two of the following ... courses:'
+    r = rule(
+        "Disciplinary Communication (DC) Requirement",
+        prose=["The DC requirement in the biology bachelor of arts degree is satisfied by completing two of the following Ecology and Evolutionary Biology courses:"],
+        courses=29,
+    )
+    assert classify(r) == ("n_of", 2)
+
+
+def test_single_course_table_defaults_to_required():
+    r = rule("Disciplinary Communication (DC) Requirement",
+             prose=["The DC requirement in the mathematics B.S. is satisfied by"], courses=1)
+    assert classify(r) == ("all_of", None)
+    # ...but not when it's merely recommended — advisory content is a note.
+    r2 = rule("Recommended Course for Transfer Students", courses=1,
+              prose=["The following course is recommended prior to transfer."])
+    assert classify(r2) == ("info", None)
+
+
+def test_each_of_groups_children_become_one_of():
+    # Film B.A.: 'One course from each of the following five groups' with
+    # bare 'Group N:' children that would otherwise default to all_of.
+    parent = rule("One course from each of the following five groups", hclass=3)
+    kids = [rule(f"Group {i}:", courses=3, hclass=4) for i in range(1, 6)]
+    out = _build([parent] + kids)
+    assert out[0]["op"] == "info"
+    assert all(r["op"] == "one_of" for r in out[1:])
+
+
+def test_each_of_with_larger_total_pools_children():
+    # GCH B.A.: 'Six upper-division electives...' + 'One course must be taken
+    # from each of the four areas, plus two additional electives'.
+    parent = rule(
+        "Six upper-division electives from the four GCH context areas",
+        prose=["One course must be taken from each of the four GCH context areas, plus two additional electives from any of the areas."],
+        hclass=2,
+    )
+    kids = [rule(f"Area {i}", courses=4, hclass=3) for i in range(1, 5)]
+    out = _build([parent] + kids)
+    assert out[0]["op"] == "n_of" and out[0]["n"] == 6
+    assert len(out[0]["pool"]) == 4  # union (fixture reuses CSE0..CSE3 codes)
+    assert all(r["op"] == "one_of" for r in out[1:])
+
+
+def test_counted_following_phrases_are_not_all_of():
+    # Greedy 'the following courses' once swallowed these (Music/Theater/TIM).
+    assert classify(rule("Studio Courses", prose=["Choose two of the following courses."], courses=35)) == ("n_of", 2)
+    assert classify(rule(
+        "Elective Ensembles/Performance Practice Courses",
+        prose=["Take three quarters of any of the following courses."], courses=39,
+    )) == ("n_of", 3)
+    assert classify(rule(
+        "Transfer Admission Screening Policy",
+        prose=["Transfer students must have completed at least six of the following courses, or their articulated equivalents."],
+        courses=15,
+    )) == ("n_of", 6)
+    # ...while genuine take-all headings still classify.
+    assert classify(rule("Take the following courses:", courses=5)) == ("all_of", None)
+
+
+def test_course_numbers_are_not_counts():
+    # 'AM 115' must not read as n=115; count exceeding the table falls back
+    # to requiring the listed courses.
+    r = rule("Electives", prose=["Complete AM 115 or other approved courses from the list."], courses=2)
+    got = classify(r)
+    assert got is None or got[1] in (None, 1, 2)
+    r2 = rule(
+        "Core Curriculum",
+        prose=["The core curriculum consists of four courses total: FILM 120, plus one course from three of the following four groups."],
+        courses=1,
+    )
+    assert classify(r2) == ("all_of", None)
+
+
+def test_pick_n_of_m_groups():
+    # Film B.A. core: 'FILM 120, plus one course from three of the following
+    # four groups (three total, each from a different group)'.
+    parent = rule(
+        "One course from three of the following four groups: (three total, each from a different group)",
+        hclass=3,
+    )
+    kids = [rule(f"Group {i}:", courses=2 + i, hclass=4) for i in range(1, 5)]
+    out = _build([parent] + kids)
+    assert out[0]["op"] == "n_of_groups" and out[0]["n"] == 3
+    assert len(out[0]["branches"]) == 4
+    assert all(r["op"] == "list" for r in out[1:])
+
+
+def test_category_count_with_enumerated_children_is_note():
+    parent = rule("Two courses to satisfy the senior comprehensive requirement:", hclass=3)
+    kid1 = rule("The following course:", courses=1, hclass=4)
+    kid2 = rule("Plus one of the following courses:", courses=4, hclass=4)
+    out = _build([parent, kid1, kid2])
+    assert out[0]["op"] == "info"
+    assert out[1]["op"] == "all_of" and out[2]["op"] == "one_of"
+
+
 def test_section_choice_conversion():
     from ucsc.major_requirements.segment import RawSection, SegmentedProgram
 

@@ -46,3 +46,29 @@ misclassified rules. The machine-readable registry the loader consumes is
 6. `sc-RequiredCoursesHeading5` (EE B.S., deep validation).
 7. SOE free-text modality overflow (loader, first real load).
 8. pisa 504s/timeouts under monolithic backfill → chunked driver.
+
+## Hardening round 2026-07-26 (user-reported: Film & Digital Media)
+
+Root causes found and fixed, each generalized + regression-tested:
+9. Prose-range elective memberships (multi-range, series, both exclusion
+   grammars) — Film minor.
+10. Parent/child combinators: 'N from each of the following groups' (children
+    → one_of / n_of; totals pool over children), 'one course from N of M
+    groups' (new n_of_groups op), count headers with enumerated children.
+11. Over-greedy vocabulary: unanchored 'the following courses' swallowed
+    counted phrases (Music/Theater/TIM); 'satisfied by' ≠ all_of (Biology DC
+    is 'satisfied by completing TWO of ...').
+12. Course numbers misread as counts ('AM 115' → n=115) — digit counts
+    bounded + subject-lookbehind.
+13. Confidence bounds: bare-heading all_of capped at 12 courses (largest
+    verified required list is EE's 11); the same cap vetoes LLM 'take all'
+    answers on big lists into needs_review.
+14. Advisory content ('Recommended Course for Transfer Students') is now a
+    note, never a requirement — this CORRECTED two hand-verified programs
+    (Math BS MATH 24, EE transfer-prep pool), i.e. the automated bounds
+    caught errors the manual pass had missed in hidden qualification
+    sections.
+
+Post-hardening audit across all 119 programs: zero n>pool rules, zero
+bare all_of rules ≥15 courses; verified subset byte-identical except the two
+documented corrections.
