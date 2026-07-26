@@ -109,7 +109,10 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
             </p>
           )}
         </div>
-        <button onClick={onClose} className="rounded-md px-2 py-1 text-slate-500 hover:bg-slate-100">
+        <button
+          onClick={onClose}
+          className="rounded-md bg-red-100 px-2 py-1 text-red-700 hover:bg-red-200"
+        >
           ✕ close
         </button>
       </div>
