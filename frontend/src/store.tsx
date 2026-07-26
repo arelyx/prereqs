@@ -25,7 +25,7 @@ interface Store extends PlanState {
   validating: boolean
   setCompleted: (codes: string[]) => void
   addCompleted: (code: string) => void
-  addYear: () => void
+  addYear: (startYear?: number) => void
   removeYear: (startYear: number) => void
   addCourse: (termCode: string, code: string) => void
   removeCourse: (termCode: string, code: string) => void
@@ -106,13 +106,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
             ? s
             : { ...s, content: { ...s.content, completed: [...s.content.completed, code] } },
         ),
-      addYear: () =>
+      addYear: (startYear) =>
         update((s) => {
-          // Next AY after the last one present (or the upcoming AY if empty).
+          // Explicit year (gap-filling / leading add) or the AY after the
+          // last one present (or the upcoming AY if the plan is empty).
           const years = s.content.terms.map((t) => academicYearOf(t.term_code))
-          const nextYear = years.length ? Math.max(...years) + 1 : upcomingAcademicYear()
+          const target =
+            startYear ?? (years.length ? Math.max(...years) + 1 : upcomingAcademicYear())
           const existing = new Set(s.content.terms.map((t) => t.term_code))
-          const added = ayTermCodes(nextYear)
+          const added = ayTermCodes(target)
             .filter((c) => !existing.has(c))
             .map((term_code) => ({ term_code, courses: [] }))
           return {

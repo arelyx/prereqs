@@ -23,15 +23,41 @@ test('dashboard renders with academic-year planner', async ({ page }) => {
   }
 })
 
-test('adding and removing an academic year', async ({ page }) => {
+test('year add/remove: gaps offer restoration, non-empty removal confirms', async ({ page }) => {
+  // Add two more years, then remove the middle one (empty: no dialog).
   await page.getByRole('button', { name: '+ Add academic year' }).click()
-  await expect(page.getByRole('heading', { name: '2027–28' })).toBeVisible()
-  page.on('dialog', (d) => d.accept())
+  await page.getByRole('button', { name: '+ Add academic year' }).click()
+  await expect(page.getByRole('heading', { name: '2028–29' })).toBeVisible()
   await page
     .locator('section', { has: page.getByRole('heading', { name: '2027–28' }) })
     .getByRole('button', { name: 'remove year' })
     .click()
   await expect(page.getByRole('heading', { name: '2027–28' })).toHaveCount(0)
+
+  // The gap between 2026–27 and 2028–29 offers the missing year back.
+  const gapButton = page.getByRole('button', { name: '+ Add 2027–28' })
+  await expect(gapButton).toBeVisible()
+  await gapButton.click()
+  await expect(page.getByRole('heading', { name: '2027–28' })).toBeVisible()
+  await expect(page.getByRole('button', { name: '+ Add 2027–28' })).toHaveCount(0)
+
+  // Removing a year that has planned courses requires confirmation.
+  await page.getByPlaceholder('Add course…').first().fill('CSE 12')
+  await page.getByRole('button', { name: /CSE 12 / }).first().click()
+  let dialogText = ''
+  page.once('dialog', (d) => {
+    dialogText = d.message()
+    void d.dismiss()
+  })
+  const removeFirst = page
+    .locator('section', { has: page.getByRole('heading', { name: '2026–27' }) })
+    .getByRole('button', { name: 'remove year' })
+  await removeFirst.click()
+  await expect(page.getByRole('heading', { name: '2026–27' })).toBeVisible() // dismissed: kept
+  if (!dialogText.includes('planned course')) throw new Error(`unexpected dialog: ${dialogText}`)
+  page.once('dialog', (d) => void d.accept())
+  await removeFirst.click()
+  await expect(page.getByRole('heading', { name: '2026–27' })).toHaveCount(0)
 })
 
 test('course search opens drawer with prereqs, availability, graph', async ({ page }) => {
@@ -42,10 +68,12 @@ test('course search opens drawer with prereqs, availability, graph', async ({ pa
   await expect(page.getByText('Prerequisite structure')).toBeVisible()
   // Boolean structure renders AND separators for CSE 101's multi-group prereqs
   await expect(page.getByText('AND').first()).toBeVisible()
-  // Offering history table: real past quarters with instructors, plus
+  // Offering history pivot: academic-year rows × quarter columns, with
   // scheduled future terms highlighted.
   await expect(page.getByText('Offering history')).toBeVisible()
-  await expect(page.getByRole('cell', { name: /Fall 2026/ })).toBeVisible()
+  await expect(page.getByRole('columnheader', { name: 'Fall' })).toBeVisible()
+  await expect(page.getByRole('columnheader', { name: 'Summer' })).toBeVisible()
+  await expect(page.getByRole('cell', { name: /2026–27/ })).toBeVisible()
   await expect(page.getByText('scheduled').first()).toBeVisible()
   // React Flow canvas mounted
   await expect(page.locator('.react-flow').first()).toBeVisible()
