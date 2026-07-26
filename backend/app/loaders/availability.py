@@ -28,29 +28,8 @@ RECENCY_DECAY = 0.7
 SCHEDULED_SCORE = 1.0
 
 
-def _name_key(name: str) -> tuple[str, str]:
-    """Cross-source identity key: pisa 'Ahmad,I.' == SOE 'Ishtiyaque Ahmad'.
-
-    Both formats reduce to (lowercase last name, first initial). Collisions
-    are possible but rare within one course's instructor pool.
-    """
-    if "," in name:
-        last, _, rest = name.partition(",")
-        first_initial = rest.strip()[:1]
-    else:
-        parts = name.split()
-        last = parts[-1] if parts else name
-        first_initial = parts[0][:1] if len(parts) > 1 else ""
-    return last.strip().lower(), first_initial.lower()
-
-
-def _better_display(a: str, b: str) -> str:
-    """Prefer the fuller human-readable form (SOE 'Ishtiyaque Ahmad' over
-    pisa 'Ahmad,I.')."""
-    a_full, b_full = "," not in a, "," not in b
-    if a_full != b_full:
-        return a if a_full else b
-    return a if len(a) >= len(b) else b
+from ..names import better_display as _better_display
+from ..names import name_key as _name_key
 
 
 def _current_term_int(now: datetime) -> int:

@@ -14,6 +14,16 @@ export interface CourseSummary {
   subject: string
 }
 
+export interface OfferingHistoryRow {
+  term_code: string
+  year: number
+  season: string
+  sections: number
+  planned: boolean
+  sources: string[]
+  instructors: string[]
+}
+
 export interface CourseDetail extends CourseSummary {
   description: string
   raw_requirements: string | null
@@ -22,6 +32,7 @@ export interface CourseDetail extends CourseSummary {
   cross_listed: string[]
   formerly: string | null
   repeatable: boolean
+  offering_history: OfferingHistoryRow[]
   availability: {
     season_counts: Record<string, number> | null
     last_offered_term_code: string | null

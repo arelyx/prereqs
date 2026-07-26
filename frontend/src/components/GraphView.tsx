@@ -51,7 +51,7 @@ function layout(payload: GraphPayload): { nodes: Node[]; edges: Edge[] } {
           label: (
             <div className="text-center">
               <div className="font-semibold">{info.display_code}</div>
-              <div className="max-w-[150px] truncate text-[10px] text-slate-500">{info.title}</div>
+              <div className="max-w-[150px] text-[10px] leading-tight text-slate-500">{info.title}</div>
             </div>
           ),
         },

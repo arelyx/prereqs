@@ -10,10 +10,13 @@ from ..db import get_db
 from ..models import (
     Course,
     CourseAvailability,
+    CourseOffering,
     CoursePrereqEdge,
     Program,
+    Term,
     University,
 )
+from ..names import better_display, name_key
 
 router = APIRouter(tags=["catalog"])
 
@@ -98,6 +101,55 @@ def list_courses(
     return {"total": total, "courses": [_course_summary(c) for c in rows]}
 
 
+def _offering_history(db: Session, university_id: str, course_code: str) -> list[dict]:
+    """One row per term the course ran (or is scheduled to run), newest first.
+
+    Instructors are unified across sources per term; a term is 'planned' when
+    it only exists as future schedule data (SOE plan / open enrollment), not
+    as a completed historical record.
+    """
+    rows = db.execute(
+        select(CourseOffering, Term)
+        .join(Term, CourseOffering.term_id == Term.id)
+        .where(
+            CourseOffering.university_id == university_id,
+            CourseOffering.course_code == course_code,
+        )
+    ).all()
+    by_term: dict[str, dict] = {}
+    for off, term in rows:
+        entry = by_term.setdefault(
+            term.code,
+            {
+                "term_code": term.code,
+                "year": term.year,
+                "season": term.season,
+                "sort_key": term.sort_key,
+                "sections": 0,
+                "planned": True,
+                "sources": [],
+                "_names": {},
+            },
+        )
+        entry["sections"] += 1
+        if off.source not in entry["sources"]:
+            entry["sources"].append(off.source)
+        if not off.is_planned:
+            entry["planned"] = False
+        for i in off.instructors or []:
+            n = i.get("name")
+            if not n or n == "Staff":
+                continue
+            k = name_key(n)
+            entry["_names"][k] = better_display(entry["_names"].get(k, n), n)
+    out = []
+    for entry in sorted(by_term.values(), key=lambda e: -e["sort_key"]):
+        entry["instructors"] = sorted(entry.pop("_names").values())
+        entry.pop("sort_key")
+        out.append(entry)
+    return out
+
+
 @router.get("/u/{university_id}/courses/{code}")
 def course_detail(university_id: str, code: str, db: Session = Depends(get_db)) -> dict:
     c = _get_course(db, university_id, code)
@@ -119,6 +171,7 @@ def course_detail(university_id: str, code: str, db: Session = Depends(get_db)) 
         "raw_requirements": c.raw_requirements,
         "prereq_groups": c.prereq_groups,
         "postreqs": [_course_summary(p) for p in postreqs],
+        "offering_history": _offering_history(db, university_id, c.code),
         "availability": {
             "season_counts": availability.season_counts,
             "last_offered_term_code": availability.last_offered_term_code,

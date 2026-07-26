@@ -32,7 +32,7 @@ export default function GEPanel() {
             }`}
           >
             <span className="font-semibold">{g.category}</span> {g.satisfied ? '✓' : ''}
-            <div className="truncate text-[10px] opacity-70">{g.label}</div>
+            <div className="text-[10px] leading-tight opacity-70">{g.label}</div>
           </div>
         ))}
       </div>

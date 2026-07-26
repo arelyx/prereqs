@@ -11,11 +11,27 @@ test.beforeEach(async ({ page }) => {
   await page.reload()
 })
 
-test('dashboard renders with planner and validation state', async ({ page }) => {
+test('dashboard renders with academic-year planner', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'prereqs' })).toBeVisible()
   await expect(page.getByText('UC Santa Cruz')).toBeVisible()
   await expect(page.getByText(/plan looks valid|blocking issue/)).toBeVisible()
   await expect(page.getByText('Completed courses')).toBeVisible()
+  // Default row: the upcoming academic year with all four quarters.
+  await expect(page.getByRole('heading', { name: '2026–27' })).toBeVisible()
+  for (const q of ['fall', 'winter', 'spring', 'summer']) {
+    await expect(page.getByText(q, { exact: true })).toBeVisible()
+  }
+})
+
+test('adding and removing an academic year', async ({ page }) => {
+  await page.getByRole('button', { name: '+ Add academic year' }).click()
+  await expect(page.getByRole('heading', { name: '2027–28' })).toBeVisible()
+  page.on('dialog', (d) => d.accept())
+  await page
+    .locator('section', { has: page.getByRole('heading', { name: '2027–28' }) })
+    .getByRole('button', { name: 'remove year' })
+    .click()
+  await expect(page.getByRole('heading', { name: '2027–28' })).toHaveCount(0)
 })
 
 test('course search opens drawer with prereqs, availability, graph', async ({ page }) => {
@@ -26,7 +42,11 @@ test('course search opens drawer with prereqs, availability, graph', async ({ pa
   await expect(page.getByText('Prerequisite structure')).toBeVisible()
   // Boolean structure renders AND separators for CSE 101's multi-group prereqs
   await expect(page.getByText('AND').first()).toBeVisible()
-  await expect(page.getByText('Availability')).toBeVisible()
+  // Offering history table: real past quarters with instructors, plus
+  // scheduled future terms highlighted.
+  await expect(page.getByText('Offering history')).toBeVisible()
+  await expect(page.getByRole('cell', { name: /Fall 2026/ })).toBeVisible()
+  await expect(page.getByText('scheduled').first()).toBeVisible()
   // React Flow canvas mounted
   await expect(page.locator('.react-flow').first()).toBeVisible()
   await expect(page.getByText(/Unlocks \(\d+\)/)).toBeVisible()
