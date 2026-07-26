@@ -60,6 +60,68 @@ N_OF_RE = re.compile(
     re.IGNORECASE,
 )
 OR_SIBLING_RE = re.compile(r"^or\b", re.IGNORECASE)
+
+# 'FILM 100-149', 'FILM 152 -169', 'FILM 170A through FILM 179B',
+# 'LIT 109-189' — subject-prefixed numeric spans; bound letters compared
+# numerically (170A..179B ⇒ 170..179).
+RANGE_SPAN_RE = re.compile(
+    r"([A-Z]{2,5})\s?(\d{1,3})[A-Z]?\s*(?:-|–|through)\s*(?:[A-Z]{2,5}\s?)?(\d{1,3})[A-Z]?"
+)
+SERIES_RE = re.compile(r"([A-Z]{2,5})\s?(\d{1,3})\s+series")
+# Pre-markers: the excluded items FOLLOW the marker ('...excluding LIT 179A').
+# Post-markers: the excluded items PRECEDE it ('FILM 150 ... may not be used').
+EXCLUDE_PRE_RE = re.compile(r"exclud\w+|except(?:\s+for)?", re.IGNORECASE)
+EXCLUDE_POST_RE = re.compile(r"may not|not be used|do(?:es)? not count", re.IGNORECASE)
+# Case-sensitive: prose words like 'seven 5-credit' must not become SEVEN5.
+STRICT_CODE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3}[A-Z]{0,2})\b")
+
+
+def _collect(segment: str, out: dict, exclude: bool) -> None:
+    spans = [
+        {"subject": m.group(1), "lo": int(m.group(2)), "hi": int(m.group(3))}
+        for m in RANGE_SPAN_RE.finditer(segment)
+    ]
+    if exclude:
+        out["exclude_ranges"].extend(spans)
+        span_bounds = {f"{s['subject']}{b}" for s in spans for b in (s["lo"], s["hi"])}
+        for m in STRICT_CODE_RE.finditer(segment):
+            code = m.group(1) + m.group(2)
+            # A span's endpoints stay represented by the range itself.
+            if not any(code.startswith(sb) for sb in span_bounds):
+                out["exclude_codes"].append(code)
+    else:
+        out["include_ranges"].extend(spans)
+        out["include_series"].extend(
+            {"subject": m.group(1), "prefix": m.group(2)}
+            for m in SERIES_RE.finditer(segment)
+        )
+
+
+def extract_course_filter(text: str) -> dict:
+    """Parse prose membership into include/exclude ranges, series, and codes.
+
+    Per sentence: a pre-marker ('excluding', 'except') splits it — items
+    before are includes, after are excludes. A post-marker ('may not be
+    used', 'does not count') excludes the whole sentence's items. Otherwise
+    the sentence contributes includes.
+    """
+    out = {
+        "include_ranges": [],
+        "include_series": [],
+        "exclude_ranges": [],
+        "exclude_codes": [],
+    }
+    for sentence in re.split(r"(?<=[.;])\s+", text):
+        pre = EXCLUDE_PRE_RE.search(sentence)
+        if pre:
+            _collect(sentence[: pre.start()], out, exclude=False)
+            _collect(sentence[pre.end():], out, exclude=True)
+        elif EXCLUDE_POST_RE.search(sentence):
+            _collect(sentence, out, exclude=True)
+        else:
+            _collect(sentence, out, exclude=False)
+    out["exclude_codes"] = sorted(set(out["exclude_codes"]))
+    return out
 _NUM = r"(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d{1,2})"
 # Tight count-noun binding for the pools conversion: 'Three Electives are
 # Required', 'Four courses must be completed', 'Plus five economics
@@ -75,8 +137,7 @@ FROM_LISTS_GATE_RE = re.compile(
     r"from (?:the|either)\b[^.]{0,60}\blists?\b|chosen from|are required|must be completed",
     re.IGNORECASE,
 )
-RANGE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3})\s?-\s?(\d{1,3})\b")
-EXCLUDING_RE = re.compile(r"exclud\w+[^.]*", re.IGNORECASE)
+RANGE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3})\s?[-–]\s?(\d{1,3})\b")
 
 SECTION_KIND_RE = [
     (re.compile(r"disciplinary communication|\bDC\b", re.IGNORECASE), "dc"),
@@ -195,9 +256,7 @@ def interpret_rule(
         "_hclass": rule.heading_class,  # stripped before output
     }
 
-    # Range rules resolve deterministically to bounds + exclusions.
     text = rule.heading + " " + " ".join(rule.prose)
-    range_m = RANGE_RE.search(text)
     det = classify_heading(rule) or default_for_section(rule, section_kind)
     if det is not None:
         node["op"], node["n"] = det
@@ -237,16 +296,26 @@ def interpret_rule(
             node["needs_review"] = True
         llm_stats["fallbacks"] += 1
 
-    if node["op"] == "range" or (range_m and not rule.courses and node["op"] in (None, "unknown")):
-        node["op"] = "range"
-        subj, lo, hi = range_m.group(1), int(range_m.group(2)), int(range_m.group(3))
-        excl_m = EXCLUDING_RE.search(text)
-        exclusions = sorted(codes.extract_codes(excl_m.group(0))) if excl_m else []
-        node["range"] = {"subject": subj, "lo": lo, "hi": hi, "exclude": exclusions}
-        n_m = N_OF_RE.search(rule.heading)
-        if n_m:
-            w = n_m.group(1).lower()
-            node["n"] = WORD_NUMBERS.get(w) or (int(w) if w.isdigit() else None)
+    # Prose-defined memberships ('numbered FILM 100-149, FILM 152-169, ... or
+    # from the FILM 194 series. Production studio courses (FILM 150 ... FILM
+    # 170A through FILM 179B) may not be used'): fully deterministic. Applies
+    # when a countable rule has no explicit course table but its prose carries
+    # range spans.
+    if (
+        RANGE_RE.search(text)
+        and not rule.courses
+        and node["op"] in ("range", "category_count", "unknown", None)
+    ):
+        course_filter = extract_course_filter(text)
+        if course_filter["include_ranges"] or course_filter["include_series"]:
+            node["op"] = "range"
+            node["filter"] = course_filter
+            node["needs_review"] = False
+            if node["n"] is None:
+                n_m = N_OF_RE.search(rule.heading) or N_OF_RE.search(text)
+                if n_m:
+                    w = n_m.group(1).lower()
+                    node["n"] = WORD_NUMBERS.get(w) or (int(w) if w.isdigit() else None)
 
     # Constraint riders stay verbatim (auditable; machine-evaluation later).
     for prose in rule.prose:
@@ -350,6 +419,21 @@ def build_program(
                     )
                 ):
                     r["op"] = "section_choice"
+
+            # Countable rules that ended up with nothing to count (a section
+            # intro classified all_of by its prose, an empty unknown) are
+            # display noise as requirements — demote to info; prose stays.
+            # Runs AFTER section_choice so empty choice parents survive.
+            for r in typed_rules:
+                if (
+                    r["op"] in ("all_of", "one_of", "n_of", "unknown")
+                    and not r["courses"]
+                    and not r["branches"]
+                    and not r.get("from_following_lists")
+                ):
+                    r["op"], r["n"] = "info", None
+                    r["needs_review"] = False
+
             for r in typed_rules:
                 r.pop("_sibling_or", None)
                 r.pop("_hclass", None)
