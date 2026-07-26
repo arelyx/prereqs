@@ -12,7 +12,9 @@ const SEASONS = ['fall', 'winter', 'spring', 'summer']
 
 function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
   // Pivot: academic-year rows × quarter columns — when a course runs is
-  // visible as a column pattern at a glance.
+  // visible as a column pattern at a glance. Instructors stack one per line;
+  // scheduled (future, planned) cells are tinted, explained once by the
+  // legend rather than a chip per cell.
   const byYear = new Map<number, Map<string, OfferingHistoryRow>>()
   for (const h of history) {
     const ay = academicYearOf(h.term_code)
@@ -20,44 +22,40 @@ function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
     byYear.get(ay)!.set(h.season, h)
   }
   const years = [...byYear.keys()].sort((a, b) => b - a) // newest first
+  const anyPlanned = history.some((h) => h.planned)
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm">
+    <div className="overflow-x-auto rounded-md border border-slate-200">
+      <table className="w-full text-xs">
         <thead>
-          <tr className="border-b border-slate-200 text-left text-xs uppercase tracking-wide text-slate-400">
-            <th className="py-1 pr-3 font-semibold">Year</th>
+          <tr className="bg-slate-50 text-left uppercase tracking-wide text-slate-400">
+            <th className="px-2 py-1.5 font-semibold">Year</th>
             {SEASONS.map((s) => (
-              <th key={s} className="py-1 pr-2 font-semibold capitalize">
+              <th key={s} className="px-2 py-1.5 font-semibold capitalize">
                 {s}
               </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {years.map((ay) => (
-            <tr key={ay} className="border-b border-slate-100 align-top">
-              <td className="py-1.5 pr-3 font-medium whitespace-nowrap">{ayLabel(ay)}</td>
+          {years.map((ay, i) => (
+            <tr key={ay} className={`align-top ${i % 2 ? 'bg-slate-50/60' : ''}`}>
+              <td className="whitespace-nowrap px-2 py-2 font-semibold text-slate-600">
+                {ayLabel(ay)}
+              </td>
               {SEASONS.map((s) => {
                 const h = byYear.get(ay)!.get(s)
-                if (!h) return <td key={s} className="py-1.5 pr-2 text-slate-300">—</td>
+                if (!h) return <td key={s} className="px-2 py-2 text-slate-300">·</td>
                 return (
-                  <td
-                    key={s}
-                    className={`py-1.5 pr-2 ${h.planned ? 'rounded bg-sky-50' : ''}`}
-                  >
+                  <td key={s} className={`px-2 py-2 ${h.planned ? 'bg-sky-100/70' : ''}`}>
                     {h.instructors.length > 0 ? (
-                      <span>{h.instructors.join(', ')}</span>
+                      h.instructors.map((n) => (
+                        <div key={n} className="leading-5 text-slate-700">
+                          {n}
+                        </div>
+                      ))
                     ) : (
                       <span className="text-slate-400">TBD</span>
-                    )}
-                    {h.sections > 1 && (
-                      <span className="ml-1 text-[10px] text-slate-400">×{h.sections}</span>
-                    )}
-                    {h.planned && (
-                      <span className="ml-1 rounded bg-sky-100 px-1 text-[10px] font-medium text-sky-700">
-                        scheduled
-                      </span>
                     )}
                   </td>
                 )
@@ -66,6 +64,12 @@ function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
           ))}
         </tbody>
       </table>
+      {anyPlanned && (
+        <p className="border-t border-slate-200 bg-white px-2 py-1 text-[10px] text-slate-400">
+          <span className="mr-1 inline-block h-2.5 w-2.5 rounded-sm bg-sky-100 align-middle" />
+          scheduled for the upcoming year (subject to change)
+        </p>
+      )}
     </div>
   )
 }

@@ -21,6 +21,8 @@ test('dashboard renders with academic-year planner', async ({ page }) => {
   for (const q of ['fall', 'winter', 'spring', 'summer']) {
     await expect(page.getByText(q, { exact: true })).toBeVisible()
   }
+  // Earlier years can be added as real schedules (mid-degree students).
+  await expect(page.getByRole('button', { name: '+ Add previous year (2025–26)' })).toBeVisible()
 })
 
 test('year add/remove: gaps offer restoration, non-empty removal confirms', async ({ page }) => {
@@ -109,16 +111,21 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
   ).toBeVisible()
 })
 
-test('program requirements progress renders; verified and unverified badges', async ({ page }) => {
-  // CS BS is hand-verified (verified.json) — no warning badge.
+test('program: requirements in main fold, general info in sidebar', async ({ page }) => {
   await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
-  await expect(page.getByRole('heading', { name: 'Computer Science B.S.' })).toBeVisible()
+  // Main fold: requirement progress block with met counter, sections expanded.
+  await expect(
+    page.getByRole('heading', { name: 'Computer Science B.S.', exact: true }),
+  ).toBeVisible()
+  await expect(page.getByText(/\d+\/\d+ requirements met/)).toBeVisible()
   await expect(page.getByText('Lower-Division').first()).toBeVisible()
+  // Sidebar: general info card with catalog link + info sections.
+  await expect(page.getByRole('link', { name: 'official page' })).toBeVisible()
+  await expect(page.getByText(/Introduction|Learning Outcomes/).first()).toBeVisible()
 
   // An unverified program shows the warning badge.
   await page.getByRole('combobox').selectOption({ label: 'History B.A. (unverified)' })
-  await expect(page.getByRole('heading', { name: 'History B.A.' })).toBeVisible()
-  await expect(page.getByText('unverified', { exact: true })).toBeVisible()
+  await expect(page.getByText('unverified', { exact: true }).first()).toBeVisible()
 })
 
 test('auth lifecycle: register imports plan, sign out, sign in, delete', async ({ page }) => {

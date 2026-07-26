@@ -365,7 +365,7 @@ def build_program(
 
     return {
         **meta,
-        "requirements": {"sections": sections},
+        "requirements": {"sections": sections, "info_sections": seg.info_sections},
         "stats": {
             **llm_stats,
             "rules": sum(len(s["rules"]) for s in sections),

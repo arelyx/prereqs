@@ -6,7 +6,7 @@ import { useMemo } from 'react'
 import { displayCode } from '../api'
 import type { ValidationIssue } from '../api'
 import { useStore } from '../store'
-import { academicYearOf, ayLabel, ayTermCodes, parseTermCode, upcomingAcademicYear } from '../terms'
+import { academicYearOf, ayLabel, ayTermCodes, parseTermCode } from '../terms'
 import CourseSearch from './CourseSearch'
 
 const SEVERITY_STYLE: Record<string, string> = {
@@ -139,8 +139,10 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
         </div>
       </section>
 
-      {years[0] !== undefined && years[0] > upcomingAcademicYear() && (
-        <GapAddButton year={years[0] - 1} onAdd={store.addYear} />
+      {/* Students mid-degree can record earlier years as real schedules
+          rather than lumping everything into Completed courses. */}
+      {years.length > 0 && (
+        <GapAddButton year={years[0] - 1} label={`+ Add previous year (${ayLabel(years[0] - 1)})`} onAdd={store.addYear} />
       )}
 
       {years.map((year, i) => (
@@ -198,13 +200,13 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
   )
 }
 
-function GapAddButton({ year, onAdd }: { year: number; onAdd: (y: number) => void }) {
+function GapAddButton({ year, label, onAdd }: { year: number; label?: string; onAdd: (y: number) => void }) {
   return (
     <button
       onClick={() => onAdd(year)}
       className="w-full rounded-lg border border-dashed border-slate-300 py-1.5 text-xs text-slate-400 hover:border-sky-400 hover:text-sky-600"
     >
-      + Add {ayLabel(year)}
+      {label ?? `+ Add ${ayLabel(year)}`}
     </button>
   )
 }
