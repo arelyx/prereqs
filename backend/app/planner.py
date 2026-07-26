@@ -262,7 +262,20 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         result |= {"needed": 1, "done": min(len(have), 1), "satisfied": bool(have)}
     elif op == "n_of":
         n = rule.get("n") or len(courses)
+        if rule.get("pool"):
+            # Count over a materialized union of child groups (GCH: six
+            # electives across four areas) instead of own listed courses.
+            have = sorted(set(rule["pool"]) & taken)
+            result["have"] = have
         result |= {"needed": n, "done": min(len(have), n), "satisfied": len(have) >= n}
+    elif op == "n_of_groups":
+        # Pick N distinct groups, one course from each picked group.
+        n = rule.get("n") or 0
+        hit_groups = [b for b in branches if any(c in taken for c in b)]
+        have = sorted({c for b in hit_groups for c in b if c in taken})
+        result["have"] = have
+        result |= {"needed": n, "done": min(len(hit_groups), n),
+                   "satisfied": len(hit_groups) >= n}
     elif op == "options":
         best = 0.0
         branch_ok = False

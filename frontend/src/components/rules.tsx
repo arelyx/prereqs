@@ -11,6 +11,7 @@ const OP_LABELS: Record<string, (r: RuleProgress) => string> = {
   range: (r) => `${r.n ?? '?'} from the ranges below`,
   category_count: (r) => `${r.n ?? '?'} from category`,
   section_choice: () => 'One of the paths below',
+  n_of_groups: (r) => `One course from ${r.n} of the ${r.branches?.length ?? '?'} groups`,
   list: () => 'Course pool',
   info: () => 'Note',
 }
@@ -109,7 +110,9 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
       )}
       {(rule.branches ?? []).map((branch, i) => (
         <div key={i} className="mt-1 flex flex-wrap items-center gap-1">
-          <span className="text-[10px] font-bold text-slate-400">{i === 0 ? 'EITHER' : 'OR'}</span>
+          <span className="text-[10px] font-bold text-slate-400">
+            {rule.op === 'n_of_groups' ? `GROUP ${i + 1}` : i === 0 ? 'EITHER' : 'OR'}
+          </span>
           {branch.map((c) => (
             <button
               key={c}

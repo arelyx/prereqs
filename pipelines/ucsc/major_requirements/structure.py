@@ -33,10 +33,15 @@ WORD_NUMBERS = {
 }
 
 ALL_OF_RE = re.compile(
-    r"all of the following|take the following|the following courses?\b|both of these"
+    # 'the following courses' must be anchored: unanchored it swallows
+    # 'take three quarters of ANY of the following courses' / 'choose TWO of
+    # the following courses' before the count cascade can read them.
+    r"all of the following|take the following|^the following courses?\b|both of these"
     r"|plus the following|complete the following|following course is required"
-    r"|all of these|^these courses|core requirements"
-    r"|satisfied by\b",  # 'satisfied by completing one of...' hits ONE_OF first
+    r"|all of these|^these courses|core requirements",
+    # NB: 'satisfied by ...' is deliberately NOT all_of vocabulary — it is
+    # followed by an arbitrary operator ('satisfied by completing two of the
+    # following') and must fall through to the ONE_OF/N_OF cascade.
     re.IGNORECASE,
 )
 ONE_OF_RE = re.compile(
@@ -53,13 +58,33 @@ POOL_RE = re.compile(
     re.IGNORECASE,
 )
 N_OF_RE = re.compile(
-    # negative lookahead: '5-credit'/'5 credit'/'5 unit' are values, not counts
-    r"\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d+)\b"
+    # Word counts freely; digit counts are 1-2 digits and must not follow a
+    # subject code ('AM 115' / 'LIT109' are course numbers, not counts —
+    # case-sensitively guarded so prose words don't trip it). Lookahead:
+    # '5-credit'/'5 unit' are values, not counts.
+    r"(?:\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\b"
+    r"|(?-i:(?<![A-Z])(?<![A-Z] ))\b(\d{1,2})\b(?!\d))"
     r"(?!\s*-?\s*(?:credit|unit))"
     r"[^.]{0,60}?\b(of the following|electives?|courses?|from)\b",
     re.IGNORECASE,
 )
+
+
+def _n_of_count(m: re.Match) -> int | None:
+    word = (m.group(1) or m.group(2) or "").lower()
+    return WORD_NUMBERS.get(word) or (int(word) if word.isdigit() else None)
 OR_SIBLING_RE = re.compile(r"^or\b", re.IGNORECASE)
+EACH_OF_RE = re.compile(
+    r"\b(one|two|three|four|five|six|seven|eight|nine|ten|\d+)\s+"
+    r"courses?\s+(?:must be taken\s+)?from each of the",
+    re.IGNORECASE,
+)
+# 'one course from THREE OF the following four groups (each from a different
+# group)' — pick N groups, one course from each picked group.
+PICK_GROUPS_RE = re.compile(
+    r"course from\s+(one|two|three|four|five|six|\d+)\s+of the following\s+\w+\s+groups",
+    re.IGNORECASE,
+)
 
 # 'FILM 100-149', 'FILM 152 -169', 'FILM 170A through FILM 179B',
 # 'LIT 109-189' — subject-prefixed numeric spans; bound letters compared
@@ -171,8 +196,7 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
             return ("all_of", None)
         m = N_OF_RE.search(scope)
         if m:
-            word = m.group(1).lower()
-            n = WORD_NUMBERS.get(word) or (int(word) if word.isdigit() else None)
+            n = _n_of_count(m)
             if n == 1 and (rule.courses or rule.branches):
                 return ("one_of", None)
             if n == 1 and is_heading:
@@ -180,6 +204,13 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
                 # table: a category pick, not an (unsatisfiable) empty one_of.
                 return ("category_count", 1)
             if n and rule.courses:
+                if n > len(rule.courses):
+                    # The count describes a larger context than this table
+                    # ('The core curriculum consists of four courses total:
+                    # FILM 120, plus one course from three of the following
+                    # groups' — table has just FILM 120). The listed courses
+                    # themselves are required.
+                    return ("all_of", None)
                 return ("n_of", n)
             if n and not rule.courses and is_heading:
                 return ("category_count", n)
@@ -199,6 +230,16 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
         return r
     if RANGE_RE.search(text) and not rule.courses:
         return ("range", None)
+    if RECOMMENDED_RE.search(rule.heading) or (
+        rule.prose and RECOMMENDED_RE.search(rule.prose[0])
+    ):
+        # 'Recommended Course for Transfer Students' etc.: advisory content,
+        # never a requirement — display as a note with its courses.
+        return ("info", None)
+    if len(rule.courses) == 1 and not rule.branches:
+        # A single-course table with no operator wording is unambiguous
+        # (Math BS DC: 'The DC requirement ... is satisfied by' + [MATH 100]).
+        return ("all_of", None)
     if not rule.courses and not rule.branches:
         # Prose-only policy/informational block (GPA thresholds, appeal
         # process, transfer notes). Kept verbatim, never a course rule.
@@ -221,9 +262,14 @@ def default_for_section(rule: RawRule, section_kind: str) -> tuple[str, int | No
     if (
         section_kind in ("lower_div", "upper_div")
         and rule.courses
+        and len(rule.courses) <= 12
         and not rule.branches
         and not RECOMMENDED_RE.search(rule.heading)
     ):
+        # Bounded: the largest hand-verified required list is EE's 11-course
+        # core. A bare heading over a bigger table is almost always a
+        # pool/choice (Music ensembles, survey lists) — those must fall
+        # through to the LLM/needs_review rather than assert take-everything.
         return ("all_of", None)
     return None
 
@@ -291,6 +337,10 @@ def interpret_rule(
             # The model invented a count — quarantine rather than trust.
             budget.record(rule.heading[:60], f"unverifiable count {n!r}")
             op, n = "unknown", None
+        if op == "all_of" and len(rule.courses) > 12:
+            # Same bound as the deterministic default: a small model asserting
+            # 'take all 20+' of a bare list is a guess, not a reading.
+            op, n = "unknown", None
         node["op"], node["n"] = op, n
         if op == "unknown":
             node["needs_review"] = True
@@ -314,8 +364,7 @@ def interpret_rule(
             if node["n"] is None:
                 n_m = N_OF_RE.search(rule.heading) or N_OF_RE.search(text)
                 if n_m:
-                    w = n_m.group(1).lower()
-                    node["n"] = WORD_NUMBERS.get(w) or (int(w) if w.isdigit() else None)
+                    node["n"] = _n_of_count(n_m)
 
     # Constraint riders stay verbatim (auditable; machine-evaluation later).
     for prose in rule.prose:
@@ -403,6 +452,83 @@ def build_program(
                     r["needs_review"] = False
                     break  # one count parent per subsection is the pattern
 
+            # 'N course(s) from EACH of the following groups/categories/areas'
+            # parents (Film BA groups, GCH context areas, DC categories): the
+            # contiguous deeper-level children each become an N-of pick; the
+            # parent becomes a total count over the union when it states one
+            # larger than the child count ('Six electives ... one from each of
+            # the four areas plus two more'), else a plain note.
+            for i, r in enumerate(typed_rules):
+                ptext = r["source"]["heading"] + " " + " ".join(r["source"]["prose"])
+                em = EACH_OF_RE.search(ptext)
+                if not em or r["courses"] or r["branches"]:
+                    continue
+                n_each = WORD_NUMBERS.get(em.group(1).lower()) or (
+                    int(em.group(1)) if em.group(1).isdigit() else None
+                )
+                children = []
+                for r2 in typed_rules[i + 1:]:
+                    if r2.get("_hclass", 0) <= r.get("_hclass", 0):
+                        break
+                    if r2["courses"] and r2["op"] != "options":
+                        children.append(r2)
+                if not children or not n_each:
+                    continue
+                for child in children:
+                    child["op"] = "one_of" if n_each == 1 else "n_of"
+                    child["n"] = None if n_each == 1 else n_each
+                    child["needs_review"] = False
+                total_m = N_OF_RE.search(r["source"]["heading"])
+                total = _n_of_count(total_m) if total_m else None
+                if total and total > len(children):
+                    r["op"], r["n"] = "n_of", total
+                    r["pool"] = sorted({c for ch in children for c in ch["courses"]})
+                    r["needs_review"] = False
+                else:
+                    r["op"], r["n"] = "info", None
+                    r["needs_review"] = False
+
+            # 'one course from N of the following M groups': pick N distinct
+            # groups, one course from each. Children become display pools;
+            # the parent carries branches and the count.
+            for i, r in enumerate(typed_rules):
+                ptext = r["source"]["heading"] + " " + " ".join(r["source"]["prose"])
+                pm = PICK_GROUPS_RE.search(ptext)
+                if not pm or r["courses"] or r["branches"]:
+                    continue
+                n_groups = WORD_NUMBERS.get(pm.group(1).lower()) or (
+                    int(pm.group(1)) if pm.group(1).isdigit() else None
+                )
+                children = []
+                for r2 in typed_rules[i + 1:]:
+                    if r2.get("_hclass", 0) <= r.get("_hclass", 0):
+                        break
+                    if r2["courses"]:
+                        children.append(r2)
+                if not children or not n_groups:
+                    continue
+                r["op"], r["n"] = "n_of_groups", n_groups
+                r["branches"] = [list(ch["courses"]) for ch in children]
+                r["needs_review"] = False
+                for ch in children:
+                    ch["op"], ch["n"] = "list", None
+                    ch["needs_review"] = False
+
+            # A grouping header stated as a count whose children enumerate the
+            # actual picks ('Two courses to satisfy the senior comprehensive
+            # requirement:' + [FILM 199, one of 195/196/197]) is a note — the
+            # children carry the evaluable semantics.
+            for i, r in enumerate(typed_rules):
+                if r["op"] != "category_count":
+                    continue
+                has_children = any(
+                    r2.get("_hclass", 0) > r.get("_hclass", 0) and r2["courses"]
+                    for r2 in typed_rules[i + 1:]
+                )
+                if has_children:
+                    r["op"], r["n"] = "info", None
+                    r["needs_review"] = False
+
             # A choice among named sub-blocks (CS BS Comprehensive: prose
             # "one of the following" with 'Capstone Courses' / 'Senior
             # Thesis' sub-headings): an empty one_of followed by deeper-class
@@ -430,6 +556,7 @@ def build_program(
                     and not r["courses"]
                     and not r["branches"]
                     and not r.get("from_following_lists")
+                    and not r.get("pool")
                 ):
                     r["op"], r["n"] = "info", None
                     r["needs_review"] = False
