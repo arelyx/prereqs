@@ -106,9 +106,11 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
   // CSE 16 carries MF; adding it should light the MF category.
   await page.getByPlaceholder('Add a course you already took…').fill('CSE 16')
   await page.getByRole('button', { name: /CSE 16 / }).click()
-  await expect(
-    page.locator('div', { hasText: /^MF ✓/ }).first(),
-  ).toBeVisible()
+  const mfTile = page.getByRole('button', { name: /MF ✓/ })
+  await expect(mfTile).toBeVisible()
+  // Expanding a category lists the courses that satisfy it.
+  await mfTile.click()
+  await expect(page.getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
 })
 
 test('program: requirements in main fold, general info in sidebar', async ({ page }) => {
