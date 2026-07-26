@@ -43,7 +43,7 @@ export default function ProgramRequirements({
                 </span>
               )}
             </div>
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div className="space-y-4">
               {sections.map((section, si) => (
                 <div key={si}>
                   <h3 className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-slate-500">
