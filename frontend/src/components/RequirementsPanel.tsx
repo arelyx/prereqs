@@ -30,10 +30,9 @@ function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCourse: (c:
     const text = rule.source?.prose?.join(' ') ?? ''
     if (!text && rule.notes.length === 0) return null
     return (
-      <div className="rounded-md bg-slate-50 p-2 text-[11px] text-slate-500">
+      <div className="rounded-md bg-slate-50 p-2 text-[11px] leading-relaxed text-slate-500">
         {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
-        {text.slice(0, 280)}
-        {text.length > 280 ? '…' : ''}
+        {text}
       </div>
     )
   }

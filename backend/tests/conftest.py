@@ -9,6 +9,7 @@ from app.main import create_app
 from app.models import (
     Course,
     CourseAvailability,
+    CourseOffering,
     CoursePrereqEdge,
     Program,
     Term,
@@ -99,6 +100,28 @@ def seeded(db_session):
                         prereq_course_id=by_code[prereq].id if prereq in by_code else None,
                     )
                 )
+    term_ids = {
+        t.code: t.id
+        for t in db_session.query(Term).filter(Term.university_id == "ucsc")
+    }
+    # Offering history for CSE101: two past terms (pisa) + one planned (soe).
+    for term_code, name, source, planned in (
+        ("2260", "Tantalo,P.", "pisa", False),
+        ("2262", "Tantalo,P.", "pisa", False),
+        ("2268", "Ishtiyaque Ahmad", "soe", True),
+    ):
+        db_session.add(
+            CourseOffering(
+                university_id="ucsc",
+                term_id=term_ids[term_code],
+                course_code="CSE101",
+                course_id=by_code["CSE101"].id,
+                section="01",
+                instructors=[{"name": name}],
+                source=source,
+                is_planned=planned,
+            )
+        )
     db_session.add(
         CourseAvailability(
             course_id=by_code["CSE101"].id,

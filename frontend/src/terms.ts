@@ -36,3 +36,29 @@ export function currentTermCode(now = new Date()): string {
   const digit = month <= 3 ? 0 : month <= 6 ? 2 : month <= 8 ? 4 : 8
   return String(2000 + (now.getFullYear() - 2000) * 10 + digit)
 }
+
+// Academic years run fall → summer: AY 2026 = Fall 2026, Winter/Spring/Summer 2027.
+
+/** The academic-year start (fall calendar year) a term belongs to. */
+export function academicYearOf(code: string): number {
+  const { year, season } = parseTermCode(code)
+  return season === 'fall' ? year : year - 1
+}
+
+export function ayLabel(startYear: number): string {
+  return `${startYear}–${(startYear + 1) % 100}`
+}
+
+/** The four term codes of an academic year, in fall→summer order. */
+export function ayTermCodes(startYear: number): string[] {
+  const mk = (y: number, digit: number) => String(2000 + (y - 2000) * 10 + digit)
+  return [mk(startYear, 8), mk(startYear + 1, 0), mk(startYear + 1, 2), mk(startYear + 1, 4)]
+}
+
+/** The natural first planner row: the current AY during fall, else the AY
+ * starting with the coming fall. */
+export function upcomingAcademicYear(now = new Date()): number {
+  const code = currentTermCode(now)
+  const { season } = parseTermCode(code)
+  return season === 'fall' ? academicYearOf(code) : academicYearOf(code) + 1
+}

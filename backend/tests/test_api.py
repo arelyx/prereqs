@@ -34,7 +34,11 @@ def test_course_search_detail_graph(client, seeded):
     detail = client.get("/u/ucsc/courses/CSE101").json()
     assert detail["prereq_groups"] == [["CSE12"], ["CSE16"], ["CSE30"]]
     assert [p["code"] for p in detail["postreqs"]] == ["CSE130"]
-    assert detail["availability"]["predicted_instructors"][0]["name"] == "Tantalo,P."
+
+    history = detail["offering_history"]
+    assert [h["term_code"] for h in history] == ["2268", "2262", "2260"]  # newest first
+    assert history[0]["planned"] is True and history[0]["instructors"] == ["Ishtiyaque Ahmad"]
+    assert history[1]["planned"] is False and history[1]["instructors"] == ["Tantalo,P."]
 
     graph = client.get("/u/ucsc/courses/CSE101/graph").json()
     node_codes = {n["code"] for n in graph["nodes"]}

@@ -8,7 +8,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import type { ReactNode } from 'react'
 import { api, authedEmail, setAuthedEmail, setToken } from './api'
 import type { PlanContent, ValidationResult } from './api'
-import { currentTermCode, nextTermCode } from './terms'
+import { academicYearOf, ayTermCodes, upcomingAcademicYear } from './terms'
 
 const PLAN_KEY = 'prereqs.plan'
 
@@ -25,8 +25,8 @@ interface Store extends PlanState {
   validating: boolean
   setCompleted: (codes: string[]) => void
   addCompleted: (code: string) => void
-  addTerm: () => void
-  removeTerm: (termCode: string) => void
+  addYear: () => void
+  removeYear: (startYear: number) => void
   addCourse: (termCode: string, code: string) => void
   removeCourse: (termCode: string, code: string) => void
   setPrograms: (ids: number[]) => void
@@ -44,13 +44,19 @@ function loadLocal(): PlanState {
   } catch {
     /* corrupted local plan: start fresh */
   }
-  const first = nextTermCode(currentTermCode())
   return {
-    content: { completed: [], terms: [{ term_code: first, courses: [] }] },
+    content: {
+      completed: [],
+      terms: ayTermCodes(upcomingAcademicYear()).map((term_code) => ({ term_code, courses: [] })),
+    },
     programIds: [],
     planName: 'My Plan',
     serverPlanId: null,
   }
+}
+
+function sortTerms(terms: { term_code: string; courses: string[] }[]) {
+  return [...terms].sort((a, b) => parseInt(a.term_code, 10) - parseInt(b.term_code, 10))
 }
 
 export function StoreProvider({ children }: { children: ReactNode }) {
@@ -100,38 +106,48 @@ export function StoreProvider({ children }: { children: ReactNode }) {
             ? s
             : { ...s, content: { ...s.content, completed: [...s.content.completed, code] } },
         ),
-      addTerm: () =>
+      addYear: () =>
         update((s) => {
-          const last = s.content.terms[s.content.terms.length - 1]
-          const next = nextTermCode(last ? last.term_code : currentTermCode())
+          // Next AY after the last one present (or the upcoming AY if empty).
+          const years = s.content.terms.map((t) => academicYearOf(t.term_code))
+          const nextYear = years.length ? Math.max(...years) + 1 : upcomingAcademicYear()
+          const existing = new Set(s.content.terms.map((t) => t.term_code))
+          const added = ayTermCodes(nextYear)
+            .filter((c) => !existing.has(c))
+            .map((term_code) => ({ term_code, courses: [] }))
+          return {
+            ...s,
+            content: { ...s.content, terms: sortTerms([...s.content.terms, ...added]) },
+          }
+        }),
+      removeYear: (startYear) =>
+        update((s) => ({
+          ...s,
+          content: {
+            ...s.content,
+            terms: s.content.terms.filter((t) => academicYearOf(t.term_code) !== startYear),
+          },
+        })),
+      addCourse: (termCode, code) =>
+        update((s) => {
+          // A quarter cell can exist in the UI (its AY row is shown) without a
+          // terms entry yet — materialize it on first add.
+          const present = s.content.terms.some((t) => t.term_code === termCode)
+          const terms = present
+            ? s.content.terms
+            : sortTerms([...s.content.terms, { term_code: termCode, courses: [] }])
           return {
             ...s,
             content: {
               ...s.content,
-              terms: [...s.content.terms, { term_code: next, courses: [] }],
+              terms: terms.map((t) =>
+                t.term_code === termCode && !t.courses.includes(code)
+                  ? { ...t, courses: [...t.courses, code] }
+                  : t,
+              ),
             },
           }
         }),
-      removeTerm: (termCode) =>
-        update((s) => ({
-          ...s,
-          content: {
-            ...s.content,
-            terms: s.content.terms.filter((t) => t.term_code !== termCode),
-          },
-        })),
-      addCourse: (termCode, code) =>
-        update((s) => ({
-          ...s,
-          content: {
-            ...s.content,
-            terms: s.content.terms.map((t) =>
-              t.term_code === termCode && !t.courses.includes(code)
-                ? { ...t, courses: [...t.courses, code] }
-                : t,
-            ),
-          },
-        })),
       removeCourse: (termCode, code) =>
         update((s) => ({
           ...s,

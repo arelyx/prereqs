@@ -68,68 +68,63 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
 
           <section>
             <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Availability
+              Offering history
             </h3>
-            {detail.availability ? (
-              <div className="space-y-2 text-sm">
-                <div className="flex gap-2">
-                  {SEASONS.map((s) => {
-                    const n = detail.availability!.season_counts?.[s] ?? 0
-                    return (
-                      <span
-                        key={s}
-                        className={`rounded-full px-2 py-0.5 text-xs ${
-                          n > 0 ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-400'
-                        }`}
-                        title={`offered ${n} recent ${s} quarters`}
-                      >
-                        {s} {n > 0 ? `×${n}` : '—'}
-                      </span>
-                    )
-                  })}
-                </div>
-                {(detail.availability.next_planned?.length ?? 0) > 0 && (
-                  <p>
-                    <span className="font-medium">Planned:</span>{' '}
-                    {detail.availability.next_planned!.map((p) => (
-                      <span key={p.term_code} className="mr-2">
-                        {termLabel(p.term_code)}
-                        {p.instructors.length > 0 && ` (${p.instructors.join(', ')})`}
-                        <span className="text-xs text-slate-400"> [{p.sources.join('+')}]</span>
-                      </span>
-                    ))}
-                  </p>
-                )}
-                {(detail.availability.predicted_instructors?.length ?? 0) > 0 && (
-                  <div>
-                    <span className="font-medium">Likely instructors:</span>
-                    <ul className="mt-1 space-y-0.5">
-                      {detail.availability.predicted_instructors!.map((i) => (
-                        <li key={i.name} className="text-sm">
-                          {i.name}
-                          {i.scheduled ? (
-                            <span className="ml-1 rounded bg-sky-100 px-1 text-[10px] text-sky-700">
-                              scheduled
-                            </span>
-                          ) : (
-                            <span className="ml-1 text-xs text-slate-400">
-                              taught {i.times_taught}× · last {i.last_term ? termLabel(i.last_term) : '—'}
-                            </span>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {detail.availability.last_offered_term_code && (
-                  <p className="text-xs text-slate-500">
-                    Last offered: {termLabel(detail.availability.last_offered_term_code)}
-                  </p>
-                )}
+            {detail.availability && (
+              <div className="mb-2 flex gap-2">
+                {SEASONS.map((s) => {
+                  const n = detail.availability!.season_counts?.[s] ?? 0
+                  return (
+                    <span
+                      key={s}
+                      className={`rounded-full px-2 py-0.5 text-xs ${
+                        n > 0 ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-400'
+                      }`}
+                      title={`offered ${n} recent ${s} quarters`}
+                    >
+                      {s} {n > 0 ? `×${n}` : '—'}
+                    </span>
+                  )
+                })}
               </div>
+            )}
+            {detail.offering_history.length > 0 ? (
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-slate-200 text-left text-xs uppercase tracking-wide text-slate-400">
+                    <th className="py-1 pr-2 font-semibold">Quarter</th>
+                    <th className="py-1 pr-2 font-semibold">Instructor(s)</th>
+                    <th className="py-1 font-semibold">Sections</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {detail.offering_history.map((h) => (
+                    <tr
+                      key={h.term_code}
+                      className={`border-b border-slate-100 ${h.planned ? 'bg-sky-50/60' : ''}`}
+                    >
+                      <td className="py-1 pr-2 whitespace-nowrap">
+                        {termLabel(h.term_code)}
+                        {h.planned && (
+                          <span className="ml-1.5 rounded bg-sky-100 px-1 text-[10px] font-medium text-sky-700 align-middle">
+                            scheduled
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-1 pr-2">
+                        {h.instructors.length > 0 ? h.instructors.join(', ') : (
+                          <span className="text-slate-400">TBD</span>
+                        )}
+                      </td>
+                      <td className="py-1 text-slate-500">{h.sections}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             ) : (
               <p className="text-sm text-slate-400">
-                No offering history found — verify with the registrar before planning around it.
+                No offering records in the last five years — verify with the registrar before
+                planning around this course.
               </p>
             )}
           </section>
@@ -187,7 +182,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
             </section>
           )}
 
-          <div className="flex gap-2 border-t border-slate-100 pt-3">
+          <div className="flex flex-wrap gap-2 border-t border-slate-100 pt-3">
             <button
               className="rounded-md bg-slate-800 px-3 py-1.5 text-sm text-white hover:bg-slate-700"
               onClick={() => store.addCompleted(detail.code)}
