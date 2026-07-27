@@ -19,7 +19,8 @@ const OP_LABELS: Record<string, (r: RuleProgress) => string> = {
 export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCourse: (c: string) => void }) {
   const satisfied = rule.satisfied === true
   const informational = rule.op === 'list' || rule.op === 'info'
-  const unevaluated = rule.satisfied === null && !informational
+  const manual = rule.manual === true && !informational
+  const unevaluated = rule.satisfied === null && !informational && !manual
   const label = (OP_LABELS[rule.op] ?? (() => rule.op))(rule)
 
   if (rule.op === 'info' && rule.courses.length === 0) {
@@ -39,7 +40,7 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
       <div className="flex items-center gap-2">
         <span
           className={`inline-block h-2.5 w-2.5 rounded-full ${
-            satisfied ? 'bg-emerald-500' : unevaluated ? 'bg-slate-300' : 'bg-amber-400'
+            manual || unevaluated ? 'bg-slate-300' : satisfied ? 'bg-emerald-500' : 'bg-amber-400'
           }`}
         />
         <span className="text-xs font-semibold text-slate-600">{label}</span>
@@ -48,9 +49,12 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
             {rule.done}/{rule.needed}
           </span>
         )}
-        {unevaluated && (
-          <span className="rounded bg-slate-100 px-1 text-[10px] text-slate-500" title="This rule can't be checked mechanically — read the note and verify manually.">
-            manual check
+        {(manual || unevaluated) && (
+          <span
+            className="rounded bg-slate-100 px-1 text-[10px] text-slate-500"
+            title="Elective eligibility and category membership can depend on rules the app can't check (double-counting bans, approvals, external lists). Verify with an adviser."
+          >
+            ⚠ verify manually
           </span>
         )}
       </div>

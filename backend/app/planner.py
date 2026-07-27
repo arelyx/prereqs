@@ -233,6 +233,19 @@ def evaluate_requirements(requirements: dict, taken: set[str], ctx: ValidationCo
                 r["needed"], r["done"] = 1, 1 if r["satisfied"] else 0
                 for x in rules_out[i + 1:]:
                     x["alternative"] = True
+        # Non-mechanical rules (elective pools, ranges, category counts,
+        # anything unevaluated) are surfaced as manual-verification items —
+        # the app deliberately does not claim to audit these.
+        for i, r in enumerate(rules_out):
+            raw = raw_rules[i] if i < len(raw_rules) else {}
+            if (
+                r["op"] in ("range", "category_count", "list")
+                or raw.get("from_following_lists")
+                or raw.get("pool")
+                or r.get("unevaluated")
+                or raw.get("needs_review")
+            ):
+                r["manual"] = True
         sections_out.append({
             "kind": section.get("kind"),
             "title": section.get("title"),
