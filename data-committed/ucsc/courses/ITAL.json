@@ -1,0 +1,440 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "During the first quarter of this first-year sequence, students learn to introduce themselves, to talk about their daily activities and hobbies, to describe themselves and their friends/families, and to recount past events. The first-year sequence (1-2-3) begins in fall quarter.",
+   "display_code": "ITAL 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "First-Year Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-1"
+  },
+  {
+   "catalog_instructor": "The Staff, Maria Prencipe",
+   "code": "ITAL100",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides intensive practice in oral and written Italian. Focuses on vocabulary building and increased oral and written expression. Active student participation is essential and constitutes a significant portion of the course including class discussions, oral presentations, written reports, responses and essays, using different genres of writing, including, but not limited to diaries, epistles (formal and informal), blogs, text messaging, dialogues, short stories, memoirs, interviews, podcasts, and media language.",
+   "display_code": "ITAL 100",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "100",
+   "prereq_groups": [
+    [
+     "IITAL6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): IITAL 6, placement by assessment, or instructor permission.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Advanced Italian Composition and Conversation",
+   "url": "/en/current/general-catalog/courses/ital-italian/upper-division/ital-100"
+  },
+  {
+   "catalog_instructor": "The Staff, Maria Prencipe",
+   "code": "ITAL101",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how the evolution of the Italian culinary tradition and the variety of eating habits reflect the historical and economical changes that took place in Italian society over the most recent centuries. Course is taught in English.",
+   "display_code": "ITAL 101",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "101",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Italian Culture through Food",
+   "url": "/en/current/general-catalog/courses/ital-italian/upper-division/ital-101"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL106",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Film is used as a medium through which images of Italians and their culture are disseminated, perpetuated, and crystallized. Students focus on pivotal issues in Italian culture, society, history, and politics, and develop an informed opinion on relevant issues in Italian studies. The course is taught in English with a mandatory enhancement section in Italian. The enhancement section meets once a week and is designed to give students who are already familiar with the language the opportunity to  discuss the films in Italian and to read/view additional material in the language. Students cannot receive credit for this course and ITAL 80 .",
+   "display_code": "ITAL 106",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "106",
+   "prereq_groups": [
+    [
+     "ITAL6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ITAL 6, placement by assessment, or instructor permission.",
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Italian Culture Through Film",
+   "url": "/en/current/general-catalog/courses/ital-italian/upper-division/ital-106"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+   "display_code": "ITAL 194",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/ital-italian/upper-division/ital-194"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ITAL 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ital-italian/upper-division/ital-199"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ITAL 199F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ital-italian/upper-division/ital-199f"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL1A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first quarter of accelerated instruction in elementary Italian language. The accelerated pace allows a rapid mastery of grammar and vocabulary, giving students a basic knowledge of Italian in only two quarters. Completion of the sequence is equivalent to the completion of the 1-2-3 sequence. This sequence starts once a year in the winter quarter.",
+   "display_code": "ITAL 1A",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Accelerated Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-1a"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL1B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The second quarter of accelerated instruction in elementary Italian language. The accelerated pace allows a rapid mastery of grammar and vocabulary, giving students a basic knowledge of Italian in only two quarters. Completion of the sequence is equivalent to the completion of the 1-2-3 sequence.",
+   "display_code": "ITAL 1B",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1B",
+   "prereq_groups": [
+    [
+     "ITAL1A",
+     "ITAL2"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ITAL 1A or ITAL 2 or placement by assessment. For students completing ITAL 2, ITAL 3 is preferable.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Accelerated Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-1b"
+  },
+  {
+   "catalog_instructor": "Maria Prencipe",
+   "code": "ITAL2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "During the second quarter of this first-year sequence, students learn to tell a story in the past, to make plans about their future, and to express commands and requests. The sequence starts once a year in the fall quarter.",
+   "display_code": "ITAL 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "ITAL1"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): ITAL 1 or placement by assessment.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "First-Year Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-2"
+  },
+  {
+   "catalog_instructor": "Maria Prencipe",
+   "code": "ITAL3",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "During the third quarter of this first-year sequence, students learn to talk about historical events, to formulate hypothetical scenarios, to express wishes, desires, doubts, and opinions, and to discuss more abstract topics (e.g., immigration, work, politics).",
+   "display_code": "ITAL 3",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3",
+   "prereq_groups": [
+    [
+     "ITAL2"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ITAL 2 or placement by assessment.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "First-Year Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-3"
+  },
+  {
+   "catalog_instructor": "Maria Prencipe",
+   "code": "ITAL4",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Short stories, articles, films, and newsclips are used as the basis for studying intermediate-level conversation and composition. Laboratory assignments involve use of the World Wide Web, conversations with native speakers, films and video clips. Students interested in this course who have not taken the prerequisite at UCSC should meet with the instructor, preferably prior to the first class meeting, and take the placement examination.",
+   "display_code": "ITAL 4",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "4",
+   "prereq_groups": [
+    [
+     "ITAL1B",
+     "ITAL3"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): ITAL 1B or ITAL 3 or placement by assessment.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Second-Year Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-4"
+  },
+  {
+   "catalog_instructor": "Maria Prencipe",
+   "code": "ITAL5",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Reading of Italian short stories and a play are used as basis for further study and refinement of oral and written skills at the intermediate level. Particular emphasis is placed on oral/written discussion of abstract ideas and topics, and on the study of different language registers/contexts. Laboratory work is regularly assigned. Students interested in this course who have not taken the prerequisite at UCSC should meet with the instructor, preferably prior to the first class meeting and take the placement examination.",
+   "display_code": "ITAL 5",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "5",
+   "prereq_groups": [
+    [
+     "ITAL4"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): ITAL 4 or placement by assessment.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Second-Year Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-5"
+  },
+  {
+   "catalog_instructor": "Maria Prencipe",
+   "code": "ITAL50",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Gives students an opportunity to practice speaking and listening skills to build their fluency in Italian. Develops conversational strategies, introduces some grammar, and includes vocabulary drills and key expressions through role plays, games and small-group activities.",
+   "display_code": "ITAL 50",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "50",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Basic Italian Conversation",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-50"
+  },
+  {
+   "catalog_instructor": "Maria Prencipe",
+   "code": "ITAL6",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Reading of first novel in the language and weekly viewing of Italian films serve as basis for oral reports and discussions on various aspects of Italian culture and civilization. Weekly assignments, three essays, and a paper on topics derived from or related to the text. Students interested in this course who have not taken the prerequisite at UCSC should meet with the instructor, preferably prior to the first class meeting, and take the placement examination.",
+   "display_code": "ITAL 6",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "6",
+   "prereq_groups": [
+    [
+     "ITAL5"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ITAL 5 or placement by assessment.",
+   "repeatable": false,
+   "subject": "ITAL",
+   "title": "Second-Year Italian",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-6"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL80",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Film is used as a medium through which images of Italians and their culture are disseminated, perpetuated, and crystallized. Whether these representations offer historical perspectives or stereotypes, they are important documents for the study of Italian culture, society, history, and politics.  Students cannot receive credit for this course and Italian 106.",
+   "display_code": "ITAL 80",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "80",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Italian Culture Through Cinema",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-80"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL94",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+   "display_code": "ITAL 94",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "94",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-94"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ITAL 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-99"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ITAL99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ITAL 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ITAL",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ital-italian/lower-division/ital-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "ITAL"
+}

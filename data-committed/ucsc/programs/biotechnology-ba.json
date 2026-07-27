@@ -1,0 +1,518 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "biomolecular-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Biotechnology B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Bachelor of Arts in Biotechnology is intended for students who plan to be involved in the biotechnology industry as writers, artists, ethicists, executives, sales force, regulators, lawyers, politicians, and other roles that require an understanding of the technology, but not the intensive training needed for technicians, research scientists, engineers, and bioinformaticians. (For those more technical roles, the biomolecular engineering and bioinformatics major or the molecular, cell, and developmental biology major is recommended.)",
+     "The major is deliberately designed to be paired as a double major for students in the humanities, social sciences, or the arts. Due to course overlap, the biotechnology B.A. cannot be combined with the biomolecular engineering and bioinformatics major (BMEB) B.S. or the bioinformatics minor."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "A biotechnology student completing the program should:",
+     "have familiarity with several different biotechnologies;",
+     "be able to find and use information from a variety of sources, including books, journal articles, and online encyclopedias;",
+     "be able to write programs in Python;",
+     "be able to communicate clearly in writing, orally, and as posters; and",
+     "be able to apply ethical reasoning to make decisions about biotechnology in a global, economic, environmental, and societal context."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering Undergraduate Advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications. Undergraduate students obtain and submit all paperwork requiring departmental approval to the undergraduate advising office. Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Any UC-eligible student with a strong interest in biotechnology is welcome in the program. This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required.",
+     "Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Baskin Engineering requires letter grades for all courses in a major."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Undergraduate Affairs course substitution website for Baskin Engineering course substitution policies and about taking courses at other institutions after enrolling at UCSC. Refer to the course substitution section of the Baskin Engineering page in the catalog for overall substitution policies."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Double majoring with humanities, social science, or the arts majors is encouraged. Students considering double majoring with biology-related majors should consider a minor in bioinformatics."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Students with a GPA of 3.30-3.69 receive honors in the major. Students with a GPA of 3.70 or higher receive highest honors in the major. The GPA includes all UCSC undergraduate and graduate courses in all departments that fall within the Divisions of Physical and Biological Sciences and of Baskin Engineering. Students with particularly significant accomplishments in undergraduate research may petition to receive honors or highest honors with a lower GPA."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students must complete the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or the end of the fall term prior to winter enrollment. Students must have and maintain a cumulative minimum GPA of 2.0 in screening courses. Cumulative GPA is calculated based on all Biotechnology transfer screening courses taken. Please note that while AP courses satisfy transfer admission screening requirements, they do not count toward the GPA. If you satisfy the transfer admission screening requirements, you are not required to take additional coursework in order to declare the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "CSE20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Both of these courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "And",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with a different introductory programming course can still be accepted. Any course with C-ID COMP 112 or C-ID COMP 122 is acceptable. A course teaching Python is preferred even if it does not match either of these C-IDs. CSE 20 can be waived for students who have already completed an upper-division Python programming course."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "Students with a different introductory programming course can still be accepted. Any course with C-ID COMP 112 or C-ID COMP 122 is acceptable. A course teaching Python is preferred even if it does not match either of these C-IDs. CSE 20 can be waived for students who have already completed an upper-division Python programming course."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Successful transition to UC Santa Cruz happens with early advisor contact, preparing and submitting course descriptions for articulation purposes, and taking summer session courses prior to their first fall quarter. Specific information for transfer students is available online . Transfer students should declare their major during their first quarter at UC Santa Cruz; instructions for declaring a major at Baskin Engineering are available here ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BME5",
+       "BME18",
+       "BME80G",
+       "BME80H",
+       "CHEM3A",
+       "CSE20",
+       "ECE80B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "The CSE 20 Test Out exam is an acceptable substitute for CSE 20 ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the Transfer Information and Policy section.",
+        "To qualify for the biotechnology major, students must have completed four of the following lower-division courses:",
+        "The CSE 20 Test Out exam is an acceptable substitute for CSE 20 ."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students may appeal a major qualification decision by filing a petition with Baskin Engineering Advising. The appeal process is described at the Baskin Engineering Undergraduate Affairs website .",
+        "If you have further questions concerning the appeal process, please contact the Undergraduate Advising office at (831) 459-5840 or email bsoeadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first). Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Instructions for declaring a major with Baskin Engineering are on the Undergraduate Affairs website .",
+        "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first). Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3A is recommended."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Chemistry",
+       "prose": [
+        "CHEM 3A is recommended."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BME5"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3A is waived for students transferring in credit for BIOL 20A . For students intending to migrate from the Molecular, Cell and Developmental Biology Department (MCDB), the program will consider appropriate MCDB courses to substitute for specific biotechnology electives."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Introductory Biology and Biotechnology",
+       "prose": [
+        "CHEM 3A is waived for students transferring in credit for BIOL 20A .",
+        "For students intending to migrate from the Molecular, Cell and Developmental Biology Department (MCDB), the program will consider appropriate MCDB courses to substitute for specific biotechnology electives."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT5"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "STAT 7 and STAT 7L is strongly preferred. Students may substitute STAT 131 for STAT 7 and STAT 7L , but it has several prerequisites that are not required for the major."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "STAT 7 and STAT 7L is strongly preferred. Students may substitute STAT 131 for STAT 7 and STAT 7L , but it has several prerequisites that are not required for the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Biotechnology and Society",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME80G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "This course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME18",
+       "BME80H",
+       "ECE80B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of these courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME105",
+       "BME110",
+       "BME160"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Biotechnology Upper-Division Core",
+       "prose": [
+        "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Three or more of the following courses must be taken to meet the requirement of 40 upper-division credits for the major. At least four of the following courses must be taken if a student completes CSE 20 instead of BME 160 . We recommend that two or more of the courses should be BME courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "BME122H",
+       "BME128",
+       "BME130",
+       "BME132",
+       "BME140",
+       "BME177",
+       "BME178",
+       "ECE104",
+       "FMST124",
+       "FMST133",
+       "METX100",
+       "SOCY121",
+       "SOCY123",
+       "SOCY127P"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "BME 128 , BME 177, BME 178, ECE 104 , FMST 133 , and SOCY 127P all have additional prerequisites not covered by the major requirements."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Three or more of the following courses must be taken to meet the requirement of 40 upper-division credits for the major. At least four of the following courses must be taken if a student completes CSE 20 instead of BME 160 . We recommend that two or more of the courses should be BME courses.",
+        "BME 128 , BME 177, BME 178, ECE 104 , FMST 133 , and SOCY 127P all have additional prerequisites not covered by the major requirements.",
+        "Students may petition to have one upper-division biology credited as an elective, but most such courses have prerequisites that are not required for the major.",
+        "Students may petition to have one upper-division biology credited as an elective, but most such courses have prerequisites that are not required for the major."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME175"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is covered by the project in the entrepreneurship course:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "biotechnology-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biotechnology-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

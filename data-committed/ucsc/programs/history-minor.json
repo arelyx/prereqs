@@ -1,0 +1,68 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "history",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "History Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Three 5-credit lower-division (HIS 1– HIS 99 ) and/or 5-credit upper-division ( HIS 100 – HIS 199 ) history courses."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Five 5-credit upper-division ( HIS 100 – HIS 199 ) history courses."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   }
+  ]
+ },
+ "slug": "history-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/history-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

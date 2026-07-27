@@ -1,0 +1,2936 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "ART101",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Combines an introduction to computer programming for beginners with special topics that are essential for the digital arts. Basic concepts of programming are developed in the JavaScript language and applied to digital arts media, such as algorithmically generated still images and animations in two and three dimensions, sound art, and music composition. Presentation of digital artwork in the theater and via the web are covered in detail.",
+   "display_code": "ART 101",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "101",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Computer Programming for the Arts",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-101"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART104",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An exploration of the video medium including production using the digital video format. Digital video cameras will be used to produce digital source material to be manipulated in a non-linear digital editing system. Image manipulation, effects, and editing will be explored. A variety of video structures, theories, concepts, and forms will be examined through production, discussions, and viewing students' and artists' work.",
+   "display_code": "ART 104",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "104",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26 or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Digital Video",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-104"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART106A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces animation techniques, practices, history, and theories. Students learn techniques and process in 2D, stop-motion, and digital animation. Projects teach students the workflow of animating including script development, storyboarding, frame-by-frame animation, animatic, digital, and post-production. Students are required to research artists, both historical and contemporary, working in the field of animation and to be able to discuss the work. The course teaches theoretical and historical perspectives on animation and requires students to develop a critical analysis and vocabulary. (Formerly Introduction to 2D Animation).",
+   "display_code": "ART 106A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Introduction to 2D Animation",
+   "ge_codes": [],
+   "number": "106A",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "2D Animation",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-106a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART106C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to imagining, producing, and creating stop motion animations. Includes hands-on work in storyboarding, drawing and paper-based animation, pixalization, animation of everyday objects, and Claymation with basic characters and sets. Historical and contemporary animations will be viewed in class to inspire animation ideas, aesthetics, and practices. (Formerly Introduction to Stop Motion Animation.)",
+   "display_code": "ART 106C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Introduction to Stop Motion Animation.",
+   "ge_codes": [],
+   "number": "106C",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Stop Motion Animation",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-106c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART106E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Independent and collaborative creative projects using advanced computer methods. May include networking projects, virtual representations, interactive multimedia, installation, performance, 3D modeling and animation, or robotics. Emphasis on advanced critical and experimental approaches to computers as a unique art medium, and contemporary research issues. Students are required to enroll in scheduled lab section.",
+   "display_code": "ART 106E",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "106E",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "3D Modeling and Animation",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-106e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART106G",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on nonfiction creative storytelling using animation and new immersive media technology: augmented reality (AR), mixed reality (MR), locative media, and other technologies. Studio class teaches artmaking tools, skills, production and practices using immersive technologies. Students learn the process of developing nonfiction creative stories and documentaries through collaboration, personal narrative, community experiences, historical narrative and location-based storytelling.",
+   "display_code": "ART 106G",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "106G",
+   "prereq_groups": [
+    [
+     "ART80T"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Art 80T, plus three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26; or by permission of instructor. Enrollment restricted to sophomores, juniors, and seniors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Immersive Nonfiction",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-106g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART106O",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This project-centered studio course introduces 2D animation concepts, history, techniques and contemporary practices, production strategies, processes, and tools from a practical approach rooted in a historical/theoretical context. During each project's development, students research artists working within relevant categories and/or topics of animation, presenting findings to assist in their creative process.",
+   "display_code": "ART 106O",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "106O",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "2D Animation",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-106o"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART108",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Studio-based course teaching strategies for social change, activism, and organizing using social design tools. Students gain experience developing design pieces and artworks to communicate their position on issues affecting their lived experiences and community struggles. Students develop artworks and content using social design practices, tools, systems, and strategies. The final design piece/artwork can utilize graphic design, digital platforms and publications, maps and spatial representation, exhibition design, 3D models for physical spaces, public interventions, video, and digital media, among other possibilities, including analogical forms of gathering people and manifesting social positions. (Formerly Activate Media! New Media Art Activism and Organizing.)",
+   "display_code": "ART 108",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Activate Media! New Media Art Activism and Organizing.",
+   "ge_codes": [],
+   "number": "108",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Art, Design, and Social Practice",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-108"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART109",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on a wide range of media and time-based artmaking, which can include video art, interactive media, animation, VR/XR/AR, video installation, design and other 4D production and research. Special topics as announced.",
+   "display_code": "ART 109",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "109",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , or ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Special Topics in Media Art",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-109"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART10D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the fundamental principles of two-dimensional art and design. This is a large lecture-based course with smaller art studio-based sections (60% lecture/40% studio). Lectures, discussions and studio sections explore fundamental 2D drawing concepts of line, color shape, value, space, form, unity, balance, scale, proportion and texture. Through lectures, discussion and studio projects students learn to create and understand complex concepts in two dimensions.",
+   "display_code": "ART 10D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "IM"
+   ],
+   "number": "10D",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to art majors and proposed art majors during first-pass enrollment; restrictions lifted after first pass.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "2D Foundation",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-10d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART10E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the fundamental principles of three-dimensional art and design. This is a large lecture-based course with smaller art studio-based sections (60% lecture/40% studio). Lecture, discussion, and studio sections explore fundamental 3D concepts, techniques, and technical practices in sculpture, public art, architecture, process, and design. Through lectures, discussion, and studio projects students learn to create and understand complex concepts in 3D.",
+   "display_code": "ART 10E",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "IM"
+   ],
+   "number": "10E",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Enrollment is restricted to art majors during first-pass enrollment; restrictions lifted after first pass.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "3D Foundation",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-10e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART10F",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the fundamental principles of four-dimensional art and design. This is a large lecture-based course with smaller art studio-based sections (60% lecture/40% studio). Lecture, discussion, and studio sections explore fundamental principles of 4D/time-based art and design concepts, techniques, and technical practices. Computers and video, photo, sound, and lighting equipment are used to create short-form, time-based work. Through lectures, discussion, and studio projects students learn complex concepts in 4D.",
+   "display_code": "ART 10F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "IM"
+   ],
+   "number": "10F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Enrollment is restricted to proposed and declared ART majors during first-pass enrollment; restrictions lifted after first pass.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "4D Foundation",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-10f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART110",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Work moves toward individual directions in drawing. A variety of media are explored. Each student is expected to do 150 hours of drawing over the quarter.",
+   "display_code": "ART 110",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "110",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20L",
+     "ART20J"
+    ],
+    [
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 15 or ART 20L or ART 20J ; and two from ART 20G , ART 20H , ART 20I , ART 20K ; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Intermediate/Advanced Drawing",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-110"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART111",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on drawing from the human figure and exploring the figure for the purpose of personal expression and social communication. Intended for the intermediate/advanced drawing student.",
+   "display_code": "ART 111",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "111",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20L",
+     "ART20J"
+    ],
+    [
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 15 or ART 20L or ART 20J ; and two from ART 20G , ART 20H , ART 20I , ART 20K ; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Figure Drawing",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-111"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART112",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This course stresses alternative drawing processes, techniques, and materials. Intended for the intermediate or advanced student.",
+   "display_code": "ART 112",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "112",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20L",
+     "ART20J"
+    ],
+    [
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 15 or ART 20L or ART 20J ; and two from ART 20G , ART 20H , ART 20I , ART 20K ; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Mixed Media Works on Paper",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-112"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART113",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In this studio class students develop drawing, illustration, and comic-making skills and develop image/text-based work. Students are inspired by the McHenry Library Special Collections Comic Collections, following their interests to explore mainstream comics, alternative comics illustrations and zines. Then, students make their own comics, graphic novels, illustrations, and sequential media work in response. (Illustrating Stories: Fantasy and Documentary Narratives.)",
+   "display_code": "ART 113",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "113",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20L",
+     "ART20J"
+    ],
+    [
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 15 or ART 20L or ART 20J ; and two from ART 20G , ART 20H , ART 20I , ART 20K ; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Narrative Art: Illustrating Stories, Comics and Graphic Novels",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-113"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART114",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the complexities of contemporary drawing, using UC Santa Cruz's diverse landscapes as a point of departure. Beginning with an observational drawing approach, students gain confidence in perceptual drawing practices that lead to more personal, thematic, and conceptual directions. Topics such as linear perspective, notan, and decolonizationare scrutinized while exploring a range of drawing materials from charcoal to ink wash. A lightweight field easel is required to facilitate working at full scale.",
+   "display_code": "ART 114",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "114",
+   "prereq_groups": [
+    [
+     "ART20L",
+     "ART15",
+     "ART20J"
+    ],
+    [
+     "ART20G"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20L or ART 15 or ART 20J and two courses from ART 20G , 20H, 20I, 20K. Enrollment is restricted to proposed and declared art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Landscape Drawing",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-114"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART119",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Special topics in drawing as announced.",
+   "display_code": "ART 119",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20L",
+     "ART20J"
+    ],
+    [
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 15 or ART 20L or ART 20J ; and two from ART 20G , ART 20H , ART 20I , ART 20K ; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Special Topics in Drawing",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-119"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART125",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to environmental art and design through basic concepts, techniques, and studio practice.",
+   "display_code": "ART 125",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "125",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to juniors and seniors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Environmental Art Studio",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-125"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART130",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Continuation of the development of a basic foundation in painting with emphasis on the development of individual, experimental procedures. A foundation in drawing is recommended.",
+   "display_code": "ART 130",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130",
+   "prereq_groups": [
+    [
+     "ART20J",
+     "ART133",
+     "ART137",
+     "ART138",
+     "ART139"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One from ART 20J , ART 133 , ART 137 , ART 138 , ART 139 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26. A foundation in drawing is recommended. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Intermediate/Advanced Painting",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-130"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART131",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced studio-painting course exploring thematic development using the broad topic of fire as a starting point. Course is divided into four thematic units: color temperature, ecology, experimental process, and independent directions. The visual ideas of abstraction, representation, and metaphor are used to sharpen analytical skills and personal vision across all units, while interrogating associations with fire from the personal to the global.",
+   "display_code": "ART 131",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "131",
+   "prereq_groups": [
+    [
+     "ART20J",
+     "ART130",
+     "ART133",
+     "ART137",
+     "ART138"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One from ART 20J , ART 130 , ART 133 , ART 137 , ART 138 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Painting with Fire",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-131"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART132",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn the classical practice of painting the nude figure from life using traditional oil painting techniques. Students study short poses, limited color, and graduate to long pose, full color.",
+   "display_code": "ART 132",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "132",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Figure Painting",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-132"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART133",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Exploration of abstract painting through studio work, lectures, and critiques with emphasis on progressive abstraction, minimalism, op art, and abstract expressionism as well as other 20th-century and 21st-century forms. A foundation in drawing is recommended.",
+   "display_code": "ART 133",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133",
+   "prereq_groups": [
+    [
+     "ART20J",
+     "ART20L",
+     "ART130",
+     "ART137",
+     "ART138",
+     "ART139"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One from ART 20J , ART 20L , ART 130 , ART 137 , ART 138 , ART 139 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Abstract Painting",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-133"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART135",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Gives students a comprehensive understanding of the digital painting, from basic techniques, to new media art and industry application, to how these programs operate. Studies and assignments develop and expand skills of digital paint application. Students build a cumulative digital portfolio of all of the studies and assignments completed throughout the course.",
+   "display_code": "ART 135",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "135",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Digital Painting",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-135"
+  },
+  {
+   "catalog_instructor": "John Leanos",
+   "code": "ART136",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Production course guiding students through the collaborative design and production of large-scale public murals while examining the relationship between muralism and social movements across the Americas. Through hands-on studio practice, research, and fieldwork, students explore how murals have functioned as forms of political expression, public memory, cultural resistance, and community storytelling within struggles for social justice. The course considers muralism’s role in movements connected to labor, migration, Indigenous sovereignty, racial justice, and collective identity. Students develop technical and conceptual skills in collaborative design and large-scale painting while contributing to a collective public artwork.",
+   "display_code": "ART 136",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "136",
+   "prereq_groups": [
+    [
+     "ART20J"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20J , and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors and proposed art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Murals and Movements",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-136"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART137",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores contemporary landscape through the practice of plein air painting. Observational plein air painting will provides the foundation for the class. Instruction includes technical instruction in materials and technique as well as conceptual material. Student may work with oils, alkyds, or acrylic on panels, paper, or canvas.",
+   "display_code": "ART 137",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "137",
+   "prereq_groups": [
+    [
+     "ART20J",
+     "ART130",
+     "ART133",
+     "ART138",
+     "ART139"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One from ART 20J , ART 130 , ART 133 , ART 138 , ART 139 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Outdoor Painter's Project",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-137"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART138",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "ART 138",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "138",
+   "prereq_groups": [
+    [
+     "ART20J",
+     "ART130",
+     "ART133",
+     "ART137",
+     "ART139"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One from ART 20J, ART 130 , ART 133 , ART 137 , ART 139 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Facture and Meaning",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-138"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART139",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Special studies in painting as announced. A foundation in drawing is recommended.",
+   "display_code": "ART 139",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139",
+   "prereq_groups": [
+    [
+     "ART20J",
+     "ART130",
+     "ART133",
+     "ART137",
+     "ART138"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One from ART 20J , ART 130 , ART 133 , ART 137 , ART 138 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Special Topics in Painting",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-139"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART145",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the fundamentals and creation techniques for vector art and illustration using industry standard software. Explores the fundamentals and application of vector art and illustration with the projects, demos, and text-based lectures that walk you step by step though the processes. With feedback through weekly discussions, students build upon their existing knowledge and produce a skilled portfolio of digital work by the end of the quarter. Prerequisites for the summer course are waived. The summer offering is also open to non-art majors. The asynchronous online format allows students to watch video lectures and tutorials at their own pace as they complete the projects for the course and engage in critique with peers in written discussion forums.",
+   "display_code": "ART 145",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "145",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Vector Art and Illustration",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-145"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART15",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to the methods, materials, and purposes of drawing to develop perceptual and conceptual skills through a series of assignments, providing various approaches to drawing as a tool for creative exploration. Discussions and critiques facilitate the development of critical skills. Designed for students considering the art major.",
+   "display_code": "ART 15",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "15",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Drawing for the Major",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-15"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART150",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students concentrate on darkroom practices and explore visual ideas, directing their work toward individualized goals. Required work includes making photographic prints, reading historical and theoretical works, and examination of photographs.",
+   "display_code": "ART 150",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I and two non-photography lower-division art studios from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Darkroom Practices",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-150"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART152A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This studio-based course engages with the traditions and practices of the photographic book to examine and explore both narrative and non-narrative strategies. Students create a coherent photographic photo-book. Course examines the contemporary status of the photobook as well as the rich history of the medium. Editing, sequencing, and the production of photobooks is the centerpiece of this class.",
+   "display_code": "ART 152A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "152A",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I , and two courses from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Photographic Book",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-152a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART152C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the processes, materials, and techniques of large-format photography. Students learn the concepts and theories related to the view camera. Emphasizes advanced understanding of negative exposure, sheet-film processing, tonal-range manipulation, digital scanning, and large-format output. Contemporary issues and concepts explored.",
+   "display_code": "ART 152C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "152C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "View Camera Photography",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-152c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART153",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The natural evolution from still image making to moving image making is at the heart of this course as students look at this evolution from a historical, social, conceptual, and technical perspective. Artists who have been primarily working in still photography will learn to transition to creating with moving images by addressing time, structure, sound, and installation. Advanced discussions on film and digital formats, quality of image, camera support systems, and post-production will be explored through a combination of screenings, assignments, and readings.",
+   "display_code": "ART 153",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "153",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I , and two courses from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Still to Moving: Topics in Cinematography for Artists",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-153"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART154A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores historical and contemporary ways in which photography has been used to examine social issues and invites students to produce work that responds to issues that are important to them. Students learn about photograph's historical significance in raising social awareness, analyzing the aesthetic and methodological strategies of modern and contemporary photographers seeking to catalyze economic, political and cultural change through the production of images.",
+   "display_code": "ART 154A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "154A",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I , and two courses from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Being Social:  Photography and Engagement",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-154a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART154B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The impact of our industrialized culture on nature is one of the most crucial and urgent issues of our times. Discussions on environmental photography, place, and landscape, set out to investigate environmental change and to explore our relation to nature. Throughout the quarter students develop an environmental photography art project that follows in the photographic tradition of raising awareness and supporting policymakers, politicians, researchers, environmentalists, and activists.",
+   "display_code": "ART 154B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "154B",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I , and two courses from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Photography, Place, Environment",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-154b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART154C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The role of archives, photographers, and research in contemporary photographic practice is addressed by examining the special archives at the UCSC library and the Prelinger Library in San Francisco and by curating a group exhibition. Students make a project in multiple media, such as photography, video, text, installation, and drawing prompted by UCSC Special Collections' vast archives and collections. Through studio projects, readings, discussions, and case studies, students engage the immediate context of the university as source material for their artworks as a means to explore the effect that research and knowledge production might have on contemporary artistic practice.",
+   "display_code": "ART 154C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "154C",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I ; and two courses from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "After Archives: Photographers & Research",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-154c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART155",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Offers students the unique opportunity to live and learn and photograph outside the classroom, actively engaging locations across the state of California. Students will cover 2400 miles from Northern Mendocino County to the Salton Sea, Eastern Sierra, Death Valley, and Big Sur. Class exposes students to cultural, historical, and environmental issues facing California. Due to the rigor of the course, students must submit an application demonstrating the commitment and photo preparation necessary for successful completion of the class. Students are billed a materials fee of $550.",
+   "display_code": "ART 155",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "155",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Photo Field Research Quarter (PFRQ): California Road Trip",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-155"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART156",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Concentrates on photographic project development, developing analytical skills designed to help direct students' own photographic ideas. Helps students create a conceptual theoretical framework through image-making in the field and studio, through critique and discussion, through readings, and by studying the work of artists.",
+   "display_code": "ART 156",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "156",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One course from ART 20I ; and two non-photography lower-division art studios from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Project Development in Photography",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-156"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART157",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students are immersed in site specific field research over the span of a four-day in-the-field trip utilizing the public land of California, via the UC Natural Reserve System. Students are educated about research related to a specific place while exploring concepts of site-specificity and develop their own new inquiries about a place by experiencing it physically and by engaging with contemporary art concepts and art project development. Prerequisite(s): two lower-division studio art courses. Enrollment is restricted to junior and senior art majors. Enrollment is by permission of instructor. Due to the rigor of the course, students must submit an application demonstrating the commitment and photo preparation necessary for successful completion of the class.",
+   "display_code": "ART 157",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "157",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Immersive Arts Field Research",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-157"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART158",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students produce a portfolio of photographs, read historical and theoretical works, and study photographs and other art works.",
+   "display_code": "ART 158",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "158",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20L",
+     "ART20K",
+     "ART20J"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I , and two courses from ART 15 , ART 20L , ART 20K , ART 20J , 20G, 20H. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Advanced Photography",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-158"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART159",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Special studies in photography, concentrating on specific subject matter or media. Topics may include documentary photography, landscape, alternative processes, or mixed media.",
+   "display_code": "ART 159",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159",
+   "prereq_groups": [
+    [
+     "ART20I"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20I , and two courses from ART 15 , ART 20G , ART 20H , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Special Topics in Photography",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-159"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART161B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores traditional, contemporary, and experimental processes, issues, and concepts of relief and mono/mixed media printmaking. Students gain in-depth information and working knowledge to specialize individual ideas and build artistic development through varieties of class activities.",
+   "display_code": "ART 161B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "161B",
+   "prereq_groups": [
+    [
+     "ART20G",
+     "ART26"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: ART 20G or ART 26 and two non-print lower-division media studios from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Relief/Mixed Media Printmaking",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-161b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART161C",
+   "credits": "6",
+   "cross_listed": [],
+   "description": "Explores the history of printing from the world's oldest printed text developed in Korea to the latest cutting-edge technology, including laser cutting. Students study many aspects of both traditional and contemporary relief (woodblock) printmaking, both materials, tools, and techniques and the issues, concepts and history of the field. Through various class activities, field trips and cultural visits (to UNESCO World Heritage Sites) in Korea, students will be exposed to diverse and multi-regional art practices that will broaden their perspectives and increase their understanding not only in the fields of print media but in the larger contemporary visual culture.",
+   "display_code": "ART 161C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "161C",
+   "prereq_groups": [
+    [
+     "ART20G"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20G .",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Tradition and Innovation: Relief Printmaking in Korea",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-161c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART161J",
+   "credits": "6",
+   "cross_listed": [],
+   "description": "Course taught both at UCSC and at the host university in Tokyo. At UCSC, oil-based woodblock printmaking covers techniques, application of tools, materials, history, issues and concepts. In Japan, the class studies Mokuhanga, resulting in a great understanding and appreciation of this traditional process. Via class activities, field trips, excursions, and cultural visits, students encounter diverse multi-regional art practices, thus broadening perspectives and increasing understanding not only of print media but of contemporary visual culture.",
+   "display_code": "ART 161J",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "161J",
+   "prereq_groups": [
+    [
+     "ART20G"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20G .",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Mokuhanga: UCSC Printmaking in Japan",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-161j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART162A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to various methods used in making intaglio prints. Encourages individual artistic growth of imagery and technique through assignments designed to explore the medium. Includes discussion and critique of work with equal emphasis on technique and concept.",
+   "display_code": "ART 162A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "162A",
+   "prereq_groups": [
+    [
+     "ART20G",
+     "ART26"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: ART 20G or ART 26 and two non-print lower-division media studios from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Intaglio I",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-162a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART163A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to drawing, processing, and printing of lithographs from stone. Emphasis on discovery of tonal, textural, and expressive potential from the surface of the stone, while establishing individual directions in imagery. Condensed history of the medium, technical theory, and critique in lecture and demonstrations.",
+   "display_code": "ART 163A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163A",
+   "prereq_groups": [
+    [
+     "ART20G",
+     "ART26"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: ART 20G or ART 26 and two non-print lower-division media studios from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Lithography I",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-163a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART163C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the wonders of visual magnification of the natural world by using enlargement lenses, scanner, and microscopes to create photo-based and autographic prints that enhance strange and unperceived realities. Visits to the UCSC Norris Center for Natural History, Thimann's Roof Garden and Greenhouse will provide opportunities to explore natural world specimens for projects.",
+   "display_code": "ART 163C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163C",
+   "prereq_groups": [
+    [
+     "ART20G"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20G and two courses from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Magnified Imagination: A Printmaking Approach",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-163c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART164A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces water-based screen printing. Students are introduced to processes including basic equipment, printing techniques, printing papers, stenciling processes, and photographic and digital techniques. Emphasis is on continued development of content and aesthetic awareness through the possibilities of screen printing.",
+   "display_code": "ART 164A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "164A",
+   "prereq_groups": [
+    [
+     "ART20G",
+     "ART26"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: ART 20G or ART 26 and two non-print lower-division media studios from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Screenprinting",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-164a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART165",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores a unique approach reviewing the printed images in visual communications. A wide blend of traditional and cutting-edge print media processes with an interdisciplinary focus will be taught for conceptualizing, producing, and presenting the printed image.",
+   "display_code": "ART 165",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "165",
+   "prereq_groups": [
+    [
+     "ART20G"
+    ],
+    [
+     "ART160B",
+     "ART161B",
+     "ART161C",
+     "ART161J",
+     "ART162A",
+     "ART162B",
+     "ART163A",
+     "ART163B",
+     "ART163C",
+     "ART164A",
+     "ART164S",
+     "ART168",
+     "ART169"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 20G , and one course from ART 160B, ART 161B , ART 161C , ART 161J , ART 162A , ART 162B, ART 163A , ART 163B, ART 163C , ART 164A , ART 164S, ART 168 , ART 169 . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Print Media in Visual Communication",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-165"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART166",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to production of small edition books and multiples utilizing sequential visual imaging, narrative content, and mixed media in bookmaking. Provides instruction in conceptualizing, producing, and distributing printed artists' multiples. Ideas encouraged within a broad range of possibilities via the format of artists' books.",
+   "display_code": "ART 166",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "166",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26 or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Art of Bookmaking",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-166"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART168",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intermediate/advanced studio course exploring the processes, history, and the recent developments in contemporary photomechanical printmaking. Through experimentation and research students learn how to utilize photographic imagery, blending them in multiple layers and colors, thereby facilitating articulation of their conceptual foundations.",
+   "display_code": "ART 168",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "168",
+   "prereq_groups": [
+    [
+     "ART20G",
+     "ART26"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: ART 20G or ART 26 and two non-print lower-division media studios from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Photo-Based Printmaking",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-168"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART169",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Special studies in printmaking, as announced.",
+   "display_code": "ART 169",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "169",
+   "prereq_groups": [
+    [
+     "ART20G",
+     "ART26"
+    ],
+    [
+     "ART15",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: ART 20G or ART 26 and two non-print lower-division media studios from ART 15 , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L . Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Special Topics in Printmaking",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-169"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART170",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Confronted with significant global challenges, artists and a diverse array of world-makers have embraced forms of playing to reimagine and confront brutal realities, and engage in struggles for liberation. In this course, art and pedagogy are grounded in the concept and practice of playgrounds. This course invites students to design or assemble objects to transform spatial and sensory perceptions, exploring sociability, forms of gathering, playing and reconnection with the environment. Sculptures, objects, drawings and furniture require human interaction to reach their full potential.",
+   "display_code": "ART 170",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "170",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): three courses from ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L ; or by permission of instructor. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Playgrounds: Forms of Gathering and Playing",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-170"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART171",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "How can eating become an artistic, ecological, and political practice? This studio course examines food as a sculptural, relational, and environmental medium. Through shared meals, cooking sessions, field visits, and studio-based translation of gastronomic experiences into artistic forms, students investigate how taste, agriculture, and planetary systems intersect. Emphasis is placed on agroecology, environmental justice, and the digestive system as a site of learning and perception.",
+   "display_code": "ART 171",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "171",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Art, Food, and Ecology",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-171"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART172",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In-depth exploration of art in the public sphere. Students build an understanding of public art sparked by practical experience designing and developing projects. Theoretical aspects of contemporary public art, and an introduction to the range of current public art practices will be introduced through readings, lectures, and artist's talks. The combination of practical hands-on technique and theoretical ideology will enable students to fully develop their own project within the class.",
+   "display_code": "ART 172",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "172",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to juniors and seniors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Public Art: Memory, Landscape, and Artist as Activist",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-172"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART175",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Expands traditional definitions of art making taking art beyond the museum. Students take art making to the streets. We explore art making in the public sphere from murals to graffiti, street art to shop dropping, protests to public commissioned projects and community engaged interventions.",
+   "display_code": "ART 175",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "175",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26, or by consent of instructor. Enrollment restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Taking Art to the Streets",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-175"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART177",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides students with information, tools, and strategies to embark on arts career exploration and preparation, including strategies for addressing challenges and opportunities related to diversity, equity, and inclusion. Students explore their career values; network with guest speakers in creative fields (alumni, faculty, graduate students, professional artists); and prepare and create career-related documents (update resumes, cover letters, project proposals) as well as learn about a variety of arts careers through guest speakers, readings, and podcasts. Enrollment is by permission of the instructor and is restricted to juniors, seniors, and graduate students. Please contact the art advisor at artadvisor@ucsc.edu for the application.",
+   "display_code": "ART 177",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "177",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Careers in the Creative Economy",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-177"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART180B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "More advanced fabrication techniques in sculpture using wood, metal, industrial, and other materials. Techniques include carpentry and woodshop skills, and an introduction to sculptural forms, processes, and ideas. Demonstrations, slide lectures, and critical discussion of work help develop technical and conceptual skills. (Formerly ART 180B , Sculpture II.)",
+   "display_code": "ART 180B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly ART 180B , Sculpture II.",
+   "ge_codes": [],
+   "number": "180B",
+   "prereq_groups": [
+    [
+     "ART20H",
+     "ART120",
+     "ART121",
+     "ART122",
+     "ART124",
+     "ART125",
+     "ART129",
+     "ART172",
+     "ART183",
+     "ART188",
+     "ART189"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One course from ART 20H , ART 120, ART 121, ART 122, ART 124, ART 125 , ART 129, ART 172 , ART 183 , ART 188 , or ART 189 ; and two non-sculpture/intermedia/public art lower-division studios from ART 15 , ART 20G , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Intermediate/Advanced Sculpture",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-180b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART181",
+   "credits": "5",
+   "cross_listed": [
+    "LGST181"
+   ],
+   "description": "Explores strategies artists use to engage political subject matter in the 21st century. Students create their own projects, research and test approaches, techniques and strategies learning from the ways national and international artists encode and convey information in creating political work. Methods range from community collaboration; to tactical culture jamming, participatory collaborative projects, activism and intervention, symbolic and gestural work, artist-led projects, performances and community projects.",
+   "display_code": "ART 181",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "181",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Art, Power & Politics",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-181"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART182",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A research-based, studio art class in which students experiment with ideas and processes, and pursue projects exploring the materiality of color, including social and cultural effects and environmental implications. Following a sequence of short assignments paired with class critiques, students design and complete their own research-based art projects (in any media) that investigate color as a material phenomenon. Class discussions address physical, perceptual, psychological, geological, biological, cultural, social, political, philosophical and aesthetic aspects of color in concert with readings, guest lectures, field trips, technical demonstrations and visual presentations. Students harvest, make, and use dyes from plant materials grown at the UCSC Farm, and contribute to the ongoing development of a dye garden on campus.",
+   "display_code": "ART 182",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "182",
+   "prereq_groups": [
+    [
+     "ART15",
+     "ART20G",
+     "ART20H",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Materiality of Color",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-182"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART183",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focus on teaching intermediate to advanced students the processes and techniques of direct metal fabrication for contemporary sculpture and design. Explores a range of welding, cutting, and forming techniques and processes through demonstrations, slide lectures, field trips, and studio time. Demonstrations, slide lectures, and critical discussion of work help develop technical and conceptual skills.",
+   "display_code": "ART 183",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183",
+   "prereq_groups": [
+    [
+     "ART20H",
+     "ART120",
+     "ART121",
+     "ART122",
+     "ART124",
+     "ART125",
+     "ART129",
+     "ART172",
+     "ART180B",
+     "ART188",
+     "ART189"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One course from ART 20H , ART 120, ART 121, ART 122, ART 124, ART 125 , ART 129, ART 172 , ART 180B , ART 188 , ART 189 ; and two non-sculpture/intermedia/public art lower-division studios from ART 15 , ART 20G , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Metal Fabrication",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-183"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART184",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Emphasizes the conceptual aspects of 3D art and design using the laser cutter to prototype and experiment with construction methods and materials to create, represent, respond to, and reflect on 3D forms in space. Students learn about mixed-media fabrication techniques, materials, and processes that include using a woodshop and metal-fabrication shop. The course is structured around assignments that develop individual expressiveness, research skills, creative industry, and class participation. Students are billed a materials fee of $120. (Formerly 3D Art and Design: Laser Cutting and CNC Routing.)",
+   "display_code": "ART 184",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly 3D Art and Design: Laser Cutting and CNC Routing.",
+   "ge_codes": [],
+   "number": "184",
+   "prereq_groups": [
+    [
+     "ART20H",
+     "ART101",
+     "ART102",
+     "ART103",
+     "ART106E",
+     "ART108",
+     "ART120",
+     "ART121",
+     "ART122",
+     "ART124",
+     "ART125",
+     "ART129",
+     "ART146T",
+     "THEA106"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "One course from ART 20H , ART 101 , ART 102, ART 103, ART 106E , ART 108 , ART120, ART 121, ART 122, ART 124, ART 125 , ART 129, ART 146T / THEA 106 , ART 172 , ART 180B , ART 183 , ART 188 , ART 189 and two courses from ART 15 , ART 20G , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "3D Art and Design I",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-184"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART185",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Expands 3D art and design principles, methodologies, process, and skills via structured projects using 3D printers and modeling. The metal-fabrication shop and the woodshop allow students to prototype and experiment with construction methods and materials used to develop assignments. The course is structured around assignments that develop critical thinking, individual industry, research skills, creative expressiveness, and class participation. Students are billed a materials fee of $120. (Formerly 3D Art and Design: Printing and Prototyping.)",
+   "display_code": "ART 185",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly 3D Art and Design: Printing and Prototyping.",
+   "ge_codes": [],
+   "number": "185",
+   "prereq_groups": [
+    [
+     "ART20H",
+     "ART101",
+     "ART102",
+     "ART103",
+     "ART106E",
+     "ART108",
+     "ART180B",
+     "ART183",
+     "ART184",
+     "ART188"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "One course from ART 20H , ART 101 , ART 102, ART 103, ART 106E , ART 108 , ART 180B , ART 183 , ART 184 , ART 188 ; and two courses from ART 15 , ART 20G , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "3D Art and Design II",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-185"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART186",
+   "credits": "6",
+   "cross_listed": [],
+   "description": "In this immersive studio art class students create site-responsive artworks that explore art in a global context. We visit contemporary art museums, galleries and cultural spaces in London and Brighton England, enriching and deepening our understanding of art in a global context. Students create drawings, zines, graphic works, animation, photographs, installations and performances in response to visits to museums, galleries and exhibitions. Students create studio work in the new media studios at the University of Sussex in Brighton’s School of Media, Arts and Humanities and live on campus during the trip. This class includes artist lectures, docent tours, studio, museum, and gallery visits. Prerequisite(s): Three courses from: ART 15 , ART 20G , ART 20H , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors. Enrollment is by permission of the instructor.",
+   "display_code": "ART 186",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "186",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Art and Globalization",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-186"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART188",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intermediate/advanced course in bronze casting sculpture. This is the only foundry-specific class in the UC system. Create sculptural objects using the lost wax method--the oldest and still most used sculpture technique in monumental and small scale casting. Lectures and demonstrations are combined with work time in class. Students generate sculptural forms in wax then gate, invest, weld, chase, patina, and present at least one finished piece. Students are billed a materials fee of $175. May be repeated for credit. (Formerly Foundry: Metal Casting.)",
+   "display_code": "ART 188",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Foundry: Metal Casting.",
+   "ge_codes": [],
+   "number": "188",
+   "prereq_groups": [
+    [
+     "ART20H",
+     "ART120",
+     "ART121",
+     "ART122",
+     "ART124",
+     "ART125",
+     "ART129",
+     "ART172",
+     "ART180B",
+     "ART183",
+     "ART189"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One course from ART 20H , ART 120,ART 121, ART 122, ART 124, ART 125 , ART 129, ART 172 , ART 180B , ART 183 , ART 189 ; and two non-sculpture/intermedia/public art lower-division studios from ART 15 , ART 20G , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Bronze Casting: Foundry",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-188"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART189",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Special topics in sculpture as announced, concentrating on specific aspects of subject matter and media.",
+   "display_code": "ART 189",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "189",
+   "prereq_groups": [
+    [
+     "ART20H",
+     "ART120",
+     "ART121",
+     "ART122",
+     "ART124",
+     "ART125",
+     "ART129",
+     "ART172",
+     "ART175",
+     "ART180B",
+     "ART183",
+     "ART188"
+    ],
+    [
+     "ART15",
+     "ART20G",
+     "ART20I",
+     "ART20J",
+     "ART20K",
+     "ART20L",
+     "ART26"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): One course from ART 20H , ART 120, ART 121, ART 122, ART 124, ART 125 , ART 129, ART 172 , ART 175 , ART 180B , ART 183 , ART 188 ; and two non-sculpture/intermedia/public art lower-division studios from ART 15 , ART 20G , ART 20I , ART 20J , ART 20K , ART 20L , ART 26. Enrollment is restricted to art majors.",
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Special Topics in Sculpture",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-189"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART190A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides practice in using writing as a tool to support creative work--to generate ideas, to critically analyze and interpret artworks, and to communicate clearly with others about one's own work. Lectures, discussions, and visiting artist talks introduce and explore contemporary art contexts, ideas, discourses, artworks, artists, and practices to build students' capacities to place their work in the world. Readings introduce and unfold ideas for discussion, and provide examples of writing formats and purposes as they relate to art practice.",
+   "display_code": "ART 190A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "190A",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to junior and senior art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Writing for Artists",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-190a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART190B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced senior art majors create and complete a senior project to fulfill their comprehensive graduation requirement. Focuses on a weekly lecture, studio work, peer critique, and professional practices such as the documentation and exhibition of work. Enrollment is by application only. Application is sent to all senior art majors in early February, before spring enrollment.",
+   "display_code": "ART 190B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "190B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to senior art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Senior Project",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-190b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART191",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed for art majors at the upper-division level. Each student assists in a lower-division art course under the direct supervision of a faculty member. Students assist in technical instruction, critiques, and class discussions. May not be repeated for credit. Does not count toward upper-division major requirements. Enrollment restricted to art majors.",
+   "display_code": "ART 191",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "191",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Teaching Apprenticeship",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-191"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART192",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Teaching of a lower-division seminar under faculty supervision. (See course 42.) Students should have upper-division standing with a proposal supported by a faculty member willing to supervise. Students submit petition to sponsoring agency.",
+   "display_code": "ART 192",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "192",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Directed Student Teaching",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-192"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART193",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Supervised off-campus study conducted under the immediate and direct guidance of a faculty supervisor. To be used primarily by upper-division students doing part-time off-campus study. Students submit petition to sponsoring agency. Petitions may be obtained in the Art Department Office.",
+   "display_code": "ART 193",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "193",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-193"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A non-media specific class introducing a range of contemporary visual practices, contexts, issues, forms, and UCSC resources of use to artists, emphasizing relationships between material, form, meaning and between private expression, public communication, and systems of exchange.",
+   "display_code": "ART 194",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to junior and senior art majors. Strongly recommended for junior transfer art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Forms and Ideas",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-194"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART196",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Student will concentrate on completing work for comprehensive exhibition under the direction of his or her art adviser, with help from other faculty as needed. Students submit petition to sponsoring agency.",
+   "display_code": "ART 196",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "196",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Independent Senior Project",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-196"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART197",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Individual study in areas approved by sponsoring instructors. Students submit petition to sponsoring agency.",
+   "display_code": "ART 197",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "197",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Individual Study",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-197"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART198",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides for department-sponsored independent study programs off campus for which faculty supervision is not in person (e.g., supervision is by correspondence). Students submit petition to sponsoring agency.",
+   "display_code": "ART 198",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "198",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Independent Field Study",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-198"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Individual study in areas approved by sponsoring instructors. Students submit petition to sponsoring agency.",
+   "display_code": "ART 199",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Tutorial",
+   "display_code": "ART 199F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/art-art/100/art-199f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART20G",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the methods, materials, and history of printmaking and drawing as a tool for creative exploration. Understanding and development of concepts and skills are achieved through a series of lectures, studio demonstrations and practice, assignments, and critiques.",
+   "display_code": "ART 20G",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "20G",
+   "prereq_groups": [
+    [
+     "ART10D",
+     "ART10E",
+     "ART10F"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): two courses from ART 10D , ART 10E , ART 10F . Enrollment is restricted to proposed art and art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Print Media and Drawing",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-20g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART20H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces sculpture and art in public space. The course is composed of lectures, readings, discussions, studio assignments, and demonstrations.",
+   "display_code": "ART 20H",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "20H",
+   "prereq_groups": [
+    [
+     "ART10D",
+     "ART10E",
+     "ART10F"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): two courses from ART 10D , ART 10E , ART 10F . Enrollment is restricted to proposed art and art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Sculpture and Public Art",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-20h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART20I",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces basic skills and conceptual development in photography and related digital media through image-making in the field, on the web, and in laboratories, through readings, discussions, and critiques.",
+   "display_code": "ART 20I",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "20I",
+   "prereq_groups": [
+    [
+     "ART10D",
+     "ART10E",
+     "ART10F"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): two courses from ART 10D , ART 10E , ART 10F . Enrollment is restricted to proposed art and art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Photography",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-20i"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART20J",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the practices of drawing and painting in combination with the formal vocabulary of the visual arts. A discussion of values, form, color, and figure/ground relationships enters into each class.",
+   "display_code": "ART 20J",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "20J",
+   "prereq_groups": [
+    [
+     "ART10D",
+     "ART10E",
+     "ART10F"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): two courses from ART 10D , ART 10E , ART 10F . Enrollment is restricted to proposed art and art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Drawing and Painting",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-20j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART20K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces digital and new media art practice. Explores the use of the computer as tool and medium. Provides a hands-on introduction to the fundamentals of graphics; digital-image acquisition and manipulation; video; web design; and computer programming. Lectures, readings, and discussions examine the history of technology artwork and technology's relationship to contemporary culture.",
+   "display_code": "ART 20K",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "20K",
+   "prereq_groups": [
+    [
+     "ART10D",
+     "ART10E",
+     "ART10F"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): two courses from ART 10D , ART 10E , ART 10F . Enrollment is restricted to proposed art and art majors.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to New Media and Digital Artmaking",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-20k"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART20L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Drawing course using traditional media taught online through demonstration videos, digital submissions, and small-group critiques. Introduces the basics of observational drawing in a progression designed to develop and build skills in sighting, measuring, value, and rendering. Familiarity with Canvas, access to a digital camera, and purchase of art supplies are required. Assumes 30 hours per week of coursework.",
+   "display_code": "ART 20L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "20L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Drawing",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-20l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART210A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) In this site-specific course, students apply research to site work and art practice.",
+   "display_code": "ART 210A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "210A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Practice-Based Research Group: Sites",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-210a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART210B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The second in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) Students develop their research through the lens of systems and relationships.",
+   "display_code": "ART 210B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "210B",
+   "prereq_groups": [
+    [
+     "ART210A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 210A . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Practice-Based Research Group: Systems",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-210b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART210C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Third in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) Students engage with questions of context and community.",
+   "display_code": "ART 210C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "210C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Practice-Based Research Group: Contexts",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-210c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART220",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First-year seminar on methods of the field. Topics include: strategies for artists working in the field, social and environmental art research methods, histories and case studies (artists, projects, and issues).",
+   "display_code": "ART 220",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "220",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Methods and Histories",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-220"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART230",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First- or second-year graduate seminar focusing on contemporary theory as it relates to social and environmental art practice.",
+   "display_code": "ART 230",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "230",
+   "prereq_groups": [
+    [
+     "ART220"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 220 . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Theory and Practice",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-230"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART240",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "First-year seminar course introducing and exploring pedagogical methods and approaches in art education and in art practice. The teachings of Paolo Freire and others serve as working models to construct open and respectful learning environments both in and outside the classroom.",
+   "display_code": "ART 240",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "240",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Art Pedagogies",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-240"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART250",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First-year seminar course focusing on research and writing skills as a dimension of project-based art practice and as support for planning a thesis. This course can be taken for Satisfactory/Unsatisfactory grading only.",
+   "display_code": "ART 250",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "250",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Writing Matters",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-250"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART257",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Immersive site-specific field research over the span of a four-day (24 hours/overnight) field trip utilizing public lands of California, via the UC Natural Reserve System. Students engage and relate to a specific place while exploring concepts of site-specificity and develop their own new inquiries about a place by experiencing it physically and by learning about contemporary art concepts through topics of land use. Students also reflect upon the multiple factors that constitute a \"site\" and how they present possibilities for creative engagement, learn research method skills and approaches that are unique to each site historically, politically, culturally, and environmentally. Due to the rigor of the course, students must submit an application demonstrating the commitment and preparation necessary for successful completion of the class. Enrollment is restricted to graduate students.",
+   "display_code": "ART 257",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "257",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Immersive Arts Field Research",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-257"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART260",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Second-year seminar course focusing on exhibition, curatorial questions, and practices as they relate to presenting final thesis work for public reception. Covers practical, theoretical, and historical considerations for artists and researchers in the process of preparing for presenting the outcome of MFA research. Students examine multiple modalities for presentation and exhibition and address issues of diversity and access in exhibition and curatorial practices. This course can be taken for Satisfactory/Unsatisfactory grading only.",
+   "display_code": "ART 260",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "260",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Curatorial Collective",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-260"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART270A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First in a sequence of two second-year courses, continuing the focus on students' production and critique. Through peer discussions students continue to deepen their ability to engage in conceptual, scholarly, and interdisciplinary dialogue about their projects and the work of fellow students.",
+   "display_code": "ART 270A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "270A",
+   "prereq_groups": [
+    [
+     "ART210A"
+    ],
+    [
+     "ART210B"
+    ],
+    [
+     "ART210C"
+    ],
+    [
+     "ART220"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 210A , ART 210B , ART 210C , and ART 220 . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Project Development and Critique I",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-270a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART270B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Second in a sequence of two second-year courses, continuing the focus on students' production and critique. Through peer discussions students continue to deepen their ability to engage in conceptual, scholarly and interdisciplinary dialogue about their projects and the work of fellow students.",
+   "display_code": "ART 270B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "270B",
+   "prereq_groups": [
+    [
+     "ART270A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 270A . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Project Development and Critique II",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-270b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART280",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students produce their final project in conjunction with refining and completing their written thesis. Critique, tutorials, and directed study in writing and studio production leads to the presentation of their project.",
+   "display_code": "ART 280",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280",
+   "prereq_groups": [
+    [
+     "ART270A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ART 270A . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ART",
+   "title": "MFA Project Production",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-280"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART297",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Independent study or research for graduate students. Students submit petition to sponsoring agency.",
+   "display_code": "ART 297",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-297"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART299F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students complete work toward their final thesis project production with the guidance and supervision of a faculty member. Students obtain permission from the faculty member and submit petition to the sponsoring agency. Enrollment is restricted to graduate students in environmental art and social practice.",
+   "display_code": "ART 299F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/art-art/200/art-299f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART80D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introductory course for beginners. Various techniques examined and assigned in specific exercises. Work on projects using color film; this is a non-darkroom course. Examples given of photography from 1826 to the present. Balances historical study and practice through assigned homework exercises. Students must provide their own camera, preferably one with a manual setting. No phone cameras allowed.",
+   "display_code": "ART 80D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "IM"
+   ],
+   "number": "80D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Fundamentals of Photography",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-80d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART80E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the ways artists engage, interact, and comment upon ecology and nature in their artworks by examining environmental art from the 1960s through the present. Offers students a foundational introduction to art and artists working in the field of environmental and ecological art/activism.",
+   "display_code": "ART 80E",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "80E",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Environmental Art in the Expanded Field",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-80e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART80F",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Digital media was positioned as a radical new social and creative medium in the 1980s and 1990s. The ensuing decades have seen this area become ubiquitous mass media with structural inequalities, centralized ownership, environmental damage, and precarious labor conditions. At the same time, it has become the language of our time and remains a site of creativity and intervention and offers opportunities for social changes. This course provides an introduction to key issues in this area through the lens of race and ethnicity.",
+   "display_code": "ART 80F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "80F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Introduction to Issues in Digital Media",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-80f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART80Q",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the state’s vital queer art communities as a cultural phenomena, primarily through one-on-one interviews with contemporary queer artists in California. In the face of rising homophobia and transphobia in many parts of the country, this course centers and makes visible the work of BIPOC LGBTQIE+ artists, including those with disabilities, and many others. Develops literacy and comprehension of queer artists and their artworks, utilizes critical thinking while encouraging engagement in and understanding of the art itself. Through a combination of lectures, visual presentations, films, readings, short quizzes and discussion boards, students gain the skills and knowledge to become conversant in queer art.",
+   "display_code": "ART 80Q",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "80Q",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Queer Art",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-80q"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART80T",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to the digital tools and mediums available to contemporary art practices. Tools are explored from a historical and theoretical context and from a technical perspective through hands-on tutorials. A variety of artworks that utilize digital mediums are also examined. Weekly projects centered around these tools are completed and are the focus of peer discussions and reviews. The course covers photo and vector editors, sound and video editing, and basic 3D modeling and animation.",
+   "display_code": "ART 80T",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-T"
+   ],
+   "number": "80T",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Digital Tools for Contemporary Art Practice",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-80t"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART80X",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "What is sexually explicit imagery all about? Is it art, porn, trash, political hot potato, or hot commodity? This course enables students to critically explore these questions and more in an academic setting.",
+   "display_code": "ART 80X",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "80X",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ART",
+   "title": "Ars Erotica: Sexual Imagery in Culture and Art",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-80x"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ART99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ART 99",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ART",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/art-art/1-99/art-99"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "ART"
+}

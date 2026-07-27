@@ -1,0 +1,680 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "earth-and-planetary-sciences",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Environmental Sciences B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The University of California, Santa Cruz environmental sciences (ESCI) major is an interdepartmental, undergraduate-only program. The purpose of the ESCI major is to educate students interested in environmental science problems and issues, with a focus on issues within the physical sciences (as opposed to focusing on biological sciences). The major specializes primarily on the following areas:",
+     "Hydrosphere: water resources, water quality, aquatic chemistry, physical oceanography, chemical oceanography, glaciology",
+     "Pollution and transport: environmental toxicology, environmental transport/fluid mechanics, environmental monitoring",
+     "Global scale environment: climate, climate dynamics, global cycles of water, carbon and nutrients, remote sensing of the environment",
+     "Atmosphere: meteorology, air quality, atmospheric chemistry",
+     "The core faculty of the major are primarily from two departments, Earth and Planetary Sciences and Ocean Sciences. Faculty from other departments such as Microbiology and Environmental Toxicology and Environmental Studies may also be involved.",
+     "In addition to providing comprehensive preparation in the basic physical sciences, and particular breadth and depth in environmental sciences, the curriculum is structured to prepare students for the competitive graduate school and career marketplace. The core of the major includes calculus, physics, chemistry, and core foundational upper-division environmental sciences courses.",
+     "Graduates of the ESCI major are expected to continue on to a variety of careers, such as:",
+     "Business and industry",
+     "Environmental consulting",
+     "Governmental agencies at the federal, state, and local level",
+     "Non-profit organizations",
+     "Research at universities, governmental research institutions, or other scientific agencies",
+     "Graduate/professional school in areas such as science, engineering, teaching, law, public health, business",
+     "For more information about the affiliated faculty and staff for the major, including areas of interest and facilities, contact e-mails and phone numbers, and how to declare this major, please see our website ."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "The ESCI major has three broad program learning outcomes, each with three specific learning outcomes:",
+     "PLO 1: Disciplinary Knowledge Goals",
+     "Reservoirs: Understand and describe the properties of the various environmental “reservoirs”, which represent different, interacting physical regimes. For example, a global model might have the atmosphere, oceans, plants and soils as four primary interacting reservoirs.",
+     "Application: Apply the knowledge of reservoirs and processes to explain, analyze and predict phenomena within the environmental sciences.",
+     "PLO 2: Quantitative Reasoning Goals",
+     "Calculation: Utilize mathematical tools (e.g. algebra, calculus) to address questions in the environmental sciences.",
+     "Visualization: Interpret and produce visual representations of data in the environmental sciences (e.g. graphs and charts) that conform to disciplinary standards.",
+     "Analysis: Use quantitative analysis as the basis for drawing insights and conclusions, while expressing the appropriate assumptions and qualifications.",
+     "PLO 3: Written Communication Goals",
+     "Mechanics: Write sentences with correct grammar, punctuation, and spelling.",
+     "Conventions: Accurately utilize the formatting, stylistic, citation and bibliographic conventions of environmental sciences in the written document.",
+     "Organization: Construct paragraphs, sections and an overall document that flows logically and persuasively argues a thesis."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Academic advising is available at the Department of Earth and Planetary Sciences (EPS) undergraduate advising office located in the Earth and Marine Sciences Building, and via email at epsadvising@ucsc.edu . The Environmental Sciences undergraduate web pages contain information on all aspects of major advising including: academic planning, upper and lower-division course descriptions, enrichment opportunities in the major like study abroad and undergraduate research, and how to make an appointment with an adviser. Each student should become familiar with the information posted on the website; for further assistance, contact the EPS undergraduate advising office. Transfer students should consult Getting Started in the Major: Transfer Students for more detailed information about academic advising."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required. Students begin with general chemistry and mathematics, and an introductory course in physical geology.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     "Courses completed at a community college or four-year university and/or advanced placement (AP) course equivalencies may be used to fulfill prerequisites.",
+     "Every proposed environmental science student will receive emails about advising and first quarter enrollment during the summer. Students with further questions about what to enroll in should email an e nvironmental sciences undergraduate adviser .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy requirements for the environmental sciences major must be taken for a letter grade, with the exception of the following courses, which may be taken pass/no pass: ESCI 195 , EART 198 and EART 199 and OCEA 199 ."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Relevant courses taken at UC Santa Cruz or other institutions may be substituted for degree requirements by approved petition. Please see the undergraduate advising office for the substitution petition form and more information about this process."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students interested in pursuing multiple majors within the Earth and environmental sciences may NOT declare the following combination of majors:",
+     "Should a student choose to double major, they must qualify for and complete the disciplinary communication and comprehensive requirements for each of the majors."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are determined by a review of grades (typically 3.50 or above) at the time a student applies for graduation. A faculty committee makes the decision based on the quality of all coursework, but especially in the courses required for the major. Extra coursework or independent study as well as more intensive or rigorous coursework and the quality of a capstone project may also be taken into consideration. Highest honors may also be awarded in exceptional cases when a student’s overall grade point average (GPA) is above 3.75 and performance in the senior capstone requirement is equally outstanding. The program reserves the right to withhold honors and highest honors based on other criteria, such as an incident of academic dishonesty. Honors in the senior thesis are determined independently of major honors, and must be approved by two faculty readers."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The environmental sciences program welcomes applications from prospective transfer students. Students should reference assist.org to determine course equivalencies.",
+        "Transfer students planning on attending UC Santa Cruz to pursue an environmental sciences major should contact the undergraduate advisers for transfer preparation information and reference assist.org to determine which courses are equivalent to these required courses. Having this coursework completed prior to transferring allows students greater flexibility in scheduling and completing their major.",
+        "To be considered for admission as a proposed ESCI B.S. major, transfer students must complete the following courses or their equivalents prior to transfer, by the end of the spring term for students planning to enter in the fall."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of these options",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A minimum GPA of 2.00 must be obtained in the courses listed above.",
+        "type": "prose"
+       },
+       {
+        "text": "A minimum GPA of 2.00 must be obtained in the courses listed above.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH11A",
+       "MATH11B",
+       "PHYS6A",
+       "PHYS6L"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Plus these courses",
+       "prose": [
+        "A minimum GPA of 2.00 must be obtained in the courses listed above.",
+        "A minimum GPA of 2.00 must be obtained in the courses listed above."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS6B",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended Courses",
+       "prose": [
+        "In addition, the following courses are recommended prior to transfer to ensure timely graduation:",
+        "Students admitted to UC Santa Cruz in a major other than environmental sciences that wish to petition to declare environmental sciences must meet the major screening requirements prior to transferring to UC Santa Cruz and submit a major declaration appeal during the summer session. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision. Appeals will be considered on a case-by-case basis and decisions are final. Students may not appeal more than one time.",
+        "Students admitted to UC Santa Cruz in a major other than environmental sciences that wish to petition to declare environmental sciences must meet the major screening requirements prior to transferring to UC Santa Cruz and submit a major declaration appeal during the summer session. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision. Appeals will be considered on a case-by-case basis and decisions are final. Students may not appeal more than one time."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Once you have submitted your intent to register at UC Santa Cruz, here is a step-by-step guide to transferring your coursework and getting enrolled:"
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification Policy and Declaration Process",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "To qualify for the environmental sciences major, a student must have an academic planning form signed and approved by an adviser. All major qualification courses must be taken for a letter grade and passed with a grade of C or higher. Some courses may be satisfied via exam credit .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should consult the Transfer and Information Policy section for information about major qualification.",
+        "Students are expected to complete the academic planning and online petition by the campus declaration deadline.",
+        "Students who satisfy the major qualification requirements and who petition to declare the major by the campus major declaration deadline (i.e., before enrolling in their third year or the equivalent) will be admitted to the major.",
+        "To qualify for the environmental sciences major, a student must have an academic planning form signed and approved by an adviser. All major qualification courses must be taken for a letter grade and passed with a grade of C or higher. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Complete one of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH11B",
+       "PHYS6A",
+       "PHYS6L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who do not satisfy the major qualification requirements by the campus major declaration deadline and are notified that they are not eligible to declare the major may submit a major declaration appeal. Students must submit their major declaration appeal within 15 days from the date the notification was sent. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision. Appeals will be considered on a case-by-case basis and decisions are final. Students may not appeal more than one time."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students who qualify start the declaration process by creating an academic plan and then scheduling an appointment with an environmental sciences adviser. You must consult with the department’s undergraduate advising office to have your academic plan reviewed and approved prior to being able to declare the environmental sciences major. Students should petition to declare the major as soon as they have met qualification requirements and/or reached their declaration deadline quarter, whichever comes first."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "EART 5 , EART 10 , EART 20 , and the corresponding labs are interchangeable."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "EART 5 , EART 10 , EART 20 , and the corresponding labs are interchangeable."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS25",
+       "ESCI30",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "* ESCI 30 students who were formerly proposed or declared majors in biology, biochemistry, bioengineering, or other related majors may have other options to fulfill this requirement. Please inquire with an adviser."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "* ESCI 30 students who were formerly proposed or declared majors in biology, biochemistry, bioengineering, or other related majors may have other options to fulfill this requirement. Please inquire with an adviser."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ESCI100A",
+       "ESCI100B",
+       "ESCI160"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take five upper-division Earth sciences, ocean sciences, and/or environmental sciences courses of 5 credits or more, chosen from EART 100-199 (excluding EART 196B and 198), OCEA 100 -199, and/or ESCI (100-189). No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "At least five elective courses.",
+       "prose": [
+        "Students take five upper-division Earth sciences, ocean sciences, and/or environmental sciences courses of 5 credits or more, chosen from EART 100-199 (excluding EART 196B and 198), OCEA 100 -199, and/or ESCI (100-189). No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and 115L, taken together, are approved as one elective. METX 150 and ECE 180J are also allowed as electives. Up to two courses from other departments may be considered for upper-division elective credit by permission of a faculty advisor. Please consult with an advisor for more details.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "ESCI191"
+       ],
+       [
+        "ESCI195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students fulfill the disciplinary communication (DC) requirement through successful completion of either (1) one of the environmental sciences senior capstone seminars ( ESCI 191 ) or (2) a senior thesis based on original research performed by the student (completion of ESCI 195 : Senior Thesis is required)."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement. The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career. Students should consult an adviser if they have any questions about the timing of their proposed comprehensive requirement activity.",
+        "Other  comprehensive options will not be considered unless they also satisfy the DC requirement.",
+        "Courses that are used to satisfy the comprehensive requirement may not also count toward fulfilling the upper-division elective requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Satisfactory completion of one of the following capstone course offerings:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "ESCI 195 requires original research performed by the student. Approval from a faculty sponsor is required prior to embarking on a senior thesis. Completion of the senior thesis is necessary to pass ESCI 195 . Students expecting to write a senior thesis for their comprehensive requirement should contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least three quarters for completion.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ESCI195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ESCI 195 requires original research performed by the student. Approval from a faculty sponsor is required prior to embarking on a senior thesis. Completion of the senior thesis is necessary to pass ESCI 195 . Students expecting to write a senior thesis for their comprehensive requirement should contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least three quarters for completion. ESCI 195 also satisfies the DC requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Senior Thesis",
+       "prose": [
+        "ESCI 195 requires original research performed by the student. Approval from a faculty sponsor is required prior to embarking on a senior thesis. Completion of the senior thesis is necessary to pass ESCI 195 . Students expecting to write a senior thesis for their comprehensive requirement should contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least three quarters for completion.",
+        "ESCI 195 also satisfies the DC requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ESCI191"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Enrollment in ESCI 191 is limited to environmental science majors with senior standing. ESCI 191 also satisfies the DC requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Capstone Seminar",
+       "prose": [
+        "Enrollment in ESCI 191 is limited to environmental science majors with senior standing.",
+        "ESCI 191 also satisfies the DC requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "environmental-sciences-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/environmental-sciences-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

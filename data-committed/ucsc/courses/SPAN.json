@@ -1,0 +1,853 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Stephanie Lain",
+   "code": "SPAN1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first-year program is aimed at developing proficiency in Spanish. Listening, speaking, reading, and writing are addressed through classroom practice and supplemented by language laboratory work. Classes are taught entirely in Spanish and are held three days a week.",
+   "display_code": "SPAN 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): Placement into Spanish 1 via the online Spanish Placement Assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "First-Year Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-1"
+  },
+  {
+   "catalog_instructor": "Eve Zyzik, Josefina  Bittar",
+   "code": "SPAN114",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced conversation and composition based on extensive readings in the humanities and social sciences. Students interested in this course who have not taken the prerequisite should meet with the instructor prior to the first class meeting.",
+   "display_code": "SPAN 114",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "114",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter",
+   "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements; SPAN 6 , or SPHS 6 , placement by assessment, or by instructor consent.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Advanced Conversation and Composition",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-114"
+  },
+  {
+   "catalog_instructor": "Eve Zyzik",
+   "code": "SPAN130",
+   "credits": "5",
+   "cross_listed": [
+    "LGST130A"
+   ],
+   "description": "Introduction to legal language in Spanish by surveying a range of topics in civil law, criminal law, and immigration law. While acquiring the necessary vocabulary to talk about these topics, students gain awareness of the functioning of the U.S. legal system as well as the ways in which language intersects with the law. Comparisons with Latin America and Spain are made when relevant. Class discussions provide opportunities for debate, analysis, and critical reflection.",
+   "display_code": "SPAN 130",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Spanish for the Legal Profession",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-130"
+  },
+  {
+   "catalog_instructor": "The Staff, Mark Amengual",
+   "code": "SPAN140",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the sound system of Spanish, compares the English and Spanish systems of pronunciation, and teaches the phonetic/phonological variation across dialects of Spanish.",
+   "display_code": "SPAN 140",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ],
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 ; and LING 50 , or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Sounds of Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-140"
+  },
+  {
+   "catalog_instructor": "Maria Gonzalez Pagani",
+   "code": "SPAN141",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This practical course builds upon students' existing knowledge of Spanish grammar. Introducing linguistic framework, some analysis tools, and intensive practice, it aims at fostering students' reflection about Spanish grammar, consolidating their knowledge of the system of rules underlying it, and improving their grammatical accuracy.",
+   "display_code": "SPAN 141",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "141",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Advanced Spanish Grammar",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-141"
+  },
+  {
+   "catalog_instructor": "M. Victoria Gonzalez Pagani",
+   "code": "SPAN142",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Deals with topics related to processes of word formation in Spanish, extending to some issues related to the syntax and morphology of set phrases as well as topics related to lexicon. One of the goals is to widen students' knowledge of Spanish vocabulary.",
+   "display_code": "SPAN 142",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "142",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement by assessment. Enrollment is restricted to Spanish studies majors and minors.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "El mundo de las palabras. Spanish Morphology and Lexicon",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-142"
+  },
+  {
+   "catalog_instructor": "Maria Gonzalez , Josefina Bitta",
+   "code": "SPAN150",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Taught in Spanish. Students learn the major properties of the Spanish language from a linguistics perspective. Topics covered include: phonetics/phonology, morphology, and syntax.",
+   "display_code": "SPAN 150",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "LING50"
+    ],
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": "Winter, Spring",
+   "raw_requirements": "Prerequisite(s): LING 50 ; and SPAN 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Topics in Hispanic Linguistics: Introduction to Hispanic Linguistics",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-150"
+  },
+  {
+   "catalog_instructor": "The Staff, Maria Gonzalez Pagani, Eve Zyzik, Mark Amengual",
+   "code": "SPAN151",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Taught in Spanish. Explores the linguistic variety of the Spanish language in the Iberian Peninsula, the former Spanish colonies, and the Americas from a descriptive, synchronic perspective. Issues of languages in contact, variation in speech communities, and bilingualism are also introduced.",
+   "display_code": "SPAN 151",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151",
+   "prereq_groups": [
+    [
+     "SPAN150"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 150 . Enrollment is restricted to senior Spanish studies majors.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Topics in Hispanic Linguistics: Varieties of Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-151"
+  },
+  {
+   "catalog_instructor": "Christian Ruvalcaba",
+   "code": "SPAN152",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Taught in Spanish. Serves as a linguistic introduction to the varieties of Spanish that are currently spoken in the United States. Some central topics include: code-switching, language maintenance, and language contact phenomena.",
+   "display_code": "SPAN 152",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "152",
+   "prereq_groups": [
+    [
+     "SPAN150"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 150 . Enrollment is restricted to senior Spanish studies majors.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Topics in Hispanic Linguistics: Spanish in the U.S.",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-152"
+  },
+  {
+   "catalog_instructor": "The Staff, Maria Gonzalez Pagani, Eve Zyzik, Mark Amengual",
+   "code": "SPAN153",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Taught in Spanish. Examines the Spanish language as it is acquired and used by non-native speakers. Provides an overview of language-teaching methodologies and in-depth treatment of areas of Spanish grammar/lexicon that are generally problematic for English-speaking learners. (Formerly Topics in Hispanic Linguistics: Spanish as a Second Language.)",
+   "display_code": "SPAN 153",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Topics in Hispanic Linguistics: Spanish as a Second Language.",
+   "ge_codes": [],
+   "number": "153",
+   "prereq_groups": [
+    [
+     "SPAN150"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 150 . Enrollment is restricted to senior Spanish studies majors.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Spanish Language Teaching",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-153"
+  },
+  {
+   "catalog_instructor": "Eve Zyzik",
+   "code": "SPAN154",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how Spanish is used in context by speakers to achieve particular meanings and to realize various speech acts (e.g., requests, apologies, etc.) in socially appropriate ways. Pragmatic variation across the Spanish-speaking world is examined in depth.",
+   "display_code": "SPAN 154",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "154",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ],
+    [
+     "SPAN150"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement assessment; and SPAN 150 . Enrollment is restricted to juniors and seniors majoring in Spanish studies, language studies or linguistics.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Topics in Hispanic Linguistics: Spanish Pragmatics",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-154"
+  },
+  {
+   "catalog_instructor": "Josefina  Bittar",
+   "code": "SPAN155",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores language contact in the Spanish-speaking world from a linguistic and a sociocultural perspective. Analyzes contact-induced change in Spanish and in the languages with which Spanish is in contact. Students also discuss social identity, linguistic attitudes and ideologies, and language maintenance and revitalization. Prerequisite(s): Spanish 150.",
+   "display_code": "SPAN 155",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "155",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Spanish 150.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Topics in Hispanic Linguistics: Language Contact in the Spanish Speaking World",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-155"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN156A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores Latin American culture through its cinematic art. Students are exposed to and participate in discussion, analysis, and commentary on important social, historical, and political issues presented in the films. Provides a greater understanding of Latin America, and works toward advanced communicative proficiency and comprehension of linguistic variations in countries such as Cuba, Argentina, México, Bolivia, Chile, and others.",
+   "display_code": "SPAN 156A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "156A",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "The Language of Latin America Cinema",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156a"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN156E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A broad survey of Spanish cultural topics, including history, politics, religions, art forms, music, and films. It is based on extensive conversations, discussion, and composition. Particular emphasis is placed on key changes that have occurred during the 20th century in Spain. Classes conducted through commentary on texts read (or viewed), oral presentations, and debate. Recommended for students preparing to go to Spain with EAP.",
+   "display_code": "SPAN 156E",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "156E",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Spanish Culture",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156e"
+  },
+  {
+   "catalog_instructor": "The Staff, Maria Gonzalez Pagani",
+   "code": "SPAN156F",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topic-oriented language course on sociopolitical and historical issues as seen through humor in different genres and media. Topics include Mafalda and Condorito (comic strips), Rius (collage of comic strips, photographs and original documents), Continflas and Almodovar (cinema), El Teatro Campesino (theater), Ana L., Vega (literature), Les Luthiers (song and music). Course deals with written and oral discourse pertaining to the following Spanish language varieties: Rio de la Plata, Mexican, Caribbean, U.S., and Peninsular. Intensive writing and speaking in Spanish.",
+   "display_code": "SPAN 156F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "156F",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement into Spanish 156F via the online Spanish Placement Examination.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "El Humor en Espanol",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156f"
+  },
+  {
+   "catalog_instructor": "The Staff, Byron Barahona",
+   "code": "SPAN156J",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces Central American cultures, including an overview of historical, political, and socioeconomic development, and cultural products, such as literature, film, and visual arts. Emphasis placed on the forces that shaped contemporary Central America, cultural and ethnic diversity, identity, revolutionary processes, diaspora, and building democracy in post-civil conflict societies. Draws attention to the linguistic features of Central American variations of Spanish. The class is conducted in Spanish with high expectations to enhance oral and written proficiency through writing assignments, research tasks, group presentations, analysis, discussion, and debate.",
+   "display_code": "SPAN 156J",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "156J",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Contemporary Central America",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156j"
+  },
+  {
+   "catalog_instructor": "The Staff, Maria Gonzalez Pagani, Mark Amengual",
+   "code": "SPAN156K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on the main linguistic approaches that have discourse (i.e. pieces of talk larger than a sentence) as their main object of study. Reviews the theoretical foundations of each approach and the main tools used, with special attention to those studies developed about Spanish in all its varieties.",
+   "display_code": "SPAN 156K",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "156K",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ],
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or SPHS 6 , and LING 50 , or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Spanish Discourse Analysis",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156k"
+  },
+  {
+   "catalog_instructor": "Stephanie Lain",
+   "code": "SPAN156L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores environmental issues in Latin America and their impact on contemporary society. Topics relate to indigenous communities, the management of natural resources, and include a Reacting to the Past role-playing game, \"Negotiating a Rainforest's Ransom: Ecuador 2007-2013.\"",
+   "display_code": "SPAN 156L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "156L",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Span 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Society and Sustainability in Latin America",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156l"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN156M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An interdisciplinary survey of the cultural history of the Mexican people in both Mexico and the U.S. Southwest. Topics include literature, art, folklore, oral tradition, music, politics, as well as everyday cultural manifestations. Conducted in Spanish. May be counted toward fulfillment of upper-division major requirements for Latin American and Latino studies and language studies.",
+   "display_code": "SPAN 156M",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "156M",
+   "prereq_groups": [
+    [
+     "SPAN6",
+     "SPHS6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Span 6 or SPHS 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Mexico and the Southwest",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-156m"
+  },
+  {
+   "catalog_instructor": "Josefina Bittar",
+   "code": "SPAN157",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how Spanish structural patterns can vary depending on social group, social situation, and place. Applies linguistic terminology and uses research tools to describe variability of structure (phonology, grammar, and pragmatics) among Spanish dialects.",
+   "display_code": "SPAN 157",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "157",
+   "prereq_groups": [
+    [
+     "SPAN150"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 150 . Enrollment restricted to Spanish studies majors.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Spanish Sociolinguistics",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-157"
+  },
+  {
+   "catalog_instructor": "Christian Ruvalcaba",
+   "code": "SPAN158",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an introduction to Spanish in the borderlands through linguistic, sociocultural, historical and critical lenses. Explores issues of language maintenance and loss, hybridity and conflict, linguistic variation and identity, as well as hegemony and resistance within the context of the borderlands.",
+   "display_code": "SPAN 158",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "158",
+   "prereq_groups": [
+    [
+     "SPAN6"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): SPAN 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Spanish in the U.S.-Mexico Borderlands",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-158"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+   "display_code": "SPAN 194",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "SPAN",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-194"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "SPAN 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "SPAN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-199"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "SPAN 199F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "SPAN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/span-spanish/upper-division/span-199f"
+  },
+  {
+   "catalog_instructor": "Carolina  Castillo-Trelles, Sandra Malone",
+   "code": "SPAN2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first-year program is aimed at developing proficiency in Spanish. Listening, speaking, reading, and writing are addressed through classroom practice and supplemented by language laboratory work. Classes are taught entirely in Spanish and are held three days a week.",
+   "display_code": "SPAN 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "SPAN1"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 1 or placement into Spanish 2 via the online Spanish Placement Assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "First-Year Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-2"
+  },
+  {
+   "catalog_instructor": "Sandra Malone, Byron Barahona",
+   "code": "SPAN3",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first-year program is aimed at developing proficiency in Spanish. Listening, speaking, reading, and writing are addressed through classroom practice and supplemented by language laboratory work. Classes are taught entirely in Spanish and are held three days a week.",
+   "display_code": "SPAN 3",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3",
+   "prereq_groups": [
+    [
+     "SPAN2"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 2 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "First-Year Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-3"
+  },
+  {
+   "catalog_instructor": "Carolina  Castillo-Trelles, Sandra Malone, Byron  Barahona",
+   "code": "SPAN4",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Includes comprehensive grammar review, composition, readings, and discussion. Reading and audiovisual material deal with various sociopolitical and cultural issues in the Spanish-speaking world. Classes are conducted in Spanish.",
+   "display_code": "SPAN 4",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "4",
+   "prereq_groups": [
+    [
+     "SPAN1B",
+     "SPAN3"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 1B or SPAN 3 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Second-Year Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-4"
+  },
+  {
+   "catalog_instructor": "Carolina  Castillo-Trelles, Byron  Barahona",
+   "code": "SPAN5",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Includes comprehensive grammar review, composition, readings, and discussion. Reading and audiovisual material deal with various socio-political and cultural issues in the Spanish-speaking world. Classes are conducted in Spanish.",
+   "display_code": "SPAN 5",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "5",
+   "prereq_groups": [
+    [
+     "SPAN4"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 4 or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Second-Year Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-5"
+  },
+  {
+   "catalog_instructor": "Stephanie Lain, Carolina Castillo-Trelles",
+   "code": "SPAN5M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn medical vocabulary, useful expressions, suitable grammatical structures, and cultural background to be able to interact with Spanish-speaking patients and doctors. Medical Spanish fulfills language requirement for Human Biology majors and Global Community Health B.A. and B.S. majors.",
+   "display_code": "SPAN 5M",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "5M",
+   "prereq_groups": [
+    [
+     "SPAN4"
+    ],
+    [
+     "SPHS4",
+     "SPHS5",
+     "SPHS6"
+    ],
+    [
+     "SPAN5",
+     "SPHS4"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 4 ; or SPHS 4 , or SPHS 5 , or SPHS 6 ; or placement into SPAN 5 or SPHS 4 via assessment. Enrollment is restricted to human biology majors and global community health B.A. and B.S. majors.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Medical Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-5m"
+  },
+  {
+   "catalog_instructor": "Bryon Barahona",
+   "code": "SPAN6",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Increases oral and written proficiency using authentic reading materials which focus on such topics as social class, ethnicity, education, religion, economic, and political developments in the Spanish-speaking world.",
+   "display_code": "SPAN 6",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "6",
+   "prereq_groups": [
+    [
+     "SPAN5",
+     "SPAN5M"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Prerequisite(s): SPAN 5 or SPAN 5M or placement by assessment.",
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Second-Year Spanish",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-6"
+  },
+  {
+   "catalog_instructor": "Eve Zyzik",
+   "code": "SPAN60",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the central role of soccer (fútbol/futebol) in Latin America and Spain as a cultural, political, and economic force. Through texts, film, and media, this course explores how soccer intersects with questions of national and regional identity, language, race, gender, and immigration.",
+   "display_code": "SPAN 60",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "IM"
+   ],
+   "number": "60",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "SPAN",
+   "title": "Soccer in Latin America and Spain",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-60"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN94",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+   "display_code": "SPAN 94",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "94",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "SPAN",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-94"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "SPAN 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "SPAN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-99"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "SPAN99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "SPAN 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "SPAN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/span-spanish/lower-division/span-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "SPAN"
+}

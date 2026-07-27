@@ -1,0 +1,247 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "middle-eastern-and-north-african-studies-menas-minor",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Middle Eastern and North African Studies MENAS Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least three quarters of language instruction from a single language or complete the highest level of your chosen language ( ARBC 4 , HEBR 4 ), or demonstrate proficiency above the level of ARBC 4 or HEBR 4 through a placement exam. Language proficiency exam information is below.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "At least three quarters of language instruction",
+       "prose": [
+        "At least three quarters of language instruction from a single language or complete the highest level of your chosen language ( ARBC 4 , HEBR 4 ), or demonstrate proficiency above the level of ARBC 4 or HEBR 4 through a placement exam. Language proficiency exam information is below."
+       ]
+      }
+     }
+    ],
+    "title": "At least three quarters of language instruction"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARBC1",
+       "ARBC2",
+       "ARBC3",
+       "ARBC4"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Three from the following:",
+       "prose": [
+        "Take three from the following OR complete the highest-level course, ARBC 4 ."
+       ]
+      }
+     }
+    ],
+    "title": "Three from the following:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HEBR1",
+       "HEBR2",
+       "HEBR3",
+       "HEBR4"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Or three from the following:",
+       "prose": [
+        "Take three from the following OR complete the highest-level course, HEBR 4 ."
+       ]
+      }
+     }
+    ],
+    "title": "Or three from the following:"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Plus at least one lower-division survey course from the following list:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "HIS5B",
+       "HIS41",
+       "HIS50",
+       "HIS51",
+       "HIS58",
+       "HIS74A",
+       "HIS74B",
+       "LIT81D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Plus at least one lower-division survey course from the following list:"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Plus at least five upper-division courses from the following list. Between the upper- and lower-division elective options, courses must be taken from at least two different departments.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ANTH126",
+       "ANTH130T",
+       "ANTH130Y",
+       "CRES134",
+       "CRES170",
+       "CRES171",
+       "CRES172",
+       "CRES173",
+       "CRES174",
+       "FILM168",
+       "HAVC153",
+       "HAVC154",
+       "HAVC155",
+       "HAVC190C",
+       "HAVC190N",
+       "HIS154",
+       "HIS156A",
+       "HIS156B",
+       "HIS156C",
+       "HIS157",
+       "HIS159A",
+       "HIS159B",
+       "HIS159C",
+       "HIS159D",
+       "HIS163B",
+       "HIS163C",
+       "HIS170C",
+       "HIS185C",
+       "HIS185M",
+       "HIS185O",
+       "HIS194L",
+       "HIS194S",
+       "HIS194V",
+       "HIS194W",
+       "LIT117A",
+       "LIT125H",
+       "LIT130B",
+       "LIT130D",
+       "LIT141A",
+       "LIT141D",
+       "LIT141E",
+       "LIT141G",
+       "LIT159M",
+       "LIT168A",
+       "LIT168B",
+       "POLI140E",
+       "POLI184",
+       "POLI187"
+      ],
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Plus at least five upper-division courses from the following list. Between the upper- and lower-division elective options, courses must be taken from at least two different departments.",
+        "The primary focus is the history, politics, artistic production, and/or cultures of the Middle East and/or North Africa."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Substitution Policy",
+       "prose": [
+        "Transfer Credits and Course Substitutions",
+        "Courses from the following categories may also be applied to the MENAS minor:",
+        "Transfer Courses/Courses taken at another institution (three courses)",
+        "Education Abroad Program (no limit). See Global Learning for available course offerings.",
+        "Course Substitutions/Related courses not currently on the pre-approved MENAS course list (no limit)",
+        "Independent and Field Studies (two courses)",
+        "Transfer Coursework",
+        "Students may petition up to three courses taken at another college or university for use toward their MENAS minor requirements. Courses must appear on your UC Santa Cruz Transfer Credit Summary Report before they will be approved for use toward your MENAS minor requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Course Substitution Policy"
+   }
+  ]
+ },
+ "slug": "middle-eastern-and-north-african-studies-menas-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/middle-eastern-and-north-african-studies-menas-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

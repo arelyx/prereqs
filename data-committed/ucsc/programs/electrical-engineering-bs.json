@@ -1,0 +1,1205 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "electrical-and-computer-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Electrical Engineering B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The electrical engineering B.S. program is accredited by the Engineering Accreditation Commission of ABET, https://www.abet.org .",
+     "Students can pursue either of two concentrations, Electronics/Optics or Communications, Signals and Systems."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Program Educational Objectives:",
+     "Program Educational Objectives (PEOs) are based on the needs of the Electrical Engineering program constituents. They describe what graduates are expected to attain within a few years after graduation.",
+     "The PEOs for the Electrical Engineering program at the University of California, Santa Cruz, are as follows:",
+     "Advanced Learning and Professional Development: Achieve a high quality, professional approach to engineering through a desire for advanced education, lifelong learning and participation in the professional engineering community.",
+     "Adaptation to Technological Change: Enjoy a successful professional career in a world with rapid technological change by having a sound foundation in the fundamental electrical engineering theory, design and basic science upon which future technology will be based.",
+     "Skills for Initial and Continued Employment Success: Demonstrate job-relevant electrical engineering skills through theoretical and practical competence in hardware, software, and programming aspects of electrical engineering, as well as independence in thought and action.",
+     "Leadership, Teamwork and Entrepreneurial Skills: Achieve a high level of individual creativity for personal achievement as well as the interpersonal, communications and responsibility skills for creating an effective team project environment, including an ability to apply engineering competence in both research and product oriented settings.",
+     "Ethics and Societal Issues: Practice a high standard of professional ethics and have a positive impact on the social and environmental aspects of engineering design and implementation.",
+     "Student Outcomes:",
+     "Upon graduation, students completing the Electrical Engineering B.S. program shall have an ability to:",
+     "identify, formulate, and solve complex engineering problems by applying principles of engineering, science, and mathematics;",
+     "apply engineering design to produce solutions that meet specified needs with consideration of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors;",
+     "communicate effectively with a range of audiences;",
+     "recognize ethical and professional responsibilities in engineering situations and make informed judgments, which must consider the impact of engineering solutions in global, economic, environmental, and societal contexts;",
+     "function effectively on a team whose members together provide leadership, create a collaborative and inclusive environment, establish goals, plan tasks, and meet objectives;",
+     "develop and conduct appropriate experimentation, analyze and interpret data, and use engineering judgment to draw conclusions; and",
+     "acquire and apply new knowledge as needed, using appropriate learning strategies."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering undergraduate advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications.",
+     "Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "For the first two years, all electrical engineering students are expected to take a basic set of lower-division mathematics, physical science, and engineering courses. After the first two years, electrical engineering students focus on topics within the discipline and specialize in one of two options: electronics/optics, including digital and analog circuits and devices, VLSI design, optoelectronics, electromagnetics, power engineering, and biomedical device engineering; or communications, signals, systems, and control, including optical, wireless communication, signal and image processing, networks signal processing, instrumentation, and control.",
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "The Electrical and Computer Engineering Department requires letter grading for all courses applied toward the Electrical Engineering Bachelor of Science (B.S.) degree."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Substitutions for Courses Taken at UCSC and Course Equivalencies and Substitutions Taken at an Outside Institution sections of the Baskin Engineering page of the catalog for the policy regarding course substitutions."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "ECE 121 , ECE 141 and ECE 167 , which are used toward the assistive technology minor, cannot also be used to satisfy electrical engineering B.S. electives."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Four-Year Institutions and the UC Education Abroad Program (UCEAP)",
+     "Students who intend to take a course at a four-year institution or UC Education Abroad, must submit a Course Substitution Petition to the BE Undergraduate Advising Office to have the course reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus.",
+     "It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations.",
+     "To guarantee equivalency, departments may sometimes require a grade of B or better. If the course is approved for equivalency, then the student must also receive approval by their major department PRIOR to taking the class. Forms and procedures for approval can be obtained from and submitted to the BE Undergraduate Advising Office."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors, in most cases, is awarded to students with a GPA of 3.30-3.69. Highest Honors, in most cases, is awarded to students with a GPA of 3.7 or higher. The GPA includes all UCSC undergraduate and graduate courses in all departments that fall within the Division of Physical and Biological Sciences and Baskin Engineering. Students with particularly significant accomplishments in undergraduate research or contributions to Baskin Engineering may be considered with a lower GPA. Robotics engineering juniors and seniors may also be eligible for election to the UC Santa Cruz chapter of Tau Beta Pi, the national engineering honor society founded in 1885."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Please see the section on fees under Baskin Engineering ."
+    ],
+    "title": "Materials Fee and Miscellaneous Fees"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students who want to pursue the electrical engineering major, must have applied and been admitted to UC Santa Cruz as a proposed electrical engineering major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Transfer students must complete the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment or by the end of the fall term prior to winter enrollment. Students must have and maintain a cumulative minimum GPA of 2.8 in all the transfer screening courses. Four of the eight courses, including CSE 12 , must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, with a minimum GPA of 2.8 across all Electrical Engineering transfer screening courses completed at that time.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 8,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following Transfer Screening policy takes effect in fall 2024 and will be mandatory for all transfer students entering UC Santa Cruz fall 2026 and later. Transfer students entering UCSC prior to fall 2026 are encouraged to complete these requirements, but will still be considered for admission if they fulfill the 2023-2024 admissions screening requirements.",
+        "Time to degree completion varies based on coursework completed prior to transfer. Students are strongly encouraged to complete all equivalent coursework available to them before transferring.",
+        "Please refer to the sample plans in the Requirements and Planners section. In most cases, students are not able to complete more than two upper-division classes per term. Contact the BE Advising office if you have questions regarding how long it will take to complete the degree requirements.",
+        "Transfer students must complete the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment or by the end of the fall term prior to winter enrollment. Students must have and maintain a cumulative minimum GPA of 2.8 in all the transfer screening courses. Four of the eight courses, including CSE 12 , must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, with a minimum GPA of 2.8 across all Electrical Engineering transfer screening courses completed at that time.",
+        "Cumulative GPA is calculated based on all Electrical Engineering transfer screening courses taken. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "First-year calculus",
+       "prose": [
+        "Both:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Linear algebra",
+       "prose": [
+        "One of:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Differential equations",
+       "prose": [
+        "One of:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5L",
+       "PHYS5M",
+       "PHYS5C",
+       "PHYS5N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Calculus-based physics",
+       "prose": [
+        "A year of calculus-based physics courses accepted as equivalent to:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Computer engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A minimum GPA of 2.8 must be obtained in the courses listed above.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Cumulative GPA",
+       "prose": [
+        "A minimum GPA of 2.8 must be obtained in the courses listed above."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5D",
+       "CSE20",
+       "MATH23A",
+       "MATH23B",
+       "ECE101",
+       "ECE101L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Additionally",
+       "prose": [
+        "In addition, the following courses are recommended prior to transfer",
+        "Also, MATH 23A , MATH 23B , ECE 13 , ECE 101 / ECE 101L , ECE 171 / ECE 171L , STAT 131 and many general education requirements may be offered by UC Santa Cruz Summer Session and taken prior to starting the first fall quarter at UCSC.",
+        "Also, MATH 23A , MATH 23B , ECE 13 , ECE 101 / ECE 101L , ECE 171 / ECE 171L , STAT 131 and many general education requirements may be offered by UC Santa Cruz Summer Session and taken prior to starting the first fall quarter at UCSC."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "General Education Options",
+       "prose": [
+        "Prospective students are encouraged to prioritize required and recommended major preparation prior to transfer, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. Instructions for declaring a major in Baskin Engineering are on the Declare Your Major page ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Admission to the electrical engineering major is selective. In order to be admitted into the electrical engineering major students must be listed as a proposed major within Baskin Engineering, and complete all the courses listed below with a GPA of 2.8 or better. Some courses may be satisfied via exam credit. Courses completed via exam credit are not included in the GPA calculation.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the Transfer Admission Screening requirements.",
+        "Admission to the electrical engineering major is selective. In order to be admitted into the electrical engineering major students must be listed as a proposed major within Baskin Engineering, and complete all the courses listed below with a GPA of 2.8 or better. Some courses may be satisfied via exam credit. Courses completed via exam credit are not included in the GPA calculation.",
+        "Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog or Baskin Engineering's information on declaring a major for more information."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Both of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5L",
+       "PHYS5M",
+       "PHYS5C",
+       "PHYS5N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 5B / PHYS 5M can be substituted by one of the required upper-division courses for the purposes of major qualification. PHYS 5B / PHYS 5M is still required to complete major requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE80T",
+       "ECE8"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "This course is waived for transfer students, though the course is still recommended."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "This course is waived for transfer students, though the course is still recommended."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Note: Students seeking to change their current major to the electrical engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 102 / ECE 102L , ECE 103 / ECE 103L , ECE135/ ECE 135L , ECE151, ECE171/ ECE 171L , STAT 131 or CSE 107 , CSE 100 / CSE 100L .",
+        "type": "prose"
+       },
+       {
+        "text": "Note: Students seeking to change their current major to the electrical engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 102 / ECE 102L , ECE 103 / ECE 103L , ECE135/ ECE 135L , ECE151, ECE171/ ECE 171L , STAT 131 or CSE 107 , CSE 100 / CSE 100L .",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CSE12",
+       "ECE13",
+       "MATH23A",
+       "MATH23B",
+       "CSE13S",
+       "AM30",
+       "AM100",
+       "PHYS5D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 23A or AM 30 ; MATH 23B or AM 100 ; ECE 13 or CSE 13S"
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one additional lower-division required course:",
+       "prose": [
+        "MATH 23A or AM 30 ;",
+        "MATH 23B or AM 100 ;",
+        "ECE 13 or CSE 13S",
+        "Note: Students seeking to change their current major to the electrical engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 102 / ECE 102L , ECE 103 / ECE 103L , ECE135/ ECE 135L , ECE151, ECE171/ ECE 171L , STAT 131 or CSE 107 , CSE 100 / CSE 100L .",
+        "Note: Students seeking to change their current major to the electrical engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 102 / ECE 102L , ECE 103 / ECE 103L , ECE135/ ECE 135L , ECE151, ECE171/ ECE 171L , STAT 131 or CSE 107 , CSE 100 / CSE 100L ."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they are not eligible to declare may appeal this decision by submitting a letter to the undergraduate director within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, the college, and the Office of the Registrar of the decision.",
+        "If you have further questions concerning the appeal process, please contact the Undergraduate Advising Office at (831) 459-5840 or email bsoeadvising@ucsc.edu .",
+        "More information regarding the appeal process can be found on the Baskin Engineering Major Declaration Appeal Process page ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first.",
+        "Major Declaration consists of four steps:",
+        "Step 1- Log into MyUCSC and submit the Petition for Major/Minor via MyUCSC as soon as you have met major qualification requirements and/or reach your declaration deadline quarter, whichever comes first.",
+        "Step 2- After submitting the Petition for Major/Minor via MyUCSC it can take up to 10 business days to receive a response. The response will be an email from our office indicating that your petition has been processed and informing you of your next steps. At this point, you will either be given information regarding next steps for Major Declaration OR next steps for the Major Declaration Appeal process .",
+        "Step 3- Students who meet their major qualification requirements to declare will be added to a Canvas course. The Canvas course consists of several modules with information about campus and major policies, major requirements, as well as academic planning guidance. Students will be expected to score a 100% on a short quiz, checking for understanding of this information before their major declaration will be processed.",
+        "Step 4- The Baskin Engineering Undergraduate Advising office will review which students have completed the Final Major Declaration quiz with 100% and have submitted an academic plan every Wednesday. If you have completed both items, your major declaration will be processed within a week from that Wednesday and any associated major declaration holds will be lifted.",
+        "To see if your major has been officially declared: You can go to your MyUCSC Student Center and click on “Student Advising Summary\".",
+        "On the Career/Program/Plan tab, you will see the field \"Declared Major:\" and your major will be listed.",
+        "If your major declaration has not been entered yet, you will see the field \"Proposed Major:\" with your proposed major listed.",
+        "Detailed instructions for declaring a major in Baskin Engineering are on the BE Undergraduate Advising Declare your Major page ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements (all concentrations)",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements (all concentrations)"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students gain a solid foundation in calculus, engineering mathematics, physics, computer science, and computer engineering during their first two years. Majors must complete the following 13 lower-division courses (including corresponding laboratories). These courses form part of the prerequisite sequence and should be completed during the first two years at UC Santa Cruz. The requirements are rigorous; students must be prepared to begin these courses early in their studies.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Students gain a solid foundation in calculus, engineering mathematics, physics, computer science, and computer engineering during their first two years. Majors must complete the following 13 lower-division courses (including corresponding laboratories). These courses form part of the prerequisite sequence and should be completed during the first two years at UC Santa Cruz. The requirements are rigorous; students must be prepared to begin these courses early in their studies."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE80T",
+       "ECE8"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "This course is waived for transfer students."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One of these courses:",
+       "prose": [
+        "This course is waived for transfer students."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE20",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A test-out option is available for CSE 20 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One of these courses:",
+       "prose": [
+        "A test-out option is available for CSE 20 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus this course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE13",
+       "CSE13S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Mathematics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH23A",
+        "MATH23B"
+       ],
+       [
+        "AM30",
+        "AM100"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Applied Mathematics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5C",
+       "PHYS5L",
+       "PHYS5M",
+       "PHYS5N",
+       "PHYS5D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Physics",
+       "prose": [
+        "All of the following:",
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Fifteen upper-division courses along with associated 1- or 2-credit laboratories are required for the major. The course requirements include both depth and breadth, technical writing, and a comprehensive capstone design project.",
+        "All students are required to take the following eight upper-division courses, with associated laboratories."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE101",
+       "ECE101L",
+       "ECE102",
+       "ECE102L",
+       "ECE103",
+       "ECE103L",
+       "ECE135",
+       "ECE135L",
+       "ECE151",
+       "ECE171",
+       "ECE171L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE100",
+       "CSE100L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE107",
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture/lab combinations count as one course."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "One of the following",
+        "Lecture/lab combinations count as one course."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In addition to completing the courses required for both concentrations, electrical engineering majors must complete four elective courses chosen from the lists below. Students pursuing the Electronics/Optics concentration must choose at least three courses from the Electronics/Optics courses listed below. Students pursuing the Communications, Signals and Systems concentration must choose at least three courses from the Communication and Signals courses listed below.",
+        "type": "prose"
+       },
+       {
+        "text": "Design Elective: One of the four concentration courses chosen must include at least one of the following design electives ECE 118 , ECE 121 , ECE 157 & ECE 157L , ECE167 and ECE 173 . This course must be taken before the first capstone course ECE 129A .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "In addition to completing the courses required for both concentrations, electrical engineering majors must complete four elective courses chosen from the lists below. Students pursuing the Electronics/Optics concentration must choose at least three courses from the Electronics/Optics courses listed below. Students pursuing the Communications, Signals and Systems concentration must choose at least three courses from the Communication and Signals courses listed below.",
+        "Certain graduate-level courses as well as those courses taught in conjunction with graduate courses may also be used to fulfill an elective requirement as listed below. No course may be counted twice.",
+        "ECE 183 can be taken as an elective course with an approval of the undergraduate director.",
+        "Design Elective: One of the four concentration courses chosen must include at least one of the following design electives ECE 118 , ECE 121 , ECE 157 & ECE 157L , ECE167 and ECE 173 . This course must be taken before the first capstone course ECE 129A ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electronics/Optics Concentration Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE104",
+       "ECE110",
+       "ECE115",
+       "ECE118",
+       "ECE121",
+       "ECE130",
+       "ECE130L",
+       "ECE136",
+       "ECE141",
+       "ECE145",
+       "ECE157",
+       "ECE157L",
+       "ECE163",
+       "ECE167",
+       "ECE172",
+       "ECE173",
+       "ECE169",
+       "ECE170",
+       "ECE175",
+       "ECE175L",
+       "ECE176",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE178",
+       "ECE180J",
+       "ECE183",
+       "ECE185",
+       "ECE193",
+       "ECE198",
+       "ECE201",
+       "ECE203",
+       "ECE207",
+       "ECE210",
+       "ECE215",
+       "ECE221",
+       "ECE222A",
+       "ECE230",
+       "ECE231",
+       "ECE241",
+       "ECE242",
+       "ECE243",
+       "ECE245",
+       "ECE275"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture/lab combinations count as one course. Each of the ECE 183 , ECE 193 , and ECE 198 courses can be taken only once as an elective course. [( ECE 130 and ECE 230 ), ( ECE 141 and ECE 241 ), and ( ECE 172 and ECE 221 ) are undergraduate and graduate courses, and from each pair of classes only one can be taken for this program.] Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": [
+        "Lecture/lab combinations count as one course. Each of the ECE 183 , ECE 193 , and ECE 198 courses can be taken only once as an elective course.",
+        "[( ECE 130 and ECE 230 ), ( ECE 141 and ECE 241 ), and ( ECE 172 and ECE 221 ) are undergraduate and graduate courses, and from each pair of classes only one can be taken for this program.] Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Communications, Signals, Systems Concentration Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE118",
+       "ECE121",
+       "ECE130",
+       "ECE130L",
+       "ECE136",
+       "ECE141",
+       "ECE145",
+       "ECE152",
+       "ECE153",
+       "ECE157",
+       "ECE157L",
+       "ECE163",
+       "ECE173",
+       "ECE183",
+       "ECE193",
+       "ECE198",
+       "ECE230",
+       "ECE215",
+       "ECE237",
+       "ECE241",
+       "ECE242",
+       "ECE243",
+       "ECE244",
+       "ECE245",
+       "ECE250",
+       "ECE251",
+       "ECE252",
+       "ECE253",
+       "ECE255",
+       "ECE256"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture/lab combinations count as one course. Each of the ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. [( ECE 130 and ECE 230 ), ( ECE 152 and ECE 252 ), ( ECE 141 and ECE 241 ), and ( ECE 153 and ECE 250 ) are undergraduate and graduate courses, and from each pair of classes only one can be taken for this program.] Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": [
+        "Lecture/lab combinations count as one course. Each of the ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course.",
+        "[( ECE 130 and ECE 230 ), ( ECE 152 and ECE 252 ), ( ECE 141 and ECE 241 ), and ( ECE 153 and ECE 250 ) are undergraduate and graduate courses, and from each pair of classes only one can be taken for this program.] Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement.",
+        "The senior-year curriculum enables students to pursue independent study with a faculty member. Electrical engineering students are encouraged to take advantage of the opportunity to work within a faculty member’s research group as part of their educational experience. Internship programs with local industry are also available.",
+        "The senior-year curriculum enables students to pursue independent study with a faculty member. Electrical engineering students are encouraged to take advantage of the opportunity to work within a faculty member’s research group as part of their educational experience. Internship programs with local industry are also available."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students in all majors must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement is satisfied by completing the senior capstone course sequence:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "ECE129A",
+        "ECE129B",
+        "ECE129C"
+       ],
+       [
+        "ECE129A",
+        "ECE195",
+        "ECE195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "10 credits for the senior thesis course, ECE 195 , must be completed for this option."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Either these three courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior comprehensive requirement for electrical engineering majors is in two parts: a project course and assessment options."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "ECE129A",
+        "ECE129B",
+        "ECE129C"
+       ],
+       [
+        "ECE129A",
+        "ECE195",
+        "ECE195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "10 credits for the senior thesis course, ECE 195 , must be completed for this option."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Project Course",
+       "prose": [
+        "These senior-level courses encompass an in-depth project, including analysis, design, testing, and documentation, requiring students to call upon knowledge acquired throughout their undergraduate studies. Students must complete one capstone design course that spans three quarters. Current course choices include the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Exit Requirement",
+       "prose": [
+        "Students are required to complete an exit survey and attend an exit interview. Portfolios of the students work will be collected from our courses for program evaluation. The portfolios will be reviewed by the Electrical and Computer Engineering undergraduate committee and will include project report(s) and one- or two-page overview of the student’s contribution to the project(s). One of the reports has to be either capstone report ( ECE 129A / ECE 129B / ECE 129C ) or the student's senior thesis. Students with a GPA below 2.5 and without a senior thesis also need to submit a two-page essay concerning the relationship of engineering to society (specific topic will be provided by the Electrical and Computer Engineering Department)."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "electrical-engineering-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

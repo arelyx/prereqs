@@ -1,0 +1,317 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "rachel-carson-college",
+ "division": "the-colleges",
+ "kind": "minor",
+ "name": "Sustainability Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CRSN55"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take this course twice:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take this course twice:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CRSN151A",
+       "CRSN151B",
+       "CRSN151C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Topics taught in CRSN 151C vary by quarter. It may be repeated for additional upper-division credit or as a capstone option if the repeated course is on a different topic."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take all of the following courses:",
+       "prose": [
+        "Topics taught in CRSN 151C vary by quarter. It may be repeated for additional upper-division credit or as a capstone option if the repeated course is on a different topic."
+       ]
+      }
+     }
+    ],
+    "title": "Take all of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Elective",
+       "prose": [
+        "All students must take one 5-credit course from the CRSN or Breadth Electives lists below. The upper-division elective does not count toward the Breadth Capstone requirement. While not required, students are encouraged to take a CRSN course to fulfill this elective."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Elective"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Capstone",
+       "prose": [
+        "Students choose from one of the following options:"
+       ]
+      }
+     }
+    ],
+    "title": "Capstone"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CRSN152"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course three times (9 credits total):",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Option 1: IDEASS Capstone"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Option 2: Breadth Capstone",
+       "prose": [
+        "Students fulfill the Breadth Capstone by taking one upper-division Breadth Elective and either an upper-division CRSN or additional upper-division Breadth Elective course from the lists below."
+       ]
+      }
+     }
+    ],
+    "title": "Option 2: Breadth Capstone"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Breadth and CRSN Courses",
+       "prose": [
+        "The following courses fulfill the upper-division Elective requirement and Breadth Capstone requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Breadth and CRSN Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CRSN151C",
+       "CRSN155S",
+       "CRSN161"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "CRSN Electives",
+       "prose": []
+      }
+     }
+    ],
+    "title": "CRSN Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH110E",
+       "ANTH110K",
+       "ANTH111",
+       "ANTH135A",
+       "ANTH137",
+       "ANTH146",
+       "ANTH147",
+       "ANTH160",
+       "ANTH161",
+       "ART125",
+       "BIOE107",
+       "BIOE108",
+       "BIOE145",
+       "BIOE147",
+       "BIOE155",
+       "CMMU133",
+       "CMMU149",
+       "CMMU156",
+       "CMMU162",
+       "CMMU186",
+       "EART116",
+       "EART121",
+       "EART142",
+       "EART146",
+       "EART191",
+       "ECE175",
+       "ECE175L",
+       "ECE176",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE180J",
+       "ECON170",
+       "ECON171",
+       "ECON175",
+       "ENVS110",
+       "ENVS120",
+       "ENVS130A",
+       "ENVS130C",
+       "ENVS135",
+       "ENVS140",
+       "ENVS142",
+       "ENVS143",
+       "ENVS144",
+       "ENVS145",
+       "ENVS149",
+       "ENVS151",
+       "ENVS152",
+       "ENVS165",
+       "ENVS166",
+       "FMST124",
+       "FMST131",
+       "FMST133",
+       "HAVC48",
+       "HAVC141K",
+       "HAVC143B",
+       "HIS101C",
+       "HIS101F",
+       "HIS151",
+       "HIS196F",
+       "LALS152",
+       "LALS163",
+       "LGST137",
+       "LGST159",
+       "METX101",
+       "OCEA101",
+       "OCEA102",
+       "POLI132",
+       "POLI174",
+       "PSYC159E",
+       "SOCY30A",
+       "SOCY119",
+       "SOCY125",
+       "SOCY130",
+       "SOCY132",
+       "SOCY167",
+       "SOCY173",
+       "SOCY177E",
+       "SOCY177G",
+       "SOCY179",
+       "ANTH110IG",
+       "ANTH110I"
+      ],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [
+       "The list of breadth elective courses applies to all of the upper-division options above. This list is updated regularly, but course offerings change. Please consult course lists prior to each quarter to see what is being offered. Some of these courses require permission of the instructor to enroll). You can find the most updated listing of breadth electives here ."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Breadth Electives",
+       "prose": [
+        "The following courses are offered outside of Rachel Carson College and are subject to department availability. Check course descriptions for prerequisite or concurrent enrollment requirements. Lecture/lab combos count as one course. Labs are required only when required by the lecture.",
+        "The list of breadth elective courses applies to all of the upper-division options above. This list is updated regularly, but course offerings change. Please consult course lists prior to each quarter to see what is being offered. Some of these courses require permission of the instructor to enroll). You can find the most updated listing of breadth electives here ."
+       ]
+      }
+     }
+    ],
+    "title": "Breadth Electives"
+   }
+  ]
+ },
+ "slug": "sustainability-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/the-colleges/rachel-carson-college/sustainability-studies/sustainability-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

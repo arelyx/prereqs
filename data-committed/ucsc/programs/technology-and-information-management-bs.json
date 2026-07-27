@@ -1,0 +1,816 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "technology-and-information-management",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Technology and Information Management B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Technology and Information Management (TIM) is a rigorous, challenging major for those students wanting to pursue careers in the management of information and technology. TIM students will receive a thorough grounding in the fundamental principles and practices of technology (in particular, computer science and computer engineering) and management, and the scientific, mathematics, and economics principles upon which they are built. In particular, they will become proficient in the following areas: strategy, planning, innovation, entrepreneurship, information technology, software design, product development, and supply-chain management.",
+     "The essence of the technology and information management major at the University of California, Santa Cruz is the integration of fundamental intellectual content from the disciplines of computer science, computer engineering, business management economics, and finance. TIM students learn how to apply the fundamentals of these diverse disciplines to solving problems that require the integration of management and technology, e.g., developing information technology systems to manage all activities and operations in a firm, e-commerce, managing and commercializing a new technology, and starting a new high-technology company.",
+     "To graduate with a B.S. in technology and information management, students normally complete 26 required courses (with two laboratories, totaling 133 quarter credits) plus three elective courses (15 quarter credits) for the technology and information management major program. Honors students are likely to find the rigorous management and leadership elements of the program of significant interest. Industrial interactions and projects are key features of this major."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "A technology and information management student completing the program will:",
+     "learn the fundamentals of the three core areas—mathematics, economics, and engineering—necessary to analyze and solve complex problems in technology and information management.",
+     "develop the ability to apply mathematics, economics, and engineering to fundamental issues and problems in TIM.",
+     "develop the ability to identify, formulate, and solve complex real-world problems in the two key multi-disciplinary domains of technology and information management: management of technology (MOT) or management science and engineering (MSE); and technology of management (TOM) or information science and engineering (ISE).",
+     "be able to communicate effectively in written form in papers and project reports related to TIM."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering undergraduate advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications. Undergraduate students obtain and submit all paperwork requiring departmental approval to the undergraduate advising office. Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "The technology and information management major is intended for students with an interest in both technology and business. It is recommended that students intending to declare this major have completed four years of mathematics (through advanced algebra and trigonometry) and three years of science in high school. Completion of business-oriented computer literacy and basic programming courses is of benefit to students entering this major. Completion of any economics and/or business-related courses in high school is also beneficial, but the faculty realizes that these courses may not be available at many high schools. Completion of comparable college courses at other institutions serves to strengthen the preparation of a student for the technology and information management major.",
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz.",
+     "Math placement is required for one or more of the foundation courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All students admitted to a Baskin Engineering major, or seeking admission to a major, must take all courses required for that major for a letter grade. This policy includes courses required for these degrees that are sponsored by other departments."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Baskin Engineering section of the catalog for additional policies that apply to all Baskin Engineering programs. These policies include admission to the major and the need for UC Santa Cruz students to obtain pre-approval before taking courses elsewhere."
+    ],
+    "title": "Baskin Engineering Policies"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate engineering students who wish to substitute a major course with a course from another department at UC Santa Cruz, or from another academic institution, must first consult the Baskin Engineering Undergraduate Advising Office. The advising office requires a Petition for Course Substitution be approved before credit for an alternate course can be applied to any Baskin Engineering major requirement.",
+     "Petition forms are available online at the Baskin Engineering Undergraduate Advising website ."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "The TIM program awards honors to students whose academic performance is excellent. Students with a GPA 3.5 or higher but lower than 3.7 will be awarded honors. Students with a GPA of 3.7 or higher will be awarded highest honors. Students who have been found guilty of academic misconduct are not eligible for either honors or highest honors.",
+     "The TIM program awards honors to students whose academic performance is excellent. Honors are awarded to students with a GPA of 3.50-3.69 in all courses taken at UC Santa Cruz. Highest honors are awarded to students with a GPA of 3.70 or higher in all courses taken at UCSC. Students who have been found guilty of academic misconduct are not eligible for either honors or highest honors."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students who want to pursue the technology and information management major, must have applied and been admitted to UC Santa Cruz as a proposed Technology and Information Management major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Transfer students must have completed at least six of the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or by the end of the fall term prior to winter enrollment.",
+        "type": "prose"
+       },
+       {
+        "text": "Three of the six courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year prior to transfer. Students must have and maintain a minimum GPA of 2.4, across all Technology and Information Management transfer screening courses completed at that time. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA.",
+        "type": "prose"
+       },
+       {
+        "text": "While the six courses can be chosen from any courses on the list, we strongly recommend that students take at least one Computer Science and Engineering course as one of the six classes. Transfer students are not required to take additional coursework at UCSC to declare.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CSE12",
+       "CSE13S",
+       "CSE16",
+       "CSE30",
+       "TIM50",
+       "ECON1",
+       "ECON2",
+       "ECON10A",
+       "MATH19A",
+       "MATH19B",
+       "MATH20A",
+       "MATH20B",
+       "MATH22",
+       "MATH23A",
+       "AM30"
+      ],
+      "n": 6,
+      "needs_review": false,
+      "notes": [
+       "Only one course from each of the following sets can be counted: MATH 19A and MATH 20A MATH 19B and MATH 20B MATH 22 and MATH 23A and AM 30"
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students must have completed at least six of the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or by the end of the fall term prior to winter enrollment.",
+        "Three of the six courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year prior to transfer. Students must have and maintain a minimum GPA of 2.4, across all Technology and Information Management transfer screening courses completed at that time. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA.",
+        "While the six courses can be chosen from any courses on the list, we strongly recommend that students take at least one Computer Science and Engineering course as one of the six classes. Transfer students are not required to take additional coursework at UCSC to declare.",
+        "Students who wish to graduate in two years are strongly recommended to complete most of the general education requirements as well as all screening courses—except TIM 50, CSE 12 , and CSE 13S —before coming to UC Santa Cruz.",
+        "Students should consult assist.org to determine which courses at other institutions in California are transferable to UC Santa Cruz.",
+        "Only one course from each of the following sets can be counted:",
+        "MATH 19A and MATH 20A",
+        "MATH 19B and MATH 20B",
+        "MATH 22 and MATH 23A and AM 30"
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare. Instructions for declaring a major in Baskin Engineering are on the Baskin Engineering undergraduate advising major declaration page ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In order to be admitted into the technology and information management major, students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+        "type": "prose"
+       },
+       {
+        "text": "In addition, to be admitted to the TIM major after a student has entered UC Santa Cruz, students need to complete a total of six courses chosen from the following three topics. The three topics are Mathematics; Engineering; and Economics and Technology and Information Management. One course must be chosen from each topic, and the three additional courses can be from any topic. Only one course may be counted from the following sets: 1) MATH 19A and MATH 20A , 2) MATH 19B and 20B, and 3) MATH 22 , MATH 23A , and AM 30 .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 6,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the transfer admission screening requirements.",
+        "In order to be admitted into the technology and information management major, students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+        "In addition, to be admitted to the TIM major after a student has entered UC Santa Cruz, students need to complete a total of six courses chosen from the following three topics. The three topics are Mathematics; Engineering; and Economics and Technology and Information Management. One course must be chosen from each topic, and the three additional courses can be from any topic. Only one course may be counted from the following sets: 1) MATH 19A and MATH 20A , 2) MATH 19B and 20B, and 3) MATH 22 , MATH 23A , and AM 30 ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A"
+       ],
+       [
+        "MATH20A"
+       ],
+       [
+        "MATH19B"
+       ],
+       [
+        "MATH20B"
+       ],
+       [
+        "MATH22"
+       ],
+       [
+        "MATH23A"
+       ],
+       [
+        "AM30"
+       ],
+       [
+        "CSE16"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "At least one of the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or one of these courses",
+       "[unstructured alternative] or one of these courses"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Mathematics",
+       "prose": [
+        "At least one of the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least one course from the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CSE12",
+       "CSE13S",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 ."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Engineering",
+       "prose": [
+        "At least one course from the following:",
+        "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least one additional course must be chosen from the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ECON1",
+       "ECON2",
+       "ECON10A",
+       "TIM50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Economics and Technology and Information Management",
+       "prose": [
+        "At least one additional course must be chosen from the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students in their first six quarters who have completed at least six qualifying courses in the TIM major will need to meet the following:",
+        "type": "prose"
+       },
+       {
+        "text": "1. Their cumulative GPA is at least 2.4 in all of the major qualification courses attempted.",
+        "type": "prose"
+       },
+       {
+        "text": "2. They have no more than 7 credits resulting in grades of C-, D+, D, D-, F or NP among all of the TIM major qualification courses attempted.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Eligibility to qualify for the major",
+       "prose": [
+        "Students in their first six quarters who have completed at least six qualifying courses in the TIM major will need to meet the following:",
+        "1. Their cumulative GPA is at least 2.4 in all of the major qualification courses attempted.",
+        "2. They have no more than 7 credits resulting in grades of C-, D+, D, D-, F or NP among all of the TIM major qualification courses attempted."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they do not qualify for the major may appeal this decision by submitting a letter to the undergraduate director through the Baskin Engineering undergraduate advising office within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, college, and Office of the Registrar of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed the major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "There are four steps to declaring a Baskin Engineering (BE) major. For a detailed guide to this process, please consult the BE Undergraduate Advising Declare Your Major website.",
+        "Students should start the declaration of major process by completing Step One on the BE Undergraduate Advising Declare Your Major website as soon as they complete the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed the major qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The Technology and Information Management B.S. consists of the following requirements. Some may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT17",
+       "STAT17L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Statistics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Mathematics",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM30",
+       "MATH22",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM10"
+       ],
+       [
+        "MATH21"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of these courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM20"
+       ],
+       [
+        "MATH24"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "And one of these courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Economics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON1",
+       "ECON2",
+       "ECON10A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12",
+       "CSE13S",
+       "CSE16",
+       "CSE20",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, exam credit, or clearing the “Test-out” bar will start with CSE 30 and CSE 12 ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": [
+        "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, exam credit, or clearing the “Test-out” bar will start with CSE 30 and CSE 12 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "TIM50",
+       "TIM58"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus these courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150",
+       "TIM170",
+       "TIM172A",
+       "TIM172B",
+       "TIM172P",
+       "TIM172Q",
+       "TIM175",
+       "CSE182"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": [
+        "All of the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Economics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100A",
+       "ECON100M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON113"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students select two upper-division Baskin Engineering electives on the basis of their particular interests. These electives may be any 5-credit upper-division or graduate Baskin Engineering courses numbered 100-189 or 200-289. At most one of these could be replaced by a TIM independent or field study course ( TIM 193 , TIM 195 , TIM 198 , and TIM 199 ) with prior approval from the department.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Two 5-credit Baskin Engineering courses",
+       "prose": [
+        "Students select two upper-division Baskin Engineering electives on the basis of their particular interests. These electives may be any 5-credit upper-division or graduate Baskin Engineering courses numbered 100-189 or 200-289. At most one of these could be replaced by a TIM independent or field study course ( TIM 193 , TIM 195 , TIM 198 , and TIM 199 ) with prior approval from the department.",
+        "The following limitations apply:",
+        "Students may take STAT 131 or CSE 107 , but not both;",
+        "In cases in which a course has an associated lab, both are required to satisfy one elective.",
+        "Classes that can be repeated for credit can only be used once to satisfy an elective requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus one economics course",
+       "prose": [
+        "Students take one 5-credit, upper-division economics course numbered 100-189.",
+        "A list of suggested economics courses can be found on the Technology and Information curriculum chart on the Baskin Engineering Undergraduate Advising Major Curriculum page ."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "TIM175"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in technology and information management is satisfied by completing TIM 175."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "TIM172A",
+       "TIM172B",
+       "TIM172P",
+       "TIM172Q",
+       "TIM175"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students complete the comprehensive requirement in two areas, the management of technology and the technology of management. The comprehensive requirement in the management of technology consists of two five-credit courses, TIM 172A and TIM 172B, and two three-credit project courses, TIM 172P and TIM 172Q. TIM 172A and TIM 172P need to be taken concurrently, as do TIM 172B and TIM 172Q. The comprehensive requirement in the technology of management consists of a five-credit project-intensive course, TIM 175.",
+        "TIM 172A addresses strategic, engineering, marketing, and financial processes and tools for the management, development, and commercialization of high-tech products.",
+        "TIM 172B addresses the development and application of processes and tools for the management, design, optimization, and operation of supply chain networks for high-tech products.",
+        "TIM 172P is the first of a two-course project sequence in which students apply the knowledge and skills gained in TIM 172A to complete the first part of a major quarter-long comprehensive team project in the management of technology. In this course, taken concurrently with TIM 172A , the team project focus is on the management, design, and commercialization of a new product within a high-tech company. TIM 172A and TIM 172P together form the first part of the required management of technology comprehensive requirement for the TIM B.S. major.",
+        "TIM 172Q is the second of a two-course project sequence in which students apply the knowledge and skills gained in TIM 172B to complete the second part of a major comprehensive team project in the management of technology. In this course, taken concurrently with TIM 172B, the team project focus is on the supply chain management for the new product developed in the project course TIM 172P. TIM 172B and TIM 172Q together form the second part of the required management of technology comprehensive requirement for the TIM B.S. major.",
+        "TIM 175 requires that students understand and use a structured methodology to evaluate the competitive use of information systems within an enterprise. This is accomplished by a team project as well as by an individual project that involves researching and writing a comprehensive analytical term paper using a methodology taught as part of this course."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "technology-and-information-management-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

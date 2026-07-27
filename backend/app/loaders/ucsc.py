@@ -1,14 +1,18 @@
-"""Load UCSC pipeline snapshots into Postgres.
+"""Load UCSC data into Postgres.
 
-Transactional per source: each load_* replaces that source's rows for the
-university inside one transaction, so a crash mid-load can't serve a half
-state, and pointing at an older snapshot dir IS the rollback mechanism.
-Every applied load is recorded in pipeline_runs (provenance + loaded_at).
+Canonical sources:
+- Courses + program requirements: the git-committed dataset
+  (data-committed/ucsc/, see pipelines/ucsc/export_committed.py) — loaded
+  with id-preserving upserts so offerings/plan references survive reloads.
+  Rollback = `git checkout <rev> -- data-committed/` + reload.
+- Offerings: data/ snapshots (deterministic scrape, per-term union).
 
-Run:  python -m app.loaders.ucsc [--courses PATH] [--offerings PATH]
-                                 [--soe PATH] [--programs PATH]
-(paths default to the newest finalized snapshot of each source; a source
-with no snapshot is skipped with a warning.)
+Everything runs in one transaction per invocation; every applied load is
+recorded in pipeline_runs (provenance + loaded_at).
+
+Run:  python -m app.loaders.ucsc [--only courses|offerings|programs|availability]
+      (--courses/--offerings/--soe accept explicit snapshot dirs for
+      emergency snapshot-level rollback of non-committed sources)
 """
 
 from __future__ import annotations
@@ -94,51 +98,83 @@ def _record_run(db: Session, source: str, snapshot_dir: Path, manifest: dict) ->
 def load_courses(db: Session, snapshot_dir: Path) -> None:
     manifest = snapshots.manifest(snapshot_dir)
     courses = snapshots.read_json(snapshot_dir, "courses.json")
-    ensure_university(db, manifest.get("catalog_year"))
+    catalog_year = manifest.get("catalog_year")
+    ensure_university(db, catalog_year)
+    _upsert_courses(db, courses)
+    _record_run(db, "catalog_courses_structured", snapshot_dir, manifest)
+
+
+def load_courses_committed(db: Session) -> None:
+    """Load the course catalog from the git-committed dataset (canonical)."""
+    root = snapshots.COMMITTED_ROOT / UNIVERSITY_ID / "courses"
+    files = sorted(root.glob("*.json"))
+    if not files:
+        print("WARNING: no committed course files; skipping", file=sys.stderr)
+        return
+    courses: list[dict] = []
+    year = None
+    for f in files:
+        d = json.loads(f.read_text())
+        year = year or d.get("catalog_year")
+        courses.extend(d["courses"])
+    ensure_university(db, year)
+    _upsert_courses(db, courses)
+    _record_run(
+        db, "committed_courses", root,
+        {"catalog_year": year, "files": len(files), "courses": len(courses)},
+    )
+
+
+def _upsert_courses(db: Session, courses: list[dict]) -> None:
+    """Stable, id-preserving sync of the courses table.
+
+    Updates in place by code, inserts new codes, deletes codes absent from
+    the dataset. Preserved ids keep offerings/availability/plan references
+    coherent across reloads. Prereq edges are derived data — rebuilt whole.
+    """
+    existing = {
+        c.code: c
+        for c in db.scalars(select(Course).where(Course.university_id == UNIVERSITY_ID))
+    }
+    incoming_codes = {c["code"] for c in courses}
+    fields = (
+        "subject", "number", "display_code", "title", "description", "credits",
+        "division", "quarters_offered_text", "catalog_instructor", "formerly",
+        "url", "raw_requirements",
+    )
+    inserted = updated = 0
+    id_by_code: dict[str, int] = {}
+    for c in courses:
+        row = existing.get(c["code"])
+        if row is None:
+            row = Course(university_id=UNIVERSITY_ID, code=c["code"])
+            db.add(row)
+            inserted += 1
+        else:
+            updated += 1
+        for f in fields:
+            setattr(row, f, c.get(f) if c.get(f) is not None else getattr(row, f, None))
+        row.ge_codes = c.get("ge_codes") or []
+        row.cross_listed = c.get("cross_listed") or []
+        row.repeatable = bool(c.get("repeatable"))
+        row.prereq_groups = c.get("prereq_groups")
+        row.is_active = True
+        db.flush()
+        id_by_code[row.code] = row.id
+
+    removed = [code for code in existing if code not in incoming_codes]
+    for code in removed:
+        db.delete(existing[code])
+    db.flush()
 
     db.execute(delete(CoursePrereqEdge).where(
         CoursePrereqEdge.course_id.in_(
             select(Course.id).where(Course.university_id == UNIVERSITY_ID)
         )
     ))
-    db.execute(delete(CourseAvailability).where(
-        CourseAvailability.course_id.in_(
-            select(Course.id).where(Course.university_id == UNIVERSITY_ID)
-        )
-    ))
-    db.execute(delete(Course).where(Course.university_id == UNIVERSITY_ID))
-
-    id_by_code: dict[str, int] = {}
-    for c in courses:
-        row = Course(
-            university_id=UNIVERSITY_ID,
-            code=c["code"],
-            subject=c["subject"],
-            number=c["number"],
-            display_code=c["display_code"],
-            title=c["title"],
-            description=c.get("description", ""),
-            credits=c.get("credits", ""),
-            division=c.get("division", ""),
-            ge_codes=c.get("ge_codes") or [],
-            quarters_offered_text=c.get("quarters_offered_text"),
-            catalog_instructor=c.get("catalog_instructor"),
-            cross_listed=c.get("cross_listed") or [],
-            formerly=c.get("formerly"),
-            repeatable=bool(c.get("repeatable")),
-            url=c.get("url"),
-            raw_requirements=c.get("raw_requirements"),
-            prereq_groups=c.get("prereq_groups"),
-            is_active=True,
-        )
-        db.add(row)
-        db.flush()
-        id_by_code[row.code] = row.id
-
     for c in courses:
         groups = c.get("prereq_groups") or []
-        prereq_codes = {code for group in groups for code in group}
-        for code in sorted(prereq_codes):
+        for code in sorted({x for g in groups for x in g}):
             db.add(
                 CoursePrereqEdge(
                     course_id=id_by_code[c["code"]],
@@ -146,8 +182,7 @@ def load_courses(db: Session, snapshot_dir: Path) -> None:
                     prereq_course_id=id_by_code.get(code),
                 )
             )
-    _record_run(db, "catalog_courses_structured", snapshot_dir, manifest)
-    print(f"  courses: {len(courses)} loaded")
+    print(f"  courses: {updated} updated, {inserted} inserted, {len(removed)} removed")
 
 
 def _union_pisa_offerings(pisa_dirs: list[Path]) -> list[dict]:
@@ -227,53 +262,68 @@ def load_offerings(db: Session, pisa_dirs: list[Path], soe_dir: Path | None) -> 
             )
         total += len(planned)
         _record_run(db, "soe_schedule", soe_dir, snapshots.manifest(soe_dir))
+    db.flush()  # session has autoflush=False; downstream availability SELECTs
     print(f"  offerings: {total} loaded")
 
 
-def _verified_slugs() -> dict[str, dict]:
-    """Hand-verification registry maintained next to the pipeline."""
-    path = (
-        Path(__file__).resolve().parents[3]
-        / "pipelines" / "ucsc" / "major_requirements" / "verified.json"
-    )
-    if not path.exists():
-        return {}
-    data = json.loads(path.read_text())
-    return {v["slug"]: v for v in data.get("verified", [])}
+def load_programs_committed(db: Session) -> None:
+    """Load programs from the git-committed dataset — slug-keyed upsert.
 
-
-def load_programs(db: Session, snapshot_dir: Path) -> None:
-    manifest = snapshots.manifest(snapshot_dir)
-    programs = snapshots.read_json(snapshot_dir, "programs.json")
-    verified = _verified_slugs()
-    db.execute(delete(Program).where(Program.university_id == UNIVERSITY_ID))
-    loaded = 0
-    for p in programs:
-        if p.get("requirements") is None:
-            continue  # quarantined program: keep it out of the app entirely
-        v = verified.get(p["slug"])
-        db.add(
-            Program(
-                university_id=UNIVERSITY_ID,
-                name=p["name"],
-                degree=p["degree"],
-                kind=p["kind"],
-                division=p.get("division"),
-                department=p.get("department"),
-                slug=p["slug"],
-                url=p["url"],
-                catalog_year=manifest.get("catalog_year"),
-                requirements=p["requirements"],
-                verification="verified" if v else "unverified",
-                verified_at=datetime.fromisoformat(v["date"]).replace(
-                    tzinfo=timezone.utc
-                ) if v else None,
-                verification_notes=v["notes"] if v else None,
+    Preserved row ids keep saved plan program_ids valid across reloads
+    (the delete-and-reinsert loader silently invalidated selections).
+    Verification comes from each file's `verification` block; the file
+    status 'frontier-verified' maps to DB 'verified'.
+    """
+    root = snapshots.COMMITTED_ROOT / UNIVERSITY_ID / "programs"
+    files = sorted(root.glob("*.json"))
+    if not files:
+        print("WARNING: no committed program files; skipping", file=sys.stderr)
+        return
+    existing = {
+        p.slug: p
+        for p in db.scalars(select(Program).where(Program.university_id == UNIVERSITY_ID))
+    }
+    seen = set()
+    inserted = updated = 0
+    for f in files:
+        d = json.loads(f.read_text())
+        slug = d["slug"]
+        seen.add(slug)
+        row = existing.get(slug)
+        if row is None:
+            row = Program(university_id=UNIVERSITY_ID, slug=slug)
+            db.add(row)
+            inserted += 1
+        else:
+            updated += 1
+        row.name = d["name"]
+        row.degree = d["degree"]
+        row.kind = d["kind"]
+        row.division = d.get("division")
+        row.department = d.get("department")
+        row.url = d["url"]
+        row.catalog_year = d.get("catalog_year")
+        row.requirements = d["requirements"]
+        v = d.get("verification") or {}
+        if v.get("status") == "frontier-verified":
+            row.verification = "verified"
+            row.verified_at = (
+                datetime.fromisoformat(v["date"]).replace(tzinfo=timezone.utc)
+                if v.get("date") else None
             )
-        )
-        loaded += 1
-    _record_run(db, "major_requirements_structured", snapshot_dir, manifest)
-    print(f"  programs: {loaded} loaded ({len(programs) - loaded} quarantined skipped)")
+            row.verification_notes = v.get("notes")
+        else:
+            row.verification = "unverified"
+            row.verified_at = None
+            row.verification_notes = None
+    removed = [s for s in existing if s not in seen]
+    for s in removed:
+        db.delete(existing[s])
+    _record_run(
+        db, "committed_programs", root,
+        {"files": len(files), "inserted": inserted, "updated": updated, "removed": len(removed)},
+    )
+    print(f"  programs: {updated} updated, {inserted} inserted, {len(removed)} removed")
 
 
 def main() -> None:
@@ -281,39 +331,31 @@ def main() -> None:
     ap.add_argument("--courses", type=Path)
     ap.add_argument("--offerings", type=Path)
     ap.add_argument("--soe", type=Path)
-    ap.add_argument("--programs", type=Path)
     ap.add_argument(
         "--only", choices=["courses", "offerings", "programs", "availability"],
         help="load just one source (default: everything with a snapshot)",
     )
     args = ap.parse_args()
 
-    courses_dir = args.courses or snapshots.latest(UNIVERSITY_ID, "catalog_courses_structured")
     pisa_dirs = [args.offerings] if args.offerings else snapshots.all_finalized(
         UNIVERSITY_ID, "pisa_offerings"
     )
     soe_dir = args.soe or snapshots.latest(UNIVERSITY_ID, "soe_schedule")
-    programs_dir = args.programs or snapshots.latest(
-        UNIVERSITY_ID, "major_requirements_structured"
-    )
 
     with SessionLocal() as db:
         with db.begin():
             if args.only in (None, "courses"):
-                if courses_dir:
-                    load_courses(db, courses_dir)
+                if args.courses:
+                    load_courses(db, args.courses)  # explicit snapshot (rollback)
                 else:
-                    print("WARNING: no structured courses snapshot; skipping", file=sys.stderr)
+                    load_courses_committed(db)
             if args.only in (None, "offerings"):
                 if pisa_dirs or soe_dir:
                     load_offerings(db, pisa_dirs, soe_dir)
                 else:
                     print("WARNING: no offerings snapshots; skipping", file=sys.stderr)
             if args.only in (None, "programs"):
-                if programs_dir:
-                    load_programs(db, programs_dir)
-                else:
-                    print("WARNING: no programs snapshot; skipping", file=sys.stderr)
+                load_programs_committed(db)
             if args.only in (None, "availability"):
                 compute_availability(db, UNIVERSITY_ID)
     print("done")

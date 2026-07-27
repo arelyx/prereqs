@@ -1,0 +1,230 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "electrical-and-computer-engineering",
+ "division": "baskin-engineering",
+ "kind": "minor",
+ "name": "Assistive Technology Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Math placement is required for one or more of the foundational courses for this minor. For more information, please review the Math Placement website ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "One of the following"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM3A",
+       "CHEM4A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: This requirement may also be satisfied with prior completion of CHEM 1A or equivalent. Previous to July 1, 2023, the General Chemistry series, offered by the Department of Chemistry and Biochemistry, was listed in the General Catalog as CHEM 1A , CHEM 1B and CHEM 1C , with associated laboratories CHEM 1M and CHEM 1N . As of academic year 2023-24, this series was replaced with two distinct series: CHEM 3A, CHEM 3B and CHEM 3C , with labs CHEM 3BL and CHEM 3CL ; or CHEM 4A and CHEM 4B with labs CHEM 4AL and CHEM 4BL. Descriptions of these two series are given here ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": [
+        "Note: This requirement may also be satisfied with prior completion of CHEM 1A or equivalent.",
+        "Previous to July 1, 2023, the General Chemistry series, offered by the Department of Chemistry and Biochemistry, was listed in the General Catalog as CHEM 1A , CHEM 1B and CHEM 1C , with associated laboratories CHEM 1M and CHEM 1N . As of academic year 2023-24, this series was replaced with two distinct series: CHEM 3A, CHEM 3B and CHEM 3C , with labs CHEM 3BL and CHEM 3CL ; or CHEM 4A and CHEM 4B with labs CHEM 4AL and CHEM 4BL. Descriptions of these two series are given here ."
+       ]
+      }
+     }
+    ],
+    "title": "Plus one of the following"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N",
+       "BIOL20A",
+       "BIOE20B",
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": [
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     }
+    ],
+    "title": "All of the following"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE13",
+       "CSE13S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE101",
+       "ECE101L",
+       "ECE103",
+       "CSE100",
+       "CSE100L",
+       "ECE118",
+       "METX135",
+       "METX135L",
+       "ECE167"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "All of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE121",
+       "ECE141"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following courses:"
+   }
+  ]
+ },
+ "slug": "assistive-technology-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/assistive-technology-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

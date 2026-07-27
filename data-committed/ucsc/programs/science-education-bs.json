@@ -1,0 +1,630 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "physics",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Science Education B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Twenty-first century science educators must be able to help their students develop and apply a scientific perspective to a wide range of information. The science education major is designed to prepare future secondary science teachers in California with a broad background across the sciences—the physical sciences, life sciences, Earth sciences, and space sciences—with advanced specialization in two fields of science (chosen from physics, chemistry, biology, and Earth sciences). The major integrates education coursework and middle and high school classroom internships designed to develop skills and knowledge relevant to teaching K-12 students in the state of California. The major is mainly intended to prepare students for teacher certification programs and the California Subject Examinations for Teachers (CSET), so that they can teach science in California high schools.",
+     "Cal Teach is one home base for all students in this major, no matter the choices for specialization. Cal Teach (CaT) provides the required sequence of middle and high school-based internships and associated courses in partnership with schools throughout Santa Cruz County. Each internship placement depends on school schedules and the intern’s schedule, interests, and academic preparation. The CaT seminar courses provide the framework for science education majors to develop classroom-management strategies, practice communicating scientific concepts for non-specialists (children), and design lessons to teach the science standards currently used in K-12 education. Departmental advising is provided by the Physics Department and the program faculty.",
+     "The program is designed to prepare outstanding candidates to enter teaching credential programs after completion. Students earn a Bachelor of Science (B.S.) degree. They do not earn a teaching credential. Most students elect to complete this after graduation. Details of how to prepare for admission to a teaching credential program are available on the CalTeach Credential Information page."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Learning outcomes summarize the most important knowledge, skills, abilities, and attitudes that students are expected to develop over the course of their studies. The program learning outcomes communicate the faculty’s expectations to students, provide a framework for faculty evaluation of the curriculum based on empirical data, and help improve and measure the impact of implemented changes:",
+     "Students will demonstrate knowledge and an understanding of scientific connections across the broad spectrum of the sciences.",
+     "Students will demonstrate advanced knowledge in two areas of specialization.",
+     "Students will show that they have learned laboratory skills in multiple scientific fields, enabling them to take measurements in a laboratory and in the field and analyze the measurements to draw valid conclusions.",
+     "Students will communicate scientific concepts effectively and accurately, both orally and in writing, for both college-level and secondary audiences",
+     "Students will apply strategies to address a diversity of K-12 learners’ needs."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Academic advising for the major is provided by the Physics Department undergraduate adviser . Transfer students should also consult the Transfer Information and Policy section of this program statement. Students should contact calteach@ucsc.edu as early as possible to be set up to enroll in the Cal Teach internship courses, which are required for the major."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a course-intensive program, and students who intend to pursue this major must begin taking classes for the major in their first year at UC Santa Cruz.",
+     "This major is designed for students interested in teaching science in California high schools. It may be suitable for students who start out in other science majors and are interested in high school teaching.",
+     "Because of the broad based nature of the major, with introductory courses in physics, chemistry and mathematics, there is considerable flexibility in what courses are taken in the first two years, as long as enough courses required for the major are completed. However, it is simplest to follow the appropriate major planner given here; students should consult with the physics undergraduate adviser if they want to do something different.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     "Students should complete at least two courses in the calculus sequence ( MATH 11A and MATH 11B or MATH 19A and MATH 19B ) in the first year; MATH 19A and MATH 19B are required for students who choose physics as one of their specializations.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students must complete at least six 5-credit courses from the lower-division course requirements, and complete or be enrolled in EDUC 50C , before they can declare the major. (Lecture/lab combinations count as one course.)",
+     "Students who are informed that they are not eligible to declare the major may appeal this decision by submitting a letter to the program director through physicsadvising@ucsc.edu by the later date of either 15 days from the date the notification was sent, or one week after the start of instruction during the quarter after the final relevant grade was received. Within 15 days of receipt of the appeal, the program director will either finalize the denial of admission or specify further conditions for admission, and will notify the student and their college of the decision.",
+     "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first).",
+     "Students petitioning when the campus declaration deadline is imminent must submit an appeal if they have not completed major qualification courses.",
+     "Students should meet with the Physics Department undergraduate adviser and prepare an academic plan when they declare the major. (Transfer students should have prepared an academic plan already; see the section Getting Started in the Major: Transfer Students. )"
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy any of the major requirements must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are awarded to graduating students whose academic performance demonstrates excellence at a grade point average (GPA) of 3.5-3.79 in the courses used to satisfy major requirements. Highest honors are awarded to those students whose performance demonstrates the highest level of excellence and results in a GPA of 3.8 or better in the courses used to satisfy major requirements. The program faculty reserve the right to withhold honors and highest honors based on other criteria such as an incident of academic dishonesty."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B",
+       "BIOE20C",
+       "BIOL20A",
+       "MATH11A",
+       "MATH11B",
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6C",
+       "STAT5",
+       "CHEM3A",
+       "CHEM3B",
+       "CHEM3C",
+       "CHEM4A",
+       "CHEM4B"
+      ],
+      "n": 6,
+      "needs_review": false,
+      "notes": [
+       "Courses from either the CHEM 3 series or the CHEM 4 series, not both, can be used."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Note: This major is intended for students who are interested in teaching science in high schools in the state of California. For more information, please see the program statement for this major in the UC Santa Cruz General Catalog.",
+        "Six of the following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall.",
+        "Courses from either the CHEM 3 series or the CHEM 4 series, not both, can be used.",
+        "In addition, students are recommended to complete three more courses from the above course list prior to transfer to ensure timely graduation. Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to University of California, Santa Cruz, general education requirements as time allows.",
+        "In addition, students are recommended to complete three more courses from the above course list prior to transfer to ensure timely graduation.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to University of California, Santa Cruz, general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students admitted to UC Santa Cruz in this major should contact the Physics Department undergraduate adviser as soon as possible to draw up an academic plan, specifying the two fields out of physics, chemistry, biology and earth sciences which they wish to specialize in. Because the program includes courses from several departments, and different students complete different courses prior to matriculation, an individual academic plan is essential for timely graduation. If any courses that are not articulated to UC Santa Cruz courses have been completed, they may be reviewed for equivalence if requested; course descriptions and other details may be needed for such a review.",
+        "Students should also contact CalTeach as soon as possible after coming to UC Santa Cruz to be set up to enroll in the CalTeach internship courses, which are required for the major.",
+        "Students may declare the major at any time after coming to UC Santa Cruz. Contact physics advising for details.",
+        "Students who are proposed in a different major and have advanced standing when they come to UC Santa Cruz require permission from the Science Education faculty program director to change into the major."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH11A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH11B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH22"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 22 is waived for a student who chooses their electives from chemistry and biology or from Earth sciences and biology."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": [
+        "MATH 22 is waived for a student who chooses their electives from chemistry and biology or from Earth sciences and biology."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5L",
+        "PHYS5B",
+        "PHYS5M",
+        "PHYS5C",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6B",
+        "PHYS6M",
+        "PHYS6C",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR1",
+       "ASTR2",
+       "ASTR5",
+       "ASTR10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "ASTR119"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ASTR 119 should be taken by students who select physics as one of their fields of specialization (see the Electives section below), to enable them to take the required course PHYS 133 ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "ASTR 119 should be taken by students who select physics as one of their fields of specialization (see the Electives section below), to enable them to take the required course PHYS 133 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC50C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": [
+        "EDUC 50C , EDUC 100A , EDUC 100C and EDUC 185L are Cal Teach internship courses (see \"Program Description\"). The first course in this sequence is offered in the fall and winter terms. Students must apply to enroll in these courses before the priority application deadlines in early May (for fall) and early November (for winter). See the application website for details, or contact calteach@ucsc.edu Students are strongly encouraged to complete EDUC 50C before deciding to declare this major. Science Education B.S. students meet the Subject Matter Requirement for a California Preliminary Single Subject Teaching Credential in Foundational-Level General Science by virtue of their degree, and will not need to pass the California Subject Examination (CSET): Science Subtest I. After completion of a Teacher Education Program, students with a Single Subject Teaching Credential in Foundational-Level General Science may teach general, introductory and integrated science (integrated science through Grade 8 only). Students who wish to teach subject-specific science (physics, biology, chemistry or geoscience) must meet the Subject Matter Requirement in the fields they want to teach. Completing the Science Education B.S. and passing the CSET Science Subtest II in the chosen field(s) will satisfy this requirement. A Science Education B.S. student who enrolls in the UC Santa Cruz Education M.A. & Credential Program can meet the Science Subtest II part of the Subject Matter Requirement in the two fields in which they have completed the coursework required for the Science Education B.S., verified through state-required coursework evaluation with the UCSC credential analyst. Conversely, a student who has passed the California Subject Examinations for Teachers (CSET) General Science Examination will have the lower-division courses in the two fields that they are not specializing in (see the sections on “Electives” below) waived, except for EART 5 or EART 10 or EART 20 and the associated lab, which is a prerequisite for EART 110A . (If the lower-division courses in chemistry are waived, the student will still need to take CHEM 3A or CHEM 4A as the prerequisite to BIOL 20A , unless the lower-division courses in biology are also waived.)",
+        "EDUC 50C , EDUC 100A , EDUC 100C and EDUC 185L are Cal Teach internship courses (see \"Program Description\"). The first course in this sequence is offered in the fall and winter terms. Students must apply to enroll in these courses before the priority application deadlines in early May (for fall) and early November (for winter). See the application website for details, or contact calteach@ucsc.edu Students are strongly encouraged to complete EDUC 50C before deciding to declare this major.",
+        "Science Education B.S. students meet the Subject Matter Requirement for a California Preliminary Single Subject Teaching Credential in Foundational-Level General Science by virtue of their degree, and will not need to pass the California Subject Examination (CSET): Science Subtest I. After completion of a Teacher Education Program, students with a Single Subject Teaching Credential in Foundational-Level General Science may teach general, introductory and integrated science (integrated science through Grade 8 only).",
+        "Students who wish to teach subject-specific science (physics, biology, chemistry or geoscience) must meet the Subject Matter Requirement in the fields they want to teach. Completing the Science Education B.S. and passing the CSET Science Subtest II in the chosen field(s) will satisfy this requirement. A Science Education B.S. student who enrolls in the UC Santa Cruz Education M.A. & Credential Program can meet the Science Subtest II part of the Subject Matter Requirement in the two fields in which they have completed the coursework required for the Science Education B.S., verified through state-required coursework evaluation with the UCSC credential analyst.",
+        "Conversely, a student who has passed the California Subject Examinations for Teachers (CSET) General Science Examination will have the lower-division courses in the two fields that they are not specializing in (see the sections on “Electives” below) waived, except for EART 5 or EART 10 or EART 20 and the associated lab, which is a prerequisite for EART 110A . (If the lower-division courses in chemistry are waived, the student will still need to take CHEM 3A or CHEM 4A as the prerequisite to BIOL 20A , unless the lower-division courses in biology are also waived.)"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC100A",
+       "EDUC100C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC185L",
+       "EDUC185C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC177",
+       "EDUC128",
+       "EDUC140",
+       "EDUC181"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All the courses from any two of the following fields must be completed:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "All the courses from any two of the following fields must be completed:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5D",
+       "PHYS102",
+       "PHYS133"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Field 1: Physics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8L",
+       "CHEM8B",
+       "CHEM8M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Field 2: Chemistry",
+       "prose": [
+        "And one additional 5-credit, upper-division chemistry course numbered CHEM 100 - CHEM 180. CHEM 163B is strongly recommended for students in chemistry/physics; CHEM 103 for students in chemistry/biology; CHEM 163A for students in chemistry/Earth sciences.",
+        "And one additional 5-credit, upper-division chemistry course numbered CHEM 100 - CHEM 180. CHEM 163B is strongly recommended for students in chemistry/physics; CHEM 103 for students in chemistry/biology; CHEM 163A for students in chemistry/Earth sciences."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL105",
+       "BIOE107",
+       "BIOE109"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Field 3: Biology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110B",
+       "EART110M",
+       "OCEA90"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Field 4: Earth Sciences",
+       "prose": [
+        "And one additional 5-credit, upper-division EART course numbered EART 100 - EART 189.",
+        "And one additional 5-credit, upper-division EART course numbered EART 100 - EART 189."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "The disciplinary communication requirement for this major is fulfilled by completing:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC100A",
+       "EDUC100C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC185L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC185C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior capstone requirement for this major is fulfilled by completing:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "science-education-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/science-education-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

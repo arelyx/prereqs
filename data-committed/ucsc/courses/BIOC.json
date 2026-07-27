@@ -1,0 +1,180 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Michael Stone",
+   "code": "BIOC100A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Fundamentals of molecular biology, structure and function of nucleic acids, and protein structure. Designed for students preparing for research careers in biochemistry and molecular biology.",
+   "display_code": "BIOC 100A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "100A",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "BIOL20A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B; and BIOL 20A . Enrollment is restricted to chemistry, biochemistry, and biomolecular engineering and bioinformatics majors, chemistry minors, and proposed chemistry, biochemistry, and biomolecular engineering majors.",
+   "repeatable": false,
+   "subject": "BIOC",
+   "title": "Biochemistry and Molecular Biology",
+   "url": "/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology/upper-division/bioc-100a"
+  },
+  {
+   "catalog_instructor": "Michael Stone",
+   "code": "BIOC100B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers principles of protein function from ligand binding and enzyme mechanism, kinetics and regulation to membrane composition and membrane protein function. Lecture: 3-1/2 hours; discussion: 1-1/4 hours.",
+   "display_code": "BIOC 100B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "100B",
+   "prereq_groups": [
+    [
+     "BIOC100A"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): BIOC 100A",
+   "repeatable": false,
+   "subject": "BIOC",
+   "title": "Biochemistry and Molecular Biology",
+   "url": "/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology/upper-division/bioc-100b"
+  },
+  {
+   "catalog_instructor": "Hanns Boeger",
+   "code": "BIOC100C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Biochemistry: intermediary metabolism and bioenergetics. How enzymatically catalyzed reactions are organized and regulated; how energy from molecules is extracted for chemical work. Lecture: 3-1/2 hours; discussion: 1-1/4 hours. (Formerly Biochemistry .)",
+   "display_code": "BIOC 100C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Biochemistry .",
+   "ge_codes": [],
+   "number": "100C",
+   "prereq_groups": [
+    [
+     "BIOC100B"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): BIOC 100B",
+   "repeatable": false,
+   "subject": "BIOC",
+   "title": "Biochemistry and Molecular Biology",
+   "url": "/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology/upper-division/bioc-100c"
+  },
+  {
+   "catalog_instructor": "Caileen Brison",
+   "code": "BIOC110L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the major techniques used in the isolation and characterization of biological components. Laboratory: 8 hours; lecture: 1-3/4 hours. Students are billed a materials fee of $350.",
+   "display_code": "BIOC 110L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "110L",
+   "prereq_groups": [
+    [
+     "BIOC100B"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): BIOC 100B and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to chemistry majors in the biochemistry concentration. Other majors by permission.",
+   "repeatable": false,
+   "subject": "BIOC",
+   "title": "Advanced Biochemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology/upper-division/bioc-110l"
+  },
+  {
+   "catalog_instructor": "William Scott",
+   "code": "BIOC163A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Detailed introduction to molecular quantum mechanics and application of spectroscopic and diffraction techniques to problems involving biological macromolecules. Designed as an alternative to CHEM 163A for the biochemistry and molecular biology major requirement. Students cannot receive credit for this course and CHEM 163A .",
+   "display_code": "BIOC 163A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163A",
+   "prereq_groups": [
+    [
+     "CHEM1B",
+     "CHEM1C",
+     "CHEM3C",
+     "CHEM4B"
+    ],
+    [
+     "PHYS5A",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6B"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): CHEM 1B and CHEM 1C , or CHEM 3C , or CHEM 4B ; and PHYS 5A and 5C, or PHYS 6A and 6C; and previous or concurrent enrollment in PHYS 5B or PHYS 6B .",
+   "repeatable": false,
+   "subject": "BIOC",
+   "title": "Quantum Mechanics, Spectroscopy and Molecular Structure for Biochemistry and Molecular Biology",
+   "url": "/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology/upper-division/bioc-163a"
+  },
+  {
+   "catalog_instructor": "William Scott",
+   "code": "BIOC163B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Detailed introduction to the fundamentals of classical and statistical thermodynamics and applications to problems involving biochemical equilibria, macromolecular structure and function. Course is designed as an alternative to CHEM 163B for partial fulfillment of the biochemistry and molecular biology major physical chemistry requirement. Students cannot receive credit for this course and CHEM 163B .",
+   "display_code": "BIOC 163B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163B",
+   "prereq_groups": [
+    [
+     "CHEM1B",
+     "CHEM1C",
+     "CHEM3C",
+     "CHEM4B"
+    ],
+    [
+     "PHYS6A",
+     "PHYS5A"
+    ],
+    [
+     "BIOC100A"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): CHEM 1B and CHEM 1C , or CHEM 3C , or CHEM 4B ; PHYS 6A or PHYS 5A ; and previous or concurrent enrollment in BIOC 100A . .",
+   "repeatable": false,
+   "subject": "BIOC",
+   "title": "Biochemical Thermodynamics and Statistical Mechanics for Biochemistry and Molecular Biology",
+   "url": "/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology/upper-division/bioc-163b"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "BIOC"
+}

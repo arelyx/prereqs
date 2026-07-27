@@ -1,0 +1,186 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "anthropology",
+ "division": "social-sciences-division",
+ "kind": "minor",
+ "name": "Anthropology Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH1",
+       "ANTH2",
+       "ANTH3"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "For information on receiving credit for lower-division coursework taken at other institutions, see the section Transfer Credit Toward Major/Minor Requirements"
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "For information on receiving credit for lower-division coursework taken at other institutions, see the section Transfer Credit Toward Major/Minor Requirements"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "one course in regional specialization",
+        "one course in sociocultural anthropology",
+        "one course in archaeology",
+        "one course in biological, medical, or environmental anthropology",
+        "three additional anthropology courses from the Courses in Anthropology by Category List"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Anthropology students can choose to take courses required for the minor for a Pass/No Pass (P/NP) grading option. Students receive a P (Pass) for work that is performed at C level or better. However, all students must abide by the campus policy that no more than 25 percent of their UC Santa Cruz credits applied toward graduation may be graded on a Pass/No Pass basis. The Anthropology Department does not set any additional restrictions on how many required anthropology courses students can take for Pass/No Pass. However, it is recommended that students take very few of their upper-division anthropology courses for Pass/No Pass.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Letter Grade Policy",
+       "prose": [
+        "Anthropology students can choose to take courses required for the minor for a Pass/No Pass (P/NP) grading option. Students receive a P (Pass) for work that is performed at C level or better. However, all students must abide by the campus policy that no more than 25 percent of their UC Santa Cruz credits applied toward graduation may be graded on a Pass/No Pass basis. The Anthropology Department does not set any additional restrictions on how many required anthropology courses students can take for Pass/No Pass. However, it is recommended that students take very few of their upper-division anthropology courses for Pass/No Pass."
+       ]
+      }
+     }
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Courses from California Community Colleges",
+       "prose": [
+        "Courses taken at community colleges or four-year universities may be used to satisfy the lower-division requirements for the minor. View the UC Articulation Agreements to determine which California community college courses are equivalent to our ANTH 1 , ANTH 2 , and ANTH 3 ."
+       ]
+      }
+     }
+    ],
+    "title": "Courses from California Community Colleges"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "You may also apply up to 10 credits (two classes) of upper-division credit toward the minor. These credits must be taken at four-year universities, through EAP, or through an approved field study program. The Anthropology director of undergraduate studies must approve each course. For more information about the approval and waiver process, see the Anthropology Coursework Petition .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Courses from Other Four-Year Universities",
+       "prose": [
+        "The Anthropology Department may also accept introductory anthropology courses equivalent to ANTH 1 , ANTH 2 , and ANTH 3 from other four-year universities but students must petition to have these courses count toward the anthropology minor requirements.",
+        "You may also apply up to 10 credits (two classes) of upper-division credit toward the minor. These credits must be taken at four-year universities, through EAP, or through an approved field study program. The Anthropology director of undergraduate studies must approve each course. For more information about the approval and waiver process, see the Anthropology Coursework Petition ."
+       ]
+      }
+     }
+    ],
+    "title": "Courses from Other Four-Year Universities"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Coursework Petition Process",
+       "prose": [
+        "Step 1",
+        "Initiate the Anthropology Coursework Petition . Step 2",
+        "Complete and sign the form in DocuSign. It will be sent to the anthropology undergraduate advisor for review.",
+        "Step 3",
+        "The director of undergraduate studies reviews petitions to approve/deny to satisfy lower-division/upper-division elective major/minor requirements.",
+        "Step 4",
+        "The undergraduate advisor processes coursework in MyUCSC and completes the petition, and the student saves the completed form for their records.",
+        "Approval of ANTH 1 , ANTH 2 , and/or ANTH 3",
+        "Anthropology undergraduate advisor processes \"Other Credit Quick\" to indicate satisfaction of the course prerequisite.",
+        "Anthropology Undergraduate Advisor processes \"Requirement Waiver\" in the Degree Progress Report in MyUCSC to indicate that the major/minor requirement is satisfied."
+       ]
+      }
+     }
+    ],
+    "title": "Coursework Petition Process"
+   }
+  ]
+ },
+ "slug": "anthropology-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/anthropology/anthropology-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

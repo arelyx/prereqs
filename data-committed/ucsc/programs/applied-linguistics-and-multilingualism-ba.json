@@ -1,0 +1,451 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "languages-and-applied-linguistics",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Applied Linguistics and Multilingualism B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Applied linguistics is an interdisciplinary field that seeks to understand how languages are learned (first and second language acquisition), how more than one language is represented and accessed in the mind of the individual (bilingualism), the ways in which language and society intersect (sociolinguistics), how people from different cultural and linguistic backgrounds interact (intercultural communication), and methods and principles of language teaching (pedagogy).",
+     "The major in applied linguistics and multilingualism is designed for students who wish to pursue the study of a particular language (e.g., Chinese, French, Italian, Japanese, or Spanish), and at the same time, gain an in-depth understanding of language use in bilingual and multilingual settings. Coursework for the major presupposes some familiarity with theoretical linguistics, and thus majors are required to take three foundational courses offered in the Linguistics Department ( LING 50 and LING 100; LING 111 or LING 112) in addition to APLX 80 , the introductory course to applied linguistics. Since applied linguistics is integrally connected to other disciplines such as cognitive and developmental psychology, education, anthropology, and sociology, students have the option of taking some elective courses in these areas. Finally, majors are encouraged to pursue the study of more than one language in order to reflect on and enhance their understanding of the process of second language acquisition."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Graduates from the applied linguistics and multilingualism studies bachelor of arts program should:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "218 Cowell College 831-459-2054 languages@ucsc.edu",
+     "The earlier you declare your major in your academic career the better you will be able to plan your courses and the fulfillment of the requirements. If you declare your major early, you will receive more guidance, useful advice and close follow-up.",
+     "The Department of Languages and Applied Linguistics provides extensive orientation for the undergraduate major in applied linguistics and multilingualism. It is very important you plan the prerequisite and requisite courses in the appropriate sequence so as to complete your studies in the expected time.",
+     "Orientation is provided in two ways: large-group informational session at the beginning of fall quarter, and small-group or individual meetings with a faculty and/or staff advisor throughout the academic year.",
+     "Transfer students: Please also consult the Transfer Information and Policy section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to the University of California, Santa Cruz.",
+     "Transfer students are strongly advised to complete courses that will satisfy the campus general education requirements or the California General Education Transfer Curriculum (Cal-GETC). In addition, transfer students are strongly advised to complete two years of language study in accredited two and four year institutions. While two years of prior language study is strongly advised, transfer students should be able to complete the applied linguistics and multilingualism major in normative time as long as they place into language Level 4 (Level 5 for students entering UC Santa Cruz in the winter term) upon arrival at UC Santa Cruz.",
+     "Transfer students may declare at any time after completing Level 4 of a non-English language with a grade of B- or better, following the process in \"How to Declare a Major.\" Transfer students who place into Level 5 or higher of their language when they enter UC Santa Cruz can declare the major immediately.",
+     "Transfer students should consult an academic advisor at languages@ucsc.edu as soon as possible to learn about language placement tests and other information about the major."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "A maximum of two courses that are used to satisfy the major requirements may be taken for a Pass/No Pass. Please note that the Level 4 course in the student's chosen language and APLX 190 must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "The Division of Global Engagement sponsors programs of study. Students who wish to major in applied linguistics and multilingualism are strongly encouraged to study abroad. For a list of current programs and requirements, visit Global Engagement .",
+     "Students who participate in study abroad may petition to apply up to three courses (up to 15 upper-division credits) toward the major."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Students who wish to be considered for honors should meet the deadline posted by the Office of the Registrar for declaring the intent to graduate. Determination of honors is based on the student’s grades for all courses relevant to the major and other factors relevant to an assessment of academic excellence, such as research papers of professional quality. Generally, honors in the major are awarded only to students with a GPA of 3.75 or higher in relevant coursework. Only those students whose performance in coursework is excellent will qualify. Highest honors are awarded only to students whose performance in relevant coursework is outstanding (GPA of 3.90 and above) and who have completed an outstanding original research paper."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHIN4",
+       "FREN4",
+       "ITAL4",
+       "JAPN4",
+       "SPAN4",
+       "SPHS4"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To declare the major, students must have completed Level 4 of a non-English language (e.g.,  CHIN 4, FREN 4 , ITAL 4, JAPN 4, SPAN 4 , SPHS 4 ) with a grade of B- or better, or place into Level 5 or higher via placement exam. Levels 1-3 may be taken P/NP. Please see the Letter Grade Policy section below for more details.",
+        "If your native language is other than English, please consult with the faculty director to discuss alternative options for meeting this requirement.",
+        "Transfer students: Please also consult the Transfer Information and Policy section."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students notified that they are not eligible to declare the major may appeal this decision by submitting a letter to the department chair within 15 working days from the date of notification. Within 15 working days of receipt of the student's appeal, the department will notify the student and their college of its decision regarding the appeal."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e. in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g. completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification (MQ) courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification (MQ) requirements or reach their declaration deadline quarter (whichever comes first).",
+        "Students petitioning when the campus declaration deadline is imminent (i.e. in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g. completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification (MQ) courses.",
+        "Students must meet major qualification requirements prior to declaring the major.",
+        "To declare the major, students must first meet with the faculty advisor and then with the academic advisor. Please contact languages@ucsc.edu for further information."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "There are a total of 65 credits (50 upper-division and 15 lower-division) required for the applied linguistics and multilingualism major. See below for a breakdown of the credit requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "APLX80",
+       "LING50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHIN6",
+       "FREN6",
+       "ITAL6",
+       "JAPN6",
+       "SPAN6",
+       "SPHS6"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "These courses have Level 1 to Level 5 language prerequisites that have to be completed or satisfied through placement by assessment."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Take one of the following Level 6 courses",
+       "prose": [
+        "These courses have Level 1 to Level 5 language prerequisites that have to be completed or satisfied through placement by assessment."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Foundation Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "APLX101",
+       "LING100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING111",
+       "LING112"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "and one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHIN103",
+       "CHIN104",
+       "CHIN105",
+       "CHIN107",
+       "CHIN108",
+       "FREN105",
+       "FREN108",
+       "FREN111",
+       "FREN114",
+       "FREN115",
+       "FREN120",
+       "FREN121",
+       "FREN125A",
+       "FREN125B",
+       "FREN130",
+       "FREN136",
+       "FREN131",
+       "ITAL100",
+       "JAPN103",
+       "JAPN104",
+       "JAPN105",
+       "JAPN109",
+       "JAPN111",
+       "LALS171",
+       "SPAN114",
+       "SPHS115",
+       "SPAN130",
+       "SPAN140",
+       "SPAN141",
+       "SPAN142",
+       "SPAN150",
+       "SPAN151",
+       "SPAN152",
+       "SPAN153",
+       "SPAN154",
+       "SPAN155",
+       "SPAN156A",
+       "SPAN156E",
+       "SPAN156F",
+       "SPAN156J",
+       "SPAN156K",
+       "SPAN156L",
+       "SPAN157",
+       "SPAN158"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Advanced Language Proficiency Courses",
+       "prose": [
+        "(10 credits total)",
+        "Students must take a minimum of two courses from the following list in the student’s target language (Chinese, French, Italian, Japanese, or Spanish). The complete Advanced Language Proficiency course list is posted on the department’s web page. Courses used to fulfill the advanced language proficiency requirement cannot be counted toward the APLX electives. Students may petition to have other 5-credit, upper-division courses offered in the student’s target language count toward the advanced language proficiency requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Four upper-division (5-credit) electives from the following list are required, at least three of which must be APLX courses. Additional courses can be considered, pending approval by the APLX faculty director. Courses used to fulfill the advanced language proficiency requirement cannot be counted toward the APLX electives.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ANTH139",
+       "ANTH143",
+       "APLX102",
+       "APLX103",
+       "APLX105",
+       "APLX112",
+       "APLX113",
+       "APLX116",
+       "APLX115",
+       "APLX122",
+       "APLX124",
+       "APLX135",
+       "APLX136",
+       "APLX138",
+       "EDUC141",
+       "LING117",
+       "LING154",
+       "LING155",
+       "LING171",
+       "LING181",
+       "LING183",
+       "LIT101",
+       "LIT102",
+       "SOCY142",
+       "SPAN140",
+       "SPAN150",
+       "SPAN151",
+       "SPAN152",
+       "SPAN153",
+       "SPAN154",
+       "SPAN156K",
+       "SPAN156L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "(20 credits total)",
+        "Four upper-division (5-credit) electives from the following list are required, at least three of which must be APLX courses. Additional courses can be considered, pending approval by the APLX faculty director. Courses used to fulfill the advanced language proficiency requirement cannot be counted toward the APLX electives."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "APLX190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "The Disciplinary Communication requirement (DC) is satisfied by successfully completing:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "APLX190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "(5 credits total)",
+        "In their senior year, applied linguistics and multilingualism majors must satisfy the senior exit requirement with:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "applied-linguistics-and-multilingualism-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/applied-linguistics-and-multilingualism-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

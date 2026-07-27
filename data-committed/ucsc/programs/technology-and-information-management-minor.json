@@ -1,0 +1,205 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "technology-and-information-management",
+ "division": "baskin-engineering",
+ "kind": "minor",
+ "name": "Technology and Information Management Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Mathematics (2 Courses)",
+       "prose": [
+        "Math placement is required for one or more of the foundational courses for this minor. For more information, please review the Math Placement website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM11A",
+       "MATH11A",
+       "MATH20A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM11B",
+       "MATH11B",
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Mathematics (2 Courses)"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE20",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Clearing the CSE 20 “ Test Out ” bar will also satisfy this requirement."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following",
+       "prose": [
+        "Clearing the CSE 20 “ Test Out ” bar will also satisfy this requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "TIM50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "TIM58",
+       "TIM80C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Computer Science and Engineering (3 Courses)"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE107",
+       "ECON113",
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Mathematics (1 Course)",
+       "prose": [
+        "One of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Mathematics (1 Course)"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150",
+       "CSE180",
+       "CSE182",
+       "ECON100A",
+       "ECON100M",
+       "ECON100B",
+       "ECON100N",
+       "TIM172A",
+       "TIM172B",
+       "TIM175"
+      ],
+      "n": 4,
+      "needs_review": false,
+      "notes": [
+       "Strongly recommend TIM 172A or TIM 175 as one of the four electives. Either CSE 180 or CSE 182 Either ECON 100A or ECON 100M Either ECON 100B or ECON 100N"
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives (4 Courses)",
+       "prose": [
+        "Four courses from the following list:",
+        "Strongly recommend TIM 172A or TIM 175 as one of the four electives.",
+        "Either CSE 180 or CSE 182",
+        "Either ECON 100A or ECON 100M",
+        "Either ECON 100B or ECON 100N"
+       ]
+      }
+     }
+    ],
+    "title": "Electives (4 Courses)"
+   }
+  ]
+ },
+ "slug": "technology-and-information-management-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

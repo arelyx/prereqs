@@ -1,0 +1,96 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LATN1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Instruction in Latin grammar, using a modern Latin method, designed to prepare for the study of classical literature. The sequence begins in the fall quarter only.",
+   "display_code": "LATN 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LATN",
+   "title": "Elementary Latin",
+   "url": "/en/current/general-catalog/courses/latn-latin/lower-division/latn-1"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LATN2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Instruction in Latin grammar, using a modern Latin method, designed to prepare for the study of classical literature.",
+   "display_code": "LATN 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "LATN1"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LATN 1.",
+   "repeatable": false,
+   "subject": "LATN",
+   "title": "Elementary Latin",
+   "url": "/en/current/general-catalog/courses/latn-latin/lower-division/latn-2"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LATN99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "LATN 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LATN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/latn-latin/lower-division/latn-99"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LATN99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "LATN 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LATN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/latn-latin/lower-division/latn-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "LATN"
+}

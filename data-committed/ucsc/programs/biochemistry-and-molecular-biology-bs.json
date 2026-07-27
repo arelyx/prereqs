@@ -1,0 +1,806 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "chemistry-and-biochemistry",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Biochemistry and Molecular Biology B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Research at the macromolecular, molecular, and atomic levels is revolutionizing our understanding of the fundamental processes of life. Students interested in joining this search are best prepared by undertaking coursework in biology, chemistry, physics, mathematics, and computer science. The undergraduate major in biochemistry and molecular biology (BMB) is jointly administered by the Chemistry and Biochemistry and Molecular, Cell, and Developmental (MCD) Biology Departments. Program faculty are actively engaged in research on biological systems.",
+     "Students who declare the BMB major earn a bachelor of science (B.S.) degree. The BMB major constitutes an integrated curriculum of basic instruction in biology, chemistry, mathematics, and physics, followed by the opportunity to pursue advanced study in specialized areas of interest. In modern, well-equipped laboratories, distinguished faculty are engaged in frontline research at UCSC. The Chemistry and Biochemistry Department and the Molecular, Cell, and Developmental Biology Department each host a very active seminar series in which internationally-recognized scientists present their current research findings. Advanced BMB undergraduates are encouraged to attend.",
+     "The BMB program features close faculty-student interaction, stimulating learning environments, and opportunities for independent research and study. Students majoring in BMB are encouraged to become involved in research under the guidance of a faculty sponsor. Many students participating in this aspect of the program have made important contributions to the scientific literature.",
+     "The BMB major has a broad scope and is interdisciplinary in nature. All prospective majors should see the BMB academic advisor for additional information."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Learning outcomes summarize the most important knowledge, skills, abilities, and attitudes that students are expected to develop over the course of their studies.",
+     "Students graduating with a B.S. in biochemistry and molecular biology should be able to:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The chemistry and biochemistry advisors provide counsel to undergraduate majors. Students are encouraged to seek out advising and assistance in planning their academic careers to ensure completion of their major in a timely manner. For advising assistance, please contact chemistry and biochemistry advising at chemistryadvising@ucsc.edu or visit the Chemistry & Biochemistry Advising webpage . All students interested in the Biochemistry & Molecular Biology (BMB) B.S. major should read this catalog to learn more details about the major."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz.",
+     "Prospective biochemistry and molecular biology majors should have a solid foundation in high school mathematics; familiarity with algebra, logarithms, trigonometry, and analytic geometry is particularly required. Incoming students in the biochemistry and molecular biology major should complete the ALEKS Math Placement process as early as possible. ALEKS results must be officially posted to students’ records as a prerequisite to first quarter enrollment. For more information, please review the Math Placement website .",
+     "Students taking chemistry at the University of California, Santa Cruz, have a number of options for satisfying their general chemistry requirements:",
+     "Any of the above pathways fully satisfies the general chemistry prerequisites of any major declaration or required/elective classes for programs in the Physical and Biological Sciences (PBSci) Division.",
+     "Qualifying for the Accelerated General Chemistry series (CHEM 4) *Note: CHEM 4 not offered in Academic Year 2026-27",
+     "CHEM 4 is an accelerated two-quarter series intended for students who enter UC Santa Cruz with excellent preparation in high school chemistry. Students in this series will learn fundamental concepts in chemistry at a faster pace than our traditional general chemistry series, CHEM 3, with an emphasis on quantum theory, molecular structure, and chemical driving forces. Both courses cover the same material; however, the CHEM 4 series completes the content in two quarters rather than three. Students with an exceptionally strong background in high school chemistry are especially encouraged to begin with CHEM 4A (Advanced General Chemistry: Molecular Structure and Reactivity) instead of CHEM 3A .",
+     "All students who want to enroll in the accelerated series must complete an online learning module and assessment administered by the Chemistry and Biochemistry Department. Once the online learning module and assessment are started (by completing the initial knowledge check), students will have six weeks to complete the online learning module and assessment and, once the module & assessment are completed students may request enrollment in CHEM 4A . Students who complete the online learning module and assessment and submit their proof of completion by the established deadline are eligible to remain enrolled in CHEM 4A . Students can access the full CHEM 4A qualification instructions and the online learning module by joining this Canvas Class .",
+     "If you have questions about this process, please contact chemistry advising at chemistryadvising@ucsc.edu .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy degree requirements in any of the chemistry and biochemistry majors must be taken for a letter grade. Additionally, letter grades of C or higher must be attained in all courses to meet major and minor requirements for graduation."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "At least half of the upper-division courses (numbered 100–199) required for any biochemistry and molecular biology major must be taken through the chemistry or biology programs at UC Santa Cruz, not as transfer credits from another department or institution. Students are advised to contact the Chemistry and Biochemistry Department undergraduate advising office before enrolling in any chemistry or biochemistry upper-division courses at other institutions to verify articulation."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "BMB students who are considering independent research or wish to complete a thesis should contact chemistryadvising@ucsc.edu . Students who are participating in undergraduate research should consider taking BIOL 186L or CHEM 186L as their senior exit lab. BIOL 186L is hosted and controlled by the MCD Biology Department, while CHEM 186L is hosted and controlled by the Department of Chemistry & Biochemistry."
+    ],
+    "title": "Independent Study Policy"
+   },
+   {
+    "paragraphs": [
+     "A student cannot double major/minor in BMB and any other major/minor offered by the departments of Chemistry & Biochemistry, Ecology and Evolutionary Biology, Microbiology and Environmental Toxicology, MCD Biology, or Global Community Health.",
+     "Pursuing a double major that includes a chemistry major is a highly individual decision and should be based on a student’s educational and career goals. Because the biochemistry and molecular biology major itself is course-intensive and rigorous, it should be noted that completing a double major involving biochemistry and molecular biology is difficult and often not viable.",
+     "To declare a double major, a student must obtain an academic plan showing that they are able to complete both degrees within the maximum number of quarters of enrollment available at UC Santa Cruz. Therefore, the steps for a student to pursue chemistry as a second major are as follows:"
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Department honors in the majors are awarded to graduating students whose academic performance demonstrates excellence at a GPA of 3.5 - 3.79 in required major coursework. Department highest honors are awarded to those students whose performance demonstrates the highest level of excellence and results in a GPA of 3.8 or above in required major coursework."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Biochemistry and molecular biology students should be aware of the materials fee required for some laboratory courses. The fee is billed to the student’s account for specific laboratory materials purchased through the university. Students may incur additional expenses purchasing individual supplies."
+    ],
+    "title": "Materials Fee"
+   },
+   {
+    "paragraphs": [
+     "Students who do not begin the lower-division qualification course requirements during their first year, and who do not complete the organic chemistry requirements by the end of their second year, will have difficulty completing the program within four years. Chemistry and biochemistry advising works closely with students interested in pursuing the major to ensure that they begin the program immediately and follow the appropriate steps toward completion.",
+     "It is strongly recommended that students avail themselves of the opportunities to obtain firsthand research experience through either independent study, a course-based undergraduate research experience, or by working in a faculty research lab."
+    ],
+    "title": "Program Planning Notes"
+   },
+   {
+    "paragraphs": [
+     "Students intending to enter medical, dental, or another health science professional school can satisfy entrance requirements with a major program in biochemistry and molecular biology supplemented with further courses, especially in biology, as specified by the admissions requirements of the school where they intend to apply. Students are strongly encouraged to review the Pre-Health section of the Career Success website to review preparation recommendations, prerequisites and other information about professional health education programs (medical school, dental school, etc.), and more important information to assist in preparation for a career in health sciences.",
+     "Students are urged to contact Career Success for assistance with the application process."
+    ],
+    "title": "Program for Students of the Health Sciences"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "General information about transferring to UC Santa Cruz can be found on the Transfer Preparation Advising website . Students planning to transfer to UC Santa Cruz as a biochemistry and molecular biology major from a California community college should reference assist.org to determine which courses are equivalent to required and recommended pre-transfer courses."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall. Courses must be completed with a grade of C or better with a cumulative GPA of 2.50 in these courses. Completion of these courses also satisfies all major qualification requirements. For students with exam credit for any of the courses, a grade of A will be used in the GPA calculation.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall. Courses must be completed with a grade of C or better with a cumulative GPA of 2.50 in these courses. Completion of these courses also satisfies all major qualification requirements. For students with exam credit for any of the courses, a grade of A will be used in the GPA calculation."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "CHEM8A",
+       "CHEM8B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "And these courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B",
+       "CHEM8L",
+       "CHEM8M",
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6C",
+       "PHYS6L",
+       "PHYS6M",
+       "PHYS6N",
+       "STAT5"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended Major Preparation for Junior Transfer Students",
+       "prose": [
+        "Completion of the following courses is highly recommended before the transfer to ensure timely graduation. Students who only complete minimum required transfer coursework for the major prior to transfer are more likely to take longer to complete the Biochemistry and Molecular Biology B.S."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11B",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "As well as one of the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students are strongly encouraged to meet with the biochemistry and molecular biology academic advisor in their first quarter. For assistance with advising, email chemistryadvising@ucsc.edu .",
+        "Any student who fails to meet these requirements may file an appeal for admission to the major, but admission is not guaranteed.",
+        "Students who transfer as juniors can declare their major any time after coming to UC Santa Cruz but are required to be declared in a major by the declaration deadline in their second term at UC Santa Cruz.",
+        "Transfer students who are proposed in a different major (other than biochemistry and molecular biology) require permission from the department to change into the major. Admission to the major is not guaranteed."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Students must complete each of the following qualification courses, or their equivalents, by their campus-established declaration deadline with a grade of C (2.0) or better and with a cumulative grade point average (GPA) of 2.50 or greater:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "CHEM8A",
+       "CHEM8B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus these courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students need to complete the qualification courses prior to their sixth quarter of enrollment (for transfer students, before your second quarter). Students who have not completed CHEM 8B by the end of their fifth quarter, but are enrolled in the course during their sixth quarter and have satisfied all other major qualification requirements, may submit an appeal to declare the major. Please refer to the \"Appeal Process\" section below for more information. When pursuing major qualification, students should keep the following details in mind: All courses must be taken for a letter grade. See the Letter Grade Policy below. A grade of A will be used in the GPA calculation for students with exam credit for any of the above courses. Students who entered UC Santa Cruz as frosh with two or more grades of NP, C-, D+, D, D-, or F in courses required to qualify for the major are not eligible to declare. Students should also consult the Transfer Information and Policy section above.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH11A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "Students need to complete the qualification courses prior to their sixth quarter of enrollment (for transfer students, before your second quarter). Students who have not completed CHEM 8B by the end of their fifth quarter, but are enrolled in the course during their sixth quarter and have satisfied all other major qualification requirements, may submit an appeal to declare the major. Please refer to the \"Appeal Process\" section below for more information. When pursuing major qualification, students should keep the following details in mind: All courses must be taken for a letter grade. See the Letter Grade Policy below. A grade of A will be used in the GPA calculation for students with exam credit for any of the above courses. Students who entered UC Santa Cruz as frosh with two or more grades of NP, C-, D+, D, D-, or F in courses required to qualify for the major are not eligible to declare. Students should also consult the Transfer Information and Policy section above.",
+        "Students need to complete the qualification courses prior to their sixth quarter of enrollment (for transfer students, before your second quarter).",
+        "Students who have not completed CHEM 8B by the end of their fifth quarter, but are enrolled in the course during their sixth quarter and have satisfied all other major qualification requirements, may submit an appeal to declare the major. Please refer to the \"Appeal Process\" section below for more information.",
+        "When pursuing major qualification, students should keep the following details in mind:",
+        "Students should also consult the Transfer Information and Policy section above."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students may declare a major as early as they would like if they have decided which major to pursue and have satisfied prerequisites or qualification requirements for the major.",
+        "Per the UC Santa Cruz major declaration policy , students who enter UCSC as frosh are required to be formally declared in a major by the campus deadline in their sixth quarter and before enrolling in their third year (or equivalent). Upper-division junior transfer students are required to be declared in a major by the deadline in their second term at UCSC.",
+        "Students should petition to declare a biochemistry major once they have met all qualification criteria and have an official, signed, department-approved academic plan on file.",
+        "The Petition for Major/Minor declaration form can be accessed by going to MyUCSC and navigating to the Student Homepage and selecting the Undergraduate Student eForms tile > Petition for Major/Minor.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh, second quarter for junior transfer students), will either be approved, denied, or provided with conditions (e.g., completion of final qualification courses with certain grades), but will not be declared until all requirements have been met and satisfactory grades have been posted.",
+        "Each major/minor advising office has a process for declaring. For assistance with declaring the chemistry major, please contact chemistry and biochemistry advising at chemistryadvising@ucsc.edu."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students may appeal to the major either prior to or after submitting a petition to declare and being denied (in the latter case, appeals must be submitted within 15 days from the date the denial notification was sent). The department will notify the student and their affiliated college of the decision, typically within 15 days of receipt of the appeal being submitted.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students may appeal to the major either prior to or after submitting a petition to declare and being denied (in the latter case, appeals must be submitted within 15 days from the date the denial notification was sent). The department will notify the student and their affiliated college of the decision, typically within 15 days of receipt of the appeal being submitted.",
+        "To submit an appeal, please complete the applicable appeal form, available on the Chemistry & Biochemistry Advising website.",
+        "Note : The information you share in your appeal or with your advisors will be kept confidential and shared only with campus officials as required to serve you in an advising capacity or process your appeal. However, in limited circumstances, including those related to potential harm to yourself or others, sexual assault, and abuse, we may be required by law to report incidents you disclose to other need-to-know offices on campus such as the Title IX Office and/or University of California Police Department. If you are in need of support for any issues, please see the list of confidential and/or support resources."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The following is required to complete the Biochemistry and Molecular Biology B.S. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B",
+        "CHEM4AL",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "General Chemistry",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Calculus",
+       "prose": [
+        "Students may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "BIOL20L"
+       ],
+       [
+        "BIOL102J"
+       ],
+       [
+        "BIOL107J"
+       ],
+       [
+        "CHEM160J"
+       ],
+       [
+        "CHEM161J"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Introductory Biology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B",
+       "CHEM8L",
+       "CHEM8M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Organic Chemistry",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5B",
+        "PHYS5C",
+        "PHYS5L",
+        "PHYS5M",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6B",
+        "PHYS6C",
+        "PHYS6L",
+        "PHYS6M",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s), but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Physics",
+       "prose": [
+        "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s), but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOC100A",
+       "BIOC100B",
+       "BIOC100C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Biochemistry and Molecular Biology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL101L",
+       "BIOL102L",
+       "BIOL107L",
+       "BIOL122K",
+       "CHEM160K",
+       "CHEM161K"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "and one of these courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL105"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Genetics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Eukaryotic Molecular Biology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM163A",
+       "CHEM163B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may substitute BIOC 163A and BIOC 163B for this requirement, when offered."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Physical Chemistry",
+       "prose": [
+        "Students may substitute BIOC 163A and BIOC 163B for this requirement, when offered."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL110",
+       "BIOL118",
+       "BME110",
+       "BME128",
+       "BME130",
+       "BME132",
+       "BME160",
+       "CHEM110",
+       "CHEM169",
+       "CHEM171",
+       "STAT131"
+      ],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Elective",
+       "prose": [
+        "Complete one course from the following list:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOC110L",
+       "BIOL100L",
+       "BIOL103L",
+       "BIOL104B",
+       "BIOL105B",
+       "BIOL105L",
+       "BIOL106L",
+       "BIOL108L",
+       "BIOL109L",
+       "BIOL115L",
+       "BIOL121L",
+       "BIOL122L",
+       "BIOL186L",
+       "CHEM160L",
+       "CHEM161L",
+       "CHEM186L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Exit Lab",
+       "prose": [
+        "One of the following laboratory courses (also satisfies the Disciplinary Communication (DC) and Senior Comprehensive Requirement for graduation):"
+       ]
+      }
+     }
+    ],
+    "title": "Senior Exit Lab"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The DC requirement must be satisfied at UC Santa Cruz and may not be transferred from another institution.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement. The DC requirement in biochemistry and molecular biology is satisfied by completing one of the Senior Exit Lab options.",
+        "The DC requirement must be satisfied at UC Santa Cruz and may not be transferred from another institution."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students must satisfy the senior comprehensive requirement by receiving a passing letter grade in any of the Senior Exit Lab options. In addition, students are encouraged to gain research experience by working in a faculty research lab."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "biochemistry-and-molecular-biology-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/biochemistry-and-molecular-biology-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

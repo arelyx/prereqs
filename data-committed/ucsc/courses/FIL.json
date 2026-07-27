@@ -1,0 +1,34 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "FIL82",
+   "credits": "5",
+   "cross_listed": [
+    "CRES82"
+   ],
+   "description": "Introduction to Filipino language and culture. Four skills (reading, writing, speaking, listening) in basic Filipino (Tagalog), with readings and discussion of critical contemporary thought (decolonization, gender, social movements) in English. For heritage speakers and second-language learners.",
+   "display_code": "FIL 82",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "82",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "FIL",
+   "title": "Introduction to Filipino Language & Culture",
+   "url": "/en/current/general-catalog/courses/fil-filipino/lower-division/fil-82"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "FIL"
+}

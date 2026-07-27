@@ -1,0 +1,183 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "politics",
+ "division": "social-sciences-division",
+ "kind": "minor",
+ "name": "Legal Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take this course",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take this course"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH110C",
+       "ANTH126",
+       "ANTH130C",
+       "ANTH138",
+       "ANTH142",
+       "ANTH148",
+       "ANTH187",
+       "ANTH187B",
+       "ART172",
+       "ART181",
+       "ECON128",
+       "ECON160A",
+       "ECON162",
+       "ECON169",
+       "ECON183",
+       "ENVS130B",
+       "ENVS140",
+       "ENVS144",
+       "ENVS147",
+       "ENVS149",
+       "ENVS150",
+       "ENVS151",
+       "ENVS152",
+       "ENVS165",
+       "ENVS179",
+       "FMST112",
+       "FMST194O",
+       "GCH186",
+       "HIS110B",
+       "HIS110D",
+       "HIS121B",
+       "LALS194X",
+       "LIT168A",
+       "LIT168B",
+       "LGST107",
+       "LGST108",
+       "LGST109",
+       "LGST111B",
+       "LGST111C",
+       "LGST114",
+       "LGST115",
+       "LGST116",
+       "LGST117",
+       "LGST118",
+       "LGST124",
+       "LGST125",
+       "LGST130",
+       "LGST131",
+       "LGST133",
+       "LGST137",
+       "LGST139",
+       "LGST146",
+       "LGST148",
+       "LGST150",
+       "LGST152",
+       "LGST153",
+       "LGST154",
+       "LGST155",
+       "LGST156",
+       "LGST157",
+       "LGST158",
+       "LGST159",
+       "LGST161",
+       "LGST173",
+       "LGST185",
+       "LGST188A",
+       "OAKS188B",
+       "PHIL126",
+       "PHIL100D",
+       "PHIL143",
+       "PHIL144",
+       "PHIL153",
+       "POLI102",
+       "POLI103",
+       "POLI105A",
+       "POLI105B",
+       "POLI105C",
+       "POLI105D",
+       "POLI110",
+       "POLI111A",
+       "POLI120A",
+       "POLI120B",
+       "POLI120C",
+       "POLI121",
+       "POLI132",
+       "POLI134",
+       "POLI151",
+       "POLI160B",
+       "POLI165",
+       "POLI167",
+       "POLI175",
+       "POLI182",
+       "POLI184",
+       "PSYC114",
+       "PSYC140M",
+       "PSYC147A",
+       "PSYC147B",
+       "PSYC153",
+       "SOCY117E",
+       "SOCY122",
+       "SOCY127",
+       "SOCY128C",
+       "SOCY128I",
+       "SOCY128J",
+       "SOCY128M",
+       "SOCY185",
+       "SPAN130",
+       "SPAN6",
+       "SPHS6"
+      ],
+      "n": 5,
+      "needs_review": false,
+      "notes": [
+       "[equivalent alternates, one entry] SPAN 130 / SPAN 6 / SPHS 6",
+       "LGST 188A /OAKS188A and OAKS 188B /LGST 188B must both be taken to count as one course."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Any five 5-credit courses approved for the LGST major.",
+        "5-credit courses crosslisted as LGST courses will also count toward this requirement. Students should contact the department if they wish to count independent study toward this requirement.",
+        "LGST 188A /OAKS188A and OAKS 188B /LGST 188B must both be taken to count as one course."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   }
+  ]
+ },
+ "slug": "legal-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/legal-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

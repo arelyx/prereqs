@@ -1,0 +1,3257 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Katie Monsen",
+   "code": "ENVS100",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Introduction to environmental issues in an interdisciplinary matrix. Focuses on three issues at the intersection of ecological questions and social institutions: agroecology and sustainable agriculture; population growth, economic growth, and environmental degradation; and biodiversity conservation and land management. Reviews the important roles of disciplinary abstraction and of the application of that knowledge to context-dependent explanations of environmental problems.",
+   "display_code": "ENVS 100",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "100",
+   "prereq_groups": [
+    [
+     "ENVS23",
+     "CHEM1A",
+     "CHEM3B",
+     "CHEM4B"
+    ],
+    [
+     "ENVS24",
+     "BIOE20C"
+    ],
+    [
+     "ENVS25"
+    ],
+    [
+     "ECON113",
+     "OCEA90"
+    ],
+    [
+     "ENVS26",
+     "ANTH2",
+     "SOCY1",
+     "PHIL21"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 23 or CHEM 1A , CHEM 3B, or CHEM 4B ; ENVS 24 or BIOE 20C ; ENVS 25 ; and STAT 7 /L or STAT 17 /L or ECON 113 or OCEA 90 ; and one from: ENVS 26 , ANTH 2 , SOCY 1 ,10,15, PHIL 21,22,24,28, or 80G. Concurrent enrollment in 100L required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Ecology and Society",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-100"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS100L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Required writing lab accompanying course 100. Students are introduced to writing in different styles and for different audiences typical of the ecosystem-society interface.  Course 100 writing assignments are developed, written, and revised in conjunction with the lab.  W credit is granted only upon successful completion of ENVS 100.",
+   "display_code": "ENVS 100L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "100L",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter, Spring",
+   "raw_requirements": "Prerequisite(s): Satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in ENVS 100 is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Ecology and Society Writing Laboratory",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-100l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS104A",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Explore the theoretical frameworks, benefits, and limitations of a range of methods used in environmental field research and monitoring used to address ecological, conservation, and management questions. Learn the basics of using the R statistical platform for data analysis and making figures for presentations. Readings, lectures, and tutorials provide the theoretical structure for methods used in experiential application of environmental field methods in ENVS 104L .",
+   "display_code": "ENVS 104A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "104A",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ENVS 100 and ENVS 100L ; exceptions by permission of instructor. Concurrent enrollment in ENVS 104L is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Introduction to Environmental Field Methods",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-104a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS104L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides hands-on grounding in the processes of environmental field research and monitoring used to address ecological, conservation, and management questions, while getting to know the diversity of habitats across the living laboratory of the UCSC campus. Students develop a broad range of field skills including natural history, habitat description, and sampling methods for plants, animals, soils, water, and microclimate. Students also become adept at observational and experimental study design, data handling, statistical analysis, interpretation, and presentation using the R statistical language. This is a field-based, experiential learning course but does not require overnight or weekend field trips.",
+   "display_code": "ENVS 104L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "104L",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ENVS 100 and ENVS 100L ; exceptions by permission of instructor. Concurrent enrollment in ENVS 104A is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Field Methods Laboratory",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-104l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS106A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The evolution, taxonomy, physiology, behavior, ecology, and management of birds. Lecture, discussion, field format. Birds observed in habitats including bay, marsh, meadow, and forest. Evaluations based on a field journal and examinations.",
+   "display_code": "ENVS 106A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "106A",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor. BIOL 138 are recommended.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History of Birds",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-106a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS106M",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A field course designed to complement ENVS 106A by providing students with the opportunity to gain direct experience in bird study. This includes participation in field exercises and trips to off-campus sites in the region.",
+   "display_code": "ENVS 106M",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "106M",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Concurrent enrollment in ENVS 106A required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History of Birds Laboratory",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-106m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS107A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive 20-credit course with multiweek field trips. Students apply naturalist skills to scientific inquiry, ecosystem management, and communication, and cultivate leadership and professional skills for outdoor careers. In ENVS 107A , students gain a deep understanding of plant form, function, ecology, and evolution and master identification of plants using botanical keys. The fundamentals of California geology, soils, hydrology, and climate are also covered. Emphasis is placed on the scientific method and use of scientific reasoning and critical thinking; students practice an iterative process of forming hypotheses and gathering observational data to evaluate them. Prerequisite(s): concurrent enrollment in ENVS 107B , 107C, and 107D. Course is open to all majors, but ENVS majors must also have previously enrolled in ENVS 100 and ENVS 100L . Enrollment is by application in fall quarter. See https://norriscenter.ucsc.edu/ for details. (Formerly Natural History Field Quarter.)",
+   "display_code": "ENVS 107A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Natural History Field Quarter.",
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "107A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History Field Quarter: CA Plants and the Physical Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS107B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive 20-credit course with multiweek field trips. Students apply naturalist skills to scientific inquiry, ecosystem management, and communication, and cultivate leadership and professional skills for outdoor careers. ENVS 107B focuses on wildlife found in terrestrial and aquatic habitats of CA, including vertebrates and invertebrates. Students learn to identify wildlife by sight, sound, tracks, and sign, gaining expertise with field guides, dichotomous keys, and field equipment. Students keep a professional field journal and use direct observations, live-trapping methods, and scientific inquiry to expand their knowledge of animal behavior, life history, ecology, and taxonomy. Prerequisite(s): concurrent enrollment in ENVS 107A , 107C, and 107D. Course is open to all majors, but ENVS majors must also have previously enrolled in ENVS 100 and ENVS 100L . Enrollment is by application in fall quarter. See https://norriscenter.ucsc.edu/ for details. (Formerly Natural History Field Quarter.)",
+   "display_code": "ENVS 107B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Natural History Field Quarter.",
+   "ge_codes": [],
+   "number": "107B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History Field Quarter: CA Terrestrial and Aquatic Wildlife",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS107C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive 20-credit course with multiweek field trips. Students apply naturalist skills to scientific inquiry, ecosystem management, and communication, and cultivate leadership and professional skills for outdoor careers. ENVS 107C explores California ecosystem management including the roles of wildfire, water resources, invasive species, climate change, and conservation policy. Students analyze issues from multiple angles, including Indigenous stewardship, legal, economic, scientific, and local perspectives. Through field observations, case studies, guest experts, and constructive debate, students broaden their perspective-taking, active listening, and critical-thinking skills. Prerequisite(s): concurrent enrollment in ENVS 107A , 107B, and 107D. Course is open to all majors, but ENVS majors must also have previously enrolled in ENVS 100 and ENVS 100L . Enrollment is by application in fall quarter. See https://norriscenter.ucsc.edu/ for details. (Formerly Natural History Field Quarter.)",
+   "display_code": "ENVS 107C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Natural History Field Quarter.",
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "107C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History Field Quarter: Perspectives on CA Ecosystem Management",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107c"
+  },
+  {
+   "catalog_instructor": "Christopher Lay",
+   "code": "ENVS107D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive 20-credit course with multiweek field trips. Students apply naturalist skills to scientific inquiry, ecosystem management, and communication, and cultivate leadership and professional skills for outdoor careers. Compelling narratives are essential to address current environmental challenges. In ENVS 107D , students develop professional communication skills including: informative and captivating writing, scientific notetaking, classroom and outdoor teaching, and nature illustration. With extensive feedback, students complete multiple oral presentations and written assignments structured to develop their voice and the power of their communications. Prerequisite(s): satisfaction of the ELWR requirements; and concurrent enrollment in ENVS 107A , ENVS 107B , and ENVS 107C . Course is open to all majors, but ENVS majors must also have previously passed ENVS 100 and ENVS 100L . Satisfies senior comprehensive requirement for environmental studies majors by prior approval. Enrollment is by application in fall quarter. See https://norriscenter.ucsc.edu/ for details.",
+   "display_code": "ENVS 107D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "107D",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History Field Quarter: Communicating the Natural World",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107d"
+  },
+  {
+   "catalog_instructor": "Andy Kulikowski",
+   "code": "ENVS108",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to entomology including anatomy, physiology, systematics, evolution, behavior, and reproduction of the world's most diverse group of organisms. These topics are illustrated in several contexts, from the importance of insects as disease vectors to the historical and contemporary uses of insects by humans.",
+   "display_code": "ENVS 108",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "108",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L required, or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "General Entomology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-108"
+  },
+  {
+   "catalog_instructor": "Andy Kulikowski",
+   "code": "ENVS108L",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Laboratory sections are devoted to the identification of insects. Individual collections representing 15 orders, sight identification of 60 families, and use of taxonomic keys for positive designations required.",
+   "display_code": "ENVS 108L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "108L",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Concurrent enrollment in ENVS 108 is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "General Entomology Laboratory",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-108l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS110",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Debate about environmental policy is often couched in economic terms. Environmental issues have become questions of political economy, as they influence international and domestic policy and reflect on the functioning of the market system. Examines the assumptions and implications of alternative approaches to political economy, as these pertain to questions of environmental policy and political institutions.",
+   "display_code": "ENVS 110",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "110",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Institutions, the Environment, and Economic Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-110"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS115A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to geographic information systems (GIS) as the technology of processing spatial data, including input, storage and retrieval; manipulation and analysis; reporting and interpretation. Emphasizes GIS as a decision support system for environmental and social problem solving, using basic model building, experimental design, and database management. Taught in conjunction with ENVS 215A . Students cannot receive credit for this course and ENVS 215A .",
+   "display_code": "ENVS 115A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "115A",
+   "prereq_groups": [
+    [
+     "ENVS115L"
+    ],
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 115L and ENVS 100 and ENVS 100L , or permission of instructor. Course in computer science, Earth science, math, or geography recommended.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Geographic Information Systems and Environmental Applications",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-115a"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS115B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Evaluates advanced technologies of processing spatial data, spatial theory, and application to unique geographic problems, data manipulation and analysis, and reporting and interpretation. Emphasizes GIS as a decision-support system for environmental and social problem solving, using basic model building, experimental design, and database management. Taught in conjunction with ENVS 215B . Students cannot receive credit for this course and ENVS 215B .",
+   "display_code": "ENVS 115B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "115B",
+   "prereq_groups": [
+    [
+     "ENVS115A"
+    ],
+    [
+     "ENVS115L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 115A . Concurrent enrollment in ENVS 115L .",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Intermediate Geographic Information Systems (GIS)",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-115b"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS115C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores more advanced training in spatial theory and methods and their application to unique geographic problems. Emphasis given to advanced aspects of spatial data analysis and building custom GIS solutions.",
+   "display_code": "ENVS 115C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "115C",
+   "prereq_groups": [
+    [
+     "ENVS115A"
+    ],
+    [
+     "ENVS115B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 115A and ENVS 115B . Enrollment is restricted to sophomores, juniors, and seniors.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Advanced Geographic Information Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-115c"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS115L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Exercises in Geographic Information Systems and Remote Sensing that demonstrate the development of digital geographic data. Students gain hands-on experience with developing datasets, using imagery to create GIS layers, performing spatial analysis, and utilizing GPS technology. Emphasis placed on environmental applications. Students cannot receive credit for this course and ENVS 215L .",
+   "display_code": "ENVS 115L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "115L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Concurrent enrollment in ENVS 115A , or ENVS 115B , or ENVS 115C is required.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Exercises in Geographic Information Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-115l"
+  },
+  {
+   "catalog_instructor": "Natalia Ocampo-Peñuela",
+   "code": "ENVS120",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "One of our biggest challenges as a society is to protect our planet and its biodiversity while we fulfill the demands of a growing human population. In this course, students learn about the importance of biodiversity, the threats it currently faces, and examples on how conservation biologists have tackled these challenges using methods that range from community-led conservation to global policy. Through development of a conservation grant project, students learn to identify conservation issues and propose tangible solutions based on the course materials.",
+   "display_code": "ENVS 120",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "120",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Conservation Biology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-120"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS122",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the ecological processes, principles, and players of tropical ecosystems, and to conservation issues facing tropical American forests. We will look at how tropical ecosystems work, roles of humans in shaping them, and current conservation opportunities and dilemmas.",
+   "display_code": "ENVS 122",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "122",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Tropical Ecology and Conservation",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-122"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS123",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced course in animal ecology and conservation focusing on the ecology, behavior, biogeography, and evolution of vertebrates.",
+   "display_code": "ENVS 123",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "123",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L ; or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Animal Ecology and Conservation",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-123"
+  },
+  {
+   "catalog_instructor": "Andy Kulikowski II",
+   "code": "ENVS124",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "More than half of the world's human population lives in an urban setting. Population projections suggest two out of three people will live in cities by 2050. Increasing urbanization will give rise to novel ecosystems consisting of complex human-nature interactions. Through readings of primary scientific literature, lectures, and short excursions in and around campus, this class examines how urbanization alters natural ecosystem dynamics and what that means for the ecosystem services we rely on. Course uses an interdisciplinary lens to examine topics such as urban biodiversity, pollution, climate change, and the urban/rural interface. Explores sustainable urban development as a strategy to help slow global environmental degradation.",
+   "display_code": "ENVS 124",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "124",
+   "prereq_groups": [
+    [
+     "ENVS24"
+    ],
+    [
+     "ENVS100"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisites: ENVS 24 and ENVS 100 , Enrollment is restricted to environmental studies, plant sciences, and environmental sciences majors.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Intro to Urban Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-124"
+  },
+  {
+   "catalog_instructor": "Pallab Sarker",
+   "code": "ENVS130A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Ecological concepts and principles are applied to the design and management of sustainable agroecosystems. Alternatives for agriculture are discussed in terms of ecosystem structure and function. A weekly three-hour lab is required.",
+   "display_code": "ENVS 130A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130A",
+   "prereq_groups": [
+    [
+     "ENVS130L"
+    ],
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): Concurrent enrollment in ENVS 130L and previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Agroecology and Sustainable Agriculture",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-130a"
+  },
+  {
+   "catalog_instructor": "Maywa Montenegro",
+   "code": "ENVS130B",
+   "credits": "5",
+   "cross_listed": [
+    "LGST130B"
+   ],
+   "description": "Agricultural sustainability is examined as a complex set of interactions between ecological, social, and economic factors. Drawing case studies from U.S. agriculture, course examines the social justice implications of historical and current agri-food system dynamics. (Formerly Principles of Sustainable Agriculture.)",
+   "display_code": "ENVS 130B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Principles of Sustainable Agriculture.",
+   "ge_codes": [],
+   "number": "130B",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Justice and Sustainability in Agriculture",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-130b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS130C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Research and practice in agroecology and sustainable food systems. Students gain multidimensional understanding of agroecology through study at the UCSC farm, guest speakers, field trips, and interdisciplinary readings. Students participate in research projects and learn about methods, and study design and statistical analysis. Students are billed a materials fee.",
+   "display_code": "ENVS 130C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130C",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L .",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Field Experiences in Agroecology and Sustainable Food",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-130c"
+  },
+  {
+   "catalog_instructor": "Pallab Sarker",
+   "code": "ENVS130L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory and field exercises to train in the analysis of ecological processes in agricultural systems, with a focus on the quantification of ecological sustainability. Experimental design, analysis, and data interpretation are emphasized. Students are billed a materials fee.",
+   "display_code": "ENVS 130L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130L",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Concurrent enrollment in ENVS 130A is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Agroecology and Sustainable Agriculture Laboratory",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-130l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS131",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced undergraduate course in insect ecology designed to appeal to both people with a deep appreciation for insects and those experiencing insect knowledge for the first time. The course covers major areas of ecology (e.g., populations, community ecology, species interactions, biodiversity conservation) as applied to terrestrial insects. The course also focuses on natural history of insects, the roles insects play in ecosystems, and the importance of insects for culture and society, agriculture, conservation, and public health. The course includes lectures, discussions, greenhouse and museum activities, field days, and a research project.",
+   "display_code": "ENVS 131",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "131",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Insect Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-131"
+  },
+  {
+   "catalog_instructor": "Katie Monsen",
+   "code": "ENVS133",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lectures and demonstrations are combined with field applications to give students direct experience and knowledge of sustainable agriculture and horticulture practices and principles. UCSC Farm and Garden are the living laboratories for testing agroecological principles. Emphasis is placed on small-farm systems. May be applied to major only once. Students are billed a materials fee.",
+   "display_code": "ENVS 133",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Agroecology Practicum",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-133"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS133B",
+   "credits": "6",
+   "cross_listed": [],
+   "description": "Lectures and demonstrations are combined with field applications to give students direct experience and knowledge of sustainable agriculture and horticulture practices and principles. UCSC Farm and Garden are the living laboratories for testing agroecological principles. Emphasis is placed on small-farm systems. May be applied to major only once.",
+   "display_code": "ENVS 133B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133B",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Agroecology Practicum",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-133b"
+  },
+  {
+   "catalog_instructor": "Damian Parr",
+   "code": "ENVS133C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lectures and demonstrations are combined with field applications to give students direct experience and knowledge of sustainable agriculture and horticulture practices and principles. UCSC Center for Agroecology's Farm and Garden serves as the primary location for instruction. Field trips include UC Davis Student Farm, UC Berkeley Oxford Tract, UC ANR Kearney Agricultural Experiment Station, and regional farming operations. Together, these farms serve as living laboratories for testing agroecological principles. Emphasis is placed on small-farm systems. Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor. Enrollment is by permission of the instructor and is restricted to sophomores, juniors and seniors. May be applied to major only once. Students are billed a materials fee of $2,740 (fee reduced to $1000 summer 2026 and summer 2027).",
+   "display_code": "ENVS 133C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "ENVS Agroecology Practicum 133C",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-133c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS135",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Current international and local aquaculture systems and science and practices needed to steer them toward sustainability. Critically looks at practices, analyzes environmental, social, economic, and human health effects of sustainable systems. Includes UCSC Aquaculture lab, farm visits, private sector, guests.",
+   "display_code": "ENVS 135",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "135",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L .",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Sustainable Aquaculture",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-135"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS140",
+   "credits": "5",
+   "cross_listed": [
+    "LGST140E"
+   ],
+   "description": "An overview of all major federal environmental policy domains. Analyzes political, social, economic, and other forces influencing federal (and some state) public policy responses to land use, natural resources, pollution, and conservation dilemmas.",
+   "display_code": "ENVS 140",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "National Environmental Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-140"
+  },
+  {
+   "catalog_instructor": "Brad Haddad",
+   "code": "ENVS141",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Application of economic analysis to natural resource policy and management. Topics include welfare economics, property rights and externalities, natural resource valuation, exhaustible and renewable resources, and sustainable development.",
+   "display_code": "ENVS 141",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "141",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Ecological Economics",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-141"
+  },
+  {
+   "catalog_instructor": "Elliott Campbell",
+   "code": "ENVS142",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the renewable and fossil fuel energy resources, with an emphasis on interactions with food and water systems. Explores opportunities for improving efficiency, reducing pollution, and increasing access through technology advances, policy, and consumer decisions. (Formerly Energy Politics and Policy.)",
+   "display_code": "ENVS 142",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Energy Politics and Policy.",
+   "ge_codes": [],
+   "number": "142",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Sustainable Energy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-142"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS143",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Sustainable development emerged due to the environmental crises caused by development and as an attempt to reconcile development goals and environmental stewardship. This course is broadly concerned with the issue of sustainability and the future of development. The class is divided into thematic sections that examine the history of development theories and frameworks, environment and development challenges, and critiques of development. Topical areas of focus include environmental hazards, fair trade, sustainable food systems, extractive industries, climate change, conservation, ecotourism, and drugs and development. The course also highlights the dilemma that environmental justice poses for future sustainable development governance efforts. (Formerly Sustainable Development: Economy, Policy, and Environment.)",
+   "display_code": "ENVS 143",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Sustainable Development: Economy, Policy, and Environment.",
+   "ge_codes": [],
+   "number": "143",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "The Future of Sustainable Development",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-143"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS144",
+   "credits": "5",
+   "cross_listed": [
+    "POLI179"
+   ],
+   "description": "Explores the central political questions surrounding global governance of climate change. Focuses on how climate change is governed within the United Nations system, and, in particular, explores issues of equity and justice in terms of how we address climate change.",
+   "display_code": "ENVS 144",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "144",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Environmental Studies students, previous or concurrent enrollment in courses ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Global Climate Change Politics",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-144"
+  },
+  {
+   "catalog_instructor": "Charles Rivasplata",
+   "code": "ENVS145",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Are cities an environmental savior or an engine of pollution? This course considers what makes a truly green city and analyzes innovative urban policies in areas such as energy, transportation, buildings, and waste management.",
+   "display_code": "ENVS 145",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "145",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Green Cities",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-145"
+  },
+  {
+   "catalog_instructor": "Ravi Rajan",
+   "code": "ENVS147",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Surveys topics in environmental justice and human rights around the world. Provides a comprehensive foundation for students interested in the global environmental justice concentration. The readings comprise survey articles on environmental justice and related fields, such as political ecology, gender studies, labor studies, science and technology studies, risk and disaster studies, and human rights, and span a number of disciplines, including history, geography, sociology, anthropology, politics, and law. Formerly offered as Environmental Inequality/Environmental Justice.",
+   "display_code": "ENVS 147",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "147",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Global Environmental Justice",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-147"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS149",
+   "credits": "5",
+   "cross_listed": [
+    "LGST149"
+   ],
+   "description": "Surveys a wide range of topics in environmental law, including state and federal jurisdiction, administrative law, separation of powers, state and local land use regulation, public land and resource management, pollution control, and private rights and remedies. Students read a large number of judicial cases and other legal documents.",
+   "display_code": "ENVS 149",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "149",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Law and Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-149"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS15",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Introduces students to the range of natural species  and communities occurring on the UCSC campus. All class time is spent outside, and each week a different area of campus is visited. Course 24 is recommended.",
+   "display_code": "ENVS 15",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "15",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History of the UCSC Campus",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-15"
+  },
+  {
+   "catalog_instructor": "Katherine Seto",
+   "code": "ENVS150",
+   "credits": "5",
+   "cross_listed": [
+    "LGST150A"
+   ],
+   "description": "Examines key legal, policy, and institutional frameworks that govern the use and stewardship of coastal and marine areas and resources. Primary focus is on the U.S., although attention is also devoted to international laws and institutions.",
+   "display_code": "ENVS 150",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "ENV100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENV 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Coastal and Marine Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-150"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS151",
+   "credits": "5",
+   "cross_listed": [
+    "LGST151A"
+   ],
+   "description": "Introduction to California land use planning law and practice, and the theory, practice, and public policy aspects of environmental assessment, using the California Environmental Quality Act (CEQA) as a model. The National Environmental Policy Act (NEPA) and other environmental and planning legislation also considered. Covers elements of State law and regulations, environmental impact assessment requirements, and practical procedures for preparing and evaluating CEQA documents, with case studies that exemplify legal, regulatory and public policy and practice aspects of the assessment process.",
+   "display_code": "ENVS 151",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Assessment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-151"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS152",
+   "credits": "5",
+   "cross_listed": [
+    "POLI170"
+   ],
+   "description": "Examines international law and politics through the lens of cooperation on transboundary environmental problems, ranging from acid rain to toxic chemicals to biodiversity loss and climate change, which have become pressing political concerns in our increasingly globalized economy.",
+   "display_code": "ENVS 152",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "152",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in courses ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "International Environmental Politics",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-152"
+  },
+  {
+   "catalog_instructor": "Flora Lu",
+   "code": "ENVS154",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The Amazon rainforest in South America is one of the most biologically and culturally diverse biomes on the planet, playing a critical role in the global carbon cycle and hemispheric hydrological systems. Its survival is threatened by oil, mining, agribusiness, logging and other forms of extraction -- activities that perpetuate violence, dispossession and environmental injustice against Indigenous peoples. This course centers the cultural richness, ecological care, political advocacy, and complex livelihoods of Native Amazonian societies, focusing on the lessons they offer for more just and anti-colonial approaches to conservation.",
+   "display_code": "ENVS 154",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "154",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Amazonian Cultures and Conservation",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-154"
+  },
+  {
+   "catalog_instructor": "Anne Kapuscinski",
+   "code": "ENVS155",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Multidisciplinary teams of 4-5 students address problem provided by real-world sponsors or student groups. Teams learn to apply Lean Startup methodologies to discover and validate customer needs and iterartively test whether they understood the problem and solution. Weekly assignments involve working outside of class to interview experts and share learnings in class. Enrollment is restricted to sophomores, juniors and seniors. Enrollment is by instructor consent. Application and interview in the quarter prior to the course is required. Taught in conjunction with CSP 281A. Students cannot receive credit for this course and CSP 281A.",
+   "display_code": "ENVS 155",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "155",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Hacking4Oceans",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-155"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS156",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Guided practice in writing skills useful to environmental activists. Assignments emphasize thinking quickly, revising adeptly, researching resourcefully, and tempering powerful passions with careful arguments. Toward the development of effective individual voices, students read each other's drafts as well as the published work of established writers. Enrollment priority will be given to students who have not taken course 157.",
+   "display_code": "ENVS 156",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "156",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s):satisfaction of the Entry Level Writing and Composition requirements and previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Action Through Writing",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-156"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS157",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Guided practice in writing effectively about science and natural history for a variety of audiences. Assignments emphasize reporting first-hand observations, explaining processes and phenomena, understanding scientific papers, and writing about scientific and technical subjects for a general audience. Enrollment priority will be given to students who have not taken course 156.",
+   "display_code": "ENVS 157",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "157",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Writing in the Natural Sciences",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-157"
+  },
+  {
+   "catalog_instructor": "Madeleine Fairbairn",
+   "code": "ENVS158",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The object is to provide a rigorous grounding in the method of political ecology and to demonstrate how this approach has been used in environmental analysis and problem solving by environmental social movements.",
+   "display_code": "ENVS 158",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "158",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Political Ecology and Social Change",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-158"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS159",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to 19th- and 20th-century American writers who have influenced our understanding of humans' place in the natural world. Readings include original works as well as biographical and critical texts. Discussions, field trips, and writing assignments emphasize active learning.",
+   "display_code": "ENVS 159",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Nature Literature",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-159"
+  },
+  {
+   "catalog_instructor": "Karen Holl",
+   "code": "ENVS160",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A multidisciplinary overview of restoring degraded ecosystems. Among the topics addressed are linkages between ecological principles and restoration, planning and implementing restoration projects, evaluating restoration success, and case studies of restoration of specific ecosystem types. Participation in one work day is required.",
+   "display_code": "ENVS 160",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "160",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Restoration Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-160"
+  },
+  {
+   "catalog_instructor": "Hannah Waterhouse",
+   "code": "ENVS161A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides fundamentals of soils and plant nutrition. The physical, biological, and chemical components of soils are investigated in relation to their ecological functions, fertility to plants, and sustainable management. (Formerly Soils and Plant Nutrition.)",
+   "display_code": "ENVS 161A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Soils and Plant Nutrition.",
+   "ge_codes": [],
+   "number": "161A",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Soils as Living Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-161a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS162",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Describes how the environment affects plants through the linkages between water, energy, nutrients, photosynthesis, and plant growth. Demonstrates how plant recruitment, survival, and reproduction affect conservation and agriculture. Prior coursework in ecology and/or plant physiology is recommended.",
+   "display_code": "ENVS 162",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "162",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Plant Physiological Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-162"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS162L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Introduces techniques for the study of plant interactions with the physical environment. Examines the role of stress on energy budgets, water relations, photosynthesis, and reproductive allocation. Emphasizes experimental design, field techniques, and instrumentation during field trips to local chaparral and grassland ecosystems.",
+   "display_code": "ENVS 162L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "162L",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Plant Physiological Ecology Laboratory",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-162l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS163",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Plant diseases do more than just harm plants we grow for food; they drive the evolution, population dynamics, ecosystem functioning, and diversity of plants in wild communities. This class looks at the biology of plant-microbe symbioses and the impacts of plant pathogens through the integrating lens of evolutionary ecology. Students explore the ecological basis for disease spread and management in agricultural, forest, and wild systems, and consider special challenges from emerging pathogens and climate change. Students focus on the diversity of voices and approaches to understanding plant diseases. Students cannot receive credit for this course and ENVS 263 .",
+   "display_code": "ENVS 163",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Plant Disease Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-163"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS163L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Hands-on introduction to important techniques used to study plant diseases. Teaches methods for detection, isolation, cultivation, and identification of important groups of plant pathogens, including fungi, oomycetes, and bacteria. Through genuine research projects, students complete Koch's proof of pathogenicity, develop skills for disease assessment, complete experiments to answer questions about the evolutionary ecology of plant diseases, and develop familiarity with basic tools in plant disease epidemiology. Class activities are held in both in the lab and in the field.",
+   "display_code": "ENVS 163L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): concurrent enrollment in ENVS 163 is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Plant Disease Ecology Lab",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-163l"
+  },
+  {
+   "catalog_instructor": "Weixin Cheng",
+   "code": "ENVS164",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn soil ecological principles by carrying out inquiry-based projects and practices in land ecosystems (agroecosystems, forests and grasslands). UCSC reserves, farms, gardens, and greenhouses are the default living-laboratories for the course. The emphasis is on experiential learning of practical and technical skills in using soil methods.",
+   "display_code": "ENVS 164",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "164",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of the instructor. Previous enrollment in ENVS 161 is recommended.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Projects and Practices in Soil Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-164"
+  },
+  {
+   "catalog_instructor": "Brent Haddad",
+   "code": "ENVS165",
+   "credits": "5",
+   "cross_listed": [
+    "LGST165A"
+   ],
+   "description": "Concepts, vocabulary, and skills necessary to the analysis of freshwater issues are introduced from hydrology, ecology, law, economics, engineering, and other disciplines. The skills are then applied to case studies involving local, state, and international freshwater conflicts and crises. (Formerly Freshwater Issues and Policy.)",
+   "display_code": "ENVS 165",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Freshwater Issues and Policy.",
+   "ge_codes": [],
+   "number": "165",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Sustainable Water Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-165"
+  },
+  {
+   "catalog_instructor": "Hannah Waterhouse",
+   "code": "ENVS166",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores a range of approaches to examine agroecosystem function, watershed management, and concepts of sustainability. Uses a combination of lecture, demonstration, field work, and field trips to illustrate approaches to analysis of managed ecosystems behavior and the integration of biophysical and socio-political knowledge to aid in watershed management.",
+   "display_code": "ENVS 166",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "166",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L"
+    ],
+    [
+     "ENVS130A",
+     "ENVS130B",
+     "ENVS129",
+     "ENVS133",
+     "ENVS160",
+     "ENVS167"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor; and ENVS 130A or ENVS 130B or ENVS 129 or ENVS 133 or ENVS 160 or ENVS 167 .",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Agroecosystem Analysis and Watershed Management",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-166"
+  },
+  {
+   "catalog_instructor": "Scott Winton",
+   "code": "ENVS167",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Field and lecture course teaches the physical and biological patterns and processes in freshwater and wetland systems, primarily focusing on Central Coast systems from headwaters to coastal marshes.",
+   "display_code": "ENVS 167",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "167",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Freshwater and Wetland Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-167"
+  },
+  {
+   "catalog_instructor": "Scott Winton",
+   "code": "ENVS167L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides basic skills to assess chemical, biological, and physical characteristics of freshwater creeks, rivers, and wetlands. These skills are needed in environmental consulting, municipal agencies engaging in water management or impacts on water, and regulatory agencies. Relies on methods in geomorphology, biogeochemistry, hydrology, and field biology.",
+   "display_code": "ENVS 167L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "167L",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Concurrent enrollment in ENVS 167 is required.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Freshwater and Wetland Ecology Lab",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-167l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS168",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Studies biogeochemical cycles and related environmental issues such as global environmental change, eutrophication, ecosystem degradation, and agricultural sustainability. Discusses transformation and movement of major nutrient elements in context of watershed ecology and societal implications. Students cannot receive credit for this course and ENVS 268.",
+   "display_code": "ENVS 168",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "168",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L required, or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Biogeochemistry and the Global Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-168"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS169",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in atmospheric science and ecological theory. Topics include impacts on biodiversity, carbon sequestration, sustainable agriculture, and innovative solutions.",
+   "display_code": "ENVS 169",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "169",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L required, or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Climate Change Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-169"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS17",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Introduction and training in the skills needed to create, manage, and exhibit natural history collections, including plants, insects, fungi, birds, mammals, reptiles, and amphibians.",
+   "display_code": "ENVS 17",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "17",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Curation of Natural History Collections",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-17"
+  },
+  {
+   "catalog_instructor": "Katie Monsen",
+   "code": "ENVS170",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Agriculture contributes to and is affected by climate change. Through lectures and field trips, this course covers the impacts on crops and livestock; climate adaptation strategies in the United States and internationally; and agricultural policy responses to climate change.",
+   "display_code": "ENVS 170",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "170",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L .",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Agriculture and Climate Change",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-170"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS171",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Readings and discussions of primary literature on a current environmental topic. Emphasizes experiential learning and research. The topics vary; consult current course listings.",
+   "display_code": "ENVS 171",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "171",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 100 and ENVS 100L , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Topics in Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-171"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS172",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the dilemmas in public policy relating to the management of environmental risks, and discusses their underlying philosophical underpinnings. Explores emergent alternatives, such as the precautionary principle and alternatives assessment, and examines the relationship between experts and the lay public  in public controversies.",
+   "display_code": "ENVS 172",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "172",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Risks and Public Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-172"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS173",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to some of the central issues in world environmental history such as: human attitudes toward the natural environment; the role of human societies, their institutions and technologies in changing the face of the earth; and the historical impact of environmental and developmental policies on race, class, and gender differences in a variety of human communities across the world.",
+   "display_code": "ENVS 173",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "173",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "An Introduction to World Environmental History",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-173"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS174",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "As we collectively work to address environmental concerns—from climate change to wildfires to toxic pollution to distribution of land—gender is a critical social variable that must be addressed. Using the lens of gender, this course examines the linkages between environmental and social change. Beginning by conceptualizing sex, gender and the environment, this course explores key theoretical bodies including ecofeminism, feminist science studies, and queer ecologies. We also investigate the real-life applications of these concepts through consideration of how gender shapes environmental justice activism, rural livelihoods, and more. This course is highly reading and writing intensive.",
+   "display_code": "ENVS 174",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "174",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Gender and the Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-174"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS176",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the research on the relationship between vulnerability and disasters, and on complex systems including hazardous technologies. Explores perspectives on disasters in the literature on political ecology. Also examines relevant work of organizational sociology, and related fields including normal accident and high reliability organizational theories.",
+   "display_code": "ENVS 176",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-T"
+   ],
+   "number": "176",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Vulnerability, Complex Systems, and Disasters",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-176"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS177",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "As the world confronts environmental crises driven by human impact, the need for environmentally literate citizens has never been greater. This course examines the essential role of education in creating a world population that is more knowledgeable about and concerned for the environment, and more empowered to work individually and collectively toward solutions. Emphasis is placed on creating meaningful, equitable learning experiences for students in kindergarten through 12th grade. Learn to bring environmental literacy to the next generation—thoughtfully, creatively, and with lasting impact.",
+   "display_code": "ENVS 177",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "177",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in courses ENVS 100 and ENVS 100L . Non-ENVS majors may enroll with permission from the instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Teaching Environmental Education",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-177"
+  },
+  {
+   "catalog_instructor": "Maywa Montenegro",
+   "code": "ENVS178",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the entangled forces of coloniality, racism, and capitalism as they shape global environments, and vice-versa. Drawing on sources that center the expertises of Indigenous, Black, and Brown communities, class explores how racialization occurs through imperial violence to ecologies and their inhabitants. Studies long arcs of colonial science and power to understand how nature has been normalized as an object of ownership, extraction, pollution, and control. Students explore whose knowledge shapes environmental discourse, how discourse shapes material realities, and under what conditions science resists colonial habits of thought or enables them to flourish. Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of the instructor.",
+   "display_code": "ENVS 178",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "178",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Race and the Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-178"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS179",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A field course in theory and practice of environmental interpretation in parks, museums, and school programs with special attention to local natural history and children. Students work to define their own interpretive philosophy, skills, and style. A background in natural history and/or experience working with children is recommended.",
+   "display_code": "ENVS 179",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "179",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 100 and ENVS 100L or by permission of instructor. Enrollment in ENVS 184 is highly recommended.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Environmental Interpretation",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-179"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS18",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students gain proficiency in illustration media, and acquire training in the essential skills needed to create natural-history inspired illustrations. Students create illustrations and paintings by studying organisms in the Norris Center for Natural History collections, as well as those living on and around campus. Some experience in basic drawing and/or natural-history sketching is recommended.",
+   "display_code": "ENVS 18",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-C"
+   ],
+   "number": "18",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Natural History Illustration",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-18"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS183",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A supervised off-campus learning experience related to environmental problem solving. Students may work with government agencies, private organizations, citizen action groups, or in specialized apprenticeships on an individual or team basis. A significant, independently researched project is required. Internship intended for environmental studies majors. Prerequisite(s): previous or concurrent enrollment in ENVS 100 and ENVS 100L , and by permission of instructor. Students submit petition to course sponsoring agency.",
+   "display_code": "ENVS 183",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Environmental Studies Internship",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-183"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS183A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First quarter of two-quarter senior internship exit requirement. Supervised off-campus learning experience related to environmental problem-solving. Students may work with government agencies, private organizations, citizen action groups, or in specialized apprenticeships on an individual or team basis. Students submit petition to course-sponsoring agency.",
+   "display_code": "ENVS 183A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183A",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): completion of or concurrent enrollment in ENVS 100 and ENVS 100L , and Entry Level Writing and Composition requirements. Enrollment is by permission of instructor. Enrollment is restricted to environmental studies majors and the combined majors with Earth science, biology, and economics.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Senior Internship",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-183a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS183B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This course combines fieldwork at an off-campus agency and a comprehensive analytical paper produced for the agency. Equivalent to a thesis in terms of the depth and quality of the work expected. Prerequisite(s): Completion of ENVS 100 , ENVS 100L , and ENVS 183A . Completion of three upper division courses for the major. Students submit petition to course-sponsoring agency. Enrollment is restricted to senior agroecology majors, environmental studies majors and the combined majors with Earth sciences, biology, and economics.",
+   "display_code": "ENVS 183B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183B",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L",
+     "ENVS183A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Completion of ENVS 100 , ENVS 100L , and ENVS 183A . Completion of three upper division courses for the major. Students submit petition to course-sponsoring agency. Enrollment is restricted to senior agroecology majors, environmental studies majors and the combined majors with Earth sciences, biology, and economics.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Senior Internship",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-183b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS189",
+   "credits": "1",
+   "cross_listed": [],
+   "description": "Research seminars presented weekly throughout the year by environmental studies faculty, visiting scholars, and graduate students. Students discuss content and methodology of research presented following each seminar. Students write critiques of some seminars.",
+   "display_code": "ENVS 189",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "189",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Studies Research Seminar",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-189"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS19",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Students learn the fundamentals of organismal biology and ecology through observations in the field, museum specimens, and field journaling. Class focuses on a particular taxonomic group or natural community, such as reptiles, fungi, insects, coastal prairie, or chaparral.",
+   "display_code": "ENVS 19",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "19",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Topics in Natural History",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-19"
+  },
+  {
+   "catalog_instructor": "Katie Monsen",
+   "code": "ENVS190",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A synthetic course that draws on the knowledge and skills students bring from other courses in the major. Focuses on written and oral individual and group projects in which students must take the initiative. Emphasizes developing skills critical for students in their future careers.",
+   "display_code": "ENVS 190",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "190",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ENVS 100 and ENVS 100L ; Entry Level Writing and Composition requirements. Enrollment is restricted to senior environmental studies majors, agroecology majors, and the combined majors with Earth sciences, biology, and economics.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Capstone Course: Environmental Problem Solving",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-190"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS191F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Interdisciplinary two-credit seminar designed for upper-division students who want to become involved in PICA (Program in Community and Agroecology) and to explore concepts of community and agroecology as they relate to sustainability. Also emphasizes development of leadership skills. Specific topics and readings change each quarter.",
+   "display_code": "ENVS 191F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "191F",
+   "prereq_groups": [
+    [
+     "ENVS91F",
+     "ENVS130A",
+     "ENVS130B",
+     "ENVS133"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 91F, ENVS 130A , ENVS 130B , or ENVS 133 , or equivalent experience.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Community and Agroecology Seminar",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-191f"
+  },
+  {
+   "catalog_instructor": "Stacy Philpott",
+   "code": "ENVS192",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Undergraduate course for students in NextGen Scholar Programs. Participants are engaged in research related to agroecology, food, natural resources, and human sciences. The course includes independent research with a faculty mentor, participating in meetings, workshops, and field trips, and completing assignments and evaluation. Independent research takes place in person (on and off-campus) and meetings, workshops, and a final research symposium takes place online in a synchronous format. Enrollment is by permission of the instructor. Enrollment is limited to UCSC students participating in NextGen summer programs (e.g., Supporting Undergraduates by Promoting Education, Extension, Research, Diversity, and Agricultural Resilience [SUPERDAR]; Food, Agriculture, Natural Resources and Human Sciences [FANH] Scholars; Agricultural and Land Based Training).",
+   "display_code": "ENVS 192",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "192",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Summer NextGen Scholars",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-192"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This provides an opportunity to participate in the preparation and teaching of introductory environmental studies courses. Students will have significant responsibility in leading discussion sections. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 194",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Teaching Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-194"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS194F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students facilitate discussions of course material in an introductory environmental studies course in conjunction with faculty and teaching assistants. May not count toward upper-division major requirements. Approval of the sponsoring agency and selection by the primary instructor of specific courses is required.",
+   "display_code": "ENVS 194F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Teaching Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-194f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS195A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First of a two-quarter senior thesis that results in drafting key thesis elements. Completion of this course does not satisfy the senior exit requirement. Continuation into ENVS 195B is contingent upon instructor approval after satisfactory completion of this course.",
+   "display_code": "ENVS 195A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195A",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): completion of or concurrent enrollment in ENVS 100 and ENVS 100L , and Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Senior Research",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-195a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS195B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Individually supervised senior research that results in a senior thesis. Must meet regularly with faculty sponsor to discuss progress of the project, and to receive academic and technical guidance. Students must submit electronic copies of the completed research and write-up. Satisfies the senior comprehensive requirement.",
+   "display_code": "ENVS 195B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195B",
+   "prereq_groups": [
+    [
+     "ENVS100",
+     "ENVS100L",
+     "ENVS183A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): completion of ENVS 100 , ENVS 100L , and ENVS 183A . Completion of three upper-division courses for the major. Students submit petition to course-sponsoring agency. Enrollment is restricted to senior agroecology majors, environmental studies majors and the combined majors with Earth sciences, biology, and economics.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Senior Thesis Group",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-195b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS196",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Readings and discussions of primary literature on a current environmental studies topic. Field or literature-based research projects (individual or group) writing multiple drafts resulting in a final paper. Topics vary yearly; consult current course listings. Satisfies senior comprehensive requirement. Prerequisite(s): ENVS 100 and ENVS 100L ; Entry Level Writing and Composition requirements. Enrollment is by application with selection based on appropriate background and academic performance and by permission of instructor. Enrollment is restricted to senior environmental studies majors, agroecology majors, and the combined majors with Earth sciences, biology, and economics.",
+   "display_code": "ENVS 196",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "196",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Senior Seminar",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-196"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS196G",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Readings and discussions of primary literature on Geographic Information Systems (GIS). Lab-based research projects (individual or group) writing multiple drafts resulting in a final project. Enrollment by application with selection based on appropriate background and academic performance and by consent of instructor. Satisfies senior comprehensive requirement.",
+   "display_code": "ENVS 196G",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "196G",
+   "prereq_groups": [
+    [
+     "ENVS100"
+    ],
+    [
+     "ENVS100L"
+    ],
+    [
+     "ENVS115A"
+    ],
+    [
+     "ENVS115L"
+    ],
+    [
+     "ENVS115B"
+    ],
+    [
+     "ENVS115C"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ENVS 100 and ENVS 100L ; Entry Level Writing and Composition requirements; ENVS 115A , ENVS 115L , ENVS 115B . Previous or concurrent enrollment in ENVS 115C . Enrollment is restricted to senior environmental studies majors, agroecology majors, and the combined majors with Earth sciences, biology, and economics.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Senior Seminar in Geographic Information Systems (GIS)",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-196g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced directed reading, supervised research, and organized projects relating to environmental problems. May be repeated for credit with consent of the chair of environmental studies. Students submit petition to sponsoring agency. Prerequisite(s): prior or concurrent enrollment in ENVS 100 and ENVS 100L .",
+   "display_code": "ENVS 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides for department-sponsored directed reading, supervised research, or organized project under the direct supervision of a faculty sponsor. May not be counted toward major requirements. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 199F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-199f"
+  },
+  {
+   "catalog_instructor": "Karen Holl",
+   "code": "ENVS201A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the range of scholarly traditions that inform the kinds of research common to the Environmental Studies Department at UC Santa Cruz.",
+   "display_code": "ENVS 201A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "201A",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Research Approaches in Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-201a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS210",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an introduction to social scientific analyses of the relationships between capitalistic development and the environment in the late 20th century. It has a dual purpose: First, to develop a contemporary historical understanding and sensibility of how economic change, new institutional configurations, and world scale processes are shaping interactions with the environment. Second, to examine some recent political social theoretical perspectives on nature-society relations and radical environmental and social movements.",
+   "display_code": "ENVS 210",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "210",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students in environmental studies.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Political Ecological Thought and Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-210"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS215A",
+   "credits": "5",
+   "cross_listed": [
+    "GIST215A"
+   ],
+   "description": "Introduction to geographic information systems (GIS) as the technology of processing spatial data, including input, storage and retrieval; manipulation and analysis; reporting and interpretation. Emphasizes GIS as a decision support system for environmental and social problem solving, using basic model building, experimental design, and database management. Students cannot receive credit for this course and ENVS 115A .",
+   "display_code": "ENVS 215A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "215A",
+   "prereq_groups": [
+    [
+     "ENVS215L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in ENVS 215L is required. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Geographic Information Systems and Environmental Applications",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215a"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS215B",
+   "credits": "5",
+   "cross_listed": [
+    "GIST215B"
+   ],
+   "description": "Evaluates advanced technologies of processing spatial data, spatial theory, and application to unique geographic problems, data manipulation and analysis, and reporting and interpretation. Emphasizes GIS as a decision-support system for environmental and social problem solving, using basic model building, experimental design, and database management. Taught in conjunction with ENVS 115B . Students cannot receive credit for this course and ENVS 115B .",
+   "display_code": "ENVS 215B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "215B",
+   "prereq_groups": [
+    [
+     "ENVS215A"
+    ],
+    [
+     "ENVS215L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 215A . Concurrent enrollment in ENVS 215L . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Intermediate Geographic Information Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS215C",
+   "credits": "5",
+   "cross_listed": [
+    "GIST215C"
+   ],
+   "description": "Spatial data arise in almost every field of study and contemporary spatial data analysis focuses on detecting patterns and modeling relationships between such patterns. This course is a project environment through which students demonstrate the ability to apply advanced knowledge and skills to analyze spatial data. In particular, this course serves as an introduction to spatial statistics and the background necessary to investigate patterns in geographically represented data. Course also hones students' critical assessment of scholarship in the field and learn how to evaluate, plan, and conduct research. The course is focused on the design and practical application of GIS, demonstrating the student's ability to manage and develop a GIS product for a real world problem or situation.",
+   "display_code": "ENVS 215C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "215C",
+   "prereq_groups": [
+    [
+     "GIST215B",
+     "ENVS215B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): GIST 215B/ ENVS 215B . Concurrent enrollment in GIST 215L/EVS 215L is required. Enrollment is restricted to graduate students enrolled in the GISTAR M.A. Program.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Advanced Geographic Information Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215c"
+  },
+  {
+   "catalog_instructor": "Bo Yang",
+   "code": "ENVS215L",
+   "credits": "2",
+   "cross_listed": [
+    "GIST215L"
+   ],
+   "description": "Exercises in Geographic Information Systems and Remote Sensing that demonstrate the development of digital geographic data. Students gain hands-on experience with developing datasets, using imagery to create GIS layers, performing spatial analysis, and utilizing GPS technology. Emphasis placed on environmental applications. Students cannot receive credit for this course and ENVS 115L .",
+   "display_code": "ENVS 215L",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "215L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Concurrent enrollment in ENVS 215A , or ENVS 215B , or ENVS 215C is required. Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Exercises in Geographic Information Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS220",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The principles of conservation biology, including a review of the core disciplines of demography, population genetics, island biogeography, and community ecology and discussion of area and edge effects, population viability, and ecosystem issues related to the maintenance of biological diversity, especially in fragmented landscapes.",
+   "display_code": "ENVS 220",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "220",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Conservation Biology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-220"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS23",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an overview of the physical and chemical environment of planet Earth. Fundamental chemistry and physics is introduced in the process of learning about Earth in a holistic way. The influence of human societies on the global environment is one focus of discussion. Earth's many spheres are explored first: the lithosphere; the atmosphere; the hydrosphere, and the ecosphere. Then global cycles of carbon, nitrogen, and several other elements are studied in the context of basic sciences and societal issues.",
+   "display_code": "ENVS 23",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "23",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "The Physical and Chemical Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-23"
+  },
+  {
+   "catalog_instructor": "Stacy",
+   "code": "ENVS230",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The application of ecological concepts and principles to the design and management of agricultural systems. The long-term goal of sustainable agroecosystems is examined in economic, social, and ecological contexts.",
+   "display_code": "ENVS 230",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "230",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Agroecology and Sustainable Agriculture",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-230"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS235",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive reading and discussion seminar on the treatment of nature in social theory. Focuses on major recent works which examine nature in social theory, in themselves, and in the context of the intellectual history of development of disciplinary discourses about nature. Students write critical reviews of assigned books and a research paper situating a particular book within its intellectual tradition. Prerequisite(s): interview with instructor to determine preparedness.",
+   "display_code": "ENVS 235",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "235",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Social Theories of Nature",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-235"
+  },
+  {
+   "catalog_instructor": "Chris Wilmers",
+   "code": "ENVS24",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers principles of ecology including limits to species abundances, evolutionary ecology, population dynamics, community interactions and patterns, and ecosystem patterns and dynamics.",
+   "display_code": "ENVS 24",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "24",
+   "prereq_groups": [
+    [
+     "AM3",
+     "AM6",
+     "MATH3"
+    ],
+    [
+     "ENVS23"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): AM 3 or AM 6 , or MATH 3 or higher; or mathematics placement examination (MPE) score of 300 or higher; or AP Calculus AB exam score of 3 or higher; ENVS 23 recommended as prerequisite to this course.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "General Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-24"
+  },
+  {
+   "catalog_instructor": "Mijin Cha",
+   "code": "ENVS240",
+   "credits": "5",
+   "cross_listed": [
+    "CSP242"
+   ],
+   "description": "Introduction to political and economic approaches to policy analysis, with particular reference to natural resource scarcity, property rights, and environmental conservation. Case studies apply economic and policy process concepts to the management of public lands, biodiversity, and renewable resources.",
+   "display_code": "ENVS 240",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "240",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Public Policy and Conservation",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-240"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS247",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A research seminar combining theoretical issues in democratic theory, political economy, and planning with emerging concepts of bioregionalism. The focus is on institutional, scientific, and political innovations in managing the environment. Students evaluate current and historical proposals to regionalize environmental policy in the U.S.",
+   "display_code": "ENVS 247",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "247",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Regional Approaches to Environmental Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-247"
+  },
+  {
+   "catalog_instructor": "Sikina Jinnah",
+   "code": "ENVS25",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the policy and economic dimensions of some pressing environmental challenges. Case studies may include, biodiversity conservation, waste, water, climate change, and other topics to examine the drivers and policy responses to environmental problems and the trade-offs in different policy solutions. (Formerly Environmental Policy and Economics.)",
+   "display_code": "ENVS 25",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly Environmental Policy and Economics.",
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "25",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Politics, Economics and Justice",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-25"
+  },
+  {
+   "catalog_instructor": "Katy Seto",
+   "code": "ENVS250",
+   "credits": "5",
+   "cross_listed": [
+    "CSP243"
+   ],
+   "description": "Introduction to major theories of ocean and coastal governance, with emphasis on those that underlie current policy and management approaches. Students analyze local, state, national, and international laws and policies, considering interactions across scales, levels of social organization, and institutions.",
+   "display_code": "ENVS 250",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "250",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Coastal Governance",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-250"
+  },
+  {
+   "catalog_instructor": "Flora Lu",
+   "code": "ENVS26",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how our understandings about environmental issues change and deepen when we take seriously issues of culture, identity, and sociality (alongside demography, economics, and technology) and why this matters, especially in the present moment.",
+   "display_code": "ENVS 26",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "26",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Culture and the Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-26"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS263",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Plant diseases do more than just harm plants we grow for food; they drive the evolution, population dynamics, ecosystem functioning, and diversity of plants in wild communities. This class looks at the biology of plant-microbe symbioses and the impacts of plant pathogens through the integrating lens of evolutionary ecology. Students explore the ecological basis for disease spread and management in agricultural, forest, and wild systems, and consider special challenges from emerging pathogens and climate change. Through developing a research proposal, students delve into diverse approaches that are used in basic and applied plant disease research. Students cannot receive credit for this course and ENVS 163 .",
+   "display_code": "ENVS 263",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "263",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): one ecology course or equivalent background. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Plant Disease Ecology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-263"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS265",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Data science is growing exponentially in size and quality, changing environmental scholarship and creating challenges of sifting, processing, and synthesizing large and diverse sources of information. In this course, students learn the fundamental practices of environmental informatics mainly using the R programming language. The workshop-style course is designed without requirement on prior experience in R. Includes environmental-related modules such as climate change, plant growth, animal predator-prey dynamics, overfishing and marine protected areas. Throughout the quarter, students use new hands-on skills to find an environmental-related topic, write a proposal, search for data, perform analyses, summarize results, and complete a final paper.",
+   "display_code": "ENVS 265",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "265",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Data Science for the Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-265"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS268",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Studies biogeochemical cycles and related environmental issues such as global environmental change, eutrophication, ecosystem degradation, and agricultural sustainabilty. Discusses transformation and movement of major nutrient elements in context of watershed ecology and societal implications. Students cannot receive credit for this course and ENVS 168.",
+   "display_code": "ENVS 268",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "268",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to environmental studies graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Biogeochemistry and the Global Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-268"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS271",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive seminar examining the normative underpinnings of environmental values. Draws on tools from analytical, ethical, and political philosophy to develop normative arguments concerning environmental inequality and justice, environmental preservation, and risk evaluation. Involves team projects in which students develop cases on controversial contemporary issues such as biotechnology. Prerequisite(s): interview only. Enrollment restricted to graduate students.",
+   "display_code": "ENVS 271",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "271",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Valuing the Environment",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-271"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS272",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces qualitative research approaches in environmental studies. Focuses on philosophies of science, epistemological debates, and specific approaches to qualitative methods. Course components include: field safety, research ethics, human subjects, training, research design and sampling, field observation and ethnographies, key informants, field notes, focus groups, oral histories, narrative research, archival research, questionnaires, discourse analysis, participatory research, and qualitative data analysis techniques.",
+   "display_code": "ENVS 272",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "272",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Qualitative Field Methods",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-272"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS280",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intensive research seminar, including reading and critique of primary research literature and research in progress. Topics vary and are announced in advance; students should consult with faculty prior to enrolling. Enrollment by permission of instructor. Enrollment restricted to graduate students.",
+   "display_code": "ENVS 280",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Advanced Topics in Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-280"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS283",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Graduate level internship focuses on integrating interdisciplinary academic theory with practical, specialized experience in a professional setting. Course intended for environmental studies graduate students; students must complete paperwork and meet with coordinator prior to first day of instruction.",
+   "display_code": "ENVS 283",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "283",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Environmental Studies Internship",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-283"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS290",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Research seminars presented weekly throughout the year by environmental studies and affiliated faculty, by visiting scholars, and by graduate students. Students discuss the content and methodology of research presented following each seminar.",
+   "display_code": "ENVS 290",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Interdisciplinary Research Seminar",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-290"
+  },
+  {
+   "catalog_instructor": "Elliott Campbell, Karen Holl",
+   "code": "ENVS290L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Graduate student presentations of doctoral research proposals, dissertation work-in-progress, grant applications, and conference papers. This weekly laboratory meeting seeks to develop professional skills, teach constructive criticism, and foster effective discussion among peers.",
+   "display_code": "ENVS 290L",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290L",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Spring",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Graduate Research Seminar",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-290l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS291",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Focusing on a recently published volume or on a topic of current interest, this seminar requires a rigorous analysis of the principles and methods employed in the four core areas of the program: sustainable agriculture and agro-ecology; conservation biology; environmental policy analysis; and political economy.",
+   "display_code": "ENVS 291",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "291",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Advanced Readings in Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS291C",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Advanced readings and research on environmental risk and public policy. Explores environmental decision making given the question of the burden of proof and scientific uncertainty and grapples, in an advanced manner, with emergent policy alternatives, such as the precautionary principle. Also offered as ENVS 281C for 5 credits.",
+   "display_code": "ENVS 291C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "291C",
+   "prereq_groups": [
+    [
+     "ENVS172"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ENVS 172 or equivalent work demonstrated by an interview. Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Advanced Readings in Risk and Public Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS291D",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Analyzes recent publications in ecology, conservation, agroecology, and development in tropical and subtropical regions, particularly Latin America. Discussions place special emphasis on integration across natural and social science disciplines to address issues of sustainability in tropical regions.",
+   "display_code": "ENVS 291D",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "291D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Advanced Readings in Tropical Ecology, Agriculture, and Development",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS291M",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Course consists of three parts: fundamental biogeochemistry of the Earth, global cycles of nutrient elements, and societal and scientific issues of global change. Class activities include (1) presentation of summary statements based on reading assignments; (2) discussion of theories, concepts, methodologies, and applications; (3) computer simulation and modeling of elemental cycles using STELLA; and (4) integration of scientific information on global change with social issues by writing.",
+   "display_code": "ENVS 291M",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "291M",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Advanced Readings in Biogeochemistry",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS291P",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Course of readings systematically surveying the theoretical contributions of the disciplines of environmental history, historical ecology, environmental anthropology, and geography. After an overview of the evolution of 20th-century thought on the relationship between environment and culture as seen through the lenses of these disciplines, explores emerging research hybrids and new research frontiers.",
+   "display_code": "ENVS 291P",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "291P",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Advanced Readings in Environmental History and Anthropology",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291p"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS292",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Seminar in which students give critically evaluated presentations regarding current research in environmental studies and issues in research design. Students should consult with faculty prior to enrolling.",
+   "display_code": "ENVS 292",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "292",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Topics in Research in Environmental Studies",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-292"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS297A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 297A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297A",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS297B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 297B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297B",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS297C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 297C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297C",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS297F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision. Intended to be taken in conjunction with a 5-credit course. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 297F",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS299A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 299A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299A",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS299B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 299B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299B",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS299C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 299C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299C",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299c"
+  },
+  {
+   "catalog_instructor": "Brent Haddad",
+   "code": "ENVS65",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to freshwater resources from multiple scientific and policy perspectives. After a review of basic concepts, water issues affecting cities, farms, open space, and multiple-use landscapes are studied. Students cannot receive credit for this course if they have previously received credit for ENVS 165 .",
+   "display_code": "ENVS 65",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "65",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Introduction to Fresh Water: Processes and Policy",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-65"
+  },
+  {
+   "catalog_instructor": "Elliott Campbell",
+   "code": "ENVS80B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A broad overview of the impacts of human activities on the global climate system. Topics include how climate affects the distribution of ecosystems, the influence of global climate change on biodiversity, ecosystem function, and consequences for the human enterprise. (Formerly The Ecological Forecast for Global Warming.)",
+   "display_code": "ENVS 80B",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly The Ecological Forecast for Global Warming.",
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "80B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Climate Change Science and Solutions",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-80b"
+  },
+  {
+   "catalog_instructor": "Sikina Jinnah",
+   "code": "ENVS80E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Drawing inspiration from a long history of social justice movements, this course hopes to educate a new generation of climate justice changemakers. Pre-recorded lectures by faculty experts, readings, and multimedia content deepen students’ understanding of the most pressing issues and solutions related to climate change. After engaging with lectures and supplemental materials on their own time, students come together for synchronous Zoom discussions to share their experiences of the course materials and learn from their peers. Because facing the realities of climate change can induce intense emotions, this curriculum includes awareness-based practices and include space for students to reflect and journal, giving them time to process and retain these different forms of knowledge.",
+   "display_code": "ENVS 80E",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "80E",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Climate Justice",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-80e"
+  },
+  {
+   "catalog_instructor": "Madeleine Fairbairn",
+   "code": "ENVS80F",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Our current food system is unsustainable for the environment and unjust for the farmers, farmworkers, and consumers who depend on it. Course provides an interdisciplinary, experiential, and systems-focused introduction to agroecology and other approaches to advancing a more just and ecologically sustainable food system. Students will come to understand agroecology as a science for understanding agricultural ecosystems, as a farming practice, and as a social movement to change the way we produce and distribute/access food. Course examines many topics—including biological fertility and pest management, seeds, livestock raising, and aquaculture—from the perspective of both the natural and social sciences, leaving students with a perspective that transcends any particular academic discipline. Students gain hands-on experience with farming research, production, and food distribution happening across the UCSC campus farm and food system.",
+   "display_code": "ENVS 80F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "80F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ENVS",
+   "title": "Introduction to Agroecology and Sustainable Food Systems",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-80f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS83",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A supervised off-campus learning experience related to environmental problem solving. Focuses on initial experiences in applied work and specific skill development. Students may be placed individually or with a team in government agencies, private organizations, citizen action groups.",
+   "display_code": "ENVS 83",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "83",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Environmental Studies Internship",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-83"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS84",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Supervised learning experience related to environmental problem solving. Students may work with government agencies, private organizations, citizen action groups, or in specialized apprenticeships on an individual or team basis. This 2-credit internship puts students in the field and offers them the experience of practicing environmental problem solving. This internship experience focuses on specific skill development. (Formerly ENVS 184.)",
+   "display_code": "ENVS 84",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly ENVS 184.",
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "84",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Environmental Studies Internship",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-84"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Directed reading, supervised research, and organized projects relating to environmental problems. May be repeated for credit with consent of the chairperson of Environmental Studies Department. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-99"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ENVS99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides for department-sponsored directed reading, supervised research, or organized project for lower-division students under the direct supervision of a faculty sponsor. May not be counted toward major requirements. Students submit petition to sponsoring agency.",
+   "display_code": "ENVS 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "ENVS",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "ENVS"
+}

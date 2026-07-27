@@ -1,5 +1,9 @@
 # Backup & rollback runbook
 
+> Scope note: courses + program requirements live in the repo
+> (`data-committed/`) — their backup and rollback is git itself. This runbook
+> covers the remaining classes.
+
 Three independently-restorable data classes (docs/ARCHITECTURE.md):
 
 | Class | Where it lives | Backup form | Restore |

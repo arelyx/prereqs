@@ -1,0 +1,242 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "literature",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Italian Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ITAL1",
+       "ITAL2",
+       "ITAL3",
+       "ITAL4",
+       "ITAL5",
+       "ITAL6"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Italian has an accelerated language track of ITAL 1A and ITAL 1B. These two courses taken together equate to ITAL 1-ITAL 3."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Complete the lower-division Italian language sequence (ITAL 1–ITAL 6), or equivalent.",
+        "Italian has an accelerated language track of ITAL 1A and ITAL 1B. These two courses taken together equate to ITAL 1-ITAL 3."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Three of the five upper-division courses must be completed at UC Santa Cruz. A maximum of two courses may be transferred from a UC Education Abroad Program (EAP).",
+        "type": "prose"
+       },
+       {
+        "text": "Two courses must have at least a discussion section in Italian. Consult the final section below for a list of possible courses. Additional courses may apply on a case-by-case basis. Contact the Literature advisor to review potential courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students complete five upper-division courses: One in Italian culture, one in Italian history, two in Italian literature, and one in Italian art.",
+        "Three of the five upper-division courses must be completed at UC Santa Cruz. A maximum of two courses may be transferred from a UC Education Abroad Program (EAP).",
+        "Two courses must have at least a discussion section in Italian. Consult the final section below for a list of possible courses. Additional courses may apply on a case-by-case basis. Contact the Literature advisor to review potential courses.",
+        "LIT 102 can substitute for one of the Italian literature, history, or art history requirements after consulting with the Literature advisor. In some cases, LIT 102 can also count as a course taught substantially in Italian.",
+        "Students can consult Italian studies course offerings for each of the above categories."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ITAL101",
+       "ITAL106"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Italian Culture",
+       "prose": [
+        "Take one of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Italian Culture"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SOCY117E"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Italian History",
+       "prose": [
+        "Take the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Italian History"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT114A",
+       "LIT114C",
+       "LIT114E",
+       "LIT114F",
+       "LIT121G",
+       "LIT130D",
+       "LIT141A",
+       "LIT155D",
+       "LIT164G",
+       "LIT166C",
+       "LIT190A"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Italian Literature",
+       "prose": [
+        "Take two courses from the LIT 185 series or the following list. Students should complete the lower-division Italian language sequence (ITAL 1 - 6) prior to taking Italian literature courses.",
+        "Note: All LIT 185-series courses count toward the two-course requirement for courses taught substantially in Italian."
+       ]
+      }
+     }
+    ],
+    "title": "Italian Literature"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HAVC154",
+       "HAVC155",
+       "HAVC157B",
+       "HAVC157C",
+       "HAVC157D",
+       "HAVC191N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Italian History of Art and Visual Culture Courses",
+       "prose": [
+        "Take one of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Italian History of Art and Visual Culture Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ITAL100",
+       "ITAL106",
+       "LIT184B",
+       "LIT185H",
+       "LIT185I",
+       "LIT185J",
+       "LIT185L",
+       "LIT185M",
+       "LIT185N",
+       "LIT185O",
+       "LIT185P",
+       "LIT185Q",
+       "LIT185S",
+       "LIT185Z"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Courses Taught Substantially in Italian",
+       "prose": [
+        "Take two courses that are taught substantially in Italian or have a discussion section taught in Italian.",
+        "All LIT 185 series courses count toward this requirement, and a list of current 185 series courses are listed below. In some cases, LIT 102 may count toward this requirement after consultation with the Literature advisor."
+       ]
+      }
+     }
+    ],
+    "title": "Courses Taught Substantially in Italian"
+   }
+  ]
+ },
+ "slug": "italian-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/italian-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

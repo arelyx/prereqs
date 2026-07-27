@@ -32,8 +32,12 @@ python -m ucsc.soe_schedule.run
 python -m ucsc.major_requirements.fetch
 python -m ucsc.major_requirements.run               # --no-llm for a dry pass
 
-# 5. Load into Postgres (transactional per source; also derives availability
-#    + instructor predictions)
+# 5. Export to the git-committed dataset — git diff is the review step!
+python -m ucsc.export_committed                     # respects hand-edited files
+git diff data-committed/                            # review the delta, then commit
+
+# 6. Load into Postgres (transactional per source; also derives availability
+#    + instructor predictions; courses/programs load from data-committed/)
 cd ../backend && DATABASE_URL=postgresql+psycopg://prereqs:prereqs@localhost:5433/prereqs \
   .venv/bin/python -m app.loaders.ucsc
 ```

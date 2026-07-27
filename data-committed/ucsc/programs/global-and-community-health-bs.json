@@ -1,0 +1,990 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "copy-of-global-and-community-health-bs-pbsci",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Global and Community Health B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The goal of the Global and Community Health (GCH) B.S. major is to serve the needs of students who aspire to a wide range of careers in the science of medicine and direct patient care. Students in the GCH B.S. major will learn about the biological bases of health and disease and how biology interacts with social, political, economic, and environmental factors to create patterns of disease in communities and societies. GCH B.S. students choose between two concentrations in this major. The biomedical concentration prepares students whose primary focus is on the biology of disease. The public and community health concentration interweaves the biological and social determinants of health.",
+     "Students in both concentrations take a course in the foundations in global and community health along with introductory courses in biology, general chemistry, organic chemistry, calculus and statistics. In the upper division, all students take courses in biochemistry, epidemiology and environmental health. Students in the biomedical concentration also take advanced courses in genetics, molecular and cell biology, human physiology, and five quarters of Spanish, culminating in a course in medical Spanish. Students in the public and community health concentration take an introductory physiology course, an advanced course in community health, and elective courses in the biological and social contexts of health. Students in both concentrations also take courses in global and community health communication and complete a capstone course in which they participate in interdisciplinary teams to analyze a contemporary problem in global and community health.",
+     "Medical and professional school admissions requirements vary; students should verify that their coursework will satisfy the admissions requirements of the programs to which they plan to apply. Check our Health Careers webpage for more information on how you can academically prepare for a career in health care and/or public health. Additional information is available at the UCSC Career Center ."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students who successfully complete the global and community health B.S. major will be able to:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Students should take full advantage of academic advising and should keep in frequent contact with the advisers to stay informed about late announcements of courses, changes in scheduling, and opportunities for special study. Transfer students should also consult the Transfer Information and Policy Section. For additional advice and information:",
+     "GCH B.S. Program Advising Social Sciences 1, Suite #117",
+     "(831) 459-1802 gchBSadvising@ucsc.edu"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Prerequisites",
+     "This major is highly course-intensive and/or sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz. Students should take Foundations for Global and Community Health ( GCH 1 ) as soon as possible. Due to the demanding nature of the major, students must begin their science coursework as early as possible. MATH 11A , MATH 16A , or MATH 19A ; CHEM 3A, CHEM 3B and CHEM 3C or CHEM 4A and CHEM 4B ; CHEM 8A ; and, BIOL 20A , BIOE 20B , and BIOL 20L must be completed before the sixth quarter in order for students to qualify for admission to the global and community health B.S. major. For an overview of prerequisites and getting started in the major, please visit our GCH B.S. advising site .",
+     "An online mathematics placement assessment in ALEKS PPL is required to enroll in a math course. Global and community health majors are expected and encouraged to work in the learning modules in ALEKS PPL to be able to enroll in MATH 11A , MATH 16A , or MATH 19A . For more information see the mathematics placement website .",
+     "Students intending to major in the global and community health B.S., biomedical concentration should take the Spanish placement assessment , offered by the Department of Languages and Applied Linguistics, to determine the level at which they should begin the Spanish sequence.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses that are taken to satisfy any major requirement must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "At least half of the upper-division courses required for the major must be taken at UC Santa Cruz, not as transfer credits from another institution. If a student plans to transfer to UCSC from another institution, the student is advised to contact GCH B.S. Advising at UCSC before enrolling in upper-division courses at the student’s institution or any institution other than UCSC. This advising will help students understand the limitation of transferring upper-division courses from other institutions to UCSC. For more information on transferring courses to UCSC, please consult the undergraduate website .",
+     "Once matriculated, a student must receive prior permission from the department to satisfy the BIOL 20A , BIOL 100 , BIOL 105 , BIOL 101 , or BIOL 110 requirements with courses taken at other institutions. Students who wish to receive credit toward the major for these or other courses taken either at UCSC or at another institution should contact GCH B.S. advising."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students cannot double major/minor in the Global and Community Health B.S. and either the Global and Community Health B.A. or any other major/minor offered by the departments of Chemistry and Biochemistry, Ecology and Evolutionary Biology, Microbiology and Environmental Toxicology or MCD Biology.",
+     "Should a student choose to double major, they must qualify for and complete the Disciplinary Communication and comprehensive requirements for each of the majors."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "The UC Education Abroad Program (EAP) offers qualified students unique opportunities to broaden their educational horizons. We encourage interested students to participate. Many programs are in English-speaking countries or use English for advanced courses. Many programs offer small classes, extensive laboratories, and/or field research experience.",
+     "Students interested in study abroad need to get an early start on their basic science requirements, including chemistry, mathematics, and introductory biology and must declare their major prior to applying to go abroad. Students interested in studying abroad should visit the EAP office as soon as possible to begin planning. They should also seek advice about their EAP plan for major courses at UC Santa Cruz from GCH B.S. Advising and receive their approval."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in the majors are awarded to graduating students whose academic performance in major requirements demonstrates excellence at a grade point average (GPA) of 3.50 or above. Highest honors are awarded to those students whose performance demonstrates the highest level of excellence and results in a GPA of 3.80 or above."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Medical and professional school admissions requirements vary; students should verify that their coursework will satisfy the admissions requirements of the programs to which they plan to apply."
+    ],
+    "title": "Medical and Professional School Admission"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B",
+       "BIOL20A",
+       "BIOL20L",
+       "CHEM8A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Transfer and Admission Screening Policy",
+       "prose": [
+        "The global and community health program encourages applications from transfer students. The global and community health B.S. major has a major qualification policy that limits access to the program to students who have successfully completed a subset of foundational coursework. See qualifying for the major as a transfer applicant for more information.",
+        "To be considered for admission as a proposed global and community health B.S. major, transfer students must complete the following courses or their equivalents prior to transfer, by the end of the spring term for students planning to enter in the fall with grades of C or higher in each course.  Criteria are the same for transfer students applying for winter quarter admission."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus, one of the following series of chemistry courses:",
+       "prose": [
+        "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B from California community colleges."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus, one of the following mathematics courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "In addition, the following courses are recommended prior to transfer to ensure timely graduation.",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11B",
+       "MATH16B",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8B",
+       "CHEM8L",
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Please see our site on preparing to transfer as an GCH BS major for more complete information. Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows. Students who are proposed in a different major and have advanced standing when they enter UCSC require permission from the department to change into the major. Admission to the major is not guaranteed. If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5 , they may petition to have the STAT 7 / STAT 7L requirement waived. However, once matriculated at UCSC, GCH students should take STAT 7 / STAT 7L ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following courses",
+       "prose": [
+        "Please see our site on preparing to transfer as an GCH BS major for more complete information.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Students who are proposed in a different major and have advanced standing when they enter UCSC require permission from the department to change into the major. Admission to the major is not guaranteed.",
+        "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5 , they may petition to have the STAT 7 / STAT 7L requirement waived. However, once matriculated at UCSC, GCH students should take STAT 7 / STAT 7L ."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer and Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students who have met the major qualification requirements are encouraged to declare the major during their first quarter at UC Santa Cruz. Transfer students should complete the required course, Foundations of Global and Community Health ( GCH 1 ) as soon as possible. In addition, students in the biomedical concentration should complete biochemistry ( BIOL 100 ), genetics ( BIOL 105 ), and molecular biology ( BIOL 101 ) by the end of their first year at UCSC since they are prerequisites for the majority of other required courses. Transfer students in the biomedical concentration should also take the Spanish placement assessment upon arrival. We encourage transfer students to complete the required Spanish courses (including SPAN 5M ) before the fall of their second year."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify for the global and community health B.S. major, students must pass the following courses or their equivalents with a grade of C+ or better in each course. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B",
+       "BIOL20A",
+       "BIOL20L",
+       "CHEM8A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following series of chemistry courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C, C-, D+, D, D-, or F in the policy courses are not qualified to declare. When assessing qualification: All courses must be taken for a letter grade, see Letter Grade Policy below. Students with AP credit for MATH 11A , MATH 16A , or MATH 19A , BIOL 20A , and/or BIOE 20B , need only pass the remaining qualification policy courses. Every student who satisfies the major qualification requirements and who petitions to declare the major by the campus major declaration deadline (i.e., before enrolling in their third year or the equivalent) will be admitted to the major. Students who satisfy the major admission requirements, but who petition to declare the major after the campus major declaration deadline will be considered on a case-by-case basis for admission to the major; admission is not guaranteed.",
+        "type": "prose"
+       },
+       {
+        "text": "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C, C-, D+, D, D-, or F in the policy courses are not qualified to declare.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C, C-, D+, D, D-, or F in the policy courses are not qualified to declare. When assessing qualification: All courses must be taken for a letter grade, see Letter Grade Policy below. Students with AP credit for MATH 11A , MATH 16A , or MATH 19A , BIOL 20A , and/or BIOE 20B , need only pass the remaining qualification policy courses. Every student who satisfies the major qualification requirements and who petitions to declare the major by the campus major declaration deadline (i.e., before enrolling in their third year or the equivalent) will be admitted to the major. Students who satisfy the major admission requirements, but who petition to declare the major after the campus major declaration deadline will be considered on a case-by-case basis for admission to the major; admission is not guaranteed.",
+        "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C, C-, D+, D, D-, or F in the policy courses are not qualified to declare.",
+        "When assessing qualification:"
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are not eligible to declare the major may submit an appeal to the global and community health B.S. faculty advisor. The department will notify the student and their college of the outcome of the appeal within 15 working days of the quarterly appeal deadline.",
+        "See our appeal process for more information."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare by completing the online declaration petition as soon as they complete the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "Each major/minor advising office has a process for declaring. To initiate the process to declare, please complete the online declaration petition located on the GCH website. For assistance, please contact GCH BS advising at gchBSadvising@ucsc.edu."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": "Biomedical Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Students complete the Biomedical Concentration by satisfying the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "Biomedical Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B",
+       "BIOL20A",
+       "BIOL20L",
+       "CHEM8A",
+       "CHEM8L",
+       "CHEM8B",
+       "CHEM8M",
+       "GCH1",
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6C",
+       "PHYS6L",
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": [
+        "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and 3C taken Fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to Fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following series of courses:",
+       "prose": [
+        "CHEM 3B and 3C taken Fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to Fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH16A",
+        "MATH16B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may transition between the MATH 11 and 19 series per the Calculus Series Transition Policy."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "Students may transition between the MATH 11 and 19 series per the Calculus Series Transition Policy."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN1",
+       "SPAN2",
+       "SPAN3",
+       "SPAN4",
+       "SPAN5M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Language Requirement",
+       "prose": [
+        "SPAN 1 - SPAN 4 or the equivalent and one quarter of Spanish for health-care workers ( SPAN 5M )."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Biomedical Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL100",
+       "BIOL101",
+       "BIOL105",
+       "BIOL110",
+       "BIOL113",
+       "BIOL130",
+       "BIOL130L",
+       "GCH190",
+       "GCH195",
+       "METX115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: CHEM 109 is also recommended for pre-med students."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": [
+        "Note: CHEM 109 is also recommended for pre-med students."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL189"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Internship Requirement:",
+       "prose": [
+        "Students must participate in a community health-care service activity approved by the health sciences internship coordinator. Students will accrue a minimum of 80 hours over one quarter. This requirement satisfies the Comprehensive Requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Biomedical Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH190",
+       "GCH195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement in global and community health B.S. degree is satisfied by completing the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Biomedical Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All majors have a comprehensive requirement. For the global and community health B.S., this requirement can be satisfied by receiving a passing grade in the Health Sciences Internship, BIOL 189 . Any student who is terminated from their internship will receive a failing grade. Such students will be ineligible for future placement in a Health Sciences internship at UCSC and will be unable to complete the GCH B.S. degree."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Public and Community Health Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B",
+       "BIOL20A",
+       "BIOL20L",
+       "CHEM8A",
+       "CHEM8L",
+       "CHEM8B",
+       "CHEM8M",
+       "GCH1",
+       "METX41",
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Core Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH16A",
+        "MATH16B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and 3C taken Fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to Fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following series of courses:",
+       "prose": [
+        "CHEM 3B and 3C taken Fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to Fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "BIOL80A",
+       "BIOL80J",
+       "BIOL88",
+       "CLNI30",
+       "CMMU10",
+       "CSE80A",
+       "ENVS25",
+       "ENVS80F",
+       "FMST10",
+       "FMST30",
+       "FMST31",
+       "FMST41",
+       "GCH41",
+       "HIS81",
+       "LALS55",
+       "LALS57",
+       "LIT80K",
+       "POLI17",
+       "POLI20",
+       "POLI61",
+       "PSYC1",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15",
+       "SPAN3",
+       "SPAN4",
+       "SPAN5M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division Breadth Requirement (Choose One)",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Public and Community Health Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL100",
+       "BIOL113",
+       "GCH190",
+       "GCH195",
+       "METX115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU165",
+       "METX108"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": [
+        "Note: CHEM 109 is also recommended for pre-med students."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL189"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Internship Requirement:",
+       "prose": [
+        "Students must participate in a community health-care service activity approved by the health sciences internship coordinator. Students will accrue a minimum of 80 hours over one quarter. This requirement satisfies the Comprehensive Requirement.",
+        "Students must participate in a community health-care service activity approved by the health sciences internship coordinator. Students will accrue a minimum of 80 hours over one quarter. This requirement satisfies the Comprehensive Requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Public and Community Health Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE118",
+       "BIOL101",
+       "BIOL105",
+       "BIOL117",
+       "CHEM169",
+       "CHEM171",
+       "METX100",
+       "METX133",
+       "METX135",
+       "METX135L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "STEM Elective (Choose One):",
+       "prose": [
+        "Enrollment in METX 135 requires concurrent enrollment in METX 135L . A number of courses offered by UC Online are relevant to the GCH B.S. and have been approved for substitution of major requirements. Please see a GCH B.S. advisor for a current list of these courses.",
+        "Enrollment in METX 135 requires concurrent enrollment in METX 135L .",
+        "A number of courses offered by UC Online are relevant to the GCH B.S. and have been approved for substitution of major requirements. Please see a GCH B.S. advisor for a current list of these courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH110E",
+       "ANTH110F",
+       "ANTH110M",
+       "ANTH110T",
+       "ANTH110Y",
+       "ANTH111",
+       "ANTH112",
+       "ANTH129",
+       "ANTH134",
+       "ANTH136",
+       "ANTH144",
+       "ANTH146",
+       "ANTH148",
+       "ANTH160",
+       "ANTH161",
+       "ANTH161S",
+       "ANTH162",
+       "BIOL188",
+       "CMMU156",
+       "CMMU160",
+       "CMMU161",
+       "CMMU162",
+       "CMMU163",
+       "CMMU164",
+       "DANM136",
+       "FMST124",
+       "GCH123",
+       "GCH186",
+       "HIS101D",
+       "HIS101F",
+       "HIS139C",
+       "HIS151",
+       "HIS151A",
+       "HIS151B",
+       "HIS177A",
+       "LALS175",
+       "LALS194X",
+       "LGST108",
+       "LGST137",
+       "LGST173",
+       "POLI102",
+       "POLI120B",
+       "POLI120C",
+       "POLI121",
+       "POLI155",
+       "POLI160B",
+       "POLI166",
+       "POLI175",
+       "POLI182",
+       "POLI187",
+       "POLI189",
+       "POLI190S",
+       "SOCY121",
+       "SOCY121G",
+       "SOCY127P",
+       "SOCY128C",
+       "SOCY128I",
+       "SOCY128J",
+       "SOCY128M",
+       "SOCY132",
+       "SOCY135",
+       "SOCY153",
+       "SOCY154",
+       "SOCY159",
+       "SOCY161"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Students may petition for substitution of elective courses."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Non-STEM Electives (Choose two):",
+       "prose": [
+        "Students may petition for substitution of elective courses."
+       ]
+      }
+     }
+    ],
+    "title": "STEM Elective (Choose One):"
+   },
+   {
+    "concentration": "Public and Community Health Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH190",
+       "GCH195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement in the global and community health B.S. degree is satisfied by completing the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Public and Community Health Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All majors have a comprehensive requirement. For the global and community health B.S., this requirement can be satisfied by receiving a passing grade in the Health Sciences Internship, BIOL 189 . Any student who is terminated from their internship will receive a failing grade. Such students will be ineligible for future placement in a Health Sciences internship at UCSC and will be unable to complete the GCH BS degree."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "global-and-community-health-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/copy-of-global-and-community-health-bs-pbsci/global-and-community-health-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

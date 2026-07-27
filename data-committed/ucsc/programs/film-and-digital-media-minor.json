@@ -1,0 +1,214 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "film-and-digital-media",
+ "division": "arts-division",
+ "kind": "minor",
+ "name": "Film and Digital Media Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Complete the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Complete the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM20B",
+       "FILM20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students in the minor must complete the following upper-division core curriculum."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM130",
+       "FILM132A",
+       "FILM132B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM134A",
+       "FILM134B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM136A",
+       "FILM136B",
+       "FILM136C",
+       "FILM136D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "One course from each of the following three groups:"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Courses used to satisfy other requirements of the minor may not count toward the electives. One of the electives may be substituted from another department or institution. Course substitutions must be approved by the Film and Digital Media Department. For transfer students, FILM 20 equivalents completed at another institution do not count toward the one course maximum.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "FILM150",
+        "FILM151",
+        "FILM20"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 179,
+         "lo": 170,
+         "subject": "FILM"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 149,
+         "lo": 100,
+         "subject": "FILM"
+        },
+        {
+         "hi": 169,
+         "lo": 152,
+         "subject": "FILM"
+        },
+        {
+         "hi": 189,
+         "lo": 180,
+         "subject": "FILM"
+        }
+       ],
+       "include_series": [
+        {
+         "prefix": "194",
+         "subject": "FILM"
+        }
+       ]
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "And three electives",
+       "prose": [
+        "Students take three additional 5-credit, upper-division film and digital media critical studies courses numbered FILM 100-149, FILM 152 -169, FILM 180 -189, or from the FILM 194 series. Production studio courses ( FILM 150 , FILM 151 , and FILM 170A through FILM 179B ) may not be used to satisfy this requirement.",
+        "Courses used to satisfy other requirements of the minor may not count toward the electives. One of the electives may be substituted from another department or institution. Course substitutions must be approved by the Film and Digital Media Department. For transfer students, FILM 20 equivalents completed at another institution do not count toward the one course maximum."
+       ]
+      }
+     }
+    ],
+    "title": "And three electives"
+   }
+  ]
+ },
+ "slug": "film-and-digital-media-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/film-and-digital-media/film-and-digital-media-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

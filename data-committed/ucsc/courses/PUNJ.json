@@ -1,0 +1,80 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Arshinder Kaur",
+   "code": "PUNJ1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First course of a three-quarter sequence designed to introduce students to modern Punjabi as spoken in India, Pakistan, and the global Punjabi diaspora. Course materials have been created primarily in Gurmukhi script. Course is taught online utilizing Zoom classes, interactive online activities in Canvas, recorded captivate lessons, and a mobile app companion. Students master Gurmukhi script and phonology and are expected to develop basic proficiency in Punjabi. Course is organized by modules on core themes about Punjabi life and culture. Students gain greater ease at listening, reading, writing, and talking in Punjabi. Punjabi is spoken most of the time in class. This course emphasizes developing basic communication skills using everyday vocabulary and grammatical structures in Punjabi.",
+   "display_code": "PUNJ 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PUNJ",
+   "title": "First-Year Punjabi 1",
+   "url": "/en/current/general-catalog/courses/punj-punjabi/lower-division/punj-1"
+  },
+  {
+   "catalog_instructor": "Arshinder Kaur",
+   "code": "PUNJ2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The second course of a yearlong beginning sequence (Punjabi 1,2,3) continues the introduction to modern Punjabi as spoken in India, Pakistan, and wherever Punjabi speakers have settled globally. Enhances skills in reading, writing, speaking and listening. Instruction is provided in all four language skills. Oral communication and conversation emphasized as in PUNJ 1 , while reading and writing skills are developed more deeply. Students are given systematic lessons on Punjabi grammar and enhance their understanding and use of Punjabi vocabulary for communication in real-life situations. Course materials have been created primarily in Gurmukhi script. Punjabi is spoken most of the time in class. Course emphasizes developing basic communication skills using everyday vocabulary and grammatical structures in Punjabi.",
+   "display_code": "PUNJ 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "PUNJ1"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): PUNJ 1 or placement by interview with instructor.",
+   "repeatable": true,
+   "subject": "PUNJ",
+   "title": "First-Year Punjabi 2",
+   "url": "/en/current/general-catalog/courses/punj-punjabi/lower-division/punj-2"
+  },
+  {
+   "catalog_instructor": "Arshinder Kaur",
+   "code": "PUNJ3",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The last course of a year-long beginning sequence (Punjabi 1, 2, 3). Continues building and strengthening students’ skills in reading, writing, speaking and listening of modern Punjabi as spoken in India, Pakistan and wherever Punjabi speakers have settled globally. Helps students attain and enhance competence in the four modes of literacy reading, writing, speaking and listening. Course materials have been created primarily in Gurmukhi script. Punjabi spoken most of the time in class Course emphasizes developing communication skills using everyday vocabulary and grammatical structures in Punjabi.",
+   "display_code": "PUNJ 3",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3",
+   "prereq_groups": [
+    [
+     "PUNJ2"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PUNJ 2 or by consent of the instructor.",
+   "repeatable": false,
+   "subject": "PUNJ",
+   "title": "First-Year Punjabi 3",
+   "url": "/en/current/general-catalog/courses/punj-punjabi/lower-division/punj-3"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "PUNJ"
+}

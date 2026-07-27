@@ -1,0 +1,4338 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "PSYC1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces prospective majors to the scientific study of behavior and mental processes and also provides an overview for non-majors. Emphasizes social, cognitive, developmental, and personality psychology and their interrelations.",
+   "display_code": "PSYC 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-1"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC10",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses psychological development from conception through adolescence. Provides an overview of developmental psychology.",
+   "display_code": "PSYC 10",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "10",
+   "prereq_groups": [
+    [
+     "PSYC1"
+    ],
+    [
+     "AM3",
+     "AM6"
+    ],
+    [
+     "MATH3",
+     "MATH4",
+     "MATH11A",
+     "MATH19A"
+    ],
+    [
+     "PSYC2",
+     "STAT5",
+     "STAT7",
+     "STAT7L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 1 ; and AM 3 , or AM 6 , or MATH 3 or a higher level Mathematics course ( MATH 4 , MATH 11A , or MATH 19A ), or mathematics placement (MP) score of 300 or higher, or AP Calculus AB exam score of 3 or higher; and PSYC 2 or STAT 5 or STAT 7 and STAT 7L .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Developmental Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-10"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC100",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "An introduction to research methods used to investigate human psychology. Course emphasizes critical thinking, designing and conducting research, analyzing and interpreting data, and writing a professional research report.",
+   "display_code": "PSYC 100",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "100",
+   "prereq_groups": [
+    [
+     "AM3",
+     "AM6",
+     "MATH3",
+     "MATH4",
+     "MATH11A",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "PSYC2",
+     "STAT5",
+     "STAT7",
+     "STAT7L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Entry Level Writing and Composition requirements; AM 3 or AM 6 , or MATH 3 or higher level Mathematics course ( MATH 4 , MATH 11A , or AM 11A /ECON 11A), or mathematics placement (MP) score of 300 or higher, or AP Calculus AB exam score of 3 or higher; and PSYC 2 , or STAT 5 , or STAT 7 and STAT 7L .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Research Methods in Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-100"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC102",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on individual and relational development from early adolescence into emerging adulthood. Emphasis on the mutual influences of family relationships and adolescent development, and on the interface of family, peer group, and school experience in cultural contexts.",
+   "display_code": "PSYC 102",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "102",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Adolescent Development: Adolescence into Young Adulthood",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-102"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC103",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Overview of the cultural, societal, biological, interpersonal, and cognitive processes of adult development and aging. Students learn about how each of these contexts and processes promotes stability and change as adults experience adulthood, reflect on their lives, and prepare for death.",
+   "display_code": "PSYC 103",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "103",
+   "prereq_groups": [
+    [
+     "PSYC10",
+     "PSYC20"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 or PSYC 20 , and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Adult Development and Aging",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-103"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC104",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on psychological development in infancy. Presents research on perceptual, cognitive, and social-emotional development during the first two years of life.",
+   "display_code": "PSYC 104",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "104",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 . Enrollment is restricted to psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Development in Infancy",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-104"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC105",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Cognition in children from infancy through adolescence. Basic and current research on children's understanding of the social and physical world. Focus on major theoretical perspectives: especially Piaget's constructivist approach and sociocultural approach.",
+   "display_code": "PSYC 105",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "105",
+   "prereq_groups": [
+    [
+     "PSYC10",
+     "PSYC20"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 or PSYC 20 and PSYC 100 . Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Children's Thinking",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-105"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC106",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An examination of contemporary theory and research on social and emotional development from infancy through childhood.",
+   "display_code": "PSYC 106",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "106",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social and Emotional Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-106"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC107",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the developmental psychology of gender during childhood. Topics include prenatal sexual differentiation, gender identity development, stigmatization of gender nonconformity, play and peer relationships, gender-based stereotyping and discrimination, gender biases in academics and sports, and gender representations in children’s media.",
+   "display_code": "PSYC 107",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "107",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 . Enrollment is restricted to psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Gender and Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-107"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC108",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An overview of psychological theories and principles applied to formal and informal educational settings. Topics include: learning, motivation, cultural diversity, individual differences, and assessment. Students complete a research project.",
+   "display_code": "PSYC 108",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "108",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Educational Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-108"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC109",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Emphasizes bi-directional relationships between psychobiological systems, stress, and well-being across developmental periods including childhood, adolescence, and older adulthood. Major topics include biological stress response systems (HPA-axis, autonomic nervous system, immune system, neural threat response), means of measuring stress in research, health behaviors (sleep, substance use, risk-taking), and positive well-being (emotion, psychological resources, prosocial behavior).",
+   "display_code": "PSYC 109",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "109",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 or 20 and 100.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychobiology of Stress and Well-being across the Lifespan",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-109"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC111",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Engages students with fundamental theories and research in developmental psychology to better understand the social nature of human beings and how social biases emerge. Discussions include research and questions central to how social biases form with a focus on research from infancy and early childhood. Asks questions such as: What sets us up to be social? How do we learn about power and status? When and how do kids start to learn about race? Educates students to have foundational knowledge in developmental psychology and critically assess research.",
+   "display_code": "PSYC 111",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "111",
+   "prereq_groups": [
+    [
+     "PSYC10",
+     "PSYC20"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 or PSYC 20 , and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The origins of social biases",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-111"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC112",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "How and why do children develop into moral beings? This course covers key theories and empirical research about the cognitive, emotional, and behavioral aspects of moral development, including psychoanalytic, behaviorist, constructivist, nativist, and evolutionary approaches.",
+   "display_code": "PSYC 112",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "112",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Moral Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-112"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC114",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines interdisciplinary theory, research, and methods of studying the cultural basis of human development, and variations and similarities in human lives and practices in the United States and worldwide cultural communities.",
+   "display_code": "PSYC 114",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "114",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Human Development as a Cultural Process",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-114"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC115",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines theory and research on developmental psychopathology. Emphasizes the origin and longitudinal course of disordered behavior. Explores the processes underlying continuity and change in patterns of adaptation and age-related changes in manifestations of disorders.",
+   "display_code": "PSYC 115",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "115",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Lifespan Developmental Psychopathology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-115"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC116",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "What is the role of Information Communication Technologies (ICTs) in human development and sociocultural change? Offers insights into how human cultures are changing with the proliferation of ICTs by examining how ICTs are incorporated into cognitive, social, and identity development in late childhood through adulthood.",
+   "display_code": "PSYC 116",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "116",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Communication Technologies, Culture, and Human Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-116"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC118C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Reviews recent research on how children come to understand the human mind, such as desire, belief, goals, and intention. Also discusses the implications of this research on typically and atypically developing children.",
+   "display_code": "PSYC 118C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "118C",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 . Enrollment is restricted to psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Theory of Mind",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-118c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines theory and research in sociocultural approaches to how people (especially children) learn and develop through participating in activities of their communities with other people. Emphasizes the organization of social interactions and learning opportunities, especially in Indigenous and Indigenous-heritage communities in the Americas. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119A",
+   "prereq_groups": [
+    [
+     "PSYC100",
+     "ANTH1",
+     "ANTH2",
+     "EDUC92A",
+     "EDUC92B",
+     "EDUC92C",
+     "LALS1",
+     "SOCY1"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing, Composition requirements; PSYC 100 , or ANTH 1 or ANTH 2 , or EDUC 92A, or EDUC 92B, or EDUC 92C, or LALS 1 , or SOCY 1 . Enrollment is restricted to seniors or by permission.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Development as a Sociocultural Process",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines cultural influences on adolescence from diverse cultural, ethnic, and socioeconomic communities from the perspective of current interdisciplinary theories and research. Topics include: identity development; changes from early adolescence to adulthood; links among family, school, peer, and community experiences; programs for youth; and implications of bridging research, social policy, and community practice. Includes research practicum. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119D",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors or by permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Cultural Perspectives on Adolescent Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on how infants learn about intuitive physics, naive psychology, and shared culture. Also discusses how cultural communities shape infants' learning. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119E",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119E",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The World of Babies",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores ways that research in developmental psychology can be used to address real-world problems facing children. With an analytical focus on evidence and generalizability, we will investigate research-policy connections in topics of popular interest (e.g., child custody, poverty). Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement  (Formerly Developmental Psychology Research and Real World Problems)",
+   "display_code": "PSYC 119H",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Developmental Psychology Research and Real World Problems",
+   "ge_codes": [],
+   "number": "119H",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Children, Research, and Policy",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119I",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines a special topic of current interest in developmental psychology centering on the features of self-identity that develop in the context of telling stories of individual and/or shared experiences, such as self-defining memories or family stories. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119I",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119I",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Special Topics in Narrative Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119i"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers classic and contemporary work on the nature and development of human emotions. Both theoretical perspectives and empirical research are discussed. Major topics include: emotion-cognition interplay, the measurement of emotion, universality and cultural variability, and emotional communication. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119K",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119K",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Emotional Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119k"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Senior seminar that focuses on identity development in adolescence and young adulthood. Discusses theory and research on the development of personal and social identities and the sociocultural contexts in which these personal and social identities are negotiated. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 119M",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119M",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors or by permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Identity Development in Social and Cultural Contexts",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119N",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar course engaging students in current theories and research in cultural psychology to explore how culture shapes the ways humans make sense of the world around them. Starts with foundational theories and methods in studying how culture influences thinking across the lifespan. Then covers specific content areas that serve as examples of how these theories are applied to study specific topics. Course educates students to critically evaluate research in cultural psychology. Writing-intensive course (partially fulfilling the Disciplinary Communication requirement). Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119N",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119N",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Culture and Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119n"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119P",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers current research and theory related to children and technology. Topics include: how children learn to use new technologies; how technology use impacts children's thinking; computer gaming and aggression; and how children's social relationships are influenced by technology.  Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119P",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119P",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 ; and satisfaction of Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Children and Technology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119p"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119Q",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores multiple perspectives on autism, highlighting those of autistic scholars, disability studies scholars, and philosophers. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119Q",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119Q",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology or cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Perspectives on Autism",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119q"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119R",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Engages students in current theories and research in developmental psychology that aim to better understand and ultimately eradicate social bias starting in early childhood. Course starts with foundational theories and methods in studying children's social biases and then considers different approaches to address social bias in children. Also educates students to critically assess research and to creatively think about new solutions to combat social bias in our society. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 119R",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119R",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "How to Combat Social Bias in Children",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119r"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119T",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on the role of media in adolescents' and young adults' identity development, friendships, and peer relationships. Topics include: globalization; physical/body image; friendships and peer acceptance; and educational and career goals.  Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 119T",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119T",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Media Contexts of Adolescent and Young Adult Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119t"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC119V",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers aspects of alcohol use research including co-use, motives, intensity, and frequency of use and developmental factors that affect alcohol use including stress and peer norms using project-based learning, personal reflections, and in-class discussions. Satisfies the senior seminar and senior comprehensive requirements.",
+   "display_code": "PSYC 119V",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "119V",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Adolescent Alcohol Use",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-119v"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC120",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on high-level perception and visual, spatial, and other sensorimotor representations as elements of human cognition. Topics include imagery, visual attention, mental models, spatial language, the body schema, near-body space, and brain organization for representing space.",
+   "display_code": "PSYC 120",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "120",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to cognitive science and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Visual and Spatial Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-120"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC120D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores what we can learn about human cognition by studying sensory loss and language in a different sensory modality. Topics include brain organization, sensory compensation, working memory, visual cognition, and psycholinguistics.",
+   "display_code": "PSYC 120D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "120D",
+   "prereq_groups": [
+    [
+     "PSYC1",
+     "PSYC20",
+     "PSYC20A"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 1 or PSYC 20 or PSYC 20A, and PSYC 100 . Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Deafness and Sign Language",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-120d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC121",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the study of human perception. Topics include: the structure and function of the human eye and early visual cortex, perception of motion, color, and objects; recognition of faces; and audition, sensory integration, and synesthesia.",
+   "display_code": "PSYC 121",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "121",
+   "prereq_groups": [
+    [
+     "PSYC20",
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 20 and PSYC 100 . Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Perception",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-121"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC122",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Academic success often entails managing and mastering multiple courses covering a variety of topics, each with their own unique requirements. However, what study methods are effective versus ineffective, and why? For example, is learning based on the amount of time a student spends studying? Is highlighting an effective method of learning? Is it better to study by reviewing notes or testing oneself? How will you know if a study tip you read on the internet will really help you learn? Course poses questions about studying and discuss the answers that have been uncovered through scientific research on human memory.",
+   "display_code": "PSYC 122",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "122",
+   "prereq_groups": [
+    [
+     "PSYC20",
+     "PSYC129"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 20 or PSYC 129 ; and PSYC 100 .",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "The Science of Learning",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-122"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC123",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An examination of the physiological mechanisms of psychological processes, including sensory systems, motor systems, control systems, and memory and learning. Principles of nervous system organization are discussed at each level.",
+   "display_code": "PSYC 123",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "123",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Cognitive Neuroscience",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-123"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC124",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on the cognitive processes that underlie reading in adults. Additional topics include different writing systems, learning to read, and reading deficits. Recommended for upper-division students.",
+   "display_code": "PSYC 124",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "124",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Reading",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-124"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC125",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines how people use language to communicate. Course covers speaking and understanding, including speech perception, grammatical processing, the meaning of words and strings of words, and how conversations work, among other topics.",
+   "display_code": "PSYC 125",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "125",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Language",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-125"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC126",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how conversations work and how speakers accomplish their goals in an interaction. Topics include conversational structure, turn-taking, politeness, and the functions and use of collateral signals, among others. Collateral signals include pauses in speech, words like um, uh, you know, and like, and processes, such as how words and utterances are produced. (Formerly PSYC 139G .)",
+   "display_code": "PSYC 126",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly PSYC 139G .",
+   "ge_codes": [],
+   "number": "126",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Conversations",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-126"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC129",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines basic theories, models, methods, and research findings in human memory. Both traditional and nontraditional topics are covered.",
+   "display_code": "PSYC 129",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "129",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Human Learning and Memory",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-129"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC130",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on behavioral and brain manifestations of deception. Topics include developmental changes that allow us to understand and to use deception, physical implications of lying expressed in the face, voice, posture, and brain activity. Also covers mechanical or behavioral techniques used in deceptive behavior, whether in the form of overt behavior or brain activity.",
+   "display_code": "PSYC 130",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ],
+    [
+     "PSYC20"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 ; and PSYC 20 or any upper-division cognitive course. Enrollment is restricted to psychology and cognitive science majors and minors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Deception, Brain, and Behavior",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-130"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC130D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to how evolutionary principles can help us understand origins of the human mind. Covers evolutionary approaches to cognitive, social, and developmental psychology with emphasis on how cognition has been shaped by natural selection.",
+   "display_code": "PSYC 130D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "130D",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Evolutionary Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-130d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC133",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides in-depth discussion of bilingualism from a cognitive perspective. Psycholinguistic researchers who study bilingualism are interested in questions such as how to measure bilingualism, how the brain acquires more than one language, how bilinguals organize and manage two (or more) languages in one brain, and the consequences of the bilingual experience on cognition. Students are introduced to current research that investigates these topics as well as current controversies in the literature that are yet unresolved.",
+   "display_code": "PSYC 133",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Bilingualism from a Cognitive Perspective",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-133"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC138",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Offers a practical introduction to computer programming for psychology and cognitive science students. Students learn simple and effective techniques for collecting, parsing, and analyzing behavioral data from behavioral experiments. Students create programs to present visual stimuli, collect keyboard responses, and then write response time and accuracy to datafiles on disk. Students then write new programs to extract information from the datafiles, perform statistical analysis, and present summaries of the findings. Students learn to use the Python programming language for cross-platform application development. No previous programming experience is necessary.",
+   "display_code": "PSYC 138",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "138",
+   "prereq_groups": [
+    [
+     "PSYC1",
+     "PSYC20A",
+     "PSYC20B"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 1 or PSYC 20A or PSYC 20B, and PSYC 100 . Enrollment is restricted to psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Computer Programming for the Cognitive Sciences",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-138"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC138M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Matlab is a powerful and widely used programming language to design stimuli, collect behavioral data, conduct statistical analyses, and visualize results. This course provides students with basic tools to use Matlab in a range of cognitive science applications. The course includes in-class coding, weekly assignments, and a term project in which students write a program to analyze, collect, or visualize a dataset or model a cognitive phenomenon. No previous programming experience is required. Topics include modeling of cognitive and neural processes and principal components analysis.",
+   "display_code": "PSYC 138M",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "138M",
+   "prereq_groups": [
+    [
+     "PSYC20"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 20 and PSYC 100 . Enrollment is restricted to psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Matlab Programming for the Cognitive Sciences",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-138m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a psychological study of human consciousness. Aim is to explore the following questions: What is consciousness? Where does consciousness come from? What functions does consciousness have in everyday cognition? How do we best scientifically study consciousness? These issues are examined from the perspective of contemporary research in cognitive science. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 139B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139B",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology, philosophy, anthropology, linguistics, and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Consciousness",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to current debates in the scientific study of consciousness. The focus is on empirical results regarding the neural correlates and behavioral functions of consciousness, but topics also include the metaphysical status of consciousness and methodological issues within consciousness science. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139C",
+   "prereq_groups": [
+    [
+     "PSYC20"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 20 , PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Cognitive Neuroscience of Consciousness",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Studies reading through a cognitive science lens, including perspectives from cognitive and developmental psychology, linguistics, and neuroscience, as well as history, public policy, and education.Primarily examines scientific research focused on skilled reading, reading acquisition, and difficulties learning to read. Students read, discuss, and write about scientific research as well as media covering these topics.",
+   "display_code": "PSYC 139E",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139E",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing, Composition requirements, and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Science of Reading",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139G",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines eye-tracking as a valuable research method to study cognition. Research using this method has established that eye movements are closely linked to ongoing cognitive processes in the human brain. Course covers the use of this technique in research on reading, language comprehension, scene perception, visual search, infant cognition, and other areas of cognitive science. Students read and review journal articles, participate in class discussions, and analyze publicly available eye movement data for a final report due at the end of the quarter. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139G",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139G",
+   "prereq_groups": [
+    [
+     "PSYC20"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 20 , PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Eye-tracking: A Window into Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the relationship between science and pseudoscience from a cognitive psychological perspective, including discussion of collection and selection of data, statistical assessment of data, cognitive illusions, memory distortions, reasoning, and decision-making. Also highlights the dissemination of scientific knowledge. Satisfies seminar requirement. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139H",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139H",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Weird Science",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139J",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores forgetting as an essential and adaptive process in human memory. Topics include: intentional and unintentional forms of forgetting; the (re)constructive nature of memory; and cases of extreme remembering. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139J",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139J",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Forgetting",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "To navigate our social world, we need to extract a wealth of information from faces, including identity, expression, gaze, age, and gender. This seminar reviews current topics in face-recognition research, from cognitive, neuroscience, developmental, social, and computational perspectives. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139K",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139K",
+   "prereq_groups": [
+    [
+     "PSYC20",
+     "PSYC20A"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; and PSYC 20 or PSYC 20A; and PSYC 100 . Enrollment is restricted to senior cognitive science, neuroscience, and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Face Recognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139k"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Illusions arise when our perception differs from reality. In this course, students investigate the mechanisms of visual, auditory, and proprioceptive illusions as an approach to understand the capacities and limitations of our perceptual system.  Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139L",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Illusions",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar course examining music through the lens of cognitive psychology. While technical aspects of music will be discussed, course does not presuppose musical training or knowledge of music theory. Topics include the perception of music, the effect of music and musical training on cognitive processes, the embodiment of rhythm and dance, aesthetic experiences, music therapy, and more. Satisfies the senior seminar and senior comprehensive requirements.",
+   "display_code": "PSYC 139M",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139M",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior cognitive science and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Music Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139N",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lists of influential contributors to cognitive psychology insufficiently represent the influence of more diverse, non-traditional scientists. This course profiles the life and work of women and minority scientists who've made well-documented contributions to cognitive psychology, as well as those who've received less recognition. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139N",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139N",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ],
+    [
+     "PSYC20",
+     "PSYC105"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and PSYC 20 or PSYC 105 ; and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior cognitive science or psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Diversity in Cognitive Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139n"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139P",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces one approach used in artificial intelligence: deep learning. This approach is inspired by the architecture and processing of real neural networks. Students learn about the algorithms developed and their applications in simulating intelligence. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139P",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139P",
+   "prereq_groups": [
+    [
+     "PSYC20",
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Entry Level Writing and Composition requirements, and PSYC 20 , and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Natural and Artificial Intelligence",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139p"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139Q",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the cognitive processes involved in analogical reasoning (understanding one example, object, problem, or event in terms of another better-understood one) and the transfer of knowledge (applying knowledge from one situation to another). Although discussion includes analogical reasoning and transfer in \"genius\" or exceptionally creative moments, students primarily focus on all the ways in which the same cognitive processes of analogy and transfer support day-to-day learning, thinking, reasoning, and problem-solving. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 139Q",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139Q",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Analogy and Transfer",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139q"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139R",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Remembering is an activity that we often do with others, and shared representations of the past bind us to one another as couples, families, and nations. Remembering is a fundamentally social process. Topics include extended cognitive systems, conversational remembering, family reminiscence, how social networks shape how and what we remember, cognitive content biases supporting collective convergence, and the psychology of collective memory. This includes social representations of history and their biases, cultural tools for thought, intergenerational transmission, and collective future thought. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 139R",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139R",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social Frames of Memory",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139r"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139S",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an overview of the study of brain waves and cognition, also known as human electrophysiology (EEG). Explores how this approach can be used to study major topics in cognitive psychology research. The course prioritizes the development of scientific reasoning and writing skills. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement. Prerequisite(s): PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "display_code": "PSYC 139S",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139S",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Brain Waves and Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139s"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139T",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Academic success often entails managing and mastering multiple courses covering a variety of topics, each with their own unique requirements. However, what study methods are effective versus ineffective, and why? For example, is learning based on the amount of time a student spends studying? Is highlighting an effective method of learning? Is it better to study by reviewing notes or testing oneself? How will you know if a study tip you read on the internet will really help you learn? Course poses questions about studying and discusses the answers that have been uncovered through scientific research on human memory. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 139T",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139T",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Memory, Metacognition, and Education",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139t"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC139Z",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how the brain constructs a unified experience of the world by integrating information across multiple sensory modalities. Behavioral evidence, neural mechanisms, and computational models are used to explain how perception and memory emerge from an inherently multisensory brain. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 139Z",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "139Z",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior cognitive science and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Multisensory Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139z"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Incorporates historical and conceptual foundations; issues of social psychology; individual and developmental processes; and adjustment and clinical issues. Readings expose students to attributes of African American culture that have an impact on the psychology of African Americans as well as methodological issues relevant to key psychological topics.",
+   "display_code": "PSYC 140B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140B",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "African American Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Psychologists have long established the importance of identity as a source of wellbeing and motivator of collective action. A major gap within this research is the lack of consideration for the intrinsic relationship between Indigenous identity and land. In this course, students learn how the well-being of Indigenous peoples is intimately linked to the well-being of their homelands. Students examine this topic using interdisciplinary approaches from social psychology, cultural psychology and Indigenous studies. Discussions include: the relationship between Indigenous land, identity and well-being; how settler colonialism has sought to undermine those relations; and the actions Indigenous peoples are taking to restore, reconnect, and care for their homelands.",
+   "display_code": "PSYC 140C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140C",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Indigenous Land, Identity and Well-being",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140F",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces how social, cultural, and historical contexts shape everyday interactions and psychological processes and experiences, including self-concept, perception, emotion, health, and behavior. Draws from theories and research in psychology and other disciplines to consider issues of power, justice, and identity in both domestic and international cultural contexts.",
+   "display_code": "PSYC 140F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140F",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Mind, Society, and Culture",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140G",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines gender as a psychological and social factor that influences women's experiences in different contexts. Cuts across other areas of psychology by taking a women-centered approach. Emphasis also placed on understanding how intersections between gender, race and ethnicity, sexual orientation, socioeconomic status, etc., impact women's psychological well-being.",
+   "display_code": "PSYC 140G",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140G",
+   "prereq_groups": [
+    [
+     "PSYC100",
+     "SOCY3A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , or SOCY 3A . Enrollment is restricted to junior and senior psychology and sociology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Women's Lives in Context",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses sexual and gender identity diversity in social, historical, and political context. Highlights current social justice issues and cultural ideologies related to sexual and gender identity diversity. Discusses social and scientific activism for sexual liberation; gay and lesbian identities and communities; sexuality beyond binaries and categories (e.g., bisexuality, pansexuality); asexuality; kink/fetish; transgender identities and sexualities; sexual fluidity and heteroflexibility; and queer sexual ethics and politics.",
+   "display_code": "PSYC 140H",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "140H",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Sexual Identity and Society",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines how women's bodily experiences (e.g., sexual objectification, violence, menarche, sexual health) are uniquely tied to their subordinate status and impacts their psychological well-being. Theories of gender inequality will address how social control directed at women's bodies through power relations embedded in societal institutions contributes to women's marginalized status. Enrollment restricted to junior and senior psychology, sociology, feminist studies, and community studies majors.",
+   "display_code": "PSYC 140L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140L",
+   "prereq_groups": [
+    [
+     "PSYC100",
+     "SOCY103B",
+     "FMST100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; and PSYC 100 , or SOCY 103B, or FMST 100 . Enrollment restricted to junior and senior psychology, sociology, feminist studies, and community studies majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Women's Bodies and Psychological Well-Being",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Drawing on research in social psychology, political psychology, and critical policy studies, course examines how beliefs legitimize inequality, influence intergroup relations, and inform policy attitudes. Both hierarchy-enhancing and hierarchy-attenuating beliefs are reviewed.",
+   "display_code": "PSYC 140M",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140M",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted psychology, community studies, legal studies, politics, and sociology students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Legitimizing (In)Equality: Attitudes, Beliefs, and Social Policy",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140Q",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Considers individual, interpersonal, and cultural influences on gender similarities and differences in thinking, motivation, and behavior. Emphasizes factors related to power and status inequalities between women and men.",
+   "display_code": "PSYC 140Q",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140Q",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social Psychology of Gender",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140q"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC140T",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Overview of psychological theory and research on trauma and traumatic stress, including responses to childhood trauma (especially sexual abuse), combat, and natural disasters. Variety of theoretical frameworks presented, including developmental, cognitive, neuropsychological, clinical, and social/contextual.",
+   "display_code": "PSYC 140T",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140T",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 or permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Trauma",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140t"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC141",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Survey of theory and research on privacy and surveillance. Topics include: the functions of privacy; threats to privacy in multiple domains; the psychological impact of surveillance; historical and cultural differences in privacy and surveillance practices; and the relationship between privacy, surveillance, and social justice.",
+   "display_code": "PSYC 141",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "141",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Privacy and Surveillance",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-141"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC142",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides theoretical frameworks for understanding interlocking systems of oppression from the perspective of  the oppressed as well as the oppressor nationally and internationally. Goes beyond mainstream (traditional) psychology and emphasizes critical psychological perspectives that include micro- and macro-level theories of oppression; importance of ideology in oppressive systems; and theories of social change and liberation across contexts.",
+   "display_code": "PSYC 142",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "142",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 or feminist studies, sociology, community studies, or politics majors",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Oppression and Liberation",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-142"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC143",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the social psychology of conflict and intergroup relations, focusing on the cognitive, emotional, and behavioral processes that shape how we navigate our interactions with groups. Explores major psychological theories and concepts and their applications to real-world conflicts and contemporary social issues, including prejudice, discrimination, polarization, genocide, collective action, and social change.",
+   "display_code": "PSYC 143",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "143",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Intergroup Relations",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-143"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC144",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Offers an overview of psychological frameworks and interdisciplinary research for understanding Latinx populations, behaviors, identities, and values systems related to their mental health. Examines socio-cultural contexts, best research practices, and culturally responsive strategies for working with Latinx communities.",
+   "display_code": "PSYC 144",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "144",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Latinx Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-144"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC145",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An advanced course for upper-division undergraduates interested in the study of the persuasion process.  The course investigates common influence tactics and how those tactics are used in various settings.",
+   "display_code": "PSYC 145",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "145",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social Influence",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-145"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC145D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Humans are the only animal capable of living in both authoritarian and democratic regimes. Course explores the nature of these forms of social relationships with a goal of promoting democracy. Topics include: obedience to authority, conformity, self-justification, propaganda, power, and conflict resolution.",
+   "display_code": "PSYC 145D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "145D",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social Psychology of Autocracy and Democracy",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-145d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC146",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A systematic analysis of the social and contextual determinants of human behavior, with special attention given to concepts of  situational control, social comparison, role and attribution theories, as well as the macrodeterminants of behavior: cultural, historical, and sociopolitical context.",
+   "display_code": "PSYC 146",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "146",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Social Context",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-146"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC147A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Current and future relationships between law and psychology, paying special attention to gaps between legal fictions and psychological realities in the legal system. Topics include an introduction to social science and law, the nature of legal and criminal responsibility, the relationship between the social and legal concepts of discrimination, and the nature of legal punishment.",
+   "display_code": "PSYC 147A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "147A",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology, cognitive science, and legal studies majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology and Law",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-147a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC147B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Continuing discussion of current and future relationships between law and psychology and to contrasting psychological realities with legal fictions. Special attention is given to the criminal justice system including crime causation, the psychology of policing and interrogation, plea bargaining, jury selection and decision making, eyewitness identification, and the psychology of imprisonment.",
+   "display_code": "PSYC 147B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "147B",
+   "prereq_groups": [
+    [
+     "PSYC147A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 147A .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology and Law",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-147b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC148",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to and analysis of the social psychology of stereotyping, prejudice, and racism in the United States. Examines how individuals both perpetuate and experience these phenomena, through the lens of race as a system of privilege and disadvantage.",
+   "display_code": "PSYC 148",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "148",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Note: critical race and ethnic studies majors, Black studies minors, and science and justice minors may contact the instructor for permission to enroll.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Stereotyping, Prejudice, and Racism",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-148"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC149",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces community psychology, a discipline that blends social psychology, sociology, and anthropology. Topics include levels of analysis, ecologies, prevention, intervention, feminisms, empowerment, sense of community, coalition building, and social justice and action.",
+   "display_code": "PSYC 149",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "149",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to juniors and seniors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Community Psychology: Transforming Communities",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-149"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC150",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the multifaceted and complex relationship between the U.S. public education and juvenile legal systems to examine how these two seemingly disparate systems work together to systematically disadvantage multiply marginalized communities and individuals. Course follows these histories as a thread for better understanding how these two systems via logics, policies, and practices shape our everyday sensemaking and approach to discipline. Course explores contemporary issues related to schools and the carceral context to better understand the people embedded in these social contexts.",
+   "display_code": "PSYC 150",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to declared and proposed psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Race, Education, and the Carceral State",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-150"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC153",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines how social class shapes attitudes, beliefs, and behaviors. Emphasis is placed on structural barriers and their impact on the well-being of low-income groups. Strategies for reducing classist discrimination, improving interclass relations, and strengthening social policy are discussed.",
+   "display_code": "PSYC 153",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "153",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , or anthropology, community studies, economics, legal studies, politics, sociology, or feminist studies majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Psychology of Poverty and Social Class",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-153"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC155",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This service-learning course requires time in the classroom and the field. Students gain a deep understanding of social justice paradigms, community-based collaborative research, ethics, field-based research, reflexivity, and socio-cultural development modes. Prerequisite(s): PSYC 3 or PSYC 100 ; PSYC 149 and PSYC 182 are recommended prior to taking this course. Admission by application and interview only.",
+   "display_code": "PSYC 155",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "155",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social-Community Psychology in Practice",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-155"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Considers the experience of lesbian, gay, bisexual, and transgender individuals from a psychological perspective. Reviews theory and research on compulsive heterosexuality, heterosexism and homophobia, culture and sexual-identity diversity, issues of history and community of LGBT individuals, and perspectives on sex, gender, and sexuality from queer theory. Satisfies the seminar requirements. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159A",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Sexual Identity",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to the paradigm and legacies of disability justice and inquires how psychology as a discipline and practice can incorporate disability justice theory and practice. These histories of ableism within psychology are traced and examined over the past two centuries to the present with a critique of \"abnormality\" and \"cure.\"  Taking an intersectional perspective, the course presents ableism intersecting with other power systems like racism and sexism and includes perspectives from the emerging area of DisCrit (also called critical disability studies). Within the framework of disability justice alternative models of healing justice and harm reduction are elaborated upon. Satisfies the seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159C",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Disability Justice and Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An overview of psychological theory and research related to sexual aggression, focusing on both perpetration and victimization. Includes a discussion of the social construction of masculinity and femininity, media representations of sexual violence, and alternative (non-aggressive) visions of sexuality. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159D",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology, cognitive studies, and feminist studies majors, or by permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Sexual Aggression",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Is war inevitable? What is peace? Is it more than the absence of violence? Explore how psychology—the study of human behavior—can help to decrease violence and enhance cooperation at multiple levels including the personal, interpersonal, community, and international arenas.  Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159E",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159E",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Entry Level Writing and Composition requirements; and PSYC 100 . Enrollment is restricted to senior psychology or cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Peace Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159G",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Attends to the intersections of gender, race, and justice, with a specific focus on girls and women of color. Covers a range of topics related to gender, race, and carcerality including the historical treatment of girls and women in the U.S. criminal legal system; constructions of Black and Latinx girlhood; girls’ treatment in schools; home life; survivorship; life while confined; motherhood; challenges to re-entry; and healing and abolition post-release. This is a writing-intensive course focused on developing research, oral presentation, and writing skills. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159G",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159G",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior cognitive science and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Gender, Race, and Justice",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topics include: what makes a successful intervention; what happens before the formal intervention begins; the ethics involved with interventions; different methods for assessing interventions; and different praxis models. Satisfies the  seminar requirement. Satisfies the senior comprehensive requirement. A service component is involved.",
+   "display_code": "PSYC 159H",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159H",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Community-Based Interventions",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159I",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an overview of the social and cultural psychological study of immigrants in the United States. Examines the migration/immigration process; immigrants' social identities; schooling of immigrant youth; and impact of policy on the well-being of immigrants. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159I",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159I",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Immigration",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159i"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159J",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Why do some situations seem fair and others unfair? Are all people concerned with justice or are some scoundrels? This course looks at the principles of distributive, procedural, and retributive justice and at real world applications of theories. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+   "display_code": "PSYC 159J",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159J",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social Psychology of Social Justice",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "When do people decide to protest or join a movement, and what stops others from doing so? Which forms of protest are effective, and how do we define successful collective action? What is effective allyship? In what ways do repression and cultural context shape the trajectory and outcomes of social movements? This senior seminar examines the foundations of collective action from a social psychological perspective. Course engages with classic and contemporary research in social psychology, connecting these theories to real-world cases in the United States and internationally. Satisfies the senior seminar and senior comprehensive requirements.",
+   "display_code": "PSYC 159L",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159L",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior cognitive science and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Social Psychology of Collective Action",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159P",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines racially and ethnically marginalized and dominant conceptions of the environment throughout U.S. history. Also explores events and policies revealing how human behavior shapes and is shaped by environmental inequality, and strategies for achieving environmental justice. Satisfies the seminar requirements. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159P",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159P",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology or cognitive science majors. Prerequisite(s): PSYC 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology or cognitive science majors. Science and Justice minors may contact the instructor for permission to enroll.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Race, Ethnicity, and Environmental Inequality",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159p"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159R",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In this interactive seminar, we draw on research and theories in social and cultural psychology to examine persisting disparities in education and achievement for varying social groups (e.g., race/ethnicity, gender, social class) and to identify intervention strategies for reducing these disparities.  Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159R",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159R",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Achievement Disparities: A Social Psychological Perspective",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159r"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159S",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the science of relationship diversity through the lens of social psychology. Reviews popular and psychological literature on same-sex relationships, polyamory/consensual non-monogamy, kink/fetish/BDSM relationships, chosen families, asexuality, and transgender intimacy. Concludes with discussion of the impact of queer intimacies on heterosexuality. Satisfies the seminar requirements. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159S",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159S",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prequisite(s): satisfaction of the Entry Level Writing and Composition requirements, and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Queer Intimacies",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159s"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC159X",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers social-psychological scholarship relevant to social justice activism that receives limited academic attention in conventional psychology. The seminar aims at understanding how knowledge gained in action-oriented research can be applied to social change.  Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 159X",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159X",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prequisite(s): PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Social Activism",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159x"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC160",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Biopsychosocial approach toward understanding the pharmacology and effects of psychoactive drugs. Topics include synaptic neurotransmission, pharmacokinetics, pharmacodynamics, tolerance and withdrawal, addiction and abuse, set and setting, harm reduction, drug policy, placebo effects, randomized controlled trials, and drug therapies for mental disorders. Covers a wide range of medicinal and recreational drugs including alcohol, opioids, psychedelics, antidepressants, and more.",
+   "display_code": "PSYC 160",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "160",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychopharmacology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-160"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC165",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A review of the major methods of psychotherapy most currently practiced, including ethical standards and dilemmas, and client-therapist-system variables affecting efficacy.",
+   "display_code": "PSYC 165",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "165",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ],
+    [
+     "PSYC60"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 ; PSYC 60 or PSYC 170 recommended.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Systems of Psychotherapy",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-165"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC166",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "How do we really know a person? Provides experience assessing such individual differences as intimacy motivation, dominance, creativity, and well-being. Students construct their own personality test and learn to evaluate the kinds of self-report, observational, projective, and interview techniques used in organizational and clinical contexts.",
+   "display_code": "PSYC 166",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "166",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 ; PSYC 60 highly recommended as preparation.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Personality Assessment",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-166"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC167",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Serves as an in-depth introduction to the field of clinical psychology. Covers issues of clinical assessment, interviewing, testing, and a range of therapeutic modalities.",
+   "display_code": "PSYC 167",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "167",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Clinical Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-167"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC168",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An overview of dream studies by several major theorists and researchers of the 20th century, including Freud, Jung, and Hall. An emphasis on studies that reveal cognitive conceptions and personal concerns through quantitative and qualitative analyses of sets of dreams from individuals and groups. Other topics covered more briefly include dream recall, children and dreams, and the role of dreams within cultures.",
+   "display_code": "PSYC 168",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "168",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Study of Dreams",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-168"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC169",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "How can we improve mental health? Examines theory, method, and efficacy research of outreach, prevention, and intervention methods with various mental health populations in community settings (e.g., victims of sexual violence, new immigrants, those with severe mental illness, children in foster care). Presents characteristics of successful CMH agencies and programs and how to develope one's own agency or intervention model.",
+   "display_code": "PSYC 169",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "169",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . PSYC 60 or PSYC 170 recommended.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Community Mental Health (CMH)",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-169"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC170",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Survey of theory, research, and intervention in human psychopathology. Covers psychological, biological, developmental, and socio-cultural approaches. (Formerly offered as Abnormal Psychology.)",
+   "display_code": "PSYC 170",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Abnormal Psychology.",
+   "ge_codes": [],
+   "number": "170",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychopathology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-170"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC171",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A critical and intensive exploration of a wide variety of specific disorders within their biological, developmental, and social contexts. Concepts of psychopathology in childhood, major and minor diagnostic systems, and a variety of theories of etiology are explored. General intervention strategies and a wide range of specific psychotherapy systems for treatment are closely examined and demonstrated.",
+   "display_code": "PSYC 171",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "171",
+   "prereq_groups": [
+    [
+     "PSYC10"
+    ],
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 10 and PSYC 100 . PSYC 170 strongly recommended.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Childhood Psychopathology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-171"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC172",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Course examines the psychological aspects of health, illness and healing. Focuses primarily on etiology, treatment and prevention; specific topics include stress and the immune response, social support, compliance, health beliefs, and the healing relationship. (Formerly course 140C.)",
+   "display_code": "PSYC 172",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly course 140C.",
+   "ge_codes": [],
+   "number": "172",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Health Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-172"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC175",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the reciprocal development of personalities and emotions/emotion regulation in the context of close relationships.",
+   "display_code": "PSYC 175",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "175",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . PSYC 10 and PSYC 60 recommended as preparation.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Personality, Relationships, and Emotions",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-175"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC178",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the interactive relationship between nutrition and mental health. Includes a review of the research on the impact of different components of nutrition (e.g., protein, minerals, sugar) on the function of the brain, the nervous system, and the endocrine (hormone) system, and how that translates into changes in mood and cognitive capacity. Also explores the psychological factors that influence food choice and eating behaviors in the context of cultural beliefs and pressures.",
+   "display_code": "PSYC 178",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "178",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to Cognitive Science, Psychology and Global and Community Health (B.A.) majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Nutritional Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-178"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC179A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A seminar course with focus on theories of moral development from the psychoanalytic, social learning, cognitive-developmental, and humanistic perspectives. Students confront and discuss moral dilemmas from the four perspectives, working toward their own individual theories of pro-social behavior. Satisfies the senior seminar requirement. Satisfies the senior comprehensive requirement.",
+   "display_code": "PSYC 179A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "179A",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; and PSYC 100 . Enrollment is restricted to senior psychology and cognitive science majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Theories of Moral Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-179a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC179E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Our emotions influence nearly everything we do—from how we perceive the world to how we connect with other people. The scientific study of emotion, or affective science, investigates how emotions shape our lives. What purpose do emotions serve? How do we regulate them? How do they color cognitive processes like memory? Course considers emotions from several levels of analysis, including their evolutionary basis, their associated physiological responses, and the behaviors they motivate. Students gain a scientifically informed understanding of daily emotions and insight into how scientists study them. Satisfies seminar requirement. Satisfies senior comprehensive requirement. (Formerly Psychology of Emotion.)",
+   "display_code": "PSYC 179E",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Psychology of Emotion.",
+   "ge_codes": [],
+   "number": "179E",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior cognitive science and psychology majors.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Science of Emotions",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-179e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC181",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intermediate statistical methods widely used in psychology (e.g., ANOVA, ANCOVA,  multiple-comparisons, bivariate correlation, multiple regression, repeated-measures), corresponding SPSS or R programs, and elements of measurement theory.",
+   "display_code": "PSYC 181",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "181",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychological Data Analysis",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-181"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC182",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed to equip students with the ability to evaluate, conceive, and carry out psychological research. A variety of techniques (interpretive,phenomenological analysis, grounded theory and narrative inquiry) are examined and experienced. Students carry out research projects.",
+   "display_code": "PSYC 182",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "182",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite: PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Qualitative Research Methods",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-182"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC183",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An overview of the history of psychology. Examines issues of paradigm and philosophy of science. Reviews central paradigms in the history of the discipline. Assumes a critical-historical approach, linking scientific knowledge produced to prevailing societal beliefs about mind and behavior.",
+   "display_code": "PSYC 183",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "History and Systems of Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-183"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC193",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Series designed to provide advanced psychology undergraduates the opportunity to apply what they have learned in the classroom to direct experience in a community agency. Students earn academic credit by working as interns at a variety of psychological settings where they are trained and supervised by a professional within the agency. Faculty also supervise the students' academic work by providing guidance and helping them integrate psychological theories with their hands-on intern experience. A two-quarter commitment. Applications due one quarter in advance to the Psychology Field Study Office. Prerequisite(s): PSYC 100 . Enrollment restricted to junior and senior psychology majors.",
+   "display_code": "PSYC 193",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "193",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC193I",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Designed to provide advanced psychology undergraduates the opportunity to apply what they have learned in the classroom to direct experience in a community agency abroad. Students earn academic credit by working as interns at a variety of psychological settings where they are trained and supervised by a professional within the agency. Faculty also supervise the students' academic work by providing guidance and helping them integrate psychological theories with their hands-on intern experience. Applications due two quarters in advance to the Psychology Field Study Office.",
+   "display_code": "PSYC 193I",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "193I",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to junior and senior psychology and cognitive science majors.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "International Field Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193i"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC193S",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Series designed to provide advanced psychology undergraduates opportunity to apply what they have learned in the classroom to direct experience in a community agency. Students earn academic credit by working at a variety of psychology-related settings where they are trained and supervised by a professional within the agency. Faculty provides guidance on the students' academic work to connect psychological theories with the hands-on experience. A two-quarter commitment. Students submit petition to sponsoring agency. Prerequisite(s): PSYC 100 . Enrollment is restricted to junior and senior cognitive science and psychology majors.",
+   "display_code": "PSYC 193S",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "193S",
+   "prereq_groups": [
+    [
+     "PSYC100"
+    ]
+   ],
+   "quarters_offered_text": "Summer",
+   "raw_requirements": "Prerequisite(s): PSYC 100 . Enrollment is restricted to junior and senior cognitive science and psychology majors.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193s"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC194A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides students with intensive experience conducting current research in developmental psychology. Students submit petition to sponsoring agency. (Formerly Advanced Developmental Research.)",
+   "display_code": "PSYC 194A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Advanced Developmental Research.",
+   "ge_codes": [],
+   "number": "194A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research Internship in Developmental Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-194a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC194B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides students with intensive experience conducting current research in cognitive psychology. Students submit petition to sponsoring agency. (Formerly Advanced Cognitive Research.)",
+   "display_code": "PSYC 194B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Advanced Cognitive Research.",
+   "ge_codes": [],
+   "number": "194B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research Internship in Cognitive Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-194b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC194C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides students with intensive experience conducting current research in social psychology. Students submit petition to sponsoring agency. (Formerly Advanced Social Research.)",
+   "display_code": "PSYC 194C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Advanced Social Research.",
+   "ge_codes": [],
+   "number": "194C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research Internship in Social Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-194c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC194D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides students with intensive experience conducting current research in clinical psychology. Students submit petition to sponsoring agency.",
+   "display_code": "PSYC 194D",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research Internship Clinical Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-194d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC195A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. When taken as a multiple-term course extending over two or three quarters, the grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students contemplating a senior thesis should have a superior academic record and be well prepared with a suitable background of previous coursework or independent study for performing their proposed research. Students must file a petition with the Psychology Office the quarter in which they would like to begin the thesis. Senior thesis petitions are available in the Psychology Department Office. Check with office for enrollment conditions.",
+   "display_code": "PSYC 195A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Senior Thesis",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-195a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC195B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter.  When taken as a multiple-term course extending over two or three quarters, the grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students contemplating a senior thesis should have a superior academic record and be well prepared with a suitable background of previous coursework or independent study for performing their proposed research. Students must file a petition with the Psychology Office the quarter in which they would like to begin the thesis. Senior thesis petitions are available in the Psychology Department Office. Check with office for enrollment conditions.",
+   "display_code": "PSYC 195B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Senior Thesis",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-195b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC195C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter.  When taken as a multiple-term course extending over two or three quarters, the grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students contemplating a senior thesis should have a superior academic record and be well prepared with a suitable background of previous coursework or independent study for performing their proposed research. Students must file a petition with the Psychology Office the quarter in which they would like to begin the thesis. Senior thesis petitions are available in the Psychology Department Office. Check with office for enrollment conditions.",
+   "display_code": "PSYC 195C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Senior Thesis",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-195c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Individual directed study for upper-division undergraduates. Students must file a petition with the Psychology Office the quarter in which they would like to take the tutorial. Petitions may be obtained in the Psychology Department Office.",
+   "display_code": "PSYC 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Specialized study with individual faculty as psychology peer advisors. May not be applied toward major requirements. Students submit petition to sponsoring agency. Application and interview required during the previous quarter. Enrollment restricted to junior and senior psychology majors.",
+   "display_code": "PSYC 199F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-199f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC199G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Specialized study with individual faculty. May not be applied toward major requirements. Students submit petition to sponsoring agency.",
+   "display_code": "PSYC 199G",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199G",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-199g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to elementary statistical principles and techniques relevant to psychological research. Topics covered include basic parametric and nonparametric statistics, analysis of variance, and simple factorial designs. This course is prerequisite to PSYC 181 .",
+   "display_code": "PSYC 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "PSYC1",
+     "PSYC20"
+    ],
+    [
+     "AM3",
+     "AM6",
+     "MATH3",
+     "MATH4",
+     "MATH11A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 1 or PSYC 20 ; and AM 3 or AM 6 or MATH 3 or MATH 4 or MATH 11A or satisfactory placement score on math placement exam or CEEB Advanced Placement Calculus AB exam.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Psychological Statistics",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-2"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC20",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces basic concepts in cognitive psychology with a focus on theoretical explanations of cognitive functioning. Topics include perception, attention, memory, concepts, language, visual cognition, executive functions, and reasoning processes. (Formerly course 20A.)",
+   "display_code": "PSYC 20",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly course 20A.",
+   "ge_codes": [],
+   "number": "20",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Cognition: Fundamental Theories",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-20"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC201",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides graduate students with practical  teaching skills in the areas of developing and stating a general philosophy of teaching, course design, writing a course syllabus, assessment techniques, evaluation procedures, effective teaching strategies, and media  use.",
+   "display_code": "PSYC 201",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "201",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Teaching in Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-201"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC201A",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Seminar providing graduate students with practical teaching skills that are relevant to TA'ing, mentoring research assistants, and eventual independent course design in the field of psychology. This is not a lecture course. The main activities are reading, reflecting, writing, constructively critiquing work, presentations, and group discussion. There is also time to workshop individual TA difficulties as they arise. Pedagogical approaches for diverse classrooms are discussed in hope of creating a climate in which students feel safe asking questions and speaking their minds.",
+   "display_code": "PSYC 201A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "201A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Teaching in Psychology I",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-201a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC202M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the programming language Matlab, focusing on its data analysis, visualization, stimulus presentation, and data-collection tools. Students develop Matlab skills by completing weekly assignments and a term project. No previous programming experience is required.",
+   "display_code": "PSYC 202M",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "202M",
+   "prereq_groups": [
+    [
+     "PSYC204"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 204 or by permission of the instructor. Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Matlab",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-202m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC202R",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Teaches students how to use the statistical programming language and environment R to load, analyze, simulate, and visualize data. Assumes a basic understanding of descriptive and inferential statistics, but no prior experience with programming.",
+   "display_code": "PSYC 202R",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "202R",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students, or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to R",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-202r"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC204",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intermediate statistical methods widely used in psychology (e.g., ANOVA, ANCOVA, multiplecomparisons, repeated-measures) and corresponding SPSS or R programs.",
+   "display_code": "PSYC 204",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "204",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Quantitative Data Analysis",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-204"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC205",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Application of statistical methods for analyzing binomial and multinomial response variables in survey and experimental designs. Topics include hypothesis testing, confidence intervals, assessing effect size, sample size requirements, and an introduction to logistic regression models. Data analysis applications use SAS, SPSS, and R.",
+   "display_code": "PSYC 205",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "205",
+   "prereq_groups": [
+    [
+     "PSYC204"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 204 or by permission of the instructor. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Categorical Data Analysis",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-205"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC210",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the philosophy and practice of the experimental method in social psychology.",
+   "display_code": "PSYC 210",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "210",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Experimental Method in Social Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-210"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC211A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an introduction to social psychology, focusing on various individual-level social justice topics, including the self, social comparison, individual and collective identity, social historical and social structural determinants of behavior and various policy and social change-related issues.",
+   "display_code": "PSYC 211A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "211A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students; undergraduates planning graduate work in social psychology may enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Proseminar: Social Justice and the Individual",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC211B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an introduction to social psychology, focusing on empirical and theoretical developments related to social justice and group and intergroup dynamics. Topics include: prejudice and discrimination, power, collective action, and psychology's relationship to social policy.",
+   "display_code": "PSYC 211B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "211B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students. Undergraduates planning graduate work in social psychology may enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Social Justice, Society, and Policy",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC211C",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Supports first-year social psychology graduate students in completing their first-year projects. Involves discussion of research methods, but the primary emphasis is on writing and presenting the APA-style report. Includes writing exercises as well as practice talks on the presentations that students give in colloquium. Because this is a workshop tailored specifically to each student, over the course of the quarter we will work collaboratively to discuss each others' work, read each others' drafts, and establish a challenging and supportive context for thinking, writing, and presenting. First- and second-year projects required to be reported in two ways: a manuscript approved and signed by the first (adviser) and second readers, and a presentation of the project in the colloquium.",
+   "display_code": "PSYC 211C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "211C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to social psychology first-year graduate students, or by permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Communicating in Social Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC213",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on particular issues of theoretical and practical importance in social psychology. Topics vary from year to year and often concentrate on issues of social justice, social identity, intergroup relations, and social policy.",
+   "display_code": "PSYC 213",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "213",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Special Topics in Social Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-213"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC214A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces multiple regression, analysis of covariance, and random coefficient models. Both methodological and statistical aspects of data analysis are discussed. Practical problems of estimating and testing in general linear models are addressed. Students gain experience in carrying out and interpreting analysis using SPSS and R.",
+   "display_code": "PSYC 214A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "214A",
+   "prereq_groups": [
+    [
+     "PSYC204"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 204 . Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Multivariate Techniques for Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-214a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC214B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces factor analysis and structural equation modeling (SEM). Develop skills in defining, estimating, testing, and critiquing models. Topics include the rationale of SEM, model identification, goodness of fit, and estimation. Learn how to use relevant software packages (R, SAS, LISREL, EQS, or AMOS) to conduct exploratory and confirmatory factor analyses and latent variable path analyses.",
+   "display_code": "PSYC 214B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "214B",
+   "prereq_groups": [
+    [
+     "PSYC214A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 214A .",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Advanced Multivariate Techniques for Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-214b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC215",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar on spontaneous communication. Typical topics include discourse markers (including historical origins, cross-linguistic borrowing, second-language learning, children's acquisition), enquoting devices, backchannels, and spontaneous written communication.",
+   "display_code": "PSYC 215",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "215",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Production and Comprehension of Spontaneous Communication",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-215"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC220",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topics announced when offered. Seminars involve discussion and critical evaluation of current, historical, and interdisciplinary readings relevant to topic. Emphasis on development of research ideas.",
+   "display_code": "PSYC 220",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "220",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Special Topics in Human Memory",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-220"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC221",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar to study human perception, its methodology, and driving issues as illustrated by selected research topics (e.g., adaptation to unusual sensory environments). Where possible, parallels with other areas of psychology are drawn.",
+   "display_code": "PSYC 221",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "221",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Visual Perception",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-221"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC222",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The recognition of words is a critical step in natural language processing. Discusses a range of contemporary issues related to the representation of a word and the access of this information from the perspective of psychology, linguistics, and artificial intelligence.",
+   "display_code": "PSYC 222",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "222",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students; undergraduates who have completed PSYC 124 may enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Topics in Lexical Organization",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-222"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC224A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A proseminar reviewing current topics in cognitive psychology, designed to introduce new graduate students to the field.",
+   "display_code": "PSYC 224A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "224A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Proseminar: Cognitive I",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC224B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A proseminar reviewing current topics in cognitive psychology, designed to introduce new graduate students to the field.",
+   "display_code": "PSYC 224B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "224B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Proseminar: Cognitive II",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC224C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A proseminar reviewing current topics in cognitive psychology, designed to introduce new graduate students to the field.",
+   "display_code": "PSYC 224C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "224C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Proseminar: Cognitive III",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC225A",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Examines the rationale and techniques of research in developmental psychology. Topics include theories and paradigms in developmental psychology; translating theoretical ideas into researchable hypotheses; diversity issues in sampling; and conducting ethical research. Multiple-term course; students receive 6 credits in the second quarter of attendance; the grade and evaluation submitted for the final quarter applies to both quarters.",
+   "display_code": "PSYC 225A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "225A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students or with instructor's permission.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Developmental Research I",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC225B",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Examines the rationale and techniques of research in developmental psychology. Topics include selecting appropriate research designs; measurement and statistical approaches for research problems; issues of validity; and communicating research findings. Multiple-term course; students receive 6 credits in the second quarter of attendance; the grade and evaluation submitted for the final quarter applies to both quarters.",
+   "display_code": "PSYC 225B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "225B",
+   "prereq_groups": [
+    [
+     "PSYC225A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 225A . Enrollment is restricted to psychology graduate students or with instructor's permission.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Developmental Research II",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC225C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on drawing reasonable conclusions from research findings by working on students' first-year research projects and critiques of existing research.",
+   "display_code": "PSYC 225C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "225C",
+   "prereq_groups": [
+    [
+     "PSYC225A",
+     "PSYC225B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): PSYC 225A and PSYC 225B . Enrollment is restricted to developmental psychology graduate students or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Developmental Research III",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC227",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Special topics in thought and language are examined from the perspectives of cognitive science. Particular attention given to embodied experience and higher-order cognition.",
+   "display_code": "PSYC 227",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "227",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Contemporary Issues in Psychology of Language",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-227"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC230",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Colloquium series to study and critique research in cognitive psychology and cognitive science.",
+   "display_code": "PSYC 230",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "230",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research in Cognitive Psychology Seminar",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-230"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC231",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar to study, critique, and develop research in social psychology.",
+   "display_code": "PSYC 231",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "231",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research in Social Psychology Seminar",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-231"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC232",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores current research on evolution of human cognition, drawing on findings from other species and from the archaeological record. Topics include language, working memory, episodic memory, numerical abilities, and social cognition.",
+   "display_code": "PSYC 232",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "232",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Evolution of Cognition",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-232"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC235",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar on how contextual factors influence the development in infancy, especially on cognitive domains. Discusses at least four types of contextual factors: cultural, experiential, event, and interpersonal contexts.",
+   "display_code": "PSYC 235",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "235",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Infant Development in Contexts",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-235"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC242",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar to study, critique, and develop research in developmental psychology.",
+   "display_code": "PSYC 242",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "242",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Research in Developmental Psychology Seminar",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-242"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC244A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores major theories and research in the fields of cognitive development and language development. Begins with classic theorists, such as Piaget and Vygotsky, and proceeds to theories and research on topics of current interest.",
+   "display_code": "PSYC 244A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "244A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Proseminar I: Cognitive and Language Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-244a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC244B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An examination of contemporary theory and research on social and personality development across the lifespan.",
+   "display_code": "PSYC 244B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "244B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Proseminar II: Social and Personality Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-244b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC246",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines cultural influences in development from the perspective of current theories and empirical research in developmental psychology and related fields (including social psychology, anthropology, sociology, history, education, and social policy). Focuses on understanding development in diverse cultural, ethnic, and socioeconomic communities by examining the interplay of social, cultural, institutional, and psychological processes.",
+   "display_code": "PSYC 246",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "246",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Cultural Diversity in Human Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-246"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC247",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on particular issues of theoretical importance in developmental psychology. Topics vary from year to year. Particular issues in language, culture, cognitive, social, and personality development may be covered.",
+   "display_code": "PSYC 247",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "247",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Special Topics in Developmental Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-247"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC248",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Practicum to give students hands-on experience with survey methods by conducting their own survey on the topic of their choice. Course requires the survey to be conducted off campus at a local agency or program chosen by student with approval of instructor.",
+   "display_code": "PSYC 248",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "248",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Survey Methods",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-248"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC249",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed to train graduate students in applied field methods. Emphasis is on gaining knowledge and experience with actual field methods, by conducting social ethnography in the community. Field research in community placements required.",
+   "display_code": "PSYC 249",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "249",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Field Methodologies and Social Ethnography",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-249"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC250",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the ways in which the various branches of psychology have approached the issue of prejudice. Attention paid to the assumptions underlying each approach and their relation to core psychological ideas such as the self and emotion.",
+   "display_code": "PSYC 250",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "250",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Prejudice and Social Relations",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-250"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC251",
+   "credits": "5",
+   "cross_listed": [
+    "FMST251"
+   ],
+   "description": "Course bridges feminist theory and social psychological research to explore connections between theory covered and empirical studies on various topics in social psychology. Seminar format allows students opportunity for extensive discussion.",
+   "display_code": "PSYC 251",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "251",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Feminist Theory and Social Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-251"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC252",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on particular issues in cognitive psychology. Topics vary from year to year. Particular issues in language, memory, perception, cognitive modeling, cognitive neuroscience, and more are covered.",
+   "display_code": "PSYC 252",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "252",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Special Topics in Cognitive Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-252"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC253",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines, compares, and contrasts a variety of theories in intergroup relations while examining relevant empirical research. The relevance of both theory and research findings to contemporary social issues is explored.",
+   "display_code": "PSYC 253",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "253",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students; undergraduates considering graduate work in social psychology are encouraged to enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Theory and Research in Intergroup Relations",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-253"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC254",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Course reviews recent theory, research, and applications in the psychology of gender. Developmental, social-psychological, cultural, and feminist approaches are emphasized.",
+   "display_code": "PSYC 254",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "254",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Gender",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-254"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC255",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A broad survey of qualitative inquiry in psychology. Presents epistemologies; reviews ethnography, interpretative-phenomenological analysis, grounded theory, interviewing and narrative analysis, discourse analysis, focus groups, thematic analysis, content analysis, intuitive inquiry; discusses disciplinary guidelines for reporting and reviewing qualitative research.",
+   "display_code": "PSYC 255",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "255",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Qualitative Inquiry in Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-255"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC256",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Course examines the social psychological antecedents, correlates, and consequences of economic inequality in contemporary U.S. society. The impact of social class on attitudes, beliefs, and behaviors is assessed. Strategies for reducing classist discrimination, improving interclass relations, and strengthening social policy are discussed.",
+   "display_code": "PSYC 256",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "256",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Psychology of Social Class and Economic Justice",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-256"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC261",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Participatory Action Research (PAR) is a theoretical standpoint and collaborative methodology that is designed to ensure that those affected by the research project have a voice in that project. Topics include philosophies of science; defining and evaluating PAR; ethics; and reflexivity.",
+   "display_code": "PSYC 261",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "261",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Participatory Action Research",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-261"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC264",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A transnational feminist lens examines international development as linked to broader ideologies that transform gender relations and enhance women's empowerment. A social-psychology framework brings theoretical and practical import to the issues and examines how research can contribute to social justice and women's human rights.",
+   "display_code": "PSYC 264",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "264",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate psychology students, or by permission of instructor.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Transnational Feminism, Development, and Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-264"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC290B",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Tailored to graduate students' interests among topics involving research and scholarship in sociocultural approaches to development, methods for research design, data collection, coding, and analysis, and preparing and reviewing grant proposals and journal manuscripts. Multiple-term course; students receive 6 credits in the third quarter of attendance; the performance evaluation and grade submitted for the final quarter applies to all three quarters.",
+   "display_code": "PSYC 290B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Advanced Developmental Research and Writing",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC290C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed to aid advanced psychology graduate students with development of competence in professional activities (e.g., preparing a vita, making job and conference presentations, submitting and reviewing manuscripts and grant proposals, professional communication, career decisions).",
+   "display_code": "PSYC 290C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to advanced psychology graduate students.",
+   "repeatable": true,
+   "subject": "PSYC",
+   "title": "Professional Development",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC290E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Discusses how to write and put together a grant proposal for psychological research, culminating in a completed proposal.",
+   "display_code": "PSYC 290E",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290E",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to psychology graduate students.",
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Grant Writing for Psychologists",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC293",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Student-designed and student-conducted research carried out in field settings.",
+   "display_code": "PSYC 293",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "293",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-293"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC297A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision.",
+   "display_code": "PSYC 297A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC297B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision.",
+   "display_code": "PSYC 297B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC297C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision.",
+   "display_code": "PSYC 297C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC297F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Independent study and research under faculty supervision. Enrollment is restricted to graduate students.",
+   "display_code": "PSYC 297F",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC299A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "PSYC 299A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC299B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "PSYC 299B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC299C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "PSYC 299C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC40",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An analysis of contemporary research in social psychology and of what that research can teach us about the world we live in. Problems of conformity, propaganda, prejudice, attraction, and aggression. Focuses on a person's relationship with other people, how he or she influences them and is influenced by them.",
+   "display_code": "PSYC 40",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "40",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Introduction to Social Psychology",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-40"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC50",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an opportunity to explore the science of human sexuality in a formal educational space. Covers such topics as variations of sexual behavior (what counts as sex), representations of sex (what we see in accessible media), motivations and sexual desire (why we have sex), sexual fantasies (what kind of sex we desire), sexual development (from both biological and psychological perspectives), sexual anatomy and arousal, sexual orientation and sexual identity, relationships and intimacy, sexual violence and dysfunction, reproductive justice, and diversity of sexuality across history and culture.",
+   "display_code": "PSYC 50",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "50",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "Human Sexuality",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-50"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "PSYC51",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn with a team of experts about the principles for ethical AI and data science in various contexts. In addition, they become familiar with facets of the impact on real-world situations, grow the capacity to propose novel approaches for ethical decision-making in data science for the public good, and reflect on the role of data use and AI in shaping society, identity, and power relations.",
+   "display_code": "PSYC 51",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-T"
+   ],
+   "number": "51",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "PSYC",
+   "title": "The Future is Not Set: AI, Data, and Society",
+   "url": "/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-51"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "PSYC"
+}

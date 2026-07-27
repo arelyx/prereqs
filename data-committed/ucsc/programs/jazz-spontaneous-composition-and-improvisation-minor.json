@@ -1,0 +1,312 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "music",
+ "division": "arts-division",
+ "kind": "minor",
+ "name": "Jazz Spontaneous Composition and Improvisation Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC11B",
+       "MUSC11C",
+       "MUSC11E"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division History",
+       "prose": [
+        "Take one of the following courses"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division History"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC14",
+       "MUSC30A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Theory",
+       "prose": [
+        "While MUSC 14 , Beginning Western Theory and Musicianship, is the recommended starting place for students with only some prior music theory experience, students may test out of MUSC 14 by placing directly into MUSC 30A , Theory, Literature and Musicianship I, via the Music Theory Placement Exam. The Theory Placement Exam is offered twice per year—in fall quarter, the Tuesday before classes start; and in the beginning of either winter or spring quarter. See the Music Department website for exam details. If a student places into MUSC 30A via the exam, they are not required to take MUSC 14 .",
+        "MUSC 60 , Fundamental Keyboard Skills, is recommended to be taken alongside Western theory courses.",
+        "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UCSC, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+        "Relevant theory C-ID articulations:",
+        "MUSC 110 -> MUSC 14",
+        "MUSC 120 and MUSC 125 -> MUSC 30A and MUSC 31",
+        "MUSC 130 and MUSC 135 -> MUSC 30B and MUSC 31",
+        "MUSC 140 and MUSC 145 -> MUSC 30C and MUSC 31"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Theory"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "3) have passed at least half of their total required sections of 31 (i.e., one section for the jazz minor track)",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MUSC31"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they: 1) have passed the associated section of MUSC 30; 2) have passed their final quarter of MUSC 31 (i.e. fall 31, related to MUSC 30A ); 3) have passed at least half of their total required sections of 31 (i.e., one section for the jazz minor track) Any student who does need meet all three of the criteria above must re-take the failed section of MUSC 31 during its next offering."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Musicianship",
+       "prose": [
+        "The following course alongside MUSC 30A",
+        "Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they:",
+        "1) have passed the associated section of MUSC 30;",
+        "2) have passed their final quarter of MUSC 31 (i.e. fall 31, related to MUSC 30A );",
+        "3) have passed at least half of their total required sections of 31 (i.e., one section for the jazz minor track)",
+        "Any student who does need meet all three of the criteria above must re-take the failed section of MUSC 31 during its next offering."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Musicianship"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MUSC20C",
+        "MUSC74"
+       ],
+       [
+        "MUSC3"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Take one of the following courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Theory and Improvisation"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC150J",
+       "MUSC150K"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Upper-Division Theory and Improvisation",
+       "prose": [
+        "Take one of the following courses"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Theory and Improvisation"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101C",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105H",
+       "MUSC105I",
+       "MUSC105V",
+       "MUSC121A",
+       "MUSC150D",
+       "MUSC150I",
+       "MUSC150K",
+       "MUSC150J",
+       "MUSC150P",
+       "MUSC150S",
+       "MUSC150Z",
+       "MUSC203B",
+       "MUSC203F",
+       "MUSC203H"
+      ],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "Take three (3) of the courses from the following list."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students in the Jazz, Spontaneous Composition, and Improvisation minor are required to take six quarters of performing ensembles: at least three quarters of a jazz-focused ensemble ( MUSC 3 or MUSC 164 ), and three completely elective ensembles. Both MUSC 3 and MUSC 164 can be repeated for credit.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Performing Ensembles",
+       "prose": [
+        "Students in the Jazz, Spontaneous Composition, and Improvisation minor are required to take six quarters of performing ensembles: at least three quarters of a jazz-focused ensemble ( MUSC 3 or MUSC 164 ), and three completely elective ensembles. Both MUSC 3 and MUSC 164 can be repeated for credit."
+       ]
+      }
+     }
+    ],
+    "title": "Performing Ensembles"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC3",
+       "MUSC164"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Jazz Ensembles",
+       "prose": [
+        "Take three quarters of MUSC 3 and/or MUSC 164 . If a student elects to take two quarters of MUSC 3 instead of MUSC 74 or MUSC 20C , they are only required to do one additional quarter of a jazz ensemble, plus the three quarters of elective ensembles.",
+        "Contact the instructors of these ensembles directly for audition information."
+       ]
+      }
+     }
+    ],
+    "title": "Jazz Ensembles"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC5A",
+       "MUSC5B",
+       "MUSC5C",
+       "MUSC8A",
+       "MUSC8B",
+       "MUSC9",
+       "MUSC10",
+       "MUSC12",
+       "MUSC53A",
+       "MUSC55",
+       "MUSC55A",
+       "MUSC77",
+       "MUSC102",
+       "MUSC103",
+       "MUSC129",
+       "MUSC158",
+       "MUSC163",
+       "MUSC164",
+       "MUSC165",
+       "MUSC166",
+       "MUSC168"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Elective Ensembles",
+       "prose": [
+        "In addition to the three quarters of a jazz-focused ensemble, students pursuing this minor must take three elective ensembles. Students may repeat any of the ensembles listed below for credit."
+       ]
+      }
+     }
+    ],
+    "title": "Elective Ensembles"
+   }
+  ]
+ },
+ "slug": "jazz-spontaneous-composition-and-improvisation-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/jazz-spontaneous-composition-and-improvisation-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

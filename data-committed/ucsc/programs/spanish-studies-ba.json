@@ -1,0 +1,585 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "languages-and-applied-linguistics",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Spanish Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The interdisciplinary major in Spanish studies is designed to offer students advanced linguistic proficiency in Spanish as well as a broad understanding of the historical and cultural developments of the Spanish-speaking world.",
+     "The Spanish studies major at UC Santa Cruz combines the strengths of language and applied linguistics with those of literary and cultural studies. The sequence of courses first exposes students to the academic registers of Spanish, a critical component for both heritage speakers and second language learners. Students then develop academic literacy in the language while gaining familiarity with the methods of analysis in different fields. The configuration of the major affords students flexibility in following their particular interests by choosing one of two tracks: (1) literature and culture or (2) language and linguistics.",
+     "These pathways within the major prepare students for a range of career possibilities that involve working with the Spanish-speaking public in a variety of professions (e.g., law, business, public service). Students may also pursue further training in teaching Spanish as a second language at the high school or university level."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Graduates from the Spanish studies B.A. program should be able to demonstrate:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "218 Cowell College 831-459-2054 languages@ucsc.edu",
+     "The earlier you declare your major in your academic career, the better you will be able to plan your courses and the fulfillment of the requirements. If you declare your major early, you will receive more guidance, useful advice and close follow-up.",
+     "The Department of Languages and Applied Linguistics provides extensive orientation for the undergraduate major in Spanish studies. It is very important you plan the prerequisite and requisite courses in the appropriate sequence so as to complete your studies in the expected time.",
+     "Orientation is provided in two ways: quarterly large-group informational sessions, and small-group or individual meetings with a faculty and/or staff advisor.",
+     "Transfer students: Please also consult the Transfer Information and Policy section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.",
+     "Transfer students are strongly advised to complete courses that will satisfy the campus general education requirements or the California General Education Transfer Curriculum (Cal-GETC). In addition, transfer students are strongly encouraged to complete two years of Spanish language study at an accredited two- or four-year institution. While two years of prior Spanish language study is strongly advised, transfer students should be able to complete the Spanish studies major in normative time as long as they place into Spanish language Level 4 (Level 5 for students entering UC Santa Cruz in the winter term) upon arrival at UC Santa Cruz.",
+     "Transfer students may declare at any time after completing SPAN 4 or SPHS 4 with a grade of C or better, following the process in \"How to Declare a Major.\" Transfer students who place into Spanish Level 5 or higher when they enter UC Santa Cruz can declare the major immediately.",
+     "Transfer students should consult an academic advisor at languages@ucsc.edu as soon as possible to learn about language placement tests and other information about the major."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Courses used to satisfy major requirements may be taken for a Pass/No Pass or letter grade, with the exception that the Level 4 Spanish course and senior comprehensive course must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Spanish studies encourages students to take advantage of the Division of Global Engagement . Some programs do not require prior language study while others have language prerequisites. Many of these programs provide students with the language skills needed to participate in regular university courses taught in the language of the host country. Study abroad opportunities in Spanish include Argentina, Chile, Mexico, Spain, and Costa Rica.",
+     "Students who participate in study abroad may petition to apply up to three courses (up to 15 upper-division credits) from study abroad toward the major."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Students who wish to be considered for honors should meet the deadline posted by the Office of the Registrar for declaring the intent to graduate. Determination of honors is based on the student’s grades for all courses relevant to the major and other factors relevant to an assessment of academic excellence, such as research papers of professional quality. Generally, honors in the major are awarded only to students with a GPA of 3.75 or higher in relevant coursework. Only those students whose performance in coursework is excellent will qualify. Highest honors are awarded only to students whose performance in relevant coursework is outstanding (GPA of 3.90 and above) and who have completed an outstanding original research paper."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN4",
+       "SPHS4"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To declare the Spanish Studies B.A., students must either: 1) complete SPAN 4 or SPHS 4 at UC Santa Cruz with a grade of C or better; 2) place into level 5 or higher via placement exam; or 3) demonstrate proficiency at this level.",
+        "Transfer students: Please also consult the Transfer Information and Policy section."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students notified that they are not eligible to declare the major may appeal this decision by submitting a letter to the department chair within 15 working days from the date of notification. Within 15 working days of receipt of the student's appeal, the department will notify the student and their college of its decision regarding the appeal."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petition when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first).",
+        "Students petition when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "Students must meet major qualification requirements prior to declaring the major.",
+        "To declare the major, students must first meet with the academic advisor and then with the faculty advisor. Please contact languages@ucsc.edu for further information."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "There are a total of 45 upper-division credits required for the Spanish studies major. See Program Major Requirements below for a breakdown of the credit requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "SPAN1",
+        "SPAN2",
+        "SPAN3",
+        "SPAN4",
+        "SPAN5",
+        "SPAN6"
+       ],
+       [
+        "SPHS4",
+        "SPHS5",
+        "SPHS6"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Or equivalent proficiency. SPAN 5M may substitute for SPAN 5 .",
+       "Or equivalent proficiency"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Either six courses in the regular track",
+       "prose": [
+        "Or equivalent proficiency. SPAN 5M may substitute for SPAN 5 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS11A",
+       "HIS11B",
+       "HIS12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Four required Spanish studies core courses (20 credits total). Though some courses may be able to satisfy multiple requirements of the major, no course taken may count toward more than one requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT189A",
+       "LIT189B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Literature: (5 credits)",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT189C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Spanish Studies: (5 credits)*",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Linguistics: (5 credits)",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "* LIT 189C /SPAN 105 and SPAN 150 must be taken prior to enrollment in or in conjunction with concentration courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "SPAN114",
+       "SPHS115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "* LIT 189C /SPAN 105 and SPAN 150 must be taken prior to enrollment in or in conjunction with concentration courses."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Spanish Language: (5 credits)",
+       "prose": [
+        "Choose one of the following courses:",
+        "* LIT 189C /SPAN 105 and SPAN 150 must be taken prior to enrollment in or in conjunction with concentration courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Choice of Concentrations",
+       "prose": [
+        "Students must choose either the Languages and Linguistics Concentration or the Literature and Culture Concentration. The choice of concentration will dictate which concentration courses are taken below, as well as which capstone courses are available."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN130",
+       "SPAN140",
+       "SPAN141",
+       "SPAN142",
+       "SPAN151",
+       "SPAN152",
+       "SPAN153",
+       "SPAN154",
+       "SPAN155",
+       "SPAN156A",
+       "SPAN156E",
+       "SPAN156F",
+       "SPAN156J",
+       "SPAN156K",
+       "SPAN156L",
+       "SPAN156M",
+       "SPAN157",
+       "SPAN158"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "Other 5-credit Spanish-language courses numbered SPAN 100-SPAN 189, SPAN 199 (except SPAN 114 , SPAN 150 , SPHS 115 , and LIT 189C /SPAN 105) may be accepted with the permission of the Spanish studies director."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Languages and Linguistics Concentration",
+       "prose": [
+        "Three courses from the following list that are not used as an elective or capstone:",
+        "Other 5-credit Spanish-language courses numbered SPAN 100-SPAN 189, SPAN 199 (except SPAN 114 , SPAN 150 , SPHS 115 , and LIT 189C /SPAN 105) may be accepted with the permission of the Spanish studies director."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT188A",
+       "LIT188B",
+       "LIT188E",
+       "LIT188G",
+       "LIT188H",
+       "LIT188I",
+       "LIT188M",
+       "LIT189F",
+       "LIT189G",
+       "LIT189H",
+       "LIT189I",
+       "LIT189L",
+       "LIT189M",
+       "LIT189N",
+       "LIT189O",
+       "LIT189Q",
+       "LIT189S",
+       "LIT189T",
+       "LIT189U",
+       "LIT189V",
+       "LIT189X"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Literature and Culture Concentration",
+       "prose": [
+        "Three 5-credit literature courses numbered LIT 188-LIT 189, LIT 199. Current courses within this range are listed below.",
+        "The courses LIT 189C /SPAN 105, LIT 189A , and LIT 189B may not be taken as a concentration or elective course if used as a core course."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH130L",
+       "ANTH130M",
+       "ANTH176B",
+       "APLX101",
+       "APLX102",
+       "APLX103",
+       "APLX105",
+       "APLX112",
+       "APLX113",
+       "APLX115",
+       "APLX116",
+       "APLX122",
+       "APLX124",
+       "APLX135",
+       "APLX138",
+       "FMST115",
+       "FMST175",
+       "HAVC143C",
+       "HAVC160A",
+       "HAVC160B",
+       "HAVC162A",
+       "HAVC162B",
+       "HAVC163",
+       "HAVC191B",
+       "LALS100",
+       "LALS122",
+       "LALS133",
+       "LALS144",
+       "LALS152",
+       "LALS155",
+       "LALS157",
+       "LALS165",
+       "LALS172",
+       "LALS175",
+       "LING182",
+       "LIT155E",
+       "POLI140C",
+       "SOCY156",
+       "SOCY177A"
+      ],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Choose one course from the list below or from the Languages and Linguistics or Literature and Culture Concentration lists above."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN114",
+       "SPHS115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "The Disciplinary Communication requirement (DC requirement) is satisfied by successfully completing one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The senior comprehensive requirement is satisfied by completing one capstone course in the student's concentration listed below. The course must be taken senior year after completion of at least three of the four core courses. Courses used for the capstone requirement cannot be used for the elective or concentration requirements.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior comprehensive requirement is satisfied by completing one capstone course in the student's concentration listed below. The course must be taken senior year after completion of at least three of the four core courses. Courses used for the capstone requirement cannot be used for the elective or concentration requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN151",
+       "SPAN152",
+       "SPAN153",
+       "SPAN154",
+       "SPAN155",
+       "SPAN157",
+       "SPAN158"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Languages and Linguistics Capstone Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT190X"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Literature and Culture Capstone Course",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "spanish-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/spanish-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

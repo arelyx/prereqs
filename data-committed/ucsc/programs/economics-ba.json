@@ -1,0 +1,737 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "economics",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Economics B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Economics studies how individuals, firms, governments, and other organizations within our society make choices, and how these choices affect the society’s use of its available resources. Economists study a wide range of questions such as: How do individuals make decisions in the face of uncertainty? What are the causes of the Great Recession of 2009? Why do Europeans work fewer hours than Americans? Why have health care and education costs risen so much? What are the consequences of government deficits? Why has the gap between rich and poor in many countries risen? Why have some poor countries grown faster than many rich countries in recent years?",
+     "Economics majors study a substantive core of theory and mathematical and statistical methods that aid in addressing these questions. This required core can be combined with electives that emphasize specialized areas such as international economics, finance, public policy, applied microeconomics, law and economics, economic development, quantitative methods, macroeconomics, game theory and behavioral economics. A focus on core theory as well as mathematical and quantitative tools provides a foundation for graduate studies in economics. Selecting a range of electives to sample the broad domain of economics offers an excellent background for students who plan to enter careers in the private sector, public service, or the non-profit sector or to attend law school or other professional schools."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Program learning outcomes for economics, economics and mathematics, business management economics, and global economics majors:",
+     "Critical Thinking Skills: Students are expected to be able to apply economic analysis to everyday problems in real world situations, to understand current events and evaluate specific policy proposals, and to evaluate the role played by assumptions in arguments that reach different conclusions to a specific economic or policy problem.",
+     "Quantitative Reasoning Skills: Students are expected to understand how to use empirical evidence to evaluate the validity of an economic argument, use statistical methodology, interpret statistical results, and conduct appropriate statistical analysis of data.",
+     "Problem-Solving Skills: Students are expected to be able to solve problems that have clear solutions and to address problems that do not have clear answers and explain conditions under which these solutions may be correct.",
+     "Specialized Knowledge and Application of Skills: Students are expected to develop critical and quantitative thinking skills specific to business and accounting.",
+     "Communication Skills: Students are expected to be able to communicate effectively in written, oral, and graphical form about specific issues, and to formulate well-organized written arguments that state assumptions and hypotheses supported by evidence."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Economics Department office is located at 401 Engineering 2. There are four staff undergraduate advisors, peer advisors (except summer), as well as a faculty field study coordinator and faculty director for the Economics Department's undergraduate programs. Our faculty, staff advisors and peer advisors play an important role in advising on all aspects of the major and assisting you to maximize your educational opportunities. Please check the department website for more information about drop-in hours."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "The economics curriculum begins at the introductory level: no specific high school preparation is required. This is a course-intensive and sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at the University of California, Santa Cruz.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     "All majors study a substantial core of economic theory and statistical methods and they then choose among a wide variety of subfields.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department.",
+     "The Economics Department allows classes toward major requirements taken for the pass/no pass (P/NP) grade notification. We recommend no more than two courses in the major be taken P/NP. Overall no more than 25 percent of a student's UC Santa Cruz classes can be taken P/NP."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "For courses not already articulated through assist.org , students must present their transfer credit summary (available on the student portal) and course syllabi or descriptions to an Economics Department advisor. The department approves courses applicable for economics prerequisites and major requirements. The course substitution form can be found on the department website under Economics Undergraduate Forms ."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "UC Education Abroad Program (UCEAP) is the University of California's official study abroad program and a global leader in international education for more than 50 years. All the benefits of home—UC credit, grades, and financial aid—travel with you. Approximately 600 UC Santa Cruz students study abroad on UCEAP every year.",
+     "Students can petition UCEAP courses to count toward their major or minor requirements. In addition, there are scholarships available and financial aid can be applied to UCEAP programs. UCEAP provides opportunities in:",
+     "Economics at the Autonomous University of Barcelona -- Direct Exchange Program Located in Spain, the Autonomous University of Barcelona (UAB) is an institution known for its excellent research and teaching. Unlike UCEAP, this direct exchange program through the UC Santa Cruz Economics Department offers the opportunity for students to enroll in three courses that will fulfill economics major requirements and one course outside of economics. Students must take a total of four courses and will receive transfer credit for all courses. Along with enrolling in courses, students may enjoy the renowned architecture, food, and art. This program is open to students who are economics majors in junior or senior class standing and have a 3.0 cumulative GPA or above. Students must also be in good academic standing and 18 years of age or older at the time of departure to Barcelona. Economics courses at UAB may also be taken in Spanish if students have completed two years of university-level Spanish with a minimum GPA of 2.85 in those language courses."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "The Economics Department awards honors and highest honors to students who have completed a major program with superior or exceptional academic work. All students are reviewed for honors during the quarter in which they graduate. Honors decisions are made based on performance in upper-division economics courses with particular emphasis on performance in the three core courses ( ECON 100A , ECON 100B , and ECON 113 ). Typically, honors are awarded to between 10 and 15 percent of each year's graduating class."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Students are encouraged to petition for independent study on topics of special interest to them. ECON 199 , Tutorial, may be used as only one of the upper-division courses required for the major or minor."
+    ],
+    "title": "Independent Study"
+   },
+   {
+    "paragraphs": [
+     "The Economics Department offers its majors the opportunity to integrate their academic knowledge with career-related work in areas connected to economics or business. Students secure field-study internships under the supervision of a faculty sponsor and a professional at the workplace. Students can participate in a wide variety of field-study opportunities such as with accounting firms, community non-profits, government agencies, brokerage firms, marketing agencies, banks, and businesses in Santa Cruz and beyond. Students apply for field-study a quarter in advance. Participation in the field-study program requires at least junior standing, completion of courses ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), and ECON 113 as well as good academic standing. Students may earn a maximum of 10 academic credits and complete up to two quarters in a field placement. A 5-credit field study requires 12-14 hours per week spent working on internship duties (a 2-credit field study requires 5-6 hours per week spent on internship duties) and completion of an academic project supervised by a faculty sponsor. Time spent toward the academic requirements set by the faculty sponsor is not included in the 12-14 internship hours spent at the field placement.",
+     "Along with the training and supervision by a professional at the workplace, students receive guidance from a faculty sponsor who directs their academic project. Students earn credit through the completion of this project and the job supervisor’s evaluation of performance. Economics field-study courses do not satisfy any upper-division requirements for the major and are available as Pass/No Pass only.",
+     "Interested students should make an appointment or email econintern@ucsc.edu for assistance."
+    ],
+    "title": "Field-Study Program"
+   },
+   {
+    "paragraphs": [
+     "The Economics Department offers the following combined majors: economics/mathematics and environmental studies/economics . Requirements for these majors may be reviewed under their separate entries in this catalog."
+    ],
+    "title": "Combined Majors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM11A",
+       "MATH11A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A minimum GPA of 2.8 must be obtained in the courses listed above. The admissions office screens transfer applicants for meeting major qualification criteria. In addition, the following courses are recommended prior to transfer to ensure timely graduation: completion of the calculus sequence ( AM 11B or MATH 22 / MATH 23A ). Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "type": "prose"
+       },
+       {
+        "text": "A minimum GPA of 2.8 must be obtained in the courses listed above. The admissions office screens transfer applicants for meeting major qualification criteria.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ECON1",
+       "ECON2"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of these courses:",
+       "prose": [
+        "A minimum GPA of 2.8 must be obtained in the courses listed above. The admissions office screens transfer applicants for meeting major qualification criteria. In addition, the following courses are recommended prior to transfer to ensure timely graduation: completion of the calculus sequence ( AM 11B or MATH 22 / MATH 23A ). Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "A minimum GPA of 2.8 must be obtained in the courses listed above. The admissions office screens transfer applicants for meeting major qualification criteria.",
+        "In addition, the following courses are recommended prior to transfer to ensure timely graduation:",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All transfer students must complete the three-course comprehensive requirement ( ECON 100A , ECON 100B , ECON 113 ) and the disciplinary communication requirement ( ECON 104 or ECON 197 ) at UC Santa Cruz. Economics majors must take at least three of their upper-division economics electives at UCSC. Courses taken for credit elsewhere may not be repeated for credit here.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "The department requests that new transfer students send unofficial transcripts of any previously completed coursework to econ_ugrad_coor@ucsc.edu . For coursework completed outside of a California community college, submitting course syllabi for articulation purposes is required. The advisors will then be able to make course recommendations for fall quarter or summer session courses prior to the first fall quarter.",
+        "All transfer students must complete the three-course comprehensive requirement ( ECON 100A , ECON 100B , ECON 113 ) and the disciplinary communication requirement ( ECON 104 or ECON 197 ) at UC Santa Cruz. Economics majors must take at least three of their upper-division economics electives at UCSC. Courses taken for credit elsewhere may not be repeated for credit here.",
+        "Students who were admitted under a different proposed major and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major. Admission to the major is not guaranteed."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "The Economics Department administers four undergraduate majors: economics, business management economics, global economics, and economics/mathematics.",
+        "(Qualifications for the environmental/economics combined major differ from above; see environmental studies for details.) Students should declare the major as soon as they have completed these requirements.",
+        "Students must complete three courses, with combined GPA of 2.8 or higher, to qualify for entry to the economics major:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON1",
+       "ECON2"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department. Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first). Students receiving a grade of NP, C-, D+, D, D-, or F in one of the courses required for qualification to the major may only declare once they have passed the same or equivalent course with a grade of C or better. Students who receive two grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare the major. Equivalent courses may be taken at other universities or community colleges. Students should check on assist.org to determine whether a transfer course is designated as equivalent to ECON 1 , ECON 2 or the first required calculus course. Transfer students are strongly encouraged to ask the department to review such courses prior to matriculation at UC Santa Cruz, since an offer of admission to UCSC does not automatically imply admission to the economics major. Students can receive course credit for Advanced Placement (AP) examinations in microeconomics ( ECON 1 ), macroeconomics ( ECON 2 ), and the first calculus class toward major qualification criteria according to the AP chart . The Economics Department uses the AP score internally to determine whether students meet the 2.8 required GPA to qualify for the major. For economics, a score of 5 on the AP exam counts as an “A” , a score of 4 counts as a “B”, and a score of 3 earns unit credit only but no course credit toward major qualification (i.e., does not count). For calculus AB and calculus BC, a score of 4 or 5 on the AP exam counts as an \"A\" and a score of 3 counts as a \"B\". A score of 5 on the IBH Mathematics exam counts as a \"B\" and scores of 6 or 7 count as an \"A\". Please consult with an advisor if you have questions.",
+        "type": "prose"
+       },
+       {
+        "text": "All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "AM11A",
+       "MATH11A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of the following calculus courses:",
+       "prose": [
+        "All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department. Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first). Students receiving a grade of NP, C-, D+, D, D-, or F in one of the courses required for qualification to the major may only declare once they have passed the same or equivalent course with a grade of C or better. Students who receive two grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare the major. Equivalent courses may be taken at other universities or community colleges. Students should check on assist.org to determine whether a transfer course is designated as equivalent to ECON 1 , ECON 2 or the first required calculus course. Transfer students are strongly encouraged to ask the department to review such courses prior to matriculation at UC Santa Cruz, since an offer of admission to UCSC does not automatically imply admission to the economics major. Students can receive course credit for Advanced Placement (AP) examinations in microeconomics ( ECON 1 ), macroeconomics ( ECON 2 ), and the first calculus class toward major qualification criteria according to the AP chart . The Economics Department uses the AP score internally to determine whether students meet the 2.8 required GPA to qualify for the major. For economics, a score of 5 on the AP exam counts as an “A” , a score of 4 counts as a “B”, and a score of 3 earns unit credit only but no course credit toward major qualification (i.e., does not count). For calculus AB and calculus BC, a score of 4 or 5 on the AP exam counts as an \"A\" and a score of 3 counts as a \"B\". A score of 5 on the IBH Mathematics exam counts as a \"B\" and scores of 6 or 7 count as an \"A\". Please consult with an advisor if you have questions.",
+        "All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department.",
+        "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first). Students receiving a grade of NP, C-, D+, D, D-, or F in one of the courses required for qualification to the major may only declare once they have passed the same or equivalent course with a grade of C or better. Students who receive two grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare the major.",
+        "Equivalent courses may be taken at other universities or community colleges. Students should check on assist.org to determine whether a transfer course is designated as equivalent to ECON 1 , ECON 2 or the first required calculus course. Transfer students are strongly encouraged to ask the department to review such courses prior to matriculation at UC Santa Cruz, since an offer of admission to UCSC does not automatically imply admission to the economics major.",
+        "Students can receive course credit for Advanced Placement (AP) examinations in microeconomics ( ECON 1 ), macroeconomics ( ECON 2 ), and the first calculus class toward major qualification criteria according to the AP chart .",
+        "The Economics Department uses the AP score internally to determine whether students meet the 2.8 required GPA to qualify for the major. For economics, a score of 5 on the AP exam counts as an “A” , a score of 4 counts as a “B”, and a score of 3 earns unit credit only but no course credit toward major qualification (i.e., does not count). For calculus AB and calculus BC, a score of 4 or 5 on the AP exam counts as an \"A\" and a score of 3 counts as a \"B\".",
+        "A score of 5 on the IBH Mathematics exam counts as a \"B\" and scores of 6 or 7 count as an \"A\".",
+        "Please consult with an advisor if you have questions."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who have a grade point average (GPA) lower than 2.8 combined in ECON 1 , ECON 2 , and the calculus course are not eligible to declare an economics major. Students not eligible to declare an economics major should appeal by submitting a letter to the Economics Department as soon as the qualification courses are completed. Students who have not declared by their sixth quarter and who do not meet the GPA requirement should submit their declaration petition along with an appeal letter to make their case so that the department can take into consideration the full context of the student's situation. We recommend meeting with an economics advisor to learn more about the appeals process. Please email econ_ugrad_coor@ucsc.edu for further information on declaring an economics major or appealing ineligibility and deadlines."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Timing: Students should submit a petition to declare as soon as they complete the major qualification (MQ) courses ( ECON 1 , ECON 2 and the calculus course) or reach their declaration deadline quarter, whichever comes first. Transfer students can petition to declare their major as early as the first day of instruction during their first quarter at UCSC.",
+        "How: Students can initiate the major declaration process by completing the Petition for Major/Minor Declaration and the Academic Planning forms and by supplying evidence of their grades in the three pre-major courses. Candidates must meet major qualifications listed above under \"Major Qualification\" prior to declaring the major.",
+        "Declaration sessions are mandatory for those seeking to declare the major/minor. If you cannot attend a workshop, you must meet with an economics peer advisor first before obtaining signatures from a staff advisor. Workshop schedules and drop-in advising hours are available on the department's website , on our bulletin board outside the office, and in the department office. All students are advised to bring verification of their grades, which can be printed from the student portal, to the declaration of major advising session. Students who do not bring in verification of their grades could have the approval of their petition for major declaration delayed by up to two working days."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "ECON 1 and ECON 2 , AM 11A , AM 11B , ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), ECON 113 , and STAT 17 and STAT 17L or equivalent courses are required for all economics majors and are prerequisites for most upper-division courses. Students are urged to complete these courses as soon as possible. Students who are committed to the major early in their academic career, should plan to complete at least ECON 1 , ECON 2 , AM 11A , AM 11B , STAT 17 and STAT 17L and preferably ECON 100A , ECON 100B , and ECON 113 by the end of their sophomore year. Students are also encouraged to choose the letter grade option when taking these courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "ECON 1 and ECON 2 , AM 11A , AM 11B , ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), ECON 113 , and STAT 17 and STAT 17L or equivalent courses are required for all economics majors and are prerequisites for most upper-division courses. Students are urged to complete these courses as soon as possible. Students who are committed to the major early in their academic career, should plan to complete at least ECON 1 , ECON 2 , AM 11A , AM 11B , STAT 17 and STAT 17L and preferably ECON 100A , ECON 100B , and ECON 113 by the end of their sophomore year. Students are also encouraged to choose the letter grade option when taking these courses.",
+        "Students who major in economics are required to take the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON1",
+       "ECON2"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM11A",
+        "AM11B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B",
+        "MATH22"
+       ],
+       [
+        "MATH19A",
+        "MATH19B",
+        "MATH23A"
+       ],
+       [
+        "MATH19A",
+        "MATH19B",
+        "AM30"
+       ],
+       [
+        "MATH11A",
+        "AM11B"
+       ],
+       [
+        "MATH19A",
+        "AM11B"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Students planning to pursue graduate work in economics or business should seriously consider more intensive mathematical training; consult an advisor for guidance. Successful completion of one of the mathematics calculus sequences from the list above is required for all economics majors, and must be taken before enrollment in ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), and ECON 113 . Students are advised to complete the mathematics courses as early as possible in their academic career.",
+        "type": "prose"
+       },
+       {
+        "text": "Successful completion of one of the mathematics calculus sequences from the list above is required for all economics majors, and must be taken before enrollment in ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), and ECON 113 . Students are advised to complete the mathematics courses as early as possible in their academic career.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 11A , MATH 11B , MATH 23A may be taken to satisfy the mathematics content only by petition via the Mathematics Department."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following mathematics content options:",
+       "prose": [
+        "MATH 11A , MATH 11B , MATH 23A may be taken to satisfy the mathematics content only by petition via the Mathematics Department.",
+        "Students planning to pursue graduate work in economics or business should seriously consider more intensive mathematical training; consult an advisor for guidance. Successful completion of one of the mathematics calculus sequences from the list above is required for all economics majors, and must be taken before enrollment in ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), and ECON 113 . Students are advised to complete the mathematics courses as early as possible in their academic career.",
+        "Students planning to pursue graduate work in economics or business should seriously consider more intensive mathematical training; consult an advisor for guidance.",
+        "Successful completion of one of the mathematics calculus sequences from the list above is required for all economics majors, and must be taken before enrollment in ECON 100A (or ECON 100M ), ECON 100B (or ECON 100N ), and ECON 113 . Students are advised to complete the mathematics courses as early as possible in their academic career."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT17",
+       "STAT17L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Enrollment in STAT 17 requires concurrent enrollment in STAT 17L (2-credit lab). Any transfer credit for STAT 17 and STAT 17L will be evaluated on a case-by-case basis. Students should contact the undergraduate advisors by emailing econ_ugrad_coor@ucsc.edu ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following statistics courses:",
+       "prose": [
+        "Enrollment in STAT 17 requires concurrent enrollment in STAT 17L (2-credit lab). Any transfer credit for STAT 17 and STAT 17L will be evaluated on a case-by-case basis. Students should contact the undergraduate advisors by emailing econ_ugrad_coor@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100A",
+       "ECON100M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100B",
+       "ECON100N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON113"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON104",
+       "ECON197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following disciplinary communication (DC) courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take five additional economics electives from the following three lists. At least three courses must come from the General Economics Electives list. No more than two courses may come from the Finance Electives list. No more than one course may come from the Business Management Electives.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus five economics electives:",
+       "prose": [
+        "Students take five additional economics electives from the following three lists. At least three courses must come from the General Economics Electives list. No more than two courses may come from the Finance Electives list. No more than one course may come from the Business Management Electives."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON105",
+       "ECON114",
+       "ECON120",
+       "ECON121",
+       "ECON124",
+       "ECON125",
+       "ECON128",
+       "ECON130",
+       "ECON140",
+       "ECON141",
+       "ECON142",
+       "ECON143",
+       "ECON149",
+       "ECON150",
+       "ECON156",
+       "ECON159",
+       "ECON160A",
+       "ECON160B",
+       "ECON165",
+       "ECON166A",
+       "ECON166B",
+       "ECON169",
+       "ECON170",
+       "ECON171",
+       "ECON175",
+       "ECON180",
+       "ECON182",
+       "ECON183",
+       "ECON190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "General Economics Electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON131",
+       "ECON133",
+       "ECON135"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Finance Electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON101",
+       "ECON110",
+       "ECON111A",
+       "ECON111B",
+       "ECON111C",
+       "ECON112",
+       "ECON115",
+       "ECON117A",
+       "ECON117B",
+       "ECON119",
+       "ECON136",
+       "ECON138",
+       "ECON139A",
+       "ECON139B",
+       "ECON161A",
+       "ECON161B",
+       "ECON164",
+       "ECON188",
+       "ECON194",
+       "CRWN152"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Business Management Electives",
+       "prose": [
+        "ECON 191 , ECON 192 , ECON 193 , and ECON 193F may not be used to meet major requirements. Either ECON 195 or ECON 199 may be used to fill one of the five upper-division elective major requirements.",
+        "ECON 191 , ECON 192 , ECON 193 , and ECON 193F may not be used to meet major requirements. Either ECON 195 or ECON 199 may be used to fill one of the five upper-division elective major requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON104",
+       "ECON197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "All undergraduate majors must satisfy the campus’ disciplinary communication (DC) requirement. The DC requirement in economics is satisfied by completing one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is satisfied by passing the following intermediate core courses with grades of C/P or better at UC Santa Cruz:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100A",
+       "ECON100M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100B",
+       "ECON100N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON113"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": [
+        "Students may elect to complete a senior thesis with consent of an instructor in addition to completing the intermediate core courses. This is highly recommended for students interested in a Ph.D. program in economics after graduation.",
+        "Students may elect to complete a senior thesis with consent of an instructor in addition to completing the intermediate core courses. This is highly recommended for students interested in a Ph.D. program in economics after graduation."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "economics-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/economics-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

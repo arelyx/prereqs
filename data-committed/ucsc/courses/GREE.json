@@ -1,0 +1,96 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "The Staff",
+   "code": "GREE1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Instruction in the grammar of Attic Greek, together with readings from ancient authors, designed to prepare for the study of classical literature. The sequence begins in the fall quarter only.",
+   "display_code": "GREE 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "GREE",
+   "title": "Elementary Ancient Greek",
+   "url": "/en/current/general-catalog/courses/gree-greek/lower-division/gree-1"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "GREE2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Instruction in the grammar of Attic Greek, together with readings from ancient authors, designed to prepare for the study of classical literature.",
+   "display_code": "GREE 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "GREE1"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): GREE 1 , or permission of instructor",
+   "repeatable": false,
+   "subject": "GREE",
+   "title": "Elementary Ancient Greek",
+   "url": "/en/current/general-catalog/courses/gree-greek/lower-division/gree-2"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GREE99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "GREE 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "GREE",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/gree-greek/lower-division/gree-99"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GREE99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "GREE 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "GREE",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/gree-greek/lower-division/gree-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "GREE"
+}

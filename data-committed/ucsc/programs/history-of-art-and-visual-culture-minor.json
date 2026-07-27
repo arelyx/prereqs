@@ -1,0 +1,69 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "history-of-art-and-visual-culture",
+ "division": "arts-division",
+ "kind": "minor",
+ "name": "History of Art and Visual Culture Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Three lower-division courses, each from a different geographic region listed below:",
+        "HAVC 80 may be used to fulfill a lower-division requirement for one of the following geographic regions: 10s (Africa), 60s (Native Americas), or 70s (Oceania)."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Six upper-division courses. These are HAVC courses numbered 100-191."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   }
+  ]
+ },
+ "slug": "history-of-art-and-visual-culture-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/history-of-art-and-visual-culture/history-of-art-and-visual-culture-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

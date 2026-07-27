@@ -1,0 +1,56 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Staff",
+   "code": "VAST188J",
+   "credits": "5",
+   "cross_listed": [
+    "HAVC188J"
+   ],
+   "description": "How does cultural and political change happen? What role can cultural institutions play in meeting the social, political, and ecological challenges of our times? This interdisciplinary course explores curation as a place for critical engagement with pressing social and political issues including prison abolition and climate destruction, using the current exhibitions and programs at the Institute of the Arts and Sciences as a case study.",
+   "display_code": "VAST 188J",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "IM"
+   ],
+   "number": "188J",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "VAST",
+   "title": "Curation and Justice",
+   "url": "/en/current/general-catalog/courses/vast-visualizing-abolition-studies/upper-division/vast-188j"
+  },
+  {
+   "catalog_instructor": "GIna Dent",
+   "code": "VAST199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students work with faculty to develop an agreement that outlines learning objectives, assignments, and assessment for an individual study. To enroll, students submit a petition to the faculty director of the Visualizing Abolition Studies Certificate Program that includes the student/faculty agreement.",
+   "display_code": "VAST 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "VAST",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/vast-visualizing-abolition-studies/upper-division/vast-199"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "VAST"
+}

@@ -1,0 +1,150 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "history",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Ancient Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "GREE1",
+        "GREE2"
+       ],
+       [
+        "LATN1",
+        "LATN2"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "A minor in ancient studies requires the lower-division sequence in elementary Greek or Latin language (or equivalent):",
+        "Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT184A",
+       "LIT186A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Reading proficiency in ancient Greek or Latin required for these courses. LIT 184A should be taken after GREE 2 , and LIT 186A should be taken after LATN 2."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": [
+        "Reading proficiency in ancient Greek or Latin required for these courses. LIT 184A should be taken after GREE 2 , and LIT 186A should be taken after LATN 2."
+       ]
+      }
+     }
+    ],
+    "title": "Choose one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS147A",
+       "HIS150A",
+       "HIS159A",
+       "HIS159B",
+       "HIS159C",
+       "HIS159D",
+       "HIS160A",
+       "HIS160C",
+       "HIS161B",
+       "HIS163B",
+       "HIS194S",
+       "HIS196S",
+       "HAVC135F",
+       "HAVC151",
+       "HAVC152",
+       "HAVC154",
+       "HAVC155",
+       "HAVC190C",
+       "LIT116C",
+       "LIT116I",
+       "LIT117A",
+       "LIT118A",
+       "LIT121A",
+       "LIT125A",
+       "LIT130A",
+       "LIT154B",
+       "LIT159M",
+       "LIT181A",
+       "LIT181B",
+       "LIT181D",
+       "LIT181E",
+       "LIT181F",
+       "LIT184A",
+       "LIT184B",
+       "LIT184C",
+       "LIT184D",
+       "LIT184E",
+       "LIT186A",
+       "LIT186B",
+       "LIT186C",
+       "LIT186D",
+       "PHIL100A",
+       "PHIL118",
+       "POLI105A"
+      ],
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus any four of the upper-division courses listed below",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus any four of the upper-division courses listed below"
+   }
+  ]
+ },
+ "slug": "classical-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/classical-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

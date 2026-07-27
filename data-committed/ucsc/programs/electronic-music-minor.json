@@ -1,0 +1,233 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "music",
+ "division": "arts-division",
+ "kind": "minor",
+ "name": "Electronic Music Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC80C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Electronic Music History Requirement",
+       "prose": [
+        "Take the following course."
+       ]
+      }
+     }
+    ],
+    "title": "Electronic Music History Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC11A",
+       "MUSC11B",
+       "MUSC11C",
+       "MUSC11D",
+       "MUSC11E"
+      ],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Lower-Division Music History Elective",
+       "prose": [
+        "Take one course from the following list. A similar music survey/history course taken here or at another institution may be approved by the department. Email music@ucsc.edu if you have questions regarding a possible substitution."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Music History Elective"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC14"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Music Theory Requirement",
+       "prose": [
+        "Students must take the Theory Placement Exam in order to test into the appropriate western music theory course ( MUSC 14 , or MUSC 30A ). If a student places into MUSC 30A via the exam, they will automatically satisfy the minor's theory requirement. Students who place into MUSC 14 must pass the course to satisfy the minor's theory requirement.",
+        "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UC Santa Cruz, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+        "Relevant theory C-ID articulations:",
+        "MUSC 110 -> MUSC 14",
+        "MUSC 120 and MUSC 125 -> MUSC 30A and MUSC 31",
+        "MUSC 130 and MUSC 135 -> MUSC 30B and MUSC 31",
+        "MUSC 140 and MUSC 145 -> MUSC 30C and MUSC 31"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Music Theory Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC71",
+       "MUSC72",
+       "MUSC80K",
+       "MUSC80L",
+       "MUSC80R",
+       "PHYS80U",
+       "FILM171A",
+       "THEA114"
+      ],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Technical Sound Elective",
+       "prose": [
+        "Take one course from the following list. A similar music course that has a technical focus may be approved by the department. Email music@ucsc.edu if you have questions regarding a possible substitution."
+       ]
+      }
+     }
+    ],
+    "title": "Technical Sound Elective"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE5J",
+       "CSE20",
+       "CT20",
+       "ECE101",
+       "ECE153",
+       "ECE171",
+       "PHYS160"
+      ],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Introductory Programming Elective",
+       "prose": [
+        "Take one of the following courses. A similar programming course taken here or at another institution may be approved by the department. Email music@ucsc.edu if you have questions regarding a possible substitution. A test-out option is available for CSE 20 . If a student tests out of CSE 20 via the exam, they will automatically satisfy the minor's programming requirement. Students who place into CSE 20 must pass the course, or another from the list, to satisfy the minor's programming requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Introductory Programming Elective"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC105H",
+       "MUSC123A",
+       "MUSC123B",
+       "MUSC123C",
+       "MUSC150N",
+       "MUSC150P",
+       "MUSC150R",
+       "MUSC150Z",
+       "MUSC206B",
+       "MUSC206C",
+       "MUSC254A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Upper-Division Lecture/Seminar Electives",
+       "prose": [
+        "Take four (4) of the following courses. Testing out of MUSC 123A is possible via technical assessment. If a student tests out of MUSC 123A via assessment, they should plan to take another course from this list, outside the 123 series, to fulfill their last elective.",
+        "MUSC 254A does have an undergraduate equivalent, MUSC 105X (a new course, first being offered in the spring 2026 term). Students can take either 105X or MUSC 254A to satisfy an elective, but not both."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Lecture/Seminar Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC73",
+       "MUSC129",
+       "MUSC167",
+       "MUSC167R",
+       "MUSC267"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Upper-Division Workshop/Ensemble Electives",
+       "prose": [
+        "Take three (3) of the following courses. All courses in list, except MUSC 167R , can be repeated for credit."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Workshop/Ensemble Electives"
+   }
+  ]
+ },
+ "slug": "electronic-music-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/electronic-music-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

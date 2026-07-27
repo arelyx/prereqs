@@ -1,0 +1,120 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "molecular-cell-and-developmental-biology",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "minor",
+ "name": "Biology Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "CHEM8A",
+       "CHEM8B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "All of the following courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM3A",
+       "CHEM3B",
+       "CHEM3C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL100",
+       "BIOL105",
+       "BIOE107",
+       "BIOE109"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "All of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Elective",
+       "prose": [
+        "Students complete one upper-division elective of five credits or more chosen from BIOE 100-BIOE 181 or BIOL 100 -BIOL 181."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Elective"
+   }
+  ]
+ },
+ "slug": "biology-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/biology-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

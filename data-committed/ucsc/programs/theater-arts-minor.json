@@ -1,0 +1,254 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "performance-play-and-design",
+ "division": "arts-division",
+ "kind": "minor",
+ "name": "Theater Arts Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA61A",
+       "THEA61B",
+       "THEA61C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Complete one of the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Complete one of the following:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA10",
+       "THEA20",
+       "THEA21",
+       "THEA30",
+       "THEA31A",
+       "THEA31B",
+       "THEA31C",
+       "THEA31L",
+       "THEA31M",
+       "THEA33C",
+       "THEA36",
+       "THEA37",
+       "THEA40",
+       "THEA80Z"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "Students should choose a course within their area of focus."
+       ]
+      }
+     }
+    ],
+    "title": "Plus one of the following:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following production fundamentals course:",
+       "prose": [
+        "Students are highly encouraged to contact the department advisor early to learn about the unique enrollment process for THEA 50 , as well as to complete this course as early as possible, before their last year on campus."
+       ]
+      }
+     }
+    ],
+    "title": "Plus the following production fundamentals course:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA100A",
+       "THEA100B",
+       "THEA100C",
+       "THEA100W",
+       "THEA104",
+       "THEA108",
+       "THEA113",
+       "THEA116A",
+       "THEA122",
+       "THEA160",
+       "THEA161",
+       "THEA161B",
+       "THEA161C",
+       "THEA161D",
+       "THEA161H",
+       "THEA161M",
+       "THEA161P",
+       "THEA161Q",
+       "THEA161R",
+       "THEA161S",
+       "THEA161T",
+       "THEA161U",
+       "THEA161Y",
+       "THEA163A",
+       "THEA163E",
+       "THEA163G",
+       "THEA163H",
+       "THEA163K",
+       "THEA164",
+       "THEA165",
+       "THEA166",
+       "THEA167",
+       "THEA168",
+       "ARTG138",
+       "ARTG139",
+       "ARTG142",
+       "ARTG143",
+       "LIT111D"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "History/theory/critical studies courses",
+       "prose": [
+        "Choose three of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "History/theory/critical studies courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA103",
+       "THEA106",
+       "THEA114",
+       "THEA115A",
+       "THEA115B",
+       "THEA117",
+       "THEA117A",
+       "THEA118",
+       "THEA119",
+       "THEA120",
+       "THEA121",
+       "THEA123",
+       "THEA124",
+       "THEA126",
+       "THEA126M",
+       "THEA131A",
+       "THEA131B",
+       "THEA131C",
+       "THEA131L",
+       "THEA135",
+       "THEA136",
+       "THEA137",
+       "THEA137A",
+       "THEA141",
+       "THEA142",
+       "THEA145R",
+       "THEA139",
+       "THEA151",
+       "THEA151A",
+       "THEA151I",
+       "THEA152",
+       "THEA155",
+       "THEA157",
+       "THEA158",
+       "THEA159"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Studio Courses",
+       "prose": [
+        "Choose two of the following courses. Only one of THEA 137 , THEA 137A , THEA 139 , THEA 151 , THEA 151A , THEA 151I , or THEA 155 may count toward this requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Studio Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA55A",
+       "THEA55B",
+       "THEA190",
+       "THEA198",
+       "THEA199"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "The following DO NOT satisfy theater arts minor requirements:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "The following DO NOT satisfy theater arts minor requirements:"
+   }
+  ]
+ },
+ "slug": "theater-arts-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

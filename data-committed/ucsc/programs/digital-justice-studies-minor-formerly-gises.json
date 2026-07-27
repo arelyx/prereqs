@@ -1,0 +1,120 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "sociology",
+ "division": "social-sciences-division",
+ "kind": "minor",
+ "name": "Digital Justice Studies Minor (formerly GISES)",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SOCY30A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Lower-division preparation:"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SOCY107A",
+       "SOCY107B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-division DJS core courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-division DJS core courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-division advanced coursework:",
+       "prose": [
+        "Three additional upper-division electives of 5 credits or more are required, selected from the Sociology Department elective courses (Sociology 110-189), or from the list of pre-approved courses . Students are strongly recommended to consult with the director of DJS before choosing their electives to ensure that their choices contribute to their selected project and/or their growth as a technology activist or technology linked social change advocate. Courses outside the list of approved courses may also be approved by the director of DJS. For more information on the process students must follow to have their courses approved, please visit the Sociology Department page ."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-division advanced coursework:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students must enroll in SOCY 196G , Project Practicum, and complete their DJS capstone project. SOCY 196G is offered every fall quarter. Students may review the Everett webpage , or contact the program director of DJS ( everettprogram @ucsc.edu ) for more detailed guidelines regarding the DJS capstone project. Prior to enrolling in SOCY 196G , students must have completed SOCY 107A and SOCY 107B , which prepares and supports students in completing a project that makes a contribution to advancing a solution to a problem associated with global social justice and/or sustainable development. To complete the final requirements for DJS, the integrated project practicum—narrative and digital deliverable—must be mounted on the appropriate web-enabled database managed by the Everett Program.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Project practicum:",
+       "prose": [
+        "Students must enroll in SOCY 196G , Project Practicum, and complete their DJS capstone project. SOCY 196G is offered every fall quarter. Students may review the Everett webpage , or contact the program director of DJS ( everettprogram @ucsc.edu ) for more detailed guidelines regarding the DJS capstone project. Prior to enrolling in SOCY 196G , students must have completed SOCY 107A and SOCY 107B , which prepares and supports students in completing a project that makes a contribution to advancing a solution to a problem associated with global social justice and/or sustainable development. To complete the final requirements for DJS, the integrated project practicum—narrative and digital deliverable—must be mounted on the appropriate web-enabled database managed by the Everett Program."
+       ]
+      }
+     }
+    ],
+    "title": "Project practicum:"
+   }
+  ]
+ },
+ "slug": "digital-justice-studies-minor-formerly-gises",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/sociology/digital-justice-studies-minor-formerly-gises",
+ "verification": {
+  "status": "unverified"
+ }
+}

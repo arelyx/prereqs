@@ -1,0 +1,542 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "linguistics",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Linguistics B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Linguistics is an exact and structured discipline that examines human language. It has connections to many other fields in the humanities (philosophy, literature), the social sciences (anthropology, psychology, sociology), the natural sciences (biology, neuroscience, acoustics), computer science, computer engineering, and artificial intelligence.",
+     "The central areas of linguistics investigate the knowledge that speakers of a language have about its structure. Syntax is concerned with the rules that combine words into larger units of phrases and sentences. Semantics is the study of the meanings of linguistic units and how they are combined to form the meanings of sentences. Phonetics deals with the physical properties of language sounds. Phonology investigates the sound systems of particular languages and across languages. Morphology investigates the ways in which words are formed from prefixes, roots, and suffixes. Pragmatics is the study of language use. Psycholinguistics is concerned with the cognitive mechanisms by which we produce and perceive language."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "The program learning outcomes for the linguistics major are the following:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "241 Stevenson College (831) 459-4988 ling@ucsc.edu",
+     "Undergraduate Advisor",
+     "The undergraduate advisor can advise you about requirements for the major, about prerequisites, and about many other aspects of your academic progress. During the academic year, there are regular drop-in office hours available and posted on the department website .",
+     "If none of the drop-in office hours work for you, email the undergraduate advisor at ling@ucsc.edu for an appointment.",
+     "Transfer students, please also refer to Transfer Information and Policy.",
+     "Peer Advisors",
+     "During the academic year, the department has a peer advising program to provide an additional advising resource for undergraduate majors. The peer advisors are advanced students in the major who can offer guidance and advice to other students. They hold regular office hours and provide one-on-one advising in the Linguistics Department office at Stevenson College (STEV 245). Peer advisors do not have signature authority on forms (i.e., Declaration of Major Petitions and study abroad planning forms). Students must see the undergraduate advisor for any forms requiring a department signature. We encourage any prospective and current linguistics majors to stop by during the peer advisors' office hours if they have questions about the linguistics program.",
+     "Faculty",
+     "You should feel free to meet with any faculty member for advising, but it may make sense to speak with the undergraduate advisor first, to find out which faculty member might be best placed to advise you about your interests or concerns. You can find the current office hours for all faculty members in the faculty directory . For issues specifically related to the undergraduate program, you can turn to the undergraduate program director ."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required.",
+     "Here are four tips to keep in mind when embarking on your major in linguistics:",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "No major preparation courses are required prior to transfer for consideration of admission to UC Santa Cruz.",
+     "While not required for selection, transfer students are strongly encouraged to complete as much preparation as possible in the foreign language of their choosing. Transfer students admitted to UC Santa Cruz for the winter term who do not place into Level 2 or higher in a language placement test when they enter UC Santa Cruz may not be able to complete the major in a timely manner. Bear in mind that placement exams , and the resulting credit for the major, are only available for languages taught at UC Santa Cruz.",
+     "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation.",
+     "Consult with the undergraduate advisor before enrolling for your first term to create a two-year plan. Some required courses are only offered once a year, and careful planning is essential. Plan to take LING 50 and LING 53 in your first quarter, along with a language course. If you expect to test out of level 5 in your chosen language or plan to complete the Mathematics/Computer Science competency requirement, you need not enroll in a language course. Transfer students can declare the major in their second quarter after completing two gateway courses with a C+ or better."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "The two courses used for major qualification must be taken for a letter grade with a grade of C+ or better. All other courses used toward major requirements may be taken for a letter grade or pass/no pass. There is a campuswide requirement that you need to be aware of and to keep track of (no more than 25 percent of all of your UC Santa Cruz courses can be taken on a Pass/No Pass basis). Further information about campus letter grade policy is available at the website of the Office of the Registrar."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may substitute up to three outside courses for the upper-division electives requirement. These courses include Senior Thesis ( LING 195 ), Independent Study ( LING 199 ), courses from other UC Santa Cruz departments, and courses from other institutions. Substitutions must be upper-division courses and fit into a coherent program of study. A list of pre-approved outside courses is available for reference. Students should contact the department to inquire about using courses not on this list. Students may apply up to two quarters of LING 195 or one quarter of LING 199 , but not both."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "A student may not double major or major/minor in linguistics and language studies, as there is too much overlap between the two programs."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Students majoring in linguistics should consider studying abroad in the course of their degree program. Studying abroad is a good way to cultivate and enhance your language skills, as well as to gain rich life experiences. Linguistics students have various opportunities to study abroad, for a summer, quarter, semester, or year. There are programs available for students of all levels of language ability, from language and culture programs for beginning or intermediate speakers, to full immersion programs for students with advanced language skills.",
+     "Study abroad does require careful planning, especially for those who wish to pursue a year-long program, or who wish to study abroad during the senior year. Meeting with your major advisor early and often throughout the study abroad planning process is encouraged. Before being approved for UC Education Abroad Program (EAP), you must declare your major. Also, majors must complete LING 101, and either LING 111 or LING 112, before they leave for any Global Learning programs that take place during the academic year. The department does not place any restrictions on summer study abroad.",
+     "If you plan to study abroad during your senior year and do not plan to return to UC Santa Cruz before graduating, your plan will be approved only when all major requirements have been completed prior to departure, and/or when it is clear that any remaining requirements can be satisfactorily completed abroad. Please consult with the undergraduate advisor before the end of your sophomore year if you are considering this option.",
+     "Most importantly: Students who wish to have a study-abroad course count toward the major must bring back syllabi, completed papers, and course evaluations to the department, so that the department can make a decision about whether the course satisfies a major requirement. Ideally, students should have courses pre-approved for the major before they go abroad. Students can visit the UCSC Campus Credit Abroad database to find pre-approved courses. A maximum of three outside courses may be used toward the major.",
+     "Students who are interested in studying abroad should contact the Global Learning Office (105 Classroom Unit, 459-2858). Global Learning staff can provide detailed information concerning Global Learning selection criteria and application procedures. The first step in preparing to study abroad is to set up a profile on the Global Learning website ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Students who wish to be considered for honors should meet the deadline posted by the Office of the Registrar for declaring the intent to graduate. It is important to minimize the number of major courses you take on a Pass/No Pass basis. Determination of honors is based on the student’s grades for all courses relevant to the major and other factors relevant to an assessment of academic excellence, such as research papers of professional quality. Generally, honors in the major are awarded only to the top 10 percent of those graduating in the major. Only those students whose performance in coursework is excellent will qualify. Highest honors are rarely awarded, and then only to students whose performance in coursework is outstanding and who have completed an outstanding senior thesis."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Every year, UC Santa Cruz undergraduates in the final year of their linguistics major can apply to be admitted into the graduate program to pursue the M.A. in theoretical linguistics. Interested students should discuss the possibility with one or more faculty members and formally apply online to the graduate program during the fall quarter of the senior year. For up-to-date information about the application process, consult the Linguistics Department’s website ; and see the Graduate Advisor and Program Coordinator . The combined B.A./M.A. program provides another pathway to the M.A. program."
+    ],
+    "title": "Preparation for the UC Santa Cruz Master’s Degree"
+   },
+   {
+    "paragraphs": [
+     "The 80-level courses have no prerequisites. Although most of them will fulfill a general education requirement, they do not fulfill any requirements for the major. They are intended to introduce the concepts of linguistics through their relation to other areas of general interest.",
+     "LING 50 , Introduction to Linguistics, introduces the subfields of the discipline. LING 53, Semantics 1; LING 100, Phonetics 1; LING 101, Phonology 1; LING 112, Syntax 1; and LING 171, Psycholinguistics 1, serve as entry courses to the specialized upper-division sequences. Upper-division courses often have at least two of these courses as prerequisites.",
+     "A variety of upper-division elective courses are offered each quarter. For a list of the current offerings , please see the department website .",
+     "To enroll in the graduate (200-level) courses, undergraduates need special permission from the instructor. Permission is usually granted only to especially motivated undergraduates who have completed all the named requirements for the major with excellent performance."
+    ],
+    "title": "Information About Linguistics Courses"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "The Linguistics Department has adopted a major qualification policy for linguistics majors that is intended to encourage students to take their performance in the gateway courses seriously and to help them lay a solid foundation for further course work in the major.",
+        "Transfer students, please also refer to Transfer Information and Policy.",
+        "In order to qualify for the linguistics major, a student must pass two gateway courses, with a grade of C+ or better in each:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING53",
+       "LING101",
+       "LING112",
+       "LING171"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of the following courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they are not eligible to declare the major may appeal the decision within 15 days from the date the notification was sent. They should do this by submitting a formal letter, addressed to the department's undergraduate program director, to the Linguistics Department office (Stevenson 241 or 243 or by email to ling@ucsc.edu ). This letter should explain any extenuating circumstances that influenced performance in the gateway courses. Within 15 days of receipt of the appeal, the department will notify the student of the decision. The department may set conditions to be fulfilled within one quarter from the date of the appeal, such as achieving a minimum grade in a particular class."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "You should formally declare your major as early as possible in your academic career. Doing so will mean you get helpful advising. It will require you to plan out all the courses of the major. This means you will know you have time to meet all the necessary requirements for linguistics before you graduate.",
+        "Once you have successfully completed the two gateway courses, and/or you have reached your declaration deadline, you should do the following:",
+        "1) Please meet with the department advisor or a peer advisor, to complete or update your academic plan . If you are declaring a second major, please first complete an academic planning form with the advisor for your declared major. Major Degree Checklists are useful resources, which you may want to look over prior to the declaration session. You can find them in the Major Requirements section for the linguistics major on the department website.",
+        "2) Petition to declare your major . Log into MyUCSC and navigate to the Student Homepage. Select the Undergraduate Student eForms tile > Petition for Major/Minor. If you are already logged in to MyUCSC, you can simply use this link: Petition for Major/Minor via MyUCSC . The petition will automatically be routed to the department.",
+        "3) Attend one of the department’s Declaration Information Sessions . These sessions are held in the first month of each quarter. Invitations to sign up for a declaration session are sent out by the first week of the quarter to all proposed majors through the Navigate/Slug Success system. If you have completed the gateway courses, and you do not receive an invitation by Week 2, please contact the department advisor for assistance. Please sign up well in advance, as these meetings tend to fill quickly.",
+        "The campus undergraduate advising website has further helpful information about declaring a major."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING50",
+       "LING53"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Foreign Language/Mathematics/Computer Science Requirement",
+       "prose": [
+        "Linguistics majors are required to demonstrate competency in either foreign language or mathematics/computer science. Choose one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Foreign Language",
+       "prose": [
+        "Students opting to complete this requirement using foreign language may do so in one of the following three ways:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE5J",
+       "CSE10",
+       "CSE12",
+       "CSE13S",
+       "CSE16",
+       "CSE20",
+       "CSE30",
+       "CSE140",
+       "ECON22P",
+       "MATH100",
+       "MATH160",
+       "MATH161",
+       "PHIL9",
+       "PHIL108",
+       "PHIL123",
+       "PSYC100",
+       "STAT5",
+       "STAT7",
+       "STAT131"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "CSE 20 has a test-out option which will be accepted for one of the two required courses. STAT 7 has a required lab, STAT 7L . The linguistics major requires successful completion of the lecture, STAT 7 . Successful completion of the lab, STAT 7L will count as credits toward total degree requirements. Any course which has one of the courses listed above as a prerequisite may also be used toward the mathematics/computer science competency requirement. PSYC 2 or SOCY 3B may substitute for STAT 5 in this requirement. These courses, however, are typically only available to majors and minors in those departments."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Mathematics/Computer Science",
+       "prose": [
+        "Students with a strong formal background can choose to satisfy the mathematics/computer science competency requirement by demonstrating sufficient preparation in mathematics for advanced formal work in linguistics. This requirement is satisfied by passing two courses chosen from the following list:",
+        "CSE 20 has a test-out option which will be accepted for one of the two required courses.",
+        "STAT 7 has a required lab, STAT 7L . The linguistics major requires successful completion of the lecture, STAT 7 . Successful completion of the lab, STAT 7L will count as credits toward total degree requirements.",
+        "Any course which has one of the courses listed above as a prerequisite may also be used toward the mathematics/computer science competency requirement.",
+        "PSYC 2 or SOCY 3B may substitute for STAT 5 in this requirement. These courses, however, are typically only available to majors and minors in those departments."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 7,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students in the linguistics major are required to complete a minimum of 10 upper-division courses (50 upper-division credits) in linguistics and related disciplines, including seven named courses in linguistics:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING100",
+       "LING101",
+       "LING171"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING111",
+       "LING112"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING102",
+       "LING113",
+       "LING116",
+       "LING151",
+       "LING172"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "And three of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LING111",
+        "LING112",
+        "LING171"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 289,
+         "lo": 200,
+         "subject": "LING"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 102,
+         "subject": "LING"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "The major requires three five-credit courses chosen from LING 102-189 (excluding LING 111, LING 112, and LING 171) and/or LING 200-289 (one of which could satisfy the Senior Comprehensive). The three electives may be any combination of these two options. Students choosing to complete their senior comprehensive with a senior thesis may be able to apply up to two quarters of LING 195 toward their electives. See the Course Substitution Policy in the Information and Policies section for information on this and about using pre-approved outside courses not listed above. Students must receive instructor permission to enroll in graduate level courses."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement. The DC requirement in linguistics is satisfied by completing:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING111",
+       "LING112"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "In their senior year, and after completing the Disciplinary Communication requirement, linguistics majors must satisfy the senior comprehensive requirement in one of three ways:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Option 1: Capstone course",
+       "prose": [
+        "Students complete a 2-credit senior research course, LING 190. Each instance of LING 190 is taught concurrently with one of the upper-division electives offered in that quarter. Students must enroll in both an instance of LING 190 (the senior research course ) and its associated upper-division elective (the capstone course ). This capstone course can also serve as one of the three linguistics electives required for the major.",
+        "Students must enroll concurrently in an upper-division elective and in the corresponding instance of the following course:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The senior thesis is supervised by a faculty member. The proposal for a senior thesis must be submitted for approval by the department faculty at least three quarters prior to the quarter of graduation.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "LING195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option 2: Senior thesis",
+       "prose": [
+        "The senior thesis is supervised by a faculty member. The proposal for a senior thesis must be submitted for approval by the department faculty at least three quarters prior to the quarter of graduation.",
+        "Students must enroll in the following course:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Option 3: Graduate-level course",
+       "prose": [
+        "By exception, students in their senior year may enroll in a graduate-level class , by permission of instructor. This option is for students who have performed exceptionally in the available undergraduate courses in a particular sub-discipline of the field. Under these conditions, a graduate-level course may satisfy the senior exit requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "linguistics-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/linguistics-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

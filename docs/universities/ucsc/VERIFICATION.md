@@ -5,7 +5,7 @@ rendered to a heading/course-list text dump, and every structured rule is
 compared against it by hand — operators, counts, course membership, branches,
 constraint riders. Programs pass only at 0 unresolved codes and 0
 misclassified rules. The machine-readable registry the loader consumes is
-`pipelines/ucsc/major_requirements/verified.json`.
+the `verification` block inside each `data-committed/ucsc/programs/<slug>.json` file.
 
 ## Verified 2026-07-25 (catalog 2026-27)
 

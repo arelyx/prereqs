@@ -1,0 +1,1357 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "biomolecular-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Biomolecular Engineering and Bioinformatics B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Biomolecular Engineering and Bioinformatics (BMEB) Bachelor of Science includes the biomolecular engineering (BME) and bioinformatics (BINF) concentrations.",
+     "The BME concentration is designed for students interested in protein engineering, stem cell engineering, and synthetic biology. The emphasis is on designing biomolecules (DNA, RNA, proteins) and cells for particular functions, and the underlying sciences are biochemistry and cell biology.",
+     "The BINF concentration combines mathematics, science, and engineering to explore and understand biological data from high-throughput experiments, such as genome sequencing, gene-expression chips, and proteomics experiments.",
+     "The BMEB major builds upon the research and academic strengths of the faculty in the Biomolecular Engineering Department.",
+     "The BMEB B.S. has course requirements in mathematics, science, and engineering. Students interested in Biomolecular Engineering and Bioinformatics as a major should contact the Baskin Engineering advising office ( bsoeadvising@ucsc.edu ) before enrolling in any courses at UCSC. Early advising is particularly important before choosing calculus and physics courses.",
+     "In both concentrations, students participate in a capstone experience. Options for the senior capstone experience include:",
+     "Capstone option 1: Series of project-based engineering design courses taken in the senior year where students propose and execute a design project, and then present their work through presentations and a capstone report. Two series are available:",
+     "(1) Advanced bioinformatics individual capstone project: Series of three courses taken in the senior year: BME 205 (fall), BME 230A (winter), and BME 129C (spring). Note: students are expected to present their work and complete a capstone report in BME 129C based on the project they started in BME 205 and BME 230A .",
+     "or",
+     "(2) Biomolecular engineering team design project: Series of three courses taken in the senior year: BME 129A (fall), BME 129B (winter), and BME 129C (spring). Ideal for students interested in working in industry. Note: students are expected to present their work and complete a capstone report in BME 129C based on the project they started in BME 129A and BME 129B . Presentations and capstone report are completed as a team.",
+     "Capstone option 2: Individual senior thesis.",
+     "Timeline: Students should identify a faculty to serve as their capstone mentor and begin working in the research lab before the student's senior year . Note: many faculty expect students to work in the lab prior to senior year, including the summer before senior year. Students must submit a project proposal in late summer or in the first two weeks of fall quarter of their senior year to the Undergraduate Program Director Dr. Dianne Hendricks.",
+     "Senior thesis research consists of 15 credits of Senior Thesis Research ( BME 195 ). Students pursuing the senior thesis option must write a two-page thesis proposal and seek approval of their project from the undergraduate director in the quarter preceding the first quarter of BME 195, typically summer quarter before senior year. Students typically complete 15 credits of BME 195 during their senior year as follows: 5 credits per quarter fall/winter/spring.",
+     "Capstone option 3: iGE M ( i nternational G enetically E ngineered M achines)",
+     "Students complete a team-oriented, student-led synthetic biology project based on the international iGEM competition . Students interested in the UCSC iGEM team should contact the iGEM faculty mentor (contact information can be obtained from the undergraduate program director.) This capstone option is available only to BMEB B.S. majors in the Biomolecular concentration.",
+     "Timeline: Students interested in iGEM complete a written application and interview in fall of their junior year. Students selected for the team enroll in two courses in junior year : BME 180 (winter) and BME 188A (spring) and two course in summer before senior year : BME 188B and BME 188C . Note: students are expected to work on the iGEM project full-time in summer before senior year in preparation for the iGEM Grand Jamboree in October.",
+     "More information on BME research:",
+     "All BME capstone options involve working closely with faculty and other researchers at UCSC, analyzing ideas, developing technologies, and discovering new approaches. Application areas include biomolecular sensors and systems, vaccine development, stem cell engineering, nano-electronic implants, assistive technologies, bioinformatics, microfluidics, nanoscale biotechnology, environmental monitoring, and other areas at the junction between engineering and the life sciences.",
+     "More information about BME research and undergraduate research opportunities can be found at Undergraduate Research Opportunities , the Genomics Institute , the Program in Biomedical Sciences and Engineering , and the STEM diversity programs .",
+     "Biomolecular engineering and bioinformatics students may continue their research and studies at UCSC in BME or a variety of graduate programs including biology, chemistry, biochemistry, and engineering programs such as computer science and engineering. Information may be found at the Division of Graduate Studies website .",
+     "The immense growth of biological information stored in computerized databases has led to a critical need for people who can understand the languages, tools, and techniques of statistics, science, and engineering. A classically trained scientist may be unfamiliar with the statistical and algorithmic knowledge required in this field. A classically trained engineer may be unfamiliar with the chemistry and biology required in the field. Thus, this major strives for a balance of the two: an engineer focused on the problems of the underlying science or, conversely, a scientist focused on the use of engineering tools for analysis and discovery."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "A biomolecular engineering and bioinformatics student completing the program should:",
+     "have a broad knowledge of science and engineering disciplines including biology, chemistry, mathematics, statistics, and computer science; those completing the BINF concentration will also have a detailed knowledge of mathematics, statistics, and computer science; and, those completing the BME concentration will have broader knowledge in biology and chemistry;",
+     "be able to apply their knowledge to identify, formulate, and solve engineering design problems;",
+     "be able to write programs in Python;",
+     "be able to find and use information from a variety of sources, including books, journal articles, online encyclopedias, and manufacturer data sheets;",
+     "be able to design and conduct experiments, as well as to analyze and interpret data;",
+     "be able to work effectively with partners and on teams;",
+     "be able to communicate problems, experiments, and design solutions in writing, orally, and as posters; and",
+     "be able to apply ethical reasoning to make decisions about engineering methods and solutions in a global, economic, environmental, and societal context."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering Undergraduate Advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications. Undergraduate students obtain and submit all paperwork requiring departmental approval to the undergraduate advising office. Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a course-intensive and/or sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at the University of California, Santa Cruz. Timely completion of the degree will require completion of a general Chemistry series (CHEM 3, or CHEM 4) and Engineering Calculus ( MATH19) during the first year. Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "In order to declare the biomolecular engineering and bioinformatics major students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+     "In addition to being listed as a proposed Baskin Engineering major, students must have completed at least 45 credits with a GPA of 2.8 or better in courses required for the major. Students with more than 7 credits of grades of NP, C-, D+, D, D-, or F in these courses are not qualified for the major.",
+     "Declaration of the major can happen no sooner than the student's second quarter, and must precede class enrollment for the student’s third year (see below: How to Declare a Major).",
+     "Students wishing to declare the biomolecular engineering and bioinformatics major after the sixth quarter must appeal, must already have a declared major in which they have completed at least one major requirement course and be making reasonable progress, and must have completed 10 more credits of required courses in the biomolecular engineering and bioinformatics major for each additional quarter.",
+     "Transfer students should refer to the Transfer Information and Policy section.",
+     "Students may appeal a major qualification decision by filing a petition with Baskin Engineering Advising. The appeal process is described at the Baskin Engineering Undergraduate Affairs website .",
+     "If you have further questions concerning the appeal process, please contact the Undergraduate Advising office at (831) 459-5840 or email bsoeadvising@ucsc.edu .",
+     "Instructions for declaring a major in Baskin Engineering are on the division's website here ."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "Baskin Engineering requires letter grades for all courses in an engineering major."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Undergraduate Affairs Policies, Forms and Petitions website for Baskin Engineering policies about substitutions and taking courses at other institutions after enrolling at UC Santa Cruz."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Due to course overlap between the biomolecular engineering and bioinformatics (BMEB) B.S., the biotechnology B.A., and the bioinformatics minor, none of these double major or major/minor combinations will be considered. Other major/minor combinations are permitted and encouraged. Double majors with the biotechnology B.A. and majors in the Humanities, Social Sciences or Arts Divisions are specifically encouraged."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Students are encouraged to investigate studying for short periods of time (a summer or a quarter) at other institutions, to broaden their education. Proposed plans of study should still be cleared with the undergraduate director."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Students with a GPA of 3.30-3.69 receive honors in the major. Students with a GPA of 3.70 or higher receive highest honors in the major. The GPA includes all UCSC undergraduate and graduate courses in all departments that fall within the Divisions of Physical and Biological Sciences and of Baskin Engineering. Students with particularly significant accomplishments in undergraduate research may petition to receive honors or highest honors with a lower GPA."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "AM10"
+       ],
+       [
+        "MATH21"
+       ],
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Transfer students need to complete the equivalent of eight courses from the following list with a GPA in those courses of 2.8 or better. Five of the eight courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, or by the end of the spring term in the academic year preceding the planned winter term and year of transfer. Students must have and maintain a cumulative minimum GPA of 2.8 across all the screening courses completed at that time.",
+        "type": "prose"
+       },
+       {
+        "text": "Although not required for admission, transfer students are strongly recommended to complete at least ten courses from the above list if they wish to graduate in two years. Completion of the Organic Chemistry requirements before transfer is especially important. Students with fewer than 10 transferable courses will find it difficult to complete the major in only two more years. Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "type": "prose"
+       },
+       {
+        "text": "Although not required for admission, transfer students are strongly recommended to complete at least ten courses from the above list if they wish to graduate in two years. Completion of the Organic Chemistry requirements before transfer is especially important.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "BME80G",
+       "BIOL20A",
+       "MATH19A",
+       "MATH19B",
+       "CHEM8A",
+       "CHEM8B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students need to complete the equivalent of eight courses from the following list with a GPA in those courses of 2.8 or better. Five of the eight courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, or by the end of the spring term in the academic year preceding the planned winter term and year of transfer. Students must have and maintain a cumulative minimum GPA of 2.8 across all the screening courses completed at that time.",
+        "We calculate GPA from the eight courses from the list below using the UCSC grade points guidelines . If students take more than eight courses, all courses taken that apply toward transfer admissions screening requirements will be counted toward the GPA. For transfer courses from community colleges that do not include “+” or “-” we use the following: A=4.0, B=3.0, C=2.0, D=1.0. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA.",
+        "Students must specify their planned concentration in their personal statement so that the courses specific to that concentration are considered.",
+        "Transfer students are not required to take additional coursework at UCSC to declare. This applies to all transfer students who complete eight courses, even if they didn't reach the 45 credits required to declare.",
+        "Although not required for admission, transfer students are strongly recommended to complete at least ten courses from the above list if they wish to graduate in two years. Completion of the Organic Chemistry requirements before transfer is especially important. Students with fewer than 10 transferable courses will find it difficult to complete the major in only two more years. Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Although not required for admission, transfer students are strongly recommended to complete at least ten courses from the above list if they wish to graduate in two years. Completion of the Organic Chemistry requirements before transfer is especially important.",
+        "Students with fewer than 10 transferable courses will find it difficult to complete the major in only two more years.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "BME21L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Transferring to Biomolecular Engineering",
+       "prose": [
+        "Students transferring into the biomolecular engineering concentration may also count any of the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Transfer students may use courses articulated to PHIL 22 , PHIL 24 , or PHIL 28 in place of BME 80G , if these courses are taken prior to registering at UC Santa Cruz."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Transferring to Bioinformatics",
+       "prose": [
+        "The following courses are recommended to be taken before transfer, and will count toward transfer screening:",
+        "Transfer students may use courses articulated to PHIL 22 , PHIL 24 , or PHIL 28 in place of BME 80G , if these courses are taken prior to registering at UC Santa Cruz."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Successful transition to UC Santa Cruz happens with early advisor contact, preparing and submitting course descriptions for articulation purposes, and taking summer session courses prior to their first fall quarter. Specific information for transfer students can be found at the Baskin Engineering Transfer webpage . Transfer students should declare their major during their first quarter at UCSC; instructions for declaring a major at Baskin Engineering are on the major declaration webpage."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Biomolecular engineering concentration majors must complete the following courses. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Biology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME80G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Bioethics",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "General Chemistry",
+       "prose": [
+        "CHEM 3B and 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 8B is a prerequisite for BIOC 100A , BIOL 100 , and CHEM 103. Both CHEM 8A and CHEM 8B are required for all biomolecular concentration students."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Organic Chemistry",
+       "prose": [
+        "All of the following courses:",
+        "CHEM 8B is a prerequisite for BIOC 100A , BIOL 100 , and CHEM 103.",
+        "Both CHEM 8A and CHEM 8B are required for all biomolecular concentration students."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME21L",
+       "BME22L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Laboratory Training",
+       "prose": [
+        "All of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Mathematics and Statistics",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT131"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "STAT 131 : see prerequisites."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of these options:",
+       "prose": [
+        "STAT 131 : see prerequisites."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A"
+       ],
+       [
+        "PHYS15A"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "PHYS5L",
+       "PHYS5B",
+       "PHYS5M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Physics",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "BIOC100A",
+        "BIOC100B"
+       ],
+       [
+        "BME101",
+        "CHEM103"
+       ],
+       [
+        "BME101",
+        "BIOL100"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 8B is a prerequisite for BIOC 100A , BIOL 100 , and CHEM 103. BIOE 20B is a prerequisite for BIOL 100 . BIOC 100A and BIOC 100B are strongly preferred for students who plan to pursue research in protein engineering, genetics, molecular biology, or biochemistry-related fields."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Biochemistry and Molecular Biology",
+       "prose": [
+        "Choose one of the following options:",
+        "CHEM 8B is a prerequisite for BIOC 100A , BIOL 100 , and CHEM 103.",
+        "BIOE 20B is a prerequisite for BIOL 100 .",
+        "BIOC 100A and BIOC 100B are strongly preferred for students who plan to pursue research in protein engineering, genetics, molecular biology, or biochemistry-related fields."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Biomolecular Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME105",
+       "BME110",
+       "BME160",
+       "BME163"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may substitute BIOL 105 for BME 105 , although BME 105 is strongly recommended. Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of these courses:",
+       "prose": [
+        "Students may substitute BIOL 105 for BME 105 , although BME 105 is strongly recommended.",
+        "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "BME128",
+        "BME128L"
+       ],
+       [
+        "BME177",
+        "BME177L"
+       ],
+       [
+        "BME130",
+        "BME123L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following Modeling/Design sequences:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "This also satisfies the Disciplinary Communication (DC) requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Technical Writing",
+       "prose": [
+        "This also satisfies the Disciplinary Communication (DC) requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": [
+       [
+        "ECE104"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Graduate courses must be numbered BME 201-279.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "AM115",
+       "METX100",
+       "METX140",
+       "BIOC100C",
+       "BIOL115",
+       "BME118",
+       "BME122H",
+       "BME123L",
+       "AM147",
+       "BME128",
+       "BME128L",
+       "BME130",
+       "BME132",
+       "BME140",
+       "BME175",
+       "BME177",
+       "BME177L",
+       "BME178"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or any 5-credit biomolecular engineering graduate course",
+       "Graduate courses must be numbered BME 201-279. This course cannot satisfy other requirements of the major."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Elective",
+       "prose": [
+        "One of the following:",
+        "Graduate courses must be numbered BME 201-279.",
+        "This course cannot satisfy other requirements of the major."
+       ]
+      }
+     }
+    ],
+    "title": "Elective"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. Biomolecular engineering and bioinformatics majors satisfy the DC requirement by completing the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All biomolecular engineering concentration students must complete a senior capstone project as a group project, as a series of Advanced Bioinformatics courses, or as an individual senior thesis doing research in a faculty laboratory.",
+        "Note that the Technical Writing requirement is a prerequisite for all the capstone options, including the senior thesis. Students pursuing the senior thesis option must write a two-page thesis proposal and seek approval of their project from the undergraduate director in the quarter preceding the independent study courses, typically spring quarter of the third year. Students are responsible for ensuring that they meet the prerequisites for whichever capstone they choose.",
+        "To complete the senior capstone requirement, biomolecular engineering concentration students must complete one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME129A",
+       "BME129B",
+       "BME129C"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Option 1: BME Team Design",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME180",
+       "BME188A",
+       "BME188B",
+       "BME188C"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Permission code required for enrollment in BME 188A, BME 188B, and BME 188C. Only students who have interviewed and been selected for the iGEM team in fall of their junior year may register for these courses."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Option 2: iGEM",
+       "prose": [
+        "Permission code required for enrollment in BME 188A, BME 188B, and BME 188C. Only students who have interviewed and been selected for the iGEM team in fall of their junior year may register for these courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME205",
+       "BME230A",
+       "BME129C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "For students pursuing this capstone, we recommend taking an additional programming course such as CSE 30 ."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Option 3: Bioinformatics Capstone",
+       "prose": [
+        "For students pursuing this capstone, we recommend taking an additional programming course such as CSE 30 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Permission code required for enrollment in BME 195. Permission code will be provided after student submits proposal (prior to first quarter of BME 195) or progress report (prior to second and third quarters of BME 195)."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Option 4: Senior Thesis",
+       "prose": [
+        "The thesis option consists of three quarters of BME 195, where students conduct research in biomolecular engineering or related field such as chemistry, biology, or biochemistry. Students pursuing the senior thesis option must write a two-page thesis proposal and seek approval of their project from the undergraduate director in the quarter preceding the first quarter of BME 195. Students typically complete 15 credits of BME 195 during their senior year as follows: 5 credits per quarter fall/winter/spring.",
+        "Permission code required for enrollment in BME 195. Permission code will be provided after student submits proposal (prior to first quarter of BME 195) or progress report (prior to second and third quarters of BME 195)."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Biomolecular Engineering Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The portfolios must be turned in electronically as PDF files by the last day of the quarter of graduation, and will be reviewed quarterly by the undergraduate director.",
+        "type": "prose"
+       },
+       {
+        "text": "The three parts of the portfolio should represent at least two different design projects. If a senior thesis is completed, it must be provided as the written report. If a capstone project is completed, it must be provided as one (or more) of the three submissions.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Exit Requirements",
+       "prose": [
+        "Students are required to submit a portfolio, exit survey, and attend an exit interview.",
+        "The portfolios must be turned in electronically as PDF files by the last day of the quarter of graduation, and will be reviewed quarterly by the undergraduate director.",
+        "Portfolios must contain the following:",
+        "A substantial written report on a modeling/design project. This is typically satisfied by a senior thesis, or a written capstone project report.",
+        "Slides from a substantial verbal presentation. This is typically satisfied by a capstone design presentation, Stem Cell Engineering, or other design courses.",
+        "A research poster. This is typically satisfied by a senior thesis poster or a capstone design project poster, presented at the undergraduate poster symposium.",
+        "The three parts of the portfolio should represent at least two different design projects. If a senior thesis is completed, it must be provided as the written report. If a capstone project is completed, it must be provided as one (or more) of the three submissions.",
+        "Exit interviews are scheduled during the last week of the quarter by Baskin Engineering advising office, generally as small group interviews."
+       ]
+      }
+     }
+    ],
+    "title": "Exit Requirements"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Bioinformatics concentration majors must complete the following courses. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Biology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME80G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Bioethics",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B",
+        "CHEM4AL",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "General Chemistry",
+       "prose": [
+        "CHEM 3B and 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Organic Chemistry",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": [
+        "All of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Mathematics",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM30"
+       ],
+       [
+        "MATH22"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE40",
+       "STAT132"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 40 has a test-out option which can satisfy this requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "One of  the following:",
+        "CSE 40 has a test-out option which can satisfy this requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE101",
+       "CSE101P"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 101 has an additional prerequisite of CSE 13S ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Data Structures and Algorithms",
+       "prose": [
+        "One of the following courses:",
+        "CSE 101 has an additional prerequisite of CSE 13S ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOC100A",
+       "BIOL100",
+       "BME101",
+       "CHEM103"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 8B is a prerequisite for BIOC 100A , BIOL 100 , and CHEM 103. BIOE 20B is a prerequisite for BIOL 100 . BME 101 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Biochemistry and Molecular Biology",
+       "prose": [
+        "One of the following courses:",
+        "CHEM 8B is a prerequisite for BIOC 100A , BIOL 100 , and CHEM 103.",
+        "BIOE 20B is a prerequisite for BIOL 100 .",
+        "BME 101 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Biomolecular Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME105",
+       "BME110",
+       "BME160",
+       "BME163"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may substitute BIOL 105 for BME 105 , although BME 105 is strongly recommended. Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of these courses:",
+       "prose": [
+        "Students may substitute BIOL 105 for BME 105 , although BME 105 is strongly recommended.",
+        "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Statistics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE142",
+       "CSE144"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Modeling and Design",
+       "prose": [
+        "One of the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Also satisfies the Disciplinary Communication (DC) requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Technical Writing",
+       "prose": [
+        "Also satisfies the Disciplinary Communication (DC) requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": [
+       [
+        "METX140"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Graduate courses must be numbered BME 201-279.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "AM115",
+       "AM147",
+       "BME118",
+       "BME122H",
+       "BME123L",
+       "BME128",
+       "BME128L",
+       "BME130",
+       "BME132",
+       "BME140",
+       "BME175",
+       "BME177",
+       "BME177L",
+       "BME178",
+       "BIOC100B",
+       "CSE142",
+       "CSE144",
+       "CSE182",
+       "METX100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or any 5-credit biomolecular engineering graduate course",
+       "Graduate courses must be numbered BME 201-279. Courses satisfying an elective cannot be used to satisfy other requirements of the major."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Elective",
+       "prose": [
+        "One of the following:",
+        "Graduate courses must be numbered BME 201-279.",
+        "Courses satisfying an elective cannot be used to satisfy other requirements of the major."
+       ]
+      }
+     }
+    ],
+    "title": "Elective"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. BMEB majors satisfy the DC requirement by completing the following course."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All bioinformatics concentration students must complete a senior capstone project through one of the following options.",
+        "Note that the Technical Writing requirement BME 185 is a prerequisite for all capstone options. Students are responsible for ensuring that they meet the prerequisites for whichever capstone they choose."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME205",
+       "BME230A",
+       "BME129C"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Option 1: Bioinformatics Capstone",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Permission code required for enrollment in BME 195. Permission code will be provided after student submits proposal (prior to first quarter of BME 195) or progress report (prior to second and third quarters of BME 195)."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Option 2: Senior Thesis",
+       "prose": [
+        "The thesis option consists of three quarters of BME 195, where students conduct research in biomolecular engineering or related field such as chemistry, biology, or biochemistry. Students pursuing the senior thesis option must write a two-page thesis proposal and seek approval of their project from the undergraduate director in the quarter preceding the first quarter of BME 195. Students typically complete 15 credits of BME 195 during their senior year as follows: 5 credits per quarter fall/winter/spring.",
+        "Permission code required for enrollment in BME 195. Permission code will be provided after student submits proposal (prior to first quarter of BME 195) or progress report (prior to second and third quarters of BME 195)."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Bioinformatics Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The portfolios must be turned in electronically as PDF files by the last day of the quarter of graduation, and will be reviewed quarterly by the undergraduate director.",
+        "type": "prose"
+       },
+       {
+        "text": "The three parts of the portfolio should represent at least two different design projects. If a senior thesis is completed, it must be provided as the written report. If a capstone project is completed, it must be provided as one (or more) of the three submissions.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Exit Requirements",
+       "prose": [
+        "Students are required to submit a portfolio, exit survey, and attend an exit interview.",
+        "The portfolios must be turned in electronically as PDF files by the last day of the quarter of graduation, and will be reviewed quarterly by the undergraduate director.",
+        "Portfolios must contain the following:",
+        "A substantial written report on a modeling/design project. This is typically satisfied by a written capstone project report.",
+        "Slides from a substantial verbal presentation. This is typically satisfied by a capstone design presentation, Stem Cell Engineering, or other design courses.",
+        "A research poster. This is typically satisfied by a capstone design project poster, presented at the undergraduate poster symposium.",
+        "The three parts of the portfolio should represent at least two different design projects. If a senior thesis is completed, it must be provided as the written report. If a capstone project is completed, it must be provided as one (or more) of the three submissions.",
+        "Exit interviews are scheduled during the last week of the quarter by the Baskin Engineering advising office, generally as small group interviews."
+       ]
+      }
+     }
+    ],
+    "title": "Exit Requirements"
+   }
+  ]
+ },
+ "slug": "biomolecular-engineering-and-bioinformatics-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biomolecular-engineering-and-bioinformatics-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

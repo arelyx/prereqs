@@ -1,0 +1,742 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "performance-play-and-design",
+ "division": "arts-division",
+ "kind": "major",
+ "name": "Art & Design: Games + Playable Media B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Art & Design: Games + Playable Media (AGPM) students build toward a multidisciplinary arts practice situated within the broader landscape of contemporary art, media art, performance, and/or social practice.",
+     "Our approach to games as a contemporary art practice foregrounds the importance of designing thoughtful, nuanced, and radical systems for participation that engage different media, perspectives, and forms of cultural expression. We strive to co-create spaces where people can engage in deep, meaningful play that helps them to feel and experience real connection, community, and creative agency. We support socially conscious, community-rooted work that reflects on its impact and ethics, and is guided by principles of justice, accountability, and collective liberation. The AGPM major focuses on the following areas of study — students interested in the major should expect courses and curriculum centered around these topics:",
+     "The Art & Design: Games + Playable Media (AGPM) Bachelor of Arts (B.A.) degree at the University of California, Santa Cruz, focuses on the creation of novel games, community spaces, and experimental configurations that can produce a broad range of creative experiences.",
+     "Students practice interactive design as a form of expression embedded in deeper social and historical contexts, which can draw upon a multitude of material forms and disciplinary approaches. Our students see games and worldbuilding as a complex art form whereby they can develop strategies to intervene, disrupt, and positively impact the world around them by exercising their creative authority."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the advising page on our website for the most up-to-date information on drop-in hours and appointments.",
+     "You can reach the AGPM office by emailing agpmadv@ucsc.edu or by calling (831) 502-0051 during regular business hours M–F, 9:00 a.m. to 5:00 p.m.",
+     "Students are encouraged to consult early with the AGPM advising team to create an academic plan for the major far in advance of declaration. Frosh, please see the “How to Declare a Major” and the “Getting Started in the Major: Frosh,” sections below. Transfers, please see the \"How to Declare a Major\" and the \"Transfer Information and Policy\" sections below."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students are admitted to UC Santa Cruz with a \" proposed major \" in most cases, and later petition to declare the major. Admission to UCSC does not guarantee acceptance into a particular major. Students must be declared in a major by the end of their second year (or equivalent), so learning about and preparing for a major is a primary goal for first-year students.",
+     "Students interested in entering the Art & Design: Games + Playable Media (AGPM) program as frosh can do so as long as they are admitted into UC Santa Cruz. Incoming frosh do not need to satisfy any programming or art requirements prior to arriving at UCSC, however, students entering the program should have interest and/or experience in making interactive works in any medium—from paper dolls to performance art. Developing skills in other forms of media—including theater, drawing, writing, music, sculpture, filmmaking, and others—is also strongly encouraged.",
+     "Students who enter as frosh should meet with their advising team as early as possible, or by the end of their first year, to gain a clear understanding of the degree requirements and to create a customized academic plan that demonstrates a path to graduation."
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy any of the Art & Design: Games + Playable Media major requirements can be taken for a letter grade or as Pass/No Pass. This includes both introductory lower-division and advanced upper-division requirements. Please note UCSC policy holds that no more than 25 percent of the UCSC credits applied toward graduation may be graded on a Pass/No Pass basis."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students are able to petition for a course to count as a substitute for any given elective requirement via the AGPM Course Substitution Petition . Once submitted, requests are reviewed by the department chair. The AGPM advisor will reach out to the student and let them know whether their petition was approved or denied."
+    ],
+    "title": "Course Substitution Policy"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "In preparation for transfer to AGPM, students are required to demonstrate proficiency in design and visual art topics. Broadly, this includes courses in 2D and 3D concepts, forms, or production, and specific art and design topics such as color theory, typography, interaction design, motion graphics, and performance. The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in fall. Check assist.org for a list of courses at your community college that fulfill these areas.",
+        "Complete one course or its equivalent from each of the following areas:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ART10D",
+       "ART20G",
+       "ART20L",
+       "ART80T",
+       "ARTG80G",
+       "ARTG91"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Intro to 2D Concepts",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ART10E",
+       "ART20H",
+       "ARTG118",
+       "ARTG131",
+       "ARTG132",
+       "CMPM25",
+       "CMPM26"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Intro to 3D Concepts",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ART10F",
+       "ART20I",
+       "ART20K",
+       "CMPM80K",
+       "FILM20P",
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC6",
+       "MUSC9",
+       "MUSC14",
+       "MUSC15",
+       "MUSC20A",
+       "MUSC30A",
+       "THEA10",
+       "THEA20",
+       "THEA30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Art and Design Topics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Additional Suggested Courses",
+       "prose": [
+        "In addition, the following courses are recommended prior to transfer to ensure timely graduation:",
+        "Community college courses that are articulated for credit with courses in the Foundational Courses and Lower-Division Arts Requirements and Electives courses listed in the Requirements and Planners tab.",
+        "One community college course that is articulated to courses or geographic region requirements in the History of Art and Visual Culture B.A.",
+        "Transfer students who meet the requirements above and complete general education requirements will be able to complete the major in two years as shown in the academic plan in the Planners section of the Requirements and Planners tab on this page. Because of the number of credits required by the B.A., transfer students who have general education requirements remaining may need to take summer session courses and/or additional courses over the academic year to allow graduation in two years.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students are admitted to UC Santa Cruz with a \"proposed major\" in most cases, and later petition to declare the major. Admission does not guarantee acceptance into a particular major, although transfer students' records are screened for preparation for many majors at the time of admission. Junior transfer students must be formally declared by the deadline in their second quarter of enrollment.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Students are admitted to UC Santa Cruz with a \"proposed major\" in most cases, and later petition to declare the major. Admission does not guarantee acceptance into a particular major, although transfer students' records are screened for preparation for many majors at the time of admission. Junior transfer students must be formally declared by the deadline in their second quarter of enrollment.",
+        "Transfer students are strongly advised to attend a UC Santa Cruz summer orientation session for transfer students. Students are encouraged to meet with AGPM advising in the summer prior to starting at UCSC or in the beginning of their first quarter to gain a clear understanding of the degree requirements and to create a customized academic plan that demonstrates a path to graduation. AGPM Transfers who have gone through screening will receive permission numbers to enroll in their major declaration courses in the fall and winter of their first year at UCSC. Students should consult with an AGPM academic advisor prior to enrolling in classes to determine their status and to begin the declaration of major process as soon as possible."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify for the AGPM major, students must complete the following major qualification courses:",
+        "Students entering as frosh must declare in their sixth quarter at UCSC, while transfer students must declare in their second quarter. Students who did not meet the transfer screening requirements at the time of admission will not be granted permission to enter into the major.",
+        "Students need to complete these major qualification courses early in their studies so that the petition to major status is accomplished by the end of their sophomore year. Junior transfers should submit a major declaration form by the campus deadline in their second quarter. Students who have not met the transfer screening requirements at the time of admission will not be granted permission to change into the major.",
+        "Students need to complete these major qualification courses early in their studies so that the petition to major status is accomplished by the end of their sophomore year.",
+        "Junior transfers should submit a major declaration form by the campus deadline in their second quarter.",
+        "Students who have not met the transfer screening requirements at the time of admission will not be granted permission to change into the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG20",
+       "ARTG25",
+       "ARTG30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of these courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG40",
+       "ARTG50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of these courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Denials of admission to the major may be appealed by submitting a letter via email to the major’s academic advising office, addressed to the department chair, within 15 days of the date the notification was sent. If an appeal is approved, it will likely be with conditions that must be met before the declaration can be made. The decision and any conditions will be communicated by email to the student and the college within 15 days of receiving the student’s appeal. Please address any questions to the AGPM advising office: agpmadv@ucsc.edu .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Denials of admission to the major may be appealed by submitting a letter via email to the major’s academic advising office, addressed to the department chair, within 15 days of the date the notification was sent. If an appeal is approved, it will likely be with conditions that must be met before the declaration can be made. The decision and any conditions will be communicated by email to the student and the college within 15 days of receiving the student’s appeal. Please address any questions to the AGPM advising office: agpmadv@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent will either be approved, denied, or provided with conditions (e.g. completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification (MQ) courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter. Log into MyUCSC and click the link to submit the Petition for Major/Minor .",
+        "Students petitioning when the campus declaration deadline is imminent will either be approved, denied, or provided with conditions (e.g. completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification (MQ) courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Foundational Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG10",
+       "ARTG40",
+       "ARTG50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Complete the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG20",
+       "ARTG25",
+       "ARTG30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ART10D",
+       "ART10E",
+       "ART10F",
+       "ART20L",
+       "ART80T",
+       "ARTG91",
+       "CMPM25",
+       "CMPM26",
+       "CMPM80K",
+       "FILM80V",
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC5A",
+       "MUSC5B",
+       "MUSC5C",
+       "MUSC6",
+       "MUSC8A",
+       "MUSC8B",
+       "MUSC9",
+       "MUSC10",
+       "MUSC80L",
+       "THEA10",
+       "THEA14",
+       "THEA15",
+       "THEA17",
+       "THEA18C",
+       "THEA19",
+       "THEA20",
+       "THEA21",
+       "THEA22",
+       "THEA30",
+       "THEA31C",
+       "THEA33C",
+       "THEA36",
+       "THEA37",
+       "THEA40",
+       "THEA50",
+       "THEA80Z"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Check with departments and the General Catalog for restrictions or prerequisites. Junior transfers fulfill the lower-division arts elective requirement as part of the transfer screening requirements."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Lower-Division Arts Elective",
+       "prose": [
+        "Complete one lower-division course from the following:",
+        "Check with departments and the General Catalog for restrictions or prerequisites.",
+        "Junior transfers fulfill the lower-division arts elective requirement as part of the transfer screening requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "History of Art and Visual Culture Requirement",
+       "prose": [
+        "Complete any one 5-credit History of Art and Visual Culture (HAVC) course. This can be either a lower- or upper-division course."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "The upper-division curriculum consists of eight courses: One from each of the three topic areas (craft refinement, social interventions, and performance/portfolio/exhibition), one disciplinary communication (DC) course, and four upper-division electives."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete at least one course from the following list:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ARTG118",
+       "ARTG120",
+       "ARTG131",
+       "ARTG132",
+       "ARTG136",
+       "ARTG137",
+       "ARTG140",
+       "THEA113",
+       "THEA115A",
+       "THEA116A",
+       "THEA117",
+       "THEA124",
+       "THEA126",
+       "THEA139",
+       "THEA145R",
+       "THEA151",
+       "THEA151A",
+       "THEA157"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Craft Refinement",
+       "prose": [
+        "Complete at least one course from the following list:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete at least one course from the following list:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ARTG138",
+       "ARTG139",
+       "ARTG142",
+       "ARTG143",
+       "THEA100W",
+       "THEA104",
+       "THEA113",
+       "THEA116A",
+       "THEA161M",
+       "THEA161P",
+       "THEA161Q",
+       "THEA161R",
+       "THEA164",
+       "THEA165",
+       "THEA166",
+       "THEA167",
+       "THEA168"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Social Interventions",
+       "prose": [
+        "Complete at least one course from the following list:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete at least one course from the following list:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ARTG134",
+       "ARTG143",
+       "ARTG170A",
+       "ARTG170B",
+       "ARTG171",
+       "ARTG172",
+       "ARTG180",
+       "ARTG181",
+       "THEA139",
+       "THEA151",
+       "THEA151A",
+       "THEA145R"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ARTG 170A and ARTG 170B are equivalent courses; students cannot receive credit for both."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Performance/Portfolio/Exhibition",
+       "prose": [
+        "Complete at least one course from the following list:",
+        "ARTG 170A and ARTG 170B are equivalent courses; students cannot receive credit for both."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG170A",
+       "ARTG170B",
+       "ARTG180",
+       "ARTG181"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication Requirement",
+       "prose": [
+        "Students satisfy the DC requirement by completing one additional course from the list below. This course may not satisfy another requirement of the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Senior Comprehensive Requirement",
+       "prose": [
+        "Students satisfy the senior comprehensive requirement by completing the Performance/Portfolio/Exhibition requirement above."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ART101",
+       "ART104",
+       "ART106A",
+       "ART106E",
+       "ART106G",
+       "ART106O",
+       "ART108",
+       "ART135",
+       "CMPM125",
+       "CMPM131",
+       "CMPM146",
+       "CMPM147",
+       "CMPM148",
+       "CMPM150",
+       "CMPM151",
+       "CMPM152",
+       "CMPM163",
+       "CMPM169",
+       "CMPM176",
+       "CMPM177",
+       "CMPM178",
+       "CMPM179",
+       "CSE118",
+       "CSE183",
+       "DANM140",
+       "DANM146",
+       "DANM148",
+       "DANM219",
+       "DANM220",
+       "GAME231",
+       "GAME280A",
+       "FILM170A",
+       "FILM171D",
+       "FILM173",
+       "FILM177",
+       "FILM179A",
+       "FILM179B",
+       "FILM189",
+       "MUSC123A",
+       "MUSC123B",
+       "MUSC123C",
+       "THEA100W",
+       "THEA104",
+       "THEA113",
+       "THEA114",
+       "THEA115A",
+       "THEA116A",
+       "THEA117",
+       "THEA124",
+       "THEA126",
+       "THEA131B",
+       "THEA131C",
+       "THEA135",
+       "THEA136",
+       "THEA139",
+       "THEA141",
+       "THEA145R",
+       "THEA151",
+       "THEA151A",
+       "THEA157",
+       "THEA159",
+       "THEA161M",
+       "THEA161P",
+       "THEA161Q",
+       "THEA161R",
+       "THEA164",
+       "THEA165",
+       "THEA166",
+       "THEA167",
+       "THEA168"
+      ],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "Complete four-upper division electives. Electives may be chosen from ARTG 100-189 courses, additional courses from the topic areas above, or from the courses listed below."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   }
+  ]
+ },
+ "slug": "art-design-games-playable-media-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/art-design-games-playable-media-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

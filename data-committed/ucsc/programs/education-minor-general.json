@@ -1,0 +1,109 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "education",
+ "division": "social-sciences-division",
+ "kind": "minor",
+ "name": "Education Minor General",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC60"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC110",
+       "EDUC180"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "EDUC 180 includes a 30-hour classroom observation practicum, plus additional travel time to school sites. For EDUC 180 , background checks (Live Scan Fingerprinting), evidence of a negative TB test or Risk Assessment Form, and Online Mandated Reporter training are required of all participants prior to the first day of instruction. The department will contact enrolled students with information about how to complete these items."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Take one of the following courses:",
+       "prose": [
+        "EDUC 180 includes a 30-hour classroom observation practicum, plus additional travel time to school sites.",
+        "For EDUC 180 , background checks (Live Scan Fingerprinting), evidence of a negative TB test or Risk Assessment Form, and Online Mandated Reporter training are required of all participants prior to the first day of instruction. The department will contact enrolled students with information about how to complete these items."
+       ]
+      }
+     }
+    ],
+    "title": "Take one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 187,
+         "lo": 102,
+         "subject": "EDUC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "Students take four 5-credit electives chosen EDUC 102 -187.",
+        "Electives may be taken before EDUC 110 /180."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   }
+  ]
+ },
+ "slug": "education-minor-general",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/education-minor-general",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "statistics",
+ "division": "baskin-engineering",
+ "kind": "minor",
+ "name": "Statistics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "AM11A",
+        "AM11B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Basic calculus sequence",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Basic calculus sequence"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT17",
+        "STAT17L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Statistical concepts",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME160",
+       "CSE20",
+       "CSE30",
+       "ASTR119",
+       "MATH152"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Passing the CSE 20 test-out exam will satisfy this requirement."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Computer Programming",
+       "prose": [
+        "Take one of the following courses:",
+        "Passing the CSE 20 test-out exam will satisfy this requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21",
+       "PHYS116A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "It is recommended that students also take AM 20 or MATH 24 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Linear Algebra",
+       "prose": [
+        "One of the following courses:",
+        "It is recommended that students also take AM 20 or MATH 24 ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH22"
+       ],
+       [
+        "AM30"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Multivariate Calculus",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one course from each of the following four categories"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT131",
+       "STAT203",
+       "CSE107"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Probability",
+       "prose": [
+        "One of the following \"probability\" courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Probability"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT132"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Statistical Inference",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Statistical Inference"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM147",
+       "MATH148"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Computational Methods",
+       "prose": [
+        "One of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Computational Methods"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT108",
+       "STAT204",
+       "STAT206",
+       "STAT207",
+       "STAT208",
+       "BME205",
+       "ECE145",
+       "CSE142",
+       "ECON104",
+       "ECON113",
+       "ECON114",
+       "ECON120",
+       "ECON161B",
+       "ECON190",
+       "MATH105A",
+       "MATH105B",
+       "MATH114",
+       "PSYC181",
+       "TIM147"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Note: Students planning graduate work in statistics are recommended to choose MATH 23A and MATH 23B , STAT 204 , STAT 205 , and MATH 105A and MATH 105B ."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two electives from the following list of courses",
+       "prose": [
+        "Note: Students planning graduate work in statistics are recommended to choose MATH 23A and MATH 23B , STAT 204 , STAT 205 , and MATH 105A and MATH 105B ."
+       ]
+      }
+     }
+    ],
+    "title": "Plus two electives from the following list of courses"
+   }
+  ]
+ },
+ "slug": "statistics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "mathematics",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "minor",
+ "name": "Mathematics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Choose one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH21",
+       "AM10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Math 21 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "Math 21 is preferred."
+       ]
+      }
+     }
+    ],
+    "title": "Plus one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A",
+       "MATH23B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus all of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The remaining four courses are chosen from the list of MATH, AM, or STAT courses numbered 101-190. Courses must be 5 credits or more, and only one of the four courses can be from AM or STAT. Lecture and lab combinations count as a single course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits. Recommended courses for the minor are listed below.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH101",
+       "MATH103A",
+       "MATH105A",
+       "MATH105B",
+       "MATH106",
+       "MATH107",
+       "MATH110",
+       "MATH111A",
+       "MATH111B",
+       "MATH111T",
+       "MATH114",
+       "MATH115",
+       "MATH116",
+       "MATH117",
+       "MATH118",
+       "MATH120",
+       "MATH121A",
+       "MATH124",
+       "MATH125",
+       "MATH128A",
+       "MATH129",
+       "MATH130",
+       "MATH134",
+       "MATH139",
+       "MATH140",
+       "MATH145",
+       "MATH148",
+       "MATH152",
+       "MATH160",
+       "MATH161",
+       "MATH162",
+       "MATH181"
+      ],
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus four upper-division electives:",
+       "prose": [
+        "The remaining four courses are chosen from the list of MATH, AM, or STAT courses numbered 101-190. Courses must be 5 credits or more, and only one of the four courses can be from AM or STAT. Lecture and lab combinations count as a single course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits. Recommended courses for the minor are listed below."
+       ]
+      }
+     }
+    ],
+    "title": "Plus four upper-division electives:"
+   }
+  ]
+ },
+ "slug": "mathematics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

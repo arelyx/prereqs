@@ -1,0 +1,846 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "computer-science-and-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Computer Science B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The bachelor of arts (B.A.) program at University of California, Santa Cruz, is designed to give students a grounding in both theoretical and practical topics in computer science, computer engineering, and mathematics while leaving flexibility for a broad program of study, including some courses outside of science and engineering, or even for a double major in another discipline."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Recipients of a Bachelor of Science or a Bachelor of Arts degree in Computer Science at UC Santa Cruz are expected to have the following skills and experiences:",
+     "Demonstrate mastery of computer science in the following core knowledge areas:",
+     "Algorithms, data structures, and complexity",
+     "Programming languages",
+     "Software engineering and development",
+     "Apply system-level perspective by thinking at multiple levels of detail and abstraction and by recognizing the context in which a computer system may function, including its interactions with people and the physical world.",
+     "Apply problem-solving skills and the knowledge of computer science to solve real problems.",
+     "Understand how technological advances impact society and the social, legal, ethical and cultural ramifications of computer technology and their usage.",
+     "Write about and orally communicate technical material about computer science and computer systems, broadly conceived."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering undergraduate advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications. Undergraduate students obtain and submit all paperwork requiring departmental approval to the undergraduate advising office. Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "It is recommended that high school students intending to apply to the computer science major have completed four years of mathematics (through advanced algebra and trigonometry) and three years of science in high school. Comparable college mathematics and science courses completed at other institutions also serve to properly prepare a student for the computer science major.",
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All students admitted to a Baskin Engineering major, or seeking admission to a major, must take all courses required for that major for a letter grade. This policy includes courses required for these degrees that are sponsored by other departments."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate engineering students who wish to substitute a major course with a course from another department at UC Santa Cruz, or from another academic institution, must first seek approval through the Baskin Engineering Undergraduate Advising Office. The advising office requires a Petition for Course Substitution be approved before credit for an alternate course can be applied to any Baskin Engineering major requirement.",
+     "Petition forms are available at the Undergraduate Advising Office and online.",
+     "Petitions and procedures for approval must be obtained from and submitted to the Undergraduate Advising Office.",
+     "Once enrolled in Baskin Engineering students who wish to take a course at a California community college must first check Assist.org to see if the course is equivalent at UC Santa Cruz. If the course is not listed on Assist.org, students must submit a course substitution petition to the BE Undergraduate Advising Office to have it reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus. It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better.",
+     "If the course is approved for equivalency or was on Assist.org, then students with declared majors must also receive approval by their major department to take the class at the community college PRIOR to taking it. Undeclared students must receive prior approval from the CSE Department to substitute a course for CSE 13S . Undeclared students do not require prior approval for other courses listed on Assist.org. Forms and procedures for approval can be obtained from and submitted to the BE Undergraduate Advising Office.",
+     "Students who intend to take a course at a four-year institution or UC Education Abroad, must submit a Course Substitution Petition to the BE Undergraduate Advising Office to have the course reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus. It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may not receive both the computer science B.A. and computer science B.S. degrees.",
+     "Students may not receive both the Network and Digital Technology B.A. and the Computer Science B.A. degrees."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are awarded to students with a GPA of 3.50-3.79. Highest honors are awarded to students with a GPA of 3.80 and above. The GPA includes all UCSC undergraduate and graduate courses taken in all departments that fall within the Divisions of Physical and Biological Sciences and of Baskin Engineering. Baskin Engineering reserves the right to withhold honors based on other criteria, such as an incident of academic dishonesty."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students who want to pursue the computer science major, must have applied and been admitted to UC Santa Cruz as a proposed computer science major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Three of the five courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer. Students must have a minimum GPA of 2.8 across all Computer Science B.A. transfer screening courses completed at that time. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students must complete the following five courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or the end of the fall term prior to winter enrollment. Lecture-lab combinations count as one course. Students must have and maintain a cumulative minimum GPA of 2.8 in transfer screening courses.",
+        "Three of the five courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer. Students must have a minimum GPA of 2.8 across all Computer Science B.A. transfer screening courses completed at that time. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA.",
+        "If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12",
+       "CSE16",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "These courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Minimum GPA",
+       "prose": [
+        "Students must have and maintain a cumulative minimum GPA of 2.8 in screening courses. Please note that while AP courses satisfy screening requirements they do not count toward the minimum GPA."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Before you transfer: recommendations",
+       "prose": [
+        "Transfer students are strongly recommended to complete one course out of MATH 21 , AM 10 , MATH 23A or AM 30 , and most general education requirements prior to arriving at UC Santa Cruz.",
+        "Most courses in the computer science program at UC Santa Cruz have a strong theoretical component to prepare the student for designing, as opposed to simply using, computer systems. Often, courses taken at other institutions which emphasize applications of current languages and computers do not count toward the computer science major at UCSC.",
+        "At UCSC, computer science students are first introduced to programming using the programming language Python. The core programming sequence—courses CSE 30 and CSE 13S —exposes students to both Python and C. Many upper-division courses that involve programming use the C and C++ programming languages.",
+        "Transfer students who are not familiar with Python may need to take a remedial course. Students familiar with C++ and Unix should find the transition to Python and C relatively simple."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UCSC. Instructions for declaring a major in Baskin Engineering are on the Baskin Engineering undergraduate advising major declaration page ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the Transfer Admission Screening requirements.",
+        "For all students, it is necessary to be listed as proposed computer science majors within the School of Engineering before being able to declare the major. Additionally, students admitted as frosh must satisfy the following three criteria to qualify for the CS B.A. major"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Declare",
+       "prose": [
+        "Students must declare CS (Computer Science B.S. or Computer Science B.A.) as their major between student’s second to sixth quarter."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "CS BA Major Qualification courses",
+       "prose": [
+        "Students must have completed the following CS major qualification courses to qualify for the major:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12",
+       "CSE30"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Complete these two courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "CSE40"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 40 has a test-out option that can satisfy this requirement. CSE 13S is not required for the CS B.A., but either CSE 101P or CSE 101 is required, and CSE 101 will require CSE 13S . Several upper division CSE courses require CSE 101 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": [
+        "CSE 40 has a test-out option that can satisfy this requirement.",
+        "CSE 13S is not required for the CS B.A., but either CSE 101P or CSE 101 is required, and CSE 101 will require CSE 13S . Several upper division CSE courses require CSE 101 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students must also have a cumulative GPA of at least 2.80 in the CS major qualification courses attempted at UC Santa Cruz, with at most one unsuccessful attempt (grade C-, D+, D, D-, F, or NP) permitted in a CS major qualification course. Courses satisfied via exam credit are not included in the GPA calculation.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Cumulative GPA",
+       "prose": [
+        "Students must also have a cumulative GPA of at least 2.80 in the CS major qualification courses attempted at UC Santa Cruz, with at most one unsuccessful attempt (grade C-, D+, D, D-, F, or NP) permitted in a CS major qualification course. Courses satisfied via exam credit are not included in the GPA calculation."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they do not qualify for the major may appeal this decision by submitting a letter to the undergraduate director through the Baskin Engineering undergraduate advising office within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, college, and Office of the Registrar of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed all CS major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students interested in pursuing computer science must indicate computer science as a proposed major on their application for admission to UC Santa Cruz. Students admitted to UCSC in fall 2018 or later will be able to declare a computer science major only if they have been admitted to UCSC as a proposed computer science major.",
+        "There are four steps to declaring a Baskin Engineering major. For a detailed guide to this process, please consult Baskin Engineering's Declare Your Major website.",
+        "Students should start the declaration of major process by completing Step One on the Baskin Engineering Declare Your Major website as soon as they complete the CS major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed all CS major qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The aim of this program is to expose students to a rigorous curriculum in computer science while maintaining sufficient flexibility so that students can take courses outside computer science, pursue a minor in another discipline, or complete a double major. Every student must complete a minimum of 16 courses—eight lower-division and eight upper-division. Out of these, the eight lower-division courses and the first upper-division course are required preparatory courses for every student. Once these preparatory courses are completed, students tailor their own program by choosing seven upper-division elective courses. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12",
+       "CSE16",
+       "CSE20",
+       "CSE30",
+       "CSE40"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming will take CSE 20 before CSE 30 , and CSE 12 . Students with a prior programming course, AP credit, or clearing the CSE 20 “ Test-out ” bar will start with CSE 30 , and CSE 12 . CSE 40 has a test-out option that can satisfy this requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": [
+        "Students with no prior programming will take CSE 20 before CSE 30 , and CSE 12 . Students with a prior programming course, AP credit, or clearing the CSE 20 “ Test-out ” bar will start with CSE 30 , and CSE 12 .",
+        "CSE 40 has a test-out option that can satisfy this requirement."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE101P",
+       "CSE101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Breadth Courses",
+       "prose": [
+        "Three courses from either Breadth List below. Courses in the second Breadth List require CSE 101 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE101M",
+       "CSE102",
+       "CSE103",
+       "CSE112",
+       "CSE114A",
+       "CSE118",
+       "CSE120",
+       "CSE140",
+       "CSE142",
+       "CSE143",
+       "CSE144",
+       "CSE150",
+       "CSE183",
+       "CSE184"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Breadth courses not requiring CSE 101",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE110A",
+       "CSE130",
+       "CSE132",
+       "CSE134",
+       "CSE138",
+       "CSE160",
+       "CSE180",
+       "CSE186"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Breadth courses requiring CSE 101",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Breadth Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Three courses from the list of B.A. electives below, including at least one upper-division CSE course(s) numbered between 100 and 189, or CSE 195 .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Three courses from the list of B.A. electives below, including at least one upper-division CSE course(s) numbered between 100 and 189, or CSE 195 .",
+        "For other courses, computational media, and applied mathematics and statistics courses are strongly recommended."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ARTG118",
+       "EART124",
+       "EART125",
+       "EART172",
+       "ECON100M",
+       "ECON100N",
+       "ECON101",
+       "ENVS115A",
+       "ENVS115L",
+       "FILM170A",
+       "LING112",
+       "LING113",
+       "LING118",
+       "LING125",
+       "MATH110",
+       "MATH115",
+       "MATH116",
+       "MATH117",
+       "MATH118",
+       "MATH134",
+       "MATH140",
+       "MATH145",
+       "MATH145L",
+       "MATH148",
+       "MATH160",
+       "MATH161",
+       "MUSC123A",
+       "MUSC123B",
+       "MUSC123C",
+       "PHYS115",
+       "PHYS150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "List of BA electives",
+       "prose": [
+        "Any 5-credit or more upper-division course with a number between 100 and 189 offered by Baskin Engineering, except for the DC courses CSE 115A and CSE 185E /CSE 185S.",
+        "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses.",
+        "CSE 195 (if not used to satisfy the DC requirement).",
+        "Any course from the following list:",
+        "Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "Additional courses may be accepted by petition.",
+        "Additional courses may be accepted by petition."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE115A",
+       "CSE185E",
+       "CSE195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "The course used for the DC requirement cannot also be used as an upper-division elective."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement.",
+        "The DC requirement for the computer science B.A. is satisfied by completing one of the following additional courses:",
+        "The course used for the DC requirement cannot also be used as an upper-division elective."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "In addition to the above B.A. requirements, students in the computer science majors must satisfy one of the following two exit requirements:",
+        "Pass one of the capstone courses (see Capstone Courses below); A passed capstone course also counts toward satisfying the minimum number of upper-division electives requirement.",
+        "Successfully complete a senior thesis as described below. CSE 195 can count toward satisfying the minimum number of upper-division electives requirement or completing the DC requirement, but not both."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE110A",
+       "CSE115C",
+       "CSE115D",
+       "CSE134",
+       "CSE138",
+       "CSE140",
+       "CSE143",
+       "CSE144",
+       "CSE145",
+       "CSE156",
+       "CSE156L",
+       "CSE157",
+       "CSE160",
+       "CSE161",
+       "CSE161L",
+       "CSE162",
+       "CSE162L",
+       "CSE163",
+       "CSE168",
+       "CSE181",
+       "CSE183",
+       "CSE184",
+       "CSE187",
+       "CMPM172"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 110A , CSE 115C , CSE 115D , CSE 134 , CSE 138 , CSE 156 / CSE 156L , CSE 157 , CSE 160 , CSE 161 , CSE 162 , CSE 168 , and CSE 181 require CSE 101 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Capstone Courses",
+       "prose": [
+        "Students may choose from one of the following capstone courses to satisfy their exit requirement (lecture/lab combinations count as one course.):",
+        "CSE 110A , CSE 115C , CSE 115D , CSE 134 , CSE 138 , CSE 156 / CSE 156L , CSE 157 , CSE 160 , CSE 161 , CSE 162 , CSE 168 , and CSE 181 require CSE 101 .",
+        "Students taking one of the capstone courses will enroll normally. Students need to pass the capstone course to pass the exit requirement. No course may be attempted more than twice without prior approval from the chair of the department offering the course. Withdrawals count as an attempted class for this purpose.",
+        "Students taking one of the capstone courses will enroll normally. Students need to pass the capstone course to pass the exit requirement. No course may be attempted more than twice without prior approval from the chair of the department offering the course. Withdrawals count as an attempted class for this purpose."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Thesis",
+       "prose": [
+        "The senior thesis consists of a self-contained project within the broad scope of computer science, but one that is not available in the regular course offerings. A student wishing to complete a senior thesis must successfully complete a minimum of 5 credits in CSE 195 , Senior Thesis Research. The supervision of a senior thesis student is always at the discretion of the faculty member.",
+        "The student first submits a written thesis proposal and obtains approval of a faculty sponsor. Then the student submits a written draft and makes an oral presentation to a faculty examining committee. After receiving feedback from the examining committee, the student submits one or more additional drafts, until the final draft is approved by the examining committee. The total amount of writing shall be consistent with the campus Disciplinary Communication requirement. A passing grade in CSE 195 is earned when the final thesis is approved."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "computer-science-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

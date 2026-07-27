@@ -1,0 +1,584 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "electrical-and-computer-engineering",
+ "division": "baskin-engineering",
+ "kind": "minor",
+ "name": "Electrical Engineering Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Mathematics",
+       "prose": [
+        "Math placement is required for one or more of the foundational courses for this minor. For more information, please review the Math Placement website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A",
+       "AM30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Mathematics"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5L"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following lecture/lab combinations",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5C",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6C",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following lecture/lab combinations",
+       "prose": [
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     }
+    ],
+    "title": "Science"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "ECE101",
+        "ECE101L",
+        "ECE103",
+        "ECE171",
+        "ECE171L"
+       ],
+       [
+        "ECE101",
+        "ECE101L",
+        "ECE141",
+        "ECE171",
+        "ECE171L",
+        "PHYS116A",
+        "PHYS116C",
+        "PHYS133"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ECE 141 may not count toward the core requirement and the elective requirement."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "All of the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Core"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Plus at least 15 additional credits of upper-division or graduate courses from the lists below. All of the upper-division electives must come from the same concentration.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Plus at least 15 additional credits of upper-division or graduate courses from the lists below. All of the upper-division electives must come from the same concentration.",
+        "If a course has a required lab, students must pass the lecture and lab in order to use the lab credits to fulfill the 15-credit requirement for the minor.",
+        "ECE 183 can be taken as an elective course with an approval of the undergraduate director."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Communications Signal Processing Concentration",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE118",
+       "ECE130",
+       "ECE130L",
+       "ECE136",
+       "ECE141",
+       "ECE145",
+       "ECE149",
+       "ECE152",
+       "ECE157",
+       "ECE157L",
+       "ECE163",
+       "ECE183",
+       "ECE193",
+       "ECE198",
+       "ECE215",
+       "ECE242",
+       "ECE243",
+       "ECE245",
+       "ECE251",
+       "ECE253",
+       "ECE255",
+       "ECE256"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 153 and ECE 250 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.) Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": [
+        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course.",
+        "( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 153 and ECE 250 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.) Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Control and Signal Processing Concentration",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE130",
+       "ECE130L",
+       "ECE135",
+       "ECE135L",
+       "ECE136",
+       "ECE145",
+       "ECE149",
+       "CSE152",
+       "ECE163",
+       "ECE172",
+       "ECE176",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE183",
+       "ECE193",
+       "ECE198",
+       "ECE215",
+       "ECE237",
+       "ECE242",
+       "ECE243",
+       "ECE244",
+       "ECE245",
+       "ECE251",
+       "ECE253",
+       "ECE255",
+       "ECE256"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": [
+        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course.",
+        "( ECE 130 and ECE 230 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Computer Science and Engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electronics and Photonics Concentration",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE102",
+       "ECE102L",
+       "ECE104",
+       "ECE110",
+       "ECE115",
+       "ECE121",
+       "ECE130",
+       "ECE130L",
+       "ECE153",
+       "ECE135",
+       "ECE135L",
+       "ECE136",
+       "ECE141",
+       "ECE145",
+       "ECE149",
+       "ECE152",
+       "ECE157",
+       "ECE157L",
+       "ECE163",
+       "ECE172",
+       "ECE167",
+       "ECE173",
+       "ECE174",
+       "ECE175",
+       "ECE175L",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE178",
+       "ECE180J",
+       "ECE183",
+       "ECE193",
+       "ECE198",
+       "ECE201",
+       "ECE203",
+       "ECE210",
+       "ECE215",
+       "ECE231",
+       "ECE242",
+       "ECE243",
+       "ECE245"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Electrical and Computer Engineering",
+       "prose": [
+        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course.",
+        "( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE104",
+       "ECE121",
+       "ECE130",
+       "ECE130L",
+       "ECE135",
+       "ECE135L",
+       "ECE136",
+       "ECE141",
+       "ECE149",
+       "ECE152",
+       "ECE153",
+       "ECE157",
+       "ECE157L",
+       "ECE163",
+       "ECE167",
+       "ECE170",
+       "ECE172",
+       "ECE173",
+       "ECE174",
+       "ECE175",
+       "ECE175L",
+       "ECE176",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE178",
+       "ECE180J",
+       "ECE181J",
+       "ECE183",
+       "ECE185",
+       "ECE193",
+       "ECE198",
+       "ECE215",
+       "ECE242",
+       "ECE243",
+       "ECE275"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Power and Energy Concentration",
+       "prose": [
+        "Electrical and Computer Engineering",
+        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course.",
+        "( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE115",
+       "ECE145",
+       "ECE149",
+       "ECE151",
+       "ECE152",
+       "ECE153",
+       "ECE163",
+       "ECE176",
+       "ECE176L",
+       "ECE183",
+       "ECE193",
+       "ECE198",
+       "ECE215",
+       "ECE242",
+       "ECE243",
+       "ECE245"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Robotics and Automation Concentration",
+       "prose": [
+        "Electrical and Computer Engineering",
+        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE130",
+       "ECE130L",
+       "ECE135",
+       "ECE135L",
+       "ECE136",
+       "ECE141",
+       "ECE145",
+       "ECE149",
+       "ECE151",
+       "ECE152",
+       "ECE153",
+       "ECE163",
+       "ECE167",
+       "ECE172",
+       "ECE176",
+       "ECE176L",
+       "ECE183",
+       "ECE193",
+       "ECE198",
+       "ECE215",
+       "ECE242",
+       "ECE243",
+       "ECE245"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Digital Hardware Concentration",
+       "prose": [
+        "Electrical and Computer Engineering",
+        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course.",
+        "( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   }
+  ]
+ },
+ "slug": "electrical-engineering-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

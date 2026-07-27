@@ -1,0 +1,432 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Naoko  Yamamoto, Keiko Yukawa  Yukawa",
+   "code": "JAPN1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out beginning-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write Japanese scripts (hiragana, katakana, and about 14 kanji).",
+   "display_code": "JAPN 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "First-Year Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-1"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN103",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out advanced-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 100 additional kanji. Emphasis placed on developing the student's cultural knowledge about Japan as well as knowledge relevant to inter-cultural communication.",
+   "display_code": "JAPN 103",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "103",
+   "prereq_groups": [
+    [
+     "JAPN6"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): JAPN 6 or placement by assessment.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Advanced Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-103"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN104",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out advanced-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 100 additional kanji. Emphasis placed on developing the student's cultural knowledge about Japan as well as knowledge relevant to inter-cultural communication.",
+   "display_code": "JAPN 104",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "104",
+   "prereq_groups": [
+    [
+     "JAPN103"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): JAPN 103 or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Advanced Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-104"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN105",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out advanced-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 100 additional kanji. Further development of cultural knowledge and understanding through critical examination of authentic Japanese materials in a variety of genres, including literary work, expository writing, and films. May be repeated for credit with consent of instructor.",
+   "display_code": "JAPN 105",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "105",
+   "prereq_groups": [
+    [
+     "JAPN104"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): JAPN 104 or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Advanced Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-105"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN106",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out advance-level tasks that involve listening, speaking, reading, and writing. Emphasis is placed on increasing the student's in-depth cultural knowledge about Japan and knowledge relevant to intercultural communication as well as developing the student's ability to critically read a variety of texts.",
+   "display_code": "JAPN 106",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "106",
+   "prereq_groups": [
+    [
+     "JAPN104"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): JAPN 104 or by permission of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Advanced Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-106"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN109",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Critical reading of Japanese texts, such as essays, film scripts, and novels in regard to linguistic diversity related to cultural and social diversity. Topics include standard Japanese and regional variation, politeness and honorifics, age-related stylistic variation, and gendered language.",
+   "display_code": "JAPN 109",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "109",
+   "prereq_groups": [
+    [
+     "JAPN104"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): JAPN 104 or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Japanese Language, Culture, and Society",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-109"
+  },
+  {
+   "catalog_instructor": "Saori Hoshi",
+   "code": "JAPN111",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students develop critical literacies through critiquing visual and performing arts by Japanese, Zainichi Korean, and Indigenous Ainu artists. Course enhances students’ linguistic skills and critical literacy in understanding and contextualizing content and promotes interactive and experiential learning by engaging with a different range of sources (texts and art forms) in and outside the classroom. Students learn about artists and their artwork through reading texts and visual materials including artists’ own writings, articles, and audio-visual media in Japanese and English. Students also learn to develop criticality in discussing and analyzing aesthetic, cultural, sociopolitical aspects of artwork related to social engagements, self and other, (im)mortality, feminism, gender, sexuality, colonialism, and indigeneity in their target language.",
+   "display_code": "JAPN 111",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "111",
+   "prereq_groups": [
+    [
+     "JAPN104"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): JAPN 104 or equivalent.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Japanese Arts and Beyond",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-111"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+   "display_code": "JAPN 194",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "JAPN",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-194"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "JAPN 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "JAPN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-199"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "JAPN 199F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "JAPN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/japn-japanese/upper-division/japn-199f"
+  },
+  {
+   "catalog_instructor": "Naoko Yamamoto, Miyuki  Yukawa",
+   "code": "JAPN2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out beginning-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 71 additional kanji.",
+   "display_code": "JAPN 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "JAPN1"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): JAPN 1, placement by assessment, or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "First-Year Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-2"
+  },
+  {
+   "catalog_instructor": "Naoko  Yamamoto, Keiko Yukawa",
+   "code": "JAPN3",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out beginning-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 53 additional kanji.",
+   "display_code": "JAPN 3",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3",
+   "prereq_groups": [
+    [
+     "JAPN2"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): JAPN 2, placement by assessment, or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "First-Year Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-3"
+  },
+  {
+   "catalog_instructor": "Miyuki  Takeuchi",
+   "code": "JAPN4",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out intermediate-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 57 additional kanji.",
+   "display_code": "JAPN 4",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "4",
+   "prereq_groups": [
+    [
+     "JAPN3"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): JAPN 3 or placement by assessment.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Second-Year Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-4"
+  },
+  {
+   "catalog_instructor": "Keiko Yukawa",
+   "code": "JAPN5",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students develop intermediate-level competence in listening, speaking, reading, and writing in diverse social contexts; acquire a deeper and broader understanding of Japanese society and culture; and learn how to read and write 74 additional kanji characters.",
+   "display_code": "JAPN 5",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "5",
+   "prereq_groups": [
+    [
+     "JAPN4"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): JAPN 4, placement by assessment, or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Second-Year Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-5"
+  },
+  {
+   "catalog_instructor": "Keiko  Yukawa",
+   "code": "JAPN6",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students carry out intermediate-level tasks that involve listening, speaking, reading, and/or writing, and learn how to read and write 57 additional kanji. Emphasis is placed on developing the student's cultural knowledge relevant to inter-cultural communication.",
+   "display_code": "JAPN 6",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "6",
+   "prereq_groups": [
+    [
+     "JAPN5"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): JAPN 5, placement by assessment, or by consent of instructor.",
+   "repeatable": false,
+   "subject": "JAPN",
+   "title": "Second-Year Japanese",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-6"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN94",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+   "display_code": "JAPN 94",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "94",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "JAPN",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-94"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "JAPN 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "JAPN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-99"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "JAPN99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "JAPN 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "JAPN",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/japn-japanese/lower-division/japn-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "JAPN"
+}

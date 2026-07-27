@@ -1,0 +1,1302 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "literature",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Literature B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Literature Department at UC Santa Cruz fosters innovative and comparative approaches to reading and interpretation across multiple languages encompassing traditional literary texts, film and visual arts; new media forms; cross-cultural inquiry, and current theoretical debates.",
+     "Literature is both a private pleasure and a social power. The study of literature prepares us to understand and explore how we think, feel, and see the world; who we are and who we want to be, for ourselves and in relation to others. Beyond transforming ourselves, literature also helps to change our worlds. Movements for freedom have always depended on the exploration and critical analysis of effective and transformational thought, feeling, and communication. Professional fields for which the study of literature is advantageous include careers in the teaching sector at its multiple levels, from primary school to college; the new technologies sector, such as game design and discourse and data analysis; governmental and non-profit work such as in municipalities, public service, foundations and museums; publishing and journalism; publicity and marketing in the old and new media contexts, and many more.",
+     "The Literature Department faculty requires that all literature majors have basic proficiency in a second language. Proficiency in more than one language enhances understanding of one's own culture and can be the access point to other literatures and cultures. Graduate programs in literature and other humanities disciplines generally require competence in at least one language other than English."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "The following is a summary of the program learning outcomes for the Literature B.A.:",
+     "Students who complete the literature major should emerge with the following knowledge and skills.",
+     "1. A capacity for the critical analysis of texts that is attentive to:",
+     "2. Effective written communication that demonstrates the following abilities:",
+     "3. Advanced critical reading skills across different cultures, languages, and time periods:",
+     "4. Ability to design and carry out a research project or creative activity:",
+     "conceptualize and formulate a research problem or question and write a research proposal.",
+     "conduct a review of prior research on the topic using physical and digital archives, and develop an annotated bibliography or similar review.",
+     "complete a research paper or creative project."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Staff advisors are available by appointment, which may be made through the Navigate app , or online at Navigate Slug Success . Students are encouraged to consult with an advisor once per quarter.",
+     "Transfer students should also consult the section Transfer Information and Policy.",
+     "Questions about the literature program can be directed to litdept@ucsc.edu , (831) 459-4778, or by visiting the Literature Department office in Humanities 1, room 303."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "All students considering a literature major or minor should consult with staff and/or faculty advisors at the Literature Department office as early as possible, and declare the major or minor before the end of their sophomore year. Transfer students are urged to declare their major or minor during their first quarter at UC Santa Cruz, and should also consult the section Transfer Information and Policy.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply to UC Santa Cruz in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.",
+     "Students transferring from California community colleges may use an articulated equivalent of LIT 1 to satisfy the LIT 1 course requirement. Students transferring from other colleges may petition to use an introduction to literature course to satisfy the LIT 1 course requirement. Another literature course may be applied toward the LIT 60/LIT 61 or the LIT 80/LIT 81 course requirement.",
+     "Transfer students planning to major in literature are strongly recommended to complete the equivalent of one year of college-level study of a language other than English before entering UC Santa Cruz.",
+     "Transfer students planning to major in literature with a language literature concentration are strongly recommended to have completed two years of college-level language study (or have comparable ability) to allow for a two-year graduation.",
+     "Transfer students may declare the literature major or minor after completing LIT 1 or its transfer equivalent, and are urged to declare the major during their first quarter at UC Santa Cruz.",
+     "For information about declaring the literature major or minor, please see the section How to Declare a Major.",
+     "A student may receive credit toward the lower-division requirements of the major or minor for up to two courses taken at other institutions.",
+     "Students who attend another campus of the University of California may petition to apply a maximum of three upper-division courses toward the literature major, or two upper-division courses toward the literature minor.",
+     "Students may not use upper-division coursework taken at non-UC colleges or universities to satisfy upper-division literature major or minor credit."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Students must complete LIT 1 or its transfer equivalent in order to declare the literature major.",
+     "Transfer students should also consult the section Transfer Information and Policy.",
+     "Students notified that they are not eligible to declare the literature major may appeal this decision by submitting a letter to the department chair within 15 working days from the date of notification. Within 15 working days of receipt of the student's appeal, the department will notify the student and their college of its decision regarding the appeal.",
+     "Students must complete LIT 1 or its transfer equivalent in order to declare the literature major. In order to declare the major, students meet with a department advisor to complete an Academic Planning Form and Declaration of Major/Minor petition . All students considering a major should consult with a department advisor as early as possible to make an academic plan.",
+     "Students who have not completed LIT 1 or its transfer equivalent and who are approaching the campus declaration deadline (their sixth quarter, for students admitted as frosh) may petition to declare the literature major. The petition will be approved or denied, or the student will be provided with conditions (completion of LIT 1 or its equivalent with a grade of C or better) that must be resolved within one additional quarter of enrollment."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "Students in all concentrations, including both the intensive and non-intensive options, must take at least seven courses counting toward the upper-division requirements for a letter grade. The Comprehensive Requirement must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may substitute up to four upper-division courses. A maximum of three combined courses may come from another University of California campus and/or a UC Education Abroad Program. A maximum of one course may come from another UC Santa Cruz department. Courses taken at other four-year institutions will be handled on a case-by-case basis.",
+     "In order to petition for a course from another department to substitute for a literature elective, students should submit a current course syllabus to the literature undergraduate program coordinator by email ( litdept@ucsc.edu ). Courses accepted from other departments may not be used to satisfy the literature distribution requirements."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "A variety of study abroad opportunities are available and can be discovered through the campus office of Global Engagement. Multiple UC providers are featured, including UCSC’s summer Global Seminars, UC’s Education Abroad Program (UCEAP), as well as programs run by other UC campuses. (Non-UC run programs are also a possibility). There are hundreds of opportunities for students to choose from. Students who participate in any of these programs may petition to apply up to three 5-credit or greater upper-division courses (in literature or a related discipline) toward the literature major, or two 5-credit or greater upper-division courses (in literature or a related field) toward the literature minor. UCSC Global Seminars are considered UCSC courses (currently, one literature offering is available and doesn’t require petition)."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in the literature major are awarded to graduating seniors who have earned a 3.70 to 3.89 grade-point average in their upper-division literature courses. Highest honors in the literature major are awarded to graduating seniors who have earned a 3.90 or higher grade-point average in their upper-division literature courses. Honors are not awarded in the minor."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Any qualified student may take creative writing courses for credit toward graduation. Only students accepted into the creative writing concentration, however, may use Literature/Creative Writing courses LIT 179A , LIT 179B , LIT 190V , LIT 190W , and LIT 195C to satisfy major requirements."
+    ],
+    "title": "Creative Writing Courses"
+   },
+   {
+    "paragraphs": [
+     "Three quarters before anticipated graduation, all literature majors will receive a Senior Survey. The purpose of the survey is for students to assess their progress toward graduation and the satisfaction of all major requirements. A department advisor will review the survey and meet with the student to discuss any pending requirements."
+    ],
+    "title": "Senior Survey"
+   },
+   {
+    "paragraphs": [
+     "Courses that vary significantly in material or methodology from one presentation to the next may be repeated for credit and are so designated in the course description in the UC Santa Cruz General Catalog."
+    ],
+    "title": "Credit for Repeated Courses"
+   },
+   {
+    "paragraphs": [
+     "Students may apply a maximum of two of the following courses–LIT 195 (Senior Essay), LIT 198 (Group Tutorial), and/or LIT 199 (Tutorial)–for satisfaction of literature major requirements. LIT 195 may be used only once for satisfaction of literature major requirements."
+    ],
+    "title": "Individual Study Credit for the Major"
+   },
+   {
+    "paragraphs": [
+     "Students in each concentration may elect to pursue an intensive option. The intensive option is especially useful for students who plan to apply to graduate programs in literature and other humanities disciplines, or for students going into international and multilingual professional schools; those programs typically require students to do academic work in at least two languages.",
+     "The intensive option for each concentration requires students to take two additional upper-division electives in a second-language literature. For students in the General or Creative Writing concentration, these would be two non-English literature courses. For students in the Language Literature concentration, these may be additional courses in the language of concentration or courses in a different language, including English. See the Intensive Option section of each concentration for more details."
+    ],
+    "title": "Intensive Literature Major Option"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARBC3",
+       "CHIN3",
+       "FREN3",
+       "GREE2",
+       "HEBR3",
+       "ITAL3",
+       "JAPN3",
+       "LATN2",
+       "PUNJ3",
+       "SPAN3",
+       "YIDD3"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "These courses have prerequisites of levels 1 and/or 2 or their equivalent. Completion of GERM 1B is equivalent to GERM 3. Completion of ITAL 1B is equivalent to ITAL 3. Greek and Latin are both accelerated tracks which only require two courses."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Language Proficiency and Exam Options",
+       "prose": [
+        "Students of all three concentrations must demonstrate Level 3 reading proficiency in a non-English language in one of the following ways:",
+        "These courses have prerequisites of levels 1 and/or 2 or their equivalent. Completion of GERM 1B is equivalent to GERM 3. Completion of ITAL 1B is equivalent to ITAL 3. Greek and Latin are both accelerated tracks which only require two courses.",
+        "Literature Language Proficiency Exams are administered by the Literature Department. These exams assess reading proficiency and are applicable only to this requirement and enrollment in upper-division language literature courses. Exams are offered in several languages, including those that are otherwise not offered at UC Santa Cruz. Contact litdept@ucsc.edu for more information. Language Placement Assessments are administered by the Languages and Applied Linguistics Department. These assessments determine both reading and writing proficiency, and allow enrollment in different levels of languages depending on the outcome of the assessment. Some languages require an assessment to be taken regardless of prior history with the language. See the Language Placement Assessment website for more information. Students pursuing the intensive option are encouraged to study a language through Level 6. At UCSC, languages taught through level 6 are Arabic, Chinese, French, German, Italian, Japanese, and Spanish.",
+        "Literature Language Proficiency Exams are administered by the Literature Department. These exams assess reading proficiency and are applicable only to this requirement and enrollment in upper-division language literature courses. Exams are offered in several languages, including those that are otherwise not offered at UC Santa Cruz. Contact litdept@ucsc.edu for more information.",
+        "Language Placement Assessments are administered by the Languages and Applied Linguistics Department. These assessments determine both reading and writing proficiency, and allow enrollment in different levels of languages depending on the outcome of the assessment. Some languages require an assessment to be taken regardless of prior history with the language. See the Language Placement Assessment website for more information.",
+        "Students pursuing the intensive option are encouraged to study a language through Level 6. At UCSC, languages taught through level 6 are Arabic, Chinese, French, German, Italian, Japanese, and Spanish."
+       ]
+      }
+     }
+    ],
+    "title": "Language Proficiency and Exam Options"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The general literature concentration of the Literature major requires: (1) basic proficiency in a second language; and (2) 12 courses in literature."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Requirements",
+       "prose": [
+        "Lower-division courses are introductions to critical reading and writing. Students should complete their lower-division coursework before beginning upper-division work."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Language Proficiency",
+       "prose": [
+        "Students must demonstrate Level 3 reading proficiency in a non-English language. Information on how to satisfy this requirement, as well as exam options, are in the Language Proficiency and Exam Options section of the Information and Policies."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 1 is a writing-intensive course"
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": [
+        "LIT 1 is a writing-intensive course"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study.",
+        "LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.",
+        "LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Requirements"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Requirements",
+       "prose": [
+        "The General Literature major consists of 10 upper-division courses; two required courses, seven electives, and the comprehensive requirement. Students pursuing the intensive option will take two additional upper-division electives, for a total of 12 courses. See the Intensive Option section below."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101",
+       "LIT102"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students must successfully complete the language proficiency requirement before enrolling in LIT 102 . Students may substitute one upper-division non-English literature course (numbered LIT 182-189) studied in the original language for LIT 102 . Such a course may not fulfill any other major requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": [
+        "Students must successfully complete the language proficiency requirement before enrolling in LIT 102 .",
+        "Students may substitute one upper-division non-English literature course (numbered LIT 182-189) studied in the original language for LIT 102 . Such a course may not fulfill any other major requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus the Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is satisfied by one senior seminar (LIT 190 series) or a senior thesis ( LIT 195A or 195B). See the Comprehensive Requirement section below for more details."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LIT179A",
+        "LIT179B"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 109,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 7,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Literature Electives",
+       "prose": [
+        "Students take seven 5-credit upper-division electives chosen from LIT 109-189, excluding courses LIT 179A and LIT 179B , which are only available to students who have been accepted to the creative writing concentration. Independent studies and internships may also count toward this requirement with department approval. Among these seven courses, students fulfill the Distribution Requirements specified below. One course may fulfill more than one requirement.",
+        "Upper-division courses provide detailed treatment of literary and theoretical problems, themes, and periods. Students are strongly encouraged to take courses across chronological periods and national boundaries, and to balance small seminars with lecture courses.",
+        "A list of annual course offerings indicating distribution codes for each course is available in the department office and on the Literature Department website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Distribution Requirements",
+       "prose": [
+        "Students should consult the Distribution Requirements Course List to find courses which satisfy one or more of the following requirements:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Requirements"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students wishing to complete the intensive option of the general Literature B.A. must take two additional upper-division electives, for a total of nine electives. These two courses must be in non-English literature, and may be chosen from any of the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "General Literature Intensive Option",
+       "prose": [
+        "Students wishing to complete the intensive option of the general Literature B.A. must take two additional upper-division electives, for a total of nine electives. These two courses must be in non-English literature, and may be chosen from any of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "General Literature Intensive Option"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement. The DC requirement in literature cultivates high-level skills in analytical and critical writing, as well as effective disciplinary communication in both academic and professional contexts. The DC is satisfied by completing LIT 101 and either a senior seminar or thesis. Together, these courses provide iterative writing instruction and substantial writing practice in literary and cultural analysis."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT190U",
+       "LIT190Y",
+       "LIT190AA"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Students take one senior seminar within the LIT 190 series, from the courses listed below. The department offers these seminars across the academic year on a range of thematic topics. Extensive writing and a focus on the revision process are required in all seminars."
+       ]
+      }
+     }
+    ],
+    "title": "Senior Seminar"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT195A",
+       "LIT195B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Independent Senior Thesis",
+       "prose": [
+        "Students considering an independent thesis must arrange for the sponsorship and support of Senate Faculty appointed in the Department of Literature before beginning research in the form of one of the Senior Essay options below. An independent senior thesis (not written within a senior seminar) should be based on original research and reflect the student’s understanding of fundamental theories and issues in literature and/or cultural studies. The thesis should be comparable in content, style, and length (generally 25–30 pages) to a professional journal article in its subfield. It requires enrollment in one of the following options:"
+       ]
+      }
+     }
+    ],
+    "title": "Independent Senior Thesis"
+   },
+   {
+    "concentration": "General Literature Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students must successfully complete LIT 101 before taking any comprehensive requirement.",
+        "Seniors must select one of the following options to satisfy the campus exit requirement:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Students take one senior seminar within the LIT 190 series. The department offers these seminars across the academic year on a range of thematic topics. Extensive writing and a focus on the revision process are required in all seminars."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT195A",
+       "LIT195B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Independent Senior Thesis",
+       "prose": [
+        "Students considering an independent thesis must arrange for the sponsorship and support of Senate Faculty appointed in the Department of Literature before beginning research in the form of one of the Senior Essay options below. An independent senior thesis (not written within a senior seminar) should be based on original research and reflect the student’s understanding of fundamental theories and issues in literature and/or cultural studies. The thesis should be comparable in content, style, and length (generally 25–30 pages) to a professional journal article in its subfield. Requires enrollment in one of the following options:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The language literature concentration of the literature major requires: (1) completion of two years of college-level language coursework, or the equivalent; and (2) 12 courses in literature."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Requirements",
+       "prose": [
+        "Lower-division courses are introductions to critical reading and writing. Students should complete their lower-division coursework before beginning upper-division work."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Language Proficiency",
+       "prose": [
+        "Students must demonstrate Level 3 reading proficiency in a non-English language. Information on how to satisfy this requirement, as well as exam options, are in the Language Proficiency and Exam Options section of the Information and Policies.",
+        "Students pursuing the language literature concentration are encouraged to study a language through Level 6. At UCSC, languages taught through level 6 are Chinese, French, Italian, Japanese, and Spanish."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 1 is a writing-intensive course."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course",
+       "prose": [
+        "LIT 1 is a writing-intensive course."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study.",
+        "LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.",
+        "LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Requirements"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Requirements",
+       "prose": [
+        "The Language Literature concentration consists of 10 upper-division courses; two required courses, seven electives, and the comprehensive requirement. Students pursuing the intensive option will take two additional upper-division electives, for a total of 12 courses. See the Intensive Option section below."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101",
+       "LIT102"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students must successfully complete the language proficiency requirement before enrolling in LIT 102 . Students may substitute one upper-division non-English literature course (numbered LIT 182-189) studied in the original language for LIT 102 . Such a course may not fulfill any other major requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": [
+        "Students must successfully complete the language proficiency requirement before enrolling in LIT 102 .",
+        "Students may substitute one upper-division non-English literature course (numbered LIT 182-189) studied in the original language for LIT 102 . Such a course may not fulfill any other major requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus the Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is satisfied by one senior seminar (LIT 190 series) or a senior thesis ( LIT 195A or 195B). See the Comprehensive Requirement section below for more details."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LIT179A",
+        "LIT179B"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 108,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 7,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Literature Electives",
+       "prose": [
+        "Students take seven 5-credit upper-division literature electives chosen from LIT 108-189, excluding LIT 179A or LIT 179B , which are only available to students who have been accepted to the creative writing concentration.. Independent studies and internships may also count toward this requirement with department approval. Among these seven courses, students fulfill the Distribution Requirements and Language Literature Requirements specified below. One course may fulfill more than one requirement.",
+        "Upper-division courses provide detailed treatment of literary and theoretical problems, themes, and periods. Students are strongly encouraged to take courses across chronological periods and national boundaries, and to balance small seminars with lecture courses.",
+        "A list of annual course offerings indicating distribution codes for each course is available in the department office and on the Literature Department website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Distribution Requirements",
+       "prose": [
+        "Students should consult the Distribution Requirements Course List to find courses which satisfy one or more of the following requirements:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Language Requirements",
+       "prose": [
+        "Language Literature Concentration students take five literature courses in their chosen language of concentration. These courses can overlap with one or more of the Distribution Requirements above. The course options below correspond to the languages of concentration:",
+        "Ancient Literature (courses in the LIT 181, LIT 184, and 186 series)",
+        "The study of the literature, languages, and cultural practices of ancient civilizations. Students take a minimum of three literature courses in the language they are using to satisfy the language requirement with the remaining two courses in another ancient language or languages. LIT 181 courses should be taken by students studying Arabic. LIT 184 courses should be taken by students studying Greek. LIT 186 courses should be taken by students studying Latin.",
+        "French Literature (courses in the LIT 182 series)",
+        "The study of French and Francophone literatures, languages, and cultural practices of France, Africa, and the Caribbean.",
+        "German Literature (courses in the LIT 183 series)",
+        "The study of the literature, language, and cultural practices of the German-speaking areas of central Europe including Germany, Austria, and Switzerland.",
+        "Greek Literature (courses in the LIT 184 series)",
+        "The study of the literature, languages, and cultural practices of ancient Greece.",
+        "Italian Literature (courses in the LIT 185 series)",
+        "The study of Italian literature, language, and cultural practices from the Middle Ages to the present.",
+        "Latin Literature (courses in the LIT 186 series)",
+        "The study of the literature, languages, and cultural practices of ancient Rome.",
+        "Spanish/Latin American/Latino Literatures (courses in the LIT 188-LIT 189 series, LIT 190X )",
+        "The study of literatures, language, and cultural practices of Spain, Latin America, and Latino populations in the United States."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Requirements"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Language Literature Intensive Option",
+       "prose": [
+        "Students wishing to complete the intensive option for the Language Literature concentration must take two additional upper-division electives, for a total of nine electives. Though these courses may be in the language of concentration, students are highly encouraged to pursue additional electives outside the language of concentration, including English."
+       ]
+      }
+     }
+    ],
+    "title": "Language Literature Intensive Option"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement. The DC requirement in literature cultivates high-level skills in analytical and critical writing, as well as effective disciplinary communication in both academic and professional contexts. The DC is satisfied by completing LIT 101 and either a senior seminar or thesis. Together, these courses provide iterative writing instruction and substantial writing practice in literary and cultural analysis."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT190U",
+       "LIT190Y",
+       "LIT190AA"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Students take one senior seminar within the LIT 190 series, from the courses listed below. The department offers these seminars across the academic year on a range of thematic topics. Extensive writing and a focus on the revision process are required in all seminars."
+       ]
+      }
+     }
+    ],
+    "title": "Senior Seminar"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT195A",
+       "LIT195B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Independent Senior Thesis",
+       "prose": [
+        "Students considering an independent thesis must arrange for the sponsorship and support of Senate Faculty appointed in the Department of Literature before beginning research in the form of one of the Senior Essay options below. An independent senior thesis (not written within a senior seminar) should be based on original research and reflect the student’s understanding of fundamental theories and issues in literature and/or cultural studies. The thesis should be comparable in content, style, and length (generally 25–30 pages) to a professional journal article in its subfield. It requires enrollment in one of the following options:"
+       ]
+      }
+     }
+    ],
+    "title": "Independent Senior Thesis"
+   },
+   {
+    "concentration": "Language Literature Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students must successfully complete LIT 101 before taking any comprehensive requirement.",
+        "Seniors must select one of the following options to satisfy the campus exit requirement:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Students take one senior seminar within the LIT 190 series. The department offers these seminars across the academic year on a range of thematic topics. Extensive writing and a focus on the revision process are required in all seminars."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students who wish to propose a senior thesis (25-30 pages) must apply to a Literature Department faculty sponsor at least two quarters before the projected date of graduation. The application must include a proposed subject, a brief outline, a bibliography, and a sample of previous written work. Only those students who have received written permission from the faculty supervisor may complete a thesis to satisfy the senior exit requirement. Students enroll in one of the following courses:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "LIT195A",
+       "LIT195B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Senior Thesis",
+       "prose": [
+        "Students who wish to propose a senior thesis (25-30 pages) must apply to a Literature Department faculty sponsor at least two quarters before the projected date of graduation. The application must include a proposed subject, a brief outline, a bibliography, and a sample of previous written work. Only those students who have received written permission from the faculty supervisor may complete a thesis to satisfy the senior exit requirement. Students enroll in one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Requirements",
+       "prose": [
+        "Lower-division courses are introductions to critical reading and writing. Students should complete their lower-division coursework before beginning upper-division work."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Language Proficiency",
+       "prose": [
+        "Students must demonstrate Level 3 reading proficiency in a non-English language. Information on how to satisfy this requirement, as well as exam options, are in the Language Proficiency and Exam Options section of the Information and Policies."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 1 is a writing-intensive course"
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": [
+        "LIT 1 is a writing-intensive course"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study.",
+        "LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.",
+        "LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT90",
+       "LIT90X",
+       "LIT91A",
+       "LIT91B",
+       "LIT92A",
+       "LIT92B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "An additional course from among LIT 90 , LIT 90X , LIT 91A , LIT 91B , LIT 92A , or LIT 92B is strongly encouraged."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus at least one of the following",
+       "prose": [
+        "An additional course from among LIT 90 , LIT 90X , LIT 91A , LIT 91B , LIT 92A , or LIT 92B is strongly encouraged."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Requirements"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Requirements",
+       "prose": [
+        "The Creative Writing concentration consists of10 upper-division courses; two required courses, seven electives, and the comprehensive requirement. Students pursuing the intensive option will take two additional upper-division electives, for a total of 12 courses. See the Intensive Option section below."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101",
+       "LIT102"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students must successfully complete the language proficiency requirement before enrolling in LIT 102 . Students may substitute one upper-division non-English literature course (numbered LIT 182-189) studied in the original language for LIT 102 . Such a course may not fulfill any other major requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": [
+        "Students must successfully complete the language proficiency requirement before enrolling in LIT 102 .",
+        "Students may substitute one upper-division non-English literature course (numbered LIT 182-189) studied in the original language for LIT 102 . Such a course may not fulfill any other major requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus the Comprehensive requirement",
+       "prose": [
+        "The comprehensive requirement is satisfied by one creative project senior seminar ( LIT 190V or LIT 190W ) or a senior essay ( LIT 195C ). LIT 190V is strongly encouraged for students in the fiction/prose track, and LIT 190W is strongly encouraged for students in the poetry track. See the Comprehensive Requirement section below for more details."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Literature Electives",
+       "prose": [
+        "Students take seven 5-credit upper-division literature electives numbered 108-189. Independent studies and internships may also count toward this requirement with department approval. Among these seven courses, students fulfill the Distribution Requirements and Advanced Creative Writing Workshops Requirement specified below. One course may fulfill more than one requirement.",
+        "Upper-division courses provide detailed treatment of literary and theoretical problems, themes, and periods. Students are strongly encouraged to take courses across chronological periods and national boundaries, and to balance small seminars with lecture courses.",
+        "A list of annual course offerings indicating distribution codes for each course is available in the department office and on the Literature Department website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Distribution Requirements",
+       "prose": [
+        "Students should consult the Distribution Requirements Course List to find courses which satisfy one or more of the following requirements:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Creative Writing students take any three courses from the LIT 179 series. Though students may take any combination of these courses, fiction/prose students are encouraged to take at least one LIT 179A course, and poetry students are encouraged to take at least one LIT 179B course. Courses may be repeated.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Advanced Creative Writing Workshop Requirements",
+       "prose": [
+        "Creative Writing students take any three courses from the LIT 179 series. Though students may take any combination of these courses, fiction/prose students are encouraged to take at least one LIT 179A course, and poetry students are encouraged to take at least one LIT 179B course. Courses may be repeated."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Requirements"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students wishing to complete the intensive option of the [General or Creative Writing] concentration must take two additional upper-division electives, for a total of nine electives. These two courses must be in non-English literature, and may be chosen from any of the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Creative Writing Intensive Option",
+       "prose": [
+        "Students wishing to complete the intensive option of the [General or Creative Writing] concentration must take two additional upper-division electives, for a total of nine electives. These two courses must be in non-English literature, and may be chosen from any of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Creative Writing Intensive Option"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement. The DC requirement in literature cultivates high-level skills in creative and creative critical writing, as well as effective disciplinary communication in both academic and professional contexts. The DC is satisfied by completing LIT 101 and either a senior seminar or thesis. Together, these courses provide iterative writing instruction and substantial writing practice in literary and cultural analysis."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT190V",
+       "LIT190W"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Students in the Creative Writing Concentration take one senior seminar course numbered LIT 190V or LIT 190W . Extensive writing is required in all seminars. Creative writing senior seminars are offered only during spring quarter."
+       ]
+      }
+     }
+    ],
+    "title": "Senior Seminar"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT195C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Independent Senior Thesis",
+       "prose": [
+        "Students considering an independent senior essay must arrange for sponsorship and support of Senate Faculty appointed in the Department of Literature and affiliated with the Creative Writing Concentration before beginning writing and enrolling in LIT 195C . An independent senior essay (not written in a senior seminar) should be an original work of creative or creative-critical writing comparable length to a senior creative project or longer. Requires enrollment in:"
+       ]
+      }
+     }
+    ],
+    "title": "Independent Senior Thesis"
+   },
+   {
+    "concentration": "Creative Writing Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students must successfully complete LIT 101 before taking any comprehensive requirement.",
+        "Seniors must select one of the following options to satisfy the campus exit requirement:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT190V",
+       "LIT190W"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Students in the creative writing concentration take one senior seminar course numbered LIT 190V or LIT 190W . Extensive writing is required in all seminars. Creative writing senior seminars are offered only during spring quarter."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT195C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Independent Senior Essay",
+       "prose": [
+        "Students considering an independent senior essay must arrange for sponsorship and support of Senate Faculty appointed in the Department of Literature and affiliated with the Creative Writing Concentration before beginning writing and enrolling in LIT 195C . An independent senior essay (not written in a senior seminar) should be an original work of creative or creative-critical writing comparable length to a senior creative project or longer. It requires enrollment in:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "literature-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/literature-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

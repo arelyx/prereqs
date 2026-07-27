@@ -1,0 +1,679 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "performance-play-and-design",
+ "division": "arts-division",
+ "kind": "major",
+ "name": "Theater Arts B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Theater Arts B.A. combines drama, dance, critical studies, and theater design/technology, extending into games and other areas of play to offer students an intensive program of performance as a unified field. The program stresses the interrelation of all disciplines as essential to the successful practice of the theater arts in the 21st century. Graduates of the University of California, Santa Cruz program typically pursue careers in professional theater and dance companies, in film and television, and in teaching at all levels—from university to high school to grade school. Many students go on to higher degrees at prestigious national programs. Others engage in careers in arts administration, dramatic writing, and related fields.",
+     "The course of study is unique in the world, integrating its curriculum with the Art & Design: Games + Playable Media (AGPM) program, its sibling in the Department of Performance, Play & Design. Because both theater and games share key critical storytelling techniques (including embodied action, physical and digital presence, design elements, ritual, and playfulness) our program is the first to formally recognize the crossover potential between these two disciplines. Students in the UCSC Theater Arts program will learn the fundamentals of traditional theater but will also have the opportunity to explore the experimental and interactive performance art that has become the reality of our contemporary art world.",
+     "The lower-division curriculum requires a range of practical work in various areas and an interdisciplinary exposure to critical and historical studies. At the upper-division level, students are given the opportunity to focus on one or more areas of interest in limited-enrollment studios. At the same time, they are asked to expand their historical and theoretical perspectives through confrontation with performance theory and focused coursework in critical studies. The impact of digital and new media on theater is also integrated into the curriculum.",
+     "In addition to classroom work, a wealth of hands-on production opportunities is available to students. This includes major productions directed by faculty or distinguished visiting artists each quarter, productions directed or choreographed by students, and faculty-directed workshops. The opportunity for undergraduate students to see their own writing, choreography, or developing concepts staged in department-sponsored productions is particularly valuable and unusual among university theater programs and is especially prominent in our department. Although majors are given preference in studio courses, most courses and productions welcome non-majors. Opportunities to study and perform non-Western as well as Euro-American traditions are also a significant part of the program.",
+     "The stage and studio spaces available to students in the department allow for a breadth of training and performance opportunities. The Theater Arts Center contains a 500-seat thrust stage; a 60’ x 60’ flexible black box theater; a 200-seat proscenium theater and a 48-seat studio theater dedicated to student productions; acting, directing, design and dance studios; costume, scene, and properties shops; a sound recording room; and a state-of-the-art computer lab. Located at the entrance of campus is our 150-seat Barn Theater which is currently closed, awaiting funding for a seismic retrofit.",
+     "Library holdings in theater literature and history are extensive, including journals in current theater, design/technology, and dance and a large image, audio, and video collection."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Our program stresses dance, design, and drama as essential disciplines in the successful practice of theater arts in the contemporary world.",
+     "Graduates from the Theater Arts B.A. program should demonstrate the following:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "General information about the theater arts major, as well as the theater art minor and the dance minor, is available on the department website's Program Advising , Undergraduate Degrees , and Undergraduate Experience and Opportunities pages. Students are strongly encouraged to consult early with the theater arts advisor to create an academic plan for the major or a minor far in advance of declaration, as early as the summer before beginning at the university. An academic plan is required as part of the declaration process. Please use Navigate Slug Success to make an advising appointment. You may also contact the theater arts academic advisor via email, theater-ugradadv@ucsc.edu (preferred), or by calling (831) 459-2974 during regular business hours."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students who enter UC Santa Cruz as frosh are encouraged, but not required, to begin major coursework in their first year. Although the major is not highly sequential, frosh should meet with the program’s academic advisor by the beginning of their second year to understand degree requirements, non-standard enrollment procedures, and to develop an academic plan for timely graduation.",
+     "Frosh are encouraged to complete the three major qualification courses (see section below) early and declare the major by their sixth quarter, as required by the university. Because the declaration process can take time, students should begin preparing at the start of the quarter in which they plan to declare or earlier.",
+     "Students with transferable college-level coursework should email unofficial transcripts as early as possible to theater-ugradadv@ucsc.edu for review.",
+     "Advising appointments are scheduled through Navigate Slug Success after matriculation, or by email prior to matriculation."
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students are not required to audition, submit a portfolio, or complete specific preparation courses to be considered for admission to UC Santa Cruz or to the theater or dance degree programs.",
+     "While not required for admission, it is highly recommended that transfer students complete as many general education requirements as possible before coming to UC Santa Cruz in order to ensure timely graduation. Students may also complete courses that are articulated specifically to UC Santa Cruz lower-division courses before coming to UCSC. Please consult with the theater arts academic advisor for more information.",
+     "Transfer students are strongly advised to meet with the theater arts academic advisor prior to enrolling in classes their first quarter to create an academic plan and discuss course selection. Advising appointments may be made through Navigate Slug Success once students are matriculated, or by email ( theater-ugradadv@ucsc.edu ) before that time.",
+     "Transfer students may petition to have equivalent lower-division courses taken at other schools count toward lower-division major or minor requirements and should consult with the theater arts academic advisor about this possibility before enrolling in order to avoid repeating coursework unnecessarily.",
+     "As stated in the How to Declare a Major section below, transfer students may declare the major upon entering UC Santa Cruz and are encouraged to do so as soon as possible, even if they have not completed any theater arts courses prior to transferring to UC Santa Cruz. Transfer students entering as juniors must declare a major by the deadline in their second quarter, as required by the university."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy aside from the university's Pass/No Pass limit and minimum grade requirement (more information is available on the university's Pass/No Pass web page)."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Double counting upper-division courses between the theater arts major and another major or minor may be possible if the non-theater arts major/minor requires more than the minimum credits required by the university. It may be possible to double count the credits above the minimum with the permission of advisors in both programs."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "There are many opportunities for students to study abroad, potentially fulfilling major or minor requirements. Credits earned through study abroad programs or off-campus programs are considered on a case-by-case basis by the department faculty. Please consult with the theater arts academic advisor about this process.",
+     "It is important to learn about requirements and deadlines as early as possible from the Study Abroad/Global Learning office and then to carefully plan with major/minor and college advisors. Some required courses at UC Santa Cruz are only offered in certain quarters, for example; therefore, careful planning is essential.",
+     "Please read more about study abroad opportunities on the Global Learning website ."
+    ],
+    "title": "Study Abroad"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Students Admitted as Frosh/Four-Year Students",
+       "prose": [
+        "Students who begin UC Santa Cruz as frosh/four-year students must pass three classes as part of the declaration process. (Transfer students skip this section)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA61A",
+       "THEA61B",
+       "THEA61C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One course from:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two additional courses chosen from two of the following three categories:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Theater design and technology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA20",
+       "THEA21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "THEA 20 is a non-audition course designed for students with little or no experience in acting. THEA 21 is appropriate for students with some acting experience and is admission-by-audition (audition requirements are listed when classes are published in the Schedule of Classes). Please ask the theater arts advisor for more information."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Acting",
+       "prose": [
+        "THEA 20 is a non-audition course designed for students with little or no experience in acting. THEA 21 is appropriate for students with some acting experience and is admission-by-audition (audition requirements are listed when classes are published in the Schedule of Classes). Please ask the theater arts advisor for more information."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA30",
+       "THEA31A",
+       "THEA31B",
+       "THEA31C",
+       "THEA31L",
+       "THEA31M",
+       "THEA36",
+       "THEA37",
+       "THEA80Z"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Practice-based dance",
+       "prose": [
+        "Students who start UC Santa Cruz as frosh are encouraged to complete the three declaration qualification courses as early in their studies as possible so that they may declare the major no later than their sixth quarter, as required by the university.",
+        "Students who start UC Santa Cruz as frosh are encouraged to complete the three declaration qualification courses as early in their studies as possible so that they may declare the major no later than their sixth quarter, as required by the university."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Students",
+       "prose": [
+        "Transfer students are eligible to declare as early as their first quarter even if they have not completed any theater arts courses prior to transferring to UC Santa Cruz."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "If non-course requirements remain incomplete by the campus deadline (in their sixth quarter for students admitted as frosh, and in their second quarter for transfer students), the student must be allowed to declare the major by the declaration deadline in their next academic term (excluding summer) without appeal.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "All Students",
+       "prose": [
+        "If non-course requirements remain incomplete by the campus deadline (in their sixth quarter for students admitted as frosh, and in their second quarter for transfer students), the student must be allowed to declare the major by the declaration deadline in their next academic term (excluding summer) without appeal."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Transfer Students",
+        "Transfer students entering as juniors are required by the university to declare a major no later than the major declaration deadline in their second quarter on campus and are encouraged to do so as soon as possible. Transfer students entering as juniors may declare the theater arts major as early as their first quarter on campus, even if they have not completed any theater arts courses prior to transferring to UC Santa Cruz, by completing these steps:",
+        "To access the declaration petition form, log into MyUCSC , go to your Student Homepage and select the Undergraduate Student eForms tile > Petition for Major/Minor. If using a mobile device, be sure to select Full Site Login when logging into MyUCSC .",
+        "Transfer students should also read the notes in the Transfer Information and Policy section.",
+        "Students Admitted as Frosh/Four-Year Students",
+        "Students who enter UC Santa Cruz as frosh are required by the university to declare the major no later than the major declaration deadline in their sixth term by completing these steps:",
+        "To access the declaration petition form, log into MyUCSC , go to your Student Homepage and select the Undergraduate Student eForms tile > Petition for Major/Minor. If using a mobile device, be sure to select Full Site Login when logging into MyUCSC .",
+        "Students who have reached their declaration deadline quarter should submit the Petition for Major/Minor eForm through MyUCSC . The form serves as both a petition and, in the case of students who have not met major qualification requirements, part of the appeal process. If all major qualification requirements have been met, the petition will be approved. If any requirement has not been met, the petition will be denied and the student will receive an explanation."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification and Declaration"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Major declaration denials may be appealed by submitting a letter via email to the major's academic advising office, addressed to the department chair, within 15 days from the date on which the denial notification was sent by the department. The department will review the student’s individual circumstances and potential for success in the major. A decision will be determined within 15 days after receiving the student's appeal via email. If there is a viable path to declaration, conditions will be set which must be resolved within at most one more enrolled quarter. Decisions will be communicated to the student and their college via UCSC email generated by MyUCSC. The eForm will also be reviewed by the student's college advising office who may set additional conditions. Please address any questions to the Theater Arts major's academic advising office: theater-ugradadv@ucsc.edu .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Major declaration denials may be appealed by submitting a letter via email to the major's academic advising office, addressed to the department chair, within 15 days from the date on which the denial notification was sent by the department. The department will review the student’s individual circumstances and potential for success in the major. A decision will be determined within 15 days after receiving the student's appeal via email. If there is a viable path to declaration, conditions will be set which must be resolved within at most one more enrolled quarter. Decisions will be communicated to the student and their college via UCSC email generated by MyUCSC. The eForm will also be reviewed by the student's college advising office who may set additional conditions. Please address any questions to the Theater Arts major's academic advising office: theater-ugradadv@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The theater arts major requires 41 lower-division credits comprised of eight courses, including six credits of course THEA 50 . The major also requires 40 upper-division credits comprised of eight courses (inclusive of a senior seminar course, THEA 185 ). One course must be taken to fulfill the Production Requirement. Majors may organize their studies around areas of interest in accordance with the requirements outlined below.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The theater arts major requires 41 lower-division credits comprised of eight courses, including six credits of course THEA 50 . The major also requires 40 upper-division credits comprised of eight courses (inclusive of a senior seminar course, THEA 185 ). One course must be taken to fulfill the Production Requirement. Majors may organize their studies around areas of interest in accordance with the requirements outlined below.",
+        "Credits earned via the UC Education Abroad Program (EAP), or other off-campus programs are considered on a case-by-case basis by the department chair. Students should consult with their major/minor and college advisors as early as possible before planning studies outside of UC Santa Cruz. Please read more about study abroad opportunities on the Global Learning website ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA20",
+       "THEA21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA10",
+       "THEA61A",
+       "THEA61B",
+       "THEA61C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA30",
+       "THEA31A",
+       "THEA31B",
+       "THEA31C",
+       "THEA31L",
+       "THEA31M",
+       "THEA37",
+       "THEA36",
+       "THEA80Z"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following practice-based dance courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Note: This 2-credit course must be taken three times for a total of six credits. Students are highly encouraged to complete all six required credits of THEA 50 before their last two quarters, and to contact the theater arts advisor early to learn about the unique enrollment process for the class. This requirement is separate from the major's Production Requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "THEA50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: This 2-credit course must be taken three times for a total of six credits. Students are highly encouraged to complete all six required credits of THEA 50 before their last two quarters, and to contact the theater arts advisor early to learn about the unique enrollment process for the class. This requirement is separate from the major's Production Requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following production fundamentals course (three times):",
+       "prose": [
+        "Note: This 2-credit course must be taken three times for a total of six credits. Students are highly encouraged to complete all six required credits of THEA 50 before their last two quarters, and to contact the theater arts advisor early to learn about the unique enrollment process for the class. This requirement is separate from the major's Production Requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus one lower-division elective course",
+       "prose": [
+        "Students take one additional 5-credit THEA course numbered 1-99. One of the two lower-division production courses, THEA 55A or THEA 56R , may be used to satisfy both this requirement and the Production Requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Eight upper-division courses must be taken as part of the major, as specified here:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Eight upper-division courses must be taken as part of the major, as specified here:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA160"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA103",
+       "THEA106",
+       "THEA114",
+       "THEA115A",
+       "THEA115B",
+       "THEA117",
+       "THEA117A",
+       "THEA118",
+       "THEA119",
+       "THEA120",
+       "THEA121",
+       "THEA123",
+       "THEA124",
+       "THEA126",
+       "THEA126M",
+       "THEA131A",
+       "THEA131B",
+       "THEA131C",
+       "THEA131L",
+       "THEA135",
+       "THEA136",
+       "THEA141",
+       "THEA142",
+       "THEA145R",
+       "THEA152",
+       "THEA157",
+       "THEA158",
+       "THEA159",
+       "ARTG118",
+       "ARTG134",
+       "ARTG137",
+       "ARTG140",
+       "ARTG180"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two studio courses chosen from:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA100A",
+       "THEA100B",
+       "THEA100C",
+       "THEA100W",
+       "THEA104",
+       "THEA108",
+       "THEA113",
+       "THEA116A",
+       "THEA122",
+       "THEA161",
+       "THEA161B",
+       "THEA161C",
+       "THEA161D",
+       "THEA161H",
+       "THEA161M",
+       "THEA161P",
+       "THEA161Q",
+       "THEA161R",
+       "THEA161S",
+       "THEA161T",
+       "THEA161U",
+       "THEA161Y",
+       "THEA163A",
+       "THEA163E",
+       "THEA163G",
+       "THEA163H",
+       "THEA163K",
+       "THEA164",
+       "THEA165",
+       "THEA166",
+       "THEA167",
+       "THEA168",
+       "ARTG138",
+       "ARTG139",
+       "ARTG142",
+       "ARTG143"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two history/theory/critical studies courses, chosen from:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus two upper-division elective courses:",
+       "prose": [
+        "One or both classes used to fulfill the upper-division elective requirements may be chosen from any of the courses listed in the upper-division studio section, the upper-division history/theory/critical studies section, or the Production Requirement section (excluding the lower-division THEA 55A and THEA 56R ) as long as they are not being used to fulfill another requirement (unless they are repeatable for credit, in which case they may be used more than once)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA55A",
+       "THEA56R",
+       "THEA137",
+       "THEA137A",
+       "THEA139",
+       "THEA151",
+       "THEA151A",
+       "THEA151I",
+       "THEA155"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "The Production Requirement is separate from the three required enrollments in the 2-credit class THEA 50 , Fundamentals of Theater Production. Enrollment in production classes is by audition or interview process; therefore, it is important that students begin trying to fulfill the requirement as early as possible as it cannot be predicted when they will be cast or chosen to participate. Contact the theater arts advisor for information. Details can also be found in the Theater Arts Undergraduate Handbook ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Production Requirement",
+       "prose": [
+        "Theater arts majors must take one of the following classes to fulfill the major's Production Requirement. The two lower-division production courses, THEA 55A or THEA 56R , may fulfill both both production requirement and the lower-division elective requirement. The upper-division production courses listed (numbered 100 and above) may fulfill the production requirement and one of the two upper-division electives.",
+        "The Production Requirement is separate from the three required enrollments in the 2-credit class THEA 50 , Fundamentals of Theater Production. Enrollment in production classes is by audition or interview process; therefore, it is important that students begin trying to fulfill the requirement as early as possible as it cannot be predicted when they will be cast or chosen to participate. Contact the theater arts advisor for information. Details can also be found in the Theater Arts Undergraduate Handbook ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus this comprehensive requirement course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA55B",
+       "THEA190",
+       "THEA198",
+       "THEA199"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following courses DO NOT satisfy theater arts major requirements:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA160",
+       "THEA185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) Requirement. The DC Requirement in Theater Arts B.A. is met by completion of the required courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "THEA185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "theater-arts-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

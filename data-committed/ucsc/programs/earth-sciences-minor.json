@@ -1,0 +1,139 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "earth-and-planetary-sciences",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "minor",
+ "name": "Earth Sciences Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "EART 5 , EART 10 , EART 20 , and the corresponding labs are interchangeable."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Choose one of the following options:",
+        "EART 5 , EART 10 , EART 20 , and the corresponding labs are interchangeable."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take five upper-division Earth sciences or ocean sciences courses of 5 credits or more, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students take five upper-division Earth sciences or ocean sciences courses of 5 credits or more, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and ENVS 115L are open to Earth science students with permission of the instructor, and taken together are approved as one elective.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All courses used to satisfy requirements for the Earth sciences minor must be taken for a letter grade with the exception of EART 195 , EART 198 , EART 199 and OCEA 199 . These courses may be taken pass/no pass.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Letter Grade Policy",
+       "prose": [
+        "All courses used to satisfy requirements for the Earth sciences minor must be taken for a letter grade with the exception of EART 195 , EART 198 , EART 199 and OCEA 199 . These courses may be taken pass/no pass."
+       ]
+      }
+     }
+    ],
+    "title": "Letter Grade Policy"
+   }
+  ]
+ },
+ "slug": "earth-sciences-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciences-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

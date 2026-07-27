@@ -1,0 +1,874 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "environmental-studies",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Agroecology B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The agroecology major provides ecological concepts that can be applied to the development of sustainable agricultural systems. Students will develop their understanding of social, political, and economic aspects of agriculture. Students will also engage in hands-on experiences, and obtain skills in research, fieldwork, production, and communication in order to achieve multiple sustainability goals in complex, social-ecological food systems. The agroecology major does not have any concentrations offered. Students interested in the available concentrations should pursue the environmental studies bachelor of arts (B.A.) degree."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students graduating with a B.A. degree in agroecology will be able to:",
+     "Analyze the problems faced in agriculture and food systems by identifying the societal (historical, social, political, economic, cultural, and ethical) agents and structures that contribute to environmental change. (Social science competency)",
+     "Describe the structure and functioning of major physical and ecological components of earth’s systems, including agricultural systems. (Natural science competency)",
+     "Access and assess complex literature and review specific topics in agroecology and sustainable food systems, and evaluate the usefulness and limitations of individual methods. (Analytical thinking)",
+     "Demonstrate effective oral and written communication skills. (Communication skills)",
+     "Demonstrate an introductory level of competence in horticulture or agronomy or aquaculture. (Production skills)"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Advising is one way to make the most of your university experience. Ask questions, seek advice, and make decisions that work best for you.",
+     "To receive advising for this major, contact envsadvi@ucsc.edu . Additional information for prospective transfer students can be found in the Transfer Information and Policy section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a course-intensive and/or sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at UC Santa Cruz. Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website . Language placement is not required for the major.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy, except that the course(s) taken to fulfill the senior comprehensive requirement must be taken for a letter Grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students in the agroecology B.A may petition to substitute one of the four agroecology upper-division elective courses from:",
+     "Another ENVS upper-division course (ENVS 104- ENVS 179 ) not listed as one of the four elective course options.",
+     "A relevant course in SOCY, LALS, ANTH",
+     "A relevant course taken in a study abroad or field study program",
+     "Please review the petitioning process on the department's website ."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students in agroecology are encouraged to participate in Study Abroad programs and other off-campus programs. Students who are interested in these programs shall note the following policies:",
+     "Students planning to study abroad must be declared in their major prior to studying abroad.",
+     "Students must have the courses they plan to take abroad reviewed and approved by Environmental Studies Advising.",
+     "Agroecology majors may petition for one course to fulfill their four electives. Please review the petitioning process here prior to your EAP program. For more information on EAP, please visit the UC Education Abroad Program website ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Departmental Honors. Students must have a 3.5 grade point average (GPA) in all courses used to satisfy the agroecology upper-division requirements. To be considered for departmental honors, students are limited to no more than one grade of P in those upper-division courses.",
+     "Senior Comprehensive Honors. Honors must be nominated by the student’s faculty sponsor, and a second faculty member must concur.",
+     "Highest Departmental Honors. Students must have a 3.75 GPA in in all courses used to satisfy the agroecology upper-division requirements and must also receive senior comprehensive honors (see above). To be considered for highest departmental honors, students are limited to no more than one grade of P in those upper-division courses."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students must have the agroecology major listed on their application in order to pursue the major, unless approved by the department. Contact envsadvi@ucsc.edu with any questions."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Students who apply for transfer admission to the major are required to have taken the equivalents of the following courses with a C grade (2.0) or better by the end of the spring term for students planning to enter in the fall:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS23",
+       "CHEM3A",
+       "CHEM4A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM11A",
+       "MATH3",
+       "MATH11A",
+       "MATH19A",
+       "MATH16A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "General Education Courses (GEs)",
+       "prose": [
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended Courses",
+       "prose": [
+        "In addition, we recommend transfer students complete the following lower-division courses before transferring:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS24",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus:",
+       "prose": [
+        "ENVS 25 , or a course in macroeconomics or microeconomics plus a course in national or international politics"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15",
+       "ENVS26"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS80F"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students pursuing agroecology majors are encouraged to transfer in the fall quarter.",
+        "Transfer students should complete as many lower divisions as possible before transferring. All remaining lower-division requirements should be completed in summer, fall, and winter of their first year in order to take ENVS 100 & ENVS 100L in winter or spring quarter of their first year. Transfer students can formally declare their major once qualification courses are successfully completed, following the declaration steps on the ENVS department website.",
+        "ENVS 25 and ENVS 23 are usually offered during Summer Session at UC Santa Cruz, and transfer students are encouraged to take these classes if they have not yet completed a substitute requirement or if they want a better understanding of the relevant material. If you are transferring, compare catalog descriptions and consult your current institution's advisor to determine equivalency.",
+        "Students who are proposed in a different major and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major. Contact envsadvi@ucsc.edu to request permission."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Some courses may be satisfied via exam credit . For transfer requirements, see Transfer Admission Screening Requirements above."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "ENVS23"
+       ],
+       [
+        "CHEM3A",
+        "CHEM3B"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B taken fall 2026 or later will satisfy this requirement as it is inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "One of the following:",
+       "prose": [
+        "CHEM 3B taken fall 2026 or later will satisfy this requirement as it is inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS24",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS25",
+       "ENVS80F"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT17",
+        "STAT17L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following statistics series:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Determining Qualification",
+       "prose": [
+        "Students who complete all the qualification courses with a grade of P, or letter grade of C or better are qualified to declare the major.",
+        "Students who have received one grade of NP, C-, D+, D, D-, or F in one of the qualification courses taken at UC Santa Cruz will only be qualified to declare after successfully completing the same or an equivalent course with a grade of P, or letter grade of C or better.",
+        "Students with two or more grades of NP, C-, D+, D, D-, or F in the qualification courses taken at UC Santa Cruz are not qualified to declare the major.",
+        "Students with AP credit (score of 3 or higher) for any of the qualification course(s) are qualified to declare after successfully completing the remaining qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are not qualified to declare the major may appeal this decision by submitting an appeal to qualify for the major here within 15 days of the denial of the declaration. Within 15 days of receipt of the appeal, the department will notify the student and college of the decision. If a student has questions about the appeals process, they should contact envsadvi@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare the Agroecology Major",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first.",
+        "Students wishing to declare within the Environmental Studies Department should visit the Environmental Studies Department website and follow the declaration steps."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare the Agroecology Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Continuing students must complete all lower-division course requirements before taking ENVS 100 and ENVS 100L . Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "ENVS23"
+       ],
+       [
+        "CHEM3A",
+        "CHEM3B"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B taken fall 2026 or later will satisfy this requirement as it is inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": [
+        "CHEM 3B taken fall 2026 or later will satisfy this requirement as it is inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS24",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS25",
+       "ENVS80F"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM11A",
+       "MATH3",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "May also be satisfied with a score of 3 or higher on the AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement Exam."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "May also be satisfied with a score of 3 or higher on the AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement Exam."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT17",
+        "STAT17L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of these statistics series:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15",
+       "ENVS26"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS100",
+       "ENVS100L",
+       "ENVS130A",
+       "ENVS130L",
+       "ENVS130B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ENVS 100 and ENVS 100L are offered twice yearly, during the winter and spring quarters. ENVS 130A and ENVS 130L are offered fall quarter only. ENVS 130B is offered winter quarter only."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": [
+        "ENVS 100 and ENVS 100L are offered twice yearly, during the winter and spring quarters. ENVS 130A and ENVS 130L are offered fall quarter only. ENVS 130B is offered winter quarter only."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS130C",
+       "ENVS133",
+       "ENVS133B",
+       "ENVS135"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS108",
+       "ENVS108L",
+       "ENVS130C",
+       "ENVS131",
+       "ENVS133",
+       "ENVS133B",
+       "ENVS135",
+       "ENVS142",
+       "ENVS143",
+       "ENVS160",
+       "ENVS161A",
+       "ENVS162",
+       "ENVS162L",
+       "ENVS163",
+       "ENVS163L",
+       "ENVS164",
+       "ENVS165",
+       "ENVS166",
+       "ENVS168",
+       "ENVS169",
+       "ENVS170",
+       "ENVS183A",
+       "ENVS195A",
+       "BIOE118",
+       "BIOE145",
+       "CMMU149",
+       "CMMU186"
+      ],
+      "n": 4,
+      "needs_review": false,
+      "notes": [
+       "If students wish to petition to substitute a course not on the agroecology elective list, contact envsadvi@ucsc.edu."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus four Agroecology electives:",
+       "prose": [
+        "Students take four courses from the following list. These may not include any courses used to fulfill the requirements listed above.",
+        "Lecture/lab combinations count as one course. Associated labs are required only when required by the lecture.",
+        "Students may take ENVS 183A or ENVS 195A , but not both. ENVS 133 and ENVS 133B may not both be counted toward the major.",
+        "If students wish to petition to substitute a course not on the agroecology elective list, contact envsadvi@ucsc.edu."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS83",
+       "ENVS84",
+       "ENVS99F",
+       "ENVS183",
+       "ENVS199F"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Required Internship or Independent Study",
+       "prose": [
+        "Complete one of the following in a topic related to agroecology, aquaculture, or sustainable food systems:"
+       ]
+      }
+     }
+    ],
+    "title": "Required Internship or Independent Study"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. A primary goal of the agroecology major is to train students who are able to critically analyze interdisciplinary environmental problems, justify their position on an issue, and communicate that position to a range of audiences verbally and in writing."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS100",
+       "ENVS100L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The DC requirement in agroecology is satisfied by completing:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS183B",
+       "ENVS190",
+       "ENVS195B",
+       "ENVS196",
+       "ENVS196G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ENVS 183B and ENVS 195B are usually taken after successfully completing ENVS 183A and ENVS 195A respectively."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "ENVS 183B and ENVS 195B are usually taken after successfully completing ENVS 183A and ENVS 195A respectively."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The senior comprehensive may be satisfied by completing one of the options listed below. All courses used to satisfy the senior comprehensive requirement must be taken for a letter grade. The topic engaged in the senior comprehensive courses must be relevant to the field of agroecology.",
+        "type": "prose"
+       },
+       {
+        "text": "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior comprehensive may be satisfied by completing one of the options listed below. All courses used to satisfy the senior comprehensive requirement must be taken for a letter grade. The topic engaged in the senior comprehensive courses must be relevant to the field of agroecology.",
+        "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
+        "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS183B",
+       "ENVS190",
+       "ENVS195B",
+       "ENVS196",
+       "ENVS196G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ENVS 183B and ENVS 195B are usually taken after successfully completing ENVS 183A and ENVS 195A respectively."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "ENVS 183B and ENVS 195B are usually taken after successfully completing ENVS 183A and ENVS 195A respectively."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "agroecology-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/environmental-studies/agroecology-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

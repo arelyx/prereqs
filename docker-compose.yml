@@ -20,6 +20,7 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://prereqs:prereqs@db:5432/prereqs
       DATA_ROOT: /srv/data
+      COMMITTED_ROOT: /srv/data-committed
     ports:
       - "8200:8000"
     depends_on:
@@ -28,6 +29,7 @@ services:
     volumes:
       - ./backend:/srv/backend
       - ./data:/srv/data:ro
+      - ./data-committed:/srv/data-committed:ro
     command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
 
   frontend:

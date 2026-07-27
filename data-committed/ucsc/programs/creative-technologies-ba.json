@@ -1,0 +1,303 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "creative-technologies",
+ "division": "arts-division",
+ "kind": "major",
+ "name": "Creative Technologies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Creative technologies (CT) is an online interdisciplinary arts and design major, with contributions from faculty across the Arts Division. Its curriculum features innovative teaching and learning environments, paired with emphases on emerging arts and design technologies and the active roles of artists and designers in cultivating a just and ethical society. Students in creative technologies develop fluency in the languages and tools of contemporary media, arts, and design technologies, including technologies for creativity in sound, image, and animation; games and playable media; documentary and knowledge-curation media; web-based and participatory media; and creative interactions with machine learning and AI.",
+     "At the core of the creative technologies ethos is a conviction that technology literacy and technology ethics are intrinsically bound. Our courses reflect UCSC faculty arts research that occurs at the intersections of justice, accessibility, equity, diversity, and inclusion—along cultural, gender, racial, economic, and social dimensions—with commitments to expanding access to innovative arts education, re-contextualizing and challenging Western and other hegemonic frameworks for creative work, and amplifying marginalized and historically silenced voices.",
+     "Artists and designers are primary curators of knowledge, dialogue, and cultural representation. Within those roles, they are held responsible for their commitments to community agency, self-governance, the pursuit of justice and liberty, environmental action, and other values. When artists rise to that accountability, they are empowered to broaden and democratize human knowledge, and transform dynamics of power in society. To support that crucial work, creative technologies aims to prepare students for a lifetime of relevant, meaningful, and impactful creative engagement—while instilling capacity for work and play, planning and improvisation, community efficacy, self-expression, collective reflection, and even fun.",
+     "This program is delivered in lab-based online environments, operating both synchronously and asynchronously. A majority of its first-year curriculum, and some of its second, centers real-time interactions with teachers and classmates, via video and other live remote learning technologies. Courses will sometimes include asynchronous modes of delivery, allowing students to navigate all materials at paces that suit their needs and interests. In both types of learning, creative technologies generates a robust community in which students learn through collaborative journeys of art-making, critical inquiry, and critique. Creative technologies students aspire to intrinsically collaborative art and design work, and work that connects online and traditional communities with lasting meaning. Students will learn how to navigate the platforms and venues in which sound and image, story and play, character and action, can be brought effectively to a wide and inquisitive public. In that process, students also learn effective production practices—including enriched practices for dialogue, spontaneous and dynamic composition or design, scholarly research skills, and innovative styles of collaboration—that bring complex, impactful projects to fruition."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "1. Gain literacy in creative tools for digital expression , and in the effective use of technology in arts and design: including digital platforms and algorithms, AI- and algorithmic arts and design tools, and emerging technology in a variety of media.",
+     "2. Critically comprehend media and media culture , potentially including institutions, creative labor and labor practices; the ethics of data, information, and digital platforms; with a focus on digital media's diverse impacts on dialogues surrounding tradition, culture, and racial, social, and environmental justice.",
+     "3. Understand contemporary creative practices in their contexts : relating them to the impactful practices of our contemporaries and predecessors; contextualized by theory, history, and ethics in the arts, design, and media.",
+     "4. Learn strategies for bringing complex work to completion , individually and collaboratively, across a variety of media, including written, image- and sound-based, performance-based, and socially engaged media.",
+     "5. Cultivate a mindset of curiosity, dialogue, and growth , with respect to one’s work and process, and its social and ethical impact. We learn from mistakes as well as triumphs—ours and others'—as we work toward meaningful creative work and social change.",
+     "6. Learn to engage in informed social practices , shaped by reflection on practical activism for positive change; individual and collective identity; sustainability; equity; and justice; and by a community-focused commitment to re-contextualize and challenge Western and other hegemonic frameworks for art and design."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Students who plan to major in creative technologies should meet with the major advisor early in their UC Santa Cruz career to create an academic plan that can accommodate the relatively inflexible nature of major course offerings.",
+     "For more information and advising on the creative technologies major, please contact the major advisor at creative@ucsc.edu ."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students interested in majoring in creative technologies are encouraged to speak with the major advisor early in their academic career. The standard pathway through the major involves completion of general education requirements, and two major qualification courses, in the first two years, and an intensive progression through the required creative technologies major courses in the junior and senior years. Progress through this major plan involves 1-2 major courses each quarter, with limited variation, so that in the two years of major study, students will connect strongly with a cohort that moves through the same sequence with them.",
+     "Incoming frosh do not need to satisfy any requirements prior to arriving at UCSC. During their first two years, students should enroll in a variety of courses, making progress in general education requirements, and ideally exploring Arts Division courses in histories and/or cultures of arts and media, and courses either in the Arts Division or Baskin Engineering in coding and programming for arts and media, sound design or electronic music, arts curation, 2D drawing and animation, and/or 3D modeling. If CT students wish to explore a double major or minor, they should prioritize coursework for the second major in their first two years, since the creative technologies program is normally intensive in the junior and senior years."
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Creative technologies is a non-screening major. Transfer students planning to apply to UC Santa Cruz with this major are not required to complete specific major preparation courses for consideration of admission, but they should review the requirements for major qualification to get a sense of courses that will best prepare them for the major.",
+     "Due to the dense and sequential nature of the curriculum, creative technologies currently only accepts students for fall transfer.",
+     "Given the availability of online courses outside of creative technologies, students are encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or as many of the UC Santa Cruz general education requirements as possible prior to transferring. Courses in this major will satisfy the IM, PE, and PR GEs.",
+     "Students are admitted to UC Santa Cruz with a “proposed major” in most cases, and later petition to officially declare the major. Junior transfer students must be formally declared by the deadline in their second quarter of enrollment.",
+     "During the summer before matriculation, each transfer student is required to meet with the creative technologies major advisor prior to enrollment to go over their goals in the program and to create an individualized academic plan.",
+     "Transfer students are strongly encouraged to participate conscientiously in Online Orientation, regularly connect with the major advisor, and utilize transfer-focused campus partners like Services for Transfer Re-entry and Resilient Scholars (STARRS) upon their arrival."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Qualification for the creative technologies major is determined by required coursework and a personal statement . In addition, prospective students are advised to consider a range of recommended courses that can help prepare them for the major.",
+     "Major Qualification Coursework:",
+     "In order to qualify for the major, the student must complete two courses from the Breadth of Arts elective list . Completing these two courses as part of major qualification will count toward the three breadth of arts electives required as part of the major curriculum. Courses not listed may fulfill the requirement; please consult with the major advisor for information about the process to petition for that approval.",
+     "Personal Statement:",
+     "Prospective majors’ personal statements should address three issues:",
+     "(~1 paragraph) Describe relevant courses you have taken that you believe support your goals in the creative technologies major. You may wish to consult our list of “Recommended Courses” below.",
+     "(~2 paragraphs) Describe a work of art or design that you have completed, that you feel was successful in some way. (It may be, but does not need to be, a project completed in a course.) Take care to describe its materials, and your sense of purpose in making it. Consider some of the following questions as optional additional prompts—your use of them will vary depending on your purpose, your media, and your genre: Did you intend the work for a specific audience? If so, how did that intention shape the work? What questions were you asked by your audience, your users, or your participants, when they experienced it? What experiences did they share with you? Did your work express something about a personal history, a social history, a community need, or an individual need? A possible future? You may opt to describe a series of smaller projects, rather than one large project, if you wish.",
+     "(~1 paragraph) What are your aims in creative technologies? What kind of creative arts or design practices do you envision working on after you have completed your degree?",
+     "Additional Recommended Courses:",
+     "In addition, the following courses are recommended prior to qualification:",
+     "A course in arts or design practices, such as: programming for arts or design, 2D drawing or animation, 3D modeling, sound design or electronic music, or courses in interaction design, play, or multimedia performance.",
+     "At least one course in a justice-related topic, including but not limited to : courses in critical race and ethnic studies (or similar), indigenous studies, labor studies, disability and accessibility, feminist studies, gender studies, and/or courses on postcolonial or decolonizing practices.",
+     "At least one course in critical art and media studies, including but not limited to : courses in the dissemination and interpretation of contemporary media; visual and aural culture studies; film studies; documentary or archive studies; media history; relationships between media, power, and representation; and critical studies of journalism, social media, or popular culture.",
+     "Students must consult with the creative technologies major advisor prior to submitting their petition to declare to ensure they have completed all requirements (personal statement and major qualification courses) and have an updated academic plan, which is required to be on file in order to declare.",
+     "Once the advisor confirms they are ready to declare, students are encouraged to submit the major declaration petition. This should occur as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first).",
+     "The Petition for Major/Minor is available in MyUCSC . Go to the Student Homepage and select the Undergraduate Student eForms tile > Petition for Major/Minor.",
+     "Students will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that must be resolved within at most one more enrolled quarter.",
+     "Students who enter as frosh should plan to complete the major qualification courses early in their studies. As CT requires a personal statement in addition to qualification coursework, students who enter as frosh must submit their personal statement at least two weeks prior to the sophomore spring major declaration deadline in order to allow time for administrative review. Late personal statements may lead to a delay in the processing of the major declaration petition.",
+     "All sophomore level students must declare CT by the sophomore spring declaration deadline in order to be considered for entry into the fall junior cohort. The spring deadline also applies for students who would like to add CT as a double major or change their major to CT from a different proposed or declared major.",
+     "Transfer students who enter as proposed CT majors must complete the required qualification coursework and declare the major by the end of their second quarter. For transfer students who entered in fall, personal statements must be submitted at least two weeks prior to the winter major declaration deadline to allow time for administrative review.",
+     "Campus major declaration deadlines can be found on the Academic & Administrative Calendar .",
+     "The creative technologies program makes every effort to support students in declaring their major. Students who have reached their declaration deadline quarter but have not met major qualification requirements should submit the Petition for Major/Minor eForm. A major declaration petition by a student who does not meet major qualification requirements serves as an appeal. The result will be approval, denial, or the setting of conditions that must be resolved within at most one more enrolled quarter. This will be determined by a departmental review of the student’s individual context and potential for success in the major, and will involve direct communication with the student."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "All requirements for the bachelor of arts degree with a major in creative technologies can be completed online. Students may choose to enroll in either in-person or online classes in order to fulfill general education (GE) and other university requirements. All courses in the creative technologies major are offered exclusively in an online format.",
+     "The creative technologies curriculum is a synchronous online curriculum. All of the courses operate in scheduled meetings for discussions, lectures, labs, and other real-time activities. In addition, the courses make use of advanced online learning tools, which will include \"asynchronous\" text-based and multimedia interaction, and web-based tools that are optimized for our courses’ learning goals.",
+     "Creative technologies is not just a sequence of courses, but a vibrant community of engaged, collaborative students and faculty. Students’ regular and active interaction with peers, including conscientious camera-on attendance at all synchronous class meetings, and motivated, active engagement with course media and materials, are a mainstay of the creative technologies curriculum. Like all courses at UC Santa Cruz, students should expect roughly 15 hours of work per week per 5-credit course."
+    ],
+    "title": "Online Modality"
+   },
+   {
+    "paragraphs": [
+     "Given the online nature of creative technologies and its subject matter, students are required to own either a laptop computer, or a desktop computer and a tablet. Technology chosen in these categories need not be brand new, but should be capable of running the latest version of its respective (Mac, iOS, PC, etc.) operating system. All current creative technologies courses require a webcam and microphone, which are integrated into most recent devices.",
+     "Creative technologies maintains a student equipment check-out system for declared students who may require additional technology. For more information, please email the major advisor at creative@ucsc.edu ."
+    ],
+    "title": "Required Equipment"
+   },
+   {
+    "paragraphs": [
+     "In order to maintain their F-1 visa status, international students must enroll in at least nine (9) credits of in-person courses each quarter. At UCSC, this is more commonly ten (10) credits. If international students wish to physically be on campus and pursue the CT major, it will require strict academic planning in order to adhere to this F-1 visa requirement. International transfer students will not be able to graduate in two years with the CT major because of the amount of online coursework required for the major. Therefore, in most cases, we advise that international students participate remotely in CT, which does not require them to maintain an F-1 visa.",
+     "For more details on visa requirements, visit International Student Services & Programming ."
+    ],
+    "title": "International Students"
+   },
+   {
+    "paragraphs": [
+     "Creative technologies students interested in studying abroad during the academic year should meet with their major advisor early in the planning process. Due to the structure of the creative technologies program, students may only participate in UCSC Partner Programs during the academic year. This ensures they can enroll in required online creative technologies courses alongside any courses taken abroad. Students are encouraged to keep time zone differences in mind when selecting a program. Summer opportunities will not present a conflict with creative technologies courses.",
+     "For more details about studying abroad, visit UC Santa Cruz Global Learning ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy outside the university's Pass/No Pass limit and minimum grade requirement (more information is available on the Pass/No Pass website )."
+    ],
+    "title": "Letter Grade Policy"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CT1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take three quarters of colloquium:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CT10",
+       "CT11",
+       "CT20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students majoring in creative technologies are required to take three Breadth of Arts elective courses. At least one of the three Breadth of Arts elective courses must be upper-division (numbered 100 and above). The remaining two courses may be lower- or upper-division.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Breadth of Arts Electives:",
+       "prose": [
+        "Students majoring in creative technologies are required to take three Breadth of Arts elective courses. At least one of the three Breadth of Arts elective courses must be upper-division (numbered 100 and above). The remaining two courses may be lower- or upper-division.",
+        "Courses relevant to the requirement, but not listed here (including graduate seminars), may be proposed to fulfill this requirement via petition; please contact the major advisor to learn about the petition process.",
+        "Students are encouraged to take courses in their preferred artistic media.",
+        "Students may choose from the list of Breadth of Arts elective courses ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students take six upper-division core courses, one special topics course, and one upper-division Breadth of Arts elective (see above), for a total of eight upper-division courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CT100",
+       "CT101",
+       "CT120",
+       "CT125",
+       "CT151",
+       "CT195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CT167I",
+       "CT167N",
+       "CT167Q",
+       "CT167S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following special topics courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CT101",
+       "CT195"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Disciplinary Communication DC Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement. The DC requirement in creative technologies is satisfied by completing the following two courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication DC Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CT195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students satisfy the senior comprehensive requirement by completing the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "creative-technologies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/creative-technologies/creative-technologies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}
