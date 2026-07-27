@@ -86,7 +86,9 @@ function Dashboard() {
             under the requirement blocks on mobile. On xl the picker + info
             regroup into the right-hand sidebar (the wrapper is
             display:contents on mobile so its children join the grid). */}
-        <div className="grid grid-cols-1 gap-4 xl:grid-cols-[1fr_320px]">
+        {/* rows-[auto_1fr]: the row-spanning sidebar's extra height must land
+            in row 2, not inflate row 1 and open a gap under the GE panel. */}
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-[1fr_320px] xl:grid-rows-[auto_1fr]">
           <div className="order-1 space-y-4 xl:col-start-1 xl:row-start-1">
             <Planner onOpenCourse={setOpenCourse} />
             <GEPanel onOpenCourse={setOpenCourse} />
