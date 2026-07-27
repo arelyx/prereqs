@@ -1163,6 +1163,8 @@
  "slug": "ecology-and-evolution-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/ecology-and-evolutionary-biology/ecology-and-evolution-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/ecology-and-evolution-bs.md",
+  "status": "failed-verification"
  }
 }

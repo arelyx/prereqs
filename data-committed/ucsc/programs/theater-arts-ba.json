@@ -674,6 +674,8 @@
  "slug": "theater-arts-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/theater-arts-ba.md",
+  "status": "failed-verification"
  }
 }

@@ -827,6 +827,8 @@
  "slug": "network-and-digital-technology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/network-and-digital-technology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/network-and-digital-technology-ba.md",
+  "status": "failed-verification"
  }
 }

@@ -324,6 +324,8 @@
  "slug": "politics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/politics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/politics-ba.md",
+  "status": "failed-verification"
  }
 }

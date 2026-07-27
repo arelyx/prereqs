@@ -181,6 +181,8 @@
  "slug": "anthropology-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/anthropology/anthropology-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/anthropology-minor.md",
+  "status": "failed-verification"
  }
 }

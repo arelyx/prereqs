@@ -828,6 +828,8 @@
  "slug": "molecular-cell-and-developmental-biology-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/molecular-cell-and-developmental-biology-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/molecular-cell-and-developmental-biology-bs.md",
+  "status": "failed-verification"
  }
 }

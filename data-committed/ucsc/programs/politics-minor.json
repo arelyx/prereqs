@@ -190,6 +190,8 @@
  "slug": "politics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/politics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/politics-minor.md",
+  "status": "failed-verification"
  }
 }

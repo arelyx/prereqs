@@ -272,6 +272,8 @@
  "slug": "bioinformatics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/bioinformatics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/bioinformatics-minor.md",
+  "status": "failed-verification"
  }
 }

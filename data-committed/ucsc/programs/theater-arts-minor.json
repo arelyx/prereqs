@@ -249,6 +249,8 @@
  "slug": "theater-arts-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all rules against the rendered snapshot: THEA 61A-C one_of, 14-course lower-division one_of, THEA 50, choose-three history/theory n_of over 38 courses, choose-two studio n_of over 35 courses; membership, operators, and counts all match. The only-one-of THEA 137/137A/139/151/151A/151I/155 rider is kept as source prose and cross-listing riders use primary codes (in-scope approximations); the non-requirement 'DO NOT satisfy' exclusion list is carried as an unknown/needs_review rule rather than info, which does not affect any requirement.",
+  "status": "frontier-verified"
  }
 }

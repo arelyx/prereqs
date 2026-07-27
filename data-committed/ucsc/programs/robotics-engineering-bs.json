@@ -905,6 +905,8 @@
  "slug": "robotics-engineering-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/robotics-engineering-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/robotics-engineering-bs.md",
+  "status": "failed-verification"
  }
 }

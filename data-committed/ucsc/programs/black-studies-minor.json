@@ -163,6 +163,8 @@
  "slug": "black-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/critical-race-and-ethnic-studies/black-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/black-studies-minor.md",
+  "status": "failed-verification"
  }
 }

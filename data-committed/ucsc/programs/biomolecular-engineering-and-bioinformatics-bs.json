@@ -1352,6 +1352,8 @@
  "slug": "biomolecular-engineering-and-bioinformatics-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biomolecular-engineering-and-bioinformatics-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/biomolecular-engineering-and-bioinformatics-bs.md",
+  "status": "failed-verification"
  }
 }

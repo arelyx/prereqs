@@ -1025,6 +1025,8 @@
  "slug": "computer-engineering-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-engineering-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/computer-engineering-bs.md",
+  "status": "failed-verification"
  }
 }

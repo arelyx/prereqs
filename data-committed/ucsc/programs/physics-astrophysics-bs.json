@@ -633,6 +633,8 @@
  "slug": "physics-astrophysics-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/physics-astrophysics-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/physics-astrophysics-bs.md",
+  "status": "failed-verification"
  }
 }

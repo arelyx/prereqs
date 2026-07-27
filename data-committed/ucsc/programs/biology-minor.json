@@ -115,6 +115,8 @@
  "slug": "biology-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/biology-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/biology-minor.md",
+  "status": "failed-verification"
  }
 }

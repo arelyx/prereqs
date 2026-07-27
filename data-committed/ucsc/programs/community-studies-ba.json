@@ -608,6 +608,8 @@
  "slug": "community-studies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/community-studies/community-studies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/community-studies-ba.md",
+  "status": "failed-verification"
  }
 }

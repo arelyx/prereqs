@@ -298,6 +298,8 @@
  "slug": "creative-technologies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/creative-technologies/creative-technologies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/creative-technologies-ba.md",
+  "status": "failed-verification"
  }
 }

@@ -2219,6 +2219,8 @@
  "slug": "environmental-studies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/environmental-studies/environmental-studies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/environmental-studies-ba.md",
+  "status": "failed-verification"
  }
 }

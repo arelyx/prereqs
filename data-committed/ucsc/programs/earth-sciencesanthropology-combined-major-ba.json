@@ -671,6 +671,8 @@
  "slug": "earth-sciencesanthropology-combined-major-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciencesanthropology-combined-major-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/earth-sciencesanthropology-combined-major-ba.md",
+  "status": "failed-verification"
  }
 }

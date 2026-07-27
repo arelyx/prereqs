@@ -446,6 +446,8 @@
  "slug": "applied-linguistics-and-multilingualism-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/applied-linguistics-and-multilingualism-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/applied-linguistics-and-multilingualism-ba.md",
+  "status": "failed-verification"
  }
 }

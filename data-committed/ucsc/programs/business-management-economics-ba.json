@@ -1202,6 +1202,8 @@
  "slug": "business-management-economics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/business-management-economics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked screening/qualification, both the general major and accounting concentration (lower-division all_of, 6-branch mathematics options, STAT 17/17L, computer literacy n_of 2 vs one_of, upper-division core one_ofs, 5-elective n_of over finance/economics pools with business-management n_of 3, 8-course accounting all_of), DC, and comprehensive rules; membership, operators, and counts match the rendered snapshot. Cross-listing riders (LGST/CSE) as primary codes and the ECON 130/159/160A/160B/188 double-count ban kept as source prose (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

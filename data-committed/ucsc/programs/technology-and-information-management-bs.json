@@ -811,6 +811,8 @@
  "slug": "technology-and-information-management-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/technology-and-information-management-bs.md",
+  "status": "failed-verification"
  }
 }

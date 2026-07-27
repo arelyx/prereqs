@@ -186,6 +186,8 @@
  "slug": "science-technology-engineering-and-mathematics-stem-education-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/science-technology-engineering-and-mathematics-stem-education-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all eight-course requirements: EDUC 50A/B/C one_of, EDUC 60 all_of, EDUC 100A/B/C one_of, EDUC 185B/C one_of, EDUC 185L all_of, the nine-course cultural/linguistic diversity one_of, and two electives. Membership, operators, and counts match; the two electives (EDUC 102-187 drawn from an approved department list) modeled as category_count n=2 is an in-scope approximation for the partly-unenumerated pool.",
+  "status": "frontier-verified"
  }
 }

@@ -1224,6 +1224,8 @@
  "slug": "applied-mathematics-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/applied-mathematics-bs.md",
+  "status": "failed-verification"
  }
 }

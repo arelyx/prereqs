@@ -223,6 +223,8 @@
  "slug": "computer-science-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/computer-science-minor.md",
+  "status": "failed-verification"
  }
 }

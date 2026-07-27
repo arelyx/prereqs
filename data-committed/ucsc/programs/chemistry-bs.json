@@ -1235,6 +1235,8 @@
  "slug": "chemistry-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/chemistry-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/chemistry-bs.md",
+  "status": "failed-verification"
  }
 }

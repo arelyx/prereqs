@@ -801,6 +801,8 @@
  "slug": "biochemistry-and-molecular-biology-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/biochemistry-and-molecular-biology-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/biochemistry-and-molecular-biology-bs.md",
+  "status": "failed-verification"
  }
 }

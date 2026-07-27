@@ -197,6 +197,8 @@
  "slug": "mathematics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all six rules against the rendered snapshot: lower-division one_of/all_of memberships, MATH 100, and the four-elective n_of (n=4) over the page's recommended list all match. Approximation observed: the broader MATH/AM/STAT 101-190 pool and the one-AM/STAT-course cap are carried as a prose constraint rather than a machine-enforced range filter.",
+  "status": "frontier-verified"
  }
 }

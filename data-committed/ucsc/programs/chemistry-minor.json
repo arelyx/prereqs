@@ -278,6 +278,8 @@
  "slug": "chemistry-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/chemistry-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/chemistry-minor.md",
+  "status": "failed-verification"
  }
 }

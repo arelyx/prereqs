@@ -513,6 +513,8 @@
  "slug": "biotechnology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biotechnology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/biotechnology-ba.md",
+  "status": "failed-verification"
  }
 }

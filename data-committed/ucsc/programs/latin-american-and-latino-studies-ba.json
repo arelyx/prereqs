@@ -485,6 +485,8 @@
  "slug": "latin-american-and-latino-studies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/latin-american-and-latino-studies/latin-american-and-latino-studies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/latin-american-and-latino-studies-ba.md",
+  "status": "failed-verification"
  }
 }

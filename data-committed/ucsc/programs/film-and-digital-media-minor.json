@@ -209,6 +209,8 @@
  "slug": "film-and-digital-media-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/film-and-digital-media/film-and-digital-media-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked lower-division (FILM 20A all_of; FILM 20B/20C one_of), the three upper-division core one_of groups, and the three-elective range rule: include ranges 100-149/152-169/180-189 plus FILM 194 series and production-course excludes (150, 151, 170-179) match the prose, n=3 matches. Double-count ban and one-course substitution allowance carried as constraint prose (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

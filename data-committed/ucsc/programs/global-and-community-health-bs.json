@@ -985,6 +985,8 @@
  "slug": "global-and-community-health-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/copy-of-global-and-community-health-bs-pbsci/global-and-community-health-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified both concentrations rule by rule: Biomedical (14-course core, CHEM 3/4 series options, MATH series options, SPAN 1-5M language, 10 UD courses, BIOL 189 internship) and Public/Community Health (11-course core incl. METX 41, 28-course breadth one_of, CMMU 165/METX 108, STEM one_of, 65-course non-STEM n_of-2), plus DC (GCH 190+195) and comprehensive. Screening/qualification segregated; substitution riders carried as notes.",
+  "status": "frontier-verified"
  }
 }

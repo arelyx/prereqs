@@ -527,6 +527,8 @@
  "slug": "education-democracy-and-justice-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/education-democracy-and-justice-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/education-democracy-and-justice-ba.md",
+  "status": "failed-verification"
  }
 }

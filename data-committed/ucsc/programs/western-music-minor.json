@@ -272,6 +272,8 @@
  "slug": "western-music-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/western-music-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all seven rules against rendered snapshot: history one_of, theory all_of (30A-C), keyboard/musicianship all_of (31, 60 with waiver notes), n_of 3 applied-lesson and ensemble rules (lower and upper), and n_of 2 of the 23 upper-division electives. Quarters-of-repeatable-courses counted as n distinct courses and MUSC 31 repeat policy carried as notes (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

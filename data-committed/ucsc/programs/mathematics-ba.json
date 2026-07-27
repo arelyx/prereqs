@@ -659,6 +659,8 @@
  "slug": "mathematics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/mathematics-ba.md",
+  "status": "failed-verification"
  }
 }

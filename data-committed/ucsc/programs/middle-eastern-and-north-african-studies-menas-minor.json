@@ -242,6 +242,8 @@
  "slug": "middle-eastern-and-north-african-studies-menas-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/middle-eastern-and-north-african-studies-menas-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/middle-eastern-and-north-african-studies-menas-minor.md",
+  "status": "failed-verification"
  }
 }

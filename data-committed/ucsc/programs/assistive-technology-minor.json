@@ -225,6 +225,8 @@
  "slug": "assistive-technology-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/assistive-technology-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all lower- and upper-division rules against rendered snapshot: three one_of pairs (AM10/MATH21, AM20/MATH24, CHEM3A/CHEM4A), 9-course all_of core, ECE13/CSE13S choice, 9-course upper-division all_of, ECE121/ECE141 choice. CHEM 1A-equivalency and PHYS 15A/15C substitutions carried as notes (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

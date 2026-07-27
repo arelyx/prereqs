@@ -829,6 +829,8 @@
  "slug": "applied-physics-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/applied-physics-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked standard major and Computational Physics concentration rule by rule: lower-division one_of pairs and all_of groups, upper-division all_of cores, n_of-3 elective lists with prose riders as constraints, DC options (PHYS 182 vs PHYS 195A+195B), and comprehensive courses (PHYS 134 / PHYS 115) all match the snapshot. Cross-listings carried as primary codes; substitution riders as notes; winter-entrant screening rule flagged needs_review in segregated qualification section (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

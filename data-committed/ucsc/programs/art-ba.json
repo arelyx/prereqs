@@ -416,6 +416,8 @@
  "slug": "art-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/art/art-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/art-ba.md",
+  "status": "failed-verification"
  }
 }

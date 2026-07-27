@@ -1200,6 +1200,8 @@
  "slug": "electrical-engineering-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified transfer screening and major qualification (segregated as qualification sections), all lower-division rules incl. the MATH 23A-B / AM 30+100 options, the 8 required upper-division courses, both concentration elective pools (44 and 30+CSE 150 courses; ECE 253/CSE 208 as primary code), and DC/comprehensive options branches (ECE 129A-C vs ECE 129A + 2x ECE 195). Concentration three-course minimum and design-elective rider carried as constraints text (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

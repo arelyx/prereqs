@@ -134,6 +134,8 @@
  "slug": "earth-sciences-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciences-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/earth-sciences-minor.md",
+  "status": "failed-verification"
  }
 }

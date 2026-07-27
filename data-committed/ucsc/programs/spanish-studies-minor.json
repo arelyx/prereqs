@@ -291,6 +291,8 @@
  "slug": "spanish-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/spanish-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/spanish-studies-minor.md",
+  "status": "failed-verification"
  }
 }

@@ -625,6 +625,8 @@
  "slug": "science-education-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/science-education-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/science-education-bs.md",
+  "status": "failed-verification"
  }
 }

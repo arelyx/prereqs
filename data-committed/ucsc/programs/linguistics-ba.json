@@ -537,6 +537,8 @@
  "slug": "linguistics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/linguistics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/linguistics-ba.md",
+  "status": "failed-verification"
  }
 }

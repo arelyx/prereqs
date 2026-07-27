@@ -741,6 +741,8 @@
  "slug": "computer-science-computer-game-design-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computational-media/computer-science-computer-game-design-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/computer-science-computer-game-design-bs.md",
+  "status": "failed-verification"
  }
 }

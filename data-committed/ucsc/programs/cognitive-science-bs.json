@@ -949,6 +949,8 @@
  "slug": "cognitive-science-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/psychology/cognitive-science-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/cognitive-science-bs.md",
+  "status": "failed-verification"
  }
 }

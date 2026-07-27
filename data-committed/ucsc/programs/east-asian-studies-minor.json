@@ -229,6 +229,8 @@
  "slug": "east-asian-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/east-asian-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/east-asian-studies-minor.md",
+  "status": "failed-verification"
  }
 }

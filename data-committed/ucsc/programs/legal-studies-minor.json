@@ -178,6 +178,8 @@
  "slug": "legal-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/legal-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked lower-division (LGST 10 all_of) and upper-division (n_of 5 over the approved-course pool) against the rendered snapshot; membership matches item-for-item with cross-listing riders as primary codes. SPAN 130/SPAN 6/SPHS 6 one-entry equivalence and the LGST 188A+OAKS 188B two-courses-count-as-one rider carried as notes (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

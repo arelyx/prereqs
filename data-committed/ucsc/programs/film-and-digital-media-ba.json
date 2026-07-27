@@ -975,6 +975,8 @@
  "slug": "film-and-digital-media-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/film-and-digital-media/film-and-digital-media-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/film-and-digital-media-ba.md",
+  "status": "failed-verification"
  }
 }

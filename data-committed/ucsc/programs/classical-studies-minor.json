@@ -145,6 +145,8 @@
  "slug": "classical-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/classical-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified the GREE 1-2 / LATN 1-2 options branches, the LIT 184A/186A one_of, and the 44-course n_of-4 upper-division elective pool against the page (cross-listed LIT 159M/HIS 159M and POLI 105A/LGST 105A carried as primary codes). Prior-knowledge advisory carried as a note. No discrepancies.",
+  "status": "frontier-verified"
  }
 }

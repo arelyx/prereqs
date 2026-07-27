@@ -79,6 +79,8 @@
  "slug": "history-of-consciousness-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history-of-consciousness/history-of-consciousness-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Both sections match the snapshot: lower-division HISC 1 as all_of; upper-division five 5-credit HISC 100-199 courses as a range rule (n=5, include HISC 100-199). Petition/substitution and grade riders left as source prose (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

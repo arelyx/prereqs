@@ -329,6 +329,8 @@
  "slug": "critical-race-and-ethnic-studies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/critical-race-and-ethnic-studies/critical-race-and-ethnic-studies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked lower-division (CRES 10 all_of + one_of elective pool with cross-listing primaries), upper-division core all_of (CRES 100/101), the five-elective category_count (n=5, genuinely unenumerated pool on separate electives page), DC (CRES 101), and comprehensive one_of (22 senior-seminar courses, cross-listing primaries) against the snapshot. Breadth riders (two transnational, one social movements, one CRES) carried as source prose (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

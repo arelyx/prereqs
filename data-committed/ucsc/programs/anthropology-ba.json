@@ -451,6 +451,8 @@
  "slug": "anthropology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/anthropology/anthropology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/anthropology-ba.md",
+  "status": "failed-verification"
  }
 }

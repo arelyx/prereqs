@@ -732,6 +732,8 @@
  "slug": "sociology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/sociology/sociology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/sociology-ba.md",
+  "status": "failed-verification"
  }
 }

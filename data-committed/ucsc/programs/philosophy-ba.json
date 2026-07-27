@@ -338,6 +338,8 @@
  "slug": "philosophy-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/philosophy/philosophy-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/philosophy-ba.md",
+  "status": "failed-verification"
  }
 }

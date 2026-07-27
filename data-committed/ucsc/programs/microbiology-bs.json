@@ -681,6 +681,8 @@
  "slug": "microbiology-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/microbiology-and-environmental-toxicology/microbiology-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/microbiology-bs.md",
+  "status": "failed-verification"
  }
 }

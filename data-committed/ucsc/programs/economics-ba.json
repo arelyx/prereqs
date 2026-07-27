@@ -732,6 +732,8 @@
  "slug": "economics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/economics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked screening, major qualification, lower-division (six-branch calculus options match narrative markers), upper-division core/DC/five-elective n_of with three list pools, DC, and comprehensive sections against the rendered snapshot; membership, operators, and counts all match. Cross-listing riders carried as primary codes and elective-distribution/GPA riders kept as prose constraints (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

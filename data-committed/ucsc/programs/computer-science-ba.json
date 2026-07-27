@@ -841,6 +841,8 @@
  "slug": "computer-science-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked lower/upper-division, breadth (n_of 3 over two list pools), electives (n_of 3), DC (one_of), and comprehensive (section_choice: capstone one_of vs senior thesis) against rendered page; membership, operators and counts match. Screening/qualification segregated; elective open-range categories (any BE UD 100-189, CSE 201-279) carried as prose only — an in-scope approximation.",
+  "status": "frontier-verified"
  }
 }

@@ -855,6 +855,8 @@
  "slug": "history-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/history-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/history-ba.md",
+  "status": "failed-verification"
  }
 }

@@ -104,6 +104,8 @@
  "slug": "education-minor-general",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/education-minor-general",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all three requirement sections: EDUC 60 all_of, EDUC 110/180 one_of, and the four upper-division electives as a range (EDUC 102-187, n=4). Membership, operators, and counts all match the snapshot.",
+  "status": "frontier-verified"
  }
 }

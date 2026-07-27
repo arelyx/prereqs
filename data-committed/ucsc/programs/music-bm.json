@@ -462,6 +462,8 @@
  "slug": "music-bm",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/music-bm",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/music-bm.md",
+  "status": "failed-verification"
  }
 }

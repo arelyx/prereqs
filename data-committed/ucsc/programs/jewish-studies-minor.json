@@ -159,6 +159,8 @@
  "slug": "jewish-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/jewish-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all three sections: one_of over the six lower-division core courses, n_of 3 over the 26 upper-division core courses, n_of 4 over the 33 listed electives; membership and counts match the rendered page. The 'or any courses not already taken in the core lists' pool expansion and the two-upper-division-electives rider are carried as constraint prose (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

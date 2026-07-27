@@ -1032,6 +1032,8 @@
  "slug": "psychology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/psychology/psychology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "see _reports/psychology-ba.md",
+  "status": "failed-verification"
  }
 }
