@@ -59,3 +59,28 @@ block to `{"status": "failed-verification", "date": "2026-07-26", "notes":
 "see _reports/<slug>.md"}` (same edit rules).
 
 Report totals in your final message: `<n> PASS, <n> FAIL, slugs of failures`.
+
+## Repair protocol (for report-guided repair agents)
+
+For a program with `failed-verification` and a report in `_reports/<slug>.md`:
+
+1. Read the report AND re-render the page yourself (render_page) — the
+   report's "smallest correct representation" is a proposal, not gospel;
+   confirm it against the page before applying.
+2. Edit `data-committed/ucsc/programs/<slug>.json` to fix EXACTLY the
+   reported discrepancies (plus anything the report missed that you catch):
+   minimal, surgical changes to the affected rules only. Valid ops:
+   all_of, one_of, n_of (+n), options (branches), n_of_groups (n+branches),
+   range (n + filter {include_ranges,include_series,exclude_ranges,
+   exclude_codes}), section_choice, category_count (+n, for genuinely
+   unlisted membership), list (pool under a counting parent), info
+   (advisory/policy only). A counting parent drawing from following list
+   pools carries "from_following_lists": true; a parent counting a
+   materialized union carries "pool": [codes].
+3. Set top-level `"origin": "hand-edited"` (protects the file from pipeline
+   overwrites) and the verification block to frontier-verified with notes
+   "hand-corrected per _reports/<slug>.md: <one-line summary>".
+4. Re-verify your own edit against the rendered page before finishing.
+5. JSON dump: json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=True)
+   + trailing newline. NEVER default ensure_ascii (it mangles em-dashes).
+6. Delete the report file after a successful repair (git history keeps it).
