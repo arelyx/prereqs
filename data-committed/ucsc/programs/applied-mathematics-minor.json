@@ -1,0 +1,199 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "applied-mathematics",
+ "division": "baskin-engineering",
+ "kind": "minor",
+ "name": "Applied Mathematics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ],
+       [
+        "AM30"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Basic calculus sequence:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Basic calculus sequence:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "AM10",
+        "AM20"
+       ],
+       [
+        "MATH21",
+        "MATH24"
+       ],
+       [
+        "PHYS116A"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: The combination of AM 10 plus MATH 24 or the combination of MATH 21 plus AM 20 also fulfills the requirement. Students who complete MATH 21 and MATH 24 or PHYS 116A are strongly recommended to complete the MATLAB self-paced tutorial ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following sequences",
+       "prose": [
+        "Note: The combination of AM 10 plus MATH 24 or the combination of MATH 21 plus AM 20 also fulfills the requirement. Students who complete MATH 21 and MATH 24 or PHYS 116A are strongly recommended to complete the MATLAB self-paced tutorial ."
+       ]
+      }
+     }
+    ],
+    "title": "Plus one of the following sequences"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Mathematical Methods",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM114"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Dynamical Systems",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM147",
+       "PHYS115",
+       "MATH148"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Introduction to Numerical Methods",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM112",
+       "PHYS116C",
+       "MATH107"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Partial Differential Equations",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE107",
+       "ECE103",
+       "ECE115",
+       "ECE141",
+       "MATH103A",
+       "MATH117",
+       "MATH121A",
+       "PHYS105",
+       "PHYS139A",
+       "PHYS139B",
+       "PHYS171",
+       "STAT131",
+       "STAT132"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may also propose other electives which use applied mathematical methods, subject to approval by the department."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus One Applied Mathematics Elective from the Following List",
+       "prose": [
+        "Any 5-credit upper-division (100-199) or graduate (200-299) AM course that is not already listed in the categories above. Independent studies ( AM 198 ), AM 200 , 211, and the 280 series and above may not be used.",
+        "Students may also propose other electives which use applied mathematical methods, subject to approval by the department."
+       ]
+      }
+     }
+    ],
+    "title": "Complete one course from each of the following categories"
+   }
+  ]
+ },
+ "slug": "applied-mathematics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,1030 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "computer-science-and-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Computer Engineering B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The bachelor of science (B.S.) in computer engineering prepares graduates for a rewarding career in engineering. UC Santa Cruz computer engineering graduates will gain a thorough grounding in the principles and practices of computer engineering and the scientific and mathematical principles upon which they are built; they will be prepared for further education (both formal and informal) and for productive employment in industry. Because computer engineering is so broad, the B.S. in computer engineering offers three specialized concentrations for completing the program: computer systems, networks, and digital hardware",
+     "Computer Systems Concentration",
+     "The computer systems concentration provides a balance between software and hardware design. Students are prepared for a large variety of different design tasks, especially those requiring the integration of hardware and software systems, but may need further training for any particular specialization.",
+     "Networks Concentration",
+     "The networks concentration focuses on communication between computers, covering both network hardware and protocols. Students finishing this concentration are well prepared for the design of wired and wireless network systems.",
+     "Digital Hardware Concentration",
+     "The digital hardware concentration focuses on hardware design and includes more electronics than the other concentrations. Students finishing this concentration are well prepared for building hardware systems. This concentration is the closest one to an electronics major; the main differences are that it does not require as much electronics theory or analog electronic design, but because of the core computer engineering requirements, requires more software skills."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "For the Computer Engineering B.S. degree, the program learning outcomes are:",
+     "an ability to apply knowledge of mathematics, science, and engineering;",
+     "an ability to design a system, component, or process to meet desired needs within realistic constraints;",
+     "an ability to function effectively on teams that establish goals, plan tasks, meet deadlines, and analyze risk and uncertainty;",
+     "an ability to communicate effectively; and",
+     "an ability to use the techniques, skills, and modern engineering tools necessary for engineering practice."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering undergraduate advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications. Undergraduate students obtain and submit all paperwork requiring departmental approval to the undergraduate advising office. Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at the University of California, Santa Cruz.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All students admitted to a Baskin Engineering major, or seeking admission to a major, must take all courses required for that major for a letter grade. This policy includes courses required for these degrees that are sponsored by other departments."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate engineering students who wish to substitute a major course with a course from another department at UC Santa Cruz, or from another academic institution, must first seek approval through the Baskin Engineering Undergraduate Advising Office. The advising office requires a Petition for Course Substitution be approved before credit for an alternate course can be applied to any Baskin Engineering major requirement.",
+     "Petition forms are available at the Undergraduate Advising Office and online.",
+     "Petitions and procedures for approval must be obtained from and submitted to the Undergraduate Advising Office.",
+     "Once enrolled in Baskin Engineering students who wish to take a course at a California community college must first check Assist.org to see if the course is equivalent at UC Santa Cruz. If the course is not listed on Assist.org, students must submit a course substitution petition to the BE Undergraduate Advising Office to have it reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus. It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better.",
+     "If the course is approved for equivalency or was on Assist.org, then students with declared majors must also receive approval by their major department to take the class at the community college PRIOR to taking it. Undeclared students must receive prior approval",
+     "from the CSE Department to substitute a course for CSE 13S . Undeclared students do not require prior approval for other courses listed on Assist.org . Forms and procedures for approval can be obtained from and submitted to the BE Undergraduate Advising Office.",
+     "Students who intend to take a course at a four-year institution or UC Education Abroad, must submit a Course Substitution Petition to the BE Undergraduate Advising Office to have the course reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus. It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students completing the computer engineering major cannot also receive the computer engineering minor or the Network and Digital Technology B.A. degree."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are awarded, in most cases, to students with a GPA of 3.30-3.69. Highest honors are awarded, in most cases to students with a GPA of 3.70 and above. The GPA includes all UCSC undergraduate and graduate courses taken in all departments that fall within the Divisions of Physical and Biological Sciences and of Baskin Engineering. Students with particularly significant accomplishments in undergraduate research or contributions to Baskin Engineering may be considered with a lower GPA. Computer engineering juniors and seniors may also be eligible for election to the UC Santa Cruz chapter of Tau Beta Pi, the national engineering honor society founded in 1885."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Please see the section on fees under Baskin Engineering."
+    ],
+    "title": "Materials Fee and Miscellaneous Fees"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students who want to pursue the computer engineering major, must have applied and been admitted to UC Santa Cruz as a proposed computer engineering major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Transfer students must complete at least six of the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or the end of the fall term prior to winter enrollment. Lecture-lab combinations count as one course. Students must have and maintain a cumulative minimum GPA of 2.8 in all screening courses. Cumulative GPA is calculated based on all Computer Engineering transfer screening courses taken. All individual screening courses must be passed with a C (2.0) or better.",
+        "type": "prose"
+       },
+       {
+        "text": "Four of the six courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, or by the end of the spring term in the academic year preceding the planned winter term and year of transfer, with a minimum GPA of 2.8 across all Computer Engineering transfer screening courses completed at that time.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students must complete at least six of the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or the end of the fall term prior to winter enrollment. Lecture-lab combinations count as one course. Students must have and maintain a cumulative minimum GPA of 2.8 in all screening courses. Cumulative GPA is calculated based on all Computer Engineering transfer screening courses taken. All individual screening courses must be passed with a C (2.0) or better.",
+        "Four of the six courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, or by the end of the spring term in the academic year preceding the planned winter term and year of transfer, with a minimum GPA of 2.8 across all Computer Engineering transfer screening courses completed at that time.",
+        "Please note that while AP courses satisfy screening requirements they do not count toward the minimum GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B",
+       "AM10",
+       "MATH21",
+       "AM20",
+       "AM30",
+       "MATH23A",
+       "CSE12",
+       "CSE13S",
+       "CSE16",
+       "CSE30",
+       "ECE13",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N"
+      ],
+      "n": 6,
+      "needs_review": false,
+      "notes": [
+       "Lecture-lab combinations count as one course. CSE 13S and ECE 13 are alternatives; only one or the other, whichever is completed first, can count toward the six courses. AM 10 and MATH 21 are alternatives; only one or the other, whichever is completed first, can count toward the six courses. AM 30 and MATH 23A are alternatives; only one or the other, whichever is completed first, can count toward the six courses."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Students should complete at least six of the following",
+       "prose": [
+        "Lecture-lab combinations count as one course.",
+        "CSE 13S and ECE 13 are alternatives; only one or the other, whichever is completed first, can count toward the six courses.",
+        "AM 10 and MATH 21 are alternatives; only one or the other, whichever is completed first, can count toward the six courses.",
+        "AM 30 and MATH 23A are alternatives; only one or the other, whichever is completed first, can count toward the six courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "To earn their degree within two years after transferring, it is recommended that transfer students have completed courses transferable as PHYS 5A / PHYS 5L , PHYS 5C / PHYS 5N , MATH 19A , MATH 19B , and one of the following: MATH 23A , AM 10 , MATH 21 , or AM 20 . In addition, completion of at least one programming course is recommended.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Before you transfer: recommendations",
+       "prose": [
+        "To earn their degree within two years after transferring, it is recommended that transfer students have completed courses transferable as PHYS 5A / PHYS 5L , PHYS 5C / PHYS 5N , MATH 19A , MATH 19B , and one of the following: MATH 23A , AM 10 , MATH 21 , or AM 20 . In addition, completion of at least one programming course is recommended."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. Instructions for declaring a major in Baskin Engineering are on the Baskin Engineering undergraduate advising website ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In order to declare the computer engineering major students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the Transfer Admission Screening requirements.",
+        "In order to declare the computer engineering major students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+        "In addition to being listed as a proposed Baskin Engineering major, declaration of the computer engineering major in the first six quarters of enrollment at UC Santa Cruz is based on performance in the following lower-division courses required for the major:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "CE Major Qualification Courses",
+       "prose": [
+        "Both of these:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM30",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of these (whichever is completed first):",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of these (whichever is completed first):",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of these:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students in their first six quarters who have completed at least 36 credits in these courses (of the 63 total credits), will be admitted to the computer engineering major if their cumulative GPA is at least 2.8 in all of the courses listed above; and if they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Although all 63 credits listed above as CE Major Qualification Courses must be completed to earn the degree, only 36 of the 63 credits must be completed before declaring the major.",
+        "type": "prose"
+       },
+       {
+        "text": "Students in their first six quarters who have completed at least 36 credits in these courses (of the 63 total credits), will be admitted to the computer engineering major if their cumulative GPA is at least 2.8 in all of the courses listed above; and if they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Although all 63 credits listed above as CE Major Qualification Courses must be completed to earn the degree, only 36 of the 63 credits must be completed before declaring the major.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "AM20",
+       "CSE12",
+       "CSE16",
+       "CSE30",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "And all of these:",
+       "prose": [
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C .",
+        "Students in their first six quarters who have completed at least 36 credits in these courses (of the 63 total credits), will be admitted to the computer engineering major if their cumulative GPA is at least 2.8 in all of the courses listed above; and if they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Although all 63 credits listed above as CE Major Qualification Courses must be completed to earn the degree, only 36 of the 63 credits must be completed before declaring the major.",
+        "Students in their first six quarters who have completed at least 36 credits in these courses (of the 63 total credits), will be admitted to the computer engineering major if their cumulative GPA is at least 2.8 in all of the courses listed above; and if they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Although all 63 credits listed above as CE Major Qualification Courses must be completed to earn the degree, only 36 of the 63 credits must be completed before declaring the major."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they are not qualified for the major may appeal this decision by submitting a letter to the undergraduate director through the Baskin Engineering undergraduate advising office within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, college, and Office of the Registrar of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed enough courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "There are four steps to declaring a Baskin Engineering major. For a detailed guide to this process, please consult the Baskin Engineering Declare Your Major website.",
+        "Students should start the declaration of major process by completing Step One on the Baskin Engineering Declare Your Major website as soon as they complete 36 credits in the computer engineering major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed enough courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements (all concentrations)",
+       "prose": [
+        "All students in the computer engineering major take the same core courses, which give the fundamentals of programming and hardware design, supported by the physics and mathematics necessary to understand them. Students must complete all of the courses listed within their selected concentration, and they must complete the capstone sequence. The comprehensive requirement for computer engineering majors is satisfied by completion of the capstone course. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements (all concentrations)"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM30",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16",
+       "CSE20",
+       "CSE30",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, AP credit, or clearing the “ Test-out ” bar will start with CSE 30 , and CSE 12 . PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following",
+       "prose": [
+        "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, AP credit, or clearing the “ Test-out ” bar will start with CSE 30 , and CSE 12 .",
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5B",
+        "PHYS5M"
+       ],
+       [
+        "ECE9"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE100",
+       "CSE100L",
+       "CSE101",
+       "CSE120",
+       "CSE121",
+       "ECE101",
+       "ECE101L",
+       "ECE103",
+       "ECE103L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Core requirements:",
+        "(In addition to the core requirements students must complete the courses for one of the concentrations.)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE107",
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE185E",
+       "CSE195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in computer engineering is satisfied by one of the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Capstone Requirement",
+       "prose": [
+        "All computer engineering students complete one of the following capstone sequences:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CSE123A",
+        "CSE123B"
+       ],
+       [
+        "CSE129A",
+        "CSE129B",
+        "CSE129C"
+       ],
+       [
+        "CSE195"
+       ],
+       [
+        "ECE118"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 195 also requires the submission of an approved senior thesis.",
+       "May not also be used as a concentration elective."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Both of the following courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Concentration Courses",
+       "prose": [
+        "All students complete the core courses, disciplinary communication (DC), and comprehensive requirements listed above, In addition to these courses, students must complete all courses listed within their selected concentration below."
+       ]
+      }
+     }
+    ],
+    "title": "Concentration Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE125",
+       "CSE122"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 222A , Advanced VLSI Digital System Design, may be substituted for CSE 122 with department approval. CSE 225 , Introduction to ASIC Systems Design, may be substituted for CSE 125 with department approval. Petition forms for course substitution are available at the undergraduate advising office and on the Undergraduate Advising website."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses",
+       "prose": [
+        "CSE 222A , Advanced VLSI Digital System Design, may be substituted for CSE 122 with department approval. CSE 225 , Introduction to ASIC Systems Design, may be substituted for CSE 125 with department approval. Petition forms for course substitution are available at the undergraduate advising office and on the Undergraduate Advising website."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE110A",
+       "CSE111",
+       "CSE134"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus one upper-division or graduate elective",
+       "prose": [
+        "Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E /CSE 185S. Note: some courses may have enrollment restrictions.",
+        "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses.",
+        "CSE 195 (if not used to satisfy the DC or capstone requirement).",
+        "Any course from the approved elective list for the computer engineering major."
+       ]
+      }
+     }
+    ],
+    "title": "Computer Systems Concentration Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE125"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 225 , Introduction to ASIC Systems Design, may be substituted for CSE 125 with department approval. Petition forms for course substitution are available at the undergraduate advising office and on the Undergraduate Advising website."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course",
+       "prose": [
+        "CSE 225 , Introduction to ASIC Systems Design, may be substituted for CSE 125 with department approval. Petition forms for course substitution are available at the undergraduate advising office and on the Undergraduate Advising website."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "ECE171",
+        "ECE171L"
+       ],
+       [
+        "CSE122"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 222A , Advanced VLSI Digital System Design, may be substituted for CSE 122 with department approval. Petition forms for course substitution are available at the undergraduate advising office and on the Undergraduate Advising website."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": [
+        "CSE 222A , Advanced VLSI Digital System Design, may be substituted for CSE 122 with department approval. Petition forms for course substitution are available at the undergraduate advising office and on the Undergraduate Advising website."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE122",
+       "CSE220",
+       "CSE228A",
+       "ECE171",
+       "ECE171L",
+       "ECE173"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture-lab combinations count as one course. Note that CSE 122 or ECE 171 and ECE 171L cannot be used again here."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses",
+       "prose": [
+        "Lecture-lab combinations count as one course.",
+        "Note that CSE 122 or ECE 171 and ECE 171L cannot be used again here."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus one upper-division or graduate elective",
+       "prose": [
+        "Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E /CSE 185S. Note: some courses may have enrollment restrictions.",
+        "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses.",
+        "CSE 195 (if not used to satisfy the DC or capstone requirement).",
+        "Any course from the approved elective list for the computer engineering major."
+       ]
+      }
+     }
+    ],
+    "title": "Digital Hardware Concentration Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150",
+       "CSE156",
+       "CSE156L",
+       "CSE130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus one upper division or graduate elective",
+       "prose": [
+        "Either the lecture-lab combination of CSE 151 and CSE 151L , or any other upper division or graduate elective:",
+        "Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E /CSE 185S. Note: some courses may have enrollment restrictions.",
+        "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses.",
+        "CSE 195 (if not used to satisfy the DC or capstone requirement).",
+        "Any course from the approved elective list for the computer engineering major."
+       ]
+      }
+     }
+    ],
+    "title": "Networks Concentration Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE111",
+       "CSE134"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus one upper-division or graduate elective",
+       "prose": [
+        "Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E /CSE 185S. Note: some courses may have enrollment restrictions.",
+        "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses.",
+        "CSE 195 (if not used to satisfy the DC or capstone requirement).",
+        "Any course from the approved elective list for the computer engineering major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE110A",
+       "CSE113",
+       "CSE156",
+       "CSE156L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 156 and CSE 156L lecture-lab combination count as one course."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses",
+       "prose": [
+        "CSE 156 and CSE 156L lecture-lab combination count as one course."
+       ]
+      }
+     }
+    ],
+    "title": "System Programming Concentration Requirements"
+   }
+  ]
+ },
+ "slug": "computer-engineering-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-engineering-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

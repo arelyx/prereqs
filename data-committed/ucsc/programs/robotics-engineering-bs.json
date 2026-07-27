@@ -1,0 +1,910 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "electrical-and-computer-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Robotics Engineering B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Student Outcomes",
+     "an ability to identify, formulate, and solve complex engineering problems by applying principles of engineering, science, and mathematics",
+     "an ability to apply engineering design to produce solutions that meet specified needs with consideration of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors",
+     "an ability to communicate effectively with a range of audiences",
+     "an ability to recognize ethical and professional responsibilities in engineering situations and make informed judgments, which must consider the impact of engineering solutions in global, economic, environmental, and societal contexts",
+     "an ability to function effectively on a team whose members together provide leadership, create a collaborative and inclusive environment, establish goals, plan tasks, and meet objectives",
+     "an ability to develop and conduct appropriate experimentation, analyze and interpret data, and use engineering judgment to draw conclusions",
+     "an ability to acquire and apply new knowledge as needed, using appropriate learning strategies."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering Undergraduate Advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications.",
+     "Transfer students should also refer to the Transfer Information and Policy section. Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at the University of California, Santa Cruz.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "The Electrical and Computer Engineering Department requires letter grading for all courses applied toward the B.S. in robotics engineering. This policy includes courses required for the degree that are sponsored by other departments."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Substitutions for Courses Taken at UCSC and Course Equivalencies and Substitutions Taken at an Outside Institution sections of the Baskin Engineering page of the catalog for the policy regarding course substitutions."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Four-Year Institutions and the UC Education Abroad Program (UCEAP)",
+     "Students who intend to take a course at a four-year institution or UC Education Abroad, must submit a Course Substitution Petition to the BE Undergraduate Advising Office to have the course reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus.",
+     "It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better. If the course is approved for equivalency, then the student must also receive approval by their major department PRIOR to taking the class. Forms and procedures for approval can be obtained from and submitted to the BE Undergraduate Advising Office."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors, in most cases, is awarded to students with a GPA of 3.30-3.69. Highest Honors, in most cases, is awarded to students with a GPA of 3.70 or higher. The GPA includes all UCSC undergraduate and graduate courses in all departments that fall within the Division of Physical and Biological Sciences and Baskin Engineering. Students with particularly significant accomplishments in undergraduate research or contributions to Baskin Engineering may be considered with a lower GPA.",
+     "Robotics engineering juniors and seniors may also be eligible for election to the UC Santa Cruz chapter of Tau Beta Pi, the national engineering honor society founded in 1885."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Baskin Engineering section of the catalog for additional policies that apply to all Baskin Engineering programs."
+    ],
+    "title": "School of Engineering Policies"
+   },
+   {
+    "paragraphs": [
+     "Please see the section on fees under Baskin Engineering ."
+    ],
+    "title": "Materials Fee and Miscellaneous Fees"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students who want to pursue the robotics engineering major must have applied and been admitted to UC Santa Cruz as a proposed robotics engineering major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Four of the seven courses, including CSE 12 , must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, with a minimum GPA of 2.8 across all Robotics Engineering transfer screening courses completed at that time.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 7,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Time to degree completion varies based on coursework completed prior to transfer. Students are strongly encouraged to complete all equivalent coursework available to them before transferring.",
+        "Please refer to the sample plans in the requirements and planners section. In most cases, students are not able to complete more than two upper-division classes per term. Contact the BE Advising office if you have questions regarding how long it will take to complete the degree requirements.",
+        "Transfer students must complete the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or by the end of the fall term prior to winter enrollment. Students must have and maintain a cumulative minimum GPA of 2.8 in the screening courses.",
+        "Four of the seven courses, including CSE 12 , must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, with a minimum GPA of 2.8 across all Robotics Engineering transfer screening courses completed at that time."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "First-year calculus",
+       "prose": [
+        "Both:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21",
+       "AM10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Linear algebra",
+       "prose": [
+        "One of:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Differential equations",
+       "prose": [
+        "One of:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Calculus-based physics",
+       "prose": [
+        "All of:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Computer engineering",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Cumulative GPA",
+       "prose": [
+        "Cumulative GPA is calculated based on all Robotics Engineering transfer screening courses taken. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A",
+       "CSE16",
+       "CSE20",
+       "CSE30",
+       "ECE101",
+       "ECE101L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Also, CSE 16 , CSE 20 , CSE 30 , MATH 23A , ECE 13 , ECE 101 / ECE 101L , ECE 171 / ECE 171L , STAT 131 and many general education requirements may be offered by UC Santa Cruz Summer Session and taken prior to starting the first fall quarter at UCSC."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Additionally",
+       "prose": [
+        "In addition, the following courses are recommended prior to transfer.",
+        "Also, CSE 16 , CSE 20 , CSE 30 , MATH 23A , ECE 13 , ECE 101 / ECE 101L , ECE 171 / ECE 171L , STAT 131 and many general education requirements may be offered by UC Santa Cruz Summer Session and taken prior to starting the first fall quarter at UCSC.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation prior to transfer, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation prior to transfer, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. Instructions for declaring a major in Baskin Engineering are on the Declare Your Major page ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In order to be admitted into the robotics engineering major students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog or the BE Undergraduate Advising Prepare to Declare page for more information.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the Transfer Admission Screening requirements.",
+        "In order to be admitted into the robotics engineering major students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog or the BE Undergraduate Advising Prepare to Declare page for more information.",
+        "In addition to being listed as a proposed Baskin Engineering major, declaration of the robotics engineering major in the first six quarters of enrollment at UC Santa Cruz is based on performance in the following lower-division courses and associated labs required for the major:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take both of these courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM30",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE13",
+       "CSE13S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students in their first six quarters who have completed at least 41 credits in these courses will be admitted to the robotics major if their cumulative GPA is at least 2.8 in all the courses listed above; and they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Courses satisfied via exam credit are not included in the GPA calculation. NOTE: Students seeking to change their current major to the robotics engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 103 / ECE 103L , ECE118, ECE121, ECE141, ECE167, STAT 131 or CSE 107 , CSE 100 / CSE 100L .",
+        "type": "prose"
+       },
+       {
+        "text": "Students in their first six quarters who have completed at least 41 credits in these courses will be admitted to the robotics major if their cumulative GPA is at least 2.8 in all the courses listed above; and they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Courses satisfied via exam credit are not included in the GPA calculation.",
+        "type": "prose"
+       },
+       {
+        "text": "NOTE: Students seeking to change their current major to the robotics engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 103 / ECE 103L , ECE118, ECE121, ECE141, ECE167, STAT 131 or CSE 107 , CSE 100 / CSE 100L .",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ECE9",
+       "CSE12",
+       "CSE16",
+       "CSE30",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "And all of these courses:",
+       "prose": [
+        "Students in their first six quarters who have completed at least 41 credits in these courses will be admitted to the robotics major if their cumulative GPA is at least 2.8 in all the courses listed above; and they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Courses satisfied via exam credit are not included in the GPA calculation. NOTE: Students seeking to change their current major to the robotics engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 103 / ECE 103L , ECE118, ECE121, ECE141, ECE167, STAT 131 or CSE 107 , CSE 100 / CSE 100L .",
+        "Students in their first six quarters who have completed at least 41 credits in these courses will be admitted to the robotics major if their cumulative GPA is at least 2.8 in all the courses listed above; and they have attempted no more than seven credits resulting in grades of C-, D+, D, D-, F or NP in all of the courses listed above. Courses satisfied via exam credit are not included in the GPA calculation.",
+        "NOTE: Students seeking to change their current major to the robotics engineering B.S. in their seventh through ninth quarters who have completed all of the lower-division major requirements, and have completed the four or more of the following upper-division classes and associated labs with a cumulative GPA of at least 2.50 by their ninth quarter will also be admitted: ECE 101 / ECE 101L , ECE 103 / ECE 103L , ECE118, ECE121, ECE141, ECE167, STAT 131 or CSE 107 , CSE 100 / CSE 100L ."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they are not eligible to declare may appeal this decision by submitting a letter to the undergraduate director within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, the college, and the Office of the Registrar of the decision. If you have further questions concerning the appeal process, please contact the Undergraduate Advising Office at (831) 459-5840 or email bsoeadvising@ucsc.edu .",
+        "More information regarding the appeal process can be found on the BE Undergraduate Advising Appeal Your Major page ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Instructions for declaring a major in Baskin Engineering are on the Baskin Engineering Undergraduate Advising Declare Your Major page."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Completing the major declaration requirements in math and physics during the first two years is a priority to meet upper-division prerequisites. Although not required, it is recommended that students interested in the robotics engineering major take ECE 8 , Introduction to Robot Automation. Please contact BE Advising if you have questions. The senior comprehensive requirement for robotics engineering majors is satisfied by completion of the capstone course and the portfolio exit requirement. Students not making sufficient progress in the major may be recommended to change to another major. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Students who may have originally pursued another major should discuss with the Baskin Engineering Undergraduate Advising office whether or not already completed coursework may be substituted for one or more lower-division requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Either of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Either of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12",
+       "CSE20",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming will take CSE 20 before CSE 30 . Students with a prior programming course, AP credit, or clearing the “ Test-out ” bar will start with CSE 30 ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "And the following:",
+       "prose": [
+        "Students with no prior programming will take CSE 20 before CSE 30 . Students with a prior programming course, AP credit, or clearing the “ Test-out ” bar will start with CSE 30 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A",
+       "AM30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "And either of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE13",
+       "CSE13S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "And either of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16",
+       "MATH19A",
+       "MATH19B",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N",
+       "ECE9",
+       "ECE10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "And all the following courses:",
+       "prose": [
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C .",
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE100",
+       "CSE100L",
+       "ECE141",
+       "ECE167",
+       "CSE101",
+       "ECE101",
+       "ECE101L",
+       "ECE103",
+       "ECE103L",
+       "ECE118",
+       "ECE121"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but ECE 218 will not fulfill the PR GE requirement."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "All of the following:",
+        "Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but ECE 218 will not fulfill the PR GE requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE107",
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "And either of the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE215",
+       "ECE216",
+       "ECE240",
+       "ECE242",
+       "ECE243",
+       "ECE244",
+       "ECE245",
+       "ECE246",
+       "ECE249",
+       "ECE263"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Advanced Robotics Elective",
+       "prose": [
+        "One of the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECE102",
+       "ECE102L",
+       "ECE110",
+       "ECE130",
+       "ECE130L",
+       "ECE135",
+       "ECE135L",
+       "ECE145",
+       "ECE149",
+       "ECE151",
+       "ECE152",
+       "ECE153",
+       "ECE163",
+       "ECE169",
+       "ECE171",
+       "ECE171L",
+       "ECE172",
+       "ECE173",
+       "ECE175",
+       "ECE175L",
+       "ECE193",
+       "ECE198",
+       "ECE222A",
+       "ECE264",
+       "ECE269",
+       "AM114",
+       "AM147",
+       "CMPM146",
+       "CSE118",
+       "CSE131",
+       "CSE140",
+       "CSE142",
+       "CSE156",
+       "CSE156L",
+       "CSE276"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture and required concurrent lab course counts as one course."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Upper-Division and Graduate Elective",
+       "prose": [
+        "One course from the following:",
+        "Lecture and required concurrent lab course counts as one course."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students in all majors must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in robotics is satisfied by completing the senior capstone course sequence:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "ECE129A",
+        "ECE129B",
+        "ECE129C"
+       ],
+       [
+        "ECE129A",
+        "ECE195",
+        "ECE195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "10 credits for the senior thesis course, ECE 195 , must be completed for this option."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Either these three courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior comprehensive requirement for robotics engineering majors is in two parts: a project course and assessment options."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Capstone Requirement",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "ECE129A",
+        "ECE129B",
+        "ECE129C"
+       ],
+       [
+        "ECE129A",
+        "ECE195",
+        "ECE195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "10 credits for the senior thesis course, ECE 195 , must be completed for this option."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Students must complete one capstone design course that spans three quarters",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Exit Requirement",
+       "prose": [
+        "Students are required to complete an exit survey and attend an exit interview. Portfolios of the students work will be collected from our courses for program evaluation. The portfolios will be reviewed by the Electrical and Computer Engineering undergraduate committee and will include two project reports and one- or two-page overview of the student’s contribution to the projects: ECE 118 and either the senior capstone report ( ECE 129A / ECE 129B / ECE 129C ) or the student’s senior thesis. Students with a GPA below 2.5 and without a senior thesis also need to submit a two-page essay concerning the relationship of engineering to society (specific topic will be provided by the Electrical and Computer Engineering Department)."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "robotics-engineering-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/robotics-engineering-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,1291 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "music",
+ "division": "arts-division",
+ "kind": "major",
+ "name": "Music B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Music Department supports an unusually diverse curriculum for a department of its size. By a choice of concentrations within the bachelor of arts (B.A.) degree, the student can emphasize different aspects of music. The “Compositional Practices” and “Global Musics” concentrations offer a variety of modules (groupings of courses with various focuses) that students will be required to select from in addition to core requirements designed specifically for each concentration. All students pursuing the B.A. degree must select one of the three concentrations.",
+     "The concentrations and corresponding modules relevant to each concentration are:",
+     "Compositional Practices Concentration. A concentration emphasizing composition and improvisation across multiple genres of music composition.",
+     "Module 2",
+     "Module 3",
+     "All module offerings are based on availability within the curriculum plan. Students should visit the Music Department website for a list of when each module’s courses will be offered.",
+     "Global Musics Concentration. A concentration emphasizing global music research, performance, and writing. Modules offered are:",
+     "Africa and Las Americas",
+     "African-American Musics",
+     "Asia",
+     "Contemporary/Experimental",
+     "Cross-Cultural Musics",
+     "Europe",
+     "Popular Musics",
+     "All module offerings are based on availability within the curriculum plan. Students should visit the Music Department website for a list of when each module’s courses will be offered.",
+     "Western Music Concentration. A concentration emphasizing classical Western art music performance, theory and history. This concentration requires some performance ability on a standard orchestral instrument or voice in classical repertoire (or improvisational repertoire for drum set majors) upon entry to the concentration. This concentration does not have a set of modules, but rather has a set course list of requirements.",
+     "The list of course requirements and when the courses are offered can be found on the Music Department website ."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "The Bachelor of Arts in Music program in music is designed to help students accomplish the following learning outcomes:",
+     "Demonstrate critical familiarity with differences and commonalities among musical practices and their material conditions, across a diverse range of genres, cultures, and histories.",
+     "Demonstrate familiarity with analytical tools arising in theories of music, including those in music theory, ethnomusicology, and sound studies, as they are applied to musical sounds, practices, and repertoires in diverse musical contexts.",
+     "Demonstrate skills in listening, interpretation, and collaboration as they pertain to music-making across diverse oral and notational repertoires.",
+     "Demonstrate performance proficiency on a specific instrument (including voice specializations) across a range of musical genres, periods, and/or practices.",
+     "Demonstrate skills in music composition, improvisation and/or production including skills in audio technologies.",
+     "Demonstrate working knowledge of social science, humanities, and/or arts approaches to research in music-relevant topics.This includes qualitative and quantitative research methods for, gathering or obtaining research data, finding/using primary sources, and other research approaches/methods.",
+     "Demonstrate effective writing and interpretive skills to participate in disciplinary and interdisciplinary dialogue about musical practices, traditions, genres, ideas, and music-making spaces."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "General information about the music degrees is available on the department website . Students are also strongly encouraged to consult early with the Music Department advisor to create an academic plan for the major or a minor far in advance of declaration, as early as the summer before beginning at the university.",
+     "Transfer students should consult the Transfer Information and Policy section.",
+     "Please contact the department advisor by emailing music@ucsc.edu or calling (831) 459-2292. Slug Success is also available to make an appointment."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a course-intensive and/or sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at the University of California, Santa Cruz. All students intending to major in music are strongly encouraged to email music@ucsc.edu to schedule a phone-advising appointment with the undergraduate advisor at some point during their first year.",
+     "The Theory Placement Exam is for placement of students, including transferring or re-entering students, into the appropriate Western music theory course ( MUSC 14 , or MUSC 30A ). It includes written sections in the areas of theory and musicianship that emphasize aural recognition and identification of musical structures (intervals, chords, rhythms, meters, etc.). Students may prepare for the exam by honing skills in reading both bass and treble clef and in recognizing melodic and harmonic structures, and complex rhythmic patterns.",
+     "Students without any theory background, or weak aural skills, should plan to enroll in MUSC 20A in their first year in order to prepare for MUSC 14 and the placement exam. Admission to MUSC 30A is primarily based on the Theory Placement Exam scores, but students who get a final grade of “A-\" or above in MUSC 14 are eligible to automatically place into MUSC 30A .",
+     "The Theory Placement Exam is held twice a year: on the Tuesday before instruction begins in fall quarter, from 10:00 a.m.-12:30 p.m., and right before the beginning of Winter quarter (schedule TBA). No signup is necessary. Students should bring a pencil. Students can visit the Music Department website to view the sample exam .",
+     "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UC Santa Cruz, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+     "Relevant theory C-ID articulations:"
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply in this major are not required to complete specific courses for consideration of admission to UC Santa Cruz.",
+     "Transfer students are strongly recommended to take some music theory courses before transfer to UC Santa Cruz, which generally enables them to test into MUSC 30A in their first quarter (for fall admits), or beyond MUSC 30A (for winter admits). MUSC 30A is only offered in the fall, so if a student is coming to UCSC in the winter quarter, they should plan to take a course equivalent to MUSC 30A at a California community college (CCC) (see \"Getting Started in the Major: Transfer\" section below for more details about CCC articulation).",
+     "They should also have completed most general education requirements, although some GE requirements may be fulfilled by lower-division courses in the major (such as courses in the MUSC 11, MUSC 80, and MUSC 81 series).",
+     "All transfer students are strongly encouraged to email music@ucsc.edu to schedule a phone or zoom advising appointment with the undergraduate advisor prior to application.",
+     "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UC Santa Cruz, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+     "Relevant theory C-ID articulations:",
+     "• \"MUSC 110\" -> MUSC 14",
+     "• \" MUSC 120 and MUSC 125\" -> MUSC 30A and MUSC 31",
+     "• \"MUSC 130 and MUSC 135\" -> MUSC 30B and MUSC 31",
+     "• \"MUSC 140 and MUSC 145\" -> MUSC 30C and MUSC 31",
+     "Transfer students should plan to take the Theory Placement Exam to place into MUSC 14 or MUSC 30A . All transfer students should take the Theory Placement Exam in the fall of their first quarter. It is an option for transfer students to take the examination prior to applying to UC Santa Cruz as a practice guide for future preparation, or in the spring quarter before their first fall quarter. Students can also visit the Music Department website to view the sample examination .",
+     "Transfer students can also take MUSC 14 when offered during Summer Session at UCSC prior to fall of their arrival. Taking MUSC 14 will help prepare students for the Theory Placement Exam and generally results in students placing into MUSC 30A . Admission to MUSC 30A is primarily based on the Theory Placement Exam scores, but students who get a final grade of \"A-\" or above in MUSC 14 are eligible to automatically place into MUSC 30A .",
+     "The Theory Placement Exam is held twice a year: first, in-person, right before the start of fall quarter; and second, digitally, starting midway through fall quarter. No signup is necessary for the in-person exam, students should bring a pencil. The digital TPE does require signup; further information can be found on https://music.ucsc.edu/academics/theory-placement-exam/ .",
+     "Winter transfer students should note that, since MUSC 30 is a yearlong series, MUSC 30A is only offered in the fall quarter. If you are intending to pursue a major track that requires MUSC 30A and subsequent courses, it is recommended to complete an articulatable theory course at another institution. Students who have taken eligible courses that can articulate to MUSC 30A will be able to begin with MUSC 30B in the winter quarter."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "In order to qualify for the music major, students must successfully complete MUSC 14 or MUSC 30A (depending on major track) with a grade of \"C\" or better. A \"Pass\" grade is also acceptable since letter grades are not required for lower-division courses. Students in the Western Music concentration also need signature approval by the applied instrument instructor on the primary instrument authorization form. Students approaching their major declaration deadline quarter (sixth quarter for four-year students, second quarter for transfer students), should reach out to the Music Department office as soon as possible to set up a declaration advising appointment. Transfer students should also see the \"Transfer Information and Policy\" section below.",
+     "The Music Department makes every effort to support students in declaring their major. Students who have reached their declaration deadline quarter but have not met major qualification requirements should submit the Petition for Major/Minor eForm. A major declaration petition by a student who does not meet major qualification requirements serves as an appeal. The result will be approval, denial, or the setting of conditions that must be resolved within at most one more enrolled quarter. This will be determined by a departmental review of the student’s individual context and potential for success in the major, and will involve direct communication with the student. A student should expect to hear the results of their appeal within 15 business days of receipt.",
+     "All students should meet with the academic advisor to begin the major declaration process either by making an appointment (via Slug Success ), by email to music@ucsc.edu , or by stopping by the department office, Music Center, Room 244 or 248. Students are also required to meet with a faculty advisor (assigned with help from the academic advisor) as part of the declaration process. Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first). The declaration deadline for four-year students is their sixth quarter, and the second quarter for transfer students.",
+     "Students petitioning when the campus declaration deadline is imminent, will either be approved, denied, or provided with conditions (e.g. completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "All upper-division courses applied toward the music majors must be taken for a letter grade, except MUSC 120 (Seminar in Composition) and upper-division workshops & performing ensembles, which may be taken Pass/No Pass.",
+     "All lower-division courses, including those in the MUSC 30-series, may be taken Pass/No Pass."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students who have taken introductory or topical large lecture music courses at other institutions may email the curriculum committee to propose course substitutions. To begin this process, email music@ucsc.edu ."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Double majors are possible for the music major. A student can double major with a Music Bachelor of Arts (B.A.) Degree or a Bachelor of Music (B.M.) Degree, and a major from another department. Students that plan to double major should meet with the music undergraduate advisor for course planning in fall quarter of their first year.",
+     "It is not possible to double major as a music B.A. and a music B.M. However, it is possible to pursue the B.M. and add the \"Jazz, Spontaneous Composition and Improvisation Minor\" or \"Electronic Music minor.\" It is not possible to add the \"Western Music Minor\" to the Music B.A. or Music B.M. degrees.",
+     "Students are generally not able to add the \"Western Music Minor\" or \"Jazz, Spontaneous Composition and Improvisation Minor\" to the Music B.A. Compositional Practices or Global Musics concentrations in the Music B.A , due to potential overlap between these curricula. Similarly, the \"Electronic Music Minor\" cannot be added to the Compositional Practices concentration. However, in rare cases, and with careful planning, these major/minor combinations can be possible .",
+     "The \"Jazz, Spontaneous Composition and Improvisation Minor\" can be added to the Western Music concentration. The \"Electronic Music Minor\" can still be added to the Global Musics or Western Music concentration."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "The department encourages students to explore studying abroad while attending UC Santa Cruz. In particular, the UCSC Music Department has an exchange program agreement with the Music Department at the University of Sussex. University of Sussex offers many courses that can be substituted for music major or minor requirements.",
+     "For more information on approved course substitutions and the exchange program please visit the Global Learning website ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are conferred by vote of the music faculty. B.A. or B.M. students can be awarded honors for excellent work in individual areas, including coursework and a capstone course (research thesis or creative portfolio). Excellent work in any two of these areas normally results in honors in the major.",
+     "To be considered for highest honors in the major, B.A. students must also complete an additional senior project (not required for their concentration) and B.M. students must complete a capstone course (not required for the B.M. degree). Honors in all three areas—coursework, senior project, and capstone course—normally results in highest honors in the major."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "For students in the Western Music concentration:",
+     "Placement exams at the outset of studies assess students' musical competence, and determine their place in the required lower-division theory and harmony courses.",
+     "Admission to most performance ensembles is by audition. Assessment is based on successful public performances.",
+     "A juried \"advisory audition\" is required for students enrolled in MUSC 30A to give students feedback so that they can work toward meeting the requirements for the proficiency audition at the end of the next fall quarter.",
+     "A juried \"proficiency audition\" is required for students that have completed the MUSC 30 series. All students must exhibit an upper-intermediate or higher level on their major instrument or voice. Proficiency juries are offered at the end of each quarter.",
+     "Students will always declare as a music B.A. If you are interested in becoming a music B.M. student, auditions for admission to the B.M. program are held at the end of each fall quarter. Students accepted to the program are required to audition twice a year for continuing review and critique. Students in the B.M. program present a senior recital which is evaluated by faculty. See the music B.M. page for more information.",
+     "In required and elective seminars, critical thinking and writing are assessed when students present a major independent project at the end of term.",
+     "Compositional skills are assessed through the rehearsal and public performance of student works.",
+     "For students in the Global Musics concentration:",
+     "Placement exams at the outset of studies assess students' musical competence, and determine their place in the required lower-division theory and harmony courses.",
+     "Admission to most performance ensembles is by audition. Assessment is based on successful public performances.",
+     "In required and elective seminars, critical thinking and writing are assessed when students present a major independent project at the end of term.",
+     "Compositional skills are assessed through the rehearsal and public performance of student works, when applicable.",
+     "For students in the Compositional Practices concentration:"
+    ],
+    "title": "How Music Majors Are Assessed"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "In addition to the core course work and electives listed below, students pursuing the Compositional Practices concentration are required to complete three modules, relating to cross-cultural themes and genres:",
+        "Module 1",
+        "Module 2",
+        "Module 3",
+        "The following course list outlines the general concentration requirements. See the list of approved courses relevant to each module."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC14",
+       "MUSC20B",
+       "MUSC30A",
+       "MUSC30B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Theory",
+       "prose": [
+        "MUSC 14 is meant for students with some experience with Western music theory. Students can bypass MUSC 14 by placing directly into MUSC 30A via the Theory Placement Exam. Students may also place into MUSC 30A by receiving a final grade of \"A-\" or above in MUSC 14 .",
+        "The Theory Placement Exam is offered twice per year: in fall quarter, the Tuesday before classes start; and in the beginning of winter quarter. See the Music Department website for exam details.",
+        "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UCSC, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+        "Relevant theory C-ID articulations:",
+        "MUSC 110 -> MUSC 14",
+        "MUSC 120 and 125 -> MUSC 30A and 31",
+        "MUSC 130 and 135 -> MUSC 30B and 31",
+        "MUSC 140 and 145 -> MUSC 30C and 31"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "3) have passed at least half of their total required sections of 31 (i.e. at least one section for the BA-CP track).",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MUSC31"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they: 1) have passed the associated section of MUSC 30; 2) have passed their final quarter of MUSC 31 (i.e. winter 31, related to MUSC 30B ); 3) have passed at least half of their total required sections of 31 (i.e. at least one section for the BA-CP track). Any student who does need meet all three of the criteria above must re-take the failed section of MUSC 31 during its next offering."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-division musicianship",
+       "prose": [
+        "The following course should be taken alongside MUSC 30-series classes",
+        "Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they:",
+        "1) have passed the associated section of MUSC 30;",
+        "2) have passed their final quarter of MUSC 31 (i.e. winter 31, related to MUSC 30B );",
+        "3) have passed at least half of their total required sections of 31 (i.e. at least one section for the BA-CP track).",
+        "Any student who does need meet all three of the criteria above must re-take the failed section of MUSC 31 during its next offering."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Theory"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students must take MUSC 120 at least twice, with different instructors when possible.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MUSC120"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-division Composition",
+       "prose": [
+        "Students must take MUSC 120 at least twice, with different instructors when possible."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Choose one of the courses below to take. If choosing MUSC 120 , it must be taken with a different instructor as your previous two times, if possible.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MUSC120",
+       "MUSC121A",
+       "MUSC121B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Upper-division Composition/Analysis",
+       "prose": [
+        "Choose one of the courses below to take. If choosing MUSC 120 , it must be taken with a different instructor as your previous two times, if possible."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MUSC 101C is typically offered in the spring quarter."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-Division History",
+       "prose": [
+        "MUSC 101C is typically offered in the spring quarter."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Requirements"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Modular Requirements",
+       "prose": [
+        "Each module consists of:",
+        "a lower-division MUSC 11, MUSC 80, or MUSC 81-series course specific to each module (three total)",
+        "an upper-division MUSC 150 or equivalent (theory/composition-based) course specific to each module (three total)",
+        "two quarters of performing ensembles or performance practice workshops specific to each module (six total)",
+        "See the list of approved courses relevant to each module."
+       ]
+      }
+     }
+    ],
+    "title": "Modular Requirements"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101E",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC101H",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105E",
+       "MUSC105H",
+       "MUSC105I",
+       "MUSC105L",
+       "MUSC105M",
+       "MUSC105O",
+       "MUSC105P",
+       "MUSC105Q",
+       "MUSC105R",
+       "MUSC105S",
+       "MUSC105T",
+       "MUSC105V"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "History/Culture Elective",
+       "prose": [
+        "Students must take one course from the MUSC 101, Foundational History/Culture, or MUSC 105, Topical History, series to fulfill their upper-division elective.",
+        "Courses may not be repeated for credit, and courses that cannot be repeated for credit cannot be double-counted toward major requirements.",
+        "Students may also elect to take a graduate-level seminar in place of their final elective. All graduate courses require instructor and/or department permission to add."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC5A",
+       "MUSC5B",
+       "MUSC5C",
+       "MUSC8B",
+       "MUSC8A",
+       "MUSC9",
+       "MUSC10",
+       "MUSC12",
+       "MUSC12B",
+       "MUSC20C",
+       "MUSC53A",
+       "MUSC55",
+       "MUSC55A",
+       "MUSC58",
+       "MUSC61",
+       "MUSC62",
+       "MUSC70",
+       "MUSC71",
+       "MUSC72",
+       "MUSC73",
+       "MUSC74",
+       "MUSC77",
+       "MUSC78",
+       "MUSC102",
+       "MUSC103",
+       "MUSC129",
+       "MUSC158",
+       "MUSC161",
+       "MUSC161A",
+       "MUSC163",
+       "MUSC164",
+       "MUSC165",
+       "MUSC166",
+       "MUSC167",
+       "MUSC167R",
+       "MUSC168"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Elective Ensembles/Performance Practice Workshops",
+       "prose": [
+        "Take three quarters of any of the following courses. All courses except MUSC 20C , MUSC 71 , MUSC 74 , and MUSC 167R may be repeated for credit, and can count toward multiple elective requirements if repeated.",
+        "These courses cannot double-count with modular ensemble/workshop requirements. However, you can take repeatable courses enough times to count for both modular and elective requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Elective Ensembles/Performance Practice Workshops"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105M",
+       "MUSC105Q",
+       "MUSC105T",
+       "MUSC150D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement.",
+        "The DC requirement for the Compositional Practices concentration of the music B.A. degree is satisfied by completing one of the following courses. Some courses may already be core or elective requirements for the major track, meaning students would satisfy the DC requirement through the natural progression of their degree."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Compositional Practices Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC196A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "For their Senior Capstone project, students in the Compositional Practices concentration must present a senior composition recital or portfolio.",
+        "Students should consult their faculty advisor (chosen when you declare the major) and department advisor when planning their recital/portfolio."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "In addition to the core course work and electives listed below, students pursuing the Global Musics concentration are required to complete three modules, relating to geographical areas, themes, and genres:",
+        "Africa and Las Americas",
+        "African-American Musics",
+        "Asia",
+        "Contemporary/Experimental",
+        "Cross-Cultural Musics",
+        "Europe",
+        "Popular Music",
+        "The following course list outlines the general concentration requirements. See the list of approved courses relevant to each module."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC14",
+       "MUSC20A",
+       "MUSC20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Theory",
+       "prose": [
+        "MUSC 14 is meant for students with some Western music theory experience. Students can bypass this requirement by placing directly into MUSC 30A via the Theory Placement Exam.",
+        "The Theory Placement Exam is offered twice per year: in fall quarter, the Tuesday before classes start; and in the beginning of winter quarter. See the Music Department website for exam details.",
+        "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UCSC, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+        "Relevant theory C-ID articulations:",
+        "MUSC 110 -> MUSC 14",
+        "MUSC 120 and 125 -> MUSC 30A and 31",
+        "MUSC 130 and 135 -> MUSC 30B and 31",
+        "MUSC 140 and 145 -> MUSC 30C and 31"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Theory"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Modular Requirements",
+       "prose": [
+        "Each modules consists of:",
+        "a lower-division MUSC 11, MUSC 80, or MUSC 81-series course specific to each module (three total)",
+        "an upper-division MUSC 101, MUSC 105, MUSC 120 , or MUSC 150 course specific to each module (three total)",
+        "two quarters of performing ensemble or performance practice workshop specific to each module (six total)",
+        "See the list of approved courses relevant to each module."
+       ]
+      }
+     }
+    ],
+    "title": "Modular Requirements"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Take three (3) lectures or seminars from the upper-division music catalog. These elective courses cannot double count with modular courses, unless the course is repeatable for credit and is taken more than once with a different instructor."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C",
+       "MUSC101E",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC101H",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105E",
+       "MUSC105H",
+       "MUSC105I",
+       "MUSC105L",
+       "MUSC105M",
+       "MUSC105O",
+       "MUSC105P",
+       "MUSC105Q",
+       "MUSC105R",
+       "MUSC105S",
+       "MUSC105T",
+       "MUSC105V",
+       "MUSC120",
+       "MUSC121A",
+       "MUSC121B",
+       "MUSC122",
+       "MUSC150A",
+       "MUSC150B",
+       "MUSC150C",
+       "MUSC150D",
+       "MUSC150H",
+       "MUSC150I",
+       "MUSC150J",
+       "MUSC150K",
+       "MUSC150N",
+       "MUSC150P",
+       "MUSC150S",
+       "MUSC150T",
+       "MUSC150X",
+       "MUSC150Z",
+       "MUSC203F",
+       "MUSC203H"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Elective Upper-Division Lectures/Seminars",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC5A",
+       "MUSC5B",
+       "MUSC5C",
+       "MUSC8B",
+       "MUSC8A",
+       "MUSC9",
+       "MUSC10",
+       "MUSC12",
+       "MUSC12B",
+       "MUSC20C",
+       "MUSC53A",
+       "MUSC55",
+       "MUSC55A",
+       "MUSC58",
+       "MUSC61",
+       "MUSC62",
+       "MUSC70",
+       "MUSC71",
+       "MUSC72",
+       "MUSC73",
+       "MUSC74",
+       "MUSC77",
+       "MUSC78",
+       "MUSC102",
+       "MUSC103",
+       "MUSC129",
+       "MUSC158",
+       "MUSC161",
+       "MUSC161A",
+       "MUSC163",
+       "MUSC164",
+       "MUSC165",
+       "MUSC166",
+       "MUSC167",
+       "MUSC167R",
+       "MUSC168",
+       "MUSC267"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Elective Ensembles/Performance Practice Workshops",
+       "prose": [
+        "Take three quarters of any of the following courses. All courses except MUSC 74 , MUSC 20C , MUSC 71 , and MUSC 167R may be repeated for credit, and can count toward multiple elective requirements if repeated.",
+        "These courses cannot double-count with modular ensemble/workshop requirements. However, you can take repeatable courses enough times to count for both modular and elective requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Elective Ensembles/Performance Practice Workshops"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC200",
+       "MUSC203G",
+       "MUSC253A",
+       "MUSC253B",
+       "MUSC253C",
+       "MUSC253D",
+       "MUSC253S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Graduate-Level Research Requirement",
+       "prose": [
+        "Students in the Global Musics concentration are also required to take one graduate-level course. Students may select from a range of courses focused on developing research skills, or seminars providing cross-cultural foundations in social and music theory.",
+        "MUSC 200 cannot be double counted if taken to satisfy the Research Project option within the Comprehensive Requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Graduate-Level Research Requirement"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105M",
+       "MUSC105Q",
+       "MUSC105T",
+       "MUSC150D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement.",
+        "The DC requirement for the global musics concentration of the music B.A. degree is satisfied by completing one of the following courses. Some courses may already be core or elective requirements for the major track, meaning students would satisfy the DC requirement through the natural progression of their degree."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Global Musics Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior comprehensive requirement (capstone) is a two-part requirement that is satisfied by 1) enrollment in one of the course listed below, and 2) an independent study course with your faculty advisor. The options for senior capstones focus in two areas: A) research project, or B) creative portfolio project .",
+        "A) The research project option requires a 15-25 page research paper, which is accomplished by taking the independent study course MUSC 195A (Senior Thesis) with their faculty advisor, concurrently with one of the listed research courses.",
+        "B) The creative portfolio option typically requires either a senior composition project or composition recital, both accompanied by a 7-10 page short thesis. If a student chooses to do the creative portfolio options, they must concurrently enroll in the independent study course MUSC 196A (Global Musics Capstone) with their faculty advisor."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101E",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC101H",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105E",
+       "MUSC105H",
+       "MUSC105I",
+       "MUSC105L",
+       "MUSC105M",
+       "MUSC105O",
+       "MUSC105P",
+       "MUSC105Q",
+       "MUSC105R",
+       "MUSC105S",
+       "MUSC105T",
+       "MUSC105V",
+       "MUSC199",
+       "MUSC200"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Research Project",
+       "prose": [
+        "Choose one of the following courses. Cannot double count with modular or upper-division electives.",
+        "MUSC 200 cannot be double counted if taken to satisfy the Graduate-Level Research Requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC195A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take concurrently with selected course above",
+       "prose": [
+        "Students that select the research option for their capstone must also enroll in:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC120",
+       "MUSC150A",
+       "MUSC150B",
+       "MUSC150C",
+       "MUSC150D",
+       "MUSC150I",
+       "MUSC150J",
+       "MUSC150K",
+       "MUSC150N",
+       "MUSC150P",
+       "MUSC150R",
+       "MUSC150S",
+       "MUSC150T",
+       "MUSC150X",
+       "MUSC150Z",
+       "MUSC199",
+       "MUSC203H"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Creative Portfolio Project",
+       "prose": [
+        "Choose one of the following courses. This course cannot double count with modular electives, unless the course is repeatable for credit and is taken more than once."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC196A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take concurrently with selected course above",
+       "prose": [
+        "Students that select the creative portfolio option for their capstone must also enroll in:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Western Music Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC30A",
+       "MUSC30B",
+       "MUSC30C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Theory",
+       "prose": [
+        "Take all of the following courses. Students are accepted to MUSC 30A if they have taken MUSC 14 at UCSC and received an \"A-\" or above, or have tested in via the Theory Placement Exam. See the music department for more information on the TPE: https://music.ucsc.edu/programs/theory-placement-exam",
+        "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UCSC, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+        "Relevant theory C-ID articulations:",
+        "MUSC 110 -> MUSC 14",
+        "MUSC 120 and 125 -> MUSC 30A and 31",
+        "MUSC 130 and 135 -> MUSC 30B and 31",
+        "MUSC 140 and 145 -> MUSC 30C and 31"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "3) have passed at least half of their total required sections of MUSC 31 (i.e. at least two sections for the BA-WM track).",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MUSC31",
+       "MUSC60"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MUSC 60 enrollment may be waived by instructor approval, or if the student is taking piano lessons from a UC Santa Cruz instructor. Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they: 1) have passed the associated section of MUSC 30; 2) have passed their final quarter of MUSC 31 (i.e. spring MUSC 31 , related to MUSC 30C ); 3) have passed at least half of their total required sections of MUSC 31 (i.e. at least two sections for the BA-WM track). Any student who does need meet all three of the criteria above must re-take the failed section of MUSC 31 during its next offering."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Keyboard and Musicianship",
+       "prose": [
+        "The following courses should be taken alongside MUSC 30-series classes.",
+        "MUSC 60 enrollment may be waived by instructor approval, or if the student is taking piano lessons from a UC Santa Cruz instructor.",
+        "Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they:",
+        "1) have passed the associated section of MUSC 30;",
+        "2) have passed their final quarter of MUSC 31 (i.e. spring MUSC 31 , related to MUSC 30C );",
+        "3) have passed at least half of their total required sections of MUSC 31 (i.e. at least two sections for the BA-WM track).",
+        "Any student who does need meet all three of the criteria above must re-take the failed section of MUSC 31 during its next offering."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Western Music Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Core Upper-Division History/Culture",
+       "prose": [
+        "Take two of these courses"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C",
+       "MUSC101E",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC101H"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two of these courses",
+       "prose": [
+        "Students may not double count courses between the MUSC 101A -C list and MUSC 101A -H list."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105E",
+       "MUSC105H",
+       "MUSC105I",
+       "MUSC105L",
+       "MUSC105M",
+       "MUSC105O",
+       "MUSC105P",
+       "MUSC105Q",
+       "MUSC105R",
+       "MUSC105S",
+       "MUSC105T",
+       "MUSC105V"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Elective Upper-Division History",
+       "prose": [
+        "Take one of these courses"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Theory",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC150A",
+       "MUSC150B",
+       "MUSC150C",
+       "MUSC150H",
+       "MUSC150K",
+       "MUSC150T",
+       "MUSC150X"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Elective Theory 1",
+       "prose": [
+        "Take one of the following courses (cannot double count with other electives):"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC150A",
+       "MUSC150B",
+       "MUSC150C",
+       "MUSC150D",
+       "MUSC150H",
+       "MUSC150I",
+       "MUSC150J",
+       "MUSC150K",
+       "MUSC150N",
+       "MUSC150P",
+       "MUSC150R",
+       "MUSC150S",
+       "MUSC150T",
+       "MUSC150X",
+       "MUSC150Z"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Elective Theory 2",
+       "prose": [
+        "Take one of the following courses (cannot double count with other electives):"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC121B",
+       "MUSC122",
+       "MUSC123B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Final Upper-Division Elective",
+       "prose": [
+        "Students can fulfill their final upper-division elective by taking:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC5A",
+       "MUSC5B",
+       "MUSC5C",
+       "MUSC8A",
+       "MUSC8B",
+       "MUSC9",
+       "MUSC10",
+       "MUSC12",
+       "MUSC102",
+       "MUSC103",
+       "MUSC158",
+       "MUSC160",
+       "MUSC163",
+       "MUSC164",
+       "MUSC165",
+       "MUSC166",
+       "MUSC168"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Performing Ensembles",
+       "prose": [
+        "Music B.A. (Western Music) students are expected to complete six quarters of performing ensembles on their primary instrument or voice.",
+        "All ensembles are 2 credits each and may be repeated for credit.",
+        "A maximum of one ensemble per quarter can be counted toward fulfillment of the total six quarter requirement. If two ensembles in one quarter need to be taken to meet time to degree plans approval can be requested to the department Curriculum Committee by email to music@ucsc.edu ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC61",
+       "MUSC62",
+       "MUSC161",
+       "MUSC161A",
+       "MUSC162",
+       "MUSC196B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Individual Applied Lessons",
+       "prose": [
+        "Music B.A. (Western Music) students are expected to complete six quarters of applied lessons on their primary instrument or voice.",
+        "Students can contact the applied instrument instructor of their primary instrument to arrange an audition prior to the start of the quarter. Applied instrument instructor emails are listed on the Music Department website .",
+        "Students should work with the applied instructor of their primary instrument to determine which of the courses listed would be appropriate.",
+        "The lessons carry an additional course fee. Concurrent enrollment in an appropriate ensemble is required. Consult the Music Student Handbook for more details."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Western Music Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105M",
+       "MUSC105Q",
+       "MUSC105T",
+       "MUSC150D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) requirement.",
+        "The DC requirement for the western art music concentration of the music B.A. degree is satisfied by completing one of the following courses. Some courses may already be core or elective requirements for the major track, meaning students would satisfy the DC requirement through the natural progression of their degree."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Western Music Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC120"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "To fulfill the the comprehensive requirement, students may either take an additional MUSC 105-series course, not already taken, or the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "music-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/music-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

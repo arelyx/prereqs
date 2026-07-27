@@ -1,0 +1,179 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "astronomy-and-astrophysics",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "minor",
+ "name": "Astrophysics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Calculus:",
+       "prose": [
+        "Choose one of the following options:"
+       ]
+      }
+     }
+    ],
+    "title": "Calculus:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Advanced Calculus:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Advanced Calculus:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5L",
+        "PHYS5B",
+        "PHYS5M",
+        "PHYS5C",
+        "PHYS5N",
+        "PHYS5D"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6B",
+        "PHYS6M",
+        "PHYS6C",
+        "PHYS6N",
+        "PHYS5D"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can substitute for PHYS 5A , and PHYS 15C for PHYS 5C ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Physics:",
+       "prose": [
+        "Choose one of the following options:",
+        "PHYS 15A can substitute for PHYS 5A , and PHYS 15C for PHYS 5C ."
+       ]
+      }
+     }
+    ],
+    "title": "Physics:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS102"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Modern Physics:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Modern Physics:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR111",
+       "ASTR112",
+       "ASTR113",
+       "ASTR117",
+       "ASTR118",
+       "ASTR119",
+       "PHYS129",
+       "PHYS133",
+       "ASTR136",
+       "PHYS171",
+       "EART160",
+       "EART162",
+       "EART163",
+       "EART164",
+       "AM107"
+      ],
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Four of the upper-division astronomy electives chosen from the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Four of the upper-division astronomy electives chosen from the following:"
+   }
+  ]
+ },
+ "slug": "astrophysics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/astronomy-and-astrophysics/astrophysics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

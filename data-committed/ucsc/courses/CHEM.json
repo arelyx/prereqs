@@ -1,0 +1,2402 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "CHEM103",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to biochemistry including biochemical molecules, protein structure and function, membranes, bioenergetics, and regulation of biosynthesis. Provides students with basic essentials of modern biochemistry. Students who plan to do advanced work in biochemistry and molecular biology should take the Biochemistry and Molecular Biology (BIOC) 100 series. Students cannot receive credit for this course after they have completed any two courses from the BIOC 100A , BIOC 100B , and BIOC 100C sequence.",
+   "display_code": "CHEM 103",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "103",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Biochemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-103"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM109",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Integrated study of fundamental organic chemistry, with emphasis on materials especially relevant to biological sciences.",
+   "display_code": "CHEM 109",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "109",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B or equivalent.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Intermediate Organic Chemistry and Applications to Biology",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-109"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM110",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An intermediate study of organic chemistry, including synthetic methods, reaction mechanisms, and application of synthetic chemistry techniques.",
+   "display_code": "CHEM 110",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "110",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B. Enrollment is restricted to chemistry majors, minors and proposed majors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Intermediate Organic Chemistry with Emphasis on Synthesis and Analytical Methods",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-110"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM110L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory experience in organic chemistry and associated principles. Experiments involve the preparation, purification, characterization, and identification of organic compounds, and make use of modern as well as classical techniques.",
+   "display_code": "CHEM 110L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "110L",
+   "prereq_groups": [
+    [
+     "CHEM8M"
+    ],
+    [
+     "CHEM110"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8M and previous or concurrent enrollment in CHEM 110.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Intermediate Organic Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-110l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM110N",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Honors laboratory experience in organic chemistry associated with CHEM 109 or CHEM 110. Designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience. Laboratory: 6 hours per week minimum. Prerequisite(s): CHEM 8A , CHEM 8B and CHEM 8L and either CHEM 8M or CHEM 8N and and previous or concurrent enrollment in CHEM 109 or CHEM 110 is required. Enrollment is by permission of the instructor. Students must pass safety training to begin research. Students may only receive credit for one of the following: CHEM 110L, or CHEM 110N . This class may only be taken as Pass/No Pass, which cannot be converted to a letter grade.",
+   "display_code": "CHEM 110N",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "110N",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Honors Organic Chemistry Lab",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-110n"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM122",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A laboratory course designed to develop familiarity with techniques and instrumentation used in analytical chemistry, emphasizing determination of trace inorganic species. Primary emphasis on applications utilizing the absorption or emission of electromagnetic radiation and on voltammetry. Topics include molecular UV-visible absorption and fluorescence spectrometry; atomic absorption, emission and fluorescence spectrometry; and various forms of voltammetry. Lecture: 2 hours; laboratory: 8 hours.",
+   "display_code": "CHEM 122",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "122",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "CHEM8M"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B and CHEM 8M; satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Principles of Instrumental Analysis",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-122"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM124",
+   "credits": "4",
+   "cross_listed": [],
+   "description": "Introduces modern measurement science for biomolecules. DNA, proteins, and specialized metabolites and the methodologies for measuring them, both qualitative and quantitative, are covered. Techniques are presented with the basic framework and concepts, and modern applications are covered in lecture followed by a hands-on lab component. Provides students with the necessary framework to design and execute their own research-based bioanalytical experiments. Group lab reports are prepared as a \"Letter\" to Analytical Chemistry to report the findings from the laboratory-based experiments. Tests cover the material from the lecture prior to the test day and are not cumulative in nature, however, concepts may build on one another.",
+   "display_code": "CHEM 124",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "124",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B, and satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Bioanalytical Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-124"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM139",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students actively develop the skills and strategies required to become proficient problem solvers in both upper-division science classes and in scientific research. The focus is on systematic problem solving and scientific creativity. (Formerly CHEM 139A, Chemical Problem Solving I: Learning to Think Like a Scientist.)",
+   "display_code": "CHEM 139",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly CHEM 139A, Chemical Problem Solving I: Learning to Think Like a Scientist.",
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "139",
+   "prereq_groups": [
+    [
+     "CHEM1C",
+     "CHEM3C",
+     "CHEM4B"
+    ],
+    [
+     "MATH11A",
+     "MATH19A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 1C , CHEM 3C , or CHEM 4B ; and MATH 11A or MATH 19A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Problem Solving: Learning to Think Like a Scientist",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-139"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM143",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics such as the chemistry of terpenes, steroids, synthetic polymers, alkaloids, reactive intermediates, and reaction mechanisms are treated. Lecture: 4 hours.",
+   "display_code": "CHEM 143",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "143",
+   "prereq_groups": [
+    [
+     "CHEM110"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 110.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Organic Chemical Structure and Reactions",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-143"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM144",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed to introduce Junior/Senior undergraduates to the field of catalysis in organic synthesis. Course acquaints students with the chemistry, with relevant techniques of metals and metalloid chemistry, and focuses on new advancements in organoborane field. Also provides knowledge of the methods to use chemistry to address synthetic challenges in organic chemistry. Students become familiar with the concepts and approaches in the current field of chemical biology.",
+   "display_code": "CHEM 144",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "144",
+   "prereq_groups": [
+    [
+     "CHEM110"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 110",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Catalysis In Organic Synthesis Using Metals and Metalloids Based Reagents",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-144"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM146A",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Exposes students to advanced laboratory techniques in organic chemistry. Designed for students without previous research background in organic chemistry. Experiments carry a research-like format and cover the areas of natural products and reaction chemistry. Modern methods of organic analysis are emphasized including chromatographic methods and organic structure determination by spectroscopy. Laboratory: 8 hours.",
+   "display_code": "CHEM 146A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "146A",
+   "prereq_groups": [
+    [
+     "CHEM110"
+    ],
+    [
+     "CHEM110L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 110 and CHEM 110L; satisfaction of Entry Level Writing and Composition requirements. Enrollment is restricted to chemistry majors. Minors by permission of instructor.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Laboratory in Organic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-146a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM146B",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Designed to expose students to advanced synthetic and spectroscopic techniques in inorganic chemistry. Examples include anaerobic manipulations, characterization of inorganic materials through spectral assignments and synthesis of coordination and organometallic complexes. Lecture: 1-1/4 hours; laboratory: 8 hours. Students billed a materials fee of $240.",
+   "display_code": "CHEM 146B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "146B",
+   "prereq_groups": [
+    [
+     "CHEM151A"
+    ],
+    [
+     "CHEM151L"
+    ],
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 151A and CHEM 151L; CHEM 163A ; satisfaction of Entry Level Writing and Composition requirements. Enrollment restricted to chemistry majors. Minors by permission of instructor.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Laboratory in Inorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-146b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM146C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides advanced laboratory experience in the areas of nanomaterial synthesis and characterization; spectroscopy; fabrication and measurements energy-conversion devices; and soft lithography techniques and instrumentation. Lecture: 1-1/4 hours; laboratory: 4 hours.",
+   "display_code": "CHEM 146C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "146C",
+   "prereq_groups": [
+    [
+     "CHEM163B"
+    ],
+    [
+     "CHEM164"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 163B and CHEM 164; satisfaction of Entry Level Writing and Composition requirements. Enrollment restricted to chemistry majors. Minors by permission of instructor.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Laboratory in Physical Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-146c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM151A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Fundamental topics of inorganic chemistry are presented at the level of the standard texts of field. Special emphasis is given to maintain breadth in the areas of metallic, nonmetallic, and biological aspects of inorganic chemistry. Lecture: 3-1/2 hours; discussion: 1-1/4 hours.",
+   "display_code": "CHEM 151A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151A",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "CHEM8M"
+    ],
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B and CHEM 8M and CHEM 163A . Concurrent enrollment in CHEM 151L is required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemistry of Metals",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-151a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM151B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Fundamental aspects of inorganic chemistry of main group elements are discussed. The emphasis is placed on the chemistry of nontransition elements including noble gases and halogens. In addition, students are exposed to the concepts of extended structures, new materials, and solid-state chemistry. Lecture: 3-3/4 hours.",
+   "display_code": "CHEM 151B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151B",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "CHEM8M"
+    ],
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8B and CHEM 8M and CHEM 163A . Recommended for chemistry majors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemistry of the Main Group Elements",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-151b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM151L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory experience in inorganic chemistry. Experiments involve the preparation, purification, and characterization of inorganic compounds. In addition, experiments are designed to illustrate fundamental principles in inorganic chemistry and are coordinated with lectures in CHEM 151A. Laboratory: 4 hours per week. Laboratory lecture: 1 1/4 hours per week.",
+   "display_code": "CHEM 151L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151L",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "CHEM8M"
+    ],
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s):CHEM 8B and CHEM 8M and CHEM 163A . Concurrent enrollment in CHEM 151A is required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Inorganic Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-151l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM156C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in inorganic chemistry and an introduction to solid-state chemistry. Synthesis and structure of materials discussed as well as their influence on properties for modern devices and applications. Recent developments in area of material science also explored. Taught in conjunction with CHEM 256C.",
+   "display_code": "CHEM 156C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "156C",
+   "prereq_groups": [
+    [
+     "CHEM151A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in CHEM 151A. Enrollment is restricted to seniors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Materials Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-156c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM160J",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to hypothesis-driven laboratory research. Students collectively design and execute a novel research project that addresses a question about macromolecular structure, function, or regulation. Working individually and in small groups, students learn aspects of experimental design, literature and public data base research, data analysis and interpretation, and scientific collaboration. Learned laboratory techniques include molecular cloning, recombinant protein expression and purification, and biochemical assay implementation.",
+   "display_code": "CHEM 160J",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "160J",
+   "prereq_groups": [
+    [
+     "CHEM8L",
+     "BIOC100A",
+     "BIOL100",
+     "CHEM103"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8L and completion of or enrollment in BIOC 100A , BIOL 100 , or CHEM 103. Enrollment is by instructor consent.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Biochemistry Research Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-160j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM160K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to hypothesis-driven laboratory research. Students collectively design and execute a novel research project that addresses a question about macromolecular structure, function, or regulation. Working individually and in small groups, students learn aspects of experimental design, literature and public data base research, data analysis and interpretation, and scientific collaboration. Learned laboratory techniques include molecular cloning, recombinant protein expression and purification, and biochemical assay implementation.",
+   "display_code": "CHEM 160K",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "160K",
+   "prereq_groups": [
+    [
+     "CHEM160J"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM160J.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Biochemistry Research Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-160k"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM160L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to hypothesis-driven laboratory research. Students collectively design and execute a novel research project that addresses a question about macromolecular structure, function, or regulation. Working individually and in small groups, students learn aspects of experimental design, literature and public data base research, data analysis and interpretation, and scientific collaboration. Learned laboratory techniques include molecular cloning, recombinant protein expression and purification, and biochemical assay implementation.",
+   "display_code": "CHEM 160L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "160L",
+   "prereq_groups": [
+    [
+     "CHEM160K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 160K , satisfaction the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Biochemistry Research Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-160l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM161J",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first of a three-course research-based series for students in chemistry or biochemistry and molecular biology degree programs. This lab series introduces undergraduates to the emerging field of chemical biology. There is no laboratory guide with pre-designed experiments and results; instead, students develop a hypothesis and work toward understanding a novel system at the interface of multiple biological and chemical subdisciplines. Students gain technical skills related to these areas by designing experiments, researching primary literature, using public databases, and applying various software programs to aid in data analysis and interpretation.",
+   "display_code": "CHEM 161J",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "161J",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "CHEM8M"
+    ],
+    [
+     "BIOL100"
+    ],
+    [
+     "BIOC100A"
+    ],
+    [
+     "CHEM103"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: successful completion of CHEM 8B and CHEM 8M; and previous or concurrent enrollment in BIOL 100 , BIOC 100A , or CHEM 103. Enrollment is by permission of the instructor.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Biology Research Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-161j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM161K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The second of a three-course research-based series for students in chemistry or biochemistry and molecular biology degree programs. Introduces undergraduates to the emerging field of chemical biology. There is no laboratory guide with pre-designed experiments and results; instead, students develop a hypothesis and work toward understanding a novel system at the interface of multiple biological and chemical subdisciplines. Students gain technical skills related to these areas by designing experiments, researching primary literature, using public databases, and applying various software programs to aid in data analysis and interpretation.",
+   "display_code": "CHEM 161K",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "161K",
+   "prereq_groups": [
+    [
+     "CHEM161J"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 161J.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Biology Research Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-161k"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM161L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The third of a three-course research-based series for students in chemistry or biochemistry and molecular biology degree programs. Introduces undergraduates to the emerging field of chemical biology. There is no laboratory guide with pre-designed experiments and results; instead, students develop a hypothesis and work toward understanding a novel system at the interface of multiple biological and chemical subdisciplines. Students gain technical skills related to these areas by designing experiments, researching primary literature, using public databases, and applying various software programs to aid in data analysis and interpretation.",
+   "display_code": "CHEM 161L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "161L",
+   "prereq_groups": [
+    [
+     "CHEM161K"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 161K , and Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Biology Research Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-161l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM163A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A detailed introduction to quantum theory and the application of wave mechanics to problems of atomic structure, bonding in molecules, and fundamentals of spectroscopy. Students cannot receive credit for this course and BIOC 163A .",
+   "display_code": "CHEM 163A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163A",
+   "prereq_groups": [
+    [
+     "CHEM3C",
+     "CHEM4B",
+     "CHEM1C"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5C",
+     "PHYS6C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3C or CHEM 4B or CHEM 1C ; and PHYS 5B or PHYS 6B ; and previous or concurrent enrollment in PHYS 5C or PHYS 6C .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Quantum Mechanics and Basic Spectroscopy",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-163a"
+  },
+  {
+   "catalog_instructor": "Shaowei Chen",
+   "code": "CHEM163B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Fundamentals of thermodynamics and applications to chemical and biochemical equilibria. Students cannot receive credit for this course and BIOC 163B .",
+   "display_code": "CHEM 163B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163B",
+   "prereq_groups": [
+    [
+     "CHEM1C",
+     "CHEM3C",
+     "CHEM4B"
+    ],
+    [
+     "PHYS6A",
+     "PHYS5A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 1C , CHEM 3C , or CHEM 4B ; and PHYS 6A or PHYS 5A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Thermodynamics",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-163b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM163C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Statistical mechanics, kinetic theory, and reaction kinetics and topics in spectroscopy. (Formerly Kinetic Theory and Reaction Kinetics, Statistical Mechanics, Spectroscopic Applications.)",
+   "display_code": "CHEM 163C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Kinetic Theory and Reaction Kinetics, Statistical Mechanics, Spectroscopic Applications.",
+   "ge_codes": [],
+   "number": "163C",
+   "prereq_groups": [
+    [
+     "CHEM163A",
+     "CHEM163B"
+    ],
+    [
+     "BIOC163A",
+     "BIOC163B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 163A and CHEM 163B , or BIOC 163A and BIOC 163B .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Statistical Thermodynamics and Kinetics",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-163c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM164",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides laboratory experience and data analysis in the areas of thermodynamics, kinetics, and spectroscopy. Lecture: 1.75 hours; experimental laboratory: 4 hours; computer laboratory: 2 hours.",
+   "display_code": "CHEM 164",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "164",
+   "prereq_groups": [
+    [
+     "CHEM1C",
+     "CHEM3C",
+     "CHEM4B"
+    ],
+    [
+     "PHYS5A",
+     "PHYS5B",
+     "PHYS5C"
+    ],
+    [
+     "PHYS6A",
+     "PHYS6B",
+     "PHYS6C"
+    ],
+    [
+     "MATH22",
+     "MATH23B",
+     "AM30"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 1C , CHEM 3C , or CHEM 4B ; and PHYS 5A and PHYS 5B and PHYS 5C , or PHYS 6A and PHYS 6B and PHYS 6C ; and MATH 22 or MATH 23B or AM 30 . CHEM 163A is recommended.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Physical Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-164"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM169",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An overview of the central elements of drug discovery, including target selection and validation; computational or virtual screening; high-throughput screening; fragment-based methods; and pharmacokinetics.",
+   "display_code": "CHEM 169",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "169",
+   "prereq_groups": [
+    [
+     "CHEM103",
+     "BIOC100A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 103 or BIOC 100A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemistry and Biology of Drug Design and Discovery",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-169"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM171",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers methods and techniques for the field of chemical biology. Brings together methods in chemistry, biochemistry, and genetics to study the interaction of small molecules with biological systems. Students cannot receive credit for this course and course CHEM 271 .",
+   "display_code": "CHEM 171",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "171",
+   "prereq_groups": [
+    [
+     "CHEM8B"
+    ],
+    [
+     "CHEM103",
+     "BIOC100A",
+     "BIOL100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: CHEM 8B, and CHEM 103 or BIOC 100A or BIOL 100 . Enrollment is restricted to senior chemistry, biochemistry or related life science majors and minors. BIOL 101 and CHEM 110 recommended but not required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Biology",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-171"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM186L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Complements undergraduate research experience in chemistry and biochemistry with skill development in communicating science and discussion of the responsible practice of science. Students complete written summaries and presentations describing their original research. Additional topics include record keeping, research funding and grant writing, scientific publishing, and ethics and misconduct. Students must be sponsored by a research mentor. Prerequisite(s): CHEM 8M. Students must have active mentorship from department faculty. Enrollment is by permission of the instructor.",
+   "display_code": "CHEM 186L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "186L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Research Communication and Practice",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-186l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM192",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Dir Stu Teach",
+   "display_code": "CHEM 192",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "192",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Dir Stu Teach",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-192"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An individually supervised course with emphasis on reviewing the current scientific literature. Students are required to submit a summary and a critique of a scientific paper in the form of a senior essay. Students submit a petition to the sponsoring agency. This course may not be repeated for credit.",
+   "display_code": "CHEM 194",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Senior Essay",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-194"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM195A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An individually supervised course with emphasis on independent research. Multiple-term course extending over two or three quarters; the grade and evaluation submitted for the final quarter apply to all previous quarters. Students submit petition to sponsoring agency; may not be repeated for credit. (Formerly offered as Senior Research.)",
+   "display_code": "CHEM 195A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Senior Research.",
+   "ge_codes": [],
+   "number": "195A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-195a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM195B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An individually supervised course with emphasis on independent research. Multiple-term course extending over two or three quarters; the grade and evaluation submitted for the final quarter apply to all previous quarters. Students submit petition to sponsoring agency; may not be repeated for credit. (Formerly offered as Senior Research.)",
+   "display_code": "CHEM 195B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Senior Research.",
+   "ge_codes": [],
+   "number": "195B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-195b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM195C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An individually supervised course with emphasis on independent research. Multiple-term course extending over two or three quarters; the grade and evaluation submitted for the final quarter apply to all previous quarters. Students submit petition to sponsoring agency; may not be repeated for credit. (Formerly offered as Senior Thesis.)",
+   "display_code": "CHEM 195C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Senior Thesis.",
+   "ge_codes": [],
+   "number": "195C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-195c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency. (Formerly offered as Tutorial.)",
+   "display_code": "CHEM 199",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Tutorial.",
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Independent Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency. (Formerly offered as Tutorial.)",
+   "display_code": "CHEM 199F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Tutorial.",
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Independent Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-199f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM1A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An integrated study of general chemistry. Covers a range of topics including the atomic structure of matter; molecules; chemical reactions; acids and bases; gases; and equilibria in the gas and liquid phase. Students are  expected to use algebra to solve problems. General Chemistry is articulated in a full-year series. Partial transfer credit is not allowed for the A,B,C series.",
+   "display_code": "CHEM 1A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "1A",
+   "prereq_groups": [
+    [
+     "MATH3",
+     "AM3"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in MATH 3 , AM 3 , or equivalent, or a mathematics placement score of 300 or higher. Enrollment is restricted to sophomores, juniors, and seniors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-1a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM1C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An integrated study of general chemistry. Coverage includes thermodynamics; oxidation-reduction and electrochemistry; liquids and solids; intermolecular forces and solutions, including colligative properties; and nuclear chemistry. General Chemistry is articulated in a full-year series. Partial transfer credit is not allowed for the A,B,C series.",
+   "display_code": "CHEM 1C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1C",
+   "prereq_groups": [
+    [
+     "CHEM1A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 1A . Concurrent enrollment in course 1N is recommended. Enrollment is restricted to sophomores, juniors, and seniors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-1c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM1M",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory sequence illustrating topics covered in CHEM 1B and CHEM 1C and important experimental techniques.",
+   "display_code": "CHEM 1M",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1M",
+   "prereq_groups": [
+    [
+     "CHEM1B",
+     "CHEM4A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in CHEM 1B or CHEM 4A is required. Enrollment is restricted to sophomores, juniors, and seniors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-1m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM1N",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory sequence illustrating topics covered in CHEM 1B and CHEM 1C , respectively, and important experimental techniques.",
+   "display_code": "CHEM 1N",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1N",
+   "prereq_groups": [
+    [
+     "CHEM1C",
+     "CHEM4B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in CHEM 1C or CHEM 4B is required. Enrollment is restricted to sophomores, juniors, and seniors.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-1n"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM200A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the theory, principles, and practical application of biophysical methods to the study of biomolecules, especially proteins and nucleic acids. Emphasis on spectroscopic techniques. Topics include magnetic resonance, optical spectroscopy, fast reaction techniques, crystallography, and mass spectrometry.",
+   "display_code": "CHEM 200A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "200A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Biochemistry: Biophysical Methods",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM200B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A detailed discussion of nucleic acid and protein chemistry, ranging from the structure, thermodynamics, and folding to the relationship between structure and function, and encompassing the methods used to determine such information.",
+   "display_code": "CHEM 200B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "200B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Biochemistry: Macromolecular Structure and Function",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM200C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A study of enzyme kinetics, mechanisms, and factors involved in enzymic catalysis. Lecture: 3-1/2 hours.",
+   "display_code": "CHEM 200C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "200C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Biochemistry: Enzyme Mechanisms and Kinetics",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM222",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides skills for the transition from academia into industrial research careers, addressing presentation skills, project prioritization, teamwork, salary-benefit expectations, intellectual property, performance reviews, Myers-Briggs profiles, and career planning. Participant teams will analyze the commercialization of a technical innovation.",
+   "display_code": "CHEM 222",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "222",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to Physical and Biological Sciences and School of Engineering graduate students who have completed one consecutive year. Undergraduates may enroll on a space available basis by permission of instructor.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Career Success in Industrial Science/ Engineering",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-222"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM230",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the fundamentals of grant writing in biomedical research, including best practices for presentation of data and communication of research findings. Students write and peer-edit most components of the NIH Ruth L. Kirschstein F31 predoctoral fellowship. Course is designed for students in their second year or later of graduate study.",
+   "display_code": "CHEM 230",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "230",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Grant Writing in Biomedical Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-230"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM234",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The role played by transition metals in biological systems  is discussed through application of the principles of coordination chemistry and inorganic spectroscopy. Topics include metalloproteins involved in oxygen binding, iron storage, biological redox reactions, and nitrogen fixation, as well as metal complexes of nucleic acids. Lecture: 4 hours.",
+   "display_code": "CHEM 234",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "234",
+   "prereq_groups": [
+    [
+     "CHEM151A",
+     "CHEM151L",
+     "CHEM163A",
+     "BIOC100A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 151A, CHEM 151L, CHEM 163A , and BIOC 100A ; or graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Bioinorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-234"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM238",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A discussion of the application of selected topics in biophysical chemistry to contemporary problems in biochemistry and molecular biology. Lecture: 3-1/2 hours.",
+   "display_code": "CHEM 238",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "238",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Topics in Biophysical Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-238"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM242A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers molecular structure and bonding, strain, and non-covalent binding forces. Other topics include acid-base chemistry, kinetics, thermodynamics, catalysis, organic reactions and mechanism, and quantum mechanical approaches to the analysis of organic molecules.",
+   "display_code": "CHEM 242A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "242A",
+   "prereq_groups": [
+    [
+     "CHEM143"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to seniors who have taken CHEM 143, and graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Modern Physical Organic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM242B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Presents concepts in bond formation, conformation, selectivity, and stereocontrol in modern organic synthesis. Focuses on understanding reaction mechanisms. Culminates with strategy in designing multi-step synthesis of complex targets.",
+   "display_code": "CHEM 242B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "242B",
+   "prereq_groups": [
+    [
+     "CHEM143"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to seniors who have taken CHEM 143, and graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Modern Synthetic Methods in Organic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM242C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Presents strategies in organic structure elucidation, including nuclear magnetic resonance (NMR) and mass spectrometry. Provides theory and practical elements of structure elucidation and modern analytical methods for organic molecules.",
+   "display_code": "CHEM 242C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "242C",
+   "prereq_groups": [
+    [
+     "CHEM143"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to seniors who have taken CHEM 143, and graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Spectroscopy and Applied Analytical Methods",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM244",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores organic free radicals. Fundamental principles in physical chemistry provide an understanding of free-radical transformations in organic synthesis, polymerization, and some examples of free radicals in biology. For students who have a firm grounding in organic chemistry.",
+   "display_code": "CHEM 244",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "244",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Organic Free Radical Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-244"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM247",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This course is fully hands-on, highly interactive, and project-based. Students receive extensive training on the DFT program Gaussian and are then offered the opportunity to deepen their knowledge, tailored to their specific research projects. Students have the option to bring in their own molecules of interest from their research laboratories.",
+   "display_code": "CHEM 247",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "247",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Using DFT Computational Methods to Study Molecular Structure and Reactivity",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-247"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM256A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in inorganic chemistry are presented. Topics covered vary from year to year, and are announced in advance. Possible topics include A) organometallic chemistry; B) structural methods in inorganic chemistry; C) solid-state chemistry.",
+   "display_code": "CHEM 256A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "256A",
+   "prereq_groups": [
+    [
+     "CHEM151A"
+    ],
+    [
+     "CHEM151L"
+    ],
+    [
+     "CHEM146B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students or previous enrollment in CHEM 151A, CHEM 151L, and CHEM 146B.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Topics in Inorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM256B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in inorganic chemistry are presented. Topics covered vary from year to year, and are announced in advance. Possible topics include A) organometallic chemistry; B) structural methods in inorganic chemistry; C) solid-state chemistry.",
+   "display_code": "CHEM 256B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "256B",
+   "prereq_groups": [
+    [
+     "CHEM151A"
+    ],
+    [
+     "CHEM151L"
+    ],
+    [
+     "CHEM146B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students or previous enrollment in CHEM 151A, CHEM 151L, and CHEM 146B.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Topics in Inorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM256C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in inorganic chemistry are presented. Topics covered vary from year to year, and are announced in advance. Possible topics include A) organometallic chemistry; B) structural methods in inorganic chemistry; C) solid-state chemistry.",
+   "display_code": "CHEM 256C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "256C",
+   "prereq_groups": [
+    [
+     "CHEM151A"
+    ],
+    [
+     "CHEM151L"
+    ],
+    [
+     "CHEM146B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students or previous enrollment in CHEM 151A, CHEM 151L, and CHEM 146B.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced Topics in Inorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM256D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Course in chemical crystallography focuses on the needs of small-molecule, single-crystal diffraction studies. Includes diffraction theory, space-group analysis, data collection, structure solution, and refinement. Practical component: use of diffraction equipment and solution/refinement software.",
+   "display_code": "CHEM 256D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "256D",
+   "prereq_groups": [
+    [
+     "CHEM151A"
+    ],
+    [
+     "CHEM151L"
+    ],
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students and seniors who have taken CHEM 151A, CHEM 151L, and CHEM 163A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "X-ray Crystallography",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM261",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The basic theory of time-dependent processes is covered at an advanced level. The interaction of electromagnetic radiation and matter is described using both semiclassical and quantum field formulations. A variety of modern spectroscopic techniques are discussed both in terms of the basic processes and their use in the elucidation of chemical structure and dynamics.",
+   "display_code": "CHEM 261",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "261",
+   "prereq_groups": [
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to chemistry graduate students or previous enrollment in CHEM 163A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Foundations of Spectroscopy",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-261"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM262",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Theory and concepts of statistical mechanics with applications to ideal gases, condensed systems, phase transition, and non-equilibrium thermodynamics. Lecture: 3-1/2 hours.",
+   "display_code": "CHEM 262",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "262",
+   "prereq_groups": [
+    [
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to chemistry graduate students or previous enrollment in CHEM 163A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Statistical Mechanics",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-262"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM263",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A rigorous introductory course: the Schrödinger equation, operator formalism, matrix mechanics, angular momentum, and spin. Perturbation and other approximate methods. Applications to atomic and molecular problems. Lecture: 3-1/2 hours.",
+   "display_code": "CHEM 263",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "263",
+   "prereq_groups": [
+    [
+     "CHEM163A",
+     "PHYS116A",
+     "PHYS116C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to chemistry graduate students or previous enrollment in CHEM 163A , PHYS 116A , and PHYS 116C .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Quantum Mechanics",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-263"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM264",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction of quantum mechanical simulations of materials at the atomistic level. This includes introduction of solid-state electronic structure formulated with density functional theory and plane-wave basis, calculations of spectroscopic and transport properties for solids and condensed phases from first-principles. Basic calculations of electronic structure, lattice dynamics with phonon dispersion and dielectric properties, treatment of electron correlation for open-shell systems with linear and non-linear magnetism. Advanced topics include calculations of excited-state spectroscopy with many-body interaction, ab-initio molecular dynamics, Wannier function and topological properties, and electron-phonon coupling for superconductivity and carrier transport.",
+   "display_code": "CHEM 264",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "264",
+   "prereq_groups": [
+    [
+     "PHYS102",
+     "CHEM163A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Enrollment is restricted to graduate students; undergraduates who have completed PHYS 102 or CHEM 163A may enroll.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Computational Materials",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-264"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM265",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A detailed introduction of the use of computer simulation methods in physical and biophysical chemistry. Includes review of thermodynamics and statistical mechanics, molecular mechanics, molecular dynamics, and Monte-Carlo methods. Applications to liquid structure, reaction dynamics, and protein dynamics.",
+   "display_code": "CHEM 265",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "265",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Computer Simulation in Statistical Mechanics",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-265"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM268",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topics include synthesis of solid-state materials and their characterization using experimental techniques: XRD, TEM spectroscopy, NMR, and their applications in technologies. Emphasis on new materials, e.g., polymer, biopolymers, nanomaterials, organic/inorganic composites, ceramics, superconductors, electronic, magnetic, and opto-electronic materials.",
+   "display_code": "CHEM 268",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "268",
+   "prereq_groups": [
+    [
+     "CHEM163A",
+     "CHEM163B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to chemistry graduate students or students previously enrolled in CHEM 163A and CHEM 163B .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Solid State and Materials Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-268"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM269",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed to introduce basic principles and applications of electrochemistry to students at upper undergraduate and lower graduate levels in various fields including analytical, physical, and materials chemistry.",
+   "display_code": "CHEM 269",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "269",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to seniors and graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Electrochemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-269"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM271",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Methods and techniques for the field of chemical biology. Brings together methods in chemistry, biochemistry, and genetics to study the interaction of small molecules with biological systems. Students cannot receive credit for this course and CHEM 171.",
+   "display_code": "CHEM 271",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "271",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to chemistry graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Chemical Biology",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-271"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM272",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lecture and lab course introducing graduate students to mass spectrometry. Begins with the basic framework and concepts in mass spectrometry to break down modern instrumentation to build toward utilizing modern biomedical applications of the technology. Course focuses on biological molecules (amino acids to proteins). Interpretation of organic mass spectra is only be briefly covered. Provides students with the necessary framework to design and execute their own research-based mass spectrometry experiments. Two weeks are dedicated to hands-on experiments using modern mass spectrometers and preparing short technical notes based on the Journal of the American Society for Mass Spectrometry (JASMS) to report findings from laboratory base experiments.",
+   "display_code": "CHEM 272",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "272",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Mass Spectrometry: Fundamentals and Applications",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-272"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM274",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to study of synthetic organic chemistry and controlled polymer design for applications in nanotechnology. Topics drawn from current literature and research interests of participants.",
+   "display_code": "CHEM 274",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "274",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar in Synthetic and Polymer Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-274"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM275",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to biological inorganic chemistry and biochemistry. Topics are drawn from current literature. Papers and reviews are discussed, and participants give short seminars on their research interests.",
+   "display_code": "CHEM 275",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "275",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar in Biological Inorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-275"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM280",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to materials and inorganic research. Topics are drawn from current literature. Papers and reviews are discussed. Participants also give short seminars on topics of their research interests.",
+   "display_code": "CHEM 280",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar in Materials Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-280"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM282",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to the study of asymmetric and/or enantio-selective synthesis of optically active organic compounds of biological and medicinal significance. Topics drawn from the current literature and the research interests of the participants.",
+   "display_code": "CHEM 282",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "282",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar: Synthetic Methods",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-282"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM284",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to the study of synthetic organic chemistry. Topics drawn from the current literature and the research interests of the participants.",
+   "display_code": "CHEM 284",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "284",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar in Synthetic Organic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-284"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM285",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A detailed study of molecular mechanisms of light energy conversion and light-signal transduction processes in biological systems. Student participation in critical discussion of current literature examples are emphasized. Two-hour lecture and two-hour seminar weekly.",
+   "display_code": "CHEM 285",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "285",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar: Photobiochemistry and Photobiology",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-285"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM286",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to the study of natural products. Topics drawn from the current literature and research interests of the participants.",
+   "display_code": "CHEM 286",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "286",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar in Natural Products Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-286"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM288",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Weekly meetings devoted to inorganic and bioinorganic research. Topics are drawn from current literature. Papers and reviews are discussed. Participants also give short seminars on topics of their research interests.",
+   "display_code": "CHEM 288",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "288",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Proseminar in Bioinorganic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-288"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM291",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A weekly chemistry and biochemistry seminar series covering recent developments and current research, led by experts from other institutions, as well as local speakers. Open to chemistry and biochemistry graduate students.",
+   "display_code": "CHEM 291",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "291",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Chemistry and Biochemistry Research Seminar",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-291"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM292",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides practice and practical guidance for giving a high-quality research seminar.  The course is primarily composed of practice presentations given and critiqued by students. (Formerly offered as Seminar.)",
+   "display_code": "CHEM 292",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Seminar.",
+   "ge_codes": [],
+   "number": "292",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students or approval of the graduate adviser.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Preparing Scientific Presentations",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-292"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM296",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "University-level pedagogy in chemistry; examines the role of preparation, assessment, and feedback in teaching chemistry discussion and laboratory sections. Effective classroom techniques and organizational strategies discussed; oral presentations analyzed critically. Required of entering chemistry graduate students.",
+   "display_code": "CHEM 296",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "296",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to chemistry graduate students.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Teaching Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-296"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM297A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A topic will be studied with faculty tutorial assistance to satisfy a need for the student when a regular course is not available. Students submit petition to sponsoring agency.",
+   "display_code": "CHEM 297A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-297a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM297B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "A topic will be studied with faculty tutorial assistance to satisfy a need for the student when a regular course is not available. Students submit petition to sponsoring agency.",
+   "display_code": "CHEM 297B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-297b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM299A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Thesis Research",
+   "display_code": "CHEM 299A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM299B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Thesis Research",
+   "display_code": "CHEM 299B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM299C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Thesis Research",
+   "display_code": "CHEM 299C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM3A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first course in UCSC's three-quarter introductory chemistry series. Topics in this quarter include atomic theory and structure, the periodic table, chemical bonding, molecules and their structure, intramolecular forces, and chemical reactions and stoichiometry.",
+   "display_code": "CHEM 3A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "3A",
+   "prereq_groups": [
+    [
+     "MATH2"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in MATH 2 or higher, or a math placement (MP) score of 200 or higher. Students cannot enroll in CHEM 3A after receiving a 'C' or better in CHEM 1B.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-3a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM3B",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "The second course in UCSC's three-quarter introductory chemistry series. Topics in this quarter include chemical equilibrium, acids and bases, solution pH, buffers and chemical kinetics. Course consists of in-person lecture, a secondary active learning discussion section, and a secondary laboratory section. In addition to the lecture, students are required to enroll and attend one discussion section and one laboratory section.",
+   "display_code": "CHEM 3B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3B",
+   "prereq_groups": [
+    [
+     "CHEM3A"
+    ],
+    [
+     "MATH3"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3A with a grade of C or better. Previous or concurrent enrollment in MATH 3 (or equivalent) or a mathematics placement score of 300 or higher is required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-3b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM3BL",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Focusing on science skills building with an emphasis on the general chemistry lab setting, course provides an introduction to important concepts and practices related to lab safety, fundamental experimental techniques, chemical handling, waste disposal, data collection/analysis, scientific writing/communication, and small-group collaboration. Coursework includes in-person experiments/lab time as well asynchronous work to be completed in Canvas and WebAssign.",
+   "display_code": "CHEM 3BL",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3BL",
+   "prereq_groups": [
+    [
+     "CHEM3A"
+    ],
+    [
+     "CHEM3B",
+     "CHEM1A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3A, and either CHEM 3B or CHEM 1A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry Lab",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-3bl"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM3C",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "The third course in UCSC’s three-quarter introductory chemistry series. Topics in this quarter include the first and second laws of thermodynamics, redox reactions, electrochemistry, phase changes, and physical properties of solutions. Course consists of in-person lecture, a secondary active learning discussion section, and a secondary laboratory section. In addition to the lecture, students are required to enroll and attend one discussion section and one laboratory section.",
+   "display_code": "CHEM 3C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3C",
+   "prereq_groups": [
+    [
+     "CHEM3B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3B.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-3c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM3CL",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "The second in the general chemistry series, course focuses on science skills building with an emphasis on the general chemistry lab setting. Provides an introduction to important concepts and practices related to lab safety, fundamental experimental techniques, chemical handling, waste disposal, data collection/analysis, scientific writing/communication, and small-group collaboration. Coursework includes in-person lab experiments/work as well as asynchronous assignments to be completed in Canvas and Webassign.",
+   "display_code": "CHEM 3CL",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3CL",
+   "prereq_groups": [
+    [
+     "CHEM3A"
+    ],
+    [
+     "CHEM3B"
+    ],
+    [
+     "CHEM3C",
+     "CHEM1C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3A, CHEM 3B, and either CHEM 3C or CHEM 1C .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "General Chemistry Lab",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-3cl"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM4A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The first course of the two-quarter accelerated general chemistry series intended for students with a strong high school chemistry background. Coverage includes atomic structure and periodicity, general concepts of chemical bonding, covalent bonding, chemical equilibria and acid-base equilibria. To enroll in CHEM 4A, students must complete an ALEKS prep module. To access this module, find a link in the \"Class Notes\" section of CHEM 4A in the schedule of classes. Students cannot enroll in CHEM 4A after receiving credit with a 'C' or better in CHEM 3A.",
+   "display_code": "CHEM 4A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "4A",
+   "prereq_groups": [
+    [
+     "CHEM4AL"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Completion of CHEM 4 Prep ALEKS module (find module link in lass Notes section of CHEM 4A in the schedule of classes). Previous or concurrent enrollment in MATH 3 (or equivalent/higher) or a math placement score of 300 or higher. Concurrent enrollment in CHEM 4AL. Strong high-school-level chemistry is highly recommended. Students who have a C or better in CHEM 3A are not allowed to enroll in CHEM 4A.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced General Chemistry: Molecular Structure and Reactivity",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-4a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM4AL",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Focuses on science skills building with an emphasis on the general chemistry lab setting. Provides an introduction to important concepts and practices related to lab safety, fundamental experimental techniques, chemical handling, waste disposal, data collection/analysis, scientific writing/communication, and small-group collaboration. Course work includes in-person lab experiments/work as well as asynchronous work completed in Canvas and Webassign. This course taken with CHEM 4BL provides an advanced alternative to the CHEM 3BL/ CHEM 3CL series.",
+   "display_code": "CHEM 4AL",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "4AL",
+   "prereq_groups": [
+    [
+     "CHEM4A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): prior or current enrollment in CHEM 4A.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced General Chemistry Lab",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-4al"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM4B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The second course of the two-quarter accelerated general chemistry series. Coverage includes thermodynamics; kinetics, oxidation-reduction, and electrochemistry; liquids and solids; intermolecular forces and solutions, including colligative properties; and nuclear chemistry.",
+   "display_code": "CHEM 4B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "4B",
+   "prereq_groups": [
+    [
+     "CHEM4A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite: CHEM 4A. Concurrent enrollment in CHEM 4BL is required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced General Chemistry: Molecular Structure and Reactivity",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-4b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM4BL",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Focuses on science skills building with an emphasis on the general chemistry lab setting,. Provides an introduction to important concepts and practices related to lab safety, fundamental experimental techniques, chemical handling, waste disposal, data collection/analysis, scientific writing/communication, and small-group collaboration. Coursework includes in-person lab experiments/work as well as asynchronous work completed in Canvas and Webassign. This course taken with CHEM 4AL provides an advanced alternative to the CHEM 3BL/ CHEM 3CL series.",
+   "display_code": "CHEM 4BL",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "4BL",
+   "prereq_groups": [
+    [
+     "CHEM4B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Prior or concurrent enrollment in CHEM 4B .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Advanced General Chemistry Lab",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-4bl"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM80H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A glimpse of the science and technology of wines through critical analysis. Students gain an appreciation of the scientific method and are be exposed to data from chemistry, biology, viticulture, and enology. This analysis is extended to examine commonly accepted practices used by scientists vs. non-scientist to assess and describe wine quality. (Formerly Introduction to Wines and Wine Chemistry.)",
+   "display_code": "CHEM 80H",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Introduction to Wines and Wine Chemistry.",
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "80H",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Introduction to Wine Science and Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-80h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM8A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces organic chemistry, with an emphasis on bonding and reactivity of organic compounds.",
+   "display_code": "CHEM 8A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "8A",
+   "prereq_groups": [
+    [
+     "CHEM3C",
+     "CHEM4B"
+    ],
+    [
+     "CHEM1B",
+     "CHEM3A",
+     "CHEM4A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3C , or CHEM 4B , or CHEM 1C and either CHEM 1B, CHEM 3A, or CHEM 4A",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Organic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-8a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM8B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to organic chemistry, with an emphasis on reactivity and synthesis of organic compounds.",
+   "display_code": "CHEM 8B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "8B",
+   "prereq_groups": [
+    [
+     "CHEM8A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8A .",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Organic Chemistry",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-8b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM8L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory experience in organic chemistry associated with CHEM 8A . Designed to introduce the student to the many techniques associated with organic chemistry while affording an opportunity to explore the concepts discussed in the lecture material. Laboratory: 4 hours, lecture: 1-1/4 hours.",
+   "display_code": "CHEM 8L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "8L",
+   "prereq_groups": [
+    [
+     "CHEM1C",
+     "CHEM1N",
+     "CHEM3C"
+    ],
+    [
+     "CHEM4B",
+     "CHEM4BL"
+    ],
+    [
+     "CHEM8A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 1C and CHEM 1N , or CHEM 3C , or CHEM 4B and CHEM 4BL. Previous or concurrent enrollment in CHEM 8A is required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Organic Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-8l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM8M",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Laboratory experience in organic chemistry associated with course 8B. Designed to introduce the student to the many techniques associated with organic chemistry while affording an opportunity to explore the concepts discussed in the lecture material. Laboratory: 4 hours, lecture: 1-1/4 hours.",
+   "display_code": "CHEM 8M",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "8M",
+   "prereq_groups": [
+    [
+     "CHEM8A"
+    ],
+    [
+     "CHEM8L"
+    ],
+    [
+     "CHEM8B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 8A and CHEM 8L and previous or concurrent enrollment in CHEM 8B is required.",
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Organic Chemistry Laboratory",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-8m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM8N",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Honors laboratory experience in organic chemistry associated with course CHEM 8B. Designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience. Laboratory: 6 hours per week minimum. Prerequisite(s): CHEM 8A and CHEM 8L ;  concurrent enrollment in CHEM 8B is required. Enrollment is by permission of the instructor. Students must pass safety training to begin research. Students may only receive credit for one of the following: CHEM 8M or CHEM 8N. This class may only be taken as Pass/No Pass, which cannot be converted to a letter grade.",
+   "display_code": "CHEM 8N",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "8N",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "CHEM",
+   "title": "Honors Organic Chemistry Lab",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-8n"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "CHEM 99",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-99"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "CHEM99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "CHEM 99F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "CHEM",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "CHEM"
+}

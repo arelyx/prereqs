@@ -1,0 +1,189 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "philosophy",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Philosophy Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL9"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "The following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "PHIL7",
+        "PHIL8"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 98,
+         "lo": 1,
+         "subject": "PHIL"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Plus one lower-division elective:",
+       "prose": [
+        "One other 5-credit course numbered PHIL 1-98, with the exception of PHIL 7 and PHIL 8 . Transfer students should check Assist.org for articulation agreements."
+       ]
+      }
+     }
+    ],
+    "title": "Plus one lower-division elective:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL100A",
+       "PHIL100B",
+       "PHIL100C",
+       "PHIL100D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "History of Philosophy",
+       "prose": [
+        "One of following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "History of Philosophy"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least one must be in value theory and two in metaphysics and/or epistemology (see Philosophy B.A. course requirements for a list of courses that satisfy these requirements).",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus four upper-division electives:",
+       "prose": [
+        "Take four 5-credit courses numbered PHIL 100A or above, excluding PHIL 195A , 195B, and 199.",
+        "At least one must be in value theory and two in metaphysics and/or epistemology (see Philosophy B.A. course requirements for a list of courses that satisfy these requirements).",
+        "The course satisfying the history of philosophy requirement cannot be counted toward the four upper-division electives. PHIL 100D may simultaneously satisfy both the history of philosophy and value theory requirement, however, four additional electives must still be completed."
+       ]
+      }
+     }
+    ],
+    "title": "Plus four upper-division electives:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "For the sequence in which courses must be taken, see Major Requirements.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Substitution Policy",
+       "prose": [
+        "One upper-division course substitution may be considered, but lower-division courses may not be substituted for an upper-division requirement. Lower-division courses completed elsewhere may also be considered. Substitution requests are to be made via petition to and are subject to approval by the undergraduate program director. There is no senior comprehensive requirement for the minor.",
+        "For the sequence in which courses must be taken, see Major Requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Letter Grade Policy",
+       "prose": [
+        "This program does not have a letter grade policy."
+       ]
+      }
+     }
+    ],
+    "title": "Letter Grade Policy"
+   }
+  ]
+ },
+ "slug": "philosophy-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/philosophy/philosophy-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

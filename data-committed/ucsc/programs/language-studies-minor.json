@@ -1,0 +1,257 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "linguistics",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Language Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHIN6",
+       "FREN6",
+       "ITAL6",
+       "JAPN6",
+       "SPAN6",
+       "SPHS6"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division Language",
+       "prose": [
+        "Students must demonstrate a level of competency in the language of concentration. This is accomplished by completing one of the Level 6 language courses below, or its equivalent. These courses all have prerequisites of levels 1-5 or their equivalent."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Language"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "The minor requires 25 upper-division credits. These requirements are comprised of two required linguistics courses, one advanced language course, and two electives, as follows:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING100",
+       "LING101",
+       "LING111",
+       "LING112",
+       "LING171"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Students may not apply both LING 111 and LING 112 toward the minor."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Take two of the following courses:",
+       "prose": [
+        "Students may not apply both LING 111 and LING 112 toward the minor."
+       ]
+      }
+     }
+    ],
+    "title": "Take two of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One 5-credit Advanced Language course is required. Courses must be within the language of concentration and can be chosen from the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "ITAL101",
+        "LIT185",
+        "LIT188"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "JAPN"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "SPAN"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "SPHS"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "CHIN"
+        },
+        {
+         "hi": 114,
+         "lo": 111,
+         "subject": "FREN"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "ITAL"
+        }
+       ],
+       "include_series": [
+        {
+         "prefix": "182",
+         "subject": "LIT"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Advanced Language Requirement",
+       "prose": [
+        "One 5-credit Advanced Language course is required. Courses must be within the language of concentration and can be chosen from the following:",
+        "Chinese: CHIN 100-199",
+        "French: FREN 111 -114 and 120-199 or from the LIT 182 series",
+        "Italian: ITAL 100-199 (excluding ITAL 101) or from the LIT 185 series",
+        "Japanese: JAPN 100-199",
+        "Spanish: SPAN 100-199, SPHS 100-199, or from the LIT 188 or 189 series",
+        "Note : The LIT courses listed above may only be used to fulfill the Advanced Language requirement if a student has completed or tested out of Level 6 of the corresponding lower-division language prior to taking the class. If Level 6 is not yet completed in that language, students may use the LIT courses toward the Cultural Context/Upper-Division Electives requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Advanced Language Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "The minor requires two 5-credit upper-division elective courses. Courses may be chosen from:",
+        "The two courses may be any combination of these four options. Cultural context courses allow students to study disciplines such as literature, history, and politics as they relate to their language of concentration. Cultural context courses and advanced language courses must align with the language of concentration. See the Course Substitution Policy section for information about using pre-approved outside courses not listed above. Students must receive instructor permission to enroll in graduate-level courses. A list of course options being offered in the upcoming quarters is available."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students may substitute up to two outside courses toward the Upper-Division Electives requirement. These courses include independent study ( LING 199 ), language-focused courses from other UC Santa Cruz departments, and courses from other institutions. Substitutions must be upper-division courses and fit into a coherent program of study. A list of pre-approved outside courses is available for reference. Students should contact the department to inquire about using courses not on this list. Students may apply no more than one quarter of LING 199 . Advanced language courses taken at UCSC and courses listed as Cultural Context Courses for the language of concentration do not count toward the two-course limit.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Substitution Policy",
+       "prose": [
+        "Students may substitute up to two outside courses toward the Upper-Division Electives requirement. These courses include independent study ( LING 199 ), language-focused courses from other UC Santa Cruz departments, and courses from other institutions. Substitutions must be upper-division courses and fit into a coherent program of study. A list of pre-approved outside courses is available for reference. Students should contact the department to inquire about using courses not on this list. Students may apply no more than one quarter of LING 199 . Advanced language courses taken at UCSC and courses listed as Cultural Context Courses for the language of concentration do not count toward the two-course limit."
+       ]
+      }
+     }
+    ],
+    "title": "Course Substitution Policy"
+   }
+  ]
+ },
+ "slug": "language-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/language-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

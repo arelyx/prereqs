@@ -1,0 +1,507 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "TIM147",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces concepts, approaches, tools, methods for extracting useful knowledge and business value from data for business applications. Covers predictive models, descriptive models, model fitting, model overfitting, complexity, visualization, text mining, association mining, analytical thinking. Other topics may include social network mining, data science and business strategy. Students cannot receive credit for this course and CSE 145 .",
+   "display_code": "TIM 147",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "147",
+   "prereq_groups": [
+    [
+     "CSE30"
+    ],
+    [
+     "MATH22",
+     "MATH23A",
+     "AM30"
+    ],
+    [
+     "STAT5"
+    ],
+    [
+     "STAT7"
+    ],
+    [
+     "STAT17",
+     "STAT17L"
+    ],
+    [
+     "STAT131"
+    ],
+    [
+     "CSE107"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CSE 30 ; and MATH 22 or MATH 23A or AM 30 ; and STAT 5 , or STAT 7 and 7L, or STAT 17 and STAT 17L , or STAT 131 , or CSE 107 .",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Introduction to Data Mining for Business",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-147"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM150",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to optimization theory, numerical algorithms, and applications focused on operations research topics. The course content includes: linear programming, integer programming, non-linear programming, and an introduction to relevant simulations.",
+   "display_code": "TIM 150",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "AM10",
+     "MATH21"
+    ],
+    [
+     "AM30",
+     "MATH22",
+     "MATH23A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): AM 10 or MATH 21 , and AM 30 or MATH 22 or MATH 23A .",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Optimization for Management",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-150"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM170",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Uses weekly talks by leading industry practitioners and university researchers to provide in-depth exposure to the management of technology. Topics covered include product development, operations, strategy, finance, and marketing for technologies such as software and information systems. (Formerly CSE 170.)",
+   "display_code": "TIM 170",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly CSE 170.",
+   "ge_codes": [],
+   "number": "170",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Management of Technology Seminar",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-170"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM172A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses strategic, engineering, marketing, and financial processes and tools for the management, development, and commercialization of high-tech products. Declared TIM majors must concurrently enroll in TIM 172P to fulfill the capstone series. (Formerly CSE 171A.)",
+   "display_code": "TIM 172A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly CSE 171A.",
+   "ge_codes": [],
+   "number": "172A",
+   "prereq_groups": [
+    [
+     "MATH19B",
+     "MATH20B",
+     "MATH11B",
+     "AM11B",
+     "ECON11B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): MATH 19B or MATH 20B or MATH 11B or AM 11B or ECON 11B.",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Introduction to Management of Technology I",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-172a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM172B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses the development and application of processes and tools for the management, design, optimization, and operation of supply chain networks for high-tech products. Declared TIM majors must concurrently enroll in TIM 172Q to fulfill the capstone series. (Formerly CSE 171B.)",
+   "display_code": "TIM 172B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly CSE 171B.",
+   "ge_codes": [],
+   "number": "172B",
+   "prereq_groups": [
+    [
+     "TIM172A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): TIM 172A .",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Introduction to Management of Technology II",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-172b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM172P",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "First of a two-course project sequence in which students apply the knowledge and skills gained in TIM 172A to complete the first part of a major quarter-long comprehensive team project in the management of technology. In this course, taken concurrently with TIM 172A , the team project focus is on the management, design, and commercialization of a new product within a high-tech company. TIM 172A and TIM 172P together form the first part of the required management of technology comprehensive requirement for the TIM B.S. major.",
+   "display_code": "TIM 172P",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "172P",
+   "prereq_groups": [
+    [
+     "TIM172A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): concurrent enrollment in TIM 172A . Enrollment is restricted to Technology and Information (TIM) majors.",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Management of Technology Project I",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-172p"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM172Q",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Second of a two-course project sequence in which students apply the knowledge and skills gained in TIM 172B to complete the second part of a major comprehensive team project in the management of technology. In this course, taken concurrently with TIM 172B, the team project focus is on the supply chain management for the new product developed in TIM 172P. TIM 172B and TIM 172Q together form the second part of the required management of technology comprehensive requirement for the TIM B.S. major.",
+   "display_code": "TIM 172Q",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "172Q",
+   "prereq_groups": [
+    [
+     "TIM172A"
+    ],
+    [
+     "TIM172P"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): TIM 172A and TIM 172P. Concurrent enrollment in TIM 172B is required.",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Management of Technology Project II",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-172q"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM173",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses methods and tools for financing technology development and projects. Includes approaches for coordinating finance and accounting with strategy and operations of firms; discounted cash-flow analysis; activity-based costing; financial planning; and elements of financial account and investment science. (CSE 173.)",
+   "display_code": "TIM 173",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "173",
+   "prereq_groups": [
+    [
+     "ECON113",
+     "STAT131",
+     "CSE107"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ECON 113 or STAT 131 or CSE 107 or by instructor permission.",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Financial Engineering and Management in High Technology Firms",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-173"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM175",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Analysis of effective use of information systems within a business enterprise, with emphasis on gaining a competitive advantage. Integration of information systems with business strategy, financial justification, personnel, and organizational considerations are highlighted. Intended for technology and information management majors or senior engineering majors who have a business interest. (Formerly  CSE 175.)",
+   "display_code": "TIM 175",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly  CSE 175.",
+   "ge_codes": [],
+   "number": "175",
+   "prereq_groups": [
+    [
+     "TIM50"
+    ],
+    [
+     "TIM50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; and TIM 50 or permission of instructor.",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Business Strategy and Information Systems",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-175"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM193",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides individual programs of study with specific academic objectives carried out under direction of faculty member of Technology and Information Management and a willing sponsor at field site. Uses resources not normally available on campus. Credit based on presentation of evidence of achieving objectives by submitting written and oral presentation. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 193",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "193",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-193"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM193F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides individual programs of study with specific academic objectives carried out under direction of faculty member of Technology and Information Management and a willing sponsor at field site. Uses resources not normally available on campus. Credit based on presentation of evidence of achieving objectives by submitting written and oral presentation. Cannot normally be repeated for credit. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 193F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "193F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-193f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM194",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A program of independent study arranged between a group of students and a faculty member. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 194",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-194"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM194F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A program of independent study arranged between a group of students and a faculty member. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 194F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "194F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Group Tutorial",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-194f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM195",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intended for majors. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 195",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Senior Thesis Research",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-195"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM195F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Intended for majors. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 195F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Senior Thesis Research",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-195f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM198",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Intended for majors. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 198",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "198",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Individual Study or Research",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-198"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM198F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Intended for majors. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 198F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "198F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Individual Study or Research",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-198f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Individual directed study for upper-division undergraduates. Enrollment is restricted to senior technology and information management majors. Students submit petition to sponsoring agency.",
+   "display_code": "TIM 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "TIM",
+   "title": "Individual Study or Research",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM50",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses the use of information systems (IS) within a business enterprise. Subjects include computer hardware and software concepts, system design and implementation, telecommunications, data management, transaction-based systems, management information systems, and the use of IS to compete. Intended for technology and information management and business management economics majors. (Formerly CSE 50.)",
+   "display_code": "TIM 50",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly CSE 50.",
+   "ge_codes": [],
+   "number": "50",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Business Information Systems",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/lower-division/tim-50"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM58",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn how information technology is used to deal with business requirements and/or solve business problems. Provides an understanding of structured computer systems analysis and design methodologies and techniques and their application to business information systems. Intended for technology and information management and business management economics majors. (Formerly CSE 58.)",
+   "display_code": "TIM 58",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly CSE 58.",
+   "ge_codes": [],
+   "number": "58",
+   "prereq_groups": [
+    [
+     "TIM50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): TIM 50.",
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Systems Analysis and Design",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/lower-division/tim-58"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "TIM80C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on the creation and management of technology start-ups and small companies, using case studies and team projects as the basis for learning and applying the course materials. (Formerly CSE 80C.)",
+   "display_code": "TIM 80C",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": "Formerly CSE 80C.",
+   "ge_codes": [],
+   "number": "80C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "TIM",
+   "title": "Starting a New Technology Company",
+   "url": "/en/current/general-catalog/courses/tim-technology-information-management/lower-division/tim-80c"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "TIM"
+}

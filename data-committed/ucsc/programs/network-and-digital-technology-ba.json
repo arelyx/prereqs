@@ -1,0 +1,832 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "computer-science-and-engineering",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Network and Digital Technology B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Bachelor of Arts in Network and Digital Technology at the University of California, Santa Cruz, provides students with in-depth knowledge of the underlying structure and function of networking and digital-computer technology and the design processes that make those technologies function. The program is tailored to students who wish to combine technology with other fields or have a general focus on software-based digital technologies that enable Internet services and computer networks. The B.A. in network and digital technology is not an engineering degree, but B.A. graduates will be prepared to work with technology development in other capacities, or join the computer networking workforce. Students interested in graduate study should pursue a B.S. program."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "For the Network and Digital Technology B.A. degree the program learning outcomes are:",
+     "an ability to apply knowledge of mathematics, science, and engineering;",
+     "an ability to design a system, component, or process;",
+     "an ability to communicate effectively; and",
+     "an ability to use the techniques, skills, and modern engineering tools necessary for engineering practice."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin Engineering undergraduate advising office offers general advising for prospective and declared undergraduates majoring in Baskin Engineering programs. The office handles major declarations, transfer credits, course substitutions, articulations, and degree certifications. Undergraduate students obtain and submit all paperwork requiring departmental approval to the undergraduate advising office. Transfer students should also refer to the Transfer Information and Policy section.",
+     "Baskin Engineering Building, Room 225 bsoeadvising@ucsc.edu (831) 459-5840"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All students admitted to a Baskin Engineering major, or seeking admission to a major, must take all courses required for that major for a letter grade. This policy includes courses required for these degrees that are sponsored by other departments."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate engineering students who wish to substitute a major course with a course from another department at UC Santa Cruz, or from another academic institution, must first seek approval through the Baskin Engineering Undergraduate Advising Office. The advising office requires a Petition for Course Substitution be approved before credit for an alternate course can be applied to any Baskin Engineering major requirement.",
+     "Petition forms are available at the Undergraduate Advising Office and online.",
+     "Petitions and procedures for approval must be obtained from and submitted to the Undergraduate Advising Office.",
+     "Once enrolled in Baskin Engineering students who wish to take a course at a California community college must first check Assist.org to see if the course is equivalent at UC Santa Cruz. If the course is not listed on Assist.org, students must submit a course substitution petition to the BE Undergraduate Advising Office to have it reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus. It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better.",
+     "If the course is approved for equivalency or was on Assist.org, then students with declared majors must also receive approval by their major department to take the class at the community college PRIOR to taking it. Undeclared students must receive prior approval from the CSE Department to substitute a course for CSE 13S . Undeclared students do not require prior approval for other courses listed on Assist.org. Forms and procedures for approval can be obtained from and submitted to the BE Undergraduate Advising Office.",
+     "Students who intend to take a course at a four-year institution or UC Education Abroad, must submit a Course Substitution Petition to the BE Undergraduate Advising Office to have the course reviewed for equivalency. Courses that need to be reviewed must be accompanied by a course description and syllabus. It is very helpful if students can provide further evidence of course content, such as examples of programming assignments, homework, or examinations. To guarantee equivalency, departments may sometimes require a grade of B or better."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students completing any of the following degrees cannot also receive the Network and Digital Technology B.A.",
+     "Robotics Engineering B.S.",
+     "Computer Engineering B.S.",
+     "Computer Science B.S.",
+     "Computer Science B.A.",
+     "The following minors cannot be combined with the Network and Digital Technology B.A",
+     "Computer Engineering minor",
+     "Computer Science minor"
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are awarded, in most cases, to students with a GPA of 3.30-3.69. Highest honors are awarded, in most cases, to students with a GPA of 3.70 and above. The GPA includes all UCSC undergraduate and graduate courses taken in all departments that fall within the Divisions of Physical and Biological Sciences and of Baskin Engineering. Students with particularly significant accomplishments in undergraduate research or contributions to Baskin Engineering may be considered with a lower GPA."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Please refer to the Baskin Engineering section of the catalog for additional policies that apply to all Baskin Engineering programs."
+    ],
+    "title": "School of Engineering Policies"
+   },
+   {
+    "paragraphs": [
+     "Please see the section on fees under the School of Engineering."
+    ],
+    "title": "Materials Fee and Miscellaneous Fees"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "Transfer students who want to pursue the network and digital technology major, must have applied and been admitted to UC Santa Cruz as a proposed network and digital technology major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Transfer students must complete at least six of the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or the end of the fall term prior to winter enrollment. Lecture-lab combinations count as one course.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH19A",
+       "MATH19B",
+       "AM10",
+       "MATH21",
+       "AM20",
+       "MATH24",
+       "AM30",
+       "MATH23A",
+       "CSE12",
+       "CSE13S",
+       "CSE16",
+       "CSE30",
+       "ECE13",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5C",
+       "PHYS5N",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6C",
+       "PHYS6N"
+      ],
+      "n": 6,
+      "needs_review": false,
+      "notes": [
+       "AM 10 and MATH 21 are alternatives; only one or the other, whichever is completed first can count toward the six courses. AM 20 and MATH 24 are alternatives; only one or the other, whichever is completed first can count toward the six courses. AM 30 and MATH 23A are alternatives; only one or the other, whichever is completed first, can count toward the six courses. ECE 13 and CSE 13S are alternatives; only one or the other, whichever is completed first, can count toward the six courses. PHYS 5A and PHYS 5L are alternatives to PHYS 6A and PHYS 6L ; only one or the other can count toward the six courses. PHYS 5C and PHYS 5N are alternatives to PHYS 6C and PHYS 6N ; only one or the other can count toward the six courses."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Students should complete at least six courses from the following list",
+       "prose": [
+        "Transfer students must complete at least six of the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or the end of the fall term prior to winter enrollment. Lecture-lab combinations count as one course.",
+        "Students must have and maintain a cumulative minimum GPA of 2.3 in screening courses. Cumulative GPA is calculated based on all Network and Digital Technology transfer screening courses taken. Please note that while AP courses satisfy screening requirements, they do not count toward the GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare the major.",
+        "Students who wish to graduate in two years are strongly recommended to complete eight courses from the list below before coming to UC Santa Cruz.",
+        "AM 10 and MATH 21 are alternatives; only one or the other, whichever is completed first can count toward the six courses.",
+        "AM 20 and MATH 24 are alternatives; only one or the other, whichever is completed first can count toward the six courses.",
+        "AM 30 and MATH 23A are alternatives; only one or the other, whichever is completed first, can count toward the six courses.",
+        "ECE 13 and CSE 13S are alternatives; only one or the other, whichever is completed first, can count toward the six courses.",
+        "PHYS 5A and PHYS 5L are alternatives to PHYS 6A and PHYS 6L ; only one or the other can count toward the six courses.",
+        "PHYS 5C and PHYS 5N are alternatives to PHYS 6C and PHYS 6N ; only one or the other can count toward the six courses."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. Instructions for declaring a major in the Baskin Engineering are on the undergraduate advising major declaration page ."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In order to declare the network and digital technology major, students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+        "type": "prose"
+       },
+       {
+        "text": "In addition to being listed as a proposed Baskin Engineering major, qualification for the network and digital technology major is based on performance in the following lower-division courses and associated labs required for the major. To qualify for the network and digital technology major students must have completed at least 36 credits in these courses with a cumulative GPA of at least 2.30 or greater.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Transfer students should refer to the Transfer Admission Screening requirements.",
+        "In order to declare the network and digital technology major, students must be listed as a proposed major within Baskin Engineering. Please refer to the Baskin Engineering \"Proposed Major Retention\" and its \"Declaring a Baskin Engineering Major\" sections in the catalog for more information.",
+        "In addition to being listed as a proposed Baskin Engineering major, qualification for the network and digital technology major is based on performance in the following lower-division courses and associated labs required for the major. To qualify for the network and digital technology major students must have completed at least 36 credits in these courses with a cumulative GPA of at least 2.30 or greater."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B",
+       "CSE12",
+       "CSE16",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM30",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": [
+        "Whichever is completed first",
+        "Whichever is completed first"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": [
+        "Whichever is completed first",
+        "Whichever is completed first"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": [
+        "Whichever is completed first",
+        "Whichever is completed first"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5L"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following lecture/lab options",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5C",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6C",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following lecture/lab combinations",
+       "prose": [
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C .",
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students seeking to change their current major to network and digital technology after their sixth quarter must have completed the courses listed above with a cumulative GPA of at least 2.30.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Cumulative GPA",
+       "prose": [
+        "Students seeking to change their current major to network and digital technology after their sixth quarter must have completed the courses listed above with a cumulative GPA of at least 2.30.",
+        "Please note that while exam credit can satisfy major qualification requirements it does not count toward the minimum GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they do not qualify for the major may appeal this decision by submitting a letter to the undergraduate director through the Baskin Engineering undergraduate advising office within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, college, and Office of the Registrar of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed enough major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "There are four steps to declaring a Baskin Engineering major. For a detailed guide to this process, please consult Baskin Engineering's Declare Your Major website.",
+        "Students should start the declaration of major process by completing Step One on the Baskin Declare Your Major website as soon as they complete 36 credits in the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed enough major qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "All students in the network and digital technology major must take the following courses. The comprehensive requirement is satisfied by completion of the capstone course. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Students who may have originally pursued another major should discuss with the Baskin Engineering undergraduate advising office whether or not already completed coursework may be substituted for one or more lower division-requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM30",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE12",
+       "CSE16",
+       "CSE20",
+       "CSE30",
+       "MATH19A",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, AP credit, or clearing the “ Test-out ” bar will start with CSE 30 and CSE 12 ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following",
+       "prose": [
+        "Students with no prior programming will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, AP credit, or clearing the “ Test-out ” bar will start with CSE 30 and CSE 12 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5L"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following lecture/lab combinations",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5C",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6C",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following lecture/lab combinations",
+       "prose": [
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C .",
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CSE101"
+       ],
+       [
+        "ECE101",
+        "ECE101L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture-lab combinations count as one course."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "One of the following",
+       "prose": [
+        "Lecture-lab combinations count as one course."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE150",
+       "CSE185E"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Five additional upper-division or graduate electives",
+       "prose": [
+        "Five additional 5-credit or more, upper-division electives, and associated laboratories are required. One of these five courses should also be used to satisfy the comprehensive requirement below. See comprehensive requirement below for courses which satisfy that requirement. Students are encouraged to discuss their interests and elective choices with their faculty advisors. Students may use the following lists to focus their studies in a particular area.",
+        "Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E /CSE 185S. Note: some courses may have enrollment restrictions.",
+        "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses.",
+        "CSE 195 (if not used to satisfy the DC).",
+        "Any course from the additional approved electives list ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE118",
+       "CSE151",
+       "CSE151L",
+       "CSE156",
+       "CSE156L",
+       "CSE157",
+       "CSE167",
+       "CSE183"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 157 has additional prerequisites."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Digital Technology for Networking Focus",
+       "prose": [
+        "Students wishing to focus on digital technology for networking should consider including among their courses the following (lecture-lab combinations are counted as one course):",
+        "CSE 157 has additional prerequisites."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE115A",
+       "CSE117",
+       "CSE119",
+       "CSE130",
+       "CSE165",
+       "CSE180",
+       "CSE181",
+       "CSE182",
+       "CSE186",
+       "CSE187"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 115A , CSE 117 , CSE 157 , and CSE 181 have additional prerequisites. Students may not receive credit for both CSE 180 and CSE 182 ."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Internet Software Technology Focus",
+       "prose": [
+        "Students wishing to focus on Internet software technology should consider including among their courses the following:",
+        "CSE 115A , CSE 117 , CSE 157 , and CSE 181 have additional prerequisites. Students may not receive credit for both CSE 180 and CSE 182 ."
+       ]
+      }
+     }
+    ],
+    "title": "Five additional upper-division or graduate electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE185E"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement in network and digital technology is satisfied by completing CSE 185E , Technical Writing for Computer Engineers."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One of the following courses must be completed. This course can count as one of the five required electives.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CSE115A",
+       "CSE156",
+       "CSE156L",
+       "CSE157",
+       "CSE181",
+       "CSE183",
+       "CSE187",
+       "ECE121",
+       "ECE141",
+       "ECE157",
+       "ECE157L",
+       "ECE167",
+       "ECE171",
+       "ECE171L",
+       "ECE173"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture-lab combinations count as one course. Students may petition to request approval to satisfy the comprehensive requirement with another engineering course having a substantial technology based project."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "One of the following courses must be completed. This course can count as one of the five required electives.",
+        "Lecture-lab combinations count as one course. Students may petition to request approval to satisfy the comprehensive requirement with another engineering course having a substantial technology based project."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "network-and-digital-technology-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/network-and-digital-technology-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

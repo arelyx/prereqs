@@ -1,0 +1,834 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "physics",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Applied Physics B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Learning outcomes summarize the most important knowledge, skills, abilities, and attitudes that students are expected to develop over the course of their studies. The program learning outcomes communicate the faculty’s expectations to students, provide a framework for faculty evaluation of the curriculum based on empirical data, and help improve and measure the impact of implemented changes. Students graduating with a B.S. in Applied Physics will demonstrate:",
+     "PLO 1. Ability to solve problems using concepts in classical and quantum mechanics, statistical mechanics and electromagnetism.",
+     "PLO 2. Proficiency in mathematics and the mathematical concepts needed for a proper understanding of physics.",
+     "PLO 3. Ability to take measurements in a physics laboratory and analyze the measurements to draw valid conclusions.",
+     "PLO 4. Ability to communicate scientific content effectively, both orally and in writing."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The department undergraduate adviser ( physicsadvising@ucsc.edu) works closely with students interested in pursuing the major to ensure that they begin the program immediately and follow the appropriate steps toward its completion."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Before coming to the University of California, Santa Cruz:",
+     "High school students coming to UC Santa Cruz, as frosh should emphasize their mathematics preparation with the expectation that they will take the first calculus course, MATH 19A , before their second quarter at UCSC. Students who come to UCSC with credit for MATH 19A will be able to start the Physics 5 series or Physics 15 series in the first quarter. PHYS 5A is offered in the fall and winter quarters each year. Students with a score of 5 on the AP Physics C Mechanics and AP Physics C Electricity and Magnetism examinations are exempt from taking PHYS 5A and PHYS 5C respectively, and the associated lab courses.",
+     "After coming to UC Santa Cruz:",
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UCSC.",
+     "Incoming students in the Physics major should complete the Math Placement process as early as possible, so that the placement is posted before enrollment begins. For more information, please review the Math Placement website .",
+     "In their first term, students should enroll in the highest course in the following sequence that they are eligible for: MATH 2 , MATH 3 , MATH 19A , MATH 19B , MATH 23A , MATH 23B . Students should not take MATH 11A or MATH 11B or MATH 16A or MATH 16B . Graduating in four years is still possible for a student who places into MATH 2 or MATH 3 ; the department undergraduate adviser and the department's Alternatives webpage should be consulted.",
+     "Students who come to UC Santa Cruz with credit for MATH 19A , and have room in their schedule, should take PHYS 5A or PHYS 15A and PHYS 5L (unless they have a score of 5 on the AP Physics C Mechanics examination) in their first term. Those who come to UCSC with credit for MATH 19B and PHYS 5A and PHYS 5L , and have room in their schedule, may consider taking PHYS 5C or PHYS 15C and PHYS 5N (unless they have a score of 5 on the AP Physics C Electricity & Magnetism examination) in their first term. The Physics Department tries to match incoming students who are interested with research opportunities, if they are available.",
+     "Students who for some reason do not start the courses for the major in their first term should consult the department undergraduate adviser and the Alternatives webpage . Students who do not begin the lower-division requirements during their first year will have difficulty completing the program within four years.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy any of the applied physics major requirements must be taken for a letter grade, except the lower-division chemistry requirement."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students who complete a major sponsored by the Physics Department cannot complete a second major sponsored by the Physics Department or a physics minor."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "The department awards \"honors\" (3.50-3.79 GPA) and \"highest honors\" (3.80 GPA or better) to top graduating students each year, based on PHYS and ASTR courses. The department also awards \"honors\" for outstanding work on the senior thesis, made upon the recommendation of the faculty thesis adviser."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5C",
+       "MATH19A",
+       "MATH19B",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "A minimum GPA of 2.7 must be obtained in the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "In addition, the following course is recommended prior to transfer to ensure timely graduation:",
+       "prose": [
+        "This major also has a concentration in computational physics. Students interested in this concentration are encouraged to complete the equivalent of CSE 20 prior to transfer. Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation.",
+        "This major also has a concentration in computational physics. Students interested in this concentration are encouraged to complete the equivalent of CSE 20 prior to transfer.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5D",
+       "MATH23B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Students entering UC Santa Cruz in the winter quarter must complete",
+       "prose": [
+        "In addition to the requirements for students entering in the fall quarter. (This is true for years when winter admission is open.)",
+        "In addition to the requirements for students entering in the fall quarter. (This is true for years when winter admission is open.)"
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students admitted to UC Santa Cruz in the applied physics major who have satisfied the above screening requirements may declare the major immediately upon arrival at UC Santa Cruz. They should contact the undergraduate adviser to draw up an academic plan.",
+        "Incoming transfer students should enroll in the following courses in their first term:",
+        "Students who have completed courses that should be equivalent to PHYS 5D or MATH 23B but is not formally articulated as such should contact the undergraduate adviser to have their courses evaluated.",
+        "Transfer students entering UC Santa Cruz in the winter quarter should meet with the undergraduate adviser upon arrival to draw up an academic plan.",
+        "Students who are proposed in a different major (other than physics or physics (astrophysics)) and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "PHYS 15A can be used instead of PHYS 5A , and PHYS 15C instead of PHYS 5C . All qualification courses must be completed prior to the major declaration deadline.",
+        "type": "prose"
+       },
+       {
+        "text": "When determining qualification to declare the major: All courses must be taken for a letter grade. If PHYS 5A is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5A when calculating their cumulative GPA. If PHYS 5C is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5C when calculating their cumulative GPA. Students with two or more grades of NP, C-, D+, D, D-, or F in the major qualification policy courses are not eligible to declare even if the courses are retaken and the grades replaced. Students who achieve a GPA of 2.66 or higher (but less than 2.70) in the three courses may declare the major if they receive a B or better in PHYS 5D .",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can be used instead of PHYS 5A , and PHYS 15C instead of PHYS 5C . All qualification courses must be completed prior to the major declaration deadline."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify to declare the Applied Physics major, students must achieve a cumulative grade point average (GPA) of 2.70 or greater in the following courses, or their equivalents:",
+        "PHYS 15A can be used instead of PHYS 5A , and PHYS 15C instead of PHYS 5C . All qualification courses must be completed prior to the major declaration deadline.",
+        "When determining qualification to declare the major: All courses must be taken for a letter grade. If PHYS 5A is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5A when calculating their cumulative GPA. If PHYS 5C is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5C when calculating their cumulative GPA. Students with two or more grades of NP, C-, D+, D, D-, or F in the major qualification policy courses are not eligible to declare even if the courses are retaken and the grades replaced. Students who achieve a GPA of 2.66 or higher (but less than 2.70) in the three courses may declare the major if they receive a B or better in PHYS 5D .",
+        "When determining qualification to declare the major:",
+        "If PHYS 5C is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5C when calculating their cumulative GPA.",
+        "Students who achieve a GPA of 2.66 or higher (but less than 2.70) in the three courses may declare the major if they receive a B or better in PHYS 5D ."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they are not eligible to declare the major may appeal this decision by submitting a letter to the department chair by the later date of either 15 days from the date the notification was sent, or one week after the start of instruction during the quarter after the final relevant grade was received (generally in PHYS 5C or PHYS 5D ). They also must arrange to meet with one of the faculty mentors listed for Declaring the Major . Within 15 days of receipt of the appeal, after consulting with the faculty mentor, the department chair will either finalize the denial of admission or specify further conditions for admission or approve admission to the major, and will notify the student and their college of the decision. For more information about the appeal process, see Appeal Process ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification requirements. Students who have reached their declaration deadline quarter and have not yet completed the major declaration requirements have to go through the formal Appeal Process .",
+        "All students are required to review their academic plan with a faculty mentor prior to declaring the major. For instructions on petitioning to declare, go to Declaring Your Major ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS15A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5C",
+       "PHYS15C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5B",
+       "PHYS5L",
+       "PHYS5M",
+       "PHYS5N",
+       "PHYS5D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "At present, there is no Honors version of PHYS 5B ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "At present, there is no Honors version of PHYS 5B ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A",
+       "MATH23B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM3A",
+       "CHEM4A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 4A has a corequisite lab course, CHEM 4AL. The lab is not required for the major, but counts toward overall credits for graduation."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "CHEM 4A has a corequisite lab course, CHEM 4AL. The lab is not required for the major, but counts toward overall credits for graduation."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR119",
+       "CSE20",
+       "ASTR19"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A test-out option is available for CSE 20 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses or equivalent:",
+       "prose": [
+        "A test-out option is available for CSE 20 ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS102",
+       "PHYS116A",
+       "PHYS116C",
+       "PHYS105",
+       "PHYS110A",
+       "PHYS110B",
+       "PHYS112",
+       "PHYS133",
+       "PHYS134"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may take ECE 135 / ECE 135L instead of PHYS 110A and PHYS 110B . This is not recommended for students who wish to pursue graduate studies in physics. Capacity in the lab courses PHYS 133 and PHYS 134 is limited, and they should be taken as early as possible. Completing both MATH 21 and MATH 24 can substitute for PHYS 116A . PHYS 116C is waived for students who are pursuing a dual major in applied physics and a mathematics B.A. or B.S., and take MATH 107 in fall 2017 or later."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": [
+        "Students may take ECE 135 / ECE 135L instead of PHYS 110A and PHYS 110B . This is not recommended for students who wish to pursue graduate studies in physics.",
+        "Capacity in the lab courses PHYS 133 and PHYS 134 is limited, and they should be taken as early as possible.",
+        "Completing both MATH 21 and MATH 24 can substitute for PHYS 116A .",
+        "PHYS 116C is waived for students who are pursuing a dual major in applied physics and a mathematics B.A. or B.S., and take MATH 107 in fall 2017 or later."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete three courses chosen from the following, at least one of which has to be a Physics Department course:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "PHYS115",
+       "PHYS120",
+       "PHYS137",
+       "PHYS139A",
+       "PHYS139B",
+       "PHYS157",
+       "PHYS150",
+       "PHYS152",
+       "PHYS156",
+       "PHYS160",
+       "PHYS180",
+       "AM107",
+       "CHEM163B",
+       "EART121",
+       "EART172",
+       "ECE101",
+       "ECE130",
+       "ECE136",
+       "ECE141"
+      ],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "Or other courses with approval of the undergraduate faculty advisor. Students interested in going to graduate school in physics should consider completing the Physics B.S. instead of the Applied Physics B.S. Students who wish to go to graduate school in physics after the Applied Physics B.S. are recommended to complete PHYS 110A and PHYS 110B instead of ECE 135 and ECE 135L , and complete PHY 139A and PHYS 139B ."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Complete three courses chosen from the following, at least one of which has to be a Physics Department course:",
+        "Or other courses with approval of the undergraduate faculty advisor.",
+        "Students interested in going to graduate school in physics should consider completing the Physics B.S. instead of the Applied Physics B.S. Students who wish to go to graduate school in physics after the Applied Physics B.S. are recommended to complete PHYS 110A and PHYS 110B instead of ECE 135 and ECE 135L , and complete PHY 139A and PHYS 139B .",
+        "Students interested in going to graduate school in aerospace engineering are recommended to complete ECE 141 , PHYS 160 or ECE 101 , and AM 107 as their electives. Other courses of possible interest are ECE 163 , ECE 167 and ECE 118 , but these courses have additional prerequisites and do not satisfy major requirements. In addition to UCSC courses, interested students can cross-enroll into a number of aerospace-related courses at San Jose State University. Up-to-date information about cross-enrollment can be found on SJSU Cross-Enrollment page of Physics Department website. Note that SJSU courses do not satisfy major requirements.",
+        "Students interested in going to graduate school in aerospace engineering are recommended to complete ECE 141 , PHYS 160 or ECE 101 , and AM 107 as their electives. Other courses of possible interest are ECE 163 , ECE 167 and ECE 118 , but these courses have additional prerequisites and do not satisfy major requirements. In addition to UCSC courses, interested students can cross-enroll into a number of aerospace-related courses at San Jose State University. Up-to-date information about cross-enrollment can be found on SJSU Cross-Enrollment page of Physics Department website. Note that SJSU courses do not satisfy major requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "PHYS182"
+       ],
+       [
+        "PHYS195A",
+        "PHYS195B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy the upper-division disciplinary communication (DC) requirement. Students in the applied physics major satisfy the DC requirement by completing one of the following options:",
+        "Students interested in doing a senior thesis should have found a faculty thesis adviser by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance.",
+        "Students interested in doing a senior thesis should have found a faculty thesis adviser by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS134"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is satisfied by completing the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Computational Physics Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS15A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5C",
+       "PHYS15C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5B",
+       "PHYS5L",
+       "PHYS5M",
+       "PHYS5N",
+       "PHYS5D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "At present, there is no Honors version of PHYS 5B ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "At present, there is no Honors version of PHYS 5B ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH23A",
+       "MATH23B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE20",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A test-out option is available for CSE 20 ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of the following courses:",
+       "prose": [
+        "A test-out option is available for CSE 20 ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Computational Physics Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS102",
+       "PHYS116A",
+       "PHYS116C",
+       "PHYS105",
+       "PHYS110A",
+       "PHYS112",
+       "STAT131",
+       "PHYS115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Completing both MATH 21 and MATH 24 can substitute for PHYS 116A . PHYS 116C is waived for students who are pursuing a dual major in applied physics and a mathematics B.A. or B.S., and take MATH 107 in fall 2017 or later."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": [
+        "Completing both MATH 21 and MATH 24 can substitute for PHYS 116A .",
+        "PHYS 116C is waived for students who are pursuing a dual major in applied physics and a mathematics B.A. or B.S., and take MATH 107 in fall 2017 or later."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Computational Physics Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete three courses chosen from the following, of which at least one must be PHYS 150 or PHYS 152 .",
+        "type": "prose"
+       },
+       {
+        "text": "At most one course can be taken from PHYS 110B and PHYS 139A .",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "PHYS150",
+       "PHYS152",
+       "PHYS110B",
+       "PHYS139A",
+       "AM148",
+       "BME205",
+       "CHEM264",
+       "EART124"
+      ],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "At most one course can be taken from PHYS 110B and PHYS 139A . BME 205 has several prerequisites which are not major requirements. This concentration is not intended for students who wish to go to graduate school in physics. A student who wishes to do so should take PHYS 139A , PHYS 139B , PHYS 110B and PHYS 116B, as part of the major requirements or in addition to them."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Complete three courses chosen from the following, of which at least one must be PHYS 150 or PHYS 152 .",
+        "At most one course can be taken from PHYS 110B and PHYS 139A .",
+        "BME 205 has several prerequisites which are not major requirements.",
+        "This concentration is not intended for students who wish to go to graduate school in physics. A student who wishes to do so should take PHYS 139A , PHYS 139B , PHYS 110B and PHYS 116B, as part of the major requirements or in addition to them."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Computational Physics Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "PHYS182"
+       ],
+       [
+        "PHYS195A",
+        "PHYS195B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy the upper-division disciplinary communication (DC) requirement. Students in the applied physics major satisfy the DC requirement by completing one of the following options:",
+        "Students interested in doing a senior thesis should have found a faculty thesis adviser by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance.",
+        "Students interested in doing a senior thesis should have found a faculty thesis adviser by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Computational Physics Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is satisfied by completing the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "applied-physics-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/applied-physics-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

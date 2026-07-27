@@ -1,0 +1,433 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "history",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Jewish Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The interdisciplinary program in Jewish studies introduces students to the study of classical, medieval, early modern, and modern Jewish cultures and to the range of disciplines that bear upon the field.",
+     "The Jewish studies major and minor offer students the chance to study Jewish communities and cultures across the world, with special reference (though not limited) to modern issues. The major and minor will help them prepare to move successfully into graduate programs in a variety of disciplines, especially in humanities, social sciences, and pre-professional programs, and will provide students with a grounding in materials fundamental to a liberal arts education. This program connects with a range of disciplines and programs on the University of California, Santa Cruz, campus that explore the meanings of modernity; at the same time, this program will help students develop analytical tools, methodological versatility, and critical literacy.",
+     "Note that modernity here is not defined as unfolding solely in Europe or North America; the Jewish studies program intends to speak to modernity as a global phenomenon, dealing with sites where Jews lived. In the 19th and 20th centuries Jews were widely spread across the globe and often played active and influential roles in their communities. These include such places as China, India, Latin America, North Africa, the Middle East, as well as Europe and North America."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Jewish History and Culture",
+     "Holocaust",
+     "Jewish Languages",
+     "Critical Analysis",
+     "Effective Communication",
+     "Scope"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Jewish studies program is administered by the Department of History. Students in this program receive advising support from the history undergraduate program coordinator .",
+     "Transfer students are encouraged to consult the \"Transfer Information and Policy\" information included below."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.",
+     "Transfer students entering at the junior level can readily finish all of the Jewish Studies major requirements within two years, even if they haven’t completed any preparatory coursework prior to transferring. Some background in history and in literary analysis and interpretation is desirable, but not essential. Since this is an interdisciplinary major, preparatory work in art history, philosophy, or politics, depending on the student’s interests, may also be useful.",
+     "Transfer students are encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or UC Santa Cruz general education requirements in preparation for transfer to UC Santa Cruz.",
+     "Transfer students are advised to complete the lower-division Jewish studies course requirements, including the language requirement, by the end of their first year. The upper-division courses required for this major may be taken simultaneously with the required lower-division courses. Please refer to the sample academic plan provided below.",
+     "Transfer students are strongly encouraged to meet with the history undergraduate program coordinator before the end of their first quarter at UC Santa Cruz."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Jewish studies has no major qualification. Students should submit a petition to declare before or by their declaration deadline quarter. While specific courses are not required in order to declare, students will have ideally completed some or all of the lower-division requirements.",
+     "All students, including transfers, are eligible to pursue this major, even if they did not list Jewish studies on their UC Santa Cruz application."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "Students are allowed to complete up to two of their Jewish studies major requirements for Pass/No Pass, with the exception of their comprehensive requirement."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Jewish studies majors must take a minimum of five regularly scheduled Jewish studies courses plus the comprehensive/disciplinary communications (DC) requirement from members of the UC Santa Cruz Jewish studies faculty. Subject to the limits indicated, courses from the following categories may be applied to the Jewish studies major:",
+     "Courses transferred from a California Community College or other domestic university (limit of three)",
+     "Education Abroad Program (limit of three)",
+     "Related courses not currently on the pre-approved Jewish studies course list (limit of two)",
+     "Independent and field studies (limit of one)"
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "The program in Jewish studies encourages students to take advantage of the UC Education Abroad Program (EAP) . The University of California has developed educational opportunities abroad in conjunction with the Jerusalem Study Center at The Hebrew University of Jerusalem. Subject to the limitations described in the \"Course Substitution Policy\" section, up to three courses from EAP may be applied toward the Jewish studies major requirements."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "All students who announce candidacy during the academic year are reviewed for honors or highest honors in the major. The Jewish studies faculty advisors determine honors based upon courses applied toward the Jewish studies major. Performance in courses taken elsewhere and being transferred toward the major will be considered when applicable. The minimum standard applied is excellence in most courses for honors, and excellence in all courses for highest honors. Summer, fall, and winter graduates will be reviewed at the end of each of their respective quarters. Spring graduates will be reviewed as of the spring announcement of candidacy deadline."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The Jewish studies major requires a minimum of 11 courses, including the comprehensive requirement, and an additional three language courses (or equivalent).",
+        "In consultation with a faculty advisor, students will plan a program of study to fulfill the following distribution of courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HEBR1",
+       "HEBR2",
+       "HEBR3",
+       "HEBR4",
+       "HEBR80",
+       "YIDD1",
+       "YIDD2",
+       "YIDD3"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Language Requirement",
+       "prose": [
+        "Three quarters of lower-division instruction (or equivalent) in a Jewish language in any combination of the student’s choosing:",
+        "Students with prior knowledge of Hebrew or Yiddish are advised to complete a language placement exam to determine if they have satisfied any of the elementary language course requirements. Instructions for the placement exam can be found on the Languages and Applied Linguistics website .",
+        "Students with prior knowledge of Hebrew or Yiddish are advised to complete a language placement exam to determine if they have satisfied any of the elementary language course requirements. Instructions for the placement exam can be found on the Languages and Applied Linguistics website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS74",
+       "HIS74A",
+       "HIS74B",
+       "LIT61J"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division Core Courses",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS75",
+       "HIS76"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS155",
+       "HIS163B",
+       "HIS172A",
+       "HIS172B",
+       "HIS178E",
+       "HIS185C",
+       "HIS185I",
+       "HIS185J",
+       "HIS185K",
+       "HIS185L",
+       "HIS185M",
+       "HIS185O",
+       "HAVC135E",
+       "LGST114",
+       "LGST115",
+       "LIT118A",
+       "LIT164A",
+       "LIT164B",
+       "LIT164C",
+       "LIT164D",
+       "LIT164G",
+       "LIT164H",
+       "LIT164J",
+       "LIT181A",
+       "PHIL148",
+       "LIT181B"
+      ],
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Four 5-credit upper-division Jewish studies core courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Four additional Jewish studies courses of the student's choice, three of which must be 5-credit upper-division courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "HIS2A",
+       "HIS2B",
+       "HIS5C",
+       "HIS70A",
+       "HIS70B",
+       "HIS78",
+       "HIS167A",
+       "HIS167B",
+       "HIS169",
+       "HIS172C",
+       "HIS174",
+       "HIS176",
+       "HIS178A",
+       "HIS178B",
+       "HIS178C",
+       "HIS184B",
+       "JWST199",
+       "LIT112I",
+       "LIT160U",
+       "MUSC80I",
+       "MUSC80T",
+       "MUSC80Y",
+       "MUSC81P"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Four additional Jewish studies courses of the student's choice, three of which must be 5-credit upper-division courses.",
+        "The following courses are electives only. However, students may also satisfy the elective requirement by taking additional language, lower-division core, or upper-division core courses from the Jewish Studies curriculum listed above."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement in Jewish studies is satisfied by completing an exit seminar or thesis:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "HIS190G",
+        "HIS194L",
+        "HIS194V",
+        "HIS196E",
+        "HIS196G",
+        "HIS196M",
+        "HIS196N",
+        "HIS196S",
+        "LIT190Y"
+       ],
+       [
+        "JWST195A",
+        "JWST195B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose an exit seminar",
+       "prose": [
+        "One quarter; choose one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students may satisfy the Jewish studies comprehensive exit requirement by completing an approved exit seminar or senior thesis:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "HIS190G",
+        "HIS194L",
+        "HIS194V",
+        "HIS196E",
+        "HIS196G",
+        "HIS196M",
+        "HIS196N",
+        "HIS196S",
+        "LIT190Y"
+       ],
+       [
+        "JWST195A",
+        "JWST195B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose an exit seminar",
+       "prose": [
+        "One quarter; choose one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HEBR80",
+       "HIS74",
+       "HIS74A",
+       "HIS163B",
+       "LIT61J",
+       "LIT118A",
+       "LIT181A",
+       "LIT181B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Classical Chronological Distribution Requirement",
+       "prose": [
+        "One course from the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Classical Chronological Distribution Requirement"
+   }
+  ]
+ },
+ "slug": "jewish-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/jewish-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

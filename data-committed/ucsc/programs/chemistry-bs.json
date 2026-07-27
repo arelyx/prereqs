@@ -1,0 +1,1240 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "chemistry-and-biochemistry",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Chemistry B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The bachelor of science major program is designed for students who intend to pursue a professional career in chemistry. It is rigorous and broadly covers all chemistry subdisciplines."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Learning outcomes summarize the most important knowledge, skills, abilities, and attitudes that students are expected to develop throughout their studies.",
+     "Students graduating with a B.S. in chemistry should be able to:",
+     "demonstrate mastery of a broad set of chemical knowledge concerning the fundamentals in the basic areas of the discipline (organic, inorganic, analytical, physical, and biochemistry).",
+     "solve area-specific problems by identifying the essential parts of a problem, formulating a strategy for solving the problem, applying appropriate techniques to arrive at a solution, testing the correctness of the solution, and interpreting their results.",
+     "use modern library search tools (such as SciFinder, PubMed, or Web of Science) to locate and retrieve scientific information about a topic, chemical, chemical technique, or an issue relating to chemistry.",
+     "know and follow the proper procedures and regulations for safe handling and use of chemicals.",
+     "understand the objective of their chemical experiments, properly carry out the experiments, and appropriately record and analyze the results.",
+     "use computers in data acquisition and processing, and use available software as a tool in data analysis.",
+     "use standard laboratory equipment, modern instrumentation, and classical techniques to carry out experiments.",
+     "communicate the concepts and results of their laboratory experiments through effective writing and/or oral communication using the discipline standards for reporting and citation.",
+     "collaborate effectively as part of a team to solve problems, debate different points of view, and interact productively with a diverse group of team members."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Chemistry and Biochemistry Department advisors provide counsel to undergraduate students pursuing departmental majors. Students are encouraged to seek out advising and assistance in planning their academic careers to ensure completion of their major in a timely manner. For advising assistance, please contact Chemistry and Biochemistry Department advisors at chemistryadvising@ucsc.edu or visit the Chemistry & Biochemistry Advising webpage . All students interested in the chemistry B.S. should read this catalog to learn more details about the major."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UC Santa Cruz.",
+     "Prospective chemistry majors should have a solid foundation in high school mathematics; familiarity with algebra, logarithms, trigonometry, and analytic geometry is particularly required. Incoming students in the chemistry major should complete the Math Placement process as early as possible, so that the placement is posted before enrollment begins. For more information, please review the Math Placement website .",
+     "Students taking chemistry at the University of California, Santa Cruz, have a number of options for satisfying their general chemistry requirements:",
+     "Any of the above pathways fully satisfies the general chemistry prerequisites of any major declaration or required/elective classes for programs in the Physical and Biological Sciences (PBSci Division).",
+     "Qualifying for the Advanced General Chemistry series",
+     "Note: CHEM 4 is not offered in the 2026-27 academic year.",
+     "CHEM 4 is an accelerated two-quarter series intended for students who enter UC Santa Cruz with excellent preparation in high school chemistry. Students in this series will learn fundamental concepts in chemistry at a faster pace than our traditional general chemistry series (CHEM 3), with emphasis on quantum theory, molecular structure, and chemical driving forces. Students with an exceptionally strong background in high school chemistry are especially encouraged to begin with CHEM 4A (Advanced General Chemistry: Molecular Structure and Reactivity) instead of CHEM 3A .",
+     "All students who want to enroll in the accelerated series must complete an online learning module and assessment administered by the Chemistry and Biochemistry Department. Once the online learning module and assessment is started (by completing the initial knowledge check), students will have six weeks to complete the online learning module and assessment and, once the module and assessment are completed students may request enrollment in CHEM 4A . Students who complete the online learning module and assessment and submit their proof of completion by the established deadline are eligible to remain enrolled in CHEM 4A . Students can access the full CHEM 4A qualification instructions and the online learning module by joining a canvas class.",
+     "If you have questions about this process, please contact a Chemistry and Biochemistry Department advisor at chemistryadvising@ucsc.edu .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy degree requirements in any of the Chemistry and Biochemistry Department's majors must be taken for a letter grade. Additionally, letter grades of C or higher must be attained in all courses to meet major and minor requirements for graduation."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "At least half of the upper-division courses (CHEM 100– CHEM 199 ) required for any chemistry major must be taken through the Chemistry and Biochemistry Department at UC Santa Cruz, not as transfer credits from another department or institution. Students should contact the Chemistry and Biochemistry Department advising office before enrolling in any upper-division chemistry course at other institutions to verify articulation."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may take up to 5 credits of individual studies coursework per quarter.",
+     "There are three different independent studies options in the Chemistry and Biochemistry Department: CHEM 199 and CHEM 195. CHEM 199 Independent Research is for any student working on an independent research project under the guidance of UC Santa Cruz faculty. Independent research can be taken for 5 credits ( CHEM 199 ) or 2 credits ( CHEM 199F ). CHEM 195 Thesis Research is for students performing independent research under the guidance of UC Santa Cruz faculty AND who will complete a final thesis. CHEM 186L is an additional option for any student working on an independent research project under the guidance of a UC Santa Cruz faculty. CHEM 186L can be used to satisfy the Senior Exit Lab and DC requirements, cannot be taken concurrently with CHEM 199 or CHEM 195, and can only be taken once.",
+     "Throughout their undergraduate career at UC Santa Cruz, students may take up to 15 credits total of CHEM 199 (either 199 or 199F) and CHEM 186L. For example, a student could take three quarters of CHEM 199 , up to seven quarters of CHEM 199F , or some combination of CHEM 199 , CHEM 199F and CHEM 186L (so long as the total is not more than 15 credits).",
+     "Throughout their undergraduate career at UC Santa Cruz, students may take up to 15 credits total of CHEM 195. CHEM 195 credits can be taken in addition to up to 15 credits of CHEM 199 / CHEM 199F /CHEM 186L. Note that there are three different CHEM 195 courses ( CHEM 195A , CHEM 195B , and CHEM 195C ) that should be taken in order. The expectation for CHEM 195 is that satisfactory completion of the course is contingent on the submission of a final thesis that meets the faculty sponsor's approval. If there is doubt that a thesis could be completed, CHEM 199 Independent Research is a more appropriate course."
+    ],
+    "title": "Independent Study Policy"
+   },
+   {
+    "paragraphs": [
+     "A student cannot double major/minor in chemistry and any other major/minor offered by the Chemistry and Biochemistry Department.",
+     "To declare a double major program, a student must obtain an academic plan showing that they are able to complete both degrees within the maximum number of quarters of enrollment available at UC Santa Cruz. Therefore, the steps for a student to pursue chemistry as a second major are as follows:",
+     "The student must have an up-to-date and accurate major academic plan for their initial major.",
+     "The student must make an appointment with the chemistry major advisor and send the link to their initial major academic plan to c hemistryadvising@ucsc.edu .",
+     "The chemistry major advisor will review the major academic plan and will add the chemistry major courses to the academic plan, as necessary, and if it is viable to do so per double unit counting, enrollment limitations, and time-to-degree guidelines.",
+     "The chemistry major advisor will discuss the double major plan with the student during their scheduled appointment. If the plan is viable, it will be approved and signed by both the student and the chemistry major advisor.",
+     "Once the student has an approved and viable double major plan and qualifies for the major, the student must petition to declare chemistry as a second major using the Petition for Major/Minor form in MyUCSC ."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Department honors in the majors are awarded to graduating students whose academic performance demonstrates excellence at a GPA of 3.5 or above in required major coursework. Department highest honors are awarded to those students whose performance demonstrates the highest level of excellence and results in a GPA of 3.8 or above in required major coursework."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Chemistry students should be aware of the materials fee required for some courses. The fee is billed to the student’s account for specific laboratory materials purchased by the Chemistry and Biochemistry Department through the university. Students may incur additional expenses for individual supplies."
+    ],
+    "title": "Materials Fee"
+   },
+   {
+    "paragraphs": [
+     "Students intending to enter medical, dental, or another health science professional school can satisfy entrance requirements with a major program in chemistry supplemented with further courses, especially in biology, as specified by the admissions requirements of the school where they intend to apply. Students are strongly encouraged to review the Medical School and Health Professional Programs section of the Career Success website to review preparation recommendations, prerequisite and other information about professional health education programs (medical school, dental school, etc.), and more important information to assist in preparation for a career in health sciences.",
+     "Students are urged to contact Career Success for assistance with the application process."
+    ],
+    "title": "Program for Students of the Health Sciences"
+   },
+   {
+    "paragraphs": [
+     "The American Chemical Society (ACS) recognizes certain undergraduate programs, including those of UC Santa Cruz, to be of such quality that they allow some graduates to become ACS members immediately upon graduation. Graduates must be individually certified to the ACS by the Chemistry and Biochemistry Department chair if they have satisfactorily completed an approved program of study. ACS certification standards are rigorous; a graduate who has met them carries a distinction that is well-recognized in the profession.",
+     "Broadly speaking, ACS certification requirements are satisfied by completing CHEM 122 as an elective and graduating with a chemistry B.S. (biochemistry concentration excluded). More information is available from the Chemistry and Biochemistry Department advisors."
+    ],
+    "title": "American Chemical Society Certification"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Information and Policy",
+       "prose": [
+        "General information about transferring to UC Santa Cruz can be found on the Transfer Preparation Advising website . Students planning to transfer to UC Santa Cruz from a California community college should reference assist.org to determine which courses are equivalent to required and recommended pre-transfer courses."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "The following courses or their equivalents are required prior to transfer /entry to UCSC. Courses must be completed with a grade of C or better with a cumulative GPA of 2.50 in these courses. Completion of these courses also satisfies all major qualification requirements. For students with exam credit for any of the courses, a grade of A will be used in the GPA calculation.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH22"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer /entry to UCSC. Courses must be completed with a grade of C or better with a cumulative GPA of 2.50 in these courses. Completion of these courses also satisfies all major qualification requirements. For students with exam credit for any of the courses, a grade of A will be used in the GPA calculation."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students must complete the above courses or their equivalents, with a grade of C or better, and have a cumulative GPA in these courses of 2.5 or greater. For courses required to qualify for the major that have been satisfied with advanced placement (AP) credit based on an AP examination score ( See exam credit webpage ), students may substitute a grade of A for each course when calculating their GPA. Note for winter transfer students: CHEM 8A / CHEM 8L are additional pre-transfer requirements for students planning to enter UCSC in the winter. CHEM 8A / CHEM 8L are still recommended for fall transfer admits, as listed below."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "Students must complete the above courses or their equivalents, with a grade of C or better, and have a cumulative GPA in these courses of 2.5 or greater.",
+        "For courses required to qualify for the major that have been satisfied with advanced placement (AP) credit based on an AP examination score ( See exam credit webpage ), students may substitute a grade of A for each course when calculating their GPA.",
+        "Note for winter transfer students: CHEM 8A / CHEM 8L are additional pre-transfer requirements for students planning to enter UCSC in the winter. CHEM 8A / CHEM 8L are still recommended for fall transfer admits, as listed below."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B",
+       "CHEM8L",
+       "CHEM8M",
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6L",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended pre-transfer courses",
+       "prose": [
+        "Completion of the following courses is highly recommended before the transfer to ensure timely graduation. Students who only complete the minimum required transfer coursework for the major prior to transfer will likely need more than two years to complete the chemistry B.S.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "If transferring into CHEM BS with BIOC concentration add these as pre-transfer courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students are strongly encouraged to meet with a Chemistry and Biochemistry Department advisor in their first quarter. For assistance with advising, please email chemistryadvising@ucsc.edu .",
+        "Transfer students must already be qualified at time of entry to UCSC to be accepted into the chemistry major. Any student who fails to meet these requirements may file an appeal for admission to the major, but admission is not guaranteed.",
+        "Students who transfer at the junior-year level can declare their major any time after coming to UC Santa Cruz, but are required to be declared in a major by the declaration deadline in their second term at UCSC.",
+        "Transfer students who are proposed in a different major (other than chemistry) require permission from the department to change into the major. Admission to the major is not guaranteed."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Students must complete each of the following qualification courses, or their equivalents, by their campus-established declaration deadline with a grade of C or better and with a cumulative grade point average (GPA) of 2.50 or greater:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH22"
+       ],
+       [
+        "MATH23A"
+       ],
+       [
+        "AM30"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "And one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All courses must be taken for a letter grade. See the Letter Grade Policy below.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Determining qualification for the major",
+       "prose": [
+        "When pursuing major qualification, students should keep the following details in mind:",
+        "All courses must be taken for a letter grade. See the Letter Grade Policy below.",
+        "A grade of A will be used in the GPA calculation for each student with exam credit for any of the above courses.",
+        "Students who entered UC Santa Cruz as frosh and earn two or more grades of NP, C-, D+, D, D-, or F in courses required to qualify for the major are not eligible to declare.",
+        "Transfer students should also consult the Transfer Information and Policy section above."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students may declare a major as early as they would like if they have decided which major to pursue and have satisfied prerequisites or qualification requirements for the major.",
+        "Per the UC Santa Cruz major declaration policy , students who enter UCSC as frosh are required to be formally declared in a major by the campus deadline in their 6th quarter and before enrolling in their third year (or equivalent). Upper-division junior transfer students are required to be declared in a major by the deadline in their second term at UC Santa Cruz.",
+        "Students should petition to declare a chemistry major once they have met all qualification criteria and have an official, signed, department-approved academic plan on file.",
+        "The Petition for Major/Minor declaration form can be accessed by going to MyUCSC and navigating to the Student Homepage and selecting the Undergraduate Student eForms tile > Petition for Major/Minor.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their 6th quarter, for students admitted as frosh, second quarter for junior transfer students), will either be approved, denied, or provided with conditions (e.g., completion of final qualification courses with certain grades), but will not be declared until all requirements have been met and satisfactory grades have been posted.",
+        "Each major/minor advising office has a process for declaring. For assistance with declaring the chemistry major, please contact chemistry and biochemistry advising at chemistryadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students may appeal to the major either prior to or after submitting a petition to declare and being denied (in the latter case, appeals must be submitted within 15 days from the date the denial notification was sent). The department will notify the student and their affiliated college of the decision, typically within 15 days of receipt of the appeal being submitted.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students may appeal to the major either prior to or after submitting a petition to declare and being denied (in the latter case, appeals must be submitted within 15 days from the date the denial notification was sent). The department will notify the student and their affiliated college of the decision, typically within 15 days of receipt of the appeal being submitted.",
+        "To submit an appeal, please complete the applicable appeal form, available on the Chemistry & Biochemistry Advising Website.",
+        "To complete the major appeal form, you will need:",
+        "An official Academic Plan (signed by the Chemistry major advisor)",
+        "Unofficial Transcripts",
+        "An Appeal Letter",
+        "Additional instructions can be found in the form.",
+        "Note: The information you share in your appeal or with your advisors will be kept confidential and shared only with campus officials as required to serve you in an advising capacity or process your appeal. However, in limited circumstances, including those related to potential harm to yourself or others, sexual assault, and abuse, we may be required by law to report incidents you disclose to other need-to-know offices on campus such as the Title IX Office and/or University of California Police Department. If you are in need of support for any issues, please see the list of confidential and/or support resources."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The bachelor of science (B.S.) major program is designed for students who intend to pursue a professional career in chemistry. It is rigorous and broadly based. The course requirements for the B.S. major are as follows; please refer to each course description for a detailed listing of prerequisites. Some courses may be satisfied via exam credit."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4BL",
+        "CHEM4A",
+        "CHEM4B",
+        "CHEM4AL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "General Chemistry:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A student may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Calculus:",
+       "prose": [
+        "Choose one of the following options:",
+        "A student may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH22"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ],
+       [
+        "AM30"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Multivariable Calculus:",
+       "prose": [
+        "Choose one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Advanced Mathematics:",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5B",
+        "PHYS5C",
+        "PHYS5L",
+        "PHYS5M",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6B",
+        "PHYS6C",
+        "PHYS6L",
+        "PHYS6M",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Physics:",
+       "prose": [
+        "Choose one of the following options:",
+        "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B",
+       "CHEM8L",
+       "CHEM8M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "By permission and invitation of the instructor, students may substitute CHEM 8M with CHEM 8N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Organic Chemistry:",
+       "prose": [
+        "By permission and invitation of the instructor, students may substitute CHEM 8M with CHEM 8N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM110",
+       "CHEM110L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "By permission and invitation of the instructor, students may substitute CHEM 110L with CHEM 110N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Intermediate Organic Chemistry:",
+       "prose": [
+        "By permission and invitation of the instructor, students may substitute CHEM 110L with CHEM 110N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM151A",
+       "CHEM151L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Satisfies part of the Disciplinary Communication (DC) and Comprehensive requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Inorganic Chemistry:",
+       "prose": [
+        "Satisfies part of the Disciplinary Communication (DC) and Comprehensive requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM103"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students who plan to do advanced work in biochemistry and molecular biology should take the biochemistry and molecular biology (BIOC) 100ABC series. Completing the series will fulfill the requirement of CHEM 103 (Biochemistry) plus fulfill one elective. Students who have finished CHEM 103 can, with instructor permission, enroll in BIOC 100C without taking BIOC 100A and BIOC 100B ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Biochemistry:",
+       "prose": [
+        "Students who plan to do advanced work in biochemistry and molecular biology should take the biochemistry and molecular biology (BIOC) 100ABC series. Completing the series will fulfill the requirement of CHEM 103 (Biochemistry) plus fulfill one elective. Students who have finished CHEM 103 can, with instructor permission, enroll in BIOC 100C without taking BIOC 100A and BIOC 100B ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM163A",
+       "CHEM163B",
+       "CHEM163C",
+       "CHEM164"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Physical Chemistry:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least two from the following list:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "BIOC100C",
+       "CHEM122",
+       "CHEM124",
+       "CHEM143",
+       "CHEM144",
+       "CHEM151B",
+       "CHEM156C",
+       "CHEM169",
+       "CHEM171",
+       "METX101",
+       "OCEA120",
+       "OCEA121",
+       "PHYS156",
+       "PHYS180"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "To receive certification from the American Chemical Society, students must complete CHEM 122 . Students may also satisfy the elective requirement by completing a chemistry graduate course with permission from the instructor and department. Please consult with chemistry & biochemistry major advising before enrolling."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "At least two from the following list:",
+        "To receive certification from the American Chemical Society, students must complete CHEM 122 .",
+        "Students may also satisfy the elective requirement by completing a chemistry graduate course with permission from the instructor and department. Please consult with chemistry & biochemistry major advising before enrolling."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM151L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) Requirement. The DC Requirement for the bachelor of science (B.S.) degree in chemistry is satisfied by completing:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM124",
+       "CHEM146A",
+       "CHEM146B",
+       "CHEM146C",
+       "CHEM160L",
+       "CHEM161L",
+       "CHEM186L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires CHEM 161J and CHEM 161K as prerequisites.",
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires CHEM 161J and CHEM 161K as prerequisites."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM151L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is a part of all UCSC degrees. For the chemistry B.S., this requirement can be satisfied by receiving a passing grade in the upper-division labs listed below. These courses provide modern, individualized training in the discipline thus serving as relevant capstone experiences."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM124",
+       "CHEM146A",
+       "CHEM146B",
+       "CHEM146C",
+       "CHEM160L",
+       "CHEM161L",
+       "CHEM186L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires CHEM 161J and CHEM 161K as prerequisites."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires CHEM 161J and CHEM 161K as prerequisites."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Biochemistry Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B",
+        "CHEM4AL",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "General Chemistry:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Calculus:",
+       "prose": [
+        "Choose one of the following options:",
+        "Students may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH22"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ],
+       [
+        "AM30"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Multivariable Calculus:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Advanced Mathematics:",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Introductory Biology:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS5A",
+        "PHYS5B",
+        "PHYS5C",
+        "PHYS5L",
+        "PHYS5M",
+        "PHYS5N"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6B",
+        "PHYS6C",
+        "PHYS6L",
+        "PHYS6M",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Physics:",
+       "prose": [
+        "Choose one of the following options:",
+        "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B",
+       "CHEM8L",
+       "CHEM8M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "By permission and invitation of the instructor, students may substitute CHEM 8M with CHEM 8N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Organic Chemistry:",
+       "prose": [
+        "By permission and invitation of the instructor, students may substitute CHEM 8M with CHEM 8N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Biochemistry Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM110",
+       "CHEM110L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "By permission and invitation of the instructor, students may substitute CHEM 110L with CHEM 110N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Intermediate Organic Chemistry:",
+       "prose": [
+        "By permission and invitation of the instructor, students may substitute CHEM 110L with CHEM 110N , Honors Organic Chemistry Lab. This course is designed to introduce the exceptional student to many of the techniques associated with organic chemistry while taking part in an active organic chemistry research experience."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM151A",
+       "CHEM151L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Satisfies part of the Disciplinary Communication (DC) and Comprehensive requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Inorganic Chemistry:",
+       "prose": [
+        "Satisfies part of the Disciplinary Communication (DC) and Comprehensive requirements."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "BIOC110L"
+       ],
+       [
+        "CHEM160L"
+       ],
+       [
+        "CHEM161L"
+       ],
+       [
+        "CHEM186L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "BIOC100A",
+       "BIOC100B",
+       "BIOC100C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Satisfies part of the the Disciplinary Communication (DC) and Comprehensive requirements. Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires completion of CHEM 161J and CHEM 161K as prerequisites."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Biochemistry:",
+       "prose": [
+        "Satisfies part of the the Disciplinary Communication (DC) and Comprehensive requirements.",
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires completion of CHEM 161J and CHEM 161K as prerequisites."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM163A",
+       "CHEM163B",
+       "CHEM163C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Physical Chemistry:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Biochemistry Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "BIOC110L"
+       ],
+       [
+        "CHEM124"
+       ],
+       [
+        "CHEM146A"
+       ],
+       [
+        "CHEM146B"
+       ],
+       [
+        "CHEM146C"
+       ],
+       [
+        "CHEM160L"
+       ],
+       [
+        "CHEM161L"
+       ],
+       [
+        "CHEM186L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "CHEM151L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) Requirement. The DC Requirement in chemistry with a biochemistry concentration is satisfied by completing the following. This also satisfies the Comprehensive Requirement.",
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires completion of CHEM 161J and CHEM 161K as prerequisites.",
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires completion of CHEM 161J and CHEM 161K as prerequisites."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Biochemistry Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": [
+       [
+        "BIOC110L"
+       ],
+       [
+        "CHEM124"
+       ],
+       [
+        "CHEM146A"
+       ],
+       [
+        "CHEM146B"
+       ],
+       [
+        "CHEM146C"
+       ],
+       [
+        "CHEM160L"
+       ],
+       [
+        "CHEM161L"
+       ],
+       [
+        "CHEM186L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "CHEM151L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires completion of CHEM 161J and CHEM 161K as prerequisites."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement is a part of all UC Santa Cruz degrees. For the chemistry B.S with a biochemistry concentration, this requirement can be satisfied by receiving a passing grade in the upper-division labs listed below. These courses provide modern, individualized training in the discipline thus serving as relevant capstone experiences. This also satisfies the Disciplinary Communication (DC) requirement.",
+        "Note: CHEM 160L requires completion of CHEM 160J and CHEM 160K as prerequisites, and CHEM 161L requires completion of CHEM 161J and CHEM 161K as prerequisites."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "chemistry-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/chemistry-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

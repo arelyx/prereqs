@@ -1,0 +1,509 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "feminist-studies",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Feminist Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Feminist studies is an interdisciplinary field of analysis in the humanities that investigates how relations of gender are embedded in social, political, and cultural formations. The undergraduate program in feminist studies provides students with a unique interdisciplinary and transnational perspective. The program emphasizes theories and practices derived from multiracial and multicultural contexts. Some topics you will find in our curriculum include: Black/Africana studies; colonialism and decolonization; trans, queer, and sexuality studies; media studies; law, politics, and social change; and science and technology studies. Feminist studies prepares undergraduates for a variety of careers. The Bachelor of Arts (B.A.) in Feminist Studies provides excellent grounding for undergraduates who have career aspirations in, for example, law, health, non-governmental organizations, museum curation, politics, media and film, research institutes, journalism, community organizations, and social services. Students wishing to pursue doctoral work also will find that interdisciplinary training in feminist studies equips them with theoretical and methodological strengths in most disciplines and applied research fields including American Studies, Ethnic Studies, Science Studies, Anthropology, Communications, and Legal Studies. Specialists in feminist studies are employed as consultants in industry, higher education, and human resources. State and federal government agencies employ people who have special training in understanding gender and race relations. Educational institutions need specialists to develop and administer Feminist Studies programs, women’s centers, and other institutional structures designed specifically to study and assist marginalized peoples, including women."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students who complete the Feminist Studies major should demonstrate the following skills upon graduation:",
+     "Outcome 1: Application of Feminist Approaches to Critical Interpretation",
+     "Students should be able to:",
+     "Outcome 2: Original Research",
+     "Students should be able to:",
+     "Outcome 3: Argumentative Communication",
+     "Students should be able to:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Email: fmst-advising@ucsc.edu",
+     "Feminist Studies advising is conducted remotely. Students can make an appointment by using the Slug Success application found under Resources in their student portal (MyUCSC).",
+     "Transfer students should also consult the Transfer Student Information and Policy section for specific requirements."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Acceptance to the Feminist Studies major: This major is not highly sequential or course intensive. Although it is advisable to begin taking courses in the major in the first year, it is not required.",
+     "Students are encouraged to declare the major as soon as possible to be assured entrance into the required core courses.",
+     "There are no prerequisite courses that must be satisfied before declaring the Feminist Studies major.",
+     "Students should plan to enroll in FMST 01, Feminist Studies: An Introduction, in the fall quarter of their sophomore year if they did not complete the course during their first year at UC Santa Cruz. Please refer to the Requirements and Planners section of the catalog."
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "No major preparation courses are required prior to transfer. Prospective students are encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete as much of their UC Santa Cruz general education requirements as possible before matriculation. Transfer students may potentially pursue the Feminist Studies major even if they did not enter UC Santa Cruz with a proposed Feminist Studies major.",
+     "Transfer students are encouraged to declare the major as soon as possible to be assured entrance into the required core courses. Please see the section How to Declare a Major for more details. Transfer students may use an articulated equivalent of FMST 1 to satisfy the FMST 1 requirement. Please check assist.org for current articulation agreements. If you have completed prior college-level coursework in Feminist Studies, Women's Studies, or a similar field of study, please contact Feminist Studies Advising as soon as possible and provide a copy of your unofficial transcript and course syllabi so the coursework can be reviewed for potential fulfillment of feminist studies major requirements. The feminist studies program will consider, upon petition, which UC-transferrable courses from other institutions are acceptable. FMST 1 , one Feminist Studies (FMST) lower-division course, and FMST 100 must be completed before the senior year so that the comprehensive requirement may be completed in the senior year."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Undeclared students may declare the Feminist Studies major at any time. While specific courses are not required in order to declare, students ideally will have completed or be enrolled in FMST 1 , Feminist Studies: An Introduction.",
+     "Petition to declare the feminist studies major before you reach your declaration deadline quarter. Students who enter UC Santa Cruz as first-year students or sophomores must be formally declared in a major before enrolling in their third year (or equivalent). Junior transfer students must be declared in a major by the deadline in their second term at UCSC.",
+     "For a single major: Familiarize yourself with the content of the Feminist Studies website. Students may declare the major by submitting a Petition for Major/Minor Declaration to the department advisor.",
+     "If you are planning to declare a double major or major/minor program, each major advisor will need to approve your academic planner. Please follow the declaration protocol for each major before submitting the declaration of major petition on MyUCSC . See the section on \"How do I declare a major?\" for more details.",
+     "If your proposed program exceeds your expected graduation term (EGT), your college advising office will need to approve or deny the request and update your expected graduation term.",
+     "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as first-year students), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "Letter grades are required for 10 of the 11 courses applied toward the feminist studies major. FMST 100 and the comprehensive requirement course (FMST 194 or FMST 195 ) must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Feminist studies is an interdisciplinary major that includes courses taught by affiliated faculty in other departments (see the Courses page of the feminist studies website for current year offerings). However, a minimum of five courses counting toward major requirements must be taken at UC Santa Cruz taught directly in the feminist studies program, (i.e., courses designated FMST, not including FMST 193 , FMST 198 , or FMST 199 ). At most three courses may be transferred to count toward the major, including three Education Abroad Program (EAP) courses or courses from another university. Courses cross-listed with FMST courses count toward this five-course minimum.."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "The feminist studies major works very well as a double major with fields of study such as community studies, critical race and ethnic studies, sociology, politics, education, legal studies, literature, psychology, and more."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "As stated in the course substitution policy, a maximum of three courses may be transferred to count toward the major, including courses from an Education Abroad Program (EAP).",
+     "Feminist studies majors are strongly encouraged to consider enriching their time at UCSC with study abroad opportunities. International classes are an exciting chance to broaden and deepen your feminist education by bringing questions around gender, sexuality, and social justice into dialogue with different regions, nations, and cultures around the world.",
+     "Students should check with the advisor regarding the list of feminist studies approved study abroad classes offered at colleges around the globe.",
+     "As noted above, students can use up to three approved study abroad courses to fulfill feminist studies upper-division elective requirements. Interested students should review the feminist studies major requirements and confer with Feminist Studies Advising on how to incorporate international classes into the feminist studies curriculum."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Feminist studies awards honors and highest honors in the major. Students are awarded honors and highest honors based on their cumulative GPA calculated from grades earned in coursework taken at UC Santa Cruz and the comprehensive requirement undertaken for completion of the major. For honors, students must earn a minimum GPA of 3.70 in the relevant courses, while for highest honors, the GPA must be 3.90 or higher. Writing a thesis is not a requirement for receiving honors or highest honors."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Feminist studies majors must complete 11 courses including FMST 1 , one lower-division feminist studies course, FMST 100 , and a comprehensive senior exit requirement. To satisfy the major requirements, students must complete a minimum of five courses at UC Santa Cruz taught directly in the feminist studies program (courses designated FMST, not including FMST 193 , FMST 198 , or FMST 199 ). FMST 100 and the senior exit requirement should be included in these courses absent an approved student petition."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FMST1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Transfer students should check assist.org for articulation agreements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": [
+        "Transfer students should check assist.org for articulation agreements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FMST10",
+       "FMST12",
+       "FMST14",
+       "FMST15",
+       "FMST16",
+       "FMST18",
+       "FMST19",
+       "FMST20",
+       "FMST21",
+       "FMST30",
+       "FMST31",
+       "FMST40",
+       "FMST41",
+       "FMST43",
+       "FMST71"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FMST100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students are required to complete FMST 100 , Feminist Theories, at UC Santa Cruz absent a petition."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students are required to complete FMST 100 , Feminist Theories, at UC Santa Cruz absent a petition."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students complete seven additional 5-credit upper-division electives. Courses may be chosen from FMST 100 -199, or the lists of approved electives from affiliated departments below. As stated in the Course Substitution Policy, a minimum of five courses used toward major requirements must be taken in the feminist studies program at UC Santa Cruz (i.e. courses designated FMST). FMST 193 , 198, and 199 do not count toward this five-course minimum. Courses cross-listed with a FMST course will count toward this five-course minimum. At most three courses may be transferred to count toward the major, including three Education Abroad Program (EAP) courses or courses from another university. The Feminist Studies Tentative Curriculum is the definitive list of courses offered during the current academic year that will satisfy major requirements and is comprised of courses offered both from within the feminist studies program but also with approved courses originating from many different departments throughout UC Santa Cruz. Please consult Feminist Studies Advising with any questions regarding this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "FMST193"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "FMST"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 7,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students complete seven additional 5-credit upper-division electives. Courses may be chosen from FMST 100 -199, or the lists of approved electives from affiliated departments below. As stated in the Course Substitution Policy, a minimum of five courses used toward major requirements must be taken in the feminist studies program at UC Santa Cruz (i.e. courses designated FMST). FMST 193 , 198, and 199 do not count toward this five-course minimum. Courses cross-listed with a FMST course will count toward this five-course minimum. At most three courses may be transferred to count toward the major, including three Education Abroad Program (EAP) courses or courses from another university. The Feminist Studies Tentative Curriculum is the definitive list of courses offered during the current academic year that will satisfy major requirements and is comprised of courses offered both from within the feminist studies program but also with approved courses originating from many different departments throughout UC Santa Cruz. Please consult Feminist Studies Advising with any questions regarding this requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "APLX112",
+       "CRES100",
+       "CRES101",
+       "HIS106B",
+       "HIS109A",
+       "HIS110A",
+       "HIS112",
+       "HIS113C",
+       "HIS119",
+       "HIS121B",
+       "HIS128",
+       "HIS131",
+       "HIS140C",
+       "HIS140D",
+       "HIS140E",
+       "HIS150F",
+       "HIS151A",
+       "HIS159B",
+       "HIS196H",
+       "HISC113",
+       "HISC125",
+       "LIT112P",
+       "LIT121M",
+       "LIT121O",
+       "LIT146G",
+       "LIT156A",
+       "LIT161B",
+       "LIT162C",
+       "LIT166A",
+       "LIT166E",
+       "LIT167E",
+       "PHIL147"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Division of the Humanities Approved Electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH110G",
+       "ANTH110Q",
+       "ANTH110T",
+       "ANTH130E",
+       "ANTH130F",
+       "ANTH130L",
+       "ANTH130O",
+       "ANTH131",
+       "ANTH134",
+       "ANTH140",
+       "ANTH148",
+       "ANTH158",
+       "ANTH160",
+       "ANTH194M",
+       "ANTH194X",
+       "CMMU151",
+       "CMMU161",
+       "EDUC135",
+       "ECON183",
+       "LALS144",
+       "LALS172",
+       "LALS175",
+       "LGST111B",
+       "POLI103",
+       "POLI105B",
+       "PSYC107",
+       "PSYC140G",
+       "PSYC140H",
+       "PSYC140L",
+       "PSYC140Q",
+       "PSYC140T",
+       "PSYC149",
+       "PSYC153",
+       "SOCY158",
+       "PSYC159A",
+       "PSYC159D",
+       "SOCY111",
+       "SOCY120",
+       "SOCY121",
+       "SOCY126",
+       "SOCY132",
+       "SOCY145",
+       "SOCY149",
+       "SOCY150",
+       "SOCY152",
+       "SOCY157",
+       "SOCY156",
+       "SOCY172",
+       "SOCY176",
+       "SOCY187"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Division of Social Sciences Approved Electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM130",
+       "FILM165A",
+       "FILM165B",
+       "FILM165C",
+       "FILM165D",
+       "FILM165E",
+       "FILM165G",
+       "FILM194E",
+       "HAVC115",
+       "HAVC140C",
+       "HAVC141F",
+       "HAVC170",
+       "HAVC172",
+       "HAVC186",
+       "HAVC186Q",
+       "THEA161M",
+       "THEA161T"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Division of the Arts Approved Electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "JRLC135",
+       "OAKS150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "The Colleges Approved Electives",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement. The DC requirement in feminist studies is satisfied by completing the comprehensive requirement (FMST 194 or FMST 195 )."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students should be aware that not all departments will accept a double thesis. Students who wish to propose a double thesis should consult with both major advisors before the end of their junior year. Such a proposal must be approved by both departments or referred to the Committee on Educational Policy. In evaluating such proposals, the departments will require the student to have completed significantly more work than the minimum required for the comprehensive requirement of each major. The student's work must clearly explain to the reader the relevance of the work to both disciplines.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "FMST194A",
+       "FMST194B",
+       "FMST194C",
+       "FMST194D",
+       "FMST194F",
+       "FMST194G",
+       "FMST194H",
+       "FMST194I",
+       "FMST194K",
+       "FMST194M",
+       "FMST194O",
+       "FMST194Q",
+       "FMST194T",
+       "FMST194W",
+       "FMST194X",
+       "FMST194Y",
+       "FMST195",
+       "CRES190A",
+       "CRES190L",
+       "CRES190R",
+       "CRES190U",
+       "CRES190V"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Comprehensive requirement options include a senior seminar taught by core faculty or a senior thesis/project. Completion of the Entry Level Writing and Composition Requirements are prerequisites to FMST 194 and FMST 195 .",
+        "Students who wish to complete FMST 195 , Senior Thesis or Project, should consult early with the feminist studies advisor and a prospective faculty advisor. The senior thesis or project option is by petition only, and faculty advisors may request that students complete a Senior Seminar (FMST 194) before agreeing to supervise a senior thesis or project.",
+        "Double majors may be able to write a thesis of 50 or more pages over three quarters to satisfy the comprehensive requirements of feminist studies and the second major. The feminist studies program will review and approve or deny proposals for a double thesis on a case-by-case basis.",
+        "Students should be aware that not all departments will accept a double thesis. Students who wish to propose a double thesis should consult with both major advisors before the end of their junior year. Such a proposal must be approved by both departments or referred to the Committee on Educational Policy. In evaluating such proposals, the departments will require the student to have completed significantly more work than the minimum required for the comprehensive requirement of each major. The student's work must clearly explain to the reader the relevance of the work to both disciplines."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Academic Planning",
+       "prose": [
+        "Academic Planners for this and all majors can be found at programmaps.ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Academic Planning"
+   }
+  ]
+ },
+ "slug": "feminist-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/feminist-studies/feminist-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

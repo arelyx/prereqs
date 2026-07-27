@@ -1,0 +1,718 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "molecular-cell-and-developmental-biology",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Neuroscience B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Neuroscience, the study of the nervous system and behavior of animals, is a frontier area in biology, touching psychology on the one hand and computer science on the other. The neuroscience major provides students with rigorous preparation for graduate studies and research in the field of neuroscience. With proper advance planning, a student with virtually any degree can prepare a competitive application for medical school or health care professional school. Check the Health Careers webpage for more information on how you can academically prepare for a career in healthcare. Additional information is available at the UC Santa Cruz Career Center ."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students who successfully complete the Neuroscience major will be able to:",
+     "Demonstrate knowledge of how biochemistry, genetics, and molecular biology are used to elucidate both the function of cells and their organization into tissues.",
+     "Recognize that biology has a basis in chemistry, physics, and mathematics.",
+     "Describe how scientific method is used to explain natural phenomena.",
+     "Use effective oral and written language skills to communicate scientific data and ideas.",
+     "Understand safe laboratory practices and perform basic molecular biology techniques.",
+     "Generate hypotheses, evaluate data, and design experiments to investigate a scientific problem.",
+     "Present advanced knowledge in the specialized field of neuroscience."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Students should take full advantage of academic advising and should keep in frequent contact with the advisers to stay informed about late announcements of courses, changes in scheduling, and opportunities for special study. Transfer students should also consult the Transfer Information and Policy Section. For additional advice and information:",
+     "MCD Advising 389 Thimann Labs mcdadvising@ucsc.edu"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Prerequisites",
+     "Due to the demanding nature of the major, students must begin their science coursework as early as possible. MATH 11A or MATH 16A or MATH 19A ; CHEM 3A, CHEM 3B, CHEM 3C , and CHEM 8A ; and BIOL 20A , BIOE 20B , and BIOL 20L must be completed before the major declaration deadline in order for students to qualify for admission to MCD Biology-sponsored majors. For an overview of prerequisites and getting started in the major, please visit our neuroscience B.S. site .",
+     "An online mathematics placement examination is required to enroll in a math course. Biological science majors are expected to take this examination and are encouraged to work in the learning modules until they place into calculus. For more information see the mathematics placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses that are taken to satisfy any major requirement must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "At least half of the upper-division courses required for the major must be taken at UC Santa Cruz, not as transfer credits from another institution. If a student plans to transfer to UCSC from another institution, the student is advised to contact MCD Advising at UCSC before enrolling in upper-division courses at the student’s institution or any institution other than UCSC. This advising will help students understand the limitation of transferring upper-division courses from other institutions to UCSC. For more information on transferring courses to UCSC, please consult the undergraduate website.",
+     "Once matriculated, a student must receive permission from the department to satisfy the BIOL 20A , BIOL 100 , BIOL 105 , BIOL 101 or BIOL 110 requirements with courses taken at other institutions. Students who wish to receive credit toward the major for these or other courses taken either at UCSC or at another institution should contact MCD Advising."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students cannot double major/minor in Neuroscience B.S. and any other major/minor offered by the departments of Chemistry and Biochemistry, Ecology and Evolutionary Biology, Microbiology and Environmental Toxicology or MCD Biology, including the Global and Community Health B.S. major",
+     "Should a student choose to double major, they must qualify for and complete the disciplinary communication and comprehensive requirements for each of the majors."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "The UC Education Abroad Program (EAP) offers qualified students unique opportunities to broaden their educational horizons. The MCD Biology Department encourages interested students to participate. Many programs are in English-speaking countries or use English for advanced courses. Many programs offer small classes, extensive laboratories, and/or field research experience.",
+     "Students interested in study abroad need to get an early start on their basic science requirements, including chemistry, mathematics, and introductory biology and must declare their major prior to applying to go abroad. Students interested in studying abroad should visit the EAP office as soon as possible to begin planning. They should also seek advice about their EAP plan for major courses at UC Santa Cruz from MCD Advising."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in the majors are awarded to graduating students whose academic performance in major requirements demonstrates excellence at a grade point average (GPA) of 3.50 or above. Highest honors are awarded to those students whose performance demonstrates the highest level of excellence and results in a GPA of 3.80 or above."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Medical and professional school admissions requirements vary; students should verify that their coursework will satisfy the admissions requirements of the programs to which they plan to apply."
+    ],
+    "title": "Medical and Professional School Admission"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "MCD Biology encourages applications from transfer students in the biological sciences. The department has a major qualification policy that limits access to the program to students who have successfully completed a subset of foundational coursework. Transfer students are held to similar criteria when being assessed for admission to UC Santa Cruz as an MCD-sponsored major. See qualifying for the major as a transfer applicant for more information.",
+        "To be considered for admission as a proposed neuroscience B.S. major, transfer students must complete the following courses or their equivalents prior to transfer by the end of the spring term for students planning to enter in the fall.",
+        "To be considered for admission as a proposed neuroscience B.S. major during the winter term, transfer students must also complete a course equivalent to CHEM 8B prior to transfer."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of these groups of courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "BIOL20A",
+       "BIOL20L",
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following calculus courses:",
+       "prose": [
+        "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11B"
+       ],
+       [
+        "MATH16B"
+       ],
+       [
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6C",
+       "PHYS6N",
+       "STAT7",
+       "STAT7L",
+       "CHEM8B",
+       "CHEM8L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5 , they will have this requirement waived if they contact an advisor for the major."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "In addition, the following courses are recommended prior to transfer to ensure timely graduation.",
+       "prose": [
+        "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5 , they will have this requirement waived if they contact an advisor for the major.",
+        "Please see our preparing to transfer as an MCD major for more complete information. Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows. Students who are proposed in a different major and have advanced standing when they enter UCSC require permission from the department to change into the major. Admission to the major is not guaranteed.",
+        "Please see our preparing to transfer as an MCD major for more complete information.",
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Students who are proposed in a different major and have advanced standing when they enter UCSC require permission from the department to change into the major. Admission to the major is not guaranteed."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students who have met the major qualification requirements are encouraged to declare the major immediately during their first quarter at UC Santa Cruz. Transfer students should complete the required courses in genetics ( BIOL 105 ), biochemistry ( BIOL 100 ), and molecular biology ( BIOL 101 and BIOL 101L ) by the end of their first year at UCSC since they are prerequisites for the majority of other required courses."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "The Molecular Cell and Developmental Biology Department has a qualification policy that applies to the biology B.S., molecular, cell and developmental biology B.S., and neuroscience B.S. majors.",
+        "To qualify for any of these majors, students must pass (with a grade of C or better) the following courses or their equivalents:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C-, D+, D, D-, or F in the policy courses are not qualified to declare. When assessing qualification: All courses must be taken for a letter grade, see Letter Grade Policy below. Students with AP credit for MATH 11A or MATH 19A , BIOL 20A , BIOE 20B , and/or CHEM 3A, need only pass the remaining qualification policy courses. Every student who satisfies the major qualification requirements and who petitions to declare the major by the campus major declaration deadline (i.e., before enrolling in their third year or the equivalent) will be admitted to the major. Students who satisfy the major admission requirements, but who petition to declare the major after the campus major declaration deadline will be considered on a case-by-case basis for admission to the major; admission is not guaranteed.",
+        "type": "prose"
+       },
+       {
+        "text": "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C-, D+, D, D-, or F in the policy courses are not qualified to declare.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CHEM8A",
+       "BIOL20A",
+       "BIOL20L",
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C-, D+, D, D-, or F in the policy courses are not qualified to declare. When assessing qualification: All courses must be taken for a letter grade, see Letter Grade Policy below. Students with AP credit for MATH 11A or MATH 19A , BIOL 20A , BIOE 20B , and/or CHEM 3A, need only pass the remaining qualification policy courses. Every student who satisfies the major qualification requirements and who petitions to declare the major by the campus major declaration deadline (i.e., before enrolling in their third year or the equivalent) will be admitted to the major. Students who satisfy the major admission requirements, but who petition to declare the major after the campus major declaration deadline will be considered on a case-by-case basis for admission to the major; admission is not guaranteed.",
+        "All qualification courses must be completed prior to the major declaration deadline. Students with two or more grades of NP, C-, D+, D, D-, or F in the policy courses are not qualified to declare.",
+        "When assessing qualification:"
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are not eligible to declare the major may submit an appeal to the MCD Biology faculty adviser. The department will notify the student and their college of the outcome of the appeal within 15 working days of the quarterly appeal deadline. See our appeal process for more information."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A student's petition will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare by completing the online declaration petition as soon as they complete the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "A student's petition will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "The Petition for Major/Minor declaration form can be accessed by going to MyUCSC and navigating to the Student Homepage and selecting the Undergraduate Student eForms tile > Petition for Major/Minor."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOL20L",
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B",
+       "CHEM8L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH16A",
+        "MATH16B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may transition between the MATH 11 and MATH 19 series per the Calculus Series Transition Policy ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "Students may transition between the MATH 11 and MATH 19 series per the Calculus Series Transition Policy ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5 , they will have this requirement waived if they contact an advisor for the major."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following:",
+       "prose": [
+        "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5 , they will have this requirement waived if they contact an advisor for the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6C",
+       "PHYS6N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL100",
+       "BIOL101",
+       "BIOL105",
+       "BIOL125",
+       "BIOL126",
+       "BIOL128"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL101L",
+       "BIOL102L",
+       "BIOL107L",
+       "BIOL122K",
+       "CHEM160K",
+       "CHEM161K"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL129A",
+       "BIOL129B",
+       "BIOL129C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL129L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "This course satisfies the disciplinary communication (DC) and comprehensive requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following laboratory course:",
+       "prose": [
+        "This course satisfies the disciplinary communication (DC) and comprehensive requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE131",
+       "BIOE131L",
+       "BIOL110",
+       "BIOL114",
+       "BIOL115",
+       "BIOL118",
+       "BME110",
+       "BME130",
+       "BME160",
+       "PHYS180",
+       "PSYC121",
+       "PSYC123"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following electives:",
+       "prose": [
+        "NOTE: Lecture/lab combinations count as one course."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL129L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement in neuroscience is satisfied by completing the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL129L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All majors require a comprehensive requirement. For the neuroscience B.S., this requirement can be satisfied by receiving a passing grade in the following laboratory course."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "neuroscience-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/neuroscience-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

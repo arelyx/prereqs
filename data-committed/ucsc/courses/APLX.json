@@ -1,0 +1,509 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Ariel Chan, Christian Ruvalcaba",
+   "code": "APLX101",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the field of second-language acquisition. Topics include contexts of acquisition, the impact of individual differences, and basic methods of data collection and analysis.",
+   "display_code": "APLX 101",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "101",
+   "prereq_groups": [
+    [
+     "APLX80",
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": "Winter, Spring",
+   "raw_requirements": "Prerequisite(s): APLX 80 or LING 50 .",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Second-Language Acquisition",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-101"
+  },
+  {
+   "catalog_instructor": "Ariel Chan",
+   "code": "APLX102",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An overview of bilingualism. Focuses on bilingualism as an individual phenomenon (i.e., how two languages develop and are represented in the minds of individual speakers), and as a social one (i.e., how do bilinguals interact in a community and how does this context of language contact shape their linguistic identity).",
+   "display_code": "APLX 102",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "102",
+   "prereq_groups": [
+    [
+     "APLX80",
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): APLX 80 or LING 50 .",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Bilingualism",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-102"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX103",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines themes related to the acquisition of L2 phonetics and phonology, including theories and models of L2 speech learning; phonetics and phonology in L2 acquisition; as well as the training effects on L2 pronunciation.",
+   "display_code": "APLX 103",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "103",
+   "prereq_groups": [
+    [
+     "APLX80",
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): APLX 80 or LING 50 .",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Second Language Speech",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-103"
+  },
+  {
+   "catalog_instructor": "The Staff, Eve Zyzik",
+   "code": "APLX105",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The phenomenon of  losing your native language  is well attested anecdotally by many speakers who are separated from their first language environment. Course provides a broad overview of first language attrition (loss) in different populations including adult native speakers, children, international adoptees, heritage speakers, and bilingual returnees. Examines the linguistic aspects of attrition in order to determine which areas of language are typically impacted by attrition, then focuses on individual differences (e.g., identity) and contextual factors (e.g., input) that may speed up or prevent attrition. Emphasizes considering first language attrition and second language (L2) acquisition as two inseparable sides of bilingualism, both in individual speakers and in bilingual communities.",
+   "display_code": "APLX 105",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "105",
+   "prereq_groups": [
+    [
+     "APLX80",
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): APLX 80 or LING 50 or by permission of instructor.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Language Loss",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-105"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX112",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the relationship between language and gender. Topics include: gender differences in speech; linguistic gender norms and stereotypes; gender and the construction of identity in discourse; sexuality and language; sexism in language; social, educational, and political implications. (Formerly Languages 112.)",
+   "display_code": "APLX 112",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Languages 112.",
+   "ge_codes": [],
+   "number": "112",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Language and Gender",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-112"
+  },
+  {
+   "catalog_instructor": "Bryan Donaldson",
+   "code": "APLX113",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines intercultural communication and miscommunication between individuals and speech communities, both within North American and global contexts. Through discourse and analytic approaches, students explore cultural stereotypes and interactional expectations, among other issues, that influence the outcome of intercultural communication. (Formerly Languages 113, Cross-Cultural Communication and Miscommunication.)",
+   "display_code": "APLX 113",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Languages 113, Cross-Cultural Communication and Miscommunication.",
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "113",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to juniors and seniors.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Inter-Cultural Communication",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-113"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX113I",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines intercultural (mis)communication among individuals and speech communities, both within U.S. and global contexts. Using discourse and other analytic approaches, students explore cultural values, stereotypes, and interactional expectations, among other issues, that influence the outcome of intercultural communication. Enrollment is restricted to students enrolled in the Global Internship summer program.",
+   "display_code": "APLX 113I",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "113I",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Intercultural Communication—Global Internship",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-113i"
+  },
+  {
+   "catalog_instructor": "Miller",
+   "code": "APLX115",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines the relationship between language and power. Explores the ways in which national languages, regional and social dialects, and specific phonological morpho-syntactic, or lexical features come to be associated with particular social meanings and contribute to creating social inequality.",
+   "display_code": "APLX 115",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "115",
+   "prereq_groups": [
+    [
+     "APLX80"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): APLX 80 . Enrollment is restricted to sophomores, juniors, and seniors.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Language and Power",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-115"
+  },
+  {
+   "catalog_instructor": "The Staff, Bryan Donaldson",
+   "code": "APLX116",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Familiarizes students with the methods and theoretical assumptions behind discourse analytic approaches to the study of language. Examines language used in specific contexts. Topics include: genres, registers; discourse organization; discourse grammar; interaction; conversation; pragmatics; and social practice.",
+   "display_code": "APLX 116",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "116",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 50 or by consent of the instructor. Enrollment is restricted to juniors and seniors.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Discourse Analysis: Language Use and Context",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-116"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX122",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the relationship between linguistic diversity and social justice: the celebration of multilingualism on the one hand and the negative experiences of people who speak \"minority\" languages in \"dominant\" cultural contexts on the other.",
+   "display_code": "APLX 122",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "122",
+   "prereq_groups": [
+    [
+     "APLX80"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): APLX 80 ; enrollment restricted to applied linguistics and multiculturalism, language studies, and linguistics majors.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Linguistic Diversity & Social Justice",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-122"
+  },
+  {
+   "catalog_instructor": "Bryan Donaldson",
+   "code": "APLX124",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses issues related to the second-language acquisition and use of variable structures and the development of sociolinguistic competence. Topics include: overview of linguistic variation and sociolinguistics; immersion contexts; individual differences and predictors of success; and ultimate attainment.",
+   "display_code": "APLX 124",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "124",
+   "prereq_groups": [
+    [
+     "APLX101"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): APLX 101 .",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Second Language Variation and Sociolinguistics",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-124"
+  },
+  {
+   "catalog_instructor": "Donald Miller",
+   "code": "APLX135",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the theories of second-language acquisition and their connection to second-language teaching. Students develop cutting-edge teaching and testing materials, and engage with current scholarship on language instruction. Recommend at least one year of college-level study of a foreign language, or its equivalent. Enrollment is restricted to applied linguistics and multiculturalism, linguistics, and language studies majors, or by permission of instructor. Students cannot receive credit for this course and APLX 235 .",
+   "display_code": "APLX 135",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "135",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to applied linguistics and multilinguialism, linguistics, and language studies majors, or by permission of instructor. Students cannot receive credit for this course and APLX 235 .",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Second Language Teaching",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-135"
+  },
+  {
+   "catalog_instructor": "Donald Miller",
+   "code": "APLX136",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the fundamentals of second-language testing by presenting theories, key concepts, and practical applications in language assessment. Throughout the course, students develop their own assessment portfolios, creating materials they can use in their post-B.A. career.",
+   "display_code": "APLX 136",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "136",
+   "prereq_groups": [
+    [
+     "APLX135"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Previous or concurrent enrollment in APLX 135 .",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Second Language Assessment",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-136"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "APLX138",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "What is it that teachers of English as a second/foreign language should know about the English grammar system—and about pedagogical options for teaching grammar—in order to best facilitate students' language development? Course is designed to be an accessible overview of English grammatical structures and grammar-teaching methods for practical classroom application.",
+   "display_code": "APLX 138",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "138",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "English Grammar for TESOL",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-138"
+  },
+  {
+   "catalog_instructor": "Bryan Donaldson",
+   "code": "APLX190",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Prepares students to conduct research in applied linguistics. Students evaluate published studies that represent both quantitative and qualitative methods.",
+   "display_code": "APLX 190",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "190",
+   "prereq_groups": [
+    [
+     "APLX80"
+    ],
+    [
+     "APLX101"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): APLX 80 and APLX 101 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to seniors.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Research Seminar in Applied Linguistics",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-190"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "APLX 199",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "APLX",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-199"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "APLX 199F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "APLX",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/100/aplx-199f"
+  },
+  {
+   "catalog_instructor": "Donald Miller",
+   "code": "APLX235",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Helps novice instructors learn about the theory and practice of language teaching and learning. Focuses on current methods used in communicatively oriented classrooms. Topics include: listening comprehension, grammar, vocabulary, reading, writing, and testing/assessment. Students cannot receive credit for this course and course 135. (Formerly Language Studies 201.)",
+   "display_code": "APLX 235",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Language Studies 201.",
+   "ge_codes": [],
+   "number": "235",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Second Language Teaching",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/200/aplx-235"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX55",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the history and use of \"bad;\" language, including issues of politeness, impoliteness, swearing, slang, and humor. In readings, lectures and discussions, we examine contexts of language use: who can say what, when, how and under what communicative conditions.",
+   "display_code": "APLX 55",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "55",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Pardon My French: Politeness, Impoliteness, Swearing, Slang, and Humor",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/lower-division/aplx-55"
+  },
+  {
+   "catalog_instructor": "Ariel , Josefina Chen",
+   "code": "APLX80",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the field of applied linguistics, learning about language acquisition, use, and teaching in multilingual contexts from multiple disciplinary perspectives. Also, introduces research models that examine psycholinguistic, sociolinguistic, and/or educational aspects of multilingualism..",
+   "display_code": "APLX 80",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "80",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "APLX",
+   "title": "Introduction to Applied Linguistics",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/lower-division/aplx-80"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "APLX 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "APLX",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/lower-division/aplx-99"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "APLX99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "APLX 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "APLX",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/aplx-applied-linguistics/lower-division/aplx-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "APLX"
+}

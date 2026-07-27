@@ -1,0 +1,142 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "GIST220",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Theory, practice, and principles of cartography. Technical introduction to graphic representation and visualization of geographic information. Lectures cover compilation and classification of geospatial datasets, the role of scale and projections in thematic maps, and theory and practice in cartographic symbolization, visualization, and communication.",
+   "display_code": "GIST 220",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "220",
+   "prereq_groups": [
+    [
+     "ENVS215A"
+    ],
+    [
+     "ENVS215B"
+    ],
+    [
+     "ENVS215C"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Spring",
+   "raw_requirements": "Prerequisite(s): ENVS 215A and ENVS 215B and ENVS 215C . Enrollment is restricted to GIST graduate students.",
+   "repeatable": false,
+   "subject": "GIST",
+   "title": "Cartography and Visualization",
+   "url": "/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-220"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GIST230",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Remote sensing is the study of the Earth's land, water, atmospheric and human-made features using imaging devices on both airborne and spaceborne platforms. The course includes the study of electromagnetic energy and the methods used to extract useful information from remotely sensed images. Students develop a strong understanding of the tools and techniques used to display, process, and analyze remotely sensed data as well as develop analytical workflows to derive remotely sensed products for a broad range of applications. Lab work involves image interpretation using aerial photographs and computer-based digital image processing.",
+   "display_code": "GIST 230",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "230",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Enrollment is restricted to graduate students enrolled in the GISTAR M.A. Program.",
+   "repeatable": false,
+   "subject": "GIST",
+   "title": "Remote Sensing",
+   "url": "/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-230"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GIST240",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to the foundational concepts, techniques, and skills of computer programming needed to tackle complex analyses and automate geoprocessing workflows in a geographic information system (GIS). Emphasis is on object-oriented programming and developing basic programming skills using the Python scripting language. Students learn essential programming concepts needed for processing spatial data variables and expressions, data typing, data structures, conditional branching, looping, functions, input/output, data manipulation, and debugging. Students also develop geoprocessing programs to edit, query, manipulate, and analyze spatial data (both vector and raster data) with ArcPy and other modules like NumPy, SciPy, and Pandas. No prior programming experience is required.",
+   "display_code": "GIST 240",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "240",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students enrolled in the Geographic Info Systems, Science, & Technologies program.",
+   "repeatable": false,
+   "subject": "GIST",
+   "title": "GIS Development and Programming",
+   "url": "/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-240"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GIST250",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Variable-subject course focused on specific systems such as 3D/CAD systems and drone technologies, field-based advanced GPS and surveying systems, and server/infrastructure development and management. As a variable subject course, objectives vary depending on the specified subject.",
+   "display_code": "GIST 250",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "250",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students enrolled in the Geographic Info Systems, Science, & Technologies program.",
+   "repeatable": false,
+   "subject": "GIST",
+   "title": "Geospatial Technology Applications",
+   "url": "/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-250"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GIST290A",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Students begin the independent completion of their master’s capstone project under the supervision of a GISTAR advisor, in collaboration with affiliated faculty or partnering research organizations. The course focuses on defining a project scope, establishing research questions, designing a geospatial workflow, and preparing the technical and analytical foundation for an applied GIS or remote sensing project. Students develop a formal project proposal and produce initial results that will guide their work in the second capstone course. Enrollment is restricted to GIST graduate students. Enrollment is restricted to GISTAR M.A. students who have completed their core courses. Enrollment requires a permission number. Email envsgpc@ucsc.edu.",
+   "display_code": "GIST 290A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "GIST",
+   "title": "GISTAR Capstone Project",
+   "url": "/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "GIST290B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Students continue and complete their master’s capstone project with ongoing mentorship from their GISTAR advisor, supported by affiliated faculty or collaborating research organizations. Emphasis is placed on advanced data processing, spatial analysis, visualization, and synthesis of results. Students finalize a professional-quality written report and deliver an oral or public presentation of their work. The course culminates in a polished, practice-ready GIS project that demonstrates mastery of geospatial methods and applied problem-solving. This course is restricted to GISTAR M.A. students who have already taken GIST 290A. A permission number is required to enroll in this course. To start a request for a permission number, please email envsgpc@ucsc.edu.",
+   "display_code": "GIST 290B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "GIST",
+   "title": "GISTAR Capstone Project",
+   "url": "/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290b"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "GIST"
+}

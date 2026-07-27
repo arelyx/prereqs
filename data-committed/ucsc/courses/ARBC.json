@@ -1,0 +1,106 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ARBC1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to Arabic language and Arabic-speaking culture with practice in all four language skills: listening, speaking, reading, and writing. Intended for students with no previous study of Arabic as well as heritage speakers.",
+   "display_code": "ARBC 1",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ARBC",
+   "title": "First-Year Arabic",
+   "url": "/en/current/general-catalog/courses/arbc-arabic/1-99/arbc-1"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ARBC2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to Arabic and Arabic-speaking culture with practice in all four language skills: listening, speaking, reading, and writing. Intended for students with no previous study of Arabic as well as heritage speakers.",
+   "display_code": "ARBC 2",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "ARBC1"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "ARBC 1 or equivalent proficiency.",
+   "repeatable": false,
+   "subject": "ARBC",
+   "title": "First-Year Arabic",
+   "url": "/en/current/general-catalog/courses/arbc-arabic/1-99/arbc-2"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ARBC3",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to Arabic and Arabic-speaking culture with practice in all four language skills: listening, speaking, reading, and writing. Intended for students with no previous study of Arabic as well as heritage speakers.",
+   "display_code": "ARBC 3",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3",
+   "prereq_groups": [
+    [
+     "ARBC2"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): ARBC 2 or equivalent proficiency.",
+   "repeatable": false,
+   "subject": "ARBC",
+   "title": "First-Year Arabic",
+   "url": "/en/current/general-catalog/courses/arbc-arabic/1-99/arbc-3"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "ARBC4",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Continuation of Arabic language and Arabic-speaking culture courses with practice in all four language skills: listening, speaking, reading, and writing. Intended for students who have successfully completed Arabic 3 or possess equivalent proficiency.",
+   "display_code": "ARBC 4",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "4",
+   "prereq_groups": [
+    [
+     "ARBC3"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): ARBC 3 or proficient equivalency.",
+   "repeatable": false,
+   "subject": "ARBC",
+   "title": "Second-Year Arabic",
+   "url": "/en/current/general-catalog/courses/arbc-arabic/1-99/arbc-4"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "ARBC"
+}

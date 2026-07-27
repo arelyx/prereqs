@@ -1,0 +1,838 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "global-and-community-health-soc-sci",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Global and Community Health B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Global and Community Health (GCH) is an interdisciplinary field of study that is connected both to urgent practical work in the world at large and the core concerns of a liberal arts education. Since GCH topics are embedded in and reflective of wide-ranging social forces, their study is situated at the intersection of diverse traditional disciplines ranging from art, literature, and history, to anthropology, sociology, psychology, politics, economics, and the natural and environmental sciences. Other interdisciplinary fields such as feminist studies and Latin American and Latino studies also intersect in influential ways with GCH, creating exciting opportunities for double majors.",
+     "University of California, Santa Cruz, students have many opportunities in the GCH curriculum for practical work in the world beyond the university. Students reflect repeatedly through the major on how their own personal learning can be effectively connected with and communicated to external audiences ranging from community organizations to employers to graduate schools.",
+     "More than two hundred courses offered by faculty from all five divisions of UC Santa Cruz contribute to the GCH curriculum. These faculty are committed to the value of interdisciplinary learning, as well as to the possibilities of connecting student research and writing with GCH concerns in the world beyond the university.",
+     "No specific courses at the high school level are required for admission to the GCH Bachelor of Arts (B.A.) at UC Santa Cruz. Whether taken at the high school or college level, courses in the natural sciences, social sciences, and humanities are appropriate background and preparation.",
+     "The GCH B.A. is appropriate for students interested in careers ranging from medicine, nursing, dentistry and pharmacy to public health and environmental health work in governmental agencies, to global health and community health work with non-governmental organizations, law firms and universities. Many of these careers also require additional post baccalaureate degrees for which the GCH B.A. provides an excellent foundation. There are also jobs open to those with a bachelor's degree in GCH in community health, counseling and educational settings as well as in business sectors such as human resources, administration, hospitality, recreation, food services, farming and construction."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students completing requirements for the B.A. in GCH will develop knowledge and competency in the following five domains:",
+     "the biological and environmental contexts of global and community health;",
+     "the social and cultural contexts of global and community health;",
+     "the institutional and policy contexts of global and community health;",
+     "the methods, skills and humanities-informed analysis of global and community health; and,",
+     "the interdisciplinary design and implementation of global and community health work."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Additional advising information for new and continuing students is available on the GCH B.A. Advising website . Students may also make an appointment with the B.A. advisor via Navigate Slug Success or contact us at any time at gchBAadvising@ucsc.edu . We look forward to hearing from you!",
+     "GCH BA Program Advising Social Sciences 1, Suite #117 (831) 459-3727 gchBAadvising@ucsc.edu"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students who intend to pursue this major should begin taking classes for the major in their first year at UC Santa Cruz. The GCH B.A. major includes some sequential courses and as a result, it is strongly recommended to meet with the GCH B.A. advisor to discuss your academic planning form .",
+     "Students are encouraged to take GCH 1 (Foundations for Global and Community Health) in the first year; this course may be offered during the summer session as well.",
+     "Additionally, the GCH B.A. program requires language competency at the first-year level. Some or all of this requirement may be satisfied upon entry with a language placement assessment . Students with language experience other than English are strongly encouraged to take the relevant language placement assessment, so as to support effective academic planning with the GCH B.A. advisor.",
+     "It is also critical that students check whether there are prerequisites for offered GCH BA electives that they wish to take. For example, although a student can complete the program without a Math Placement exam , a number of the electives have math prerequisite(s).",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply in this major are not required to complete specific major preparation courses before they come to UC Santa Cruz. The same applies for prospective transfer students applying for winter quarter admissions.",
+     "All transfer students who have not completed an articulated course equivalent to GCH 1 must take it in either in their first fall quarter or the summer quarter before.",
+     "Courses from another institution may be considered only if they appear on the student’s Transfer Credit Summary. Students who wish to substitute transferable courses taken elsewhere for the GCH B.A. major’s requirements should discuss the procedure with the GCH B.A. program advisor.",
+     "Additionally, the GCH B.A. program requires language competency at the first-year level. Some or all of this requirement may be satisfied upon entry with a language placement assessment . Students with language experience other than English are strongly encouraged to take the relevant language placement assessment, so as to support effective academic planning with the GCH B.A. advisor.",
+     "It is also critical that students check whether there are prerequisites for offered GCH B.A. electives that they wish to take. For example, although a student can complete the program without a Math Placement exam , a number of the electives have math prerequisite(s)."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "All courses that are taken to satisfy any major requirement must be completed with a letter grade of C or better."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may request to substitute GCH B.A. elective requirements with other courses taken at UCSC or another institution. Students submit a Course Substitution request form which will be reviewed by the GCH co-director."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students interested in pursuing multiple majors may NOT declare a combination of the Global and Community Health B.S. and B.A. Double majors with other degrees are permitted so long as students qualify for and complete all requirements for each of the majors, including the Disciplinary Communication and comprehensive requirements."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Students can petition for transferable credits from Global Learning programs to count toward GCH B.A. major requirements via course substitution. It is recommended that students seeking to participate in any Study Abroad opportunity check in with the GCH B.A. advisor to discuss academic planning and progression in the major, and to screen potential course substitutions. Students may not fulfill the Upper-Division Common Core electives and Disciplinary Communications (DC) requirement abroad. All study abroad courses used to satisfy GCH B.A. major requirements must be reviewed and approved by a GCH director. Please review the Course Substitution Policy section above for more details about the course substitution process.",
+     "Students are encouraged to review UC Education Abroad Program (UCEAP) study abroad courses focused on public and global health to fulfill the Area IV upper-division elective requirement for the major after approval of a request submitted to the GCH B.A. advisor."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in the GCH B.A. are awarded to graduating seniors, based primarily on a review of grades (3.70 GPA minimum), whose academic performance in the major is judged to be consistently excellent by a committee of GCH faculty. Highest honors in the major are reserved for students with consistently outstanding academic performance (3.85 GPA or above)."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Students may petition the program to substitute one upper-division independent study or field study toward the elective requirements of the major."
+    ],
+    "title": "Independent and Field Studies"
+   },
+   {
+    "paragraphs": [
+     "Medical and professional school admissions requirements vary; students should verify that their coursework will satisfy the admissions requirements of the specific programs to which they plan to apply."
+    ],
+    "title": "Medical and Professional School Admission"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Major Qualification Policy and Declaration Process",
+       "prose": [
+        "Students may declare the major after completing GCH 1 with a grade of C or better. Students with two or more grades of NP, C-, D+, D, D-, or F in GCH 1 are not qualified to declare."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "A student who has not been able to satisfy the pre-declaration requirement may petition the GCH program for an exception by using this Appeal to Qualify form within 15 days of the denial of the declaration. Within 15 days of receipt of the appeal, the department will notify the student and college of the decision. If a student has questions about the appeals process, they should contact gchBAadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare the GCH B.A. Major",
+       "prose": [
+        "Students should submit a petition to declare by completing the online declaration petition as soon as they complete the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "To initiate the process to declare, please complete the GCH B.A. Academic Planning Form located on the GCH website. For assistance, please contact GCH B.A. advising at gchBAadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare the GCH B.A. Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus four lower-division GCH electives",
+       "prose": [
+        "All students are required to take four lower-division electives from the four lists below:",
+        "A) one from the natural science and bio-environmental competency list;",
+        "B) one from the social science and political-cultural competency list;",
+        "C) one from the quantitative competency list; and,",
+        "D) one from the language competency list.",
+        "These courses are normally taken during the student's first year. All lecture/lab combinations count as one course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits.",
+        "One course required from each of the four lists."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH1",
+       "BIOE19",
+       "BIOL20A",
+       "BIOL80A",
+       "BIOL80J",
+       "BIOL86",
+       "BIOL88",
+       "BME5",
+       "BME18",
+       "BME80H",
+       "CHEM3A",
+       "CHEM4A",
+       "CHEM8A",
+       "CSE80A",
+       "ENVS24",
+       "ENVS25",
+       "ENVS80F"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Natural science and bio-environmental competency for Global and Community Health",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "BME80G",
+       "CMMU10",
+       "CMPM20",
+       "ECON1",
+       "ECON20",
+       "FMST10",
+       "FMST30",
+       "FMST31",
+       "FMST41",
+       "GCH10",
+       "GCH41",
+       "HAVC48",
+       "HIS81",
+       "JRLC60",
+       "LALS5",
+       "LALS45",
+       "LALS54",
+       "LALS55",
+       "LALS56",
+       "LALS57",
+       "LALS80J",
+       "LALS80S",
+       "LIT80K",
+       "MERR41",
+       "POLI17",
+       "POLI61",
+       "PSYC1",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15",
+       "CMPM20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Social science and political-cultural competency for Global and Community Health",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "BIOE80S"
+       ],
+       [
+        "CMMU30"
+       ],
+       [
+        "LALS15"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT17",
+        "STAT17L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Quantitative Competency for Global and Community Health",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARBC3",
+       "CHIN3",
+       "FREN3",
+       "HEBR3",
+       "ITAL3",
+       "JAPN3",
+       "PUNJ3",
+       "SPAN3",
+       "SPAN5M",
+       "SPHS6",
+       "YIDD3"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Language competency for Global and Community Health",
+       "prose": [
+        "Students are expected to complete or test out of a first-year language series. For information on placement exams, go to Languages and Applied Linguistics Department Placement and Articulation Information page and click on the language of interest."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All students are required to complete and pass two common core courses: the first, a course in Community Analysis for Global and Community Health; the second, a course in Social Analysis for Global and Community Health. All upper-division major requirement electives must be satisfied by unique, single courses; no one course can be used to satisfy multiple requirements.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-division Global and Community Health requirements",
+       "prose": [
+        "All students are required to complete and pass two common core courses: the first, a course in Community Analysis for Global and Community Health; the second, a course in Social Analysis for Global and Community Health. All upper-division major requirement electives must be satisfied by unique, single courses; no one course can be used to satisfy multiple requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Required Common Core Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH134",
+       "CMMU165",
+       "GCH166",
+       "METX108"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Requirement 1: Community Analysis for Global and Community Health",
+       "prose": [
+        "Choose one course:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH123",
+       "GCH186",
+       "SOCY146"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Requirement 2: Social Analysis for Global and Community Health",
+       "prose": [
+        "Choose one course:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The following four groups of context courses constitute the core upper-division courses of the GCH B.A. One course must be taken from each of the four GCH context areas, plus two additional electives from any of the areas. All lecture/lab combinations count as one course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": 6,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "pool": [
+       "AM115",
+       "ANTH104",
+       "ANTH107A",
+       "ANTH110F",
+       "ANTH110M",
+       "ANTH110T",
+       "ANTH110Y",
+       "ANTH111",
+       "ANTH112",
+       "ANTH129",
+       "ANTH130Y",
+       "ANTH134",
+       "ANTH136",
+       "ANTH146",
+       "ANTH161",
+       "ANTH161S",
+       "BIOE118",
+       "BIOL117",
+       "BIOL188",
+       "CMMU156",
+       "CMMU160",
+       "CMMU161",
+       "CMMU162",
+       "CMMU163",
+       "CMMU164",
+       "ECON104",
+       "ECON120",
+       "ECON156",
+       "ENVS104A",
+       "ENVS104L",
+       "ENVS130B",
+       "ENVS133",
+       "ENVS135",
+       "ENVS143",
+       "ENVS147",
+       "ENVS158",
+       "ENVS172",
+       "ENVS176",
+       "FMST124",
+       "FMST133",
+       "GCH123",
+       "GCH186",
+       "HAVC141N",
+       "HIS101D",
+       "HIS101F",
+       "HIS151",
+       "HIS151A",
+       "HIS151B",
+       "JRLC136",
+       "LALS100",
+       "LALS126",
+       "LALS143",
+       "LALS151",
+       "LALS152",
+       "LALS155",
+       "LALS174",
+       "LALS175",
+       "LALS177",
+       "LALS178",
+       "LGST108",
+       "LGST137",
+       "LGST173",
+       "LIT121O",
+       "LIT160C",
+       "LIT167G",
+       "LIT167I",
+       "METX100",
+       "METX115",
+       "METX133",
+       "POLI155",
+       "POLI160B",
+       "POLI166",
+       "POLI175",
+       "POLI187",
+       "POLI189",
+       "POLI190S",
+       "PSYC109",
+       "PSYC140G",
+       "PSYC140L",
+       "PSYC144",
+       "PSYC172",
+       "PSYC178",
+       "SOCY121",
+       "SOCY121G",
+       "SOCY122",
+       "SOCY123",
+       "SOCY127",
+       "SOCY127P",
+       "SOCY128I",
+       "SOCY128M",
+       "SOCY132",
+       "SOCY135",
+       "SOCY143",
+       "SOCY146",
+       "SOCY147",
+       "SOCY153",
+       "SOCY154",
+       "SOCY159",
+       "SOCY161",
+       "SOCY185"
+      ],
+      "source": {
+       "heading": "Six upper-division electives from the four GCH \"context\" areas",
+       "prose": [
+        "The following four groups of context courses constitute the core upper-division courses of the GCH B.A. One course must be taken from each of the four GCH context areas, plus two additional electives from any of the areas. All lecture/lab combinations count as one course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH104",
+       "ANTH110F",
+       "ANTH111",
+       "ANTH112",
+       "ANTH136",
+       "BIOE118",
+       "BIOL117",
+       "BIOL188",
+       "CMMU162",
+       "ENVS130B",
+       "ENVS135",
+       "ENVS176",
+       "LALS174",
+       "METX100",
+       "METX115",
+       "METX133",
+       "PSYC109"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Area I: Biological and environmental contexts",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH110M",
+       "ANTH110T",
+       "ANTH110Y",
+       "ANTH129",
+       "ANTH130Y",
+       "ANTH134",
+       "ANTH146",
+       "ANTH161",
+       "ANTH161S",
+       "CMMU156",
+       "CMMU160",
+       "CMMU161",
+       "CMMU163",
+       "CMMU164",
+       "ECON120",
+       "GCH123",
+       "LALS100",
+       "LALS155",
+       "LALS175",
+       "LALS177",
+       "LALS178",
+       "PSYC140G",
+       "PSYC140L",
+       "PSYC144",
+       "PSYC172",
+       "PSYC178",
+       "SOCY121",
+       "SOCY121G",
+       "SOCY127P",
+       "SOCY143",
+       "SOCY146",
+       "SOCY147",
+       "SOCY153",
+       "SOCY154",
+       "SOCY159",
+       "SOCY161"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Area II: Social, cultural and historical contexts",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON156",
+       "ENVS130B",
+       "ENVS143",
+       "ENVS147",
+       "ENVS158",
+       "ENVS172",
+       "GCH186",
+       "HIS151B",
+       "LGST108",
+       "LGST137",
+       "LGST173",
+       "POLI155",
+       "POLI160B",
+       "POLI166",
+       "POLI175",
+       "POLI189",
+       "POLI190S",
+       "SOCY122",
+       "SOCY127",
+       "SOCY128I",
+       "SOCY128M",
+       "SOCY135",
+       "SOCY185"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Area III: Institutional and policy contexts",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM115",
+       "ANTH107A",
+       "ECON104",
+       "ENVS104A",
+       "ENVS104L",
+       "ENVS133",
+       "FMST124",
+       "FMST133",
+       "HAVC141N",
+       "HIS101D",
+       "HIS101F",
+       "HIS151",
+       "HIS151A",
+       "JRLC136",
+       "LALS126",
+       "LALS143",
+       "LALS151",
+       "LALS152",
+       "LIT121O",
+       "LIT160C",
+       "LIT167G",
+       "LIT167I",
+       "POLI187",
+       "SOCY123",
+       "SOCY132"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "UCEAP study abroad courses focused on public and global health can be substituted for the upper-division electives listed in Area IV “Methods, skills & humanities-informed analysis” of the GCH B.A. A number of courses offered by UC Online are relevant to the GCH B.A. and have been approved for substitution of major requirements. Please see the GCH B.A. advisor for a current list of these courses."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Area IV: Methods, skills & humanities-informed analysis",
+       "prose": [
+        "UCEAP study abroad courses focused on public and global health can be substituted for the upper-division electives listed in Area IV “Methods, skills & humanities-informed analysis” of the GCH B.A.",
+        "A number of courses offered by UC Online are relevant to the GCH B.A. and have been approved for substitution of major requirements. Please see the GCH B.A. advisor for a current list of these courses."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement for the GCH B.A. is satisfied by completing the same courses as those required for the Disciplinary Communication requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major at UC Santa Cruz must satisfy that major’s upper-division Disciplinary Communication (DC) requirement. The 7-credit DC requirement for the GCH B.A. is satisfied by completing one of the following course combination options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH190",
+       "GCH195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Option 1",
+       "prose": [
+        "Both of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH195",
+       "GCH199A"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Option 2",
+       "prose": [
+        "Both of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GCH195",
+       "GCH199A",
+       "GCH199B"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Option 3",
+       "prose": [
+        "All three of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   }
+  ]
+ },
+ "slug": "global-and-community-health-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/global-and-community-health-soc-sci/global-and-community-health-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,746 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "computational-media",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Computer Science: Computer Game Design B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The goal of the B.S. in Computational Media degree is to provide students a deep understanding of the technical aspects of computer game engineering and a broad background in the artistic, systemic, and production elements of game design and development.",
+     "The core of the degree program is a strong grounding in computer science and computer engineering, preceded by a foundation in mathematics. Classes also develop skills in areas such as visual communication and team-oriented game production, while developing knowledge of topics such as game history, play experiences, game systems, and social and ethical issues.",
+     "In their upper-division courses, students gain depth by taking electives in computational media and computer science and engineering, with options such as Game AI, Game Graphics and Real-Time Rendering, Generative AI (Procedural Content Generation), Mobile Applications, Interactive Storytelling, and Algorithmic Music. A two-course game development sequence (Game Development Experience and Game Development Patterns) and a two-quarter comprehensive sequence (Rapid Prototyping and Game Design Studio) allow students to develop complex computer games and integrate materials from the rest of the program."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Recipients of a B.S. degree in Computer Game Design at University of California, Santa Cruz, are expected to have the following skills and experiences:",
+     "Demonstrate mastery of computer science in the following core knowledge areas: algorithms, data structures, complexity, and software engineering and development.",
+     "Apply system-level perspective by thinking at multiple levels of detail and abstraction and by recognizing the context in which a computer system may function, including its interactions with people and the physical world.",
+     "Apply problem-solving skills and the knowledge of computer science to solve real problems.",
+     "Recognize and take into account the social, legal, historical, ethical, and cultural issues in the discipline of computer games.",
+     "Demonstrate written, oral, and graphic design communication skills regarding technical material about computer science and computer games, broadly conceived.",
+     "Design and build a technical system that achieves an artistic goal for audience experience, employing sound computer science techniques.",
+     "Demonstrate the ability to collaboratively plan, organize, and execute complex, team-oriented projects, using appropriate communication and coordination techniques."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Baskin School of Engineering (BE) Undergraduate Advising Office is located in the Baskin Engineering Building, Room 225. Staff can be contacted via email at bsoeadvising@ucsc.edu or at the Undergraduate Advising website .",
+     "Transfer students to the program should consult the Transfer Students section of the Baskin Engineering Undergraduate Affairs page."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "It is recommended that high school students intending to apply to the major have completed four years of mathematics (through advanced algebra and trigonometry) as well as any available courses in computer science, arts, and media (especially interactive media). Comparable college mathematics, arts, and media courses completed at other institutions also serve to properly prepare a student for the major.",
+     "Computer Science (CS): Game Design is a course-intensive and sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at UC Santa Cruz. (Please see Plan One and Plan Two in the Planners section for more information.)",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "The Baskin School of Engineering requires letter grades for all courses in an engineering major."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major are awarded to students with a GPA of 3.50-3.79. Highest honors are awarded to students with a GPA of 3.80 and above. The GPA includes all UCSC undergraduate and graduate courses taken in all departments that fall within the Divisions of Physical and Biological Sciences and of Baskin Engineering. Baskin Engineering reserves the right to withhold honors based on other criteria, such as an incident of academic dishonesty."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Please refer to Admission to Baskin Engineering Majors in the School of Engineering section of the catalog for additional policies that apply to all School of Engineering programs. These policies include admission to the major and the need for students to obtain preapproval before taking courses elsewhere."
+    ],
+    "title": "Baskin Engineering Policies"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B",
+       "CSE16",
+       "CSE30"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students must have and maintain a cumulative minimum GPA of 2.8 in screening courses. Cumulative GPA is calculated based on all Computer Science: Computer Game Design major qualification courses taken. Please note that while AP courses satisfy screening requirements they do not count toward the GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare. Three of the five courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer and have a minimum 2.8 GPA across all Computer Science: Computer Game Design major qualification courses completed at that time.",
+        "type": "prose"
+       },
+       {
+        "text": "Three of the five courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer and have a minimum 2.8 GPA across all Computer Science: Computer Game Design major qualification courses completed at that time.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ECE13",
+       "CSE13S",
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture and lab combinations count as one course."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "and one of the following courses",
+       "prose": [
+        "Lecture and lab combinations count as one course.",
+        "Students must have and maintain a cumulative minimum GPA of 2.8 in screening courses. Cumulative GPA is calculated based on all Computer Science: Computer Game Design major qualification courses taken. Please note that while AP courses satisfy screening requirements they do not count toward the GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare. Three of the five courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer and have a minimum 2.8 GPA across all Computer Science: Computer Game Design major qualification courses completed at that time.",
+        "Students must have and maintain a cumulative minimum GPA of 2.8 in screening courses. Cumulative GPA is calculated based on all Computer Science: Computer Game Design major qualification courses taken. Please note that while AP courses satisfy screening requirements they do not count toward the GPA. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare.",
+        "Three of the five courses must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer and have a minimum 2.8 GPA across all Computer Science: Computer Game Design major qualification courses completed at that time."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM10"
+       ],
+       [
+        "MATH21"
+       ],
+       [
+        "ECE13"
+       ],
+       [
+        "CSE13S"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "CSE20",
+       "CSE12"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "(Lecture-lab combinations count as one course.)"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "In addition, completing all but one of the following courses prior to transfer is recommended to ensure timely graduation:",
+       "prose": [
+        "(Lecture-lab combinations count as one course.)",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation. If time permits, they may take the equivalents of additional major required courses beyond the core programming, computer systems and mathematics courses, especially those that develop a foundation in building and understanding games and other forms of interactive media.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation. If time permits, they may take the equivalents of additional major required courses beyond the core programming, computer systems and mathematics courses, especially those that develop a foundation in building and understanding games and other forms of interactive media."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Please note that most major courses have a strong theoretical component to prepare the student for designing—as opposed to simply using—technical and game systems. Often, other institutions' courses that emphasize applications of current programming languages and authoring tools do not count toward the major at UC Santa Cruz. For specifics on the BE's transfer student policies, please see Baskin Engineering's Transfer Students website.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. Instructions for declaring a major in the Baskin School of Engineering are on the Baskin Engineering undergraduate advising major declaration page .",
+        "Please note that most major courses have a strong theoretical component to prepare the student for designing—as opposed to simply using—technical and game systems. Often, other institutions' courses that emphasize applications of current programming languages and authoring tools do not count toward the major at UC Santa Cruz. For specifics on the BE's transfer student policies, please see Baskin Engineering's Transfer Students website.",
+        "CS: Game Design is a course-intensive and sequential program, and transfer students that intend to graduate in two years should plan their schedule carefully with Baskin Engineering Advising . (Please see Plan Three in the Planners section for more information.)"
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In order to be admitted into the Computer Science: Computer Game Design major, students must be listed as a proposed major within the School of Engineering. Please see the Baskin Engineering Major Qualification Requirements page for more information.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "In order to be admitted into the Computer Science: Computer Game Design major, students must be listed as a proposed major within the School of Engineering. Please see the Baskin Engineering Major Qualification Requirements page for more information.",
+        "Transfers to the program should consult the Transfer Students section of the Baskin Engineering Undergraduate Affairs page.",
+        "Students have to complete all the foundation courses to qualify for the major. Some courses may be satisfied via exam credit.",
+        "In addition to being listed as a proposed School of Engineering major, admission to the Computer Science: Computer Game Design major is based on the following criteria:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of the following calculus courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CSE12",
+        "CSE30",
+        "ECE13"
+       ],
+       [
+        "CSE12",
+        "CSE13S",
+        "CSE30"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "A GPA of 2.8 must be obtained in the foundation courses attempted at UC Santa Cruz. Courses satisfied via exam credit are not included in the GPA calculation. Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline. No more than 7 credits of C-, D+, D, D-, F, or NP coursework are permitted for foundation courses.",
+        "type": "prose"
+       },
+       {
+        "text": "A GPA of 2.8 must be obtained in the foundation courses attempted at UC Santa Cruz. Courses satisfied via exam credit are not included in the GPA calculation.",
+        "type": "prose"
+       },
+       {
+        "text": "No more than 7 credits of C-, D+, D, D-, F, or NP coursework are permitted for foundation courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming courses will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, Advanced Placement (AP) examination credit, or clearing the \"Test-out\" bar will start with CSE 30 and CSE 12 ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "And a core programming sequence to include one of the following group of classes:",
+       "prose": [
+        "Students with no prior programming courses will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, Advanced Placement (AP) examination credit, or clearing the \"Test-out\" bar will start with CSE 30 and CSE 12 .",
+        "A GPA of 2.8 must be obtained in the foundation courses attempted at UC Santa Cruz. Courses satisfied via exam credit are not included in the GPA calculation. Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline. No more than 7 credits of C-, D+, D, D-, F, or NP coursework are permitted for foundation courses.",
+        "A GPA of 2.8 must be obtained in the foundation courses attempted at UC Santa Cruz. Courses satisfied via exam credit are not included in the GPA calculation.",
+        "Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline.",
+        "No more than 7 credits of C-, D+, D, D-, F, or NP coursework are permitted for foundation courses."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Denials of admission to the major may be appealed by submitting a letter to the School of Engineering Undergraduate Advising office, addressed to the Computational Media undergraduate director, within 15 days from the date the notification was mailed. The appeal letter must describe why the student's prior performance was not an accurate reflection of their potential. Within 15 days of receipt of the appeal, the Undergraduate Advising office will notify the student and their college of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare by completing the petition for major/minor declaration form as soon as they complete the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "There are four steps to declaring a BE major. For a detailed guide to this process, please consult Baskin Engineering's Declare Your Major website."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The Computer Science: Computer Game Design curriculum has 24–26 courses (depending on the core programming sequence taken). Thirteen of these courses are upper-division. Several of the required courses and electives are also general education courses. Some courses may be satisfied via exam credit . Please consult with the schedule of classes or the General Catalog for more information.",
+        "Course requirements are divided into five conceptual areas and may not be credited in more than one area:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Credit for one or both MATH 19A / MATH 19B may be granted with adequate performance on the CEEB calculus AB or BC Advanced Placement examinations."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": [
+        "Credit for one or both MATH 19A / MATH 19B may be granted with adequate performance on the CEEB calculus AB or BC Advanced Placement examinations."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH21",
+       "AM10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Mathematics"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "ECE13"
+       ],
+       [
+        "CSE13S"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 12 is a prerequisite for these courses."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": [
+        "CSE 12 is a prerequisite for these courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE20",
+       "CSE12",
+       "CSE30",
+       "CSE101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students with no prior programming courses will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, AP credit, or clearing the “Test-out” bar will start with CSE 30 and CSE 12 ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "Students with no prior programming courses will take CSE 20 before CSE 30 and CSE 12 . Students with a prior programming course, AP credit, or clearing the “Test-out” bar will start with CSE 30 and CSE 12 ."
+       ]
+      }
+     }
+    ],
+    "title": "Computational Foundations"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM80V",
+       "CMPM80J"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Games and Playable Media Foundations",
+       "prose": [
+        "Complete all of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Games and Playable Media Foundations"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMPM80K",
+       "CMPM120",
+       "CMPM121",
+       "CMPM130",
+       "CMPM176"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Game Design and Development",
+       "prose": [
+        "Complete all of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Game Design and Development"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "No more than two of the five can be from CMPM 110 , CMPM 122 , CMPM 131 , CMPM 132 , CMPM 150 , CMPM 177 , CSE 103 , CSE 104 , or ECON 166A . (These seven courses focus on other skills useful in computer game development, such as design, production, and mathematical analysis.) CMPM 179 and CMPM 180 are repeatable for credit but may only count once each toward the elective requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CMPM110",
+       "CMPM119",
+       "CMPM122",
+       "CMPM125",
+       "CMPM131",
+       "CMPM132",
+       "CMPM146",
+       "CMPM147",
+       "CMPM148",
+       "CMPM150",
+       "CMPM151",
+       "CMPM152",
+       "CMPM163",
+       "CMPM164",
+       "CMPM169",
+       "CMPM172",
+       "CMPM123",
+       "CMPM177",
+       "CMPM178",
+       "CMPM179",
+       "CMPM180",
+       "CSE102",
+       "CSE103",
+       "CSE104",
+       "CSE110A",
+       "CSE110B",
+       "CSE112",
+       "CSE113",
+       "CSE115A",
+       "CSE115B",
+       "CSE115C",
+       "CSE117",
+       "CSE118",
+       "CSE119",
+       "CSE120",
+       "CSE130",
+       "CSE132",
+       "CSE138",
+       "CSE140",
+       "CSE142",
+       "CSE144",
+       "CSE145",
+       "CSE146",
+       "CSE150",
+       "CSE156",
+       "CSE157",
+       "CSE160",
+       "CSE161",
+       "CSE162",
+       "CSE163",
+       "CSE164",
+       "CSE165",
+       "CSE167",
+       "CSE168",
+       "CSE180",
+       "CSE181",
+       "CSE183",
+       "CSE186",
+       "CSE187",
+       "CSE184",
+       "ECE118",
+       "ECON166A"
+      ],
+      "n": 5,
+      "needs_review": false,
+      "notes": [
+       "Note that enrollment restrictions might apply to any of the CSE courses listed here, and it is unlikely Computer Science: Computer Game Design students will be able to enroll in enrollment-restricted courses."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Computer Game Engineering",
+       "prose": [
+        "Complete five courses from the following list. The majority of these computer game engineering electives (CGEs) are technical practice electives that focus on the development and analysis of computational systems (i.e., the “programming” part of game creation).",
+        "No more than two of the five can be from CMPM 110 , CMPM 122 , CMPM 131 , CMPM 132 , CMPM 150 , CMPM 177 , CSE 103 , CSE 104 , or ECON 166A . (These seven courses focus on other skills useful in computer game development, such as design, production, and mathematical analysis.) CMPM 179 and CMPM 180 are repeatable for credit but may only count once each toward the elective requirement.",
+        "NOTE : Lecture/lab combinations count as one course. Associated labs are required only when required by the lecture.",
+        "Note that enrollment restrictions might apply to any of the CSE courses listed here, and it is unlikely Computer Science: Computer Game Design students will be able to enroll in enrollment-restricted courses."
+       ]
+      }
+     }
+    ],
+    "title": "Computer Game Engineering"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMPM130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students must satisfy the major's upper-division disciplinary communication (DC) requirement by completing the following course:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students satisfy the senior comprehensive requirement by receiving a passing grade for all of the courses in one of the following tracks:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMPM170",
+       "CMPM171"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Game Design",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMPM173",
+       "CMPM174"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Computational Media",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMPM181",
+       "CMPM182"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Games for Impact",
+       "prose": [
+        "Note: Not all tracks will be offered in all years.",
+        "Note: Not all tracks will be offered in all years."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "computer-science-computer-game-design-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computational-media/computer-science-computer-game-design-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

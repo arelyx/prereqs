@@ -1,0 +1,490 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "latin-american-and-latino-studies",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Latin American and Latino Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Students with a Bachelor of Arts (B.A.) in Latin American and Latino Studies (LALS) obtain a multi-disciplinary, global education from the vantage point of the Americas and learn how to make the world a more just place for all. A degree in LALS prepares students to be critical thinkers and engaged global citizens, with core competencies (skills, proficiencies, and expertise) in LALS research, analysis, and intercultural dialogue, all essential for understanding the dynamics of culture, power, and knowledge."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Critical Thinking . Ability to analyze from a transnational/transborder/translocal perspective—to see the interconnections between Latin American and Latino issues, people, ideas, problems, and solutions. This includes key skills, such as understanding sources, comparing arguments, analysis, and historical perspective.",
+     "Research Methods . Working knowledge of social scientific and/or humanistic approaches to LALS relevant topics. This includes acquiring qualitative and quantitative skills, gathering or obtaining research data, finding/using primary sources, and other research methods.",
+     "Communication . Key communication skills, including written, oral presentation, and digital, including an understanding of media sources and ability to apply media literacy to cross-cultural analysis.",
+     "Community Engagement Skills . Acquisition of hands-on skills in collaborative engagement, cross-cultural fluency, and understanding of Latin America and Latino experiences for practical application and engagement with community and civic organizations."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Make an appointment with an advisor or peer advisor through Navigate Slug Success or contact us at any time at lalsadvising@ucsc.edu . We look forward to hearing from you.",
+     "LALS Undergraduate Advising 32 Merrill Academic Building (831) 459-2119 lalsadvising@ucsc.edu"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students interested in the LALS major are encouraged to enroll in the required LALS introductory course, chosen from LALS 1 or LALS 5 or LALS 10, and/or the required lower-division elective course as soon as possible, to confirm their interest in the major and to qualify to declare the major.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "LALS welcomes transfer students. Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to the University of California, Santa Cruz.",
+     "Students interested in transferring to UC Santa Cruz as LALS majors are encouraged to enroll in courses that satisfy the lower-division requirements prior to transfer, when possible. Visit Assist.org to review transfer articulations and contact the LALS undergraduate advisor with any questions.",
+     "Transfer students must complete one LALS course taught at UC Santa Cruz to qualify to declare the LALS major. Students should contact the LALS undergraduate advisor if they have questions about transfer credit and to make an academic plan."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Students who complete any one LALS course with a grade of C or better or Pass will qualify to declare the major.",
+     "In addition to completing any one LALS course with a grade of C or better or Pass to declare the major, students pursuing the Language Intensive Concentration must have a viable plan for establishing proficiency in Spanish, Portuguese, or another approved language in sufficient time to take the required two courses taught in the second language by the expected graduation term.",
+     "Students who did not satisfy the major declaration requirement but believe there are extenuating circumstances may file a written appeal. Appeals should be submitted to undergraduate advising by sending an email to lalsadvising@ucsc.edu . Students must file the appeal within 15 days of denial of major declaration. The department will notify the student and college of the decision within 15 days of the receipt of the appeal.",
+     "Students may declare the major through the MyUCSC portal. Any questions should be directed to the LALS undergraduate advisor."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "Major and minor requirements will be met with grades of C or better or Pass, within the parameters of the UC Santa Cruz Pass/No Pass grading policy."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may use up to two courses taken outside the LALS Department at UC Santa Cruz toward major requirements. This includes courses taken at UC Santa Cruz and all courses taken at other institutions, including through study abroad programs. Students may review a list of pre-approved substitutions that satisfy the lower- and upper-division elective requirements. Students may contact the undergraduate advisor to inquire about additional courses that may be approved to count as electives or if they plan to study abroad. Transfer students who have completed LALS-related work prior to transfer should contact the undergraduate advisor to ask about transfer credit."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "LALS students are encouraged to consider double major and major/minor plans. Contact the undergraduate advisor for more information."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "The LALS Department encourages students to participate in Global Learning programs whenever possible. Find out more about the programs offered on the Global Learning website or visit their offices on campus, and speak with the LALS undergraduate advisor to learn more about using global learning courses toward degree requirements."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors are awarded based on the overall GPA in courses taken that can apply toward the major. Honors are awarded to students with a GPA of 3.70 and above. Highest honors are awarded to students with a GPA of at least 3.90, based on a more comprehensive review of their academic work in the major."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The LALS major requires 10 courses with two labs."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS1",
+       "LALS5",
+       "LALS10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One LALS Introductory Course",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "One Lower-Division LALS Elective",
+       "prose": [
+        "One 5-credit course from from LALS courses numbered 1-99, including additional LALS introductory courses ( LALS 1 , 5, or 10). May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam. Students may also review the list of pre-approved outside electives found in the Course Substitution Policy. A maximum of two courses taken outside of the LALS Department at UC Santa Cruz may be used toward major requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS100",
+       "LALS100A",
+       "LALS100L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "LALS Core Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 194,
+         "lo": 101,
+         "subject": "LALS"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Five Upper-Division LALS Electives",
+       "prose": [
+        "Students take five additional 5-credit electives chosen from LALS 101-194. Students may substitute up to two courses outside the LALS Department at UC Santa Cruz toward major requirements. See the Course Substitution Policy in the Information and Policies section for more details. Students may review the list of pre-approved outside electives , which count toward this two-course limit. Students who wish to use an independent study course to satisfy an elective requirement should contact the undergraduate advisor."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "All students complete one senior seminar (LALS 194 A-Z, excluding L) and seminar lab ( LALS 194L ). This requirement satisfies the Comprehensive Requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS100A",
+       "LALS100L"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement for the Latin American and Latino Studies B.A. is met by completing:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The Comprehensive Requirement is fulfilled by completing one senior seminar (LALS 194 A-Z, excluding L) and seminar lab ( LALS 194L )."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS1",
+       "LALS5",
+       "LALS10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One LALS Introductory Course",
+       "prose": []
+      }
+     }
+    ],
+    "title": "One LALS Introductory Course"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Two Lower-Division LALS Electives",
+       "prose": [
+        "Two 5-credit courses chosen from LALS courses numbered 1-99 including additional LALS introductory courses ( LALS 1 , 5, or 10). One elective may be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam. Students may also choose courses from the pre-approved outside electives list. A maximum of two courses taken outside of the LALS Department at UC Santa Cruz may be used toward major requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Two Lower-Division LALS Electives"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS100",
+       "LALS100A",
+       "LALS100L"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "LALS Core Courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "LALS Core Courses"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 194,
+         "lo": 101,
+         "subject": "LALS"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 7,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Seven Upper-Division LALS Electives",
+       "prose": [
+        "Students take seven additional elective courses, with two or more taught primarily in a second language. Students may choose these electives from LALS 101-194 or the list of courses taught primarily in Spanish below. Students may also choose courses from the pre-approved outside electives list. Note that courses on the pre-approved outside electives list, as well as non-LALS courses on the list of courses taught primarily in Spanish, count toward the limit of two outside courses described in the Course Substitution Policy."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least two elective courses must be taught in a second language(s) of Spanish, Portuguese, or another approved language. Courses taken in a language other than Spanish may require study abroad/study at another university.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "LALS135",
+       "LALS147",
+       "LIT188R",
+       "LIT189A",
+       "LIT189B",
+       "LIT189C",
+       "LIT189F",
+       "LIT189G",
+       "LIT189L",
+       "LIT189O",
+       "LIT189Q",
+       "LIT189S",
+       "LIT189V",
+       "LIT189X",
+       "LIT189Z",
+       "SPAN156A",
+       "SPAN156F",
+       "SPAN156J",
+       "SPAN156M",
+       "SPHS115"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Courses taught primarily in Spanish",
+       "prose": [
+        "At least two elective courses must be taught in a second language(s) of Spanish, Portuguese, or another approved language. Courses taken in a language other than Spanish may require study abroad/study at another university.",
+        "Students can self-place into LALS courses taught in Spanish; other departments may have prerequisites for their approved electives. See the undergraduate advisor for more information."
+       ]
+      }
+     }
+    ],
+    "title": "Seven Upper-Division LALS Electives"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "The Comprehensive Requirement is fulfilled by completing one senior seminar (LALS 194 A-Z, excluding L) and seminar lab ( LALS 194L )."
+       ]
+      }
+     }
+    ],
+    "title": "Senior Seminar"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS100A",
+       "LALS100L"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement for the Latin American and Latino Studies Language Intensive Concentration is met by completing:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Latin American and Latino Studies Language Intensive Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students complete one senior seminar (LALS 194 A-Z, excluding L) and seminar lab ( LALS 194L )."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "latin-american-and-latino-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/latin-american-and-latino-studies/latin-american-and-latino-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

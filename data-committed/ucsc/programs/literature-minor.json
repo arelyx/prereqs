@@ -1,0 +1,180 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "literature",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Literature Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "This is a writing-intensive course."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": [
+        "This is a writing-intensive course."
+       ]
+      }
+     }
+    ],
+    "title": "Take the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study.",
+        "LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.",
+        "LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
+       ]
+      }
+     }
+    ],
+    "title": "Plus one of the following options:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Five upper-division courses are required."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LIT179A",
+        "LIT179B"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 108,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Literature Electives",
+       "prose": [
+        "Students take four 5-credit upper-division electives chosen from LIT 108-189, excluding LIT 179A or LIT 179B , which are only available to students who have been accepted to the creative writing concentration. Independent studies and internships may count toward the electives with department approval. The literature minor does not require second-language proficiency or a senior seminar."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Literature Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Substitution Policy",
+       "prose": [
+        "Students may substitute up to three upper-division courses. A maximum of two combined courses may come from another University of California campus and/or a UC Education Abroad Program. A maximum of one course may come from another UC Santa Cruz department. Courses taken at other four-year institutions will be handled on a case-by-case basis.",
+        "In order to petition for a course from another department to substitute for a literature elective, students should submit a current course syllabus to the literature undergraduate program coordinator by email ( litdept@ucsc.edu )."
+       ]
+      }
+     }
+    ],
+    "title": "Course Substitution Policy"
+   }
+  ]
+ },
+ "slug": "literature-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/literature-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

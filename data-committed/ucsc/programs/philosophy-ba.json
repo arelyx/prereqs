@@ -1,0 +1,343 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "philosophy",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Philosophy B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Philosophy investigates fundamental questions about reality, knowledge, morality, minds, and meaning. Such questions include: What is the fundamental structure of reality? How do you know you’re not dreaming at this very moment? When are you morally responsible for your actions? What, exactly, is a human mind? And what is the meaning of life? Students of philosophy can pursue these questions through topics of historical, intellectual, social, political, and personal interest.",
+     "The programs offered by the Philosophy Department are designed to familiarize students with the central concepts and key debates in the core areas of contemporary philosophical thought, and with the works of the major figures in the history of philosophy. Students may major or minor in philosophy."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students who complete the philosophy major should emerge with the following knowledge and skills:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "For undergraduate advising, please contact philadvi@ucsc.edu . For transfer students, please also consult the Transfer Information and Policy section and contact the undergraduate advisor with any questions. Please see our planned course offerings for the year at this page.",
+     ""
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz. Although this is not required for admission, students are recommended to complete courses in the following areas:",
+     "Please note that the majority of logic classes offered at community colleges will not fulfill the department’s logic requirement (i.e., PHIL 9 ). However, most students should be able to satisfy their second required lower-division introductory course before transferring in. Students may petition to substitute courses taken at other institutions, or take courses articulated on assist.org .",
+     "Transfer students wishing to major in philosophy are encouraged to consult with the Philosophy Department undergraduate advisor as soon as possible."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Students (including transfer students) may declare the major once they have enrolled in at least one 5-credit lower-division philosophy course, excluding PHIL 7 and PHIL 8 . Students of any year can declare the major. While specific courses are not required in order to declare, students will have ideally completed some or all of the lower-division requirements. There is no GPA requirement to declare the philosophy major. A student approaching the campus declaration deadline who has not enrolled in any philosophy courses will be allowed to declare the philosophy major if they enroll in a lower-division philosophy course in the next quarter.",
+     "Students may declare the major by submitting a Petition for Major/Minor Declaration to the department advisor. Students must complete all requirements for the major with a grade of P, C (2.0), or better.",
+     "Per campus policy, students must submit their major declaration no later than the third quarter of their sophomore year or, in the case of transfer students, no later than the second quarter of their junior year. Philosophy welcomes students who are pursuing more than one major or who are transferring from another major to declare after this time frame."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "For majors, students are allowed to substitute two upper-division courses for their required philosophy courses. Lower-division courses completed elsewhere may also be considered. Substitution requests are to be made via petition to and are subject to approval by the undergraduate program director."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Graduation with Honors in Philosophy requires at least a 3.7 average in all philosophy courses taken at UC Santa Cruz. Graduation with Highest Honors in Philosophy requires at least a 3.9 average in all philosophy courses taken at UC Santa Cruz. Students with an average between 3.8 and 3.9 may be awarded Highest Honors by vote of the Philosophy Department."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "When a faculty member thinks that a student has done exceptional work that could be carried to a more advanced level, the student may be given the option of writing a senior essay ( PHIL 195A ). Normally, the senior essay is completed in one quarter; in unusual circumstances, it can be continued for a second quarter ( PHIL 195B ), but only if the writing requirements for PHIL 195A are completed successfully and on time. The senior essay, like individual studies more generally, does not count toward the 11 courses required for the major.",
+     "After undergraduates have taken the requisite lower-division courses, they have a wide range of upper-division courses from which to choose. Those who are considering advanced study are encouraged to consult regularly with any member of the philosophy faculty about the courses that would best prepare them for graduate work. Preparation for graduate work ought to begin before senior year. The Philosophy Department sponsors workshops for students contemplating graduate school in philosophy."
+    ],
+    "title": "Program Planning Notes"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Eleven courses are required: two at the lower-division level, two in the history of philosophy sequence ( PHIL 100A , PHIL 100B , PHIL 100C , PHIL 100D ), six additional upper-division courses (including one advanced seminar), and an elective course which may be from any level. These 11 courses must meet the following distribution requirements:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL9"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "PHIL7",
+        "PHIL8"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 98,
+         "lo": 1,
+         "subject": "PHIL"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Plus one lower-division elective:",
+       "prose": [
+        "One 5-credit course numbered PHIL 1-98, with the exception of PHIL 7 and PHIL 8 . Transfer students should check Assist.org for articulation agreements."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL100A",
+       "PHIL100B",
+       "PHIL100C",
+       "PHIL100D"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Taking any two from the sequence PHIL 100A , PHIL 100B , PHIL 100C , PHIL 100D will satisfy the Disciplinary Communication (DC) requirement."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "History of philosophy",
+       "prose": [
+        "Two of the following courses:",
+        "Taking any two from the sequence PHIL 100A , PHIL 100B , PHIL 100C , PHIL 100D will satisfy the Disciplinary Communication (DC) requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least one must be in value theory and two in metaphysics and/or epistemology. See the lists below for approved courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus six upper-division electives",
+       "prose": [
+        "Take six 5-credit courses numbered PHIL 100A or above, excluding PHIL 195A , PHIL 195B , and PHIL 199 .",
+        "At least one must be in value theory and two in metaphysics and/or epistemology. See the lists below for approved courses.",
+        "The two courses satisfying the history of philosophy requirement cannot be counted toward the six upper-division electives. PHIL 100D may simultaneously satisfy both the history of philosophy and value theory requirement, however, six additional electives must still be completed."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL100D",
+       "PHIL118",
+       "PHIL142",
+       "PHIL143",
+       "PHIL144",
+       "PHIL147",
+       "PHIL148",
+       "PHIL152",
+       "PHIL153"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Value Theory Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL106",
+       "PHIL113",
+       "PHIL114",
+       "PHIL121",
+       "PHIL122",
+       "PHIL124",
+       "PHIL125",
+       "PHIL126",
+       "PHIL127",
+       "PHIL133",
+       "PHIL135"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Metaphysics and Epistemology Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Take the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Elective",
+       "prose": [
+        "An 11th 5-credit course from any level (lower, upper, or graduate)."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL100A",
+       "PHIL100B",
+       "PHIL100C",
+       "PHIL100D"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in philosophy is met by completing any two from the sequence:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "In the fourth year, students satisfy the comprehensive (exit) requirement by taking one course numbered 190. This advanced seminar meets the standards of the senior-year level of achievement in philosophy. Students who do superior work in an advanced seminar can be awarded a notation of Honors in the evaluation for that course."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "philosophy-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/philosophy/philosophy-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

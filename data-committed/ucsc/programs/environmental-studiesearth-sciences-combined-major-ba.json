@@ -1,0 +1,855 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "environmental-studies",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Environmental Studies/Earth Sciences Combined Major B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "As of the 2024-2025 academic year, the Environmental Studies/ Earth Sciences combined bachelor of arts (B.A.) program has been discontinued. For continuing students who proposed or declared ENVS/EART prior to 2024-2025, please refer to the degree requirements published at the time of entering UC Santa Cruz or subsequent catalog(s). New students interested in the ENVS/EART major may want to instead consider the Environmental Sciences B.S. program -- contact epsadvising@ucsc.edu with questions about the Environmental Sciences B.S. major.",
+     "----------------------------",
+     "This course of study provides students with the basic tools of Earth sciences and environmental studies needed to address environmental problems."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students graduating with a B.A. degree in environmental studies/Earth sciences combined will be able to:",
+     "Identify the societal (social, political, economic and ethical) agents and structures that contribute to environmental change. (social science competency)",
+     "Describe the structure and functioning of major physical and ecological components of the Earth’s systems. (natural science competency)",
+     "Access and analyze a complex literature addressing specific topics in environmental studies, and evaluate the usefulness and limitations of individual sources of information. (analytic thinking)",
+     "Demonstrate effective oral and written communication skills. (communication skills)."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Advising is one way to make the most of your university experience. Ask questions, seek advice, and make decisions that work best for you.",
+     "To receive advising for this major, contact envsadvi@ucsc.edu . Additional information for prospective transfer students can be found in the Transfer Information and Policy section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a course-intensive and/or sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at UC Santa Cruz. Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website . Language placement is not required for the major.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy, except that the comprehensive (senior exit) requirement must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students pursuing the Environmental Studies/Earth Sciences Combined Major cannot substitute courses to count toward their upper-division electives."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students in environmental studies are encouraged to participate in Study Abroad programs and other off-campus programs. Students who are interested in these programs shall note the following policies:",
+     "Students planning to study abroad must be declared in their major prior to studying abroad.",
+     "Environmental studies combined majors cannot petition their courses taken abroad for upper division course substitution.",
+     "For more information on EAP, please visit the UC Education Abroad Program website ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Departmental Honors. Students must have a 3.5 grade point average (GPA) in all courses used to satisfy the upper-division major requirements. To be considered for departmental honors, students are limited to no more than one grade of P in those upper-division courses.",
+     "Senior Comprehensive Honors. Honors must be nominated by the student’s faculty sponsor, and a second faculty member must confer.",
+     "Highest Departmental Honors. Students must have a 3.75 grade point average (GPA) in in all courses used to satisfy the upper-division major requirements and must also receive senior comprehensive honors (see above). To be considered for highest departmental honors, students are limited to no more than one grade of P in those upper-division courses."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Students who apply for transfer admission to the major are required to have taken the equivalents of the following courses with a C grade (2.0) or better by the end of the spring term for students planning to enter in the fall:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS24",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following chemistry series:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "MATH3",
+       "MATH11A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "GPA Requirement",
+       "prose": [
+        "To be considered for admission in the environmental studies majors, transfer students must pass the following courses or their equivalents of the following courses with a C (2.0) or better in the required courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended courses",
+       "prose": [
+        "In addition, the following courses are recommended prior to transfer to ensure timely graduation."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH11B",
+       "EART5",
+       "EART5L",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M",
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus the following:",
+       "prose": [
+        "ENVS 25",
+        "or",
+        "A course in macroeconomics or microeconomics, plus a course in national or international politics"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "BME80G",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15",
+       "PHIL22",
+       "PHIL24",
+       "PHIL28"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students pursuing environmental studies majors are encouraged to transfer in the fall quarter.",
+        "Transfer students should complete as many lower divisions as possible before transferring. All remaining lower-division requirements should be completed in summer, fall, and winter of their first year in order to start upper divisions in winter or spring of the first year. Transfer students can formally declare their major once qualification courses are successfully completed, following the declaration steps on the ENVS department website.",
+        "ENVS 25 and general chemistry are usually offered during Summer Session at UC Santa Cruz, and transfer students are encouraged to take them if they have not completed a substitute requirement or want a better understanding of the relevant material. If you are transferring, compare catalog descriptions, consult your current institution's adviser, and refer to the ASSIST website to determine equivalency.",
+        "Students who are proposed in a different major and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major. Contact envsadvi@ucsc.edu to request permission."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify for the environmental studies/Earth sciences combined major, students must complete the specific courses listed below, or their approved equivalents. For transfer requirements, see Transfer Admission Screening Requirements. Transfer students must have ENVS major listed on their application in order to pursue the major, unless approved by appeal. If a student has questions about the appeals process, they should contact envsadvi@ucsc.edu ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "ENVS24"
+       ],
+       [
+        "BIOE20C"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM3B",
+       "CHEM4B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS25",
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Determining qualification",
+       "prose": [
+        "Students who complete all the qualification courses with a grade of P, or letter grade of C or better are qualified to declare a major.",
+        "Students who have received one grade of C-, D+, D, D-, or F in one of the qualification courses taken at UC Santa Cruz will only be qualified to declare after successfully completing the same or an equivalent course with a letter grade of C or better.",
+        "Students with two or more grades of C-, D+, D, D-, or F in the qualification courses taken at UC Santa Cruz are not qualified to declare the major.",
+        "Students with AP credit (score of 3 or higher) for any of the qualification course(s) are qualified to declare after successfully completing the remaining qualification courses.",
+        "If student chooses to take the advanced general chemistry series (CHEM 4A, 4B, etc), they can substitute CHEM 4B as the major qualification requirement instead of CHEM 3B."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are not qualified to declare the major may appeal this decision by submitting an appeal to qualify for the major within 15 days of the denial of the declaration. Within 15 days of receipt of the appeal, the department will notify the student and college of the decision. If a student has questions about the appeals process, they should contact envsadvi@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first.",
+        "Students wishing to declare the ENVS/EART major should visit the Environmental Studies Department website and follow the declaration steps."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Both of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following math options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following chemistry series:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6B",
+        "PHYS6M"
+       ],
+       [
+        "PHYS5A",
+        "PHYS5L",
+        "PHYS5B",
+        "PHYS5M"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following physics options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART20",
+        "EART20L"
+       ],
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following Earth science options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS24",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS25"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "BME80G",
+       "PHIL22",
+       "PHIL24",
+       "PHIL28",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART110A"
+       ],
+       [
+        "EART110B",
+        "EART110M"
+       ],
+       [
+        "EART110C",
+        "EART110N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS100",
+       "ENVS100L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of the following:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "The upper-division courses should be selected in pursuit of a coherent plan of study, such as water policy-hydrology, restoration ecology-geochemistry, agroecology-soil physical processes, or environmental policy-climate change, among others, in consultation with faculty from both the Environmental Studies and Earth and Planetary Sciences departments. Please note that lecture/lab combinations count as a single elective."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Of the three required upper-division environmental studies electives (numbered ENVS 101- ENVS 179 ), at least one must be taken from the following list of social science electives:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ENVS110",
+       "ENVS130B",
+       "ENVS140",
+       "ENVS141",
+       "ENVS143",
+       "ENVS145",
+       "ENVS147",
+       "ENVS149",
+       "ENVS150",
+       "ENVS151",
+       "ENVS152",
+       "ENVS154",
+       "ENVS158",
+       "ENVS165",
+       "ENVS172",
+       "ENVS173",
+       "ENVS174",
+       "ENVS176",
+       "ENVS178"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "None of the three environmental studies upper-division courses can be an environmental studies internship, individual study or substitution course."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Three upper-division environmental studies courses",
+       "prose": [
+        "Of the three required upper-division environmental studies electives (numbered ENVS 101- ENVS 179 ), at least one must be taken from the following list of social science electives:",
+        "None of the three environmental studies upper-division courses can be an environmental studies internship, individual study or substitution course."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Three upper-division Earth sciences courses",
+       "prose": [
+        "Three additional upper-division Earth sciences courses (Earth and Planetary Sciences courses numbered EART 100- EART 191C ). A list of the upper-division courses offered by the Earth and Planetary Sciences Department is available in the courses section of the catalog ."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement for the Environmental Studies/Earth Sciences Combined Major is satisfied by completing:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS100",
+       "ENVS100L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "BIOE151B"
+       ],
+       [
+        "ENVS183B"
+       ],
+       [
+        "ENVS190"
+       ],
+       [
+        "ENVS195B"
+       ],
+       [
+        "ENVS196"
+       ],
+       [
+        "EART195"
+       ],
+       [
+        "EART189A",
+        "EART189B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": [
+       [
+        "BIOE151B"
+       ],
+       [
+        "ENVS183A",
+        "ENVS183B"
+       ],
+       [
+        "ENVS190"
+       ],
+       [
+        "ENVS195A",
+        "ENVS195B"
+       ],
+       [
+        "ENVS196"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "The senior comprehensive may be satisfied by completing one of the options listed below. All courses used to satisfy the senior comprehensive requirement must be taken for a letter grade.",
+        "type": "prose"
+       },
+       {
+        "text": "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students satisfy the senior comprehensive requirement in environmental studies or Earth sciences by completing either:",
+        "One of the senior comprehensive options for single environmental studies B.A. majors (see options listed below);",
+        "One of the senior comprehensive options for Earth sciences B.S. (see Comprehensive Requirement under the Earth Sciences B.S.).",
+        "The senior comprehensive may be satisfied by completing one of the options listed below. All courses used to satisfy the senior comprehensive requirement must be taken for a letter grade.",
+        "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
+        "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "environmental-studiesearth-sciences-combined-major-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/environmental-studies/environmental-studiesearth-sciences-combined-major-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

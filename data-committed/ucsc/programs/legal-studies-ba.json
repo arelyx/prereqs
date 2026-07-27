@@ -1,0 +1,612 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "politics",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Legal Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Legal Studies (LGST) is an interdisciplinary, liberal arts major focused on legal ideas, institutions, and issues in and beyond the U.S. Our courses introduce students to the integral roles of law in social life, including its complex relation to values and shifting views of justice, rights, liberty, equality, citizenship, and authority; to culture and social practices; and to historical, political, and economic forces and institutions.",
+     "Our program is housed under the auspices of the Politics Department, but operates independently and is designed to provide different disciplinary lenses on intersections between law and other realms. These include the relation of law to human rights, civil rights, voting rights, and property rights; to immigration, citizenship, borders, and sovereignty; to racial, gender, and economic inequalities; to environmental and health justice; to the scope and limits of governmental power; to the law of democracy and relation between citizens and the state; to relations between nation-states; and to concerns regarding access to justice, justice gaps, and historical and systemic injustices.",
+     "Students who join this major have the opportunity to take courses with faculty from a range of backgrounds in the social sciences, humanities, arts, and law. Our curriculum includes course offerings spanning from anthropology, art, economics, environmental studies, feminist studies, history, Latin American and Latino studies, literature, music, philosophy, politics, psychology, and sociology. This allows our students to engage their interests through different approaches and analytical frameworks, and to consider many dimensions of law and its operation. For example, legal studies students might learn how to use approaches from psychology or philosophy to think about crime and punishment; they might use approaches from political theory or economics to think about property rights or social welfare policies; they might consider civil rights or privacy issues through approaches from critical race theory or feminist studies; they might use approaches from history or sociology to consider law in different eras or in relation to different groups; they might use approaches from politics to consider human rights and legal systems outside the U.S.",
+     "The legal studies major provides a broad academic platform from which students can pursue many different career paths and/or advanced studies. Alumni from our program work in many areas: law and the legal profession, government, non-profits, education, health, and community services, technology and software engineering, business, consulting and accounting, the entertainment industry, media, journalism, and communications. Our alums are also successful in pursuing graduate degrees in many fields. Although legal studies is often of interest to students considering law school or law-related careers, the major is not designed as “pre-law” or preparation for law school. (Students who are considering law school should visit the Career Center's website and pre-law coach.",
+     "Our program strongly encourages students to enrich their studies with additional learning and opportunities. Legal Studies sponsors a speakers series and co-sponsors other talks and events, including career and alumni panels. We also encourage students to pursue internships or field experiences, such as through our legal studies internship seminar (LGST 185); Legal Aid & Advocacy ( LGST 188A and OAKS 188B /LGST 188B) through the UCDC program, a one-quarter study and internship program in Washington, D.C.; or through the UC Center Sacramento, which offers a one-quarter study and internship program at the state capitol. Students may also want to study abroad through Global Learning at UC Santa Cruz, and some may want to consider developing independent research projects on topics of special interest to them."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Upon completion of the major, undergraduates with a B.A. in Legal Studies will have met the following objectives:",
+     "describe, explain, and compare the sources and functions of law in the U.S. and other national or international contexts, including drawing on theoretical perspectives, institutional perspectives, and social/cultural perspectives;",
+     "analyze the role of laws, courts, and other legal institutions in broader society, including the historical, social, political, and economic contexts in which it operates;",
+     "evaluate the operation and function of legal norms, practices, and systems/institutions from a variety of disciplinary and social perspectives;",
+     "apply and critically evaluate arguments about legal principles and norms, practices, and institutions based on logic and evidence, and from a variety of disciplinary perspectives; and",
+     "develop and communicate well-organized, persuasive, and well-supported written and oral arguments and analyses regarding law and legal issues based on appropriate empirical and/or theoretical evidence and logic."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate Advisor",
+     "The undergraduate advisor offers specific information about navigating through the program and the curriculum and and assists students with prerequisites, requirements, policies, procedures, learning support, guidance on internships, scholarships, and opportunities for undergraduate research. Please contact the LGST undergraduate advisor at legalstudies@ucsc.edu .",
+     "Peer Advisors",
+     "Peer advising can assist in academic planning in regards to major and minor requirements and help prepare declaration of major and minor paperwork. Please contact the LGST peer advising team at lgstpoli@ucsc.edu .",
+     "Advising Hours",
+     "Legal Studies Advising"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students are permitted to take up to three LGST courses on a P/NP basis that will count toward the major. If a student wishes to qualify for honors, the number of P/NP courses should be no more than two."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students may petition the department to substitute only one upper-division independent study or field study toward the elective requirement in the legal studies major. UCDC and UCSAC internships are exempt from this limit."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "To be considered for honors or highest honors at graduation, a student must have taken a minimum of nine (9) graded courses in the major. P/NP grades are not included when calculating GPA in the major. “Honors” and “Highest Honors” classifications will be awarded to graduating students who achieve GPAs of 3.67 and 3.8 respectively, based on classes taken within the legal studies major. Per General Catalog policy, generally no more than 15 percent of the graduating class earns honors or highest honors in the major."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL7",
+       "PHIL9",
+       "PHIL22",
+       "PHIL24",
+       "PHIL27"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "No major preparation courses are required prior to transfer; however, one of the following courses or their equivalents are recommended to ensure timely graduation.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "To ensure a smooth transition into UC Santa Cruz and timely completion of the major, transfer students should meet with the undergraduate advisor as early as possible to discuss a two-year major planner and course enrollment. Completion of LGST 10 in the first quarter will allow timely declaration of the major (required in the second quarter of enrollment)."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Students may declare the legal studies major after completing LGST 10 , Introduction to the Legal Process, with a grade of C/P or better. Students will ideally have completed the remaining lower-division requirements before declaring the major. Transfer students should also consult the Transfer Information and Policy section.",
+        "Students planning to major in legal studies must formally declare before enrolling for their seventh regular quarter (or equivalent). Students admitted to the University of California with upper-division standing must formally declare during their second term of residency.",
+        "Students receiving a non-passing grade (NP, C-, D+, D, D-, or F) in the course required for admission to the major ( LGST 10 ) may only declare once they have passed the same or equivalent course with a grade of C or better. Students who receive two or more non-passing grades in the qualifying course are not eligible to declare the major. Students are eligible to appeal.",
+        "Students receiving a non-passing grade (NP, C-, D+, D, D-, or F) in the course required for admission to the major ( LGST 10 ) may only declare once they have passed the same or equivalent course with a grade of C or better. Students who receive two or more non-passing grades in the qualifying course are not eligible to declare the major. Students are eligible to appeal."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are not eligible to declare the major due to more than one non-passing grade in the major qualification course may submit an appeal. In the appeal form, students will be asked to provide:",
+        "Within 15 business days of receipt of the appeal, the department advisor will email the student and their college advisors, to notify them of the department's decision.",
+        "To discuss the major qualification process, feel free to email ymonterh@ucsc.edu or schedule an appointment via Slug Success."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first. Before submitting the petition, students are required to meet with Legal Studies Advisin g to create an academic plan."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "In addition to completing LGST 10 , legal studies majors are required to take a course in philosophical logic or ethics, a course on constitutional law, and a course on international or comparative law. They must also take courses in each of three broadly defined thematic areas: theory, public law and institutions, and law and society. Within the theory theme, students may take courses such as legal theory, jurisprudence, ethics, logic, and social and political thought; within the law and society theme, courses topics range from gender to race to psychology to economics; within the public law and institutions theme, courses range from environmental law to human rights law to criminal justice to public policy. To fulfill the senior exit requirement, students can take a senior capstone seminar, or they may opt to write a senior thesis."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "All students are required to complete and pass LGST 10 prior to declaring the major. This course is normally taken the first year."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL7",
+       "PHIL9",
+       "PHIL22",
+       "PHIL24",
+       "PHIL27"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": [
+        "All legal studies majors are required to take one of these philosophy courses (transfer students are strongly encouraged to take a similar course prior to enrolling at UC Santa Cruz)."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI111A",
+       "LGST111B",
+       "LGST111C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Complete one of the following \"Constitutional Law\" courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST116",
+       "POLI160B",
+       "POLI175"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following \"Global Law\" courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 6,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Thematic Core Course Requirement — 6 courses",
+       "prose": [
+        "Legal studies majors are required to take six thematic core courses, with a minimum of one in each of the three thematic areas:",
+        "A. Theory",
+        "B. Public Law and Institutions",
+        "C. Law and Society"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI103",
+       "POLI105A",
+       "POLI105C",
+       "POLI105B",
+       "POLI105D",
+       "LGST107",
+       "LGST109",
+       "LGST146",
+       "LGST155",
+       "LGST157",
+       "POLI184",
+       "ANTH148",
+       "ANTH187",
+       "ART172",
+       "ART181",
+       "ENVS147",
+       "FMST194O",
+       "LIT168A",
+       "PHIL126",
+       "PHIL100D",
+       "PHIL143",
+       "PHIL144",
+       "PHIL153",
+       "SOCY128C",
+       "SOCY128J",
+       "PSYC114",
+       "PSYC140M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "A. Theory Theme Courses",
+       "prose": [
+        "Take any of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI111A",
+       "LGST111C",
+       "LGST115",
+       "LGST116",
+       "POLI120A",
+       "POLI120C",
+       "LGST124",
+       "LGST125",
+       "LGST131",
+       "LGST133",
+       "LGST137",
+       "LGST139",
+       "LGST148",
+       "LGST152",
+       "LGST153",
+       "LGST155",
+       "LGST156",
+       "LGST159",
+       "LGST173",
+       "LGST188A",
+       "OAKS188B",
+       "POLI132",
+       "POLI134",
+       "POLI165",
+       "POLI167",
+       "POLI175",
+       "ECON128",
+       "ENVS140",
+       "ENVS144",
+       "ENVS149",
+       "ENVS151",
+       "ENVS150",
+       "ENVS152",
+       "ENVS165",
+       "GCH186",
+       "SOCY117E",
+       "SOCY128J",
+       "SOCY128M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "LGST 188A /OAKS 188A and OAKS 188B /LGST 188B must both be taken to count as one course."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "B. Public Law and Institutions Theme Courses",
+       "prose": [
+        "Take any of the following courses:",
+        "LGST 188A /OAKS 188A and OAKS 188B /LGST 188B must both be taken to count as one course."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST108",
+       "LGST111B",
+       "LGST113",
+       "LGST114",
+       "LGST117",
+       "LGST118",
+       "LGST130",
+       "LGST150",
+       "LGST153",
+       "LGST154",
+       "LGST158",
+       "LGST161",
+       "LGST173",
+       "LGST185",
+       "POLI110",
+       "POLI120B",
+       "POLI120C",
+       "POLI121",
+       "POLI151",
+       "POLI182",
+       "ANTH110C",
+       "ANTH126",
+       "ANTH130C",
+       "ANTH138",
+       "ANTH142",
+       "ANTH187",
+       "ENVS144",
+       "ANTH187B",
+       "ART175",
+       "ART186",
+       "ECON160A",
+       "ECON162",
+       "ECON169",
+       "ECON183",
+       "ENVS130B",
+       "FMST112",
+       "FMST194O",
+       "HIS110B",
+       "HIS110D",
+       "LIT168A",
+       "LIT168B",
+       "LIT189A",
+       "PSYC147A",
+       "PSYC147B",
+       "SOCY117E",
+       "SOCY122",
+       "SOCY127",
+       "SOCY128",
+       "SOCY128I",
+       "SPAN130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "C. Law and Society Theme Courses",
+       "prose": [
+        "Take any of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students in every major must satisfy that major's upper-division disciplinary communication (DC) requirement. The DC requirement in legal studies is satisfied by completing one of the following two options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST196"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST195A",
+       "LGST195B",
+       "LGST195C"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Senior Thesis (two or three quarters)",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students can satisfy the senior comprehensive requirement in the legal studies major by successfully completing one of the following two options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST196"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Senior Capstone",
+       "prose": [
+        "The capstone is designed to provide an interdisciplinary integration of themes related to the study of law and includes a substantial writing requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LGST195A",
+       "LGST195B",
+       "LGST195C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Senior Thesis (2-3 quarters).",
+       "prose": [
+        "Completion of a senior thesis of a minimum of 50 pages with substantial research content, supervised by a legal studies faculty member or affiliate. A cumulative UC GPA of 3.6 is strongly recommended, though not required. In rare circumstances, exceptions can be made pending approval of the proposed professor."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "legal-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/legal-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

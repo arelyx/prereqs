@@ -1,0 +1,329 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "politics",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Politics B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The study of politics is a critical part of a liberal arts education. Since political issues and practices are embedded in and reflective of the whole experience of a community, the study of politics can constitute the center of a broad-based course of study drawing on history, sociology, anthropology, philosophy, political science, economics, literature, science, and law.",
+     "Politics students at the University of California, Santa Cruz have many opportunities for field work and for internship placements. Students are encouraged to develop their own extensive independent research projects. The Politics Department also encourages students to pursue additional academic opportunities while at UC Santa Cruz. Possible programs include: the UCDC program, a one-quarter program at the UC campus in Washington, D.C. that includes coursework and an internship, UC Sacramento, a one-quarter program at the UC Center in Sacramento, and the UC Education Abroad Program.",
+     "Politics faculty members give students individual attention to help them in their studies. Faculty members are firmly committed to the value of a liberal arts education, but they are also actively engaged in programs of research and writing. The research interests of the faculty range from questions of justice to the problem of war, from campaign strategy to relations between the rich and the poor countries of the world.",
+     "No specific courses at the high school level are required for admission to the major in politics at UCSC. Courses in history, literature, philosophy, and the social sciences, whether taken at the high school or college level, are appropriate background and preparation for the politics major.",
+     "A major in politics is appropriate for students interested in careers in law, journalism, or teaching; in political and governmental work from local to international settings; in non-governmental organizations; and in corporations dealing with regulatory or global issues. Many UCSC politics graduates have also gone on to do advanced work in distinguished graduate and professional schools. Others have found active and challenging careers in business and community organizing. Still others have turned to scholarship and writing. But regardless of career direction, the most significant purpose of the politics major is to help educate a reflective and activist citizenry capable of sharing power and responsibility in a contemporary democracy."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Upon completion of the major, students will have met the following objectives:",
+     "understand the origins, development, and nature of political institutions, practices, and ideas;",
+     "place particular political phenomena in broader context (national, historical, cross-cultural, and theoretical, etc);",
+     "demonstrate familiarity with various theoretical approaches to the study of politics, and their application in different geographic and substantive areas;",
+     "critically evaluate arguments about political institutions, practices, and ideas based on logic and evidence;",
+     "develop and sustain coherent written and oral arguments regarding political phenomena, theories, and values based on appropriate empirical and/or textual evidence and logic."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate Advisor",
+     "The undergraduate advisor offers specific information about navigating through the program and the curriculum and assists students with prerequisites, requirements, policies, procedures, learning support, guidance on internships, scholarships, and opportunities for undergraduate research. Politics advising is located in Merrill 27 and can be reached at polimajor@ucsc.edu .",
+     "Transfer students should also consult the Transfer Information and Policy section.",
+     "Peer Advisors",
+     "Peer advising assists with academic planning, guidance on major and minor requirements, and preparation of declaration paperwork. Peer advising can be reached at lgstpoli@ucsc.edu .",
+     "Advising Hours",
+     "Politics Advising"
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required. To ensure timely completion of the major, prospective politics majors are encouraged to meet with a major advisor to develop an academic plan during their first year.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Students may declare the major after completing two lower-division politics courses numbered POLI 1 – POLI 70 with grades of C/P or better. These courses are normally taken during the first year for frosh.",
+     "Students who are approaching the campus declaration deadline and who have not completed two lower-division courses POLI 1 - POLI 70 , or their transfer equivalents, with grades of C or better, may petition to declare the major: the petition will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) to be resolved within at most one more enrolled quarter.",
+     "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first. Before submitting the petition, students are required to meet with Politics Advising to create an academic plan. A template planner can be found here . For students needing guidance on the declaration of major process, signing up for a declaration of major workshop is highly recommended."
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "The department accepts proposals for double majors. A student pursuing a double major meets the full requirements of the politics major as well as the full requirements of the other major.",
+     "The Politics Department offers a combined major with the Latin American and Latino Studies Department. Requirements may be found in the Latin American and Latino studies section of the catalog."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Students receiving \"Honors\" and \"Highest Honors\" in the politics major upon graduation will typically have taken at least 10 major courses for a letter grade and will have achieved in those courses GPAs of 3.7 and 3.85 respectively. Final determinations about honors are made by a faculty committee that judges the rigor, breadth, depth, improvement, and overall achievement evident in the student's academic record in the major."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Students may petition the department to substitute only one upper-division independent study or field study toward the elective requirement in the politics major. UCDC and UCSAC internships are exempt from this limit."
+    ],
+    "title": "Independent and Field Studies"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI1",
+       "POLI3",
+       "POLI4",
+       "POLI17",
+       "POLI20",
+       "POLI21",
+       "POLI60",
+       "POLI61",
+       "POLI70"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "No major preparation courses are required prior to transfer; however, one or two of the following courses or their equivalents are recommended to ensure timely graduation.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "To ensure a smooth transition into UC Santa Cruz and timely completion of the major, transfer students should meet with the politics undergraduate advisor as early as possible to discuss a two-year major planner and course enrollment. Completion of a lower-division politics course in the first quarter will allow timely declaration of the major (required in the second quarter of enrollment)."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Two lower-division politics courses",
+       "prose": [
+        "Students complete two courses numbered POLI 1 through POLI 70 , as a foundation for continued success in the politics major and as a requirement to declare the major. These courses are normally taken during the student's first year."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Four upper-division politics core courses.",
+       "prose": [
+        "The following four groups of courses constitute the core of the politics major. Four courses are required: two courses from one group, one course from a second group, and one course from a third group. In general, upper-division courses are not recommended for frosh. This requirement also satisfies the disciplinary communication requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI105A",
+       "POLI105B",
+       "POLI105C",
+       "POLI105D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Theory",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI120A",
+       "POLI120B",
+       "POLI120C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "U.S. Politics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI140A",
+       "POLI140C",
+       "POLI140D",
+       "POLI140E"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Comparative",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI160A",
+       "POLI160B",
+       "POLI160C",
+       "POLI160D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Global Politics/International Relations",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Four upper-division politics electives",
+       "prose": [
+        "Four additional courses selected from POLI 100 - POLI 189 ."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement. The DC requirement for politics majors is satisfied by completing any three of the four required core courses. The politics core course list is detailed above in the major requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive requirement in the Politics Department can be satisfied in any of the following methods:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "politics-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/politics-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

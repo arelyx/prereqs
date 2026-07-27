@@ -1,0 +1,676 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "earth-and-planetary-sciences",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Earth Sciences/Anthropology Combined Major B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Earth sciences/anthropology combined major is intended for students with interests in Earth sciences and the laboratory-based aspect of anthropology. These include anthropology students interested in archaeology or paleoanthropology who desire more intensive training in natural sciences and Earth sciences students interested in paleobiology or archaeology. The combined major provides a rigorous training in both anthropology and Earth sciences and will permit students to enter graduate programs in Earth sciences, archaeology, or paleoanthropology. The combined major has a significantly different set of cognate science and required lower- and upper-division courses than the standard major; therefore, students are advised to plan carefully and to contact academic advisers in the Earth and Planetary Sciences and Anthropology departments early if they have questions."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students graduating with a B.A. in Earth sciences/anthropology should be able to:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "A student who wants to become an Earth sciences/anthropology combined major should contact the Earth and Planetary Sciences Department undergraduate advising office at epsadvising@ucsc.edu , as soon as possible. Students will submit a declaration of major petition , and are required to meet with an undergraduate adviser to plan their program in detail. Transfer students should consult the Transfer Information and Policy section for more detailed information about academic advising."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required. Students begin with introductory anthropology, general chemistry and mathematics, and an introductory course in physical geology.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     "Courses completed at a community college or four-year university and/or advanced placement (AP) course equivalencies may be used to fulfill prerequisites.",
+     "Every proposed Earth sciences/anthropology combined major student will receive emails about advising and first quarter enrollment during the summer. Students with further questions about what to enroll in should email the Earth and Planetary Sciences undergraduate advising office at epsadvising@ucsc.edu .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "This program does not have a letter grade policy. Students must adhere to the campus letter grade policy ."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Relevant courses taken at UC Santa Cruz or other institutions may be substituted for degree requirements by approved petition. Please see the undergraduate advising office for the substitution petition form and more information about this process."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students interested in pursuing multiple majors within the Earth and environmental sciences may NOT declare the following combination of majors:",
+     "Should a student choose to double major, they must qualify for and complete the disciplinary communication and comprehensive requirements for each of the majors."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major (all concentrations) and in the combined major with anthropology are determined by a review of grades (typically 3.50 or above) at the time a student applies for graduation. A faculty committee makes the decision based on the quality of all coursework, but especially in the courses required for the major. Extra coursework or independent study as well as more intensive or rigorous coursework and the quality of a capstone project may also be taken into consideration. Highest honors may also be awarded in exceptional cases when a student’s overall grade point average (GPA) is above 3.75 and performance in the senior comprehensive requirement is equally outstanding. The department reserves the right to withhold honors and highest honors based on other criteria, such as an incident of academic dishonesty.",
+     "Honors on the senior thesis are determined independently of major honors, and must be approved by two faculty readers."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The Earth and Planetary Sciences Department welcomes applications from prospective transfer students who are prepared for the major. Students should reference assist.org to determine course equivalencies.",
+        "No major preparation courses are required prior to transfer; however, the following courses or their equivalents are recommended to ensure timely graduation:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH1",
+       "ANTH2",
+       "ANTH3"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "EART5"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M",
+       "CHEM3A",
+       "CHEM3B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Five lower-division science courses (plus laboratories) chosen from the following:",
+       "prose": [
+        "Where the lab course follows a lecture course the pair of courses counts as a single course.",
+        "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both. Prospective students are encouraged to prioritize recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows. Transfer students planning on attending UC Santa Cruz to pursue an Earth Sciences/anthropology combined major should contact the undergraduate advising office for transfer preparation information and reference assist.org to determine which courses are equivalent to these courses. Having completed as much of this coursework as possible prior to transferring allows students greater flexibility in scheduling and completing their major.",
+        "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both.",
+        "Prospective students are encouraged to prioritize recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Transfer students planning on attending UC Santa Cruz to pursue an Earth Sciences/anthropology combined major should contact the undergraduate advising office for transfer preparation information and reference assist.org to determine which courses are equivalent to these courses. Having completed as much of this coursework as possible prior to transferring allows students greater flexibility in scheduling and completing their major."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Once you have submitted your intent to register at UC Santa Cruz, here is a step-by-step guide to getting started:",
+        "1. Confirm you are a proposed Earth sciences/anthropology major.",
+        "If you are not sure of your status, log on to your MyUCSC portal to view your proposed major. If your major is proposed Earth sciences/anthropology you are all set. If the proposed major listed is not Earth sciences/anthropology, you will need to meet with an adviser for Earth sciences.",
+        "2. Once your courses have been articulated, you will receive an email from our office. This email will include information on how your coursework articulated, suggestions for summer or fall enrollment, and invite you to make an appointment to talk with your major adviser.",
+        "3. Make an appointment to talk to an advisor. Your confirmation email will include instructions for scheduling an advising appointment. Appointments are available over Zoom or in person.",
+        "4. Participate in Transfer Orientation and Welcome Week. Transfer orientation provides instructions on how to transfer your coursework to UC Santa Cruz, the advising and support available, and how to enroll. Our online transfer orientation provides all the critical information you need to transition to UC Santa Cruz and begin your major coursework.",
+        "The department also hosts a transfer student welcome in the fall that provides new transfer students an opportunity to meet other transfer students, familiarize themselves with the campus and the available resources. Welcome Week includes presentations on the Earth sciences majors, including an overview of the field courses offered and an introduction on how to get involved in undergraduate research.",
+        "5. Declaring the Earth Sciences/Anthropology combined major.",
+        "In order to declare the Earth sciences/anthropology combined major, transfer students must complete EART 5 / EART 5L , or EART 10 / EART 10L , or EART 20 / EART 20L or an approved equivalent course (with a C or better) and meet with an Earth and Planetary Sciences Department adviser by the declaration deadline."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification Policy and Declaration Process",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Transfer students may take an approved substitution for one of the above courses and should consult assist.org for equivalencies and the Transfer and Information Policy section for information about major qualifications."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify for the combined Earth sciences and anthropology major, a student must complete (with a minimum grade of C) one of the following introductory courses in physical geology and the associated lab:",
+        "Transfer students may take an approved substitution for one of the above courses and should consult assist.org for equivalencies and the Transfer and Information Policy section for information about major qualifications."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "If a student completes major qualification courses but does not meet the major qualification criteria and files an appeal, the department may accept or reject the appeal or place conditions on the student that will be resolved within at most one more enrolled quarter.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "If a student completes major qualification courses but does not meet the major qualification criteria and files an appeal, the department may accept or reject the appeal or place conditions on the student that will be resolved within at most one more enrolled quarter.",
+        "Students who are informed that they are not eligible to declare the major may appeal by submitting a letter to the Earth and Planetary Sciences undergraduate advising office within 15 days from the date the notification was sent. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students who wish to declare the Earth sciences/anthropology combined major start the process by scheduling an appointment with the Earth and Planetary Sciences undergraduate advising office to create an academic plan. Once academic planning has been completed, students submit the online major declaration petition to begin the major declaration process. Students should petition to declare the major as soon as they have met qualification requirements and/or reached their declaration deadline quarter, whichever comes first."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH1",
+       "ANTH2",
+       "ANTH3"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "EART 5 , EART 10 , EART 20 , and the corresponding labs are interchangeable."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "EART 5 , EART 10 , EART 20 , and the corresponding labs are interchangeable."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "MATH11A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Students choose five courses from the following list. Where the lab course follows a lecture course, the lab must be taken. The pair of courses counts as a single course.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M",
+       "CHEM3A",
+       "CHEM3B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both. CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus five lower-division science courses",
+       "prose": [
+        "Students choose five courses from the following list. Where the lab course follows a lecture course, the lab must be taken. The pair of courses counts as a single course.",
+        "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both.",
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students complete seven electives, three in Earth sciences and four in anthropology, as follows:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Three upper-division Earth sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ). No more than one quarter of EART 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Earth Sciences Electives",
+       "prose": [
+        "Three upper-division Earth sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ). No more than one quarter of EART 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Anthropology Electives",
+       "prose": [
+        "Four 5-credit or more upper-division archeology, biological/medical/environmental anthropology, or laboratory methods courses. Students should consult the Anthropology Department’s course list , and reference courses listed under the Archeology, Biological/Medical/Environmental Anthropology, and Laboratory Methods courses heading."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "In order to satisfy the DC requirement, students must fulfill one of the two options:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [],
+       [
+        "ANTH194C",
+        "ANTH194H",
+        "ANTH194L",
+        "ANTH194U",
+        "ANTH194V",
+        "ANTH194Y",
+        "ANTH196L",
+        "ANTH196T",
+        "ANTH196U",
+        "ANTH196W"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or one of these courses"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Option 4: Satisfactory completion of a senior thesis ( EART 195 ) with faculty readers from both departments, which must include a significant element of independent research or original work and can only be undertaken after agreement is obtained from faculty members to supervise it (at least three quarters in advance of completion).",
+        "type": "prose"
+       },
+       {
+        "text": "Option 5: Satisfactory completion of a 5-credit internship ( EART 198 ) under the guidance of an on-site supervisor, with coordination and prior approval of the Earth and Planetary Science Department’s internship director. The project must include a comprehensive final written report.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement. The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career. Therefore, prior to completing an activity to satisfy the senior comprehensive requirement, students should have already completed EART 110A , and three other upper-division courses that fulfill major requirements. Students should consult an adviser if they have any questions about the timing of their proposed comprehensive requirement activity.",
+        "Note: Courses used to satisfy the senior comprehensive requirement cannot also be used to fulfill the upper-division elective requirement.",
+        "To satisfy the comprehensive requirement, each student in this major must complete one of the following options:",
+        "Option 1: Satisfactory completion of an Anthropology 194 or 196 series senior seminar in physical anthropology or archaeology, listed in the DC section above.",
+        "Option 2: Satisfactory completion of EART 189A and EART 189B *, Geographic Information Systems with Applications in Earth Sciences and Summer Field Internship.",
+        "Option 3: Satisfactory completion of EART 191 or EART 191D , Earth Sciences Capstone Seminar or Practical Geochemistry.",
+        "Option 4: Satisfactory completion of a senior thesis ( EART 195 ) with faculty readers from both departments, which must include a significant element of independent research or original work and can only be undertaken after agreement is obtained from faculty members to supervise it (at least three quarters in advance of completion).",
+        "Option 5: Satisfactory completion of a 5-credit internship ( EART 198 ) under the guidance of an on-site supervisor, with coordination and prior approval of the Earth and Planetary Science Department’s internship director. The project must include a comprehensive final written report.",
+        "* EART 189A and EART 189B have as prerequisites EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M ."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "earth-sciencesanthropology-combined-major-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciencesanthropology-combined-major-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

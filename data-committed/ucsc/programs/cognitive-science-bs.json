@@ -1,0 +1,954 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "psychology",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Cognitive Science B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Students who complete the cognitive science major should demonstrate competency in:",
+     "Application of knowledge with critical thinking skills. Students should be able to use critical thinking to evaluate and interpret evidence, and to apply cognitive science concepts, theories, and research findings to individual, social, and cultural issues.",
+     "Application of research methods with values and integrity. Students should be able to apply basic research methods in cognitive science, with sensitivity to ethical principles.",
+     "Communication skills. Students should be able to demonstrate effective communication skills following professional conventions in cognitive science appropriate to purpose and context.",
+     "Awareness of methodological and theoretical diversity. Students should be able to understand the complexities of cognition using neural, embodied, social, and/or technological approaches."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Psychology Department has an advising office located at Social Sciences 2, Room 150 and can also be reached at psyadv@ucsc.edu . The advisors assist students in obtaining information regarding major requirements and petitions, course planning, substitution of transfer courses for advance enrollment, careers, and graduate schools. Students are encouraged to take advantage of the advising office throughout their college career. Transfer students are encouraged to consult the Transfer Information and Policy Section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students are admitted to the University of California, Santa Cruz with a \"proposed major\" in most cases, and later petition to officially declare the major. Admission to UC Santa Cruz does not guarantee acceptance into a particular major. Students entering UCSC as first-years must declare a major by the major declaration deadline during their sixth quarter. Junior transfer students must declare a major no later than the deadline during their second quarter at UCSC. Learning about and preparing for the major should be primary goals for students."
+    ],
+    "title": "Acceptance to the Cognitive Science Major"
+   },
+   {
+    "paragraphs": [
+     "Students who enter UC Santa Cruz as frosh/first-year students are required to formally declare a major before enrolling in their 7th quarter/third year at UCSC. It is strongly recommended that students interested in pursuing the cognitive science major complete major requirements by the start of their 6th quarter or have no more than one requirement in progress during the 6th quarter. Students should complete PSYC 20 , the statistics requirement, the calculus requirement, and the computer programming requirement. These classes should be taken for a letter grade. After completing these four lower-division required courses, students may petition to declare the cognitive science major subject to the grade requirements described in the Major Qualification section below. Students are recommended to fulfill major qualifications as early as possible to avoid delays in the major declaration and enrollment processes. Refer to the Requirements and Planners section below and consult with a department advisor early to begin the process toward the completion of major qualifications and major declaration. High school students considering cognitive science as their university major find that the best preparation is a solid general education in English writing, mathematics at least through precalculus, biological and physical sciences, and social sciences.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All lower-division courses required for major declaration have to be taken for a letter grade. In the instance that they are taken for Pass/No Pass, a Pass grade will be accepted, but will be considered as equivalent to a C in the 2.8 GPA calculation requirement."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students who want to fulfill requirements with courses taken at other colleges (excluding articulated courses from California Community Colleges) must petition for the substitution of their transfer courses via email to psyadv@ucsc.edu. PSYC 100 , Research Methods in Psychology, and the senior seminar must be taken at UC Santa Cruz. Students planning to transfer to UC Santa Cruz should check with the advising office of their present college, or refer to assist.org ."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students wishing to pursue double majors or a major/minor combination are encouraged to meet with an advisor to create an academic plan to do so.",
+     "Students who are interested in adding a double major in cognitive science must do so by their original major declaration deadline (i.e. in their sixth quarter for students admitted as frosh). Transfer students who were not originally screened for and admitted as a cognitive science major may not add cognitive science as a second major.",
+     "Students may not pursue a double major between cognitive science and psychology (general or intensive)."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Up to three Global Learning courses may be approved for the major and prior course approval is recommended. Global Learning courses equivalent to less than 5 quarter credits (i.e. 4 or 4.5 quarter credits) should be discussed with a psychology undergraduate advisor to ensure major requirements are still met. Please review the Global Learning section of this webpage if you are considering studying abroad and want to try to obtain approval for such courses to count toward the major."
+    ],
+    "title": "Global Learning"
+   },
+   {
+    "paragraphs": [
+     "Honors in the cognitive science major are awarded to graduating seniors whose UC Santa Cruz grade point average is a 3.6 or higher in psychology courses (1-189).",
+     "Highest honors in the major are reserved for students who meet the honors criteria as well as successful completion of a senior thesis, or whose UC Santa Cruz grade point average is a 3.9 or higher in psychology courses (1-189)."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "The Psychology Department offers a range of educational opportunities, including opportunities for undergraduate research and field study. For more information, see the department's educational opportunities website ."
+    ],
+    "title": "Research, Field Study, and Other Educational Opportunities"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Transfer students who want to pursue the cognitive science major, must have applied and been admitted to UC Santa Cruz as a proposed cognitive science major. The following calculus, statistics, and programming courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall. Some courses may be satisfied via exam credit . All courses must be passed with a grade of C (2.0) or higher and a cumulative GPA of 2.8 must be obtained across the required courses. Students with exam credit for any of the courses only need to receive a 2.8 GPA in the remaining coursework.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students who want to pursue the cognitive science major, must have applied and been admitted to UC Santa Cruz as a proposed cognitive science major. The following calculus, statistics, and programming courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall. Some courses may be satisfied via exam credit . All courses must be passed with a grade of C (2.0) or higher and a cumulative GPA of 2.8 must be obtained across the required courses. Students with exam credit for any of the courses only need to receive a 2.8 GPA in the remaining coursework."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM11A",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Calculus",
+       "prose": [
+        "One of the following:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "One of the following"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "CSE20",
+       "CSE30",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Programming",
+       "prose": [
+        "One of the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Recommended Prior to Transfer",
+       "prose": [
+        "Though not required, students are recommended to complete the following prior to transfer:",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or all UC Santa Cruz general education requirements before matriculation.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or all UC Santa Cruz general education requirements before matriculation."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students are admitted to UC Santa Cruz with a \"proposed major\", and later petition to officially declare the major. Transfer students who want to pursue the cognitive science major, must have applied and been admitted to UC Santa Cruz as a proposed cognitive science major. Transfer students' records are screened for preparation for the cognitive science major at the time of admission. In order to successfully transition to UCSC, transfer students must be formally declared by the deadline in their second quarter of enrollment. Students are advised to set up and check their UCSC email regularly, make contact with their major advisors, and consider taking summer session courses prior to their first fall quarter.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Students are admitted to UC Santa Cruz with a \"proposed major\", and later petition to officially declare the major. Transfer students who want to pursue the cognitive science major, must have applied and been admitted to UC Santa Cruz as a proposed cognitive science major. Transfer students' records are screened for preparation for the cognitive science major at the time of admission. In order to successfully transition to UCSC, transfer students must be formally declared by the deadline in their second quarter of enrollment. Students are advised to set up and check their UCSC email regularly, make contact with their major advisors, and consider taking summer session courses prior to their first fall quarter.",
+        "Admitted transfer students who satisfy the requirements of the screening policy can declare the major at any time after the first day of instruction in their first quarter at UC Santa Cruz and by their second quarter declaration deadline. See the How to Declare the Major Section for more information on declaration processes."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students may petition to declare the cognitive science major once they have completed the lower-division requirements by the start of their 6th quarter or have no more than one requirement in progress during the 6th quarter (for students who enter as frosh) or their second quarter of enrollment (for transfer students).",
+        "type": "prose"
+       },
+       {
+        "text": "All courses must be passed with a grade of C (2.0) or higher and a cumulative GPA of 2.8 must be obtained across the required courses. Some courses may be satisfied via exam credit . Students with exam credit for any of the courses only need to receive a 2.8 GPA in the remaining coursework.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Students may petition to declare the cognitive science major once they have completed the lower-division requirements by the start of their 6th quarter or have no more than one requirement in progress during the 6th quarter (for students who enter as frosh) or their second quarter of enrollment (for transfer students).",
+        "All courses must be passed with a grade of C (2.0) or higher and a cumulative GPA of 2.8 must be obtained across the required courses. Some courses may be satisfied via exam credit . Students with exam credit for any of the courses only need to receive a 2.8 GPA in the remaining coursework.",
+        "Transfer students might be able to petition to substitute equivalent courses they have taken from other institutions. Some courses taken at community colleges may already qualify to satisfy some of our lower-division requirements. Students not meeting the grade requirements in the lower-division courses may take any of the listed alternatives as substitutions; the department will use the highest grade to compute GPA."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Introduction to Cognition",
+       "prose": [
+        "Take the following course:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture and lab combinations count as a single course"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "Choose one of the following courses:",
+        "Lecture and lab combinations count as a single course"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM11A",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Calculus",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "CSE20",
+       "CSE30",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CSE 20 may be satisfied by successfully completing the CSE 20 Test Out Exam ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Computer Programming",
+       "prose": [
+        "Choose one of the following courses:",
+        "CSE 20 may be satisfied by successfully completing the CSE 20 Test Out Exam ."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who did not satisfy the major admission requirements by their declaration deadline, but believe there are extenuating circumstances concerning their performance in the foundational courses may file an appeal for department review. For more information on the appeals process, please make an appointment with a staff advisor or email psyadv@ucsc.edu . The department will notify the student of the decision within two weeks of the receipt of the appeal."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh, in the second quarter of enrollment for transfers), will either be approved or denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed MQ courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification (MQ) courses or reach their declaration deadline quarter, whichever comes first. Transfer students can petition to declare their major as early as the first day of instruction during their first quarter at UCSC.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh, in the second quarter of enrollment for transfers), will either be approved or denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed MQ courses.",
+        "To petition to declare the major, students should follow the instructions on the department's website ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The undergraduate degree program in cognitive science is a program offering a course of study leading to the bachelor of science (B.S.) degree. Fifteen courses (77 credits) are required. Because some courses have additional prerequisites, students should read the descriptions of courses carefully, noting the prerequisites for courses of interest to them. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Introduction to Cognition",
+       "prose": [
+        "Take the following course:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture and lab combinations count as a single course."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "Choose one of the following courses:",
+        "Lecture and lab combinations count as a single course."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM11A",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Calculus",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE13S",
+       "CSE20",
+       "CSE30",
+       "ECE13"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Some of these courses have prerequisites. CSE 20 may be satisfied by successfully completing the CSE 20 Test Out Exam ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Computer Programming",
+       "prose": [
+        "Choose one of the following courses:",
+        "Some of these courses have prerequisites. CSE 20 may be satisfied by successfully completing the CSE 20 Test Out Exam ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Core Courses",
+       "prose": [
+        "Students must complete a course from three of the four following areas:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC121"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Perception",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC123"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Neuroscience",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC125"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Language",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC129"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Memory",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students complete seven electives; three cognitive psychology electives, and four interdisciplinary electives."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Cognitive Psychology Electives",
+       "prose": [
+        "Students must complete three additional upper-division psychology courses as follows:",
+        "Students can access a full list of courses on the department’s website. Upper-division courses and their catalog descriptions are grouped within each of the subfields"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "One Senior Seminar:",
+       "prose": [
+        "Seminar courses are psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement.” These are any courses from the PSYC 119, PSYC 139, PSYC 159, or PSYC 179 series. Only one seminar will count toward fulfilling these elective requirements."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC103",
+       "PSYC104",
+       "PSYC105",
+       "PSYC109",
+       "PSYC112",
+       "PSYC116",
+       "PSYC120",
+       "PSYC120D",
+       "PSYC121",
+       "PSYC122",
+       "PSYC123",
+       "PSYC124",
+       "PSYC125",
+       "PSYC126",
+       "PSYC129",
+       "PSYC130",
+       "PSYC133",
+       "PSYC138",
+       "PSYC138M",
+       "PSYC140F",
+       "PSYC147A",
+       "PSYC160",
+       "PSYC178",
+       "PSYC181",
+       "PSYC182",
+       "PSYC193",
+       "PSYC193I",
+       "PSYC193S",
+       "PSYC194A",
+       "PSYC194B",
+       "PSYC195A"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "PSYC 193 , PSYC 193I , PSYC 194A , PSYC 194B , and PSYC 195A may satisfy only one elective requirement . One of these electives may be replaced by a core course that was not used to satisfy the core courses requirement. PSYC 204 - PSYC 252 , graduate cognitive courses, may be substituted by petition."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two additional courses from the following list:",
+       "prose": [
+        "PSYC 193 , PSYC 193I , PSYC 194A , PSYC 194B , and PSYC 195A may satisfy only one elective requirement .",
+        "One of these electives may be replaced by a core course that was not used to satisfy the core courses requirement. PSYC 204 - PSYC 252 , graduate cognitive courses, may be substituted by petition."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete four interdisciplinary electives from the list of courses pre-approved by the Psychology Department, at least one of which should be upper-division. If four lower-division interdisciplinary electives are taken, students can use an additional upper-division PSYC course to count toward the upper-division requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Interdisciplinary Electives",
+       "prose": [
+        "Complete four interdisciplinary electives from the list of courses pre-approved by the Psychology Department, at least one of which should be upper-division. If four lower-division interdisciplinary electives are taken, students can use an additional upper-division PSYC course to count toward the upper-division requirement.",
+        "Students are responsible for planning their course of study to complete any necessary prerequisites for electives they wish to take. A list of possible interdisciplinary elective courses, including prerequisites, are given below."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH1",
+       "ANTH100",
+       "ANTH101",
+       "ANTH104",
+       "ANTH105",
+       "ANTH106",
+       "ANTH112",
+       "ANTH139",
+       "ANTH173",
+       "ANTH174",
+       "ANTH184",
+       "ANTH194B",
+       "ANTH194H",
+       "BIOE20C",
+       "BIOE109",
+       "BIOE124",
+       "BIOE124L",
+       "BIOE129",
+       "BIOE129L",
+       "BIOE140",
+       "BIOE141L",
+       "BIOE147",
+       "BIOE172",
+       "BIOL105",
+       "BIOL120",
+       "BIOL125",
+       "METX41",
+       "METX135",
+       "PHIL127",
+       "PHIL190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "list",
+      "source": {
+       "heading": "",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ARTG80G",
+       "ARTG80H",
+       "CMPM25",
+       "CMPM26",
+       "CMPM35",
+       "CMPM80A",
+       "CMPM80H",
+       "CMPM80I",
+       "CMPM80K",
+       "CMPM125",
+       "CMPM131",
+       "CMPM146",
+       "CMPM148",
+       "CMPM177",
+       "CMPM178",
+       "CSE80A",
+       "CSE107",
+       "ECE8",
+       "ECE9",
+       "ECE167",
+       "MUSC80L",
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "list",
+      "source": {
+       "heading": "",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH139",
+       "APLX102",
+       "APLX116",
+       "LING50",
+       "LING53",
+       "LING80C",
+       "LING80D",
+       "LING80K",
+       "LING101",
+       "LING102",
+       "LING105",
+       "LING111",
+       "LING112",
+       "LING113",
+       "LING116",
+       "LING117",
+       "LING124",
+       "LING125",
+       "LING140",
+       "LING151",
+       "LING152",
+       "LING155",
+       "LING171",
+       "LING172",
+       "LING174"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "list",
+      "source": {
+       "heading": "",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHIL7",
+       "PHIL9",
+       "PHIL11",
+       "PHIL23",
+       "PHIL80S",
+       "PHIL100B",
+       "PHIL100C",
+       "PHIL121",
+       "PHIL123",
+       "PHIL125",
+       "PHIL127",
+       "PHIL133",
+       "PHIL135",
+       "PHIL190"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Lecture and lab combinations count as a single course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits. The upper-division School of Engineering courses in this section have additional prerequisites that are not listed here. LING 111 formerly LING 55 LING 112 formerly LING 52 PHIL 190 satisfies this requirement by petition only."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "",
+       "prose": [
+        "Lecture and lab combinations count as a single course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits.",
+        "The upper-division School of Engineering courses in this section have additional prerequisites that are not listed here.",
+        "LING 111 formerly LING 55",
+        "LING 112 formerly LING 52",
+        "PHIL 190 satisfies this requirement by petition only."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in cognitive science is satisfied by completing PSYC 100 (Research Methods in Psychology) and one of the seminar courses offered by the department (listed above)"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "UC Santa Cruz requires that every student satisfy a senior exit/comprehensive requirement prior to graduation. Cognitive science students will satisfy this requirement by receiving a passing grade in a senior seminar, which is also part of the DC requirement (see above). To ensure that all students can meet the seminar requirement, students are encouraged to enroll in only one senior seminar. Students are only allowed to enroll in additional seminars after all other students who still need to fulfill their seminar requirement have enrolled."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "cognitive-science-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/psychology/cognitive-science-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

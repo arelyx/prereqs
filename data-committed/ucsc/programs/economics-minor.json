@@ -1,0 +1,226 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "economics",
+ "division": "social-sciences-division",
+ "kind": "minor",
+ "name": "Economics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON1",
+       "ECON2"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take these courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Take these courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "AM11A",
+        "AM11B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B",
+        "MATH22"
+       ],
+       [
+        "MATH19A",
+        "MATH19B",
+        "MATH23A"
+       ],
+       [
+        "MATH19A",
+        "MATH19B",
+        "AM30"
+       ],
+       [
+        "MATH11A",
+        "AM11B"
+       ],
+       [
+        "MATH19A",
+        "AM11B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following options"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT17",
+       "STAT17L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Enrollment in STAT 17 requires concurrent enrollment in STAT 17L (2-credit lab). Any transfer credit for STAT 17 and STAT 17L will be evaluated on a case-by-case basis. Students should contact the undergraduate advisors by emailing econ_ugrad_coor@ucsc.edu ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following statistics courses:",
+       "prose": [
+        "Enrollment in STAT 17 requires concurrent enrollment in STAT 17L (2-credit lab). Any transfer credit for STAT 17 and STAT 17L will be evaluated on a case-by-case basis. Students should contact the undergraduate advisors by emailing econ_ugrad_coor@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Plus the following statistics courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100A",
+       "ECON100M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Choose one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100B",
+       "ECON100N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON113"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "ECON104"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "ECON"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Plus three economics electives",
+       "prose": [
+        "Students complete three additional 5-credit electives chosen from ECON 100-189, excluding ECON 104 . No course may satisfy more than one requirement of the minor."
+       ]
+      }
+     }
+    ],
+    "title": "Plus three economics electives"
+   }
+  ]
+ },
+ "slug": "economics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/economics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

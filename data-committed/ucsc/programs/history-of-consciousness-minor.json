@@ -1,0 +1,84 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "history-of-consciousness",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "History of Consciousness Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HISC1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Students are required to take HISC 1 , Introduction to History of Consciousness. Students may petition for approval of an alternative lower-division course."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "HISC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students are required to take five 5-credit, upper-division history of consciousness courses numbered HISC 100-199.",
+        "Students may, with permission of the instructor, petition the department to substitute a 5-credit graduate seminar for one of the required upper-division courses. In addition, students may petition to substitute an upper-division course offered by affiliated faculty in other departments.",
+        "Students must complete all requirements for the minor with a grade of P, C (2.0), or better."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   }
+  ]
+ },
+ "slug": "history-of-consciousness-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history-of-consciousness/history-of-consciousness-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

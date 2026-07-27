@@ -1,0 +1,980 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "film-and-digital-media",
+ "division": "arts-division",
+ "kind": "major",
+ "name": "Film and Digital Media B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Students in the general film and digital media (FDM) major develop an understanding of major movements in world cinema and different aesthetic approaches to the medium while studying the cultural impact of television and the rise of video and digital art in recent decades.",
+     "The integrated critical practice concentration is designed for film and digital media majors who have a special aptitude for and interest in combining work in critical studies and production. The concentration provides them with a more rigorous pathway through the major and, in their senior year, allows them to work on a senior project that integrates creative and intellectual work.",
+     "Students in all facets of the major acquire skills in media analysis while maintaining a broadly based, liberal arts perspective.",
+     "Students enrolled in film and digital media production classes have access to audio, video, and digital production and post-production equipment. Facilities include a digital media lab; stop-motion animation lab; audio recording studio; sound stage with green screen; motion capture facility; digital nonlinear editing rooms; video format conversion rooms; a computerized sound effects library; and student equipment checkout. Additionally, computer laboratories equipped for digital image manipulation, web authoring, and interactive interface design and viewing rooms are available. The critical studies facilities include classrooms equipped for high-end film, video, and data projection. The library holdings in film and video history, theory, and literature are complemented by a large collection of films, videos, laser disks, and DVDs, including a diverse range of international feature films, experimental film and video work, animation, silent films, and documentaries.",
+     "Some courses offered by the Film and Digital Media Department are restricted in enrollment; admission is based on the completion of prerequisites and other specific written application requirements.",
+     "Upper-division digital media and production studio courses require coursework to be completed on computers. Instruction in and software for production courses utilizes the macOS platform and primarily consists of Apple and Adobe video production software packages. Many University of California, Santa Cruz students purchase laptop computers. Film and digital media students who are considering purchasing a laptop computer for production work are encouraged to consult with the department’s operations staff to discuss recommended computer configurations and information on education pricing on software packages."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students who earn a B.A. in the film and digital media major will gain the skills, knowledge, and understanding that will enable them to:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Academic advising for the film and digital media major is done via email and advising appointments. Please email fdmadvising@ucsc.edu and refer to the department's website for the most up-to-date advising information.",
+     "Transfer students should review the Transfer Information and Policy Section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "For information about getting started in the film and digital media major, please refer to the department website and resources from the department's undergraduate advisors.",
+     "This major is not highly sequential or course intensive. Students may begin taking courses toward the major in their first year, but it is not required."
+    ],
+    "title": "Getting Started in the Major: First-Year Students"
+   },
+   {
+    "paragraphs": [
+     "Film and digital media is a non-screening major. Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.",
+     "Transfer students can finish the film and digital media general major requirements within two years. While not required for admission, transfer students are encouraged to complete UCSC general education requirements or the California General Education Transfer Curriculum (CalGETC) prior to transferring.",
+     "To meet major qualifications, all major qualification courses ( FILM 20A ; and FILM 20B , FILM 20C , or FILM 20P ) must be completed by the end of the first quarter in residence.",
+     "A maximum of two courses from another department or institution may be substituted if articulated through assist.org or approved by Film and Digital Media faculty. At least one of the major qualification courses must be taken at UCSC.",
+     "Transfer students are strongly encouraged to participate in the campus orientation programs, connect with the undergraduate advisor, and utilize transfer-focused campus partners like STARRS upon their arrival."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "Letter grades of C or better, or P grades, are required in the major requirement courses (See Major Qualification above). Letter grades of C- or below, or NP grades, may not be used to fulfill the major's requirements. Students must follow the campus policy on grading requirements, including the P/NP grading policy."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "A maximum of two courses from another department or institution may be substituted if articulated through assist.org or approved by Film and Digital Media faculty. For transfer students, FILM 20 equivalents completed at another institution do not count toward the two course maximum."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "The department strongly encourages students to explore studying abroad while attending UC Santa Cruz. Please see the UCSC Global Learning website for more information and consult with the undergraduate advisors as early as possible to discuss planning.",
+     "Film and digital media has unique department-based exchanges with the University of Sussex in England and the University of Bergen in Norway. UCSC Global Seminars taught by our Film and Digital Media faculty in Italy and Morocco are also offered. Students in these programs may be allowed an additional substitution for participation in these programs. Please see the Film and Digital Media Department's website for more information."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in film and digital media are awarded to graduating seniors who meet or exceed a cumulative GPA of 3.5 in the FILM 20 series and FILM 100-197."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "The Film and Digital Media Department has designed a three-year pathway for students who want to complete their Film and Digital Media B.A. in three years. It is an intensive program that includes all of the courses for the current film and digital media general major as well as all general education requirements and electives required for the university. The three-year pathway is designed for the FDM general major; completing a concentration is not feasible for a three-year pathway. Students should begin the FDM general major three-year pathway in their first year to be able to complete the required courses in three years. A sample planner can be found on the university advising website . For more information, contact the Film and Digital Media Department undergraduate advisors."
+    ],
+    "title": "Three-Year Pathway"
+   },
+   {
+    "paragraphs": [
+     "For students interested in pursuing a focused area of study, the film and digital media major offers unique pathways embedded within the general major in critical studies and in production. If interested in pursuing these specialized academic plans, please contact the undergraduate advisor as early as possible. Please note that these pathways are not officially recognized on your transcript."
+    ],
+    "title": "Critical Studies and Production Pathways"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "FILM20B"
+       ],
+       [
+        "FILM20C"
+       ],
+       [
+        "FILM20P"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Complete the following courses with a grade of C/P or better. At least one course must be taken at UCSC.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "FILM20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Complete the following courses with a grade of C/P or better. At least one course must be taken at UCSC."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The Film and Digital Media Department makes every effort to support students in declaring their major. Students who have reached their declaration deadline quarter but have not met major qualification requirements should submit the Petition for Major/Minor eForm. A major declaration petition by a student who does not meet major qualification requirements serves as an appeal. The result will be approval, denial, or the setting of conditions that must be resolved within at most one more enrolled quarter. This will be determined by a departmental review of the student’s individual context and potential for success in the major. If a separate appeal is necessary, students will be given individualized parameters and instructions. These appeals will be reviewed, and a response will be sent to both the student and the student’s college within 15 business days.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "The Film and Digital Media Department makes every effort to support students in declaring their major. Students who have reached their declaration deadline quarter but have not met major qualification requirements should submit the Petition for Major/Minor eForm. A major declaration petition by a student who does not meet major qualification requirements serves as an appeal. The result will be approval, denial, or the setting of conditions that must be resolved within at most one more enrolled quarter. This will be determined by a departmental review of the student’s individual context and potential for success in the major. If a separate appeal is necessary, students will be given individualized parameters and instructions. These appeals will be reviewed, and a response will be sent to both the student and the student’s college within 15 business days."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning to declare when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh; in their second quarter, for students admitted as junior transfers), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification (MQ) courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students must submit a petition to declare and complete the major declaration workshop in Canvas as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first).",
+        "Please see the department’s website for details on the process for submitting the petition to declare and completing the major declaration workshop.",
+        "Students petitioning to declare when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh; in their second quarter, for students admitted as junior transfers), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification (MQ) courses.",
+        "Acceptance into the film and digital media major does not constitute acceptance into a concentration."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM20B",
+       "FILM20C",
+       "FILM20P"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two additional 20-level courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM120"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Core Curriculum",
+       "prose": [
+        "The core curriculum consists of four courses total: FILM 120 , plus one course from three of the following four groups (three total, each from a different group):"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "FILM130",
+        "FILM132A",
+        "FILM132B"
+       ],
+       [
+        "FILM134A",
+        "FILM134B"
+       ],
+       [
+        "FILM136A",
+        "FILM136B",
+        "FILM136C",
+        "FILM136D"
+       ],
+       [
+        "FILM170A",
+        "FILM170B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of_groups",
+      "source": {
+       "heading": "One course from three of the following four groups: (three total)",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM130",
+       "FILM132A",
+       "FILM132B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Group 1:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM134A",
+       "FILM134B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Group 2:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM136A",
+       "FILM136B",
+       "FILM136C",
+       "FILM136D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Group 3:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM170A",
+       "FILM170B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Group 4:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take at least one course from the following list focusing on non-Western perspectives, races, ethnicities, genders, classes, sexualities, or abilities. The course chosen will satisfy the Diversity Requirement along with its respective category of the Core Curriculum or upper-division elective requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ANTH110P",
+       "FILM132A",
+       "FILM132B",
+       "FILM165A",
+       "FILM165B",
+       "FILM165C",
+       "FILM165D",
+       "FILM165E",
+       "FILM165G",
+       "FILM168A",
+       "FILM168F",
+       "FILM168M",
+       "HAVC141O",
+       "LALS122"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Non-FILM courses on this list will count toward the two-course maximum outlined in the Course Substitution Policy. Students may submit a petition to the department to have other courses reviewed to satisfy the diversity requirement. Please send course syllabi to fdmadvising@ucsc.edu for review."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus the Diversity Requirement",
+       "prose": [
+        "Students take at least one course from the following list focusing on non-Western perspectives, races, ethnicities, genders, classes, sexualities, or abilities. The course chosen will satisfy the Diversity Requirement along with its respective category of the Core Curriculum or upper-division elective requirement.",
+        "Non-FILM courses on this list will count toward the two-course maximum outlined in the Course Substitution Policy.",
+        "Students may submit a petition to the department to have other courses reviewed to satisfy the diversity requirement. Please send course syllabi to fdmadvising@ucsc.edu for review."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM194A",
+       "FILM194B",
+       "FILM194C",
+       "FILM194D",
+       "FILM194E",
+       "FILM194F",
+       "FILM194G",
+       "FILM194H",
+       "FILM194S",
+       "FILM196A",
+       "FILM196B",
+       "FILM196C",
+       "FILM197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one course from the following to satisfy the senior comprehensive requirement:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Five (5-credit) upper-division elective courses are to meet the following criteria:"
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement.",
+        "The DC requirement is met by passing one course from each of the two following categories:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM130",
+       "FILM132A",
+       "FILM132B",
+       "FILM134A",
+       "FILM134B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "First Category",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM194A",
+       "FILM194B",
+       "FILM194C",
+       "FILM194D",
+       "FILM194E",
+       "FILM194F",
+       "FILM194G",
+       "FILM194H",
+       "FILM194S",
+       "FILM196A",
+       "FILM196B",
+       "FILM196C",
+       "FILM197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Second category:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM194A",
+       "FILM194B",
+       "FILM194C",
+       "FILM194D",
+       "FILM194E",
+       "FILM194F",
+       "FILM194G",
+       "FILM194H",
+       "FILM194S",
+       "FILM196A",
+       "FILM196B",
+       "FILM196C",
+       "FILM197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Senior Comprehensive Course",
+       "prose": [
+        "Seniors in the general film and digital media major satisfy the senior comprehensive requirement by completing one of the following senior-level classes."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Integrated Critical Practice Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take the following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM20B",
+       "FILM20C",
+       "FILM20P"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "FILM 20P cannot be used toward declaring the major."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two additional 20-level courses",
+       "prose": [
+        "FILM 20P cannot be used toward declaring the major."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Integrated Critical Practice Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM120"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students in the integrated critical practice concentration complete the following required upper-division core curriculum:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "One course from each of the following five groups",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM130",
+       "FILM132A",
+       "FILM132B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Group 1:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM134A",
+       "FILM134B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Group 2:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM136A",
+       "FILM136B",
+       "FILM136C",
+       "FILM136D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Group 3:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM170A",
+       "FILM170B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Group 4:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM194A",
+       "FILM194B",
+       "FILM194C",
+       "FILM194D",
+       "FILM194E",
+       "FILM194F",
+       "FILM194G",
+       "FILM194H",
+       "FILM194S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Group 5:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Two courses to satisfy the senior comprehensive requirement:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM199"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM195",
+       "FILM196A",
+       "FILM196B",
+       "FILM196C",
+       "FILM197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Integrated Critical Practice Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Five upper-division elective courses to be chosen from the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM152",
+       "FILM160",
+       "FILM162",
+       "FILM162F",
+       "FILM165A",
+       "FILM165B",
+       "FILM165C",
+       "FILM165D",
+       "FILM165E",
+       "FILM165G",
+       "FILM168",
+       "FILM168A",
+       "FILM168M",
+       "FILM180",
+       "FILM185D",
+       "FILM185R",
+       "FILM185S",
+       "FILM185X",
+       "FILM187",
+       "FILM189"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Two upper-division critical studies courses",
+       "prose": [
+        "In film and digital media chosen from the following:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM145",
+       "FILM150",
+       "FILM151",
+       "FILM170A",
+       "FILM170B",
+       "FILM171A",
+       "FILM171C",
+       "FILM171D",
+       "FILM171F",
+       "FILM171S",
+       "FILM172",
+       "FILM173",
+       "FILM175",
+       "FILM176",
+       "FILM177",
+       "FILM178A",
+       "FILM178B",
+       "FILM179A",
+       "FILM179B"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Three upper-division production courses",
+       "prose": [
+        "In film and digital media chosen from the following:",
+        "Graduate seminars, taken with the permission of the faculty advisor, may substitute for one of the electives. A maximum of two major requirements may be taken in another department or another institution if pre-approved by the Film and Digital Media Department.",
+        "Graduate seminars, taken with the permission of the faculty advisor, may substitute for one of the electives.",
+        "A maximum of two major requirements may be taken in another department or another institution if pre-approved by the Film and Digital Media Department."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Integrated Critical Practice Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement.",
+        "The DC requirement is met by passing one course from each of the two following categories:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM130",
+       "FILM132A",
+       "FILM132B",
+       "FILM134A",
+       "FILM134B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "First category",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM194A",
+       "FILM194B",
+       "FILM194C",
+       "FILM194D",
+       "FILM194E",
+       "FILM194F",
+       "FILM194G",
+       "FILM194H",
+       "FILM194S",
+       "FILM196A",
+       "FILM196B",
+       "FILM196C",
+       "FILM197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Second category",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Integrated Critical Practice Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM195",
+       "FILM196A",
+       "FILM196B",
+       "FILM196C",
+       "FILM197"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses",
+       "prose": [
+        "Seniors in the integrated critical practice concentration must complete one of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "FILM199"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "film-and-digital-media-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/film-and-digital-media/film-and-digital-media-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

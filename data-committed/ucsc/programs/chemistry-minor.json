@@ -1,0 +1,283 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "chemistry-and-biochemistry",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "minor",
+ "name": "Chemistry Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4B",
+        "CHEM4AL",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Chemistry",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM8A",
+       "CHEM8B",
+       "CHEM8L",
+       "CHEM8M"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "and these courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Chemistry"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A student may combine the MATH 11 series with the MATH 19 series to complete this portion of the major requirement(s), (for example, a student can take and complete MATH 19A and then take and complete MATH 11B ) but must follow the Mathematics Department’s Calculus Series Transition Policy ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "One of the following options",
+       "prose": [
+        "A student may combine the MATH 11 series with the MATH 19 series to complete this portion of the major requirement(s), (for example, a student can take and complete MATH 19A and then take and complete MATH 11B ) but must follow the Mathematics Department’s Calculus Series Transition Policy ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH22"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ],
+       [
+        "AM30"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Calculus"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "PHYS5N"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6B",
+        "PHYS6C",
+        "PHYS6L",
+        "PHYS6M",
+        "PHYS6N"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5C",
+       "PHYS5L",
+       "PHYS5M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry and Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Physics",
+       "prose": [
+        "A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry and Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied."
+       ]
+      }
+     }
+    ],
+    "title": "Physics"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM163A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may substitute BIOC 163A for CHEM 163A ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "This course",
+       "prose": [
+        "Students may substitute BIOC 163A for CHEM 163A ."
+       ]
+      }
+     }
+    ],
+    "title": "This course"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHEM103",
+       "CHEM110",
+       "CHEM151A"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Plus two of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "",
+       "prose": [
+        "Students who plan to do advanced work in biochemistry and molecular biology should take the biochemistry and molecular biology (BIOC) 100ABC series. Completing the series will fulfill the requirement of CHEM 103 (Biochemistry) plus fulfill one elective. Students who have finished CHEM 103 can, with instructor permission, enroll in BIOC 100C without taking BIOC 100A and BIOC 100B . In this case, BIOC 100C may be used as an elective."
+       ]
+      }
+     }
+    ],
+    "title": "Plus two of the following courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOC100A",
+       "BIOC100B",
+       "BIOC163B",
+       "CHEM122",
+       "CHEM143",
+       "CHEM144",
+       "CHEM151B",
+       "CHEM156C",
+       "CHEM163B",
+       "CHEM163C",
+       "CHEM169",
+       "CHEM171",
+       "METX101",
+       "OCEA120",
+       "OCEA121",
+       "PHYS180"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students cannot receive elective credit toward the minor for 1) both BIOC 100A and CHEM 103; 2) both BIOC 163B and CHEM 163B . Students may also satisfy the elective requirements by completing a chemistry graduate course with the permission of the instructor and department. To do so, please consult with the department undergraduate adviser prior to enrolling."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Plus two chemistry upper-division electives from the following:",
+        "Students cannot receive elective credit toward the minor for 1) both BIOC 100A and CHEM 103; 2) both BIOC 163B and CHEM 163B .",
+        "Students may also satisfy the elective requirements by completing a chemistry graduate course with the permission of the instructor and department. To do so, please consult with the department undergraduate adviser prior to enrolling."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   }
+  ]
+ },
+ "slug": "chemistry-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/chemistry-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

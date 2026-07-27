@@ -1,0 +1,1037 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "psychology",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Psychology B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Students who complete the psychology major should demonstrate competency in:",
+     "Application of knowledge with critical thinking skills . Students should be able to use critical thinking to evaluate and interpret evidence, and to apply psychological concepts, theories, and research findings to individual, social, and cultural issues.",
+     "Application of research methods with values and integrity . Students should be able to apply basic research methods in psychology, with sensitivity to ethical principles.",
+     "Communication skills . Students should be able to demonstrate effective communication skills following professional conventions in psychology appropriate to purpose and context.",
+     "Awareness of sociocultural diversity and societal inequality . Students should be able to understand the complexity of sociocultural diversity and societal inequality in the inquiry and analysis of psychological issues."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The Psychology Department has an advising office located at Social Sciences 2, Room 150 and can be reached at psyadv@ucsc.edu . The advisors assist students in obtaining information regarding major requirements and petitions, course planning, substitution of transfer courses for advance enrollment, careers, and graduate schools. Students are encouraged to take advantage of the advising office throughout their college career. Transfer students are encouraged to consult the Transfer Information and Policy Section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students are admitted to the University of California, Santa Cruz with a \"proposed major\" in most cases, and later petition to officially declare the major. Admission to UC Santa Cruz does not guarantee acceptance into a particular major. Students starting as first-years/frosh must declare a major by the major declaration deadline during their sixth quarter. Junior transfer students must declare a major no later than the deadline during their second quarter at UCSC. Learning about and preparing for the major should be primary goals for students."
+    ],
+    "title": "Acceptance to the Psychology Major"
+   },
+   {
+    "paragraphs": [
+     "Students who enter UC Santa Cruz as frosh/first-year students are required to formally declare a major before enrolling in their 7th quarter/third year at UCSC . It is strongly recommended that students interested in pursuing the psychology major (general or intensive) complete major requirements by the start of their sixth quarter or have no more than one requirement in progress during the sixth quarter. Students should complete PSYC 1 , the mathematics requirement, and the statistics requirement (see below for courses that can be used to satisfy these requirements). PSYC 1 and the statistics requirement must be taken for a letter grade. If the minimum grade (B-) is not met for PSYC 1 , PSYC 10 or PSYC 20 must be taken for a letter grade with the minimum grade earned (B-).",
+     "After completing these three lower-division requirements, students may petition to declare the psychology major subject to the grade requirements described in the Qualification to the Major section below. Students are recommended to fulfill major qualifications as early as possible to avoid delays in the major declaration and enrollment processes. Refer to the Requirements and Planners section below, and consult with a department advisor early to begin the process toward the completion of major qualifications and major declaration.",
+     "High school students considering psychology as their university major find that the best preparation is a solid general education in English writing and mathematics (including precalculus), and social sciences.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "PSYC 1 and the statistics (major qualification) requirement must be taken for a letter grade. If alternative courses are taken to meet the major qualification requirements, they must also be taken for a letter grade (e.g., PSYC 10 or PSYC 20 ). A grade of B- or higher is required, or its equivalent exam credit score."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students who want to fulfill requirements with courses taken at other colleges (excluding articulated courses from California community colleges) must petition for the substitution of their transfer courses via email to psyadv@ucsc.edu . PSYC 100 (Research Methods in Psychology) and the senior seminar must be taken at UC Santa Cruz. Students planning to transfer to UC Santa Cruz should check with the advising office of their present college or refer to assist.org ."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Upper-division courses from other departments taken to fulfill the psychology elective requirement may or may not count toward another major or minor (See “Course Requirements” in the “Upper-Division Courses” section). Students wishing to pursue double majors or a major/minor combination are encouraged to meet with an advisor to create an academic plan to do so.",
+     "Students who are interested in adding a double major in psychology must do so by their original major declaration deadline (i.e., in their sixth quarter for students admitted as frosh). Transfer students who were not originally screened for and admitted as a psychology major may not add psychology as a second major.",
+     "Students may not pursue a double major between cognitive science and psychology (general or intensive)."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Up to three Global Learning courses may be approved for the major, and prior course approval is recommended. Global Learning courses equivalent to less than 5 quarter credits (i.e. 4 or 4.5 quarter credits) should be discussed with a psychology undergraduate advisor to ensure major requirements are still met. Please review the Global Learning section on the department's study abroad webpage if you are considering studying abroad and want to try to obtain approval for such courses to count toward the major."
+    ],
+    "title": "Global Learning"
+   },
+   {
+    "paragraphs": [
+     "Honors in the psychology major are awarded to graduating seniors whose UC Santa Cruz grade point average is a 3.6 or higher in psychology courses (1-189).",
+     "Highest honors in the major are reserved for students who meet the honors criteria as well as successful completion of a senior thesis, or whose UC Santa Cruz grade point average is a 3.9 or higher in psychology courses (1-189)."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "The Psychology Department offers a range of educational opportunities, including opportunities for undergraduate research and field study. For more information, see the department's educational opportunities website."
+    ],
+    "title": "Research, Field Study, and Other Educational Opportunities"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students who want to pursue the psychology major (general or intensive) must have applied and been admitted to UC Santa Cruz as a proposed psychology major. The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Minimum grade of B- (2.7) is required. If a grade of C (2.0) or C+ (2.3) is earned in an equivalent course, a student must earn a minimum grade of B- (2.7) in a course articulated to UC Santa Cruz's PSYC 10 or PSYC 20 ."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Introduction to Psychology",
+       "prose": [
+        "Minimum grade of B- (2.7) is required. If a grade of C (2.0) or C+ (2.3) is earned in an equivalent course, a student must earn a minimum grade of B- (2.7) in a course articulated to UC Santa Cruz's PSYC 10 or PSYC 20 ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Minimum grade of B- (2.7) is required."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "One of the following:",
+        "Minimum grade of B- (2.7) is required."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM6",
+       "AM11A",
+       "MATH3",
+       "MATH4",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Minimum grade of C (2.0) is required."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Mathematics",
+       "prose": [
+        "One of the following:",
+        "Minimum grade of C (2.0) is required."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC10",
+       "PSYC20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Recommended Prior to Transfer",
+       "prose": [
+        "Though not required, students are recommended to complete the following prior to transfer:",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation.",
+        "Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students are admitted to UC Santa Cruz with a \"proposed major\" and later petition to officially declare the major. Transfer students who want to pursue the psychology major (general or intensive), must have applied and been admitted to UC Santa Cruz as a proposed psychology major. Admission does not guarantee acceptance into a particular major, although transfer students' records are screened for preparation for psychology at the time of admission. In order to successfully transition to UCSC, transfer students must be formally declared by the deadline in their second quarter of enrollment. Students are advised to set up and check their UCSC email regularly, make contact with their major advisors, and consider taking summer session courses prior to their first fall quarter.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Students are admitted to UC Santa Cruz with a \"proposed major\" and later petition to officially declare the major. Transfer students who want to pursue the psychology major (general or intensive), must have applied and been admitted to UC Santa Cruz as a proposed psychology major. Admission does not guarantee acceptance into a particular major, although transfer students' records are screened for preparation for psychology at the time of admission. In order to successfully transition to UCSC, transfer students must be formally declared by the deadline in their second quarter of enrollment. Students are advised to set up and check their UCSC email regularly, make contact with their major advisors, and consider taking summer session courses prior to their first fall quarter.",
+        "Admitted transfer students who satisfy the requirements of the screening policy can declare the major at any time after matriculation at UC Santa Cruz. See the How to Declare the Major Section for more information on declaration processes."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Students may petition to declare the psychology major once they have demonstrated foundational skills by completing each of the following three requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "One of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM6",
+       "AM11A",
+       "MATH3",
+       "MATH4",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Mathematics requirement",
+       "prose": [
+        "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "PSYC 1 must be taken in order to declare. If a B- or higher grade is not achieved in PSYC 1 , achieving a B- or higher in PSYC 10 or PSYC 20 will fulfill declaration requirements.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "PSYC1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PSYC 1 must be taken in order to declare. If a B- or higher grade is not achieved in PSYC 1 , achieving a B- or higher in PSYC 10 or PSYC 20 will fulfill declaration requirements."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus take the following course and obtain a B- or higher",
+       "prose": [
+        "PSYC 1 must be taken in order to declare. If a B- or higher grade is not achieved in PSYC 1 , achieving a B- or higher in PSYC 10 or PSYC 20 will fulfill declaration requirements."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options and obtain a grade of B- or better",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who did not satisfy the major admission requirements but believe there are extenuating circumstances concerning their performance in the foundational courses may file a written appeal describing these circumstances for review. For more information on the appeals process, please make an appointment with a staff advisor or email psyadv@ucsc.edu . The department will notify the student of the decision within two weeks of the receipt of the appeal."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh, in the second quarter of enrollment for transfers), will either be approved or denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed MQ courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification (MQ) courses or reach their declaration deadline quarter, whichever comes first. Transfer students can petition to declare their major as early as the first day of instruction during their first quarter at UCSC.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh, in the second quarter of enrollment for transfers), will either be approved or denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed MQ courses.",
+        "To petition to declare the major, students should follow the instructions on the department's website ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Thirteen courses are required for the general major. Some courses may be satisfied via exam credit . Here is a brief overview of these courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take this course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM6",
+       "AM11A",
+       "MATH3",
+       "MATH4",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement.",
+        "Appropriate equivalent courses may be substituted for any of the lower-division requirements.",
+        "Appropriate equivalent courses may be substituted for any of the lower-division requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Eight upper-division courses are required for the general major. At least four must be PSYC courses taken at UC Santa Cruz: PSYC 100 , and one from each of the Developmental, Cognitive, and Social subfields, including a senior seminar.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Eight upper-division courses are required for the general major. At least four must be PSYC courses taken at UC Santa Cruz: PSYC 100 , and one from each of the Developmental, Cognitive, and Social subfields, including a senior seminar."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Research Methods:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "One course in each of the following subfields (three courses):",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "One additional 5-credit upper-division course from THREE of the subfields listed below (i.e., a total of three courses, each from a separate subfield):",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One upper-division course, numbered 100-189 from one of the following related areas outside of psychology. The course must be 5 credits, and neither cross-listed with psychology nor taught by psychology faculty. Please check with an advisor if you are a double major or minor in one of the below subjects:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "APLX102",
+       "APLX116",
+       "CMPM146",
+       "CMPM148",
+       "CSE104",
+       "CSE140",
+       "HAVC141F",
+       "HAVC141K",
+       "HAVC141O",
+       "HAVC185",
+       "HAVC186",
+       "METX108",
+       "METX135",
+       "STAT131",
+       "STAT132"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "METX 108 will NOT be accepted as a substitution for PSYC 100 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One upper-division course outside of psychology:",
+       "prose": [
+        "One upper-division course, numbered 100-189 from one of the following related areas outside of psychology. The course must be 5 credits, and neither cross-listed with psychology nor taught by psychology faculty. Please check with an advisor if you are a double major or minor in one of the below subjects:",
+        "METX 108 will NOT be accepted as a substitution for PSYC 100 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One of the upper-division courses must be an upper-division seminar; these courses are psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement.” These are any course in the PSYC 119, 139, 159, or 179 series.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Seminar:",
+       "prose": [
+        "One of the upper-division courses must be an upper-division seminar; these courses are psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement.” These are any course in the PSYC 119, 139, 159, or 179 series.",
+        "Students can access a full list of courses on the department’s website. Upper-division courses and their catalog descriptions are grouped within each of the subfields."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in Psychology is satisfied by completing PSYC 100 and a seminar. Seminar courses are Psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement,” and are numbered PSYC 119A -Z, PSYC 139A-Z, PSYC 159A -Z, and PSYC 179A -Z."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "UC Santa Cruz requires that every student satisfy a senior exit/comprehensive requirement prior to graduation. Psychology students will satisfy this requirement by receiving a passing grade in a Psychology seminar which is also part of the DC requirement (see above). These are any course in the PSYC 119, 139, 159, or 179 series. To ensure that all students can meet the seminar requirement, students will enroll in only one senior seminar. Students are only allowed to enroll in additional seminars after all other students who still need to fulfill their seminar requirement have enrolled."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The Intensive Psychology major involves additional upper-division coursework, including a requirement of an advanced methods class and independent study. Students intending to pursue the Intensive concentration should declare this on their proposed study plan during the junior year to ensure there is enough time to complete the additional requirements.",
+        "Note : The intensive concentration designation appears on the transcript, but it does not formally appear on students’ diplomas.",
+        "Sixteen courses are required for the Intensive concentration. Some courses may be satisfied via exam credit . Here is a brief overview of these courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC1"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Take this course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PSYC2"
+       ],
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM6",
+       "AM11A",
+       "MATH3",
+       "MATH4",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement.",
+        "Appropriate equivalent courses may be substituted for any of the lower-division requirements.",
+        "Appropriate equivalent courses may be substituted for any of the lower-division requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Eleven upper-division courses are required for the intensive major:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Research Methods:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "One course in each of the following subfields (three courses):",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "One additional 5-credit upper-division course from THREE of the subfields listed below (i.e., a total of three courses, each from a separate subfield):",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC181",
+       "PSYC182"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC193",
+       "PSYC193I",
+       "PSYC194A",
+       "PSYC194B",
+       "PSYC194C",
+       "PSYC194D",
+       "PSYC195A",
+       "PSYC195B",
+       "PSYC195C",
+       "PSYC193S"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PSYC 193I is equivalent to two quarters of field study and will satisfy the Advanced Requirement in its entirety."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Two quarters of study from one of the following:",
+       "prose": [
+        "PSYC 193I is equivalent to two quarters of field study and will satisfy the Advanced Requirement in its entirety."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One upper-division course, numbered 100-189, from one of the following related areas outside of Psychology. The course must be 5 credits, and neither cross-listed with Psychology nor taught by Psychology faculty. Please check with an advisor if you are a double major or minor in one of the following subjects:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "APLX102",
+       "APLX116",
+       "CMPM146",
+       "CMPM148",
+       "CSE104",
+       "CSE140",
+       "HAVC141F",
+       "HAVC141K",
+       "HAVC141O",
+       "HAVC185",
+       "HAVC186",
+       "METX108",
+       "METX135",
+       "STAT131",
+       "STAT132"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "METX 108 will NOT be accepted as a substitution for PSYC 100 ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One upper-division course outside of psychology:",
+       "prose": [
+        "One upper-division course, numbered 100-189, from one of the following related areas outside of Psychology. The course must be 5 credits, and neither cross-listed with Psychology nor taught by Psychology faculty. Please check with an advisor if you are a double major or minor in one of the following subjects:",
+        "METX 108 will NOT be accepted as a substitution for PSYC 100 ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One of the upper-division courses must be an upper-division seminar; these courses are Psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement.” These are any course in the PSYC 119, 139, 159, or 179 series.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Seminar:",
+       "prose": [
+        "One of the upper-division courses must be an upper-division seminar; these courses are Psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement.” These are any course in the PSYC 119, 139, 159, or 179 series.",
+        "Students can access a full list of courses on the department’s website. Upper-division courses and their catalog descriptions are grouped within each of the subfields."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in Psychology is satisfied by completing PSYC 100 and a seminar. Seminar courses are Psychology courses identified within the General Catalog by their course descriptions containing the phrase “satisfies seminar requirement” and are numbered PSYC 119A -Z, PSYC 139A-Z, PSYC 159A -Z, and PSYC 179A -Z."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "UC Santa Cruz requires that every student satisfy a senior exit/comprehensive requirement prior to graduation. Psychology students will satisfy this requirement by receiving a passing grade in a Psychology seminar, which is also part of the DC requirement (see above). Passing a seminar course is also required for the major. Courses that meet this requirement are designated as seminars in the campus catalog as “satisfies seminar requirement.” These are any course in the PSYC 119, 139, 159, or 179 series."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "psychology-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/psychology/psychology-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

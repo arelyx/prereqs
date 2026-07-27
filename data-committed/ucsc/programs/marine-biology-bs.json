@@ -1,0 +1,1102 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "ecology-and-evolutionary-biology",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Marine Biology B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The marine biology major is designed to introduce students to the great diversity of marine organisms and the biological and physical processes that affect them, their populations, and their coastal and oceanic ecosystems. Curricular emphasis is on basic principles that help in understanding the processes that shape life in marine environments. The Department of Ecology and Evolutionary Biology (EEB) is located on the University of California, Santa Cruz, Coastal Science Campus (CSC). CSC is situated on Monterey Bay and its great diversity of coastal marine ecosystems, nature reserves, and state, federal, and private marine research institutions and management agencies. Both the National Marine Fisheries Service and the California Department of Fish and Game have laboratories located on the CSC, providing students with research and internship opportunities. Long Marine Laboratory on the CSC provides logistical support including diving and boating facilities, running seawater systems, and marine mammal facilities. These resources, combined with computing and analytical facilities on both the main campus and the CSC, make for exceptional opportunities for the study of marine biology and its application to coastal conservation and management. Students can readily engage in basic and applied (e.g., fisheries management) research from estuaries to the deep sea, and plankton to whales."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "The undergraduate curriculum offered by the Department of Ecology and Evolutionary Biology (EEB) is designed to ensure that all students declared in any EEB-sponsored major will achieve the following seven program learning outcomes:",
+     "Students will demonstrate broad-based knowledge of the fundamentals of ecology, behavior, evolution and physiology and the relationships among these disciplines.",
+     "Students will demonstrate skills in the observation and experimental study of organisms, using both field-based and laboratory-based approaches.",
+     "Students will demonstrate skills in identifying, accessing, comprehending and synthesizing scientific information, including interpretation of the primary scientific literature. This includes understanding key questions and hypotheses, interpreting results and conclusions, and evaluating quality through critique.",
+     "Students will demonstrate the ability to conceive and execute independent scientific research, including developing their own questions and hypotheses, designing an appropriate theoretical or empirical/experimental approach, executing that approach, and analyzing and interpreting data.",
+     "Students will demonstrate an ability to understand and apply fundamental quantitative skills, including models and statistical analyses, so as to properly interpret published research and apply such skills in their own research.",
+     "Students will demonstrate the ability to communicate scientific work, such as a scientific paper, proposal, essay, or notebook, in written, oral or poster format.",
+     "Students will exhibit strong teamwork and problem solving skills. They will demonstrate the ability to make arguments from evidence and work together to find optimal solutions."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Academic advising is available at the Department of Ecology and Evolutionary Biology (EEB) undergraduate advising office located in the Coastal Biology Building on the UC Santa Cruz Coastal Science Campus, and via email at eebadvising@ucsc.edu . The undergraduate webpages contain advice and information pertinent to students’ most frequently voiced questions. Each student should review the information posted on the website and in the EEB Student Handbook. For further assistance, contact an EEB undergraduate advisor at eebadvising@ucsc.edu . Transfer students should also review the Transfer Information and Policy Section below."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Prerequisites",
+     "An online mathematics assessment is required to enroll in a mathematics course or CHEM 3A or CHEM 4A. Students are expected to take this examination before orientation, or at least well before the enrollment appointment for their first planned quarter at UCSC. Students are encouraged to work in the learning modules, and assess/reassess (three total assessments allowed) until they are eligible to enroll in MATH 16A (recommended) or MATH 11A or MATH 19A . For more information, see the mathematics placement website .",
+     "The introductory biology sequence is prerequisite to virtually all upper-division biology courses. BIOL 20A (offered by the Molecular, Cell, and Developmental Biology Department) has a prerequisite of CHEM 3A or CHEM 4A. Therefore, it is essential for students to start chemistry as soon as possible. Students who have not taken CHEM 3A or CHEM 4A may begin the introductory sequence with BIOE 20C . The entire introductory biology sequence should be taken in the first and second year, concurrently with or following the general chemistry sequence, with all courses in the sequence completed before the sixth quarter campus declaration deadline. We also strongly recommend completing the lower-division physics and statistics requirements early in your academic career.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy any major requirement must be taken for a letter grade , except for approved courses which are ONLY offered as Pass/No Pass (P/NP)."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "To discuss the process for a course substitution, contact an EEB undergraduate advisor.",
+     "At least half of the upper-division courses (numbered BIOE 100 – BIOE 179) required for each major must be taken in EEB at UC Santa Cruz and not as transfer credits from another department or institution.",
+     "All students are advised to contact an EEB undergraduate advisor before enrolling in any upper-division courses at other institutions. Additional information for transfer students is provided in the “Transfer Information and Policies” section above.",
+     "Only one upper-division course requirement may be met with a research-based independent study or graduate-level UC Santa Cruz biology course."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students cannot double major/minor in Biology B.A., Ecology and Evolution B.S., Marine Biology B.S., or Plant Sciences B.S. and any other major/minor offered by the EEB Department, nor by the Departments Microbiology and Environmental Toxicology; or MCD Biology, including the Global and Community Health B.S. major; nor with the Biochemistry and Molecular Biology B.S., nor with the Environmental Studies/Biology Combined B.A.",
+     "Should a student choose to double major, they must qualify for and complete the disciplinary communication and comprehensive requirements for each of the majors."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "The UC Education Abroad Program (UCEAP) offers qualified students unique opportunities to broaden their educational horizons. The EEB Department encourages interested students to participate. It is possible to satisfy major requirements abroad and graduate on time; consult with an EEB undergraduate advisor early in the planning process.",
+     "Many programs are in English-speaking countries or use English for advanced courses. Many programs offer small classes, extensive laboratories, and/or field research experience.",
+     "There are excellent programs in Costa Rica, Australia, New Zealand, the United Kingdom, Denmark, and Germany, among others. The Costa Rica Tropical Biology Program is of note to students interested in tropical biology and ecology. Held spring and fall quarters at the Monteverde research station, this program gives students experience with hands-on field research and offers a homestay program. The University of Queensland (Australia) offers an intensive, full-semester marine science program, which includes stays at research stations on the Great Barrier Reef and in sheltered mangrove and seagrass habitats near Brisbane.",
+     "Students interested in study abroad should start early on their introductory requirements, including chemistry, mathematics, and biology and must declare their major prior to going abroad . Visit the UCEAP office as soon as possible to begin planning and seek advice and approval for your UCEAP plan from an EEB undergraduate advisor prior to participation in UCEAP."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "EEB departmental honors are awarded to graduating students whose academic performance in all major-required upper-division course options taken at UCSC demonstrates excellence at a grade point average (GPA) of 3.5 to 3.79.",
+     "EEB departmental highest honors are awarded to those students whose performance in all major-required upper-division course options taken at UCSC demonstrates the highest level of excellence and results in a GPA of 3.8 or above.",
+     "Students in EEB-sponsored majors may track their departmental honors GPA in their Degree Progress Report (DPR)."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B"
+       ],
+       [
+        "CHEM4A"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A letter grade of C or above must be earned in all major screening courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "A letter grade of C or above must be earned in all major screening courses."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus, one of the following mathematics courses:",
+       "prose": [
+        "A letter grade of C or above must be earned in all major screening courses."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3C"
+       ],
+       [
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "In addition, the following courses are recommended prior to transfer to ensure timely graduation.",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11B",
+       "MATH16B",
+       "MATH19B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following mathematics courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6B"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6C"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "STAT5"
+       ],
+       [
+        "STAT7",
+        "STAT7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following statistics options:",
+       "prose": [
+        "Additional transfer preparation information is here .",
+        "Additional transfer preparation information is here ."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students who satisfy the major screening requirements may declare the major at any time after matriculation and after their official transcripts have been posted to their MyUCSC student portal by the UC Santa Cruz Office of Admissions.",
+        "Beginning in late June and early July (for fall transfer students), EEB advisors will review admitted students' reported transfer course work and determine how it applies to their major's requirements.",
+        "EEB advisors will contact admitted students via email and indicate how students' transfer coursework fulfills major requirements. Advisors will suggest courses for students' Fall enrollment, and invite students to schedule an appointment or attend a drop-in advising session to talk with EEB advisor.  Students may also direct questions to eebadvising@ucsc.edu . Transfer students may also expect to receive regular email messages from EEB advising in June, July, and August with additional information about the major and the department."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "All courses must be taken for a letter grade . The following qualification courses, or their equivalents, must be completed with a grade of C (2.0) or better before the student's declaration deadline arrives. Some courses may be satisfied via exam credit .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "All courses must be taken for a letter grade . The following qualification courses, or their equivalents, must be completed with a grade of C (2.0) or better before the student's declaration deadline arrives. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B"
+       ],
+       [
+        "CHEM4A"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "And one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: MATH 16A / MATH 16B is the recommended mathematics series for the following EEB majors: Ecology and Evolutionary Biology B.S., Marine Biology B.S., and Plant Sciences B.S."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "And one of the following mathematics courses:",
+       "prose": [
+        "Note: MATH 16A / MATH 16B is the recommended mathematics series for the following EEB majors: Ecology and Evolutionary Biology B.S., Marine Biology B.S., and Plant Sciences B.S.",
+        "Students with one grade of NP, C-, D+, D, D-, or F in one of the qualification courses are eligible to declare after successfully repeating the same or an equivalent course with a grade of C (2.0) or better. Students with two or more grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare. Mathematics courses are excluded from this eligibility requirement. Students with exam credit for any of the qualification course(s) are eligible to declare after successfully completing the remaining qualification courses. Consult with an EEB undergraduate advisor when requesting to declare the major after the campus declaration deadline. Transfer students should also review the Transfer Information and Policy Section above. For information on qualifying for the environmental studies/biology combined major, please see Environmental Studies in this catalog.",
+        "Students with one grade of NP, C-, D+, D, D-, or F in one of the qualification courses are eligible to declare after successfully repeating the same or an equivalent course with a grade of C (2.0) or better.",
+        "Students with two or more grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare. Mathematics courses are excluded from this eligibility requirement.",
+        "Students with exam credit for any of the qualification course(s) are eligible to declare after successfully completing the remaining qualification courses.",
+        "Consult with an EEB undergraduate advisor when requesting to declare the major after the campus declaration deadline. Transfer students should also review the Transfer Information and Policy Section above.",
+        "For information on qualifying for the environmental studies/biology combined major, please see Environmental Studies in this catalog."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students may log into MyUCSC and submit the Petition for Major/Minor as soon as they have completed the EEB major qualification requirements and/or reached their declaration deadline quarter, whichever comes first. Information on the major declaration process may be found in this document .",
+        "Additional questions may be directed to eebadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students whose petition to declare is denied or for which conditions are issued will have the option to appeal and will be asked to meet with an EEB advisor about next steps. If an appeal is submitted, it will be reviewed and a decision will be communicated with the student and their college within 15 business days. For more information about the appeal process, contact eebadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Introductory Biology:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may choose to complete the Chemistry 3 or 4 series. CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "General Chemistry:",
+       "prose": [
+        "Students may choose to complete the Chemistry 3 or 4 series. CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH16A",
+        "MATH16B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: MATH 16A / MATH 16B is the recommended mathematics series for the following EEB majors, Ecology and Evolutionary Biology B.S., Marine Biology B.S., and Plant Sciences B.S."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Mathematics:",
+       "prose": [
+        "Choose one of the following options:",
+        "Note: MATH 16A / MATH 16B is the recommended mathematics series for the following EEB majors, Ecology and Evolutionary Biology B.S., Marine Biology B.S., and Plant Sciences B.S."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Biostatistics:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6B"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6C"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Physics:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A total of eleven (11) upper-division courses, including relevant electives; two must include laboratory or fieldwork; two must apply to the Disciplinary Communication requirement. Courses appearing in more than one requirement group can fulfill only one, but, if appropriate, may also fulfill a lab/field requirements and/or a DC. Consult with an EEB advisor for additional information.",
+        "type": "prose"
+       },
+       {
+        "text": "For 5-credit lecture courses with required, concurrent 2-credit labs, successful completion of both the lab and lecture is required and counts as one course for major requirements. For 5-credit lectures with optional labs, only the lecture must be successfully completed to count as one course. However, for the DC requirement, the options are as specified in this program statement. Either a lecture course (e.g. BIOE 117 ), or both the lecture course and the associated lab (e.g. BIOE 129 and 129L), may be needed for half the DC credit.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "A total of eleven (11) upper-division courses, including relevant electives; two must include laboratory or fieldwork; two must apply to the Disciplinary Communication requirement. Courses appearing in more than one requirement group can fulfill only one, but, if appropriate, may also fulfill a lab/field requirements and/or a DC. Consult with an EEB advisor for additional information.",
+        "Lecture/Lab Combination Notes",
+        "For 5-credit lecture courses with required, concurrent 2-credit labs, successful completion of both the lab and lecture is required and counts as one course for major requirements. For 5-credit lectures with optional labs, only the lecture must be successfully completed to count as one course. However, for the DC requirement, the options are as specified in this program statement. Either a lecture course (e.g. BIOE 117 ), or both the lecture course and the associated lab (e.g. BIOE 129 and 129L), may be needed for half the DC credit."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "BIOE106"
+       ],
+       [
+        "BIOL105"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "BIOE109"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note: BIOE 106 , Principles of Genetics for EEB, is the recommended genetics course for students pursuing an EEB-sponsored major (Biology B.A., Ecology and Evolution B.S., Marine Biology B.S., and Plant Sciences B.S.)."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Two core courses:",
+       "prose": [
+        "Note: BIOE 106 , Principles of Genetics for EEB, is the recommended genetics course for students pursuing an EEB-sponsored major (Biology B.A., Ecology and Evolution B.S., Marine Biology B.S., and Plant Sciences B.S.)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE107",
+       "BIOE108"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One ecology course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OCEA101",
+       "OCEA130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One marine-environment course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE120",
+       "BIOE120L",
+       "BIOE122",
+       "BIOE122L",
+       "BIOE126",
+       "BIOE127",
+       "BIOE127L",
+       "BIOE129",
+       "BIOE129L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "BIOE 129 / BIOE 129L : Laboratory optional to satisfy the requirement (concurrent enrollment not required)."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "One marine course:",
+       "prose": [
+        "Note: Lecture/lab combinations count as a single course. See note under \"Upper-Division Courses\" for more details.",
+        "BIOE 129 / BIOE 129L : Laboratory optional to satisfy the requirement (concurrent enrollment not required)."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE108",
+       "BIOE120",
+       "BIOE120L",
+       "BIOE122",
+       "BIOE122L",
+       "BIOE126",
+       "BIOE127",
+       "BIOE127L",
+       "BIOE128L",
+       "BIOE129",
+       "BIOE129L",
+       "BIOE136",
+       "BIOE155",
+       "BIOE155L",
+       "BIOE158L",
+       "BIOE159A",
+       "BIOE159B",
+       "BIOE159C",
+       "BIOE159D",
+       "BIOE159E",
+       "BIOE159F",
+       "BIOE161",
+       "BIOE161L",
+       "BIOE163",
+       "BIOE163L",
+       "BIOE165",
+       "EART102",
+       "EART105",
+       "OCEA118",
+       "OCEA122",
+       "OCEA130"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Three topical electives chosen from the following:",
+       "prose": [
+        "Note: Lecture/lab combinations count as a single course. See note under \"Upper-Division Courses\" for more details."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Three general electives chosen from the following:",
+       "prose": [
+        "Note: Lecture/lab combinations count as a single course. See note under \"Upper-Division Courses\" for more details."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Biological Sciences-EEB",
+       "prose": [
+        "Any upper-division BIOE course numbered BIOE 100 - BIOE 179 of 5 or more credits that is not required to fulfill a different requirement group."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL100",
+       "BIOL101"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Biological Sciences-MCDB",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART100",
+       "EART100L",
+       "EART101",
+       "EART101L",
+       "EART102",
+       "EART105"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Earth and Planetary Sciences",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON166A",
+       "ECON166B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Economics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS104A",
+       "ENVS104L",
+       "ENVS107A",
+       "ENVS107B",
+       "ENVS107C",
+       "ENVS108",
+       "ENVS115A",
+       "ENVS115L",
+       "ENVS120",
+       "ENVS122",
+       "ENVS123",
+       "ENVS130A",
+       "ENVS130L",
+       "ENVS130B",
+       "ENVS131",
+       "ENVS160",
+       "ENVS161A",
+       "ENVS162",
+       "ENVS163",
+       "ENVS167",
+       "ENVS168"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Environmental Studies (enrollment by permission of instructor)",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "METX100",
+       "METX100L",
+       "METX115",
+       "METX133",
+       "METX150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Microbiology and Environmental Toxicology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OCEA118",
+       "OCEA122",
+       "OCEA130"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Ocean Sciences",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC123"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Some of the electives may have prerequisites that do not satisfy departmental major requirements and which may restrict enrollment in them. See an EEB advisor for more details."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Psychology",
+       "prose": [
+        "Some of the electives may have prerequisites that do not satisfy departmental major requirements and which may restrict enrollment in them. See an EEB advisor for more details."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "One of the following may also be used as an upper-division general elective:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE183W",
+       "BIOE183L",
+       "BIOE193",
+       "BIOE193F",
+       "BIOE195"
+      ],
+      "n": 5,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Biological Sciences-EEB",
+       "prose": [
+        "Any 5 credits of undergraduate research",
+        "or",
+        "or"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS183"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Environmental Studies",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE108",
+       "BIOE114",
+       "BIOE114L",
+       "BIOE117",
+       "BIOE120",
+       "BIOE120L",
+       "BIOE122",
+       "BIOE122L",
+       "BIOE125",
+       "BIOE126",
+       "BIOE127",
+       "BIOE127L",
+       "BIOE128L",
+       "BIOE129",
+       "BIOE129L",
+       "BIOE137",
+       "BIOE141L",
+       "BIOE145",
+       "BIOE145L",
+       "BIOE150L",
+       "BIOE151B",
+       "BIOE153C",
+       "BIOE157B",
+       "BIOE158L",
+       "BIOE159A",
+       "BIOE161L",
+       "BIOE171",
+       "BIOE172",
+       "BIOE174"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Note: Lecture and 2-credit lab combinations count as a single course. BIOE 117 and BIOE 137 require concurrent enrollment in 2-credit labs, BIOE 117L and BIOE 137L , but these are not part of the DC requirement. To receive DC credit for BIOE 129 , BIOE 129L must also be successfully completed. BIOE 129 without the lab can satisfy electives as noted above, however. NRS/ BIOL 188 , California Ecology and Conservation course, taken spring 2023 or later, will satisfy 1/2 DC credit. For more information about this course contact an EEB undergraduate advisor or email eebadvising@ucsc.edu ."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division disciplinary communication (DC) Requirement. The DC requirement in marine biology is satisfied by completing two of the following ecology and evolutionary biology courses:",
+        "Note: Lecture and 2-credit lab combinations count as a single course.",
+        "Note: Lecture and 2-credit lab combinations count as a single course. BIOE 117 and BIOE 137 require concurrent enrollment in 2-credit labs, BIOE 117L and BIOE 137L , but these are not part of the DC requirement.",
+        "To receive DC credit for BIOE 129 , BIOE 129L must also be successfully completed. BIOE 129 without the lab can satisfy electives as noted above, however.",
+        "NRS/ BIOL 188 , California Ecology and Conservation course, taken spring 2023 or later, will satisfy 1/2 DC credit. For more information about this course contact an EEB undergraduate advisor or email eebadvising@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All majors in the biological sciences require completion of a comprehensive requirement. This requirement can be satisfied in one of the following ways:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE112L",
+       "BIOE114L",
+       "BIOE117L",
+       "BIOE119L",
+       "BIOE120L",
+       "BIOE122L",
+       "BIOE124L",
+       "BIOE127L",
+       "BIOE128L",
+       "BIOE129L",
+       "BIOE131L",
+       "BIOE133L",
+       "BIOE134L",
+       "BIOE135L",
+       "BIOE137L",
+       "BIOE141L",
+       "BIOE142L",
+       "BIOE145L",
+       "BIOE150L",
+       "BIOE151A",
+       "BIOE151B",
+       "BIOE151C",
+       "BIOE151D",
+       "BIOE153A",
+       "BIOE153B",
+       "BIOE153C",
+       "BIOE155L",
+       "BIOE157A",
+       "BIOE157B",
+       "BIOE158L",
+       "BIOE159A",
+       "BIOE159B",
+       "BIOE159C",
+       "BIOE159D",
+       "BIOE159E",
+       "BIOE159F",
+       "BIOE161L",
+       "BIOE163L",
+       "BIOE183W"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Comprehensive courses offered by Ecology and Evolutionary Biology",
+       "prose": [
+        "Note: Lab courses may have associated prerequisite or corequisite lecture courses."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "METX100L",
+       "CRSN152"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Comprehensive courses offered in other departments",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "marine-biology-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/ecology-and-evolutionary-biology/marine-biology-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

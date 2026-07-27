@@ -1,0 +1,277 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "biomolecular-engineering",
+ "division": "baskin-engineering",
+ "kind": "minor",
+ "name": "Bioinformatics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Biology",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Biology"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHEM3A"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Chemistry",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Chemistry"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 19A , MATH 19B : preferred"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Single-Variable Calculus",
+       "prose": [
+        "MATH 19A , MATH 19B : preferred"
+       ]
+      }
+     }
+    ],
+    "title": "Single-Variable Calculus"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME80G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Bioethics",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Bioethics"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME105",
+       "BIOL105",
+       "METX140"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "BME 105 : strongly recommended"
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Genetics",
+       "prose": [
+        "Choose one of the following:",
+        "BME 105 : strongly recommended"
+       ]
+      }
+     }
+    ],
+    "title": "Genetics"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME160",
+       "BME163"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Programming",
+       "prose": [
+        "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
+       ]
+      }
+     }
+    ],
+    "title": "Programming"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "STAT7",
+        "STAT7L"
+       ],
+       [
+        "STAT131"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "STAT 131 : see prerequisites."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Statistics",
+       "prose": [
+        "One of the following:",
+        "STAT 131 : see prerequisites."
+       ]
+      }
+     }
+    ],
+    "title": "Statistics"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME110"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Bioinformatics",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Bioinformatics"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME118",
+       "BME122H",
+       "BME130",
+       "BME132",
+       "BME140",
+       "BME175",
+       "BME205",
+       "BME230A",
+       "BME237",
+       "BME273"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Choose two or more electives to meet the requirement of 25 credits of upper-division credits:"
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   }
+  ]
+ },
+ "slug": "bioinformatics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/bioinformatics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

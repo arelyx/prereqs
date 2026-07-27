@@ -1,0 +1,2201 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "earth-and-planetary-sciences",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Earth Sciences B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The bachelor of science (B.S.) program is designed for students who intend to pursue professional careers in Earth and planetary sciences, engineering, policy, law, teaching, or business or who otherwise desire the broad, quantitative training available at the University of California, Santa Cruz. In addition to providing comprehensive preparation in the basic physical sciences, and particular breadth and depth in Earth and planetary sciences, the curriculum is structured to prepare students for the competitive graduate school and career marketplace.",
+     "The core of the major includes calculus, physics, chemistry, and a group of comprehensive Earth and planetary sciences courses. For the general B.S., students then select at least six additional courses from a diverse list of upper-division electives, with at least two that involve significant laboratory or field data acquisition and analysis. These electives, often in combination with additional upper-division courses from this and related departments, provide the student with expertise in one or more subdisciplines within Earth sciences.",
+     "Elective distributions can be designed to emphasize earthquake and faulting studies, Earth surface processes, Earth system sciences, geologic hazards, geology, crustal and deep-Earth geophysics, marine geophysics, and water resources. Four formal concentrations, all with specific course requirements and leading to an Earth and planetary sciences B.S., are available: geology, geophysics, ocean sciences, and planetary sciences. A senior comprehensive experience (senior thesis, geologic field camp, or intensive capstone course) is required of all majors."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students graduating with a B.S. in Earth and planetary sciences (all concentrations) should be able to:"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Academic advising is available at the Department of Earth and Planetary Sciences (EPS) undergraduate advising office located in the Earth and Marine Sciences Building, and via email at epsadvising@ucsc.edu . The EPS undergraduate web pages contain information on all aspects of major advising including: academic planning, upper- and lower-division course descriptions, enrichment opportunities in the major like study abroad and undergraduate research, and how to make an appointment with an adviser. Each student should become familiar with the information posted on the website; for further assistance, contact the EPS undergraduate advising office at epsadvising@ucsc.edu . Transfer students should consult Getting Started in the Major: Transfer Students for more detailed information about academic advising."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is not highly sequential or course intensive. Although it is advisable to begin taking courses toward the major in the first year, it is not required. Students begin with general chemistry and mathematics, and an introductory course in physical geology.",
+     "Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     "Courses completed at a community college or four year university and/or advanced placement (AP) course equivalencies may be used to fulfill prerequisites.",
+     "Every proposed Earth science student will receive emails about advising and first quarter enrollment during the summer. Students with further questions about what to enroll in should email the Earth and Planetary Sciences undergraduate advising office at epsadvising@ucsc.edu .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All courses used to satisfy requirements for the Earth sciences B.S. must be taken for a letter grade with the exception of EART 195 , EART 198 , EART 199 and OCEA 199 . These courses may be taken pass/no pass."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Relevant courses taken at UC Santa Cruz or other institutions may be substituted for degree requirements by approved petition. Please see the Earth and Planetary Sciences undergraduate advising office for the substitution petition form and more information about this process."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students interested in pursuing multiple majors within the Earth and environmental sciences may NOT declare the following combination of majors:",
+     "Should a student choose to double major, they must qualify for and complete the disciplinary communication and comprehensive requirements for each of the majors."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the major (all concentrations) and in the combined major with anthropology are determined by a review of grades (typically 3.50 or above) at the time a student applies for graduation. A faculty committee makes the decision based on the quality of all coursework, but especially in the courses required for the major. Extra coursework or independent study as well as more intensive or rigorous coursework and the quality of a capstone project may also be taken into consideration. Honors in the combined major with environmental studies are evaluated by the Environmental Studies Department. Highest honors may also be awarded in exceptional cases when a student’s overall grade point average (GPA) is above 3.75 and performance in the senior comprehensive requirement is equally outstanding. The department reserves the right to withhold honors and highest honors based on other criteria, such as an incident of academic dishonesty.",
+     "Honors on the senior thesis are determined independently of major honors, and must be approved by two faculty readers."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The Earth and Planetary Sciences Department welcomes applications from transfer students who are prepared to enter as Earth sciences majors. Students should reference assist.org to determine course equivalencies.",
+        "Transfer students planning on attending UC Santa Cruz to pursue an Earth sciences major should contact the Earth and Planetary Sciences undergraduate advising office for transfer preparation information and reference assist.org to determine which courses are equivalent to these required courses. Having this coursework completed prior to transferring allows students greater flexibility in scheduling and completing their major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH11A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Take one of the following courses:",
+       "prose": [
+        "To be considered for admission as a proposed Earth Sciences B.S. major, transfer students must complete one of the following courses with a grade of C or better or their equivalents prior to transfer, by the end of the spring term for students planning to enter in the fall."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11B"
+       ],
+       [
+        "MATH19B"
+       ],
+       [
+        "PHYS5A",
+        "PHYS5L",
+        "PHYS5B",
+        "PHYS5M"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L",
+        "PHYS6B",
+        "PHYS6M"
+       ]
+      ],
+      "constraints": [],
+      "courses": [
+       "CHEM3A",
+       "CHEM3B",
+       "CHEM3C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Recommended Courses",
+       "prose": [
+        "In addition, the following courses are recommended prior to transfer to ensure timely graduation:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "Prospective students are encouraged to prioritize recommended major preparation, and may additionally complete courses that articulate to University of California, Santa Cruz, general education requirements as time allows. Students admitted to UC Santa Cruz in a major other than Earth sciences that wish to petition to declare Earth sciences must meet the major screening requirements prior to transferring to UC Santa Cruz and submit a major declaration appeal during the summer session. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision. Appeals will be considered on a case-by-case basis and decisions are final. Students may not appeal more than one time.",
+        "Prospective students are encouraged to prioritize recommended major preparation, and may additionally complete courses that articulate to University of California, Santa Cruz, general education requirements as time allows.",
+        "Students admitted to UC Santa Cruz in a major other than Earth sciences that wish to petition to declare Earth sciences must meet the major screening requirements prior to transferring to UC Santa Cruz and submit a major declaration appeal during the summer session. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision. Appeals will be considered on a case-by-case basis and decisions are final. Students may not appeal more than one time."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Once you have submitted your intent to register at UC Santa Cruz, here is a step-by-step guide to transferring your coursework and enrolling:"
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification Policy and Declaration Process",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Transfer students may take an approved substitution for one of the above course combinations and should consult assist.org for equivalencies. Transfer students should also review the Transfer and Information Policy section for information about major qualifications."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify for the Earth sciences B.S. (including all concentrations within the major), a student must complete (with a minimum grade of C) one of the following introductory courses and associated lab in physical geology:",
+        "Transfer students may take an approved substitution for one of the above course combinations and should consult assist.org for equivalencies. Transfer students should also review the Transfer and Information Policy section for information about major qualifications."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "If a student completes major qualification courses but does not meet the major qualification criteria, and appeals, the department may accept or reject the appeal or place conditions on the student that will be resolved within at most one more enrolled quarter.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "If a student completes major qualification courses but does not meet the major qualification criteria, and appeals, the department may accept or reject the appeal or place conditions on the student that will be resolved within at most one more enrolled quarter.",
+        "Students who are informed that they are not eligible to declare the major may appeal by submitting a letter to the Earth and Planetary Sciences undergraduate advising office within 15 days from the date the notification was sent. Within 15 days of receipt of the appeal, the department will notify the student and their affiliated college of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first.",
+        "Students who wish to declare the Earth science major start the process by scheduling an appointment with one of the department staff advisers to create an academic plan. Once academic planning has been completed students submit the online major declaration petition to begin the major declaration process."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH22",
+       "MATH23A",
+       "EART111",
+       "EART125",
+       "EART119A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students that have completed a prior course in programming or statistics may petition for equivalency."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "Students that have completed a prior course in programming or statistics may petition for equivalency."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS6A",
+       "PHYS6B",
+       "PHYS6L",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110A",
+       "EART110B",
+       "EART110M",
+       "EART110C",
+       "EART110N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement. The following courses satisfy this requirement:",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART109",
+       "EART109L",
+       "EART116",
+       "EART119A",
+       "EART120",
+       "EART120L",
+       "EART125",
+       "EART130",
+       "EART130L",
+       "EART140",
+       "EART140L",
+       "EART142",
+       "EART146",
+       "EART146L",
+       "EART148",
+       "EART150",
+       "EART150L",
+       "EART189B",
+       "EART191C",
+       "EART191D"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Courses used to satisfy the senior comprehensive requirement cannot be used to satisfy this requirement."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Two field/laboratory/data analysis courses",
+       "prose": [
+        "Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement. The following courses satisfy this requirement:",
+        "Courses used to satisfy the senior comprehensive requirement cannot be used to satisfy this requirement."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take four upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students take four upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and ENVS 115L are open to Earth science students with permission of the instructor, and taken together are approved as one elective.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART189A",
+        "EART189B"
+       ],
+       [
+        "EART191"
+       ],
+       [
+        "EART191C"
+       ],
+       [
+        "EART191D"
+       ],
+       [
+        "EART195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or one of these courses"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) general education requirement. Students in the Earth Sciences B.S. major satisfy the DC requirement by completing one of the following options:",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes.",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement. The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career. Therefore, prior to completing an activity to satisfy the senior comprehensive requirement, students should have already completed EART 110A , one of EART 110B or EART 110C , and three other upper-division courses that fulfill major requirements. Students should consult an advisor if they have any questions about the timing of their proposed comprehensive requirement activity. Enrollment in the senior comprehensive is by petition or application.",
+        "Note: Courses used to satisfy the senior comprehensive requirement cannot be used to satisfy the upper-division elective requirement or the field/laboratory/data analysis requirement.",
+        "To satisfy the comprehensive requirement, each student in these majors must complete one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "EART 189B must be completed in the summer.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART189A",
+       "EART189B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Satisfactory completion of Summer Field",
+       "prose": [
+        "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M .",
+        "EART 189B must be completed in the summer."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "type": "prose"
+       },
+       {
+        "text": "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Satisfactory completion of a senior thesis",
+       "prose": [
+        "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "Students may take EART 199 , Independent Study, as part of performing the research for their senior thesis. It is required that each student enroll in and pass EART 195 : Senior Thesis, in the academic quarter during which they complete their thesis.",
+        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART191",
+       "EART191C",
+       "EART191D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Satisfactory completion of one of the following capstone course offerings:",
+       "prose": [
+        "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Other Options",
+       "prose": [
+        "Other options such as external field research experiences or internships may be suitable by permission of the faculty adviser.",
+        "Please meet with an adviser if you have an idea to propose."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Geology Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Geology Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART109",
+       "EART109L",
+       "EART110A",
+       "EART110B",
+       "EART110M",
+       "EART110C",
+       "EART110N",
+       "EART120",
+       "EART120L",
+       "EART150",
+       "EART150L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART100",
+       "EART100L",
+       "EART101",
+       "EART101L",
+       "EART140",
+       "EART140L",
+       "EART142",
+       "EART146",
+       "EART146L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Geology Elective: One of the following:",
+       "prose": [
+        "Where the lab course follows a lecture course the pair of courses counts as a single course."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Geology Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take two upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students take two upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and ENVS 115L are open to Earth science students with permission of the instructor, and taken together are approved as one elective.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Geology Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART189A",
+       "EART189B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) general education requirement. Students in the Earth Sciences B.S. major with a geology concentration satisfy the DC requirement by completing the following courses:",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes.",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Geology Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement.",
+        "The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career and to provide the instructional hours in the field needed to prepare students for the California professional geologist licensing requirements. Therefore, prior to completing an activity to satisfy the senior comprehensive requirement, students should have already completed EART 110A , one of EART 110B or EART 110C , and three other upper-division courses that fulfill major requirements. Students should consult an advisor if they have any questions about the timing of their proposed comprehensive requirement activity. Enrollment in the senior comprehensive is by petition or application.",
+        "Note: Courses used to satisfy the senior comprehensive requirement cannot also be used to fulfill the upper-division elective requirement.",
+        "To do so, each student in the geology concentration must complete:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "EART 189B must be completed in the summer.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART189A",
+       "EART189B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Students completing their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Satisfactory completion of Summer Field",
+       "prose": [
+        "Students completing their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M .",
+        "EART 189B must be completed in the summer."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Planetary Sciences Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH22",
+       "MATH23A",
+       "EART111"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Planetary Sciences Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110A",
+       "EART110B",
+       "EART110M",
+       "EART110C",
+       "EART110N",
+       "EART119A",
+       "EART160"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART162",
+       "EART163",
+       "EART164",
+       "EART165"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "One elective from the following planetary science courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Planetary Sciences Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take three upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students take three upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and ENVS 115L are open to Earth science students with permission of the instructor, and taken together are approved as one elective.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Planetary Sciences Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART189A",
+        "EART189B"
+       ],
+       [
+        "EART191"
+       ],
+       [
+        "EART191C"
+       ],
+       [
+        "EART191D"
+       ],
+       [
+        "EART195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or one of these courses"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) general education requirement. Students in the Earth Sciences B.S. major satisfy the DC requirement by completing one of the following options:",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes.",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Planetary Sciences Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement. The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career. Therefore, prior to completing an activity to satisfy the senior comprehensive requirement, students should have already completed EART 110A , one of EART 110B or EART 110C , and three other upper-division courses that fulfill major requirements. Students should consult an adviser if they have any questions about the timing of their proposed comprehensive requirement activity. Enrollment in the senior comprehensive is by petition or application.",
+        "Note: Courses used to satisfy the senior comprehensive requirement cannot also be used to fulfill the upper-division elective requirement.",
+        "To satisfy the comprehensive requirement, each student in these majors must complete one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "EART 189B must be completed in the summer.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART189A",
+       "EART189B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Satisfactory Completion of Summer Field",
+       "prose": [
+        "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M .",
+        "EART 189B must be completed in the summer."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "type": "prose"
+       },
+       {
+        "text": "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Satisfactory Completion of a Senior Thesis",
+       "prose": [
+        "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "Students may take EART 199 : Independent Study, as part of performing the research for their senior thesis. It is required that each student enroll in and pass EART 195 : Senior Thesis, in the academic quarter during which they complete their thesis.",
+        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART191",
+       "EART191C",
+       "EART191D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Satisfactory Completion of One of the Following Capstone Course Offerings:",
+       "prose": [
+        "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Other options",
+       "prose": [
+        "Other options such as external field research experiences or internships may be suitable by permission of the faculty adviser.",
+        "Please meet with an advisor if you have an idea to propose."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Ocean Sciences Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "Where the lab course follows a lecture course the pair of courses counts as a single course."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH11A",
+        "MATH11B"
+       ],
+       [
+        "MATH19A",
+        "MATH19B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH22",
+       "MATH23A",
+       "EART111"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20C",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "Where the lab course follows a lecture course the pair of courses counts as a single course."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Ocean Sciences Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110A",
+       "EART110B",
+       "EART110M",
+       "EART110C",
+       "EART110N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OCEA101",
+       "OCEA102"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Ocean Sciences Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take four upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students take four upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and ENVS 115L are open to Earth science students with permission of the instructor, and taken together are approved as one elective.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Ocean Sciences Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": [
+       [
+        "EART189A",
+        "EART189B"
+       ],
+       [
+        "EART191"
+       ],
+       [
+        "EART191C"
+       ],
+       [
+        "EART191D"
+       ],
+       [
+        "EART195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[unstructured alternative] or one of these courses"
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) general education requirement. Students in the Earth Sciences B.S. major satisfy the DC requirement by completing one of the following options:",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes.",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Ocean Sciences Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement. The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career. Therefore, prior to completing an activity to satisfy the senior comprehensive requirement, students should have already completed EART 110A , one of EART 110B or EART 110C , and three other upper-division courses that fulfill major requirements. Students should consult an adviser if they have any questions about the timing of their proposed comprehensive requirement activity. Enrollment in the senior comprehensive is by petition or application.",
+        "Note: Courses used to satisfy the senior comprehensive requirement cannot also be used to fulfill the upper-division elective requirement.",
+        "To satisfy the comprehensive requirement, each student in these majors must complete one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "EART 189B must be completed in the summer.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART189A",
+       "EART189B"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [
+       "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
+      ],
+      "op": "unknown",
+      "source": {
+       "heading": "Satisfactory completion of Summer Field",
+       "prose": [
+        "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M .",
+        "EART 189B must be completed in the summer."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "type": "prose"
+       },
+       {
+        "text": "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Satisfactory completion of a senior thesis",
+       "prose": [
+        "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "Students may take EART 199 : Independent Study, as part of performing the research for their senior thesis. It is required that each student enroll in and pass EART 195 : Senior Thesis, in the academic quarter during which they complete their thesis.",
+        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART191",
+       "EART191C",
+       "EART191D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Satisfactory completion of one of the following capstone course offerings:",
+       "prose": [
+        "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Other options",
+       "prose": [
+        "Other options such as external field research experiences or internships may be suitable by permission of the faculty adviser.",
+        "Please meet with an adviser if you have an idea to propose."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": "Geophysics Concentration",
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Some courses may be satisfied via exam credit ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "EART5",
+        "EART5L"
+       ],
+       [
+        "EART10",
+        "EART10L"
+       ],
+       [
+        "EART20",
+        "EART20L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following options:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH11A",
+        "MATH11B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 19A and MATH 19B are strongly preferred."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "MATH 19A and MATH 19B are strongly preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH21",
+       "AM10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH22",
+       "MATH23A",
+       "EART111"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": "Geophysics Concentration",
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART110A",
+       "EART110B",
+       "EART110M",
+       "EART110C",
+       "EART110N"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART112",
+       "EART119A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of these courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART114",
+       "EART118",
+       "EART126",
+       "EART162"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of these courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": "Geophysics Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students take four upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART104",
+       "EART109",
+       "EART109L",
+       "EART112",
+       "EART114",
+       "EART116",
+       "EART118",
+       "EART119A",
+       "EART125",
+       "EART126",
+       "EART140",
+       "EART140L",
+       "EART142",
+       "EART146",
+       "EART146L",
+       "EART148",
+       "EART150",
+       "EART150L",
+       "EART152",
+       "EART160",
+       "EART162",
+       "EART163",
+       "EART164",
+       "EART165",
+       "EART172",
+       "EART270",
+       "EART273",
+       "EART278A"
+      ],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students take four upper-division Earth sciences or ocean sciences courses of 5 or more credits, chosen from EART 100-199 (excluding EART 196B and EART 198 ) or OCEA 100 -199. No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.",
+        "ENVS 115A and ENVS 115L are open to Earth science students with permission of the instructor, and taken together are approved as one elective. Relevant courses in physics or mathematics may be substituted by petition.",
+        "Students are encouraged to take more than the minimum number of elective courses and may craft an elective distribution from many areas of specific research and career interests.",
+        "Choosing from the following list is recommended, but not mandatory:"
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Geophysics Concentration",
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART191C",
+       "EART195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division disciplinary communication (DC) general education requirement. Students in the Earth Sciences B.S. major satisfy the DC requirement by completing one of the following options:",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes.",
+        "Courses taken to satisfy the DC requirement may also satisfy upper-division elective or senior comprehensive requirements. Consult the Earth and Planetary Sciences undergraduate advising office for the most up-to-date list of scheduled classes."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": "Geophysics Concentration",
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "All students must satisfy the senior comprehensive requirement.",
+        "The intent of this requirement is to synthesize knowledge and skills from a student’s undergraduate career. Therefore, prior to completing an activity to satisfy the senior comprehensive requirement, students should have already completed EART 110A , one of EART 110B or EART 110C , and three other upper-division courses that fulfill major requirements. Students should consult an adviser if they have any questions about the timing of their proposed comprehensive requirement activity. Enrollment in the senior comprehensive is by petition or application.",
+        "Note: Courses used to satisfy the senior comprehensive requirement cannot also be used to fulfill the upper-division elective requirement.",
+        "To do so, each student in the geophysics concentration must complete one of the following options:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "type": "prose"
+       },
+       {
+        "text": "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require two or three quarters for completion.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "EART195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require two or three quarters for completion."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Satisfactory completion of a senior thesis",
+       "prose": [
+        "A senior thesis must include a significant element of independent research or original work and can only be undertaken after an agreement is obtained from a faculty member to supervise it. It is recommended that students allocate three quarters for the thesis process.",
+        "Students may take EART 199 : Independent Study, as part of performing the research for their senior thesis. It is required that each student enroll in and pass EART 195 : Senior Thesis, in the academic quarter during which they complete their thesis.",
+        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require two or three quarters for completion."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART191C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Satisfactory completion of one of the following capstone course offerings:",
+       "prose": [
+        "Capstone course offerings vary year to year. If you are interested in completing a capstone course please contact the Earth and Planetary Sciences undergraduate advising office."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "earth-sciences-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciences-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

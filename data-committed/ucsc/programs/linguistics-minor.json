@@ -1,0 +1,147 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "linguistics",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Linguistics Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING50",
+       "LING53"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING100",
+       "LING101",
+       "LING111",
+       "LING112",
+       "LING171"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "Students may not apply both LING 111 and LING 112 toward the minor."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Take two of the following courses:",
+       "prose": [
+        "Students may not apply both LING 111 and LING 112 toward the minor."
+       ]
+      }
+     }
+    ],
+    "title": "Take two of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LING111",
+        "LING112"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "LING"
+        },
+        {
+         "hi": 289,
+         "lo": 200,
+         "subject": "LING"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "The minor requires three 5-credit courses chosen from LING 100-189 and/or LING 200-289.",
+        "The three courses may be any blend of these two options. As noted above, students may not apply both LING 111 and LING 112 toward the minor . See the Course Substitution Policy section for information about using pre-approved outside courses not listed above. Students must receive instructor permission to enroll in graduate level courses."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students may substitute up to two outside courses for the Upper-Division Electives requirement. These courses include independent study ( LING 199 ), courses from other UC Santa Cruz departments, and courses from other institutions. Substitutions must be upper-division courses and fit into a coherent program of study. A list of pre-approved outside courses is available for reference. Students should contact the department to inquire about using courses not on this list. Students may apply no more than one quarter of LING 199 .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Substitution Policy",
+       "prose": [
+        "Students may substitute up to two outside courses for the Upper-Division Electives requirement. These courses include independent study ( LING 199 ), courses from other UC Santa Cruz departments, and courses from other institutions. Substitutions must be upper-division courses and fit into a coherent program of study. A list of pre-approved outside courses is available for reference. Students should contact the department to inquire about using courses not on this list. Students may apply no more than one quarter of LING 199 ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Substitution Policy"
+   }
+  ]
+ },
+ "slug": "linguistics-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/linguistics-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

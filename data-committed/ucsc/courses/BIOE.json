@@ -1,0 +1,3733 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "BIOE106",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides students with a broad genetics background. Topics range from understanding the flow of genetic information within single-celled organisms to how genes and gene products function within multicellular organisms. Students learn how genotype shapes phenotype and its role in evolution and ecology.",
+   "display_code": "BIOE 106",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "106",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Principles of Genetics for EEB",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-106"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE107",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on physiological, behavioral, and population ecology, and on linking ecological processes to evolution. It includes basic principles, experimental approaches, concepts of modeling, and applications to ecological problems.",
+   "display_code": "BIOE 107",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "107",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-107"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE108",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Paradigms and designs in marine ecology.  A review of the paradigms that have shaped our understanding of marine ecology; analysis and discussion of experiments with these paradigms. Students cannot receive credit for this course and BIOE 208 .",
+   "display_code": "BIOE 108",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "108",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOE107"
+    ],
+    [
+     "BIOE140"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; BIOL 20A , BIOE 20B , and BIOE 20C ; BIOE 107 or BIOE 140 recommended. Enrollment is restricted to juniors and seniors.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-108"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE109",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An examination of the history and mechanisms of evolutionary change. Topics include molecular evolution, natural and sexual selection, adaptation, speciation, biogeography, and macroevolution.",
+   "display_code": "BIOE 109",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "109",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOE106",
+     "BIOL105"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL 105 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Evolution",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-109"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE112",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to the evolution, ecology, behavior, and natural history of birds, using exemplary case histories to illustrate key concepts in evolution, ecology, and behavior.",
+   "display_code": "BIOE 112",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "112",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE109",
+     "BIOE140"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 , BIOE 109 , or BIOE 140 . Concurrent enrollment in BIOE 112L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ornithology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-112"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE112L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Field trips introduce students to field identification skills and field investigation of census, foraging behavior, migration, social behavior, and communication. Examination of specimens in the laboratory will be used to highlight the diversity and taxonomy of birds. Some field trips may require students to provide their own transportation.",
+   "display_code": "BIOE 112L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "112L",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE109",
+     "BIOE140"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 , BIOE 109 , or BIOE 140 . Concurrent enrollment in BIOE 112 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ornithology Field Studies",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-112l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE114",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lectures introduce students to evolution, development, physiology, behavior, ecology, and life history of reptiles and amphibians. The materials integrate with conceptual and theoretical issues of ecology, evolution, physiology, and behavior.",
+   "display_code": "BIOE 114",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "114",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE109",
+     "BIOE140"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; BIOE 107 , BIOE 109 , or BIOE 140 . Concurrent enrollment in BIOE 114L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Herpetology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-114"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE114L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Field trips introduce students to natural history, censusing techniques, physiological ecology, and behavioral analysis of reptiles and amphibians. Laboratories introduce students to techniques for analyzing behavior and physiology. Field studies culminate with a group project in a natural setting. Some field trips may be held on weekends due to weather considerations. Some field trips may require students to provide their own transportation, some transportation will be provided by UCSC. Students are billed a materials fee of $120.",
+   "display_code": "BIOE 114L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "114L",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE109",
+     "BIOE140"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; BIOE 107 , BIOE 109 , or BIOE 140 . Concurrent enrollment in BIOE 114 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Field Methods in Herpetological Research",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-114l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE117",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An examination of the taxonomy and evolution of flowering plants. Special topics include phylogenetics and cladistics, plant species concepts, and modern methods of systematic research.",
+   "display_code": "BIOE 117",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "117",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE117L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 117L .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Systematic Botany of Flowering Plants",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-117"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE117L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Weekly laboratory concerned primarily with California flora and plant families. Several field trips.",
+   "display_code": "BIOE 117L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "117L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE117"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C . Must be taken concurrently with BIOE 117 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Systematic Botany of Flowering Plants Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-117l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE118",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces plant biology as it affects human society. Topics include the origins of agriculture, the morphology and chemistry of food plants, the material uses of plant products, the biology of medicinal plants, and plant diversity and bioprospecting.",
+   "display_code": "BIOE 118",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "118",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "ENVS23",
+     "ENVS24"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C ; or ENVS 23 and ENVS 24 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plants and Society: the Biology of Food, Shelter, and Medicine",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-118"
+  },
+  {
+   "catalog_instructor": "Kathleen Kay",
+   "code": "BIOE119L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In-person CURE-style lab course that explores modern methods of plant breeding. A CURE is a Course-based Undergraduate Research Experience, meaning students learn by actively doing research. Topics cover the history and motivations for plant breeding, plant propagation, tissue culture, CRISPR/Cas9 genome editing, simple bioinformatic tools, transformation methods, PCR-based genotyping, and plant phenotyping. (Formerly BIOE 119, Plant Biotechnology for a Changing World.)",
+   "display_code": "BIOE 119L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly BIOE 119, Plant Biotechnology for a Changing World.",
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "119L",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOL105",
+     "BIOE106"
+    ],
+    [
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B and BIOE 20C , BIOL 105 , or BIOE 106 ; or permission of the instructor. BIOE 16 and BIOE 137 / BIOE 137L are recommended but not required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plant Biotechnology Lab for a Changing World",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-119l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE120",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the biology of marine algae, fungi, and angiosperms with regard to form and function. Major boreal, temperate, and tropical marine plant communities. Lecture format.",
+   "display_code": "BIOE 120",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "120",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE120L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 120L .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Botany",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-120"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE120L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "One laboratory weekly and several field trips. Focuses on marine algae, fungi, and angiosperms.",
+   "display_code": "BIOE 120L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "120L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE120"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 120 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Botany Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-120l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE121",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how biotic and abiotic factors shaped the Earth’s biosphere and how climate change will challenge the resilience of plant life on the planet. By the end of the course, students will better understand the broader implications of plant function on the health of the planet. Topics include core plant physiological processes and how they feed into climate feedback loops, photosynthesis and the formation of the atmosphere, plants and the paleoclimate, plant adaptations and resilience, climate change mitigation through plants, and more.",
+   "display_code": "BIOE 121",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "121",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C . Enrollment is restricted to sophomores, juniors and seniors.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plants, Earth, Climate",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-121"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE122",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An examination of invertebrates and their habitats. Lecture format.",
+   "display_code": "BIOE 122",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "122",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE122L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 122L .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Invertebrate Zoology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-122"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE122L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An examination of invertebrates and their habitats. Weekly laboratories or field trips.",
+   "display_code": "BIOE 122L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "122L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE122"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 122 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Invertebrate Zoology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-122l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE124",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the biology of mammals, including their classification, evolution, behavior, reproductive strategies, and general ecology. Examines the diagnostic traits of mammals; provides a survey of the living orders along with their diagnostic features, physiological and behavioral specializations, and adaptations.",
+   "display_code": "BIOE 124",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "124",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C . Concurrent enrollment in BIOE 124L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Mammalogy",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-124"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE124L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Focuses on the identification of mammals and their specific traits. Exercises provide hands-on experience at identifying mammal orders, families, and species. Field trip provides students with field techniques in mammalogy.",
+   "display_code": "BIOE 124L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "124L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C . Concurrent enrollment in BIOE 124 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Mammalogy Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-124l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE125",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A survey of the diversity, structure, and functioning of California's ecosystems through time and the ways they have influenced and responded to human activities and stewardship. Topics include: ecosystem drivers such as climate, soils, and land-use history; human and ecological prehistory; comparative marine, freshwater, and terrestrial ecosystem dynamics; and managed ecosystems such as range, fisheries, and agriculture.",
+   "display_code": "BIOE 125",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "125",
+   "prereq_groups": [
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to ecology and evolution, marine biology, plant sciences, and biology B.A. majors.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecosystems of California",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-125"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE126",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Broad overview of the ecology, evolution, physiology, and behavior of marine mammals, birds, and turtles, with an emphasis on local Monterey Bay species.",
+   "display_code": "BIOE 126",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "126",
+   "prereq_groups": [
+    [
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 20B and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Biology of Large Marine Vertebrates",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-126"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE127",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the biology of jawless, cartilaginous, and bony fishes--their classification, evolution, form, physiology, and ecology.",
+   "display_code": "BIOE 127",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "127",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE127L"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 127L .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ichthyology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-127"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE127L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "One laboratory session a week and several field trips to study the biology of fish.",
+   "display_code": "BIOE 127L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "127L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE127"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Must be taken concurrently with BIOE 127 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ichthyology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-127l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE128L",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "Lectures combined on fieldwork with large marine vertebrates in the laboratory and lectures with large marine vertebrates in the field (Monterey Bay, Ano Nuevo). Fieldwork familiarizes students with research methods, study design, and statistical approaches for research on large marine vertebrates (seals, birds, fish, and sharks). Research includes: animal tracking; physiology; behavior; foraging ecology; and energetics. Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements.",
+   "display_code": "BIOE 128L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "128L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Large Marine Vertebrates Field Course",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-128l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE129",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A survey of cetaceans, pinnipeds, sirenians, and sea otters, including natural history, systematics, physiology, behavior, anatomy, and conservation.",
+   "display_code": "BIOE 129",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "129",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C ; and satisfaction of the Entry Level Writing and Composition requirements. BIOL 110 is recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Biology of Marine Mammals",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-129"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE129L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Covers the basics of marine mammal taxonomy, anatomy, and field methods with an emphasis on local field identification and understanding of local species. Will include field trips to Long Marine Lab, Ano Nuevo, and Monterey Bay.",
+   "display_code": "BIOE 129L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "129L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE129"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C . Must be taken concurrently with BIOE 129 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Biology of Marine Mammals Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-129l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE131",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Principles and concepts underlying the function of tissues and organ systems in animals with emphasis on vertebrate systems. Students cannot receive credit for this course and BIOL 130 .",
+   "display_code": "BIOE 131",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "131",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Animal Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-131"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE131L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Experiments conducted with primary focus on quantitative physiological principles of organ systems and intact organisms. Students cannot receive credit for this course and BIOL 130L .",
+   "display_code": "BIOE 131L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "131L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C . Concurrent enrollment in BIOE 131 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Animal Physiology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-131l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE133",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An advanced-level course concerning physiological and biochemical processes associated with human performance. Emphasis is on the integration of organ systems for exercise. Topics include metabolism and fuel utilization, cardiovascular and respiratory dynamics during activity, and the effects of training. Requires a good understanding of basic physiological function and anatomy.",
+   "display_code": "BIOE 133",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B and BIOE 20C . BIOE 131 is recommended. Concurrent enrollment in BIOE 133L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Exercise Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-133"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE133L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An introduction to basic measurement techniques used in assessing the physiological response of humans to exercise. Sessions cover oxygen consumption, respiratory rate, and heart rate monitoring during aerobic and anaerobic activity.",
+   "display_code": "BIOE 133L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "133L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , and BIOE 20B and BIOE 20C . BIOE 131 is recommended. Concurrent enrollment in BIOE 133 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Exercise Physiology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-133l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE134",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Course focuses on vertebrate form and function: an integration of physiology and biomechanics. Topics include: the physiology and biomechanics underlying vertebrate locomotion; vertebrate feeding; and the morphological changes associated with different locomotion and feeding strategies through evolutionary time.",
+   "display_code": "BIOE 134",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "134",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C . Concurrent enrollment in BIOE 134L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Comparative Vertebrate Anatomy",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-134"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE134L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Course focuses on the gross dissections all major clades of vertebrates:  development, form, and diversity of organ systems and basic principles of evolution; vertebrate classification; and functional morphology, with emphasis on feeding and locomotion. Anatomical dissections integrated with the associated lecture material focusing on biomechanics, form, and function.",
+   "display_code": "BIOE 134L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "134L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C . Concurrent enrollment in BIOE 134 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Comparative Vertebrate Anatomy Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-134l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE135",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Cellular and organismal functions important in the life of green plants.",
+   "display_code": "BIOE 135",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "135",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C ; concurrent enrollment in BIOE 135L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plant Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-135"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE135L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Weekly laboratory concerning the cellular and organismal functions of green plants.",
+   "display_code": "BIOE 135L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "135L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE135"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C ; concurrent enrollment in BIOE 135 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plant Physiology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-135l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE136",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores how an organism's physiology interacts with its environment including molecular to whole organism-level processes. How do animals thrive in the most diverse regions of Earth and why are some more vulnerable to change than others?",
+   "display_code": "BIOE 136",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "136",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Environmental Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-136"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE137",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This combination lecture/laboratory course explores the use of molecular (DNA and/or protein) data in ecological and conservation research. Topics covered include data collection; marker choice; estimating genetic diversity and population structure; the inference of mating systems; and environmental genomics.",
+   "display_code": "BIOE 137",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "137",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOL105"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL105, and satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in BIOE 137L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Molecular Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-137"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE137L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "This combination lecture/laboratory course explores the use of molecular (DNA and/or protein) data in ecological and conservation research. Topics covered include data collection; marker choice; estimating genetic diversity and population structure; the inference of mating systems; and environmental genomics. Students are billed a materials fee of $110.",
+   "display_code": "BIOE 137L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "137L",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOE106",
+     "BIOL105"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL105. Concurrent enrollment in BIOE 137 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Molecular Ecology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-137l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE138",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to how mathematical models can be used to ask and answer evolutionary and ecological questions. Methods covered include optimality theory, population genetics, population dynamic models, game theory, and dynamic state-variable models. Students learn to develop their own mathematical models and to use models to make predictions. Statistical methods for combining theory and data are not covered. Class focuses on learning by doing, using in-class activities, weekly problem sets and an independent project. Students cannot receive credit for this course and BIOE 238 . Prerequisite(s): BIOE 107 , BIOE 109 and by permission of the instructor. (Formerly BIOE 148B, Quantitative Methods in Ecology and Evolution.)",
+   "display_code": "BIOE 138",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly BIOE 148B, Quantitative Methods in Ecology and Evolution.",
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "138",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Modeling Evolution and Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-138"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE139",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Teaches students how to build mathematical models and fit them to data to answer questions in ecology and evolution. Includes learning to write code in the R programming language to simulate models and perform statistical analyses. Topics include population and evolutionary dynamics, species interactions, and behavior. Students cannot receive credit for this course and BIOE 239 . Prerequisite(s): BIOE 107 , BIOE 109 , and permission of instructor. (Formerly offered as BIOE 148A Quantitative Ecology.)",
+   "display_code": "BIOE 139",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as BIOE 148A Quantitative Ecology.",
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "139",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Mathematical Modeling and Data Science in Ecology and Evolution",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-139"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE140",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to social and reproductive behavior. Emphasis on studies of vertebrates in their natural habitat. Ideas concerning the evolution of social behavior, mating systems, and individual reproductive strategies. Case histories of well-studied animals that illustrate key principles in courtship and mating, parental behavior, and food-getting behavior.",
+   "display_code": "BIOE 140",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Behavioral Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-140"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE141L",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "A field-based course introducing students to concepts and methods for studying behavioral ecology in nature. Students will conduct observations and field experiments on various local model organisms including elephant seals, hummingbirds, sparrows, lizards, ants, bees, frogs, and salamanders.",
+   "display_code": "BIOE 141L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "141L",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE140",
+     "BIOE110"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 or BIOE 140 or BIOE 110; and satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Behavioral Ecology Field Course",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-141l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE142L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Online laboratory course with a remote (not in-person), virtual field component.Students learn about the scientific study of animal behavior from an ecological and evolutionary perspective through lectures, behavior videos, assignments, field observations, digital labs and final research project. The general goal, however, is to develop the ability to observe the natural world, design research, collect and interpret data, and communicate ideas.",
+   "display_code": "BIOE 142L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "142L",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: BIOL 20A , BIOE 20B , and BIOE 20C . Students may benefit from taking BIOE 142L after or concurrently with BIOE 107 or BIOE 140 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Animal Behavior in the Wild (A Virtual Field Course)",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-142l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE145",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An exploration of the ecology of plant form, function, distribution, abundance, and diversity. Topics include plant adaptation to environmental conditions, reproductive ecology, life history, population dynamics, competition, herbivory, disease, community assembly, ecosystem responses to global change, plant conservation, and restoration. Lecture with discussions of original papers and independent field projects. Students cannot receive credit for this course and BIOE 245 .",
+   "display_code": "BIOE 145",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "145",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "ENVS100"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Either [ BIOL 20A , BIOE 20B , and BIOE 20C ], or ENVS 100 ; and satisfaction of the Entry Level Writing and Composition requirements. BIOE 107 is recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plant Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-145"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE145L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Hands-on exploration of the concepts and techniques of plant ecology. A combination of lab, greenhouse, and field-based exercises (irrespective of weather conditions). Statistical analysis and scientific writing. One required weekend field trip. Students cannot receive credit for this course and BIOE 245L .",
+   "display_code": "BIOE 145L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "145L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in BIOE 145 is required. BIOE 107 is recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Field Methods in Plant Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-145l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE146",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores the sensory lives of various taxa (mammals, birds, amphibians) across different environmental landscapes. This knowledge is then applied to evaluate how animals communicate crucial biological information to one another during different life-history events, including breeding, parental care, finding food, and predator avoidance. This course aims to explore the fundamental principles and mechanisms underlying sensory perception in animals. Students gain a comprehensive understanding of how animals detect, process, and respond to various environmental stimuli through specialized sensory systems. (Formerly Acoustic Ecology.)",
+   "display_code": "BIOE 146",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Acoustic Ecology.",
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "146",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "PHYS6A",
+     "PHYS6L",
+     "PHYS7A",
+     "PHYS1"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , and BIOE 20B , and BIOE 20C . PHYS 6A / PHYS 6L or PHYS 7A / PHYS 6L or PHYS 1 recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Sensory Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-146"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE147",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Develops the major themes of community biology: structure, trophic dynamics, succession, complex interactions among species, herbivory, evolution and coevolution. Uses case histories of well-studied marine and terrestrial systems. Students cannot receive credit for this course and BIOE 247.",
+   "display_code": "BIOE 147",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "147",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE108",
+     "BIOE145",
+     "BIOE155"
+    ],
+    [
+     "ENVS24"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 , BIOE 108 , BIOE 145 , BIOE 155 or 159A; or ENVS 24 by permission of instructor.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Community Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-147"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE149",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on the ecological and evolutionary processes that drive the transmission of pathogens between hosts; the impact of disease on host populations; and what causes the emergence of an infectious disease. Includes theoretical framework, description of field techniques, and discussion of wildlife and human diseases including malaria, West Nile virus, Lyme disease, HIV, avian influenza (bird flu), Chikungunya, tuberculosis, chytridiomycosis, and Ebola.",
+   "display_code": "BIOE 149",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "149",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE107"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , and BIOE 20B and BIOE 20C and BIOE 107 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Disease Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-149"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE150",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lectures and laboratory computer exercises designed to familiarize students with research methods, study design, statistical approaches, and analysis tools for ecological research. Students cannot receive credit for this course and ENVS 104A .",
+   "display_code": "BIOE 150",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE107"
+    ],
+    [
+     "BIOE108"
+    ],
+    [
+     "BIOE140"
+    ],
+    [
+     "BIOE147"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in BIOE 150L is required. BIOE 107 , BIOE 108 , BIOE 140 , or BIOE 147 recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecological Field Methods",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-150"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE150L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Field-oriented course in the study of animal ecology and behavior. Combines overview of methodologies and approaches to field research with practical field studies.",
+   "display_code": "BIOE 150L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "150L",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C , and satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in BIOE 150 is required. BIOE 107 , BIOE 108 , BIOE 140 , or BIOE 147 recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecological Field Methods Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-150l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE151A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An intensive, on-site learning experience in terrestrial field ecology and conservation, using the University of California Natural Reserves and other natural areas. Students study advance concepts in ecology, conservation, and field methods for four weeks, then experience total immersion in field research at the UC Natural Reserves and other natural areas. Lectures, field experiments, writing assignments, and computer exercises familiarize students with research methods, study design, statistical approaches, and analytical tools for ecological research. Students complete and communicate the results of short field projects in ecology, learn the natural history of the flora and fauna of California, and plan and execute a significant, independent field-research study at the end of the quarter. Enrollment is by application. Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C or ENVS 23 , ENVS 24 ; and STAT 7 & STAT 7L (formerly AMS 7 & AMS 7L). Concurrent enrollment in BIOE 151B - BIOE 151C - BIOE 151D is required. Satisfies the senior exit requirement for biological sciences majors and satisfies the senior exit requirement for environmental studies majors by prior approval. Students cannot receive credit for this course and BIOE 150 , BIOE 150L , ENVS 104A or ENVS 196A.",
+   "display_code": "BIOE 151A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology and Conservation in Practice Supercourse: Ecological Field Methods",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-151a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE151B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Field-oriented course in ecological research. Combines overview of methodologies and approaches to field research with practical field studies. Students complete field projects in ecology and also learn the natural history of the flora and fauna of California. Students are billed a materials fee of $1,100. Enrollment is by application. Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C or ENVS 23 , ENVS 24 ; and STAT 7 & STAT 7L (formerly AMS 7 & AMS 7L); satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in BIOE 151A - BIOE 151C - BIOE 151D . Satisfies the senior exit requirement for biological sciences majors and satisfies the senior exit requirement for environmental studies majors by prior approval. Students cannot receive credit for this course and BIOE 150 , BIOE 150L , ENVS 104A or ENVS 196A.",
+   "display_code": "BIOE 151B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology and Conservation in Practice Supercourse: Ecological Field Methods Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-151b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE151C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "From lectures and discussion of terrestrial community and ecosystem ecology, students work individually or in small groups to present an idea for a project, review relevant literature, develop a research question/hypothesis, design and perform an experiment, collect and analyze data, and write a report. The instructor evaluates the feasibility of each student's project before it begins. Enrollment is by application. Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C or ENVS 23 , ENVS 24 ; and STAT 7 & STAT 7L . Concurrent enrollment in BIOE 151A - BIOE 151B - BIOE 151D is required. Satisfies the senior exit requirement for biological sciences majors and satisfies the senior exit requirement for environmental studies majors by prior approval. Students cannot receive credit for this course and BIOE 150 , BIOE 150L , ENVS 104A or ENVS 196A.",
+   "display_code": "BIOE 151C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "151C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology and Conservation in Practice Supercourse: Functions and Processes of Terrestrial Ecosystems",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-151c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE151D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Focuses on current issues in environmental and conservation biology and the emerging field methods used to address them. From field-oriented lectures about current issues in environmental and conservation biology, students pursue research project as individuals and small groups to develop hands-on experience with field skills in conservation research and resource management. Enrollment is by application. Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C or ENVS 23 , ENVS 24 ; and STAT 7 & STAT 7L (formerly AMS 7 & AMS 7L). Concurrent enrollment in BIOE 151A -B-C is required. Satisfies the senior exit requirement for biological sciences majors and satisfies the senior exit requirement for environmental studies majors by prior approval. Students cannot receive credit for this course and BIOE 150 , BIOE 150L , ENVS 104A or ENVS 196A.",
+   "display_code": "BIOE 151D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "151D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology and Conservation in Practice Supercourse: Conservation in Practice",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-151d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE153A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Field-intensive course comprised of weekly classes in preparation for the field component. Focuses on issues relevant to the ecology of arctic regions including arctic ecology, arctic geology and paleontology, and arctic environmental change. Students are charged a materials fee of $2,570. Enrollment is by permission of the instructor. Prerequisite(s): BIOL 20A , and BIOE 20B and BIOE 20C ; and concurrent enrollment BIOE 153B and BIOE 153C .",
+   "display_code": "BIOE 153A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "153A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Introduction to Arctic Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-153a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE153B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Field-intensive course focusing on issues relevant to the ecology of the arctic regions. Explores the changing arctic environment through lectures and hands-on research during an 18-day camping trip transecting the subarctic boreal forest to the high Arctic. Enrollment is by permission of the instructor. Prerequisite(s): BIOL 20A , and BIOE 20B and BIOE 20C ; and concurrent enrollment BIOE 153A and BIOE 153C .",
+   "display_code": "BIOE 153B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "153B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Arctic Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-153b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE153C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Writing-intensive course focusing on developing skills in scientific communication with an emphasis on communicating issues relevant to the ecology of arctic regions. Communication products are developed during an 18-day camping trip in the Arctic. Enrollment is by permission of the instructor. Prerequisite(s): BIOL 20A , and BIOE 20B and BIOE 20C ; and satisfaction of the Entry Level Writing and Composition requirements; and concurrent enrollment BIOE 153A and BIOE 153B .",
+   "display_code": "BIOE 153C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "153C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Disciplinary Communication for Biologists",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-153c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE155",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides an overview of the physical, chemical, and biological processes that characterize inland waters such as lakes, streams, rivers, and wetlands. Also addresses relationships between humans and freshwater, and discusses these challenges in conservation.",
+   "display_code": "BIOE 155",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "155",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Freshwater Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-155"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE155L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Field and laboratory study of the ecology of freshwater systems including lakes, streams, and estuaries. Students gain experience sampling and identifying freshwater organisms, designing and analyzing ecological experiments, and writing scientific reports.",
+   "display_code": "BIOE 155L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "155L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ],
+    [
+     "BIOE155"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C and BIOE 155 .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Freshwater Ecology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-155l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE157A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers the fundamentals of evolution, including macro-evolution (the science of the evolution of organisms) and micro-evolution (the science of the evolution of populations, within a species). Field observations and field work is an integral part of the class, where demonstrations and examples are shown directly in the field. Students think, write, and report, on projects that will be elaborated and discussed with peers and faculty. Course is delivered in the field, and in person, visiting sites of archaeological importance pertinent to human evolution (caves of Sterkfontein, where hominid remains have been discovered), and national parks (Kruger National Park, Malawi National Park) where we will observe animal interactions, sexual selection, and kin selection. Students write daily journals with observations and reports.",
+   "display_code": "BIOE 157A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "157A",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): equivalent of UCSC's BIOL 20A , BIOE 20B , and BIOE 20C ; satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Evolution Field Class in Southern Africa",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-157a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE157B",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "Covers the fundamentals of ichthyology (fish biology), including taxonomy and classification, morphology, physiology, zoogeography and fisheries. Field observations and field work is an integral part of the class, where demonstrations and examples are shown directly in the field. Students think, write, and report, on projects that will be elaborated and discussed with peers and faculty. The course is delivered in the field, and in person, including visiting streams and rivers to learn about local fishes and hands-on approaches to studying the science of ichthyology. Research projects are done at Malawi National Park, a site with the greatest diversity of freshwater fishes in the world. Students write daily journals with observations and reports.",
+   "display_code": "BIOE 157B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "157B",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): equivalent of UCSC's BIOL 20A , BIOE 20B , and BIOE 20C ; satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ichthyology Field Class in Southern Africa",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-157b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE158L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Supervised individual research projects in experimental marine biology. Students carry out a complete research project, including (1) the formation of hypotheses; (2) the design and implementation of experiments; (3) collection, analysis, and interpretation of data; and (4) write-up of an oral presentation.",
+   "display_code": "BIOE 158L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "158L",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE108"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 or BIOE 108 ; satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Field Methods in Marine Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-158l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE159A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Total immersion in marine ecology for very motivated students. Students develop a research project during first five weeks on campus and then spend five weeks of immersion in directed research without distraction in isolated locations off campus (past locations include the Gulf of California in Mexico and Moorea in French Polynesia). Not available through University Extension. No other courses may be taken during this quarter. Students must sign a contract agreeing to standards of behavior outlined in the UCSC Rule Book and by the instructors. Students are billed a materials fee of $3500. Paradigms and designs in marine ecology. A review of the paradigms that have shaped our understanding of marine ecology and analysis and discussion of experiments with these paradigms. Students carry out a complete research project, including the formation of hypotheses; the design and implementation of experiments; the collection, analysis, and interpretation of data; and the write-up and oral presentation of results. Admission by interview during previous winter quarter. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D are equivalent to BIOE 127 , BIOE 127L , BIOE 108 , and BIOE 158L for major requirements. Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D must be taken concurrently.",
+   "display_code": "BIOE 159A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology Field Quarter: Marine Ecology with Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-159a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE159B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the biology of jawless, cartilaginous, and bony fishes—their classification, evolution, form, physiology, and ecology. Admission by interview during previous winter quarter. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D are equivalent to BIOE 127 , BIOE 127L , BIOE 108 , and BIOE 158L for major requirements. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D must be taken concurrently.",
+   "display_code": "BIOE 159B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology Field Quarter: Ichthyology with Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-159b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE159C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn quantitative methods for field experiments and surveys. Emphasis will be on marine environments, but there will also be exposure to terrestrial systems. This is the lecture component to BIOE 159D. No text is required for this course; instead, readings from the current literature will be assigned. Students are evaluated on written independent field project proposals and class participation. Admission by interview during previous winter quarter. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D are equivalent to BIOE 127 , BIOE 127L , BIOE 108 , and BIOE 158L for major requirements. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D must be taken concurrently.",
+   "display_code": "BIOE 159C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology Field Quarter: Methods in Field Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-159c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE159D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "This is laboratory portion of BIOE 159C . Students carry out independent field projects under the supervision of course instructors. All work is done during the 5-6 week off-campus portion of BIOE 159. Students are evaluated on field techniques, the final write-up of their independent field projects, and class participation. Admission by interview during previous winter quarter. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D are equivalent to BIOE 127 , BIOE 127L , BIOE 108 , and BIOE 158L for major requirements. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159D must be taken concurrently.",
+   "display_code": "BIOE 159D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology Field Quarter: Methods in Field Ecology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-159d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE159E",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Study of animal behavior from an ecological and evolutionary perspective, using lectures, exercises, discussion, and research experience in the field. Emphasis on marine environments with exposure to extraterrestrial systems and laboratory studies. Focus on how scientists study animal behavior and what has been learned about evolution and ecology and ecology of animal behavior. Admission by interview during previous winter quarter. BIOE 159E is equivalent to BIOE 140 for major requirements. BIOE 159A , BIOE 159B , BIOE 159C , and BIOE 159E must be taken concurrently.",
+   "display_code": "BIOE 159E",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159E",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology Field Quarter: Behavioral Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-159e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE159F",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Engages students in the evolving discipline of global change biology, which examines the relationships between organisms and their environment. Includes discussion of changes in the climate system and other human disturbances, as well as the effects of these changes on biology, from shifts in organismal performance to species distributions and the timing of biological events. Includes discussion and analysis of different lines of evidence for understanding biological responses to global change, including paleoecology, observations, experiments and modeling. Last, this course also focuses on topics in climate literacy and science communication. Admission by interview during previous winter quarter. BIOE 159A , BIOE 159C , BIOE 159D , and BIOE 159F must be taken concurrently.",
+   "display_code": "BIOE 159F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "159F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology Field Quarter: Global Change Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-159f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE16",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Surveys the production of indoor crops and landscape plants to gain a working\nknowledge of how light, temperature, water, fertilizers, and soilless media interact in a\ncontrolled environment. Also covers pest management and propagation. Lectures and\ndemonstrations are combined with activities in the UCSC Greenhouses and at the\nUCSC Arboretum to give students direct experience with horticulture practices and\nprinciples in controlled environments. The approach is to develop practical skills and\nfamiliarity with agricultural technology while mastering basic principles in plant biology.\nEmphasis is placed on indoor growth systems.",
+   "display_code": "BIOE 16",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "16",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Introduction to Horticulture",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-16"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE161",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Study of organization of kelp forests as models for examining biological communities. The physical and biotic factors responsible for community organization of kelp forests are explored using original literature and data collected in BIOE 161L . Class meets one full morning each week. Prerequisite(s): by interview only; BIOL 20A , BIOE 20B , and BIOE 20C are required. Students must pass the University Research Diving Certification (contact the diving safety officer, Institute of Marine Sciences, for further information). Enrollment is restricted to seniors. BIOE 161L must be taken concurrently; BIOE 107 , BIOE 120 & BIOE 120L , BIOE 122 & BIOE 122L are recommended.",
+   "display_code": "BIOE 161",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "161",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Kelp Forest Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-161"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE161L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Fieldwork using SCUBA to quantitatively and qualitatively examine the abundance and distribution of organisms in kelp forests, with additional laboratory work. Culminates with a directed individual research project. Class meets one full morning each week. Students are billed a materials fee of $500. Admission by interview. Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C ; satisfaction of the Entry Level Writing and Composition requirements; BIOE 161 must be taken concurrently; BIOE 107 , 120/L, 122/L are recommended. Students must pass the University Research Diving Certification (contact the Diving Safety Officer, Institute of Marine Sciences, for further information).",
+   "display_code": "BIOE 161L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "161L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Kelp Forest Ecology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-161l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE163",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Integrated treatment of coral reefs, sea grasses, and mangroves emphasizing interactions and processes through time. Major topics: biological and geological history, biogeography, evolution and ecology of dominant organisms, biodiversity, community and ecosystem ecology, geology, biogeochemistry, global change, human impacts.",
+   "display_code": "BIOE 163",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C . Concurrent enrollment in BIOE 163L is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology of Reefs, Mangroves, and Seagrasses",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-163"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE163L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An interdisciplinary laboratory exploration of the anatomy, morphology, adaptations, diversity, evolution, and ecology of corals, mangroves, and seagrasses and of their physical, chemical, and geological environments.",
+   "display_code": "BIOE 163L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "163L",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C . Concurrent enrollment in BIOE 163 is required.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology of Reefs, Mangroves, and Seagrasses Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-163l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE165",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Initially undertakes an in-depth comparison of the biology and conservation of marine versus terrestrial ecosystems. With this foundation, course examines marine biodiversity loss resulting from overexploitation, habitat loss, species introduction, and pollution, with particular emphasis on the resulting trophic cascades, biodiversity losses, and climate change. Students cannot receive credit for this course and ENVS 120 .",
+   "display_code": "BIOE 165",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "165",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , and BIOE 20C ; OCEA 101 recommended.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Conservation Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-165"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE171",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Writing-intensive course focusing on developing skills in scientific communication, with an emphasis on communicating issues relevant to ecologists and evolutionary biologists. Presents the norms and standards of scientific communication spanning multiple genres Students cannot receive credit for this course and BIOE 271 .",
+   "display_code": "BIOE 171",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "171",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ],
+    [
+     "BIOE20B"
+    ],
+    [
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements, and BIOL 20A , BIOE 20B , and BIOE 20C .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Disciplinary Communication for Biologists",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-171"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE172",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Basic population genetics and selected topics will be covered, including genetics of speciation, tempo and mode of evolution, genetics of social behavior, natural selection in human populations, and the impact of molecular studies on evolutionary theory. Students cannot receive credit for this course and BIOE 272 .",
+   "display_code": "BIOE 172",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "172",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOL105",
+     "BIOE106"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL 105 , and satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Population Genetics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-172"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE173",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed for the discussion and evaluation of current topics in genetics. Integrates information from multiple fields and focuses on how genetics continues to shape numerous areas, including new emerging areas. Focuses on topics of current interest in genetics and includes lectures, readings, and discussions. Students present on a current genetics’ topic of interest in the last week of the class. This is a course that requires extensive readings, participation in discussions, written assignments, and oral presentations. This course also provides an opportunity for you to practice critical thinking, quantitative analysis, and cooperative learning. Throughout the semester, students will discuss the latest genetic technologies and their impact on society including ethical, economic, and environmental concerns.",
+   "display_code": "BIOE 173",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "173",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C",
+     "BIOE106",
+     "BIOL105"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL 105 ; and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to juniors and seniors.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Contemporary Genetics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-173"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE174",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Evolutionary processes and organismal evolutionary history have a profound impact in shaping the ways species develop disease susceptibility. As part of this class, students use evolution to critically evaluate human health, and explore how natural selection can shape behaviors and physiological responses. Uses concepts like trade-offs to understand how the evolution of mechanisms that were favorable under a set of conditions might seem damaging once those conditions are no longer present in modern societies. Course also extends these concepts to examine the evolution of disease susceptibility in other animals and plants providing a new tool to understand the world around us.",
+   "display_code": "BIOE 174",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "174",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOL105",
+     "BIOE106"
+    ],
+    [
+     "BIOE109"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL 105 , and BIOE 109 , and satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Evolutionary Medicine",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-174"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE175",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students learn how to interact with genomic sequence data and how it is used as a conservation tool. Focusing on the genomic sequence of the banana slug (Ariolimax dolichophallus) students assemble the first chromosome-level de novo assembly for the species. Also investigates how this genome compares to other slug species and investigates its phylogenetic position within the Order Stylommatophora.",
+   "display_code": "BIOE 175",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "175",
+   "prereq_groups": [
+    [
+     "BIOL20A",
+     "BIOE20B",
+     "BIOE20C"
+    ],
+    [
+     "BIOE106",
+     "BIOL105"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A , BIOE 20B , BIOE 20C , and BIOE 106 or BIOL 105 . Enrollment is restricted to sophomores, juniors, seniors, and graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Conservation Genomics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-175"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE176",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Practical introduction to the computational and statistical skills students in ecology and evolutionary biology need to know for working in our data-filled modern world. Topics include practices for reproducible science, scientific programming in R, and statistical reasoning with ecological and evolutionary data. Course is taught as a flipped classroom with extensive hands-on practice so that students leave with the critical skills to continue on their own. A final project consists of analysis of a real dataset.",
+   "display_code": "BIOE 176",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "176",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE109"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 or BIOE 109 , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Data Science for Ecology & Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-176"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE182F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides undergraduate students with exposure to research in the laboratory of an Ecology and Evolutionary Biology (EEB) faculty member, affiliate, or adjunct. Students are not expected to do independent research but rather to assist in laboratory or field research projects under the supervision of the faculty mentor or appointed researcher. Prerequisite(s): Undergraduate research contract on file with the department. If supervised by different faculty or researchers, may be repeated for credit.",
+   "display_code": "BIOE 182F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "182F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Exploring Research in EEB",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-182f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE183L",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Designed to ensure that students are intellectually engaged in the planning or implementation of a supervised or independent research project, achieve a fundamental understanding of implementing the scientific method, and develop their scientific writing and and presentation skills. Prerequisite(s): concurrent enrollment in BIOE 183W and an Undergraduate Research Contract on file with the department.",
+   "display_code": "BIOE 183L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Undergraduate Research in EEB",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-183l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE183W",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Working in coordination with an Ecology and Evolutionary Biology (EEB) faculty member, affiliate or adjunct, students develop and write a formal research proposal or report and give a presentation on their research project. Includes weekly class meetings focused on the philosophy of science, basic statistics, library searches, inputting data, creating graphs, and preparing results for publication, posters, and talks.",
+   "display_code": "BIOE 183W",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183W",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "BIOE108",
+     "BIOE109"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; and BIOE 107 , BIOE 108 , or BIOE109; and an undergraduate research contract on file with the department.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Undergraduate Research in EEB--Writing",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-183w"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE186",
+   "credits": "7",
+   "cross_listed": [],
+   "description": "Students provided with the programming and statistical tools needed to undertake experimental design and data analysis in ecology and evolutionary biology—from data manipulation, exploration, and visualization to interpretation. Lectures and lab practicals provide a primer on: R programming, basic statistics and probability, hypothesis testing, linear regression, analysis of variance, multiple regression, and categorical data analysis. Students cannot receive credit for this course and BIOE 286 . Enrollment is restricted to sophomore, junior, and senior biology, ecology and evolution, plant sciences, and marine biology majors and by permission of the instructor.",
+   "display_code": "BIOE 186",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "186",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Experimental Design and Data Analysis",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-186"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE189F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Through a special topic seminar series, students experience and discuss research in ecology, evolution, and conservation biology. Topics may include advanced concepts in our ecology and evolutionary biology (EEB) discipline, the intersections between diversity and ecology, research ethics. The goals are to advance understanding in EEB, professional development, networking, and community building.",
+   "display_code": "BIOE 189F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "189F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Special Topics Seminar Series: Ecology and Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-189f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE19",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "How can we better understand how humans have affected Earth and its inhabitants? Explores how DNA shed by organisms into the environment can be collected and used to study Earth's biodiversity, with applications in medicine, anthropology, agriculture, and conservation.",
+   "display_code": "BIOE 19",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "19",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to first-year students, sophomores, and juniors.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Biodiversity in the Age of Humans",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-19"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE193",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Continued undergraduate research on a project sponsored by an Ecology and Evolutionary Biology (EEB) faculty member, affiliate, or adjunct. Students are graded on the quality of their research and meeting the terms of their undergraduate research contract.  Prerequisites: course 183W and an undergraduate research contract on file with the department.",
+   "display_code": "BIOE 193",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "193",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Research in EEB",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-193"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE193F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Continued undergraduate research on a project sponsored by an Ecology and Evolutionary Biology (EEB) faculty member, affiliate, or adjunct. Students are graded on the quality of their research and meeting the terms of their undergraduate research contract. Prerequisites: course 183W and an undergraduate research contract on file with the department.",
+   "display_code": "BIOE 193F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "193F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Research in EEB",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-193f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE195",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An individually supervised course, with emphasis on independent research. Students required to submit a senior thesis. Enrollment is restricted to majors in biology, ecology and evolution, marine biology, plant sciences, and the combined major with environmental studies. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 195",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Senior Thesis",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-195"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE197",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Students conduct their own designed research projects in eight- to 10-week summer internships under the supervision and guidance of their principal investigator who will also be their research mentor. Students’ research duties will take place in research labs at UC Santa Cruz or in the field. Students develop questions and conduct their research throughout the summer, culminating in a final research project. Enrollment is by permission of the instructor.",
+   "display_code": "BIOE 197",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "197",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Summer Intensive Research in EEB",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-197"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE198F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Provides for two credits of independent field study (a) by means other than the usual supervision in person, or (b) when the student is doing all or most of the coursework off campus. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 198F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "198F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Field Study",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-198f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Reading, discussion, written reports, and laboratory research on selected biological topics, using facilities normally available on campus. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 199",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Two-credit Tutorial. Reading, discussion, written reports, and laboratory research on selected biological topics, using facilities normally available on campus. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 199F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-199f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE200A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Exposes graduate students to teaching skills, understanding the scientific method, searching and organizing literature, grant proposal and scientific writing, data management and presentation, and scientific speaking. Students are evaluated on their participation and the quality of a written research proposal.",
+   "display_code": "BIOE 200A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "200A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Scientific Skills",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE200B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Consists of lectures focusing on pivotal topics in ecology and evolution. Relevant background material is developed followed by a critical analysis of readings from the primary literature. Designed to give graduate (and advanced undergraduate) students direct contact with the major areas of research that are currently at the forefront of organismal biology.",
+   "display_code": "BIOE 200B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "200B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Advanced Organismal Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE200C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Analysis of the ways in which evolution shapes the form and function of organisms including physiology, morphology, and behavior, as well as populations, species, and species interactions across landscapes. (Formerly BIOE 279, Evolutionary Ecology.)",
+   "display_code": "BIOE 200C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly BIOE 279, Evolutionary Ecology.",
+   "ge_codes": [],
+   "number": "200C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Evolutionary Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE200D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Hones skills in graduate-level analysis and discussion of published research. Explores how to identify and relate your work to influential and “foundational” papers in your field. Examines how to develop a conceptual scaffold for research as a scientist, how to build and apply conceptual advances, and what makes a paper influential or important.",
+   "display_code": "BIOE 200D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "200D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Foundations in Ecology & Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE203",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Introduction to high-level analysis and discussion of published research papers in theoretical or applied ecology and evolutionary biology. Course consists of weekly meetings with extensive independent work outside of class. Course is required for all first-year graduate students and forms part of the graduate core curriculum. (Formerly offered as BIOE 293, Readings in Ecology and Evolution.)",
+   "display_code": "BIOE 203",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as BIOE 293, Readings in Ecology and Evolution.",
+   "ge_codes": [],
+   "number": "203",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Introductory Seminar in Ecology and Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-203"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE208",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Paradigms and designs in marine ecology. A review of the paradigms that have shaped our understanding of marine ecology; analysis and discussion of experiments with these paradigms. Students cannot receive credit for this course and BIOE 108 .",
+   "display_code": "BIOE 208",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "208",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Marine Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-208"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE20B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topics in morphology, physiology, development, genetics, and endocrinology selected to exemplify current issues and perspectives in organismic biology.",
+   "display_code": "BIOE 20B",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "20B",
+   "prereq_groups": [
+    [
+     "BIOL20A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOL 20A .",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Development and Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-20b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE20C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to ecology and evolution covering principles of evolution at the molecular, organismal, and population levels. Evolutionary topics include genetic and phenotypic variation, natural selection, adaptation, speciation, and macroevolution. Also covers behavioral, population, and community ecology including applied ecological issues.",
+   "display_code": "BIOE 20C",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "20C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology and Evolution",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-20c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE20F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Field-based, experiential course that explores local ecosystems, helps students develop nature observation skills and lead collaborative research, from formulating and testing hypotheses to sampling, data collection, analysis, interpretation, and presentation. The course builds peer and mentor networks and introduces a range of topics in ecology, conservation, and natural resource management. Some offerings include required weekend and/or overnight field trips. There are no course fees, and camping equipment is available if needed. Enrollment is by instructor permission.",
+   "display_code": "BIOE 20F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "20F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Field Biology in Practice",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-20f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE215",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Intensive exploration of an advanced topic in theoretical or applied evolutionary biology, ecology, physiology, behavior, or conservation biology. Course consists of weekly meetings with extensive independent work outside of class, resulting in mastery of an area of innovation in the field, or in a comprehensive familiarity with an important body of work. Independent work generally culminates in independent or group projects and products. Course is targeted at students who already have reached a professional level of expertise in their field and advanced master's students. (Formerly offered as BIOE 295, Advanced Ecology and Evolutionary Biology Seminar.)",
+   "display_code": "BIOE 215",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as BIOE 295, Advanced Ecology and Evolutionary Biology Seminar.",
+   "ge_codes": [],
+   "number": "215",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students, except by special permission.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Advanced Seminar in Ecology and Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-215"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE238",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces students to how mathematical models can be used to ask and answer evolutionary and ecological questions. Methods covered include optimality theory, population genetics, population dynamic models, game theory, and dynamic state-variable models. Students learn to develop their own mathematical models and to use models to make predictions. Statistical methods for combining theory and data are not covered. This class focuses on learning by doing, using in class activities, weekly problem sets and an independent project. Students cannot receive credit for this course and BIOE 138 . Enrollment is restricted to graduate students. Enrollment is by permission of the instructor. (Formerly offered as BIOE 248B, Quantitative Methods in Ecology and Evolution.)",
+   "display_code": "BIOE 238",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly offered as BIOE 248B, Quantitative Methods in Ecology and Evolution.",
+   "ge_codes": [],
+   "number": "238",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Modeling Evolution and Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-238"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE239",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Teaches students how to build mathematical models and fit them to data to answer questions in ecology and evolution. Includes learning to write code in the R programming language to simulate models and perform statistical analyses. Topics include: population and evolutionary dynamics; species interactions; and behavior. Students cannot receive credit for this course and BIOE 139 .  (Formerly BIOE 248A, Quantitative Ecology.)",
+   "display_code": "BIOE 239",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly BIOE 248A, Quantitative Ecology.",
+   "ge_codes": [],
+   "number": "239",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Mathematical Modeling and Data Science in Ecology and Evolution",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-239"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE245",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An exploration of the ecology of plant form, function, distribution, abundance, and diversity. Topics include plant adaptations to environmental conditions, life history variation, competition, reproductive ecology, herbivory, and patterns of diversity. Lecture with discussions of original papers and independent field project. Students cannot receive credit for this course and BIOE 145.",
+   "display_code": "BIOE 245",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "245",
+   "prereq_groups": [
+    [
+     "BIOE107",
+     "ENVS24"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): BIOE 107 or ENVS 24 or permission of instructor. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Plant Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-245"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE245L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Hands-on exploration of the concepts and techniques of plant ecology. A combination of lab, greenhouse, and field-based exercises (irrespective of weather conditions), statistical analysis, and scientific writing. One required weekend field trip. Students cannot receive credit for this course and BIOE 145L.",
+   "display_code": "BIOE 245L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "245L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Field Methods in Plant Ecology Laboratory",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-245l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE247",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Develops the major themes of community ecology: structure, trophic dynamics, succession, complex interactions among species, herbivory, evolution, and coevolution. Uses case histories of well-studied marine and terrestrial systems. Students cannot receive credit for this course and BIOE 147 .",
+   "display_code": "BIOE 247",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "247",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Community Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-247"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE258L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Supervised individual research projects in experimental marine biology. Students carry out a complete research project, including (1) the formation of hypotheses, (2) the design and implementation of experiments, (3) collection, analysis, and interpretation of data, and (4) the write-up of an oral presentation. Prerequisite(s): BIOE 208 ; and interview to assess ability to carry out field project.",
+   "display_code": "BIOE 258L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "258L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Experimental Marine Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-258l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE262",
+   "credits": "5",
+   "cross_listed": [
+    "CSP245"
+   ],
+   "description": "Skills-based course in effective leadership and communication, including stakeholder engagement, facilitation, conflict resolution, team building, and introduction to project management. Communication training includes identifying audiences and objectives (public, philanthropy, policymakers, managers, scientist practitioners) and leveraging non-traditional communication platforms. Enrollment is by application and restricted to graduate students.",
+   "display_code": "BIOE 262",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "262",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Facilitating Change in Coastal Science Policy",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-262"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE271",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Writing-intensive course focusing on developing skills in scientific communication, with an emphasis on communicating issues relevant to ecologists and evolutionary biologists. This courses presents the norms and standards of scientific communication spanning multiple genres. Students cannot receive credit for this course and BIOE 171.",
+   "display_code": "BIOE 271",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "271",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Disciplinary Communication for Biologists",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-271"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE272",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Basic population genetics and selected topics are covered including genetics of speciation, tempo and mode of evolution, genetics of social behavior, natural selection in human populations, and the impact of molecular studies on evolutionary theory. Students cannot receive credit for this course and BIOE 172 .",
+   "display_code": "BIOE 272",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "272",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Population Genetics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-272"
+  },
+  {
+   "catalog_instructor": "Malin Pinsky",
+   "code": "BIOE276",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Practical introduction to the computational and statistical skills students in ecology and evolutionary biology need to know for working in our data-filled modern world. Topics include practices for reproducible science, scientific programming in R, and statistical reasoning with ecological and evolutionary data. The course is taught as a flipped classroom with extensive hands-on practice so that students leave with the critical skills to continue on their own. A final project consists of analysis of a real dataset.",
+   "display_code": "BIOE 276",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "276",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Data Science for Ecology and Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-276"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281A",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Seminar focusing on concepts in basic and applied ecology. Structure rotates quarterly between graduate student research and readings of journal articles and textbooks.",
+   "display_code": "BIOE 281A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Topics in Basic and Applied Marine Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281B",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A discussion of current research and literature review on the subject of molecular evolution. Primary focus on recent results on molecular phylogenetics and molecular population genetics.",
+   "display_code": "BIOE 281B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Molecular Evolution",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281C",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An intensive seminar focusing on the interaction between physiological constraint and life history options and solutions employed by animals. Topics vary from comparative physiology to ecological theory. Participants are required to present results of their own research or review papers of interest.",
+   "display_code": "BIOE 281C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Physiological Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281D",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Focuses on fundamental concepts in global-change ecology, with emphasis on coastal and marine ecosystems and issues of sustainability. The seminar is devoted to reading and evaluating current and classic literature and discussing graduate student research.",
+   "display_code": "BIOE 281D",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281D",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Global Change Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281d"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281E",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Current topics in freshwater ecology, eco-evolutionary dynamics, fisheries, and fish ecology.",
+   "display_code": "BIOE 281E",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281E",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduates may enroll with permission from instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Freshwater Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281e"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Intensive research and discussions on plant-animal interactions. All students undertake a research project and meet weekly with the faculty sponsor to monitor progress. The group meets weekly to discuss experimental design and analysis, specific problems related to the students' research, relevant research papers, or manuscripts that the group members are writing. Each student gives a formal presentation of research plans or progress each quarter.",
+   "display_code": "BIOE 281F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Ecological Research Topics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281G",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Discussion of current topics, research, and methods in sexual selection and social behavior focusing on theoretical and empirical research and links between evolution and ecology. Students present and discuss their research, read and discuss current and classic literature, or read and discuss methods used in the field.",
+   "display_code": "BIOE 281G",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281G",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduates may enroll by permission of the instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Sexual Selection and Social Behavior",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281g"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281H",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Intensive seminar on selected topics in marine physiology. Students present results from their own research and discuss recent advances from the literature.",
+   "display_code": "BIOE 281H",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281H",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Comparative Marine Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281h"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281I",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Selected topics in population biology and disease ecology. Students present results from their own research and discuss recent advances from the literature.",
+   "display_code": "BIOE 281I",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281I",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll by permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Disease Ecology, Population Biology, and Conservation",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281i"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281J",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Weekly seminar course centered on reading and discussing selected publications along with peer review of research plans, grant proposals, manuscripts, lectures, and conference presentations. The overarching goal is to support the development and progress of graduate students in the Ecology and Evolutionary Biology Department whose thesis work and interests align with the course topic.",
+   "display_code": "BIOE 281J",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281J",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Evolutionary Genomics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281j"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281K",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Intensive seminar on selected topics in plant evolution. Students present results from their own research and discuss recent advances from the literature.",
+   "display_code": "BIOE 281K",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281K",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll by permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Plant Evolution",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281k"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281L",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An intensive seminar on selected topics in behavioral and evolutionary ecology. Students are expected to discuss the current literature and present literature reviews, research proposals, and preliminary results from their ongoing research.",
+   "display_code": "BIOE 281L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Topics in Behavioral and Evolutionary Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281M",
+   "credits": "",
+   "cross_listed": [],
+   "description": "Centers on reading and discussion of selected publications along with peer review of research plans, grant proposals, manuscripts, lectures, and conference presentations. The overarching goal is to support the development and progress of graduate students in the Ecology and Evolutionary Biology department whose thesis work and interests align with the course topics. Topics include: Reviewing innovative approaches to the study of host-microbiome interactions; Implementation of novel methods for the study of evolutionary demographics in populations using genomic data; Identifying signatures of selection mediated by pathogens and the environment.",
+   "display_code": "BIOE 281M",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281M",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Topics in Host-Microbe Population Genomics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281m"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281N",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Seminar on the ecology of marine vertebrates. Topics vary from the factors that explain the distribution of marine predators to island biogeography and the ecosystem effects of introduced vertebrates on islands.",
+   "display_code": "BIOE 281N",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281N",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Marine Vertebrate Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281n"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281O",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Intensive seminar focusing on fundamental and evolutionary concepts in plant-water relations. Students present results from their own research and discuss recent advances from the literature.",
+   "display_code": "BIOE 281O",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281O",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll by permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Plant-Water Relations",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281o"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281P",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An intensive seminar on selected topics in plant ecology and population biology. Students present results from their own research and discuss recent advances from the literature.",
+   "display_code": "BIOE 281P",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281P",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission from instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Plant Population Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281p"
+  },
+  {
+   "catalog_instructor": "Joshua Smith",
+   "code": "BIOE281Q",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "This weekly seminar centers on critical reading, quantitative synthesis, and constructive peer review in coastal and marine ecology. Combines discussion of selected publications with structured feedback on research plans, grant proposals, manuscripts, data analyses, lectures, and conference presentations. The overarching goal is to cultivate independent, creative scientists working at the interface of fundamental and applied community ecology, resilience theory, and coastal conservation.",
+   "display_code": "BIOE 281Q",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281Q",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduate students may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Coastal and Marine Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281q"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281R",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An intensive seminar series focusing on fundamental concepts in marine ecology. Emphasis changes quarter to quarter. At least one quarter per year is devoted to discussion of graduate student research. Other quarters involve reading and evaluating current and classic literature on marine ecology and evolutionary biology.",
+   "display_code": "BIOE 281R",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281R",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Marine Ecology and Evolutionary Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281r"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281S",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Topics in population genetics and genomics, focusing on work involving paleontological and archaeological material. Students present weekly written and oral reports of their research projects. Once each term, students critique a recent publication.",
+   "display_code": "BIOE 281S",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281S",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduates may enroll with permission from instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Ancient DNA and Paleogenomics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281s"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281T",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Centers on reading and discussion of selected publications along with peer review of research plans, grant proposals, manuscripts, lectures, and conference presentations. The overarching goal is to support the development and progress of graduate students in the Ecology and Evolutionary Biology Department whose thesis work and interests align with the course topics. Topics include: reviewing advances in the field of regeneration; applications of novel techniques in functional genomics; and comparative genomics in evolution, development, and regeneration. (Formerly Species Interactions and Coevolution.)",
+   "display_code": "BIOE 281T",
+   "division": "",
+   "extra_fields": {},
+   "formerly": "Formerly Species Interactions and Coevolution.",
+   "ge_codes": [],
+   "number": "281T",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Evolutionary Developmental Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281t"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281U",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "An intensive study about concepts, theory, and techniques for graduate students conducting research on the ecology, genetics, evolution, systematics, or biodiversity of marine invertebrates.",
+   "display_code": "BIOE 281U",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281U",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; advanced undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Invertebrate Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281u"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281V",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A discussion of current topics in behavioral ecology including social information use, conceptual advances in understanding the evolution of animal signaling, and using a mechanistic approach to infer ecological processes from soundscapes.",
+   "display_code": "BIOE 281V",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281V",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Behavioral Ecology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281v"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281W",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A weekly seminar discussion on current research and techniques in mammalian exercise and environmental physiology. Areas covered include locomotor physiology, exercise testing and cardiovascular monitoring, and biomechanics. Oral presentation of ongoing research or current literature required from each student.",
+   "display_code": "BIOE 281W",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281W",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Exercise and Environmental Physiology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281w"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281X",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Weekly seminar course centering on reading and discussion of selected publications along with peer review of research plans, grant proposals, manuscripts, lectures, and conference presentations. The overarching goal is to support the development and progress of graduate students in the Ecology and Evolutionary Biology Department whose thesis work and interests align with the course topic (reviewing innovative approaches in marine mammal science, coupling physiological with ecological concepts using integrative tools, identifying ecological and evolutionary context of large marine vertebrate research).",
+   "display_code": "BIOE 281X",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281X",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to ecology and evolutionary biology graduate students; other students may enroll by consent of the instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Behavioral Ecology of Large Marine Vertebrates",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281x"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281Y",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "This weekly seminar course centers on reading and discussing of selected publications along with peer review of research plans, grant proposals, manuscripts, lectures, and conference presentations. Students support the development and progress of graduate students in the Ecology and Evolutionary Biology Department whose thesis work and interests align with the course topics including: reviewing impacts of extreme climate events, inferring microevolutionary processes from genomic time series, and understanding community composition change in marine ecosystems.",
+   "display_code": "BIOE 281Y",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281Y",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of the instructor.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Topics in Climate Change Biology",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281y"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE281Z",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Selected readings and guest speakers in conservation, climate science and the ecology of environmental change coupled with peer review of participants' research proposals, grant proposals, manuscripts and scientific presentations.",
+   "display_code": "BIOE 281Z",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "281Z",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to ecology and evolutionary graduate students.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Conservation Science in a Changing World",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281z"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE286",
+   "credits": "5",
+   "cross_listed": [
+    "CSP241"
+   ],
+   "description": "Focuses on problems and designs in ecology and population biology. Topics include experimental design; exploratory data analysis; hands-on statistics; and graphical theory. Structured around a statistical analysis and graphics program to teach students to design surveys and experiments and analyze data. Previous work in statistics strongly recommended.",
+   "display_code": "BIOE 286",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "286",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Concurrent enrollment in BIOE 286L is required. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Experimental Design and Data Analysis",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-286"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE286L",
+   "credits": "2",
+   "cross_listed": [
+    "CSP241L"
+   ],
+   "description": "Lab will focuses on hands-on statistical problem solving, graphical presentations and experimental design issues.",
+   "display_code": "BIOE 286L",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "286L",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Concurrent enrollment in BIOE 286 is required. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Experimental Design and Data Analysis Lab",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-286l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE294",
+   "credits": "0",
+   "cross_listed": [],
+   "description": "Selected topics of current interest to ecologists and evolutionary biologists presented by weekly guest speakers.",
+   "display_code": "BIOE 294",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "294",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Ecology, Evolutionary Biology Seminar",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-294"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE297A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Independent study for graduate students who have not yet settled on a research area for their thesis. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 297A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE297B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Independent study for graduatestudents who have not yet settled on a research area for their thesis. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 297B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE297C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Independent study for graduate students who have not yet settled on a research area for their thesis. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 297C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE297F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Independent study for graduate students who have not yet settled on a research area for their thesis. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+   "display_code": "BIOE 297F",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297F",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students. Students submit petition to sponsoring agency.",
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE299A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 299A",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE299B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 299B",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE299C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 299C",
+   "division": "",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE75",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Focuses on refining fundamental dive safety principles while introducing techniques in scientific diving. Coursework includes lectures, field practical training, confined water and ocean SCUBA dives. Topics include diving physics, physiology, decompression theory, dive planning, aquatic environment, navigation, search and recovery, blue water diving, emergency response/rescues, and subtidal sampling techniques. Course meets or exceeds AAUS standards and provides students an opportunity to become certified in scientific diving. Prerequisite for BIOE 161 /L, and any SCUBA diving activities associated with BIOE 159A ,B,C,D,E,F; BIOE 183/L; BIOE 193 ; and BIOE 195 . AAUS Scientific Diving certification is required for all research SCUBA diving activities under the auspices of UCSC and is transferable to other academic institutions. Prerequisite(s): skill level equal to Advanced and Rescue Scuba Diver Certification, current AAUS/UCSC diving medical clearance, certifications in CPR/AED, First Aid and Oxygen Administration and minimum of 12 documented ocean dives; and interview: pass water skills evaluation. For details visit scientificdiving.ucsc.edu/course-info",
+   "display_code": "BIOE 75",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "75",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Scientific Diving Methods",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-75"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE80S",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Probability and statistics underlie much of our everyday experience and, as such, there is a fundamental need for an understanding of the use, and misuse, of statistics. This course is taught through case studies based in biology, politics, economics, crime, education, disease, conservation, and other fields of interest. For example, does a change in crime rate really affect your probability of being a victim of a crime? The goal is to provide all students with sufficient understanding probability and statistics to determine if everyday and often sensationalistic reporting of statistical results is meaningful.",
+   "display_code": "BIOE 80S",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "80S",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Lies, Damn Lies, and Statistics",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-80s"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE82",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "A field-based course with overnight and day trips to regionally diverse areas throughout Central California. Field trips and lectures familiarize students with a wide variety of topics in the ecological, conservation, and environmental science as well as natural-resource management. Students are billed a materials fee of $100. Enrollment is by instructor permission.",
+   "display_code": "BIOE 82",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "82",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Introduction to Field Research and Conservation",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-82"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE85",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Lectures and field trips familiarize students with the flora and fauna of the UCSC Natural Reserves. Field trips focus on surveying and identifying vertebrates and plants at each UCSC Natural Reserve (Fort Ord, Campus Reserve, Big Creek, Younger Lagoon, and Ano Nuevo).",
+   "display_code": "BIOE 85",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "85",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Natural History of the UCSC Natural Reserves",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-85"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE95",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Taught as a series of seminars, course provides a survey of marine sciences and the role of scientific research in understanding and conserving the world's oceans. Topics include: marine biology, ecology, conservation, coastal geology, and climate change. This series is intended to prepare students to interpret research and inform the public by leading tours at the Seymour Marine Discovery Center at the Long Marine Lab. Enrollment is by application and interview.",
+   "display_code": "BIOE 95",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-S"
+   ],
+   "number": "95",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "BIOE",
+   "title": "Seymour Center Docent Training",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-95"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "BIOE99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Individual, directed study for undergraduates. Students submit petition to sponsoring agency.",
+   "display_code": "BIOE 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "BIOE",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-99"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "BIOE"
+}

@@ -20,11 +20,11 @@ Each university is a self-contained pipeline package (`pipelines/<univ>/`) that 
 
 ## Backup / rollback
 
-Three data classes, each independently restorable:
+Data classes by dynamism, each with its own home and restore path:
 
-- **User data** (accounts, plans): `pg_dump` of user-owned tables via `ops/backup`.
-- **Raw scrapes**: immutable snapshot dirs `data/<univ>/<source>/<timestamp>/` — rollback = point the loader at an older snapshot.
-- **Structured LLM output**: same snapshot scheme, one dir per structuring run, with a `manifest.json` (source snapshot, model, prompt version, guard results).
+- **User data** (accounts, plans) — truly dynamic; Postgres, `pg_dump` via `ops/backup`. The only class the backup strategy must carry.
+- **Committed catalog data** (courses, prerequisite structures, program requirements) — near-static and trust-sensitive; lives IN THE REPO at `data-committed/<univ>/`, one entity per file with stable ordering. The Local-LLM pipeline proposes changes by writing here; `git diff` is the review artifact a human and/or the Frontier LLM approves. `origin`/`verification` blocks record hand edits and frontier verification; the exporter never silently clobbers either. Rollback = git.
+- **Raw scrapes + offerings** — regenerable, deterministic, bulky; immutable snapshot dirs `data/<univ>/<source>/<timestamp>/` (gitignored) with provenance manifests. Rollback = point the loader at an older snapshot.
 
 The DB loader is idempotent and transactional per university: loading an old snapshot restores served data without touching user data.
 

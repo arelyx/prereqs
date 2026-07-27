@@ -1,0 +1,277 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "music",
+ "division": "arts-division",
+ "kind": "minor",
+ "name": "Western Music Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC11A",
+       "MUSC11B",
+       "MUSC11D"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division History",
+       "prose": [
+        "Take one of the following courses"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division History"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC30A",
+       "MUSC30B",
+       "MUSC30C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Theory",
+       "prose": [
+        "Take all of the following courses. Students are accepted to MUSC 30A if they have taken MUSC 14 at UCSC and received an \"A-\" or above, or have tested in via the Theory Placement Exam. See the Music Department website for more information on the TPE.",
+        "Students that have passed theory/musicianship courses at California community colleges (CCC) with the following C-ID descriptors can have those courses articulated for certain Western theory courses at UCSC, including MUSC 14 , MUSC 30A , MUSC 30B , and MUSC 30C (and MUSC 31 : Ear Training).",
+        "Relevant theory C-ID articulations:",
+        "MUSC 110 -> MUSC 14",
+        "MUSC 120 and 125 -> MUSC 30A and 31",
+        "MUSC 130 and 135 -> MUSC 30B and 31",
+        "MUSC 140 and 145 -> MUSC 30C and 31"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "3) have passed at least half of their total required sections of 31 (i.e. at least two sections for the WM minor)",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MUSC31",
+       "MUSC60"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MUSC 60 enrollment may be waived by instructor approval, or if the student is taking piano lessons from a UC Santa Cruz instructor. Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they: 1) have passed the associated section of MUSC 30; 2) have passed their final quarter of MUSC 31 (i.e. spring 31, related to MUSC 30C ); 3) have passed at least half of their total required sections of 31 (i.e. at least two sections for the WM minor) Any student who does need meet all three of the criteria above must retake the failed section of MUSC 31 during its next offering."
+      ],
+      "op": "all_of",
+      "source": {
+       "heading": "Lower-Division Keyboard and Musicianship",
+       "prose": [
+        "The following courses should be taken alongside MUSC 30 series classes.",
+        "MUSC 60 enrollment may be waived by instructor approval, or if the student is taking piano lessons from a UC Santa Cruz instructor.",
+        "Students who fail a section of MUSC 31 do not have to repeat the failed section, so long as they:",
+        "1) have passed the associated section of MUSC 30;",
+        "2) have passed their final quarter of MUSC 31 (i.e. spring 31, related to MUSC 30C );",
+        "3) have passed at least half of their total required sections of 31 (i.e. at least two sections for the WM minor)",
+        "Any student who does need meet all three of the criteria above must retake the failed section of MUSC 31 during its next offering."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Theory"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC61",
+       "MUSC62",
+       "MUSC63"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Lower-Division Applied Lessons",
+       "prose": [
+        "Take three quarters of applied lessons from any course type on this list, on your primary instrument or voice."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC1C",
+       "MUSC2",
+       "MUSC3",
+       "MUSC5A",
+       "MUSC5B",
+       "MUSC5C",
+       "MUSC8A",
+       "MUSC8B",
+       "MUSC9",
+       "MUSC12"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Lower-Division Performing Ensembles",
+       "prose": [
+        "Take three quarters of performing ensembles from any course on this list, on your primary instrument or voice. All courses may be repeated for credit.",
+        "Students who are taking applied piano lessons with UCSC faculty members can participate in ensembles on an instrument other than piano."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Applied Lessons"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC102",
+       "MUSC103",
+       "MUSC158",
+       "MUSC160",
+       "MUSC163",
+       "MUSC164",
+       "MUSC165",
+       "MUSC166",
+       "MUSC168"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "Students can petition to take additional lower-division ensembles, if there are no upper-division ensembles available for their instrument/voice. Petitions can be sent to music@ucsc.edu ."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Performing Ensembles",
+       "prose": [
+        "Take three quarters of performing ensembles from any course on this list, on your primary instrument or voice. All courses may be repeated for credit.",
+        "Students who are taking applied piano lessons with UCSC faculty members can participate in ensembles on an instrument other than piano.",
+        "If no upper-division ensembles are available for your instrument/voice type, you can petition additional quarters of lower-division ensembles. Contact the Music Department for more information.",
+        "Students can petition to take additional lower-division ensembles, if there are no upper-division ensembles available for their instrument/voice. Petitions can be sent to music@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Performing Ensembles"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC161",
+       "MUSC161A",
+       "MUSC161B",
+       "MUSC162"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Applied Lessons",
+       "prose": [
+        "Take three quarters of applied lessons from any course type on this list, on your primary instrument or voice."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Applied Lessons"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MUSC101A",
+       "MUSC101B",
+       "MUSC101C",
+       "MUSC101E",
+       "MUSC101F",
+       "MUSC101G",
+       "MUSC101H",
+       "MUSC105A",
+       "MUSC105C",
+       "MUSC105E",
+       "MUSC105M",
+       "MUSC105O",
+       "MUSC105P",
+       "MUSC105Q",
+       "MUSC105R",
+       "MUSC105T",
+       "MUSC150A",
+       "MUSC150B",
+       "MUSC150C",
+       "MUSC150H",
+       "MUSC150I",
+       "MUSC150T",
+       "MUSC150X"
+      ],
+      "from_following_lists": true,
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "Take two (2) courses from the following list"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   }
+  ]
+ },
+ "slug": "western-music-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/western-music-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,2699 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Jaye Padgett",
+   "code": "LING100",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a comprehensive introduction to the sounds of human language. Involves a detailed examination of the human vocal tract, the mechanics of phonetic transcription within the system of the International Phonetic Alphabet (IPA), and the essentials of phonology, particularly how to do phonemic analysis of any language. (Formerly Phonetics I.)",
+   "display_code": "LING 100",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Phonetics I.",
+   "ge_codes": [],
+   "number": "100",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Sounds of the World's Languages: Phonetics I",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-100"
+  },
+  {
+   "catalog_instructor": "Ryan Bennett, Rachel Walker",
+   "code": "LING101",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to how sounds pattern in grammars-why they vary, how they combine, etc. Emphasis is on developing theories to explain the patterns. Topics include distinctive feature theory, phonemic analysis, autosegmental phonology, and principles of syllabification and stress.",
+   "display_code": "LING 101",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "101",
+   "prereq_groups": [
+    [
+     "LING100"
+    ]
+   ],
+   "quarters_offered_text": "Winter, Spring",
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and GE Composition requirements and LING 100.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonology I",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-101"
+  },
+  {
+   "catalog_instructor": "Ryan Bennett",
+   "code": "LING102",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced phonological theory. Topics include markedness; underspecification theories; advanced topics in feature geometry, syllable theory, and stress theory; and optimality theory. Readings include published articles. Emphasis on theory construction and argumentation based on data.",
+   "display_code": "LING 102",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "102",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonology II",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-102"
+  },
+  {
+   "catalog_instructor": "Ryan Bennett",
+   "code": "LING103",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in phonology, with an emphasis on reading both classic and contemporary research articles and book chapters. Prerequisite(s): LING 102 and enrollment by interview.",
+   "display_code": "LING 103",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "103",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonology III",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-103"
+  },
+  {
+   "catalog_instructor": "Rachel Walker",
+   "code": "LING105",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Study of the principles of word formation: derivation, inflection, and compounding; cross-linguistic study of morphological processes, morphological investigation and analysis.",
+   "display_code": "LING 105",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "105",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Morphology",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-105"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING108",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the linguistic aspects of poetry, e.g., rhyme, meter, and larger-scale organization of poetic form. The emphasis is on English poetry, complemented by brief sketches of other poetic traditions.",
+   "display_code": "LING 108",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "108",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Poetry and Language",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-108"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING111",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides a basic introduction to the methods and results of generative grammar. It simultaneously provides an overview of the major syntactic constructions of English.",
+   "display_code": "LING 111",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "111",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Syntactic Structures",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-111"
+  },
+  {
+   "catalog_instructor": "Roumyana Pancheva, Mia Gong",
+   "code": "LING112",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to syntactic investigation, developed through the study of central aspects of English syntax. A major purpose is to introduce students to the study of language as an empirical science.",
+   "display_code": "LING 112",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "112",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter",
+   "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Syntax I",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-112"
+  },
+  {
+   "catalog_instructor": "Ivy Sichel",
+   "code": "LING113",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Further aspects of English syntax; universal and language-particular constraints on syntactic structures and rules. Further developments and extensions of generative theory.",
+   "display_code": "LING 113",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "113",
+   "prereq_groups": [
+    [
+     "LING53"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): LING 53, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Syntax II",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-113"
+  },
+  {
+   "catalog_instructor": "Ivy Sichel",
+   "code": "LING114A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in syntax. Prerequisite(s): LING 113, satisfaction of the Entry Level Writing and Composition requirements and permission of instructor.",
+   "display_code": "LING 114A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "114A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Syntax III",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-114a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING114B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces reading the primary literature in a sub-discipline of linguistics. Topics vary by instructor interest and readings will vary as a result. Emphasis is on how to read technically difficult works, evaluate arguments, and appreciate competing views. Coursework includes readings, presentations, and short response papers. Enrollment is by permission of the instructor. Students should have completed appropriate upper-division courses in the relevant sub-disciplines; see instructor for recommendations. (Formerly offered as Readings in Syntax.)",
+   "display_code": "LING 114B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Readings in Syntax.",
+   "ge_codes": [],
+   "number": "114B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Readings in Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-114b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING114C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced undergraduate course devoted to a topic in linguistics. Topics and linguistics sub-disciplines covered vary with instructor interest. Coursework includes problem sets, readings, presentations, and a term paper. Enrollment by permission of instructor. Students should have completed appropriate upper-division courses in the relevant sub-disciplines; see instructor for recommendations. (Formerly offered as Topics in Syntax.)",
+   "display_code": "LING 114C",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Topics in Syntax.",
+   "ge_codes": [],
+   "number": "114C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Topics in Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-114c"
+  },
+  {
+   "catalog_instructor": "Adrian Brasoveanu",
+   "code": "LING116",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Major issues in natural language semantics: nature of lexical entries, thematic relations, propositional representation or logical form; relation between semantic interpretation and syntactic representations, quantification and scope relations, reference and presupposition, coreference and anaphoric relations.",
+   "display_code": "LING 116",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "116",
+   "prereq_groups": [
+    [
+     "LING53"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LING 53, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Semantics II",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-116"
+  },
+  {
+   "catalog_instructor": "Jess Law",
+   "code": "LING117",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Covers topics central in the study of pragmatics, the interpretation of language use. Topics include conversational implicature, speech acts and discourse understanding, and social deixis.",
+   "display_code": "LING 117",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "117",
+   "prereq_groups": [
+    [
+     "LING53"
+    ],
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 53 and LING 101; and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Pragmatics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-117"
+  },
+  {
+   "catalog_instructor": "Jess Law",
+   "code": "LING118",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Uses the tools learned in LING 53 and LING 116 (Semantics I and Semantics II), giving students the opportunity to explore important topics with heavy emphasis placed on reading primary-source literature. Readings form the basis for weekly lectures and the discussion section. Prerequisite(s): LING 116. Enrollment is by permission of instructor.",
+   "display_code": "LING 118",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "118",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Semantics III",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-118"
+  },
+  {
+   "catalog_instructor": "Pranav Anand",
+   "code": "LING119",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Course about narratives, the complex stories that people build and tell each other. Examines these linguistically: What is a story from a linguistic point of view? What are its components? How can we understand traditional concepts like perspective-taking, chronology, transport, and the narrator within modern linguistic frameworks? Topics may include quotation, tense and aspect, textual cohesion, and discourse relations.",
+   "display_code": "LING 119",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "119",
+   "prereq_groups": [
+    [
+     "LING53"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 53.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Narrative Structure: The linguistics of storytelling",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-119"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING120",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Survey of grammatical structure of English and terminology of grammatical description. Covers phonological, morphological, and syntactic structure of English and contrasts it with other languages.",
+   "display_code": "LING 120",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "120",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of English",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-120"
+  },
+  {
+   "catalog_instructor": "Maziar Toosarvandani",
+   "code": "LING124",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the branch of linguistics whose goal is to describe and explain the structural diversity of the world's languages. Focuses on what is known about variation in particular domains (e.g., syllable structure, word order, evidentiality), and how it might be explained.",
+   "display_code": "LING 124",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "124",
+   "prereq_groups": [
+    [
+     "LING111",
+     "LING112"
+    ],
+    [
+     "LING101"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 111 or LING 112, and LING 101.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language Typology",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-124"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING125",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Survey of some of the history and foundational assumptions of generative grammar; also looks at some of the influence of generative linguistic theorizing on disciplines outside linguistics, notably psychology and philosophy.",
+   "display_code": "LING 125",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "125",
+   "prereq_groups": [
+    [
+     "LING113",
+     "LING116"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 113 or LING 116.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Foundations of Linguistic Theory",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-125"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING127",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topics in the history of linguistics, with a special focus on the 20th century.",
+   "display_code": "LING 127",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "127",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "History of Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-127"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING131",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students investigate Spanglish as a linguistic and cultural phenomenon. Students learn linguistic tools to describe, analyze, and destigmatize Spanglish, and explore the ways that it is used to establish identity. Additionally, students compare Spanglish to ways of communicating in other bilingual contexts.",
+   "display_code": "LING 131",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "131",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Spanglish: Language and Identities through Contact",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-131"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING132",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines varieties of California Englishes and the features that compose these varieties. Through this examination, course also tries to better understand how social categories such as race, gender, sexuality, age, and class relate to the linguistic variation found in California English varieties. Course also seeks to explain how linguistic features acquire social meaning, and how these features are adopted in the construction of identity.",
+   "display_code": "LING 132",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "132",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 50 , Introduction to Linguistics.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "California Englishes",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-132"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING133",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In the age of social media, much of communication happens online. Despite claims to the contrary, the internet has not destroyed language; rather, language is thriving in new and vibrant ways online. This course uses the tools of linguistics to explore how the internet (with acronyms, emojis, and memes) has affected language use and how properties of language continue to shape online communication technologies. Topics covered include: whether emojis are language, what makes a spicy meme, how communities form online, and how online linguistic behaviors aid in the spread of misinformation.",
+   "display_code": "LING 133",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-T"
+   ],
+   "number": "133",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language OnLine (LOL): Communication in the Digital Era",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-133"
+  },
+  {
+   "catalog_instructor": "Mia Gong",
+   "code": "LING134",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines how the innate human faculty for language intersects with the invented technology of writing in the entangled historical and cultural landscape of Central Eurasia. Students analyze the linguistic structures and orthographic evolutions of Turkic, Mongolic, and Tungusic peoples, and examine how migration, trade, and 21st-century geopolitics  drive linguistic change and identity.",
+   "display_code": "LING 134",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "134",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): LING 50 .",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Languages of Central Eurasia: Writing Systems, Policy, and Identity",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-134"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING135",
+   "credits": "5",
+   "cross_listed": [
+    "CRES135"
+   ],
+   "description": "Many of us are probably aware that people of different ethnic or racial backgrounds may speak differently, but most of us probably do not know that all varieties of English are equally \"grammatical.\" And while some of us are probably aware of the fact that racial and ethnic categories are \"constructed,\" most of us have probably not considered the ways in which language use figures in the construction of ethnic and/or racial identity. Course introduces a number of racialized linguistic varieties and their intersections with other identity categories (gender, sexuality, socio-economic class), as well as emergent new scholarship on language and racialization.",
+   "display_code": "LING 135",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "135",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): Ling 50.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language and Racialization",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-135"
+  },
+  {
+   "catalog_instructor": "Ivy Sichel",
+   "code": "LING137",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The study of queer linguistics is deeply multi-disciplinary, informed by linguistics, sociolinguistics, anthropology, women’s studies, post-colonialism, and queer theory. It has been insightful regarding the contribution of language to the construction of all identities: for our understanding of what identity categories are; their intersectional natures; and our agency, as speakers, when using language in non-standard ways. This course touches upon these issues; class format includes lectures, video-viewing, small group discussions, and class discussion. Focuses on language use across genders and sexualities, and on connections between groups of speakers and the theoretical developments which work on these communities set in motion.",
+   "display_code": "LING 137",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "137",
+   "prereq_groups": [
+    [
+     "LING50",
+     "LING80C",
+     "LING101",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 50 or LING 80C or LING 101 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Queer Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-137"
+  },
+  {
+   "catalog_instructor": "Grant McGuire",
+   "code": "LING140",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Methods and problems in the study of change in linguistic systems. Reconstruction of proto-languages; the comparative method. Theories of change and implications for the theory of grammar.",
+   "display_code": "LING 140",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "140",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language Change",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-140"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING141",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to and survey of the ellipsis in natural language, including the typology of ellipsis processes, cross-linguistic uniformity and variation in ellipsis, and theoretical approaches and issues.",
+   "display_code": "LING 141",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "141",
+   "prereq_groups": [
+    [
+     "LING53"
+    ],
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 53 and LING 101; and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Ellipsis",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-141"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING144",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to computational methods in linguistics, with little background in computer programming. Possible topics include: regular expressions, annotation, databases, and search. Students learn contemporary techniques in team-based programming, annotation, and use of language models. (Formerly Computational Methods for Linguists.)",
+   "display_code": "LING 144",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Computational Methods for Linguists.",
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "144",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 50 , or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Computational Methods in Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-144"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING145",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Selective survey of the indigenous languages of North America, including a formal/structural component and an historical/social component. Topics include typological properties of these languages, current status, and revitalization efforts.",
+   "display_code": "LING 145",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "145",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s):LING 101, and either LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Native Languages of North America",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-145"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING147",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces quantitative methods for linguistics. Focuses on categorical data and continuous data, and using R. Students learn the basics of probability, statistics, and experimental design, and use R to apply them to linguistic data sets.",
+   "display_code": "LING 147",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "147",
+   "prereq_groups": [
+    [
+     "LING53"
+    ],
+    [
+     "LING100",
+     "LING112",
+     "LING171"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): LING 53; and LING 100 or LING 112 or LING 171.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Quantitative Methods in Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-147"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING149",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Designed to give students practical experience with contemporary research topics, methods and skills in linguistics and the broader language sciences. Students engage directly with local researchers and conduct targeted in-class skills activities. Students complete a portfolio of assignments which allow them to broaden their understanding of potential research areas in linguistics and language sciences and also to develop a particular topic of interest, culminating in a literature review and project proposal. Enrollment is by permission of the instructor.",
+   "display_code": "LING 149",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "149",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Research Skills in Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-149"
+  },
+  {
+   "catalog_instructor": "Jaye Padgett",
+   "code": "LING151",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Hands-on introduction to instrumental phonetic analysis, phonetic analysis using experimental methods. Emphasis is on the acoustics and perception of speech. (Formerly Phonetic Analysis.)",
+   "display_code": "LING 151",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly Phonetic Analysis.",
+   "ge_codes": [],
+   "number": "151",
+   "prereq_groups": [
+    [
+     "LING100"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): LING 100.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonetics II",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-151"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING152",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines areas in which phonetic analysis and experimentation are used in practice. Emphasizes problem-solving, experiments, and analytical tasks.",
+   "display_code": "LING 152",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "152",
+   "prereq_groups": [
+    [
+     "LING151"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 151.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Applied Phonetics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-152"
+  },
+  {
+   "catalog_instructor": "Grant McGuire",
+   "code": "LING154",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to sociolinguistics exploring the relationship between language and such social parameters as social status, ethnicity, race, gender, etc., including the role of language differences in the creation of social stereotypes. Emphasis on gathering, examining, and reporting data.",
+   "display_code": "LING 154",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "154",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and either LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language and Social Identity",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-154"
+  },
+  {
+   "catalog_instructor": "Dustin Chacon",
+   "code": "LING155",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces and examines some of the foundational assumptions, practices, and methods of generative grammar in comparison to those of other areas of cognitive science, notably psychology and philosophy.",
+   "display_code": "LING 155",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "155",
+   "prereq_groups": [
+    [
+     "LING111",
+     "LING112"
+    ],
+    [
+     "LING53"
+    ],
+    [
+     "LING101"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 111 or LING 112; and LING 53 and LING 101.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language and Cognition",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-155"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING160",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Addresses a particular problem in language engineering, chosen for its practical and theoretical interest and its tractability. The entire course focuses on a team project to design a solution to the problem. Permission of instructor required.",
+   "display_code": "LING 160",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "160",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language Engineering",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-160"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING164",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to computational linguistics for engineers with a focus on providing background and skills in linguistics. Students are expected to already have programming skills and basic computer science. Knowledge of shell scripting or a scripting language suggested.",
+   "display_code": "LING 164",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "164",
+   "prereq_groups": [
+    [
+     "CSE10",
+     "CSE14"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CSE 10 and CSE 14, or permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Linguistics for Engineers",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-164"
+  },
+  {
+   "catalog_instructor": "Amanda Rysling, Matt Wagers",
+   "code": "LING171",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Theory and methods in psycholinguistics, covering perception, production, and acquisition of language and linguistic structure. A hands-on, laboratory-style introduction to the topic, focusing on the relation between experimental findings and linguistic theory. (Formerly LING 157, Psycholinguistics and Linguistic Theory.)",
+   "display_code": "LING 171",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly LING 157, Psycholinguistics and Linguistic Theory.",
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "171",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Spring",
+   "raw_requirements": "Prerequisite(s): LING 50 .",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Psycholinguistics I",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-171"
+  },
+  {
+   "catalog_instructor": "Dustin Chacón",
+   "code": "LING172",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in psycholinguistics and experimental linguistics, contemporary memory models, computational models of comprehension and production, and neurolinguistic findings and methodologies. Student work revolves around an extended research project in which students learn to apply advanced analytical techniques. (Formerly LING 158, Advanced Psycholinguistics.)",
+   "display_code": "LING 172",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly LING 158, Advanced Psycholinguistics.",
+   "ge_codes": [],
+   "number": "172",
+   "prereq_groups": [
+    [
+     "LING171"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LING 171.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Psycholinguistics II",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-172"
+  },
+  {
+   "catalog_instructor": "Dustin Chacón",
+   "code": "LING174",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Discusses groundbreaking findings in neurolinguistics that illustrate fundamental principles of how language is represented and processed in the brain. Additionally, provides basic understanding of how the brain works, the tools that we use to study the brain, and the statistical and analytic methods of processing and analyzing neuroscientific data. Also considers the relations between linguistic theory, psycholinguistics, and the brain.",
+   "display_code": "LING 174",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "174",
+   "prereq_groups": [
+    [
+     "LING171"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): LING 171, or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Neurolinguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-174"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING176",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Variation is an inseparable and natural part of being human. This course focuses on variation in language, a unique part of the human experience. How do differences in language background, cognition, and modality contribute to variation in language processing? Course approaches these questions guided by the premise that there are many ways to use language. Students critically examine scientific findings relating to individual and cross-population differences in language processing, with the intention of reframing deficit-based views of language use.",
+   "display_code": "LING 176",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "176",
+   "prereq_groups": [
+    [
+     "LING50"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 50 .",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Variation in Language Processing",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-176"
+  },
+  {
+   "catalog_instructor": "Adrian Brasoveanu",
+   "code": "LING177",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Pprovides a hands-on introduction to the field of computational cognitive science, focusing on the challenge of human sentence comprehension. Students embark on a project-based journey to faithfully recreate the classic 1990 neural network model by St. John and McClelland, a foundational paper on natural language interpretation, computation, and learning. The course is divided into two parts. In Part I: The Foundations, students acquire some of the essential skills necessary for computational cognitive science. In Part II: The Replication Project, these skills are applied in a deep dive into the St. John and McClelland paper.",
+   "display_code": "LING 177",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "177",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Computational Cognitive Modeling—Building Minds with Code",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-177"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING180",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Topics in the phonology, morphology, syntax, or semantics of a language that is the research interest of the instructor. The language investigated changes with each offering of the course.",
+   "display_code": "LING 180",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "180",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101; and LING 111 or LING 112.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Structure of a Particular Language",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-180"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING181",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Discusses topics in the phonology, syntax, and semantics of Romance languages, with emphasis left to the discretion of the instructor. Students read original research articles and pursue empirical investigation of Romance languages by collecting data from scholarly publications, fieldwork, and/or corpus analysis. Some knowledge of Italian, French, or Spanish is required.",
+   "display_code": "LING 181",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "181",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of Romance Languages",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-181"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING182",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The phonology and syntax of Spanish, studied from a modern linguistic perspective. Some knowledge of Spanish is required.",
+   "display_code": "LING 182",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "182",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of Spanish",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-182"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING183",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The phonology, morphology, and syntax aspects of French. Some knowledge of French is helpful.",
+   "display_code": "LING 183",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "183",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of French",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-183"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING185",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The phonology, morphology, and syntax of Russian. Some knowledge of Russian is helpful.",
+   "display_code": "LING 185",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "185",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of Russian",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-185"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING186",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Phonological, morphological, and syntactic aspects of the structure of the German language. Some knowledge of German is required.",
+   "display_code": "LING 186",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "186",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of German",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-186"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING187",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The phonology, morphology, and syntax of Japanese.",
+   "display_code": "LING 187",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "187",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of Japanese",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-187"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING188",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the syntax and semantics of Chinese Languages (particularly Cantonese and Mandarin), especially those aspects that are typologically different from Indo-European languages like English. Students learn to appreciate typological differences in natural languages and develop skills to analyze them. Course involves a global classroom component: throughout the quarter students meet and work with students from another institute in an international location to explore language differences.",
+   "display_code": "LING 188",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "188",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101; and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of Chinese Languages",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-188"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING189",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The phonology, morphology, and syntax of Arabic. (Mainly modern standard, but also some regional dialects.) No knowledge of Arabic is required.",
+   "display_code": "LING 189",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "189",
+   "prereq_groups": [
+    [
+     "LING101"
+    ],
+    [
+     "LING111",
+     "LING112"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 101, and LING 111 or LING 112.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of Arabic",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-189"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING190",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students produce a research paper or other significant project to satisfy the capstone requirement. Prerequisite(s): LING 101, and either LING 111 or LING 112. Concurrent enrollment  in a specified upper-division course is required. Enrollment is by permission of the instructor and is restricted to senior linguistics and language studies majors.",
+   "display_code": "LING 190",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "190",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Senior Research",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-190"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING193",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "LING 193",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "193",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Field Study",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-193"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING195",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Deadline for submission of thesis proposal is one year in advance of proposed completion. Students submit petition to sponsoring agency.",
+   "display_code": "LING 195",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Senior Thesis",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-195"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING198",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides for department-sponsored individual study programs off campus for which faculty supervision is not in person (e.g., supervision by correspondence). Preparation and approval must be completed by the fifth day of instruction of any given quarter. Students submit petition to sponsoring agency.",
+   "display_code": "LING 198",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "198",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Independent Field Study",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-198"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING199",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "LING 199",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-199"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING199F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "LING 199F",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "199F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-199f"
+  },
+  {
+   "catalog_instructor": "Ryan Bennett",
+   "code": "LING211",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "First part of a three quarter introduction to phonology. Topics of the sequence include fundamentals of acoustic phonetics; introduction to optimality theory; theories of syllabification, stress, and prosodic organization; prosodic morphology; advanced issues in faithfulness and correspondence; segmental and suprasegmental processes.",
+   "display_code": "LING 211",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "211",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonology A",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-211"
+  },
+  {
+   "catalog_instructor": "Rachel Walker",
+   "code": "LING212",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Second part of a three quarter introduction to phonology. Topics of the sequence include fundamentals of acoustic phonetics; introduction to optimality theory; theories of syllabification, stress, and prosodic organization; prosodic morphology; advanced issues in faithfulness and correspondence; segmental and suprasegmental processes.",
+   "display_code": "LING 212",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "212",
+   "prereq_groups": [
+    [
+     "LING211"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LING 211. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonology B",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-212"
+  },
+  {
+   "catalog_instructor": "Amanda Rysling",
+   "code": "LING214",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to phonetic theory concentrating on acoustic phonetics and speech perception along with common experimental methods, the role of phonetic principles in explaining phonological patterns and markedness.",
+   "display_code": "LING 214",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "214",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonetics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-214"
+  },
+  {
+   "catalog_instructor": "Grant McGuire",
+   "code": "LING215",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The second class in the graduate sequence on phonetics. Covers topics in speech perception, such as auditory physiology, psychophysics, categorization, learning and acquisition, cross-linguistic perception, and word recognition. Students learn a variety of experimental methods, their strengths and weaknesses, and how to appropriately construct stimuli, analyze data, and report results from these experimental designs.",
+   "display_code": "LING 215",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "215",
+   "prereq_groups": [
+    [
+     "LING214"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 214. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonetics B",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-215"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING216",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "One or more topics in phonological theory. Topics vary from year to year, covering literature and current research in phonology.",
+   "display_code": "LING 216",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "216",
+   "prereq_groups": [
+    [
+     "LING212"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 212. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Phonology Proseminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-216"
+  },
+  {
+   "catalog_instructor": "Jaye Padgett",
+   "code": "LING219",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in phonology drawn from the current research interests of the instructor.",
+   "display_code": "LING 219",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "219",
+   "prereq_groups": [
+    [
+     "LING212"
+    ]
+   ],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Prerequisite(s): LING 212. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Phonology Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-219"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING219G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Advanced topics in phonology drawn from the current research interests of the instructor. Three-credit version of LING 219. Does not require a final paper.",
+   "display_code": "LING 219G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "219G",
+   "prereq_groups": [
+    [
+     "LING212"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 212. Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Phonology Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-219g"
+  },
+  {
+   "catalog_instructor": "Maziar Toosarvandani",
+   "code": "LING221",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to syntactic theory. Phrase structure; subcategorization; lexical entries; passive; infinitival constructions.",
+   "display_code": "LING 221",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "221",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Syntax A",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-221"
+  },
+  {
+   "catalog_instructor": "Ivy Sichel",
+   "code": "LING222",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Continuation of Syntax A. The syntax of unbounded dependencies, including constituent questions, relative clauses, clefts, topicalization. Constraints on extraction; unbounded versus successive cyclic movement; the licensing of gaps.",
+   "display_code": "LING 222",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "222",
+   "prereq_groups": [
+    [
+     "LING221"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): LING 221. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Syntax B",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-222"
+  },
+  {
+   "catalog_instructor": "Maziar Toosarvandani",
+   "code": "LING226",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In-depth investigation of some topic in syntactic theory. Topics vary from year to year, covering literature and current research in grammatical structure from varying theoretical perspectives.",
+   "display_code": "LING 226",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "226",
+   "prereq_groups": [
+    [
+     "LING222"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 222. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Proseminar in Syntax",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-226"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING226G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "In-depth investigation of some topic in syntactic theory. Topics vary from year to year, covering literature and current research in grammatical structure from varying theoretical perspectives. Three-credit version of LING 226. Does not require a final paper.",
+   "display_code": "LING 226G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "226G",
+   "prereq_groups": [
+    [
+     "LING222"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 222. Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Proseminar in Syntax",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-226g"
+  },
+  {
+   "catalog_instructor": "Mia Gong",
+   "code": "LING229",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in syntax drawn from the current research interests of the instructor.",
+   "display_code": "LING 229",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "229",
+   "prereq_groups": [
+    [
+     "LING222"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LING 222. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Syntax Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING229G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Advanced topics in syntax drawn from the current research interests of the instructor. Three-credit version of LING 229 . Does not require a final paper.",
+   "display_code": "LING 229G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "229G",
+   "prereq_groups": [
+    [
+     "LING222"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 222. Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Syntax Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229g"
+  },
+  {
+   "catalog_instructor": "Adrian Brasoveanu",
+   "code": "LING231",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to linguistic semantics: nature of lexical entries, thematic relations, representation of logical form; relation between semantic interpretation and syntactic representation, quantification and scope relations, reference and presupposition.",
+   "display_code": "LING 231",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "231",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Semantics A",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-231"
+  },
+  {
+   "catalog_instructor": "Maziar Toosarvandani",
+   "code": "LING232",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Model-theoretic semantics for natural language. Truth-conditional, compositional semantics. Various logical ontologies and their application to natural language categories. Dynamic interpretation of discourse and anaphoric relations. Treatment of illocutionary force.",
+   "display_code": "LING 232",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "232",
+   "prereq_groups": [
+    [
+     "LING231"
+    ]
+   ],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Prerequisite(s): LING 231. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Semantics B",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-232"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING236",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In-depth investigation of some topic in semantics and pragmatics. Topics vary from year to year, covering literature and current research in linguistic semantics and pragmatics.",
+   "display_code": "LING 236",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "236",
+   "prereq_groups": [
+    [
+     "LING231"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 231. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Proseminar in Semantics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-236"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING236G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "In-depth investigation of some topic in semantics and pragmatics. Topics vary from year to year, covering literature and current research in linguistic semantics and pragmatics. Three-credit version of LING 236. Does not require a final paper.",
+   "display_code": "LING 236G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "236G",
+   "prereq_groups": [
+    [
+     "LING231"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 231. Enrollment is restricted to graduate students, or by consent of instructor.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Semantics Proseminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-236g"
+  },
+  {
+   "catalog_instructor": "Roumyana  Pancheva",
+   "code": "LING239",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in semantics drawn from the current research interests of the instructor.",
+   "display_code": "LING 239",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "239",
+   "prereq_groups": [
+    [
+     "LING232"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 232. Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Semantics Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-239"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING239G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Advanced topics insemantics drawn from the current research interests of the instructor. Three-credit version of LING 239. Does not require a final paper.",
+   "display_code": "LING 239G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "239G",
+   "prereq_groups": [
+    [
+     "LING232"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 232. Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Semantics Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-239g"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING240",
+   "credits": "1",
+   "cross_listed": [],
+   "description": "Provides training for graduate students in university-level pedagogy in general and in the pedagogy of linguistics specifically. Under the supervision of a faculty member, coordinated by a graduate student with substantial experience as a teaching assistant.",
+   "display_code": "LING 240",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "240",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "The Pedagogy of Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-240"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING244",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Practical introduction to computational methods for linguists. Topics covered: database development; indexation and search; morphological and syntactic parsing; and modern annotation methodologies. Students concurrently learn Python and JavaScript. No background in programming is required.",
+   "display_code": "LING 244",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "244",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students, or by consent of the instructor.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Computational Methods for Linguists",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-244"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING248",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Seminar in computational approaches in linguistics and the language sciences with topics drawn from the current interests of the instructor.",
+   "display_code": "LING 248",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "248",
+   "prereq_groups": [
+    [
+     "LING221"
+    ],
+    [
+     "LING231"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 221 and LING 231. Enrollment is restricted to linguistics graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Topics in Computational Methods and Models",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-248"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING249",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Presents theoretical and descriptive issues, particularly those raised by the framework of distributed morphology and its current competitors. Course work consists of readings, squibs, and a term paper.",
+   "display_code": "LING 249",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "249",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Morphology Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-249"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING249G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Presents theoretical and descriptive issues, particularly those raised by the framework of distributed morphology and its current competitors. Coursework consists of readings and squibs. Three-credit version of LING 249. Does not require a final paper.",
+   "display_code": "LING 249G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "249G",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Morphology Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-249g"
+  },
+  {
+   "catalog_instructor": "Amanda Rysling",
+   "code": "LING257",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Theory and methods in psycholinguistics, covering perception, production, and acquisition of language and linguistic structure. A hands-on, laboratory-style introduction to the topic, focusing on the relation between experimental findings and linguistic theory.",
+   "display_code": "LING 257",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "257",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Psycholinguistics and Linguistic Theory",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-257"
+  },
+  {
+   "catalog_instructor": "Dustin Chacón",
+   "code": "LING258",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in psycholinguistics and experimental linguistics. Contemporary memory models. Computational models of comprehension and production. Neurolinguistic findings and methodologies. Student work revolves around an extended research project in which students learn to apply advanced analytical techniques. Graduate students have separate evaluation criteria. Students cannot receive credit for this course and LING 258G.",
+   "display_code": "LING 258",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "258",
+   "prereq_groups": [
+    [
+     "LING257"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): LING 257. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Advanced Psycholinguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-258"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING258G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Advanced topics in psycholinguistics and experimental linguistics. Contemporary memory models. Computational models of comprehension and production. Neurolinguistic findings and methodologies. Student work revolves around an extended research project in which students apply advanced analytical techniques. Graduate students have separate evaluation criteria. Three-credit version of LING 258. Does not require a final paper. Students cannot receive credit for this course and LING 258.",
+   "display_code": "LING 258G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "258G",
+   "prereq_groups": [
+    [
+     "LING257"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 257. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Advanced Psycholinguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-258g"
+  },
+  {
+   "catalog_instructor": "Grant McGuire",
+   "code": "LING259",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Advanced topics in acoustic and articulatory phonetics.",
+   "display_code": "LING 259",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "259",
+   "prereq_groups": [
+    [
+     "LING214"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 214. Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Phonetics Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-259"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING259G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Advanced topics in acoustic and articulatory phonetics. Three-credit version of LING 259. Does not require a final paper.",
+   "display_code": "LING 259G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "259G",
+   "prereq_groups": [
+    [
+     "LING214"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): LING 214. Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Phonetics Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-259g"
+  },
+  {
+   "catalog_instructor": "Matt Wagers",
+   "code": "LING279",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Contemporary research in psycholinguistic theory models, and methods. Topics vary with research interests of faculty and graduate students.",
+   "display_code": "LING 279",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "279",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Enrollment is restricted to graduate students or by permission of instructor.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Research Seminar in Psycholinguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-279"
+  },
+  {
+   "catalog_instructor": "Wagers Matt",
+   "code": "LING280",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines experimental design and analysis for gathering linguistic data; the advantages and disadvantages of major response measures, including reaction times; interaction with extra-grammatical factors; and statistics on categorical and continuous measures. Students present results in research papers. Students cannot receive credit for this course and course 280G.",
+   "display_code": "LING 280",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Proseminar in Experimental Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING280A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Methods of primary linguistic investigation. Close study of one language typologically different from English. Data analysis and elicitation techniques.",
+   "display_code": "LING 280A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Linguistic Investigation",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING280B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Linguis Investigati",
+   "display_code": "LING 280B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Linguis Investigati",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING280G",
+   "credits": "3",
+   "cross_listed": [],
+   "description": "Examines experimental design and analysis for gathering linguistic data: the advantages and disadvantages of major response measures, including reaction times; interaction with extra-grammatical factors; and statistics on categorical and continuous measures. Three-credit version of LING 280. Does not require a final paper.",
+   "display_code": "LING 280G",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "280G",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": "Enrollment is restricted to graduate students.",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Proseminar in Experimental Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280g"
+  },
+  {
+   "catalog_instructor": "Maziar Toosarvandani",
+   "code": "LING282",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Exploration of a language previously unfamiliar to students through elicitation from a native speaker. Discussion of elicitation techniques. Students investigate selected aspects of the language in depth. Enrollment is restricted to graduate students; enrollment is by instructor permission only.",
+   "display_code": "LING 282",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "282",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Field Methods",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-282"
+  },
+  {
+   "catalog_instructor": "Ryan Bennett",
+   "code": "LING290",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A research seminar for undergraduate and graduate students to develop the skills of the profession. Critical reading, reviewing, teaching, presentation, and writing. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students or by permission of instructor.",
+   "display_code": "LING 290",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "290",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Research Seminar",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-290"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING295",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Directed reading which does not involve a term paper. Enrollment is restricted to graduate students or by permission of instructor.",
+   "display_code": "LING 295",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "295",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Directed Reading",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-295"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING296",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Independent graduate-level activities and assignments relating to professionalism; organizing and attending colloquium and conferences; participation in discussion at such events; and preparation of commentaries on academic papers. Students submit petition to sponsoring agency. Enrollment is restricted to linguistics graduate students.",
+   "display_code": "LING 296",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "296",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Linguistics Colloquium",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-296"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING297A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Enrollment restricted to graduate standing or consent of instructor.",
+   "display_code": "LING 297A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING297B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "Enrollment restricted to graduate standing or consent of instructor.",
+   "display_code": "LING 297B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING297C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "Enrollment restricted to graduate standing or consent of instructor.",
+   "display_code": "LING 297C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297c"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING297F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Two-credit independent study. Enrollment restricted to graduate students, or by consent of instructor.",
+   "display_code": "LING 297F",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "297F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Independent Study",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297f"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING299A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "LING 299A",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299A",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING299B",
+   "credits": "10",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "LING 299B",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299B",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING299C",
+   "credits": "15",
+   "cross_listed": [],
+   "description": "",
+   "display_code": "LING 299C",
+   "division": "graduate",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "299C",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "LING",
+   "title": "Thesis Research",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299c"
+  },
+  {
+   "catalog_instructor": "The Staff, Mia Gong",
+   "code": "LING50",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "An introduction to the major areas, problems, and techniques of modern linguistics.",
+   "display_code": "LING 50",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "50",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Introduction to Linguistics",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-50"
+  },
+  {
+   "catalog_instructor": "Maziar  Toosarvandani, Roumyana  Pancheva",
+   "code": "LING53",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to the logical foundations of natural language semantics. Logical and semantic relations, simple set theory, logical representations (propositional and predicate calculi, modal and tense logics) and their interpretations. A basic literacy course in the language of logical representation.",
+   "display_code": "LING 53",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "MF"
+   ],
+   "number": "53",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Semantics I",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-53"
+  },
+  {
+   "catalog_instructor": "Ivy Sichel",
+   "code": "LING80C",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "The study of language from a sociological perspective. Multilingualism, language change and variation, pidgins and creoles, the origin and diversification of dialects.",
+   "display_code": "LING 80C",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "CC"
+   ],
+   "number": "80C",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language, Society, and Culture",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80c"
+  },
+  {
+   "catalog_instructor": "Dustin Chacón",
+   "code": "LING80D",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Examines how the properties of human languages can be used to understand how the mind works and to what extent language use and experience can affect how we think. Topics covered include: human language vs. other forms of animal communication, language deficits and impairments, how language experience shapes perception, the nature of language acquisition, and the extent to which cross-linguistic variation affects other kinds of cognition. The course also provides historical context of the development of modern language science, with a critical overview of Noam Chomsky's linguistics.",
+   "display_code": "LING 80D",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-H"
+   ],
+   "number": "80D",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language and Mind",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80d"
+  },
+  {
+   "catalog_instructor": "Grant McGuire",
+   "code": "LING80H",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Comprehensive overview of the human voice, concentrating on its paralinguistic and sociolinguistic functions. Topics include: laryngeal anatomy, voice acoustics, emotional expression, singing, and vocal pathologies. A major theme is the interaction of race, ethnicity, and gender in vocal expression, racial and ethnic profiling of voices, and how all of this relates to current issues in human-computer interaction and social media.",
+   "display_code": "LING 80H",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "80H",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "The Human Voice",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80h"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "LING80K",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Considers invented languages, including Elvish and Klingon, as well as lesser-known ones that tackle ethical, social, or cognitive concerns. Students learn tools from contemporary linguistics to analyze language structures and understand how they relate to creator intentions.",
+   "display_code": "LING 80K",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "TA"
+   ],
+   "number": "80K",
+   "prereq_groups": [],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Invented Languages, from Elvish to Esperanto",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80k"
+  },
+  {
+   "catalog_instructor": "Pranav Anand",
+   "code": "LING80L",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Investigates the ways quantitive methods are used, including probability and statistics, to make predictions about language and to model central aspects of language, including form, meaning, and use. Course explores the thousands of years of these approaches, covering topics including code-breaking, modeling word meaning, neural network models, and large language models (LLMs), among many others. Also explores how these approaches can be used to help model how people process language.",
+   "display_code": "LING 80L",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "80L",
+   "prereq_groups": [
+    [
+     "LING50",
+     "LING53",
+     "LING80K",
+     "LING80M"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisites: LING 50 , LING 53, LING 80K, or LING 80M .",
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Predicting Words with Numbers: From Code-Breaking to Spell-Check, and Large Language Models",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80l"
+  },
+  {
+   "catalog_instructor": "Ryan Bennett",
+   "code": "LING80M",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores indigenous experiences in Mesoamerica, focusing on the role of language in the formation of indigenous identities, both historically and in contemporary society. Also considers the linguistic correlates of inequalities experienced by indigenous communities since European contact. Students learn about some of the unique features of Mesoamerican indigenous languages, but no prior experience with linguistics is presumed.",
+   "display_code": "LING 80M",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "80M",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Language and Indigeneity in Mesoamerica",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80m"
+  },
+  {
+   "catalog_instructor": "Jess Law",
+   "code": "LING80S",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A general overview of the major areas, problems, and techniques of modern linguistics. This course is not suitable for majors in the Linguistics Department.",
+   "display_code": "LING 80S",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SI"
+   ],
+   "number": "80S",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "The Science of Language: An Introduction to Linguistics for Non-Majors",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80s"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING80V",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "A systematic study of the elements of English words: besides the practical goal of vocabulary consolidation and expansion, explores the historical origin and development of word elements, as well as their sound, meaning, and function in the contemporary language.",
+   "display_code": "LING 80V",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "80V",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Structure of the English Vocabulary",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-80v"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "LING99",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "LING 99",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "LING",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/ling-linguistics/lower-division/ling-99"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "LING"
+}

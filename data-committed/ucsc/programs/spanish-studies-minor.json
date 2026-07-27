@@ -1,0 +1,296 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "languages-and-applied-linguistics",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Spanish Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN1",
+       "SPAN2",
+       "SPAN3",
+       "SPAN4",
+       "SPAN5",
+       "SPAN6"
+      ],
+      "n": 6,
+      "needs_review": false,
+      "notes": [
+       "Or equivalent proficiency. SPAN 5M may substitute for SPAN 5 ."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Either six courses in the regular track",
+       "prose": [
+        "Or equivalent proficiency. SPAN 5M may substitute for SPAN 5 ."
+       ]
+      }
+     }
+    ],
+    "title": "Either six courses in the regular track"
+   },
+   {
+    "concentration": null,
+    "kind": "concentration",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPHS4",
+       "SPHS5",
+       "SPHS6"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "or equivalent proficiency"
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Or three courses in the Spanish for Heritage Speakers (SPHS) track",
+       "prose": [
+        "or equivalent proficiency"
+       ]
+      }
+     }
+    ],
+    "title": "Or three courses in the Spanish for Heritage Speakers (SPHS) track"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LING50"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus the following course"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "There are a total of 25 upper-division credits required for the Spanish studies minor. Four required Spanish studies core courses (20 credits total), in addition to one upper-division Spanish studies elective course (5 credits total):"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT189A",
+       "LIT189B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Literature (5 credits)",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Literature (5 credits)"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT189C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Spanish Studies (5 credits)",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Spanish Studies (5 credits)"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Linguistics (5 credits)",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Linguistics (5 credits)"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SPAN114",
+       "SPHS115"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Spanish Language (5 credits)",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Spanish Language (5 credits)"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT188A",
+       "LIT188B",
+       "LIT188E",
+       "LIT188F",
+       "LIT188G",
+       "LIT188H",
+       "LIT188I",
+       "LIT188L",
+       "LIT188M",
+       "LIT188R",
+       "LIT188Z",
+       "LIT189D",
+       "LIT189E",
+       "LIT189F",
+       "LIT189G",
+       "LIT189H",
+       "LIT189I",
+       "LIT189K",
+       "LIT189L",
+       "LIT189M",
+       "LIT189N",
+       "LIT189O",
+       "LIT189P",
+       "LIT189Q",
+       "LIT189R",
+       "LIT189S",
+       "LIT189T",
+       "LIT189U",
+       "LIT189V",
+       "LIT189X",
+       "LIT189Z",
+       "SPAN156A",
+       "SPAN156E",
+       "SPAN156F",
+       "SPAN156J",
+       "SPAN156K",
+       "SPAN156L",
+       "SPAN156M",
+       "SPAN157",
+       "SPAN158",
+       "SPAN130",
+       "SPAN6",
+       "SPHS6",
+       "SPAN140",
+       "SPAN141",
+       "SPAN151",
+       "SPAN152",
+       "SPAN153",
+       "SPAN154",
+       "SPAN155"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "[equivalent alternates, one entry] SPAN 130 / SPAN 6 / SPHS 6"
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Spanish Elective (5 credits)",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Spanish Elective (5 credits)"
+   }
+  ]
+ },
+ "slug": "spanish-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/spanish-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

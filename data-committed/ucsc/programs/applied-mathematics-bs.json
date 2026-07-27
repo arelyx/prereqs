@@ -1,0 +1,1229 @@
+{
+ "catalog_year": null,
+ "degree": "BS",
+ "department": "applied-mathematics",
+ "division": "baskin-engineering",
+ "kind": "major",
+ "name": "Applied Mathematics B.S.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Applied mathematics is a field of research specializing in the development and application of analytical and numerical tools and techniques toward the solution of complex quantitative problems in science and engineering. A Bachelor of Science (B.S.) in Applied Mathematics prepares graduates for careers in the industry (usually in research and development) or academia (either in teaching and/or in research at university or governmental laboratories or agencies). It can be a terminal degree, or it can prepare students for graduate school in applied mathematics or related fields.",
+     "The applied mathematics major at the University of California, Santa Cruz provides students with holistic training in mathematical modeling. The core of the degree program includes six courses that introduce modern analytical (and semi-analytical) techniques as well as general aspects of scientific computing. Students gain further depth or breadth by taking three (or more) electives among a large list of upper-division or graduate courses offered by applied mathematics faculty or in related subject areas. Finally, students learn to apply the techniques and tools learned through a capstone two-course sequence that focuses on modeling “real- life” quantitative problems in science and engineering. In these courses, students also learn additional skills such as mathematical abstraction, critical thinking, and disciplinary communication. The last course of the capstone course sequence can be substituted for a senior thesis.",
+     "The major has been designed to allow students to pursue an additional minor or major in an area of applications of mathematics (such as physics, astrophysics, Earth sciences, computer sciences, computer engineering, electrical engineering), and/or to pursue the 4+1 pathway into the Master of Science (M.S.) degree program in Scientific Computing and Applied Mathematics also offered by the Department of Applied Mathematics."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Baskin Engineering's Undergraduate Advising Office is located in the Baskin Engineering Building, Room 225. It can be contacted by email at bsoeadvising@ucsc.edu or at the Baskin Engineering Undergraduate Advising website .",
+     "Transfer students to the program should consult the Transfer Students section of the Baskin Engineering Undergraduate Advising website ."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Recipients of a B.S. degree in applied mathematics at UC Santa Cruz are expected to have the following skills and experiences:",
+     "To be able to take a real-life science or engineering problem, and create a mathematical model for it, under the supervision of a professor.",
+     "To be competent with a number of analytical methods for the solution of linear algebra problems, as well as ordinary and partial differential equations.",
+     "To be competent with constructing numerical algorithms for the solution of linear algebra problems and ordinary differential equations.",
+     "To be competent in at least two scientific computing languages such as: Fortran, C, Python, R, Matlab, etc. and to be familiar with other computational elements such as Unix-type operating systems, the use of compilers, professional scientific computing libraries, efficient IO algorithms, data visualization tools, etc.",
+     "To be able to analyze critically the results obtained from a proposed model, and identify when the model is inappropriate.",
+     "To be able to communicate clearly and coherently with professionals (orally and in writing), in order to: (1) understand what is needed of the mathematical model prior to the investigation; and (2) report on the results of the model after the investigation."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "It is recommended that high school students intending to apply to this major have completed four years of mathematics (through advanced algebra and trigonometry) and three years of science in high school. Comparable college mathematics and science courses completed at another institution also serve to properly prepare students for this major.",
+     "This is a course-intensive and/or sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at UC Santa Cruz.",
+     "Math placement may be required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Baskin Engineering requires letter grades for all courses in an engineering major."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Undergraduate engineering students who wish to substitute a major course with a course from UC Santa Cruz must first consult Baskin Engineering's Undergraduate Advising Office. The advising office requires a Petition for Course Substitution be approved before credit for an alternate course can be applied to any Baskin Engineering major requirement. Petition forms are available at the undergraduate advising office and on the Baskin Engineering advising website .",
+     "Petitions and procedures for approval must be obtained from and submitted to the Undergraduate Advising Office."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students who are planning a double-major with physics can replace the AM 100 and AM 112 courses with the PHYS 116A and PHYS 116C courses. Special approval by both undergraduate directors will be required to do so."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors are awarded to students with a GPA of 3.30-3.69 in courses in the major. Highest honors are awarded to students with a GPA of 3.70 or higher in courses in the major. Baskin Engineering reserves the right to withhold honors based on other criteria, such as an incident of academic dishonesty."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Please refer to Baskin Engineering's Admission to School of Engineering Majors section of the catalog for additional policies that apply to all Baskin Engineering programs. These policies include admission to the major and the need for students to obtain preapproval before taking courses elsewhere."
+    ],
+    "title": "Baskin Engineering Policies"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Transfer students must complete the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or by the end of the fall term prior to winter enrollment. Three of the five courses listed below must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, or by the end of the winter term in the academic year preceding the planned winter term and year of transfer. The course requirements for winter transfer are the same as those for fall transfer except the shift in time lines. Winter transfer students are expected to complete the lower-division programming requirement in their first quarter at UCSC to keep them on track to graduate on time. A prior programming course and/or a self-taught programming experience is strongly encouraged.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Transfer students must complete the following courses, or their articulated equivalents, by the end of the spring term prior to fall enrollment, or by the end of the fall term prior to winter enrollment. Three of the five courses listed below must be completed by the end of the fall term in the academic year preceding the planned fall term and year of transfer, or by the end of the winter term in the academic year preceding the planned winter term and year of transfer. The course requirements for winter transfer are the same as those for fall transfer except the shift in time lines. Winter transfer students are expected to complete the lower-division programming requirement in their first quarter at UCSC to keep them on track to graduate on time. A prior programming course and/or a self-taught programming experience is strongly encouraged."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM30"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "Transfer students should have completed as many general education requirements as possible if they wish to graduate in two years.",
+        "Transfer students should have completed as many general education requirements as possible if they wish to graduate in two years."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students should declare their major in their first quarter at UC Santa Cruz. Instructions for declaring a major in Baskin Engineering are on the Baskin Engineering's Declare Your Major website. If you satisfy the transfer admissions screening requirements, you are not required to take additional coursework in order to declare."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "In order to be admitted into the applied mathematics major, students must be listed as a proposed major within the Baskin Engineering or within the Division of Physical and Biological Sciences. Please refer to Prepare to Declare a Baskin Engineering Major .",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "In order to be admitted into the applied mathematics major, students must be listed as a proposed major within the Baskin Engineering or within the Division of Physical and Biological Sciences. Please refer to Prepare to Declare a Baskin Engineering Major .",
+        "Transfers to the program should consult the Transfer Admission Screening Requirements and the Transfer Students section of the Baskin Engineering Undergraduate Affairs page.",
+        "In addition to being listed as a proposed Baskin Engineering or Physical and Biological Sciences major, admission to the applied mathematics major is based on passing the following foundational courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Foundation Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "One of the following series:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM30"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 30 is preferred."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options",
+       "prose": [
+        "AM 30 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 10 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "AM 10 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline. At most, one unsuccessful attempt (grade C-, D+, D, D-, F, or NP) for a foundation course is permitted.",
+        "type": "prose"
+       },
+       {
+        "text": "At most, one unsuccessful attempt (grade C-, D+, D, D-, F, or NP) for a foundation course is permitted.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 20 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "AM 20 is preferred.",
+        "Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline. At most, one unsuccessful attempt (grade C-, D+, D, D-, F, or NP) for a foundation course is permitted.",
+        "Declaration of the major can happen no sooner than the student's second quarter, and no later than the campus deadline.",
+        "At most, one unsuccessful attempt (grade C-, D+, D, D-, F, or NP) for a foundation course is permitted."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Denials of admission to the major may be appealed by submitting a letter to Baskin Engineering's Undergraduate Advising office, addressed to the program undergraduate director within 15 days from the date the notification was mailed. The appeal letter must describe why the prior performance is not an accurate reflection of the student's potential. Within 15 days of receipt of the appeal, the Undergraduate Advising office will notify the student and their college of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "There are four steps to declaring a Baskin Engineering major. For a detailed guide to this process, please consult Baskin Engineering's Declare Your Major website.",
+        "Students should start the major declaration process by completing Step One on the Baskin Engineering’s Declare Your Major website as soon as they complete the major qualification courses or reach their declaration deadline quarter, whichever comes first.",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Course requirements are divided into foundational lower-division courses and advanced upper-division courses. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "MATH19A",
+        "MATH19B"
+       ],
+       [
+        "MATH20A",
+        "MATH20B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Credit for one or both MATH 19A and MATH 19B may be granted with adequate performance on the CEEB calculus AB or BC Advanced Placement examinations."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Choose one of the following series:",
+       "prose": [
+        "Credit for one or both MATH 19A and MATH 19B may be granted with adequate performance on the CEEB calculus AB or BC Advanced Placement examinations."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM10",
+       "MATH21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 10 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "AM 10 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM20",
+       "MATH24"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 20 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "AM 20 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM30"
+       ],
+       [
+        "MATH23A",
+        "MATH23B"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 30 is preferred."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "AM 30 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE16",
+       "MATH100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 100 is strongly recommended for students who eventually wish to take some upper-division electives in mathematics."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "MATH 100 is strongly recommended for students who eventually wish to take some upper-division electives in mathematics."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE20",
+       "CSE13S",
+       "ECE13",
+       "ASTR19",
+       "ECON22P"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Through the lower-division programming course, students are expected to be competent in Python or C programming. The lower-division programming requirement can be satisfied with a prior programming course that is equivalent to one of CSE 20 , CSE 13S , ECE 13 , ASTR 19 , and ECON 22P either via articulation on Assist.org or via approval by the applied mathematics program by sending a syllabus of the course to the department for review. The requirement can also be satisfied by passing the CSE 20 Testout exam after matriculation at UCSC."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following programming courses",
+       "prose": [
+        "Through the lower-division programming course, students are expected to be competent in Python or C programming. The lower-division programming requirement can be satisfied with a prior programming course that is equivalent to one of CSE 20 , CSE 13S , ECE 13 , ASTR 19 , and ECON 22P either via articulation on Assist.org or via approval by the applied mathematics program by sending a syllabus of the course to the department for review. The requirement can also be satisfied by passing the CSE 20 Testout exam after matriculation at UCSC.",
+        "Students who did not take either AM 10 or AM 20 as part of the lower-division core requirement are strongly encouraged to study the Matlab self-paced tutoria l prior to taking AM 114 and AM 147 .",
+        "Students who did not take either AM 10 or AM 20 as part of the lower-division core requirement are strongly encouraged to study the Matlab self-paced tutoria l prior to taking AM 114 and AM 147 ."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Lower-Division Electives",
+       "prose": [
+        "Students are required to take two lower-division electives from the following list, in preparation for the upper-division electives they are later required to take. Students are encouraged to plan ahead carefully in consultation with undergraduate advising in making their selection."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS5A",
+       "PHYS5B",
+       "PHYS5C",
+       "ASTR21"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "EART, ECE, PHYS lower-division electives",
+       "prose": [
+        "Students interested in EART, ECE, PHYS upper-division electives should consider taking some of the following PHYS lower-division electives.",
+        "Several of these courses have corequisite lab courses. Lecture/lab combinations count as one course. Associated labs are required only when required by the lecture.",
+        "PHYS 15A can be used as a substitute for PHYS 5A , and PHYS 15C as a substitute for PHYS 5C . These are honors courses and should only be taken by students who wish to take physics courses that are more challenging than PHYS 5A and PHYS 5C ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CSE30",
+       "CSE40",
+       "ECE9"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "CSE or ECE lower-division electives",
+       "prose": [
+        "Students interested in CSE or ECE upper-division electives should consider taking some of the following CSE or ECE lower-division electives (in addition to possible PHYS electives):"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON1",
+       "ECON2",
+       "STAT7",
+       "STAT7L",
+       "STAT17",
+       "STAT17L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "STAT 17 (and associated lab STAT 17L ) are strongly recommended for students wishing to take upper-division electives in economics."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "ECON and STAT lower-division electives",
+       "prose": [
+        "Students interested in ECON or STAT upper-division electives should consider taking some of the following ECON or STAT lower-division electives. Note that lecture/lab combinations count as one course.",
+        "STAT 17 (and associated lab STAT 17L ) are strongly recommended for students wishing to take upper-division electives in economics."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Lower-division electives for mathematical biology",
+       "prose": [
+        "Students interested in mathematical biology (in particular AM 115 ) should consider taking some of the following BIOL or BIOE lower-division electives:"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM100",
+       "AM112",
+       "AM114",
+       "AM129"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Complete the following core courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM147",
+       "MATH148"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "AM 147 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "AM 147 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT131",
+       "CSE107"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "Students are required to take three upper-division elective courses from the following list of possible electives. Up to one of these electives can be replaced by a 5-credit independent study to do research with one of the program faculty.",
+        "Note that many of these electives have lower-division prerequisites. Students should plan carefully which ones to take to ensure they are prepared for their selected upper-division electives. Also note that enrollment in the graduate courses is by permission of the instructor, who will verify adequate preparation.",
+        "The upper-division electives should ideally be selected to form a concentration that prepares the student for their desired career or future choice of graduate school. Students interested in pursuing graduate school in applied mathematics (at UC Santa Cruz or elsewhere) are encouraged to choose upper-division electives from AM or MATH. Students interested in graduate school in a different discipline are strongly encouraged to pursue a minor (or a double-major) in that discipline, and choose upper-division electives that count for both the applied mathematics major and the minor or double major. Students interested in a career in the private sector should select upper-division electives that prepare them for that career, with recommendations listed on this website ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Possible AM Electives",
+       "prose": [
+        "Any 5-credit upper-division (100-199) or graduate (200-299) AM course that is not already a core course. AM 198 can only be used once for elective credit. AM 200 , AM 211 , and the AM 280 series and above may not be used."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR112",
+       "ASTR113",
+       "ASTR119"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Possible ASTR electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BME110",
+       "BME118",
+       "BME160"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Possible BME electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Note that most of these courses require CSE 101 as prerequisite. Enrollment restrictions may apply to many of these courses on short notice, and some have multiple upper-division prerequisites, and may, therefore, only be appropriate for double majors (or major-minor combinations).",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CSE101",
+       "CSE102",
+       "CSE104",
+       "CSE106",
+       "CSE108",
+       "CSE113",
+       "CSE140",
+       "CSE142",
+       "CSE144",
+       "CSE160",
+       "CSE161",
+       "CSE161L",
+       "CSE162",
+       "CSE162L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note that most of these courses require CSE 101 as prerequisite. Enrollment restrictions may apply to many of these courses on short notice, and some have multiple upper-division prerequisites, and may, therefore, only be appropriate for double majors (or major-minor combinations)."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Possible CSE Electives",
+       "prose": [
+        "Note that many require lower-division CSE courses. Lecture/lab combinations count as one course.",
+        "Note that most of these courses require CSE 101 as prerequisite. Enrollment restrictions may apply to many of these courses on short notice, and some have multiple upper-division prerequisites, and may, therefore, only be appropriate for double majors (or major-minor combinations)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART112",
+       "EART118",
+       "EART119A",
+       "EART121",
+       "EART124",
+       "EART160",
+       "EART162",
+       "EART163",
+       "EART164"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Possible EART Electives",
+       "prose": [
+        "Note that many require lower-division PHYS or CHEM courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART125",
+       "EART225"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Either of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EART172",
+       "EART272"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Either of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Note that most of these courses require ECE 101 as prerequisite. Many of these courses have more than one upper-division prerequisite beyond those that are already part of the core requirements. These courses may only be appropriate for double majors (or major-minor combinations).",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ECE101",
+       "ECE101L",
+       "ECE103",
+       "ECE115",
+       "ECE135",
+       "ECE135L",
+       "ECE136",
+       "ECE141",
+       "ECE145",
+       "ECE149",
+       "ECE151",
+       "ECE153",
+       "ECE163",
+       "ECE179"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note that most of these courses require ECE 101 as prerequisite. Many of these courses have more than one upper-division prerequisite beyond those that are already part of the core requirements. These courses may only be appropriate for double majors (or major-minor combinations)."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Possible ECE Electives",
+       "prose": [
+        "Lecture-lab combinations count as one course.",
+        "Note that most of these courses require ECE 101 as prerequisite. Many of these courses have more than one upper-division prerequisite beyond those that are already part of the core requirements. These courses may only be appropriate for double majors (or major-minor combinations)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ECON100A",
+       "ECON100B",
+       "ECON100M",
+       "ECON100N",
+       "ECON101",
+       "ECON113",
+       "ECON114",
+       "ECON115",
+       "ECON124",
+       "ECON166A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note that some of these courses require more than one upper-division ECON prerequisite. Also, some of these courses have enrollment restrictions, and may require permission by the instructor and may, therefore, only be appropriate for double majors (or major-minor combinations)."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Possible ECON Electives",
+       "prose": [
+        "Note that many require ECON lower-division courses:",
+        "Note that some of these courses require more than one upper-division ECON prerequisite. Also, some of these courses have enrollment restrictions, and may require permission by the instructor and may, therefore, only be appropriate for double majors (or major-minor combinations)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Note that most MATH electives require MATH 100 as a prerequisite, and that several of these courses have more than one upper division pre-requisite, or recommended prerequisites that students should take. These courses may only be appropriate for double majors, or for major-minor combinations.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH105A",
+       "MATH105B",
+       "MATH105C",
+       "MATH110",
+       "MATH111A",
+       "MATH111T",
+       "MATH114",
+       "MATH115",
+       "MATH117",
+       "MATH116",
+       "MATH118",
+       "MATH120",
+       "MATH121A",
+       "MATH121B",
+       "MATH124",
+       "MATH130",
+       "MATH134",
+       "MATH140",
+       "MATH152",
+       "MATH160"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Note that most MATH electives require MATH 100 as a prerequisite, and that several of these courses have more than one upper division pre-requisite, or recommended prerequisites that students should take. These courses may only be appropriate for double majors, or for major-minor combinations."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Possible MATH Electives",
+       "prose": [
+        "Note that most MATH electives require MATH 100 as a prerequisite, and that several of these courses have more than one upper division pre-requisite, or recommended prerequisites that students should take. These courses may only be appropriate for double majors, or for major-minor combinations."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OCEA260",
+       "OCEA267",
+       "OCEA286"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Possible OCEA Electives",
+       "prose": [
+        "Note that some require lower-division PHYS electives, or upper-division ESCI electives:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OCEA100",
+       "OCEA200"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Either of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OCEA111",
+       "OCEA211"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Either of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS105",
+       "PHYS110A",
+       "PHYS110B",
+       "PHYS139A",
+       "PHYS139B",
+       "PHYS150",
+       "PHYS171"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "The prerequisites of PHYS 116A and PHYS 116C are waived for students who have taken AM 100 and AM 112 . PHYS 139A , PHYS 139B , PHYS 171 are courses that have more than one upper-division prerequisite beyond those that are already part of the core requirements. These courses may only be appropriate for double majors (or major-minor combinations)."
+      ],
+      "op": "list",
+      "source": {
+       "heading": "Possible PHYS Electives",
+       "prose": [
+        "Note that many require lower-division PHYS courses:",
+        "The prerequisites of PHYS 116A and PHYS 116C are waived for students who have taken AM 100 and AM 112 .",
+        "PHYS 139A , PHYS 139B , PHYS 171 are courses that have more than one upper-division prerequisite beyond those that are already part of the core requirements. These courses may only be appropriate for double majors (or major-minor combinations)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT108",
+       "STAT132",
+       "STAT204",
+       "STAT205"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Possible STAT Electives",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "TIM147",
+       "TIM150"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Possible TIM Electives",
+       "prose": [
+        "All students, but especially those doing a double major or a major-minor combination, may also petition to count courses that are not already on the list as electives, subject to approval.",
+        "All students, but especially those doing a double major or a major-minor combination, may also petition to count courses that are not already on the list as electives, subject to approval."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "The DC requirement in the Applied Mathematics B.S. is satisfied by completing the capstone course AM 170A (see below)."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       ""
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Students satisfy the senior comprehensive requirement by completing the capstone course sequence:"
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "AM170A",
+        "AM170B"
+       ],
+       [
+        "AM170A",
+        "AM195"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Either these two courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Exit Requirement",
+       "prose": [
+        "All students are required to complete an exit survey."
+       ]
+      }
+     }
+    ],
+    "title": "Exit Requirement"
+   }
+  ]
+ },
+ "slug": "applied-mathematics-bs",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-bs",
+ "verification": {
+  "status": "unverified"
+ }
+}

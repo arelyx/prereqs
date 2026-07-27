@@ -1,0 +1,613 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "community-studies",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Community Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Community studies is an undergraduate B.A.-granting program in which students and faculty seek to understand how social change happens in theory and practice. Founded in 1969, community studies is only available at UC Santa Cruz. But it has earned a global reputation for its critical approach to understanding social justice and community-based experiential learning.",
+     "The heart of community studies is a six-month field study in which students are embedded within and work with social change organizations. Students work closely with faculty to choose their field study site, to navigate the experience of an internship at the site and to finally analyze their organization’s approaches and strategies for achieving social justice. Community studies students have worked with organizations dedicated to labor and economic justice, feminist and queer liberation, racial justice, Indigenous sovereignty, food justice, climate justice, abolition and opposition to war, homelessness, and domestic violence. They are supported to find an organization that speaks to their own personal passions. Though their focus is on a single site, community studies students develop ways to understand how our overlapping social and ecological injustices and crises are deeply interconnected. Following their field study, each student draws from the critical social theory in our courses to craft an independent research paper and poster, which they present, analyzing their experiences.",
+     "On campus, students complete a core curriculum examining the histories and contemporary dynamics of the social movements, the nonprofit sector organizations, and public policies aimed at affording people greater capacity to live flourishing lives. The core curriculum works in tandem with a wide variety of topical electives, to give students a deeper understanding of the particular conditions their field site seeks to address.",
+     "Students graduate from community studies having engaged with the world through a mix of critical thinking and analysis and direct experience interning with a social change organization. Through our distinct curricular design, students develop a mix of intellectual, professional and social/emotional skills that prepare them for a wide variety of careers in the nonprofit, human services, education, policy and research fields, as well as the theoretically informed vision and practical wisdom necessary to help co-create a liberated, fair, democratic, and ecologically sustainable planet."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Community studies identifies eight Program Learning Outcomes (PLOs) that capture exciting cross currents within the major. The PLOs combine classroom and experiential learning related to the social justice domains of health equity and economic justice. They also enumerate expectations for student achievement in social science research and writing and communication skills within a diverse society.",
+     "Critical Analysis",
+     "Students earning a B.A. in community studies will be able to:",
+     "demonstrate deep knowledge of the history, causes, and contemporary manifestations of specific social justice issues related to health and economic inequality;",
+     "deconstruct institutional power residing in private enterprise, government, the media, and/or the non-‐profit sector;",
+     "analyze how communities attempt to overcome problems associated with inequality, cultural stigma, prejudice, and discrimination;",
+     "articulate research questions, methods, and findings appropriate to social science inquiry; and",
+     "demonstrate analytical writing ability that effectively integrates theoretical and experiential knowledge about social justice.",
+     "Community Engagement",
+     "Students earning a B.A. in community studies will be able to:",
+     "identify, analyze, and help to construct strategies for social change through participation in the social justice work of an organization;",
+     "exhibit ethnographic observation skills by maintaining a regular record of detailed field notes;",
+     "demonstrate effective communication with the diverse constituencies involved in social justice work."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Rachel Carson College Academic Building 200 Heller Dr. Santa Cruz, CA 95064-1011 (831) 459-2371",
+     "To receive advising for the community studies major, students should schedule an appointment via slug success, email or call the program adviser. Full contact information is available on the program webpage . Our office is located on the first floor of the Rachel Carson College Academic Building in room 128. The office telephone number is 831-459-2371. Students are encouraged to meet early on with the program adviser to develop an academic plan enabling them to take full advantage of the many learning opportunities available at UC Santa Cruz.",
+     "Transfer students should also consult the Transfer Information and Policy section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "Students interested in pursuing the community studies major should communicate with the program adviser to learn about the program's distinctive curriculum and requirements. This is a moderately course-intensive sequential program, and students who intend to pursue this major should begin taking classes for the major in their first or second year at UC Santa Cruz, including CMMU 10 or CMMU 20, to qualify for the major. Completing lower-division general education courses that build an understanding of and engagement with social justice issues is a great way to satisfy university requirements while building a solid foundation for the upper-division coursework required in the community studies major.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Prospective students are encouraged to complete the Intersegmental General Education Transfer Curriculum (IGETC) or to complete all UC Santa Cruz general education requirements before matriculation. The community studies program can easily accommodate students who transfer to UCSC for the fall quarter.",
+     "Transfer students who plan to major in community studies will also find it useful to obtain a background in politics, sociology, psychology, anthropology, or community action and service. Prior to their first quarter at UC Santa Cruz, transfer students should meet with the program advisor to prepare a program of study. Once on campus, they should meet with the community studies program adviser to discuss the focus of their academic and field study plans.",
+     "Transfer students should take the necessary course(s) in order to meet major qualification (see section below) in their first term in order to declare the major by the university deadline. Students should petition to declare the major as soon as they have met qualification requirements and/or reach the declaration deadline quarter, whichever comes first."
+    ],
+    "title": "Transfer Information and Policy"
+   },
+   {
+    "paragraphs": [
+     "All courses for the major must be taken for a letter grade. Satisfactory completion of all major course requirements is defined by a grade of C or higher."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Many students combine community studies with another major. Students wishing to pursue community studies and a second major (i.e., \"double major\") should consult with the program adviser as early as possible to plan their course work to satisfy all their degree requirements.",
+     "Community Studies does not offer a minor."
+    ],
+    "title": "Double Majors and Major/Minor Combinations Policy"
+   },
+   {
+    "paragraphs": [
+     "Participation in the Education Abroad Program (EAP) and other off-campus programs is strongly encouraged but requires advanced planning. Students considering EAP should schedule a meeting with the community studies adviser to determine the best quarter(s) for participation in such programs. Students may petition to have EAP coursework satisfy one (1) of their topical courses for the major if the EAP course work clearly relates to the student's academic plan in the major. Petitions will be evaluated on a case by case basis. Students are encouraged to learn more about study abroad and other opportunities on UC Santa Cruz's Global Learning website ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Honors in the community studies major are awarded to graduating seniors whose performance, including coursework, field study, and the senior capstone, is judged by a faculty committee to have achieved excellence. Highest honors in the major are reserved for students with consistently outstanding academic performance in all areas."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Complete one of the following courses or any upper-division topical course listed in the Requirements and Planners section. This course must be passed with a letter grade of C or better.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "CMMU10",
+       "CMMU20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Complete one of the following courses or any upper-division topical course listed in the Requirements and Planners section. This course must be passed with a letter grade of C or better.",
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first. Students can file a petition to declare the major while still enrolled in major qualification courses if they are approaching their campus declaration deadline (i.e., second quarter if admitted as a transfer student or in their sixth quarter if admitted as a frosh).",
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first. Students can file a petition to declare the major while still enrolled in major qualification courses if they are approaching their campus declaration deadline (i.e., second quarter if admitted as a transfer student or in their sixth quarter if admitted as a frosh)."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are informed that they are not eligible to declare the major may appeal this decision by submitting a letter addressed to the community studies program director within 15 days from the date of notification. Appeal letters should be submitted via email to the community studies program adviser at cmmuba@ucsc.edu . Within 15 days of receipt of the appeal, the program will notify the student and college of the decision."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "As part of the declaration process, students meet with the program director and/or staff adviser to review their academic plan for the major, including discussion of field study possibilities and appropriate courses to meet topical requirements. Students must submit their approved academic plan and declaration petition to the community studies staff adviser. Significant changes to the student's academic plan must be approved by the program director.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "As part of the declaration process, students meet with the program director and/or staff adviser to review their academic plan for the major, including discussion of field study possibilities and appropriate courses to meet topical requirements. Students must submit their approved academic plan and declaration petition to the community studies staff adviser. Significant changes to the student's academic plan must be approved by the program director."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Community studies majors are required to take a total of 11 courses (one lower-division course in preparation for the major; seven upper-division core classes, two of which are 15 credits each; and three topical classes). In addition, they must successfully complete the senior capstone prior to graduation."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU10",
+       "CMMU20"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students are advised to complete this course as early as possible. CMMU 10 is offered in fall and CMMU 20 is offered in winter."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Take one of the following:",
+        "Students are advised to complete this course as early as possible. CMMU 10 is offered in fall and CMMU 20 is offered in winter."
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students complete the core curriculum and three topical courses. Topical courses must be completed prior to the full-time field study courses (CMMU 105A, CMMU 105B, and CMMU 105C).",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students complete the core curriculum and three topical courses. Topical courses must be completed prior to the full-time field study courses (CMMU 105A, CMMU 105B, and CMMU 105C).",
+        "The community studies core courses follow a sequential pattern and are only offered during specific academic quarters. It is very important to develop an academic plan as early as possible that takes the core curriculum sequence into account."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU100",
+       "CMMU101",
+       "CMMU105A",
+       "CMMU105B",
+       "CMMU105C",
+       "CMMU107"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Core Courses",
+       "prose": [
+        "Complete all of the following courses:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Take three courses from the lists below. Courses are separated by academic area. All three topical courses must be completed before a student begins full-time field study (CMMU 105A-CMMU 105B-CMMU 105C).",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Topical Courses",
+       "prose": [
+        "Take three courses from the lists below. Courses are separated by academic area. All three topical courses must be completed before a student begins full-time field study (CMMU 105A-CMMU 105B-CMMU 105C).",
+        "Topical courses are an essential component of the community studies major because they help define the focus of students’ overall academic plan and their work on full-time field study. The topical courses also permit students to work across academic disciplines by taking courses from community studies affiliate faculty. Note that not all topical courses are offered every academic year."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU130",
+       "CMMU132",
+       "CMMU133",
+       "CMMU134",
+       "CMMU137",
+       "CMMU141",
+       "CMMU143",
+       "CMMU145",
+       "CMMU148",
+       "CMMU149",
+       "CMMU151",
+       "CMMU156",
+       "CMMU157",
+       "CMMU160",
+       "CMMU161",
+       "CMMU162",
+       "CMMU163",
+       "CMMU164",
+       "CMMU165",
+       "CMMU167",
+       "CMMU186"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Community Studies",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH134",
+       "ANTH136",
+       "ANTH153",
+       "ANTH194P"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Anthropology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC135",
+       "EDUC173",
+       "EDUC181"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Education",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS130B",
+       "ENVS158"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Environmental Studies",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HAVC141K",
+       "HAVC141O",
+       "HAVC142"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "History of Art and Visual Culture",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS123"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "History",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS175"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Latin American and Latino Studies",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "OAKS153"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Oakes College",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI120C",
+       "POLI122",
+       "POLI124",
+       "GCH186"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Politics",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PSYC147A",
+       "PSYC147B",
+       "PSYC149",
+       "PSYC153",
+       "PSYC155",
+       "PSYC159H"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Psychology",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "SOCY122",
+       "SOCY127",
+       "SOCY131",
+       "SOCY176A",
+       "SOCY177",
+       "SOCY177E",
+       "SOCY177G"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Sociology",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU100",
+       "CMMU107"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division DC requirement. The community studies program’s model of experiential pedagogy relies heavily on writing instruction to develop students’ analytical, reflexive, and communication skills. Although students in the major develop disciplinary writing skills throughout the core curriculum, they fulfill the DC requirement by completing these two courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Senior Capstone Requirement",
+       "prose": [
+        "In addition to the full-time field study, another distinctive feature of the major is the emphasis placed on the capstone. Each student must fulfill this requirement whether through a Capstone Analytic Essay, a senior thesis, or a student-directed seminar. For a thesis or student-directed seminar, the student must work directly with a faculty adviser."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU107"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Capstone Analytic Essay",
+       "prose": [
+        "All students complete a Capstone Analytic Essay that incorporates field study observations and contextualizes their findings historically and theoretically. The minimum length is 25 pages, plus bibliography. The Capstone Analytic Essay is completed entirely in the following course:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CMMU195A",
+       "CMMU195B",
+       "CMMU195C"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Senior Thesis",
+       "prose": [
+        "Outstanding students may choose to complete a senior thesis, which is comprised of field-study observations, historical and theoretical contextualizations of the field study, and deeper analysis of the social justice issues and histories at the heart of the field study. The thesis also involves post-field-study research; typical length is 40–50 pages, including bibliography. The Capstone Analytic Essay completed during CMMU 107 will become the foundation for the thesis, whether as a template to be elaborated or as one or more chapters of the completed thesis. Students electing to write a senior thesis must have a faculty thesis adviser and under direction of the adviser, may enroll in the following courses for variable units in order to complete the thesis."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The SDS capstone option is reserved for exceptional students with a clear vision of a unique lower-division course they would like to offer other UC Santa Cruz students. Under the direction of a faculty adviser, the student develops and teaches a CMMU 42 course related to the student’s field study and academic coursework and submits a seminar completion report. Student-directed seminars required considerable advance planning; a proposal for the SDS must be completed before beginning the field study, i.e., a full year before the seminar would be offered. All proposed SDS courses must be reviewed and approved by the campus Academic Senate's Committee on Courses of Instruction.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Student-Directed Seminar (SDS)",
+       "prose": [
+        "The SDS capstone option is reserved for exceptional students with a clear vision of a unique lower-division course they would like to offer other UC Santa Cruz students. Under the direction of a faculty adviser, the student develops and teaches a CMMU 42 course related to the student’s field study and academic coursework and submits a seminar completion report. Student-directed seminars required considerable advance planning; a proposal for the SDS must be completed before beginning the field study, i.e., a full year before the seminar would be offered. All proposed SDS courses must be reviewed and approved by the campus Academic Senate's Committee on Courses of Instruction."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "community-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/community-studies/community-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

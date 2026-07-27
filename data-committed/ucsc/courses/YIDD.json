@@ -1,0 +1,102 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": "Jonathan  Levitow",
+   "code": "YIDD1",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces the Yiddish language. Students learn to speak and to ask others in Yiddish about themselves and about common situations (the classroom, work, family), and learn to read and write simple Yiddish texts.",
+   "display_code": "YIDD 1",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "ER"
+   ],
+   "number": "1",
+   "prereq_groups": [],
+   "quarters_offered_text": "Winter",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "YIDD",
+   "title": "First-Year Yiddish",
+   "url": "/en/current/general-catalog/courses/yidd-yiddish/lower-division/yidd-1"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "YIDD2",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Follows YIDD 1, expanding vocabulary to include the weather, physical health and sickness, holidays, clothing, etc., and increasing student ability for self-expression using different tenses and grammatical cases.",
+   "display_code": "YIDD 2",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "2",
+   "prereq_groups": [
+    [
+     "YIDD1"
+    ]
+   ],
+   "quarters_offered_text": "Spring",
+   "raw_requirements": "Prerequisite(s): YIDD 1 or by consent of instructor.",
+   "repeatable": false,
+   "subject": "YIDD",
+   "title": "First-Year Yiddish",
+   "url": "/en/current/general-catalog/courses/yidd-yiddish/lower-division/yidd-2"
+  },
+  {
+   "catalog_instructor": "The Staff",
+   "code": "YIDD3",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Follows YIDD 2, expanding vocabulary to include food, travel, and academic life, with an emphasis on the expression of feelings and opinions, agreement and disagreement, making use of all tenses and all grammatical cases.",
+   "display_code": "YIDD 3",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "3",
+   "prereq_groups": [
+    [
+     "YIDD2"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): YIDD 2 or by permission of the instructor.",
+   "repeatable": false,
+   "subject": "YIDD",
+   "title": "First-Year Yiddish",
+   "url": "/en/current/general-catalog/courses/yidd-yiddish/lower-division/yidd-3"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "YIDD99F",
+   "credits": "2",
+   "cross_listed": [],
+   "description": "Students submit petition to sponsoring agency.",
+   "display_code": "YIDD 99F",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "99F",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Winter, Spring",
+   "raw_requirements": null,
+   "repeatable": true,
+   "subject": "YIDD",
+   "title": "Tutorial",
+   "url": "/en/current/general-catalog/courses/yidd-yiddish/lower-division/yidd-99f"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "YIDD"
+}

@@ -1,0 +1,602 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "mathematics",
+ "division": "physical-and-biological-sciences-division",
+ "kind": "major",
+ "name": "Mathematics Education B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "The Mathematics Education Bachelor’s of Arts (B.A.) is specially designed for prepare students for a career in K-12 mathematics education. It shares a rigorous approach to advanced mathematics, but requires coursework that is particularly relevant to the K-12 classroom: number theory, classical geometry, and the history of mathematics. In addition, the math education major requires experience in supervised teaching. Many math education majors also participate in CalTeach, to enhance their experience and directly connect with local schools.",
+     "In California, students seeking a single-subject credential for secondary teaching in mathematics are required to take the CSET (formerly The National Teachers Examination), a series of examinations that must be passed in order to enter a teaching-credential program. Students who are interested in teaching in high schools can obtain a waiver of the CSET Examinations by completing the mathematics education major, plus three additional specified courses. The Mathematics Department undergraduate advisor, the Mathematics Department’s website , and the Education Department advising office have more information about the additional required course."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Mathematics Undergraduate Student Learning Objectives",
+     "The mathematics program promotes mathematical skills and knowledge for their intrinsic beauty, effectiveness in developing proficiency in analytical reasoning, and utility in modeling and solving real-world problems. To responsibly live within and participate in the transformation of a rapidly changing, complex, and interdependent society, toward a sustainable and socially just society, students must develop and unceasingly exercise their analytical abilities. Students who have learned to logically question assertions, recognize patterns, and can distinguish the essential from the irrelevant aspects of problems can think deeply and precisely. Students equipped with these skills will be in a position to help solve the “big” problems of our time such as climate change.",
+     "Students majoring in mathematics attain proficiency in:",
+     "Critical thinking. The ability to identify, reflect upon, evaluate, integrate, and apply different types of information and knowledge to form independent judgments including analytical and logical thinking and the habit of drawing conclusions based on quantitative information.",
+     "Problem solving. The ability to assess and interpret complex situations, choose among several potentially appropriate mathematical methods of solution, persist in the face of difficulty, and present full and cogent solutions that include appropriate justification for their reasoning.",
+     "Effective communication. The ability to communicate and interact effectively with different audiences, collaborate intellectually and creatively in diverse contexts, and appreciate ambiguity and nuance, while emphasizing the importance of clarity and precision in communication and reasoning.",
+     "Students acquire and enhance these abilities in mathematical contexts, but the acquired habits of rigorous thought and creative problem solving are invaluable in all aspects of life. These skills are acquired through experience in the context of studying specific mathematical topics and exploring problems chosen to challenge students’ abilities, spurring them on to acquire new techniques and to abandon familiar but restrictive habits of thought. The overarching objectives can be realized in terms of more focused, appraisable objectives specific to mathematics described on the Mathematics Department website.",
+     "Curriculum Matrix",
+     "All of the key objectives are addressed to some extent in all courses. For example, the ability to formulate precise mathematical statements and to reason logically are essential skills that are progressively developed throughout the curriculum. However, some skills are more heavily emphasized and utilized in some courses than in others. Some courses are specifically intended to help students move to a new level of proficiency with a particular portfolio of skills, while others are accessible only to students who have already reached a given level; the latter courses make heavy use of particular skills, and thus enhance and reinforce the student’s mastery of them, but the skills themselves are not the primary focus of such courses. Some connections between the key objectives, main subject-specific areas, and courses are indicated in the tables of lower- and upper-division mathematics courses at the Mathematics Department’s website."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The undergraduate advisor may be contacted via email at mathadvising@ucsc.edu . The advisor provides information about requirements, prerequisites, policies and procedures, learning support, scholarships, and special opportunities for undergraduate research. In addition, the advisor assists with the drafting of study plans, as well as certifying degrees and minors. Students are urged to stay informed and involved with their major, as well as to seek advice should problems arise.",
+     "The Mathematics Department website is a critical resource for students. Here you will find a link to the undergraduate program; the materials at that link constitute the undergraduate handbook. Students should visit this first to seek answers to their questions, because it hosts a wealth of information. Each student in the major is encouraged to regularly review the materials posted to stay current with requirements, course curriculum, and departmental policy. Transfer students should consult the Transfer Information and Policy section ."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This major is highly course intensive; students who intend to pursue this major must begin taking classes for the major in their first quarter at the University of California, Santa Cruz. Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website .",
+     "It should be emphasized that the nature of mathematics changes dramatically between lower-division and upper-division courses. Students often find that the material becomes far more abstract and theoretical. In addition, the role of computation in assignments diminishes and a greater weight is placed on deductive reasoning and the integral role of mathematical proofs. The Mathematics Department recommends that students interested in a mathematics major enroll in MATH 100 as early as prerequisites allow in order to decide whether they are interested in upper-division mathematics courses.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "There are no restrictions on grading options for Mathematics Department courses. Please see UC Santa Cruz policies on grading options ."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "The Mathematics Department’s undergraduate vice chair approves requests for course substitutions. See the department website for details on requesting an exception to policy or course substitution."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Honors in the Mathematics Department are awarded to graduating students whose academic performance in the major demonstrates excellence at a GPA of 3.5 or above. Highest honors are determined by a cumulative review of student performance in mathematics courses. They are awarded to students who excel in challenging courses and in their capstone projects. Honors GPA is calculated from UCSC grades in MATH 24 , AM 20 , all upper-division math courses, and upper-division non-math course options in major requirements."
+    ],
+    "title": "Honors"
+   },
+   {
+    "paragraphs": [
+     "Studying abroad is encouraged and most practical in fall quarter. It is possible to take classes abroad that will satisfy math major requirements. Intention of using an abroad course as a math requirement must be approved prior to taking the course. Students may submit a syllabus for the course abroad with an exception to policy request through the Mathematics Department homepage ."
+    ],
+    "title": "Education Abroad Program (EAP)"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH19B",
+       "MATH21",
+       "MATH23A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall.",
+        "Students planning to transfer to UC Santa Cruz from a California community college should reference the assist website to determine which courses are equivalent to these required courses.",
+        "Students planning to transfer to UC Santa Cruz from a California community college should reference the assist website to determine which courses are equivalent to these required courses."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT5"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended Course for Transfer Students",
+       "prose": [
+        "In addition, the following course is recommended prior to transfer to help ensure timely graduation and allow for an additional upper-division elective course or other enrichment course to be taken in its stead. However, its omission will not impede admission or a clear pathway to 2-year graduation.",
+        "Prospective students are encouraged to prioritize recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.",
+        "Prospective students are encouraged to prioritize recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Recommended Course for Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "While enrolled in or after finishing the final required qualification courses, a student should follow the directions to apply to declare the major on the Mathematics Department Major Declaration webpage .",
+        "To obtain equivalency for MATH 23A , transfer students may have taken a course that could also be equivalent to MATH 23B , and in rare circumstances it is possible that this equivalency has not yet been formally recognized and is, therefore, not listed in assist.org . Students who have equivalency for MATH 23A but not MATH 23B should contact the undergraduate advisor to determine if this applies to their situation.",
+        "For winter quarter transfer students' required and recommended courses are the same."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "Admission to the mathematics education major is contingent on students successfully passing the following introductory courses or their equivalents (see below). Some courses may be satisfied via exam credit . Transfer Students: I n addition to satisfying the Transfer Admission Screening Requirements listed above, you must complete MATH 100 during your first quarter in order to declare the major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH21",
+       "AM10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 21 is preferred"
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "MATH 21 is preferred"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students should submit a petition to declare as soon as they complete the major qualification courses or reach their declaration deadline quarter (whichever comes first). Students who receive two grades of NP, C-, D+, D, D-, or F in the introductory courses are not eligible to declare in the major. Students who are not eligible to declare may appeal. The advising office will subsequently notify the student, and the college of the decision, no later than 15 business days after the submission of the appeal. Students petitioning when the campus declaration deadline is imminent will either be approved, denied, or provided with conditions that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       },
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent will either be approved, denied, or provided with conditions that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "MATH23A",
+       "MATH100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus all of the following courses:",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification courses or reach their declaration deadline quarter (whichever comes first). Students who receive two grades of NP, C-, D+, D, D-, or F in the introductory courses are not eligible to declare in the major. Students who are not eligible to declare may appeal. The advising office will subsequently notify the student, and the college of the decision, no later than 15 business days after the submission of the appeal. Students petitioning when the campus declaration deadline is imminent will either be approved, denied, or provided with conditions that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "Students should submit a petition to declare as soon as they complete the major qualification courses or reach their declaration deadline quarter (whichever comes first). Students who receive two grades of NP, C-, D+, D, D-, or F in the introductory courses are not eligible to declare in the major. Students who are not eligible to declare may appeal. The advising office will subsequently notify the student, and the college of the decision, no later than 15 business days after the submission of the appeal.",
+        "Students petitioning when the campus declaration deadline is imminent will either be approved, denied, or provided with conditions that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "If a student completes major qualification courses but does not meet the major qualification criteria, and appeals, the department may accept or reject the appeal or place conditions on the student that will be resolved within at most one more enrolled quarter. To submit an appeal file the Petition for Major/Minor declaration form , which can be accessed by going to MyUCSC and navigating to the Student Homepage and selecting the Undergraduate Student eForms tile > Petition for Major/Minor. The Mathematics Department will reply to appeals within 15 days of submission.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "If a student completes major qualification courses but does not meet the major qualification criteria, and appeals, the department may accept or reject the appeal or place conditions on the student that will be resolved within at most one more enrolled quarter. To submit an appeal file the Petition for Major/Minor declaration form , which can be accessed by going to MyUCSC and navigating to the Student Homepage and selecting the Undergraduate Student eForms tile > Petition for Major/Minor. The Mathematics Department will reply to appeals within 15 days of submission."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Students should submit a petition to declare as soon as they complete the major qualification requirements or reach their declaration deadline quarter (whichever comes first).",
+        "Students petitioning when the campus declaration deadline is imminent (i.e., in their sixth quarter, for students admitted as frosh), will either be approved, denied, or provided with conditions (e.g., completion of some courses with certain grades) that will be resolved within at most one more enrolled quarter, even if they have not completed major qualification courses.",
+        "The Petition for Major/Minor declaration form can be accessed by going to MyUCSC and navigating to the Student Homepage and selecting the Undergraduate Student eForms tile > Petition for Major/Minor."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19A",
+       "MATH20A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "One of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH19B",
+       "MATH20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH21",
+       "AM10"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 21 is preferred."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "MATH 21 is preferred."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MATH23A",
+        "MATH23B"
+       ],
+       [
+        "AM30",
+        "AM100"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "MATH 23A and MATH 23B are preferred."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "MATH 23A and MATH 23B are preferred.",
+        "EDUC 50B and EDUC 100B are Cal Teach courses. The first course in this sequence is offered in the fall and winter terms. Students must apply to enroll in these courses before the priority application deadlines in early May (for fall) and early November (for winter) See the Cal Teach website for details, or contact calteach@ucsc.edu . Students are strongly encouraged to complete EDUC 50B before deciding to declare this major.",
+        "EDUC 50B and EDUC 100B are Cal Teach courses. The first course in this sequence is offered in the fall and winter terms. Students must apply to enroll in these courses before the priority application deadlines in early May (for fall) and early November (for winter) See the Cal Teach website for details, or contact calteach@ucsc.edu . Students are strongly encouraged to complete EDUC 50B before deciding to declare this major."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC50A",
+       "EDUC50B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "EDUC 50B preferred.",
+        "EDUC 50B preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT5"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH100",
+       "MATH110",
+       "MATH128A",
+       "MATH181",
+       "STAT131"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH103A",
+       "MATH105A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH111A",
+       "MATH111T"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC100A",
+       "EDUC100B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one the following courses:",
+       "prose": [
+        "EDUC 100B preferred.",
+        "EDUC 100B preferred."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH194",
+       "MATH195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH100"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major’s upper-division Disciplinary Communication (DC) requirement. The DC requirement in the Mathematics Education B.A. is satisfied by:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH194",
+       "MATH195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "MATH194",
+       "MATH195"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The comprehensive exit requirement in mathematics is satisfied by one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "mathematics-education-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-education-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

@@ -1,0 +1,923 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "environmental-studies",
+ "division": "social-sciences-division",
+ "kind": "major",
+ "name": "Environmental Studies/Biology Combined Major B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "This course of study provides students with the basic tools of biological science and sufficient understanding of resource conservation, conservation biology, and concerns about environmental sustainability to apply these tools to environmental problems."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students graduating with a B.A. degree in environmental studies/biology combined will be able to:",
+     "Identify the societal (social, political, economic and ethical) agents and structures that contribute to environmental change. (social science competency)",
+     "Describe the structure and functioning of major physical and ecological components of the earth’s systems. (natural science competency)",
+     "Access and analyze a complex literature addressing specific topics in environmental studies (ENVS), and evaluate the usefulness and limitations of individual sources of information. (analytic thinking)",
+     "Demonstrate effective oral and written communication skills. (communication skills)."
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "Advising is one way to make the most of your university experience. Ask questions, seek advice, and make decisions that work best for you.",
+     "To receive advising for this major, contact envsadvi@ucsc.edu . Additional information for prospective transfer students can be found in the Transfer Information and Policy section."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a course-intensive and/or sequential program, and students who intend to pursue this major must begin taking classes for the major in their first year at UC Santa Cruz. Math placement is required for one or more of the foundational courses for this major. For more information, please review the Math Placement website . Language placement is not required for the major.",
+     ""
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "All requirements for the environmental studies/biology combined major must be taken for a letter grade."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "Students pursuing the environmental studies/biology combined major cannot substitute courses to count toward their ENVS upper-division electives. Any substitutions for ecology and evolutionary biology (BIOE) upper-division courses must be approved by the Ecology and Evolutionary Biology Department."
+    ],
+    "title": "Course Substitution Policy"
+   },
+   {
+    "paragraphs": [
+     "Students in environmental studies are encouraged to participate in Study Abroad programs and other off-campus programs. Students who are interested in these programs shall note the following policies:",
+     "Students planning to study abroad must be declared in their major prior to studying abroad.",
+     "Students must have their courses they plan to take abroad reviewed and approved by environmental studies advising.",
+     "Environmental studies/biology combined majors cannot petition their courses taken abroad for ENVS upper-division course substitution. Any substitutions for BIOE upper division courses must be approved by the Ecology and Evolutionary Biology Department.",
+     "For more information on EAP, please visit the UC Education Abroad Program website ."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "Departmental Honors. Students must have a 3.5 grade point average (GPA) in all courses used to satisfy the major's upper-division requirements.",
+     "Senior Comprehensive Honors. Honors must be nominated by the student’s faculty sponsor, and a second faculty member must concur.",
+     "Highest Departmental Honors. Students must have a 3.75 grade point average (GPA) in in all courses used to satisfy the major's upper-division requirements and must also receive senior comprehensive honors (see above)."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Students who apply for transfer admission to the major are required to have taken the equivalents of the following courses with a C grade (2.0) or better by the end of the spring term for students planning to enter in the fall:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20C",
+       "CHEM3A",
+       "CHEM3B",
+       "CHEM3C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM11A",
+       "AM11B",
+       "MATH3",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Recommended Courses",
+       "prose": [
+        "In addition, taking the following courses prior to transfer is recommended prior to ensure timely graduation."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE20B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "The following course:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Plus one of the following options:",
+       "prose": [
+        "ENVS 25",
+        "or",
+        "A course in microeconomics or macroeconomics PLUS a course in national or international politics"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "ENVS26",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "General Education Courses",
+       "prose": [
+        "Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students pursuing any of the environmental studies majors are encouraged to transfer in the fall quarter. Transfer students should complete as many lower-division courses as possible before transferring. All remaining lower-division requirements should be completed in summer, fall, and winter of their first year in order to start upper-division courses in winter or spring of the first year. Transfer students can formally declare their major once qualification courses are successfully completed, following the declaration steps on the ENVS department website.",
+        "ENVS 25 and general chemistry are usually offered during Summer Session at UC Santa Cruz, and transfer students are encouraged to take these courses if they have not completed a substitute requirement or want a better understanding of the relevant material. If you are transferring, compare catalog descriptions, consult your current institution's advisor, and refer to the ASSIST website to determine equivalency.",
+        "Students who are proposed in a different major and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major. Contact envsadvi@ucsc.edu to request permission."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "Students must take all of these courses for a letter grade."
+      ],
+      "op": "info",
+      "source": {
+       "heading": "Major Qualification",
+       "prose": [
+        "To qualify for the environmental studies/biology combined major, students must complete the specific courses listed below, or their approved equivalents. Some courses may be satisfied via exam credit . For transfer requirements see Transfer Admission Screening Requirements. Transfer students must have ENVS major listed on their application in order to pursue the major, unless approved by appeal. If a student has questions about the appeals process, they should contact envsadvi@ucsc.edu .",
+        "Students must take all of these courses for a letter grade."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20C",
+       "ENVS25",
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B takenfall 2026 or later will satisfy this requirement as it is inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "CHEM 3B takenfall 2026 or later will satisfy this requirement as it is inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Determining qualification",
+       "prose": [
+        "Students who complete all the qualification courses with a letter grade of C or better are eligible to declare a major.",
+        "Students who have received one grade of C-, D+, D, D-, or F in one of the qualification courses taken at UC Santa Cruz will only be eligible to declare after successfully completing the same or an equivalent course with a letter grade of C or better.",
+        "Students with two or more grades of C-, D+, D, D-, or F in the qualification courses taken at UC Santa Cruz are not eligible to declare.",
+        "Students with non-letter grades in any of the qualification courses for the environmental studies/biology combined B.A. major will not be eligible to declare until a grade of C or better has been assigned."
+       ]
+      }
+     }
+    ],
+    "title": "Major Qualification"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Appeal Process",
+       "prose": [
+        "Students who are not qualified to declare the major may appeal this decision by submitting an appeal to qualify for the major within 15 days of the denial of the declaration. Within 15 days of receipt of the appeal, the department will notify the student and college of the decision. If a student has questions about the appeals process, they should contact envsadvi@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Appeal Process"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "How to Declare a Major",
+       "prose": [
+        "Petition to declare your major as soon as you have met qualification requirements and/or reach your declaration deadline quarter, whichever comes first.",
+        "To declare the ENVS/BIO major, students should visit the department website and follow declaration steps."
+       ]
+      }
+     }
+    ],
+    "title": "How to Declare a Major"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "Complete the following requirements. Some courses may be satisfied via exam credit ."
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "Chemistry and mathematics courses may require placement examinations. See the course descriptions for prerequisite information."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOL20A",
+       "BIOE20B",
+       "BIOE20C",
+       "ENVS25"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "All of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH2",
+       "ENVS26",
+       "SOCY1",
+       "SOCY10",
+       "SOCY15"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "AM3",
+       "AM6",
+       "AM11A",
+       "AM11B",
+       "MATH3",
+       "MATH11A",
+       "MATH16A",
+       "MATH19A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "May also be satisfied with a score of 3 or higher on the AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement Exam."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": [
+        "May also be satisfied with a score of 3 or higher on the AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement Exam."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "STAT7",
+       "STAT7L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus both of the following:",
+       "prose": []
+      }
+     },
+     {
+      "branches": [
+       [
+        "CHEM3A",
+        "CHEM3B",
+        "CHEM3C"
+       ],
+       [
+        "CHEM4A",
+        "CHEM4AL",
+        "CHEM4B",
+        "CHEM4BL"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following chemistry series:",
+       "prose": [
+        "CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "PHYS1A"
+       ],
+       [
+        "PHYS1B"
+       ],
+       [
+        "PHYS6A",
+        "PHYS6L"
+       ],
+       [
+        "PHYS7A",
+        "PHYS7L"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Plus one of the following physics options:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS100",
+       "ENVS100L",
+       "BIOL105",
+       "BIOE106",
+       "BIOE109"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Students are required to complete the following upper-division courses:",
+        "All of the following courses:",
+        "ENVS 100 Ecology and Society",
+        "ENVS 100L Ecology and Society Writing Laboratory",
+        "BIOE 109 Evolution",
+        "Plus one of the following courses:",
+        "BIOL 105 Genetics",
+        "BIOE 106 Principles of Genetics for EEB"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Three electives from environmental studies (ENVS 101-179). At least one of these courses must be from the ENVS electives based in the social sciences list below.",
+        "type": "prose"
+       },
+       {
+        "text": "Lecture/lab combinations count as one course. Associated labs are required only when required by the lecture for the three ENVS and two EEB/MCD requirements. Labs must be taken for the one lab-based elective.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "section_choice",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Students take six 5-credit or more upper-division electives as follows. A single course may not satisfy more than one requirement.",
+        "Three electives from environmental studies (ENVS 101-179). At least one of these courses must be from the ENVS electives based in the social sciences list below.",
+        "One course from the lab-based elective list below",
+        "Two courses from BIOE 107 -188 and/or BIOL 100 -140",
+        "Lecture/lab combinations count as one course. Associated labs are required only when required by the lecture for the three ENVS and two EEB/MCD requirements. Labs must be taken for the one lab-based elective."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS110",
+       "ENVS130B",
+       "ENVS140",
+       "ENVS141",
+       "ENVS143",
+       "ENVS144",
+       "ENVS145",
+       "ENVS147",
+       "ENVS149",
+       "ENVS150",
+       "ENVS151",
+       "ENVS152",
+       "ENVS154",
+       "ENVS158",
+       "ENVS165",
+       "ENVS172",
+       "ENVS173",
+       "ENVS174",
+       "ENVS176",
+       "ENVS178"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "ENVS electives based in the social sciences:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "If course has a lab offered, the lab must be taken to count for this requirement. Combined lecture/lab classes count as one course.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "BIOE112",
+       "BIOE112L",
+       "BIOE114",
+       "BIOE114L",
+       "BIOE117",
+       "BIOE117L",
+       "BIOE120",
+       "BIOE120L",
+       "BIOE122",
+       "BIOE122L",
+       "BIOE124",
+       "BIOE124L",
+       "BIOE127",
+       "BIOE127L",
+       "BIOE128L",
+       "BIOE129",
+       "BIOE129L",
+       "BIOE131",
+       "BIOE131L",
+       "BIOE133",
+       "BIOE133L",
+       "BIOE134",
+       "BIOE134L",
+       "BIOE135",
+       "BIOE135L",
+       "BIOE137",
+       "BIOE137L",
+       "BIOE141L",
+       "BIOE142L",
+       "BIOE145L",
+       "BIOE150",
+       "BIOE150L",
+       "BIOE151B",
+       "BIOE155",
+       "BIOE155L",
+       "BIOE158L",
+       "BIOE159D",
+       "BIOE161",
+       "BIOE161L",
+       "BIOE163",
+       "BIOE163L",
+       "BIOL100",
+       "BIOL100L",
+       "BIOL109L",
+       "BIOL115",
+       "BIOL115L",
+       "BIOL120",
+       "BIOL120L",
+       "BIOL121L",
+       "BIOL186R",
+       "ENVS104A",
+       "ENVS104L",
+       "ENVS106A",
+       "ENVS106M",
+       "ENVS107A",
+       "ENVS108",
+       "ENVS108L",
+       "ENVS130A",
+       "ENVS130L",
+       "ENVS162",
+       "ENVS162L",
+       "ENVS163",
+       "ENVS163L",
+       "ENVS167",
+       "ENVS167L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lab-based elective options:",
+       "prose": [
+        "If course has a lab offered, the lab must be taken to count for this requirement. Combined lecture/lab classes count as one course.",
+        "A list of all courses offered by the Environmental Studies Department is available in the courses section of the catalog . Students wishing to pursue an advanced degree in the pure or applied sciences are strongly encouraged to complete the organic chemistry series as well. These upper-division elective courses should be selected in pursuit of a coherent plan of study, chosen in consultation with faculty sponsors from both the Biological Sciences and Environmental Studies Departments. None of the three environmental studies upper-division courses can be an environmental studies internship, individual study, or substitution course.",
+        "A list of all courses offered by the Environmental Studies Department is available in the courses section of the catalog .",
+        "Students wishing to pursue an advanced degree in the pure or applied sciences are strongly encouraged to complete the organic chemistry series as well.",
+        "These upper-division elective courses should be selected in pursuit of a coherent plan of study, chosen in consultation with faculty sponsors from both the Biological Sciences and Environmental Studies Departments. None of the three environmental studies upper-division courses can be an environmental studies internship, individual study, or substitution course."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement for the environmental studies/biology combined major is satisfied by completing:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ENVS100",
+       "ENVS100L"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "The DC requirement in environmental studies/biology combined is satisfied by completing",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "BIOE151B",
+       "ENVS183B",
+       "ENVS190",
+       "ENVS195B",
+       "ENVS196",
+       "ENVS196G",
+       "BIOE108",
+       "BIOE114",
+       "BIOE114L",
+       "BIOE117",
+       "BIOE120",
+       "BIOE120L",
+       "BIOE122",
+       "BIOE122L",
+       "BIOE127",
+       "BIOE127L",
+       "BIOE128L",
+       "BIOE129",
+       "BIOE129L",
+       "BIOE137",
+       "BIOE141L",
+       "BIOE145L",
+       "BIOE150",
+       "BIOE150L",
+       "BIOE151B",
+       "BIOE153C",
+       "BIOE158L",
+       "BIOE159A",
+       "BIOE161L",
+       "BIOE171",
+       "BIOE172"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "NRS/ENVS 188 or NRS/ BIOL 188 (California Ecology and Conservation course), taken spring 2023 or later, will satisfy 1/2 DC credit. For more information about this course contact an ENVS undergraduate advisor or email envsadvi@ucsc.edu ."
+      ],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following:",
+       "prose": [
+        "Lecture/lab combinations count as one course.",
+        "NRS/ENVS 188 or NRS/ BIOL 188 (California Ecology and Conservation course), taken spring 2023 or later, will satisfy 1/2 DC credit. For more information about this course contact an ENVS undergraduate advisor or email envsadvi@ucsc.edu ."
+       ]
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": [
+       [
+        "BIOE151B"
+       ],
+       [
+        "ENVS183A",
+        "ENVS183B"
+       ],
+       [
+        "ENVS190"
+       ],
+       [
+        "ENVS195A",
+        "ENVS195B"
+       ],
+       [
+        "ENVS196"
+       ],
+       [
+        "ENVS196G"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "The senior comprehensive may be satisfied by completing one of the options listed below. All courses used to satisfy the senior comprehensive requirement, as well as all other major requirements for ENVS/BIO, must be taken for a letter grade.",
+        "type": "prose"
+       },
+       {
+        "text": "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [
+       "ENVS 190 is offered in the spring and summer. ENVS 183B is taken after successfully completing ENVS 183A , and ENVS 195B is taken after successfully completing ENVS 195A ."
+      ],
+      "op": "options",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The senior comprehensive may be satisfied by completing one of the options listed below. All courses used to satisfy the senior comprehensive requirement, as well as all other major requirements for ENVS/BIO, must be taken for a letter grade.",
+        "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
+        "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor.",
+        "ENVS 190 is offered in the spring and summer.",
+        "ENVS 183B is taken after successfully completing ENVS 183A , and ENVS 195B is taken after successfully completing ENVS 195A ."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "environmental-studiesbiology-combined-major-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/environmental-studies/environmental-studiesbiology-combined-major-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}

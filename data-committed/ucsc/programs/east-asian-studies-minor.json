@@ -1,0 +1,234 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "history",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "East Asian Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": [
+       [
+        "CHIN1",
+        "CHIN2",
+        "CHIN3",
+        "CHIN4",
+        "CHIN5",
+        "CHIN6"
+       ],
+       [
+        "JAPN1",
+        "JAPN2",
+        "JAPN3",
+        "JAPN4",
+        "JAPN5",
+        "JAPN6"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Language",
+       "prose": [
+        "All East Asian studies minors are expected to gain proficiency in Chinese or Japanese language. Students without prior knowledge of Chinese or Japanese should enroll in beginning Chinese (CHIN 1) or Japanese (JAPN 1) no later than fall quarter of their second year. Students with prior knowledge of Chinese or Japanese are required to complete a language placement exam to determine which course of Chinese or Japanese language instruction best suits their skill level. Instructions for the placement exam may be found on the Languages and Applied Linguistics website . Students may also pursue study abroad opportunities as a way of acquiring Chinese or Japanese language instruction."
+       ]
+      }
+     }
+    ],
+    "title": "Language"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS40A",
+       "HIS40B",
+       "HIS80C",
+       "HIS81"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Core Courses",
+       "prose": [
+        "Choose one of the following courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Core Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "from_following_lists": true,
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Chinese or Japanese Language",
+       "prose": [
+        "All East Asian studies minors are required to complete two 5-credit upper-division courses in Chinese language instruction or two 5-credit upper-division courses in Japanese language instruction. Additional upper-division courses in Chinese or Japanese language may be applied to the upper-division electives requirements (see below)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "CHIN103",
+       "CHIN104",
+       "CHIN105",
+       "CHIN107",
+       "CHIN108"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Chinese Language Courses",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "JAPN103",
+       "JAPN104",
+       "JAPN105",
+       "JAPN109"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Japanese Language Courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Upper-Division Chinese or Japanese Language"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ANTH130C",
+       "ANTH130G",
+       "CHIN103",
+       "CHIN104",
+       "CHIN105",
+       "CHIN107",
+       "CHIN108",
+       "CHIN199",
+       "ECON149",
+       "HAVC122A",
+       "HAVC122B",
+       "HAVC122C",
+       "HAVC122D",
+       "HAVC122E",
+       "HAVC122F",
+       "HAVC127A",
+       "HAVC127B",
+       "HAVC190D",
+       "HAVC190F",
+       "HAVC190G",
+       "HIS101D",
+       "HIS101F",
+       "HIS106B",
+       "HIS140B",
+       "HIS140C",
+       "HIS140D",
+       "HIS140E",
+       "HIS150A",
+       "HIS150B",
+       "HIS150C",
+       "HIS150D",
+       "HIS150E",
+       "HIS150F",
+       "HIS150G",
+       "HIS190G",
+       "HIS194C",
+       "HIS194E",
+       "HIS194M",
+       "HIS194U",
+       "HIS194Y",
+       "JAPN103",
+       "JAPN104",
+       "JAPN105",
+       "JAPN199",
+       "JAPN109",
+       "LIT133F",
+       "LIT133E",
+       "LIT133G",
+       "LIT133H",
+       "LIT133I",
+       "LIT141B",
+       "LIT141C",
+       "LIT149C",
+       "LIT162B",
+       "POLI140D",
+       "POLI141",
+       "POLI161",
+       "POLI190T",
+       "SOCY128",
+       "THEA161D",
+       "SOCY128J"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Upper-Division Electives",
+       "prose": [
+        "Three additional 5-credit upper-division courses from the East Asian studies curriculum, one of which may be a topically appropriate individual study: CHIN 199, HIS 199 , JAPN 199, LIT 199, etc."
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Electives"
+   }
+  ]
+ },
+ "slug": "east-asian-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/east-asian-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

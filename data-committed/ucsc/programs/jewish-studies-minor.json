@@ -1,0 +1,164 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "history",
+ "division": "humanities-division",
+ "kind": "minor",
+ "name": "Jewish Studies Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS74",
+       "HIS74A",
+       "HIS74B",
+       "HIS75",
+       "HIS76",
+       "LIT61J"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "One of the following Jewish studies core courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS155",
+       "HIS163B",
+       "HIS172A",
+       "HIS172B",
+       "HIS178E",
+       "HIS185C",
+       "HIS185I",
+       "HIS185J",
+       "HIS185K",
+       "HIS185L",
+       "HIS185M",
+       "HIS185O",
+       "HAVC135E",
+       "LGST114",
+       "LGST115",
+       "LIT118A",
+       "LIT164A",
+       "LIT164B",
+       "LIT164C",
+       "LIT164D",
+       "LIT164G",
+       "LIT164H",
+       "LIT164J",
+       "LIT181A",
+       "LIT181B",
+       "PHIL148"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Three 5-credit upper-division Jewish studies core courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Four courses chosen from the list below or any courses not already taken in the above lower- or upper-division core requirements. Two of the electives must be 5-credit upper-division courses.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "HEBR1",
+       "HEBR2",
+       "HEBR3",
+       "HEBR4",
+       "HIS2A",
+       "HIS2B",
+       "HIS5C",
+       "HIS70A",
+       "HIS70B",
+       "HIS78",
+       "HIS167A",
+       "HIS167B",
+       "HIS169",
+       "HIS172C",
+       "HIS174",
+       "HIS176",
+       "HIS178A",
+       "HIS178B",
+       "HIS178C",
+       "HIS184B",
+       "HIS190G",
+       "HIS196E",
+       "HIS196S",
+       "JWST199",
+       "LIT112I",
+       "LIT160U",
+       "MUSC80I",
+       "MUSC80T",
+       "MUSC80Y",
+       "MUSC81P",
+       "YIDD1",
+       "YIDD2",
+       "YIDD3"
+      ],
+      "from_following_lists": true,
+      "n": 4,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Four courses chosen from the list below or any courses not already taken in the above lower- or upper-division core requirements. Two of the electives must be 5-credit upper-division courses."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   }
+  ]
+ },
+ "slug": "jewish-studies-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/jewish-studies-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

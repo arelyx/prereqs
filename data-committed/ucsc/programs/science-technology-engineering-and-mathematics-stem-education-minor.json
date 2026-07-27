@@ -1,0 +1,191 @@
+{
+ "catalog_year": null,
+ "degree": "minor",
+ "department": "education",
+ "division": "social-sciences-division",
+ "kind": "minor",
+ "name": "Science Technology Engineering and Mathematics STEM Education Minor",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC50A",
+       "EDUC50B",
+       "EDUC50C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Choose one of the following courses"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC60"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus the following course"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC100A",
+       "EDUC100B",
+       "EDUC100C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Choose one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Choose one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC185B",
+       "EDUC185C"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one of the following courses:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one of the following courses:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC185L"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Plus the following course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus the following course:"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "EDUC125",
+       "EDUC128",
+       "EDUC135",
+       "EDUC140",
+       "EDUC141",
+       "EDUC164",
+       "EDUC177",
+       "EDUC181",
+       "EDUC110"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Plus one cultural and linguistic diversity course:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Plus one cultural and linguistic diversity course:"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Plus two electives:",
+       "prose": [
+        "Students take two additional 5-credit courses numbered EDUC 102 - EDUC 187 . Please refer to the Education Department’s website for a list of approved upper-division courses being offered during the current academic year."
+       ]
+      }
+     }
+    ],
+    "title": "Plus two electives:"
+   }
+  ]
+ },
+ "slug": "science-technology-engineering-and-mathematics-stem-education-minor",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/science-technology-engineering-and-mathematics-stem-education-minor",
+ "verification": {
+  "status": "unverified"
+ }
+}

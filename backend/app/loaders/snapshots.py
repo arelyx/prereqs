@@ -14,6 +14,13 @@ from pathlib import Path
 DATA_ROOT = Path(
     os.environ.get("DATA_ROOT", Path(__file__).resolve().parents[3] / "data")
 )
+# Git-committed canonical catalog data (courses + program requirements).
+# See pipelines/ucsc/export_committed.py for the contract.
+COMMITTED_ROOT = Path(
+    os.environ.get(
+        "COMMITTED_ROOT", Path(__file__).resolve().parents[3] / "data-committed"
+    )
+)
 
 
 def latest(university: str, source: str) -> Path | None:

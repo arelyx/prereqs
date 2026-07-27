@@ -1,0 +1,285 @@
+{
+ "catalog_year": "2026-2027",
+ "courses": [
+  {
+   "catalog_instructor": null,
+   "code": "ESCI100A",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces fundamental concepts for quantitative analysis of environmental problems and their application to complex systems focusing on algebraic tools. Key concepts include box models, mass and energy balances (including chemical processes), turning word problems into mathematical statements, and estimation. (Formerly offered as Introduction to Environmental Sciences.)",
+   "display_code": "ESCI 100A",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Introduction to Environmental Sciences.",
+   "ge_codes": [],
+   "number": "100A",
+   "prereq_groups": [
+    [
+     "MATH11A",
+     "MATH19A"
+    ],
+    [
+     "CHEM3B",
+     "CHEM4B",
+     "CHEM1A"
+    ],
+    [
+     "PHYS6A",
+     "PHYS5A"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): MATH 11A or MATH 19A , CHEM 3B or CHEM 4B or CHEM 1A , and PHYS 6A or PHYS 5A . Enrollment is restricted to environmental sciences majors.",
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Fundamentals of Environmental Sciences",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-100a"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI100B",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Quantitative exploration of physical and chemical processes relevant to the environment and their applications to complex environmental systems. Focuses on calculus-based tools. Key concepts include fluid mechanics, heat transfer, mass transfer, particle mechanics, turbulence, and physicochemical processes. (Formerly offered as Introduction to Environmental Processes.)",
+   "display_code": "ESCI 100B",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": "Formerly offered as Introduction to Environmental Processes.",
+   "ge_codes": [],
+   "number": "100B",
+   "prereq_groups": [
+    [
+     "ESCI100A"
+    ],
+    [
+     "MATH11B",
+     "MATH19B"
+    ],
+    [
+     "CHEM3C",
+     "CHEM4B",
+     "CHEM1C"
+    ],
+    [
+     "PHYS6B",
+     "PHYS5B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ESCI 100A , and MATH 11B or MATH 19B , and CHEM 3C or CHEM 4B or CHEM 1C , and PHYS 6B or PHYS 5B . Enrollment is restricted to declared environmental sciences majors.",
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Fundamentals of Environmental Processes",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-100b"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI150",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students become familiar with some of the core measurement and sampling techniques routinely employed by working aquatic scientists. In keeping with the multi-disciplinary nature of aquatic science, these techniques and measurements include those taken from biology, geology, chemistry and physics. The overarching goal of is having students become deeply familiar with a field site and observing it over an extended period of time while working collaboratively to accomplish all the measurements. The field component of the work is conducted at UCSC's Younger Lagoon Research Reserve, located adjacent to the Long Marine Lab on the coastal campus. Taught in conjunction with OCEA 250 ; students cannot receive credit for this course and OCEA 250 .",
+   "display_code": "ESCI 150",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PR-E"
+   ],
+   "number": "150",
+   "prereq_groups": [
+    [
+     "CHEM3C",
+     "CHEM4B",
+     "CHEM1C"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6B"
+    ],
+    [
+     "MATH11B",
+     "MATH19B"
+    ],
+    [
+     "ESCI30",
+     "BIOE20C"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): CHEM 3C , CHEM 4B , or CHEM 1C , and PHYS 5B or PHYS 6B , and MATH 11B or MATH 19B , and ESCI 30 or BIOE 20C .",
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Field and Laboratory Methods in Coastal and Aquatic Science",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-150"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI160",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduces data-analysis methods regularly encountered within environmental sciences. Students learn how to think about data, its uncertainty, how models and data are related and depend on underlying assumptions, and how to synthesize information contained in data.",
+   "display_code": "ESCI 160",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "SR"
+   ],
+   "number": "160",
+   "prereq_groups": [
+    [
+     "MATH11B",
+     "MATH19B"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): MATH 11B or MATH 19B or equivalent. Enrollment is restricted to declared environmental sciences majors.",
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Data Analysis in the Environmental Sciences",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-160"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI167",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Explores empirical approach to quantify and explain changes in the Earth system over time. With the complexity of the Earth system, and the challenge of making accurate and numerous observations, simple methods can be of limited usefulness. Course covers more advanced methods that are typically not included in introductory-level statistical courses. Students learn how to analyze time-series data and answer questions about the Earth system and acquire the theoretical basis of the statistical approaches, the experience at conducting analyses, and practice interpreting and discussing the results. This class is hands-on and utilizes a suite of observational datasets and outputs from Earth system models. Students cannot receive credit for this course and OCEA 267 .",
+   "display_code": "ESCI 167",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "167",
+   "prereq_groups": [
+    [
+     "ESCI160",
+     "EART125",
+     "OCEA260",
+     "EART260"
+    ]
+   ],
+   "quarters_offered_text": null,
+   "raw_requirements": "Prerequisite(s): ESCI 160 , EART 125, or OCEA 260 /EART 260.",
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Applied Environmental Time Series Analysis",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-167"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI191",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "In-depth exploration of a topic within the environmental sciences. Involves at least one research paper. Topics vary quarterly; consult the current course listings. Prerequisite(s): Entry Level Writing and Composition requirements; ESCI 100A and previous or concurrent enrollment in ESCI 100B . Enrollment is restricted to senior environmental sciences majors. Enrollment is by application with selection based on appropriate background and academic performance and by consent of the instructor. Satisfies the senior comprehensive requirement.",
+   "display_code": "ESCI 191",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "191",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Capstone Seminar",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-191"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI195",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Students complete their senior thesis research projects and submit their thesis in the form of a research paper that is appropriate for submission to a relevant journal or conference. Prerequisite(s): Entry Level Writing and Composition requirement. Enrollment is restricted to environmental sciences majors.Satisfies the senior comprehensive requirement. Students submit petition to sponsoring agency.",
+   "display_code": "ESCI 195",
+   "division": "upper",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "195",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Senior Thesis",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/upper-division/esci-195"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI20",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Provides introductory material for potential ESCI majors to help them decide if the major is right for them. Course is also a general-interest class for non-majors to learn about environmental science. This class introduces the Earth as a system, one that has component parts that can be examined in isolation as well as emergent behavior when those parts are connected. The stability of the Earth system is examined, as well as the influence that humans have on that stability, by discussing \"hot topics\" in the field and highlighting faculty research on campus. The lecture class can also be accompanied with an optional 1-credit lab class, ESCI 20L , Introduction to Environmental Science: Santa Cruz Water from Well to Wastewater Treatment.",
+   "display_code": "ESCI 20",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "20",
+   "prereq_groups": [],
+   "quarters_offered_text": "Fall, Summer",
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Introduction to Environmental Science",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20"
+  },
+  {
+   "catalog_instructor": "Carl Lamborg",
+   "code": "ESCI20L",
+   "credits": "1",
+   "cross_listed": [],
+   "description": "This field/lab class includes field trips to the award-winning wastewater treatment plant at Neary Lagoon including a tour of the in-house testing facility and engineering works as well as a tour of the Graham Hill Drinking water production facility. The remainder of the lab time is spent examining data and making measurements on water samples to gain an appreciation of some of the most commonly studied parameters in water quality (e.g., dissolved oxygen, biological oxygen demand, nutrients, salinity, pH and alkalinity) by sampling at some representative natural waters around Santa Cruz including the Public Wharf, Neary Lagoon and the San Lorenzo River.",
+   "display_code": "ESCI 20L",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [],
+   "number": "20L",
+   "prereq_groups": [
+    [
+     "ESCI20"
+    ]
+   ],
+   "quarters_offered_text": "Fall, Summer",
+   "raw_requirements": "Prerequisite(s): Concurrent enrollment in ESCI 20 .",
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Introduction to Environmental Science: Santa Cruz Water from Well to Wastewater Treatment",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20l"
+  },
+  {
+   "catalog_instructor": null,
+   "code": "ESCI30",
+   "credits": "5",
+   "cross_listed": [],
+   "description": "Introduction to biology and ecology for environmental sciences, focusing on the role of biological organisms within the Earth system. Topics span molecular/organismal interactions, such as photosynthesis and respiration, to global biogeochemical cycles including the role of microbes, net community production, and contaminant distributions.",
+   "display_code": "ESCI 30",
+   "division": "lower",
+   "extra_fields": {},
+   "formerly": null,
+   "ge_codes": [
+    "PE-E"
+   ],
+   "number": "30",
+   "prereq_groups": [],
+   "quarters_offered_text": null,
+   "raw_requirements": null,
+   "repeatable": false,
+   "subject": "ESCI",
+   "title": "Biological Principles of Environmental Sciences",
+   "url": "/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-30"
+  }
+ ],
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "prereq_v1",
+  "snapshot": "20260726T025021Z"
+ },
+ "subject": "ESCI"
+}

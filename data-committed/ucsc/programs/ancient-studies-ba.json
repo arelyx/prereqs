@@ -1,0 +1,412 @@
+{
+ "catalog_year": null,
+ "degree": "BA",
+ "department": "history",
+ "division": "humanities-division",
+ "kind": "major",
+ "name": "Ancient Studies B.A.",
+ "origin": "local-llm-pipeline",
+ "provenance": {
+  "model": "qwen3:4b",
+  "prompt_version": "rule_op_v1",
+  "snapshot": "20260727T041904Z"
+ },
+ "requirements": {
+  "info_sections": [
+   {
+    "paragraphs": [
+     "Ancient studies at the University of California, Santa Cruz, combines features of traditional programs, such as solid grounding in the ancient languages, with innovative, interdisciplinary approaches. While the core of the program is focused on courses in the ancient Greek and Latin languages, the program also encompasses courses in history, the history of art and visual culture, literature, philosophy, politics, and theater arts, from the Bronze Age through the Early Christian era. Recent offerings have included everything from introductory surveys in ancient mythology and Greek and Roman history, to advanced courses in women and gender in Ancient Egypt and modern ancient drama. Students are encouraged to study the literary and material artifacts of Greece and Rome within the larger context of ancient Mediterranean and Near Eastern cultures.",
+     "The ancient studies program provides the nurturing atmosphere and personal attention associated with a small liberal arts college, in the context of a large university. We offer students an opportunity to work in small classes with a distinguished and dedicated teaching faculty and excellent fellow students. Public lectures, guest speakers, and frequent social events bring students and faculty together and strengthen the program.",
+     "Ancient studies students have the opportunity to give close, sustained attention to an area of study, from an almost unlimited variety of perspectives. For example, students with an interest in contemporary philosophy and political theory might want to concentrate in Greek, taking upper-division courses in Greek, history, philosophy, and politics. Students with an interest in European literature might want to concentrate in Latin, taking upper-division courses in Latin, history, and literature in translation. Students planning on pursuing a classics degree at the Ph.D. level should concentrate most of their coursework in the Greek and Latin languages themselves.",
+     "Ancient studies is excellent preparation for further study in a wide variety of graduate and professional programs including history, art history, comparative literature, English, philosophy, law, education, and publishing."
+    ],
+    "title": "Introduction"
+   },
+   {
+    "paragraphs": [
+     "Students who complete the ancient studies major graduate with the following knowledge and skills:",
+     "Language",
+     "Interdisciplinary Exposure",
+     "Collaboration",
+     "Research, Critical Reading, Writing",
+     "Scope and Thematics"
+    ],
+    "title": "Program Learning Outcomes"
+   },
+   {
+    "paragraphs": [
+     "The ancient studies program is administered by the Department of History. Students in this program receive advising support from the history undergraduate program coordinator .",
+     "Transfer students are encouraged to additionally consult the \"Transfer Information and Policy\" information included below."
+    ],
+    "title": "Academic Advising for the Program"
+   },
+   {
+    "paragraphs": [
+     "This is a moderately course-intensive and/or sequential program, and students who intend to pursue ancient studies should begin taking classes for the major in their first or second year at UC Santa Cruz.",
+     "GREE 1 and LATN 1 are only offered in the fall quarter. Students seeking their degree in four years should complete the introductory sequence in elementary ancient Greek or Latin language no later than their second year.",
+     "Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements."
+    ],
+    "title": "Getting Started in the Major: Frosh"
+   },
+   {
+    "paragraphs": [
+     "Ancient studies has no major qualification. Students should submit a petition to declare before or by their declaration deadline quarter.",
+     "While ancient studies does not have an official qualification policy, it should be noted that the major requires the successful completion of upper-division coursework in ancient Greek and/or Latin language literature. Students who are unable to successfully complete the introductory sequence in elementary ancient Greek or Latin language (or equivalent) will not be able to advance to the upper-division coursework required for this major.",
+     "All students, including transfers, are eligible to pursue this major, even if they did not list ancient studies on their UC Santa Cruz application.",
+     "Other Programs That May Be of Interest",
+     "Since ancient studies is an interdisciplinary field of study, many of the courses in this major are offered by other UC Santa Cruz departments. Students with an interest in the ancient world who would prefer to take courses in English are encouraged to consider the following majors and programs: history, history of art and visual culture, literature, philosophy, and politics.",
+     "Students are permitted to declare the ancient studies major at any time but encouraged to do so only after they have successfully completed the lower-division sequence in elementary ancient Greek or Latin language (or equivalent):"
+    ],
+    "title": "Major Qualification Policy and Declaration Process"
+   },
+   {
+    "paragraphs": [
+     "Students are allowed to complete up to two of their ancient studies major requirements for Pass/No Pass."
+    ],
+    "title": "Letter Grade Policy"
+   },
+   {
+    "paragraphs": [
+     "We actively encourage our students to expand their horizons in interdisciplinary and international settings by taking advantage of the University of California Education Abroad Program (EAP) . A quarter or year abroad may be seamlessly integrated into any ancient studies student's academic plan; up to three of the major or minor elective requirements may be completed abroad."
+    ],
+    "title": "Study Abroad"
+   },
+   {
+    "paragraphs": [
+     "All students who announce candidacy during the academic year are reviewed for honors or highest honors in the major. The ancient studies faculty advisers determine honors based upon courses applied toward the ancient studies major. Performance in courses taken elsewhere and being transferred toward the major will be considered when applicable. The minimum standard applied is excellence in most courses for honors, and excellence in all courses for highest honors. Summer, fall, and winter graduates will be reviewed at the end of each of their respective quarters. Spring graduates will be reviewed as of the spring announcement of candidacy deadline."
+    ],
+    "title": "Honors"
+   }
+  ],
+  "sections": [
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Transfer Admission Screening Policy",
+       "prose": [
+        "Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.",
+        "Transfer students from California Community Colleges are encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or UC Santa Cruz general education requirements in preparation for transfer to UC Santa Cruz.",
+        "Some background in history and in literary analysis and interpretation is desirable, but not essential. Since this is an interdisciplinary major, preparatory work in art history, history, literature, philosophy, or politics, depending on the student's interests, may also be useful."
+       ]
+      }
+     }
+    ],
+    "title": "Transfer Admission Screening Policy"
+   },
+   {
+    "concentration": null,
+    "kind": "qualification",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "GREE1",
+       "LATN1"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Getting Started in the Major: Transfer Students",
+       "prose": [
+        "Transfer students entering at the junior level can readily complete the ancient studies major within two years, provided that they complete GREE 1 or LATN 1 during their first quarter of enrollment at UC Santa Cruz. These courses are only offered in the fall quarter. Transfer applicants seeking to enter in winter quarter will be screened by the program to confirm prior knowledge of ancient Greek or Latin. Please contact the ancient studies director at ancsdirector@ucsc.edu to schedule this screening.",
+        "Transfer students are strongly encouraged to meet with the history undergraduate program coordinator before their first quarter of enrollment at UCSC.",
+        "Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements."
+       ]
+      }
+     }
+    ],
+    "title": "Getting Started in the Major: Transfer Students"
+   },
+   {
+    "concentration": null,
+    "kind": "other",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "The ancient studies major requires three lower-division courses (including two elementary language courses), nine 5-credit upper-division courses, and an additional two-credit upper-division seminar, ANCS 197F , which is taken in the same quarter that the senior comprehensive examination is given (see Comprehensive Requirement section below for more information). These must include the following:",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Course Requirements",
+       "prose": [
+        "The ancient studies major requires three lower-division courses (including two elementary language courses), nine 5-credit upper-division courses, and an additional two-credit upper-division seminar, ANCS 197F , which is taken in the same quarter that the senior comprehensive examination is given (see Comprehensive Requirement section below for more information). These must include the following:"
+       ]
+      }
+     }
+    ],
+    "title": "Course Requirements"
+   },
+   {
+    "concentration": null,
+    "kind": "lower_div",
+    "rules": [
+     {
+      "branches": [
+       [
+        "GREE1",
+        "GREE2"
+       ],
+       [
+        "LATN1",
+        "LATN2"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Lower-Division Courses",
+       "prose": [
+        "The lower-division sequence in elementary ancient Greek or Latin language (or equivalent):"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS5B",
+       "HIS5C",
+       "HIS50",
+       "HIS51",
+       "HIS61",
+       "HIS62A",
+       "HIS62B",
+       "HAVC50",
+       "HAVC51",
+       "HAVC55",
+       "LIT61M",
+       "LIT61P",
+       "LIT61S",
+       "LIT61X",
+       "LIT80T",
+       "LIT80W",
+       "LIT81A",
+       "LIT81D",
+       "THEA61A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Ancient Studies Survey",
+       "prose": [
+        "One lower-division survey of ancient history or literature in translation:"
+       ]
+      }
+     }
+    ],
+    "title": "Lower-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "upper_div",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT184A",
+       "LIT184B",
+       "LIT184C",
+       "LIT184D",
+       "LIT184E",
+       "LIT186A",
+       "LIT186B",
+       "LIT186C",
+       "LIT186D"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "Three 5-credit upper-division courses in Greek ( LIT 184A -LIT 184Z) and/or Latin literature ( LIT 186A -LIT 186Z):"
+       ]
+      }
+     }
+    ],
+    "title": "Upper-Division Courses"
+   },
+   {
+    "concentration": null,
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "HIS147A",
+       "HIS150A",
+       "HIS159A",
+       "HIS159B",
+       "HIS159C",
+       "HIS159D",
+       "HIS160A",
+       "HIS160C",
+       "HIS161B",
+       "HIS163B",
+       "HIS194S",
+       "HIS196S",
+       "HAVC135F",
+       "HAVC151",
+       "HAVC152",
+       "HAVC154",
+       "HAVC155",
+       "HAVC190C",
+       "LIT116C",
+       "LIT116I",
+       "LIT117A",
+       "LIT118A",
+       "LIT121A",
+       "LIT125A",
+       "LIT130A",
+       "LIT154B",
+       "LIT159M",
+       "LIT184A",
+       "LIT184B",
+       "LIT184C",
+       "LIT184D",
+       "LIT184E",
+       "LIT186A",
+       "LIT186B",
+       "LIT186C",
+       "LIT186D",
+       "LIT181A",
+       "LIT181B",
+       "LIT181D",
+       "LIT181E",
+       "LIT181F",
+       "PHIL100A",
+       "PHIL118",
+       "POLI105A"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "list",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "Six additional ancient studies 5-credit upper-division courses:"
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": null,
+    "kind": "dc",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Disciplinary Communication (DC) Requirement",
+       "prose": [
+        "Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) requirement. The DC requirement in ancient studies is satisfied by completing two 5-credit upper-division courses in Greek literature or Latin literature from the following list:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT184B",
+       "LIT184C",
+       "LIT184D",
+       "LIT184E"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Greek Literature:",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LIT186B",
+       "LIT186C",
+       "LIT186D"
+      ],
+      "n": null,
+      "needs_review": true,
+      "notes": [],
+      "op": "unknown",
+      "source": {
+       "heading": "Latin Literature:",
+       "prose": []
+      }
+     }
+    ],
+    "title": "Disciplinary Communication (DC) Requirement"
+   },
+   {
+    "concentration": null,
+    "kind": "comprehensive",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "info",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "Ancient studies majors are required to pass a senior comprehensive examination. Each student shall identify a minimum of two ancient studies faculty members to serve on the examination committee, one of which shall be designated as the committee chair. Please consult the ancient studies website for a more detailed description of this requirement.",
+        "Enrollment in a 2-credit comprehensive examination preparatory course, ANCS 197F , is required in the same quarter that the senior comprehensive examination will be given. The preparatory course will be taken with the chair of the student’s examination committee."
+       ]
+      }
+     }
+    ],
+    "title": "Comprehensive Requirement"
+   }
+  ]
+ },
+ "slug": "ancient-studies-ba",
+ "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/ancient-studies-ba",
+ "verification": {
+  "status": "unverified"
+ }
+}
