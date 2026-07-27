@@ -206,7 +206,7 @@ def evaluate_requirements(requirements: dict, taken: set[str], ctx: ValidationCo
         # electives): count taken courses against the union of later lists.
         raw_rules = section.get("rules", [])
         for i, r in enumerate(rules_out):
-            if r["op"] == "n_of" and raw_rules[i].get("from_following_lists"):
+            if r["op"] in ("n_of", "range") and raw_rules[i].get("from_following_lists"):
                 pool = set(r.get("courses") or [])  # self-pool parents carry courses
                 child_filters = []
                 for r2 in raw_rules[i + 1:]:
@@ -302,6 +302,7 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         matching = [
             c for c in taken if _filter_match(ctx.courses.get(c), c, course_filter)
         ]
+        matching = sorted(set(matching) | (set(rule.get("courses") or []) & taken))
         n = rule.get("n")
         result |= {"needed": n, "done": len(matching), "matching": sorted(matching),
                    "filter": course_filter,

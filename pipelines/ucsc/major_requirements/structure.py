@@ -253,7 +253,9 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
     r = match_scope(heading, is_heading=True)
     if r is not None:
         return r
-    if POOL_RE.search(heading) and rule.courses:
+    if POOL_RE.search(heading) and rule.courses and not ONE_OF_RE.search(text):
+        # A pool-named heading whose PROSE says 'one of the following' is a
+        # choice, not a pool (Robotics 'Advanced Robotics Elective').
         return ("list", None)
     r = match_scope(text, is_heading=False)
     if r is not None:
@@ -629,7 +631,12 @@ def build_program(
                 r.pop("_hclass", None)
             if typed_rules:
                 conc = concentration
-                if conc is None and kind == "concentration":
+                if (
+                    conc is None
+                    and kind == "concentration"
+                    and re.search(r"concentration", title, re.IGNORECASE)
+                    and not re.search(r"all concentrations", title, re.IGNORECASE)
+                ):
                     conc = title  # 'Computer Systems Concentration Requirements'
                 sections.append(
                     {
