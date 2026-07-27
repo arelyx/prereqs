@@ -2,6 +2,9 @@
 
 Day-to-day runbook. Architecture rationale: `ARCHITECTURE.md`. Per-source
 research: `universities/`. Backup/rollback detail: `../ops/backup/README.md`.
+Agent standing orders: `/AGENTS.md`. **Catalog-edition roll (yearly):
+`runbooks/ANNUAL_REFRESH.md` — the steps below are the building blocks, the
+runbook is the sequence with gates.**
 
 ## Stack
 
