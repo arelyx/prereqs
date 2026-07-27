@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "minor",
  "name": "Digital Justice Studies Minor (formerly GISES)",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -27,7 +27,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Lower-Division Courses",
        "prose": [
@@ -69,10 +69,24 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 110,
+         "subject": "SOCY"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": true,
+      "notes": [
+       "Electives may also be selected from the list of pre-approved courses; courses outside the approved list may be approved by the director of DJS."
+      ],
+      "op": "range",
       "source": {
        "heading": "Upper-division advanced coursework:",
        "prose": [
@@ -95,11 +109,13 @@
         "type": "prose"
        }
       ],
-      "courses": [],
+      "courses": [
+       "SOCY196G"
+      ],
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Project practicum:",
        "prose": [
@@ -116,7 +132,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/sociology/digital-justice-studies-minor-formerly-gises",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/digital-justice-studies-minor-formerly-gises.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/digital-justice-studies-minor-formerly-gises.md: SOCY 30A and SOCY 196G made required (all_of); three-elective SOCY 110-189 requirement encoded as range n=3",
+  "status": "frontier-verified"
  }
 }

@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Global Economics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -445,9 +445,9 @@
       "constraints": [],
       "courses": [],
       "n": null,
-      "needs_review": false,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Foreign Language Study",
        "prose": [
@@ -593,10 +593,10 @@
        }
       ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 2,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Area Study",
        "prose": [
@@ -614,9 +614,9 @@
       ],
       "courses": [],
       "n": null,
-      "needs_review": false,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Study Abroad",
        "prose": [
@@ -731,7 +731,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/global-economics-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/global-economics-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/global-economics-ba.md: Area Study recoded as category_count n=2 needs_review; Foreign Language Study (through level 6) and Study Abroad recoded as category_count needs_review so these required components are no longer advisory info.",
+  "status": "frontier-verified"
  }
 }

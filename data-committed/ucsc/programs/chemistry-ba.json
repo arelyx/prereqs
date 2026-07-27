@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -670,12 +670,13 @@
        "PHYS156",
        "PHYS180"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 2,
       "needs_review": false,
       "notes": [
        "Students cannot receive elective credit toward the major for both BIOC 100A and CHEM 103. Students may also satisfy the elective requirement by completing a chemistry graduate course with the permission of the instructor and department. Please consult with chemistry and biochemistry major advising prior to enrolling."
       ],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -792,7 +793,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/chemistry-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/chemistry-ba.md",
-  "status": "failed-verification"
+  "notes": "Verified rule-by-rule against rendered page: lower-division general chem/calculus/multivariable/physics options and organic all_of, upper-division all_of + advanced-lab one_of, Electives n_of n=2 pool (16 courses), DC and Comprehensive (CHEM151L all_of + one_of advanced lab). Qualification/transfer as info/options per method. Stale report issue (Electives list->n_of=2) is now fixed.",
+  "status": "frontier-verified"
  }
 }

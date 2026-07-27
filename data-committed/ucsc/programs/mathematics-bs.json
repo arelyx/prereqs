@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Mathematics B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -534,34 +534,27 @@
         "type": "prose"
        }
       ],
-      "courses": [
-       "MATH101",
-       "MATH105B",
-       "MATH106",
-       "MATH107",
-       "MATH110",
-       "MATH111B",
-       "MATH114",
-       "MATH115",
-       "MATH116",
-       "MATH118",
-       "MATH120",
-       "MATH130",
-       "MATH134",
-       "MATH139",
-       "MATH140",
-       "MATH145",
-       "MATH148",
-       "MATH152",
-       "MATH160",
-       "MATH162",
-       "MATH181"
-      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 190,
+         "lo": 101,
+         "subject": "MATH"
+        }
+       ],
+       "include_series": []
+      },
       "from_following_lists": true,
       "n": 3,
       "needs_review": false,
-      "notes": [],
-      "op": "n_of",
+      "notes": [
+       "Electives may be any 5-credit-or-more MATH course numbered 101-190, or a course from the approved list from other departments (following list); only two of the three electives can be from the approved other-department list.",
+       "Recommended electives from the Mathematics Department: MATH101, MATH105B, MATH106, MATH107, MATH110, MATH111B, MATH114, MATH115, MATH116, MATH118, MATH120, MATH130, MATH134, MATH139, MATH140, MATH145, MATH148, MATH152, MATH160, MATH162, MATH181 (recommended only, not an exhaustive pool)."
+      ],
+      "op": "range",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -666,7 +659,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/mathematics-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/mathematics-bs.md: Electives parent re-encoded as range n=3 over MATH 101-190 plus the approved other-department list pool (from_following_lists), with the recommended-course list demoted to a note and the only-two-outside rider kept as prose.",
+  "status": "frontier-verified"
  }
 }

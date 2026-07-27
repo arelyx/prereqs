@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Politics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -172,7 +172,12 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Four courses are required: two courses from one group, one course from a second group, and one course from a third group.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
       "from_following_lists": true,
       "n": 4,
@@ -261,10 +266,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "POLI"
+        }
+       ],
+       "include_series": []
+      },
       "n": 4,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
       "source": {
        "heading": "Four upper-division politics electives",
        "prose": [
@@ -308,11 +325,105 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
         "The comprehensive requirement in the Politics Department can be satisfied in any of the following methods:"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "190",
+         "subject": "POLI"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "Successful completion of a politics senior seminar (POLI 190 series) that includes the writing of an extensive paper (no less than 15 pages) with substantial research content. To enroll in a specific POLI 190 seminar, students must have successfully completed the prerequisite courses listed in the seminar’s catalog course description."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "One of the two electives must include a substantial writing component approved in advance by the instructor, and the student must enroll in a two-credit independent study, POLI 199F, as part of this option.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "POLI"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Additional (Fifth and Sixth) Electives",
+       "prose": [
+        "Successful completion of two additional politics upper-division electives numbered POLI 100 -189, one of which includes a substantial writing component comparable to a paper for a senior seminar, either as part of the existing course requirements or added with the approval of the instructor. The student must receive prior approval from the instructor of the course with the substantial writing component, and must enroll in a two-credit independent study, POLI 199F , as part of this option. Generally, instructors with the title of lecturer are not available to supervise POLI 199F ."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": true,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Graduate Seminar",
+       "prose": [
+        "Successful completion of a politics graduate seminar (enrollment is contingent on the written recommendation of two politics faculty) that includes the writing of an extensive paper (no less than 15 pages) with substantial research content."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "POLI195A",
+       "POLI195B",
+       "POLI195C"
+      ],
+      "n": 2,
+      "needs_review": false,
+      "notes": [
+       "The thesis spans two to three quarters (POLI 195A, POLI 195B, and optionally POLI 195C); minimum of 50 pages."
+      ],
+      "op": "n_of",
+      "source": {
+       "heading": "Thesis (2-3 quarters)",
+       "prose": [
+        "Successful completion of a senior thesis ( POLI 195A , POLI 195B , POLI 195C ) of a minimum of 50 pages. This option is for students interested in working on original research and writing under the supervision of a politics faculty member."
        ]
       }
      }
@@ -325,7 +436,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/politics-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/politics-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/politics-ba.md: Comprehensive Requirement recoded as section_choice with four method branches (POLI 190-series seminar, two extra electives + POLI 199F, graduate seminar needs_review, POLI 195A-C thesis); 2+1+1 core group distribution added as explicit constraint on the n_of parent.",
+  "status": "frontier-verified"
  }
 }

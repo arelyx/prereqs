@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -168,9 +168,9 @@
        "CHEM8B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "And these courses:",
        "prose": []
@@ -802,7 +802,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/biochemistry-and-molecular-biology-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/biochemistry-and-molecular-biology-bs.md",
-  "status": "failed-verification"
+  "notes": "Verified all requirement sections rule-by-rule against rendered page: qualification/transfer options+all_of+one_of branches, lower-division (general chem, calculus, statistics, intro biology, organic chem, physics) options and all_of, upper-division all_of/one_of/n_of elective, senior exit lab one_of, DC and comprehensive info. Recommended-transfer-prep carried as info/one_of per precedent. Stale report issue (op=unknown) is now fixed.",
+  "status": "frontier-verified"
  }
 }

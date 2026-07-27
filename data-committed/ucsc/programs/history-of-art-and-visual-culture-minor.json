@@ -5,7 +5,7 @@
  "division": "arts-division",
  "kind": "minor",
  "name": "History of Art and Visual Culture Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -20,12 +20,21 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Three lower-division courses, each from a different geographic region: HAVC 10-19 Africa and its Diaspora; HAVC 20-29 Asia and its Diaspora; HAVC 30-49 Europe and the Americas; HAVC 50-59 Mediterranean; HAVC 60-69 Native Americas; HAVC 70-79 Oceania and its Diaspora.",
+        "type": "prose"
+       },
+       {
+        "text": "HAVC 80 may be used to fulfill a lower-division requirement for one of the following geographic regions: 10s (Africa), 60s (Native Americas), or 70s (Oceania).",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 3,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Lower-Division Courses",
        "prose": [
@@ -45,10 +54,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 191,
+         "lo": 100,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 6,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Upper-Division Courses",
        "prose": [
@@ -65,7 +86,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/history-of-art-and-visual-culture/history-of-art-and-visual-culture-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/history-of-art-and-visual-culture-minor.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/history-of-art-and-visual-culture-minor.md: Lower-Division info->category_count n=3 needs_review with distinct-geographic-region and HAVC 80 constraints; Upper-Division info->range n=6 over HAVC 100-191.",
+  "status": "frontier-verified"
  }
 }

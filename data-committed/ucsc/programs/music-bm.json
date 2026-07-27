@@ -5,7 +5,7 @@
  "division": "arts-division",
  "kind": "major",
  "name": "Music B.M.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -343,10 +343,13 @@
        "MUSC166",
        "MUSC168"
       ],
-      "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
+      "n": 9,
+      "needs_review": false,
+      "notes": [
+       "Minimum of nine quarters for frosh students; six quarters for transfer students. Ensembles may be repeated for credit, so quarters of participation are counted here as n distinct courses.",
+       "A maximum of one ensemble per quarter can be counted toward fulfillment of the total requirement."
+      ],
+      "op": "n_of",
       "source": {
        "heading": "Performing Ensembles",
        "prose": [
@@ -366,10 +369,13 @@
        "MUSC161A",
        "MUSC162"
       ],
-      "n": null,
+      "n": 9,
       "needs_review": false,
-      "notes": [],
-      "op": "all_of",
+      "notes": [
+       "Minimum of nine quarters for frosh students; six quarters for transfer students. Lessons are repeated each quarter, so quarters are counted here as n distinct courses.",
+       "Students should work with the applied instructor of their primary instrument to determine which of the courses listed would be appropriate."
+      ],
+      "op": "n_of",
       "source": {
        "heading": "Individual Applied Lessons",
        "prose": [
@@ -446,7 +452,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -463,7 +469,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/music-bm",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/music-bm.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/music-bm.md: ensembles and applied lessons encoded as n_of n=9 (transfer minimum six as note); MUSC 196B comprehensive made required",
+  "status": "frontier-verified"
  }
 }

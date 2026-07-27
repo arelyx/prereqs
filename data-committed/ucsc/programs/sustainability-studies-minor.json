@@ -5,7 +5,7 @@
  "division": "the-colleges",
  "kind": "minor",
  "name": "Sustainability Studies Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -70,12 +70,104 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "The upper-division elective does not count toward the Breadth Capstone requirement.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "n_of",
+      "pool": [
+       "CRSN151C",
+       "CRSN155S",
+       "CRSN161",
+       "ANTH110E",
+       "ANTH110K",
+       "ANTH111",
+       "ANTH135A",
+       "ANTH137",
+       "ANTH146",
+       "ANTH147",
+       "ANTH160",
+       "ANTH161",
+       "ART125",
+       "BIOE107",
+       "BIOE108",
+       "BIOE145",
+       "BIOE147",
+       "BIOE155",
+       "CMMU133",
+       "CMMU149",
+       "CMMU156",
+       "CMMU162",
+       "CMMU186",
+       "EART116",
+       "EART121",
+       "EART142",
+       "EART146",
+       "EART191",
+       "ECE175",
+       "ECE175L",
+       "ECE176",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE180J",
+       "ECON170",
+       "ECON171",
+       "ECON175",
+       "ENVS110",
+       "ENVS120",
+       "ENVS130A",
+       "ENVS130C",
+       "ENVS135",
+       "ENVS140",
+       "ENVS142",
+       "ENVS143",
+       "ENVS144",
+       "ENVS145",
+       "ENVS149",
+       "ENVS151",
+       "ENVS152",
+       "ENVS165",
+       "ENVS166",
+       "FMST124",
+       "FMST131",
+       "FMST133",
+       "HAVC48",
+       "HAVC141K",
+       "HAVC143B",
+       "HIS101C",
+       "HIS101F",
+       "HIS151",
+       "HIS196F",
+       "LALS152",
+       "LALS163",
+       "LGST137",
+       "LGST159",
+       "METX101",
+       "OCEA101",
+       "OCEA102",
+       "POLI132",
+       "POLI174",
+       "PSYC159E",
+       "SOCY30A",
+       "SOCY119",
+       "SOCY125",
+       "SOCY130",
+       "SOCY132",
+       "SOCY167",
+       "SOCY173",
+       "SOCY177E",
+       "SOCY177G",
+       "SOCY179",
+       "ANTH110IG",
+       "ANTH110I"
+      ],
       "source": {
        "heading": "Upper-Division Elective",
        "prose": [
@@ -97,21 +189,14 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Capstone",
        "prose": [
         "Students choose from one of the following options:"
        ]
       }
-     }
-    ],
-    "title": "Capstone"
-   },
-   {
-    "concentration": null,
-    "kind": "comprehensive",
-    "rules": [
+     },
      {
       "branches": null,
       "constraints": [],
@@ -120,28 +205,119 @@
       ],
       "n": null,
       "needs_review": false,
-      "notes": [],
+      "notes": [
+       "CRSN 152 is taken three times (9 credits total); counted here as one distinct course (repeatability approximation)."
+      ],
       "op": "all_of",
       "source": {
        "heading": "Take the following course three times (9 credits total):",
        "prose": []
       }
-     }
-    ],
-    "title": "Option 1: IDEASS Capstone"
-   },
-   {
-    "concentration": null,
-    "kind": "comprehensive",
-    "rules": [
+     },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "One course must be an upper-division Breadth Elective; the second course is either an upper-division CRSN course or an additional upper-division Breadth Elective.",
+        "type": "prose"
+       },
+       {
+        "text": "Courses used for the Breadth Capstone cannot also count toward the Upper-Division Elective requirement.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "n_of",
+      "pool": [
+       "CRSN151C",
+       "CRSN155S",
+       "CRSN161",
+       "ANTH110E",
+       "ANTH110K",
+       "ANTH111",
+       "ANTH135A",
+       "ANTH137",
+       "ANTH146",
+       "ANTH147",
+       "ANTH160",
+       "ANTH161",
+       "ART125",
+       "BIOE107",
+       "BIOE108",
+       "BIOE145",
+       "BIOE147",
+       "BIOE155",
+       "CMMU133",
+       "CMMU149",
+       "CMMU156",
+       "CMMU162",
+       "CMMU186",
+       "EART116",
+       "EART121",
+       "EART142",
+       "EART146",
+       "EART191",
+       "ECE175",
+       "ECE175L",
+       "ECE176",
+       "ECE176L",
+       "ECE177",
+       "ECE177L",
+       "ECE180J",
+       "ECON170",
+       "ECON171",
+       "ECON175",
+       "ENVS110",
+       "ENVS120",
+       "ENVS130A",
+       "ENVS130C",
+       "ENVS135",
+       "ENVS140",
+       "ENVS142",
+       "ENVS143",
+       "ENVS144",
+       "ENVS145",
+       "ENVS149",
+       "ENVS151",
+       "ENVS152",
+       "ENVS165",
+       "ENVS166",
+       "FMST124",
+       "FMST131",
+       "FMST133",
+       "HAVC48",
+       "HAVC141K",
+       "HAVC143B",
+       "HIS101C",
+       "HIS101F",
+       "HIS151",
+       "HIS196F",
+       "LALS152",
+       "LALS163",
+       "LGST137",
+       "LGST159",
+       "METX101",
+       "OCEA101",
+       "OCEA102",
+       "POLI132",
+       "POLI174",
+       "PSYC159E",
+       "SOCY30A",
+       "SOCY119",
+       "SOCY125",
+       "SOCY130",
+       "SOCY132",
+       "SOCY167",
+       "SOCY173",
+       "SOCY177E",
+       "SOCY177G",
+       "SOCY179",
+       "ANTH110IG",
+       "ANTH110I"
+      ],
       "source": {
        "heading": "Option 2: Breadth Capstone",
        "prose": [
@@ -150,7 +326,7 @@
       }
      }
     ],
-    "title": "Option 2: Breadth Capstone"
+    "title": "Capstone"
    },
    {
     "concentration": null,
@@ -289,13 +465,12 @@
        "ANTH110IG",
        "ANTH110I"
       ],
-      "from_following_lists": true,
-      "n": 1,
+      "n": null,
       "needs_review": false,
       "notes": [
        "The list of breadth elective courses applies to all of the upper-division options above. This list is updated regularly, but course offerings change. Please consult course lists prior to each quarter to see what is being offered. Some of these courses require permission of the instructor to enroll). You can find the most updated listing of breadth electives here ."
       ],
-      "op": "n_of",
+      "op": "list",
       "source": {
        "heading": "Breadth Electives",
        "prose": [
@@ -313,7 +488,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/the-colleges/rachel-carson-college/sustainability-studies/sustainability-studies-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/sustainability-studies-minor.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/sustainability-studies-minor.md: Capstone recoded as a single section_choice section over IDEASS (CRSN 152, taken-three-times as note) and Breadth Capstone (n_of 2 over the CRSN+Breadth pool with riders as constraints); Upper-Division Elective recoded as n_of 1 over the same pool; Breadth Electives recoded as a plain list pool (spurious n=1 removed).",
+  "status": "frontier-verified"
  }
 }

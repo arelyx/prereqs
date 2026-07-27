@@ -5,11 +5,11 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Chemistry B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -237,9 +237,11 @@
        "BIOE20B"
       ],
       "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
+      "needs_review": false,
+      "notes": [
+       "Advisory: if transferring into CHEM B.S. with the BIOC concentration, add BIOL 20A and BIOE 20B as pre-transfer courses."
+      ],
+      "op": "info",
       "source": {
        "heading": "If transferring into CHEM BS with BIOC concentration add these as pre-transfer courses:",
        "prose": []
@@ -734,12 +736,12 @@
        "PHYS156",
        "PHYS180"
       ],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [
        "To receive certification from the American Chemical Society, students must complete CHEM 122 . Students may also satisfy the elective requirement by completing a chemistry graduate course with permission from the instructor and department. Please consult with chemistry & biochemistry major advising before enrolling."
       ],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -1236,7 +1238,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/chemistry-and-biochemistry/chemistry-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/chemistry-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/chemistry-bs.md: BIOC pre-transfer rule op unknown->info (advisory), removed spurious from_following_lists on Electives n_of.",
+  "status": "frontier-verified"
  }
 }

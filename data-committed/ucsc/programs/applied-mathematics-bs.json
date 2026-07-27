@@ -5,11 +5,11 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Applied Mathematics B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -742,12 +742,18 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Up to one of these electives can be replaced by a 5-credit independent study to do research with one of the program faculty.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "from_following_lists": true,
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "section_choice",
+      "op": "n_of",
       "source": {
        "heading": "Upper-Division Electives",
        "prose": [
@@ -761,10 +767,39 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "AM100",
+        "AM112",
+        "AM114",
+        "AM129",
+        "AM147",
+        "AM170A",
+        "AM170B",
+        "AM200",
+        "AM211"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "AM"
+        },
+        {
+         "hi": 279,
+         "lo": 200,
+         "subject": "AM"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Only 5-credit courses count. AM 198 can only be used once for elective credit. AM 200, AM 211, and the AM 280 series and above may not be used."
+      ],
+      "op": "range",
       "source": {
        "heading": "Possible AM Electives",
        "prose": [
@@ -879,7 +914,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "Either of the following courses:",
        "prose": []
@@ -895,7 +930,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "Either of the following courses:",
        "prose": []
@@ -1040,7 +1075,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "Either of the following courses:",
        "prose": []
@@ -1056,7 +1091,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "Either of the following courses:",
        "prose": []
@@ -1225,7 +1260,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/applied-mathematics-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/applied-mathematics-bs.md: UD electives parent recoded n_of n=3 from_following_lists; Possible AM Electives recoded from info to range (AM 100-199/200-279 minus core and excluded codes).",
+  "status": "frontier-verified"
  }
 }

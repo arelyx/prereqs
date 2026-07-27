@@ -5,7 +5,7 @@
  "division": "humanities-division",
  "kind": "minor",
  "name": "Black Studies Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -49,10 +49,11 @@
        }
       ],
       "courses": [],
-      "n": null,
+      "from_following_lists": true,
+      "n": 5,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "n_of",
       "source": {
        "heading": "Upper-Division Courses",
        "prose": [
@@ -164,7 +165,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/critical-race-and-ethnic-studies/black-studies-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/black-studies-minor.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/black-studies-minor.md: Upper-Division parent recoded from info to n_of n=5 with from_following_lists over the General Electives pool; at-least-two-CRES rider kept as prose constraint.",
+  "status": "frontier-verified"
  }
 }

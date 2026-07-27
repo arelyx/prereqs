@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Latin American and Latino Studies B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -204,10 +204,44 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LALS194L"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "194",
+         "subject": "LALS"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [
+       "One senior seminar chosen from LALS 194 A-Z, excluding LALS 194L. This requirement satisfies the Comprehensive Requirement."
+      ],
+      "op": "range",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "All students complete one senior seminar (LALS 194 A-Z, excluding L) and seminar lab ( LALS 194L ). This requirement satisfies the Comprehensive Requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS194L"
+      ],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Seminar lab taken with the senior seminar."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Senior Seminar",
        "prose": [
@@ -230,9 +264,9 @@
        "LALS100L"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",
        "prose": [
@@ -324,9 +358,9 @@
        "LALS100L"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "LALS Core Courses",
        "prose": []
@@ -419,10 +453,44 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LALS194L"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "194",
+         "subject": "LALS"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [
+       "One senior seminar chosen from LALS 194 A-Z, excluding LALS 194L. This requirement satisfies the Comprehensive Requirement."
+      ],
+      "op": "range",
+      "source": {
+       "heading": "Senior Seminar",
+       "prose": [
+        "The Comprehensive Requirement is fulfilled by completing one senior seminar (LALS 194 A-Z, excluding L) and seminar lab ( LALS 194L )."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS194L"
+      ],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Seminar lab taken with the senior seminar."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Senior Seminar",
        "prose": [
@@ -445,9 +513,9 @@
        "LALS100L"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",
        "prose": [
@@ -486,7 +554,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/latin-american-and-latino-studies/latin-american-and-latino-studies-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/latin-american-and-latino-studies-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/latin-american-and-latino-studies-ba.md: senior seminar + LALS 194L made required in both variants (range over LALS 194 series excl. 194L plus all_of lab); DC pairs and concentration core courses resolved to all_of",
+  "status": "frontier-verified"
  }
 }

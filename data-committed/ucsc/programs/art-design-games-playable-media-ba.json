@@ -5,11 +5,11 @@
  "division": "arts-division",
  "kind": "major",
  "name": "Art & Design: Games + Playable Media B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -60,11 +60,10 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "from_following_lists": true,
-      "n": 1,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "info",
       "source": {
        "heading": "Transfer Admission Screening Policy",
        "prose": [
@@ -87,7 +86,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Intro to 2D Concepts",
        "prose": []
@@ -108,7 +107,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Intro to 3D Concepts",
        "prose": []
@@ -139,7 +138,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Art and Design Topics",
        "prose": []
@@ -442,12 +441,13 @@
        "THEA50",
        "THEA80Z"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 1,
       "needs_review": false,
       "notes": [
        "Check with departments and the General Catalog for restrictions or prerequisites. Junior transfers fulfill the lower-division arts elective requirement as part of the transfer screening requirements."
       ],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Lower-Division Arts Elective",
        "prose": [
@@ -461,10 +461,10 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 1,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "History of Art and Visual Culture Requirement",
        "prose": [
@@ -717,6 +717,18 @@
        "THEA167",
        "THEA168"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "ARTG"
+        }
+       ],
+       "include_series": []
+      },
       "from_following_lists": true,
       "n": 4,
       "needs_review": false,
@@ -738,7 +750,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/art-design-games-playable-media-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/art-design-games-playable-media-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/art-design-games-playable-media-ba.md: transfer screening recoded as one_of per area (parent prose as info, was n_of n=1 over the union); HAVC requirement recoded as category_count n=1 needs_review (was info).",
+  "status": "frontier-verified"
  }
 }

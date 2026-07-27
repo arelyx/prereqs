@@ -5,7 +5,7 @@
  "division": "baskin-engineering",
  "kind": "minor",
  "name": "Bioinformatics Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -168,7 +168,7 @@
       "notes": [
        "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
       ],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Programming",
        "prose": [
@@ -253,10 +253,12 @@
        "BME237",
        "BME273"
       ],
-      "n": null,
+      "n": 2,
       "needs_review": false,
-      "notes": [],
-      "op": "list",
+      "notes": [
+       "Choose two or more electives to meet the requirement of 25 credits of upper-division credits."
+      ],
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -273,7 +275,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/bioinformatics-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/bioinformatics-minor.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/bioinformatics-minor.md: Programming info->all_of (BME 160+163 required, CSE 20 substitution in notes); Electives list->n_of n=2 with 25-upper-division-credit rider in notes.",
+  "status": "frontier-verified"
  }
 }

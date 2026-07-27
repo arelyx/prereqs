@@ -5,11 +5,11 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Robotics Engineering B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -532,7 +532,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "Either of the following:",
        "prose": []
@@ -548,7 +548,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "Either of the following:",
        "prose": []
@@ -585,7 +585,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "And either of the following:",
        "prose": []
@@ -601,7 +601,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "And either of the following:",
        "prose": []
@@ -680,7 +680,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "one_of",
       "source": {
        "heading": "And either of the following:",
        "prose": []
@@ -711,7 +711,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Advanced Robotics Elective",
        "prose": [
@@ -759,12 +759,12 @@
        "CSE156L",
        "CSE276"
       ],
-      "n": null,
+      "n": 1,
       "needs_review": false,
       "notes": [
        "Lecture and required concurrent lab course counts as one course."
       ],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Upper-Division and Graduate Elective",
        "prose": [
@@ -906,7 +906,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/robotics-engineering-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/robotics-engineering-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/robotics-engineering-bs.md: Advanced Robotics Elective recoded list->one_of over its 10 courses; spurious from_following_lists flag dropped from the Upper-Division and Graduate Elective n_of rule.",
+  "status": "frontier-verified"
  }
 }

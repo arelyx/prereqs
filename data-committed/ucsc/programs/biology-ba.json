@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Biology B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -130,29 +130,15 @@
       }
      },
      {
-      "branches": [
-       [
-        "CHEM3BL"
-       ],
-       [
-        "CHEM4AL"
-       ],
-       [
-        "STAT5"
-       ],
-       [
-        "STAT7",
-        "STAT7L"
-       ]
-      ],
+      "branches": null,
       "constraints": [],
-      "courses": [
-       "PHYS6A"
-      ],
+      "courses": [],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "options",
+      "notes": [
+       "Recommended prior to transfer to ensure timely graduation: CHEM 3BL or CHEM 4AL; PHYS 6A; and STAT 5 or (STAT 7 and STAT 7L)."
+      ],
+      "op": "info",
       "source": {
        "heading": "",
        "prose": [
@@ -514,7 +500,12 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Four additional BIOE courses numbered 100-179 of 5 or more credits, or the seven listed courses. Lecture/lab combinations count as a single course.",
+        "type": "prose"
+       }
+      ],
       "courses": [
        "BIOL100",
        "BIOL101",
@@ -524,12 +515,24 @@
        "METX133",
        "METX150"
       ],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 179,
+         "lo": 100,
+         "subject": "BIOE"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
       "needs_review": false,
       "notes": [
        "Note: Lecture/lab combinations count as a single course. See note under \"Upper-Division Courses\" for more details. Some of these electives may have prerequisites that do not satisfy departmental major requirements, which may restrict enrollment in them. See an EEB advisor for more details."
       ],
-      "op": "list",
+      "op": "range",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -620,7 +623,9 @@
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
-        "All majors in the biological sciences require completion of a comprehensive requirement. This requirement can be satisfied in one of the following ways:"
+        "All majors in the biological sciences require completion of a comprehensive requirement. This requirement can be satisfied in one of the following ways:",
+        "receiving a passing grade in an independent research course, or field/laboratory course listed below; or",
+        "completing a senior thesis."
        ]
       }
      },
@@ -668,12 +673,12 @@
        "BIOE163L",
        "BIOE183W"
       ],
-      "n": null,
-      "needs_review": true,
+      "n": 1,
+      "needs_review": false,
       "notes": [
        ""
       ],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Comprehensive courses offered by Ecology and Evolutionary Biology",
        "prose": [
@@ -689,13 +694,30 @@
        "METX135L",
        "CRSN152"
       ],
-      "n": null,
-      "needs_review": true,
+      "n": 1,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Other Comprehensive Course Options",
        "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": true,
+      "notes": [
+       "completing a senior thesis."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Senior Thesis",
+       "prose": [
+        "The comprehensive requirement may alternatively be satisfied by completing a senior thesis."
+       ]
       }
      }
     ],
@@ -707,7 +729,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/ecology-and-evolutionary-biology/biology-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/biology-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/biology-ba.md: Electives list->range n=4 (BIOE100-179 + 7 codes); Comprehensive unknown lists->one_of under section_choice + added senior-thesis category_count; recommended transfer options->info.",
+  "status": "frontier-verified"
  }
 }

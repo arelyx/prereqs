@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Legal Studies B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -304,7 +304,12 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "A minimum of one course must be taken in each of the three thematic areas: A. Theory; B. Public Law and Institutions; C. Law and Society.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
       "from_following_lists": true,
       "n": 6,
@@ -529,13 +534,14 @@
       "constraints": [],
       "courses": [
        "LGST195A",
-       "LGST195B",
-       "LGST195C"
+       "LGST195B"
       ],
       "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
+      "needs_review": false,
+      "notes": [
+       "LGST 195C is the optional third quarter of the senior thesis (two- or three-quarter sequence)."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Senior Thesis (two or three quarters)",
        "prose": []
@@ -585,13 +591,14 @@
       "constraints": [],
       "courses": [
        "LGST195A",
-       "LGST195B",
-       "LGST195C"
+       "LGST195B"
       ],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "LGST 195C is the optional third quarter of the senior thesis (two- or three-quarter sequence)."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Senior Thesis (2-3 quarters).",
        "prose": [
@@ -608,7 +615,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/legal-studies-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/legal-studies-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/legal-studies-ba.md: DC and Comprehensive senior-thesis subrules recoded as all_of LGST 195A+195B (195C optional third quarter as note) so both section_choice options are valid paths; thematic-core min-one-per-area rider added as constraint on the n_of 6.",
+  "status": "frontier-verified"
  }
 }

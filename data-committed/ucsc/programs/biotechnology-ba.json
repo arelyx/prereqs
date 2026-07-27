@@ -5,11 +5,11 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Biotechnology B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -195,12 +195,13 @@
        "CSE20",
        "ECE80B"
       ],
-      "n": null,
+      "n": 4,
       "needs_review": false,
       "notes": [
-       "The CSE 20 Test Out exam is an acceptable substitute for CSE 20 ."
+       "The CSE 20 Test Out exam is an acceptable substitute for CSE 20 .",
+       "The statistics alternative (STAT 5, or STAT 7 and STAT 7L together) counts as one of the four qualification courses."
       ],
-      "op": "options",
+      "op": "n_of",
       "source": {
        "heading": "Major Qualification",
        "prose": [
@@ -404,7 +405,7 @@
       "notes": [
        "Students may substitute CSE 20 for BME 160 , although BME 160 is strongly recommended. CSE 20 has a test-out exam that will also be accepted."
       ],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Biotechnology Upper-Division Core",
        "prose": [
@@ -443,12 +444,12 @@
        "SOCY123",
        "SOCY127P"
       ],
-      "n": null,
+      "n": 3,
       "needs_review": false,
       "notes": [
        "BME 128 , BME 177, BME 178, ECE 104 , FMST 133 , and SOCY 127P all have additional prerequisites not covered by the major requirements."
       ],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -514,7 +515,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biotechnology-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/biotechnology-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/biotechnology-ba.md: upper-division core info->all_of (BME 105/110/160); Electives n_of 4->3 (conditional four and BME recommendation kept as prose) with spurious from_following_lists removed; Major Qualification options->n_of n=4 with STAT alternative kept as branches plus note.",
+  "status": "frontier-verified"
  }
 }

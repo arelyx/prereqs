@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Business Management Economics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -536,11 +536,10 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "from_following_lists": true,
-      "n": 5,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "info",
       "source": {
        "heading": "Upper-division electives",
        "prose": [
@@ -560,7 +559,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Finance Electives (choose one)",
        "prose": []
@@ -645,7 +644,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Economics Electives (choose one)",
        "prose": [
@@ -1071,10 +1070,11 @@
        "ECON183",
        "ECON188"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "n_of",
       "source": {
        "heading": "Plus one economics elective from the following:",
        "prose": [
@@ -1203,7 +1203,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/business-management-economics-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "Checked screening/qualification, both the general major and accounting concentration (lower-division all_of, 6-branch mathematics options, STAT 17/17L, computer literacy n_of 2 vs one_of, upper-division core one_ofs, 5-elective n_of over finance/economics pools with business-management n_of 3, 8-course accounting all_of), DC, and comprehensive rules; membership, operators, and counts match the rendered snapshot. Cross-listing riders (LGST/CSE) as primary codes and the ECON 130/159/160A/160B/188 double-count ban kept as source prose (in-scope approximations).",
+  "notes": "hand-corrected per _reports/business-management-economics-ba.md: Economics Electives (choose one) recoded from info to one_of over its 29-course list; ECON 191/192/193/193F exclusion and ECON 195/199 substitution remain as prose.",
   "status": "frontier-verified"
  }
 }

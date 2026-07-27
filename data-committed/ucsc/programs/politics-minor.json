@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "minor",
  "name": "Politics Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -22,10 +22,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 70,
+         "lo": 1,
+         "subject": "POLI"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Lower-Division Elective",
        "prose": [
@@ -63,13 +75,43 @@
     "kind": "other",
     "rules": [
      {
-      "branches": null,
-      "constraints": [],
+      "branches": [
+       [
+        "POLI105A",
+        "POLI105B",
+        "POLI105C",
+        "POLI105D"
+       ],
+       [
+        "POLI120A",
+        "POLI120B",
+        "POLI120C"
+       ],
+       [
+        "POLI140A",
+        "POLI140C",
+        "POLI140D",
+        "POLI140E"
+       ],
+       [
+        "POLI160A",
+        "POLI160B",
+        "POLI160C",
+        "POLI160D"
+       ]
+      ],
+      "constraints": [
+       {
+        "text": "Take two courses each from two different subfields (four core courses total).",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "from_following_lists": true,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "n_of_groups",
       "source": {
        "heading": "Four core courses",
        "prose": [
@@ -87,9 +129,9 @@
        "POLI105D"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Theory",
        "prose": []
@@ -104,9 +146,9 @@
        "POLI120C"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "U.S. Politics",
        "prose": []
@@ -122,9 +164,9 @@
        "POLI140E"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Comparative",
        "prose": []
@@ -140,9 +182,9 @@
        "POLI160D"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Global Politics/International Relations",
        "prose": []
@@ -191,7 +233,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/politics/politics-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/politics-minor.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/politics-minor.md: Four core courses info parent -> n_of_groups n=2 over the four subfield lists (two courses from each of two chosen subfields carried as a constraint); subfield rules unknown -> list pools. Cross-listing riders kept as primary POLI codes.",
+  "status": "frontier-verified"
  }
 }

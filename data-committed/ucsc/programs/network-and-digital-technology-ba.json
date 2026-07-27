@@ -5,11 +5,11 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Network and Digital Technology B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -675,13 +675,38 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "CSE 195 (if not used to satisfy the DC) and any course from the additional approved electives list may also count toward the five electives.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "from_following_lists": true,
+      "filter": {
+       "exclude_codes": [
+        "CSE115A",
+        "CSE185E",
+        "CSE185S"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "CSE"
+        },
+        {
+         "hi": 279,
+         "lo": 201,
+         "subject": "CSE"
+        }
+       ],
+       "include_series": []
+      },
       "n": 5,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "range",
       "source": {
        "heading": "Five additional upper-division or graduate electives",
        "prose": [
@@ -711,7 +736,7 @@
       "notes": [
        "CSE 157 has additional prerequisites."
       ],
-      "op": "list",
+      "op": "info",
       "source": {
        "heading": "Digital Technology for Networking Focus",
        "prose": [
@@ -740,7 +765,7 @@
       "notes": [
        "CSE 115A , CSE 117 , CSE 157 , and CSE 181 have additional prerequisites. Students may not receive credit for both CSE 180 and CSE 182 ."
       ],
-      "op": "list",
+      "op": "info",
       "source": {
        "heading": "Internet Software Technology Focus",
        "prose": [
@@ -828,7 +853,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/network-and-digital-technology-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/network-and-digital-technology-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/network-and-digital-technology-ba.md: both advisory Focus lists recast from one_of/all_of to info; CSE 195 and additional-approved-electives-list options added as a constraints rider on the n=5 range rule. All other sections previously verified clean.",
+  "status": "frontier-verified"
  }
 }

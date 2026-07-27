@@ -5,7 +5,7 @@
  "division": "arts-division",
  "kind": "major",
  "name": "Music B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -335,6 +335,57 @@
         "See the list of approved courses relevant to each module."
        ]
       }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": true,
+      "notes": [
+       "Module membership is listed on the Music Department website; see the list of approved courses relevant to each module."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Module lower-division courses",
+       "prose": [
+        "a lower-division MUSC 11, MUSC 80, or MUSC 81-series course specific to each module (three total)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": true,
+      "notes": [
+       "Module membership is listed on the Music Department website; see the list of approved courses relevant to each module."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Module upper-division theory/composition courses",
+       "prose": [
+        "an upper-division MUSC 150 or equivalent (theory/composition-based) course specific to each module (three total)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 6,
+      "needs_review": true,
+      "notes": [
+       "Module membership is listed on the Music Department website; see the list of approved courses relevant to each module."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Module ensembles/performance practice workshops",
+       "prose": [
+        "two quarters of performing ensembles or performance practice workshops specific to each module (six total)"
+       ]
+      }
      }
     ],
     "title": "Modular Requirements"
@@ -370,8 +421,10 @@
       ],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "list",
+      "notes": [
+       "Students may also elect to take a graduate-level seminar in place of their final elective (instructor and/or department permission required)."
+      ],
+      "op": "one_of",
       "source": {
        "heading": "History/Culture Elective",
        "prose": [
@@ -592,6 +645,57 @@
         "See the list of approved courses relevant to each module."
        ]
       }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": true,
+      "notes": [
+       "Module membership is listed on the Music Department website; see the list of approved courses relevant to each module."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Module lower-division courses",
+       "prose": [
+        "a lower-division MUSC 11, MUSC 80, or MUSC 81-series course specific to each module (three total)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": true,
+      "notes": [
+       "Module membership is listed on the Music Department website; see the list of approved courses relevant to each module."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Module upper-division courses",
+       "prose": [
+        "an upper-division MUSC 101, MUSC 105, MUSC 120 , or MUSC 150 course specific to each module (three total)"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 6,
+      "needs_review": true,
+      "notes": [
+       "Module membership is listed on the Music Department website; see the list of approved courses relevant to each module."
+      ],
+      "op": "category_count",
+      "source": {
+       "heading": "Module ensembles/performance practice workshops",
+       "prose": [
+        "two quarters of performing ensemble or performance practice workshop specific to each module (six total)"
+       ]
+      }
      }
     ],
     "title": "Modular Requirements"
@@ -617,7 +721,12 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "These elective courses cannot double count with modular courses, unless the course is repeatable for credit and is taken more than once with a different instructor.",
+        "type": "prose"
+       }
+      ],
       "courses": [
        "MUSC101A",
        "MUSC101B",
@@ -661,10 +770,10 @@
        "MUSC203F",
        "MUSC203H"
       ],
-      "n": null,
-      "needs_review": true,
+      "n": 3,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "n_of",
       "source": {
        "heading": "Elective Upper-Division Lectures/Seminars",
        "prose": []
@@ -827,104 +936,198 @@
      {
       "branches": null,
       "constraints": [],
-      "courses": [
-       "MUSC101E",
-       "MUSC101F",
-       "MUSC101G",
-       "MUSC101H",
-       "MUSC105A",
-       "MUSC105C",
-       "MUSC105E",
-       "MUSC105H",
-       "MUSC105I",
-       "MUSC105L",
-       "MUSC105M",
-       "MUSC105O",
-       "MUSC105P",
-       "MUSC105Q",
-       "MUSC105R",
-       "MUSC105S",
-       "MUSC105T",
-       "MUSC105V",
-       "MUSC199",
-       "MUSC200"
-      ],
+      "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "section_choice",
       "source": {
-       "heading": "Research Project",
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The options for senior capstones focus in two areas: A) research project, or B) creative portfolio project."
+       ]
+      }
+     },
+     {
+      "branches": [
+       [
+        "MUSC101E",
+        "MUSC195A"
+       ],
+       [
+        "MUSC101F",
+        "MUSC195A"
+       ],
+       [
+        "MUSC101G",
+        "MUSC195A"
+       ],
+       [
+        "MUSC101H",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105A",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105C",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105E",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105H",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105I",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105L",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105M",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105O",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105P",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105Q",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105R",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105S",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105T",
+        "MUSC195A"
+       ],
+       [
+        "MUSC105V",
+        "MUSC195A"
+       ],
+       [
+        "MUSC199",
+        "MUSC195A"
+       ],
+       [
+        "MUSC200",
+        "MUSC195A"
+       ]
+      ],
+      "constraints": [],
+      "courses": [],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "options",
+      "source": {
+       "heading": "Research Project (taken concurrently with MUSC 195A)",
        "prose": [
         "Choose one of the following courses. Cannot double count with modular or upper-division electives.",
-        "MUSC 200 cannot be double counted if taken to satisfy the Graduate-Level Research Requirement."
+        "MUSC 200 cannot be double counted if taken to satisfy the Graduate-Level Research Requirement.",
+        "Students that select the research option for their capstone must also enroll in MUSC 195A."
        ]
       }
      },
      {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "MUSC195A"
-      ],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "all_of",
-      "source": {
-       "heading": "Take concurrently with selected course above",
-       "prose": [
-        "Students that select the research option for their capstone must also enroll in:"
+      "branches": [
+       [
+        "MUSC120",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150A",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150B",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150C",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150D",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150I",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150J",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150K",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150N",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150P",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150R",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150S",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150T",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150X",
+        "MUSC196A"
+       ],
+       [
+        "MUSC150Z",
+        "MUSC196A"
+       ],
+       [
+        "MUSC199",
+        "MUSC196A"
+       ],
+       [
+        "MUSC203H",
+        "MUSC196A"
        ]
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "MUSC120",
-       "MUSC150A",
-       "MUSC150B",
-       "MUSC150C",
-       "MUSC150D",
-       "MUSC150I",
-       "MUSC150J",
-       "MUSC150K",
-       "MUSC150N",
-       "MUSC150P",
-       "MUSC150R",
-       "MUSC150S",
-       "MUSC150T",
-       "MUSC150X",
-       "MUSC150Z",
-       "MUSC199",
-       "MUSC203H"
       ],
+      "constraints": [],
+      "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "options",
       "source": {
-       "heading": "Creative Portfolio Project",
+       "heading": "Creative Portfolio Project (taken concurrently with MUSC 196A)",
        "prose": [
-        "Choose one of the following courses. This course cannot double count with modular electives, unless the course is repeatable for credit and is taken more than once."
-       ]
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "MUSC196A"
-      ],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "all_of",
-      "source": {
-       "heading": "Take concurrently with selected course above",
-       "prose": [
-        "Students that select the creative portfolio option for their capstone must also enroll in:"
+        "Choose one of the following courses. This course cannot double count with modular electives, unless the course is repeatable for credit and is taken more than once.",
+        "Students that select the creative portfolio option for their capstone must also enroll in MUSC 196A."
        ]
       }
      }
@@ -1139,16 +1342,44 @@
      },
      {
       "branches": null,
-      "constraints": [],
-      "courses": [
-       "MUSC121B",
-       "MUSC122",
-       "MUSC123B"
+      "constraints": [
+       {
+        "text": "One additional class from the MUSC 150 series or MUSC 101 series must be a class not already taken; or take one of MUSC 121B, MUSC 122, MUSC 123B.",
+        "type": "prose"
+       }
       ],
-      "n": null,
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "150",
+         "subject": "MUSC"
+        },
+        {
+         "prefix": "101",
+         "subject": "MUSC"
+        },
+        {
+         "prefix": "121B",
+         "subject": "MUSC"
+        },
+        {
+         "prefix": "122",
+         "subject": "MUSC"
+        },
+        {
+         "prefix": "123B",
+         "subject": "MUSC"
+        }
+       ]
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "range",
       "source": {
        "heading": "Final Upper-Division Elective",
        "prose": [
@@ -1181,10 +1412,12 @@
        "MUSC166",
        "MUSC168"
       ],
-      "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
+      "n": 6,
+      "needs_review": false,
+      "notes": [
+       "Six quarters of performing ensembles counted as six courses (repeatability approximation); a maximum of one ensemble per quarter counts toward the six-quarter requirement."
+      ],
+      "op": "n_of",
       "source": {
        "heading": "Performing Ensembles",
        "prose": [
@@ -1205,10 +1438,12 @@
        "MUSC162",
        "MUSC196B"
       ],
-      "n": null,
+      "n": 6,
       "needs_review": false,
-      "notes": [],
-      "op": "all_of",
+      "notes": [
+       "Six quarters of applied lessons counted as six courses (repeatability approximation); appropriate courses chosen with the applied instructor of the student's primary instrument."
+      ],
+      "op": "n_of",
       "source": {
        "heading": "Individual Applied Lessons",
        "prose": [
@@ -1263,14 +1498,32 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
-      "courses": [
-       "MUSC120"
+      "constraints": [
+       {
+        "text": "Either an additional MUSC 105-series course, not already taken, or MUSC 120.",
+        "type": "prose"
+       }
       ],
-      "n": null,
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "105",
+         "subject": "MUSC"
+        },
+        {
+         "prefix": "120",
+         "subject": "MUSC"
+        }
+       ]
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "range",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -1287,7 +1540,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/music-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/music-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/music-ba.md: CP history/culture elective list->one_of; CP/GM modular requirements added as category_count 3/3/6 needs_review; GM lectures/seminars unknown->n_of 3; GM comprehensive recoded as section_choice over paired research+MUSC195A / portfolio+MUSC196A options; WM final elective and comprehensive recoded as range n=1 including MUSC 150/101 and 105 series alternatives; WM performing ensembles unknown->n_of 6 and applied lessons all_of->n_of 6 (quarters-as-courses approximation).",
+  "status": "frontier-verified"
  }
 }

@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Economics/Mathematics Combined B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -587,10 +587,11 @@
        "ECON183",
        "ECON188"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Economics Electives",
        "prose": [
@@ -622,10 +623,10 @@
        "STAT131",
        "STAT132"
       ],
-      "n": null,
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Mathematics Electives",
        "prose": [
@@ -810,7 +811,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/economicsmathematics-combined-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/economicsmathematics-combined-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/economicsmathematics-combined-ba.md: Mathematics Electives list -> n_of n=3 over the 19-course pool (lecture/lab pairing rider remains as note).",
+  "status": "frontier-verified"
  }
 }

@@ -5,7 +5,7 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Technology and Information Management B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -787,10 +787,10 @@
        "TIM172Q",
        "TIM175"
       ],
-      "n": 2,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "all_of",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -812,7 +812,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/technology-and-information-management-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/technology-and-information-management-bs.md: comprehensive requirement corrected from n_of n=2 to all_of over TIM 172A/172B/172P/172Q/175",
+  "status": "frontier-verified"
  }
 }

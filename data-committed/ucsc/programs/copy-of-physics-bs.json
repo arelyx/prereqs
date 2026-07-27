@@ -5,11 +5,11 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Physics B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -61,12 +61,6 @@
      "The department awards \"honors\" (3.5-3.79 GPA or better) and \"highest honors\" (3.8 GPA or better) to top graduating students each year, based on PHYS and ASTR courses. The department also awards \"honors\" for outstanding work on the senior thesis, made upon the recommendation of the faculty thesis adviser."
     ],
     "title": "Honors"
-   },
-   {
-    "paragraphs": [
-     "One additional 5-credit physics course that has not been used to satisfy any other requirement for the major, chosen from PHYS 100 - PHYS 180 ."
-    ],
-    "title": "Electives"
    }
   ],
   "sections": [
@@ -139,11 +133,11 @@
        "MATH23B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "in addition to the requirements for students entering in the fall quarter. (This is true for years when winter admission is open.)"
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Students entering UC Santa Cruz in the winter quarter must complete",
        "prose": [
@@ -457,10 +451,27 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 180,
+         "lo": 100,
+         "subject": "PHYS"
+        },
+        {
+         "hi": 118,
+         "lo": 111,
+         "subject": "ASTR"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -714,6 +725,42 @@
    },
    {
     "concentration": "Quantum Information Science Concentration",
+    "kind": "electives",
+    "rules": [
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 180,
+         "lo": 100,
+         "subject": "PHYS"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [
+       "Must be a 5-credit physics course that has not been used to satisfy any other requirement for the major."
+      ],
+      "op": "range",
+      "source": {
+       "heading": "Electives",
+       "prose": [
+        "One additional 5-credit physics course that has not been used to satisfy any other requirement for the major, chosen from PHYS 100 - PHYS 180 ."
+       ]
+      }
+     }
+    ],
+    "title": "Electives"
+   },
+   {
+    "concentration": "Quantum Information Science Concentration",
     "kind": "dc",
     "rules": [
      {
@@ -730,58 +777,32 @@
         "Students of every major must satisfy the upper-division communication (DC) requirement. Students in the physics major satisfy the DC requirement by completing one of the following options:"
        ]
       }
-     }
-    ],
-    "title": "Disciplinary Communication (DC) Requirement"
-   },
-   {
-    "concentration": "Quantum Information Science Concentration",
-    "kind": "other",
-    "rules": [
+     },
      {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "PHYS182"
+      "branches": [
+       [
+        "PHYS182"
+       ],
+       [
+        "PHYS195A",
+        "PHYS195B"
+       ]
       ],
+      "constraints": [],
+      "courses": [],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "all_of",
+      "notes": [
+       "Students interested in doing a senior thesis should have found a faculty thesis advisor by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance."
+      ],
+      "op": "options",
       "source": {
        "heading": "Either this course:",
        "prose": []
       }
      }
     ],
-    "title": "Either this course:"
-   },
-   {
-    "concentration": "Quantum Information Science Concentration",
-    "kind": "other",
-    "rules": [
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "PHYS195A",
-       "PHYS195B"
-      ],
-      "n": null,
-      "needs_review": true,
-      "notes": [
-       "Students interested in doing a senior thesis should have found a faculty thesis advisor by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance."
-      ],
-      "op": "unknown",
-      "source": {
-       "heading": "Or these courses:",
-       "prose": [
-        "Students interested in doing a senior thesis should have found a faculty thesis advisor by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance."
-       ]
-      }
-     }
-    ],
-    "title": "Or these courses:"
+    "title": "Disciplinary Communication (DC) Requirement"
    },
    {
     "concentration": "Quantum Information Science Concentration",
@@ -813,7 +834,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/copy-of-physics-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/copy-of-physics-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/copy-of-physics-bs.md: added QIS Electives section (range n=1, PHYS 100-180, no-double-count as note) and removed the stray info_sections entry; winter-quarter transfer screening rule unknown -> all_of; QIS DC options rule moved into the kind:dc section and the 'Either this course:' other section dropped.",
+  "status": "frontier-verified"
  }
 }

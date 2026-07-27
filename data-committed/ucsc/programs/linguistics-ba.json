@@ -5,11 +5,11 @@
  "division": "humanities-division",
  "kind": "major",
  "name": "Linguistics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -303,11 +303,10 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "from_following_lists": true,
-      "n": 7,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "info",
       "source": {
        "heading": "Upper-Division Courses",
        "prose": [
@@ -326,7 +325,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "all_of",
       "source": {
        "heading": "Take the following courses:",
        "prose": []
@@ -342,7 +341,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Plus one of the following courses:",
        "prose": []
@@ -384,17 +383,16 @@
         "LING112",
         "LING171"
        ],
-       "exclude_ranges": [
-        {
-         "hi": 289,
-         "lo": 200,
-         "subject": "LING"
-        }
-       ],
+       "exclude_ranges": [],
        "include_ranges": [
         {
          "hi": 189,
          "lo": 102,
+         "subject": "LING"
+        },
+        {
+         "hi": 289,
+         "lo": 200,
          "subject": "LING"
         }
        ],
@@ -465,7 +463,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -518,8 +516,8 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": 3,
-      "needs_review": false,
+      "n": 1,
+      "needs_review": true,
       "notes": [],
       "op": "category_count",
       "source": {
@@ -538,7 +536,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/linguistics-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/linguistics-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/linguistics-ba.md: Comprehensive Requirement parent recoded info->section_choice over the three options; Option 3 graduate-level course count corrected to n=1 with needs_review for the unenumerated category.",
+  "status": "frontier-verified"
  }
 }

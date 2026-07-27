@@ -5,11 +5,11 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Marine Biology B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -734,10 +734,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 179,
+         "lo": 100,
+         "subject": "BIOE"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Biological Sciences-EEB",
        "prose": [
@@ -902,7 +914,12 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Any 5 credits of undergraduate research (these courses are variable-credit/repeatable; a total of 5 credits satisfies this option).",
+        "type": "prose"
+       }
+      ],
       "courses": [
        "BIOE183W",
        "BIOE183L",
@@ -910,10 +927,10 @@
        "BIOE193F",
        "BIOE195"
       ],
-      "n": 5,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "one_of",
       "source": {
        "heading": "Biological Sciences-EEB",
        "prose": [
@@ -1063,9 +1080,9 @@
        "BIOE183W"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Comprehensive courses offered by Ecology and Evolutionary Biology",
        "prose": [
@@ -1081,9 +1098,9 @@
        "CRSN152"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Comprehensive courses offered in other departments",
        "prose": []
@@ -1098,7 +1115,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/ecology-and-evolutionary-biology/marine-biology-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/marine-biology-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/marine-biology-bs.md: undergraduate-research general-elective option n_of n=5 -> one_of with the 5-credit condition as a constraint; both Comprehensive course pools unknown -> one_of under the section_choice parent; Psychology general-elective subrule info -> list so PSYC 123 joins the n_of(3) pool.",
+  "status": "frontier-verified"
  }
 }

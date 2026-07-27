@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Earth Sciences/Anthropology Combined Major B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -131,6 +131,7 @@
      {
       "branches": [
        [
+        "EART5",
         "EART5L"
        ],
        [
@@ -143,9 +144,7 @@
        ]
       ],
       "constraints": [],
-      "courses": [
-       "EART5"
-      ],
+      "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [],
@@ -156,18 +155,13 @@
       }
      },
      {
-      "branches": [
-       [
-        "CHEM3C"
-       ],
-       [
-        "CHEM4A",
-        "CHEM4AL",
-        "CHEM4B",
-        "CHEM4BL"
-       ]
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both.",
+        "type": "prose"
+       }
       ],
-      "constraints": [],
       "courses": [
        "BIOL20A",
        "BIOE20B",
@@ -177,12 +171,17 @@
        "PHYS6B",
        "PHYS6M",
        "CHEM3A",
-       "CHEM3B"
+       "CHEM3B",
+       "CHEM3C",
+       "CHEM4A",
+       "CHEM4AL",
+       "CHEM4B",
+       "CHEM4BL"
       ],
-      "n": null,
+      "n": 5,
       "needs_review": false,
       "notes": [],
-      "op": "options",
+      "op": "n_of",
       "source": {
        "heading": "Five lower-division science courses (plus laboratories) chosen from the following:",
        "prose": [
@@ -415,6 +414,7 @@
      {
       "branches": [
        [
+        "MATH11A",
         "MATH11B"
        ],
        [
@@ -423,9 +423,7 @@
        ]
       ],
       "constraints": [],
-      "courses": [
-       "MATH11A"
-      ],
+      "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [],
@@ -436,20 +434,14 @@
       }
      },
      {
-      "branches": [
-       [
-        "CHEM3C"
-       ],
-       [
-        "CHEM4A",
-        "CHEM4AL",
-        "CHEM4B",
-        "CHEM4BL"
-       ]
-      ],
+      "branches": null,
       "constraints": [
        {
         "text": "Students choose five courses from the following list. Where the lab course follows a lecture course, the lab must be taken. The pair of courses counts as a single course.",
+        "type": "prose"
+       },
+       {
+        "text": "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both.",
         "type": "prose"
        }
       ],
@@ -462,14 +454,19 @@
        "PHYS6B",
        "PHYS6M",
        "CHEM3A",
-       "CHEM3B"
+       "CHEM3B",
+       "CHEM3C",
+       "CHEM4A",
+       "CHEM4AL",
+       "CHEM4B",
+       "CHEM4BL"
       ],
-      "n": null,
+      "n": 5,
       "needs_review": false,
       "notes": [
        "Students may count courses either from the CHEM 3 series or the CHEM 4 series, but they may not count both. CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL ."
       ],
-      "op": "options",
+      "op": "n_of",
       "source": {
        "heading": "Plus five lower-division science courses",
        "prose": [
@@ -560,12 +557,17 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Four 5-credit or more upper-division archeology, biological/medical/environmental anthropology, or laboratory methods courses. Students should consult the Anthropology Department’s course list, and reference courses listed under the Archeology, Biological/Medical/Environmental Anthropology, and Laboratory Methods courses heading.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 4,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Anthropology Electives",
        "prose": [
@@ -587,7 +589,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",
        "prose": [
@@ -597,31 +599,64 @@
      },
      {
       "branches": [
-       [],
        [
-        "ANTH194C",
-        "ANTH194H",
-        "ANTH194L",
-        "ANTH194U",
-        "ANTH194V",
-        "ANTH194Y",
-        "ANTH196L",
-        "ANTH196T",
-        "ANTH196U",
-        "ANTH196W"
+        "EART189A",
+        "EART189B"
+       ],
+       [
+        "EART191"
+       ],
+       [
+        "EART191C"
+       ],
+       [
+        "EART191D"
+       ],
+       [
+        "EART195"
        ]
       ],
       "constraints": [],
       "courses": [],
       "n": null,
       "needs_review": false,
-      "notes": [
-       "[unstructured alternative] or one of these courses"
-      ],
+      "notes": [],
       "op": "options",
       "source": {
        "heading": "One of the following options:",
        "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Courses may simultaneously satisfy both the DC requirement and the upper-division Earth sciences or anthropology elective requirement.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ANTH194C",
+       "ANTH194H",
+       "ANTH194L",
+       "ANTH194U",
+       "ANTH194V",
+       "ANTH194Y",
+       "ANTH196L",
+       "ANTH196T",
+       "ANTH196U",
+       "ANTH196W"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "one_of",
+      "source": {
+       "heading": "Or one course from this list:",
+       "prose": [
+        "Students may complete one Anthropology 194 or 196 series senior seminar in physical anthropology or archaeology, listed below.",
+        "Courses may simultaneously satisfy both the DC requirement and the upper-division Earth sciences or anthropology elective requirement."
+       ]
       }
      }
     ],
@@ -632,7 +667,54 @@
     "kind": "comprehensive",
     "rules": [
      {
-      "branches": null,
+      "branches": [
+       [
+        "ANTH194C"
+       ],
+       [
+        "ANTH194H"
+       ],
+       [
+        "ANTH194L"
+       ],
+       [
+        "ANTH194U"
+       ],
+       [
+        "ANTH194V"
+       ],
+       [
+        "ANTH194Y"
+       ],
+       [
+        "ANTH196L"
+       ],
+       [
+        "ANTH196T"
+       ],
+       [
+        "ANTH196U"
+       ],
+       [
+        "ANTH196W"
+       ],
+       [
+        "EART189A",
+        "EART189B"
+       ],
+       [
+        "EART191"
+       ],
+       [
+        "EART191D"
+       ],
+       [
+        "EART195"
+       ],
+       [
+        "EART198"
+       ]
+      ],
       "constraints": [
        {
         "text": "Option 4: Satisfactory completion of a senior thesis ( EART 195 ) with faculty readers from both departments, which must include a significant element of independent research or original work and can only be undertaken after agreement is obtained from faculty members to supervise it (at least three quarters in advance of completion).",
@@ -646,8 +728,10 @@
       "courses": [],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Option 1 seminars are the Anthropology 194/196 series senior seminars listed in the DC section. Courses used to satisfy the senior comprehensive requirement cannot also be used to fulfill the upper-division elective requirement."
+      ],
+      "op": "options",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -672,7 +756,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciencesanthropology-combined-major-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/earth-sciencesanthropology-combined-major-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/earth-sciencesanthropology-combined-major-ba.md: DC restructured as section_choice with EART options branches restored and ANTH seminar one_of; five-lower-division-science rules (requirements and screening) options->n_of n=5 over full pool with CHEM 3/4 rider; MATH and screening EART options branches repartitioned per markers; Anthropology Electives info->category_count n=4 needs_review; Comprehensive info->options over the five enumerable option branches.",
+  "status": "frontier-verified"
  }
 }

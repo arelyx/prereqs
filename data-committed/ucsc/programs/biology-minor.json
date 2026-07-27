@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -96,10 +96,27 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 181,
+         "lo": 100,
+         "subject": "BIOE"
+        },
+        {
+         "hi": 181,
+         "lo": 100,
+         "subject": "BIOL"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Upper-Division Elective",
        "prose": [
@@ -116,7 +133,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/biology-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/biology-minor.md",
-  "status": "failed-verification"
+  "notes": "Checked all four rules against the rendered page: lower-division all_of blocks (BIOL 20A/BIOE 20B/CHEM 8A/8B; CHEM 3A/3B/3C), upper-division all_of (BIOL 100/105, BIOE 107/109), and the Upper-Division Elective as a range rule with n=1 over BIOE 100-181 and BIOL 100-181 matching the prose. The 'five credits or more' rider is carried in the rule's source prose (in-scope approximation); prior report's info-op issue is fixed.",
+  "status": "frontier-verified"
  }
 }

@@ -5,7 +5,7 @@
  "division": "baskin-engineering",
  "kind": "minor",
  "name": "Computer Science Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -202,12 +202,33 @@
       ],
       "courses": [
        "AM148",
-       "AM160"
+       "AM160",
+       "CSE195"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "CSE"
+        },
+        {
+         "hi": 279,
+         "lo": 201,
+         "subject": "CSE"
+        }
+       ],
+       "include_series": []
+      },
       "n": 2,
       "needs_review": false,
-      "notes": [],
-      "op": "n_of",
+      "notes": [
+       "Any 5-credit or more upper-division CSE course with a number between 100 and 189 or CSE 195.",
+       "Any 5-credit or more CSE course with a number between 201 and 279. Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office. Courses with numbers 280-289 are not eligible. Undergraduate students require permission from the instructor to enroll in graduate courses."
+      ],
+      "op": "range",
       "source": {
        "heading": "Plus two additional upper-division courses",
        "prose": [
@@ -224,7 +245,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-minor",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/computer-science-minor.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/computer-science-minor.md: 'Plus two additional upper-division courses' re-encoded as range (n=2) over CSE 100-189 and CSE 201-279 plus explicit CSE 195/AM 148/AM 160, with credit/eligibility riders as notes.",
+  "status": "frontier-verified"
  }
 }

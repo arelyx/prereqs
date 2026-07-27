@@ -5,7 +5,7 @@
  "division": "arts-division",
  "kind": "major",
  "name": "History of Art and Visual Culture B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -155,12 +155,56 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Each of the four courses must be from a different geographic region.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 19,
+         "lo": 10,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 29,
+         "lo": 20,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 49,
+         "lo": 30,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 59,
+         "lo": 50,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 69,
+         "lo": 60,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 79,
+         "lo": 70,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "HAVC 80 may be used to fulfill a lower-division requirement for one of the following geographic regions: 10s (Africa), 60s (Native Americas), or 70s (Oceania)."
+      ],
+      "op": "range",
       "source": {
        "heading": "Lower-Division Courses",
        "prose": [
@@ -241,10 +285,24 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 191,
+         "lo": 190,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "The senior exit seminar can be taken any quarter in which a student is in senior standing. Seminars can be taken for senior exit credit only by permission of the instructor."
+      ],
+      "op": "range",
       "source": {
        "heading": "Plus one senior exit seminar:",
        "prose": [
@@ -338,12 +396,56 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Each of the four courses must be from a different geographic region.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 19,
+         "lo": 10,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 29,
+         "lo": 20,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 49,
+         "lo": 30,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 59,
+         "lo": 50,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 69,
+         "lo": 60,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 79,
+         "lo": 70,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 4,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "HAVC 80 may be used to fulfill a lower-division requirement for one of the following geographic regions: 10s (Africa), 60s (Native Americas), or 70s (Oceania)."
+      ],
+      "op": "range",
       "source": {
        "heading": "Lower-Division Courses",
        "prose": [
@@ -424,10 +526,24 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 191,
+         "lo": 190,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "The senior exit seminar can be taken any quarter in which a student is in senior standing. Seminars can be taken for senior exit credit only by permission of the instructor."
+      ],
+      "op": "range",
       "source": {
        "heading": "Plus one senior exit seminar:",
        "prose": [
@@ -444,7 +560,12 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "No more than one of the four courses can be lower-division and at least two of the four courses must be HAVC-sponsored courses.",
+        "type": "prose"
+       }
+      ],
       "courses": [
        "HAVC40",
        "HAVC141L",
@@ -465,12 +586,12 @@
        "HIS104D",
        "VAST188J"
       ],
-      "n": null,
-      "needs_review": true,
+      "n": 4,
+      "needs_review": false,
       "notes": [
        "Students may petition for HAVC 199 or HIS 199 to count for a concentration course under certain circumstances. Students should consult the HAVC undergraduate advisor prior to enrolling."
       ],
-      "op": "unknown",
+      "op": "n_of",
       "source": {
        "heading": "Approved Concentration Courses List",
        "prose": [
@@ -533,7 +654,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/history-of-art-and-visual-culture/history-of-art-and-visual-culture-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/history-of-art-and-visual-culture-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/history-of-art-and-visual-culture-ba.md: lower-division four-region requirement and senior exit seminar encoded as range rules (both variants); approved concentration list as n_of n=4 with riders as constraints",
+  "status": "frontier-verified"
  }
 }

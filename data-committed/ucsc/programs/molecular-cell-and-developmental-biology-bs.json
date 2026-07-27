@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -143,11 +143,11 @@
        "BIOE20B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "BIOL 20L is not required for students who have completed BIOL 20A and BIOE 20B at California community colleges."
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Plus these courses",
        "prose": [
@@ -346,10 +346,10 @@
        "BIOL20L",
        "BIOE20B"
       ],
-      "n": 2,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "all_of",
       "source": {
        "heading": "Plus these courses",
        "prose": [
@@ -829,7 +829,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/molecular-cell-and-developmental-biology-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/molecular-cell-and-developmental-biology-bs.md",
-  "status": "failed-verification"
+  "notes": "Verified all requirement sections (lower-div, upper-div, electives, DC, comprehensive, qualification/screening) rule-by-rule against the rendered snapshot; membership, operators, and counts all match. Previous-run failures (n_of 2 in Major Qualification, unknown op in transfer screening) are fixed to all_of. Recommended-prior-to-transfer sub-rules within the segregated qualification section carry mixed op styles under an advisory info parent — in-scope approximation.",
+  "status": "frontier-verified"
  }
 }

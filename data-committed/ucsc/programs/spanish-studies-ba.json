@@ -5,11 +5,11 @@
  "division": "humanities-division",
  "kind": "major",
  "name": "Spanish Studies B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -338,7 +338,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Choice of Concentrations",
        "prose": [
@@ -369,6 +369,24 @@
        "SPAN157",
        "SPAN158"
       ],
+      "filter": {
+       "exclude_codes": [
+        "LIT189C",
+        "SPAN105",
+        "SPAN114",
+        "SPAN150",
+        "SPHS115"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "SPAN"
+        }
+       ],
+       "include_series": []
+      },
       "n": 3,
       "needs_review": false,
       "notes": [
@@ -409,6 +427,23 @@
        "LIT189V",
        "LIT189X"
       ],
+      "filter": {
+       "exclude_codes": [
+        "LIT189A",
+        "LIT189B",
+        "LIT189C",
+        "SPAN105"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 188,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
       "n": 3,
       "needs_review": false,
       "notes": [],
@@ -472,7 +507,6 @@
        "SOCY156",
        "SOCY177A"
       ],
-      "from_following_lists": true,
       "n": 1,
       "needs_review": false,
       "notes": [],
@@ -522,13 +556,17 @@
        {
         "text": "The senior comprehensive requirement is satisfied by completing one capstone course in the student's concentration listed below. The course must be taken senior year after completion of at least three of the four core courses. Courses used for the capstone requirement cannot be used for the elective or concentration requirements.",
         "type": "prose"
+       },
+       {
+        "text": "One capstone course in the student’s concentration; must be taken senior year after completion of at least three of the four core courses. Courses used for the capstone requirement cannot be used for the elective or concentration requirements.",
+        "type": "prose"
        }
       ],
       "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -549,9 +587,9 @@
        "SPAN158"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Languages and Linguistics Capstone Courses",
        "prose": []
@@ -581,7 +619,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/spanish-studies-ba",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/spanish-studies-ba.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/spanish-studies-ba.md: Choice of Concentrations head recast info->section_choice over the two n_of-3 concentration subrules; Comprehensive head recast info->section_choice with L&L capstone unknown->one_of (7 SPAN courses) and L&C all_of LIT 190X as its branch; no-double-count rider carried as constraint prose. Also removed a spurious from_following_lists flag on the Electives n_of-1 rule (pool is materialized on the rule; concentration-list option remains prose).",
+  "status": "frontier-verified"
  }
 }

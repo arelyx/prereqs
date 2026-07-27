@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Physics (Astrophysics) B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -134,11 +134,11 @@
        "MATH23B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "In addition to the requirements for students entering in the fall quarter. (This is true for years when winter admission is open.)"
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Students entering UC Santa Cruz in the winter quarter must complete",
        "prose": [
@@ -448,53 +448,88 @@
       }
      },
      {
-      "branches": [
-       [
-        "PHYS135"
-       ],
-       [
-        "PHYS135A",
-        "PHYS135B"
-       ],
-       [
-        "ASTR136"
-       ],
-       [
-        "ASTR136A"
-       ],
-       [
-        "ASTR136B"
-       ],
-       [
-        "ASTR136C"
-       ],
-       [
-        "ASTR136D"
-       ],
-       [
-        "ASTR136E"
-       ],
-       [
-        "ASTR136G"
-       ],
-       [
-        "ASTR136H"
-       ]
-      ],
+      "branches": null,
       "constraints": [],
       "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [
-       "[unstructured alternative] or any three of these courses",
+       "The fourth option requires any three of ASTR 136A-H.",
        "Capacity in the lab courses is limited, and they should be taken as early as possible. PHYS 135A and PHYS 135B are not scheduled to be offered in the next few years."
       ],
-      "op": "options",
+      "op": "section_choice",
       "source": {
        "heading": "Plus one of the following options:",
        "prose": [
         "Capacity in the lab courses is limited, and they should be taken as early as possible. PHYS 135A and PHYS 135B are not scheduled to be offered in the next few years."
        ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS135"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option: PHYS 135 / ASTR 135",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS135A",
+       "PHYS135B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option: PHYS 135A + PHYS 135B",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR136"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option: ASTR 136",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR136A",
+       "ASTR136B",
+       "ASTR136C",
+       "ASTR136D",
+       "ASTR136E",
+       "ASTR136G",
+       "ASTR136H"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Option: any three of ASTR 136A-H",
+       "prose": []
       }
      }
     ],
@@ -577,52 +612,87 @@
     "kind": "comprehensive",
     "rules": [
      {
-      "branches": [
-       [
-        "PHYS135"
-       ],
-       [
-        "PHYS135A",
-        "PHYS135B"
-       ],
-       [
-        "ASTR136"
-       ],
-       [
-        "ASTR136A"
-       ],
-       [
-        "ASTR136B"
-       ],
-       [
-        "ASTR136C"
-       ],
-       [
-        "ASTR136D"
-       ],
-       [
-        "ASTR136E"
-       ],
-       [
-        "ASTR136G"
-       ],
-       [
-        "ASTR136H"
-       ]
-      ],
+      "branches": null,
       "constraints": [],
       "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [
-       "[unstructured alternative] or any three of these courses"
+       "The fourth option requires any three of ASTR 136A-H."
       ],
-      "op": "options",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
         "The comprehensive requirement is satisfied by completing one of the following options:"
        ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS135"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option: PHYS 135 / ASTR 135",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "PHYS135A",
+       "PHYS135B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option: PHYS 135A + PHYS 135B",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR136"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Option: ASTR 136",
+       "prose": []
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "ASTR136A",
+       "ASTR136B",
+       "ASTR136C",
+       "ASTR136D",
+       "ASTR136E",
+       "ASTR136G",
+       "ASTR136H"
+      ],
+      "n": 3,
+      "needs_review": false,
+      "notes": [],
+      "op": "n_of",
+      "source": {
+       "heading": "Option: any three of ASTR 136A-H",
+       "prose": []
       }
      }
     ],
@@ -634,7 +704,7 @@
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/physics-astrophysics-bs",
  "verification": {
   "date": "2026-07-26",
-  "notes": "see _reports/physics-astrophysics-bs.md",
-  "status": "failed-verification"
+  "notes": "hand-corrected per _reports/physics-astrophysics-bs.md: upper-div lab options and Comprehensive flattened 'any three of ASTR 136A-H' rebuilt as section_choice (all_of PHYS135; all_of PHYS135A+135B; all_of ASTR136; n_of n=3 over ASTR136A-H); also fixed winter-entry transfer-screening unknown->all_of (PHYS 5D + MATH 23B).",
+  "status": "frontier-verified"
  }
 }
