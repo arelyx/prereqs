@@ -54,6 +54,7 @@ def _course_summary(c: Course) -> dict:
         "division": c.division,
         "ge_codes": c.ge_codes or [],
         "subject": c.subject,
+        "dormant": c.dormant,
     }
 
 
@@ -66,6 +67,18 @@ def subjects(university_id: str, db: Session = Depends(get_db)) -> list[dict]:
         .order_by(Course.subject)
     ).all()
     return [{"subject": s, "courses": n} for s, n in rows]
+
+
+@router.get("/u/{university_id}/dormant")
+def dormant_codes(university_id: str, db: Session = Depends(get_db)) -> dict:
+    """Codes of catalog courses with zero offerings in the data window —
+    listed but effectively not running. One cheap fetch for UI-wide tinting."""
+    codes = db.scalars(
+        select(Course.code).where(
+            Course.university_id == university_id, Course.dormant.is_(True)
+        )
+    ).all()
+    return {"codes": sorted(codes)}
 
 
 @router.get("/u/{university_id}/courses")
@@ -162,6 +175,7 @@ def course_detail(university_id: str, code: str, db: Session = Depends(get_db)) 
     ).all()
     return {
         **_course_summary(c),
+        "url": c.url,
         "description": c.description,
         "quarters_offered_text": c.quarters_offered_text,
         "catalog_instructor": c.catalog_instructor,

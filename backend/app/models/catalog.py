@@ -78,6 +78,10 @@ class Course(Base):
     raw_requirements: Mapped[str | None] = mapped_column(Text)
     prereq_groups: Mapped[list | None] = mapped_column(JSONVariant)  # [[OR..], [OR..]] ANDed
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    # In the catalog but zero offerings (historical or planned) in our data
+    # window — listed courses that effectively don't run. Set during
+    # availability derivation.
+    dormant: Mapped[bool] = mapped_column(Boolean, default=False)
 
     prereq_edges: Mapped[list["CoursePrereqEdge"]] = relationship(
         back_populates="course",

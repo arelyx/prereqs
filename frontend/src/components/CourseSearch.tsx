@@ -61,8 +61,15 @@ export default function CourseSearch({ placeholder, onSelect, autoFocus }: Props
                   setOpen(false)
                 }}
               >
-                <span className="font-semibold whitespace-nowrap">{c.display_code}</span>
+                <span className={`font-semibold whitespace-nowrap ${c.dormant ? 'text-red-600' : ''}`}>
+                  {c.display_code}
+                </span>
                 <span className="text-slate-600">{c.title}</span>
+                {c.dormant && (
+                  <span className="rounded bg-red-100 px-1 text-[10px] font-medium text-red-700">
+                    not offered in 5+ years
+                  </span>
+                )}
                 {c.ge_codes.map((g) => (
                   <span key={g} className="rounded bg-emerald-100 px-1 text-[10px] text-emerald-700">
                     {g}

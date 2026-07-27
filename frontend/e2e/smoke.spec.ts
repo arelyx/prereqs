@@ -67,6 +67,8 @@ test('course search opens drawer with prereqs, availability, graph', async ({ pa
   await page.getByRole('button', { name: /CSE 101 Introduction to Data Structures/ }).click()
 
   await expect(page.getByRole('heading', { name: /CSE 101/ })).toBeVisible()
+  const official = page.getByRole('link', { name: /official catalog page/ })
+  await expect(official).toHaveAttribute('href', /catalog\.ucsc\.edu.*cse-101/)
   await expect(page.getByText('Prerequisite structure')).toBeVisible()
   // Boolean structure renders AND separators for CSE 101's multi-group prereqs
   await expect(page.getByText('AND').first()).toBeVisible()
@@ -128,9 +130,28 @@ test('program: requirements in main fold, general info in sidebar', async ({ pag
   await expect(page.getByText('⚠ verify manually').first()).toBeVisible()
   await header.click()
   await expect(page.getByText('Lower-Division')).toHaveCount(0)
-  // Sidebar: general info card with catalog link + info sections.
+
+  // Sections collapse too, and the arrangement survives a reload
+  // (persisted in localStorage, not reset per visit).
+  await header.click()
+  const sectionToggle = page.getByRole('button', { name: /Lower-Division/ }).first()
+  const allOf = page.getByText(/All of \d+/)
+  await expect(allOf.first()).toBeVisible() // sections expanded by default
+  const expandedCount = await allOf.count()
+  await sectionToggle.click()
+  await expect(allOf).toHaveCount(expandedCount - 1)
+  await page.reload()
+  await expect(page.getByRole('button', { name: /Lower-Division/ }).first()).toBeVisible() // program stayed open
+  await expect(allOf).toHaveCount(expandedCount - 1) // section stayed collapsed
+  await page.getByRole('button', { name: /Lower-Division/ }).first().click()
+  await expect(allOf).toHaveCount(expandedCount)
+
+  // Sidebar: general info card with catalog link + info sections (all
+  // collapsed by default).
   await expect(page.getByRole('link', { name: 'official page' })).toBeVisible()
-  await expect(page.getByText(/Introduction|Learning Outcomes/).first()).toBeVisible()
+  const infoTab = page.getByText(/Introduction|Learning Outcomes/).first()
+  await expect(infoTab).toBeVisible()
+  await expect(page.locator('details[open]')).toHaveCount(0)
 
   // Full-catalog verification (2026-07-26): every program is verified, so
   // no warning badges anywhere and every option carries the checkmark.
@@ -165,4 +186,21 @@ test('auth lifecycle: register imports plan, sign out, sign in, delete', async (
   page.on('dialog', (d) => d.accept())
   await page.getByRole('button', { name: 'delete account' }).click()
   await expect(page.getByRole('button', { name: 'Sign in to save your plan' })).toBeVisible()
+})
+
+test('dormant courses are flagged red in search, planner, and drawer', async ({ page }) => {
+  // CSE 129A: in the catalog but zero offerings in the data window.
+  await page.getByPlaceholder('Add course…').first().fill('CSE 129A')
+  const result = page.getByRole('button', { name: /CSE 129A Capstone/ }).first()
+  await expect(result.getByText('not offered in 5+ years')).toBeVisible()
+  await result.click()
+
+  // Planner card: red validation error from the backend dormant check.
+  await expect(
+    page.getByText(/CSE 129A has not been offered in the last five years/),
+  ).toBeVisible()
+
+  // Drawer: red warning banner.
+  await page.getByRole('button', { name: 'CSE 129A', exact: true }).click()
+  await expect(page.getByText(/listed in the catalog but likely unavailable/)).toBeVisible()
 })
