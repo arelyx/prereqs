@@ -102,6 +102,7 @@ export interface RuleProgress {
   done?: number | null
   satisfied: boolean | null
   unevaluated?: boolean
+  manual?: boolean
   best_branch_progress?: number
   source?: { heading?: string; prose?: string[] }
   notes: string[]

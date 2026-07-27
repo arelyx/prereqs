@@ -116,12 +116,18 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
 
 test('program: requirements in main fold, general info in sidebar', async ({ page }) => {
   await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
-  // Main fold: requirement progress block with met counter, sections expanded.
-  await expect(
-    page.getByRole('heading', { name: 'Computer Science B.S.', exact: true }),
-  ).toBeVisible()
-  await expect(page.getByText(/\d+\/\d+ requirements met/)).toBeVisible()
+  // Main fold: collapsed program block; no aggregate met-counter anywhere
+  // (the app mirrors the page, it does not audit degrees).
+  const header = page.getByRole('button', { name: /Computer Science B\.S\./ })
+  await expect(header).toBeVisible()
+  await expect(page.getByText(/requirements met/)).toHaveCount(0)
+  await expect(page.getByText('Lower-Division')).toHaveCount(0) // collapsed
+  await header.click()
   await expect(page.getByText('Lower-Division').first()).toBeVisible()
+  // Elective/range rules are gray manual-verification items.
+  await expect(page.getByText('⚠ verify manually').first()).toBeVisible()
+  await header.click()
+  await expect(page.getByText('Lower-Division')).toHaveCount(0)
   // Sidebar: general info card with catalog link + info sections.
   await expect(page.getByRole('link', { name: 'official page' })).toBeVisible()
   await expect(page.getByText(/Introduction|Learning Outcomes/).first()).toBeVisible()
