@@ -37,6 +37,7 @@ ALL_OF_RE = re.compile(
     # 'take three quarters of ANY of the following courses' / 'choose TWO of
     # the following courses' before the count cascade can read them.
     r"all of the following|take the following|^the following courses?\b|both of these"
+    r"|^and these courses|^plus these\b|^and both\b"
     r"|plus the following|complete the following|following course is required"
     r"|all of these|^these courses|core requirements",
     # NB: 'satisfied by ...' is deliberately NOT all_of vocabulary — it is
@@ -46,6 +47,7 @@ ALL_OF_RE = re.compile(
 )
 ONE_OF_RE = re.compile(
     r"\bone of the following|choose one\b|one of these"
+    r"|(?:^|\band )either of the following"  # 'Either of the following' pairs = pick one
     r"|an? additional course from the following",  # CS BS DC phrasing
     re.IGNORECASE,
 )
@@ -101,10 +103,18 @@ EXCLUDE_POST_RE = re.compile(r"may not|not be used|do(?:es)? not count", re.IGNO
 STRICT_CODE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3}[A-Z]{0,2})\b")
 
 
+BETWEEN_RE = re.compile(
+    r"([A-Z]{2,5})\s+courses?\s+with a number between\s+(\d{1,3})\s+and\s+(\d{1,3})"
+)
+
+
 def _collect(segment: str, out: dict, exclude: bool) -> None:
     spans = [
         {"subject": m.group(1), "lo": int(m.group(2)), "hi": int(m.group(3))}
         for m in RANGE_SPAN_RE.finditer(segment)
+    ] + [
+        {"subject": m.group(1), "lo": int(m.group(2)), "hi": int(m.group(3))}
+        for m in BETWEEN_RE.finditer(segment)
     ]
     if exclude:
         out["exclude_ranges"].extend(spans)
@@ -140,7 +150,17 @@ def extract_course_filter(text: str) -> dict:
         pre = EXCLUDE_PRE_RE.search(sentence)
         if pre:
             _collect(sentence[: pre.start()], out, exclude=False)
-            _collect(sentence[pre.end():], out, exclude=True)
+            rest = sentence[pre.end():]
+            # A parenthesized exclusion scopes only to its parenthetical:
+            # 'chosen from EART 100-199 (excluding EART 196B) or OCEA
+            # 100-199' resumes INCLUDES after the close paren.
+            open_paren = sentence.rfind("(", 0, pre.start())
+            close = rest.find(")") if open_paren != -1 else -1
+            if close != -1:
+                _collect(rest[:close], out, exclude=True)
+                _collect(rest[close + 1:], out, exclude=False)
+            else:
+                _collect(rest, out, exclude=True)
         elif EXCLUDE_POST_RE.search(sentence):
             _collect(sentence, out, exclude=True)
         else:
@@ -155,14 +175,17 @@ _NUM = r"(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d{1,2}
 # for the DC courses') whose numbers must never be read as counts.
 COUNT_FROM_RE = re.compile(
     rf"\b{_NUM}\s+(?:\w+\s+)?(?:additional\s+)?(?:courses?|electives?)\b"
-    rf"|(?:complete|choose|take)\s+{_NUM}\b",
+    rf"|(?:complete|choose|take)\s+(?:at least\s+)?{_NUM}\b"
+    rf"|at least\s+{_NUM}\b"
+    rf"|{_NUM}\s+(?:or more\s+)?from the following",
     re.IGNORECASE,
 )
 FROM_LISTS_GATE_RE = re.compile(
-    r"from (?:the|either)\b[^.]{0,60}\blists?\b|chosen from|are required|must be completed",
+    r"from (?:the|either)\b[^.]{0,60}\blists?\b|chosen from|are required|must be completed"
+    r"|from the following|of the following",
     re.IGNORECASE,
 )
-RANGE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3})\s?[-–]\s?(\d{1,3})\b")
+RANGE_RE = re.compile(r"\b([A-Z]{2,5})\s?(\d{1,3})[A-Z]?\s?[-–]\s?(?:[A-Z]{2,5}\s?)?(\d{1,3})\b")
 
 SECTION_KIND_RE = [
     (re.compile(r"disciplinary communication|\bDC\b", re.IGNORECASE), "dc"),
@@ -186,6 +209,13 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
     """
     heading = rule.heading
     text = heading + " " + " ".join(rule.prose[:2])
+    first_sentence = rule.prose[0].split(".")[0] if rule.prose else ""
+    if DO_NOT_RE.search(heading) or DO_NOT_RE.search(first_sentence):
+        # Exclusion blocks ('these DO NOT satisfy...') outrank all other
+        # vocabulary — they must never read as requirements. Scoped to the
+        # heading/first sentence so exclusion RIDERS inside membership prose
+        # (Film electives) don't demote the whole rule.
+        return ("info", None)
     if rule.branches:
         return ("options", None)
 
@@ -248,6 +278,7 @@ def classify_heading(rule: RawRule) -> tuple[str, int | None] | None:
 
 
 RECOMMENDED_RE = re.compile(r"recommend|suggested|preparation|optional", re.IGNORECASE)
+DO_NOT_RE = re.compile(r"do not (?:satisfy|count)|cannot be (?:used|counted)|may not be used", re.IGNORECASE)
 
 
 def default_for_section(rule: RawRule, section_kind: str) -> tuple[str, int | None] | None:
@@ -352,7 +383,7 @@ def interpret_rule(
     # when a countable rule has no explicit course table but its prose carries
     # range spans.
     if (
-        RANGE_RE.search(text)
+        (RANGE_RE.search(text) or BETWEEN_RE.search(text))
         and not rule.courses
         and node["op"] in ("range", "category_count", "unknown", None)
     ):
@@ -365,6 +396,29 @@ def interpret_rule(
                 n_m = N_OF_RE.search(rule.heading) or N_OF_RE.search(text)
                 if n_m:
                     node["n"] = _n_of_count(n_m)
+                elif rule.prose:
+                    lead = re.match(
+                        r"\s*(one|two|three|four|five|six|seven|eight|nine|ten|\d{1,2})\b",
+                        rule.prose[0], re.IGNORECASE,
+                    )
+                    if lead:
+                        w = lead.group(1).lower()
+                        node["n"] = WORD_NUMBERS.get(w) or (int(w) if w.isdigit() else None)
+
+    if (
+        rule.courses
+        and node.get("filter") is None
+        and node["op"] in ("n_of", "list", "one_of", "all_of", "unknown")
+        and (RANGE_RE.search(" ".join(rule.prose)) or BETWEEN_RE.search(" ".join(rule.prose)))
+        and re.search(r"\bany\b|chosen from|numbered", " ".join(rule.prose), re.IGNORECASE)
+    ):
+        hybrid = extract_course_filter(" ".join(rule.prose))
+        if hybrid["include_ranges"] or hybrid["include_series"]:
+            # Union membership: explicit table PLUS prose ranges (CS BS
+            # electives). Op unchanged; the planner unions both.
+            node["filter"] = hybrid
+            if node["op"] == "unknown":
+                node["op"], node["needs_review"] = "list", False
 
     # Constraint riders stay verbatim (auditable; machine-evaluation later).
     for prose in rule.prose:
@@ -429,7 +483,7 @@ def build_program(
                 m = COUNT_FROM_RE.search(prose_text)
                 if not m or not FROM_LISTS_GATE_RE.search(prose_text):
                     continue
-                word = (m.group(1) or m.group(2)).lower()
+                word = next((g for g in m.groups() if g), "").lower()
                 n = WORD_NUMBERS.get(word) or (int(word) if word.isdigit() else None)
                 if not n:
                     continue
@@ -438,9 +492,18 @@ def build_program(
                 # electives'; EE's per-concentration subject lists).
                 converted = False
                 for r2 in typed_rules[i + 1:]:
-                    if r2["courses"] and r2.get("n") is None and r2["op"] in (
-                        "list", "one_of", "unknown", "all_of", "n_of"
-                    ):
+                    if not (r2["courses"] and r2.get("n") is None):
+                        continue
+                    h2txt = r2["source"]["heading"]
+                    # Confident vocabulary-classified requirements are never
+                    # stripped into pools ('Complete all of the following'
+                    # cores stay required); pool-named/unknown/defaulted
+                    # rules are claimable.
+                    if r2["op"] in ("all_of", "one_of") and (
+                        ALL_OF_RE.search(h2txt) or ONE_OF_RE.search(h2txt)
+                    ) and not POOL_RE.search(h2txt):
+                        continue
+                    if r2["op"] in ("list", "one_of", "unknown", "all_of", "n_of"):
                         r2["op"], r2["needs_review"] = "list", False
                         converted = True
                 if converted or r["courses"]:
@@ -565,11 +628,14 @@ def build_program(
                 r.pop("_sibling_or", None)
                 r.pop("_hclass", None)
             if typed_rules:
+                conc = concentration
+                if conc is None and kind == "concentration":
+                    conc = title  # 'Computer Systems Concentration Requirements'
                 sections.append(
                     {
                         "kind": kind,
                         "title": title,
-                        "concentration": concentration,
+                        "concentration": conc,
                         "rules": typed_rules,
                     }
                 )
@@ -599,7 +665,7 @@ def _split_by_heading2(section: RawSection):
     current_rules: list[RawRule] = []
 
     for rule in section.rules:
-        if rule.heading_class == 2:
+        if rule.heading_class == 2 and not OR_SIBLING_RE.match(rule.heading):
             if current_rules:
                 out.append((current_kind, current_title, current_rules, section.concentration))
             current_title = rule.heading

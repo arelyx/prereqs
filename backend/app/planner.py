@@ -208,13 +208,16 @@ def evaluate_requirements(requirements: dict, taken: set[str], ctx: ValidationCo
         for i, r in enumerate(rules_out):
             if r["op"] == "n_of" and raw_rules[i].get("from_following_lists"):
                 pool = set(r.get("courses") or [])  # self-pool parents carry courses
-                pool |= {
-                    c
-                    for r2 in raw_rules[i + 1:]
-                    if r2.get("op") == "list"
-                    for c in (r2.get("courses") or [])
-                }
-                have = sorted(pool & taken)
+                child_filters = []
+                for r2 in raw_rules[i + 1:]:
+                    if r2.get("op") == "list":
+                        pool |= set(r2.get("courses") or [])
+                        if r2.get("filter"):
+                            child_filters.append(r2["filter"])
+                have = set(pool & taken)
+                for cf in child_filters:
+                    have |= {c for c in taken if _filter_match(ctx.courses.get(c), c, cf)}
+                have = sorted(have)
                 n = r.get("needed") or r.get("n") or 0
                 r["have"] = have
                 r["done"] = min(len(have), n)
@@ -266,7 +269,11 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
             # Count over a materialized union of child groups (GCH: six
             # electives across four areas) instead of own listed courses.
             have = sorted(set(rule["pool"]) & taken)
-            result["have"] = have
+        if rule.get("filter"):
+            # Hybrid membership: explicit list UNION prose ranges.
+            extra = [c for c in taken if _filter_match(ctx.courses.get(c), c, rule["filter"])]
+            have = sorted(set(have) | set(extra))
+        result["have"] = have
         result |= {"needed": n, "done": min(len(have), n), "satisfied": len(have) >= n}
     elif op == "n_of_groups":
         # Pick N distinct groups, one course from each picked group.
