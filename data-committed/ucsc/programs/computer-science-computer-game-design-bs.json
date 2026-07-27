@@ -5,7 +5,7 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Computer Science: Computer Game Design B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -128,31 +128,15 @@
       }
      },
      {
-      "branches": [
-       [
-        "AM10"
-       ],
-       [
-        "MATH21"
-       ],
-       [
-        "ECE13"
-       ],
-       [
-        "CSE13S"
-       ]
-      ],
+      "branches": null,
       "constraints": [],
-      "courses": [
-       "CSE20",
-       "CSE12"
-      ],
+      "courses": [],
       "n": null,
       "needs_review": false,
       "notes": [
-       "(Lecture-lab combinations count as one course.)"
+       "Recommended (all but one of the following) prior to transfer to ensure timely graduation: CSE 20, CSE 12, one of {AM 10, MATH 21}, and one of {ECE 13, CSE 13S}. Lecture-lab combinations count as one course."
       ],
-      "op": "options",
+      "op": "info",
       "source": {
        "heading": "In addition, completing all but one of the following courses prior to transfer is recommended to ensure timely graduation:",
        "prose": [
@@ -690,9 +674,9 @@
        "CMPM171"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Game Design",
        "prose": []
@@ -706,9 +690,9 @@
        "CMPM174"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Computational Media",
        "prose": []
@@ -722,9 +706,9 @@
        "CMPM182"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Games for Impact",
        "prose": [
@@ -741,6 +725,8 @@
  "slug": "computer-science-computer-game-design-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computational-media/computer-science-computer-game-design-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/computer-science-computer-game-design-bs.md: three comprehensive-track unknown subrules->all_of; recommended transfer 'all but one' options rule->info (advisory).",
+  "status": "frontier-verified"
  }
 }

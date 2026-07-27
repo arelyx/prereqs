@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -180,10 +180,11 @@
        "MUSC206C",
        "MUSC254A"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 4,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Upper-Division Lecture/Seminar Electives",
        "prose": [
@@ -209,10 +210,11 @@
        "MUSC167R",
        "MUSC267"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Upper-Division Workshop/Ensemble Electives",
        "prose": [
@@ -228,6 +230,8 @@
  "slug": "electronic-music-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/electronic-music-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified rule-by-rule against rendered page: Electronic Music History all_of (MUSC80C), lower-division history/theory/technical-sound/programming electives (n_of counts and pools), upper-division Lecture/Seminar n_of n=4 and Workshop/Ensemble n_of n=3. Stale report issue (upper-div electives list->n_of) is now fixed; counts and membership match.",
+  "status": "frontier-verified"
  }
 }

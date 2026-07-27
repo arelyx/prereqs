@@ -597,6 +597,8 @@
  "slug": "mathematics-education-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-education-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked transfer screening, major qualification, lower-division (one_of/options/all_of), upper-division, DC (MATH 100 plus one of MATH 194/195), and comprehensive rules against the rendered snapshot; membership, operators, and counts all match. Recommended transfer course (STAT 5) carried as info and preference riders kept as notes/prose (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

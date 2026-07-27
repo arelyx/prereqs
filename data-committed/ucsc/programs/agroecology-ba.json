@@ -869,6 +869,8 @@
  "slug": "agroecology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/environmental-studies/agroecology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked qualification/screening, lower-division, upper-division (all_of, one_of, 4-elective n_of), internship, DC, and comprehensive rules against the rendered snapshot; membership, operators, and counts all match. Cross-listing riders (LGST 130B/165A) carried as primary codes and prose double-count bans kept as source prose (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

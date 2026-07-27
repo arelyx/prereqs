@@ -200,6 +200,8 @@
  "slug": "technology-and-information-management-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "All rules match the snapshot: lower-division math one_of pairs, CSE one_of + TIM 50 + TIM 58/80C, upper-division math one_of (CSE107/ECON113/STAT131), and 4-course elective n_of over the 10-course pool. Pair riders (either CSE180/182, ECON100A/100M, ECON100B/100N) and the TIM172A/175 recommendation carried as notes (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

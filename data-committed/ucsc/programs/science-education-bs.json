@@ -5,11 +5,11 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Science Education B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -446,18 +446,44 @@
     "kind": "electives",
     "rules": [
      {
-      "branches": null,
+      "branches": [
+       [
+        "PHYS5D",
+        "PHYS102",
+        "PHYS133"
+       ],
+       [
+        "CHEM8A",
+        "CHEM8L",
+        "CHEM8B",
+        "CHEM8M"
+       ],
+       [
+        "BIOL105",
+        "BIOE107",
+        "BIOE109"
+       ],
+       [
+        "EART110B",
+        "EART110M",
+        "OCEA90"
+       ]
+      ],
       "constraints": [
        {
         "text": "All the courses from any two of the following fields must be completed:",
         "type": "prose"
+       },
+       {
+        "text": "If the Chemistry field is chosen, one additional 5-credit, upper-division chemistry course numbered CHEM 100 - CHEM 180 is also required. If the Earth Sciences field is chosen, one additional 5-credit, upper-division EART course numbered EART 100 - EART 189 is also required.",
+        "type": "prose"
        }
       ],
       "courses": [],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "n_of_groups",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -474,9 +500,9 @@
        "PHYS133"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "info",
       "source": {
        "heading": "Field 1: Physics",
        "prose": []
@@ -491,10 +517,22 @@
        "CHEM8B",
        "CHEM8M"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 180,
+         "lo": 100,
+         "subject": "CHEM"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "info",
       "source": {
        "heading": "Field 2: Chemistry",
        "prose": [
@@ -512,9 +550,9 @@
        "BIOE109"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "info",
       "source": {
        "heading": "Field 3: Biology",
        "prose": []
@@ -528,10 +566,22 @@
        "EART110M",
        "OCEA90"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "EART"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "info",
       "source": {
        "heading": "Field 4: Earth Sciences",
        "prose": [
@@ -625,6 +675,8 @@
  "slug": "science-education-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/science-education-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/science-education-bs.md: Electives recoded as n_of_groups n=2 over the four field branches (all courses of two chosen fields), with the additional CHEM 100-180 / EART 100-189 course riders as explicit constraints; invalid unknown/one_of field ops demoted to supporting info rules (filters deduplicated).",
+  "status": "frontier-verified"
  }
 }

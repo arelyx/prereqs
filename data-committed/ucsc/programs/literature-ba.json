@@ -5,11 +5,11 @@
  "division": "humanities-division",
  "kind": "major",
  "name": "Literature B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -252,12 +252,35 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "60",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "61",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "80",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "81",
+         "subject": "LIT"
+        }
+       ]
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [
        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
       ],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Plus one of the following options:",
        "prose": [
@@ -296,6 +319,18 @@
        "LIT101",
        "LIT102"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 182,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [
@@ -327,7 +362,28 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Distribution: two of the seven electives must be courses on literature written before 1750.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course on non-Western literature or literature from a global perspective.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course on poetry and poetics.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course introducing research tools and methodologies.",
+        "type": "prose"
+       },
+       {
+        "text": "One course may fulfill more than one distribution requirement (per the Distribution Requirements Course List).",
+        "type": "prose"
+       }
+      ],
       "courses": [],
       "filter": {
        "exclude_codes": [
@@ -614,12 +670,35 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "60",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "61",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "80",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "81",
+         "subject": "LIT"
+        }
+       ]
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [
        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
       ],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Plus one of the following options:",
        "prose": [
@@ -658,6 +737,18 @@
        "LIT101",
        "LIT102"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 182,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [
@@ -689,7 +780,32 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Distribution: two of the seven electives must be courses on literature written before 1750.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course on non-Western literature or literature from a global perspective.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course on poetry and poetics.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course introducing research tools and methodologies.",
+        "type": "prose"
+       },
+       {
+        "text": "One course may fulfill more than one distribution requirement (per the Distribution Requirements Course List).",
+        "type": "prose"
+       },
+       {
+        "text": "Language Literature Concentration students take five literature courses in their chosen language of concentration; these may overlap with the Distribution Requirements.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
       "filter": {
        "exclude_codes": [
@@ -982,12 +1098,35 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "60",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "61",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "80",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "81",
+         "subject": "LIT"
+        }
+       ]
+      },
+      "n": 1,
       "needs_review": false,
       "notes": [
        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
       ],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Plus one of the following options:",
        "prose": [
@@ -1050,6 +1189,18 @@
        "LIT101",
        "LIT102"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 182,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [
@@ -1081,12 +1232,45 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Distribution: two of the seven electives must be courses on literature written before 1750.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course on non-Western literature or literature from a global perspective.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course on poetry and poetics.",
+        "type": "prose"
+       },
+       {
+        "text": "Distribution: one of the seven electives must be a course introducing research tools and methodologies.",
+        "type": "prose"
+       },
+       {
+        "text": "One course may fulfill more than one distribution requirement (per the Distribution Requirements Course List).",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 108,
+         "subject": "LIT"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 7,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Upper-Division Literature Electives",
        "prose": [
@@ -1120,10 +1304,23 @@
        }
       ],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "179",
+         "subject": "LIT"
+        }
+       ]
+      },
+      "n": 3,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Any three courses from the LIT 179 series; courses may be repeated. Fiction/prose students are encouraged to include LIT 179A, poetry students LIT 179B."
+      ],
+      "op": "range",
       "source": {
        "heading": "Advanced Creative Writing Workshop Requirements",
        "prose": [
@@ -1297,6 +1494,8 @@
  "slug": "literature-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/literature-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/literature-ba.md: LIT 60/61/80/81-series option recoded as range n=1 in all three concentrations; Creative Writing seven-elective requirement recoded as range n=7 (LIT 108-189) and LIT 179-series workshop requirement as range n=3; four distribution items (2/1/1/1) plus double-count note carried as explicit constraints on each concentration's seven-elective rule; Language Literature five-courses-in-language rider added as constraint.",
+  "status": "frontier-verified"
  }
 }

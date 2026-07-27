@@ -5,11 +5,11 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Ecology and Evolution B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -795,10 +795,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 179,
+         "lo": 100,
+         "subject": "BIOE"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Biological Sciences-EEB",
        "prose": [
@@ -963,7 +975,12 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Any 5 credits of undergraduate research from these courses.",
+        "type": "prose"
+       }
+      ],
       "courses": [
        "BIOE183W",
        "BIOE183L",
@@ -971,10 +988,10 @@
        "BIOE193F",
        "BIOE195"
       ],
-      "n": 5,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "one_of",
       "source": {
        "heading": "Biological Sciences-EEB",
        "prose": [
@@ -1129,9 +1146,9 @@
        "BIOE183W"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Comprehensive courses offered by Ecology and Evolutionary Biology",
        "prose": [
@@ -1147,9 +1164,9 @@
        "CRSN152"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Other Comprehensive Course Options",
        "prose": []
@@ -1163,6 +1180,8 @@
  "slug": "ecology-and-evolution-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/ecology-and-evolutionary-biology/ecology-and-evolution-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/ecology-and-evolution-bs.md: comprehensive course pools recoded unknown->one_of under section_choice; EEB undergraduate-research subrule recoded n_of 5 -> one_of with 5-credit rider as constraint; Psychology general-elective pool recoded info->list.",
+  "status": "frontier-verified"
  }
 }

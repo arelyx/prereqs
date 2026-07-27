@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Community Studies B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -261,7 +261,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "all_of",
       "source": {
        "heading": "Core Courses",
        "prose": [
@@ -570,9 +570,11 @@
        "CMMU195C"
       ],
       "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
+      "needs_review": false,
+      "notes": [
+       "Optional capstone path: students electing a senior thesis may enroll in CMMU 195A, CMMU 195B, CMMU 195C for variable units under direction of a faculty thesis adviser."
+      ],
+      "op": "info",
       "source": {
        "heading": "Senior Thesis",
        "prose": [
@@ -608,6 +610,8 @@
  "slug": "community-studies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/community-studies/community-studies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/community-studies-ba.md: Core Courses list->all_of (six required courses, outside the n=3 topical counter); Senior Thesis unknown->info (optional variable-unit enrollment in CMMU 195A-C).",
+  "status": "frontier-verified"
  }
 }

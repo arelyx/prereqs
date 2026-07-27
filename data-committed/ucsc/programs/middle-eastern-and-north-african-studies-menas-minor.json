@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -46,18 +46,26 @@
     "kind": "other",
     "rules": [
      {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "ARBC1",
-       "ARBC2",
-       "ARBC3",
-       "ARBC4"
+      "branches": [
+       [
+        "ARBC1",
+        "ARBC2",
+        "ARBC3",
+        "ARBC4"
+       ],
+       [
+        "HEBR1",
+        "HEBR2",
+        "HEBR3",
+        "HEBR4"
+       ]
       ],
-      "n": 3,
+      "constraints": [],
+      "courses": [],
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "options",
       "source": {
        "heading": "Three from the following:",
        "prose": [
@@ -67,33 +75,6 @@
      }
     ],
     "title": "Three from the following:"
-   },
-   {
-    "concentration": null,
-    "kind": "other",
-    "rules": [
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "HEBR1",
-       "HEBR2",
-       "HEBR3",
-       "HEBR4"
-      ],
-      "n": 3,
-      "needs_review": false,
-      "notes": [],
-      "op": "n_of",
-      "source": {
-       "heading": "Or three from the following:",
-       "prose": [
-        "Take three from the following OR complete the highest-level course, HEBR 4 ."
-       ]
-      }
-     }
-    ],
-    "title": "Or three from the following:"
    },
    {
     "concentration": null,
@@ -242,6 +223,8 @@
  "slug": "middle-eastern-and-north-african-studies-menas-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/middle-eastern-and-north-african-studies-menas-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified rule-by-rule. The Arabic/Hebrew language requirement is now a single options rule with the two language pools as branches (no longer requiring both languages); the 'three quarters of'/highest-level/placement alternatives are prose. Lower-division one_of and upper-division n_of-5 membership match the page.",
+  "status": "frontier-verified"
  }
 }

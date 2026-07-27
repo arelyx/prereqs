@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "minor",
  "name": "Anthropology Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -50,17 +50,73 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 1,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Upper-Division Courses",
        "prose": [
-        "one course in regional specialization",
-        "one course in sociocultural anthropology",
-        "one course in archaeology",
-        "one course in biological, medical, or environmental anthropology",
+        "one course in regional specialization"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": true,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "one course in sociocultural anthropology"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": true,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "one course in archaeology"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 1,
+      "needs_review": true,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
+        "one course in biological, medical, or environmental anthropology"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "n": 3,
+      "needs_review": true,
+      "notes": [],
+      "op": "category_count",
+      "source": {
+       "heading": "Upper-Division Courses",
+       "prose": [
         "three additional anthropology courses from the Courses in Anthropology by Category List"
        ]
       }
@@ -181,6 +237,8 @@
  "slug": "anthropology-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/anthropology/anthropology-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/anthropology-minor.md: replaced info rule with five category_count rules (1+1+1+1+3 = seven upper-division courses by category).",
+  "status": "frontier-verified"
  }
 }

@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Psychology B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -189,7 +189,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "info",
       "source": {
        "heading": "Recommended Prior to Transfer",
        "prose": [
@@ -256,7 +256,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "section_choice",
+      "op": "info",
       "source": {
        "heading": "One of the following courses",
        "prose": []
@@ -276,11 +276,11 @@
        "MATH19A"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "May also be satisfied with a score of 300 or higher on the ALEKS Mathematics Placement."
       ],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Mathematics requirement",
        "prose": [
@@ -391,7 +391,7 @@
     "title": "How to Declare a Major"
    },
    {
-    "concentration": null,
+    "concentration": "General Psychology Major",
     "kind": "other",
     "rules": [
      {
@@ -413,7 +413,7 @@
     "title": "Course Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "General Psychology Major",
     "kind": "lower_div",
     "rules": [
      {
@@ -517,7 +517,7 @@
     "title": "Lower-Division Courses"
    },
    {
-    "concentration": null,
+    "concentration": "General Psychology Major",
     "kind": "upper_div",
     "rules": [
      {
@@ -525,6 +525,10 @@
       "constraints": [
        {
         "text": "Eight upper-division courses are required for the general major. At least four must be PSYC courses taken at UC Santa Cruz: PSYC 100 , and one from each of the Developmental, Cognitive, and Social subfields, including a senior seminar.",
+        "type": "prose"
+       },
+       {
+        "text": "Eight upper-division courses are required for the general major. At least four must be PSYC courses taken at UC Santa Cruz: PSYC 100, and one from each of the Developmental, Cognitive, and Social subfields, including a senior seminar.",
         "type": "prose"
        }
       ],
@@ -559,8 +563,8 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": 1,
-      "needs_review": false,
+      "n": 3,
+      "needs_review": true,
       "notes": [],
       "op": "category_count",
       "source": {
@@ -572,8 +576,8 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": 1,
-      "needs_review": false,
+      "n": 3,
+      "needs_review": true,
       "notes": [],
       "op": "category_count",
       "source": {
@@ -606,12 +610,12 @@
        "STAT131",
        "STAT132"
       ],
-      "n": null,
-      "needs_review": false,
+      "n": 1,
+      "needs_review": true,
       "notes": [
        "METX 108 will NOT be accepted as a substitution for PSYC 100 ."
       ],
-      "op": "one_of",
+      "op": "category_count",
       "source": {
        "heading": "One upper-division course outside of psychology:",
        "prose": [
@@ -645,7 +649,7 @@
     "title": "Upper-Division Courses"
    },
    {
-    "concentration": null,
+    "concentration": "General Psychology Major",
     "kind": "dc",
     "rules": [
      {
@@ -667,7 +671,7 @@
     "title": "Disciplinary Communication (DC) Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "General Psychology Major",
     "kind": "comprehensive",
     "rules": [
      {
@@ -689,7 +693,7 @@
     "title": "Comprehensive Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive Psychology Major",
     "kind": "other",
     "rules": [
      {
@@ -713,7 +717,7 @@
     "title": "Course Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive Psychology Major",
     "kind": "lower_div",
     "rules": [
      {
@@ -817,7 +821,7 @@
     "title": "Lower-Division Courses"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive Psychology Major",
     "kind": "upper_div",
     "rules": [
      {
@@ -854,8 +858,8 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": 1,
-      "needs_review": false,
+      "n": 3,
+      "needs_review": true,
       "notes": [],
       "op": "category_count",
       "source": {
@@ -867,8 +871,8 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": 1,
-      "needs_review": false,
+      "n": 3,
+      "needs_review": true,
       "notes": [],
       "op": "category_count",
       "source": {
@@ -907,12 +911,12 @@
        "PSYC195C",
        "PSYC193S"
       ],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [
        "PSYC 193I is equivalent to two quarters of field study and will satisfy the Advanced Requirement in its entirety."
       ],
-      "op": "one_of",
+      "op": "n_of",
       "source": {
        "heading": "Two quarters of study from one of the following:",
        "prose": [
@@ -945,12 +949,12 @@
        "STAT131",
        "STAT132"
       ],
-      "n": null,
-      "needs_review": false,
+      "n": 1,
+      "needs_review": true,
       "notes": [
        "METX 108 will NOT be accepted as a substitution for PSYC 100 ."
       ],
-      "op": "one_of",
+      "op": "category_count",
       "source": {
        "heading": "One upper-division course outside of psychology:",
        "prose": [
@@ -984,7 +988,7 @@
     "title": "Upper-Division Courses"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive Psychology Major",
     "kind": "dc",
     "rules": [
      {
@@ -1006,7 +1010,7 @@
     "title": "Disciplinary Communication (DC) Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive Psychology Major",
     "kind": "comprehensive",
     "rules": [
      {
@@ -1032,6 +1036,8 @@
  "slug": "psychology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/psychology/psychology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/psychology-ba.md: concentration labels set on General/Intensive blocks; General upper-division n_of-4 head recast as info residency rider with PSYC 100 all_of; subfield rules category_count n=3 (needs_review) in both majors; outside-psychology course now its own category_count n=1; Intensive two-quarters rule n_of n=2; Major Qualification math unknown->one_of (spurious section_choice head made info; all three qualification requirements required); recommended-prior-to-transfer courses recast as info.",
+  "status": "frontier-verified"
  }
 }

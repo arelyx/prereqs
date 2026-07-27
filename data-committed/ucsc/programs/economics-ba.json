@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Economics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -732,6 +732,8 @@
  "slug": "economics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/economics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/economics-ba.md: Business Management Electives rule op info->list so it joins the five-elective counting pool.",
+  "status": "frontier-verified"
  }
 }

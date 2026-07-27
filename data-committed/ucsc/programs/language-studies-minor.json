@@ -5,11 +5,11 @@
  "division": "humanities-division",
  "kind": "minor",
  "name": "Language Studies Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -132,11 +132,30 @@
       "courses": [],
       "filter": {
        "exclude_codes": [
-        "ITAL101",
-        "LIT185",
-        "LIT188"
+        "ITAL101"
        ],
-       "exclude_ranges": [
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "CHIN"
+        },
+        {
+         "hi": 114,
+         "lo": 111,
+         "subject": "FREN"
+        },
+        {
+         "hi": 199,
+         "lo": 120,
+         "subject": "FREN"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "ITAL"
+        },
         {
          "hi": 199,
          "lo": 100,
@@ -153,26 +172,21 @@
          "subject": "SPHS"
         }
        ],
-       "include_ranges": [
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "CHIN"
-        },
-        {
-         "hi": 114,
-         "lo": 111,
-         "subject": "FREN"
-        },
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "ITAL"
-        }
-       ],
        "include_series": [
         {
          "prefix": "182",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "185",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "188",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "189",
          "subject": "LIT"
         }
        ]
@@ -203,12 +217,17 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Two 5-credit upper-division elective courses chosen from: LING 100-189; LING 200-289 (with instructor permission); the list of approved cultural context courses; or additional Advanced Language courses. Cultural context and advanced language courses must align with the language of concentration.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 2,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Upper-Division Electives",
        "prose": [
@@ -252,6 +271,8 @@
  "slug": "language-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/language-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/language-studies-minor.md: Advanced Language range filter gains FREN 120-199 and LIT 188/189 series; Upper-Division Electives recast from info to category_count n=2 (needs_review, cultural-context pool unenumerated) with option prose as constraint.",
+  "status": "frontier-verified"
  }
 }

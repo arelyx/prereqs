@@ -251,6 +251,8 @@
  "slug": "computer-engineering-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-engineering-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all lower- and upper-division rules against the rendered snapshot: memberships, one_of/all_of operators, and both lecture/lab options branch pairs match the page. No counts or concentrations involved.",
+  "status": "frontier-verified"
  }
 }

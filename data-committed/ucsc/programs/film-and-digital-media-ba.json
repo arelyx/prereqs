@@ -5,11 +5,11 @@
  "division": "arts-division",
  "kind": "major",
  "name": "Film and Digital Media B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -273,6 +273,7 @@
       ],
       "constraints": [],
       "courses": [],
+      "from_following_lists": true,
       "n": 3,
       "needs_review": false,
       "notes": [],
@@ -426,10 +427,58 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [
+        "FILM185F"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "130",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "132",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "134",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "136",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "145",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "150",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "160",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "170",
+         "subject": "FILM"
+        },
+        {
+         "prefix": "180",
+         "subject": "FILM"
+        }
+       ]
+      },
+      "n": 5,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Five 5-credit upper-division electives in any combination of critical studies (FILM 145, FILM 160, FILM 180 series), production (FILM 150, FILM 170 series), and/or additional Core Curriculum courses (FILM 130/FILM 132/FILM 134/FILM 136, taken after the respective Core Curriculum requirement has been satisfied). FILM 185F (a two-credit course) is excluded.",
+       "A maximum of two upper-division electives may be taken in another department or at another institution if pre-approved by the Film and Digital Media Department."
+      ],
+      "op": "range",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -613,6 +662,7 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "from_following_lists": true,
       "n": null,
       "needs_review": false,
       "notes": [],
@@ -975,6 +1025,8 @@
  "slug": "film-and-digital-media-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/film-and-digital-media/film-and-digital-media-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/film-and-digital-media-ba.md: general electives recoded info->range n=5 over FILM 130/132/134/136/145/150/160/170/180 series excluding FILM 185F; ICPC 20-level rule recoded info->n_of n=2; diversity and senior-comprehensive lists recoded list->one_of.",
+  "status": "frontier-verified"
  }
 }

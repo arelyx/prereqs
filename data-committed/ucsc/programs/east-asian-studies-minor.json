@@ -5,7 +5,7 @@
  "division": "humanities-division",
  "kind": "minor",
  "name": "East Asian Studies Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -88,11 +88,10 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "from_following_lists": true,
-      "n": 2,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "section_choice",
       "source": {
        "heading": "Upper-Division Chinese or Japanese Language",
        "prose": [
@@ -110,10 +109,10 @@
        "CHIN107",
        "CHIN108"
       ],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Chinese Language Courses",
        "prose": []
@@ -128,10 +127,10 @@
        "JAPN105",
        "JAPN109"
       ],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Japanese Language Courses",
        "prose": []
@@ -210,10 +209,10 @@
        "THEA161D",
        "SOCY128J"
       ],
-      "n": null,
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Upper-Division Electives",
        "prose": [
@@ -229,6 +228,8 @@
  "slug": "east-asian-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/east-asian-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/east-asian-studies-minor.md: language req n_of->section_choice with two n_of(n=2) single-language branches (no cross-language mixing); Upper-Division Electives list->n_of n=3.",
+  "status": "frontier-verified"
  }
 }

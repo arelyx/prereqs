@@ -5,11 +5,11 @@
  "division": "arts-division",
  "kind": "major",
  "name": "Theater Arts B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -116,7 +116,12 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "The two courses must be chosen from two different categories.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
       "from_following_lists": true,
       "n": 2,
@@ -177,10 +182,10 @@
        "THEA37",
        "THEA80Z"
       ],
-      "n": 3,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "list",
       "source": {
        "heading": "Practice-based dance",
        "prose": [
@@ -613,7 +618,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "info",
       "source": {
        "heading": "The following courses DO NOT satisfy theater arts major requirements:",
        "prose": []
@@ -674,6 +679,8 @@
  "slug": "theater-arts-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/theater-arts-ba.md: Practice-based dance category recoded as a list pool (was spurious n_of n=3); two-different-categories rider added as constraint on the n_of parent.",
+  "status": "frontier-verified"
  }
 }

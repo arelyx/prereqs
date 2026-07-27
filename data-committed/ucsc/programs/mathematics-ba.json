@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Mathematics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -90,9 +90,9 @@
        "MATH23A"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Transfer Admissions Screening Policy",
        "prose": [
@@ -659,6 +659,8 @@
  "slug": "mathematics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/mathematics-ba.md: Transfer Admissions Screening Policy unknown->all_of over MATH 19A/19B/21/23A (screening segregated in qualification section).",
+  "status": "frontier-verified"
  }
 }

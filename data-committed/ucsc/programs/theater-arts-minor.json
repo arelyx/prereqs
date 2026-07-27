@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -233,9 +233,9 @@
        "THEA199"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "info",
       "source": {
        "heading": "The following DO NOT satisfy theater arts minor requirements:",
        "prose": []
@@ -249,6 +249,8 @@
  "slug": "theater-arts-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified against rendered snapshot: one_of THEA 61A-C; one_of of the 14 lower-division focus courses; THEA 50; n_of 3 over the 38 history/theory courses; n_of 2 over the 35 studio courses; and the DO-NOT-satisfy list as info. Cross-listings carried as primary codes; the studio 'only one of THEA 137/137A/139/151/151A/151I/155' rider is carried as prose text (acceptable approximation).",
+  "status": "frontier-verified"
  }
 }

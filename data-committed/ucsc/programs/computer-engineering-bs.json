@@ -5,11 +5,11 @@
  "division": "baskin-engineering",
  "kind": "major",
  "name": "Computer Engineering B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -408,7 +408,7 @@
    },
    {
     "concentration": null,
-    "kind": "concentration",
+    "kind": "other",
     "rules": [
      {
       "branches": null,
@@ -692,7 +692,7 @@
    },
    {
     "concentration": null,
-    "kind": "concentration",
+    "kind": "other",
     "rules": [
      {
       "branches": null,
@@ -713,7 +713,7 @@
     "title": "Concentration Courses"
    },
    {
-    "concentration": null,
+    "concentration": "Computer Systems Concentration Requirements",
     "kind": "concentration",
     "rules": [
      {
@@ -772,10 +772,31 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "CSE115A",
+        "CSE185E",
+        "CSE185S"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "CSE"
+        },
+        {
+         "hi": 279,
+         "lo": 201,
+         "subject": "CSE"
+        }
+       ],
+       "include_series": []
+      },
       "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
       "source": {
        "heading": "Plus one upper-division or graduate elective",
        "prose": [
@@ -790,7 +811,7 @@
     "title": "Computer Systems Concentration Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "Digital Hardware Concentration Requirements",
     "kind": "concentration",
     "rules": [
      {
@@ -866,10 +887,31 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "CSE115A",
+        "CSE185E",
+        "CSE185S"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "CSE"
+        },
+        {
+         "hi": 279,
+         "lo": 201,
+         "subject": "CSE"
+        }
+       ],
+       "include_series": []
+      },
       "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
       "source": {
        "heading": "Plus one upper-division or graduate elective",
        "prose": [
@@ -884,7 +926,7 @@
     "title": "Digital Hardware Concentration Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "Networks Concentration Requirements",
     "kind": "concentration",
     "rules": [
      {
@@ -909,10 +951,31 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "CSE115A",
+        "CSE185E",
+        "CSE185S"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "CSE"
+        },
+        {
+         "hi": 279,
+         "lo": 201,
+         "subject": "CSE"
+        }
+       ],
+       "include_series": []
+      },
       "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
       "source": {
        "heading": "Plus one upper division or graduate elective",
        "prose": [
@@ -928,7 +991,7 @@
     "title": "Networks Concentration Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "System Programming Concentration Requirements",
     "kind": "concentration",
     "rules": [
      {
@@ -981,10 +1044,31 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "CSE115A",
+        "CSE185E",
+        "CSE185S"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 100,
+         "subject": "CSE"
+        },
+        {
+         "hi": 279,
+         "lo": 201,
+         "subject": "CSE"
+        }
+       ],
+       "include_series": []
+      },
       "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
       "source": {
        "heading": "Plus one upper-division or graduate elective",
        "prose": [
@@ -1025,6 +1109,8 @@
  "slug": "computer-engineering-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-engineering-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/computer-engineering-bs.md: shared preamble sections 'Course Requirements (all concentrations)' and 'Concentration Courses' relabeled kind=other, concentration=null so only the four real concentrations remain; all other rules previously verified clean.",
+  "status": "frontier-verified"
  }
 }

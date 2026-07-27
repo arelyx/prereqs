@@ -5,7 +5,7 @@
  "division": "humanities-division",
  "kind": "minor",
  "name": "Literature Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -46,14 +46,42 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "One course from the LIT 60 or LIT 61-series, or one course from the LIT 80 or LIT 81-series.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "60",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "61",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "80",
+         "subject": "LIT"
+        },
+        {
+         "prefix": "81",
+         "subject": "LIT"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": true,
       "notes": [
        "LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study. LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts. LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors."
       ],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Plus one of the following options:",
        "prose": [
@@ -175,6 +203,8 @@
  "slug": "literature-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/literature-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/literature-minor.md: required lower-division elective info->range n=1 over the LIT 60/61/80/81 series (needs_review for series membership), restoring the seventh required course.",
+  "status": "frontier-verified"
  }
 }

@@ -713,6 +713,8 @@
  "slug": "neuroscience-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/neuroscience-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified qualification/screening sections and all requirement rules: lower-division (BIOL 20A/20L/BIOE 20B, CHEM 3/4 options, CHEM 8A/8B/8L, MATH series options, STAT 7/7L, PHYS 6A-6N), upper-division core, lab one_of, BIOL 129A-C one_of, BIOL 129L, 12-course elective one_of, and DC/comprehensive via BIOL 129L. All memberships, operators, and counts match the page; STAT 5 waiver and CHEM 3BL/3CL riders carried as notes.",
+  "status": "frontier-verified"
  }
 }

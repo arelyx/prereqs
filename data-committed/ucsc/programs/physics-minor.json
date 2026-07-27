@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "minor",
  "name": "Physics Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -200,12 +200,24 @@
        "ECE178",
        "MATH130"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 180,
+         "lo": 100,
+         "subject": "PHYS"
+        }
+       ],
+       "include_series": []
+      },
       "n": 3,
       "needs_review": false,
       "notes": [
        "The elective courses cannot be offered by the department that sponsors the student’s major. Other courses may be taken as electives with the approval of the Physics Department undergraduate faculty adviser. Students who complete a major sponsored by the Physics Department cannot complete a second major sponsored by the Physics Department or the physics minor."
       ],
-      "op": "n_of",
+      "op": "range",
       "source": {
        "heading": "Plus three elective courses",
        "prose": [
@@ -223,6 +235,8 @@
  "slug": "physics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/physics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/physics-minor.md: three-elective rule re-encoded as range n=3 over PHYS 100-180 plus the 20 listed other-department courses as explicit member codes; department/adviser riders retained in notes.",
+  "status": "frontier-verified"
  }
 }

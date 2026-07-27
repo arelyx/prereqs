@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Global and Community Health B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -378,11 +378,10 @@
        }
       ],
       "courses": [],
-      "from_following_lists": true,
-      "n": 1,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "info",
       "source": {
        "heading": "Upper-division Global and Community Health requirements",
        "prose": [
@@ -415,7 +414,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Requirement 1: Community Analysis for Global and Community Health",
        "prose": [
@@ -434,7 +433,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Requirement 2: Social Analysis for Global and Community Health",
        "prose": [
@@ -777,10 +776,10 @@
        "GCH190",
        "GCH195"
       ],
-      "n": null,
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "n_of",
       "source": {
        "heading": "Option 1",
        "prose": [
@@ -833,6 +832,8 @@
  "slug": "global-and-community-health-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/global-and-community-health-soc-sci/global-and-community-health-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/global-and-community-health-ba.md: common core Requirement 1 and 2 each set to required one_of (two common core courses total, umbrella prose as info) and DC Option 1 set to n_of n=2 (both GCH 190 and GCH 195).",
+  "status": "frontier-verified"
  }
 }

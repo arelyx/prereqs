@@ -5,7 +5,7 @@
  "division": "arts-division",
  "kind": "minor",
  "name": "Jazz Spontaneous Composition and Improvisation Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -53,8 +53,10 @@
       ],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Students may test out of MUSC 14 by placing directly into MUSC 30A via the Music Theory Placement Exam; if a student places into MUSC 30A via the exam, they are not required to take MUSC 14."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Lower-Division Theory",
        "prose": [
@@ -240,10 +242,13 @@
        "MUSC3",
        "MUSC164"
       ],
-      "n": null,
+      "n": 3,
       "needs_review": false,
-      "notes": [],
-      "op": "all_of",
+      "notes": [
+       "If a student elects to take two quarters of MUSC 3 instead of MUSC 74 or MUSC 20C, they are only required to do one additional quarter of a jazz ensemble, plus the three quarters of elective ensembles.",
+       "Both MUSC 3 and MUSC 164 can be repeated for credit."
+      ],
+      "op": "n_of",
       "source": {
        "heading": "Jazz Ensembles",
        "prose": [
@@ -307,6 +312,8 @@
  "slug": "jazz-spontaneous-composition-and-improvisation-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/music/jazz-spontaneous-composition-and-improvisation-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/jazz-spontaneous-composition-and-improvisation-minor.md: Lower-Division Theory set to all_of MUSC 14/30A with test-out waiver as note; Jazz Ensembles set to n_of n=3 over MUSC 3/164 with substitution and repeatability riders as notes.",
+  "status": "frontier-verified"
  }
 }

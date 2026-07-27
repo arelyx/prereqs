@@ -5,36 +5,44 @@
  "division": "humanities-division",
  "kind": "minor",
  "name": "Spanish Studies Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
   "sections": [
    {
     "concentration": null,
-    "kind": "concentration",
+    "kind": "lower_div",
     "rules": [
      {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "SPAN1",
-       "SPAN2",
-       "SPAN3",
-       "SPAN4",
-       "SPAN5",
-       "SPAN6"
+      "branches": [
+       [
+        "SPAN1",
+        "SPAN2",
+        "SPAN3",
+        "SPAN4",
+        "SPAN5",
+        "SPAN6"
+       ],
+       [
+        "SPHS4",
+        "SPHS5",
+        "SPHS6"
+       ]
       ],
-      "n": 6,
+      "constraints": [],
+      "courses": [],
+      "n": null,
       "needs_review": false,
       "notes": [
-       "Or equivalent proficiency. SPAN 5M may substitute for SPAN 5 ."
+       "Or equivalent proficiency. SPAN 5M may substitute for SPAN 5 .",
+       "or equivalent proficiency"
       ],
-      "op": "n_of",
+      "op": "options",
       "source": {
        "heading": "Either six courses in the regular track",
        "prose": [
@@ -44,34 +52,6 @@
      }
     ],
     "title": "Either six courses in the regular track"
-   },
-   {
-    "concentration": null,
-    "kind": "concentration",
-    "rules": [
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "SPHS4",
-       "SPHS5",
-       "SPHS6"
-      ],
-      "n": 3,
-      "needs_review": false,
-      "notes": [
-       "or equivalent proficiency"
-      ],
-      "op": "n_of",
-      "source": {
-       "heading": "Or three courses in the Spanish for Heritage Speakers (SPHS) track",
-       "prose": [
-        "or equivalent proficiency"
-       ]
-      }
-     }
-    ],
-    "title": "Or three courses in the Spanish for Heritage Speakers (SPHS) track"
    },
    {
     "concentration": null,
@@ -291,6 +271,8 @@
  "slug": "spanish-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/spanish-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/spanish-studies-minor.md: lower-division track-choice section recoded from phantom concentration to kind lower_div with concentration null; options rule unchanged.",
+  "status": "frontier-verified"
  }
 }

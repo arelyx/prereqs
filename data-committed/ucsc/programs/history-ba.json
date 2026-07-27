@@ -5,11 +5,11 @@
  "division": "humanities-division",
  "kind": "major",
  "name": "History B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -117,7 +117,7 @@
   ],
   "sections": [
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "other",
     "rules": [
      {
@@ -150,7 +150,7 @@
     "title": "Course Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "comprehensive",
     "rules": [
      {
@@ -180,7 +180,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Lower-Division Survey (1 Course)",
        "prose": [
@@ -200,9 +200,9 @@
        "HIS31A"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Americas/Africa",
        "prose": []
@@ -217,9 +217,9 @@
        "HIS44"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Asia/Pacific",
        "prose": []
@@ -240,11 +240,11 @@
        "HIS74B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Transfer coursework may or may not apply toward the survey course requirement; consult with the history undergraduate program coordinator ."
       ],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Europe/Mediterranean World",
        "prose": [
@@ -291,7 +291,7 @@
     "title": "Region of Concentration (5 Courses, Plus 1 Comprehensive Requirement)"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "electives",
     "rules": [
      {
@@ -319,7 +319,7 @@
     "title": "Breadth Requirements (4 Courses)"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "other",
     "rules": [
      {
@@ -343,7 +343,7 @@
     "title": "Historical Skills and Methods  (1 Course)"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "electives",
     "rules": [
      {
@@ -365,7 +365,7 @@
     "title": "Elective (1 Course)"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "other",
     "rules": [
      {
@@ -387,7 +387,7 @@
     "title": "Language Recommendation"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "dc",
     "rules": [
      {
@@ -409,7 +409,7 @@
     "title": "Disciplinary Communication (DC) Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "comprehensive",
     "rules": [
      {
@@ -428,7 +428,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -441,12 +441,74 @@
         "Please consult the department website for more information about the thesis option."
        ]
       }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Seminars must be taken in the student's chosen area of concentration to qualify as the comprehensive requirement. HIS 100 must be completed before taking a research seminar.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "190",
+         "subject": "HIS"
+        },
+        {
+         "prefix": "194",
+         "subject": "HIS"
+        },
+        {
+         "prefix": "196",
+         "subject": "HIS"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Research Seminar (one quarter: 190 series, 194 series, or 196 series)",
+       "prose": [
+        "One research seminar from the HIS 190 series, HIS 194 series, or HIS 196 series."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Before undertaking an independent thesis, students must complete one research seminar in their region of concentration (exceptions by petition). Completed theses must be at least 40 pages.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "HIS195A",
+       "HIS195B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Thesis (Two Quarters: HIS 195A, Thesis Research and HIS 195B, Thesis Writing)",
+       "prose": [
+        "Successful completion of both HIS 195A and HIS 195B."
+       ]
+      }
      }
     ],
     "title": "Comprehensive Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "General History Major",
     "kind": "other",
     "rules": [
      {
@@ -468,7 +530,7 @@
     "title": "Research Pathways"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "other",
     "rules": [
      {
@@ -501,7 +563,7 @@
     "title": "Course Requirements"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "comprehensive",
     "rules": [
      {
@@ -531,7 +593,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Lower-Division Survey (1 Course)",
        "prose": [
@@ -551,9 +613,9 @@
        "HIS31A"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Americas Africa",
        "prose": []
@@ -568,9 +630,9 @@
        "HIS44"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Asia Pacific",
        "prose": []
@@ -591,11 +653,11 @@
        "HIS74B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Transfer coursework may or may not apply toward the survey course requirement; consult the history undergraduate program coordinator ."
       ],
-      "op": "unknown",
+      "op": "one_of",
       "source": {
        "heading": "Europe Mediterranean",
        "prose": [
@@ -642,7 +704,7 @@
     "title": "Region of Concentration (5 Courses, Plus 1 Comprehensive Requirement)"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "electives",
     "rules": [
      {
@@ -670,7 +732,7 @@
     "title": "Breadth Requirements (4 Courses)"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "other",
     "rules": [
      {
@@ -694,7 +756,7 @@
     "title": "Historical Skills and Methods (1 Course)"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "electives",
     "rules": [
      {
@@ -716,7 +778,7 @@
     "title": "Electives (4 Courses)"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "other",
     "rules": [
      {
@@ -725,13 +787,40 @@
        {
         "text": "Three of the 15 courses required for the intensive major must require advanced historical research. Advanced research seminars (HIS 190 series, HIS 194 series, or HIS 196 series), the senior thesis ( HIS 195A and HIS 195B ) and/or independent studies ( HIS 199 ) conducted under faculty supervisor may satisfy this requirement. At least one seminar or senior thesis must be completed in the student’s chosen region of concentration to ensure the UC Santa Cruz comprehensive and disciplinary communication (DC) requirements are satisfied.",
         "type": "prose"
+       },
+       {
+        "text": "Three of the 15 courses required for the intensive major must require advanced historical research. At least one seminar or senior thesis must be completed in the student's chosen region of concentration.",
+        "type": "prose"
        }
       ],
-      "courses": [],
-      "n": null,
+      "courses": [
+       "HIS195A",
+       "HIS195B",
+       "HIS199"
+      ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "190",
+         "subject": "HIS"
+        },
+        {
+         "prefix": "194",
+         "subject": "HIS"
+        },
+        {
+         "prefix": "196",
+         "subject": "HIS"
+        }
+       ]
+      },
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Advanced Research Requirement",
        "prose": [
@@ -743,7 +832,7 @@
     "title": "Advanced Research Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "other",
     "rules": [
      {
@@ -752,13 +841,17 @@
        {
         "text": "Intensive majors must pursue training in a second language by completing three quarters of college-level language study (or equivalent) in a single, non-English modern or ancient language (e.g. SPAN 1 – SPAN 3 , ITAL 2–ITAL 4, etc.). Students with prior training in a second language are advised to complete a language placement exam to determine the appropriate level of language course instruction. With prior approval by the undergraduate director, the language training requirement may be satisfied by at least one quarter study abroad with foreign language instruction. Students do not necessarily need to pursue a language related to their region of concentration, but are encouraged to do so when possible. After consultation with the undergraduate director, students can petition for alternative ways by which to satisfy this requirement.",
         "type": "prose"
+       },
+       {
+        "text": "Three quarters of college-level language study (or equivalent) in a single, non-English modern or ancient language (e.g. SPAN 1 - SPAN 3, ITAL 2 - ITAL 4, etc.); may be satisfied by at least one quarter of study abroad with foreign language instruction with prior approval.",
+        "type": "prose"
        }
       ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 3,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Language Requirement",
        "prose": [
@@ -770,7 +863,7 @@
     "title": "Language Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "dc",
     "rules": [
      {
@@ -792,7 +885,7 @@
     "title": "Disciplinary Communication (DC) Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "comprehensive",
     "rules": [
      {
@@ -811,7 +904,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -824,12 +917,74 @@
         "Please consult the department website for more information about the thesis option."
        ]
       }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Seminars must be taken in the student's chosen area of concentration to qualify as the comprehensive requirement. HIS 100 must be completed before taking a research seminar.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "190",
+         "subject": "HIS"
+        },
+        {
+         "prefix": "194",
+         "subject": "HIS"
+        },
+        {
+         "prefix": "196",
+         "subject": "HIS"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Research Seminar (one quarter: 190 series, 194 series, or 196 series)",
+       "prose": [
+        "One research seminar from the HIS 190 series, HIS 194 series, or HIS 196 series."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "Before undertaking an independent thesis, students must complete one research seminar in their region of concentration (exceptions by petition). Completed theses must be at least 40 pages.",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "HIS195A",
+       "HIS195B"
+      ],
+      "n": null,
+      "needs_review": false,
+      "notes": [],
+      "op": "all_of",
+      "source": {
+       "heading": "Thesis (Two Quarters: HIS 195A, Thesis Research and HIS 195B, Thesis Writing)",
+       "prose": [
+        "Successful completion of both HIS 195A and HIS 195B."
+       ]
+      }
      }
     ],
     "title": "Comprehensive Requirement"
    },
    {
-    "concentration": null,
+    "concentration": "Intensive History Major",
     "kind": "other",
     "rules": [
      {
@@ -855,6 +1010,8 @@
  "slug": "history-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/history-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/history-ba.md: concentration set on all sections (General vs Intensive track); Lower-Division Survey recoded as section_choice over three one_of region lists (was unknown); Comprehensive sections recoded as section_choice with HIS 190/194/196-series range and HIS 195A+195B thesis branches; Advanced Research as range n=3 over the seminar series plus HIS 195A/195B/199; Language Requirement as category_count n=3 needs_review.",
+  "status": "frontier-verified"
  }
 }

@@ -126,9 +126,10 @@ test('program: requirements in main fold, general info in sidebar', async ({ pag
   await expect(page.getByRole('link', { name: 'official page' })).toBeVisible()
   await expect(page.getByText(/Introduction|Learning Outcomes/).first()).toBeVisible()
 
-  // An unverified program shows the warning badge.
-  await page.getByRole('combobox').selectOption({ label: 'History B.A. (unverified)' })
-  await expect(page.getByText('unverified', { exact: true }).first()).toBeVisible()
+  // Full-catalog verification (2026-07-26): every program is verified, so
+  // no warning badges anywhere and every option carries the checkmark.
+  await page.getByRole('combobox').selectOption({ label: 'History B.A. ✓' })
+  await expect(page.getByText('unverified', { exact: true })).toHaveCount(0)
 })
 
 test('auth lifecycle: register imports plan, sign out, sign in, delete', async ({ page }) => {

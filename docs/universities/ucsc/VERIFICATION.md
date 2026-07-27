@@ -72,3 +72,35 @@ Root causes found and fixed, each generalized + regression-tested:
 Post-hardening audit across all 119 programs: zero n>pool rules, zero
 bare all_of rules ≥15 courses; verified subset byte-identical except the two
 documented corrections.
+
+
+## Full-catalog verification campaign — 2026-07-26 (catalog 2026-27)
+
+**Every one of the 119 UCSC programs (75 majors, 44 minors) is now
+frontier-verified against its official catalog page**, recorded in each
+program file's `verification` block in `data-committed/ucsc/programs/`.
+
+Method: 26 Frontier-LLM agents over three waves, all offline against the
+fetch snapshot via `render_page`.
+- Wave 1 (12 verifiers, all 119): 30 PASS / 89 FAIL with per-slug
+  discrepancy reports (git history: `_reports/`).
+- Triage: 8 systemic harness fixes grounded in the report corpus (count
+  parents, choice structures, filter polarity/membership incl. hybrid
+  table∪range pools, exclusion blocks, concentration attribution) + 2
+  regression fixes.
+- Wave 2 (5 verifiers on 51 regenerated + 5 repairers on 44 unchanged
+  fails): 15 verify PASS, 44/44 repaired.
+- Wave 3 (4 repairers on the remaining 36): 36/36 repaired.
+- Post-audit: one leniently-passed `unknown` op corrected (Applied Physics
+  winter-entry rule); machine audit confirms zero invalid ops, zero
+  impossible counts, canonical formatting across all files.
+
+Provenance: 39 programs are pure pipeline output that verified as-is; 80
+carry `origin: hand-edited` (surgical, report-guided corrections that the
+exporter will never silently overwrite). The original wave-1 reports, all
+repairs, and every verification stamp are in git history on the
+`verification/full-catalog-wave` branch.
+
+Verification is against catalog 2026-27. On the next edition roll: re-run
+the pipeline, review the `git diff` of `data-committed/`, and re-verify
+only changed programs.

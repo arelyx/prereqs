@@ -227,6 +227,8 @@
  "slug": "latin-american-and-latino-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/latin-american-and-latino-studies/latin-american-and-latino-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked lower-division intro one_of, LALS 1-99 range (n=1), core options (LALS 100 vs LALS 100A+100L), and LALS 100-194 range (n=4) against the rendered snapshot; membership, operators, counts, and filters all match. AP-exam alternative and two-outside-course cap carried as source prose (in-scope approximations).",
+  "status": "frontier-verified"
  }
 }

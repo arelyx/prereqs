@@ -5,7 +5,7 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Biology B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -728,7 +728,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",
        "prose": [
@@ -845,6 +845,8 @@
  "slug": "biology-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/molecular-cell-and-developmental-biology/biology-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/biology-bs.md: DC header rule changed from info to section_choice so the BIOE (n_of 2) and BIOL (one_of) options read as alternatives.",
+  "status": "frontier-verified"
  }
 }

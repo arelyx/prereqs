@@ -184,6 +184,8 @@
  "slug": "philosophy-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/philosophy/philosophy-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked PHIL 9 all_of, PHIL 1-98 range (n=1, excl. PHIL 7/8), history-of-philosophy one_of, and four-elective count against the rendered snapshot; membership, operators, counts, and filters match. Electives pool (PHIL 100A or above, excl. 195A/195B/199) and value-theory/M&E distribution carried as category_count prose constraints since the category lists live in the B.A. statement (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

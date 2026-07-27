@@ -174,6 +174,8 @@
  "slug": "astrophysics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/astronomy-and-astrophysics/astrophysics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all five sections against rendered snapshot: calculus and physics options branches match narrative-marker partitioning (PHYS 5D in both physics branches per page), MATH 23A and PHYS 102 all_of, 4-of-15 upper-division electives with AM 107/PHYS 107 carried as primary code. PHYS 15A/15C substitution rider kept as notes text (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

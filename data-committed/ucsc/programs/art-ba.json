@@ -5,7 +5,7 @@
  "division": "arts-division",
  "kind": "major",
  "name": "Art B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -288,10 +288,78 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 49,
+         "lo": 30,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 149,
+         "lo": 130,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "One course from Europe and the Americas: HAVC courses numbered 30-49 or 130-149.",
+       "A score of 3 or higher on the Advanced Placement (AP) Art History exam will satisfy the Europe and the Americas requirement."
+      ],
+      "op": "range",
+      "source": {
+       "heading": "Critical Theory and Historical Context",
+       "prose": [
+        "Students complete two courses from the History of Art and Visual Culture (HAVC) geographic regions:",
+        "One course from Europe and the Americas: HAVC courses numbered 30-49 or 130-149",
+        "One course from Africa, Asia, Mediterranean, Native Americas, or Oceania : HAVC courses numbered 10-29, 50-80, 110-129, or 150-179.",
+        "A full list of courses by region can be found on the History of Art and Visual Culture program statement .",
+        "Note: A score of 3 or higher on the Advanced Placement (AP) Art History exam will satisfy the Europe and the Americas requirement."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 29,
+         "lo": 10,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 80,
+         "lo": 50,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 129,
+         "lo": 110,
+         "subject": "HAVC"
+        },
+        {
+         "hi": 179,
+         "lo": 150,
+         "subject": "HAVC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [
+       "One course from Africa, Asia, Mediterranean, Native Americas, or Oceania: HAVC courses numbered 10-29, 50-80, 110-129, or 150-179."
+      ],
+      "op": "range",
       "source": {
        "heading": "Critical Theory and Historical Context",
        "prose": [
@@ -329,10 +397,50 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 101,
+         "subject": "ART"
+        },
+        {
+         "hi": 194,
+         "lo": 194,
+         "subject": "ART"
+        },
+        {
+         "hi": 196,
+         "lo": 196,
+         "subject": "ART"
+        },
+        {
+         "hi": 198,
+         "lo": 198,
+         "subject": "ART"
+        },
+        {
+         "hi": 199,
+         "lo": 199,
+         "subject": "ART"
+        }
+       ],
+       "include_series": [
+        {
+         "prefix": "190B",
+         "subject": "ART"
+        }
+       ]
+      },
+      "n": 7,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "ART 190B satisfies both an upper-division studio as well as the comprehensive requirement.",
+       "Transfer students are strongly encouraged to take ART 194 during their junior year."
+      ],
+      "op": "range",
       "source": {
        "heading": "Studio Work",
        "prose": [
@@ -390,15 +498,20 @@
       }
      },
      {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "ART190B"
+      "branches": [
+       [
+        "ART190B"
+       ]
       ],
+      "constraints": [],
+      "courses": [],
       "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "one_of",
+      "needs_review": true,
+      "notes": [
+       "ART 190B is only one of four ways to satisfy this option. Non-course alternatives (manual check): presenting an exhibition with faculty review and critique; submitting a portfolio with faculty review and critique; or enrolling in an upper-division studio (ART 100-199) course with a faculty member and completing an additional project.",
+       "No course credit is given for either the exhibition or portfolio submission; students choosing one of these options must complete seven upper-division studios. Students using ART 190B may count it as one of their seven upper-division studios."
+      ],
+      "op": "options",
       "source": {
        "heading": "Plus one of the following options:",
        "prose": [
@@ -416,6 +529,8 @@
  "slug": "art-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/art/art-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/art-ba.md: HAVC critical-theory pair and 7-course studio requirement encoded as range rules; comprehensive options branch no longer forces ART 190B",
+  "status": "frontier-verified"
  }
 }

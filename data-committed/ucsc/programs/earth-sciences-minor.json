@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -70,18 +70,17 @@
         "EART196B",
         "EART198"
        ],
-       "exclude_ranges": [
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "OCEA"
-        }
-       ],
+       "exclude_ranges": [],
        "include_ranges": [
         {
          "hi": 199,
          "lo": 100,
          "subject": "EART"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
         }
        ],
        "include_series": []
@@ -134,6 +133,8 @@
  "slug": "earth-sciences-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciences-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked lower-division options branches (EART 5/10/20 + labs), upper-division range rule (n=5, EART/OCEA 100-199, excluding EART 196B/198) and letter-grade policy info. Prior report's OCEA-excluded issue is fixed; EART 199/OCEA 199 cap, lecture/lab and ENVS 115A/L pair riders carried as prose constraints.",
+  "status": "frontier-verified"
  }
 }

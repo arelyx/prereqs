@@ -5,11 +5,11 @@
  "division": "humanities-division",
  "kind": "major",
  "name": "Applied Linguistics and Multilingualism B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -82,9 +82,11 @@
        "SPHS4"
       ],
       "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
+      "needs_review": false,
+      "notes": [
+       "Level 4 of a non-English language with a grade of B- or better (listed courses are examples), or placement into Level 5 or higher via placement exam."
+      ],
+      "op": "one_of",
       "source": {
        "heading": "Major Qualification",
        "prose": [
@@ -377,10 +379,10 @@
        "SPAN156K",
        "SPAN156L"
       ],
-      "n": null,
+      "n": 4,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -446,6 +448,8 @@
  "slug": "applied-linguistics-and-multilingualism-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/languages-and-applied-linguistics/applied-linguistics-and-multilingualism-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/applied-linguistics-and-multilingualism-ba.md: Electives n_of raised 3->4 (four electives required; >=3 APLX kept as prose constraint) and spurious from_following_lists removed. Also resolved a pre-existing unknown op: Major Qualification recast as one_of over the six Level-4 examples with the placement/B- rider as a note (matches spanish-studies-ba convention).",
+  "status": "frontier-verified"
  }
 }

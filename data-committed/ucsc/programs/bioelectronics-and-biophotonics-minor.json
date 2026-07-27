@@ -205,6 +205,8 @@
  "slug": "bioelectronics-and-biophotonics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/bioelectronics-and-biophotonics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all lower- and upper-division rules against the rendered snapshot: all_of/one_of memberships, the three one-of pairs, and the ECE 104 / ECE 130+130L / BME 140 options branches all match; PHYS 15A/15C substitution and PHYS 5B prerequisite notes carried as notes. No discrepancies.",
+  "status": "frontier-verified"
  }
 }

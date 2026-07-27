@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Business Management Economics B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -536,11 +536,10 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "from_following_lists": true,
-      "n": 5,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "info",
       "source": {
        "heading": "Upper-division electives",
        "prose": [
@@ -560,7 +559,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Finance Electives (choose one)",
        "prose": []
@@ -645,7 +644,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "one_of",
       "source": {
        "heading": "Economics Electives (choose one)",
        "prose": [
@@ -1071,10 +1070,11 @@
        "ECON183",
        "ECON188"
       ],
-      "n": null,
+      "from_following_lists": true,
+      "n": 1,
       "needs_review": false,
       "notes": [],
-      "op": "one_of",
+      "op": "n_of",
       "source": {
        "heading": "Plus one economics elective from the following:",
        "prose": [
@@ -1202,6 +1202,8 @@
  "slug": "business-management-economics-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/business-management-economics-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/business-management-economics-ba.md: Economics Electives (choose one) recoded from info to one_of over its 29-course list; ECON 191/192/193/193F exclusion and ECON 195/199 substitution remain as prose.",
+  "status": "frontier-verified"
  }
 }

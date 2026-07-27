@@ -221,6 +221,8 @@
  "slug": "economics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/economics/economics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked all rules against the rendered snapshot: ECON 1/2 all_of, 6-branch calculus options matching the narrative markers, STAT 17/17L all_of with concurrent-enrollment note, ECON 100A/100M and 100B/100N one_ofs, ECON 113, and the 3-elective range over ECON 100-189 excluding ECON 104. Membership, operators, counts, and the range filter all match; the no-double-counting rider stays as source prose (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

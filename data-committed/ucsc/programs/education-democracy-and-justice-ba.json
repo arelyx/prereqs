@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Education, Democracy, and Justice B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -93,9 +93,9 @@
        "EDUC60"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "info",
       "source": {
        "heading": "Transfer Admission Screening Policy",
        "prose": [
@@ -119,9 +119,9 @@
        "EDUC60"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "info",
       "source": {
        "heading": "Getting Started in the Major: Transfer Students",
        "prose": [
@@ -147,9 +147,9 @@
        "EDUC60"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Major Qualification",
        "prose": [
@@ -342,7 +342,8 @@
        ],
        "include_series": []
       },
-      "n": 2,
+      "from_following_lists": true,
+      "n": 6,
       "needs_review": false,
       "notes": [],
       "op": "range",
@@ -396,7 +397,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "list",
       "source": {
        "heading": "Social Contexts and Educational Foundations",
        "prose": [
@@ -427,9 +428,9 @@
        "CRES121"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Learning and Teaching",
        "prose": [
@@ -527,6 +528,8 @@
  "slug": "education-democracy-and-justice-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/education-democracy-and-justice-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/education-democracy-and-justice-ba.md: Electives range n 2->6 (counting parent over EDUC 102-187 plus following list pools), topic-area lists set to op list, Major Qualification set to all_of of EDUC 10/60, transfer screening/getting-started advisory rules set to info.",
+  "status": "frontier-verified"
  }
 }

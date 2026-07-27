@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Cognitive Science B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -183,7 +183,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "info",
       "source": {
        "heading": "Recommended Prior to Transfer",
        "prose": [
@@ -537,78 +537,33 @@
       }
      },
      {
-      "branches": null,
+      "branches": [
+       [
+        "PSYC121"
+       ],
+       [
+        "PSYC123"
+       ],
+       [
+        "PSYC125"
+       ],
+       [
+        "PSYC129"
+       ]
+      ],
       "constraints": [],
       "courses": [],
-      "n": null,
+      "n": 3,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Areas: Perception (PSYC 121), Neuroscience (PSYC 123), Language (PSYC 125), Memory (PSYC 129)."
+      ],
+      "op": "n_of_groups",
       "source": {
        "heading": "Core Courses",
        "prose": [
         "Students must complete a course from three of the four following areas:"
        ]
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "PSYC121"
-      ],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "all_of",
-      "source": {
-       "heading": "Perception",
-       "prose": []
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "PSYC123"
-      ],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "all_of",
-      "source": {
-       "heading": "Neuroscience",
-       "prose": []
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "PSYC125"
-      ],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "all_of",
-      "source": {
-       "heading": "Language",
-       "prose": []
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
-       "PSYC129"
-      ],
-      "n": null,
-      "needs_review": false,
-      "notes": [],
-      "op": "all_of",
-      "source": {
-       "heading": "Memory",
-       "prose": []
       }
      }
     ],
@@ -653,10 +608,35 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "119",
+         "subject": "PSYC"
+        },
+        {
+         "prefix": "139",
+         "subject": "PSYC"
+        },
+        {
+         "prefix": "159",
+         "subject": "PSYC"
+        },
+        {
+         "prefix": "179",
+         "subject": "PSYC"
+        }
+       ]
+      },
+      "n": 1,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Only one seminar will count toward fulfilling these elective requirements."
+      ],
+      "op": "range",
       "source": {
        "heading": "One Senior Seminar:",
        "prose": [
@@ -949,6 +929,8 @@
  "slug": "cognitive-science-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/psychology/cognitive-science-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/cognitive-science-bs.md: core-courses choose-3-of-4 as n_of_groups; senior seminar as range n=1 over PSYC 119/139/159/179 series; recommended-prior-to-transfer PSYC 20 demoted to info",
+  "status": "frontier-verified"
  }
 }

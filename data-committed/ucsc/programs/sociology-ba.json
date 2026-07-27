@@ -5,11 +5,11 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Sociology B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -349,12 +349,29 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Electives must be 5 credits or more. Up to two pre-approved outside courses can count toward the upper-division advanced coursework.",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 110,
+         "subject": "SOCY"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 5,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Upper-division advanced coursework:",
        "prose": [
@@ -432,10 +449,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 294,
+         "lo": 201,
+         "subject": "SOCY"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Sociology Graduate Course",
        "prose": [
@@ -457,13 +486,14 @@
       ],
       "courses": [
        "SOCY195A",
-       "SOCY195B",
-       "SOCY195C"
+       "SOCY195B"
       ],
-      "n": 3,
+      "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "n_of",
+      "notes": [
+       "A minimum of two quarters of thesis individual study is required; three quarters is recommended. SOCY 195C is optional."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Senior thesis",
        "prose": [
@@ -580,12 +610,17 @@
      },
      {
       "branches": null,
-      "constraints": [],
+      "constraints": [
+       {
+        "text": "Selected from Sociology 110-189 or from the list of pre-approved courses (5 credits or more each).",
+        "type": "prose"
+       }
+      ],
       "courses": [],
-      "n": null,
-      "needs_review": false,
+      "n": 5,
+      "needs_review": true,
       "notes": [],
-      "op": "info",
+      "op": "category_count",
       "source": {
        "heading": "Upper-division advanced coursework",
        "prose": [
@@ -684,10 +719,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 294,
+         "lo": 201,
+         "subject": "SOCY"
+        }
+       ],
+       "include_series": []
+      },
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Sociology Graduate Course",
        "prose": [
@@ -709,13 +756,14 @@
       ],
       "courses": [
        "SOCY195A",
-       "SOCY195B",
-       "SOCY195C"
+       "SOCY195B"
       ],
-      "n": 3,
+      "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "n_of",
+      "notes": [
+       "A minimum of two quarters of thesis individual study is required; three quarters is recommended. SOCY 195C is optional."
+      ],
+      "op": "all_of",
       "source": {
        "heading": "Senior thesis",
        "prose": [
@@ -732,6 +780,8 @@
  "slug": "sociology-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/sociology/sociology-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/sociology-ba.md: general upper-division advanced coursework info -> range n=5 over SOCY 110-189 (riders as constraints); DJS variant info -> category_count n=5 with needs_review (pre-approved list unenumerated); both Senior thesis rules n_of(3) -> all_of [SOCY195A, SOCY195B] with SOCY 195C noted optional.",
+  "status": "frontier-verified"
  }
 }

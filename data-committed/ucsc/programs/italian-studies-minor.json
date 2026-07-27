@@ -5,7 +5,7 @@
  "division": "humanities-division",
  "kind": "minor",
  "name": "Italian Studies Minor",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -29,12 +29,12 @@
        "ITAL5",
        "ITAL6"
       ],
-      "n": 2,
+      "n": null,
       "needs_review": false,
       "notes": [
        "Italian has an accelerated language track of ITAL 1A and ITAL 1B. These two courses taken together equate to ITAL 1-ITAL 3."
       ],
-      "op": "n_of",
+      "op": "all_of",
       "source": {
        "heading": "Lower-Division Courses",
        "prose": [
@@ -150,6 +150,17 @@
        "LIT166C",
        "LIT190A"
       ],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "185",
+         "subject": "LIT"
+        }
+       ]
+      },
       "n": 2,
       "needs_review": false,
       "notes": [],
@@ -237,6 +248,8 @@
  "slug": "italian-studies-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/italian-studies-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/italian-studies-minor.md: Lower-Division Italian sequence n_of(2)->all_of (full ITAL 1-6 sequence); Italian Literature n_of(2) gained include_series LIT 185 to admit the LIT 185-series alternative.",
+  "status": "frontier-verified"
  }
 }

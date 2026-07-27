@@ -736,6 +736,8 @@
  "slug": "mathematics-theory-and-computation-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/mathematics/mathematics-theory-and-computation-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified lower-division (one_of choices + options branch), five upper-division requirement categories (each one_of), MATH 100 required, electives (n_of 3 over 37-course pool), comprehensive (one_of MATH194/195), and DC against rendered page; membership, operators and counts all match. Transfer screening/qualification segregated as approximation.",
+  "status": "frontier-verified"
  }
 }

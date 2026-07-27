@@ -5,11 +5,11 @@
  "division": "physical-and-biological-sciences-division",
  "kind": "major",
  "name": "Earth Sciences B.S.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -110,36 +110,29 @@
       }
      },
      {
-      "branches": [
-       [
-        "MATH11B"
-       ],
-       [
-        "MATH19B"
-       ],
-       [
-        "PHYS5A",
-        "PHYS5L",
-        "PHYS5B",
-        "PHYS5M"
-       ],
-       [
-        "PHYS6A",
-        "PHYS6L",
-        "PHYS6B",
-        "PHYS6M"
-       ]
-      ],
+      "branches": null,
       "constraints": [],
       "courses": [
        "CHEM3A",
        "CHEM3B",
-       "CHEM3C"
+       "CHEM3C",
+       "MATH11B",
+       "MATH19B",
+       "PHYS5A",
+       "PHYS5L",
+       "PHYS5B",
+       "PHYS5M",
+       "PHYS6A",
+       "PHYS6L",
+       "PHYS6B",
+       "PHYS6M"
       ],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "options",
+      "notes": [
+       "Recommended (advisory) prior to transfer: CHEM 3A, CHEM 3B, and CHEM 3C; and one of MATH 11B or MATH 19B; and either the PHYS 5A/5L/5B/5M series or the PHYS 6A/6L/6B/6M series."
+      ],
+      "op": "info",
       "source": {
        "heading": "Recommended Courses",
        "prose": [
@@ -543,18 +536,17 @@
         "EART196B",
         "EART198"
        ],
-       "exclude_ranges": [
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "OCEA"
-        }
-       ],
+       "exclude_ranges": [],
        "include_ranges": [
         {
          "hi": 199,
          "lo": 100,
          "subject": "EART"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
         }
        ],
        "include_series": []
@@ -629,7 +621,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -652,11 +644,11 @@
        "EART189B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory completion of Summer Field",
        "prose": [
@@ -685,7 +677,7 @@
       "notes": [
        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
       ],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory completion of a senior thesis",
        "prose": [
@@ -927,18 +919,17 @@
         "EART196B",
         "EART198"
        ],
-       "exclude_ranges": [
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "OCEA"
-        }
-       ],
+       "exclude_ranges": [],
        "include_ranges": [
         {
          "hi": 199,
          "lo": 100,
          "subject": "EART"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
         }
        ],
        "include_series": []
@@ -971,9 +962,9 @@
        "EART189B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",
        "prose": [
@@ -1021,11 +1012,11 @@
        "EART189B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Students completing their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory completion of Summer Field",
        "prose": [
@@ -1237,18 +1228,17 @@
         "EART196B",
         "EART198"
        ],
-       "exclude_ranges": [
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "OCEA"
-        }
-       ],
+       "exclude_ranges": [],
        "include_ranges": [
         {
          "hi": 199,
          "lo": 100,
          "subject": "EART"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
         }
        ],
        "include_series": []
@@ -1323,7 +1313,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -1346,11 +1336,11 @@
        "EART189B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory Completion of Summer Field",
        "prose": [
@@ -1379,7 +1369,7 @@
       "notes": [
        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
       ],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory Completion of a Senior Thesis",
        "prose": [
@@ -1624,18 +1614,17 @@
         "EART196B",
         "EART198"
        ],
-       "exclude_ranges": [
-        {
-         "hi": 199,
-         "lo": 100,
-         "subject": "OCEA"
-        }
-       ],
+       "exclude_ranges": [],
        "include_ranges": [
         {
          "hi": 199,
          "lo": 100,
          "subject": "EART"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
         }
        ],
        "include_series": []
@@ -1710,7 +1699,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -1733,11 +1722,11 @@
        "EART189B"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Students who wish to complete their senior comprehensive requirement with EART 189A and EART 189B should be aware that the following courses are prerequisites: EART 109 and EART 109L, EART 110A , and EART 110B and EART 110M . EART 189B must be completed in the summer."
       ],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory completion of Summer Field",
        "prose": [
@@ -1766,7 +1755,7 @@
       "notes": [
        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require at least two or three quarters for completion."
       ],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory completion of a senior thesis",
        "prose": [
@@ -2042,41 +2031,33 @@
         "type": "prose"
        }
       ],
-      "courses": [
-       "EART104",
-       "EART109",
-       "EART109L",
-       "EART112",
-       "EART114",
-       "EART116",
-       "EART118",
-       "EART119A",
-       "EART125",
-       "EART126",
-       "EART140",
-       "EART140L",
-       "EART142",
-       "EART146",
-       "EART146L",
-       "EART148",
-       "EART150",
-       "EART150L",
-       "EART152",
-       "EART160",
-       "EART162",
-       "EART163",
-       "EART164",
-       "EART165",
-       "EART172",
-       "EART270",
-       "EART273",
-       "EART278A"
-      ],
-      "from_following_lists": true,
+      "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "EART196B",
+        "EART198"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "EART"
+        },
+        {
+         "hi": 199,
+         "lo": 100,
+         "subject": "OCEA"
+        }
+       ],
+       "include_series": []
+      },
       "n": 4,
       "needs_review": false,
-      "notes": [],
-      "op": "n_of",
+      "notes": [
+       "Choosing from the following list is recommended, but not mandatory: EART104, EART109, EART109L, EART112, EART114, EART116, EART118, EART119A, EART125, EART126, EART140, EART140L, EART142, EART146, EART146L, EART148, EART150, EART150L, EART152, EART160, EART162, EART163, EART164, EART165, EART172, EART270, EART273, EART278A."
+      ],
+      "op": "range",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -2128,7 +2109,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "section_choice",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -2159,7 +2140,7 @@
       "notes": [
        "Students expecting to write a senior thesis for their comprehensive requirement are required to contact the department at least three quarters before graduation to identify the intended project and faculty adviser. Senior theses usually require two or three quarters for completion."
       ],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Satisfactory completion of a senior thesis",
        "prose": [
@@ -2196,6 +2177,8 @@
  "slug": "earth-sciences-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/earth-and-planetary-sciences/earth-sciences-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/earth-sciences-bs.md: geology DC and Summer Field unknown->all_of; general/planetary/ocean comprehensive recast as section_choice with all_of Summer Field, all_of EART 195 thesis, one_of capstone; geophysics comprehensive section_choice with all_of EART 195 (spurious n=3 removed) and one_of EART 191C; geophysics electives recast as the shared range rule (recommended 28-course list kept as note); transfer-screening recommended courses recast as advisory info.",
+  "status": "frontier-verified"
  }
 }

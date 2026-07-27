@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Environmental Studies/Economics Combined Major B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -129,12 +129,19 @@
      },
      {
       "branches": null,
-      "constraints": [],
-      "courses": [],
+      "constraints": [
+       {
+        "text": "Alternative: a course in national or international politics (unenumerated; manual check).",
+        "type": "prose"
+       }
+      ],
+      "courses": [
+       "ENVS25"
+      ],
       "n": null,
-      "needs_review": false,
+      "needs_review": true,
       "notes": [],
-      "op": "section_choice",
+      "op": "one_of",
       "source": {
        "heading": "Plus one of the following:",
        "prose": [
@@ -618,18 +625,12 @@
     "rules": [
      {
       "branches": null,
-      "constraints": [
-       {
-        "text": "Three courses from ENVS 101-179. At least one course must be from the list of environmental studies electives in the natural sciences list below.",
-        "type": "prose"
-       }
-      ],
+      "constraints": [],
       "courses": [],
-      "from_following_lists": true,
-      "n": 3,
+      "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "n_of",
+      "op": "info",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -676,13 +677,53 @@
        "ECON180",
        "ECON183"
       ],
-      "n": null,
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Economics Electives",
-       "prose": []
+       "prose": [
+        "Three courses from the Economics Electives list below"
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [
+       {
+        "text": "At least one course must be from the list of environmental studies electives in the natural sciences list below.",
+        "type": "prose"
+       },
+       {
+        "text": "None of the three environmental studies upper-division courses can be an environmental studies internship, individual study or substitution course.",
+        "type": "prose"
+       }
+      ],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 179,
+         "lo": 101,
+         "subject": "ENVS"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
+      "needs_review": false,
+      "notes": [
+       "Lecture/lab combinations count as one course. Associated labs are required only when required by the lecture."
+      ],
+      "op": "range",
+      "source": {
+       "heading": "Three courses from ENVS 101-179",
+       "prose": [
+        "Three courses from ENVS 101-179. At least one course must be from the list of environmental studies electives in the natural sciences list below."
+       ]
       }
      },
      {
@@ -839,6 +880,10 @@
        {
         "text": "Before enrolling in the senior thesis or senior internship option, students must formally apply to work with a particular faculty mentor very early in their thesis or project preparation. The senior thesis and senior internship option require careful planning, additional independent research, and at least a two-quarter commitment.",
         "type": "prose"
+       },
+       {
+        "text": "Pass those portions of the economics comprehensive examination administered in ECON 100A and ECON 113 .",
+        "type": "prose"
        }
       ],
       "courses": [],
@@ -864,6 +909,8 @@
  "slug": "environmental-studieseconomics-combined-major-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/environmental-studies/environmental-studieseconomics-combined-major-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/environmental-studieseconomics-combined-major-ba.md: Electives split into two counters (n_of 3 Economics Electives; range n=3 ENVS 101-179 with at-least-one-natural-sciences constraint and the natural-sciences list as reference pool); Comprehensive gains the ECON 100A/ECON 113 comprehensive-exam constraint; screening section_choice fixed to one_of ENVS 25 with unenumerated politics-course alternative as needs_review constraint.",
+  "status": "frontier-verified"
  }
 }

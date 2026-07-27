@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -208,10 +208,11 @@
        }
       ],
       "courses": [],
-      "n": null,
+      "from_following_lists": true,
+      "n": 15,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -262,11 +263,11 @@
        "ECE256"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 153 and ECE 250 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.) Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but will not fulfill the PR GE requirement."
       ],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Electrical and Computer Engineering",
        "prose": [
@@ -284,7 +285,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "list",
       "source": {
        "heading": "Computer Science and Engineering",
        "prose": []
@@ -336,11 +337,11 @@
        "ECE256"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
       ],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Electrical and Computer Engineering",
        "prose": [
@@ -358,7 +359,7 @@
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "all_of",
+      "op": "list",
       "source": {
        "heading": "Computer Science and Engineering",
        "prose": []
@@ -424,11 +425,11 @@
        "ECE245"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
       ],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Electrical and Computer Engineering",
        "prose": [
@@ -479,11 +480,11 @@
        "ECE275"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
       ],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Power and Energy Concentration",
        "prose": [
@@ -515,11 +516,11 @@
        "ECE245"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course."
       ],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Robotics and Automation Concentration",
        "prose": [
@@ -557,11 +558,11 @@
        "ECE245"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [
        "Each of ECE 183 , ECE 193 and ECE 198 courses can be taken only once as an elective course. ( ECE 130 and ECE 230 , ECE 141 and ECE 241 , and ECE 172 and ECE 221 are undergraduate and graduate courses taught in conjunction, and only one can be taken for this program.)"
       ],
-      "op": "unknown",
+      "op": "list",
       "source": {
        "heading": "Digital Hardware Concentration",
        "prose": [
@@ -579,6 +580,8 @@
  "slug": "electrical-engineering-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked math/science lower-division rules, the two-branch upper-division core options (incl. ECE 141 no-double-count note), the 15-credit elective counting parent with from_following_lists, and all six concentration pool lists course-by-course against the rendered page (ECE 253/CSE 208 carried as primary code). Prior report's issues (CSE 150 as all_of; pools as unknown) are fixed; same-concentration and taken-once riders carried as constraint/note prose.",
+  "status": "frontier-verified"
  }
 }

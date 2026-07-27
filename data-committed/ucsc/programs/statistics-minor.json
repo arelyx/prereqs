@@ -275,6 +275,8 @@
  "slug": "statistics-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistics-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Checked calculus-sequence options, the four category rules (statistical concepts, programming, linear algebra, multivariate calculus), probability/inference/computational-methods rules, and the two-elective n_of (19-course list) against the rendered snapshot; membership, operators, branch partitioning, and counts all match. Recommendation riders (AM 20/MATH 24, grad-work note) kept as notes (in-scope approximation).",
+  "status": "frontier-verified"
  }
 }

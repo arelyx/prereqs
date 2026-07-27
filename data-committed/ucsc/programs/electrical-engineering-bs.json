@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [
@@ -540,7 +540,7 @@
     "title": "How to Declare a Major"
    },
    {
-    "concentration": null,
+    "concentration": "Course Requirements (all concentrations)",
     "kind": "concentration",
     "rules": [
      {
@@ -1200,6 +1200,8 @@
  "slug": "electrical-engineering-bs",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-bs",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified rule-by-rule against rendered snapshot: lower/upper-division membership and operators, Mathematics either/or options, 4-elective n_of drawing from Electronics/Optics (44) and Communications (30 + CSE 150) list pools, and DC/Comprehensive capstone options (129A-B-C or 129A + ECE 195 x2) all match. At-least-three-from-concentration and Design Elective riders carried as prose constraints; transfer screening segregated as qualification with n_of 8 pools (sanctioned approximations).",
+  "status": "frontier-verified"
  }
 }

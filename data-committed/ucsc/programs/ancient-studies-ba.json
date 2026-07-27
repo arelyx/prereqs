@@ -5,7 +5,7 @@
  "division": "humanities-division",
  "kind": "major",
  "name": "Ancient Studies B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -115,9 +115,9 @@
        "LATN1"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "info",
       "source": {
        "heading": "Getting Started in the Major: Transfer Students",
        "prose": [
@@ -308,10 +308,10 @@
        "PHIL118",
        "POLI105A"
       ],
-      "n": null,
+      "n": 6,
       "needs_review": false,
       "notes": [],
-      "op": "list",
+      "op": "n_of",
       "source": {
        "heading": "Electives",
        "prose": [
@@ -348,31 +348,17 @@
        "LIT184B",
        "LIT184C",
        "LIT184D",
-       "LIT184E"
-      ],
-      "n": null,
-      "needs_review": true,
-      "notes": [],
-      "op": "unknown",
-      "source": {
-       "heading": "Greek Literature:",
-       "prose": []
-      }
-     },
-     {
-      "branches": null,
-      "constraints": [],
-      "courses": [
+       "LIT184E",
        "LIT186B",
        "LIT186C",
        "LIT186D"
       ],
-      "n": null,
-      "needs_review": true,
+      "n": 2,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "n_of",
       "source": {
-       "heading": "Latin Literature:",
+       "heading": "Greek Literature: / Latin Literature:",
        "prose": []
       }
      }
@@ -407,6 +393,8 @@
  "slug": "ancient-studies-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/history/ancient-studies-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/ancient-studies-ba.md: Electives list->n_of n=6; DC unknown sub-lists merged into n_of n=2 over LIT184B-E/LIT186B-D; advisory transfer-students unknown->info.",
+  "status": "frontier-verified"
  }
 }

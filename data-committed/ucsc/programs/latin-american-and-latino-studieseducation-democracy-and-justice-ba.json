@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Latin American and Latino Studies/Education, Democracy, and Justice B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -307,10 +307,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 187,
+         "lo": 102,
+         "subject": "EDUC"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 3,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Three EDUC Courses",
        "prose": [
@@ -322,10 +334,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": null,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 190,
+         "lo": 101,
+         "subject": "LALS"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "range",
       "source": {
        "heading": "Two LALS Courses",
        "prose": [
@@ -368,10 +392,40 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [
+        "LALS194L"
+       ],
+       "exclude_ranges": [],
+       "include_ranges": [],
+       "include_series": [
+        {
+         "prefix": "194",
+         "subject": "LALS"
+        }
+       ]
+      },
+      "n": 1,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
+      "source": {
+       "heading": "Comprehensive Requirement",
+       "prose": [
+        "The Comprehensive Requirement is fulfilled by completing one senior seminar (LALS 194 A-Z, excluding L) and a Writing Lab ( LALS 194L )."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [
+       "LALS194L"
+      ],
       "n": null,
       "needs_review": false,
       "notes": [],
-      "op": "info",
+      "op": "all_of",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -394,9 +448,9 @@
        "LALS100L"
       ],
       "n": null,
-      "needs_review": true,
+      "needs_review": false,
       "notes": [],
-      "op": "unknown",
+      "op": "all_of",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",
        "prose": [
@@ -412,6 +466,8 @@
  "slug": "latin-american-and-latino-studieseducation-democracy-and-justice-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/latin-american-and-latino-studies/latin-american-and-latino-studieseducation-democracy-and-justice-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/latin-american-and-latino-studieseducation-democracy-and-justice-ba.md: EDUC and LALS elective info rules -> range n=3 (EDUC 102-187) and n=2 (LALS 101-190); Comprehensive info -> range n=1 over LALS 194 series excluding LALS 194L plus all_of LALS 194L; DC unknown -> all_of LALS 100A+100L.",
+  "status": "frontier-verified"
  }
 }

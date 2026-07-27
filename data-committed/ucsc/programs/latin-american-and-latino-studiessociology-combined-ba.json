@@ -5,7 +5,7 @@
  "division": "social-sciences-division",
  "kind": "major",
  "name": "Latin American and Latino Studies/Sociology Combined B.A.",
- "origin": "local-llm-pipeline",
+ "origin": "hand-edited",
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
@@ -286,10 +286,49 @@
       "branches": null,
       "constraints": [],
       "courses": [],
-      "n": 4,
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 190,
+         "lo": 101,
+         "subject": "LALS"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
+      "source": {
+       "heading": "Four Upper-Division Elective Courses",
+       "prose": [
+        "Choose two 5-credit upper-division LALS electives (numbered 101-190) and two 5-credit upper-division sociology electives (numbered 110-189)."
+       ]
+      }
+     },
+     {
+      "branches": null,
+      "constraints": [],
+      "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 189,
+         "lo": 110,
+         "subject": "SOCY"
+        }
+       ],
+       "include_series": []
+      },
+      "n": 2,
+      "needs_review": false,
+      "notes": [],
+      "op": "range",
       "source": {
        "heading": "Four Upper-Division Elective Courses",
        "prose": [
@@ -330,13 +369,68 @@
     "kind": "comprehensive",
     "rules": [
      {
-      "branches": null,
+      "branches": [
+       [
+        "LALS194A",
+        "LALS194L"
+       ],
+       [
+        "LALS194B",
+        "LALS194L"
+       ],
+       [
+        "LALS194E",
+        "LALS194L"
+       ],
+       [
+        "LALS194F",
+        "LALS194L"
+       ],
+       [
+        "LALS194G",
+        "LALS194L"
+       ],
+       [
+        "LALS194H",
+        "LALS194L"
+       ],
+       [
+        "LALS194J",
+        "LALS194L"
+       ],
+       [
+        "LALS194R",
+        "LALS194L"
+       ],
+       [
+        "LALS194S",
+        "LALS194L"
+       ],
+       [
+        "LALS194T",
+        "LALS194L"
+       ],
+       [
+        "LALS194V",
+        "LALS194L"
+       ],
+       [
+        "LALS194X",
+        "LALS194L"
+       ],
+       [
+        "SOCY196S"
+       ]
+      ],
       "constraints": [],
       "courses": [],
       "n": null,
       "needs_review": false,
-      "notes": [],
-      "op": "info",
+      "notes": [
+       "Option 1: an LALS Senior Seminar (LALS 194 A-Z, excluding LALS 194L) together with LALS 194L; seminar branches enumerate the LALS 194-series courses in the current catalog.",
+       "Option 2: SOCY 196S (topics vary; students must apply in advance)."
+      ],
+      "op": "options",
       "source": {
        "heading": "Comprehensive Requirement",
        "prose": [
@@ -352,6 +446,8 @@
  "slug": "latin-american-and-latino-studiessociology-combined-ba",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/latin-american-and-latino-studies/latin-american-and-latino-studiessociology-combined-ba",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "hand-corrected per _reports/latin-american-and-latino-studiessociology-combined-ba.md: Comprehensive set to options (each LALS 194-series seminar paired with LALS 194L, or SOCY 196S); four upper-division electives split into two range rules (n=2 LALS 101-190, n=2 SOCY 110-189).",
+  "status": "frontier-verified"
  }
 }

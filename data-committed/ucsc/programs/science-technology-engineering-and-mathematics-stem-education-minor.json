@@ -9,7 +9,7 @@
  "provenance": {
   "model": "qwen3:4b",
   "prompt_version": "rule_op_v1",
-  "snapshot": "20260727T041904Z"
+  "snapshot": "20260727T044244Z"
  },
  "requirements": {
   "info_sections": [],
@@ -167,10 +167,22 @@
       "branches": null,
       "constraints": [],
       "courses": [],
+      "filter": {
+       "exclude_codes": [],
+       "exclude_ranges": [],
+       "include_ranges": [
+        {
+         "hi": 187,
+         "lo": 102,
+         "subject": "EDUC"
+        }
+       ],
+       "include_series": []
+      },
       "n": 2,
       "needs_review": false,
       "notes": [],
-      "op": "category_count",
+      "op": "range",
       "source": {
        "heading": "Plus two electives:",
        "prose": [
@@ -186,6 +198,8 @@
  "slug": "science-technology-engineering-and-mathematics-stem-education-minor",
  "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/social-sciences-division/education/science-technology-engineering-and-mathematics-stem-education-minor",
  "verification": {
-  "status": "unverified"
+  "date": "2026-07-26",
+  "notes": "Verified against rendered snapshot: one_of EDUC 50A-C; EDUC 60; one_of EDUC 100A-C; one_of EDUC 185B/C; EDUC 185L; one_of of the nine cultural/linguistic diversity courses; and range n=2 over EDUC 102-187 for the two electives. Membership, operators, and counts all match; declaration steps and advisory prose are appropriately excluded.",
+  "status": "frontier-verified"
  }
 }
