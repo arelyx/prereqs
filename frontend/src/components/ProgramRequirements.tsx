@@ -2,7 +2,8 @@
 // requirement structure with per-rule progress highlighting. Deliberately
 // NOT a degree audit — no aggregate met-counters, and non-mechanical rules
 // (electives, ranges, categories) render gray with a verify-manually hazard.
-// Each program collapses like the GE tiles.
+// Programs and their sections both collapse; the arrangement persists in
+// localStorage so a reload isn't a jarring reset (no network involved).
 
 import { useState } from 'react'
 import { useStore } from '../store'
@@ -10,28 +11,58 @@ import { RuleRow } from './rules'
 
 const HIDDEN_KINDS = new Set(['qualification', 'screening'])
 
+const COLLAPSE_KEY = 'prereqs.reqCollapse'
+
+// Explicit open/closed choices only; anything unkeyed falls back to the
+// defaults (programs collapsed, sections expanded).
+interface CollapseState {
+  programs: Record<string, boolean>
+  sections: Record<string, boolean>
+}
+
+function readCollapse(): CollapseState {
+  try {
+    const raw = localStorage.getItem(COLLAPSE_KEY)
+    if (raw) {
+      const parsed = JSON.parse(raw)
+      return { programs: parsed.programs ?? {}, sections: parsed.sections ?? {} }
+    }
+  } catch {
+    // corrupted state: fall through to defaults
+  }
+  return { programs: {}, sections: {} }
+}
+
 export default function ProgramRequirements({
   onOpenCourse,
 }: {
   onOpenCourse: (code: string) => void
 }) {
   const store = useStore()
-  const [open, setOpen] = useState<Set<number>>(new Set())
+  const [collapse, setCollapse] = useState<CollapseState>(readCollapse)
   const progress = store.validation?.programs ?? []
   if (!progress.length) return null
 
-  const toggle = (id: number) =>
-    setOpen((prev) => {
-      const next = new Set(prev)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
-    })
+  const save = (next: CollapseState) => {
+    setCollapse(next)
+    try {
+      localStorage.setItem(COLLAPSE_KEY, JSON.stringify(next))
+    } catch {
+      // storage full/unavailable: state still applies for this session
+    }
+  }
+
+  const programOpen = (id: number) => collapse.programs[id] ?? false
+  const sectionOpen = (key: string) => collapse.sections[key] ?? true
+  const toggleProgram = (id: number) =>
+    save({ ...collapse, programs: { ...collapse.programs, [id]: !programOpen(id) } })
+  const toggleSection = (key: string) =>
+    save({ ...collapse, sections: { ...collapse.sections, [key]: !sectionOpen(key) } })
 
   return (
     <>
       {progress.map((prog) => {
-        const isOpen = open.has(prog.program_id)
+        const isOpen = programOpen(prog.program_id)
         const sections = prog.sections.filter((s) => !HIDDEN_KINDS.has(s.kind))
         return (
           <section
@@ -40,7 +71,7 @@ export default function ProgramRequirements({
           >
             <button
               className="flex w-full items-baseline gap-3 p-4 text-left"
-              onClick={() => toggle(prog.program_id)}
+              onClick={() => toggleProgram(prog.program_id)}
               aria-expanded={isOpen}
             >
               <span className="text-slate-400">{isOpen ? '▾' : '▸'}</span>
@@ -60,21 +91,34 @@ export default function ProgramRequirements({
                   Mirrors the official catalog page — confirm your degree progress with an
                   academic adviser.
                 </p>
-                {sections.map((section, si) => (
-                  <div key={si}>
-                    <h3 className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                      {section.title}
-                      {section.concentration &&
-                        section.concentration !== section.title &&
-                        ` — ${section.concentration}`}
-                    </h3>
-                    <div className="space-y-1.5">
-                      {section.rules.map((r, ri) => (
-                        <RuleRow key={ri} rule={r} onOpenCourse={onOpenCourse} />
-                      ))}
+                {sections.map((section, si) => {
+                  const key = `${prog.program_id}:${si}:${section.title}`
+                  const secOpen = sectionOpen(key)
+                  return (
+                    <div key={si}>
+                      <button
+                        className="mb-1.5 flex w-full items-center gap-1.5 text-left"
+                        onClick={() => toggleSection(key)}
+                        aria-expanded={secOpen}
+                      >
+                        <span className="text-xs text-slate-400">{secOpen ? '▾' : '▸'}</span>
+                        <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                          {section.title}
+                          {section.concentration &&
+                            section.concentration !== section.title &&
+                            ` — ${section.concentration}`}
+                        </h3>
+                      </button>
+                      {secOpen && (
+                        <div className="space-y-1.5">
+                          {section.rules.map((r, ri) => (
+                            <RuleRow key={ri} rule={r} onOpenCourse={onOpenCourse} />
+                          ))}
+                        </div>
+                      )}
                     </div>
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             )}
           </section>

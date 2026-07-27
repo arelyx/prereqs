@@ -23,6 +23,7 @@ interface Store extends PlanState {
   email: string | null
   validation: ValidationResult | null
   validating: boolean
+  dormant: Set<string>
   setCompleted: (codes: string[]) => void
   addCompleted: (code: string) => void
   addYear: (startYear?: number) => void
@@ -64,6 +65,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [email, setEmail] = useState<string | null>(authedEmail())
   const [validation, setValidation] = useState<ValidationResult | null>(null)
   const [validating, setValidating] = useState(false)
+  const [dormant, setDormant] = useState<Set<string>>(new Set())
+
+  useEffect(() => {
+    api.dormant().then((d) => setDormant(new Set(d.codes))).catch(() => {})
+  }, [])
 
   // Persist locally on every change; push to server when signed in.
   useEffect(() => {
@@ -98,6 +104,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       email,
       validation,
       validating,
+      dormant,
       setCompleted: (codes) =>
         update((s) => ({ ...s, content: { ...s.content, completed: codes } })),
       addCompleted: (code) =>
@@ -195,7 +202,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         update((s) => ({ ...s, serverPlanId: null }))
       },
     }),
-    [state, email, validation, validating, update],
+    [state, email, validation, validating, dormant, update],
   )
 
   return <StoreCtx.Provider value={store}>{children}</StoreCtx.Provider>

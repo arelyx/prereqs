@@ -106,6 +106,19 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
               {detail.ge_codes.length > 0 && <> · GE: {detail.ge_codes.join(', ')}</>}
               {detail.repeatable && ' · repeatable'}
               {detail.formerly && ` · (${detail.formerly})`}
+              {detail.url && (
+                <>
+                  {' · '}
+                  <a
+                    href={detail.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-600 hover:underline"
+                  >
+                    official catalog page ↗
+                  </a>
+                </>
+              )}
             </p>
           )}
         </div>
@@ -122,6 +135,12 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
 
       {detail && (
         <div className="space-y-4">
+          {detail.dormant && (
+            <div className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-800">
+              ⚠ This course has not been offered in the last five years and has no scheduled
+              sections — it is listed in the catalog but likely unavailable. Plan around it.
+            </div>
+          )}
           <p className="text-sm leading-relaxed text-slate-700">{detail.description}</p>
 
           {detail.raw_requirements && (

@@ -102,7 +102,7 @@ export default function ProgramsSidebar() {
               <p className="text-xs text-slate-400">No general information captured.</p>
             )}
             {info.map((s, i) => (
-              <details key={i} className="mb-1" open={i === 0}>
+              <details key={i} className="mb-1">
                 <summary className="cursor-pointer text-xs font-semibold text-slate-600">
                   {s.title}
                 </summary>

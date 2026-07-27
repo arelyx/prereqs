@@ -154,6 +154,9 @@ def _upsert_courses(db: Session, courses: list[dict]) -> None:
             updated += 1
         for f in fields:
             setattr(row, f, c.get(f) if c.get(f) is not None else getattr(row, f, None))
+        # Committed data stores catalog-site-relative urls; serve absolute.
+        if row.url and row.url.startswith("/"):
+            row.url = "https://catalog.ucsc.edu" + row.url
         row.ge_codes = c.get("ge_codes") or []
         row.cross_listed = c.get("cross_listed") or []
         row.repeatable = bool(c.get("repeatable"))

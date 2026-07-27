@@ -2,6 +2,7 @@
 
 import { displayCode } from '../api'
 import type { RuleProgress } from '../api'
+import { useStore } from '../store'
 
 const OP_LABELS: Record<string, (r: RuleProgress) => string> = {
   all_of: (r) => `All of ${r.courses.length}`,
@@ -22,14 +23,28 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
   const manual = rule.manual === true && !informational
   const unevaluated = rule.satisfied === null && !informational && !manual
   const label = (OP_LABELS[rule.op] ?? (() => rule.op))(rule)
+  const dormant = useStore().dormant
+
+  // One chip language everywhere: taken (green, struck) wins over dormant
+  // (red) wins over default — branch chips included.
+  const chipClass = (c: string) =>
+    rule.have.includes(c)
+      ? 'bg-emerald-100 text-emerald-800 line-through decoration-emerald-500'
+      : dormant.has(c)
+        ? 'bg-red-100 text-red-700 hover:bg-red-200'
+        : 'bg-slate-100 text-slate-700 hover:bg-sky-100'
+  const chipTitle = (c: string) =>
+    !rule.have.includes(c) && dormant.has(c)
+      ? 'Not offered in the last 5 years — likely unavailable'
+      : undefined
 
   if (rule.op === 'info' && rule.courses.length === 0) {
     // Policy prose: render compactly, no status dot.
     const text = rule.source?.prose?.join(' ') ?? ''
     if (!text && rule.notes.length === 0) return null
     return (
-      <div className="rounded-md bg-slate-50 p-2 text-[11px] leading-relaxed text-slate-500">
-        {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
+      <div className="rounded-md bg-sky-50 p-2 text-[11px] leading-relaxed text-sky-800">
+        ℹ️ {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
         {text}
       </div>
     )
@@ -40,7 +55,13 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
       <div className="flex items-center gap-2">
         <span
           className={`inline-block h-2.5 w-2.5 rounded-full ${
-            manual || unevaluated ? 'bg-slate-300' : satisfied ? 'bg-emerald-500' : 'bg-amber-400'
+            informational
+              ? 'bg-sky-400'
+              : manual || unevaluated
+                ? 'bg-slate-300'
+                : satisfied
+                  ? 'bg-emerald-500'
+                  : 'bg-amber-400'
           }`}
         />
         <span className="text-xs font-semibold text-slate-600">{label}</span>
@@ -101,11 +122,8 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
             <button
               key={c}
               onClick={() => onOpenCourse(c)}
-              className={`rounded px-1.5 py-0.5 text-[11px] font-medium ${
-                rule.have.includes(c)
-                  ? 'bg-emerald-100 text-emerald-800 line-through decoration-emerald-500'
-                  : 'bg-slate-100 text-slate-700 hover:bg-sky-100'
-              }`}
+              className={`rounded px-1.5 py-0.5 text-[11px] font-medium ${chipClass(c)}`}
+              title={chipTitle(c)}
             >
               {displayCode(c)}
             </button>
@@ -121,7 +139,8 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
             <button
               key={c}
               onClick={() => onOpenCourse(c)}
-              className="rounded bg-violet-50 px-1.5 py-0.5 text-[11px] font-medium text-violet-800 hover:bg-violet-100"
+              className={`rounded px-1.5 py-0.5 text-[11px] font-medium ${chipClass(c)}`}
+              title={chipTitle(c)}
             >
               {displayCode(c)}
             </button>
@@ -134,8 +153,8 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
         </p>
       ))}
       {rule.notes.map((n, i) => (
-        <p key={i} className="mt-1 text-[11px] text-slate-500">
-          ℹ {n}
+        <p key={i} className="mt-1 rounded bg-sky-50 px-1.5 py-0.5 text-[11px] text-sky-800">
+          ℹ️ {n}
         </p>
       ))}
     </div>

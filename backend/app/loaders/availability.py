@@ -148,4 +148,13 @@ def compute_availability(db: Session, university_id: str) -> None:
             )
         )
         built += 1
-    print(f"  availability: {built} courses")
+
+    offered_codes = set(by_course.keys())
+    dormant = 0
+    for code, cid in course_ids.items():
+        course = db.get(Course, cid)
+        is_dormant = code not in offered_codes
+        if course.dormant != is_dormant:
+            course.dormant = is_dormant
+        dormant += 1 if is_dormant else 0
+    print(f"  availability: {built} courses; dormant: {dormant}")

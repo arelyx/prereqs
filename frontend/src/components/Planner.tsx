@@ -49,10 +49,18 @@ function QuarterCell({
       <div className="mb-1.5 text-xs font-semibold capitalize text-slate-500">{season}</div>
       <ul className="mb-2 space-y-1.5">
         {courses.map((code) => (
-          <li key={code} className="rounded-md border border-slate-200 bg-white p-1.5">
+          <li
+            key={code}
+            className={`rounded-md border p-1.5 ${
+              store.dormant.has(code) ? 'border-red-300 bg-red-50' : 'border-slate-200 bg-white'
+            }`}
+          >
             <div className="flex items-center justify-between">
               <button
-                className="text-sm font-medium hover:text-sky-700 hover:underline"
+                className={`text-sm font-medium hover:underline ${
+                  store.dormant.has(code) ? 'text-red-700' : 'hover:text-sky-700'
+                }`}
+                title={store.dormant.has(code) ? 'Not offered in the last 5 years — likely unavailable' : undefined}
                 onClick={() => onOpenCourse(code)}
               >
                 {displayCode(code)}

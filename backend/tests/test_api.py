@@ -122,3 +122,27 @@ def test_plan_crud_requires_auth(client, seeded):
 
     assert client.delete(f"/plans/{pid}", headers=headers).status_code == 204
     assert client.get("/plans", headers=headers).json() == []
+
+
+def test_dormant_flag_and_endpoint(client, seeded):
+    r = client.get("/u/ucsc/dormant")
+    assert r.json()["codes"] == ["CSE199X"]
+    hits = client.get("/u/ucsc/courses", params={"q": "Ghost"}).json()["courses"]
+    assert hits[0]["code"] == "CSE199X" and hits[0]["dormant"] is True
+    live = client.get("/u/ucsc/courses", params={"q": "CSE101"}).json()["courses"]
+    assert live[0]["dormant"] is False
+
+
+def test_validate_dormant_course_error(client, seeded):
+    body = {
+        "content": {
+            "completed": [],
+            "terms": [{"term_code": "2270", "courses": ["CSE199X"]}],
+        },
+        "program_ids": [],
+    }
+    out = client.post("/u/ucsc/validate", json=body).json()
+    dormant = [i for i in out["issues"] if i["kind"] == "dormant"]
+    assert len(dormant) == 1
+    assert dormant[0]["severity"] == "error"
+    assert "five years" in dormant[0]["message"]

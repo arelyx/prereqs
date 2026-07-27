@@ -86,6 +86,8 @@ def seeded(db_session):
             prereq_groups=[["CSE101"]],
         ),
         _course("ANTH2", "Cultural Anthropology", ge_codes=["CC"]),
+        # Catalog-listed but zero offerings in the data window.
+        _course("CSE199X", "Ghost Seminar", division="upper", dormant=True),
     ]
     db_session.add_all(courses)
     db_session.flush()

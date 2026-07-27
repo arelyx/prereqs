@@ -12,6 +12,7 @@ export interface CourseSummary {
   division: string
   ge_codes: string[]
   subject: string
+  dormant?: boolean
 }
 
 export interface OfferingHistoryRow {
@@ -25,6 +26,7 @@ export interface OfferingHistoryRow {
 }
 
 export interface CourseDetail extends CourseSummary {
+  url: string | null
   description: string
   raw_requirements: string | null
   prereq_groups: string[][] | null
@@ -171,6 +173,7 @@ export const api = {
       `/u/${UNIVERSITY}/courses?q=${encodeURIComponent(q)}&subject=${opts.subject ?? ''}&ge=${opts.ge ?? ''}&limit=30`,
     ),
   subjects: () => request<{ subject: string; courses: number }[]>(`/u/${UNIVERSITY}/subjects`),
+  dormant: () => request<{ codes: string[] }>(`/u/${UNIVERSITY}/dormant`),
   courseDetail: (code: string) => request<CourseDetail>(`/u/${UNIVERSITY}/courses/${code}`),
   courseGraph: (code: string, depth = 3) =>
     request<GraphPayload>(`/u/${UNIVERSITY}/courses/${code}/graph?depth=${depth}`),

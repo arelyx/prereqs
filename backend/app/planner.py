@@ -153,6 +153,11 @@ def _check_prereqs(ctx, course: Course, term_code: str, taken_before: set,
 
 
 def _check_availability(ctx, course: Course, term_code: str, season: str) -> list[dict]:
+    if course.dormant:
+        return [_issue("dormant", course.code, term_code,
+                       f"{course.display_code} has not been offered in the last five years "
+                       "and has no scheduled sections — likely unavailable",
+                       severity="error")]
     av = ctx.availability.get(course.code)
     if av is None:
         return [_issue("no_history", course.code, term_code,
