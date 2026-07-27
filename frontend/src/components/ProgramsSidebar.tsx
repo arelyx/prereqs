@@ -1,21 +1,68 @@
-// Sidebar: program picker + general info per chosen program (introduction,
-// learning outcomes, ...). Requirement progress lives in the main fold
-// (ProgramRequirements), not here.
+// Program picker + general info per chosen program (introduction, learning
+// outcomes, ...). Requirement progress lives in the main fold
+// (ProgramRequirements), not here. Picker and info cards are separate
+// components so the mobile layout can slot the requirements between them
+// (picker → requirements → general info).
 
 import { useEffect, useState } from 'react'
 import { api } from '../api'
 import type { ProgramDetail, ProgramSummary } from '../api'
 import { useStore } from '../store'
 
-export default function ProgramsSidebar() {
+export function ProgramPicker() {
   const store = useStore()
   const [programs, setPrograms] = useState<ProgramSummary[]>([])
-  const [details, setDetails] = useState<Record<number, ProgramDetail>>({})
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     api.programs().then(setPrograms).catch((e) => setError(String(e.message ?? e)))
   }, [])
+
+  return (
+    <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
+      <h3 className="mb-2 text-sm font-semibold text-slate-700">Your programs</h3>
+      {error && <p className="text-sm text-red-600">{error}</p>}
+      <select
+        className="w-full rounded-md border border-slate-300 px-2 py-1.5 text-sm"
+        value=""
+        onChange={(e) => {
+          const id = Number(e.target.value)
+          if (id && !store.programIds.includes(id)) store.setPrograms([...store.programIds, id])
+        }}
+      >
+        <option value="">Add a major or minor…</option>
+        {programs.map((p) => (
+          <option key={p.id} value={p.id}>
+            {p.name} {p.verification === 'verified' ? '✓' : '(unverified)'}
+          </option>
+        ))}
+      </select>
+      <div className="mt-2 flex flex-wrap gap-1.5">
+        {store.programIds.map((id) => {
+          const p = programs.find((x) => x.id === id)
+          return (
+            <span
+              key={id}
+              className="inline-flex items-center gap-1 rounded-full bg-slate-200 px-2 py-0.5 text-xs"
+            >
+              {p?.name ?? id}
+              <button
+                className="text-slate-500 hover:text-red-600"
+                onClick={() => store.setPrograms(store.programIds.filter((x) => x !== id))}
+              >
+                ×
+              </button>
+            </span>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+export function ProgramInfoPanels() {
+  const store = useStore()
+  const [details, setDetails] = useState<Record<number, ProgramDetail>>({})
 
   useEffect(() => {
     for (const id of store.programIds) {
@@ -30,46 +77,7 @@ export default function ProgramsSidebar() {
   }, [store.programIds])
 
   return (
-    <div className="space-y-3">
-      <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
-        <h3 className="mb-2 text-sm font-semibold text-slate-700">Your programs</h3>
-        {error && <p className="text-sm text-red-600">{error}</p>}
-        <select
-          className="w-full rounded-md border border-slate-300 px-2 py-1.5 text-sm"
-          value=""
-          onChange={(e) => {
-            const id = Number(e.target.value)
-            if (id && !store.programIds.includes(id)) store.setPrograms([...store.programIds, id])
-          }}
-        >
-          <option value="">Add a major or minor…</option>
-          {programs.map((p) => (
-            <option key={p.id} value={p.id}>
-              {p.name} {p.verification === 'verified' ? '✓' : '(unverified)'}
-            </option>
-          ))}
-        </select>
-        <div className="mt-2 flex flex-wrap gap-1.5">
-          {store.programIds.map((id) => {
-            const p = programs.find((x) => x.id === id)
-            return (
-              <span
-                key={id}
-                className="inline-flex items-center gap-1 rounded-full bg-slate-200 px-2 py-0.5 text-xs"
-              >
-                {p?.name ?? id}
-                <button
-                  className="text-slate-500 hover:text-red-600"
-                  onClick={() => store.setPrograms(store.programIds.filter((x) => x !== id))}
-                >
-                  ×
-                </button>
-              </span>
-            )
-          })}
-        </div>
-      </div>
-
+    <>
       {store.programIds.map((id) => {
         const d = details[id]
         if (!d) return null
@@ -118,6 +126,6 @@ export default function ProgramsSidebar() {
           </div>
         )
       })}
-    </div>
+    </>
   )
 }
