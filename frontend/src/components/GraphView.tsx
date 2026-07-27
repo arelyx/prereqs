@@ -97,12 +97,14 @@ export default function GraphView({ code }: { code: string }) {
   if (error) return <p className="p-4 text-sm text-red-600">graph failed: {error}</p>
   if (!graph) return <p className="p-4 text-sm text-slate-400">loading graph…</p>
   return (
-    <div className="h-[420px] rounded-lg border border-slate-200 bg-white">
-      <ReactFlow nodes={graph.nodes} edges={graph.edges} fitView proOptions={{ hideAttribution: true }}>
-        <Background />
-        <Controls showInteractive={false} />
-      </ReactFlow>
-      <p className="px-2 py-1 text-[10px] text-slate-400">
+    <div className="rounded-lg border border-slate-200 bg-white">
+      <div className="h-[420px]">
+        <ReactFlow nodes={graph.nodes} edges={graph.edges} fitView proOptions={{ hideAttribution: true }}>
+          <Background />
+          <Controls showInteractive={false} />
+        </ReactFlow>
+      </div>
+      <p className="border-t border-slate-100 px-2 py-1 text-[10px] text-slate-400">
         Arrows point from prerequisite to unlocked course. Edge colors group OR-alternatives;
         green-bordered nodes are what this course unlocks. Red = referenced course not in the
         current catalog.
