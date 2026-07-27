@@ -271,7 +271,7 @@ def list_programs(university_id: str, db: Session = Depends(get_db)) -> list[dic
         for p in db.scalars(
             select(Program)
             .where(Program.university_id == university_id)
-            .order_by(Program.kind, Program.name)
+            .order_by(func.lower(Program.name), Program.degree)
         )
     ]
 
