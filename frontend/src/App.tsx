@@ -6,7 +6,7 @@ import CourseSearch from './components/CourseSearch'
 import GEPanel from './components/GEPanel'
 import Planner from './components/Planner'
 import ProgramRequirements from './components/ProgramRequirements'
-import ProgramsSidebar from './components/ProgramsSidebar'
+import { ProgramInfoPanels, ProgramPicker } from './components/ProgramsSidebar'
 import { StoreProvider, useStore } from './store'
 
 function NavBar({ onAuth }: { onAuth: () => void }) {
@@ -81,13 +81,27 @@ function Dashboard() {
           )}
         </div>
 
+        {/* Single column below xl, ordered: planner/GE → program picker →
+            requirements → general info, so "add a program" isn't buried
+            under the requirement blocks on mobile. On xl the picker + info
+            regroup into the right-hand sidebar (the wrapper is
+            display:contents on mobile so its children join the grid). */}
         <div className="grid grid-cols-1 gap-4 xl:grid-cols-[1fr_320px]">
-          <div className="space-y-4">
+          <div className="order-1 space-y-4 xl:col-start-1 xl:row-start-1">
             <Planner onOpenCourse={setOpenCourse} />
             <GEPanel onOpenCourse={setOpenCourse} />
+          </div>
+          <div className="order-3 space-y-4 xl:col-start-1 xl:row-start-2">
             <ProgramRequirements onOpenCourse={setOpenCourse} />
           </div>
-          <ProgramsSidebar />
+          <div className="contents xl:col-start-2 xl:row-start-1 xl:row-span-2 xl:block">
+            <div className="order-2">
+              <ProgramPicker />
+            </div>
+            <div className="order-4 space-y-3 xl:mt-3">
+              <ProgramInfoPanels />
+            </div>
+          </div>
         </div>
       </main>
 

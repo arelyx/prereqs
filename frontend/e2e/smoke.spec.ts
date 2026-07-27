@@ -204,3 +204,21 @@ test('dormant courses are flagged red in search, planner, and drawer', async ({ 
   await page.getByRole('button', { name: 'CSE 129A', exact: true }).click()
   await expect(page.getByText(/listed in the catalog but likely unavailable/)).toBeVisible()
 })
+
+test('mobile: picker above requirements above general info', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
+  const reqHeader = page.getByRole('button', { name: /Computer Science B\.S\./ })
+  await expect(reqHeader).toBeVisible()
+  const infoLink = page.getByRole('link', { name: 'official page' })
+  await expect(infoLink).toBeVisible()
+  const picker = await page.getByText('Your programs').boundingBox()
+  const requirements = await reqHeader.boundingBox()
+  const info = await infoLink.boundingBox()
+  if (!picker || !requirements || !info) throw new Error('missing bounding boxes')
+  if (!(picker.y < requirements.y && requirements.y < info.y)) {
+    throw new Error(
+      `mobile order wrong: picker ${picker.y}, requirements ${requirements.y}, info ${info.y}`,
+    )
+  }
+})
