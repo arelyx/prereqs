@@ -1196,9 +1196,7 @@
       "courses": [],
       "n": null,
       "needs_review": false,
-      "notes": [
-       ""
-      ],
+      "notes": [],
       "op": "info",
       "source": {
        "heading": "Comprehensive Requirement",

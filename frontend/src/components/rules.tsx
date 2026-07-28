@@ -38,14 +38,23 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
       ? 'Not offered in the last 5 years — likely unavailable'
       : undefined
 
+  // Junk-data guard: never render an empty ℹ️ chip.
+  const notes = rule.notes.filter((n) => n.trim())
+
   if (rule.op === 'info' && rule.courses.length === 0) {
-    // Policy prose: render compactly, no status dot.
+    // Policy prose: render compactly, no status dot. Notes render too —
+    // this path used to silently drop them.
     const text = rule.source?.prose?.join(' ') ?? ''
-    if (!text && rule.notes.length === 0) return null
+    if (!text && notes.length === 0) return null
     return (
-      <div className="rounded-md bg-sky-50 p-2 text-[11px] leading-relaxed text-sky-800">
-        ℹ️ {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
-        {text}
+      <div className="space-y-1 rounded-md bg-sky-50 p-2 text-[11px] leading-relaxed text-sky-800">
+        <p>
+          ℹ️ {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
+          {text}
+        </p>
+        {notes.map((n, i) => (
+          <p key={i}>ℹ️ {n}</p>
+        ))}
       </div>
     )
   }
@@ -152,7 +161,7 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
           ⚠ {c.text}
         </p>
       ))}
-      {rule.notes.map((n, i) => (
+      {notes.map((n, i) => (
         <p key={i} className="mt-1 rounded bg-sky-50 px-1.5 py-0.5 text-[11px] text-sky-800">
           ℹ️ {n}
         </p>

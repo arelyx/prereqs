@@ -675,9 +675,7 @@
       ],
       "n": 1,
       "needs_review": false,
-      "notes": [
-       ""
-      ],
+      "notes": [],
       "op": "one_of",
       "source": {
        "heading": "Comprehensive courses offered by Ecology and Evolutionary Biology",
