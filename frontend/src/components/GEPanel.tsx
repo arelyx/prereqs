@@ -21,10 +21,10 @@ export default function GEPanel({ onOpenCourse }: { onOpenCourse?: (code: string
     })
 
   return (
-    <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm">
+    <div className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-3 shadow-sm">
       <div className="mb-2 flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">General Education</h3>
-        <span className="text-xs text-slate-400">
+        <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">General Education</h3>
+        <span className="text-xs text-zinc-400">
           {done}/{ge.length}
         </span>
       </div>
@@ -37,7 +37,7 @@ export default function GEPanel({ onOpenCourse }: { onOpenCourse?: (code: string
               className={`rounded-md border text-xs ${
                 g.satisfied
                   ? 'border-emerald-200 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300'
-                  : 'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-slate-500 dark:text-slate-400'
+                  : 'border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 text-zinc-500 dark:text-zinc-400'
               }`}
             >
               <button
@@ -46,7 +46,7 @@ export default function GEPanel({ onOpenCourse }: { onOpenCourse?: (code: string
                 aria-expanded={isOpen}
               >
                 <span className="font-semibold">{g.category}</span> {g.satisfied ? '✓' : ''}
-                <span className="float-right text-slate-400">{isOpen ? '▾' : '▸'}</span>
+                <span className="float-right text-zinc-400">{isOpen ? '▾' : '▸'}</span>
                 <div className="text-[10px] leading-tight opacity-70">{g.label}</div>
               </button>
               {isOpen && (

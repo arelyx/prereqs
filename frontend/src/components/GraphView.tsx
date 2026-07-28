@@ -51,7 +51,7 @@ function layout(payload: GraphPayload): { nodes: Node[]; edges: Edge[] } {
           label: (
             <div className="text-center">
               <div className="font-semibold">{info.display_code}</div>
-              <div className="max-w-[150px] text-[10px] leading-tight text-slate-500 dark:text-slate-400">{info.title}</div>
+              <div className="max-w-[150px] text-[10px] leading-tight text-zinc-500 dark:text-zinc-400">{info.title}</div>
             </div>
           ),
         },
@@ -97,16 +97,16 @@ export default function GraphView({ code }: { code: string }) {
   const graph = useMemo(() => (payload ? layout(payload) : null), [payload])
 
   if (error) return <p className="p-4 text-sm text-red-600 dark:text-red-400">graph failed: {error}</p>
-  if (!graph) return <p className="p-4 text-sm text-slate-400">loading graph…</p>
+  if (!graph) return <p className="p-4 text-sm text-zinc-400">loading graph…</p>
   return (
-    <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+    <div className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
       <div className="h-[420px]">
         <ReactFlow nodes={graph.nodes} edges={graph.edges} fitView proOptions={{ hideAttribution: true }}>
           <Background />
           <Controls showInteractive={false} />
         </ReactFlow>
       </div>
-      <p className="border-t border-slate-100 dark:border-slate-800 px-2 py-1 text-[10px] text-slate-400">
+      <p className="border-t border-zinc-100 dark:border-zinc-800 px-2 py-1 text-[10px] text-zinc-400">
         Arrows point from prerequisite to unlocked course. Edge colors group OR-alternatives;
         green-bordered nodes are what this course unlocks. Red = referenced course not in the
         current catalog.

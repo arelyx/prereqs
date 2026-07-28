@@ -14,13 +14,13 @@
 
 .dark {
   color-scheme: dark;
-  --node-bg: #1e293b;
-  --node-missing-bg: #4c1d1d;
-  --node-text: #e2e8f0;
+  --node-bg: #18181b;
+  --node-missing-bg: #3f1a1a;
+  --node-text: #e4e4e7;
 }
 
 body {
-  @apply bg-slate-100 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  @apply bg-zinc-100 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
 }
 
 /* ReactFlow chrome (controls, background dots) follows the theme. */
@@ -28,15 +28,15 @@ body {
   box-shadow: none;
 }
 .dark .react-flow__controls button {
-  background: #1e293b;
-  border-bottom: 1px solid #334155;
+  background: #18181b;
+  border-bottom: 1px solid #27272a;
 }
 .dark .react-flow__controls button:hover {
-  background: #334155;
+  background: #27272a;
 }
 .dark .react-flow__controls button svg {
-  fill: #cbd5e1;
+  fill: #d4d4d8;
 }
 .dark .react-flow__background pattern circle {
-  fill: #334155;
+  fill: #27272a;
 }

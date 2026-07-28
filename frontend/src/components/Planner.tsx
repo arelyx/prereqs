@@ -45,14 +45,14 @@ function QuarterCell({
   const store = useStore()
   const { season } = parseTermCode(termCode)
   return (
-    <div className="flex min-h-36 flex-col rounded-md border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/40 p-2">
-      <div className="mb-1.5 text-xs font-semibold capitalize text-slate-500 dark:text-slate-400">{season}</div>
+    <div className="flex min-h-36 flex-col rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/40 p-2">
+      <div className="mb-1.5 text-xs font-semibold capitalize text-zinc-500 dark:text-zinc-400">{season}</div>
       <ul className="mb-2 space-y-1.5">
         {courses.map((code) => (
           <li
             key={code}
             className={`rounded-md border p-1.5 ${
-              store.dormant.has(code) ? 'border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/40' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900'
+              store.dormant.has(code) ? 'border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/40' : 'border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950'
             }`}
           >
             <div className="flex items-center justify-between">
@@ -67,7 +67,7 @@ function QuarterCell({
               </button>
               <button
                 aria-label={`remove ${code}`}
-                className="text-slate-400 hover:text-red-600 dark:hover:text-red-400"
+                className="text-zinc-400 hover:text-red-600 dark:hover:text-red-400"
                 onClick={() => store.removeCourse(termCode, code)}
               >
                 ×
@@ -110,10 +110,10 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
 
   return (
     <div className="space-y-3">
-      <section className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm">
+      <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-3 shadow-sm">
         <div className="mb-2 flex items-center justify-between">
-          <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Completed courses</h3>
-          <span className="text-xs text-slate-400">{content.completed.length} courses</span>
+          <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Completed courses</h3>
+          <span className="text-xs text-zinc-400">{content.completed.length} courses</span>
         </div>
         <div className="mb-2">
           <CourseSearch
@@ -125,14 +125,14 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
           {content.completed.map((code) => (
             <span
               key={code}
-              className="inline-flex items-center gap-1 rounded-full bg-slate-200 dark:bg-slate-700 px-2 py-0.5 text-xs font-medium"
+              className="inline-flex items-center gap-1 rounded-full bg-zinc-200 dark:bg-zinc-800 px-2 py-0.5 text-xs font-medium"
             >
               <button className="hover:underline" onClick={() => onOpenCourse(code)}>
                 {displayCode(code)}
               </button>
               <button
                 aria-label={`remove ${code}`}
-                className="text-slate-500 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400"
+                className="text-zinc-500 dark:text-zinc-400 hover:text-red-600 dark:hover:text-red-400"
                 onClick={() => store.setCompleted(content.completed.filter((c) => c !== code))}
               >
                 ×
@@ -140,7 +140,7 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
             </span>
           ))}
           {content.completed.length === 0 && (
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-zinc-400">
               Nothing yet — add what you've taken so prerequisite checks are accurate.
             </p>
           )}
@@ -155,11 +155,11 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
 
       {years.map((year, i) => (
         <div key={year} className="space-y-3">
-          <section className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm">
+          <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-3 shadow-sm">
             <div className="mb-2 flex items-center justify-between">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200">{ayLabel(year)}</h3>
+              <h3 className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{ayLabel(year)}</h3>
               <button
-                className="text-xs text-slate-400 hover:text-red-600 dark:hover:text-red-400"
+                className="text-xs text-zinc-400 hover:text-red-600 dark:hover:text-red-400"
                 onClick={() => {
                   const count = ayTermCodes(year).reduce(
                     (n, tc) => n + (byTerm.get(tc)?.length ?? 0),
@@ -200,7 +200,7 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
 
       <button
         onClick={() => store.addYear()}
-        className="w-full rounded-lg border border-dashed border-slate-300 dark:border-slate-600 py-1.5 text-xs text-slate-400 hover:border-sky-400 dark:hover:border-sky-600 hover:text-sky-600 dark:hover:text-sky-400"
+        className="w-full rounded-lg border border-dashed border-zinc-300 dark:border-zinc-800 py-1.5 text-xs text-zinc-400 hover:border-sky-400 dark:hover:border-sky-600 hover:text-sky-600 dark:hover:text-sky-400"
       >
         + Add academic year
       </button>
@@ -212,7 +212,7 @@ function GapAddButton({ year, label, onAdd }: { year: number; label?: string; on
   return (
     <button
       onClick={() => onAdd(year)}
-      className="w-full rounded-lg border border-dashed border-slate-300 dark:border-slate-600 py-1.5 text-xs text-slate-400 hover:border-sky-400 dark:hover:border-sky-600 hover:text-sky-600 dark:hover:text-sky-400"
+      className="w-full rounded-lg border border-dashed border-zinc-300 dark:border-zinc-800 py-1.5 text-xs text-zinc-400 hover:border-sky-400 dark:hover:border-sky-600 hover:text-sky-600 dark:hover:text-sky-400"
     >
       {label ?? `+ Add ${ayLabel(year)}`}
     </button>
