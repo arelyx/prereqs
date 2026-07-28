@@ -9,6 +9,11 @@ import ProgramRequirements from './components/ProgramRequirements'
 import { ProgramInfoPanels, ProgramPicker } from './components/ProgramsSidebar'
 import { StoreProvider, useStore } from './store'
 
+// Accounts are not offered in production yet (plans live in localStorage);
+// the flag keeps the auth machinery alive in dev so the e2e lifecycle test
+// still guards it for when it ships.
+export const AUTH_ENABLED = import.meta.env.DEV || import.meta.env.VITE_ENABLE_AUTH === '1'
+
 function NavBar({ onAuth }: { onAuth: () => void }) {
   const store = useStore()
   return (
@@ -20,7 +25,7 @@ function NavBar({ onAuth }: { onAuth: () => void }) {
             UC Santa Cruz
           </span>
         </div>
-        {store.email ? (
+        {!AUTH_ENABLED ? null : store.email ? (
           <div className="flex items-center gap-3 text-sm">
             <span className="text-slate-600">{store.email}</span>
             <button className="text-slate-500 hover:underline" onClick={store.signOut}>
@@ -114,7 +119,7 @@ function Dashboard() {
           onOpenCourse={setOpenCourse}
         />
       )}
-      {authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
+      {AUTH_ENABLED && authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
     </div>
   )
 }
