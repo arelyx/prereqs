@@ -47,9 +47,10 @@ def build_context(db: Session, university_id: str) -> ValidationContext:
         c.code: c
         for c in db.scalars(select(Course).where(Course.university_id == university_id))
     }
+    by_id = {c.id: c for c in courses.values()}
     availability = {}
     for av in db.scalars(select(CourseAvailability)):
-        course = next((c for c in courses.values() if c.id == av.course_id), None)
+        course = by_id.get(av.course_id)
         if course is not None:
             availability[course.code] = av
     return ValidationContext(courses=courses, availability=availability)
