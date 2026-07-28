@@ -655,9 +655,7 @@
       ],
       "n": null,
       "needs_review": false,
-      "notes": [
-       ""
-      ],
+      "notes": [],
       "op": "all_of",
       "source": {
        "heading": "Disciplinary Communication (DC) Requirement",

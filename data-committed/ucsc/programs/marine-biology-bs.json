@@ -177,9 +177,7 @@
       ],
       "n": null,
       "needs_review": false,
-      "notes": [
-       ""
-      ],
+      "notes": [],
       "op": "one_of",
       "source": {
        "heading": "Plus one of the following mathematics courses:",

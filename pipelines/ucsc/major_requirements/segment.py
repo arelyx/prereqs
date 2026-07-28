@@ -187,8 +187,10 @@ def segment_program(html: str, name: str, url: str) -> SegmentedProgram:
                 current_section.rules.append(current_rule)
             _parse_course_table(el, current_rule, prog)
         elif el.name == "div" and "sc-requirementsNote" in (el.get("class") or []):
-            if current_rule is not None:
-                current_rule.notes.append(el.get_text(" ", strip=True))
+            # The CMS emits some literally empty note divs — skip them.
+            note_text = el.get_text(" ", strip=True)
+            if current_rule is not None and note_text:
+                current_rule.notes.append(note_text)
         elif el.name == "p":
             if el.find_parent("table"):
                 continue

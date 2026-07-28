@@ -227,9 +227,7 @@
       ],
       "n": null,
       "needs_review": false,
-      "notes": [
-       ""
-      ],
+      "notes": [],
       "op": "one_of",
       "source": {
        "heading": "As well as one of the following:",
