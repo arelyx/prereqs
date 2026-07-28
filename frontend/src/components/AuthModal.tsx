@@ -35,13 +35,13 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={onClose}>
       <div
-        className="w-full max-w-sm rounded-xl bg-white p-5 shadow-2xl"
+        className="w-full max-w-sm rounded-xl bg-white dark:bg-slate-900 p-5 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="mb-1 text-lg font-bold">
           {mode === 'register' ? 'Create an account' : 'Sign in'}
         </h2>
-        <p className="mb-3 text-xs text-slate-500">
+        <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
           {mode === 'register'
             ? hasLocalWork
               ? 'Your current plan will be saved to your new account.'
@@ -61,7 +61,7 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
             placeholder="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full rounded-md border border-slate-300 px-3 py-1.5 text-sm"
+            className="w-full rounded-md border border-slate-300 dark:border-slate-600 px-3 py-1.5 text-sm"
           />
           <input
             type="password"
@@ -70,9 +70,9 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
             placeholder="password (min 8 chars — no recovery yet, don't forget it!)"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full rounded-md border border-slate-300 px-3 py-1.5 text-sm"
+            className="w-full rounded-md border border-slate-300 dark:border-slate-600 px-3 py-1.5 text-sm"
           />
-          {error && <p className="text-xs text-red-600">{error}</p>}
+          {error && <p className="text-xs text-red-600 dark:text-red-400">{error}</p>}
           <button
             type="submit"
             disabled={busy}
@@ -82,7 +82,7 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
           </button>
         </form>
         <button
-          className="mt-2 w-full text-center text-xs text-slate-500 hover:underline"
+          className="mt-2 w-full text-center text-xs text-slate-500 dark:text-slate-400 hover:underline"
           onClick={() => setMode(mode === 'register' ? 'login' : 'register')}
         >
           {mode === 'register' ? 'Already have an account? Sign in' : 'New here? Create an account'}

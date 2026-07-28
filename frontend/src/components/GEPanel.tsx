@@ -21,9 +21,9 @@ export default function GEPanel({ onOpenCourse }: { onOpenCourse?: (code: string
     })
 
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
+    <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm">
       <div className="mb-2 flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-slate-700">General Education</h3>
+        <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">General Education</h3>
         <span className="text-xs text-slate-400">
           {done}/{ge.length}
         </span>
@@ -36,8 +36,8 @@ export default function GEPanel({ onOpenCourse }: { onOpenCourse?: (code: string
               key={g.category}
               className={`rounded-md border text-xs ${
                 g.satisfied
-                  ? 'border-emerald-200 bg-emerald-50 text-emerald-800'
-                  : 'border-slate-200 bg-slate-50 text-slate-500'
+                  ? 'border-emerald-200 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300'
+                  : 'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-slate-500 dark:text-slate-400'
               }`}
             >
               <button

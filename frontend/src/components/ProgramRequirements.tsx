@@ -67,7 +67,7 @@ export default function ProgramRequirements({
         return (
           <section
             key={prog.program_id}
-            className="rounded-lg border border-slate-200 bg-white shadow-sm"
+            className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm"
           >
             <button
               className="flex w-full items-baseline gap-3 p-4 text-left"
@@ -75,10 +75,10 @@ export default function ProgramRequirements({
               aria-expanded={isOpen}
             >
               <span className="text-slate-400">{isOpen ? '▾' : '▸'}</span>
-              <h2 className="text-base font-bold text-slate-900">{prog.name}</h2>
+              <h2 className="text-base font-bold text-slate-900 dark:text-slate-100">{prog.name}</h2>
               {prog.verification !== 'verified' && (
                 <span
-                  className="rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-800"
+                  className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-[10px] font-medium text-amber-800 dark:text-amber-300"
                   title="Structured automatically from the catalog page; not yet hand-verified. Cross-check with the official catalog."
                 >
                   unverified
@@ -102,7 +102,7 @@ export default function ProgramRequirements({
                         aria-expanded={secOpen}
                       >
                         <span className="text-xs text-slate-400">{secOpen ? '▾' : '▸'}</span>
-                        <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                        <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                           {section.title}
                           {section.concentration &&
                             section.concentration !== section.title &&

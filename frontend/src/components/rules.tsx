@@ -29,10 +29,10 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
   // (red) wins over default — branch chips included.
   const chipClass = (c: string) =>
     rule.have.includes(c)
-      ? 'bg-emerald-100 text-emerald-800 line-through decoration-emerald-500'
+      ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 line-through decoration-emerald-500'
       : dormant.has(c)
-        ? 'bg-red-100 text-red-700 hover:bg-red-200'
-        : 'bg-slate-100 text-slate-700 hover:bg-sky-100'
+        ? 'bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-900'
+        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-sky-100 dark:hover:bg-slate-700'
   const chipTitle = (c: string) =>
     !rule.have.includes(c) && dormant.has(c)
       ? 'Not offered in the last 5 years — likely unavailable'
@@ -47,7 +47,7 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
     const text = rule.source?.prose?.join(' ') ?? ''
     if (!text && notes.length === 0) return null
     return (
-      <div className="space-y-1 rounded-md bg-sky-50 p-2 text-[11px] leading-relaxed text-sky-800">
+      <div className="space-y-1 rounded-md bg-sky-50 dark:bg-sky-950/60 p-2 text-[11px] leading-relaxed text-sky-800 dark:text-sky-200">
         <p>
           ℹ️ {rule.source?.heading && <span className="font-semibold">{rule.source.heading}: </span>}
           {text}
@@ -60,20 +60,20 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
   }
 
   return (
-    <div className="rounded-md border border-slate-200 p-2">
+    <div className="rounded-md border border-slate-200 dark:border-slate-800 p-2">
       <div className="flex items-center gap-2">
         <span
           className={`inline-block h-2.5 w-2.5 rounded-full ${
             informational
               ? 'bg-sky-400'
               : manual || unevaluated
-                ? 'bg-slate-300'
+                ? 'bg-slate-300 dark:bg-slate-600'
                 : satisfied
                   ? 'bg-emerald-500'
                   : 'bg-amber-400'
           }`}
         />
-        <span className="text-xs font-semibold text-slate-600">{label}</span>
+        <span className="text-xs font-semibold text-slate-600 dark:text-slate-400">{label}</span>
         {rule.done != null && rule.needed != null && (
           <span className="text-xs text-slate-400">
             {rule.done}/{rule.needed}
@@ -81,7 +81,7 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
         )}
         {(manual || unevaluated) && (
           <span
-            className="rounded bg-slate-100 px-1 text-[10px] text-slate-500"
+            className="rounded bg-slate-100 dark:bg-slate-800 px-1 text-[10px] text-slate-500 dark:text-slate-400"
             title="Elective eligibility and category membership can depend on rules the app can't check (double-counting bans, approvals, external lists). Verify with an adviser."
           >
             ⚠ verify manually
@@ -92,7 +92,7 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
         <p className="mt-0.5 text-[11px] italic text-slate-400">“{rule.source.heading}”</p>
       )}
       {rule.op === 'range' && rule.filter && (
-        <div className="mt-1 text-[11px] text-slate-600">
+        <div className="mt-1 text-[11px] text-slate-600 dark:text-slate-400">
           <span className="font-medium">Counts: </span>
           {(rule.filter.include_ranges ?? [])
             .map((r) => `${r.subject} ${r.lo}–${r.hi}`)
@@ -111,12 +111,12 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
           )}
           {(rule.matching?.length ?? 0) > 0 && (
             <div className="mt-1 flex flex-wrap gap-1">
-              <span className="text-[10px] font-semibold text-emerald-700">yours:</span>
+              <span className="text-[10px] font-semibold text-emerald-700 dark:text-emerald-400">yours:</span>
               {rule.matching!.map((c) => (
                 <button
                   key={c}
                   onClick={() => onOpenCourse(c)}
-                  className="rounded bg-emerald-100 px-1.5 py-0.5 text-[11px] font-medium text-emerald-800 hover:underline"
+                  className="rounded bg-emerald-100 dark:bg-emerald-950 px-1.5 py-0.5 text-[11px] font-medium text-emerald-800 dark:text-emerald-300 hover:underline"
                 >
                   {displayCode(c)}
                 </button>
@@ -157,12 +157,12 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
         </div>
       ))}
       {rule.constraints.map((c, i) => (
-        <p key={i} className="mt-1 rounded bg-amber-50 px-1.5 py-0.5 text-[11px] text-amber-800">
+        <p key={i} className="mt-1 rounded bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.5 text-[11px] text-amber-800 dark:text-amber-300">
           ⚠ {c.text}
         </p>
       ))}
       {notes.map((n, i) => (
-        <p key={i} className="mt-1 rounded bg-sky-50 px-1.5 py-0.5 text-[11px] text-sky-800">
+        <p key={i} className="mt-1 rounded bg-sky-50 dark:bg-sky-950/60 px-1.5 py-0.5 text-[11px] text-sky-800 dark:text-sky-200">
           ℹ️ {n}
         </p>
       ))}

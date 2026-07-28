@@ -19,11 +19,11 @@ export function ProgramPicker() {
   }, [])
 
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
-      <h3 className="mb-2 text-sm font-semibold text-slate-700">Your programs</h3>
-      {error && <p className="text-sm text-red-600">{error}</p>}
+    <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm">
+      <h3 className="mb-2 text-sm font-semibold text-slate-700 dark:text-slate-300">Your programs</h3>
+      {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}
       <select
-        className="w-full rounded-md border border-slate-300 px-2 py-1.5 text-sm"
+        className="w-full rounded-md border border-slate-300 dark:border-slate-600 px-2 py-1.5 text-sm"
         value=""
         onChange={(e) => {
           const id = Number(e.target.value)
@@ -43,11 +43,11 @@ export function ProgramPicker() {
           return (
             <span
               key={id}
-              className="inline-flex items-center gap-1 rounded-full bg-slate-200 px-2 py-0.5 text-xs"
+              className="inline-flex items-center gap-1 rounded-full bg-slate-200 dark:bg-slate-700 px-2 py-0.5 text-xs"
             >
               {p?.name ?? id}
               <button
-                className="text-slate-500 hover:text-red-600"
+                className="text-slate-500 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400"
                 onClick={() => store.setPrograms(store.programIds.filter((x) => x !== id))}
               >
                 ×
@@ -83,25 +83,25 @@ export function ProgramInfoPanels() {
         if (!d) return null
         const info = d.requirements?.info_sections ?? []
         return (
-          <div key={id} className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
+          <div key={id} className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm">
             <div className="mb-1 flex items-center gap-2">
-              <h3 className="text-sm font-semibold text-slate-800">{d.name}</h3>
+              <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">{d.name}</h3>
               {d.verification !== 'verified' && (
                 <span
-                  className="rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-800"
+                  className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-[10px] font-medium text-amber-800 dark:text-amber-300"
                   title="Structured automatically from the catalog page; not yet hand-verified."
                 >
                   unverified
                 </span>
               )}
             </div>
-            <p className="mb-2 text-xs text-slate-500">
+            <p className="mb-2 text-xs text-slate-500 dark:text-slate-400">
               {d.degree} · {d.catalog_year ?? 'current'} catalog ·{' '}
               <a
                 href={d.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sky-600 hover:underline"
+                className="text-sky-600 dark:text-sky-400 hover:underline"
               >
                 official page
               </a>
@@ -111,12 +111,12 @@ export function ProgramInfoPanels() {
             )}
             {info.map((s, i) => (
               <details key={i} className="mb-1">
-                <summary className="cursor-pointer text-xs font-semibold text-slate-600">
+                <summary className="cursor-pointer text-xs font-semibold text-slate-600 dark:text-slate-400">
                   {s.title}
                 </summary>
                 <div className="mt-1 space-y-1.5">
                   {s.paragraphs.map((p, pi) => (
-                    <p key={pi} className="text-xs leading-relaxed text-slate-600">
+                    <p key={pi} className="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
                       {p}
                     </p>
                   ))}

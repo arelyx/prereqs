@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { api } from './api'
 import AuthModal from './components/AuthModal'
 import CoursePanel from './components/CoursePanel'
@@ -14,21 +14,44 @@ import { StoreProvider, useStore } from './store'
 // still guards it for when it ships.
 export const AUTH_ENABLED = import.meta.env.DEV || import.meta.env.VITE_ENABLE_AUTH === '1'
 
+// Theme choice persists; the inline script in index.html applies it before
+// first paint so there is no flash. Default follows the system preference.
+function useTheme() {
+  const [theme, setTheme] = useState<'light' | 'dark'>(() =>
+    document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+  )
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark')
+    localStorage.setItem('prereqs.theme', theme)
+  }, [theme])
+  return { theme, toggle: () => setTheme((t) => (t === 'dark' ? 'light' : 'dark')) }
+}
+
 function NavBar({ onAuth }: { onAuth: () => void }) {
   const store = useStore()
+  const { theme, toggle } = useTheme()
   return (
-    <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5">
         <div className="flex items-baseline gap-3">
-          <h1 className="text-lg font-black tracking-tight text-slate-900">prereqs</h1>
-          <span className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-900">
+          <h1 className="text-lg font-black tracking-tight text-slate-900 dark:text-slate-100">prereqs</h1>
+          <span className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-xs font-medium text-amber-900 dark:text-amber-200">
             UC Santa Cruz
           </span>
         </div>
+        <div className="flex items-center gap-3">
+        <button
+          onClick={toggle}
+          aria-label="toggle color theme"
+          title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          className="rounded-md border border-slate-200 dark:border-slate-700 px-2 py-1 text-sm hover:bg-slate-100 dark:hover:bg-slate-800"
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
         {!AUTH_ENABLED ? null : store.email ? (
           <div className="flex items-center gap-3 text-sm">
-            <span className="text-slate-600">{store.email}</span>
-            <button className="text-slate-500 hover:underline" onClick={store.signOut}>
+            <span className="text-slate-600 dark:text-slate-400">{store.email}</span>
+            <button className="text-slate-500 dark:text-slate-400 hover:underline" onClick={store.signOut}>
               sign out
             </button>
             <button
@@ -50,6 +73,7 @@ function NavBar({ onAuth }: { onAuth: () => void }) {
             Sign in to save your plan
           </button>
         )}
+        </div>
       </div>
     </header>
   )
@@ -76,11 +100,11 @@ function Dashboard() {
           {store.validating ? (
             <span className="text-xs text-slate-400">checking plan…</span>
           ) : errorCount > 0 ? (
-            <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-700">
+            <span className="rounded-full bg-red-100 dark:bg-red-950 px-2 py-0.5 text-xs font-medium text-red-700 dark:text-red-300">
               {errorCount} blocking issue{errorCount > 1 ? 's' : ''}
             </span>
           ) : (
-            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700">
+            <span className="rounded-full bg-emerald-100 dark:bg-emerald-950 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:text-emerald-400">
               plan looks valid
             </span>
           )}
