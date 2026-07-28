@@ -249,10 +249,15 @@ def evaluate_requirements(requirements: dict, taken: set[str], ctx: ValidationCo
             raw = raw_rules[i] if i < len(raw_rules) else {}
             pool_fed = raw.get("from_following_lists") or raw.get("pool")
             exact_groups = r["op"] == "n_of_groups" and bool(raw.get("branches"))
+            # all_of ignores its filter when counting (it encodes a
+            # substitution option, e.g. "a LIT 182-189 course may replace
+            # LIT 102") — the count can undercount, so flag it.
+            unevaluated_filter = r["op"] == "all_of" and r.get("filter")
             if (
                 r["op"] in ("range", "category_count", "list")
                 or r.get("unevaluated")
                 or raw.get("needs_review")
+                or unevaluated_filter
                 or (pool_fed and not exact_groups and bool(raw.get("constraints")))
             ):
                 r["manual"] = True
@@ -280,6 +285,17 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         "notes": rule.get("notes") or [],
         "constraints": rule.get("constraints") or [],
     }
+    # Filters are requirement content (e.g. "any CSE 100-189") — every op
+    # passes them through so the UI can never silently omit them, and the
+    # taken courses matching them surface as `matching`.
+    course_filter = rule.get("filter")
+    if course_filter and any(course_filter.get(k) for k in
+                             ("include_ranges", "include_series",
+                              "exclude_codes", "exclude_ranges")):
+        result["filter"] = course_filter
+        result["matching"] = sorted(
+            c for c in taken if _filter_match(ctx.courses.get(c), c, course_filter)
+        )
 
     if op == "all_of":
         result |= {"needed": len(courses), "done": len(have),
@@ -321,14 +337,12 @@ def _evaluate_rule(rule: dict, taken: set[str], ctx: ValidationContext) -> dict:
         result |= {"needed": 1, "done": 1 if satisfied else 0,
                    "satisfied": satisfied, "best_branch_progress": round(best, 2)}
     elif op == "range":
-        course_filter = rule.get("filter") or {}
-        matching = [
-            c for c in taken if _filter_match(ctx.courses.get(c), c, course_filter)
-        ]
-        matching = sorted(set(matching) | (set(rule.get("courses") or []) & taken))
+        matching = sorted(
+            set(result.get("matching") or []) | (set(rule.get("courses") or []) & taken)
+        )
         n = rule.get("n")
-        result |= {"needed": n, "done": len(matching), "matching": sorted(matching),
-                   "filter": course_filter,
+        result |= {"needed": n, "done": len(matching), "matching": matching,
+                   "filter": rule.get("filter") or {},
                    "satisfied": (len(matching) >= n) if n else None}
     elif op == "category_count":
         # Membership is a described category we can't resolve mechanically.

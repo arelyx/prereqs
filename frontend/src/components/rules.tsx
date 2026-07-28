@@ -41,7 +41,20 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
   // Junk-data guard: never render an empty ℹ️ chip.
   const notes = rule.notes.filter((n) => n.trim())
 
-  if (rule.op === 'info' && rule.courses.length === 0) {
+  // A filter is requirement content ("any CSE 100–189 …"). Its presence —
+  // never the rule's op — decides whether it renders, so no rule shape can
+  // silently omit it (the CS B.S. electives bug).
+  const filter =
+    rule.filter &&
+    ((rule.filter.include_ranges?.length ?? 0) > 0 ||
+      (rule.filter.include_series?.length ?? 0) > 0 ||
+      (rule.filter.exclude_codes?.length ?? 0) > 0 ||
+      (rule.filter.exclude_ranges?.length ?? 0) > 0)
+      ? rule.filter
+      : null
+  const hasFilter = filter !== null
+
+  if (rule.op === 'info' && rule.courses.length === 0 && !hasFilter) {
     // Policy prose: render compactly, no status dot. Notes render too —
     // this path used to silently drop them.
     const text = rule.source?.prose?.join(' ') ?? ''
@@ -91,21 +104,27 @@ export function RuleRow({ rule, onOpenCourse }: { rule: RuleProgress; onOpenCour
       {rule.source?.heading && (
         <p className="mt-0.5 text-[11px] italic text-zinc-400">“{rule.source.heading}”</p>
       )}
-      {rule.op === 'range' && rule.filter && (
+      {filter && (
         <div className="mt-1 text-[11px] text-zinc-600 dark:text-zinc-400">
-          <span className="font-medium">Counts: </span>
-          {(rule.filter.include_ranges ?? [])
+          <span className="font-medium">
+            {rule.op === 'range'
+              ? 'Counts: '
+              : rule.op === 'all_of'
+                ? 'Substitution option: '
+                : 'Also counts: '}
+          </span>
+          {(filter.include_ranges ?? [])
             .map((r) => `${r.subject} ${r.lo}–${r.hi}`)
-            .concat((rule.filter.include_series ?? []).map((s) => `${s.subject} ${s.prefix} series`))
+            .concat((filter.include_series ?? []).map((s) => `${s.subject} ${s.prefix} series`))
             .join(', ')}
-          {((rule.filter.exclude_codes?.length ?? 0) > 0 ||
-            (rule.filter.exclude_ranges?.length ?? 0) > 0) && (
+          {((filter.exclude_codes?.length ?? 0) > 0 ||
+            (filter.exclude_ranges?.length ?? 0) > 0) && (
             <>
               {' '}
               <span className="font-medium">excluding </span>
-              {(rule.filter.exclude_ranges ?? [])
+              {(filter.exclude_ranges ?? [])
                 .map((r) => `${r.subject} ${r.lo}–${r.hi}`)
-                .concat((rule.filter.exclude_codes ?? []).map(displayCode))
+                .concat((filter.exclude_codes ?? []).map(displayCode))
                 .join(', ')}
             </>
           )}

@@ -234,3 +234,13 @@ test('theme toggle switches to dark and persists across reload', async ({ page }
   await page.getByRole('button', { name: 'toggle color theme' }).click()
   await expect(html).not.toHaveClass(/dark/)
 })
+
+
+test('CS B.S. electives display the CSE ranges, not just the explicit pool', async ({ page }) => {
+  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. \u2713' })
+  await page.getByRole('button', { name: /Computer Science B\.S\./ }).click()
+  // The pool rule's filter is requirement content and must be visible.
+  await expect(page.getByText(/CSE 100\u2013189/).first()).toBeVisible()
+  await expect(page.getByText(/CSE 201\u2013279/).first()).toBeVisible()
+  await expect(page.getByText(/excluding/).first()).toBeVisible()
+})
