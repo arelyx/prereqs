@@ -1,0 +1,56 @@
+# Production stack. Differences from dev compose: no source mounts, no
+# --reload, DB not exposed to the host, secrets from .env, frontend is the
+# static nginx build proxying /api to the backend. Only the frontend binds a
+# host port (loopback) — the host's reverse proxy terminates TLS for
+# prereqs.arelyx.xyz and forwards here.
+#
+#   cp .env.prod.example .env   # set POSTGRES_PASSWORD
+#   docker compose -f docker-compose.prod.yml up -d --build
+#
+# Data: courses/programs load from the committed dataset baked into the
+# repo checkout; offerings history arrives via DB restore (data/ snapshots
+# are not in git) — see ops/backup/README.md.
+
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: prereqs
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set in .env}
+      POSTGRES_DB: prereqs
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U prereqs"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://prereqs:${POSTGRES_PASSWORD}@db:5432/prereqs
+      DATA_ROOT: /srv/data
+      COMMITTED_ROOT: /srv/data-committed
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./data:/srv/data:ro
+      - ./data-committed:/srv/data-committed:ro
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      target: prod
+    depends_on:
+      - backend
+    ports:
+      - "127.0.0.1:${PREREQS_HTTP_PORT:-8300}:80"
+    restart: unless-stopped
+
+volumes:
+  pgdata:

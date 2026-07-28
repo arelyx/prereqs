@@ -38,6 +38,7 @@ services:
       target: dev
     environment:
       VITE_API_URL: http://localhost:8200
+      VITE_ENABLE_AUTH: "1"   # auth UI is dev-only until accounts ship
     ports:
       - "5273:5173"
     volumes:
