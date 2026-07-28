@@ -67,15 +67,15 @@ export default function ProgramRequirements({
         return (
           <section
             key={prog.program_id}
-            className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm"
+            className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm"
           >
             <button
               className="flex w-full items-baseline gap-3 p-4 text-left"
               onClick={() => toggleProgram(prog.program_id)}
               aria-expanded={isOpen}
             >
-              <span className="text-slate-400">{isOpen ? '▾' : '▸'}</span>
-              <h2 className="text-base font-bold text-slate-900 dark:text-slate-100">{prog.name}</h2>
+              <span className="text-zinc-400">{isOpen ? '▾' : '▸'}</span>
+              <h2 className="text-base font-bold text-zinc-900 dark:text-zinc-100">{prog.name}</h2>
               {prog.verification !== 'verified' && (
                 <span
                   className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-[10px] font-medium text-amber-800 dark:text-amber-300"
@@ -87,7 +87,7 @@ export default function ProgramRequirements({
             </button>
             {isOpen && (
               <div className="space-y-4 px-4 pb-4">
-                <p className="text-[11px] text-slate-400">
+                <p className="text-[11px] text-zinc-400">
                   Mirrors the official catalog page — confirm your degree progress with an
                   academic adviser.
                 </p>
@@ -101,8 +101,8 @@ export default function ProgramRequirements({
                         onClick={() => toggleSection(key)}
                         aria-expanded={secOpen}
                       >
-                        <span className="text-xs text-slate-400">{secOpen ? '▾' : '▸'}</span>
-                        <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                        <span className="text-xs text-zinc-400">{secOpen ? '▾' : '▸'}</span>
+                        <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                           {section.title}
                           {section.concentration &&
                             section.concentration !== section.title &&

@@ -25,10 +25,10 @@ function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
   const anyPlanned = history.some((h) => h.planned)
 
   return (
-    <div className="overflow-x-auto rounded-md border border-slate-200 dark:border-slate-800">
+    <div className="overflow-x-auto rounded-md border border-zinc-200 dark:border-zinc-800">
       <table className="w-full text-xs">
         <thead>
-          <tr className="bg-slate-50 dark:bg-slate-800/60 text-left uppercase tracking-wide text-slate-400">
+          <tr className="bg-zinc-50 dark:bg-zinc-900/60 text-left uppercase tracking-wide text-zinc-400">
             <th className="px-2 py-1.5 font-semibold">Year</th>
             {SEASONS.map((s) => (
               <th key={s} className="px-2 py-1.5 font-semibold capitalize">
@@ -39,23 +39,23 @@ function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
         </thead>
         <tbody>
           {years.map((ay, i) => (
-            <tr key={ay} className={`align-top ${i % 2 ? 'bg-slate-50/60 dark:bg-slate-800/40' : ''}`}>
-              <td className="whitespace-nowrap px-2 py-2 font-semibold text-slate-600 dark:text-slate-400">
+            <tr key={ay} className={`align-top ${i % 2 ? 'bg-zinc-50/60 dark:bg-zinc-900/40' : ''}`}>
+              <td className="whitespace-nowrap px-2 py-2 font-semibold text-zinc-600 dark:text-zinc-400">
                 {ayLabel(ay)}
               </td>
               {SEASONS.map((s) => {
                 const h = byYear.get(ay)!.get(s)
-                if (!h) return <td key={s} className="px-2 py-2 text-slate-300">·</td>
+                if (!h) return <td key={s} className="px-2 py-2 text-zinc-300">·</td>
                 return (
                   <td key={s} className={`px-2 py-2 ${h.planned ? 'bg-sky-100/70 dark:bg-sky-900/40' : ''}`}>
                     {h.instructors.length > 0 ? (
                       h.instructors.map((n) => (
-                        <div key={n} className="leading-5 text-slate-700 dark:text-slate-300">
+                        <div key={n} className="leading-5 text-zinc-700 dark:text-zinc-300">
                           {n}
                         </div>
                       ))
                     ) : (
-                      <span className="text-slate-400">TBD</span>
+                      <span className="text-zinc-400">TBD</span>
                     )}
                   </td>
                 )
@@ -65,7 +65,7 @@ function HistoryGrid({ history }: { history: OfferingHistoryRow[] }) {
         </tbody>
       </table>
       {anyPlanned && (
-        <p className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-2 py-1 text-[10px] text-slate-400">
+        <p className="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-2 py-1 text-[10px] text-zinc-400">
           <span className="mr-1 inline-block h-2.5 w-2.5 rounded-sm bg-sky-100 dark:bg-sky-950 align-middle" />
           scheduled for the upcoming year (subject to change)
         </p>
@@ -93,15 +93,15 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
   }, [code])
 
   return (
-    <div className="fixed inset-y-0 right-0 z-40 w-full max-w-2xl overflow-y-auto border-l border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-2xl">
+    <div className="fixed inset-y-0 right-0 z-40 w-full max-w-2xl overflow-y-auto border-l border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-2xl">
       <div className="mb-3 flex items-start justify-between">
         <div>
           <h2 className="text-xl font-bold">
             {detail ? detail.display_code : displayCode(code)}
-            {detail && <span className="ml-2 text-base font-normal text-slate-600 dark:text-slate-400">{detail.title}</span>}
+            {detail && <span className="ml-2 text-base font-normal text-zinc-600 dark:text-zinc-400">{detail.title}</span>}
           </h2>
           {detail && (
-            <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
+            <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
               {detail.credits} credits · {detail.division}-division
               {detail.ge_codes.length > 0 && <> · GE: {detail.ge_codes.join(', ')}</>}
               {detail.repeatable && ' · repeatable'}
@@ -131,7 +131,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
       </div>
 
       {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}
-      {!detail && !error && <p className="text-sm text-slate-400">loading…</p>}
+      {!detail && !error && <p className="text-sm text-zinc-400">loading…</p>}
 
       {detail && (
         <div className="space-y-4">
@@ -141,19 +141,19 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
               sections — it is listed in the catalog but likely unavailable. Plan around it.
             </div>
           )}
-          <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">{detail.description}</p>
+          <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{detail.description}</p>
 
           {detail.raw_requirements && (
-            <section className="rounded-md bg-slate-50 dark:bg-slate-800/60 p-3">
-              <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <section className="rounded-md bg-zinc-50 dark:bg-zinc-900/60 p-3">
+              <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                 Requirements (catalog text)
               </h3>
-              <p className="text-sm text-slate-700 dark:text-slate-300">{detail.raw_requirements}</p>
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">{detail.raw_requirements}</p>
             </section>
           )}
 
           <section>
-            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
               Offering history
             </h3>
             {detail.availability && (
@@ -164,7 +164,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
                     <span
                       key={s}
                       className={`rounded-full px-2 py-0.5 text-xs ${
-                        n > 0 ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300' : 'bg-slate-100 dark:bg-slate-800 text-slate-400'
+                        n > 0 ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-400'
                       }`}
                       title={`offered ${n} recent ${s} quarters`}
                     >
@@ -177,7 +177,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
             {detail.offering_history.length > 0 ? (
               <HistoryGrid history={detail.offering_history} />
             ) : (
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-zinc-400">
                 No offering records in the last five years — verify with the registrar before
                 planning around this course.
               </p>
@@ -185,7 +185,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
           </section>
 
           <section>
-            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
               Prerequisite structure
             </h3>
             {detail.prereq_groups === null ? (
@@ -193,16 +193,16 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
                 Could not be structured automatically — read the catalog text above.
               </p>
             ) : detail.prereq_groups.length === 0 ? (
-              <p className="text-sm text-slate-500 dark:text-slate-400">No course prerequisites.</p>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">No course prerequisites.</p>
             ) : (
               <div className="flex flex-wrap items-center gap-1 text-sm">
                 {detail.prereq_groups.map((group, gi) => (
                   <span key={gi} className="flex items-center gap-1">
-                    {gi > 0 && <span className="text-xs font-bold text-slate-400">AND</span>}
-                    <span className="rounded-md border border-slate-300 dark:border-slate-600 px-1.5 py-0.5">
+                    {gi > 0 && <span className="text-xs font-bold text-zinc-400">AND</span>}
+                    <span className="rounded-md border border-zinc-300 dark:border-zinc-800 px-1.5 py-0.5">
                       {group.map((c, ci) => (
                         <span key={c}>
-                          {ci > 0 && <span className="text-xs text-slate-400"> or </span>}
+                          {ci > 0 && <span className="text-xs text-zinc-400"> or </span>}
                           <button className="font-medium hover:underline" onClick={() => onOpenCourse(c)}>
                             {displayCode(c)}
                           </button>
@@ -219,7 +219,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
 
           {detail.postreqs.length > 0 && (
             <section>
-              <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                 Unlocks ({detail.postreqs.length})
               </h3>
               <div className="flex flex-wrap gap-1.5">
@@ -237,9 +237,9 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
             </section>
           )}
 
-          <div className="flex flex-wrap gap-2 border-t border-slate-100 dark:border-slate-800 pt-3">
+          <div className="flex flex-wrap gap-2 border-t border-zinc-100 dark:border-zinc-800 pt-3">
             <button
-              className="rounded-md bg-slate-800 px-3 py-1.5 text-sm text-white hover:bg-slate-700 dark:bg-slate-200 dark:text-slate-900 dark:hover:bg-white"
+              className="rounded-md bg-zinc-800 px-3 py-1.5 text-sm text-white hover:bg-zinc-700 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-white"
               onClick={() => store.addCompleted(detail.code)}
             >
               Mark completed
@@ -247,7 +247,7 @@ export default function CoursePanel({ code, onClose, onOpenCourse }: {
             {store.content.terms.map((t) => (
               <button
                 key={t.term_code}
-                className="rounded-md border border-slate-300 dark:border-slate-600 px-2 py-1.5 text-xs hover:bg-sky-50 dark:hover:bg-slate-800"
+                className="rounded-md border border-zinc-300 dark:border-zinc-800 px-2 py-1.5 text-xs hover:bg-sky-50 dark:hover:bg-zinc-900"
                 onClick={() => store.addCourse(t.term_code, detail.code)}
               >
                 + {termLabel(t.term_code)}
