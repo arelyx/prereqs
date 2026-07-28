@@ -191,7 +191,8 @@ test('auth lifecycle: register imports plan, sign out, sign in, delete', async (
 test('dormant courses are flagged red in search, planner, and drawer', async ({ page }) => {
   // CSE 129A: in the catalog but zero offerings in the data window.
   await page.getByPlaceholder('Add course…').first().fill('CSE 129A')
-  const result = page.getByRole('button', { name: /CSE 129A Capstone/ }).first()
+  // Badges sit between code and title in the result's accessible name.
+  const result = page.getByRole('button', { name: /CSE 129A.*Capstone/ }).first()
   await expect(result.getByText('not offered in 5+ years')).toBeVisible()
   await result.click()
 
