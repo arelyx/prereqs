@@ -1,10 +1,42 @@
 @import 'tailwindcss';
 @import 'reactflow/dist/style.css';
 
+/* Class-based dark mode: the `dark` class lands on <html> (set pre-paint by
+   the inline script in index.html, toggled from the navbar). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   color-scheme: light;
+  --node-bg: #ffffff;
+  --node-missing-bg: #fee2e2;
+  --node-text: #0f172a;
+}
+
+.dark {
+  color-scheme: dark;
+  --node-bg: #1e293b;
+  --node-missing-bg: #4c1d1d;
+  --node-text: #e2e8f0;
 }
 
 body {
-  @apply bg-slate-100 text-slate-900 antialiased;
+  @apply bg-slate-100 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+/* ReactFlow chrome (controls, background dots) follows the theme. */
+.dark .react-flow__controls {
+  box-shadow: none;
+}
+.dark .react-flow__controls button {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+.dark .react-flow__controls button:hover {
+  background: #334155;
+}
+.dark .react-flow__controls button svg {
+  fill: #cbd5e1;
+}
+.dark .react-flow__background pattern circle {
+  fill: #334155;
 }

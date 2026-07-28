@@ -223,3 +223,14 @@ test('mobile: picker above requirements above general info', async ({ page }) =>
     )
   }
 })
+
+test('theme toggle switches to dark and persists across reload', async ({ page }) => {
+  const html = page.locator('html')
+  await expect(html).not.toHaveClass(/dark/)
+  await page.getByRole('button', { name: 'toggle color theme' }).click()
+  await expect(html).toHaveClass(/dark/)
+  await page.reload()
+  await expect(html).toHaveClass(/dark/) // pre-paint script re-applies it
+  await page.getByRole('button', { name: 'toggle color theme' }).click()
+  await expect(html).not.toHaveClass(/dark/)
+})
