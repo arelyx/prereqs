@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { api } from './api'
 import AuthModal from './components/AuthModal'
 import CoursePanel from './components/CoursePanel'
+import ExportButton from './components/ExportButton'
 import CourseSearch from './components/CourseSearch'
 import GEPanel from './components/GEPanel'
 import Planner from './components/Planner'
@@ -108,6 +109,7 @@ function Dashboard() {
               plan looks valid
             </span>
           )}
+          <div className="ml-auto"><ExportButton /></div>
         </div>
 
         {/* Single column below xl, ordered: planner/GE → program picker →
