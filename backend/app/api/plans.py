@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from ..auth.service import get_current_user
@@ -18,6 +18,10 @@ from ..models import Plan, Program, University, User
 from ..planner import build_context, validate_plan
 
 router = APIRouter(tags=["plans"])
+
+# Per-user plan cap: enough for any realistic what-if exploration, small
+# enough that a runaway client can't fill the table. Mirrored client-side.
+MAX_PLANS = 20
 
 
 class PlanContent(BaseModel):
@@ -90,6 +94,11 @@ def create_plan(
 ) -> dict:
     if db.get(University, body.university_id) is None:
         raise HTTPException(404, "unknown university")
+    count = db.scalar(select(func.count()).select_from(Plan).where(Plan.user_id == user.id))
+    if count is not None and count >= MAX_PLANS:
+        raise HTTPException(
+            422, f"plan limit reached ({MAX_PLANS} plans per account); delete a plan first"
+        )
     _programs(db, body.university_id, body.program_ids)
     plan = Plan(
         user_id=user.id,

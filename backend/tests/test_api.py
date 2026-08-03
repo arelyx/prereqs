@@ -124,6 +124,64 @@ def test_plan_crud_requires_auth(client, seeded):
     assert client.get("/plans", headers=headers).json() == []
 
 
+def test_multiple_plans_per_user(client, seeded):
+    headers = auth_headers(client, "multi@example.com")
+
+    def plan(name, completed):
+        return {
+            "name": name,
+            "university_id": "ucsc",
+            "program_ids": [],
+            "content": {"completed": completed, "terms": []},
+        }
+
+    ids = []
+    for name, completed in [("Plan A", ["CSE12"]), ("Plan B", ["CSE16"]), ("Plan C", [])]:
+        r = client.post("/plans", json=plan(name, completed), headers=headers)
+        assert r.status_code == 201, r.text
+        ids.append(r.json()["id"])
+
+    listed = client.get("/plans", headers=headers).json()
+    assert [p["id"] for p in listed] == ids  # ordered by id
+    assert [p["name"] for p in listed] == ["Plan A", "Plan B", "Plan C"]
+
+    # Updating one plan leaves the others untouched.
+    r = client.put(f"/plans/{ids[1]}", json=plan("Plan B2", ["CSE30"]), headers=headers)
+    assert r.status_code == 200 and r.json()["name"] == "Plan B2"
+    listed = {p["id"]: p for p in client.get("/plans", headers=headers).json()}
+    assert listed[ids[0]]["content"]["completed"] == ["CSE12"]
+    assert listed[ids[1]]["content"]["completed"] == ["CSE30"]
+    assert listed[ids[2]]["content"]["completed"] == []
+
+    # A different user cannot see or touch these plans.
+    other = auth_headers(client, "multi-other@example.com")
+    assert client.get("/plans", headers=other).json() == []
+    assert client.put(f"/plans/{ids[0]}", json=plan("steal", []), headers=other).status_code == 404
+    assert client.delete(f"/plans/{ids[0]}", headers=other).status_code == 404
+    assert len(client.get("/plans", headers=headers).json()) == 3
+
+
+def test_plan_count_cap(client, seeded):
+    from app.api.plans import MAX_PLANS
+
+    headers = auth_headers(client, "capped@example.com")
+    body = {
+        "name": "n",
+        "university_id": "ucsc",
+        "program_ids": [],
+        "content": {"completed": [], "terms": []},
+    }
+    for i in range(MAX_PLANS):
+        assert client.post("/plans", json=body, headers=headers).status_code == 201
+    over = client.post("/plans", json=body, headers=headers)
+    assert over.status_code == 422
+    assert "plan limit" in over.json()["detail"]
+    # Deleting one frees a slot.
+    pid = client.get("/plans", headers=headers).json()[0]["id"]
+    assert client.delete(f"/plans/{pid}", headers=headers).status_code == 204
+    assert client.post("/plans", json=body, headers=headers).status_code == 201
+
+
 def test_dormant_flag_and_endpoint(client, seeded):
     r = client.get("/u/ucsc/dormant")
     assert r.json()["codes"] == ["CSE199X"]
