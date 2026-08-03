@@ -54,12 +54,12 @@ Deterministic layer owns course *membership* (from `sc-*` classed tables); the s
 
 **auth_tokens** — `id`, `user_id` FK cascade, `token_hash` (sha256 of the opaque bearer token; plaintext never stored), `created_at`, `expires_at`, `last_used_at`. Isolated in `app/auth/` for the later Clerk swap.
 
-**plans** — `id`, `user_id` FK cascade, `university_id`, `name`, `program_ids` int[] (chosen major(s)/minor(s)), `content` JSONB, `created_at`, `updated_at`. `content` is exactly the localStorage shape so anonymous plans import losslessly:
+**plans** — `id`, `user_id` FK cascade, `university_id`, `name`, `program_ids` int[] (chosen major(s)/minor(s)), `content` JSONB, `created_at`, `updated_at`. Users hold up to 20 plans (`MAX_PLANS` in `app/api/plans.py`); which plan is *active* is client-side state, never stored server-side. `content` is exactly the per-plan localStorage shape so anonymous plans import losslessly:
 ```json
 { "completed": ["CSE12", "MATH19A"],
   "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE120"]}] }
 ```
-Validation (missing prereqs, not-offered warnings, requirement/GE progress) is computed by the API on read, never stored.
+Anonymously, all plans live under the localStorage key `prereqs.plans.v2` as `{"plans": [{"id": "<client-uuid>", "planName": "...", "programIds": [], "serverPlanId": null, "content": {...}}], "activeId": "<client-uuid>"}`; `serverPlanId` links a local plan to its server row while signed in. The legacy single-plan key `prereqs.plan` is migrated into the first v2 plan on first load and then removed. Validation (missing prereqs, not-offered warnings, requirement/GE progress) is computed by the API on read, never stored.
 
 ## Provenance
 
