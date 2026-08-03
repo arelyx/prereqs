@@ -10,8 +10,9 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
 
-  const hasLocalWork =
-    store.content.completed.length > 0 || store.content.terms.some((t) => t.courses.length > 0)
+  const hasLocalWork = store.plans.some(
+    (p) => p.content.completed.length > 0 || p.content.terms.some((t) => t.courses.length > 0),
+  )
 
   async function submit() {
     setBusy(true)
@@ -44,8 +45,8 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
         <p className="mb-3 text-xs text-zinc-500 dark:text-zinc-400">
           {mode === 'register'
             ? hasLocalWork
-              ? 'Your current plan will be saved to your new account.'
-              : 'Save your plan and access it anywhere.'
+              ? 'Your current plans will be saved to your new account.'
+              : 'Save your plans and access them anywhere.'
             : 'Welcome back.'}
         </p>
         <form
