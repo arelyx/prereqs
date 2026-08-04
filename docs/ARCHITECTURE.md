@@ -41,21 +41,31 @@ into a best-guess completed-courses list that the user confirms in a review
 UI. Constraints that shape it:
 
 - **In-memory only.** The PDF and its text are PII (name, student ID); they
-  are never persisted, never logged, never echoed into error messages.
-  Chunking starts at the first quarter heading, so the identity header is not
-  even sent to the (local) LLM.
+  are never persisted, never logged, never echoed into error messages. The
+  multipart body is parsed through a subclass that cannot spool to disk
+  (Starlette's default rolls parts over 1 MB into /tmp).
 - **LLM-gated with a refusal fallback.** The local Ollama model
-  (`TRANSCRIPT_LLM_MODEL`, default qwen3:4b) is the only parser — there is no
-  heuristic/regex fallback. `GET /transcript/status` reports availability; if
-  Ollama is unreachable or the model missing, the backend answers 503 and the
-  frontend shows the feature as unavailable. Prod has no Ollama configured,
-  so the feature is off there by default.
-- **Serial, chunked LLM calls.** Text is split per quarter section and parsed
-  with one LLM call per chunk — strictly serialized through a module lock
-  (`backend/app/llm.py`), honoring the one-in-flight-Ollama-request invariant.
-  Responses are schema-validated and every extracted code must appear in the
-  chunk text (anti-fabrication); one retry, then 502. Extracted codes are
-  cross-checked against the catalog — only matched courses can be added.
+  (`TRANSCRIPT_LLM_MODEL`, default gemma4:12b) is the only parser — there is
+  no heuristic/regex fallback. `GET /transcript/status` reports availability;
+  if Ollama is unreachable or the model missing, the backend answers 503 and
+  the frontend shows the feature as unavailable. Prod has no Ollama
+  configured, so the feature is off there by default.
+- **One call for the whole document.** The entire transcript goes to the model
+  in a single request (`backend/app/transcript.py`), serialized through a
+  module lock (`backend/app/llm.py`) to honor the one-in-flight-Ollama-request
+  invariant. There is no chunking, no per-section retry, and no verbatim
+  cross-check of the output against the source: the model is asked for a
+  compact `[code, term, grade, earned, completed]` row per course and decides
+  pass/fail itself from grading rules spelled out in the prompt. Rows that
+  come back malformed are skipped rather than failing the import, because the
+  user reviews and edits every row before it is applied.
+- **Cost is decode-bound.** Prefill of a 4-year transcript is ~0.35 s; the
+  output tokens are the whole cost. That is why rows are compact arrays rather
+  than JSON objects — dropping the repeated key names cut a real transcript
+  from 3143 to 1396 output tokens (78 s to 37 s) with identical results.
+  `keep_alive: -1` pins the model in VRAM so the ~34 s cold load is paid once
+  per boot. Extracted codes are cross-checked against the catalog — only
+  matched courses can be added to a plan.
 
 ## Plan export
 

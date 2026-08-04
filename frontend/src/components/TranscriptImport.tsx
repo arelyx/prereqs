@@ -161,7 +161,7 @@ export default function TranscriptImport() {
               <div className="h-6 w-6 animate-spin rounded-full border-2 border-zinc-300 border-t-sky-600" />
               <p className="text-sm text-zinc-600 dark:text-zinc-300">Extracting your courses…</p>
               <p className="text-xs text-zinc-400">
-                This can take a minute — a local language model reads each quarter.
+                This takes about a minute — a local language model reads the whole transcript.
               </p>
             </div>
           )}
