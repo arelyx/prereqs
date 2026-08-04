@@ -4,7 +4,17 @@ serial LLM extraction → validated course rows.
 Privacy contract: the uploaded file and its text live only in request-local
 memory — never written to disk, never logged, never echoed into error
 messages. Chunking starts at the first quarter heading, so the identity
-header (name, student ID) is not even sent to the (local) LLM.
+header (name, student ID) is not even sent to the (local) LLM. The API layer
+buffers the multipart body itself precisely so Starlette's parser never
+spools it to a temp file (see `api/transcript.py`).
+
+Cost contract: PDF text extraction is pure-Python pypdf and therefore holds
+the GIL of the whole worker, with superlinear cost in text volume. Every
+extraction is bounded by pages, decompressed operator-stream bytes, form
+XObject traversals, extracted characters and wall-clock — and aborts
+mid-page, not after it. "Operator stream" means every stream pypdf actually
+walks, page contents and `Do`-invoked forms alike; bounding only the former
+left the whole bomb class reachable through one extra level of indirection.
 
 Failure contract: the LLM is the only parser. If it is unreachable the
 feature refuses (503 at the API layer); if it emits garbage after one retry
@@ -15,11 +25,13 @@ half-right silent guesses are worse than a clean refusal.
 from __future__ import annotations
 
 import re
+import time
 from dataclasses import dataclass
 
 from pydantic import BaseModel, Field, ValidationError
 
 from . import llm
+from .config import settings
 
 # --- PDF → text -------------------------------------------------------------
 
@@ -28,20 +40,255 @@ class TranscriptError(Exception):
     """User-correctable input problem (maps to 422)."""
 
 
-def extract_pdf_text(data: bytes) -> str:
-    """Whole-document text via pypdf. Raises TranscriptError when the file is
-    not readable as a PDF or has no text layer (scanned image)."""
+# Deliberately a BaseException, not an Exception: it is raised from inside a
+# pypdf visitor callback and has to unwind through pypdf's own broad
+# per-operator `except Exception` handling without being swallowed. Never
+# escapes this module — extract_pdf_text converts it to TranscriptError.
+class _ExtractBudgetExceeded(BaseException):
+    pass
+
+
+# Same message for every budget breach: which limit tripped is a property of
+# the uploaded file, and saying so would describe its contents.
+TOO_COMPLEX = (
+    "this PDF is too large or too complex to process — please upload the "
+    "plain MyUCSC unofficial-transcript PDF export, not a scan, a merged "
+    "packet, or a printed-to-PDF web page"
+)
+
+
+_OVER_ANY_CAP = 1 << 62
+
+# One clock check per this many operators / text runs. time.monotonic() is
+# cheap, but these callbacks fire on every operator in the document.
+_CLOCK_SAMPLE = 512
+
+
+def _decoded_len(obj) -> int:
+    """Decompressed size of one stream object, WITHOUT parsing its operators.
+    Decompression is C-speed zlib and pypdf caches the result, so measuring
+    costs nothing that the walk was not about to spend anyway."""
+    from pypdf.errors import LimitReachedError
+
+    try:
+        return len(obj.get_object().get_data())
+    except LimitReachedError:
+        # pypdf refused to decompress past its own 75 MB ceiling: the stream is
+        # bigger than anything we would accept, by a wide margin.
+        return _OVER_ANY_CAP
+    except Exception:
+        # Never fail a legitimate PDF over an accounting quirk; the char cap
+        # and the wall-clock deadline still bound the walk.
+        return 0
+
+
+def _content_stream_bytes(page) -> int:
+    """Decompressed content-stream size for one page. `page.get_contents()`
+    builds a ContentStream, which is exactly the expensive operator loop we
+    are trying to bound, so go through the raw stream objects instead.
+
+    Covers ONLY the page's own /Contents. Form XObjects reached by `Do` are
+    charged separately, as pypdf walks into them (see `_Budget.enter_form`)."""
+    from pypdf.generic import ArrayObject
+
+    try:
+        raw = page.get("/Contents")
+        if raw is None:
+            return 0
+        obj = raw.get_object()
+        parts = list(obj) if isinstance(obj, ArrayObject) else [obj]
+        return sum(_decoded_len(part) for part in parts)
+    except Exception:
+        return 0
+
+
+class _Budget:
+    """Whole-document extraction budget, spent as pypdf walks.
+
+    Charges every stream that is actually *walked*, not every stream that
+    exists: a form invoked by four `Do`s is walked four times and costs four
+    times as much, so it is charged four times.
+    """
+
+    def __init__(
+        self, *, deadline: float, max_stream: int, max_traversals: int, max_depth: int
+    ) -> None:
+        self.deadline = deadline
+        self.max_stream = max_stream
+        self.max_traversals = max_traversals
+        self.max_depth = max_depth
+        self.stream_used = 0
+        self.traversals = 0
+        self.depth = 0
+        self.ops = 0
+
+    def spend_stream(self, nbytes: int) -> None:
+        self.stream_used += nbytes
+        if self.stream_used > self.max_stream:
+            raise _ExtractBudgetExceeded
+
+    def check_clock(self) -> None:
+        if time.monotonic() > self.deadline:
+            raise _ExtractBudgetExceeded
+
+    def tick_operator(self) -> None:
+        """Called before every operator pypdf executes, page or form. This is
+        the only deadline check that fires inside an operator stream producing
+        no text — which is exactly what a bomb's stream produces."""
+        self.ops += 1
+        if self.ops % _CLOCK_SAMPLE == 0:
+            self.check_clock()
+
+    def enter_form(self, nbytes: int) -> None:
+        self.traversals += 1
+        if self.traversals > self.max_traversals:
+            raise _ExtractBudgetExceeded
+        self.depth += 1
+        if self.depth > self.max_depth:
+            raise _ExtractBudgetExceeded
+        self.check_clock()
+        self.spend_stream(nbytes)
+
+    def leave_form(self) -> None:
+        self.depth -= 1
+
+
+def _bind_form_accounting(page, budget: _Budget) -> None:
+    """Route every form-XObject traversal through the budget.
+
+    pypdf recurses into a form via `self.extract_xform_text` from inside its
+    operator loop, once per `Do` — and it discards the form's id from its
+    cyclic-reference guard in a `finally`, so N `Do`s at one form walk it N
+    times. None of that traffic passes through `page["/Contents"]`, so the
+    stream budget used to measure a small fraction of the work actually done:
+    measured pre-fix, a 3.4 KB upload holding a 1 MB form walked 0.65 s per
+    `Do`, linearly and without limit (Do x16 = 9.65 s), while the page-level
+    accounting saw 20 bytes.
+
+    Shadowing the bound method on the page instance covers nested forms too:
+    pypdf's recursion keeps calling it on the same page object.
+    """
+    original = getattr(page, "extract_xform_text", None)
+    if original is None:  # pragma: no cover - pinned by test_form_traversals_are_charged
+        # A pypdf release renamed the recursion entry point. Degrade to
+        # clock-only bounding rather than 500ing every upload; the test named
+        # above fails loudly so this is never the silent state for long.
+        return
+
+    def accounted(xform, *args, **kwargs):
+        budget.enter_form(_decoded_len(xform))
+        try:
+            return original(xform, *args, **kwargs)
+        finally:
+            budget.leave_form()
+
+    page.extract_xform_text = accounted
+
+
+def extract_pdf_text(
+    data: bytes,
+    *,
+    max_pages: int | None = None,
+    max_chars: int | None = None,
+    max_stream_bytes: int | None = None,
+    time_budget: float | None = None,
+    max_xobject_traversals: int | None = None,
+    max_xobject_depth: int | None = None,
+) -> str:
+    """Whole-document text via pypdf, under hard resource bounds.
+
+    Raises TranscriptError when the file is not readable as a PDF, has no text
+    layer (scanned image), or exceeds any extraction budget.
+
+    Every budget is cumulative over the document and enforced *during*
+    extraction, so neither a page nor a form XObject can run away: stream
+    bytes are spent before each page and before each `Do` traversal is walked,
+    the traversal count and nesting depth are capped, and the clock is
+    re-checked per operator — not only per text run, since a bomb's operators
+    emit no text — aborting the walk mid-page and mid-form.
+    """
     import io
 
     from pypdf import PdfReader
+    from pypdf.errors import LimitReachedError
+
+    max_pages = settings.transcript_max_pages if max_pages is None else max_pages
+    max_chars = settings.transcript_max_text_chars if max_chars is None else max_chars
+    max_stream = (
+        settings.transcript_max_stream_bytes if max_stream_bytes is None else max_stream_bytes
+    )
+    seconds = settings.transcript_extract_seconds if time_budget is None else time_budget
+    max_traversals = (
+        settings.transcript_max_xobject_traversals
+        if max_xobject_traversals is None
+        else max_xobject_traversals
+    )
+    max_depth = (
+        settings.transcript_max_xobject_depth
+        if max_xobject_depth is None
+        else max_xobject_depth
+    )
+    budget = _Budget(
+        deadline=time.monotonic() + seconds,
+        max_stream=max_stream,
+        max_traversals=max_traversals,
+        max_depth=max_depth,
+    )
 
     try:
         reader = PdfReader(io.BytesIO(data))
-        text = "\n".join(page.extract_text() or "" for page in reader.pages)
-    except TranscriptError:
-        raise
+        page_count = len(reader.pages)
     except Exception as exc:
         raise TranscriptError("could not read this file as a PDF") from exc
+
+    if page_count > max_pages:
+        raise TranscriptError(
+            f"this PDF has {page_count} pages; transcripts of up to {max_pages} "
+            "pages are supported"
+        )
+
+    parts: list[str] = []
+    used = 0
+    for page in reader.pages:
+        try:
+            budget.check_clock()
+            # Spend the stream budget BEFORE walking the page. Decompressing to
+            # measure is C-speed zlib; walking the operators is the pure-Python
+            # part whose cost we are actually bounding.
+            budget.spend_stream(_content_stream_bytes(page))
+        except _ExtractBudgetExceeded:
+            raise TranscriptError(TOO_COMPLEX) from None
+
+        remaining = max_chars - used
+        seen = [0]  # chars this page
+
+        def visitor(text, cm, tm, font_dict, font_size, _seen=seen, _left=remaining):
+            _seen[0] += len(text)
+            if _seen[0] > _left:
+                raise _ExtractBudgetExceeded
+
+        def op_visitor(operator, operands, cm, tm, _b=budget):
+            _b.tick_operator()
+
+        _bind_form_accounting(page, budget)
+        try:
+            page_text = (
+                page.extract_text(visitor_text=visitor, visitor_operand_before=op_visitor)
+                or ""
+            )
+        except _ExtractBudgetExceeded:
+            raise TranscriptError(TOO_COMPLEX) from None
+        except LimitReachedError as exc:  # pypdf's own decompression ceiling
+            raise TranscriptError(TOO_COMPLEX) from exc
+        except Exception as exc:
+            raise TranscriptError("could not read this file as a PDF") from exc
+
+        used += len(page_text)
+        if used > max_chars:
+            raise TranscriptError(TOO_COMPLEX)
+        parts.append(page_text)
+
+    text = "\n".join(parts)
     if not text.strip():
         raise TranscriptError(
             "no extractable text in this PDF — is it a scanned image? "
