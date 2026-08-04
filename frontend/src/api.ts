@@ -97,6 +97,15 @@ export interface PlanContent {
   terms: { term_code: string; courses: string[] }[]
 }
 
+export interface ServerPlan {
+  id: number
+  name: string
+  university_id: string
+  program_ids: number[]
+  content: PlanContent
+  updated_at: string | null
+}
+
 export interface ValidationIssue {
   kind: string
   course: string | null
@@ -237,18 +246,18 @@ export const api = {
     }),
   logout: () => request<void>('/auth/logout', { method: 'POST' }),
   deleteAccount: () => request<void>('/auth/account', { method: 'DELETE' }),
-  listPlans: () =>
-    request<{ id: number; name: string; program_ids: number[]; content: PlanContent }[]>('/plans'),
+  listPlans: () => request<ServerPlan[]>('/plans'),
   createPlan: (name: string, programIds: number[], content: PlanContent) =>
-    request<{ id: number }>('/plans', {
+    request<ServerPlan>('/plans', {
       method: 'POST',
       body: JSON.stringify({ name, university_id: UNIVERSITY, program_ids: programIds, content }),
     }),
   updatePlan: (id: number, name: string, programIds: number[], content: PlanContent) =>
-    request<{ id: number }>(`/plans/${id}`, {
+    request<ServerPlan>(`/plans/${id}`, {
       method: 'PUT',
       body: JSON.stringify({ name, university_id: UNIVERSITY, program_ids: programIds, content }),
     }),
+  deletePlan: (id: number) => request<void>(`/plans/${id}`, { method: 'DELETE' }),
 }
 
 export function displayCode(code: string): string {

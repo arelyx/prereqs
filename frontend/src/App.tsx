@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react'
 import { api } from './api'
 import AuthModal from './components/AuthModal'
 import CoursePanel from './components/CoursePanel'
+import ErrorBoundary from './components/ErrorBoundary'
+import ExportButton from './components/ExportButton'
 import CourseSearch from './components/CourseSearch'
 import GEPanel from './components/GEPanel'
 import Planner from './components/Planner'
+import PlanSwitcher from './components/PlanSwitcher'
 import ProgramRequirements from './components/ProgramRequirements'
 import { ProgramInfoPanels, ProgramPicker } from './components/ProgramsSidebar'
 import { StoreProvider, useStore } from './store'
@@ -33,11 +36,12 @@ function NavBar({ onAuth }: { onAuth: () => void }) {
   return (
     <header className="sticky top-0 z-20 border-b border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-950/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5">
-        <div className="flex items-baseline gap-3">
+        <div className="flex items-center gap-3">
           <h1 className="text-lg font-black tracking-tight text-zinc-900 dark:text-zinc-100">prereqs</h1>
           <span className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-xs font-medium text-amber-900 dark:text-amber-200">
             UC Santa Cruz
           </span>
+          <PlanSwitcher />
         </div>
         <div className="flex items-center gap-3">
         <button
@@ -97,8 +101,14 @@ function Dashboard() {
               onSelect={(c) => setOpenCourse(c.code)}
             />
           </div>
-          {store.validating ? (
+          {store.validating || (store.validation === null && !store.validationFailed) ? (
             <span className="text-xs text-zinc-400">checking plan…</span>
+          ) : store.validation === null ? (
+            // Validation FAILED — "no result" must never render as the green
+            // all-clear badge.
+            <span className="rounded-full bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+              couldn’t check this plan
+            </span>
           ) : errorCount > 0 ? (
             <span className="rounded-full bg-red-100 dark:bg-red-950 px-2 py-0.5 text-xs font-medium text-red-700 dark:text-red-300">
               {errorCount} blocking issue{errorCount > 1 ? 's' : ''}
@@ -108,6 +118,7 @@ function Dashboard() {
               plan looks valid
             </span>
           )}
+          <div className="ml-auto"><ExportButton /></div>
         </div>
 
         {/* Single column below xl, ordered: planner/GE → program picker →
@@ -150,8 +161,10 @@ function Dashboard() {
 
 export default function App() {
   return (
-    <StoreProvider>
-      <Dashboard />
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <Dashboard />
+      </StoreProvider>
+    </ErrorBoundary>
   )
 }

@@ -57,6 +57,10 @@ UI. Constraints that shape it:
   chunk text (anti-fabrication); one retry, then 502. Extracted codes are
   cross-checked against the catalog — only matched courses can be added.
 
+## Plan export
+
+Spreadsheet export (CSV and styled XLSX) is generated entirely client-side from the stored plan (`frontend/src/export.ts`, UI in `components/ExportButton.tsx`) — no backend endpoint, so an export can never fail differently from the app itself. Course titles/credits are fetched per-subject from the existing catalog API at export time and cached; if that fetch fails the file still downloads with code-only rows. The `exceljs` dependency is loaded via dynamic `import()` on first XLSX use, so it ships as a separate lazy chunk and adds nothing to the initial bundle. CSVs carry a UTF-8 BOM and CRLF line endings so Excel opens them cleanly.
+
 ## Auth
 
-Token-based (opaque bearer tokens, hashed at rest), register/login/delete, no password recovery. Clerk planned later — auth is isolated in `backend/app/auth/` so it can be swapped. Anonymous users get full planner functionality via localStorage; on signup the client offers to import the local plan.
+Token-based (opaque bearer tokens, hashed at rest), register/login/delete, no password recovery. Clerk planned later — auth is isolated in `backend/app/auth/` so it can be swapped. Anonymous users get full planner functionality via localStorage, including multiple plans switched from the nav bar; on signup the client imports the local plans that hold work (all of them into an empty account), and on sign-in all server plans are loaded and kept in sync per plan.
