@@ -12,6 +12,17 @@ runbook is the sequence with gates.**
 docker compose up -d --build     # db :5433, backend :8200, frontend :5273
 ```
 
+## Transcript import (backend env)
+
+The transcript-upload feature needs a local Ollama; without it the feature
+refuses cleanly (503, UI disabled). Backend settings (`app/config.py`):
+
+- `OLLAMA_URL` — default `http://localhost:11434`. Dev compose points it at
+  the host's Ollama via `host.docker.internal`; prod leaves it unset (off).
+- `TRANSCRIPT_LLM_MODEL` — default `qwen3:4b` (same model the pipelines use).
+- `TRANSCRIPT_LLM_TIMEOUT` / `TRANSCRIPT_BUDGET_SECONDS` /
+  `TRANSCRIPT_MAX_BYTES` — per-call timeout, whole-request ceiling, upload cap.
+
 ## Refreshing UCSC data
 
 All pipelines run on the host from `pipelines/` (venv + local Ollama):
