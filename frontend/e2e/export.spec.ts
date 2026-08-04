@@ -83,6 +83,41 @@ test('empty plan still exports a well-formed CSV with a note', async ({ page }) 
   expect(csv).toContain('No courses in this plan yet.')
 })
 
+// A failed `import('exceljs')` is cached by the browser's module map, so the
+// button is dead until the page reloads — the banner has to say so instead of
+// telling the user to retry something that can never make a network attempt.
+test('a blocked exceljs chunk reports the reload it actually needs', async ({ page }) => {
+  await page.route(/exceljs/, (route) => route.abort('failed'))
+
+  await page.getByRole('button', { name: 'Export' }).click()
+  await page.getByRole('menuitem', { name: 'Download Excel (.xlsx)' }).click()
+
+  const alert = page.getByRole('alert')
+  await expect(alert).toBeVisible()
+  const text = await alert.innerText()
+  expect(text).toContain('Reload the page')
+  expect(text).toContain('CSV export still works')
+  // The misleading generic advice must NOT be what a chunk failure shows.
+  expect(text).not.toContain('Export failed — please try again.')
+  // …and the button recovers from busy so CSV remains usable.
+  await expect(page.getByRole('menuitem', { name: 'Download Excel (.xlsx)' })).toBeEnabled()
+})
+
+test('reopening the menu after a failure shows no stale error banner', async ({ page }) => {
+  await page.route(/exceljs/, (route) => route.abort('failed'))
+
+  await page.getByRole('button', { name: 'Export' }).click()
+  await page.getByRole('menuitem', { name: 'Download Excel (.xlsx)' }).click()
+  await expect(page.getByRole('alert')).toBeVisible()
+
+  await page.keyboard.press('Escape')
+  await expect(page.getByRole('menu')).toHaveCount(0)
+
+  await page.getByRole('button', { name: 'Export' }).click()
+  await expect(page.getByRole('menu')).toBeVisible()
+  await expect(page.getByRole('alert')).toHaveCount(0)
+})
+
 test('export menu opens and closes without dialogs', async ({ page }) => {
   page.on('dialog', () => {
     throw new Error('export must not use browser dialogs')

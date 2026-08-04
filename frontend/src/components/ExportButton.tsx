@@ -6,7 +6,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { CourseSummary } from '../api'
 import { api } from '../api'
-import { downloadCsv, downloadXlsx } from '../export'
+import { ChunkLoadError, downloadCsv, downloadXlsx } from '../export'
 import type { CourseInfo } from '../export'
 import { useStore } from '../store'
 
@@ -48,7 +48,8 @@ export default function ExportButton() {
   const store = useStore()
   const [open, setOpen] = useState(false)
   const [busy, setBusy] = useState<'csv' | 'xlsx' | null>(null)
-  const [error, setError] = useState(false)
+  // 'chunk' failures need a reload, not a retry — see ChunkLoadError.
+  const [error, setError] = useState<'generic' | 'chunk' | null>(null)
   const rootRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -70,7 +71,7 @@ export default function ExportButton() {
   async function run(format: 'csv' | 'xlsx') {
     if (busy) return
     setBusy(format)
-    setError(false)
+    setError(null)
     try {
       const { content, programIds, planName } = store
       const codes = [...content.completed, ...content.terms.flatMap((t) => t.courses)]
@@ -92,8 +93,11 @@ export default function ExportButton() {
       if (format === 'csv') downloadCsv(input)
       else await downloadXlsx(input)
       setOpen(false)
-    } catch {
-      setError(true)
+    } catch (e) {
+      // Log the real cause: the banner is deliberately short, but support
+      // needs the underlying network/parse error to diagnose a report.
+      console.error('export failed', e)
+      setError(e instanceof ChunkLoadError ? 'chunk' : 'generic')
     } finally {
       setBusy(null)
     }
@@ -102,7 +106,14 @@ export default function ExportButton() {
   return (
     <div className="relative" ref={rootRef}>
       <button
-        onClick={() => setOpen((o) => !o)}
+        onClick={() => {
+          // The menu unmounts on close, so a lingering `error` would reappear
+          // on the next open as a banner about an attempt the user has since
+          // forgotten (and that may belong to a different plan). Toggling the
+          // menu starts a clean slate; only a real attempt puts it back.
+          setError(null)
+          setOpen((o) => !o)
+        }}
         aria-haspopup="menu"
         aria-expanded={open}
         title="Download this plan as a spreadsheet"
@@ -148,8 +159,10 @@ export default function ExportButton() {
             {busy === 'xlsx' ? 'Preparing Excel…' : 'Download Excel (.xlsx)'}
           </button>
           {error && (
-            <p className="px-3 py-1 text-xs text-red-600 dark:text-red-400">
-              Export failed — please try again.
+            <p role="alert" className="px-3 py-1 text-xs text-red-600 dark:text-red-400">
+              {error === 'chunk'
+                ? 'Export failed — the Excel component could not be loaded. Reload the page, then try again. CSV export still works.'
+                : 'Export failed — please try again.'}
             </p>
           )}
         </div>

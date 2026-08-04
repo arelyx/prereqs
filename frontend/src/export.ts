@@ -103,6 +103,38 @@ export function buildCsv(input: ExportInput): string {
 // ---------------------------------------------------------------------------
 // XLSX (exceljs, dynamic import)
 
+/**
+ * The exceljs chunk could not be loaded. Distinct from every other export
+ * failure because it is *unrecoverable without a page reload*: per the HTML
+ * spec the module map caches the rejection, so a second `import()` resolves
+ * from the poisoned entry and never touches the network. Telling the user to
+ * "try again" would be a lie — the retry cannot make an attempt. The realistic
+ * trigger is a tab left open across a redeploy: the old hashed chunk URL is
+ * gone, so even a fresh fetch would 404. Only a reload fixes either case.
+ */
+export class ChunkLoadError extends Error {
+  constructor(cause: unknown) {
+    super('exceljs chunk failed to load', { cause })
+    this.name = 'ChunkLoadError'
+  }
+}
+
+/**
+ * Lazily pull in exceljs, tagging *any* failure of the import itself — network
+ * error, 404 on a stale hash, or a throw during module evaluation — as a
+ * ChunkLoadError. All three poison the module map identically, so the caller
+ * can act on the class rather than sniffing error message strings (which vary
+ * between vite's dev server, rollup's preload helper, and browsers).
+ */
+async function loadWorkbookCtor(): Promise<typeof import('exceljs').Workbook> {
+  try {
+    const { Workbook } = await import('exceljs')
+    return Workbook
+  } catch (cause) {
+    throw new ChunkLoadError(cause)
+  }
+}
+
 // Zinc palette (matches the app's shadcn-zinc theme), ARGB for exceljs.
 const ZINC = {
   ink: 'FF27272A', // zinc-800
@@ -125,7 +157,7 @@ function thinBorders(): Borders {
  * for anyone who wants the data tabular. Returns the .xlsx bytes.
  */
 export async function buildXlsx(input: ExportInput): Promise<ArrayBuffer> {
-  const { Workbook } = await import('exceljs')
+  const Workbook = await loadWorkbookCtor()
   const now = input.now ?? new Date()
   const wb = new Workbook()
   wb.created = now
