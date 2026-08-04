@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { api } from './api'
 import AuthModal from './components/AuthModal'
 import CoursePanel from './components/CoursePanel'
+import ErrorBoundary from './components/ErrorBoundary'
 import CourseSearch from './components/CourseSearch'
 import GEPanel from './components/GEPanel'
 import Planner from './components/Planner'
@@ -152,8 +153,10 @@ function Dashboard() {
 
 export default function App() {
   return (
-    <StoreProvider>
-      <Dashboard />
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <Dashboard />
+      </StoreProvider>
+    </ErrorBoundary>
   )
 }

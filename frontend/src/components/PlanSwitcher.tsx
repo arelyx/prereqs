@@ -3,7 +3,12 @@
 // confirm — they block automation and clash with the zinc styling).
 
 import { useEffect, useRef, useState } from 'react'
-import { MAX_PLANS, useStore } from '../store'
+import { MAX_PLAN_NAME, MAX_PLANS, useStore } from '../store'
+
+// A plan name should always be a non-empty string by the time it reaches
+// render, but a rogue value must degrade to a label, not an empty button.
+const planLabel = (name: unknown): string =>
+  typeof name === 'string' && name.trim() ? name : 'Untitled plan'
 
 export default function PlanSwitcher() {
   const store = useStore()
@@ -57,18 +62,26 @@ export default function PlanSwitcher() {
   }
 
   return (
-    <div className="relative" ref={rootRef}>
+    <div className="relative flex items-center gap-2" ref={rootRef}>
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label="switch plan"
         aria-expanded={open}
         className="flex max-w-48 items-center gap-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 px-2.5 py-1 text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-900"
       >
-        <span className="truncate">{store.planName}</span>
+        <span className="truncate">{planLabel(store.planName)}</span>
         <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" className="shrink-0 text-zinc-400">
           <path d="M1 3.5 5 7.5 9 3.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
         </svg>
       </button>
+      {store.email && store.saveFailed && (
+        <span
+          title="Your latest changes could not be saved to your account. They are kept on this device and saving will be retried."
+          className="shrink-0 text-xs font-medium text-amber-600 dark:text-amber-500"
+        >
+          not saved
+        </span>
+      )}
 
       {open && (
         <div className="absolute left-0 top-full z-30 mt-1.5 w-72 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 py-1 shadow-lg">
@@ -89,6 +102,7 @@ export default function PlanSwitcher() {
                     <input
                       autoFocus
                       aria-label="plan name"
+                      maxLength={MAX_PLAN_NAME}
                       value={renameValue}
                       onChange={(e) => setRenameValue(e.target.value)}
                       onBlur={commitRename}
@@ -98,7 +112,7 @@ export default function PlanSwitcher() {
                 ) : confirmDeleteId === p.id ? (
                   <div className="flex flex-1 items-center justify-between gap-2 px-2 py-1 text-sm">
                     <span className="truncate text-red-600 dark:text-red-400">
-                      Delete “{p.planName}”?
+                      Delete “{planLabel(p.planName)}”?
                     </span>
                     <span className="flex shrink-0 gap-2">
                       <button
@@ -137,15 +151,15 @@ export default function PlanSwitcher() {
                         }`}
                         aria-hidden="true"
                       />
-                      <span className="truncate">{p.planName}</span>
+                      <span className="truncate">{planLabel(p.planName)}</span>
                     </button>
                     <button
-                      aria-label={`rename plan ${p.planName}`}
+                      aria-label={`rename plan ${planLabel(p.planName)}`}
                       title="Rename"
                       onClick={() => {
                         setConfirmDeleteId(null)
                         setRenamingId(p.id)
-                        setRenameValue(p.planName)
+                        setRenameValue(planLabel(p.planName))
                       }}
                       className="rounded p-1 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 dark:hover:bg-zinc-900 dark:hover:text-zinc-300"
                     >
@@ -159,7 +173,7 @@ export default function PlanSwitcher() {
                       </svg>
                     </button>
                     <button
-                      aria-label={`delete plan ${p.planName}`}
+                      aria-label={`delete plan ${planLabel(p.planName)}`}
                       title="Delete"
                       onClick={() => {
                         setRenamingId(null)
@@ -193,6 +207,7 @@ export default function PlanSwitcher() {
                   autoFocus
                   aria-label="new plan name"
                   placeholder="New plan name…"
+                  maxLength={MAX_PLAN_NAME}
                   value={newName}
                   onChange={(e) => setNewName(e.target.value)}
                   className="w-full flex-1 rounded border border-zinc-300 dark:border-zinc-700 bg-transparent px-1.5 py-0.5 text-sm"

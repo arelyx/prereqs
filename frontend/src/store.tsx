@@ -9,7 +9,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { api, authedEmail, setAuthedEmail, setToken } from './api'
-import type { PlanContent, ValidationResult } from './api'
+import type { PlanContent, ServerPlan, ValidationResult } from './api'
 import { academicYearOf, ayTermCodes, upcomingAcademicYear } from './terms'
 
 // v2 key holds { plans: [...], activeId }. The legacy single-plan key
@@ -19,8 +19,10 @@ import { academicYearOf, ayTermCodes, upcomingAcademicYear } from './terms'
 const PLANS_KEY = 'prereqs.plans.v2'
 const LEGACY_PLAN_KEY = 'prereqs.plan'
 
-// Mirrors the backend cap (backend/app/api/plans.py MAX_PLANS).
+// Mirror the backend caps (backend/app/api/plans.py MAX_PLANS / PlanIn.name):
+// a name over 128 chars would 422 on every save, silently orphaning the plan.
 export const MAX_PLANS = 20
+export const MAX_PLAN_NAME = 128
 
 export interface PlanState {
   id: string // client-local id, stable across sessions and sign-in/out
@@ -51,6 +53,9 @@ interface Store {
   validation: ValidationResult | null
   validating: boolean
   dormant: Set<string>
+  // True while the active plan's latest server write has failed (signed in
+  // only); cleared by the first successful retry.
+  saveFailed: boolean
   setCompleted: (codes: string[]) => void
   addCompleted: (code: string) => void
   addYear: (startYear?: number) => void
@@ -91,6 +96,54 @@ function freshPlan(name: string): PlanState {
   }
 }
 
+// Shape repair: localStorage (both keys) and the server can hold plans that
+// are valid JSON but structurally wrong — every plan entering React state goes
+// through here so one bad member can't white-screen the app. Salvage what
+// exists, default the rest; a non-object "plan" is dropped entirely.
+function stringArray(v: unknown): string[] {
+  return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []
+}
+
+function normalizePlan(raw: unknown): PlanState | null {
+  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
+  const r = raw as Record<string, unknown>
+  const c =
+    typeof r.content === 'object' && r.content !== null && !Array.isArray(r.content)
+      ? (r.content as Record<string, unknown>)
+      : {}
+  const terms = (Array.isArray(c.terms) ? c.terms : [])
+    .filter(
+      (t): t is Record<string, unknown> =>
+        typeof t === 'object' && t !== null && typeof (t as { term_code?: unknown }).term_code === 'string',
+    )
+    .map((t) => ({ term_code: t.term_code as string, courses: stringArray(t.courses) }))
+  return {
+    id: typeof r.id === 'string' && r.id ? r.id : newPlanId(),
+    content: { completed: stringArray(c.completed), terms },
+    programIds: Array.isArray(r.programIds)
+      ? r.programIds.filter((x): x is number => typeof x === 'number' && Number.isFinite(x))
+      : [],
+    planName:
+      typeof r.planName === 'string' && r.planName.trim()
+        ? r.planName.slice(0, MAX_PLAN_NAME)
+        : 'My Plan',
+    serverPlanId: typeof r.serverPlanId === 'number' ? r.serverPlanId : null,
+  }
+}
+
+function normalizePlans(raw: unknown[]): PlanState[] {
+  const out: PlanState[] = []
+  const seen = new Set<string>()
+  for (const item of raw) {
+    const p = normalizePlan(item)
+    if (p && !seen.has(p.id)) {
+      seen.add(p.id)
+      out.push(p)
+    }
+  }
+  return out
+}
+
 function hasWork(p: PlanState): boolean {
   return (
     p.content.completed.length > 0 ||
@@ -104,11 +157,14 @@ function loadPlans(): PlansState {
     const raw = localStorage.getItem(PLANS_KEY)
     if (raw) {
       const parsed = JSON.parse(raw) as PlansState
-      if (Array.isArray(parsed?.plans) && parsed.plans.length > 0) {
-        const active = parsed.plans.some((p) => p.id === parsed.activeId)
-          ? parsed.activeId
-          : parsed.plans[0].id
-        return { plans: parsed.plans, activeId: active }
+      if (Array.isArray(parsed?.plans)) {
+        const plans = normalizePlans(parsed.plans)
+        if (plans.length > 0) {
+          const active = plans.some((p) => p.id === parsed.activeId)
+            ? parsed.activeId
+            : plans[0].id
+          return { plans, activeId: active }
+        }
       }
     }
   } catch {
@@ -118,17 +174,8 @@ function loadPlans(): PlansState {
   try {
     const raw = localStorage.getItem(LEGACY_PLAN_KEY)
     if (raw) {
-      const legacy = JSON.parse(raw)
-      if (legacy?.content) {
-        const plan: PlanState = {
-          id: newPlanId(),
-          content: legacy.content,
-          programIds: legacy.programIds ?? [],
-          planName: legacy.planName ?? 'My Plan',
-          serverPlanId: legacy.serverPlanId ?? null,
-        }
-        return { plans: [plan], activeId: plan.id }
-      }
+      const plan = normalizePlan(JSON.parse(raw))
+      if (plan) return { plans: [plan], activeId: plan.id }
     }
   } catch {
     /* corrupted legacy plan: start fresh */
@@ -162,6 +209,28 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   emailRef.current = email
   // planId -> last payload pushed to (or loaded from) the server.
   const pushedRef = useRef(new Map<string, string>())
+  // Plan ids with a POST /plans in flight: flush ticks, createPlan and the
+  // deleted-last reseed can overlap, and a plan must never be created twice.
+  const creatingRef = useRef(new Set<string>())
+  // planId -> payload currently in a PUT, so a slow PUT isn't re-sent.
+  const puttingRef = useRef(new Map<string, string>())
+  // signIn owns the server plan list while it merges; flush must not race it.
+  const signingInRef = useRef(false)
+  // Plans adopted from another tab before THAT tab's POST resolved: creating
+  // them here too would duplicate them server-side. The other tab owns the
+  // create; the marker clears when its storage write carries the server id.
+  const otherTabOwnsRef = useRef(new Set<string>())
+  // Plans whose last server write failed — drives the "not saved" indicator.
+  const [failedIds, setFailedIds] = useState<ReadonlySet<string>>(new Set())
+  const markSave = useCallback((id: string, ok: boolean) => {
+    setFailedIds((prev) => {
+      if (prev.has(id) !== ok) return prev // already in the right state
+      const next = new Set(prev)
+      if (ok) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }, [])
 
   useEffect(() => {
     api.dormant().then((d) => setDormant(new Set(d.codes))).catch(() => {})
@@ -182,18 +251,80 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     }
   }, [state])
 
-  // Push dirty plans to the server. Fire-and-forget: the local copy holds
-  // the truth when offline or the token expired.
-  const flush = useCallback(() => {
-    if (!emailRef.current) return
-    for (const p of stateRef.current.plans) {
-      if (p.serverPlanId == null) continue
-      const payload = pushPayload(p)
-      if (pushedRef.current.get(p.id) === payload) continue
-      pushedRef.current.set(p.id, payload)
-      api.updatePlan(p.serverPlanId, p.planName, p.programIds, p.content).catch(() => {})
+  // Cross-tab merge. `storage` fires only in OTHER tabs, so this never sees
+  // this tab's own writes: union the plan lists by id with the incoming
+  // (newer) write winning per plan, and keep OUR active selection. Returning
+  // the unchanged state when the merge is a no-op stops the two tabs from
+  // ping-ponging persist writes at each other.
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key !== PLANS_KEY || !e.newValue) return
+      let incoming: PlanState[] = []
+      try {
+        const parsed = JSON.parse(e.newValue) as { plans?: unknown[] }
+        if (Array.isArray(parsed?.plans)) incoming = normalizePlans(parsed.plans)
+      } catch {
+        return /* another tab wrote junk: keep our state */
+      }
+      if (incoming.length === 0) return
+      for (const p of incoming) {
+        if (p.serverPlanId != null) otherTabOwnsRef.current.delete(p.id)
+      }
+      setState((s) => {
+        const known = new Set(s.plans.map((p) => p.id))
+        for (const p of incoming) {
+          if (p.serverPlanId == null && !known.has(p.id)) otherTabOwnsRef.current.add(p.id)
+        }
+        const fromOther = new Set(incoming.map((p) => p.id))
+        const merged = [...incoming, ...s.plans.filter((p) => !fromOther.has(p.id))]
+        const activeId = merged.some((p) => p.id === s.activeId) ? s.activeId : merged[0].id
+        const next = { plans: merged, activeId }
+        return JSON.stringify(next) === JSON.stringify(s) ? s : next
+      })
     }
+    window.addEventListener('storage', onStorage)
+    return () => window.removeEventListener('storage', onStorage)
   }, [])
+
+  // Push dirty plans to the server. Fire-and-forget: the local copy holds
+  // the truth when offline or the token expired. A plan without a server id
+  // (deleted-last reseed, offline creation, an earlier failed POST) is
+  // created here; "pushed" is recorded only after a request SUCCEEDS so a
+  // transient failure is retried on the next tick instead of vanishing.
+  const flush = useCallback(() => {
+    if (!emailRef.current || signingInRef.current) return
+    for (const p of stateRef.current.plans) {
+      const payload = pushPayload(p)
+      if (p.serverPlanId == null) {
+        if (creatingRef.current.has(p.id) || otherTabOwnsRef.current.has(p.id)) continue
+        creatingRef.current.add(p.id)
+        api
+          .createPlan(p.planName, p.programIds, p.content)
+          .then((created) => {
+            pushedRef.current.set(p.id, payload)
+            markSave(p.id, true)
+            setState((s) => ({
+              ...s,
+              plans: s.plans.map((x) => (x.id === p.id ? { ...x, serverPlanId: created.id } : x)),
+            }))
+          })
+          .catch(() => markSave(p.id, false))
+          .finally(() => creatingRef.current.delete(p.id))
+        continue
+      }
+      if (pushedRef.current.get(p.id) === payload) continue
+      if (puttingRef.current.get(p.id) === payload) continue
+      puttingRef.current.set(p.id, payload)
+      api
+        .updatePlan(p.serverPlanId, p.planName, p.programIds, p.content)
+        .then(() => {
+          pushedRef.current.set(p.id, payload)
+          markSave(p.id, true)
+        })
+        .catch(() => markSave(p.id, false)) // retried on the next debounce tick
+        .finally(() => puttingRef.current.delete(p.id))
+    }
+  }, [markSave])
 
   // Debounced server sync (the local write above is immediate); flush on
   // unload so a quick edit-then-close isn't lost.
@@ -208,15 +339,19 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [flush])
 
   // Re-validate (debounced) whenever the active plan or programs change;
-  // clear stale results immediately on switch so no cross-plan bleed.
+  // clear stale results immediately on switch so no cross-plan bleed. The
+  // generation counter guards the in-flight request too: a slow response
+  // computed for plan A must never land after the user switched to plan B.
+  const validateGen = useRef(0)
   useEffect(() => {
+    const gen = ++validateGen.current
     const t = setTimeout(() => {
       setValidating(true)
       api
         .validate(active.content, active.programIds)
-        .then(setValidation)
-        .catch(() => setValidation(null))
-        .finally(() => setValidating(false))
+        .then((v) => validateGen.current === gen && setValidation(v))
+        .catch(() => validateGen.current === gen && setValidation(null))
+        .finally(() => validateGen.current === gen && setValidating(false))
     }, 350)
     return () => clearTimeout(t)
   }, [active.content, active.programIds])
@@ -244,6 +379,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       validation,
       validating,
       dormant,
+      saveFailed: failedIds.has(active.id),
       plans: state.plans,
       activePlanId: active.id,
       setCompleted: (codes) =>
@@ -314,13 +450,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       createPlan: (name) => {
         if (stateRef.current.plans.length >= MAX_PLANS) return null
         flush() // outgoing plan's pending edits push now, not post-switch
-        const plan = freshPlan(name.trim() || 'My Plan')
+        const plan = freshPlan(name.trim().slice(0, MAX_PLAN_NAME) || 'My Plan')
         setState((s) => ({ plans: [...s.plans, plan], activeId: plan.id }))
         if (emailRef.current) {
+          creatingRef.current.add(plan.id) // flush must not double-create it
           api
             .createPlan(plan.planName, plan.programIds, plan.content)
             .then((created) => {
               pushedRef.current.set(plan.id, pushPayload(plan))
+              markSave(plan.id, true)
               setState((s) => ({
                 ...s,
                 plans: s.plans.map((p) =>
@@ -329,8 +467,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
               }))
             })
             .catch(() => {
-              /* offline or at server cap: plan stays local-only */
+              // Offline or at the server cap: plan stays local for now and
+              // the next flush retries the create.
+              markSave(plan.id, false)
             })
+            .finally(() => creatingRef.current.delete(plan.id))
         }
         return plan.id
       },
@@ -339,7 +480,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         setState((s) => (s.plans.some((p) => p.id === id) ? { ...s, activeId: id } : s))
       },
       renamePlan: (id, name) => {
-        const trimmed = name.trim()
+        const trimmed = name.trim().slice(0, MAX_PLAN_NAME)
         if (!trimmed) return
         setState((s) => ({
           ...s,
@@ -353,9 +494,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           api.deletePlan(victim.serverPlanId).catch(() => {})
         }
         pushedRef.current.delete(id)
+        markSave(id, true) // dead plan can't hold the "not saved" indicator
         setState((s) => {
+          // Never zero plans. The reseeded plan has serverPlanId null, so the
+          // next flush creates it server-side for signed-in users.
           let plans = s.plans.filter((p) => p.id !== id)
-          if (plans.length === 0) plans = [freshPlan('My Plan')] // never zero plans
+          if (plans.length === 0) plans = [freshPlan('My Plan')]
           const activeId = s.activeId === id ? plans[0].id : s.activeId
           return { plans, activeId }
         })
@@ -364,32 +508,53 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         setToken(token)
         setAuthedEmail(newEmail)
         setEmail(newEmail)
-        const local = stateRef.current
-        const serverPlans = await api.listPlans().catch(() => [])
-        const merged: PlanState[] = serverPlans.map((sp) => ({
-          id: newPlanId(),
-          content: sp.content,
-          programIds: sp.program_ids,
-          planName: sp.name,
-          serverPlanId: sp.id,
-        }))
-        // Import local anonymous plans: all of them into an empty account,
-        // otherwise (register-with-work flow) only the ones holding work.
-        const toImport =
-          serverPlans.length === 0 ? local.plans : importLocal ? local.plans.filter(hasWork) : []
-        for (const lp of toImport) {
-          if (merged.length >= MAX_PLANS) break
-          const created = await api
-            .createPlan(lp.planName, lp.programIds, lp.content)
-            .catch(() => null)
-          merged.push({ ...lp, serverPlanId: created?.id ?? null })
+        signingInRef.current = true
+        try {
+          const local = stateRef.current
+          let serverPlans: ServerPlan[]
+          try {
+            serverPlans = await api.listPlans()
+          } catch (e) {
+            // A failed list is an ERROR, not an empty account: importing the
+            // local plans against unknown server state would duplicate every
+            // plan. Revert the sign-in and surface the failure instead.
+            setToken(null)
+            setAuthedEmail(null)
+            setEmail(null)
+            throw e
+          }
+          // Server content passes through the same shape repair as local
+          // state: an already-poisoned plan must not white-screen the app.
+          const merged: PlanState[] = serverPlans.map(
+            (sp) =>
+              normalizePlan({
+                id: newPlanId(),
+                content: sp.content,
+                programIds: sp.program_ids,
+                planName: sp.name,
+                serverPlanId: sp.id,
+              }) as PlanState, // input is an object, so never null
+          )
+          // Import local anonymous plans: all of them into an empty account,
+          // otherwise (register-with-work flow) only the ones holding work.
+          const toImport =
+            serverPlans.length === 0 ? local.plans : importLocal ? local.plans.filter(hasWork) : []
+          for (const lp of toImport) {
+            if (merged.length >= MAX_PLANS) break
+            const created = await api
+              .createPlan(lp.planName, lp.programIds, lp.content)
+              .catch(() => null)
+            merged.push({ ...lp, serverPlanId: created?.id ?? null })
+          }
+          pushedRef.current = new Map(merged.map((p) => [p.id, pushPayload(p)]))
+          // Keep the user's current plan active if it survived the merge.
+          const activeId = merged.some((p) => p.id === local.activeId)
+            ? local.activeId
+            : merged[0].id
+          setState({ plans: merged, activeId })
+        } finally {
+          signingInRef.current = false
         }
-        pushedRef.current = new Map(merged.map((p) => [p.id, pushPayload(p)]))
-        // Keep the user's current plan active if it survived the merge.
-        const activeId = merged.some((p) => p.id === local.activeId)
-          ? local.activeId
-          : merged[0].id
-        setState({ plans: merged, activeId })
       },
       signOut: () => {
         api.logout().catch(() => {})
@@ -397,6 +562,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         setAuthedEmail(null)
         setEmail(null)
         pushedRef.current.clear()
+        setFailedIds(new Set())
         // Keep local copies of every plan; they are anonymous again.
         setState((s) => ({
           ...s,
@@ -408,13 +574,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         setAuthedEmail(null)
         setEmail(null)
         pushedRef.current.clear()
+        setFailedIds(new Set())
         setState((s) => ({
           ...s,
           plans: s.plans.map((p) => ({ ...p, serverPlanId: null })),
         }))
       },
     }),
-    [state, active, email, validation, validating, dormant, update, flush],
+    [state, active, email, validation, validating, dormant, failedIds, update, flush, markSave],
   )
 
   return <StoreCtx.Provider value={store}>{children}</StoreCtx.Provider>
