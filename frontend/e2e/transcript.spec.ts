@@ -53,10 +53,12 @@ test('upload → review (NP flagged unchecked, unmatched inert) → apply merges
     r.fulfill({ json: { available: true, model: 'qwen3:4b', detail: 'ok' } }),
   )
   await page.route('**/u/ucsc/transcript/parse', (r) => r.fulfill({ json: PARSE_RESULT }))
-  await page.reload()
 
   // Pre-existing completed course must survive the import (merge, not clobber).
+  // Seeded on the LEGACY single-plan key and written BEFORE the first store
+  // load, so this also covers the legacy -> v2 migration feeding the import.
   await page.evaluate(() => {
+    localStorage.clear()
     localStorage.setItem(
       'prereqs.plan',
       JSON.stringify({
@@ -126,4 +128,102 @@ test('parse failure surfaces a clear error and allows retry', async ({ page }) =
   await expect(page.getByText(/unavailable right now/)).toBeVisible()
   // Still on the picker: the user can try again later or cancel.
   await expect(page.getByLabel('transcript PDF')).toBeVisible()
+})
+
+// --- multi-plan scoping ------------------------------------------------------
+// setCompleted routes through the multi-plan update() helper, which mutates
+// only the active plan. An import must land in the plan the user is looking
+// at, merge with what is already there, leave every other plan alone, and
+// survive the store's debounced write + flush-on-switch.
+
+const switcher = (page: Page) => page.getByRole('button', { name: 'switch plan' })
+
+async function createPlan(page: Page, name: string) {
+  await switcher(page).click()
+  await page.getByRole('button', { name: '+ New plan' }).click()
+  await page.getByLabel('new plan name').fill(name)
+  await page.getByRole('button', { name: 'Create', exact: true }).click()
+  await expect(switcher(page)).toHaveText(new RegExp(name.replace(/[+]/g, '\\+')))
+}
+
+async function addCompleted(page: Page, displayCode: string) {
+  // Suggestion labels glue the GE badge straight onto the code
+  // ("CSE 16MFApplied Discrete Mathematics"), so match the code element
+  // exactly rather than trying to anchor a regex on the accessible name.
+  const box = page.getByPlaceholder('Add a course you already took…')
+  await box.fill(displayCode)
+  await page
+    .getByRole('button')
+    .filter({ has: page.getByText(displayCode, { exact: true }) })
+    .first()
+    .click()
+  await box.fill('')
+}
+
+async function switchTo(page: Page, name: string) {
+  await switcher(page).click()
+  await page.getByRole('button', { name, exact: true }).click()
+  await expect(switcher(page)).toHaveText(new RegExp(name.replace(/[+]/g, '\\+')))
+}
+
+test('import lands in the ACTIVE plan only and survives a plan switch', async ({ page }) => {
+  await page.route('**/transcript/status', (r) =>
+    r.fulfill({ json: { available: true, model: 'qwen3:4b', detail: 'ok' } }),
+  )
+  await page.route('**/u/ucsc/transcript/parse', (r) => r.fulfill({ json: PARSE_RESULT }))
+  await page.reload()
+
+  const completed = () => page.locator('section', { hasText: 'Completed courses' }).first()
+
+  // Plan A ("My Plan") gets a completed course of its own.
+  await addCompleted(page, 'CSE 16')
+  await expect(completed().getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
+
+  // Plan B starts empty and gets a different pre-existing course.
+  await createPlan(page, 'Transfer plan')
+  await expect(completed().getByRole('button', { name: 'CSE 16', exact: true })).toHaveCount(0)
+  await addCompleted(page, 'MATH 21')
+  await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toBeVisible()
+
+  // Import into plan B.
+  await page.getByRole('button', { name: 'Import transcript', exact: true }).click()
+  await page.getByLabel('transcript PDF').setInputFiles({
+    name: 'transcript.pdf',
+    mimeType: 'application/pdf',
+    buffer: Buffer.from('%PDF-1.4 fake for route-mocked parse'),
+  })
+  await page.getByRole('button', { name: 'Add 2 courses' }).click()
+
+  // Plan B: imported courses MERGED with what was already there.
+  await expect(completed().getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
+  await expect(completed().getByRole('button', { name: 'CSE 30', exact: true })).toBeVisible()
+  await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toBeVisible()
+  await expect(completed().getByRole('button', { name: 'WRIT 2', exact: true })).toHaveCount(0)
+  await expect(completed().getByText('3 courses')).toBeVisible()
+
+  // Plan A is untouched: no imported course leaked into it.
+  await switchTo(page, 'My Plan')
+  await expect(completed().getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
+  await expect(completed().getByRole('button', { name: 'CSE 12', exact: true })).toHaveCount(0)
+  await expect(completed().getByRole('button', { name: 'CSE 30', exact: true })).toHaveCount(0)
+  await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toHaveCount(0)
+  await expect(completed().getByText('1 course')).toBeVisible()
+
+  // Back to B: the write survived the switch (debounce flushed, not lost).
+  await switchTo(page, 'Transfer plan')
+  await expect(completed().getByText('3 courses')).toBeVisible()
+
+  // ...and it is persisted under the active plan in the v2 store, not the
+  // other plan and not the legacy key.
+  const stored = await page.evaluate(() => {
+    const raw = JSON.parse(localStorage.getItem('prereqs.plans.v2') || '{}')
+    const byName: Record<string, string[]> = {}
+    for (const p of raw.plans ?? []) byName[p.planName] = p.content.completed
+    const active = (raw.plans ?? []).find((p: { id: string }) => p.id === raw.activeId)
+    return { byName, activeName: active?.planName, legacy: localStorage.getItem('prereqs.plan') }
+  })
+  expect(stored.activeName).toBe('Transfer plan')
+  expect([...stored.byName['Transfer plan']].sort()).toEqual(['CSE12', 'CSE30', 'MATH21'])
+  expect(stored.byName['My Plan']).toEqual(['CSE16'])
+  expect(stored.legacy).toBeNull()
 })
