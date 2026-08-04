@@ -124,6 +124,98 @@ def test_plan_crud_requires_auth(client, seeded):
     assert client.get("/plans", headers=headers).json() == []
 
 
+def test_multiple_plans_per_user(client, seeded):
+    headers = auth_headers(client, "multi@example.com")
+
+    def plan(name, completed):
+        return {
+            "name": name,
+            "university_id": "ucsc",
+            "program_ids": [],
+            "content": {"completed": completed, "terms": []},
+        }
+
+    ids = []
+    for name, completed in [("Plan A", ["CSE12"]), ("Plan B", ["CSE16"]), ("Plan C", [])]:
+        r = client.post("/plans", json=plan(name, completed), headers=headers)
+        assert r.status_code == 201, r.text
+        ids.append(r.json()["id"])
+
+    listed = client.get("/plans", headers=headers).json()
+    assert [p["id"] for p in listed] == ids  # ordered by id
+    assert [p["name"] for p in listed] == ["Plan A", "Plan B", "Plan C"]
+
+    # Updating one plan leaves the others untouched.
+    r = client.put(f"/plans/{ids[1]}", json=plan("Plan B2", ["CSE30"]), headers=headers)
+    assert r.status_code == 200 and r.json()["name"] == "Plan B2"
+    listed = {p["id"]: p for p in client.get("/plans", headers=headers).json()}
+    assert listed[ids[0]]["content"]["completed"] == ["CSE12"]
+    assert listed[ids[1]]["content"]["completed"] == ["CSE30"]
+    assert listed[ids[2]]["content"]["completed"] == []
+
+    # A different user cannot see or touch these plans.
+    other = auth_headers(client, "multi-other@example.com")
+    assert client.get("/plans", headers=other).json() == []
+    assert client.put(f"/plans/{ids[0]}", json=plan("steal", []), headers=other).status_code == 404
+    assert client.delete(f"/plans/{ids[0]}", headers=other).status_code == 404
+    assert len(client.get("/plans", headers=headers).json()) == 3
+
+
+def test_plan_count_cap(client, seeded):
+    from app.api.plans import MAX_PLANS
+
+    headers = auth_headers(client, "capped@example.com")
+    body = {
+        "name": "n",
+        "university_id": "ucsc",
+        "program_ids": [],
+        "content": {"completed": [], "terms": []},
+    }
+    for i in range(MAX_PLANS):
+        assert client.post("/plans", json=body, headers=headers).status_code == 201
+    over = client.post("/plans", json=body, headers=headers)
+    assert over.status_code == 422
+    assert "plan limit" in over.json()["detail"]
+    # Deleting one frees a slot.
+    pid = client.get("/plans", headers=headers).json()[0]["id"]
+    assert client.delete(f"/plans/{pid}", headers=headers).status_code == 204
+    assert client.post("/plans", json=body, headers=headers).status_code == 201
+
+
+def test_plan_content_shape_rejected(client, seeded):
+    """Terms are structured content, not free-form dicts: non-string codes,
+    non-list courses, and unbounded blobs must all 422 instead of landing in
+    the DB (they used to crash the client at sign-in)."""
+    headers = auth_headers(client, "shapes@example.com")
+
+    def post(content):
+        body = {"name": "n", "university_id": "ucsc", "program_ids": [], "content": content}
+        return client.post("/plans", json=body, headers=headers)
+
+    assert post({"completed": [], "terms": [{"term_code": "2258", "courses": [123]}]}).status_code == 422
+    assert post({"completed": [], "terms": [{"term_code": "2258", "courses": "CSE12"}]}).status_code == 422
+    assert post({"completed": [], "terms": [{"courses": []}]}).status_code == 422
+    assert post({"completed": [123], "terms": []}).status_code == 422
+    # bounded, not just typed: courses per term, code length, term_code length
+    too_many = {"term_code": "2258", "courses": [f"C{i}" for i in range(31)]}
+    assert post({"completed": [], "terms": [too_many]}).status_code == 422
+    assert post({"completed": ["X" * 33], "terms": []}).status_code == 422
+    assert post({"completed": [], "terms": [{"term_code": "X" * 17, "courses": []}]}).status_code == 422
+    # the real shape still round-trips
+    ok = post({"completed": ["CSE12"], "terms": [{"term_code": "2258", "courses": ["CSE16"]}]})
+    assert ok.status_code == 201
+    assert ok.json()["content"]["terms"] == [{"term_code": "2258", "courses": ["CSE16"]}]
+
+
+def test_validate_rejects_non_string_courses(client, seeded):
+    """Used to 500 on c.replace() over a non-str course; must be a 422."""
+    bad_term = {"content": {"completed": [], "terms": [{"term_code": "2270", "courses": [123]}]},
+                "program_ids": []}
+    assert client.post("/u/ucsc/validate", json=bad_term).status_code == 422
+    bad_completed = {"content": {"completed": [123], "terms": []}, "program_ids": []}
+    assert client.post("/u/ucsc/validate", json=bad_completed).status_code == 422
+
+
 def test_dormant_flag_and_endpoint(client, seeded):
     r = client.get("/u/ucsc/dormant")
     assert r.json()["codes"] == ["CSE199X"]

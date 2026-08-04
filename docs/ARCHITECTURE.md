@@ -39,4 +39,4 @@ Spreadsheet export (CSV and styled XLSX) is generated entirely client-side from 
 
 ## Auth
 
-Token-based (opaque bearer tokens, hashed at rest), register/login/delete, no password recovery. Clerk planned later — auth is isolated in `backend/app/auth/` so it can be swapped. Anonymous users get full planner functionality via localStorage; on signup the client offers to import the local plan.
+Token-based (opaque bearer tokens, hashed at rest), register/login/delete, no password recovery. Clerk planned later — auth is isolated in `backend/app/auth/` so it can be swapped. Anonymous users get full planner functionality via localStorage, including multiple plans switched from the nav bar; on signup the client imports the local plans that hold work (all of them into an empty account), and on sign-in all server plans are loaded and kept in sync per plan.
