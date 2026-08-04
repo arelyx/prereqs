@@ -8,7 +8,7 @@ export default defineConfig({
   timeout: 30_000,
   retries: 0,
   use: {
-    baseURL: 'http://localhost:5273',
+    baseURL: process.env.PW_BASE_URL ?? 'http://localhost:5273',
     screenshot: 'only-on-failure',
   },
 })
