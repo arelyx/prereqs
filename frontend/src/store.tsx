@@ -525,26 +525,26 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           markSave(p.id, true)
         })
         .catch((err) => {
+          // A 404 here is NOT proof the plan row is gone: PUT /plans/{id}
+          // also 404s for "one or more programs not found" (checked BEFORE
+          // the plan lookup) and "unknown university". Never destroy local
+          // work on it — unlink instead, which stops the dead PUT loop (the
+          // zombie of pass-3 C3-2) while keeping the user's plan. It is not
+          // re-created in this session (mayCreateRef stays unarmed) so a plan
+          // deleted on another device doesn't immediately resurrect, and the
+          // honest "not saved" indicator stays up because it genuinely isn't.
           if (err instanceof ApiError && err.status === 404) {
-            // The server row is gone — deleted from another tab or device.
-            // Honor the deletion (tombstone + drop) instead of PUTting into
-            // the void forever as an un-saveable zombie (pass-3 C3-2).
             pushedRef.current.delete(p.id)
-            mayCreateRef.current.delete(p.id)
-            markSave(p.id, true)
-            setState((s) => {
-              if (!s.plans.some((x) => x.id === p.id)) return s
-              const deleted = mergeDeleted(s.deleted, [p.id])
-              let plans = s.plans.filter((x) => x.id !== p.id)
-              if (plans.length === 0) {
-                const seed = freshPlan('My Plan')
-                mayCreateRef.current.add(seed.id)
-                plans = [seed]
-              }
-              const activeId = plans.some((x) => x.id === s.activeId) ? s.activeId : plans[0].id
-              return { plans, activeId, deleted }
-            })
-          } else markSave(p.id, false) // retried on the next debounce tick
+            setState((s) =>
+              s.plans.some((x) => x.id === p.id && x.serverPlanId != null)
+                ? {
+                    ...s,
+                    plans: s.plans.map((x) => (x.id === p.id ? { ...x, serverPlanId: null } : x)),
+                  }
+                : s,
+            )
+          }
+          markSave(p.id, false) // retried on the next debounce tick
         })
         .finally(() => puttingRef.current.delete(p.id))
     }

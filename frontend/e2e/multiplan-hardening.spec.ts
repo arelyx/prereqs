@@ -235,6 +235,94 @@ test('an edit in another tab during a slow sign-in is not lost', async ({ page, 
   await expect(page.getByRole('button', { name: 'Sign in to save your plan' })).toBeVisible()
 })
 
+test('a 404 from a bad program id never discards the local plan', async ({ page }) => {
+  // PUT /plans/{id} 404s for "one or more programs not found" (checked BEFORE
+  // the plan lookup) as well as for a missing row, so a 404 must never be
+  // read as "deleted elsewhere" and destroy the user's work.
+  const email = `e2e-put404-${Date.now()}@example.com`
+  await page.getByPlaceholder('Add a course you already took…').fill('CSE 12')
+  await page.getByRole('button', { name: /CSE 12 / }).click()
+  await page.getByRole('button', { name: 'Sign in to save your plan' }).click()
+  await page.getByPlaceholder('email').fill(email)
+  await page.getByPlaceholder(/password/).fill('supersecret1')
+  await page.getByRole('button', { name: 'Create account' }).click()
+  await expect(page.getByText(email)).toBeVisible()
+  await page.waitForTimeout(1200)
+  const before = await page.evaluate(async () => {
+    const r = await fetch('http://localhost:8200/plans', {
+      headers: { Authorization: `Bearer ${localStorage.getItem('prereqs.token')}` },
+    })
+    return (await r.json()).length
+  })
+  expect(before).toBe(1)
+
+  // Poison programIds with an id no program has (hand-edited state, or a
+  // program dropped by an annual catalog refresh), then force flushes.
+  await page.evaluate(() => {
+    const s = JSON.parse(localStorage.getItem('prereqs.plans.v2')!)
+    s.plans[0].programIds = [999999]
+    localStorage.setItem('prereqs.plans.v2', JSON.stringify(s))
+  })
+  await page.reload()
+  await expect(page.getByText(email)).toBeVisible()
+  await page.waitForTimeout(2500)
+
+  // The plan survived locally with its work; nothing was tombstoned, and no
+  // duplicate reseed row was pushed to the server.
+  await expect(page.getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
+  const after = await page.evaluate(async () => {
+    const blob = JSON.parse(localStorage.getItem('prereqs.plans.v2')!)
+    const r = await fetch('http://localhost:8200/plans', {
+      headers: { Authorization: `Bearer ${localStorage.getItem('prereqs.token')}` },
+    })
+    return { plans: blob.plans.length, deleted: (blob.deleted ?? []).length, server: (await r.json()).length }
+  })
+  expect(after.plans).toBe(1)
+  expect(after.deleted).toBe(0)
+  expect(after.server).toBe(1)
+
+  page.on('dialog', (d) => void d.accept())
+  await page.getByRole('button', { name: 'delete account' }).click()
+  await expect(page.getByRole('button', { name: 'Sign in to save your plan' })).toBeVisible()
+})
+
+test('hostile tombstone list is normalized and a tombstoned active plan is fixed up', async ({
+  page,
+}) => {
+  const pageErrors: string[] = []
+  page.on('pageerror', (e) => pageErrors.push(e.message))
+  await page.evaluate(() => {
+    localStorage.clear()
+    // Junk entries plus a tombstone for the (active) zombie plan.
+    const junk: unknown[] = [123, null, {}, 'dead-x', 'zombie']
+    localStorage.setItem(
+      'prereqs.plans.v2',
+      JSON.stringify({
+        plans: [
+          { id: 'alive', planName: 'Alive', content: { completed: [], terms: [] }, programIds: [], serverPlanId: null, rev: 1 },
+          { id: 'zombie', planName: 'Zombie', content: { completed: [], terms: [] }, programIds: [], serverPlanId: null, rev: 9 },
+        ],
+        activeId: 'zombie', // the active plan is tombstoned
+        deleted: junk,
+      }),
+    )
+  })
+  await page.reload()
+
+  // Zombie filtered out, active selection repaired onto a live plan.
+  await expect(switcher(page)).toHaveText(/Alive/)
+  await switcher(page).click()
+  await expect(page.getByRole('button', { name: 'Zombie', exact: true })).toHaveCount(0)
+  await page.keyboard.press('Escape')
+  await page.getByPlaceholder('Add a course you already took…').fill('CSE 12')
+  await page.getByRole('button', { name: /CSE 12 / }).click()
+  await page.waitForTimeout(300)
+  const blob = await page.evaluate(() => JSON.parse(localStorage.getItem('prereqs.plans.v2')!))
+  expect(blob.deleted.every((d: unknown) => typeof d === 'string')).toBe(true)
+  expect(blob.deleted.length).toBeLessThanOrEqual(100)
+  expect(pageErrors).toEqual([])
+})
+
 test('slow validate response for one plan never lands on another', async ({ page }) => {
   // Plan A carries a program, so its validation grows a requirements panel.
   await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
