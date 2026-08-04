@@ -1,5 +1,10 @@
 // Transcript import: upload a PDF transcript, review the LLM-extracted
-// courses, confirm to merge them into the completed-courses list.
+// courses, confirm to build a NEW plan from them — each course placed in the
+// quarter it was actually taken.
+//
+// Importing never edits the plan you are looking at. A transcript is a record
+// of the past, and merging it into a plan someone has been hand-building is
+// destructive and hard to undo; a new plan is cheap and switchable.
 //
 // The feature is LLM-gated: /transcript/status decides whether the button is
 // usable at all (no local heuristic fallback — unavailable means disabled,
@@ -7,15 +12,56 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { api, ApiError, displayCode } from '../api'
-import type { TranscriptParseResult, TranscriptStatus } from '../api'
+import type { PlanContent, TranscriptParseResult, TranscriptRow, TranscriptStatus } from '../api'
 import { useStore } from '../store'
+import { academicYearOf, ayTermCodes, termCodeFromLabel } from '../terms'
 
 const MAX_BYTES = 10 * 1024 * 1024
+// Backend caps on plan content.
+const MAX_TERMS = 24
+const MAX_COMPLETED = 200
+
+/** Lay the selected rows out as a plan: one entry per quarter they were taken
+ * in. Rows whose term heading we can't read fall back to the completed list
+ * rather than being dropped. */
+function buildPlanContent(rows: TranscriptRow[]): PlanContent {
+  const byTerm = new Map<string, string[]>()
+  const completed: string[] = []
+  for (const row of rows) {
+    const termCode = termCodeFromLabel(row.term)
+    if (!termCode) {
+      if (!completed.includes(row.code)) completed.push(row.code)
+      continue
+    }
+    const courses = byTerm.get(termCode) ?? []
+    if (!courses.includes(row.code)) courses.push(row.code)
+    byTerm.set(termCode, courses)
+  }
+
+  // Fill in the rest of every academic year the transcript touches, so the
+  // planner draws whole rows instead of one lonely quarter per year.
+  for (const year of new Set([...byTerm.keys()].map(academicYearOf))) {
+    for (const code of ayTermCodes(year)) if (!byTerm.has(code)) byTerm.set(code, [])
+  }
+
+  const byCode = (a: { term_code: string }, b: { term_code: string }) =>
+    Number(a.term_code) - Number(b.term_code)
+  let terms = [...byTerm.entries()]
+    .map(([term_code, courses]) => ({ term_code, courses }))
+    .sort(byCode)
+  if (terms.length > MAX_TERMS) {
+    // Over the cap, quarters holding courses outrank the cosmetic filler.
+    const real = terms.filter((t) => t.courses.length).slice(0, MAX_TERMS)
+    const filler = terms.filter((t) => !t.courses.length)
+    terms = [...real, ...filler.slice(0, MAX_TERMS - real.length)].sort(byCode)
+  }
+  return { completed: completed.slice(0, MAX_COMPLETED), terms }
+}
 
 type Phase =
   | { kind: 'pick'; error?: string }
   | { kind: 'busy' }
-  | { kind: 'review'; result: TranscriptParseResult }
+  | { kind: 'review'; result: TranscriptParseResult; error?: string }
 
 function flagLabel(grade: string): string {
   if (!grade) return 'in progress — no grade yet'
@@ -80,19 +126,23 @@ export default function TranscriptImport() {
     }
   }
 
-  const selectedCodes = useMemo(() => {
+  const selectedRows = useMemo(() => {
     if (phase.kind !== 'review') return []
-    return [...new Set([...selected].map((i) => phase.result.matched[i].code))]
+    return [...selected].sort((a, b) => a - b).map((i) => phase.result.matched[i])
   }, [phase, selected])
 
   function apply() {
     if (phase.kind !== 'review') return
-    const merged = [
-      ...store.content.completed,
-      ...selectedCodes.filter((c) => !store.content.completed.includes(c)),
-    ].slice(0, 200) // backend cap on plan.completed
-    store.setCompleted(merged)
-    close()
+    const id = store.createPlan('Imported transcript', buildPlanContent(selectedRows))
+    if (id === null) {
+      setPhase({
+        kind: 'review',
+        result: phase.result,
+        error: `You already have ${store.plans.length} plans, the maximum. Delete one and import again.`,
+      })
+      return
+    }
+    close() // createPlan already made the new plan active
   }
 
   function close() {
@@ -131,7 +181,8 @@ export default function TranscriptImport() {
             <div>
               <p className="mb-3 text-xs text-zinc-500 dark:text-zinc-400">
                 Upload your unofficial transcript (PDF, max 10 MB). It is processed in
-                memory to extract your completed courses and is never stored.
+                memory and never stored. Your courses land in a new plan, each in the
+                quarter you took it — nothing here changes your current plan.
               </p>
               <input
                 ref={fileRef}
@@ -169,8 +220,9 @@ export default function TranscriptImport() {
           {phase.kind === 'review' && (
             <>
               <p className="mb-2 text-xs text-zinc-500 dark:text-zinc-400">
-                Best guess from your transcript — review and uncheck anything that's wrong,
-                then confirm.
+                Best guess from your transcript — uncheck anything that's wrong, then
+                confirm. This creates a <strong>new plan</strong> with each course in the
+                quarter you took it; your current plan is left alone.
               </p>
               {phase.result.warnings.map((w, i) => (
                 <p key={i} className="mb-1 rounded border border-amber-300 dark:border-amber-800 bg-amber-100 dark:bg-amber-950 px-2 py-1 text-xs text-amber-800 dark:text-amber-300">
@@ -232,6 +284,9 @@ export default function TranscriptImport() {
                   </li>
                 )}
               </ul>
+              {phase.error && (
+                <p className="mt-2 text-xs text-red-600 dark:text-red-400">{phase.error}</p>
+              )}
               <div className="mt-3 flex items-center justify-end gap-2">
                 <button
                   className="rounded-md px-3 py-1.5 text-sm text-zinc-500 dark:text-zinc-400 hover:underline"
@@ -240,11 +295,12 @@ export default function TranscriptImport() {
                   Cancel
                 </button>
                 <button
-                  disabled={selectedCodes.length === 0}
+                  disabled={selectedRows.length === 0}
                   onClick={apply}
                   className="rounded-md bg-sky-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-50"
                 >
-                  Add {selectedCodes.length} course{selectedCodes.length === 1 ? '' : 's'}
+                  Create plan with {selectedRows.length} course
+                  {selectedRows.length === 1 ? '' : 's'}
                 </button>
               </div>
             </>

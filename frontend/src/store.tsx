@@ -86,7 +86,9 @@ interface Store {
   // Multi-plan surface.
   plans: PlanState[]
   activePlanId: string
-  createPlan: (name: string) => string | null // new plan id, or null at the cap
+  // Returns the new plan id, or null at the cap. `content` seeds the plan
+  // instead of the default empty upcoming-year grid (transcript import).
+  createPlan: (name: string, content?: PlanContent) => string | null
   switchPlan: (id: string) => void
   renamePlan: (id: string, name: string) => void
   deletePlan: (id: string) => void
@@ -122,12 +124,10 @@ function stringArray(v: unknown): string[] {
   return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []
 }
 
-function normalizePlan(raw: unknown): PlanState | null {
-  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
-  const r = raw as Record<string, unknown>
+function repairContent(raw: unknown): PlanContent {
   const c =
-    typeof r.content === 'object' && r.content !== null && !Array.isArray(r.content)
-      ? (r.content as Record<string, unknown>)
+    typeof raw === 'object' && raw !== null && !Array.isArray(raw)
+      ? (raw as Record<string, unknown>)
       : {}
   const terms = (Array.isArray(c.terms) ? c.terms : [])
     .filter((t): t is Record<string, unknown> => {
@@ -138,9 +138,15 @@ function normalizePlan(raw: unknown): PlanState | null {
       return typeof code === 'string' || (typeof code === 'number' && Number.isFinite(code))
     })
     .map((t) => ({ term_code: String(t.term_code), courses: stringArray(t.courses) }))
+  return { completed: stringArray(c.completed), terms }
+}
+
+function normalizePlan(raw: unknown): PlanState | null {
+  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
+  const r = raw as Record<string, unknown>
   return {
     id: typeof r.id === 'string' && r.id ? r.id : newPlanId(),
-    content: { completed: stringArray(c.completed), terms },
+    content: repairContent(r.content),
     programIds: Array.isArray(r.programIds)
       ? r.programIds.filter((x): x is number => typeof x === 'number' && Number.isFinite(x))
       : [],
@@ -689,10 +695,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           },
         })),
       setPrograms: (ids) => update((s) => ({ ...s, programIds: ids })),
-      createPlan: (name) => {
+      createPlan: (name, content) => {
         if (stateRef.current.plans.length >= MAX_PLANS) return null
         flush() // outgoing plan's pending edits push now, not post-switch
         const plan = freshPlan(name.trim().slice(0, MAX_PLAN_NAME) || 'My Plan')
+        // Same repair path as anything loaded from storage or the server, so
+        // a seeded plan can't carry a shape the rest of the store rejects.
+        if (content) plan.content = repairContent(content)
         setState((s) => ({ ...s, plans: [...s.plans, plan], activeId: plan.id }))
         mayCreateRef.current.add(plan.id) // ours to (re)create server-side
         if (emailRef.current) {
