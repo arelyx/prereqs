@@ -60,6 +60,53 @@ def make_pdf(lines: list[str], pad: int = 0) -> bytes:
     return _assemble(objects)
 
 
+def _form_ops(n_bytes: int) -> bytes:
+    """Operator soup that produces no text whatsoever: pure graphics-state
+    churn. Deliberately contains no `cm`, `BT`/`ET` or `Tf` — those flush text
+    and would call `visitor_text`, which was the only place the clock used to
+    be sampled. A bomb's operators never call it."""
+    unit = b"q Q 0.5 w 1 J 1 j 0 g 0 0 0 RG "
+    return unit * max(1, n_bytes // len(unit))
+
+
+def make_xobject_bomb(form_bytes: int, do_count: int = 1, chain: int = 1) -> bytes:
+    """One page whose *content stream is tiny* but which invokes a Form
+    XObject carrying `form_bytes` of operators, `do_count` times.
+
+    This is the bypass: page-level accounting measures `page['/Contents']`,
+    which here is ~20 bytes, while pypdf walks megabytes through
+    `extract_xform_text`. `chain > 1` makes each form `Do` the next one, so
+    the walk recurses. The form must carry a non-empty /Resources or pypdf
+    short-circuits before walking anything.
+    """
+    body = _form_ops(form_bytes)
+    first_form = 6
+    xobj_dict = b" ".join(b"/X%d %d 0 R" % (j, first_form + j) for j in range(chain))
+
+    forms = []
+    for i in range(chain):
+        data = body + (b" /X%d Do " % (i + 1) if i + 1 < chain else b"")
+        comp = zlib.compress(data, 9)
+        forms.append(
+            b"<< /Type /XObject /Subtype /Form /BBox [0 0 612 792] "
+            b"/Resources << /Font << /F1 5 0 R >> /XObject << " + xobj_dict + b" >> >> "
+            b"/Length %d /Filter /FlateDecode >>\nstream\n" % len(comp) + comp + b"\nendstream"
+        )
+
+    page_content = b" ".join([b"/X0 Do"] * do_count)
+    return _assemble(
+        [
+            b"<< /Type /Catalog /Pages 2 0 R >>",
+            b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+            b"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R "
+            b"/Resources << /Font << /F1 5 0 R >> /XObject << " + xobj_dict + b" >> >> >>",
+            b"<< /Length %d >>\nstream\n" % len(page_content) + page_content + b"\nendstream",
+            b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+        ]
+        + forms
+    )
+
+
 def make_flate_pdf(lines: list[str], pages: int = 1) -> bytes:
     """A PDF bomb: tiny on the wire, enormous once pypdf inflates the content
     stream it has to walk. This is the shape that returned a normal-looking
@@ -588,6 +635,171 @@ def test_slots_survive_repeated_extraction_failures(client, seeded, llm_answers)
     # ...and a real transcript still gets through afterwards.
     r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))
     assert r.status_code == 200, r.text
+
+
+# --- form XObjects: the same bomb, one level of indirection away -------------
+# `Do` sends pypdf into a form XObject's operator stream through
+# `extract_xform_text`, which never touches `page['/Contents']` — so page-level
+# byte accounting saw ~20 bytes while megabytes were walked. And pypdf drops
+# the form from its cyclic-reference guard in a `finally`, so N `Do`s at one
+# form walk it N times. Measured against the pre-fix code: a 1 MB form cost
+# 0.65 s per `Do`, perfectly linear and unbounded — Do x16 in a 3.4 KB upload
+# burned 9.65 s, and the 5 s deadline never fired because it was only sampled
+# between pages and inside the text visitor, which a text-free operator stream
+# never triggers.
+
+
+def test_extract_rejects_form_xobject_bomb(monkeypatch):
+    """A large operator stream reached only through `Do` must be charged to
+    the same budget as a page's own contents. Pre-fix this returned the
+    'no extractable text' 422 — after burning ~7 s on a 26 KB file."""
+    bomb = make_xobject_bomb(10 * 1024 * 1024)
+    assert len(bomb) < 64 * 1024  # tiny on the wire
+
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(bomb)
+    elapsed = time.monotonic() - started
+    # Unbounded, this file took 6.87 s (and 586 MB of RSS).
+    assert elapsed < 1.0, f"form bomb took {elapsed:.2f}s to reject"
+
+
+def test_extract_rejects_repeated_do_at_one_form(monkeypatch):
+    """The `Do`xN vector: one page, one modest form, many invocations. Nothing
+    here is individually over any cap — the cost is in the repetition, so each
+    traversal has to be charged separately."""
+    bomb = make_xobject_bomb(1024 * 1024, do_count=16)
+    assert len(bomb) < 8 * 1024
+
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(bomb)
+    elapsed = time.monotonic() - started
+    # Pre-fix: 0.65 s per Do, linear and unbounded — 9.65 s at x16, and
+    # Do x1000 in a 10 KB file reproduces the original 82-minute bug. The wall
+    # clock is the assertion that catches a regression here, not the status.
+    assert elapsed < 1.5, f"Do x16 took {elapsed:.2f}s to reject"
+
+
+def test_extract_bounds_do_repetition_flat_not_linear():
+    """Cost must stop scaling with the `Do` count. Same form, 1 vs 32
+    invocations: pre-fix that was a 32x difference in CPU."""
+    once = make_xobject_bomb(512 * 1024, do_count=1)
+    many = make_xobject_bomb(512 * 1024, do_count=32)
+
+    started = time.monotonic()
+    try:
+        transcript.extract_pdf_text(once)
+    except transcript.TranscriptError:
+        pass
+    one_time = time.monotonic() - started
+
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(many)
+    many_time = time.monotonic() - started
+
+    assert many_time < one_time * 6 + 0.5, (
+        f"32 x Do cost {many_time:.2f}s vs {one_time:.2f}s for one — still linear "
+        "in the repetition count"
+    )
+
+
+def test_extract_terminates_on_nested_xobjects():
+    """A form that `Do`s another form recurses. It must terminate cleanly on
+    the budget, never on a RecursionError (which reads as a corrupt PDF) and
+    never on an unbounded walk."""
+    nested = make_xobject_bomb(512 * 1024, chain=8)
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(nested)
+    assert time.monotonic() - started < 2.0
+
+    # Deeper than the depth cap, cheap per level: refused on depth alone.
+    deep = make_xobject_bomb(256, chain=64)
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(deep)
+    assert time.monotonic() - started < 1.0
+
+
+def test_extract_caps_traversals_of_a_costless_form():
+    """Byte-charging alone cannot see the fixed per-traversal cost (ContentStream
+    build + font table load). A near-empty form invoked tens of thousands of
+    times is charged ~no bytes, so the traversal cap is what bounds it."""
+    bomb = make_xobject_bomb(1, do_count=50_000)
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(bomb)
+    assert time.monotonic() - started < 1.0
+
+
+def test_form_traversals_are_charged(monkeypatch):
+    """Pins the pypdf hook: form recursion goes through
+    `PageObject.extract_xform_text`. If a pypdf upgrade renames it, byte
+    accounting silently stops covering forms — so fail here, loudly."""
+    from pypdf import PageObject
+
+    assert hasattr(PageObject, "extract_xform_text")
+
+    seen = []
+    real_bind = transcript._bind_form_accounting
+
+    def spy(page, budget):
+        real_bind(page, budget)
+        seen.append(budget)
+
+    monkeypatch.setattr(transcript, "_bind_form_accounting", spy)
+    with pytest.raises(transcript.TranscriptError):
+        transcript.extract_pdf_text(make_xobject_bomb(512 * 1024, do_count=8))
+    assert seen and seen[0].traversals > 0, "no form traversal was ever charged"
+    assert seen[0].stream_used > 512 * 1024, "form bytes were not charged"
+
+
+def test_extract_deadline_fires_inside_a_form_walk():
+    """With byte accounting deliberately disabled, the clock alone must still
+    stop a form walk. Pre-fix nothing checked the clock during an in-page
+    operator walk, so this ran to completion: 1 MB per `Do` x64 = ~41 s."""
+    monster = make_xobject_bomb(1024 * 1024, do_count=64)
+    huge = 1 << 40
+
+    started = time.monotonic()
+    with pytest.raises(transcript.TranscriptError, match="too large or too complex"):
+        transcript.extract_pdf_text(
+            monster,
+            max_stream_bytes=huge,
+            max_xobject_traversals=1 << 20,
+            time_budget=1.0,
+        )
+    elapsed = time.monotonic() - started
+    assert elapsed < 3.0, f"deadline did not fire during the form walk ({elapsed:.2f}s)"
+
+
+def test_parse_rejects_form_xobject_bomb_end_to_end(client, seeded, llm_up, monkeypatch):
+    """Through the endpoint: 422, fast, no 500, and nothing about the file's
+    contents in the message."""
+    monkeypatch.setattr(llm, "chat_json", lambda *a, **k: pytest.fail("no LLM"))
+    bomb = make_xobject_bomb(2 * 1024 * 1024, do_count=8)
+
+    started = time.monotonic()
+    r = upload(client, bomb)
+    elapsed = time.monotonic() - started
+
+    assert r.status_code == 422, r.text
+    assert "too large or too complex" in r.json()["detail"]
+    assert elapsed < 2.0, f"took {elapsed:.2f}s"
+    assert _drain_slots() == settings.transcript_max_concurrent
+
+
+def test_real_transcript_shape_keeps_full_headroom():
+    """The bounds must not be tight on the thing they exist to let through.
+    Reference: the real 794 KB MyUCSC export is 7 pages / 439 KB of streams /
+    11,853 chars / 0.19 s, and uses no form XObjects at all."""
+    pdf = make_flate_pdf(FAKE_TRANSCRIPT_LINES, pages=7)
+    started = time.monotonic()
+    text = transcript.extract_pdf_text(pdf)
+    assert "2021 Fall Quarter" in text
+    assert time.monotonic() - started < 1.0
 
 
 # --- "never written to disk" must be literally true --------------------------
