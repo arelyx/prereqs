@@ -4,7 +4,14 @@ serial LLM extraction → validated course rows.
 Privacy contract: the uploaded file and its text live only in request-local
 memory — never written to disk, never logged, never echoed into error
 messages. Chunking starts at the first quarter heading, so the identity
-header (name, student ID) is not even sent to the (local) LLM.
+header (name, student ID) is not even sent to the (local) LLM. The API layer
+buffers the multipart body itself precisely so Starlette's parser never
+spools it to a temp file (see `api/transcript.py`).
+
+Cost contract: PDF text extraction is pure-Python pypdf and therefore holds
+the GIL of the whole worker, with superlinear cost in text volume. Every
+extraction is bounded by pages, decompressed content-stream bytes, extracted
+characters and wall-clock — and aborts mid-page, not after it.
 
 Failure contract: the LLM is the only parser. If it is unreachable the
 feature refuses (503 at the API layer); if it emits garbage after one retry
@@ -15,11 +22,13 @@ half-right silent guesses are worse than a clean refusal.
 from __future__ import annotations
 
 import re
+import time
 from dataclasses import dataclass
 
 from pydantic import BaseModel, Field, ValidationError
 
 from . import llm
+from .config import settings
 
 # --- PDF → text -------------------------------------------------------------
 
@@ -28,20 +37,138 @@ class TranscriptError(Exception):
     """User-correctable input problem (maps to 422)."""
 
 
-def extract_pdf_text(data: bytes) -> str:
-    """Whole-document text via pypdf. Raises TranscriptError when the file is
-    not readable as a PDF or has no text layer (scanned image)."""
+# Deliberately a BaseException, not an Exception: it is raised from inside a
+# pypdf visitor callback and has to unwind through pypdf's own broad
+# per-operator `except Exception` handling without being swallowed. Never
+# escapes this module — extract_pdf_text converts it to TranscriptError.
+class _ExtractBudgetExceeded(BaseException):
+    pass
+
+
+# Same message for every budget breach: which limit tripped is a property of
+# the uploaded file, and saying so would describe its contents.
+TOO_COMPLEX = (
+    "this PDF is too large or too complex to process — please upload the "
+    "plain MyUCSC unofficial-transcript PDF export, not a scan, a merged "
+    "packet, or a printed-to-PDF web page"
+)
+
+
+_OVER_ANY_CAP = 1 << 62
+
+
+def _content_stream_bytes(page) -> int:
+    """Decompressed content-stream size for one page, WITHOUT parsing its
+    operators. `page.get_contents()` builds a ContentStream, which is exactly
+    the expensive operator loop we are trying to bound, so go through the raw
+    stream objects instead."""
+    from pypdf.errors import LimitReachedError
+    from pypdf.generic import ArrayObject
+
+    try:
+        raw = page.get("/Contents")
+        if raw is None:
+            return 0
+        obj = raw.get_object()
+        parts = list(obj) if isinstance(obj, ArrayObject) else [obj]
+        total = 0
+        for part in parts:
+            total += len(part.get_object().get_data())
+        return total
+    except LimitReachedError:
+        # pypdf refused to decompress past its own 75 MB ceiling: the stream is
+        # bigger than anything we would accept, by a wide margin.
+        return _OVER_ANY_CAP
+    except Exception:
+        # Never fail a legitimate PDF over an accounting quirk; the char cap
+        # and the wall-clock deadline still bound the page.
+        return 0
+
+
+def extract_pdf_text(
+    data: bytes,
+    *,
+    max_pages: int | None = None,
+    max_chars: int | None = None,
+    max_stream_bytes: int | None = None,
+    time_budget: float | None = None,
+) -> str:
+    """Whole-document text via pypdf, under hard resource bounds.
+
+    Raises TranscriptError when the file is not readable as a PDF, has no text
+    layer (scanned image), or exceeds any extraction budget.
+
+    Every budget is cumulative over the document and enforced *during*
+    extraction, so no single page can run away: the operator budget is spent
+    before each page is walked, and the character count and the clock are
+    re-checked inside the text visitor, which aborts a page mid-flight.
+    """
     import io
 
     from pypdf import PdfReader
+    from pypdf.errors import LimitReachedError
+
+    max_pages = settings.transcript_max_pages if max_pages is None else max_pages
+    max_chars = settings.transcript_max_text_chars if max_chars is None else max_chars
+    max_stream = (
+        settings.transcript_max_stream_bytes if max_stream_bytes is None else max_stream_bytes
+    )
+    budget = settings.transcript_extract_seconds if time_budget is None else time_budget
+    deadline = time.monotonic() + budget
 
     try:
         reader = PdfReader(io.BytesIO(data))
-        text = "\n".join(page.extract_text() or "" for page in reader.pages)
-    except TranscriptError:
-        raise
+        page_count = len(reader.pages)
     except Exception as exc:
         raise TranscriptError("could not read this file as a PDF") from exc
+
+    if page_count > max_pages:
+        raise TranscriptError(
+            f"this PDF has {page_count} pages; transcripts of up to {max_pages} "
+            "pages are supported"
+        )
+
+    parts: list[str] = []
+    used = 0
+    stream_used = 0
+    for page in reader.pages:
+        if time.monotonic() > deadline:
+            raise TranscriptError(TOO_COMPLEX)
+        # Spend the operator budget BEFORE walking the page. Decompressing to
+        # measure is C-speed zlib; walking the operators is the pure-Python
+        # part whose cost we are actually bounding.
+        stream_used += _content_stream_bytes(page)
+        if stream_used > max_stream:
+            raise TranscriptError(TOO_COMPLEX)
+
+        remaining = max_chars - used
+        seen = [0, 0]  # [chars this page, visitor calls]
+
+        def visitor(text, cm, tm, font_dict, font_size, _seen=seen, _left=remaining):
+            _seen[0] += len(text)
+            _seen[1] += 1
+            if _seen[0] > _left:
+                raise _ExtractBudgetExceeded
+            # time.monotonic() is cheap but this fires per text operator;
+            # sampling keeps the check off the hot path.
+            if _seen[1] % 512 == 0 and time.monotonic() > deadline:
+                raise _ExtractBudgetExceeded
+
+        try:
+            page_text = page.extract_text(visitor_text=visitor) or ""
+        except _ExtractBudgetExceeded:
+            raise TranscriptError(TOO_COMPLEX) from None
+        except LimitReachedError as exc:  # pypdf's own decompression ceiling
+            raise TranscriptError(TOO_COMPLEX) from exc
+        except Exception as exc:
+            raise TranscriptError("could not read this file as a PDF") from exc
+
+        used += len(page_text)
+        if used > max_chars:
+            raise TranscriptError(TOO_COMPLEX)
+        parts.append(page_text)
+
+    text = "\n".join(parts)
     if not text.strip():
         raise TranscriptError(
             "no extractable text in this PDF — is it a scanned image? "
