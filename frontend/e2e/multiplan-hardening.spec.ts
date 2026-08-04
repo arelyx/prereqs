@@ -1,8 +1,10 @@
 // Hardening around multi-plan state: hostile localStorage shapes must render
 // (repaired) instead of white-screening, plan names are capped at the server
 // limit, a failed plan list at sign-in aborts the import instead of
-// duplicating every plan, and a slow validate response can never land on a
-// different plan than it was computed for.
+// duplicating every plan, a slow validate response can never land on a
+// different plan than it was computed for, deletes propagate cross-tab via
+// tombstones without resurrection, and an edit made in another tab during a
+// slow sign-in survives the post-sign-in adoption.
 // Requires loaded UCSC data (catalog + offerings + programs).
 
 import { expect, test } from '@playwright/test'
@@ -141,6 +143,91 @@ test('failed plan list at sign-in aborts the import instead of duplicating plans
   await switcher(page).click()
   await expect(page.getByRole('button', { name: 'My Plan', exact: true })).toHaveCount(1)
   await page.keyboard.press('Escape')
+
+  // Clean up the account.
+  page.on('dialog', (d) => void d.accept())
+  await page.getByRole('button', { name: 'delete account' }).click()
+  await expect(page.getByRole('button', { name: 'Sign in to save your plan' })).toBeVisible()
+})
+
+test('deleting a plan in one tab removes it in the other and never resurrects', async ({
+  page,
+  context,
+}) => {
+  await createPlan(page, 'Doomed')
+  await expect(switcher(page)).toHaveText(/Doomed/)
+
+  const other = await context.newPage()
+  await other.goto('/')
+  await expect(switcher(other)).toHaveText(/Doomed/) // shared active selection
+
+  // Delete in the first tab; the tombstone must remove it in the other too.
+  await switcher(page).click()
+  await page.getByRole('button', { name: 'delete plan Doomed' }).click()
+  await page.getByRole('button', { name: 'delete', exact: true }).click()
+  await page.keyboard.press('Escape')
+  await expect(switcher(page)).toHaveText(/My Plan/)
+  await expect(switcher(other)).toHaveText(/My Plan/)
+
+  // The surviving tab keeps working and re-broadcasts; the deleted plan must
+  // not resurrect in the deleting tab off that write.
+  await other.getByPlaceholder('Add a course you already took…').fill('CSE 12')
+  await other.getByRole('button', { name: /CSE 12 / }).click()
+  await expect(page.getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
+  await switcher(page).click()
+  await expect(page.getByRole('button', { name: 'Doomed', exact: true })).toHaveCount(0)
+  await page.keyboard.press('Escape')
+  await switcher(other).click()
+  await expect(other.getByRole('button', { name: 'Doomed', exact: true })).toHaveCount(0)
+})
+
+test('an edit in another tab during a slow sign-in is not lost', async ({ page, context }) => {
+  const email = `e2e-signinrace-${Date.now()}@example.com`
+  await page.getByPlaceholder('Add a course you already took…').fill('CSE 12')
+  await page.getByRole('button', { name: /CSE 12 / }).click()
+
+  const other = await context.newPage()
+  await other.goto('/')
+  await expect(other.getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
+
+  // Stretch the sign-in window: the first GET /plans takes 2.5s.
+  let delayed = false
+  await page.route('**/plans', async (route) => {
+    if (!delayed && route.request().method() === 'GET') {
+      delayed = true
+      await new Promise((r) => setTimeout(r, 2500))
+    }
+    return route.continue()
+  })
+  await page.getByRole('button', { name: 'Sign in to save your plan' }).click()
+  await page.getByPlaceholder('email').fill(email)
+  await page.getByPlaceholder(/password/).fill('supersecret1')
+  await page.getByRole('button', { name: 'Create account' }).click()
+
+  // Mid-sign-in, the other tab edits the shared plan.
+  await page.waitForTimeout(400)
+  await other.getByPlaceholder('Add a course you already took…').fill('CSE 16')
+  await other.getByRole('button', { name: /CSE 16 / }).click()
+
+  await expect(page.getByText(email)).toBeVisible({ timeout: 10000 })
+  expect(delayed).toBe(true)
+  // The mid-sign-in edit survives in both tabs…
+  await expect(page.getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
+  await expect(other.getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
+  // …and reaches the server once the post-sign-in flush runs.
+  await expect
+    .poll(
+      async () =>
+        page.evaluate(async () => {
+          const r = await fetch('http://localhost:8200/plans', {
+            headers: { Authorization: `Bearer ${localStorage.getItem('prereqs.token')}` },
+          })
+          return JSON.stringify(await r.json())
+        }),
+      { timeout: 8000 },
+    )
+    .toContain('CSE16')
 
   // Clean up the account.
   page.on('dialog', (d) => void d.accept())

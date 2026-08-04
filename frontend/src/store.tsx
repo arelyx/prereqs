@@ -8,7 +8,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
-import { api, authedEmail, setAuthedEmail, setToken } from './api'
+import { ApiError, api, authedEmail, setAuthedEmail, setToken } from './api'
 import type { PlanContent, ServerPlan, ValidationResult } from './api'
 import { academicYearOf, ayTermCodes, upcomingAcademicYear } from './terms'
 
@@ -44,6 +44,11 @@ export interface PlanState {
 interface PlansState {
   plans: PlanState[]
   activeId: string
+  // Tombstones: client ids of deleted plans (capped). The cross-tab merge
+  // union-keeps unmatched plans, so without these a delete in one tab would
+  // resurrect from the other tab's copy — and the deleted plan would live on
+  // there as an un-saveable zombie PUTting to a dead server id (pass-3 C3-2).
+  deleted: string[]
 }
 
 export interface PlanMeta {
@@ -161,6 +166,28 @@ function normalizePlans(raw: unknown[]): PlanState[] {
   return out
 }
 
+const MAX_TOMBSTONES = 100
+
+function normalizeDeleted(v: unknown): string[] {
+  return Array.isArray(v)
+    ? v.filter((x): x is string => typeof x === 'string').slice(-MAX_TOMBSTONES)
+    : []
+}
+
+// Union of tombstone lists, own order first, capped to the newest entries.
+function mergeDeleted(own: string[], incoming: string[]): string[] {
+  if (incoming.length === 0) return own
+  const seen = new Set(own)
+  const out = [...own]
+  for (const id of incoming) {
+    if (!seen.has(id)) {
+      seen.add(id)
+      out.push(id)
+    }
+  }
+  return out.slice(-MAX_TOMBSTONES)
+}
+
 function hasWork(p: PlanState): boolean {
   return (
     p.content.completed.length > 0 ||
@@ -175,12 +202,14 @@ function loadPlans(): PlansState {
     if (raw) {
       const parsed = JSON.parse(raw) as PlansState
       if (Array.isArray(parsed?.plans)) {
-        const plans = normalizePlans(parsed.plans)
+        const deleted = normalizeDeleted(parsed.deleted)
+        const dead = new Set(deleted)
+        const plans = normalizePlans(parsed.plans).filter((p) => !dead.has(p.id))
         if (plans.length > 0) {
           const active = plans.some((p) => p.id === parsed.activeId)
             ? parsed.activeId
             : plans[0].id
-          return { plans, activeId: active }
+          return { plans, activeId: active, deleted }
         }
       }
     }
@@ -192,13 +221,13 @@ function loadPlans(): PlansState {
     const raw = localStorage.getItem(LEGACY_PLAN_KEY)
     if (raw) {
       const plan = normalizePlan(JSON.parse(raw))
-      if (plan) return { plans: [plan], activeId: plan.id }
+      if (plan) return { plans: [plan], activeId: plan.id, deleted: [] }
     }
   } catch {
     /* corrupted legacy plan: start fresh */
   }
   const plan = freshPlan('My Plan')
-  return { plans: [plan], activeId: plan.id }
+  return { plans: [plan], activeId: plan.id, deleted: [] }
 }
 
 function sortTerms(terms: { term_code: string; courses: string[] }[]) {
@@ -302,9 +331,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const onStorage = (e: StorageEvent) => {
       if (e.key !== PLANS_KEY || !e.newValue) return
       let incoming: PlanState[] = []
+      let incomingDeleted: string[] = []
       try {
-        const parsed = JSON.parse(e.newValue) as { plans?: unknown[] }
+        const parsed = JSON.parse(e.newValue) as { plans?: unknown[]; deleted?: unknown }
         if (Array.isArray(parsed?.plans)) incoming = normalizePlans(parsed.plans)
+        incomingDeleted = normalizeDeleted(parsed?.deleted)
       } catch {
         return /* another tab wrote junk: keep our state */
       }
@@ -312,7 +343,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       // Another tab just signed in: its first post-sign-in write (recognized
       // by carrying server ids) is the freshly reconciled server truth.
       // Union-merging our pre-sign-in copies against its remapped ids would
-      // duplicate every plan (pass-2 R1) — adopt the list wholesale.
+      // duplicate every plan (pass-2 R1) — its list is the base, but per plan
+      // OUR copy still wins on higher rev: an edit made here during the
+      // sign-in window must not be silently discarded (pass-3 C3-1). Flush
+      // then pushes the surviving newer copy over the server one.
       if (adoptingRef.current && incoming.some((p) => p.serverPlanId != null)) {
         adoptingRef.current = false
         if (adoptTimerRef.current != null) {
@@ -320,21 +354,60 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           adoptTimerRef.current = null
         }
         pushedRef.current = new Map(incoming.map((p) => [p.id, pushPayload(p)]))
-        mayCreateRef.current.clear()
         setFailedIds(new Set())
-        setState((s) => ({
-          plans: incoming,
-          activeId: incoming.some((p) => p.id === s.activeId) ? s.activeId : incoming[0].id,
-        }))
+        setState((s) => {
+          const deleted = mergeDeleted(s.deleted, incomingDeleted)
+          const dead = new Set(deleted)
+          const ownById = new Map(s.plans.map((p) => [p.id, p]))
+          const plans: PlanState[] = []
+          for (const inc of incoming) {
+            if (dead.has(inc.id)) continue
+            const own = ownById.get(inc.id)
+            plans.push(
+              own && own.rev > inc.rev
+                ? { ...own, serverPlanId: inc.serverPlanId ?? own.serverPlanId }
+                : inc,
+            )
+          }
+          // Keep serverless plans THIS tab created (mayCreateRef) that the
+          // sign-in didn't see; flush will create them. Everything else
+          // defers to the adopted list.
+          const ids = new Set(plans.map((p) => p.id))
+          for (const p of s.plans) {
+            if (
+              !ids.has(p.id) &&
+              !dead.has(p.id) &&
+              p.serverPlanId == null &&
+              mayCreateRef.current.has(p.id)
+            ) {
+              plans.push(p)
+            }
+          }
+          mayCreateRef.current = new Set(
+            plans
+              .filter((p) => p.serverPlanId == null && mayCreateRef.current.has(p.id))
+              .map((p) => p.id),
+          )
+          if (plans.length === 0) {
+            const seed = freshPlan('My Plan')
+            mayCreateRef.current.add(seed.id)
+            plans.push(seed)
+          }
+          const activeId = plans.some((p) => p.id === s.activeId) ? s.activeId : plans[0].id
+          return { plans, activeId, deleted }
+        })
         return
       }
       setState((s) => {
+        const deleted = mergeDeleted(s.deleted, incomingDeleted)
+        const dead = new Set(deleted)
         const ownById = new Map(s.plans.map((p) => [p.id, p]))
         const ownByServerId = new Map<number, PlanState>()
         for (const p of s.plans) if (p.serverPlanId != null) ownByServerId.set(p.serverPlanId, p)
         const matched = new Set<string>()
         const merged: PlanState[] = []
         for (const inc of incoming) {
+          if (dead.has(inc.id)) continue
           const own =
             ownById.get(inc.id) ??
             (inc.serverPlanId != null ? ownByServerId.get(inc.serverPlanId) : undefined)
@@ -349,7 +422,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           const other = winner === inc ? own : inc
           merged.push({ ...winner, id: inc.id, serverPlanId: winner.serverPlanId ?? other.serverPlanId })
         }
-        for (const p of s.plans) if (!matched.has(p.id)) merged.push(p)
+        for (const p of s.plans) if (!matched.has(p.id) && !dead.has(p.id)) merged.push(p)
+        if (merged.length === 0) {
+          // Every plan we knew was deleted elsewhere: reseed, never zero.
+          const seed = freshPlan('My Plan')
+          mayCreateRef.current.add(seed.id)
+          merged.push(seed)
+        }
         let activeId = s.activeId
         if (!merged.some((p) => p.id === activeId)) {
           const prev = ownById.get(s.activeId)
@@ -359,7 +438,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
               : undefined
           activeId = renamed?.id ?? merged[0].id
         }
-        const next = { plans: merged, activeId }
+        const next = { plans: merged, activeId, deleted }
         return JSON.stringify(next) === JSON.stringify(s) ? s : next
       })
     }
@@ -445,7 +524,28 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           pushedRef.current.set(p.id, payload)
           markSave(p.id, true)
         })
-        .catch(() => markSave(p.id, false)) // retried on the next debounce tick
+        .catch((err) => {
+          if (err instanceof ApiError && err.status === 404) {
+            // The server row is gone — deleted from another tab or device.
+            // Honor the deletion (tombstone + drop) instead of PUTting into
+            // the void forever as an un-saveable zombie (pass-3 C3-2).
+            pushedRef.current.delete(p.id)
+            mayCreateRef.current.delete(p.id)
+            markSave(p.id, true)
+            setState((s) => {
+              if (!s.plans.some((x) => x.id === p.id)) return s
+              const deleted = mergeDeleted(s.deleted, [p.id])
+              let plans = s.plans.filter((x) => x.id !== p.id)
+              if (plans.length === 0) {
+                const seed = freshPlan('My Plan')
+                mayCreateRef.current.add(seed.id)
+                plans = [seed]
+              }
+              const activeId = plans.some((x) => x.id === s.activeId) ? s.activeId : plans[0].id
+              return { plans, activeId, deleted }
+            })
+          } else markSave(p.id, false) // retried on the next debounce tick
+        })
         .finally(() => puttingRef.current.delete(p.id))
     }
   }, [markSave])
@@ -593,7 +693,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         if (stateRef.current.plans.length >= MAX_PLANS) return null
         flush() // outgoing plan's pending edits push now, not post-switch
         const plan = freshPlan(name.trim().slice(0, MAX_PLAN_NAME) || 'My Plan')
-        setState((s) => ({ plans: [...s.plans, plan], activeId: plan.id }))
+        setState((s) => ({ ...s, plans: [...s.plans, plan], activeId: plan.id }))
         mayCreateRef.current.add(plan.id) // ours to (re)create server-side
         if (emailRef.current) {
           creatingRef.current.add(plan.id) // flush must not double-create it
@@ -649,7 +749,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         markSave(id, true) // dead plan can't hold the "not saved" indicator
         setState((s) => {
           // Never zero plans. The reseeded plan has serverPlanId null, so the
-          // next flush creates it server-side for signed-in users.
+          // next flush creates it server-side for signed-in users. The
+          // tombstone makes the delete stick cross-tab (pass-3 C3-2).
+          const deleted = s.plans.some((p) => p.id === id)
+            ? mergeDeleted(s.deleted, [id])
+            : s.deleted
           let plans = s.plans.filter((p) => p.id !== id)
           if (plans.length === 0) {
             const seed = freshPlan('My Plan')
@@ -657,7 +761,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
             plans = [seed]
           }
           const activeId = s.activeId === id ? plans[0].id : s.activeId
-          return { plans, activeId }
+          return { plans, activeId, deleted }
         })
       },
       signIn: async (newEmail, token, importLocal) => {
@@ -719,11 +823,56 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           mayCreateRef.current = new Set(
             merged.filter((p) => p.serverPlanId == null).map((p) => p.id),
           )
-          // Keep the user's current plan active if it survived the merge.
-          const activeId = merged.some((p) => p.id === local.activeId)
-            ? local.activeId
-            : merged[0].id
-          setState({ plans: merged, activeId })
+          // A plan deleted mid-sign-in (another tab tombstoned it) must not
+          // keep the server row this merge just created/loaded for it.
+          const liveDead = new Set(stateRef.current.deleted)
+          for (const m of merged) {
+            if (liveDead.has(m.id) && m.serverPlanId != null) {
+              api.deletePlan(m.serverPlanId).catch(() => {})
+            }
+          }
+          // Commit against the LIVE state, not the pre-await snapshot: edits
+          // that landed during listPlans/imports (in this tab, or in another
+          // tab arriving via the storage merge) carry a higher rev and must
+          // survive — flush then pushes them over the just-loaded server
+          // copies (pass-3 C3-1).
+          const snapshotIds = new Set(local.plans.map((p) => p.id))
+          setState((s) => {
+            const dead = new Set(s.deleted)
+            const currentById = new Map(s.plans.map((p) => [p.id, p]))
+            const plans: PlanState[] = []
+            for (const m of merged) {
+              if (dead.has(m.id)) continue
+              const cur = currentById.get(m.id)
+              plans.push(
+                cur && cur.rev > m.rev
+                  ? { ...cur, serverPlanId: m.serverPlanId ?? cur.serverPlanId }
+                  : m,
+              )
+            }
+            // Serverless plans born DURING the await (created here or adopted
+            // from another tab) stay tracked by their owning tab; keep them.
+            // Snapshot plans the import policy dropped stay dropped.
+            const ids = new Set(plans.map((p) => p.id))
+            for (const p of s.plans) {
+              if (
+                !ids.has(p.id) &&
+                !dead.has(p.id) &&
+                !snapshotIds.has(p.id) &&
+                p.serverPlanId == null
+              ) {
+                plans.push(p)
+              }
+            }
+            if (plans.length === 0) {
+              const seed = freshPlan('My Plan')
+              mayCreateRef.current.add(seed.id)
+              plans.push(seed)
+            }
+            // Keep the user's current plan active if it survived the merge.
+            const activeId = plans.some((p) => p.id === s.activeId) ? s.activeId : plans[0].id
+            return { plans, activeId, deleted: s.deleted }
+          })
         } finally {
           signingInRef.current = false
         }
