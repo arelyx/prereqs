@@ -21,6 +21,11 @@ services:
       DATABASE_URL: postgresql+psycopg://prereqs:prereqs@db:5432/prereqs
       DATA_ROOT: /srv/data
       COMMITTED_ROOT: /srv/data-committed
+      # Dev only: transcript import talks to the host's Ollama. Prod compose
+      # leaves this unset, so the feature refuses cleanly (503 / hidden UI).
+      OLLAMA_URL: http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "8200:8000"
     depends_on:

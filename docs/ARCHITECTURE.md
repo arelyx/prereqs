@@ -33,6 +33,30 @@ The DB loader is idempotent and transactional per university: loading an old sna
 - **Frontier LLM (build/audit time)**: writes and refines this code; when a pipeline aborts, analyzes the diff between page and expectations and adapts the pipeline.
 - **Small LLM (run time, qwen3:4b)**: narrow, schema-constrained structuring tasks only. Never free-form. Prompts live next to their pipeline with versioned prompt ids so output snapshots record exactly which prompt produced them.
 
+## Transcript import
+
+The one deliberate exception to "serving never touches the LLM at request
+time": `POST /u/{univ}/transcript/parse` turns an uploaded transcript PDF
+into a best-guess completed-courses list that the user confirms in a review
+UI. Constraints that shape it:
+
+- **In-memory only.** The PDF and its text are PII (name, student ID); they
+  are never persisted, never logged, never echoed into error messages.
+  Chunking starts at the first quarter heading, so the identity header is not
+  even sent to the (local) LLM.
+- **LLM-gated with a refusal fallback.** The local Ollama model
+  (`TRANSCRIPT_LLM_MODEL`, default qwen3:4b) is the only parser — there is no
+  heuristic/regex fallback. `GET /transcript/status` reports availability; if
+  Ollama is unreachable or the model missing, the backend answers 503 and the
+  frontend shows the feature as unavailable. Prod has no Ollama configured,
+  so the feature is off there by default.
+- **Serial, chunked LLM calls.** Text is split per quarter section and parsed
+  with one LLM call per chunk — strictly serialized through a module lock
+  (`backend/app/llm.py`), honoring the one-in-flight-Ollama-request invariant.
+  Responses are schema-validated and every extracted code must appear in the
+  chunk text (anti-fabrication); one retry, then 502. Extracted codes are
+  cross-checked against the catalog — only matched courses can be added.
+
 ## Plan export
 
 Spreadsheet export (CSV and styled XLSX) is generated entirely client-side from the stored plan (`frontend/src/export.ts`, UI in `components/ExportButton.tsx`) — no backend endpoint, so an export can never fail differently from the app itself. Course titles/credits are fetched per-subject from the existing catalog API at export time and cached; if that fetch fails the file still downloads with code-only rows. The `exceljs` dependency is loaded via dynamic `import()` on first XLSX use, so it ships as a separate lazy chunk and adds nothing to the initial bundle. CSVs carry a UTF-8 BOM and CRLF line endings so Excel opens them cleanly.

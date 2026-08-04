@@ -8,6 +8,8 @@ export default defineConfig({
   timeout: 30_000,
   retries: 0,
   use: {
+    // PW_BASE_URL lets a spec run against a side-instance (e.g. vite on a
+    // spare port) without touching the shared stack's ports.
     baseURL: process.env.PW_BASE_URL ?? 'http://localhost:5273',
     screenshot: 'only-on-failure',
   },

@@ -8,6 +8,7 @@ import type { ValidationIssue } from '../api'
 import { useStore } from '../store'
 import { academicYearOf, ayLabel, ayTermCodes, parseTermCode } from '../terms'
 import CourseSearch from './CourseSearch'
+import TranscriptImport from './TranscriptImport'
 
 const SEVERITY_STYLE: Record<string, string> = {
   error: 'bg-red-100 dark:bg-red-950 text-red-800 dark:text-red-200 border-red-300 dark:border-red-800',
@@ -113,7 +114,10 @@ export default function Planner({ onOpenCourse }: { onOpenCourse: (code: string)
       <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-3 shadow-sm">
         <div className="mb-2 flex items-center justify-between">
           <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Completed courses</h3>
-          <span className="text-xs text-zinc-400">{content.completed.length} courses</span>
+          <div className="flex items-center gap-2">
+            <TranscriptImport />
+            <span className="text-xs text-zinc-400">{content.completed.length} courses</span>
+          </div>
         </div>
         <div className="mb-2">
           <CourseSearch

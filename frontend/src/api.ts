@@ -72,6 +72,26 @@ export interface ProgramDetail extends ProgramSummary {
   requirements: { sections: unknown[]; info_sections?: InfoSection[] } | null
 }
 
+export interface TranscriptStatus {
+  available: boolean
+  model: string | null
+}
+
+export interface TranscriptRow {
+  code: string
+  title: string
+  term: string
+  grade: string
+  earned_units: number
+  completed: boolean
+}
+
+export interface TranscriptParseResult {
+  matched: TranscriptRow[]
+  unmatched: string[]
+  warnings: string[]
+}
+
 export interface PlanContent {
   completed: string[]
   terms: { term_code: string; courses: string[] }[]
@@ -176,6 +196,24 @@ export class ApiError extends Error {
   }
 }
 
+// Multipart upload: no JSON content-type (the browser sets the boundary).
+async function requestUpload<T>(path: string, file: File): Promise<T> {
+  const fd = new FormData()
+  fd.append('file', file)
+  const res = await fetch(`${API_URL}${path}`, { method: 'POST', body: fd })
+  if (!res.ok) {
+    let detail = res.statusText
+    try {
+      const body = await res.json()
+      detail = body.detail ?? detail
+    } catch {
+      /* non-JSON error */
+    }
+    throw new ApiError(res.status, detail)
+  }
+  return res.json()
+}
+
 export const api = {
   searchCourses: (q: string, opts: { subject?: string; ge?: string } = {}) =>
     request<{ total: number; courses: CourseSummary[] }>(
@@ -193,6 +231,9 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ content, program_ids: programIds }),
     }),
+  transcriptStatus: () => request<TranscriptStatus>('/transcript/status'),
+  parseTranscript: (file: File) =>
+    requestUpload<TranscriptParseResult>(`/u/${UNIVERSITY}/transcript/parse`, file),
   register: (email: string, password: string) =>
     request<{ token: string; email: string }>('/auth/register', {
       method: 'POST',
