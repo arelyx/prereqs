@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from app.db import Base, get_db
+from app.db import Base, get_db, get_session_factory
 from app.main import create_app
 from app.models import (
     Course,
@@ -37,6 +37,17 @@ def client(db_session):
         yield db_session
 
     app.dependency_overrides[get_db] = override_get_db
+
+    # Endpoints that open short-lived sessions get a factory handing back the
+    # one test session, un-closed (the fixture owns its lifetime).
+    class _SharedSession:
+        def __enter__(self):
+            return db_session
+
+        def __exit__(self, *exc):
+            return False
+
+    app.dependency_overrides[get_session_factory] = lambda: _SharedSession
     return TestClient(app)
 
 

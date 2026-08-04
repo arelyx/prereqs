@@ -340,3 +340,87 @@ def test_llm_serialization_lock(monkeypatch):
     assert out == {"courses": []}
     assert seen["locked_during_call"] is True
     assert not llm._LLM_LOCK.locked()  # released afterwards
+
+
+# --- resource discipline: long parses must not pin scarce resources ----------
+
+
+def test_parse_holds_no_db_connection_across_llm_work(client, seeded, llm_up, monkeypatch):
+    """A parse waits on the LLM for tens of seconds. Holding a pooled DB
+    connection across that pins it 'idle in transaction' and starves every
+    other endpoint (observed: QueuePool-timeout 500s on unrelated reads).
+    No session may be open while the LLM work runs."""
+    from app.db import get_session_factory
+
+    inner = client.app.dependency_overrides[get_session_factory]()
+    depth = {"now": 0, "max_during_llm": 0, "llm_calls": 0}
+
+    class CountingSession:
+        def __enter__(self):
+            depth["now"] += 1
+            return inner().__enter__()
+
+        def __exit__(self, *exc):
+            depth["now"] -= 1
+            return False
+
+    client.app.dependency_overrides[get_session_factory] = lambda: CountingSession
+
+    def watching_chat_json(system_prompt, user_message, **kw):
+        depth["llm_calls"] += 1
+        depth["max_during_llm"] = max(depth["max_during_llm"], depth["now"])
+        return {"courses": []}
+
+    monkeypatch.setattr(llm, "chat_json", watching_chat_json)
+
+    r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))
+    assert r.status_code == 200, r.text
+    assert depth["llm_calls"] > 0  # the LLM really ran
+    assert depth["max_during_llm"] == 0  # ...with no DB session held
+    assert depth["now"] == 0  # and nothing leaked
+
+
+def test_parse_sheds_load_when_all_slots_busy(client, seeded, llm_answers):
+    """In-flight parses are capped. The cap is refused honestly with 429 +
+    Retry-After rather than queueing (a deep queue pins threadpool threads
+    that the sync endpoints share)."""
+    from app.api import transcript as api_transcript
+
+    held = []
+    try:
+        while api_transcript._PARSE_SLOTS.acquire(blocking=False):
+            held.append(1)
+        assert held, "semaphore should have had capacity to drain"
+
+        r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))
+        assert r.status_code == 429, r.text
+        assert r.headers.get("Retry-After") == "60"
+        # No transcript content leaks into the shed-load message.
+        assert "CSE" not in r.json()["detail"]
+    finally:
+        for _ in held:
+            api_transcript._PARSE_SLOTS.release()
+
+    # Capacity restored: the next request succeeds normally.
+    r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))
+    assert r.status_code == 200, r.text
+
+
+def test_parse_slot_released_on_failure(client, seeded, llm_up, monkeypatch):
+    """A failed parse must not leak its slot."""
+    from app.api import transcript as api_transcript
+
+    def boom(*a, **kw):
+        raise llm.OllamaUnavailable("down")
+
+    monkeypatch.setattr(llm, "chat_json", boom)
+    r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))
+    assert r.status_code == 503
+
+    # All slots must be free again.
+    got = 0
+    while api_transcript._PARSE_SLOTS.acquire(blocking=False):
+        got += 1
+    for _ in range(got):
+        api_transcript._PARSE_SLOTS.release()
+    assert got == settings.transcript_max_concurrent

@@ -16,6 +16,9 @@ class Settings(BaseSettings):
     transcript_llm_timeout: float = 120.0  # per LLM call, seconds
     transcript_budget_seconds: float = 600.0  # whole-request ceiling
     transcript_max_bytes: int = 10 * 1024 * 1024
+    # In-flight parse cap. They serialize on the LLM lock regardless, so a
+    # deeper queue only pins threadpool threads and blows each waiter's budget.
+    transcript_max_concurrent: int = 4
 
 
 settings = Settings()
