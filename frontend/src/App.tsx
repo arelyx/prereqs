@@ -100,8 +100,14 @@ function Dashboard() {
               onSelect={(c) => setOpenCourse(c.code)}
             />
           </div>
-          {store.validating ? (
+          {store.validating || (store.validation === null && !store.validationFailed) ? (
             <span className="text-xs text-zinc-400">checking plan…</span>
+          ) : store.validation === null ? (
+            // Validation FAILED — "no result" must never render as the green
+            // all-clear badge.
+            <span className="rounded-full bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+              couldn’t check this plan
+            </span>
           ) : errorCount > 0 ? (
             <span className="rounded-full bg-red-100 dark:bg-red-950 px-2 py-0.5 text-xs font-medium text-red-700 dark:text-red-300">
               {errorCount} blocking issue{errorCount > 1 ? 's' : ''}

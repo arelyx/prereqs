@@ -59,7 +59,7 @@ Deterministic layer owns course *membership* (from `sc-*` classed tables); the s
 { "completed": ["CSE12", "MATH19A"],
   "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE120"]}] }
 ```
-Anonymously, all plans live under the localStorage key `prereqs.plans.v2` as `{"plans": [{"id": "<client-uuid>", "planName": "...", "programIds": [], "serverPlanId": null, "content": {...}}], "activeId": "<client-uuid>"}`; `serverPlanId` links a local plan to its server row while signed in. The legacy single-plan key `prereqs.plan` is migrated into the first v2 plan on first load and then removed. Validation (missing prereqs, not-offered warnings, requirement/GE progress) is computed by the API on read, never stored.
+Anonymously, all plans live under the localStorage key `prereqs.plans.v2` as `{"plans": [{"id": "<client-uuid>", "planName": "...", "programIds": [], "serverPlanId": null, "rev": 0, "content": {...}}], "activeId": "<client-uuid>"}`; `serverPlanId` links a local plan to its server row while signed in, and `rev` is a monotonic per-plan revision counter (bumped on every local mutation) used by the cross-tab storage merge so one tab's whole-list write cannot revert a plan another tab just edited. The legacy single-plan key `prereqs.plan` is migrated into the first v2 plan on first load and then removed. Validation (missing prereqs, not-offered warnings, requirement/GE progress) is computed by the API on read, never stored.
 
 ## Provenance
 
