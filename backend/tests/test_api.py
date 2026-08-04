@@ -182,6 +182,40 @@ def test_plan_count_cap(client, seeded):
     assert client.post("/plans", json=body, headers=headers).status_code == 201
 
 
+def test_plan_content_shape_rejected(client, seeded):
+    """Terms are structured content, not free-form dicts: non-string codes,
+    non-list courses, and unbounded blobs must all 422 instead of landing in
+    the DB (they used to crash the client at sign-in)."""
+    headers = auth_headers(client, "shapes@example.com")
+
+    def post(content):
+        body = {"name": "n", "university_id": "ucsc", "program_ids": [], "content": content}
+        return client.post("/plans", json=body, headers=headers)
+
+    assert post({"completed": [], "terms": [{"term_code": "2258", "courses": [123]}]}).status_code == 422
+    assert post({"completed": [], "terms": [{"term_code": "2258", "courses": "CSE12"}]}).status_code == 422
+    assert post({"completed": [], "terms": [{"courses": []}]}).status_code == 422
+    assert post({"completed": [123], "terms": []}).status_code == 422
+    # bounded, not just typed: courses per term, code length, term_code length
+    too_many = {"term_code": "2258", "courses": [f"C{i}" for i in range(31)]}
+    assert post({"completed": [], "terms": [too_many]}).status_code == 422
+    assert post({"completed": ["X" * 33], "terms": []}).status_code == 422
+    assert post({"completed": [], "terms": [{"term_code": "X" * 17, "courses": []}]}).status_code == 422
+    # the real shape still round-trips
+    ok = post({"completed": ["CSE12"], "terms": [{"term_code": "2258", "courses": ["CSE16"]}]})
+    assert ok.status_code == 201
+    assert ok.json()["content"]["terms"] == [{"term_code": "2258", "courses": ["CSE16"]}]
+
+
+def test_validate_rejects_non_string_courses(client, seeded):
+    """Used to 500 on c.replace() over a non-str course; must be a 422."""
+    bad_term = {"content": {"completed": [], "terms": [{"term_code": "2270", "courses": [123]}]},
+                "program_ids": []}
+    assert client.post("/u/ucsc/validate", json=bad_term).status_code == 422
+    bad_completed = {"content": {"completed": [123], "terms": []}, "program_ids": []}
+    assert client.post("/u/ucsc/validate", json=bad_completed).status_code == 422
+
+
 def test_dormant_flag_and_endpoint(client, seeded):
     r = client.get("/u/ucsc/dormant")
     assert r.json()["codes"] == ["CSE199X"]
