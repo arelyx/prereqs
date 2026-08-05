@@ -39,6 +39,11 @@ class TermIn(BaseModel):
 class PlanContent(BaseModel):
     completed: list[CourseCode] = Field(default_factory=list, max_length=200)
     terms: list[TermIn] = Field(default_factory=list, max_length=24)
+    # Courses the user has told us not to prereq-check: transfer credit, an
+    # equivalent taken elsewhere, a petition, or a transcript import where the
+    # prereqs predate the current catalog. Past terms are exempt already (see
+    # planner.validate_plan); this is the per-course escape hatch on top.
+    waived: list[CourseCode] = Field(default_factory=list, max_length=200)
 
 
 class ValidateRequest(BaseModel):
@@ -79,6 +84,7 @@ def validate(university_id: str, req: ValidateRequest, db: Session = Depends(get
             }
             for t in req.content.terms
         ],
+        "waived": [c.replace(" ", "").upper() for c in req.content.waived],
     }
     return validate_plan(ctx, normalized, programs)
 

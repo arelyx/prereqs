@@ -42,7 +42,12 @@ services:
       context: ./frontend
       target: dev
     environment:
-      VITE_API_URL: http://localhost:8200
+      # Empty = same-origin API calls proxied by vite (see vite.config.ts).
+      # An absolute http://localhost:8200 would be baked into the browser
+      # bundle and break for anyone opening the dev server from another
+      # machine on the LAN, where "localhost" is their own box.
+      VITE_API_URL: ""
+      BACKEND_URL: http://backend:8000
       VITE_ENABLE_AUTH: "1"   # auth UI is dev-only until accounts ship
     ports:
       - "5273:5173"

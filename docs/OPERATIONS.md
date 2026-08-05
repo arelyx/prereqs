@@ -19,9 +19,21 @@ refuses cleanly (503, UI disabled). Backend settings (`app/config.py`):
 
 - `OLLAMA_URL` — default `http://localhost:11434`. Dev compose points it at
   the host's Ollama via `host.docker.internal`; prod leaves it unset (off).
-- `TRANSCRIPT_LLM_MODEL` — default `qwen3:4b` (same model the pipelines use).
-- `TRANSCRIPT_LLM_TIMEOUT` / `TRANSCRIPT_BUDGET_SECONDS` /
-  `TRANSCRIPT_MAX_BYTES` — per-call timeout, whole-request ceiling, upload cap.
+- `TRANSCRIPT_LLM_MODEL` — default `gemma4:12b`. The whole transcript goes to
+  it in one call, so it wants a model that follows a long prompt; a 4-year
+  record takes ~37 s end to end.
+- `TRANSCRIPT_LLM_TIMEOUT` / `TRANSCRIPT_MAX_BYTES` — per-call timeout (300 s)
+  and upload cap (25 MB).
+
+Keep the model resident or every import pays a ~34 s cold load. This host
+already sets it service-wide in `/etc/systemd/system/ollama.service.d/`:
+
+```
+Environment="OLLAMA_KEEP_ALIVE=-1"
+```
+
+The backend also sends `keep_alive: -1` on every call, so a fresh host stays
+warm after the first import without touching the service config.
 
 ## Refreshing UCSC data
 

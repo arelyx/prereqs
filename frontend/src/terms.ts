@@ -55,6 +55,17 @@ export function ayTermCodes(startYear: number): string[] {
   return [mk(startYear, 8), mk(startYear + 1, 0), mk(startYear + 1, 2), mk(startYear + 1, 4)]
 }
 
+/** "2021 Fall" / "Fall 2021" -> "2218". Null when it isn't a term we plan in
+ * (the transcript model echoes the heading it read, so be forgiving). */
+export function termCodeFromLabel(label: string): string | null {
+  const text = label.trim().toLowerCase()
+  const year = text.match(/\b((?:19|20)\d{2})\b/)
+  const season = ORDER.find((s) => text.includes(s))
+  if (!year || !season) return null
+  const y = parseInt(year[1], 10)
+  return String(2000 + (y - 2000) * 10 + SEASON_TO_DIGIT[season])
+}
+
 /** The natural first planner row: the current AY during fall, else the AY
  * starting with the coming fall. */
 export function upcomingAcademicYear(now = new Date()): number {

@@ -12,11 +12,13 @@ Plan content shape (docs/DATA_MODEL.md): {"completed": [codes],
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from datetime import date
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from .loaders.terms import parse_term_code
+# Aliased: `term_code` is used as a local variable name inside validate_plan.
+from .loaders.terms import parse_term_code, term_code as build_term_code
 from .models import Course, CourseAvailability, Program
 
 # UCSC undergraduate GE requirements (2026-27 catalog). Prefix categories:
@@ -56,9 +58,43 @@ def build_context(db: Session, university_id: str) -> ValidationContext:
     return ValidationContext(courses=courses, availability=availability)
 
 
-def validate_plan(ctx: ValidationContext, content: dict, programs: list[Program]) -> dict:
+def current_term_code(today: date | None = None) -> str:
+    """The term we are in now, for deciding which plan terms are in the past."""
+    now = today or date.today()
+    season = (
+        "winter" if now.month <= 3 else
+        "spring" if now.month <= 6 else
+        "summer" if now.month <= 8 else
+        "fall"
+    )
+    return build_term_code(now.year, season)
+
+
+def _is_past(code: str, now_code: str) -> bool:
+    """Term codes sort chronologically as integers. Anything unparseable is
+    treated as not-past, so a malformed term still gets checked."""
+    try:
+        return int(code) < int(now_code)
+    except (TypeError, ValueError):
+        return False
+
+
+def validate_plan(
+    ctx: ValidationContext,
+    content: dict,
+    programs: list[Program],
+    today: date | None = None,
+) -> dict:
     completed: list[str] = content.get("completed") or []
     plan_terms: list[dict] = content.get("terms") or []
+    # Prereq checks are skipped for terms that have already happened and for
+    # courses the user waived. A finished quarter is a fact, not a plan: the
+    # prereqs may have been satisfied by transfer credit, a petition, or a
+    # catalog that has since changed, and none of that is fixable now — so
+    # flagging it is noise. Every other check (unknown course, duplicate,
+    # availability) still runs on past terms.
+    now_code = current_term_code(today)
+    waived: set[str] = set(content.get("waived") or [])
 
     issues: list[dict] = []
     seen: dict[str, str] = {}  # code -> where it already appeared
@@ -91,7 +127,8 @@ def validate_plan(ctx: ValidationContext, content: dict, programs: list[Program]
                                      "and is not repeatable"))
             seen.setdefault(code, f"term {term_code}")
 
-            issues.extend(_check_prereqs(ctx, course, term_code, taken_before, same_term))
+            if code not in waived and not _is_past(term_code, now_code):
+                issues.extend(_check_prereqs(ctx, course, term_code, taken_before, same_term))
             issues.extend(_check_availability(ctx, course, term_code, season))
 
         taken_before |= same_term

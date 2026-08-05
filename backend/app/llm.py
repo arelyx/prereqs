@@ -1,16 +1,25 @@
 """Minimal Ollama chat client for the transcript-import feature.
 
-Ported from pipelines/common/ollama.py (the tuned pipeline harness) — the
-backend must not import from pipelines/. Tuning knowledge preserved:
+The backend must not import from pipelines/, so the tuned knowledge from
+pipelines/common/ollama.py lives here too:
 
-- num_ctx=4096: sized to keep qwen3:4b fully in 4GB VRAM. Callers keep each
-  input chunk small enough to fit (the transcript parser chunks per quarter).
-- think=False for qwen3-family models: reasoning mode is ~50x slower on
-  narrow extraction tasks for no accuracy gain. Other models reject the
-  parameter, so it is only sent for qwen3*.
 - temperature=0, fixed seed: reproducibility.
 - format="json" constrains decoding, but the model can still emit
   valid-but-wrong JSON — callers must schema-validate the result.
+- think=False on hybrid-reasoning models: reasoning mode is far slower on a
+  narrow extraction task for no accuracy gain. Models that don't know the
+  parameter reject it, so it is only sent to families that do.
+
+Sizing for the whole-document parse (gemma4:12b on a 16 GB card):
+- num_ctx must hold the entire transcript plus the prompt. A 4-year MyUCSC
+  export is ~12k chars / ~4k tokens; 16384 leaves room for longer records
+  without pushing the KV cache off the GPU. Ollama's global
+  OLLAMA_CONTEXT_LENGTH does not apply once we send num_ctx per request.
+- num_predict must hold every course row at once. ~58 rows x ~28 tokens is
+  ~1.7k; 4096 leaves headroom. Too low truncates the JSON array mid-row,
+  which reads as "the model dropped courses" rather than as a config bug.
+- keep_alive=-1 pins the model in VRAM so the ~34 s cold load is paid once
+  per boot instead of once per import.
 
 Concurrency: exactly one in-flight Ollama request, ever (repo invariant #1 —
 alternating prompts thrash the KV prefix cache, and the host GPU serves one
@@ -30,8 +39,11 @@ from .config import settings
 
 _LLM_LOCK = threading.Lock()
 
-DEFAULT_NUM_CTX = 4096
-DEFAULT_NUM_PREDICT = 1024
+DEFAULT_NUM_CTX = 16384
+DEFAULT_NUM_PREDICT = 4096
+
+# Families that accept the `think` option. Others 400 on it.
+_THINKING_FAMILIES = ("qwen3", "gemma4", "glm-4")
 
 
 class OllamaUnavailable(Exception):
@@ -86,6 +98,7 @@ def chat_json(
         ],
         "stream": False,
         "format": "json",
+        "keep_alive": -1,
         "options": {
             "temperature": temperature,
             "num_ctx": num_ctx,
@@ -93,7 +106,7 @@ def chat_json(
             "seed": seed,
         },
     }
-    if model.startswith("qwen3"):
+    if model.startswith(_THINKING_FAMILIES):
         body["think"] = False
     with _LLM_LOCK:
         try:

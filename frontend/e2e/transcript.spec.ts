@@ -48,15 +48,16 @@ test('unavailable LLM disables the import button with a clear message', async ({
   await expect(button).toHaveAttribute('title', /not available on this server/)
 })
 
-test('upload → review (NP flagged unchecked, unmatched inert) → apply merges completed', async ({ page }) => {
+test('upload → review (NP flagged unchecked, unmatched inert) → builds a new plan by quarter', async ({ page }) => {
   await page.route('**/transcript/status', (r) =>
-    r.fulfill({ json: { available: true, model: 'qwen3:4b', detail: 'ok' } }),
+    r.fulfill({ json: { available: true, model: 'gemma4:12b', detail: 'ok' } }),
   )
   await page.route('**/u/ucsc/transcript/parse', (r) => r.fulfill({ json: PARSE_RESULT }))
 
-  // Pre-existing completed course must survive the import (merge, not clobber).
-  // Seeded on the LEGACY single-plan key and written BEFORE the first store
-  // load, so this also covers the legacy -> v2 migration feeding the import.
+  // The plan in front of the user must survive the import untouched — the
+  // import builds a SEPARATE plan. Seeded on the LEGACY single-plan key and
+  // written BEFORE the first store load, so this also covers the
+  // legacy -> v2 migration feeding the import.
   await page.evaluate(() => {
     localStorage.clear()
     localStorage.setItem(
@@ -95,17 +96,27 @@ test('upload → review (NP flagged unchecked, unmatched inert) → apply merges
   await expect(page.getByText(/not recognized in the catalog/)).toBeVisible()
   await shot(page, 'transcript-review')
 
-  await page.getByRole('button', { name: 'Add 2 courses' }).click()
+  await page.getByRole('button', { name: 'Create plan with 2 courses' }).click()
 
-  // Modal closed; the two checked courses joined the existing completed set.
+  // Modal closed, and the new plan is now the active one.
   await expect(page.getByText(/never stored/)).toHaveCount(0)
+  await expect(switcher(page)).toHaveText(/Imported transcript/)
+
+  // Both checked courses land in the 2021-22 row — the year they were taken —
+  // and NOT in the completed-courses box.
+  const ay2021 = page.locator('section', { hasText: '2021–22' }).first()
+  await expect(ay2021.getByText('CSE 12')).toBeVisible()
+  await expect(ay2021.getByText('CSE 30')).toBeVisible()
   const completedSection = page.locator('section', { hasText: 'Completed courses' }).first()
-  await expect(completedSection.getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
-  await expect(completedSection.getByRole('button', { name: 'CSE 30', exact: true })).toBeVisible()
-  await expect(completedSection.getByRole('button', { name: 'ANTH 2', exact: true })).toBeVisible()
-  await expect(completedSection.getByRole('button', { name: 'WRIT 2', exact: true })).toHaveCount(0)
-  await expect(completedSection.getByText('3 courses')).toBeVisible()
+  await expect(completedSection.getByText('0 courses')).toBeVisible()
+  // The NP row was unchecked, so it was never imported at all.
+  await expect(page.getByText('WRIT 2')).toHaveCount(0)
   await shot(page, 'transcript-applied')
+
+  // The plan the user was on is untouched: its completed course is still there.
+  await switchTo(page, 'My Plan')
+  await expect(completedSection.getByRole('button', { name: 'ANTH 2', exact: true })).toBeVisible()
+  await expect(page.getByText('CSE 12')).toHaveCount(0)
 })
 
 test('parse failure surfaces a clear error and allows retry', async ({ page }) => {
@@ -166,9 +177,9 @@ async function switchTo(page: Page, name: string) {
   await expect(switcher(page)).toHaveText(new RegExp(name.replace(/[+]/g, '\\+')))
 }
 
-test('import lands in the ACTIVE plan only and survives a plan switch', async ({ page }) => {
+test('import builds a third plan and leaves both existing plans untouched', async ({ page }) => {
   await page.route('**/transcript/status', (r) =>
-    r.fulfill({ json: { available: true, model: 'qwen3:4b', detail: 'ok' } }),
+    r.fulfill({ json: { available: true, model: 'gemma4:12b', detail: 'ok' } }),
   )
   await page.route('**/u/ucsc/transcript/parse', (r) => r.fulfill({ json: PARSE_RESULT }))
   await page.reload()
@@ -185,45 +196,67 @@ test('import lands in the ACTIVE plan only and survives a plan switch', async ({
   await addCompleted(page, 'MATH 21')
   await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toBeVisible()
 
-  // Import into plan B.
+  // Import while sitting on plan B.
   await page.getByRole('button', { name: 'Import transcript', exact: true }).click()
   await page.getByLabel('transcript PDF').setInputFiles({
     name: 'transcript.pdf',
     mimeType: 'application/pdf',
     buffer: Buffer.from('%PDF-1.4 fake for route-mocked parse'),
   })
-  await page.getByRole('button', { name: 'Add 2 courses' }).click()
+  await page.getByRole('button', { name: 'Create plan with 2 courses' }).click()
 
-  // Plan B: imported courses MERGED with what was already there.
-  await expect(completed().getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
-  await expect(completed().getByRole('button', { name: 'CSE 30', exact: true })).toBeVisible()
-  await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toBeVisible()
-  await expect(completed().getByRole('button', { name: 'WRIT 2', exact: true })).toHaveCount(0)
-  await expect(completed().getByText('3 courses')).toBeVisible()
+  // A third plan is now active, holding the courses by quarter.
+  await expect(switcher(page)).toHaveText(/Imported transcript/)
+  const ay2021 = page.locator('section', { hasText: '2021–22' }).first()
+  await expect(ay2021.getByText('CSE 12')).toBeVisible()
+  await expect(ay2021.getByText('CSE 30')).toBeVisible()
+  await expect(completed().getByText('0 courses')).toBeVisible()
 
-  // Plan A is untouched: no imported course leaked into it.
+  // Plan A untouched: nothing imported leaked into it.
   await switchTo(page, 'My Plan')
   await expect(completed().getByRole('button', { name: 'CSE 16', exact: true })).toBeVisible()
-  await expect(completed().getByRole('button', { name: 'CSE 12', exact: true })).toHaveCount(0)
-  await expect(completed().getByRole('button', { name: 'CSE 30', exact: true })).toHaveCount(0)
-  await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toHaveCount(0)
   await expect(completed().getByText('1 course')).toBeVisible()
+  await expect(page.getByText('CSE 12')).toHaveCount(0)
 
-  // Back to B: the write survived the switch (debounce flushed, not lost).
+  // Plan B — the one that was active during the import — is untouched too.
   await switchTo(page, 'Transfer plan')
-  await expect(completed().getByText('3 courses')).toBeVisible()
+  await expect(completed().getByRole('button', { name: 'MATH 21', exact: true })).toBeVisible()
+  await expect(completed().getByText('1 course')).toBeVisible()
+  await expect(page.getByText('CSE 12')).toHaveCount(0)
 
-  // ...and it is persisted under the active plan in the v2 store, not the
-  // other plan and not the legacy key.
+  // Back to the imported plan: the write survived the switches.
+  await switchTo(page, 'Imported transcript')
+  await expect(ay2021.getByText('CSE 12')).toBeVisible()
+
+  // ...and it is persisted as its own plan in the v2 store: courses under the
+  // quarter they were taken, nothing written into the other two plans.
   const stored = await page.evaluate(() => {
     const raw = JSON.parse(localStorage.getItem('prereqs.plans.v2') || '{}')
-    const byName: Record<string, string[]> = {}
-    for (const p of raw.plans ?? []) byName[p.planName] = p.content.completed
+    const completedByName: Record<string, string[]> = {}
+    const termsByName: Record<string, Record<string, string[]>> = {}
+    for (const p of raw.plans ?? []) {
+      completedByName[p.planName] = p.content.completed
+      termsByName[p.planName] = Object.fromEntries(
+        p.content.terms
+          .filter((t: { courses: string[] }) => t.courses.length)
+          .map((t: { term_code: string; courses: string[] }) => [t.term_code, t.courses]),
+      )
+    }
     const active = (raw.plans ?? []).find((p: { id: string }) => p.id === raw.activeId)
-    return { byName, activeName: active?.planName, legacy: localStorage.getItem('prereqs.plan') }
+    return {
+      completedByName,
+      termsByName,
+      count: (raw.plans ?? []).length,
+      activeName: active?.planName,
+      legacy: localStorage.getItem('prereqs.plan'),
+    }
   })
-  expect(stored.activeName).toBe('Transfer plan')
-  expect([...stored.byName['Transfer plan']].sort()).toEqual(['CSE12', 'CSE30', 'MATH21'])
-  expect(stored.byName['My Plan']).toEqual(['CSE16'])
+  expect(stored.count).toBe(3)
+  expect(stored.activeName).toBe('Imported transcript')
+  // 2218 is Fall 2021 — where the transcript says both courses were taken.
+  expect(stored.termsByName['Imported transcript']).toEqual({ '2218': ['CSE12', 'CSE30'] })
+  expect(stored.completedByName['Imported transcript']).toEqual([])
+  expect(stored.completedByName['Transfer plan']).toEqual(['MATH21'])
+  expect(stored.completedByName['My Plan']).toEqual(['CSE16'])
   expect(stored.legacy).toBeNull()
 })

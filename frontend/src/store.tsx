@@ -28,6 +28,9 @@ const EMAIL_KEY = 'prereqs.email'
 // a name over 128 chars would 422 on every save, silently orphaning the plan.
 export const MAX_PLANS = 20
 export const MAX_PLAN_NAME = 128
+// Backend caps on plan content (app/api/plans.py).
+export const MAX_COMPLETED = 200
+export const MAX_TERMS = 24
 
 export interface PlanState {
   id: string // client-local id, stable across sessions and sign-in/out
@@ -80,13 +83,17 @@ interface Store {
   addCourse: (termCode: string, code: string) => void
   removeCourse: (termCode: string, code: string) => void
   setPrograms: (ids: number[]) => void
+  /** Excuse a course from prerequisite checking, or put it back. */
+  toggleWaived: (code: string) => void
   signIn: (email: string, token: string, importLocal: boolean) => Promise<void>
   signOut: () => void
   accountDeleted: () => void
   // Multi-plan surface.
   plans: PlanState[]
   activePlanId: string
-  createPlan: (name: string) => string | null // new plan id, or null at the cap
+  // Returns the new plan id, or null at the cap. `content` seeds the plan
+  // instead of the default empty upcoming-year grid (transcript import).
+  createPlan: (name: string, content?: PlanContent) => string | null
   switchPlan: (id: string) => void
   renamePlan: (id: string, name: string) => void
   deletePlan: (id: string) => void
@@ -106,6 +113,7 @@ function freshPlan(name: string): PlanState {
     content: {
       completed: [],
       terms: ayTermCodes(upcomingAcademicYear()).map((term_code) => ({ term_code, courses: [] })),
+      waived: [],
     },
     programIds: [],
     planName: name,
@@ -122,12 +130,10 @@ function stringArray(v: unknown): string[] {
   return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []
 }
 
-function normalizePlan(raw: unknown): PlanState | null {
-  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
-  const r = raw as Record<string, unknown>
+function repairContent(raw: unknown): PlanContent {
   const c =
-    typeof r.content === 'object' && r.content !== null && !Array.isArray(r.content)
-      ? (r.content as Record<string, unknown>)
+    typeof raw === 'object' && raw !== null && !Array.isArray(raw)
+      ? (raw as Record<string, unknown>)
       : {}
   const terms = (Array.isArray(c.terms) ? c.terms : [])
     .filter((t): t is Record<string, unknown> => {
@@ -138,9 +144,15 @@ function normalizePlan(raw: unknown): PlanState | null {
       return typeof code === 'string' || (typeof code === 'number' && Number.isFinite(code))
     })
     .map((t) => ({ term_code: String(t.term_code), courses: stringArray(t.courses) }))
+  return { completed: stringArray(c.completed), terms, waived: stringArray(c.waived) }
+}
+
+function normalizePlan(raw: unknown): PlanState | null {
+  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
+  const r = raw as Record<string, unknown>
   return {
     id: typeof r.id === 'string' && r.id ? r.id : newPlanId(),
-    content: { completed: stringArray(c.completed), terms },
+    content: repairContent(r.content),
     programIds: Array.isArray(r.programIds)
       ? r.programIds.filter((x): x is number => typeof x === 'number' && Number.isFinite(x))
       : [],
@@ -689,10 +701,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           },
         })),
       setPrograms: (ids) => update((s) => ({ ...s, programIds: ids })),
-      createPlan: (name) => {
+      toggleWaived: (code) =>
+        update((s) => {
+          const waived = s.content.waived.includes(code)
+            ? s.content.waived.filter((c) => c !== code)
+            : [...s.content.waived, code].slice(0, MAX_COMPLETED)
+          return { ...s, content: { ...s.content, waived } }
+        }),
+      createPlan: (name, content) => {
         if (stateRef.current.plans.length >= MAX_PLANS) return null
         flush() // outgoing plan's pending edits push now, not post-switch
         const plan = freshPlan(name.trim().slice(0, MAX_PLAN_NAME) || 'My Plan')
+        // Same repair path as anything loaded from storage or the server, so
+        // a seeded plan can't carry a shape the rest of the store rejects.
+        if (content) plan.content = repairContent(content)
         setState((s) => ({ ...s, plans: [...s.plans, plan], activeId: plan.id }))
         mayCreateRef.current.add(plan.id) // ours to (re)create server-side
         if (emailRef.current) {
