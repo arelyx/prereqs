@@ -95,6 +95,9 @@ export interface TranscriptParseResult {
 export interface PlanContent {
   completed: string[]
   terms: { term_code: string; courses: string[] }[]
+  /** Courses excused from prerequisite checking (transfer credit, petition,
+   * an equivalent taken elsewhere, or an imported transcript). */
+  waived: string[]
 }
 
 export interface ServerPlan {

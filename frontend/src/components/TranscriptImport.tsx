@@ -55,7 +55,13 @@ function buildPlanContent(rows: TranscriptRow[]): PlanContent {
     const filler = terms.filter((t) => !t.courses.length)
     terms = [...real, ...filler.slice(0, MAX_TERMS - real.length)].sort(byCode)
   }
-  return { completed: completed.slice(0, MAX_COMPLETED), terms }
+  // Imported courses start exempt from prereq checking. A transcript records
+  // what actually happened; prereqs may have been met by transfer credit or a
+  // catalog that has since changed, and the planner can't see either. Past
+  // terms are exempt anyway — this also covers the current term's rows.
+  // Every course keeps an "undo" in the planner.
+  const waived = [...new Set(rows.map((r) => r.code))].slice(0, MAX_COMPLETED)
+  return { completed: completed.slice(0, MAX_COMPLETED), terms, waived }
 }
 
 type Phase =

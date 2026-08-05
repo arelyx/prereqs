@@ -59,6 +59,11 @@ UI. Constraints that shape it:
   pass/fail itself from grading rules spelled out in the prompt. Rows that
   come back malformed are skipped rather than failing the import, because the
   user reviews and edits every row before it is applied.
+- **Import builds a new plan, laid out by quarter.** The extracted courses go
+  into a fresh plan (the one on screen is never edited), each in the term the
+  transcript says it was taken. Imported courses start with prereq checking
+  waived: a transcript is a record, and its prereqs may have come from transfer
+  credit or an older catalog. See `waived` in docs/DATA_MODEL.md.
 - **Cost is decode-bound.** Prefill of a 4-year transcript is ~0.35 s; the
   output tokens are the whole cost. That is why rows are compact arrays rather
   than JSON objects — dropping the repeated key names cut a real transcript

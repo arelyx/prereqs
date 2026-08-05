@@ -32,6 +32,36 @@ function IssueBadges({ issues }: { issues: ValidationIssue[] }) {
   )
 }
 
+/** Per-course escape hatch from prerequisite checking, for the cases the
+ * catalog can't see: transfer credit, an equivalent taken elsewhere, a
+ * petition. Offered only where it would change something — next to a live
+ * prereq complaint — so it doesn't clutter every course in the plan. */
+function PrereqWaiver({ code, issues }: { code: string; issues: ValidationIssue[] }) {
+  const store = useStore()
+  const waived = store.content.waived.includes(code)
+  if (waived) {
+    return (
+      <button
+        className="mt-0.5 text-[10px] text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300"
+        onClick={() => store.toggleWaived(code)}
+        title="Check this course's prerequisites again"
+      >
+        prereqs not checked · <span className="underline">undo</span>
+      </button>
+    )
+  }
+  if (!issues.some((i) => i.kind === 'missing_prereq' || i.kind === 'concurrent_prereq')) return null
+  return (
+    <button
+      className="mt-0.5 text-[10px] text-zinc-400 underline hover:text-zinc-600 dark:hover:text-zinc-300"
+      onClick={() => store.toggleWaived(code)}
+      title="Already satisfied by transfer credit, an equivalent course, or a petition"
+    >
+      skip this check
+    </button>
+  )
+}
+
 function QuarterCell({
   termCode,
   courses,
@@ -75,6 +105,7 @@ function QuarterCell({
               </button>
             </div>
             <IssueBadges issues={issuesFor(code, termCode)} />
+            <PrereqWaiver code={code} issues={issuesFor(code, termCode)} />
           </li>
         ))}
       </ul>

@@ -57,8 +57,16 @@ Deterministic layer owns course *membership* (from `sc-*` classed tables); the s
 **plans** — `id`, `user_id` FK cascade, `university_id`, `name`, `program_ids` int[] (chosen major(s)/minor(s)), `content` JSONB, `created_at`, `updated_at`. Users hold up to 20 plans (`MAX_PLANS` in `app/api/plans.py`); which plan is *active* is client-side state, never stored server-side. `content` is exactly the per-plan localStorage shape so anonymous plans import losslessly:
 ```json
 { "completed": ["CSE12", "MATH19A"],
-  "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE120"]}] }
+  "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE120"]}],
+  "waived": ["CSE101"] }
 ```
+`waived` lists courses excused from prerequisite checking — transfer credit, an
+equivalent taken elsewhere, a petition, or a transcript import whose prereqs
+predate the current catalog. Terms that have already ended skip prereq checking
+regardless (`planner.validate_plan`); `waived` is the per-course override on top
+of that, and the planner offers it inline wherever a prereq complaint appears.
+Only the prereq check is suppressed: unknown-course, duplicate and availability
+warnings still fire everywhere.
 Anonymously, all plans live under the localStorage key `prereqs.plans.v2` as `{"plans": [{"id": "<client-uuid>", "planName": "...", "programIds": [], "serverPlanId": null, "rev": 0, "content": {...}}], "activeId": "<client-uuid>", "deleted": []}`; `serverPlanId` links a local plan to its server row while signed in, `rev` is a monotonic per-plan revision counter (bumped on every local mutation) used by the cross-tab storage merge so one tab's whole-list write cannot revert a plan another tab just edited, and `deleted` holds tombstoned client ids (capped at 100) so a delete in one tab sticks in the others instead of being resurrected by the merge's union. The legacy single-plan key `prereqs.plan` is migrated into the first v2 plan on first load and then removed. Validation (missing prereqs, not-offered warnings, requirement/GE progress) is computed by the API on read, never stored.
 
 ## Provenance

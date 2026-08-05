@@ -28,6 +28,9 @@ const EMAIL_KEY = 'prereqs.email'
 // a name over 128 chars would 422 on every save, silently orphaning the plan.
 export const MAX_PLANS = 20
 export const MAX_PLAN_NAME = 128
+// Backend caps on plan content (app/api/plans.py).
+export const MAX_COMPLETED = 200
+export const MAX_TERMS = 24
 
 export interface PlanState {
   id: string // client-local id, stable across sessions and sign-in/out
@@ -80,6 +83,8 @@ interface Store {
   addCourse: (termCode: string, code: string) => void
   removeCourse: (termCode: string, code: string) => void
   setPrograms: (ids: number[]) => void
+  /** Excuse a course from prerequisite checking, or put it back. */
+  toggleWaived: (code: string) => void
   signIn: (email: string, token: string, importLocal: boolean) => Promise<void>
   signOut: () => void
   accountDeleted: () => void
@@ -108,6 +113,7 @@ function freshPlan(name: string): PlanState {
     content: {
       completed: [],
       terms: ayTermCodes(upcomingAcademicYear()).map((term_code) => ({ term_code, courses: [] })),
+      waived: [],
     },
     programIds: [],
     planName: name,
@@ -138,7 +144,7 @@ function repairContent(raw: unknown): PlanContent {
       return typeof code === 'string' || (typeof code === 'number' && Number.isFinite(code))
     })
     .map((t) => ({ term_code: String(t.term_code), courses: stringArray(t.courses) }))
-  return { completed: stringArray(c.completed), terms }
+  return { completed: stringArray(c.completed), terms, waived: stringArray(c.waived) }
 }
 
 function normalizePlan(raw: unknown): PlanState | null {
@@ -695,6 +701,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           },
         })),
       setPrograms: (ids) => update((s) => ({ ...s, programIds: ids })),
+      toggleWaived: (code) =>
+        update((s) => {
+          const waived = s.content.waived.includes(code)
+            ? s.content.waived.filter((c) => c !== code)
+            : [...s.content.waived, code].slice(0, MAX_COMPLETED)
+          return { ...s, content: { ...s.content, waived } }
+        }),
       createPlan: (name, content) => {
         if (stateRef.current.plans.length >= MAX_PLANS) return null
         flush() // outgoing plan's pending edits push now, not post-switch
