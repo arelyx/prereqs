@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "The Staff, Maria Gonzalez Pagani",
    "code": "SPHS115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Centers on three areas: essay reading, essay analysis and interpretation, and essay writing. Student read representative essays by Latin American writers, analyze their discourse structure, and apply the lessons learned to their own writing.",
@@ -19,6 +21,7 @@
      "SPHS6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; SPAN 6 or SPHS 6 , or by placement assessment. Enrollment restricted to sophomore, junior, and senior Spanish studies majors.",
    "repeatable": false,
@@ -29,6 +32,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SPHS194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor.",
@@ -39,6 +44,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -49,6 +55,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SPHS199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -59,6 +67,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -69,6 +78,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SPHS199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -79,6 +90,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -89,6 +101,8 @@
   {
    "catalog_instructor": "Maria Gonzalez Pagani, Sandra Malone",
    "code": "SPHS4",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Deals with orthography, lexicon development, morphology, syntax, and other linguistic topics as applied to the development of all language skills (listening, reading, speaking, and writing). Emphasizes reading and writing about well-known and pivotal authentic texts of varying genres and formats from the Spanish-speaking world. Emphasis is on the United States, Mexico, and Spain. Students need to use the self-placement questionnaire posted on the Languages and Applied Linguistics web page. The Spanish Placement Exam can be taken but it is not required.",
@@ -101,6 +115,7 @@
    ],
    "number": "4",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): Placement into SPHS 4 via via assessment.",
    "repeatable": false,
@@ -111,6 +126,8 @@
   {
    "catalog_instructor": "Maria Gonzalez Pagani",
    "code": "SPHS5",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Deals with orthography, lexicon development, morphology, syntax, and other linguistic topics as applied to the development of all language skills (listening, reading, speaking, and writing). Emphasizes reading and writing about well-known and pivotal authentic texts of varying genres and formats from the Spanish-speaking world. Emphasis is on Central America and the Caribbean.",
@@ -127,6 +144,7 @@
      "SPHS4"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): SPHS 4 , by consent of program coordinator, or by placement assessment.",
    "repeatable": false,
@@ -137,6 +155,8 @@
   {
    "catalog_instructor": "Sandra Malone",
    "code": "SPHS6",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Deals with orthography, lexicon development, morphology, syntax, and other linguistic topics as applied to the development of all language skills (listening, reading, speaking, and writing). Emphasizes reading and writing about well-known and pivotal authentic texts of varying genres and formats from the Spanish-speaking world. Emphasis is on South America.",
@@ -153,6 +173,7 @@
      "SPHS5"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): SPHS 5 or by placement assessment.",
    "repeatable": false,
@@ -163,6 +184,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SPHS94",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -173,6 +196,7 @@
    "ge_codes": [],
    "number": "94",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -183,6 +207,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SPHS99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -193,6 +219,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -203,6 +230,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SPHS99F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -213,6 +242,7 @@
    "ge_codes": [],
    "number": "99F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -221,11 +251,10 @@
    "url": "/en/current/general-catalog/courses/sphs-spanish-for-heritage-speakers/lower-division/sphs-99f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "SPHS"
 }

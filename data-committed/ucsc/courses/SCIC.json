@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC100",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches students to communicate effectively about science with the public. Students formulate research questions, identify and interview appropriate expert sources, integrate material into engaging works of creative nonfiction using techniques such as structure, description and voice, and work with peers and the instructor to analyze and improve their work. Focuses on writing as the primary vehicle for creative nonfiction expression about science across mediums. Taught in conjunction with SCIC 200 . Students cannot receive credit for this course and SCIC 200 .",
@@ -16,6 +18,7 @@
    ],
    "number": "100",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC104B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers field-adapted color illustration techniques including watercolor, colored pencil, inkwash, and mixed media. Field trips to various natural environments provide opportunities to sketch plants, mammals, birds, insects, landscapes, and other subject matter. In addition to in-class assignments, students produce a field sketchbook and a final project. Appropriate for students with demonstrated interest in science illustration through previous course work in science and art or through extracurricular activity in the field or a strong desire to learn the skills of the field. Enrollment process differs for Summer Session.",
@@ -36,6 +41,7 @@
    "ge_codes": [],
    "number": "104B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -46,6 +52,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC106A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to graphite, pen and ink, coquille, and scratchboard, along with training in essential skills for creating accurate and dynamic scientific illustrations. Attention to the demands of the printing process along with basics of proportion, perspective, and composition. Appropriate for students with a demonstrated interest in science illustration through previous course work in science and art, or through extracurricular activity in the field, or a strong desire to learn the skills of the field.",
@@ -56,6 +64,7 @@
    "ge_codes": [],
    "number": "106A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": true,
@@ -66,6 +75,8 @@
   {
    "catalog_instructor": "Jessica Kendall-Bar",
    "code": "SCIC110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Effective data visualizations have grown into global movements, such as the \"warming stripes\"; climate change visualization by Ed Hawkins, and have been used to guide policy, for instance, in the COVID-19 pandemic response. This course trains students in data-based storytelling that promotes research and science communication for the benefit of communities and policymakers on local and global scales. Students draft a science writing script, create custom raster and vector graphics, program data visualizations, learn to model and animate 3D models, and create animated compositions. For their final project, students assemble these data-driven assets into an animated video abstract for their own research or that of a collaborating researcher. Taught in conjunction with SCIC 210 .",
@@ -78,6 +89,7 @@
    ],
    "number": "110",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -88,6 +100,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC160",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "BIOE188"
@@ -100,6 +114,7 @@
    "ge_codes": [],
    "number": "160",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and C1, C2 requirements. Enrollment is restricted to junior and senior physical and biological sciences majors.",
    "repeatable": false,
@@ -110,6 +125,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -120,6 +137,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -130,6 +148,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -140,6 +160,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -150,6 +171,8 @@
   {
    "catalog_instructor": "Erika Hayden",
    "code": "SCIC200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Instructs science students in communicating about their work with the non-scientist public, including written, visual, and audio forms of communication.",
@@ -160,6 +183,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Taught in conjunction with SCIC 100 . Students cannot receive credit for this course and SCIC 100 .",
    "repeatable": false,
@@ -170,6 +194,8 @@
   {
    "catalog_instructor": "Erika Hayden",
    "code": "SCIC201A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of the conventions of newspaper journalism and the special application of those conventions to scientific and technological subjects.",
@@ -180,6 +206,7 @@
    "ge_codes": [],
    "number": "201A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
    "repeatable": false,
@@ -190,6 +217,8 @@
   {
    "catalog_instructor": "Erika Hayden",
    "code": "SCIC201B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of selected feature articles in the current national science magazines, with attention to strategy, level of complexity, explanation technique, and style. Writing assignments include a publishable feature article.",
@@ -200,6 +229,7 @@
    "ge_codes": [],
    "number": "201B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
    "repeatable": false,
@@ -210,6 +240,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SCIC201C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of science and nature profiles and essays. Purpose, content, form, and style are  considered. Writing assignments include original profiles and essays on current issues in science, technology, and society.",
@@ -220,6 +252,7 @@
    "ge_codes": [],
    "number": "201C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
    "repeatable": false,
@@ -230,6 +263,8 @@
   {
    "catalog_instructor": "Martha Mendoza, Peter Aldhous",
    "code": "SCIC201D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Rigorous examination of techniques for reporting topics where science and technology  meet public policy and society. Covers essential skills of investigative reporting, including obtaining documents through Public Records Act requests, using online reporting resources, and writing about ethical and legal issues.",
@@ -240,6 +275,7 @@
    "ge_codes": [],
    "number": "201D",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
    "repeatable": false,
@@ -250,6 +286,8 @@
   {
    "catalog_instructor": "The Staff, Peter Aldhous",
    "code": "SCIC201E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces web-media tools for reporting science stories and enhancing coverage for broad audiences, including video packages, narrated slideshows, podcasts, blogs, and still photography. Laboratory sections address skills for handling equipment and online editing.",
@@ -260,6 +298,7 @@
    "ge_codes": [],
    "number": "201E",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
    "repeatable": false,
@@ -270,6 +309,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SCIC202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Theory and practice of writing and editing articles on scientific, medical, environmental, and technological subjects for newspapers, magazines, and special publications directed at non-technical readers.",
@@ -280,6 +321,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
    "repeatable": true,
@@ -290,6 +332,8 @@
   {
    "catalog_instructor": "Martha Mendoza",
    "code": "SCIC203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "1",
    "cross_listed": [],
    "description": "This five-day immersive field course trains science communication graduate students to translate complex environmental issues into compelling narratives. Through site visits, expert talks, and hands-on observation at a beautiful and environmentally rare nationally protected area, students examine tensions between conservation, agriculture, and community. Activities include interviewing practitioners, analyzing media (film and journalism), and reflecting on storytelling strategies. Emphasis is placed on understanding and communicating complex issues, framing and journalism ethics in real-world contexts.",
@@ -300,6 +344,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to science communication M.S. students.",
    "repeatable": false,
@@ -310,6 +355,8 @@
   {
    "catalog_instructor": "Jessica Kendall-Bar",
    "code": "SCIC210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Effective data visualizations have grown into global movements, such as the \"warming stripes,\" climate change visualization by Ed Hawkins, and have been used to guide policy, for instance, in the COVID-19 pandemic response. This course trains students in data-based storytelling that promotes research and science communication for the benefit of communities and policymakers on local and global scales. Students draft a science writing script, create custom raster and vector graphics, program data visualizations, learn to model and animate 3D models, and create animated compositions. For their final project, students assemble these data-driven assets into an animated video abstract for their own research or that of a collaborating researcher. Taught in conjunction with SCIC 110 .",
@@ -320,6 +367,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -330,6 +378,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC297",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A media internship is completed with faculty tutorial assistance, to satisfy a need for the student when a regular course is not available. Enrollment restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
@@ -340,6 +390,7 @@
    "ge_codes": [],
    "number": "297",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -350,6 +401,8 @@
   {
    "catalog_instructor": null,
    "code": "SCIC297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Independent Study",
@@ -360,6 +413,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -368,11 +422,10 @@
    "url": "/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297b"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "SCIC"
 }

@@ -1,27 +1,20 @@
-"""Export structured pipeline output into the git-committed dataset.
+"""Export the structured course catalog into the committed dataset (hot path).
 
-data-committed/ucsc/ is the CANONICAL home of near-static, trust-sensitive
-catalog data (course catalog + program requirements). The Local-LLM pipeline
-proposes; this exporter writes its proposal into the committed tree so that
-`git diff` is the review artifact — a human and/or the Frontier LLM approves
-deltas before merge. The database is a disposable projection loaded from
-these files. Offerings history stays OUT (bulky, per-term, deterministic —
-no trust problem; lives in data/ snapshots only).
+  data-committed/ucsc/courses/<SUBJECT>.json   one subject per file, sorted
 
-Preservation rules (the trust model):
-- A file whose `origin` is 'hand-edited' is NEVER overwritten without
-  --force; the exporter reports the skip so drift stays visible.
-- A `verification` block (status frontier-verified) survives an export only
-  when the exported content is identical to the existing content; any change
-  resets status to 'unverified' so stale approvals can't linger.
+Reads the newest ``catalog_courses_structured`` snapshot (deterministic
+prereq parser + warm-path overrides), rewrites a subject file only when its
+content changed, and records the ``catalog_courses`` ledger block — including
+any requirement text the parser could not decide and no override covers
+(``prereq_unresolved``), which ``refresh status`` turns into a WARM task.
 
-Layout (stable ordering, one entity per file → reviewable diffs):
-  data-committed/ucsc/index.json
-  data-committed/ucsc/programs/<slug>.json
-  data-committed/ucsc/courses/<SUBJECT>.json
+``--legacy-programs`` re-exports the frozen generic-JSON program harness
+(approach A) from a ``major_requirements_structured`` snapshot; it is not
+part of the refresh. Files with ``origin: hand-edited`` are never
+overwritten without ``--force``.
 
 Usage:
-  python -m ucsc.export_committed [--programs] [--courses] [--force]
+  python -m ucsc.export_committed [--courses] [--legacy-programs [--force]]
 """
 
 from __future__ import annotations
@@ -31,18 +24,18 @@ import json
 import sys
 from pathlib import Path
 
-from common.snapshot import DATA_ROOT, latest, load_manifest
+from common.snapshot import latest, load_manifest
 
-COMMITTED_ROOT = DATA_ROOT.parent / "data-committed" / "ucsc"
+from . import editions, ledger
+
+COMMITTED_ROOT = ledger.COMMITTED_ROOT
 
 PROGRAM_META_KEYS = (
     "slug", "name", "degree", "kind", "division", "department", "url",
 )
 
 
-def _dump(path: Path, obj: dict) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
+_dump = ledger.dump
 
 
 def _read(path: Path) -> dict | None:
@@ -125,11 +118,10 @@ def export_courses(force: bool = False) -> tuple[int, int]:
         record = {
             "subject": subject,
             "catalog_year": manifest.get("catalog_year"),
-            "origin": "local-llm-pipeline",
+            "origin": "deterministic-pipeline",
             "provenance": {
-                "snapshot": snap.name,
-                "model": manifest.get("model"),
-                "prompt_version": manifest.get("prompt_version"),
+                "parser_version": manifest.get("parser_version"),
+                "overrides_sha1": manifest.get("overrides_sha1"),
             },
             "courses": sorted(rows, key=lambda r: r["code"]),
         }
@@ -143,7 +135,23 @@ def export_courses(force: bool = False) -> tuple[int, int]:
                 continue
         _dump(path, record)
         written += 1
-    print(f"courses: {written} subject files written, {skipped} hand-edit skips")
+    stale = [f.stem for f in out_dir.glob("*.json") if f.stem not in by_subject]
+    for subj in stale:
+        (out_dir / f"{subj}.json").unlink()
+    year = manifest.get("catalog_year") or ""
+    counts = manifest.get("counts", {})
+    ledger.update("catalog_courses", {
+        "edition": editions.short_id(int(year[:4])) if year[:4].isdigit() else None,
+        "fetched_at": ledger.snapshot_time(Path(manifest["source_snapshot"])),
+        "courses": len(courses),
+        "subjects": len(by_subject),
+        "parser_version": manifest.get("parser_version"),
+        "prereq_counts": counts,
+        "prereq_unresolved": sorted(manifest.get("unresolved") or []),
+        "stale_overrides": sorted(o["code"] for o in manifest.get("stale_overrides") or []),
+    })
+    print(f"courses: {written} subject files written, {skipped} hand-edit skips, "
+          f"{len(stale)} subjects removed")
     return written, skipped
 
 
@@ -171,14 +179,14 @@ def write_index() -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--programs", action="store_true")
-    ap.add_argument("--courses", action="store_true")
+    ap.add_argument("--courses", action="store_true", help="(default) export the course catalog")
+    ap.add_argument("--legacy-programs", action="store_true",
+                    help="re-export the frozen generic-JSON program harness (approach A)")
     ap.add_argument("--force", action="store_true", help="overwrite hand-edited files")
     args = ap.parse_args()
-    do_all = not (args.programs or args.courses)
-    if args.programs or do_all:
+    if args.legacy_programs:
         export_programs(force=args.force)
-    if args.courses or do_all:
+    if args.courses or not args.legacy_programs:
         export_courses(force=args.force)
     write_index()
 

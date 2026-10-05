@@ -80,8 +80,17 @@ class Ambiguous(Exception):
     """Raised inside the parser when precedence/meaning is unclear."""
 
 
-def raw_sha1(raw: str) -> str:
-    return hashlib.sha1((raw or "").encode("utf-8")).hexdigest()
+def normalize_text(raw: str | None) -> str:
+    """Whitespace-insensitive form used for override hashing: the catalog
+    re-renders 'CSE 12 .' vs 'CSE 12.' between scrapes without any change
+    in meaning, and that must not make an override stale."""
+    s = re.sub(r"\s+", " ", (raw or "").replace("\u00a0", " ")).strip()
+    return re.sub(r"\s+([,.;:)\]])", r"\1", s)
+
+
+def raw_sha1(raw: str | None) -> str:
+    """sha1 of the whitespace-normalized requirement text (see normalize_text)."""
+    return hashlib.sha1(normalize_text(raw).encode("utf-8")).hexdigest()
 
 
 # --------------------------------------------------------------------------
@@ -105,16 +114,17 @@ _COREQ_LABEL_RE = re.compile(
 _ANTIREQ_RE = re.compile(
     r"antirequisite|cannot\s+(?:enroll|receive|take|be\s+taken)|may\s+not\s+(?:enroll|receive|take|be\s+taken)"
     r"|should\s+not\s+(?:take|enroll)|not\s+open\s+to\s+students\s+who|will\s+not\s+receive\s+credit"
-    r"|no\s+credit\s+(?:for|will)",
+    r"|no\s+credit\s+(?:for|will)|not\s+allowed\s+to\s+(?:enroll|take)",
     re.IGNORECASE,
 )
 _RECOMMEND_RE = re.compile(
-    r"recommend|encourag|suggest|helpful|preferred|advis|benefit\s+from|desirable|useful",
+    r"recommend|encourag|suggest|helpful|preferred|preferable|advis|benefit\s+from|desirable|useful|not\s+required",
     re.IGNORECASE,
 )
 _ADVISORY_RE = re.compile(
     r"may\s+enroll|permission|consent|expected\s+to|assumed\s+to|should\s+have|knowledge\s+of"
-    r"|background|familiar|\bsee\b|experience|contact\s+the|application|inquire",
+    r"|background|familiar|\bsee\b|experience|contact\s+the|application|inquire|similar\s+to|waived"
+    r"|in\s+conjunction\s+with|requirements\s+for\s+the|need\s+(?:to\s+have|at\s+least)",
     re.IGNORECASE,
 )
 _RESTRICT_START_RE = re.compile(
@@ -151,14 +161,16 @@ def _split_sentences(text: str) -> list[str]:
 
 @dataclass
 class Tok:
-    kind: str  # CODE WORD CONN LP RP OPEN EG CONC COREQ
+    kind: str  # CODE UNKNOWN WORD NUM CONN LP RP OPEN KOFn EG CONC COREQ
     text: str
     code: str | None = None
     conc: bool = False
     coreq: bool = False
 
 
-_PHRASE_SUBS: list[tuple[re.Pattern, str]] = [
+_NUMBER_WORDS = {"two": 2, "three": 3, "four": 4, "2": 2, "3": 3, "4": 4}
+
+_PHRASE_SUBS: list[tuple[re.Pattern, object]] = [
     (re.compile(r"\band\s*/\s*or\b", re.I), " or "),
     (re.compile(r"&"), " and "),
     (re.compile(r"\bplus\b", re.I), " and "),
@@ -172,13 +184,18 @@ _PHRASE_SUBS: list[tuple[re.Pattern, str]] = [
     (_PREV_OR_CONC_RE, " \x01CONC\x01 "),
     (re.compile(r"\b(?:must\s+be\s+)?taken\s+concurrently\s+with\b|\bconcurrent(?:ly)?\s+enroll(?:ment|ed)?\s+in\b|\bmust\s+concurrently\s+enroll\s+in\b", re.I), " \x01COREQ\x01 "),
     (re.compile(r"\be\.g\.,?|\bi\.e\.,?|\bsuch\s+as\b|\bfor\s+example\b", re.I), " \x01EG\x01 "),
+    # "two courses from: A, B, C" / "three of the following" -> k-of-n group
+    (re.compile(
+        r"\b(two|three|four|2|3|4)\s+(?:(?:of\s+the\s+following)|(?:(?:[\w/-]+\s+){0,5}?(?:from|chosen\s+from)))"
+        r"(?:\s+the\s+following)?(?:\s+courses)?\s*:?", re.I),
+        lambda m: f" \x01KOF{_NUMBER_WORDS[m.group(1).lower()]}\x01 "),
     (re.compile(r"\b(?:either|one\s+course\s+from|one\s+from|one\s+of\s+the\s+following(?:\s+(?:courses|series))?|one\s+of)\b\s*:?", re.I), " \x01OPEN\x01 "),
     (re.compile(r"\bboth\b", re.I), " "),
     (re.compile(r":"), " "),
 ]
 
 _TOKEN_RE = re.compile(
-    r"\x01(?P<marker>CONC|COREQ|EG|OPEN)\x01"
+    r"\x01(?P<marker>CONC|COREQ|EG|OPEN|KOF\d)\x01"
     r"|(?P<code>\b[A-Za-z]{2,5}\s*\d{1,3}[A-Za-z]{0,2}\b)"
     r"|(?P<num>\b\d{1,3}[A-Z]{0,2}\b(?!_))"
     r"|(?P<conn>;|,|/|\band\b|\bor\b)"
@@ -189,11 +206,19 @@ _TOKEN_RE = re.compile(
 _CODE_SPLIT_RE = re.compile(r"^([A-Za-z]{2,5})\s*(\d{1,3}[A-Za-z]{0,2})$")
 
 
-def _subjects_from(known_codes: set[str] | None) -> set[str]:
+_SUBJECT_CACHE: dict[int, tuple[object, frozenset, int]] = {}
+
+
+def _subjects_from(known_codes: set[str] | None) -> frozenset:
     if not known_codes:
-        return set(_FALLBACK_SUBJECTS)
-    subs = {re.match(r"^[A-Z]+", c).group(0) for c in known_codes if re.match(r"^[A-Z]+", c)}
-    return subs | set(_FALLBACK_SUBJECTS)
+        return _FALLBACK_SUBJECTS
+    hit = _SUBJECT_CACHE.get(id(known_codes))
+    if hit is not None and hit[0] is known_codes and len(hit[1]) and len(known_codes) == hit[2]:
+        return hit[1]
+    subs = frozenset(m.group(0) for c in known_codes if (m := re.match(r"^[A-Z]+", c))) | _FALLBACK_SUBJECTS
+    _SUBJECT_CACHE.clear()
+    _SUBJECT_CACHE[id(known_codes)] = (known_codes, subs, len(known_codes))
+    return subs
 
 
 def _as_code(text: str, subjects: set[str]) -> str | None:
@@ -204,9 +229,10 @@ def _as_code(text: str, subjects: set[str]) -> str | None:
     up = subj.upper()
     if up in _NOT_SUBJECTS:
         return None
-    if up in subjects or (subj.isupper() and len(subj) >= 2 and up not in {"OR", "AND", "OF", "TO", "IN"}):
-        # trailing letters: allow lowercase only as a section suffix ("161s")
-        return up + num.upper()
+    if up in subjects:
+        return up + num.upper()  # lowercase suffix allowed ("ANTH 161s")
+    if subj.isupper() and up not in {"OR", "AND", "OF", "TO", "IN"}:
+        return "?" + up + num.upper()  # code-shaped, unknown subject
     return None
 
 
@@ -219,7 +245,9 @@ def _tokenize(text: str, subjects: set[str]) -> list[Tok]:
             raw.append(Tok(m.group("marker"), m.group(0)))
         elif m.group("code"):
             code = _as_code(m.group("code"), subjects)
-            if code:
+            if code and code.startswith("?"):
+                raw.append(Tok("UNKNOWN", m.group("code"), code=code[1:]))
+            elif code:
                 raw.append(Tok("CODE", m.group("code"), code=code))
             else:
                 # not a subject ("or 20", "of 300"): re-emit the pieces
@@ -299,7 +327,7 @@ def _tokenize(text: str, subjects: set[str]) -> list[Tok]:
 
 _QUANTIFIER_RE = re.compile(
     r"^(?:two|three|four|five|six|any|all|2|3|4|series|additional|upper-division|lower-division|"
-    r"studios?|courses|several|another|other)$",
+    r"several|another|other)$",
     re.IGNORECASE,
 )
 
@@ -329,10 +357,10 @@ class _Parser:
                         pos += 1
                         return items
                     raise Ambiguous("unbalanced closing bracket")
-                elif t.kind == "OPEN":
+                elif t.kind == "OPEN" or t.kind.startswith("KOF"):
                     pos += 1
                     inner = parse_open()
-                    items.append(("open", inner))
+                    items.append(("open" if t.kind == "OPEN" else t.kind.lower(), inner))
                 else:
                     items.append(t)
                     pos += 1
@@ -355,9 +383,9 @@ class _Parser:
                     pos += 1
                     items.append(("paren", parse_seq(True)))
                     continue
-                if t.kind == "OPEN":
+                if t.kind == "OPEN" or t.kind.startswith("KOF"):
                     pos += 1
-                    items.append(("open", parse_open()))
+                    items.append(("open" if t.kind == "OPEN" else t.kind.lower(), parse_open()))
                     continue
                 items.append(t)
                 pos += 1
@@ -403,46 +431,49 @@ class _Parser:
             entries.append((lead, body))
         # Strip trailing ", or <non-course>" alternatives (", or by permission").
         evaluated = [(lead, self.chain(body), body) for lead, body in entries]
+        stripped_or = False
         while len(evaluated) > 1 and evaluated[-1][1] is None and evaluated[-1][0] == "or":
             self.restrictions.append(_text(evaluated[-1][2]))
             evaluated.pop()
+            stripped_or = True
         if len(evaluated) == 1:
             return evaluated[0][1]
-        explicit = {lead for lead, _, _ in evaluated[1:] if lead is not None}
         kept = [(i, lead, node) for i, (lead, node, _) in enumerate(evaluated) if node is not None]
         if not kept:
             return None
         if len(kept) == 1:
             return kept[0][2]
+        explicit_kept = {lead for i, lead, _ in kept if i > 0 and lead is not None}
+        explicit_all = {lead for lead, _, _ in evaluated[1:] if lead is not None}
         if in_open:
+            # "one of the following: A, B, and C" still means one of them
+            if explicit_kept == {"and", "or"}:
+                raise Ambiguous("either/one-of list mixes ', and' and ', or'")
             conn = "or"
-            if "and" in explicit:
-                raise Ambiguous("'and' inside an either/one-of list")
-        elif len(explicit) > 1:
-            # "A, and B, or C": allowed only when the odd connector belongs
-            # to pruned (non-course) parts.
-            kept_explicit = {lead for i, lead, _ in kept if i > 0 and lead is not None}
-            if len(kept_explicit) > 1:
-                raise Ambiguous("comma list mixes ', and' and ', or'")
-            conn = kept_explicit.pop() if kept_explicit else "and"
-        elif explicit:
-            conn = next(iter(explicit))
+        elif len(explicit_kept) > 1:
+            raise Ambiguous("comma list mixes ', and' and ', or'")
+        elif explicit_kept:
+            conn = next(iter(explicit_kept))
+        elif len(explicit_all) == 1:
+            conn = next(iter(explicit_all))  # "A, B, and satisfaction of ELWR"
+        elif stripped_or:
+            conn = "or"  # "A, B, or equivalent"
         else:
-            # "A, B, C or D" (no serial comma): the last part's connector
+            # "A, B, C or D" (no serial comma) takes the last part's
+            # connector; a bare "A, B, C" is a conjunction.
             last_body = evaluated[-1][2]
             inner = {t.text for t in last_body if isinstance(t, Tok) and t.kind == "CONN" and t.text in ("and", "or")}
-            if len(inner) == 1:
-                conn = next(iter(inner))
-            else:
-                raise Ambiguous("comma list without a connector")
-        # A non-leading part with no explicit connector whose internal
-        # connector differs from the list's ("A, B and C, or D") is ambiguous.
+            if len(inner) > 1:
+                raise Ambiguous("comma list without a clear connector")
+            conn = next(iter(inner)) if inner else "and"
+        # In an OR list, a non-leading part with an inner "and" and no
+        # explicit connector ("A, B and C, or D") is unclear: the commas may
+        # be an AND list. Inner-"or" parts in an AND list are normal
+        # ("MATH 22 or MATH 23A, PHYS 5B or PHYS 6B, and PHYS 102").
         for i, lead, node in kept:
             if i == 0 or lead is not None:
                 continue
-            if isinstance(node, tuple) and node[0] in ("and", "or") and node[0] != conn:
-                if not explicit and i == len(evaluated) - 1:
-                    continue  # the list connector was taken from this part
+            if conn == "or" and isinstance(node, tuple) and node[0] == "and" and i != len(evaluated) - 1:
                 raise Ambiguous("comma list part with conflicting inner connector")
         return (conn, [node for _, _, node in kept])
 
@@ -460,34 +491,55 @@ class _Parser:
             else:
                 units[-1].append(it)
         nodes = [self.unit(u) for u in units]
-        # "/" binds tightest (OR), then "or", then "and"
-        # build or-runs separated by "and"
-        # first collapse slashes
-        seq_nodes = [nodes[0]]
-        seq_conns: list[str] = []
-        for c, n in zip(conns, nodes[1:]):
+        # record maximal runs of non-course units as one restriction
+        # ("Entry Level Writing and Composition requirements")
+        run: list = []
+        for i, (u, n) in enumerate(zip(units, nodes)):
+            if n is None and u:
+                if run and i > 0:
+                    run.append(Tok("CONN", conns[i - 1]))
+                run.extend(u)
+            elif run:
+                self.restrictions.append(_text(run))
+                run = []
+        if run:
+            self.restrictions.append(_text(run))
+        grouped = [any(isinstance(it, tuple) for it in u) for u in units]  # bracket / either unit
+        only_or = set(conns) <= {"or", "/"}
+        # "/" binds tightest, then lab pairs ("X and XL"), then "or", then "and"
+        seq: list[tuple[str | None, object, bool]] = [(None, nodes[0], grouped[0])]
+        for c, n, g in zip(conns, nodes[1:], grouped[1:]):
+            prev_c, prev_n, prev_g = seq[-1]
             if c == "/":
-                seq_nodes[-1] = _slash(seq_nodes[-1], n)
-            elif c == "and" and _is_lab_pair(seq_nodes[-1], n):
+                seq[-1] = (prev_c, _slash(prev_n, n, allow_or=only_or), prev_g)
+            elif c == "and" and _is_lab_pair(prev_n, n):
                 # "CSE 15 and CSE 15L" is one unit: "CSE 15 and CSE 15L or CSE 30"
-                seq_nodes[-1] = ("and", [seq_nodes[-1], n])
+                seq[-1] = (prev_c, ("and", [prev_n, n]), prev_g)
             else:
-                seq_conns.append(c)
-                seq_nodes.append(n)
-        # prune non-course atoms, keeping connector bookkeeping
-        pairs = [(None, seq_nodes[0])] + list(zip(seq_conns, seq_nodes[1:]))
-        kept = [(c, n) for c, n in pairs if n is not None]
+                seq.append((c, n, g))
+        # prune non-course atoms
+        kept = [(c, n, g) for c, n, g in seq if n is not None]
         if not kept:
             return None
-        cs = [c for c, _ in kept[1:]]
-        # an "or" connector whose left neighbor was pruned keeps its meaning
-        # only if something remains on both sides; recompute via pairs
+        kept[0] = (None, kept[0][1], kept[0][2])
+        cs = [c for c, _, _ in kept[1:]]
         if "or" in cs and "and" in cs:
             # The prompt's rule reads "A and B or C" as A AND (B OR C), but
             # the catalog uses it both ways ("BIOC 100A and 100B or BIOL 100"
-            # means (100A AND 100B) OR BIOL 100), so any and/or mix without
-            # punctuation is left for a human.
-            raise Ambiguous("and/or mixed without commas")
+            # means (100A AND 100B) OR BIOL 100), so an and/or mix without
+            # punctuation is left for a human -- unless every "and" introduces
+            # a bracketed / either-group ("MATH 21 or AM 10 and either MATH 100
+            # or CSE 101").
+            if not all(g for c, _, g in kept[1:] if c == "and"):
+                raise Ambiguous("and/or mixed without commas")
+            # an "or" after an and-introduced group would be unclear too
+            seen_and = False
+            for c, _, _ in kept[1:]:
+                if c == "and":
+                    seen_and = True
+                elif c == "or" and seen_and:
+                    raise Ambiguous("and/or mixed without commas")
+        kept = [(c, n) for c, n, _ in kept]
         runs: list[list] = [[kept[0][1]]]
         for c, n in kept[1:]:
             if c == "or":
@@ -509,11 +561,18 @@ class _Parser:
             codes = [it for it in items if isinstance(it, Tok) and it.kind == "CODE"]
             subs = [it for it in items if isinstance(it, tuple)]
             words = [it.text for it in items if isinstance(it, Tok) and it.kind == "WORD"]
+        for it in items:
+            if isinstance(it, Tok) and it.kind == "UNKNOWN":
+                raise Ambiguous(f"unknown subject in code-like token '{it.text}'")
         sub_nodes = []
         for kind, inner in subs:
             if kind == "paren" and _paren_is_aside(inner):
                 continue
-            n = self.expr(inner, in_open=(kind == "open"))
+            n = self.expr(inner, in_open=(kind != "paren"))
+            if kind.startswith("kof"):
+                _check_k_of_n_members(inner)
+            if n is not None and kind.startswith("kof"):
+                n = _k_of_n(int(kind[3:]), n)
             if n is not None:
                 sub_nodes.append(n)
         # bare "course 100" references to an unnamed subject
@@ -532,10 +591,7 @@ class _Parser:
             raise Ambiguous("quantified course requirement: " + _text(items)[:80])
         leaves = [("code", c) for c in codes] + sub_nodes
         if not leaves:
-            text = _text(items)
-            if text:
-                self.restrictions.append(text)
-            return None
+            return None  # chain() records the text as a restriction
         if len(leaves) > 1:
             raise Ambiguous("adjacent course references without connector: " + _text(items)[:80])
         return leaves[0]
@@ -557,20 +613,20 @@ def _lead(items: list) -> tuple[str | None, list]:
     return None, items
 
 
-def _flat_tokens(items: list) -> list[Tok]:
+def _flat_tokens(items: list, skip_parens: bool = False) -> list[Tok]:
     out: list[Tok] = []
     for it in items:
         if isinstance(it, Tok):
             out.append(it)
-        else:
-            out.extend(_flat_tokens(it[1]))
+        elif not (skip_parens and it[0] == "paren"):
+            out.extend(_flat_tokens(it[1], skip_parens))
     return out
 
 
 def _text(items: list) -> str:
     parts = []
     for t in _flat_tokens(items):
-        if t.kind in ("WORD", "CODE", "CONN"):
+        if t.kind in ("WORD", "CODE", "CONN", "UNKNOWN"):
             parts.append(t.text)
     s = " ".join(parts).replace(" ,", ",").strip(" ,;")
     s = s.replace("gradequalifier", "<grade> or better").replace("_orhigher", " or higher")
@@ -587,7 +643,8 @@ def _paren_is_aside(inner: list) -> bool:
 
 def _segment_is_dropped(items: list, restrictions: list[str]) -> bool:
     toks = _flat_tokens(items)
-    text = " ".join(t.text for t in toks)
+    # bracketed asides ("(strongly preferred)") don't make the segment optional
+    text = " ".join(t.text for t in _flat_tokens(items, skip_parens=True))
     has_code = any(t.kind == "CODE" for t in toks)
     if _ANTIREQ_RE.search(text):
         return True
@@ -595,12 +652,12 @@ def _segment_is_dropped(items: list, restrictions: list[str]) -> bool:
         comma_parts_with_codes = sum(
             1 for p in _split(items, ",") if any(t.kind == "CODE" for t in _flat_tokens(p))
         )
-        if comma_parts_with_codes > 1 and not re.search(r"recommended\s*$", text, re.I):
-            raise Ambiguous("'recommended' inside a multi-part list")
         if comma_parts_with_codes > 1:
-            # "X, Y, or Z recommended": whole list is recommended only if the
-            # word closes the segment; otherwise unclear.
-            pass
+            # "X, Y, and Z recommended (as preparation)": the whole list is
+            # recommended when the word sits in the last part.
+            last = " ".join(t.text for t in _flat_tokens(_split(items, ",")[-1]))
+            if not _RECOMMEND_RE.search(last):
+                raise Ambiguous("'recommended' inside a multi-part list")
         return True
     return False
 
@@ -625,7 +682,7 @@ def _is_lab_pair(a, b) -> bool:
     return sa == sb and na == nb and lb.endswith("L") and not la.endswith("L")
 
 
-def _slash(a, b):
+def _slash(a, b, allow_or: bool = False):
     """'X / Y': a lecture/lab pair means both; cross-listed codes (same
     number, different subject) mean either; anything else is unclear."""
     if a is None or b is None:
@@ -637,7 +694,44 @@ def _slash(a, b):
         sb, rb = _split_code(b[1].code)
         if sa != sb and ra == rb:
             return ("or", [a, b])
+    if allow_or:
+        return ("or", [a, b])  # "FILM 132C/ FILM 165G or FILM 134A": alternatives
     raise Ambiguous("'/' between courses that are neither a lab pair nor cross-listed")
+
+
+def _check_k_of_n_members(inner: list) -> None:
+    """Every listed member of a k-of-n must be a course; a pruned
+    non-course member ("logic design (...)") would change the count."""
+    flat = _flat_tokens(inner)
+    if any(t.kind == "EG" for t in flat):
+        raise Ambiguous("k-of-n list given by example")
+    members: list[list] = [[]]
+    for it in inner:
+        if isinstance(it, Tok) and it.kind == "CONN" and it.text in (",", "and", "or", ";"):
+            members.append([])
+        else:
+            members[-1].append(it)
+    for m in members:
+        toks = _flat_tokens(m)
+        if not toks:
+            continue
+        if not any(t.kind == "CODE" for t in toks):
+            words = " ".join(t.text for t in toks).lower()
+            if re.fullmatch(r"(?:by\s+)?(?:permission|consent)(?:\s+of)?(?:\s+the)?(?:\s+instructor)?", words):
+                continue
+            raise Ambiguous("k-of-n list with a non-course member: " + words[:60])
+        if any(isinstance(it, tuple) for it in m):
+            raise Ambiguous("k-of-n list with a bracketed member")
+
+
+def _k_of_n(k: int, node):
+    """"two courses from A, B, C": at least k of the listed courses."""
+    leaves = [node] if node[0] == "code" else node[1] if node[0] == "or" else None
+    if leaves is None or not all(l[0] == "code" for l in leaves):
+        raise Ambiguous("k-of-n list with compound members")
+    if k >= len(leaves):
+        return ("and", leaves)
+    return ("kof", k, leaves)
 
 
 def _combine(op: str, a, b):
@@ -652,6 +746,14 @@ def _cnf(node) -> list[list[Tok]]:
     kind = node[0]
     if kind == "code":
         return [[node[1]]]
+    if kind == "kof":
+        # at least k of n  <=>  every (n-k+1)-subset contains one of them
+        k, leaves = node[1], node[2]
+        size = len(leaves) - k + 1
+        combos = list(itertools.combinations([l[1] for l in leaves], size))
+        if len(combos) > _MAX_CNF_CLAUSES:
+            raise Ambiguous("k-of-n expansion too large")
+        return [list(c) for c in combos]
     if kind == "and":
         out: list[list[Tok]] = []
         for ch in node[1]:
@@ -717,7 +819,7 @@ def _finalize(clauses: list[list[Tok]]):
 # --------------------------------------------------------------------------
 
 def _has_code(s: str, subjects: set[str]) -> bool:
-    return any(t.kind == "CODE" for t in _tokenize(s, subjects))
+    return any(t.kind in ("CODE", "UNKNOWN") for t in _tokenize(s, subjects))
 
 
 def _short(s: str, n: int = 200) -> str:
@@ -728,11 +830,11 @@ def _short(s: str, n: int = 200) -> str:
 
 _MID_PREREQ_LABEL_RE = re.compile(r"\bprerequisites?(?:\s*\(s\))?\s*:\s*", re.IGNORECASE)
 _CERTAIN_TRIGGER_RE = re.compile(
-    r"\bor\s+(?:by\s+)?(?:previous|prior)\s+enrollment\s+in|\bor\s+(?:successful\s+)?completion\s+of",
+    r"\bor\s+(?:by\s+)?(?:previous|prior)\s+enrollment\s+in|\bor\s+students\s+previously\s+enrolled\s+in|\bor\s+(?:successful\s+)?completion\s+of",
     re.IGNORECASE,
 )
 _UNDERGRAD_COMPLETION_RE = re.compile(
-    r"\bundergrad\w*\b[^.;]*?\b(?:if\s+they\s+have|who\s+have|that\s+have|having)\s+(?:successfully\s+)?(?:completed|taken|passed)\b",
+    r"\b(?:undergrad\w*|seniors|juniors)\b[^.;]*?\b(?:if\s+they\s+have|who\s+have|that\s+have|having)\s+(?:successfully\s+)?(?:completed|taken|passed)\b",
     re.IGNORECASE,
 )
 _RESTRICTION_ADVISORY_RE = re.compile(r"may\s+enroll|by\s+permission|with\s+permission", re.IGNORECASE)
@@ -784,6 +886,12 @@ def parse(
                 restrictions.append(body)
             continue
         if not has_code:
+            if (
+                (_STRICT_COREQ_SENT_RE.search(sent) or _PREV_OR_CONC_RE.search(sent))
+                and re.search(r"(?:\bin|\bcourses?)\s+\d{1,3}[A-Z]{0,2}\b", sent, re.I)
+                and not _RECOMMEND_RE.search(sent)
+            ):
+                ambiguous(f"subject-less course reference: {_short(sent, 80)!r}")
             restrictions.append(sent)
             continue
         if _ANTIREQ_RE.search(sent):
@@ -816,7 +924,9 @@ def parse(
             if m:  # "restricted to graduate students or previous enrollment in X"
                 restrictions.append(sent[: m.start()])
                 prereq_clauses.append(sent[m.end():])
-            elif _RESTRICTION_ADVISORY_RE.search(sent) and not _COMPLETION_TRIGGER_RE.search(sent):
+            elif (
+                _RESTRICTION_ADVISORY_RE.search(sent) and not _COMPLETION_TRIGGER_RE.search(sent)
+            ) or re.search(r"should\s+(?:enroll|take)\s+in|instead", sent, re.I):
                 restrictions.append(sent)
             else:
                 restrictions.append(sent)

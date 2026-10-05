@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "JWST195A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Devoted to independent research under the guidance of a primary thesis adviser. Students are expected to meet with their thesis adviser every two weeks to report on research progress and receive advice and criticism. \t Enrollment restricted to junior and senior Jewish studies majors. Students submit petition to sponsoring agency.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "195A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": null,
    "code": "JWST195B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Devoted to independent writing under the guidance of the primary and secondary thesis faculty advisers. Completed theses must be a minimum of 40 pages in length. Student are required to meet regular with their faculty advisers and to submit at least two drafts for detailed criticism. Prerequisite(s): Satisfaction of the Entry Level Writing and Composition requirement. Enrollment restricted to junior and senior Jewish studies majors.",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "195B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": null,
    "code": "JWST199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -54,6 +62,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -64,6 +73,8 @@
   {
    "catalog_instructor": null,
    "code": "JWST199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -74,6 +85,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -84,6 +96,8 @@
   {
    "catalog_instructor": null,
    "code": "JWST99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -94,6 +108,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -102,11 +117,10 @@
    "url": "/en/current/general-catalog/courses/jwst-jewish-studies/lower-division/jwst-99"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "JWST"
 }

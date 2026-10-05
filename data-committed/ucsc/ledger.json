@@ -1,4 +1,26 @@
 {
+ "catalog_courses": {
+  "courses": 6172,
+  "edition": "2026-27",
+  "fetched_at": "2026-10-05T23:25:55+00:00",
+  "parser_version": "prereq_parse_v1",
+  "prereq_counts": {
+   "courses": 6172,
+   "from_parser": 3235,
+   "orphan_overrides": 0,
+   "overridden": 54,
+   "parser_ambiguous": 54,
+   "parser_certain": 3235,
+   "stale_overrides": 0,
+   "unresolved": 0,
+   "with_coreqs": 162,
+   "with_prereq_groups": 1712,
+   "with_requirement_text": 3289
+  },
+  "prereq_unresolved": [],
+  "stale_overrides": [],
+  "subjects": 86
+ },
  "editions": {
   "2025-26": {
    "fetched_at": "2026-10-05T23:04:47+00:00",
@@ -998,6 +1020,36 @@
     "fetched_at": "2026-10-05T22:59:46+00:00",
     "final": true,
     "rows": 1461
+   },
+   "2232": {
+    "fetched_at": "2026-10-05T23:11:46+00:00",
+    "final": true,
+    "rows": 1446
+   },
+   "2234": {
+    "fetched_at": "2026-10-05T23:11:46+00:00",
+    "final": true,
+    "rows": 451
+   },
+   "2238": {
+    "fetched_at": "2026-10-05T23:11:46+00:00",
+    "final": true,
+    "rows": 1563
+   },
+   "2240": {
+    "fetched_at": "2026-10-05T23:11:46+00:00",
+    "final": true,
+    "rows": 1465
+   },
+   "2242": {
+    "fetched_at": "2026-10-05T23:11:46+00:00",
+    "final": true,
+    "rows": 1448
+   },
+   "2244": {
+    "fetched_at": "2026-10-05T23:11:46+00:00",
+    "final": true,
+    "rows": 462
    }
   },
   "window_years": 5

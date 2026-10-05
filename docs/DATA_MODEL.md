@@ -1,66 +1,116 @@
-# Data Model
+# Data model
 
-Postgres schema serving the app. Everything data-sourced is scoped by `university_id`; users pick one university. Pipelines write snapshots (see ARCHITECTURE.md); a loader applies a snapshot to these tables transactionally.
+Two layers: the **committed dataset** (`data-committed/ucsc/`, canonical,
+written by hot-path exporters) and **Postgres** (a projection of it loaded by
+`backend/app/loaders/ucsc.py`, plus user tables). Harness files
+(`harnesses/`) are described in `docs/HARNESSES.md`.
 
 ## Conventions
 
-- Course codes are stored canonically: uppercase, no internal space (`CSE12`, `MATH19B`). `display_code` keeps the human form (`CSE 12`).
-- Historical data (offerings from 2004+) references courses **by code string**, not FK — old codes (`CMPS`, `AMS`) may not exist in the current catalog. `course_id` FKs are nullable "resolved against current catalog" links.
-- Structured-but-tree-shaped data (prereq groups, requirement rules, plan contents) is JSONB with a documented shape below; combinator evaluation happens in backend code, not SQL. Flat derived tables (`course_prereq_edges`, `course_availability`) exist where SQL needs to query the graph.
+- Course codes are canonical: uppercase, no space (`CSE12`, `MATH19B`);
+  `display_code` keeps the human form (`CSE 12`).
+- Term codes are pisa STRMs: `2` + YY + season digit (`0` winter, `2` spring,
+  `4` summer, `8` fall). `int(code)` sorts chronologically; Fall belongs to
+  the year it starts (Fall 2026 = `2268`, opening academic year 2026-27).
+- Catalog editions are `YYYY-YY` (`2026-27`).
+- Offerings reference courses **by code string** (old terms use retired
+  codes such as `CMPS`); `course_id` FKs are nullable "resolved against the
+  current catalog" links.
+- Committed JSON uses the canonical dump (`ucsc.ledger.dump`); JSONL files are
+  one object per line, sorted — so git diffs are reviewable.
 
-## Catalog tables
+## Committed dataset (`data-committed/ucsc/`)
 
-**universities** — `id` (slug pk: `ucsc`), `name`, `term_system` (`quarter|semester`), `catalog_year` (e.g. `2026-2027`).
+| Path | Shape |
+|---|---|
+| `ledger.json` | what every source was built from and when — see `docs/REFRESH.md` §2 |
+| `index.json` | counts (courses, subjects, legacy programs) |
+| `courses/<SUBJ>.json` | `{subject, catalog_year, origin, provenance{parser_version, overrides_sha1}, courses: [Course]}` |
+| `offerings/<term>.jsonl` | one pisa section per line: `course_code, section, class_number, title, instructors[] (names, "Last,F."), days_times, location, modality, enrolled, capacity, status` |
+| `soe/<academic-year>.jsonl` | one planned section per line: `course_code, dept, display_code, section, title, instructors[{name, cruzid}], modality_note, term{academic_year, quarter, term_code}` |
+| `editions/<ed>/programs.json` | `[{slug, name, degree, kind, division, department, url, edition, archive_url, source_sha256, skeleton_sha256}]` |
+| `editions/<ed>/sources/<slug>.md` | normalized official page text (format: `pipelines/ucsc/major_requirements/source_text.py`) |
+| `programs/<slug>.json` | legacy generic-JSON harness (approach A), edition 2026-27, frozen |
 
-**terms** — `id` pk, `university_id`, `code` (pisa code, e.g. `2268`), `year`, `season` (`fall|winter|spring|summer`), `sort_key` int (chronological). Unique `(university_id, code)`.
-UCSC term-code math: `2000 + (year-2000)*10 + {0:winter, 2:spring, 4:summer, 8:fall}`; fall codes belong to the academic year starting that fall.
+`Course` (in `courses/<SUBJ>.json`):
 
-**courses** — `id` pk, `university_id`, `code` unique-per-univ, `subject`, `number`, `display_code`, `title`, `description`, `credits` (text: may be a range), `division` (`lower|upper|graduate`), `ge_codes` text[] (deterministic from catalog), `quarters_offered_text` (catalog prose, <1% coverage — availability really comes from offerings), `catalog_instructor` (dept-dependent coverage), `cross_listed` text[] (codes), `formerly` text, `repeatable` bool, `url`, `raw_requirements` text (source prose, kept for audit), `prereq_groups` JSONB, `is_active` bool (still in current catalog).
-
-`prereq_groups` shape (from the POC, LLM-structured, hallucination-guarded):
 ```json
-[["CSE12", "BME160"], ["CSE16"]]   // AND of OR-groups
+{"code": "CSE100", "display_code": "CSE 100", "subject": "CSE", "number": "100",
+ "title": "Logic Design", "credits": "5", "division": "upper",
+ "description": "...", "ge_codes": [], "cross_listed": [], "formerly": null,
+ "repeatable": false, "catalog_instructor": null, "quarters_offered_text": null,
+ "raw_requirements": "Prerequisite(s): CSE 12 ; previous or concurrent enrollment in CSE 100L is required.",
+ "prereq_groups": [["CSE12"], ["CSE100L"]],
+ "concurrent_ok": ["CSE100L"],
+ "coreqs": [],
+ "prereq_source": "parser",
+ "url": "/en/current/general-catalog/courses/...", "extra_fields": {}}
 ```
 
-**course_prereq_edges** — derived at load from `prereq_groups`: `course_id`, `prereq_code`, `prereq_course_id` nullable. Powers post-req ("what does this unlock") queries.
+- `prereq_groups` — CNF: outer list ANDed, inner lists ORed; `[]` = no course
+  prereqs; `null` = undecidable text with no override (shown as "check the
+  catalog"). Produced by `catalog_courses/prereq_parse.py`; "k of n" phrases
+  are expanded exactly into CNF.
+- `concurrent_ok` — codes in `prereq_groups` that may be taken the same
+  quarter ("previous or concurrent enrollment in X").
+- `coreqs` — CNF of strict co-requisites ("concurrent enrollment in X is
+  required"): same quarter or earlier.
+- `prereq_source` — `parser` | `override` (warm-path entry in
+  `prereq_overrides.json`, pinned to the text hash) | `unresolved` | `none`.
+- `division` — from the catalog URL; where a department files courses under
+  numeric segments, from the number (1–99 lower, 100–199 upper, 200+ graduate).
 
-**course_offerings** — one row per section per term: `id`, `university_id`, `term_id`, `course_code`, `course_id` nullable, `section`, `class_number`, `title`, `instructors` JSONB (list of `{name, cruzid?}`; pisa names are `Last,F.M.`, `Staff` = TBD), `days_times`, `location`, `modality`, `enrolled`, `capacity`, `status`, `source` (`pisa|soe`), `is_planned` bool (SOE future schedule = plan, not record).
+## Postgres — catalog tables (loader-owned, read-only at request time)
 
-**course_availability** — derived per course at load: `course_id` pk, `season_counts` JSONB (`{"fall": 12, "winter": 3, ...}` over last N years), `last_offered_term_code`, `next_planned` JSONB (`[{term_code, source, instructors}]` from SOE + future pisa), `predicted_instructors` JSONB (ranked `[{name, score, evidence}]` from recency-weighted history), `computed_at`.
+- **universities** — `id` (`ucsc`), `name`, `term_system`, `catalog_year`.
+- **terms** — `code`, `year`, `season`, `sort_key`; unique `(university_id, code)`.
+- **courses** — the Course fields above (`prereq_groups`, `coreqs` JSONB;
+  `concurrent_ok`, `ge_codes`, `cross_listed` arrays) + `dormant` (no
+  offerings in the committed window). Unique `(university_id, code)`; ids are
+  preserved across loads.
+- **course_prereq_edges** — derived from `prereq_groups`; powers "what does
+  this unlock".
+- **course_offerings** — one row per section per term (`source` `pisa|soe`,
+  `is_planned` for SOE rows).
+- **course_availability** — derived: `season_counts` (last 5 years),
+  `last_offered_term_code`, `next_planned`, `predicted_instructors`.
+- **programs** — one row per **(slug, catalog edition)**: `name` (index
+  anchor text, never the slug), `degree` (`BA|BS|BM|minor`), `kind`,
+  `division`, `department`, `url` (edition-pinned for archived editions),
+  `catalog_year` (edition id), `archive_url`, `source_md`, `source_sha256`,
+  `requirements` (legacy generic JSON, 2026-27 only), `verification`.
+  Unique `(university_id, slug, catalog_year)`.
+- **pipeline_runs** — one row per loaded source with a provenance manifest.
 
-**programs** — `id`, `university_id`, `name` (from index anchor text — never from slug; slugs have CMS artifacts like `copy-of-physics-bs`), `degree` (`BA|BS|BM|minor`), `kind` (`major|minor`), `division`, `department`, `slug`, `url`, `catalog_year`, `requirements` JSONB (below), `verification` (`verified|unverified|failed`), `verified_at`, `verification_notes`.
+## Postgres — user tables
 
-`requirements` shape (mirrors docs/universities/ucsc/source-major-requirements.md taxonomy):
+- **users** — `id` uuid, `email` unique, `password_hash` (argon2id), `created_at`.
+- **auth_tokens** — sha256 of opaque bearer tokens, expiry, last use.
+- **plans** — `id`, `user_id`, `university_id`, `name`, `program_ids` int[]
+  (program rows, so they imply an edition), `content` JSONB, timestamps. Max 20
+  per user. Which plan is active is client-side state only.
+
+Plan `content` is exactly the per-plan localStorage shape, so anonymous plans
+import losslessly:
+
 ```json
-{ "sections": [
-  { "kind": "lower_div|upper_div|electives|dc|comprehensive|qualification|screening|concentration|other",
-    "title": "...", "concentration": null,
-    "rules": [
-      { "op": "all_of|one_of|n_of|options|category_count|range|distribution|external",
-        "n": 4,
-        "courses": ["CSE12", "..."],
-        "branches": [["PHYS5A","PHYS5M"], ["ECE9"]],
-        "constraints": [{"type": "min_from|max_from|pair_substitution|exclude", "...": "..."}],
-        "source": {"heading": "...", "prose": "..."},
-        "notes": ["CSE 195 may be used either as an elective or DC, not both"] }
-    ] }
-]}
+{"completed": ["CSE12", "MATH19A"],
+ "terms": [{"term_code": "2268", "courses": ["CSE101", "CSE120"]}],
+ "catalog_year": "2026-27",
+ "choices":  {"literature-ba": {"concentration": "Creative Writing"}},
+ "attested": {"music-bm": ["juries"]},
+ "grades":   {"MATH19A": "B+"}}
 ```
-Deterministic layer owns course *membership* (from `sc-*` classed tables); the small LLM only decides combinators/counts from heading+prose; both stay auditable via `source`.
 
-## User tables
+`catalog_year` null = newest edition; all `program_ids` must belong to the
+plan's edition (422 otherwise). `choices` / `attested` are keyed by program
+slug and interpreted by that program's harness.
 
-**users** — `id` uuid pk, `email` unique, `password_hash` (argon2id), `created_at`. Deleting a user cascades to tokens and plans.
+Anonymous storage: `localStorage["prereqs.plans.v2"] = {"plans": [{"id",
+"planName", "programIds", "serverPlanId", "rev", "content"}], "activeId",
+"deleted": [...]}` — `rev` orders cross-tab merges, `deleted` tombstones
+(capped at 100) stop deleted plans resurrecting. The legacy single-plan key
+`prereqs.plan` is migrated once on load.
 
-**auth_tokens** — `id`, `user_id` FK cascade, `token_hash` (sha256 of the opaque bearer token; plaintext never stored), `created_at`, `expires_at`, `last_used_at`. Isolated in `app/auth/` for the later Clerk swap.
-
-**plans** — `id`, `user_id` FK cascade, `university_id`, `name`, `program_ids` int[] (chosen major(s)/minor(s)), `content` JSONB, `created_at`, `updated_at`. Users hold up to 20 plans (`MAX_PLANS` in `app/api/plans.py`); which plan is *active* is client-side state, never stored server-side. `content` is exactly the per-plan localStorage shape so anonymous plans import losslessly:
-```json
-{ "completed": ["CSE12", "MATH19A"],
-  "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE120"]}] }
-```
-Anonymously, all plans live under the localStorage key `prereqs.plans.v2` as `{"plans": [{"id": "<client-uuid>", "planName": "...", "programIds": [], "serverPlanId": null, "rev": 0, "content": {...}}], "activeId": "<client-uuid>", "deleted": []}`; `serverPlanId` links a local plan to its server row while signed in, `rev` is a monotonic per-plan revision counter (bumped on every local mutation) used by the cross-tab storage merge so one tab's whole-list write cannot revert a plan another tab just edited, and `deleted` holds tombstoned client ids (capped at 100) so a delete in one tab sticks in the others instead of being resurrected by the merge's union. The legacy single-plan key `prereqs.plan` is migrated into the first v2 plan on first load and then removed. Validation (missing prereqs, not-offered warnings, requirement/GE progress) is computed by the API on read, never stored.
-
-## Provenance
-
-**pipeline_runs** — `id`, `university_id`, `source` (`catalog_courses|pisa_offerings|soe_schedule|major_requirements`), `snapshot_path`, `status` (`succeeded|failed|aborted`), `started_at`, `finished_at`, `manifest` JSONB (git sha, model, prompt version, counts, guard results), `loaded_at` (null until applied to the DB; rollback = re-run the loader on an older snapshot's run row).
+Validation results (prereq issues, availability warnings, GE and program
+progress) are computed on request, never stored.

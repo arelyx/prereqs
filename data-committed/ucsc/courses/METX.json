@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "Jacqueline Kimmey, Michael Patnode, Karen Ottemann",
    "code": "METX100",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the biology of microorganisms (bacteria, archaea, viruses, fungi, and unicellular eukaryotes), with an emphasis on bacteria. Topics include microbial cell structure and function, physiology, metabolism, genetics, and diversity. Also considers the role of microbes in human health, the environment, biotechnology, and food production. Students cannot receive credit for both this course and METX 119 .",
@@ -19,6 +21,7 @@
      "ESCI30"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): BIOL 20A or ESCI 30 .",
    "repeatable": false,
@@ -29,6 +32,10 @@
   {
    "catalog_instructor": "The Staff, Chad Saltikov",
    "code": "METX100L",
+   "concurrent_ok": [
+    "METX100"
+   ],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to the principles and practices of laboratory microbiology, with a substantial presentation of optical microscopy. (Formerly METX 119L.)",
@@ -48,6 +55,7 @@
      "METX100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: Satisfaction of Entry Level Writing and Composition requirements; and one course from the following: BIOL 20L , or BIOL 101L , or BIOL 102L ; and previous or concurrent enrollment in METX 100 . Students cannot enroll in METX 100L after receiving credit with a 'C' or better in BIOL 100L , BIOL 103L , BIOL 105L , BIOL 106L , BIOL 108L , BIOL 109L , BIOL 115L , BIOL 120L , BIOL 121L , BIOL 129L , and BIOL 186L .",
    "repeatable": false,
@@ -58,6 +66,8 @@
   {
    "catalog_instructor": "The Staff, Chad Saltikov",
    "code": "METX101",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents in-depth important principles of environmental toxicology related to the introduction, transport, and fate of toxicants in aquatic and terrestrial environments, including environmental chemistry and biogeochemical cycles as well as exposure pathways and uptake by organisms. Additional emphasis placed on susceptibility and effects of toxicants across organ systems, toxicokinetic and biomarkers of exposure, and effects at the ecosystem level. Students cannot receive credit for this course and METX 201 .",
@@ -68,6 +78,7 @@
    "ge_codes": [],
    "number": "101",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -78,6 +89,8 @@
   {
    "catalog_instructor": "Audrie Lin",
    "code": "METX108",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The health of populations is shaped by an intricate web of political, environmental, economic, and social determinants. To address complex challenges in global and community health, it is crucial to have a multifaceted research strategy that transcends borders and disciplines. This course covers the critical steps of global and community health research, from formulating research questions and selecting study designs to planning implementation and data collection. Students develop a research question from a global and community health topic that they are eager to explore. This course is open to upper-division undergraduate and graduate students and has no prerequisites. Lower-division undergraduate students may enroll with permission of the instructor.",
@@ -90,6 +103,7 @@
    ],
    "number": "108",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -100,6 +114,8 @@
   {
    "catalog_instructor": "Victoria Stone",
    "code": "METX112",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the field of immunology, emphasizing innate and adaptive immune responses to microbes. Covers molecular mechanisms used by microbes to evade or manipulate immune defenses. Provides conceptual understanding of the experimental methods used in the fields of microbial pathogenesis and immunology.",
@@ -116,6 +132,7 @@
      "METX100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): METX 100 .",
    "repeatable": false,
@@ -126,6 +143,8 @@
   {
    "catalog_instructor": "Raquel Chamorro-Garcia",
    "code": "METX115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses challenges related to environmental health, their impact on the health of biological structures, and humans as active elements in the process of environmental degradation, and as passive elements as well. Students discuss events as case studies of environmental health that contributed to environmental protection, and disease control and prevention. Course involves collaborative endeavor in which students develop a group assignment throughout the 10 weeks of the course that is evaluated at the end of the course.",
@@ -144,6 +163,7 @@
      "BIOL89"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): BIOL 20A or ENVS 23 or BIOL 89.",
    "repeatable": false,
@@ -154,6 +174,8 @@
   {
    "catalog_instructor": "Karen Ottemann, Victoria Stone",
    "code": "METX119",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Cell and molecular biology of bacteria and their viruses, including applications in medicine, public health, agriculture, and biotechnology. Students cannot receive credit for both this course and METX 100 .",
@@ -171,6 +193,7 @@
      "CHEM103"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): BIOC 100A or BIOL 101 or BIOL 100 or CHEM 103.",
    "repeatable": false,
@@ -181,6 +204,8 @@
   {
    "catalog_instructor": "Terra Haddad",
    "code": "METX125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Introduces research safety principles and practices. Instructors and guest experts discuss research hazards and control measures. Students explore the safe use of research methods and materials via hands-on and outside exercises. Issues include compliance with hazardous waste and other environmental safety regulations.",
@@ -191,6 +216,7 @@
    "ge_codes": [],
    "number": "125",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -201,6 +227,8 @@
   {
    "catalog_instructor": "Christopher Lopez",
    "code": "METX131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Broad introduction to the microbiology of food fermentation, preservation, and spoilage. Students explore the history, science, and culture (pun intended) of the bacteria and fungi that are used to influence the quality, sensory perception, and health benefits of foods as well as the microbes that spoil or contaminate food.",
@@ -215,6 +243,7 @@
      "BIOL20A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Summer",
    "raw_requirements": "Prerequisites: BIOL 20A .",
    "repeatable": false,
@@ -225,6 +254,8 @@
   {
    "catalog_instructor": "Karen Ottemann",
    "code": "METX133",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the biology, experimental characterization, and diseases caused by important microbial pathogens, including bacteria, viruses, fungi, and parasites. Introduces basic microbiological characteristics, and then discusses diseases by organ systems, including pathogenesis, immunity, host response, transmission, treatments, and prevention. Course includes a hands-on laboratory component.",
@@ -241,6 +272,7 @@
      "BIOL20A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): BIOL 20A .",
    "repeatable": false,
@@ -251,6 +283,12 @@
   {
    "catalog_instructor": "Manel Camps, The Staff",
    "code": "METX135",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "METX135L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "A rigorous systems-based course in anatomy. Lectures provide an overview of functional anatomy at all levels from the systems to the tissues. Provides a mechanistic understanding of the structures of the body as a foundation for human-health oriented studies.",
@@ -268,6 +306,7 @@
      "BIOE20B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B . Concurrent enrollment in METX 135L is required.",
    "repeatable": false,
@@ -278,6 +317,8 @@
   {
    "catalog_instructor": "Manel Camps, The Staff",
    "code": "METX135C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Dissection of a human cadaver under the direction of an anatomy instructor.",
@@ -290,12 +331,14 @@
    "prereq_groups": [
     [
      "METX135",
-     "METX135L"
+     "ANTH102A"
     ],
     [
+     "METX135L",
      "ANTH102A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): METX 135 and METX 135L , or ANTH 102A .",
    "repeatable": true,
@@ -306,6 +349,12 @@
   {
    "catalog_instructor": "Manel Camps, The Staff",
    "code": "METX135L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "METX135"
+    ]
+   ],
    "credits": "3",
    "cross_listed": [],
    "description": "Complements lecture course 135. Emphasizes nomenclature and recognition; includes the embryology and histology of bones, muscles, and internal organs, and the interactions between the systems of the body.",
@@ -323,6 +372,7 @@
      "BIOE20B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): BIOL 20A and BIOE 20B . Concurrent enrollment in METX 135 is required.",
    "repeatable": false,
@@ -333,6 +383,8 @@
   {
    "catalog_instructor": "Fitnat Yildiz",
    "code": "METX140",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the field of molecular biology and microbial genetics. Covers the following topics:  molecular mechanisms of DNA replication, transcription, translation, regulatory systems controlling replication, transcription, and translation; basic genetic principles with an emphasis on bacterial genetics; molecular biology and microbial genetics approaches used to understand the molecular mechanisms of interaction of microorganisms with their surroundings and other organisms; and experimental methods employing molecular biology and molecular genetics and biotechnology applications which have arisen from discoveries of bacterial mechanisms.",
@@ -348,6 +400,7 @@
      "BIOC100A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): BIOL 100 or BIOC 100A .",
    "repeatable": false,
@@ -358,6 +411,8 @@
   {
    "catalog_instructor": "Manel Camps",
    "code": "METX141L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Involves students in a research project that combines advanced molecular methods with classical microbiological ones to investigate a topic of interest in the field of microbiology. Students learn to formulate hypotheses, identify and follow protocols, and interpret results. This course requires familiarity with basic microbiological concepts and techniques. Students are billed a materials fee of $200. (Formerly METX 141.)",
@@ -378,6 +433,7 @@
      "METX119L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): METX 100 or METX 119 or METX 140 , and METX 100L or METX 119L. Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -388,6 +444,8 @@
   {
    "catalog_instructor": "Chad Saltikov",
    "code": "METX150",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys both fundamental and applied topics relevant to understanding how microbes interact with their environments. The goal of the course is to gain a molecular, biological, and ecological understanding of microbial processes and methods relating to microbe-environment interactions. Although not required, completion of METX 100 is recommended to ensure success in this course.",
@@ -404,6 +462,7 @@
      "BIOL20A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): BIOL 20A .",
    "repeatable": false,
@@ -414,6 +473,8 @@
   {
    "catalog_instructor": "Chad Saltikov",
    "code": "METX150L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An experiential field/laboratory microbiology course that explores the boundaries of life inhabiting extreme environments, for example, hot springs, hypersaline and alkaline soda lakes, deserts, and volcanic ecosystems. The course includes a multi-day field trip for sample collection. Extensive laboratory work focused on culturing and isolating extremophilic microbes and characterizing their genomes and metagenomes. Students learn professional scientific communication skills such as scientific writing and presentations. It is recommended that students complete METX 100 and/or METX 150 prior to enrollment. Prerequisite(s): BIOL 20A . Enrollment is by permission of the instructor.",
@@ -424,6 +485,7 @@
    "ge_codes": [],
    "number": "150L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Summer",
    "raw_requirements": null,
    "repeatable": false,
@@ -434,6 +496,8 @@
   {
    "catalog_instructor": null,
    "code": "METX195",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An individually supervised course, with emphasis on independent research culminating in a senior thesis.",
@@ -444,6 +508,7 @@
    "ge_codes": [],
    "number": "195",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -454,6 +519,8 @@
   {
    "catalog_instructor": null,
    "code": "METX195F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "An individually supervised course with emphasis on independent research culminating in a senior thesis.",
@@ -464,6 +531,7 @@
    "ge_codes": [],
    "number": "195F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -474,6 +542,8 @@
   {
    "catalog_instructor": null,
    "code": "METX198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides for individual programs of study (a) by means other than the usual supervision in person or (b) when the student is doing all or most of the coursework off campus.  With permission of the department, two or three courses may be taken concurrently, or the course repeated for credit.",
@@ -484,6 +554,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -494,6 +565,8 @@
   {
    "catalog_instructor": null,
    "code": "METX198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides for individual programs of study (a) by means other than the usual supervision in person or (b) when the student is doing all or most of the coursework off campus. With permission of the department, two or three courses may be taken concurrently, or the course repeated for credit.",
@@ -504,6 +577,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -514,6 +588,8 @@
   {
    "catalog_instructor": null,
    "code": "METX199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Reading, discussion, written reports, and laboratory research on selected topics.",
@@ -524,6 +600,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -534,6 +611,8 @@
   {
    "catalog_instructor": null,
    "code": "METX199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Reading, discussion, written reports, and laboratory research on selected topics.",
@@ -544,6 +623,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -554,6 +634,8 @@
   {
    "catalog_instructor": "Don Smith",
    "code": "METX200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to interdisciplinary, case-based approaches to problem-solving. Demonstrates how important, current problems in environmental and human health have been addressed and solved. Presents assigned problems that integrate the different organization levels (environmental, molecular/cellular, organismal/public health) inherent to environmental and human health. Students work in collaborative teams to analyze each problem and create a proposal for a research plan/solution. This course must be taken for a letter grade.",
@@ -564,6 +646,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to graduate students. Advanced undergraduates may enroll by permission of the instructor.",
    "repeatable": false,
@@ -574,6 +657,8 @@
   {
    "catalog_instructor": "Chad Saltikov",
    "code": "METX200B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents a framework for scientific writing related to developing a thesis research proposal in a topical area of microbiology and/or environmental toxicology.",
@@ -584,6 +669,7 @@
    "ge_codes": [],
    "number": "200B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -594,6 +680,8 @@
   {
    "catalog_instructor": "Chad Saltikov",
    "code": "METX201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents in-depth important principles of environmental toxicology related to the introduction, transport, and fate of toxicants in aquatic and terrestrial environments including environmental chemistry and biogeochemical cycles as well as exposure pathways and uptake by organisms. Additional emphasis will be placed on the susceptibility and effects of toxicants across organ systems, toxicokinetics and biomarkers of exposure, and effects at the ecosystem level. Students cannot receive credit for this course and METX 101.",
@@ -604,6 +692,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduate science majors may enroll with permission of instructor.",
    "repeatable": false,
@@ -614,6 +703,8 @@
   {
    "catalog_instructor": "David Smith, Chad Saltikov, Raquel Chamorro-Garcia",
    "code": "METX202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Emphasizes biochemical, cellular, and organ system basis of intoxication, including dose-response relationships, biotransformation of toxicants, biochemical mechanisms underlying toxicity, factors influencing toxic action, and biomarkers of exposure. Emphasizes effects of various classes of toxins, including heavy metals and persistent synthetic organics, with a focus on susceptible biochemical/cellular processes of the central nervous, immune, hepatic, and renal target organ systems. Students cannot receive credit for this course and METX 102 or BIOL 122. (Formerly Cell and Molecular Toxicology.)",
@@ -624,6 +715,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -634,6 +726,8 @@
   {
    "catalog_instructor": null,
    "code": "METX203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents in-depth cellular and molecular principles of environmental toxicology. These include modes of action and cellular and molecular targets of toxicants, as well as mechanisms of cellular and molecular responses to toxicants and their detoxification. State-of-the-art biological methodologies and approaches to identify and study cellular targets of toxicants. Designed to provide students with a broad and deep understanding of the biological aspects of toxicology at both cellular and molecular levels, and the skills to approach emerging challenges in the field.",
@@ -644,6 +738,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with instructor's permission.",
    "repeatable": false,
@@ -654,6 +749,8 @@
   {
    "catalog_instructor": null,
    "code": "METX205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides fundamental training of graduate students in the scientific method; experimental design; ethics in science; grant proposal and scientific writing; and data presentation and scientific speaking. Students are evaluated on class participation, performance, and a written NIH/NSF-style research proposal. (Formerly Scientific Skills, Ethics, and Writing.)",
@@ -664,6 +761,7 @@
    "ge_codes": [],
    "number": "205",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to graduate students. Advanced undergraduates may enroll with permission of the instructor.",
    "repeatable": false,
@@ -674,6 +772,8 @@
   {
    "catalog_instructor": "Manel Camps, Karen Ottemann, Chad Saltikov, Victoria Stone",
    "code": "METX206A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on aspects of bacterial molecular biology. Covers four main areas: (1) metabolism-catabolism, anabolism, building-block precursors; (2) transcription/signal transduction; (3) replication/plasmid biology/division; (4) translation/protein processing/secretion/cell structure. Strong focus on experimental techniques and approaches used in molecular biology, and on model bacteria, such as Escherichia coli and Bacillus subtilis .",
@@ -684,6 +784,7 @@
    "ge_codes": [],
    "number": "206A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students. Advanced undergraduates may enroll with permission of instructor.",
    "repeatable": false,
@@ -694,6 +795,8 @@
   {
    "catalog_instructor": "Fitnat Yildiz, Victoria Auerbuch Stone, Jaqueline Kimmey, Michael Patnode",
    "code": "METX210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the molecular basis of bacterial pathogenesis with specific emphasis on gene expression, regulation, and ecology and evolution.",
@@ -704,6 +807,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.Advanced undergraduates with extensive background in microbiology and biology may enroll with permission of instructor.",
    "repeatable": false,
@@ -714,6 +818,8 @@
   {
    "catalog_instructor": "Fitnat Yildiz, Manel Camps",
    "code": "METX215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Critical review of scientific literature covering genetic and physiological mechanisms conferring resistance to antibiotics and their spread in the population. Format based on structured discussion of selected topics and original research proposal.",
@@ -729,6 +835,7 @@
      "METX119"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): METX 206A or METX 119 , or by permission of the instructor. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -739,6 +846,8 @@
   {
    "catalog_instructor": "Donald Smith, Manel Camps, Victoria Stone",
    "code": "METX238",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an overview of the mammalian innate immune response and the role of inflammation in disease. Also, presents how both environmental stressors and microbial pathogens impact inflammation. (Formerly Pathogenesis: Molecular Mechanisms of Disease.)",
@@ -749,6 +858,7 @@
    "ge_codes": [],
    "number": "238",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -759,6 +869,8 @@
   {
    "catalog_instructor": "Karen Ottemann",
    "code": "METX240",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on several aspects of prokaryotic molecular biology. Covers transcriptional regulation, translational regulation, DNA replication and segregation, protein secretion, transport of small molecules, control of metabolism, stress response, bacterial differentiation, signal transduction, biofilm formation, and motility. Strong focus on experimental techniques and approaches used in prokaryotic molecular biology. Focus on model bacteria such as Escherichia coli and Bacillus subtilis. Students cannot receive credit for this course and METX 140.",
@@ -769,6 +881,7 @@
    "ge_codes": [],
    "number": "240",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -779,6 +892,8 @@
   {
    "catalog_instructor": "Karen Ottemann, Don Smith",
    "code": "METX245A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces multiple forms of scientific presentation and communication to graduate students. Students learn to craft and deliver multiple types of written and visual communications, including formal and informal modes, on a topic developed as part of the class.",
@@ -793,6 +908,7 @@
      "METX200"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): METX 200 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -803,6 +919,8 @@
   {
    "catalog_instructor": "Karen Ottemann, Don Smith",
    "code": "METX245B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Continuation of METX 245A . Students develop and refine a capstone in-depth report in a written form and as an oral presentation.",
@@ -817,6 +935,7 @@
      "METX245A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): METX 245A . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -827,6 +946,8 @@
   {
    "catalog_instructor": "Chad Saltikov",
    "code": "METX250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "How microbes interact with their environments. Topics include anaerobic metabolism; biotransformation of toxic metals and organic pollutants; geomicrobiology; life in extreme environments; water quality. Advanced undergraduates with extensive background in microbiology and biology may enroll with permission of instructor.",
@@ -837,6 +958,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -847,6 +969,8 @@
   {
    "catalog_instructor": "Audrie Lin",
    "code": "METX281A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Required for all members of the Lin Lab and is open to undergraduate (by permission) and graduate students. Course meets once a week for a research seminar, journal club, and/or discussion. Each week, a member of the Lin Lab will present their current research project and other lab members will provide feedback and suggestions. Students may opt to present a journal club, a presentation on a published scientific article, in lieu of a presentation on their research project. (Formerly offered as Topics in Environmental Toxicology.)",
@@ -857,6 +981,7 @@
    "ge_codes": [],
    "number": "281A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students; qualified upper-division science majors may enroll with instructor's permission.",
    "repeatable": true,
@@ -867,6 +992,8 @@
   {
    "catalog_instructor": "Chad Saltikov",
    "code": "METX281C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Seminar and discussion focusing on mechanism of microbial transformation of metals. Participants present results from their research projects in a seminar format. Relevant journal articles presented and discussed.",
@@ -877,6 +1004,7 @@
    "ge_codes": [],
    "number": "281C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with instructor's permission.",
    "repeatable": false,
@@ -887,6 +1015,8 @@
   {
    "catalog_instructor": "Jacqueline Kimmey",
    "code": "METX281J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Research seminar focusing on the mechanisms underlying host resistance or susceptibility to infectious diseases, and virulence strategies utilized by bacterial pathogens. Participants are required to present results from their own research and relevant journal articles.",
@@ -897,6 +1027,7 @@
    "ge_codes": [],
    "number": "281J",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduate students may enroll with instructor’s permission.",
    "repeatable": true,
@@ -907,6 +1038,8 @@
   {
    "catalog_instructor": "Manel Camps",
    "code": "METX281M",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Seminar and discussion on the mechanisms of toxicity in DNA alkylating agents. Participants present results from their research, and relevant journal articles are discussed.",
@@ -917,6 +1050,7 @@
    "ge_codes": [],
    "number": "281M",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students. Undergraduates may enroll with instructor's permission.",
    "repeatable": true,
@@ -927,6 +1061,8 @@
   {
    "catalog_instructor": "Karen Ottemann",
    "code": "METX281O",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Intensive seminar focusing on mechanisms of bacterial pathogenesis of the ulcer-causing bacterium Helicobacter pylori. Participants are required to present results from their own research and relevant journal articles.",
@@ -937,6 +1073,7 @@
    "ge_codes": [],
    "number": "281O",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
    "repeatable": true,
@@ -947,6 +1084,8 @@
   {
    "catalog_instructor": "Michael Patnode",
    "code": "METX281P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Research seminar focusing on how beneficial and harmful bacterial species living in the human intestine compete with one another for nutrients in food, and how our immune systems influence the outcomes of these competitions. Emphasis is placed on the evolution of relationships between organisms. Discussion will include genetic, biochemical, bioinformatic, and immunological methods for advancing knowledge about the impacts of microbes on host health. Participants are required to present results from their own research, analyze current literature, and develop future aims for their studies. All lab members of the Patnode Lab are required to take this course.",
@@ -957,6 +1096,7 @@
    "ge_codes": [],
    "number": "281P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduate students may enroll with instructor’s permission.",
    "repeatable": true,
@@ -967,6 +1107,8 @@
   {
    "catalog_instructor": "Raquel Chamorro-Garcia",
    "code": "METX281R",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Intensive research seminar focusing on the effects of exposure to environmental agents and multigenerational epigenetic inheritance of disease. Participants are required to present results from their own research and relevant journal articles.",
@@ -977,6 +1119,7 @@
    "ge_codes": [],
    "number": "281R",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduate students may enroll with instructor’s permission.",
    "repeatable": true,
@@ -987,6 +1130,8 @@
   {
    "catalog_instructor": "Donald Smith",
    "code": "METX281S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Intensive research seminar on the concepts, theory, and techniques in deriving physiologically based pharmacokinetic models of toxin exposure, metabolism, and efficacy of therapeutic treatment in mammalian models of human metal toxicity.",
@@ -997,6 +1142,7 @@
    "ge_codes": [],
    "number": "281S",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with permission of instructor.",
    "repeatable": true,
@@ -1007,6 +1153,8 @@
   {
    "catalog_instructor": "Victoria Stone",
    "code": "METX281V",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Focuses on the interplay between the human gut bacterial pathogen Yersinia pseudotuberculosis and the innate immune system of the host. Participants are required to present the goals, results, and conclusions from their own research. Participation in the general discussion during others' presentations is also required.",
@@ -1017,6 +1165,7 @@
    "ge_codes": [],
    "number": "281V",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduates performing research under the supervision of the instructor may enroll with instructor's permission.",
    "repeatable": true,
@@ -1027,6 +1176,8 @@
   {
    "catalog_instructor": "Fitnat Yildiz",
    "code": "METX281Y",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Intensive seminar series focusing on the most current work on genes and the processes that regulate biofilm development dynamics as well as on the recent developments on visualization of biofilms. Presentation and discussion based.",
@@ -1037,6 +1188,7 @@
    "ge_codes": [],
    "number": "281Y",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students. Qualified undergraduate students may enroll with instructor's permission.",
    "repeatable": true,
@@ -1047,6 +1199,8 @@
   {
    "catalog_instructor": "Karen Ottemann",
    "code": "METX282",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Graduate level seminar focusing on the mechanisms by which bacterial pathogens cause disease. Specific topics include basic concepts of virulence and virulence factors, virulence factor regulation, toxins, and interactions of pathogens with mammalian cells and organs. Discussions focus on several key pathogens, including Helicobacter pylori, Vibrio cholerae, Salmonella typhimuruim, and Listeria monocytogenes.",
@@ -1057,6 +1211,7 @@
    "ge_codes": [],
    "number": "282",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1067,6 +1222,8 @@
   {
    "catalog_instructor": null,
    "code": "METX290",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Special topics offered from time to time by faculty, visiting professors, or staff members.",
@@ -1077,6 +1234,7 @@
    "ge_codes": [],
    "number": "290",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with instructor's permission.",
    "repeatable": true,
@@ -1087,6 +1245,8 @@
   {
    "catalog_instructor": null,
    "code": "METX290A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Approaches different techniques of biological monitoring and the exposure and effect of biomarkers related to occupational and environmental exposure to chemicals. Available methods for risk assessment and identification of protective exposure limits also considered.",
@@ -1097,6 +1257,7 @@
    "ge_codes": [],
    "number": "290A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1107,6 +1268,8 @@
   {
    "catalog_instructor": null,
    "code": "METX292",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Weekly seminars by academic and research faculty on their areas of special interest. Students write weekly abstracts on articles covered by the seminars. This course can be taken for Satisfactory/Unsatisfactory credit only.",
@@ -1117,6 +1280,7 @@
    "ge_codes": [],
    "number": "292",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1127,6 +1291,8 @@
   {
    "catalog_instructor": null,
    "code": "METX297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Independent study for graduate students who have not yet settled on a research area for the thesis. Students submit petition to sponsoring agency.",
@@ -1137,6 +1303,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1147,6 +1314,8 @@
   {
    "catalog_instructor": null,
    "code": "METX297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Independent study for graduate students who have not yet settled on a research area for the thesis. Students submit petition to sponsoring agency.",
@@ -1157,6 +1326,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1167,6 +1337,8 @@
   {
    "catalog_instructor": null,
    "code": "METX297C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Independent study for graduate students who have not yet settled on a research area for the thesis. Students submit petition to sponsoring agency.",
@@ -1177,6 +1349,7 @@
    "ge_codes": [],
    "number": "297C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1187,6 +1360,8 @@
   {
    "catalog_instructor": null,
    "code": "METX299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1197,6 +1372,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1207,6 +1383,8 @@
   {
    "catalog_instructor": null,
    "code": "METX299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1217,6 +1395,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1227,6 +1406,8 @@
   {
    "catalog_instructor": null,
    "code": "METX299C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1237,6 +1418,7 @@
    "ge_codes": [],
    "number": "299C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1247,6 +1429,8 @@
   {
    "catalog_instructor": null,
    "code": "METX299Z",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1257,6 +1441,7 @@
    "ge_codes": [],
    "number": "299Z",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -1267,6 +1452,8 @@
   {
    "catalog_instructor": null,
    "code": "METX41",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to physiological processes governing cells and organs and covers mechanisms of physiological regulation and how their malfunction leads to disease. This course is designed to directly contribute to achieving the program learning outcomes for the B.S. in Global and Community Health and is specifically required for the Public and Community Health concentration. In addition, this course provides the foundation for a number of upper-division classes related to health including: BIOL130; METX 115 ; METX 135 / METX 135L ; METX 138; BIOL 117 ; METX 102. Prerequisites: METX 41 has no prerequisite but taking BIOL 20A is  strongly recommended.",
@@ -1283,6 +1470,7 @@
      "BIOL20A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): BIOL 20A .",
    "repeatable": false,
@@ -1293,6 +1481,8 @@
   {
    "catalog_instructor": null,
    "code": "METX80E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to the sources, cycling, and impacts of toxicants in aquatic systems, including acid rain, ground water, fresh water rivers and lakes, estuaries, and the ocean.  Emphasis is on the properties of toxic chemicals that influence their biogeochemical cycles and factors that influence their toxicity to aquatic organisms and humans.",
@@ -1305,6 +1495,7 @@
    ],
    "number": "80E",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -1313,11 +1504,10 @@
    "url": "/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/lower-division/metx-80e"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "METX"
 }

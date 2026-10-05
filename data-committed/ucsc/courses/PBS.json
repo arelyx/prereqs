@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "PBS101",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Supports and prepares learning assistants (LAs) for success in active classrooms. Helps LAs integrate learning theory and effective practices to facilitate thinking and learning when students work in small groups on conceptual problems. Prerequisite(s): Successful completion of the course or equivalent in which the student will serve as an LA. Concurrent participation as an LA for a University STEM course is required. Enrollment is by application via the online form and a follow-up interview for selected applicants",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "101",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": null,
    "code": "PBS102A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "1",
    "cross_listed": [],
    "description": "Advanced learning assistants (LAs) continue to explore learning theory and practical strategies for engaging students in thinking and learning.  Prerequisite(s): PBS 101 . Enrollment is by application and by permission of instructor and is restricted to sophomores, juniors, and seniors.",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "102A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": null,
    "code": "PBS102B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Advanced learning assistants (LAs) explore learning theory and practical strategies for engaging students in thinking and learning. Returning LAs in this course take on an advanced project involving one or more of the following: mentoring of new LAs, data collecting, research into teaching/learning, and/or the development of learning activities. Prerequisite(s): PBS 101 . Enrollment is by permission following application and is restricted to sophomores, juniors, and seniors.",
@@ -54,6 +62,7 @@
    "ge_codes": [],
    "number": "102B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -64,6 +73,8 @@
   {
    "catalog_instructor": null,
    "code": "PBS182",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students participate in training and development to co-facilitate collaborative learning in ACE active learning sessions and final exam review sessions. Students are role models for students pursuing science- and math-intensive majors. Prerequisite(s): Prior participation in ACE; good academic standing; no non-passing grades in prior quarter. Enrollment is restricted to sophomores, juniors, and seniors.",
@@ -76,6 +87,7 @@
    ],
    "number": "182",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": true,
@@ -86,6 +98,8 @@
   {
    "catalog_instructor": "Pedro Morales-Almazan",
    "code": "PBS198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Provides research experiences in STEM disciplines. Enrollment in the course requires students to be selected to the URST program or similar from PBSci. The course provides space for students to conduct research in STEM following a research proposal.  Course is offered for Pass/No pass grading only. Enrollment is by permission of the instructor. Students must be selected to URST (Undergraduate Research in Science and Technology Award) or similar. Once these conditions are met, students should obtain final permission from the instructor.",
@@ -96,6 +110,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Summer",
    "raw_requirements": null,
    "repeatable": false,
@@ -106,6 +121,8 @@
   {
    "catalog_instructor": "Seth Rubin",
    "code": "PBS199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Provides research experiences and mentorship in STEM disciplines. Enrollment in the course requires students to be participating in a research-oriented training program at UCSC such as MARC, CAMP, CAMINO, UC LEADS, and others. The course emphasizes research skills, scientific communication, and professional development, including presenting research findings and preparing for graduate school. Students either complete a research project in a mentor’s laboratory or participate in the PBSci Summer Research Institute. Students gain tools to advance their academic and professional goals. Course is offered for Pass/No pass grading only. Enrollment is by permission of the instructor. Students must have arrangements with a faculty mentor who will sponsor their summer research or be participating in the Summer Research Institute organized by the STEM Diversity Program team. Once these conditions are met, students should obtain final permission of the instructor.",
@@ -116,6 +133,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Summer",
    "raw_requirements": null,
    "repeatable": false,
@@ -124,11 +142,10 @@
    "url": "/en/current/general-catalog/courses/pbs-physical-biological-sciences/upper-division/pbs-199"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "PBS"
 }

@@ -130,6 +130,14 @@ def parse_department(html: str, slug: str, name: str, url: str) -> ParsedDept:
     return dept
 
 
+def division_from_number(number: str) -> str:
+    m = re.match(r"\d+", number.strip())
+    if not m:
+        return ""
+    n = int(m.group())
+    return "lower" if n < 100 else "upper" if n < 200 else "graduate"
+
+
 def _parse_course_block(h2: Tag, dept: ParsedDept) -> dict | None:
     anchor = h2.select_one("a[href]")
     span = anchor.select_one("span") if anchor else None
@@ -158,6 +166,11 @@ def _parse_course_block(h2: Tag, dept: ParsedDept) -> dict | None:
 
     code = codes.normalize(display_code)
     subject, number = re.match(r"^([A-Z]+)\s*(.+)$", display_code).groups()
+    if not division:
+        # Some departments file courses under numeric URL segments ('1-99',
+        # '100') instead of 'lower-division'/...; fall back to UCSC's
+        # numbering convention: 1-99 lower, 100-199 upper, 200+ graduate.
+        division = division_from_number(number)
 
     course: dict = {
         "code": code,

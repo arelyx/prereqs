@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An interdisciplinary introduction to oceanography focusing on biological, chemical, geological, and physical processes. Covers topics such as origins and structure of planet Earth and its oceans, co-evolution of Earth and life, plate tectonics, liquid water and the hydrologic and hydrothermal cycles, salinity and elemental cycles, ocean circulation, primary production and nutrient cycles, plankton and nekton, life on the sea floor, near shore and estuarine communities, future environmental problems our oceans face. Students may also enroll in and receive credit for EART 1 .",
@@ -16,6 +18,7 @@
    ],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA100",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces physical aspects of the ocean including both descriptive representations of ocean properties and dynamical processes that govern ocean circulation. Topics include measurement methods, the equation of state, the equations of motion, geostrophy, atmospheric forcing, Ekman transport, gyre circulation, western boundary currents, the global circulation, and surface gravity waves.",
@@ -47,6 +52,7 @@
      "EART110A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): MATH 11B or equivalent; and PHYS 6B ; and ESCI 100A or EART 110A .",
    "repeatable": false,
@@ -57,6 +63,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA101",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to the marine environment stressing the interaction of physical, chemical, geological, and biological factors in the ocean. Provides the oceanographic background needed for studies in marine biology. Students taking the prerequisite math courses concurrently may enroll in the course with permission from instructor.",
@@ -78,6 +86,7 @@
      "MATH19B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CHEM 3C , or CHEM 4B , or CHEM 1C ; and MATH 11B , MATH 16B or MATH 19B . Students taking the prerequisite math courses concurrently may enroll in the course with permission from instructor.",
    "repeatable": false,
@@ -88,6 +97,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA102",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to Earth's environment, particularly its oceanic and climatic components. Emphasizes interactions between chemical, physical, biological, and geological processes, and fundamentals of past, present, and future global environmental change. Provides backgrounds for specialized courses in oceanic or climatic change.",
@@ -104,6 +115,7 @@
      "CHEM1C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CHEM 3C , or CHEM 4B , or CHEM 1C .",
    "repeatable": false,
@@ -114,6 +126,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA111",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Applies fundamental physical principles to the atmosphere, cryosphere, and land surface to interpret their observed properties. Interactions between the different components of the climate system, and their role in shaping Earth's climate, are also examined.",
@@ -135,6 +149,7 @@
      "EART110A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): MATH 11B or equivalent; PHYS 6B ; and ESCI 100A or EART 110A .",
    "repeatable": false,
@@ -145,6 +160,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces Antarctica and the Southern Ocean. During the quarter students examine the natural, scientific, and anthropogenic complexities of these icy environments. Covers topics related to the geologic origins, fossil record, and climate, ecosystem, and anthropogenic dynamics of the frozen continent and its surrounding ocean. Students learn about Antarctica’s unique terrestrial and marine ecology, endemic wildlife, discovery and human history, anthropogenic impacts, and the continent’s international agreements on fisheries and environmental protection.",
@@ -155,6 +172,7 @@
    "ge_codes": [],
    "number": "115",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -165,6 +183,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The study of marine bacteria and their role in the marine ecosystem. Emphasis on biochemistry and physiology in relation to metabolic activity and elemental cycles, trophic interactions, and flows of material and energy in marine food webs. Students cannot receive credit for this course and Ocean Sciences 218.",
@@ -185,6 +205,7 @@
      "CHEM1C"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): BIOE 20C or BIOE 21C, and CHEM 3C , or CHEM 4B , or CHEM 1C .",
    "repeatable": false,
@@ -195,6 +216,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An integrated study of the chemical behavior of natural waters with an emphasis on both principles and applications. Topics include chemical equilibrium, kinetics, acids/bases, oxidation/reduction, complexation, solid dissolution and precipitation, and reactions on solid surfaces.",
@@ -211,6 +234,7 @@
      "CHEM4B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CHEM 1C or CHEM 3C or CHEM 4B ; CHEM 8A recommended.",
    "repeatable": false,
@@ -221,6 +245,10 @@
   {
    "catalog_instructor": null,
    "code": "OCEA121",
+   "concurrent_ok": [
+    "EART110A"
+   ],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the geochemistry of the water-solid interface in the environment. Topics include: the composition of natural particles in the environment; the use of chemical equilibria and kinetics to assess the reactivity at the particle-water interface; and applications to environmental and oceanographic problems.",
@@ -234,12 +262,11 @@
     [
      "CHEM3C",
      "CHEM4B",
-     "CHEM1C"
-    ],
-    [
+     "CHEM1C",
      "EART110A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CHEM 3C , or CHEM 4B , or CHEM 1C , or previous or concurrent enrollment in EART 110A . Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -250,6 +277,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA122",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a chemical description of the sea. Emphasizes the chemical interactions of the ocean with the biosphere, atmosphere, and lithosphere. Topics include biochemical cycles and the use of chemical tracers to study oceanic and coastal processes. Students may not receive credit for this course and OCEA 220 .",
@@ -264,6 +293,7 @@
      "CHEM1C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CHEM 1C ; a previous course in ocean sciences is also recommended. Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -274,6 +304,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA124",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to organic geochemistry with emphasis on aquatic environments. Explores how non-living organic matter shapes biogeochemical cycles by carrying and sequestering reduced carbon and major nutrients and examines influence of chemical structure and environmental factors on transport and fate of organic molecules. Provides an introduction to organic biomarkers. Students cannot receive credit for this course and course 224.",
@@ -294,6 +326,7 @@
      "CHEM8B"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CHEM 3C , or CHEM 4B , or CHEM 1C , and at least one quarter of CHEM 8A or CHEM 8B.",
    "repeatable": false,
@@ -304,6 +337,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA130",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Biological description of the sea,  with emphasis on processes and patterns. Topics include microbial dynamics, phytoplankton and zooplankton production, and ecology of marine food webs. Emphasis placed on understanding how physical, chemical, and geological environment shapes biology and ecology of oceans, including such topics as harmful algal blooms, global estimates of productivity, and effects of humans on environment. Students cannot receive credit for this course and Ocean Sciences 230.",
@@ -314,6 +349,7 @@
    "ge_codes": [],
    "number": "130",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous course in ocean sciences recommended. Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -324,6 +360,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA141",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "ESCI141"
@@ -342,6 +380,7 @@
      "ESCI100A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ESCI 100A .",
    "repeatable": false,
@@ -352,6 +391,8 @@
   {
    "catalog_instructor": "Allison Moreno",
    "code": "OCEA151",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to aquatic biogeochemistry field and lab techniques used to investigate nutrient cycling. Students learn how to collect field samples for biogeochemistry including particulate organic matter, dissolved organic matter, and plankton counts at Younger Lagoon. Students collect water samples for surface particulate organic matter and stoichiometric ratios alongside environmental data to evaluate the patterns, variation, and controls of biotic and abiotic factors. In the lab students process samples to address thoughtful research questions. Students gain hands-on experience processing biogeochemical processes over seasonal and interannual cycles.",
@@ -364,6 +405,7 @@
    ],
    "number": "151",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -374,6 +416,8 @@
   {
    "catalog_instructor": "Kendra Turk-Kubo",
    "code": "OCEA152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to molecular and bioinformatic techniques used to investigate aquatic microbiomes. Students learn how to collect field samples for molecular analyses at the Younger Lagoon and Santa Cruz Wharf. Using fundamental techniques in modern molecular microbial ecology including metabarcoding, DNA sequencing (including real-time), quantitative PCR, fluorescent in situ hybridizations, and flow cytometry, students characterize microbial assemblages and investigate microbial activity in two very different field sites. Students gain hands-on experience processing sequence and imaging data and analyzing microbial community variability over seasonal and interannual cycles.",
@@ -388,6 +432,7 @@
      "ESCI150"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): ESCI 150 .",
    "repeatable": false,
@@ -398,6 +443,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA158",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The systematics, physiology, ecology, behavior, and conservation of marine birds and mammals, with emphasis on the fauna and issues of the Monterey Bay area. Field trips enable students to observe unique local species in their native habitats and learn current research techniques. Formerly offered as The Ecology and Conservation of Marine Birds and Mammals.",
@@ -413,6 +460,7 @@
      "BIOE20C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): OCEA 80A , BIOE 20C , or permission of instructor.",
    "repeatable": false,
@@ -423,6 +471,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA165",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines classic ecological models of population dynamics and growth with case studies from the marine environment. Topics include exponential and logistic growth, density dependence, age and stage structure, discrete vs. continuous time, metapopulation models, coexistence, and the dynamics of interacting populations. Case studies are drawn from biological oceanography, fisheries stock assessments, endangered species management, and more. This course focuses on theory and mathematical underpinnings of these dynamical models; it does not go into detail on how to fit them to data.",
@@ -435,13 +485,22 @@
    "prereq_groups": [
     [
      "MATH11A",
-     "MATH11B"
+     "MATH19A"
     ],
     [
-     "MATH19A",
+     "MATH11A",
+     "MATH19B"
+    ],
+    [
+     "MATH11B",
+     "MATH19A"
+    ],
+    [
+     "MATH11B",
      "MATH19B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): MATH 11A and MATH 11B , or MATH 19A and MATH 19B , or by permission of instructor.",
    "repeatable": false,
@@ -452,6 +511,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -462,6 +523,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -472,6 +534,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Introduction to research in laboratory, field, or theoretical subjects as an independent study. May not be counted toward upper-division major requirements. Students submit petition to sponsoring agency.",
@@ -482,6 +546,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -492,6 +557,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the physics of the ocean. Topics include physical properties of seawater, atmospheric forcing, Ekman dynamics, Sverdrup dynamics, the wind-driven ocean circulation, ocean mixing, water masses, the meridional overturning circulation, surface gravity waves, Rossby waves, Kelvin waves, and ocean tides. Designed for beginning graduate students in ocean sciences and upper-division science majors. Calculus and physics recommended as preparation.",
@@ -502,6 +569,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -512,6 +580,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers advanced topics and physical principles as they relate to the ocean circulation. Designed as a follow-on class for OCEA 200 , Physical Oceanography, and topics covered include: the dynamics of the subtropical gyres; potential vorticity dynamics; ventilated thermocline theory; the abyssal circulation; barotropic and baroclinic instability; and ocean eddies. Students use simple computer models to explore these important topics further, and review seminal papers.",
@@ -524,14 +594,9 @@
    "prereq_groups": [
     [
      "OCEA200"
-    ],
-    [
-     "EART272",
-     "OCEA272",
-     "AM217",
-     "AM227"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): OCEA 200 , or a graduate geophysical fluid dynamics course or equivalent (e.g. EART 272 /OCEA 272, AM 217 , AM 227 ), or by instructor consent. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -542,6 +607,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA211",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the dynamics of the Earth climate system. Topics: climate system components, the global energy balance, radiative transfer, the hydrological cycle, general circulations of the atmosphere and ocean, El Nino, the North Atlantic Oscillation, and the Pacific Decadal Oscillation.",
@@ -552,6 +619,7 @@
    "ge_codes": [],
    "number": "211",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Undergraduates may enroll by permission of instructor. Previous courses in calculus and ocean sciences or earth sciences are recommended.",
    "repeatable": false,
@@ -562,6 +630,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA213",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "EART213"
@@ -574,6 +644,7 @@
    "ge_codes": [],
    "number": "213",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Upper-division undergraduates may enroll with instructor approval. College-level chemistry and an upper-division course in at least one relevant discipline are recommended.",
    "repeatable": false,
@@ -584,6 +655,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the theory and practice of operational prediction in meteorology, oceanography, and climate. Topics: observations and estimation theory, dynamic adjustment and initialization, estimation theory, data assimilation, forecast verification, predictability, ocean state estimation, seasonal forecasting.",
@@ -594,6 +667,7 @@
    "ge_codes": [],
    "number": "215",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Undergraduates may enroll with instructor approval. OCEA 200 , OCEA 260 , EART 272 , or equivalents are recommended.",
    "repeatable": false,
@@ -604,6 +678,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA218",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Recent developments in the study of marine bacteria and their role in the marine ecosystem. Emphasis on biochemistry and physiology in relation to metabolic activity and elemental cycles, trophic interactions and flows of material and energy in marine food webs. Exams and research paper required. Students cannot receive credit for this course and OCEA 118 and BIOL 171. BIOL 20C and CHEM 1C recommended.",
@@ -614,6 +690,7 @@
    "ge_codes": [],
    "number": "218",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -624,6 +701,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A chemical description of the sea; emphasis on the chemical interactions of the oceans with the biosphere, atmosphere, and lithosphere. Topics include biogeochemical cycles and the use of chemical tracers to study oceanic and coastal processes. Course designed for graduate students. Students may not receive credit for this course and OCEA 122 .",
@@ -634,6 +713,7 @@
    "ge_codes": [],
    "number": "220",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; upper-division undergraduates may enroll with instructor approval.",
    "repeatable": false,
@@ -644,6 +724,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA224",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to organic geochemistry with emphasis on aquatic environments. Explores how non-living organic matter shapes biogeochemical cycles by carrying and sequestering reduced carbon and major nutrients and examines influence of chemical structure and environmental factors on transport and fate of organic  molecules. Provides an introduction to organic biomarkers. Students cannot receive credit for this course and OCEA 124.",
@@ -654,6 +736,7 @@
    "ge_codes": [],
    "number": "224",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -664,6 +747,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA230",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Biological description of the sea,  with emphasis on processes and patterns. Topics include microbial dynamics, phytoplankton and zooplankton production, and ecology of marine food webs. Emphasis placed on understanding how physical, chemical, and geological environment shapes biology and ecology of oceans, including such topics as harmful algal blooms, global estimates of productivity, and effects of humans on environment. Students cannot receive credit for this course and OCEA 130.",
@@ -674,6 +759,7 @@
    "ge_codes": [],
    "number": "230",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous course in ocean sciences recommended. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -684,6 +770,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA241",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers physical-biogeochemical interactions in the ocean on marine ecosystems, with a special focus on the California Current region. Lectures introduce fundamental processes occurring at local, regional, and basin scales, and describe their complex interplay.",
@@ -694,6 +782,7 @@
    "ge_codes": [],
    "number": "241",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -704,6 +793,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students become familiar with core measurement and sampling techniques and multi-disciplinary nature of aquatic sciences routinely employed by working aquatic scientists in the fields of biology, geology, chemistry and physics. Overarching goal of class is having students become deeply familiar with a field site and observing it over an extended period of time while working collaboratively to accomplish all the measurements. The field component of the work is conducted at UCSC's Younger Lagoon Research Reserve, located adjacent to the Long Marine Lab on the coastal campus. Taught in conjunction with ESCI 150 . Students cannot receive credit for this course and ESCI 150 .",
@@ -714,6 +805,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -724,6 +816,8 @@
   {
    "catalog_instructor": "Allison Moreno",
    "code": "OCEA251",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to aquatic biogeochemistry field and lab techniques used to investigate nutrient cycling. Students learn how to collect field samples for biogeochemistry including particulate organic matter, dissolved organic matter, and plankton counts at Younger Lagoon. Students collect water samples for surface particulate organic matter and stoichiometric ratios alongside environmental data to evaluate the patterns, variation, and controls of biotic and abiotic factors. In the lab students process samples to address thoughtful research questions. Students gain hands-on experience processing biogeochemical processes over seasonal and interannual cycles.",
@@ -734,6 +828,7 @@
    "ge_codes": [],
    "number": "251",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -744,6 +839,8 @@
   {
    "catalog_instructor": "Kendra Turk-Kubo",
    "code": "OCEA252",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to molecular and bioinformatic techniques used to investigate aquatic microbiomes. Students learn how to collect field samples for molecular analyses at the Younger Lagoon and Santa Cruz Wharf. Using fundamental techniques in modern molecular microbial ecology including metabarcoding, DNA sequencing (including real-time), quantitative PCR, fluorescent in situ hybridizations, and flow cytometry, students characterize microbial assemblages and investigate microbial activity in two very different field sites. Students gain hands-on experience processing sequence and imaging data and analyzing microbial community variability over seasonal and interannual cycles.",
@@ -754,6 +851,7 @@
    "ge_codes": [],
    "number": "252",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -764,6 +862,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Ocean data collection has increased dramatically with much of this information available publicly for consumption and analysis by the scientific and broader community. Yet the format of available information differs often by platform, and useful visualization techniques depend on the type of data being considered. Class introduces different types of publicly available data, develops tools needed to access this information locally, and discusses broad methods for visualization appropriate for time-series, maps, sections, vector fields, and animations. Students develop their own capabilities through assignments using a scientific programming language of their choice (e.g., julia, python, matlab, or R), and lectures introduce necessary programming ideas and examples to support student-based tool development.",
@@ -774,6 +874,7 @@
    "ge_codes": [],
    "number": "255",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -784,6 +885,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA260",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "EART260"
@@ -796,6 +899,7 @@
    "ge_codes": [],
    "number": "260",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous course in ocean or earth sciences is recommended. Enrollment is restricted to graduate students; undergraduates with permission of instructor.",
    "repeatable": false,
@@ -806,6 +910,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA265",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines classic ecological models of population dynamics and growth with case studies from the marine environment. Topics include exponential and logistic growth, density dependence, age and stage structure, discrete vs. continuous time, metapopulation models, coexistence, and the dynamics of interacting populations. Case studies are drawn from biological oceanography, fisheries stock assessments, endangered species management, and more. This course focuses on theory and mathematical underpinnings of these dynamical models; it does not go into detail on how to fit them to data.",
@@ -816,6 +922,7 @@
    "ge_codes": [],
    "number": "265",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -826,6 +933,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA267",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course takes an empirical approach to quantify and explain changes in the Earth system over time. Students learn how to analyze time-series data and answer questions about environmental change and variability. Students acquire the theoretical basis of the statistical approaches, gain experience interpreting and discussing the results, and debate the methods chosen resulting in a critical understanding of the underlying assumptions and limitations of the methods discussed. This is a hands-on class and utilizes a suite of observational datasets and outputs from Earth system models. Students cannot receive credit for this course and ESCI 167 .",
@@ -836,6 +945,7 @@
    "ge_codes": [],
    "number": "267",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Students are expected to know R, Matlab or Python and have statistics background. Please contact the instructor before enrolling if you are unsure.Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -846,6 +956,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA280",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Geology of the marine environment. Topics include controls on the types, origin, and distribution of marine sediments; geology of oceanic crust; evolution of continental margins and plate boundaries; and introduction to paleoceanography. Students cannot receive credit for this course and EART102.",
@@ -856,6 +968,7 @@
    "ge_codes": [],
    "number": "280",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -866,6 +979,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA285",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Reviews the fundamentals of climate dynamics and explores how Earth's environment is a product of the interaction of its components. Uses examples of climate change from historical and geologic records, and from predictions of the future. Recommended for junior, senior, and graduate students in the sciences.",
@@ -876,6 +991,7 @@
    "ge_codes": [],
    "number": "285",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -886,6 +1002,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA286",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Fundamental concepts and ideas that underpin numerical modeling of the ocean. Topics include numerical methods and solutions of partial differential equations (PDEs), ocean circulation, wave dynamics, ocean ecosystem model, and MATLAB programming.",
@@ -896,6 +1014,7 @@
    "ge_codes": [],
    "number": "286",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students, or seniors by permission of instructor.",
    "repeatable": false,
@@ -906,6 +1025,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A weekly seminar series covering recent developments in chemical oceanography. Different topics and approaches will be stressed from year to year.",
@@ -916,6 +1037,7 @@
    "ge_codes": [],
    "number": "290A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -926,6 +1048,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores different problems of special interest in biological oceanography. Different topics and approaches will be stressed from year to year.",
@@ -936,6 +1060,7 @@
    "ge_codes": [],
    "number": "290B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -946,6 +1071,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Selected topics in geochemistry. Discussion of theoretical models, different approaches, and recent research. Topics vary from year to year.",
@@ -956,6 +1083,7 @@
    "ge_codes": [],
    "number": "290C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -966,6 +1094,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A weekly seminar series covering topics in environmental microbiology. Topics vary from year to year, and will include research in ecology, methodology, biochemistry and physiology of bacteria. Emphasis on the role of bacteria in biogeochemical cycling from microzone to global scales, with particular focus in marine systems.",
@@ -976,6 +1106,7 @@
    "ge_codes": [],
    "number": "290D",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -986,6 +1117,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Weekly seminar series covering recent developments in climatic and oceanic change. Different topics and approaches stressed from year to year. Prerequisite(s): interview with instructor prior to first class meeting.",
@@ -996,6 +1129,7 @@
    "ge_codes": [],
    "number": "290E",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1006,6 +1140,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Weekly seminar series covering topics in physical oceanography as well as biological-physical interactions in the oceans. Different topics and approaches stressed from year to year.",
@@ -1016,6 +1152,7 @@
    "ge_codes": [],
    "number": "290G",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
    "repeatable": true,
@@ -1026,6 +1163,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines recent developments and application of bio-optics to the marine environment, including theory, instrumentation, and remote sensing. Different topics and approaches emphasized from year to year.",
@@ -1036,6 +1175,7 @@
    "ge_codes": [],
    "number": "290H",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous course in ocean sciences recommended. Enrollment is restricted to graduate students; senior undergraduates with permission of instructor.",
    "repeatable": true,
@@ -1046,6 +1186,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA290J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines recent developments in uses of organic geochemistry to trace oceanographic and biogeochemical processes. Focuses on introduction to organic biomarkers, current literature, and evolving applications. Different topics and approaches emphasized from year to year.",
@@ -1056,6 +1198,7 @@
    "ge_codes": [],
    "number": "290J",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous course in ocean sciences and organic chemistry are recommended. Enrollment is restricted to graduate students; upper-division undergraduates with instructor's permission.",
    "repeatable": true,
@@ -1066,6 +1209,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA292",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Weekly seminar on various topics attended by faculty, graduate, and upper-division undergraduate students.",
@@ -1076,6 +1221,7 @@
    "ge_codes": [],
    "number": "292",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1086,6 +1232,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA295",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed as a project-oriented writing-intensive course, focused on Earth, ocean, and environmental sciences. Intended for advanced graduate students who have completed some research and are ready to write an article for submission to a journal or other venue. The student is expected to have a dataset in hand, to have already mapped out most of their interpretation, and to be ready to spend most of the quarter preparing a manuscript for submission. The course consists of writing assignments, lectures, class discussions, in-class exercises and peer-review. Enrollment is restricted to graduate students and is by permission of the instructor. Instructor will get information from prospective students to assess whether they are ready to take this class.",
@@ -1096,6 +1244,7 @@
    "ge_codes": [],
    "number": "295",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1106,6 +1255,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA296",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "For new and/or relatively inexperienced graduate students in pedagogy of ocean sciences. Role and responsibilities of teaching in ocean sciences described and developed. Includes discussions about effective teaching methods; hands-on issues for work in the laboratory; university expectations; and regulations regarding teaching, organizational strategies, time management, and working with instructors and staff.",
@@ -1116,6 +1267,7 @@
    "ge_codes": [],
    "number": "296",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): graduate standing or permission of instructor. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1126,6 +1278,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Independent reading, research, and written reports not related to thesis research. Students submit petition to sponsoring agency.",
@@ -1136,6 +1290,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1146,6 +1301,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Independent reading, research, and written reports not related to thesis research. Students submit petition to sponsoring agency.",
@@ -1156,6 +1313,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1166,6 +1324,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA297C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Independent reading, research, and written reports not related to thesis research. Students submit petition to sponsoring agency.",
@@ -1176,6 +1336,7 @@
    "ge_codes": [],
    "number": "297C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1186,6 +1347,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1196,6 +1359,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1206,6 +1370,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1216,6 +1382,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1226,6 +1393,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA299C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1236,6 +1405,7 @@
    "ge_codes": [],
    "number": "299C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1246,6 +1416,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA80A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The ecology of plants and animals in oceans and coastal areas. Consideration of life in various marine habitats, including the open ocean, rocky shores, estuaries, and the sea. Includes field trips. High school biology and chemistry courses are recommended prior to taking this course.",
@@ -1258,6 +1430,7 @@
    ],
    "number": "80A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1268,6 +1441,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA80B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Interdisciplinary scientific perspective on Earth system, focusing on human impacts on global environment. Introduces concepts of Earth system science and explores topics such as global warming, ozone depletion, pollution, deforestation, and future climate change. Prerequisite(s): high school chemistry course recommended.",
@@ -1280,6 +1455,7 @@
    ],
    "number": "80B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1290,6 +1466,8 @@
   {
    "catalog_instructor": null,
    "code": "OCEA90",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Quantitative introduction to climate comprising five modules: atmosphere-ocean circulation, atmospheric teleconnections, El-Nino Southern Oscillation, the Pacific Decadal Oscillation, and global warming. Hands-on statistical methods are applied to real-world observations to develop a quantitative understanding of climate.",
@@ -1302,6 +1480,7 @@
    ],
    "number": "90",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1310,11 +1489,10 @@
    "url": "/en/current/general-catalog/courses/ocea-ocean-sciences/lower-division/ocea-90"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "OCEA"
 }

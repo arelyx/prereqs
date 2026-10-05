@@ -62,9 +62,37 @@ def test_validate_missing_and_concurrent_prereqs(client, seeded):
     issues = r.json()["issues"]
     kinds = {(i["kind"], i["course"]) for i in issues}
     assert ("missing_prereq", "CSE101") in kinds  # CSE30 not taken anywhere before
-    assert ("concurrent_prereq", "CSE101") in kinds  # CSE16 same quarter
+    assert ("concurrent_prereq", "CSE101") in kinds  # CSE16 same quarter, allowed
     # CSE130 in a later term sees CSE101 from the earlier term: no missing_prereq
     assert ("missing_prereq", "CSE130") not in kinds
+    assert ("missing_coreq", "CSE130") not in kinds  # coreq CSE16 taken earlier
+
+
+def test_same_quarter_prereq_only_when_catalog_allows(client, seeded):
+    body = {
+        "content": {
+            "completed": ["CSE12", "CSE16", "CSE30"],
+            "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE130"]}],
+        },
+        "program_ids": [],
+    }
+    issues = client.post("/u/ucsc/validate", json=body).json()["issues"]
+    by_course = {(i["kind"], i["course"]): i for i in issues}
+    # CSE101 is not on CSE130's concurrent-allowed list: must come first.
+    assert ("missing_prereq", "CSE130") in by_course
+    assert "same quarter" in by_course[("missing_prereq", "CSE130")]["message"]
+
+
+def test_strict_coreq_reported(client, seeded):
+    body = {
+        "content": {
+            "completed": ["CSE12", "CSE30", "CSE101"],
+            "terms": [{"term_code": "2270", "courses": ["CSE130"]}],
+        },
+        "program_ids": [],
+    }
+    issues = client.post("/u/ucsc/validate", json=body).json()["issues"]
+    assert ("missing_coreq", "CSE130") in {(i["kind"], i["course"]) for i in issues}
 
 
 def test_validate_availability_and_ge(client, seeded):

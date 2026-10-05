@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Interdisciplinary introduction to Latin American and Latino studies presenting the key elements for studying the interconnected histories of migration, race, ethnicity, social inequality, and feminism in the Americas. Students learn how to read, interpret, and analyze events, objects, social relationships, and institutions from an LALS perspective.",
@@ -16,6 +18,7 @@
    ],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS10",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the interdisciplinary fields of Chicanx and Latinx studies through the frameworks of social justice and anti-racism. Examines the histories, current issues, and unique lived experiences in order to understand the intersectional complexities. Delves into questions of race, ethnicity, class, gender, sexuality, indigeneity, citizenship, and belonging and illuminates the historical development by contextualizing major concepts, debates, and approaches while underscoring how these fields transform historical narratives of inequality, contextualize current realities, and can inform political change. Students engage in lively discussions to develop critical thinking skills, and to hone reading and writing skills.",
@@ -38,6 +43,7 @@
    ],
    "number": "10",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -48,6 +54,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS100",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Establishes the foundation of research and intellectual pursuits in Latin American studies and Latina/o/e/x studies; engages both of these fields, with emphasis on when, where, and how they can converge; examines key concepts and major theoretical frameworks, ranging from colonialism and Eurocentrism, to intersectionality and patriarchy, to authoritarism and democracy. The course also builds on the foundation of lower-division courses in LALS. Prior or concurrent enrollment in an introductory LALS course is highly recommended.",
@@ -60,6 +68,7 @@
    ],
    "number": "100",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -70,6 +79,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS100A",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS100L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces research design and methods in the interdisciplinary field of LALS. Combines the analysis of existing LALS research with hands-on experience in a range of research strategies: reading archives, administering surveys, interviewing, conducting participant observations, analyzing quantitative data, and interpreting texts. Students also learn the overall process of designing a research project, from formulating research questions to writing a critical literature review to the effective presentation of research findings. This course emphasizes research oriented toward the pursuit of social change and social justice.",
@@ -80,6 +95,7 @@
    "ge_codes": [],
    "number": "100A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in LALS 100L is required. Enrollment is restricted to sophomore, junior, and senior Latin American and Latino studies majors, minors, and combined majors or by permission.",
    "repeatable": false,
@@ -90,6 +106,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS100L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS100A"
+    ]
+   ],
    "credits": "1",
    "cross_listed": [],
    "description": "Course provides hands-on training in the design of a research project and in the principal methods used in LALS.",
@@ -100,6 +122,7 @@
    "ge_codes": [],
    "number": "100L",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Concurrent enrollment in LALS 100A is required.",
    "repeatable": false,
@@ -110,6 +133,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS113",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Traces abolitionist genealogies from the Black Radical Tradition and anti-slavery rebellions to the anti-carceral movement against the prison industrial complex. Focuses on the origins of U.S. criminality and carcerality in conjunction with the inception of U.S. detention practices and immigration policy. Explores emergent interventions such as abolition feminism, abolish ICE, and abolition discourse from the margins to the mainstream.",
@@ -120,6 +145,7 @@
    "ge_codes": [],
    "number": "113",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -130,6 +156,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS122",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Evaluates the links between media and the production of national identities in Latin America. Focuses on theories of nationalism, media, and globalization to examine the production of national histories and representations.",
@@ -140,6 +168,7 @@
    "ge_codes": [],
    "number": "122",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -150,6 +179,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS126",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines how social media reconfigures daily lives, cultures, and economies and explores how recent leaps in communication technologies breed digital divides and new forms of activism.",
@@ -162,6 +193,7 @@
    ],
    "number": "126",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -172,6 +204,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS128",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "OAKS128"
@@ -186,6 +220,7 @@
    ],
    "number": "128",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -196,6 +231,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores assimilation and assimilability in the United States, especially as related to the education and languages of Latinos, via literary forms, such as the memoir, novel, essay, short fiction, film, and/or poetry. (Meets the methods requirement in Latin America and Latino studies.)",
@@ -208,6 +245,7 @@
    ],
    "number": "131",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -218,6 +256,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS133",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focus on art forms and visual representations of Latina/os in the United States. Emphasis on visual art created by artists associated with the Chicano/o movement and the Central American diaspora. Topics include cultural identity, murals, public art, and fine art.",
@@ -228,6 +268,7 @@
    "ge_codes": [],
    "number": "133",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -238,6 +279,8 @@
   {
    "catalog_instructor": "Edward Salazar",
    "code": "LALS134",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores fashion and dress within Latinx and Latin American communities, highlighting their histories, cultures, and creative practices. Students investigate how style expresses identity, politics, cross-cultural exchange, conflict, and artistic innovation. By questioning Eurocentric perspectives, the course offers an expansive view of Latinidades, design, and the body, showing how dress reflects personal, social, and cultural meaning.",
@@ -250,6 +293,7 @@
    ],
    "number": "134",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -260,6 +304,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS135",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course taught in Spanish. Focuses on El Salvador, with attention to cultural expressions and representations, literature, historical perspectives, and contemporary societies.",
@@ -270,6 +316,7 @@
    "ge_codes": [],
    "number": "135",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -280,6 +327,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS136",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Interdisciplinary study of tourism in Latin America and its interconnections with culture, power, and identity. Examines contemporary trends of tourism (ethnic tourism, diaspora tourism, sex tourism, and favela tours) and explores how regional, national, and transnational identities shape and are shaped by tourism.",
@@ -290,6 +339,7 @@
    "ge_codes": [],
    "number": "136",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -300,6 +350,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS137",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the intersection of race, gender, science, technology, the environment, and the future in speculative fiction by and about Latinxs, migrants, and people of color.",
@@ -312,6 +364,7 @@
    ],
    "number": "137",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -322,6 +375,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS141",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the discursive, socio-ecological, economic, logistics, political, and cultural dimensions of specific “renewable energy industries” and “critical minerals,” attentive to the resulting “sacrifice zones.” Case studies of specific solar, wind, lithium, hydrogen, desalinization, and “sustainable copper” projects allow students to deepen their understanding of the multiple challenges faced in building just and sustainable futures.",
@@ -334,6 +389,7 @@
    ],
    "number": "141",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -344,6 +400,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS143",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Race and ethnicity have been--and continue to be--powerful forces shaping the U.S. experience. This course examines a range of conceptual approaches and monographic studies grounded in the history of the U.S. The readings provide various criteria for studying and understanding these phenomena. The course problematizes race by asking what the readings tell us about race-making and the reproduction of racial ideologies in specific historical contexts. Similarly, ethnicity is treated as a historically specific social construct. (Meets the methods requirement in Latin America and Latino studies.)",
@@ -356,6 +414,7 @@
    ],
    "number": "143",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -366,6 +425,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS144",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores current historical and theoretical writings on the lived experiences of Chicanas and Mexicana women in U.S. history. Themes include domination/resistance politics, (re)presentations, contestation, social reproduction, identity and difference. Meets the methods requirement in Latin America and Latino studies.",
@@ -378,6 +439,7 @@
    ],
    "number": "144",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -388,6 +450,8 @@
   {
    "catalog_instructor": "Jennifer Gotlieb",
    "code": "LALS146",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores drag performance and transgender lives in Latin America and among U.S. Latina/o/xs. Using ethnographic, film, and cultural studies approaches, course examines identities like loca, muxe, travesti, and drag queen. Focus areas include performance, displacement, community, and (un)belonging within feminist, queer of color, and trans studies frameworks. The course includes transnational case studies from Brazil, Cuba, Chile, Puerto Rico, and Mexico.",
@@ -400,6 +464,7 @@
    ],
    "number": "146",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -410,6 +475,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS147",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Taught in Spanish. Engages a critical study of violence, social relations, and everyday life in contemporary Latin America. Focuses on the relationship between narratives and acts of violence, and the constitution and social effects of these representations. Requires proficiency in Spanish (written and spoken), and advanced reading knowledge of Spanish. (Formerly LALS 194R .)",
@@ -420,6 +487,7 @@
    "ge_codes": [],
    "number": "147",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior Latin American and Latino studies majors, minors, and combined majors.",
    "repeatable": false,
@@ -430,6 +498,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS149",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Challenges the racial hierarchy of knowledge production by making whiteness into a central object of study and scrutinizing the power that stems from its alleged invisibility. Studies whiteness in three specific Latin American countries and vis-a-vis their respective dominant national discourses: Mexico and its narratives of mestizaje, Brazil and the myth of racial democracy, and Argentina and its discourses of Europeanness. Also examines how whiteness and its \"Others\" (I.e. blackness, indigeneity, and Asianness) have been imagined, embodied, avoided, and embraced in these three Latin American countries.",
@@ -442,6 +512,7 @@
    ],
    "number": "149",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -452,6 +523,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS15",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides statistical methodological training and skills through the examination of social and cultural manifestations of truth as a tool to serve social justice efforts for Latinx and other minoritized students in the education setting.",
@@ -464,6 +537,7 @@
    ],
    "number": "15",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -474,6 +548,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS150",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the lives of African descendants in the Americas, including the Caribbean. Students learn about the settlement patterns of Afro-Latinos/as and Afro-Latin Americans in the region and the ways in which African descendants negotiate their multiple identities and broaden racial frameworks in the United States and Latin America.",
@@ -486,6 +562,7 @@
    ],
    "number": "150",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -496,6 +573,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS151",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the intersection between mobility and race, examining both how mobility is racially informed and how differential mobilities inform the construction of racial identities, the production of racial processes, and the representation of racialized spaces. Examining different facets of mobility—movement, meaning, and practice—course topics include: the mutual constitution between mobility and racial identities (blackness, whiteness, Latinidad, and indigeneity); white control over the mobility of \"others;\" bodily movements (dancing, walking) as sites of resistance and policing; prototypical whiteness and the surveillance of non-white mobile bodies border crossing; and the intersections between racial mobility politics and gender and class dynamics.",
@@ -508,6 +587,7 @@
    ],
    "number": "151",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -518,6 +598,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the circuits of media, commodities, and migration connecting the Americas in an age of globalization. Issues of states, transnational markets, social relations, and cultural representations addressed. Relationship between consumption, nationalism, and globalization is considered critically.",
@@ -530,6 +612,7 @@
    ],
    "number": "152",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -540,6 +623,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS155",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the histories, structures, and practices of Latin American and Latino youth movements. Analyzes the patterns, themes, and differences of social movements using primary documents. Addresses the dynamics of age, generation, race, ethnicity, and nation. Uses youth activism to explore questions relevant to the study of contemporary social movements in the Americas.",
@@ -550,6 +635,7 @@
    "ge_codes": [],
    "number": "155",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -560,6 +646,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS157",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Taught in Spanish. Examines major social upheavals in Latin America since 1900, exploring revolution as a distinctive form of social conflict and change. Analyzes political, economic, social, and cultural conditions that gave rise to, and linked, revolutions across the Americas.",
@@ -570,6 +658,7 @@
    "ge_codes": [],
    "number": "157",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -580,6 +669,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS158",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores and applies basic tools of Latin American political economy to map the evolution of the region's main patterns of economic growth and accompanying social structures across past centuries. Reviews the effects of neoliberal capitalist globalization on contemporary Latin America, resistance to destructive consequences, and the nature of emerging alternatives.",
@@ -590,6 +681,7 @@
    "ge_codes": [],
    "number": "158",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -600,6 +692,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS163",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the peoples and cultures of lowland South America, particularly the historical, economic, and environmental processes that have shaped the Amazonian region. Students acquire tools to critically approach traditional representations of Amazonian cultures and understand their relevance to global issues.",
@@ -612,6 +706,7 @@
    ],
    "number": "163",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -622,6 +717,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS165",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores contemporary issues facing Peru by addressing the formation of the state and the country's troubled history with political and state violence. Students learn about Peru's multicultural/racial population and about ongoing conflicts and hopes for the country today.",
@@ -634,6 +731,7 @@
    ],
    "number": "165",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -644,6 +742,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS166",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Shamanism is a dynamic cultural institution that approaches non-ordinary or alternate states of consciousness as meaningful sites of knowledge. Course focuses on shamanism as practiced in indigenous and mestizo cultures across western Amazonia, where shamanic healing is most frequently accompanied with the ritual use of hallucinogenic brews. Topics covered include the diagnostic, curative, trance, and medical aspects of shamanism; shamanism as an anticolonial expression of political power and agency; and shamanism in Latin American expressive and visual cultures.",
@@ -654,6 +754,7 @@
    "ge_codes": [],
    "number": "166",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -664,6 +765,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS167",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes issues of globalization, culture, and representation in order to understand the meanings and emergence of Global Latinidades. Evaluates and discusses the formation of global and Latin/o/a/e/x subjects within and beyond the United States, Latin America, Europe, and other regions through texts about transnationalism, visual culture, celebrity culture, spaces of consumption, and related topics. Although course focuses on specific case studies, a broad and critical perspective on these issues will be developed as well.",
@@ -676,6 +779,7 @@
    ],
    "number": "167",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -686,6 +790,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS168",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the history of various forms of connection between people, governments, cultures, and social movements across the Americas. From military intervention to transnational anti-imperialist agendas to contemporary artistic collaboration, many forms of foreign relations have shaped the American hemisphere. (Formerly Inter-American Relations.)",
@@ -698,6 +804,7 @@
    ],
    "number": "168",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -708,6 +815,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS169",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the southernmost region of South America, commonly referred to as the Southern Cone, exploring the historical trajectories of Argentina, Chile, Paraguay, Uruguay, and southern Brazil, from independence through the end of the 20th century.",
@@ -720,6 +829,7 @@
    ],
    "number": "169",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -730,6 +840,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS170",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the way Natives of First Peoples have interacted voluntarily and involuntarily with nonindigenous cultures. Examines their perspectives, thoughts, frustrations, and successes. Touches on land issues and examines the way current indigenous cultures of Latin America face and adapt to social change. Focuses mainly on the Andes, lowland Amazon, Mesoamerica, and other areas.",
@@ -742,6 +854,7 @@
    ],
    "number": "170",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -752,6 +865,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS171",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Taught in Portuguese. Examines blackness and whiteness in Brazil through the lens of the intersectionality of race, gender, and class identities. Topics include: national narratives of racial democracy, racism, black activism, and the emerging studies of whiteness in Brazil.",
@@ -764,6 +879,7 @@
    ],
    "number": "171",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -774,6 +890,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS172",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how visual artists take up the subject of human rights in response to urgent challenges facing Latina/o and Latin American communities across the Americas. Examines the imprint of film and media arts reshaping human-rights discourse. Considers persistent themes in Latina/o representation, including colonialism and state terrorism; self-representation and the rights of collectives (racial, ethnic, and sexual groups); social and economic rights. (Meets the methods requirement in Latin America and Latino studies.)",
@@ -784,6 +902,7 @@
    "ge_codes": [],
    "number": "172",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -794,6 +913,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS174",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "GCH174"
@@ -808,6 +929,7 @@
    ],
    "number": "174",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -818,6 +940,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS175",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Through an interdisciplinary, cross-border approach, examines complex nature of Latino health in relation to migration and how women and men experience health problems differently. Examines how health problems are created by economic and social conditions, how migrants experience access to care, and how agencies can design culturally sensitive programs.",
@@ -830,6 +954,7 @@
    ],
    "number": "175",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -840,6 +965,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS176",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the role of reproductive injustice and violence (such as medical apartheid, eugenics, and sexual violence) as a cornerstone in U.S. nation-state formation and its territorial boundaries. Historicizes reproductive violence as a strategy of border control and immigration enforcement informing contemporary immigration debates such as family separation, family detention, and the coerced hysterectomies of migrant women. Explores the foundational theories of the reproductive justice movement and women of color organizing.",
@@ -850,6 +977,7 @@
    "ge_codes": [],
    "number": "176",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -860,6 +988,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS177",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Conceptualizes the socio-economic, political, racial, cultural, and environmental factors that influence health conditions among migrant Latinx communities. Explores health-related issues among Latinx migrant communities already established in the United States as well as those in transit. Examines the negative health consequences of various U.S. policies, including migrant policing, deportation, asylum, and the global drug war. Students read and discuss texts from public health, medical anthropology to explore the concepts of structural violence, structural vulnerability, ecosocial theory, and social determinants of health as these relate to the migrant Latinx community. Students also discuss the relevance of solidarity and activist research methods used to challenge health inequities impacting migrant Latinxs.",
@@ -872,6 +1002,7 @@
    ],
    "number": "177",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -882,6 +1013,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS178",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the impact of globalization and transnationalism on gender relations in the Americas. Examines gender and power in the context of neoliberalism, modernity, the nation, social movements, and activism. Explores local and transnational constructions of gender, and the intersection of gender with race, ethnicity, class, and sexuality.",
@@ -894,6 +1027,7 @@
    ],
    "number": "178",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -904,6 +1038,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS180",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Situates The Border historically and within the context of U.S. imperialism. Examines the formalization of political borders, methods of enforcement, and intra-group conflicts. Examines the varied experiences of colonialism and immigration between Mexicans, Puerto Ricans, Native Americans, and Cubans. Explores how the tools of The Border and Borderlands are being used to untangle the roles of race prejudice and sexual and gender discrimination. (Meets the methods requirement in Latin America and Latino studies.)",
@@ -916,6 +1052,7 @@
    ],
    "number": "180",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -926,6 +1063,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS181",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines forced migrations to and within the Americas prior to the invention of national borders. Focuses on African and Indigenous slave trades, penal deportations, and their connections to colonialism and racial thought. Trains students in the analysis of historical research, the interpretation of historical documents, and the use of digital mapping software.",
@@ -938,6 +1077,7 @@
    ],
    "number": "181",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -948,6 +1088,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS183",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students complete readings and guided research on key topics in tropical ecology (using a Spanish language Ecología Tropical textbook), and are trained to use various tools (traditional analog as well as digital) related to natural history field observations and species identification. Students couple these topical and skill-building foci with more traditionally LALS-framed humanities and social science readings. The goal is to link guiding frameworks and conceptual pillars of LALS to the way we see and interpret beyond-human worlds/ecologies of this hemisphere.",
@@ -960,6 +1102,7 @@
    ],
    "number": "183",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -970,6 +1113,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS184S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "6",
    "cross_listed": [],
    "description": "Long a nation of emigrants, Spain has become a migrant-receiving country in the 21st century. The majority of migrants hail from Latin America. Who are they, why have they migrated to Spain, how are they received there, and what might they have in common with Latinxs in the United States? This course addresses these questions by examining Spain’s legacy as an imperial power in the Americas and the ways Latin Americans are transforming Spanish society and culture.",
@@ -982,6 +1127,7 @@
    ],
    "number": "184S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -992,6 +1138,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS186",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "SOCY186"
@@ -1012,6 +1160,7 @@
      "LALS100W"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 ; and LALS 100A or LALS 100W. Enrollment is restricted to junior and senior Latin American and Latino studies majors, minors, and combined majors and Sociology majors.",
    "repeatable": false,
@@ -1022,6 +1171,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS187F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar with an applied lab where students are trained in the fundamentals of social media literacy skills and analysis, gain an understanding of the context for socio-political conflicts in the Americas region, and consider the ethics of engaging in human rights media research using open source. Students learn how to locate, verify, and analyze digital media for human rights cases using open source investigation tools. Various assignments focus on the region of the Americas. Students prepare and produce human rights social media reports. Enrollment is by permission of the instructor.",
@@ -1032,6 +1183,7 @@
    "ge_codes": [],
    "number": "187F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1042,6 +1194,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS187L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Weekly seminar with an applied lab where students are trained in the fundamentals of social media literacy skills and analysis, gain an understanding of the context for socio-political conflicts in the Americas region, and the consider the ethics of engaging in human rights media research using open source. Students will learn how to locate, verify, and analyze digital media for human rights cases using open source investigation tools. Various assignments focus on the region of the Americas. Students prepare and produce human rights social media reports. Enrollment is by permission of the instructor.",
@@ -1052,6 +1206,7 @@
    "ge_codes": [],
    "number": "187L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1062,6 +1217,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS190",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Internships with campus or community organizations sponsored and evaluated by a Latin American and Latino studies faculty member. Students write an analytical paper or produce another major work agreed upon by student, faculty supervisor, and internship sponsor; sponsor must also provide review of experience. Students submit petition to sponsoring agency.",
@@ -1072,6 +1229,7 @@
    "ge_codes": [],
    "number": "190",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1082,6 +1240,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS190F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Internships with campus or community organizations sponsored and evaluated by a faculty member from Latin American and Latino studies. Students write a short (8-page) descriptive paper or produce another work agreed upon by student and faculty supervisor. Students submit petition to sponsoring agency.",
@@ -1092,6 +1252,7 @@
    "ge_codes": [],
    "number": "190F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1102,6 +1263,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS190G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Student internships organized through Global Learning partners sponsored by a Latin American and Latino studies (LALS) instructor. While completing their internship, students write an analytical paper or produce another project agreed upon by the student and the instructor by the third week of the internship.",
@@ -1114,6 +1277,7 @@
    ],
    "number": "190G",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1124,6 +1288,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194A",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines first-person narratives by migrants, paying close attention to storytelling as a strategy for fomenting cultural, social, and political change. In addition to reading literary and visual texts, student complete a final project based on original research.",
@@ -1144,6 +1314,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , and LALS 100A , and LALS 100L . Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
    "repeatable": false,
@@ -1154,6 +1325,10 @@
   {
    "catalog_instructor": null,
    "code": "LALS194B",
+   "concurrent_ok": [
+    "LALS100L"
+   ],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the global history of migrating people, things, and ideas. Focuses primarily on case studies of mass migration and displacement in 19th and 20th centuries. Students analyze processes of migration in the Americas within a broader global context.",
@@ -1174,6 +1349,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , and LALS 100A , and previous or concurrent enrollment in LALS 100L . Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
    "repeatable": false,
@@ -1184,6 +1360,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194E",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines forced migrations to and within the Americas prior to the 20th century, with a focus on African and indigenous slave trades, indentured servitude, convict labor, and contract labor. Students address the implications and memories of those migrations today.",
@@ -1206,6 +1388,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , LALS 100A , and LALS 100L . Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
    "repeatable": false,
@@ -1216,6 +1399,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194F",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores issues of ethics, power, and social inequalities as it relates to technology and human rights. Using the concept of human rights witnessing, the course considers social inequalities in the digital realm, the impact on well-being resulting from the work of digital human rights investigators, and explores how our everyday lives have been deeply impacted by social media and digital technologies.",
@@ -1238,6 +1427,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , LALS 100A , and LALS 100L . Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
    "repeatable": false,
@@ -1248,6 +1438,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194G",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Analysis of Chilean politics and society from the election of Salvador Allende in 1970 to the present. Particular emphasis is given to understanding the different forces, internal as well as external, that broke the Chilean tradition of democratic rule in 1973, and to the current configuration.",
@@ -1270,6 +1466,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , LALS 100A , and LALS 100L . Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
    "repeatable": false,
@@ -1280,6 +1477,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS194H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This senior seminar focuses on the connections between Central America and the United States. Covers Central American history, the political and economic relations between the isthmus and the United States, and Central American media and literature. (Formerly Central American Political Relations with the U.S.)",
@@ -1290,6 +1489,7 @@
    "ge_codes": [],
    "number": "194H",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to junior and senior Latin American and Latino studies majors, minors, and combined majors.",
    "repeatable": false,
@@ -1300,6 +1500,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194J",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides students with an introduction to the emerging scholarly field of transitional justice. Examines transitional justice in a broad sense and through elected case studies. (Formerly LALS 156, Human Rights and Transitional Justice in the Americas.)",
@@ -1322,6 +1528,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , LALS 100A , and LALS 100L . Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
    "repeatable": false,
@@ -1332,6 +1539,23 @@
   {
    "catalog_instructor": null,
    "code": "LALS194L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194A",
+     "LALS194B",
+     "LALS194E",
+     "LALS194F",
+     "LALS194G",
+     "LALS194H",
+     "LALS194J",
+     "LALS194R",
+     "LALS194S",
+     "LALS194T",
+     "LALS194V",
+     "LALS194X"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides hands-on guidance in the research and communication skills related to the LALS 194 Senior Seminar.",
@@ -1341,11 +1565,8 @@
    "formerly": null,
    "ge_codes": [],
    "number": "194L",
-   "prereq_groups": [
-    [
-     "LALS194"
-    ]
-   ],
+   "prereq_groups": [],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Concurrent enrollment in one of the LALS 194 series.",
    "repeatable": true,
@@ -1356,6 +1577,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS194R",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course uses science fiction to explore themes, concerns, and questions in Latinx studies, particularly as related to race, coloniality, gender, sexuality, class, labor, and migration. By training students how to read attentively, to think critically and analytically, and to produce and evaluate interpretations, this five-unit course fulfills UC Santa Cruz’s Textual Analysis and Interpretation (TA) requirement. Enrollment is limited to Latin American and Latino Studies majors, with priority going to graduating seniors.",
@@ -1368,6 +1591,7 @@
    ],
    "number": "194R",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to Latin American and Latino Studies majors.",
    "repeatable": false,
@@ -1378,6 +1602,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS194S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students explore and apply \"ecocentric\" perspectives, and theories such as \"natureculture\" (introduced by feminist scholar Donna Haraway) as a means of building our own transdisciplinary approach to worlds beyond strictly human social configurations. Course incorporates a broad range of assigned reading and audiovisual resources. Seminar participants engage in class discussions, activities, and guided opportunities for natural history field observations. Course is divided into three topical modules, each of which has the dual purpose of introducing students to scholarship and methods relating to multi-species academic inquiry, and guiding the class through the conception, development, and writing of a relevant research project. Course is taught in tandem with LALS 194L , where students have further support in the multi-stage execution of their research projects.",
@@ -1388,6 +1614,7 @@
    "ge_codes": [],
    "number": "194S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1398,6 +1625,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194T",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores multiple and contested meanings of youth and citizenship; how youth, civic, and political identities are imagined, produced and negotiated in social and cultural locations; and how different versions of Latina/o youth citizenship are promoted and articulated by social and political institutions.",
@@ -1418,6 +1651,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , LALS 100A , and LALS 100L . Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors. Concurrent enrollment in LALS 194L required.",
    "repeatable": false,
@@ -1428,6 +1662,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS194V",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Traces major historical patterns of migration and related processes in the Americas over the past two centuries. Covers the social, cultural, political, and economic factors that drive and shape the movements of people and considers the ways migration has impacted the sending, transit, and receiving societies. Over the quarter, students come to understand major historical forces of migration that inform our contemporary world, including citizenship, urbanization, identity formations, globalization, and neoliberalism.",
@@ -1438,6 +1674,7 @@
    "ge_codes": [],
    "number": "194V",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to seniors.",
    "repeatable": false,
@@ -1448,6 +1685,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS194X",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS194L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores, in-depth, how local communities, transnational capital, and state participate in conflicts anchored in extractive sectors, for example, mining, agro-exports, and so on. Through digital-based, case-study research, students identify and explore the logics of action, strategic interests, and the rhetoric of the principal protagonists in socio-ecological conflicts.",
@@ -1468,6 +1711,7 @@
      "LALS100L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): LALS 100 , LALS 100A , and LALS 100L . Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors. Concurrent enrollment in LALS 194L required.",
    "repeatable": false,
@@ -1478,6 +1722,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS195B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Senior thesis writing under direction of major adviser. Students submit petition to sponsoring agency.",
@@ -1488,6 +1734,7 @@
    "ge_codes": [],
    "number": "195B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1498,6 +1745,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS195C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Senior thesis writing under direction of major adviser. Students submit petition to sponsoring agency.",
@@ -1508,6 +1757,7 @@
    "ge_codes": [],
    "number": "195C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1518,6 +1768,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1528,6 +1780,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1538,6 +1791,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1548,6 +1803,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1558,6 +1814,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1568,6 +1826,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1578,6 +1837,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1588,6 +1849,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1598,6 +1860,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS20",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Offers a domestic (U.S.) and transnational approach to Latino politics, focusing on the five largest Latino groups: Mexicans, Puerto Ricans, Cubans, Salvadorans, and Guatemalans. Issues addressed include Latino electoral participation, Latino public opinion, migrant political incorporation, and transnationalism among others.",
@@ -1610,6 +1874,7 @@
    ],
    "number": "20",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1620,6 +1885,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides historical and analytical foundations for the inter/transdisciplinary and transnational project of bridging the fields of Latin American and Latino studies (area and ethnic studies). Explores social, cultural, economic, and political changes connecting Latin America and U.S. Latina/o communities. Traces the intellectual genealogy of these efforts and how they contribute to each other. Introduces students to LALS' four substantive themes: (1) Transnationalisms, Migrations, and Displacement; (2) Intersectionality, Identities, and Inequalities; (3) Collective Action, Social Movements, and Social Change; and (4) Culture, Power, and Knowledge. Core requirement for students pursuing the Designated Emphasis in Latin American and Latino studies.",
@@ -1630,6 +1897,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1640,6 +1908,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS200A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines historical processes and contemporary social, cultural, and political structures in the Américas. Explores power as a mesh that interweaves relations of exploitation/domination/conflict aimed at controlling different dimensions of social existence. Places particular emphasis on the nature of capitalist development in the Américas, colonialism, imperialism/anti-imperialism, nationalism/ transnationalism/ plurinationalism, and neoliberalism. Builds a contextual foundation for conceptual inquiry in the department’s four substantive themes. (Formerly Power and Society.)",
@@ -1650,6 +1920,7 @@
    "ge_codes": [],
    "number": "200A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1660,6 +1931,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS200B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces theoretical frameworks that explore the relationships between culture, power, and subjectivities. Emphasizes developing interdisciplinary, interpretive, and analytic skills and engages foundational critical approaches including queer theory, border theory, subaltern studies, intersectionality, feminisms, and critical race theory. (Formerly Theories of Culture in the Americas.)",
@@ -1670,6 +1943,7 @@
    "ge_codes": [],
    "number": "200B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1680,6 +1954,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Problematizes the construction of research approaches in the interdisciplinary field of Latin American and Latino studies, and showcases particular approaches in the social sciences and humanities so students may engage in innovative, transnational research. (Formerly Research in Praxis: Epistemology, Ontology, and Ethics.)",
@@ -1690,6 +1966,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1700,6 +1977,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students engage and discuss texts that examine the relationship between space, narratives, and ideas of the modern nation, along with critical studies that highlight the social effects of imaginaries and representations.",
@@ -1710,6 +1989,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1720,6 +2000,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Grounds students in the social science literature on Latin American social movements, integrating anthropological, sociological, and political science approaches to the field.",
@@ -1730,6 +2012,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1740,6 +2023,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS204",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores concepts and approaches related to migration; the multiple types of borders that migrants transcend--geopolitical, social, cultural, or interpersonal; and borderland formations constructed in relation to bodies in motion.",
@@ -1750,6 +2035,7 @@
    "ge_codes": [],
    "number": "204",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1760,6 +2046,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Brings together comparative studies of physical and social mobility with a focus on race, migration, and citizenship. Both an articulation and study of comparison, course is organized around three components: comparative borders; comparative migration; and comparative ethnic studies. The questions animating it include: What happens when different histories, places, and peoples are compared? How and why do scholars in the humanities and humanistic social sciences compare? What are the strengths and challenges of a comparative approach? (Formerly offered as Comparative Mobilities.)",
@@ -1770,6 +2058,7 @@
    "ge_codes": [],
    "number": "205",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1780,6 +2069,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS206",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Seminar that engages social, political, and cultural histories of homosexuality in Cuba, focusing on LGBT ostracism and activism after 1959, with particular attention to the social and economic impact of the developments of the USSR on Cuba's LGBT population.",
@@ -1790,6 +2081,7 @@
    "ge_codes": [],
    "number": "206",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1800,6 +2092,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS207",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces intellectual histories of youth studies scholarship in the context of Latin American and Latino studies; explores young people's lived experiences of racialized capitalism and globalization; and addresses various forms of youth resistance and the relationship between youth cultures, politics, and social change.",
@@ -1810,6 +2104,7 @@
    "ge_codes": [],
    "number": "207",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted graduate students.",
    "repeatable": false,
@@ -1820,6 +2115,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS208",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how narratives about children, teens, youth, and students are imbued with political significance, and the ways young people are actively engaged in political practices. Considers how representations and lived experiences of youth can serve to reproduce and/or challenge inequalities.",
@@ -1830,6 +2127,7 @@
    "ge_codes": [],
    "number": "208",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1840,6 +2138,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Through an interdisciplinary approach, explores Latina feminist social theory and scholarly practice—especially in representation and interpretation of Latina experiences. Examining key texts at different historical junctures, charts how Latinas of varied ethnic, class, sexual, or racialized social locations have constructed oppositional and/or relational theories and alternative epistemologies or political scholarly interventions and, in the process, have problematized borders, identities, cultural expressions, and coalitions.",
@@ -1850,6 +2150,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1860,6 +2161,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS211",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores foundational texts by Latin American intellectuals that have served to construct and sustain continental, regional, national, and transnational cartographies of identities and the search for lo americano. Examines race/color, sexuality, and culture by tracing their narrative and conceptual (trans)formations in the region and its diaspora. Most texts are read in the original language of publication.",
@@ -1870,6 +2173,7 @@
    "ge_codes": [],
    "number": "211",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1880,6 +2184,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS212",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the social construction of Latino cultures in their varied regional, national-ethic, and gendered contexts. Examines how culture, as a dynamic process constructed with a historical context of hierarchical relations of group power, is interrelated to the structural subordination of Latinos. Focuses on how power relations create a context for the creation of specific Latino cultural expressions and processes.",
@@ -1890,6 +2196,7 @@
    "ge_codes": [],
    "number": "212",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1900,6 +2207,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS213",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Seminar introducing graduate students to the “how” of historical research methods, specifically, their application to interdisciplinary investigations in Latin American and Latino Studies. Focuses on different key methods within the broader umbrella of historical research and writing including: the implementation of critical archival approaches, conducting oral histories, digital tools in historical research and dissemination, and public history and interpretation. Also discusses topics of interdisciplinarity in historically grounded and historiographic research/writing, practical organizational strategies for data collection and storage, and the bureaucracy of preparing a research plan that involves work at archives or other institutional contexts.",
@@ -1910,6 +2219,7 @@
    "ge_codes": [],
    "number": "213",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1920,6 +2230,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the theories and practices informing the field of Latina cultural studies in the Americas. For students pursuing the Designated Emphasis in Latin American and Latino studies and students with interest in theories of coloniality of power, decolonialism, intercultural and transnational feminist methodologies.",
@@ -1930,6 +2242,7 @@
    "ge_codes": [],
    "number": "215",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1940,6 +2253,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS219",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides students in LALS and related fields with an opportunity to engage theoretical frameworks and examine a range of intellectual currents that have shaped economic, social, and cultural processes in Central America from the late 1800s to the present. Readings include a range of scholarship and critical studies in order to analyze the roles of intellectuals and how their ideas circulated in the isthmus and beyond. Evaluates the roles of institutions, political ideologies, media, and modernity in the constitution and propagation of intellectual networks, how these shape popular attitudes in everyday life, and the futures of the Central American isthmus.",
@@ -1950,6 +2265,7 @@
    "ge_codes": [],
    "number": "219",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1960,6 +2276,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes social, civic, and political actors that come together across borders to constitute transnational civil society, drawing from political sociology, political economy, comparative politics, and anthropology to address collective identity formation, collective action, institutional impacts, and political cultures.",
@@ -1970,6 +2288,7 @@
    "ge_codes": [],
    "number": "220",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1980,6 +2299,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS225",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers historical moments in the development of  race in the Americas to understand how race is given meaning and actualized through practices, beliefs, and behaviors. Interrogates theories and racial dynamics in the 19th through 21st centuries to reveal interconnections with constructions of gender and nation.",
@@ -1990,6 +2311,7 @@
    "ge_codes": [],
    "number": "225",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2000,6 +2322,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS235",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Approaches the nexus of sexuality and migration to examine contemporary theories of citizenship, security, violence, and power. Drawing on case studies that center experiences at, around, and across diverse borders throughout the Americas, the course takes an intersectional approach to understand: how migration is embedded in sexual identities and practices; and how sexuality, alongside race, class, and gender, influence who migrates and under what circumstances. Examining how researchers have approached sensitive questions of sexuality, students emerge better prepared to develop future research in the broader thematic fields of transnationalism, migration, and displacement.",
@@ -2010,6 +2334,7 @@
    "ge_codes": [],
    "number": "235",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2020,6 +2345,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS240",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "FMST240"
@@ -2032,6 +2359,7 @@
    "ge_codes": [],
    "number": "240",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2042,6 +2370,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS242",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how globalization, transnationalism, and the social construction of gender are interrelated, contingent, and subject to human agency and resistance. Examines particular configurations of globalization, transnationalism, and gender through the Américas and their implications for race, space, work, social movements, migration, and construction of collective memory.",
@@ -2052,6 +2382,7 @@
    "ge_codes": [],
    "number": "242",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2062,6 +2393,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS244",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the utility of geographical information systems (GIS) for social science research. This course has three components: critical discussions of spatial analysis in published research, training in GIS software, and the application of digital mapping to students' research projects.",
@@ -2072,6 +2405,7 @@
    "ge_codes": [],
    "number": "244",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2082,6 +2416,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS245",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines efforts by intellectuals from the Global South, mainly Latin America, to cast off the political, cultural, and epistemological notions imposed by European colonialism and preserved today through the practices of Western/Eurocentric knowledge, to forge their own epistemologies of the South.",
@@ -2092,6 +2428,7 @@
    "ge_codes": [],
    "number": "245",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2102,6 +2439,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS249",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines whiteness in Latin America as a racial identity, a social condition, a set of cultural practices, a dominant standpoint, and a hyper-valued ideal. Analyzes the meanings and applicability of such concepts as ordinary whiteness, aspirational whiteness, the narcissistic pact of whiteness, the racialization of class, among others. Scrutinizes the intersections of whiteness with class, gender, nation, and language. Readings cover a wide range of Latin American countries and fields including anthropology, sociology, communication, and media and cultural studies.",
@@ -2112,6 +2451,7 @@
    "ge_codes": [],
    "number": "249",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to Graduate Students",
    "repeatable": false,
@@ -2122,6 +2462,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS258",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how the divide between cultural studies and political economy can be resolved through a post-disciplinary approach which is attentive to how semiotic and material practices co-constitute contemporary capitalism and an ever-changing set of strategies attempting to manage its multiple contradictions.",
@@ -2132,6 +2474,7 @@
    "ge_codes": [],
    "number": "258",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students, or by permission of the instructor.",
    "repeatable": false,
@@ -2142,6 +2485,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS265",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Graduate students in LALS and related fields discuss interdisciplinary texts on the interconnection between Latin American species and geographies. Takes a historically grounded approach to address a range of topics related to the study of non-human subjects in this hemisphere, such as animals, plants, fungi, and the ecologies that they co-constitute. Topics include: centering non-humans in Latin American history; critical natural histories of the hemisphere; and inhabiting, and producing knowledge about, nature in contemporary América. In addition, students choose their own related topic(s) of interest and complete a series of reflective and iterative writing assignments, culminating in a draft for (optional) future publication.",
@@ -2152,6 +2497,7 @@
    "ge_codes": [],
    "number": "265",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2162,6 +2508,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS292",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Required for all LALS graduate students in residence, colloquium includes a mix of activities aimed at supporting the development of graduate students as teachers, researchers, and active participants in academic communities. Includes lectures by distinguished speakers, work-in-progress sessions for both faculty and graduate student research, pedagogical theory and practice seminars, and professional development workshops.",
@@ -2172,6 +2520,7 @@
    "ge_codes": [],
    "number": "292",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enollment is restricted to graduate students.",
    "repeatable": true,
@@ -2182,6 +2531,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS294P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides training for graduate students in university-level pedagogy in general and in the pedagogy of Latin American and Latino studies specifically. Coordinated by a graduate student who has had substantial experience as a teaching assistant, under the supervision of a faculty member.",
@@ -2192,6 +2543,7 @@
    "ge_codes": [],
    "number": "294P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2202,6 +2554,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit a reading course proposal to a department faculty member who supervises independent study in the field. Faculty and student jointly agree upon reading list. Students expected to meet regularly with faculty to discuss readings. This independent study must focus on a subject not covered by current UCSC graduate curriculum. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -2212,6 +2566,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2222,6 +2577,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Students submit a reading course proposal to a department faculty member who supervises independent study in the field. Faculty and student jointly agree upon reading list. Students expected to meet regularly with faculty to discuss readings. This independent study must focus on a subject not covered by current UCSC graduate curriculum. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -2232,6 +2589,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2242,6 +2600,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS297C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Students submit a reading course proposal to a department faculty member who supervises independent study in the field. Faculty and student jointly agree upon reading list. Students expected to meet regularly with faculty to discuss readings. This independent study must focus on a subject not covered by current UCSC graduate curriculum. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -2252,6 +2612,7 @@
    "ge_codes": [],
    "number": "297C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2262,6 +2623,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
@@ -2272,6 +2635,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2282,6 +2646,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
@@ -2292,6 +2658,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2302,6 +2669,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS299C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
@@ -2312,6 +2681,7 @@
    "ge_codes": [],
    "number": "299C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2322,6 +2692,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS30",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines contemporary social movements in Latin America, especially those that arose from popular response to different forms of social exclusion and to authoritarian political systems. Explores a variety of popular movements, their successes and setbacks, including rural and urban uprisings, native nations and their descendants, women, labor, human rights, and transnational movements.",
@@ -2334,6 +2706,7 @@
    ],
    "number": "30",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2344,6 +2717,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS31",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines gender and feminist theories emerging from Latinx communities in the U.S. and Latin America. Provides a transnational and transborder overview of how Latinx feminisms have contributed to movements at large such as: national liberation, reproductive justice, migrant justice, indigenous movements, and the anti-violence movement. Course emphasizes a connection and relationality to how feminist movements in Latin America are informed by U.S.-Latin American politics and how feminist resistance and mobilization transcends and circulates across borders.",
@@ -2356,6 +2731,7 @@
    ],
    "number": "31",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2366,6 +2742,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS32",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores theories and practices of citizenship with a focus on how institutions, such as the immigration apparatus, school, and prison, produce and shape inclusion, marginalization, exclusion, and mobility and how social actors envision and enact home and belonging.",
@@ -2378,6 +2756,7 @@
    ],
    "number": "32",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2388,6 +2767,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS33",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the topic of Central American migration through a critical and interdisciplinary lens. Explores the forces that contextualized migration to, through, and from this region during different historical moments. Students learn about key aspects of Central American history that have and continue to drive migration from the isthmus, with special attention to U.S.-bound migration from the 1970s onward. Students also learn about some of the challenges Central American migrants continue to face in their places of birth, while in transit, and once they arrive at their destinations.",
@@ -2400,6 +2781,7 @@
    ],
    "number": "33",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2410,6 +2792,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS40",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the historical, social, economic, and political dynamics of inequality, stratification, and segmentation that shape the occupational pathways and workplace conditions of Latinos in the United States. Students learn about the structures, policies, and ideologies that influence Latinos' working lives as well as how individuals experience their work in a variety of sectors.",
@@ -2422,6 +2806,7 @@
    ],
    "number": "40",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2432,6 +2817,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS45",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces theories of race, class, and gender which shape understandings about racial/ethnic issues in the United States. With particular attention to the experiences of U.S. racial/ethnic groups, including Latinas/os, African Americans, Asian Americans, and Native Americans, this course draws from interdisciplinary research to address how race, class, and gender are also crosscutting dynamics.",
@@ -2444,6 +2831,7 @@
    ],
    "number": "45",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2454,6 +2842,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS49",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the organizing of Chicanas and Latinas, spanning from the 1960s Chicano Movement to the contemporary impacts. Delves into the emergence of the “Chicana Identity,” including its limitations, the movement from a feminist perspective, and the movement’s goals. This course encourages students to understand how a movement can impact culture, identity, and history by mapping the longevity of organizing histories. Draws on texts, podcasts, and videos to examine histories and understand how systems of power impact political narratives.",
@@ -2466,6 +2856,7 @@
    ],
    "number": "49",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2476,6 +2867,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS5",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces human rights as a way to study social justice. Students gain an understanding of interdisciplinary approaches to human rights as a theory, legally, and as a basis for global social movements.",
@@ -2488,6 +2881,7 @@
    ],
    "number": "5",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2498,6 +2892,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS50",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores key aspects of transnational feminist organizing in the Americas, including transnational feminist theories and feminist activism in Latin America and the Caribbean. Discusses how women from throughout the Americas region organize politically and socially across gender, race, ethnicity, sexuality, and nationality.",
@@ -2510,6 +2906,7 @@
    ],
    "number": "50",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2520,6 +2917,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS54",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines histories and contemporary manifestations of systemic racism, colonialism, and carcerality in the development and practice of science and medicine in the Western world, with an emphasis on how this has impacted Latinx and Latin American communities. Course draws on texts from a wide range of disciplines in the social sciences and humanities, including history of science and medicine, medical anthropology, ethnic studies, and science and technology studies. Students explore the impact of racialized bias and a lack of diversity in science and ways in which to address these deficiencies. Students also learn about efforts to integrate social justice, anti-racist, anti-colonial, and abolitionist principles and practices into the fields of science and medicine.",
@@ -2532,6 +2931,7 @@
    ],
    "number": "54",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2542,6 +2942,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS55",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Compares the response to AIDS in the United States and Latin America, with special attention to \nmigration, human rights, activism, stigma, gender, and sexuality. Students develop a conceptual \nfoundation to conduct a people-centered approach and cultural analysis of AIDS.",
@@ -2554,6 +2956,7 @@
    ],
    "number": "55",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2564,6 +2967,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS56",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Over the 20th century, Latin American countries experimented with the challenge of ensuring the right to health. Many of their approaches were inspired by Latin American Social Medicine, a social scientific field whose contributions remain, to this day, under-recognized in traditional public health. This course introduces the field of Latin American Social Medicine and its struggles to affirm health as a fundamental human right. Through a range of case studies, students examine how unequal social contexts and power relations shape collective health, the politics of care, and everyday experiences of illness and well-being.",
@@ -2576,6 +2981,7 @@
    ],
    "number": "56",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2586,6 +2992,12 @@
   {
    "catalog_instructor": null,
    "code": "LALS56L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "LALS56"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Offers students the opportunity to conduct experimental inquiry in the field of social medicine and to supplement the knowledge acquired in LALS 56, The Right to Health. The optional laboratory guides students through contemporary issues and debates in Latin American Social Medicine. Through a scaffolded approach, students research a current health issue in Latin America and design a collaborative original proposal to address it informed by perspectives in social medicine.",
@@ -2597,11 +3009,8 @@
     "PR-E"
    ],
    "number": "56L",
-   "prereq_groups": [
-    [
-     "LALS56"
-    ]
-   ],
+   "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): concurrent enrollment in LALS 56.",
    "repeatable": false,
@@ -2612,6 +3021,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS57",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course moved beyond behaviorist and neurobiological examinations of drug use, addiction, and recovery to explore the social, cultural, political, and embodied contours and contexts of these phenomena among Latinx and Latin American communities. The history and consequences of punitive approaches to drug use, drug markets, addiction, and recovery in both the U.S. and Latin America and their impacts on Latinx communities are explored. Alternative approaches to punitive drug policies such as harm reduction also discussed.",
@@ -2624,6 +3035,7 @@
    ],
    "number": "57",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2634,6 +3046,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS60",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces research on childhood in contemporary Latin America. Explores discourses about Latin American children, the regional institutions shaping children's lives, and how children experience and negotiate these larger social forces.",
@@ -2646,6 +3060,7 @@
    ],
    "number": "60",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2656,6 +3071,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS62",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This interdisciplinary course focuses on the resilience of Chicanx students by emphasizing barriers like segregation and the resistance put forward by students, families, and communities in the courts and the streets. Students are introduced to the tactics and past actions of Chicanx to confront racism and discrimination in California public schools. Also focuses on the contemporary discourse around segregation and its impact on Latinx and Chicanx educational outcomes.",
@@ -2668,6 +3085,7 @@
    ],
    "number": "62",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2678,6 +3096,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS65",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the religious beliefs and practices surrounding the revolutionary movements for social change in Latin America with a particular focus on liberation theology.",
@@ -2690,6 +3110,7 @@
    ],
    "number": "65",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2700,6 +3121,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS75",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the works of Diego Rivera, other Mexican muralists, and the Latin American cultural movements that developed to address relevant social and political issues.",
@@ -2712,6 +3135,7 @@
    ],
    "number": "75",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2722,6 +3146,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS75L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "This hands-on course explores the dynamic relationship between art and social movements in Latin America, focusing on practice-based learning. Students engage with key themes such as resistance, identity, and activism through creating visual art, music, performance, and digital media inspired by Latin American traditions and social struggles.",
@@ -2734,6 +3160,7 @@
    ],
    "number": "75L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2744,6 +3171,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS79",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Exploration of key themes in Latin American history through the medium of hip hop. Students analyze prevalent historical patterns that speak to shared experiences across the Americas. Course content is divided into weekly modules that move thematically through topics including struggles for social and political citizenship, structural mechanisms of exclusion, and anti-imperialist activisms. Also includes reading primary historical documents and engaging in textual analysis of both archival and contemporary texts. Readings equip students to critically interpret elements of hip-hop culture from contemporary Latin America and the Caribbean including MCing, graffiti, and hip hop as the production of knowledge.",
@@ -2756,6 +3185,7 @@
    ],
    "number": "79",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2766,6 +3196,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS79S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Taught in Spanish. Exploration of key themes in Latin American history through the medium of hip hop. Students analyze prevalent historical patterns that speak to shared experiences across the Americas. Course content is divided into weekly modules that move thematically through topics including struggles for social and political citizenship, structural mechanisms of exclusion, and anti-imperialist activisms. Also includes reading primary historical documents and engaging in textual analysis of both archival and contemporary texts. Readings equip students to critically interpret elements of hip-hop culture from contemporary Latin America and the Caribbean including MCing, graffiti, and hip hop as the production of knowledge.",
@@ -2778,6 +3210,7 @@
    ],
    "number": "79S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2788,6 +3221,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS80D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "OAKS80D"
@@ -2802,6 +3237,7 @@
    ],
    "number": "80D",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2812,6 +3248,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS80F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes the Latino experience in the U.S. with a special focus on strategies for economic and social empowerment. Stresses the multiplicity of the U.S. Latino community, drawing comparative lessons from Cuban-American, Puerto Rican, Chicano/Mexicano, and Central American patterns of economic participation and political mobilization.",
@@ -2824,6 +3262,7 @@
    ],
    "number": "80F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2834,6 +3273,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS80H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed to survey recent works in the field of Latina and Latino histories, with particular emphasis on historiographical approaches and topics in the field. Readings are chosen to expose a selection of the varied histories and cultures of Latina/os in the U.S., and focus primarily on Mexicans, Puerto Ricans, and Cubans.",
@@ -2846,6 +3287,7 @@
    ],
    "number": "80H",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2856,6 +3298,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS80J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Evaluates the relationship between processes of racial formation, war, and nationalism in Latin America. Case studies range from the wars of independence to more recent forms of transnational violence. Students engage historical and anthropological perspectives and critiques of modernity.",
@@ -2868,6 +3312,7 @@
    ],
    "number": "80J",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2878,6 +3323,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS80S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to issues and themes surrounding sexualities and genders within Latin American and Latina/o studies. Provides background in the basic theoretical and historical frameworks of gender and its relationship to sexuality. In addition to cross-border perspectives, course also examines how gender and sexuality are structured and experienced through other social categories.",
@@ -2890,6 +3337,7 @@
    ],
    "number": "80S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2900,6 +3348,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS80X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines contemporary societies and peoples of Central America considering how, in recent decades, media, history, war, cultural production, and migration have shaped Guatemala, Honduras, El Salvador, Nicaragua, and Costa Rica both as individual nations and as a region.",
@@ -2912,6 +3362,7 @@
    ],
    "number": "80X",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2922,6 +3373,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS90",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces issues affecting contemporary Brazilian society and culture, such as the legacy of slavery and persisting social, racial, and gender inequities. Analyses of how different representations of Brazil sustain distinctive national projects, which, in turn, attribute specific meanings to blackness, whiteness, masculinity, femininity, and upper- and lower-class identities.",
@@ -2934,6 +3387,7 @@
    ],
    "number": "90",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2944,6 +3398,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS90F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Course supports students in their professional development, focusing on strategies for engaging their own lived experiences as marketable skills for their professional pathways. Students engage in critical discussion on professionalism and how to maintain individual values and identities in different professional environments. Draws on campus and community resources, articles from professional development spaces, and guest lectures from individuals on different career pathways.",
@@ -2956,6 +3412,7 @@
    ],
    "number": "90F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2966,6 +3423,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS94X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "With a focus on the Americas, this course introduces students into the debates about the causes and solutions to the twinned crisis of global climate change and rising inequality.",
@@ -2978,6 +3437,7 @@
    ],
    "number": "94X",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2988,6 +3448,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS95",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Seminar for undergraduates participating in the Cultivamos Excelencia program supporting the development of students as researchers and active participants in academic communities; including lectures on disciplinary methods by participating faculty, work-in-progress sessions for mentors and student researchers, and workshops on formulating research questions, developing a research plan, writing a research paper, and professional development. Enrollment is by instructor permission.",
@@ -2998,6 +3460,7 @@
    "ge_codes": [],
    "number": "95",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3008,6 +3471,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -3018,6 +3483,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -3028,6 +3494,8 @@
   {
    "catalog_instructor": null,
    "code": "LALS99F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -3038,6 +3506,7 @@
    "ge_codes": [],
    "number": "99F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -3046,11 +3515,10 @@
    "url": "/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/lower-division/lals-99f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "LALS"
 }

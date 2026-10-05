@@ -77,6 +77,11 @@ class Course(Base):
     url: Mapped[str | None] = mapped_column(Text)
     raw_requirements: Mapped[str | None] = mapped_column(Text)
     prereq_groups: Mapped[list | None] = mapped_column(JSONVariant)  # [[OR..], [OR..]] ANDed
+    # Codes inside prereq_groups that may be taken the same quarter
+    # ("previous or concurrent enrollment in X"), and strict co-requisites
+    # (CNF, "concurrent enrollment in X is required").
+    concurrent_ok: Mapped[list | None] = mapped_column(StrArray)
+    coreqs: Mapped[list | None] = mapped_column(JSONVariant)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     # In the catalog but zero offerings (historical or planned) in our data
     # window — listed courses that effectively don't run. Set during

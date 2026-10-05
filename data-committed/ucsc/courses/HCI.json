@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the core premises of human-computer interaction (HCI), including major phases in the evolution of HCI. Issues covered include the origins of HCI and its transformation alongside the spread of computing technologies into the fabric of everyday life.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to human computer interaction graduate students.",
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to human computer interaction (HCI) methods, including the theory and practice of established and cutting-edge user research and design methods. Students also gain experience justifying and communicating about HCI methods. (Formerly Introduction to Design Methods in HCI.)",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to human computer interaction graduate students.",
    "repeatable": false,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI202A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introductory course on build methods in HCI for students with minimal prototyping experience. Course covers a combination of HCI theory and practice to design, build, deploy, iterate, document, and demo novel prototypes of varying purpose to multiple stakeholders. Topics may include paper prototyping, HTML prototyping, mobile app prototyping, introductions to physical prototyping, and accessible designs. (Formerly offered as Introduction to HCI Build: Bootcamp.)",
@@ -54,6 +62,7 @@
    "ge_codes": [],
    "number": "202A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in human computer interaction, or by permission of the instructor.",
    "repeatable": false,
@@ -64,6 +73,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI202B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced course on build methods in HCI, applicable to any computing domain including gaming. Course covers a combination of HCI theory and practice to design, build, deploy, iterate, document, and demo novel prototypes of varying purpose to multiple stakeholders. Advanced topics may include physical computing, input devices (e.g., alternative controllers), wearable computing, IoT, AR, VR, 3D fabrication, programmatic wireframing, and accessible designs. May be taught in conjunction with GAME 202 . Students cannot receive credit for this course and GAME 202 . (Formerly offered as Introduction to Build: Advanced.)",
@@ -74,6 +85,7 @@
    "ge_codes": [],
    "number": "202B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in human computer interaction, or by permission of the instructor.",
    "repeatable": false,
@@ -84,6 +96,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to research and analysis methods in human-computer interaction (HCI). Introduces theoretical perspectives on HCI arising from cognitive science, sociology, and distributed cognition. Explores the key methods to apply and test these theories including: designing and conducting studies, statistics, analysis, heuristic evaluation, ethnography, interviews, surveys, field studies, and other established methods used by HCI practitioners.",
@@ -94,6 +108,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to human computer interaction graduate students.",
    "repeatable": false,
@@ -104,6 +119,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines tech ethics/activism through the lens of design. Students discuss biases within tech and reflect on the role of UX/HCI practitioners through coursework and activities. Students learn the possibilities of political action as UX/HCI practitioners.",
@@ -115,10 +132,13 @@
    "number": "220",
    "prereq_groups": [
     [
-     "HCI200",
+     "HCI200"
+    ],
+    [
      "HCI201"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): HCI 200 and HCI 201 ; or by permission of instructor. Enrollment is restricted to human computer interaction graduate students.",
    "repeatable": false,
@@ -129,6 +149,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces theoretical and practical knowledge on participatory design of digital technologies and related services. Applies participatory design methods and techniques in designing digital solutions and applications. Enables students to learn how to plan and manage a participatory design process, understanding their stakeholders and designing tools to engage them in the design process. Allows students to conduct various studies with their participants and engage in qualitative analysis of the results.",
@@ -139,6 +161,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in games and playable media, serious games, human computer interaction, and computational media programs, or by permission of the instructor.",
    "repeatable": false,
@@ -149,6 +172,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI271",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches students how to form project teams, brainstorm, and iterate ideas for the capstone projects, culminating in approved briefs and project teams, including an approved committee of advisers for each project. Advisers may be local industry people (including industry partners who have proposed projects), or may also be UCSC faculty from the main campus.",
@@ -160,7 +185,9 @@
    "number": "271",
    "prereq_groups": [
     [
-     "HCI200",
+     "HCI200"
+    ],
+    [
      "HCI201"
     ],
     [
@@ -168,6 +195,7 @@
      "HCI202B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): HCI 200, HCI 201 , and either HCI 202A or HCI 202B. Enrollment is restricted to human computer interaction graduate students.",
    "repeatable": false,
@@ -178,6 +206,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI272",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "The goal of this course is for students in the Professional Master's Degree in Human-Computer Interaction to produce successful capstone projects. The course is organized around iterative feedback from peers and project advisers (both academic and professional), and includes extensive workshopping, critique, and testing. The course culminates in an end-of-quarter showcase of student work, with all project advisers and project sponsors invited. Also includes professional development. (Formerly Capstone 2.)",
@@ -192,6 +222,7 @@
      "HCI271"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): HCI 271. Enrollment is restricted to human computer interaction graduate students.",
    "repeatable": false,
@@ -202,6 +233,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI290",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly speakers on human-computer interaction topics. Course can be taken for Satisfactory/Unsatisfactory credit only.",
@@ -212,6 +245,7 @@
    "ge_codes": [],
    "number": "290",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -222,6 +256,8 @@
   {
    "catalog_instructor": null,
    "code": "HCI291",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Explores the strategic dimensions of innovation in UX practice. Each week, students engage in talks and discussions that illuminate how UX shapes—and is shaped by—business strategy, emerging technologies, and organizational priorities. The focus is on sharpening perspective and building fluency in strategic conversations, preparing students to position UX as a driver of innovation and value within complex business ecosystems. This class can be taken for Satisfactory/Unsatisfactory grade only.",
@@ -233,11 +269,16 @@
    "number": "291",
    "prereq_groups": [
     [
-     "HCI200",
-     "HCI201",
+     "HCI200"
+    ],
+    [
+     "HCI201"
+    ],
+    [
      "HCI290"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): HCI 200, HCI 201 , and HCI 290. Enrollment is restricted to human computer interaction graduate students or by permission of the instructor.",
    "repeatable": false,
@@ -246,11 +287,10 @@
    "url": "/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-291"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "HCI"
 }

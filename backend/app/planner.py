@@ -127,28 +127,40 @@ def _disp(ctx: ValidationContext, code: str) -> str:
 
 def _check_prereqs(ctx, course: Course, term_code: str, taken_before: set,
                    same_term: set) -> list[dict]:
+    """Prereq groups (CNF) must be met by earlier quarters, except by courses
+    the catalog explicitly allows concurrently ("previous or concurrent
+    enrollment in X"). Strict co-requisites ("concurrent enrollment in X is
+    required") must be in the same quarter or earlier."""
     issues = []
+    concurrent_ok = set(course.concurrent_ok or [])
     for group in course.prereq_groups or []:
         if any(g in taken_before for g in group):
             continue
         concurrent = [g for g in group if g in same_term]
-        if concurrent:
-            # Inline coreqs are folded into prereq groups by the pipeline, so
-            # same-term satisfaction is plausible but worth surfacing.
+        if any(g in concurrent_ok for g in concurrent):
             issues.append(_issue(
                 "concurrent_prereq", course.code, term_code,
-                f"{course.display_code}: {_disp(ctx, concurrent[0])} is planned in the same "
-                "quarter — OK only if concurrent enrollment is allowed",
+                f"{course.display_code}: {_disp(ctx, concurrent[0])} in the same quarter — "
+                "the catalog allows concurrent enrollment",
                 severity="info",
             ))
             continue
         alternatives = " or ".join(_disp(ctx, g) for g in group[:4])
+        same_q = " (planned in the same quarter; it must be completed first)" if concurrent else ""
         issues.append(_issue(
             "missing_prereq", course.code, term_code,
             f"{course.display_code} needs {alternatives}"
             + (" (among others)" if len(group) > 4 else "")
-            + " before this quarter",
+            + " before this quarter" + same_q,
             severity="error",
+        ))
+    for group in course.coreqs or []:
+        if any(g in taken_before or g in same_term for g in group):
+            continue
+        issues.append(_issue(
+            "missing_coreq", course.code, term_code,
+            f"{course.display_code} requires concurrent enrollment in "
+            + " or ".join(_disp(ctx, g) for g in group[:4]),
         ))
     return issues
 

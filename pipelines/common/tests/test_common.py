@@ -4,7 +4,6 @@ import pytest
 
 from common import codes
 from common.guards import FailureBudget, GuardViolation, ScrapeDriftError, expect, expect_range
-from common.ollama import _extract_json
 from common.snapshot import SnapshotWriter, latest
 
 
@@ -32,14 +31,6 @@ def test_code_normalization():
     assert not codes.is_course_id("PERMISSION")
     assert codes.extract_codes("Math 117 and CSE 101; or by permission") == {"MATH117", "CSE101"}
     assert codes.display("CSE12") == "CSE 12"
-
-
-def test_extract_json_variants():
-    assert _extract_json('{"groups": []}') == {"groups": []}
-    assert _extract_json('```json\n{"a": 1}\n```') == {"a": 1}
-    assert _extract_json('noise {"a": 1} trailing') == {"a": 1}
-    assert _extract_json("not json") is None
-    assert _extract_json("") is None
 
 
 def test_snapshot_staging_and_finalize(tmp_path, monkeypatch):

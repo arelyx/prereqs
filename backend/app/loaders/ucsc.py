@@ -153,6 +153,8 @@ def _upsert_courses(db: Session, courses: list[dict]) -> None:
         row.cross_listed = c.get("cross_listed") or []
         row.repeatable = bool(c.get("repeatable"))
         row.prereq_groups = c.get("prereq_groups")
+        row.concurrent_ok = c.get("concurrent_ok") or []
+        row.coreqs = c.get("coreqs") or []
         row.is_active = True
         db.flush()
         id_by_code[row.code] = row.id

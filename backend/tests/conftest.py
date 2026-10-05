@@ -89,12 +89,14 @@ def seeded(db_session):
             "Data Structures and Algorithms",
             division="upper",
             prereq_groups=[["CSE12"], ["CSE16"], ["CSE30"]],
+            concurrent_ok=["CSE16"],
         ),
         _course(
             "CSE130",
             "Systems Design",
             division="upper",
             prereq_groups=[["CSE101"]],
+            coreqs=[["CSE16"]],
         ),
         _course("ANTH2", "Cultural Anthropology", ge_codes=["CC"]),
         # Catalog-listed but zero offerings in the data window.

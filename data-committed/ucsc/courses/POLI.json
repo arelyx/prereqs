@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Systematic introduction to the nature of politics and government, organized around the dynamic relationship between power, principle, and process in democratic politics. Provides historic and contemporary overview; explores the interactions among government, laws, and societies at the national and international levels.",
@@ -16,6 +18,7 @@
    ],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI100",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on methods and approaches to writing effective and persuasive argumentative essays as a core component of the study of politics. Topics vary by instructor, and consider central concepts and issues in political life. The course material is explored as a means through which to develop basic and advanced skills in writing, as well as in argumentation, analysis, and critical engagement with readings through seminar-style discussions.",
@@ -36,6 +41,7 @@
    "ge_codes": [],
    "number": "100",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -46,6 +52,8 @@
   {
    "catalog_instructor": "Newsome",
    "code": "POLI101",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses upon quantitative data analysis and research methods used in the study of politics. Through a series of hands-on assignments students learn to describe data and statistical relationships, measure complex variables, assess statistical significance and construct multivariate models with both indirect relationships and interactions. (Formerly Introduction to Research Methods.)",
@@ -58,6 +66,7 @@
    ],
    "number": "101",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -68,6 +77,8 @@
   {
    "catalog_instructor": "Sara Niedzwiecki",
    "code": "POLI102",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to conceptualizing and executing qualitative research in the social sciences. Qualitative methods are non-statistical modes of social inquiry, including case studies, interviews, and archival research. Research methods cannot be done in a passive way. Really understanding methodology requires Doing Political Research. (Formerly Doing Research.)",
@@ -78,6 +89,7 @@
    "ge_codes": [],
    "number": "102",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -88,6 +100,8 @@
   {
    "catalog_instructor": "Dion Farquahar",
    "code": "POLI103",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Situates ongoing debates around feminist theory and practice within the context of political theory, the role of the state, and the position of women in contemporary (predominantly Western) society. Engages with classical political theory, second wave feminism, and the role of the state on matters pertaining to pornography and prostitution.",
@@ -98,6 +112,7 @@
    "ge_codes": [],
    "number": "103",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -108,6 +123,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI105A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST105A"
@@ -120,6 +137,7 @@
    "ge_codes": [],
    "number": "105A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -130,6 +148,8 @@
   {
    "catalog_instructor": "Vanita Seth",
    "code": "POLI105B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST105B"
@@ -142,6 +162,7 @@
    "ge_codes": [],
    "number": "105B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -152,6 +173,8 @@
   {
    "catalog_instructor": "Megan Thomas",
    "code": "POLI105C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST105C"
@@ -164,6 +187,7 @@
    "ge_codes": [],
    "number": "105C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -174,6 +198,8 @@
   {
    "catalog_instructor": "Yasmeen Daifallah",
    "code": "POLI105D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST105D"
@@ -186,6 +212,7 @@
    "ge_codes": [],
    "number": "105D",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -196,6 +223,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI106",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to some of the core topics in the discipline of politics. Politics is often understood in terms of institutions and voting, and that is certainly an important part of what constitutes the political. But politics also informs the way we imagine and inhabit the world, how we think, the categories we use, the ways we live our lives. This course seeks to engage the broad subject matter that constitutes the political.",
@@ -206,6 +235,7 @@
    "ge_codes": [],
    "number": "106",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -216,6 +246,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI107",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses questions such as: \"How do popular conceptions of beauty serve state power or resist it?” “Is art always political?” “Does politics always involve an aesthetic dimension?” Course considers a range of material including texts, images, statues, architecture, and music (e.g., Pyramids, Great Wall, Mount Rushmore). Prior coursework in political theory recommended.",
@@ -228,6 +260,7 @@
    ],
    "number": "107",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -238,6 +271,8 @@
   {
    "catalog_instructor": "Megan Thomas",
    "code": "POLI108",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines revolt, rebellion, and revolution as ideas in political theory, and as prisms through which we can analyze historical events. Introduces works of political theory (historical and contemporary), and looks at historical events considered to be revolts and/or revolutions.",
@@ -248,6 +283,7 @@
    "ge_codes": [],
    "number": "108",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -258,6 +294,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST110"
@@ -270,6 +308,7 @@
    "ge_codes": [],
    "number": "110",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -280,6 +319,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI111A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST111A"
@@ -292,6 +333,7 @@
    "ge_codes": [],
    "number": "111A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -302,6 +344,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies the development of political-economic philosophy from the 17th Century through the end of WWII, with attention to colonialism, Indigenous critiques, and intersectional feminist interventions. Topics include money, property, the commons, luxury, class struggle, and inequality. Students engage these topics through reading, class discussion, and writing original persuasive theoretical essays based on textual evidence.",
@@ -320,6 +364,7 @@
      "POLI120C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): One of POLI 105A , POLI 105B , POLI 105C , POLI 105D , or POLI 120C .",
    "repeatable": false,
@@ -330,6 +375,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course uses a multidisciplinary approach to the study of politics through significant contemporary authors and approaches in critical theory. Topics include: democracy action, violence, subjectivity, identity, power and resistance, the body, political economy, and post-colonialism. (Formerly Topics in Contemporary Political and Critical Theory.)",
@@ -340,6 +387,7 @@
    "ge_codes": [],
    "number": "118",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -350,6 +398,8 @@
   {
    "catalog_instructor": "Daniel Wirls",
    "code": "POLI120A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST120A"
@@ -364,6 +414,7 @@
    "ge_codes": [],
    "number": "120A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -374,6 +425,8 @@
   {
    "catalog_instructor": "Melanie Springer",
    "code": "POLI120B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST120B"
@@ -388,6 +441,7 @@
    "ge_codes": [],
    "number": "120B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -398,6 +452,8 @@
   {
    "catalog_instructor": "Eva Bertram",
    "code": "POLI120C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST120C"
@@ -412,6 +468,7 @@
    "ge_codes": [],
    "number": "120C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -422,6 +479,8 @@
   {
    "catalog_instructor": "Anjuli Verma",
    "code": "POLI121",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST121"
@@ -436,6 +495,7 @@
    ],
    "number": "121",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -446,6 +506,8 @@
   {
    "catalog_instructor": "Eva Bertram",
    "code": "POLI122",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines political and social dimensions of recent transformations in the U.S. labor market. Includes classical and contemporary theoretical debates over the nature and functions of work under capitalism. Focuses on shifts in the organization and character of work in a globalizing economy. Addresses recent trends in low-wage and contingent work, job mobility and security, and work/family relations. Includes attention to the roles and responses of business, labor, and government.",
@@ -456,6 +518,7 @@
    "ge_codes": [],
    "number": "122",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -466,6 +529,8 @@
   {
    "catalog_instructor": "Eva Bertram",
    "code": "POLI124",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the sources and implications of economic inequality in the United States. Explores theories of social class and its intersections with race and gender inequalities. Focuses on the role of politics and public policies in diminishing and/or exacerbating income and wealth inequalities.",
@@ -476,6 +541,7 @@
    "ge_codes": [],
    "number": "124",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -486,6 +552,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the literature on interest groups and attempts to answer the question: Do such groups promote or hinder American democracy? Class readings and lectures review and assess the participation of interest groups in the electoral process and in Congress, the executive branch, and the courts.",
@@ -496,6 +564,7 @@
    "ge_codes": [],
    "number": "125",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to politics and Latin American and Latino studies/politics combined majors during first and second pass enrollment.",
    "repeatable": false,
@@ -506,6 +575,8 @@
   {
    "catalog_instructor": "Melanie Springer",
    "code": "POLI127",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores several important topics in the study of parties and partisanship in American politics; for example, the development of the party system, parties as organizations, parties in government, parties in the electorate, polarization, partisan identification, and state-level variation.",
@@ -516,6 +587,7 @@
    "ge_codes": [],
    "number": "127",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -526,6 +598,8 @@
   {
    "catalog_instructor": "Melanie Springer",
    "code": "POLI128",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces key concepts pertaining to voting, elections, and political behavior in the United States. Several topics are covered, such as campaigns, electoral institutions, reform, political participation (including but not limited to voting), presidential and congressional elections, partisan identification, and polling.",
@@ -536,6 +610,7 @@
    "ge_codes": [],
    "number": "128",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -546,6 +621,8 @@
   {
    "catalog_instructor": "Daniel Wirls",
    "code": "POLI129",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the evolution of the policy and politics of American national security, from the Cold War to the present. Content of military policy explored with analytic focus on formation of policy and interactions between military policies and domestic policies.",
@@ -556,6 +633,7 @@
    "ge_codes": [],
    "number": "129",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to politics and Latin American and Latino studies/politics combined majors during first and second pass enrollment.",
    "repeatable": false,
@@ -566,6 +644,8 @@
   {
    "catalog_instructor": "Ruth Langridge",
    "code": "POLI132",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST132"
@@ -578,6 +658,7 @@
    "ge_codes": [],
    "number": "132",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -588,6 +669,8 @@
   {
    "catalog_instructor": "Daniel Wirls",
    "code": "POLI134",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST134"
@@ -600,6 +683,7 @@
    "ge_codes": [],
    "number": "134",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -610,6 +694,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI140A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the political and economic systems of advanced industrialized societies. In addition to specific comparisons between the countries of western Europe and the United States, covers important themes and challenges, including immigration, globalization, and the crisis of the welfare state.",
@@ -620,6 +706,7 @@
    "ge_codes": [],
    "number": "140A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -630,6 +717,8 @@
   {
    "catalog_instructor": "Sari Niedzwiecki",
    "code": "POLI140C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of major approaches to the study of Latin American politics. Introductory survey of historical and contemporary democratic populist, authoritarian, and revolutionary regimes. Special attention is given to region's recent transitions toward democratic rule, market-based economic models, and decentralized governance. Evaluates institutional arrangements (including presidentialism, electoral rules and party systems), as well as a variety of social movements and strategies of resistance among subaltern social groups and classes.",
@@ -640,6 +729,7 @@
    "ge_codes": [],
    "number": "140C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -650,6 +740,8 @@
   {
    "catalog_instructor": "Benjamin Read",
    "code": "POLI140D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the political development of East Asia's primary democracies: Japan, South Korea, and Taiwan. Examines the historical origins of these states, the process through which they emerged from authoritarian roots, and topics such as protest, corruption, and women's political roles.",
@@ -662,6 +754,7 @@
    ],
    "number": "140D",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -672,6 +765,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI140E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers different aspects of the evolution of the contemporary Arab nationalist state. The Arab world has weathered a series of revolutions, military coups, civil wars and liberalization attempts during the past six decades. Before the 2010-2011 uprisings, the region was mistakenly labeled as the home of \"failed\" and \"rogue\" states and understood to be the only region in which genuine democratic change was absent. Course shows that popular legitimacy and political ambitions have not always been lacking in the region, focusing primarily on Egypt, Syria, Tunisia and Algeria to emphasize the changes and continuities in the multiple constructions of state power in the Arab world since decolonization. Students cannot receive credit for this course and POLI 152.",
@@ -682,6 +777,7 @@
    "ge_codes": [],
    "number": "140E",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level and Composition requirements.",
    "repeatable": false,
@@ -692,6 +788,8 @@
   {
    "catalog_instructor": "Benjamin Read",
    "code": "POLI141",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces themes of Chinese politics from 1949 to present, including: the establishment and substantial dismantling of socialism; movements and upheavals, such as the Cultural Revolution and 1989; and issues, such as Hong Kong and Tibet. Surveys current institutions, leaders, and policies.",
@@ -702,6 +800,7 @@
    "ge_codes": [],
    "number": "141",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -712,6 +811,8 @@
   {
    "catalog_instructor": "Kent Eaton",
    "code": "POLI142",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the promise and perils of federalism, an institution that countries around the world have adopted to solve a range of different political problems. In recent decades, federalism has emerged as a salient issue in comparative politics, and one that serves as an excellent window onto the most significant questions that we ask in this subfield, including how to consolidate democracy, how to promote economic development, and how to provide security in ethnically-divided societies. The course includes three weeks on conceptual issues; six weeks on the impact of federalism on democracy, development, and security; and a final week of student presentations on country cases.",
@@ -722,6 +823,7 @@
    "ge_codes": [],
    "number": "142",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -732,6 +834,8 @@
   {
    "catalog_instructor": "Roger Schoenman",
    "code": "POLI143",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Comparative study of revolutionary transformations of East European, Soviet, and former Soviet nations to post-Communist political orders. Focus on reemergence of political society, social and economic problems of transition, and maintenance of many cultural norms and authority patterns associated with previous regime.",
@@ -742,6 +846,7 @@
    "ge_codes": [],
    "number": "143",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -752,6 +857,8 @@
   {
    "catalog_instructor": "Kent Eaton",
    "code": "POLI144",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines similar political trends in four Andean countries: Bolivia, Colombia, Ecuador, and Peru. Trends include mobilization of indigenous populations, breakdown of traditional party systems, and reconstruction efforts in post-conflict environments. Students who have taken prior courses in Latin American politics, including POLI 140C , will be best prepared for this course.",
@@ -762,6 +869,7 @@
    "ge_codes": [],
    "number": "144",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -772,6 +880,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI145",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the Israeli-Palestinian conflict, focusing on the case of the Palestinian citizens of Israel.‎ After the 1948 war, many Palestinians were ‎‎dispossessed of their lands and deported to Arab countries, and the Palestinians who ‎‎remained within what became the State of Israel were granted citizenship. Palestinians in Israel make up roughly one-fifth of Israel's population, but are somewhat excluded from the Jewish ‎majority society and are ‎discriminated against by the state formally and informally‎. The relationship between the ‎Jewish and the Palestinian citizens of ‎Israel is fragile and ‎constantly changing due to Israel's ‎and the Palestinian Authority's political fluctuation, as well as Israel's definition of ‎a Jewish and democratic state. This course highlights the Palestinians' political, social, and cultural aspects and sheds light on how they ‎‎experience everyday life as a minority in Israel. Students learn how to apply an interdisciplinary approach to better understand the long-lasting regional conflict known for its high impact on world politics.",
@@ -782,6 +892,7 @@
    "ge_codes": [],
    "number": "145",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -792,6 +903,8 @@
   {
    "catalog_instructor": "Kira Tait",
    "code": "POLI146",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Comparative study of contemporary sub-Saharan African states. Selected issues and countries. Internal and external political institutions and processes are studied in order to learn about politics in contemporary Black Africa and to learn more about the nature of politics through the focus on the particular issues and questions raised by the African context. (Formerly The Politics of Africa.)",
@@ -802,6 +915,7 @@
    "ge_codes": [],
    "number": "146",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -812,6 +926,8 @@
   {
    "catalog_instructor": "Kent Eaton",
    "code": "POLI147",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the phenomenon of territorial conflict within countries. Focuses on territorial cleavages that occur when minority groups are geographically concentrated within particular territories, and emphasizes attempts to accommodate these cleavages through measure like autonomy, federalism, and decentralization.",
@@ -822,6 +938,7 @@
    "ge_codes": [],
    "number": "147",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -832,6 +949,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI151",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST151"
@@ -844,6 +963,7 @@
    "ge_codes": [],
    "number": "151",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -854,6 +974,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI153",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an introduction to issues and challenges facing cities in the U.S. and abroad, as well as the policy remedies available to government and the private sector. The first part of the course provides the foundations to the study of urban politics by examining core questions in local government institutions and urban coalitions. The second part of the course examines urban policies in a variety of areas, such as growth, redevelopment, housing, and poverty.",
@@ -864,6 +986,7 @@
    "ge_codes": [],
    "number": "153",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -874,6 +997,8 @@
   {
    "catalog_instructor": "Megan Thomas",
    "code": "POLI154",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the histories, societies, and politics of the Philippines. Surveys major historical eras, and treats topics such as the state, revolts and revolution, labor, religion, the environment, martial law.",
@@ -886,6 +1011,7 @@
    ],
    "number": "154",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -896,6 +1022,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI155",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces issues and challenges facing local governments in the U.S. and abroad as pertains to health policies that are designed and or delivered at the local level. This includes homelessness, housing, behavioral health policies, and disaster responses.",
@@ -906,6 +1034,7 @@
    "ge_codes": [],
    "number": "155",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -916,6 +1045,8 @@
   {
    "catalog_instructor": "David Gordon",
    "code": "POLI160A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examination of analytical perspectives on international and world politics, international and global political economy, war and conflict, corporations and civil society. Explores theoretical tools and applications, recurring patterns of global conflict and cooperation, the nexus between domestic politics, foreign policy and international and world politics. This is not a current events course.",
@@ -926,6 +1057,7 @@
    "ge_codes": [],
    "number": "160A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -936,6 +1068,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI160B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST160B"
@@ -948,6 +1082,7 @@
    "ge_codes": [],
    "number": "160B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -958,6 +1093,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI160C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Genesis and theories of conflict and war and their avoidance (past, present, future). Relationship between foreign policy and intra- and interstate conflict and violence. National security and the security dilemma. Non-violent conflict as a normal part of politics; violent conflict as anti-political; transformation of conflict into social and interstate violence. Interrelationships among conduct of war, attainment of political objectives, and the end of hostilities. Civil and ethnic wars. Political economy of violence and war.",
@@ -968,6 +1105,7 @@
    "ge_codes": [],
    "number": "160C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -978,6 +1116,8 @@
   {
    "catalog_instructor": "Roger Schoenman",
    "code": "POLI160D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the power dynamics, institutions, and ideas that shape the global capitalist system. Examines how states, markets, and transnational actors interact to structure trade, finance, development and globalization—and who wins or loses in the process. The course combines classic theoretical approaches with contemporary debates on globalization, inequality, economic crises, and strategic competition. Topics include the history of global capitalism, the rise of neoliberalism, trade wars, and the politics of financial instability. While no background in economics is required, students unfamiliar with basic economic concepts may need to suppleInternational Political Economy.)",
@@ -988,6 +1128,7 @@
    "ge_codes": [],
    "number": "160D",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -998,6 +1139,8 @@
   {
    "catalog_instructor": "Benjamin Read",
    "code": "POLI161",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores China's rising international power and the implications thereof. Special emphasis on China's interactions with the United States and related issues (Korea, Taiwan, the South China Sea). Also addresses China's dealings with South Asia, Southeast Asia, Africa, Japan, international organizations, and more. (Formerly Foreign Relations of China.)",
@@ -1008,6 +1151,7 @@
    "ge_codes": [],
    "number": "161",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1018,6 +1162,8 @@
   {
    "catalog_instructor": "Shawn Nichols",
    "code": "POLI165",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST166"
@@ -1030,6 +1176,7 @@
    "ge_codes": [],
    "number": "165",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1040,6 +1187,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI166",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the magnitude and the political, economic, cultural, environmental, and social impact of today's movement of millions of people within and amongst states.",
@@ -1052,6 +1201,7 @@
    ],
    "number": "166",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1062,6 +1212,8 @@
   {
    "catalog_instructor": "Shawn Nichols",
    "code": "POLI167",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST167"
@@ -1074,6 +1226,7 @@
    "ge_codes": [],
    "number": "167",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1084,6 +1237,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI168",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines contemporary issues in international relations, global politics, and global political economy through theoretical and applied frameworks, program assessment, sectoral and structure analysis, and across levels of analysis. Prior enrollment in POLI 160A , Theories of International and World Politics, is recommended, but not required.",
@@ -1094,6 +1249,7 @@
    "ge_codes": [],
    "number": "168",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1104,6 +1260,8 @@
   {
    "catalog_instructor": "Shawn Nichols",
    "code": "POLI169",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the politics of development. Examines the theories, history, and economics of development. Analyzes several contemporary issues. Readings include contemporary writings in the field and classical works on theoretical approaches.",
@@ -1114,6 +1272,7 @@
    "ge_codes": [],
    "number": "169",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1124,6 +1283,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI17",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores intellectual and empirical trends shaping the U.S. relationship with the global economy. Traces debates about liberalism and interventionism, surveys post-war American foreign economic policy and discusses varieties of capitalism emerging around the world.",
@@ -1134,6 +1295,7 @@
    "ge_codes": [],
    "number": "17",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1144,6 +1306,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI172",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the relation between the liberal State and perceived challenges to State sovereignty posed by transnational terrorism. How does terrorism as both a symbol and empirical phenomenon fit within the horizon of liberal ideology? What claim to sovereignty does the State make in the face of acts of terror? What political logic is required in/for a War on Terror? Students may not take both course 72 and this course for credit in the major.",
@@ -1154,6 +1318,7 @@
    "ge_codes": [],
    "number": "172",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1164,6 +1329,8 @@
   {
    "catalog_instructor": "David Gordon",
    "code": "POLI174",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the global dimensions of complex environmental issues such as climate change, biodiversity, deforestation, and fisheries: how they are produced, how they manifest, and how they are governed in response.",
@@ -1174,6 +1341,7 @@
    "ge_codes": [],
    "number": "174",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1184,6 +1352,8 @@
   {
    "catalog_instructor": "Shawn Nichols",
    "code": "POLI175",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST175"
@@ -1196,6 +1366,7 @@
    "ge_codes": [],
    "number": "175",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1206,6 +1377,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI176",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the issues and challenges facing the five Southeast Asian countries that line the shores of the Mekong River: Laos, Cambodia, Myanmar, Thailand, and Vietnam. Examines the importance of the health of the Mekong to the lives of 70 million who depend on its flowing waters and how exploitation of the river and how its tributaries pose real and tangible opportunities as well as threats across a broad and diverse geography. (Formerly Politics, Security, Energy & the Environment Along the Mighty Mekong.)",
@@ -1216,6 +1389,7 @@
    "ge_codes": [],
    "number": "176",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1226,6 +1400,8 @@
   {
    "catalog_instructor": "Anjuli Verma",
    "code": "POLI182",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST182"
@@ -1240,6 +1416,7 @@
    ],
    "number": "182",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1250,6 +1427,8 @@
   {
    "catalog_instructor": "Yasmeen Daifallah",
    "code": "POLI184",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST184"
@@ -1262,6 +1441,7 @@
    "ge_codes": [],
    "number": "184",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1272,6 +1452,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI185",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a broad introduction to the growing interdisciplinary field of political psychology. Focuses on and critically analyzes classic and contemporary psychological perspectives, primarily through original sources. Draws upon theoretical ideas and experimental results to understand political actors, events, and processes.",
@@ -1282,6 +1464,7 @@
    "ge_codes": [],
    "number": "185",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1292,6 +1475,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI187",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines global heath from a decolonial perspective. Investigates the health challenges and related policies and programs that have emerged in the wake of colonization, state building, economic dependency, western-centered knowledge production, and postcolonial nationalism. Focused on case studies from Africa and the Middle East, the course decenters western models of healthcare, enabling students to think critically about the diverse contexts and transnational dynamics that have shaped both global health emergencies and the emergence of global health as a field.",
@@ -1304,6 +1489,7 @@
    ],
    "number": "187",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1314,6 +1500,8 @@
   {
    "catalog_instructor": "Matt Sparke",
    "code": "POLI189",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the lessons for global and community health that are emerging from our experiences of COVID. These experiences have been characterized by vast variations in exposure and vulnerability as well as wide variations in response and resilience. All these variations teach us much about inequalities in global and community health, but they also highlight new opportunities for addressing injustice and restoring health as a shared human right. By treating the pandemic this way as portal for the re-imagination and remaking of global and community health, the course focuses on moving systematically from evidence about disease, its inequalities, and policy responses to ideas about improving health outcomes both locally and globally.",
@@ -1326,6 +1514,7 @@
    ],
    "number": "189",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1336,6 +1525,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI190A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores diverse strategies to generate popular consent developed by actors and groups aiming to promote their understanding of the world and acquire political power since the beginning of the 20th century. Traces a genealogy of political communication from the birth of marketing and propaganda to the advent of a public sphere shaped by infotainment and big data. In so doing, it reflects on the impact of increasingly sophisticated forms of political communication and advertising on the public's trust. Course also introduces different notions that serve to explain the current state of public debates in liberal representative regimes (manufacture of consent, cultural hegemony, public sphere, simulacrum, etc.).",
@@ -1346,6 +1537,7 @@
    "ge_codes": [],
    "number": "190A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1356,6 +1548,8 @@
   {
    "catalog_instructor": "Yasmeen Daifallah",
    "code": "POLI190C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "How do postcolonial thinkers conceive of freedom and equality in the wake of a colonialism that irreversibly reshaped their modes of life? Course closely reads central works of postcolonial theory to examine how they address this question. (Formerly Humanitarian Action in World Politics.)",
@@ -1366,6 +1560,7 @@
    "ge_codes": [],
    "number": "190C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and politics/Latin American and Latino studies combined majors.",
    "repeatable": false,
@@ -1376,6 +1571,8 @@
   {
    "catalog_instructor": "Megan Thomas",
    "code": "POLI190D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies in 19th- and early 20th-century anarchist and socialist thought. Themes covered include property, labor, marriage, and the state. Readings drawn from Bakunin, Goldman, Fourier, Kropotkin, Perkins-Gilman, Proudhon, and Stirner.",
@@ -1392,10 +1589,58 @@
      "POLI105B",
      "POLI105C",
      "POLI105D",
+     "POLI109"
+    ],
+    [
+     "POLI103",
+     "POLI105A",
+     "POLI105B",
+     "POLI105C",
+     "POLI105D",
+     "POLI115"
+    ],
+    [
+     "POLI103",
+     "POLI105A",
+     "POLI105B",
+     "POLI105C",
+     "POLI109",
+     "POLI115"
+    ],
+    [
+     "POLI103",
+     "POLI105A",
+     "POLI105B",
+     "POLI105D",
+     "POLI109",
+     "POLI115"
+    ],
+    [
+     "POLI103",
+     "POLI105A",
+     "POLI105C",
+     "POLI105D",
+     "POLI109",
+     "POLI115"
+    ],
+    [
+     "POLI103",
+     "POLI105B",
+     "POLI105C",
+     "POLI105D",
+     "POLI109",
+     "POLI115"
+    ],
+    [
+     "POLI105A",
+     "POLI105B",
+     "POLI105C",
+     "POLI105D",
      "POLI109",
      "POLI115"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): two of the following: POLI 103 , POLI 105A , POLI 105B , POLI 105C , POLI 105D , POLI 109, or POLI 115 ; or by permission of instructor. Enrollment is restricted to senior politics majors.",
    "repeatable": false,
@@ -1406,6 +1651,8 @@
   {
    "catalog_instructor": "Roger Schoenman",
    "code": "POLI190E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the role of new media in political protest; whether and how new media technologies such as social networking, text messaging, Twitter, and YouTube have changed the way opposition movements develop.",
@@ -1416,6 +1663,7 @@
    "ge_codes": [],
    "number": "190E",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and Latin America and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1426,6 +1674,8 @@
   {
    "catalog_instructor": "David Gordon",
    "code": "POLI190F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Cities are at the frontlines of complex global issues including climate change, international terrorism, and transnational migration. Course situates cities in the dynamics of world politics, and explores the possibilities and prospects of global urban/urban global governance in the 21st Century.",
@@ -1436,6 +1686,7 @@
    "ge_codes": [],
    "number": "190F",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and Latin American and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1446,6 +1697,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI190H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "What is democracy? How can we identify it? How do we understand and identify political participation? What are the factors behind it? What role does protest have in democratic politics? These and similar questions are addressed in this course that focuses on topics of democratic politics in the United States and abroad.",
@@ -1456,6 +1709,7 @@
    "ge_codes": [],
    "number": "190H",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and combined politics/Latin American and Latino studies majors.",
    "repeatable": false,
@@ -1466,6 +1720,8 @@
   {
    "catalog_instructor": "Eva Bertram",
    "code": "POLI190L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines theoretical, historical, and contemporary sources of poverty policies in the United States. Explores competing theories of the causes of poverty and the consequences of social provision. Focuses on successive historical reform efforts and contemporary dilemmas of race and urban poverty, gender and family poverty, work, and the politics of welfare reform.",
@@ -1476,6 +1732,7 @@
    "ge_codes": [],
    "number": "190L",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and Latin American and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1486,6 +1743,8 @@
   {
    "catalog_instructor": "Melanie Springer",
    "code": "POLI190M",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "State governments affect the lives of Americans every day. This course examines an array of issues pertaining to state politics, such as the foundations of American federalism, institutional organization, elections, political parties, direct democracy, and policy-making.",
@@ -1509,6 +1768,7 @@
      "POLI132"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): One of the following: POLI 20 , POLI 21 , POLI 120A , POLI 120B , POLI 120C , POLI 122 , POLI 124 , POLI 127 , POLI 128 , or POLI 132 ; or by permission of instructor. Enrollment is restricted to senior politics and combined politics/Latin America and Latino studies majors.",
    "repeatable": false,
@@ -1519,6 +1779,8 @@
   {
    "catalog_instructor": "Daniel Wirls",
    "code": "POLI190N",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines problems and potential solutions to issues in U.S. politics, such as presidential power, partisan polarization, money in elections, foreign and security policy, civil rights and liberties, and taxation and spending.",
@@ -1529,6 +1791,7 @@
    "ge_codes": [],
    "number": "190N",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and Latin American and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1539,6 +1802,8 @@
   {
    "catalog_instructor": "Katharine Beaumont",
    "code": "POLI190O",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how civic groups and social movements have confronted and shaped constitutional rights, equality, and power. Examines a range of U.S. movements from the 18th Century to the 21st Century-era of Marriage Equality, Tea Party, and Dreamer movements. (Formerly Constitutional Meanings and Movements: Exploring the Ideas, Laws, and Politics in Social Change.)",
@@ -1549,6 +1814,7 @@
    "ge_codes": [],
    "number": "190O",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics majors and Latin American and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1559,6 +1825,8 @@
   {
    "catalog_instructor": "Vanita Seth",
    "code": "POLI190P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines how we came, by the late 19th century, to classify humanity into racial categories. In an effort to trace emergence of this very modern phenomenon, explores historical shifts that informed Europe's representation of cultural difference from the writings of ancient Greeks to the social Darwinism of 19th-century Britain.",
@@ -1569,6 +1837,7 @@
    "ge_codes": [],
    "number": "190P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and Latin American and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1579,6 +1848,8 @@
   {
    "catalog_instructor": "Mark Massoud",
    "code": "POLI190R",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST190R"
@@ -1595,6 +1866,7 @@
      "POLI160B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): POLI 160B . Enrollment is restricted to senior politics and Latin American and Latino studies/politics combined majors.",
    "repeatable": false,
@@ -1605,6 +1877,8 @@
   {
    "catalog_instructor": "Matt Sparke",
    "code": "POLI190S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines how to strengthen health systems locally and globally by developing and practicing lessons from global health policy studies to compare, contrast, and communicate opportunities for community health worker integration and intervention. The key politics questions running through the course concern whether and how community health work can be integrated with the policies and practices of global health agencies, national health programs, public health administration, and public health systems more generally.",
@@ -1615,6 +1889,7 @@
    "ge_codes": [],
    "number": "190S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1625,6 +1900,8 @@
   {
    "catalog_instructor": "Benjamin Read",
    "code": "POLI190T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students read recent books on East Asian countries that engage the long-standing themes of state power and societal resistance.",
@@ -1641,6 +1918,7 @@
      "POLI109"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): POLI 141 or POLI 161 or POLI 109, or by permission of instructor. Enrollment is restricted to senior politics majors.",
    "repeatable": false,
@@ -1651,6 +1929,8 @@
   {
    "catalog_instructor": "Kent Eaton",
    "code": "POLI190V",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the causes and consequences of state capacity in the global south, asking why states are much stronger in some countries than others and how their relative strength affects important substantive outcomes, including democracy, development, and security. (Formerly Problems in Latin American Politics.)",
@@ -1661,6 +1941,7 @@
    "ge_codes": [],
    "number": "190V",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors politics majors.",
    "repeatable": false,
@@ -1671,6 +1952,8 @@
   {
    "catalog_instructor": "Sara Niedzwiecki",
    "code": "POLI190W",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines how Latin American governments function and what major challenges countries in the region are facing. Focuses on democracy, economic development, gender and indigenous politics, social policies, poverty, and inequality.",
@@ -1681,6 +1964,7 @@
    "ge_codes": [],
    "number": "190W",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics majors.",
    "repeatable": false,
@@ -1691,6 +1975,8 @@
   {
    "catalog_instructor": "Daniel Wirls",
    "code": "POLI190X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the U.S. as a political empire, an imperial project, rather than—or in addition to being—a constitutional republic. Analyzes selected episodes in national and global expansion from the founding to the present, with an emphasis on the politics of empire and its relationship to American democracy and constitutionalism.",
@@ -1701,6 +1987,7 @@
    "ge_codes": [],
    "number": "190X",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1711,6 +1998,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI190Y",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Research seminar explores contributions of major African American political theorists to study of power and democracy through reading, discussion, and writing. Students conduct individual research projects culminating in a scholarly seminar paper.",
@@ -1738,6 +2027,7 @@
      "POLI184"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): one from POLI 3 , POLI 4 , POLI 105A , POLI 103 , POLI 105B , POLI 105C , POLI 105D , POLI 107 , POLI 108 , POLI 115 , POLI 118 , POLI 121 , POLI 182 , POLI 184 .",
    "repeatable": false,
@@ -1748,6 +2038,8 @@
   {
    "catalog_instructor": "Shawn Nichols",
    "code": "POLI190Z",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examination of selected issues, controversies, and theories relevant to security between and among nations. Topics vary, but may include: war, peace, nuclear proliferation, arms control, military and foreign policies, alternative conceptions of security.",
@@ -1758,6 +2050,7 @@
    "ge_codes": [],
    "number": "190Z",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to senior politics and Latin American and Latino studies/politics combined majors .",
    "repeatable": false,
@@ -1768,6 +2061,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI193",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual studies undertaken off campus with direct faculty supervision. Students submit petition to sponsoring agency.",
@@ -1778,6 +2073,7 @@
    "ge_codes": [],
    "number": "193",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1788,6 +2084,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor.  Various topics to be announced before each quarter. Students submit petition to sponsoring agency.",
@@ -1798,6 +2096,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1808,6 +2107,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI194F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Various topics to be announced before each quarter. Students submit petition to sponsoring agency.",
@@ -1818,6 +2119,7 @@
    "ge_codes": [],
    "number": "194F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1828,6 +2130,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI195A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over two or three quarters, beginning in any quarter. The grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students submit petition to sponsoring agency.",
@@ -1838,6 +2142,7 @@
    "ge_codes": [],
    "number": "195A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1848,6 +2153,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI195B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over two or three quarters, beginning in any quarter. The grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students submit petition to sponsoring agency.",
@@ -1858,6 +2165,7 @@
    "ge_codes": [],
    "number": "195B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1868,6 +2176,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI195C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over two or three quarters, beginning in any quarter. The grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students submit petition to sponsoring agency.",
@@ -1878,6 +2188,7 @@
    "ge_codes": [],
    "number": "195C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1888,6 +2199,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual studies undertaken off-campus for which faculty supervision is not in person (e.g. supervision is by correspondence). Students submit petition to sponsoring agency.",
@@ -1898,6 +2211,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1908,6 +2222,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Individual studies undertaken off-campus for which faculty supervision is not in person, but by correspondence. Students submit petition to sponsoring agency.",
@@ -1918,6 +2234,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1928,6 +2245,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A student normally approaches a member of the staff and proposes to take a POLI 199 on a subject he or she has chosen which is not offered in other politics courses. Students submit petition to sponsoring agency.",
@@ -1938,6 +2257,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1948,6 +2268,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "A student normally approaches a member of the faculty and proposes to take a POLI 199 on a subject he or she has chosen which is not offered in other politics courses. Students submit petition to sponsoring agency.",
@@ -1958,6 +2280,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1968,6 +2291,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI20",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the study of politics through an analysis of the United States political system and processes. Topics vary, but may include political institutions, public policies, parties and electoral politics, and social forces.",
@@ -1982,6 +2307,7 @@
    ],
    "number": "20",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1992,6 +2318,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI200A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Draws on history of political thought, contemporary social and critical theory, and the contributions of legal and institutional analysis of various kinds to engage in critical study of political practices that are experienced or understood as in some way limiting, oppressive, or wrong; to transform our understanding of these practices; to see their contingent conditions; and to articulate possibilities of governing ourselves differently.",
@@ -2002,6 +2330,7 @@
    "ge_codes": [],
    "number": "200A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2012,6 +2341,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI200B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Concerns transformation of social forces into political ones. Focuses on formation, articulation, mobilization, and organization of political interests and identities, their mutual interaction, and their effects on state structures and practices and vice versa. Major themes are 1) social bases of political action: class, gender, race, and other determinants of social division and political identity and 2) relevant forms of political agency and action, including development of political consciousness and representation of interests and identities in the public sphere.",
@@ -2022,6 +2353,7 @@
    "ge_codes": [],
    "number": "200B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2032,6 +2364,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI200C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces study of political institutions as instruments of collective decision making and action. Explores alternative theoretical approaches to development of political institutions, state and political economy, and security dilemmas.",
@@ -2042,6 +2376,7 @@
    "ge_codes": [],
    "number": "200C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2052,6 +2387,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI200D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the theories and methodologies of political economy. Focuses on the relationship between states and markets and considers the politics of economic choices and institutions germane to both national and global political institutions. Addresses origins and development of markets and capitalism; historical evolution of states and their economies; relationship between labor, capital, production, and consumption; regulation of production; macroeconomics and management of economies; and issues of national and global social welfare.",
@@ -2062,6 +2399,7 @@
    "ge_codes": [],
    "number": "200D",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2072,6 +2410,8 @@
   {
    "catalog_instructor": "Anjuli Verma",
    "code": "POLI201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigates approaches to study of politics and to enterprise of social science in general. Works from positivist, interpretive, historical, and critical approaches provide examples held up to critical and epistemological reflection.",
@@ -2082,6 +2422,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2092,6 +2433,8 @@
   {
    "catalog_instructor": "Mark Massoud",
    "code": "POLI202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Gives students practical tools to transform research questions into viable and well-crafted research designs. Introduces conceptual development, various forms of data, and rules for case selection. The goal is to train students in a range of specific methods, including interviewing, ethnography, and archival work.",
@@ -2102,6 +2445,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2112,6 +2456,8 @@
   {
    "catalog_instructor": "Vanita Seth",
    "code": "POLI203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces, at the graduate level, some of the central conceptual categories and material implications that underwrite the world of the modern. Explores concepts including the individual, historicism, contract, and objectivity.",
@@ -2122,6 +2468,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2132,6 +2479,8 @@
   {
    "catalog_instructor": "Vanita Seth",
    "code": "POLI204",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The human body has been productive of a wide range of varied and competing discourses. Among the themes covered are sexuality, hygiene, the grotesque, and criminality.",
@@ -2142,6 +2491,7 @@
    "ge_codes": [],
    "number": "204",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2152,6 +2502,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores seminal works in classical political economy, particularly its consolidation at the moment that industrial society emerged from commercial society, as demonstrated in the writings of Bernard Mandeville, Adam Smith, and Thomas Malthus.",
@@ -2162,6 +2514,7 @@
    "ge_codes": [],
    "number": "205",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2172,6 +2525,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI206",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Graduate seminar exploring connections between the body politic and human bodies, particularly as they relate to the sensory dimension of political and personal experience. The myriad ways these connections have been drawn, from antiquity to the present, belie the aspiration of philosophy to organize political life around reason. These connections also offer us ways in to consider the materiality of social life, and commercial life in particular, generating perspectives on capitalism and late modernity. Engagements with these materials also provide opportunities to explore the relationship between sensual materialism and affect theory.",
@@ -2182,6 +2537,7 @@
    "ge_codes": [],
    "number": "206",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2192,6 +2548,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI207",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the potential in philosophical precursors to recent affect theory, alongside classical political economy and its critics, to develop an alternative epistemology for political economy. Readings include: Aristotle, Spinoza, Deleuze, Hume, Negri, Hardt, Smith, Bergson, and Marx.",
@@ -2202,6 +2560,7 @@
    "ge_codes": [],
    "number": "207",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2212,6 +2571,8 @@
   {
    "catalog_instructor": "Vanita Seth",
    "code": "POLI208",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers the subject of race and racism from a political and historical perspective appealing to literatures from history, anthropology, science, and literary studies.",
@@ -2222,6 +2583,7 @@
    "ge_codes": [],
    "number": "208",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2232,6 +2594,8 @@
   {
    "catalog_instructor": "Megan Thomas",
    "code": "POLI209",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on early 19th- through early 20th-century socialist and anarchist thought, excluding Marx. Theorists studied include Saint-Simon, Fourier, Proudhon, Stirner, Bakunin, Kropotkin, Perkins Gilman, and Goldman. Some secondary literature and related contemporary theory is also treated.",
@@ -2242,6 +2606,7 @@
    "ge_codes": [],
    "number": "209",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2252,6 +2617,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI21",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces key principles for understanding state politics in California and how power is mobilized for transformative change. Analyzes distinctive features of California's political development and culture in the governance of enduring social problems and policy dilemmas.",
@@ -2264,6 +2631,7 @@
    ],
    "number": "21",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2274,6 +2642,8 @@
   {
    "catalog_instructor": "Benjamin Read",
    "code": "POLI210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Democracy is an essential political concept, and a fundamentally contested one. Since the 1980s, scholars of comparative politics have attempted to explain why and when countries transition from authoritarianism to democratic institutions. However, regime change at the national level only sets the stage, leaving deeper questions about what democracy means in practice--how it plays out (or is undermined) throughout the state and at subnational levels; whom it includes and excludes; what options it opens; and what possibilities it forecloses. Such questions relate debates about the potential and the limitations of democracy in general.",
@@ -2284,6 +2654,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2294,6 +2665,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI211",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on questions of sovereignty. Of what does sovereignty consist? How is it secured, proclaimed, and perpetuated? How is it insecure, contingent, and subject to contestation? How is the idea of individual sovereignty related to the idea of the sovereignty of the state? Our aim is less to answer these questions definitively than to explore them and understand how theorists (historical and contemporary) have explored them, and how different historical episodes illuminate them.",
@@ -2304,6 +2677,7 @@
    "ge_codes": [],
    "number": "211",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2314,6 +2688,8 @@
   {
    "catalog_instructor": "Dave Gordon",
    "code": "POLI213",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses the role of non- and sub-state actors in global governance. Explores the concept of agency in world politics, and the conditions under which these actors acquire global agency in contemporary world politics. Introduces various theoretical perspectives with which to identify and evaluate agency, with a focus on alternative sources of authority, identity, and power.",
@@ -2324,6 +2700,7 @@
    "ge_codes": [],
    "number": "213",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2334,6 +2711,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI214",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Green political thought, philosophy, debates, and practices; history of ecological thought and comparative study of competing ideas and proposals. Critical examination of neo-liberal environmentalism.",
@@ -2344,6 +2723,7 @@
    "ge_codes": [],
    "number": "214",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2354,6 +2734,8 @@
   {
    "catalog_instructor": "Yasmeen Daifallah",
    "code": "POLI216",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores some of the major ways the modern nation-state has been theorized by political theorists, political scientists, and sociologists before moving on to examine some alternate modalities of organizing collective life from Anglophone and Francophone Africa, the Caribbean, India, China, Indigenous Hawaii and North America, and the Muslim world.",
@@ -2364,6 +2746,7 @@
    "ge_codes": [],
    "number": "216",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2374,6 +2757,8 @@
   {
    "catalog_instructor": "Thomas Serres",
    "code": "POLI217",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the study of transnational security apparatuses and politically sensitive forms of mobility, with a focus on borders, their political significance, and those who monitor, cross and challenge them. Discussion includes recent monographs published in the fields of critical security studies, critical border studies, and new mobilities. Also studies these works in conversation with more traditional approaches in the field (notably realist, constructivist and neo-functionalist) that they aim to problematize. In addition, students reflect on the tools provided by different disciplinary approaches (international relations, cultural anthropology, critical theory, history) to think about these issues.",
@@ -2384,6 +2769,7 @@
    "ge_codes": [],
    "number": "217",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate studies.",
    "repeatable": false,
@@ -2394,6 +2780,8 @@
   {
    "catalog_instructor": "Katherine Beaumont",
    "code": "POLI218",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores major debates on the role and rule of law in society, with attention to efforts to use law to seek justice or respond to injustice. This includes engaging in three overlapping sets of conversations: What is law—its sources and functions—and how, where, and on whom does it operate? What is the \"rule of law\"—what is it for and whom does/can it serve and how? What are different ways that people and groups grapple with or respond to the role of law in injustice—including \"the Nazi problem,\" \"the slavery problem,\" the colonialism/imperialism problem, the Jim Crow/apartheid problem, etc—and what are the possibilities, challenges, and limits? Theoretical perspectives on the sources/origins and role of law in society will be considered as well as case studies and concrete examples that show how this tool is applied to particular challenges.",
@@ -2404,6 +2792,7 @@
    "ge_codes": [],
    "number": "218",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2414,6 +2803,8 @@
   {
    "catalog_instructor": "Vanita Seth",
    "code": "POLI220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Engages the politics of history through multiple frames: subject matter, interpretation, and the epistemological precepts that underwrite history as a discipline. Introduces students to a wide range of interdisciplinary literatures that include different historical methodologies, feminist theory, political theory, queer studies, postcolonial theory, and critical race studies.",
@@ -2424,6 +2815,7 @@
    "ge_codes": [],
    "number": "220",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2434,6 +2826,8 @@
   {
    "catalog_instructor": "Daniel Wirls",
    "code": "POLI222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the dynamic and contested interaction between politics and policy in the U.S. context, through examining the historical development of key contemporary policy debates and political conflicts. Introduces recent scholarship, drawing on history, sociology, and political economy that has challenged traditional behavioralist approaches to understanding American politics and policy development.",
@@ -2444,6 +2838,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2454,6 +2849,8 @@
   {
    "catalog_instructor": "Melanie Springer",
    "code": "POLI223",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores several important topics that have emerged from the renewed interest in political development, and are visible within its scholarship in American Political Development; for example, state-building, institutional change, representation, culture, participation, political identity, and economic and social transformations.",
@@ -2464,6 +2861,7 @@
    "ge_codes": [],
    "number": "223",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2474,6 +2872,8 @@
   {
    "catalog_instructor": "Eva Bertram",
    "code": "POLI232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers several important themes and sets of readings from the literature on American political development. Topics include the origins and development of American political institutions, the evolution of democratic mechanisms, the rise and fall of social movements, and debates about the sources of policy regimes and political change.",
@@ -2484,6 +2884,7 @@
    "ge_codes": [],
    "number": "232",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2494,6 +2895,8 @@
   {
    "catalog_instructor": "Sara Niedzwiecki",
    "code": "POLI241",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of the major theoretical approaches to the study of comparative politics. This includes diverse literatures such as institutions and political economy, authoritarianism and democracy, and civil society and social movements. Case material is drawn from Latin America, Africa, Europe, North America, Asia and the Pacific.",
@@ -2504,6 +2907,7 @@
    "ge_codes": [],
    "number": "241",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2514,6 +2918,8 @@
   {
    "catalog_instructor": "Kent Eaton",
    "code": "POLI243",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LALS243"
@@ -2526,6 +2932,7 @@
    "ge_codes": [],
    "number": "243",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2536,6 +2943,8 @@
   {
    "catalog_instructor": "Sara Niedzwiecki",
    "code": "POLI245",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys the Latin American political literature by studying: 1) critical moments in political development (e.g., state formation, democratization); 2) important political institutions (e.g., presidentialism, party, and electoral systems); and 3) influential political actors (e.g., unions, business associations, social movements).",
@@ -2546,6 +2955,7 @@
    "ge_codes": [],
    "number": "245",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2556,6 +2966,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI247",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on local government structures and the relationships with other levels of government. Examines institutions and administration; urban political economy (fiscal strain, poverty, inequality, and the efforts to attract economic investment); political machines; race and ethnicity.",
@@ -2566,6 +2978,7 @@
    "ge_codes": [],
    "number": "247",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2576,6 +2989,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI248",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Reviews the literatures on property connected to the state, personhood, gender, and legal systems. These conversations take place at the intersection of sociology, jurisprudence, history, economics, and politics in comparative perspective. Course starts with a birds-eye view and progressively hones in on the relation between political economy and family law. Students explore in class discussions and in their research papers closely related issues, including but not limited to intersectionality with race and ethnicity, sexual orientations, different family/household types, in these and other cultural contexts and legal traditions.",
@@ -2586,6 +3001,7 @@
    "ge_codes": [],
    "number": "248",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2596,6 +3012,8 @@
   {
    "catalog_instructor": "Eleonora Pasotti",
    "code": "POLI249",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores topics related to protest and political participation from theoretical and empirical perspectives.",
@@ -2606,6 +3024,7 @@
    "ge_codes": [],
    "number": "249",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2616,6 +3035,8 @@
   {
    "catalog_instructor": "Yasmeen Daifallah",
    "code": "POLI255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Political thought of anti-colonial movements in comparative, historical perspective, including 18th- to 20th-Century European colonies of America and Asia. Focuses both on the contemporary political thought of these movements as well as on historiographical approaches of secondary literature.",
@@ -2626,6 +3047,7 @@
    "ge_codes": [],
    "number": "255",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2636,6 +3058,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI257",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines how prominent female Muslim thinkers have interpreted the Islamic tradition since the early 20th century. It surveys how thinkers who belonged to different intellectual traditions (liberal, Marxist, Islamist, feminist, etc.) engaged Islamic exegetical, legal, philosophical, theological and mystical traditions to find answers to the questions raised by their historical and sociopolitical contexts. These questions included: What is/are the Islamic understanding(s) of the purpose of individual and collective lives? What does freewill mean in Islam, and what is its relationship to responsibility towards oneself and one's community? Is there an Islamic notion of justice, and how does it relate to the way justice is defined by other intellectual traditions? What are the legitimate ways of exercising social and political authority to establish the Islamic vision(s) of the good life? How is establishing that vision related to the notion of jihad (striving in the path of God)? What implications does that vision, and its concomitant notions of justice and freewill, have on developing an Islamic understanding of the relationship between different genders, classes, and human groups?",
@@ -2646,6 +3070,7 @@
    "ge_codes": [],
    "number": "257",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2656,6 +3081,8 @@
   {
    "catalog_instructor": "Benjamin Read",
    "code": "POLI261",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses topics ranging from the core institutions of the party-state to local politics, economic governance, and state-society interactions in multiple realms. Considers China in its own terms while evaluating the relevance of theoretical concepts from various fields in the social sciences. Aims to identify opportunities for new research projects.",
@@ -2666,6 +3093,7 @@
    "ge_codes": [],
    "number": "261",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2676,6 +3104,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI270",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores if, how, and under what conditions agency and power are diffusing away from the state to non-state actors such as, NGOs/civil society, corporations, and international organizations.",
@@ -2686,6 +3116,7 @@
    "ge_codes": [],
    "number": "270",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2696,6 +3127,8 @@
   {
    "catalog_instructor": "Matthew Sparke",
    "code": "POLI271",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores global politics in relation to geo-political formations that are developing in concert with contemporary crises in capitalist globalization, but which are also shaped by a wide range of intersecting racial, sexual, environmental, national, and neocolonial politics as well.",
@@ -2706,6 +3139,7 @@
    "ge_codes": [],
    "number": "271",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2716,6 +3150,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI272",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Seminar examines selections from the canonical literature in international relations theory and global political economy through a number of critical lenses, including constructivist, feminist, historical materialist, and subaltern approaches.",
@@ -2726,6 +3162,7 @@
    "ge_codes": [],
    "number": "272",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2736,6 +3173,8 @@
   {
    "catalog_instructor": "Roger Schoenman",
    "code": "POLI275",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines genesis of new institutions within the force of social ties and networks. Studies how social and organizational relationships achieve individual or group goals in political and economic life, and influence institutional design. Considers when and what ties contribute to governance and economic performance, and when informal and formal organizations constitute an obstacle.",
@@ -2746,6 +3185,7 @@
    "ge_codes": [],
    "number": "275",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2756,6 +3196,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI291",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Two-hour weekly seminar required of teaching assistants in which pedagogic and substantive issues will be considered. The experience of performing teaching assistant duties constitutes subject matter for discussion. Students submit petition to sponsoring agency.",
@@ -2766,6 +3208,7 @@
    "ge_codes": [],
    "number": "291",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2776,6 +3219,8 @@
   {
    "catalog_instructor": "Dean Mathiowetz",
    "code": "POLI292",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Primarily for first-  and second-year graduate students. Students learn the norms and expectations of graduate school and a variety of professional roles. Students develop a plan for their graduate career and for establishing a professional network of mentors and peer audiences for their work.",
@@ -2786,6 +3231,7 @@
    "ge_codes": [],
    "number": "292",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2796,6 +3242,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI293",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual study undertaken off campus with direct faculty supervision. Students submit petition to sponsoring agency.",
@@ -2806,6 +3254,7 @@
    "ge_codes": [],
    "number": "293",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2816,6 +3265,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI295A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly venue for Ph.D. students to present current research, exchange information on sources and resources, discuss and critique epistemologies and methods, and to formulate topics for QE field statements and the dissertation. There are no assigned readings. May be repeated for credit twice.",
@@ -2826,6 +3277,7 @@
    "ge_codes": [],
    "number": "295A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2836,6 +3288,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI295B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Weekly seminar for Ph.D. students in which to develop and write extended research papers on selected topics, to present current work, to discuss methods, data sources, and fieldwork, and to receive critiques and assessments from fellow students. May be repeated for credit twice.",
@@ -2846,6 +3300,7 @@
    "ge_codes": [],
    "number": "295B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2856,6 +3311,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A student approaches a member of the staff and proposes to take POLI 297 on a subject he or she has chosen that is not covered in other politics graduate courses or plans a graduate independent study that includes an undergraduate course. Students submit petition to sponsoring agency.",
@@ -2866,6 +3323,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2876,6 +3334,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "A student approaches a member of the staff and proposes to take POLI 297 on a subject he or she has chosen that is not covered in other politics graduate courses or plans a graduate independent study that includes an undergraduate course. Students submit petition to sponsoring agency.",
@@ -2886,6 +3346,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2896,6 +3357,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI297C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "A student approaches a member of the staff and proposes to take POLI 297 on a subject he or she has chosen that is not covered in other politics graduate courses or plans a graduate independent study that includes an undergraduate course. Students submit petition to sponsoring agency.",
@@ -2906,6 +3369,7 @@
    "ge_codes": [],
    "number": "297C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2916,6 +3380,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
@@ -2926,6 +3392,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2936,6 +3403,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
@@ -2946,6 +3415,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2956,6 +3426,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI299C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Enrollment restricted to gradaute students and permission of instructor. Students submit petition to sponsoring agency.",
@@ -2966,6 +3438,7 @@
    "ge_codes": [],
    "number": "299C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2976,6 +3449,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI3",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces key concepts in political discourse and key debates generated by contested terms such as powers, ideology, and multiculturalism. Students read from canonical texts, feminist scholarship, historical materials, and contemporary cultural and postmodernist writings.",
@@ -2986,6 +3461,7 @@
    "ge_codes": [],
    "number": "3",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2996,6 +3472,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI4",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "What does a citizen do? What kind of citizen activity is appropriate to democratic aspirations? Course uses political theory to answer these questions as they relate to current and historical events, primarily in the North American context. Draws on texts ranging from Aristotle, Locke, Thoreau, Ellizon, and Ranciere, as well as present-day debates, to bear on the relationship of citizen action and identity.",
@@ -3008,6 +3486,7 @@
    ],
    "number": "4",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3018,6 +3497,8 @@
   {
    "catalog_instructor": null,
    "code": "POLI60",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the study of politics through the analysis of national political systems within or across regions from the developing world to post-industrial nations. Typical topics include: authoritarian and democratic regimes; state institutions and capacity; parties and electoral systems; public policies; social movements; ethnic conflict; and globalization.",
@@ -3030,6 +3511,7 @@
    ],
    "number": "60",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3040,6 +3522,8 @@
   {
    "catalog_instructor": "Sari Niedzwiecki",
    "code": "POLI61",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces social policy around the world. Some countries provide free and good-quality health and education, as well as a minimum income to all citizens. Others, instead, provide meager benefits to few citizens.",
@@ -3052,6 +3536,7 @@
    ],
    "number": "61",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3062,6 +3547,8 @@
   {
    "catalog_instructor": "Gordon",
    "code": "POLI70",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Can common global interest prevail against particular sovereign desires? Surveys selected contemporary issues in global politics such as wars of intervention, ethnic conflict, globalization, global environmental protection, and some of the different ways in which they are understood and explained.",
@@ -3074,6 +3561,7 @@
    ],
    "number": "70",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3082,11 +3570,10 @@
    "url": "/en/current/general-catalog/courses/poli-politics/lower-division/poli-70"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "POLI"
 }

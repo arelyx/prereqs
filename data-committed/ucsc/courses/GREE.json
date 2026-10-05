@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "GREE1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Instruction in the grammar of Attic Greek, together with readings from ancient authors, designed to prepare for the study of classical literature. The sequence begins in the fall quarter only.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "GREE2",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Instruction in the grammar of Attic Greek, together with readings from ancient authors, designed to prepare for the study of classical literature.",
@@ -38,6 +43,7 @@
      "GREE1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): GREE 1 , or permission of instructor",
    "repeatable": false,
@@ -48,6 +54,8 @@
   {
    "catalog_instructor": null,
    "code": "GREE99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -58,6 +66,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -68,6 +77,8 @@
   {
    "catalog_instructor": null,
    "code": "GREE99F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -78,6 +89,7 @@
    "ge_codes": [],
    "number": "99F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -86,11 +98,10 @@
    "url": "/en/current/general-catalog/courses/gree-greek/lower-division/gree-99f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "GREE"
 }

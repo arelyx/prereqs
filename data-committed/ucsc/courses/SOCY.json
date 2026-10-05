@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A systematic study of social groups ranging in size from small to social institutions to entire societies. Organized around the themes of social interaction, social inequality, and social change. Fulfills lower-division major requirement.",
@@ -16,6 +18,7 @@
    ],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY10",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Exploration of nature, structure, and functionings of American society. Explores the following: social institutions and economic structure; the successes, failures, and intractabilities of institutions; general and distinctive features of American society; specific problems such as race, sex, and other inequalities; urban-rural differences. Fulfills lower-division major requirement.",
@@ -36,6 +41,7 @@
    "ge_codes": [],
    "number": "10",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -46,6 +52,8 @@
   {
    "catalog_instructor": "Sanjay  Barbora, Megan McNamara",
    "code": "SOCY105A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This intensive survey course examines the intellectual origins of the sociological tradition, focusing on changing conceptions of social order, social change, and the trends observed in the development of Western civilization in the modern era. Readings are all taken from original texts and include many of the classical works in social theory with special emphasis on the ideas of Marx, Weber, and Durkheim, which constitute the core of the discipline. Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements.",
@@ -56,6 +64,7 @@
    "ge_codes": [],
    "number": "105A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter",
    "raw_requirements": "Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements. Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -66,6 +75,8 @@
   {
    "catalog_instructor": "Lindsey  Dillion, Camilla  Hawthorne",
    "code": "SOCY105B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys major theoretical perspectives currently available in the discipline including functionalism, symbolic interactionism, ethnomethodology, conflict theory, critical theory, neo-Marxism, and feminist theory.",
@@ -80,6 +91,7 @@
      "SOCY105A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter, Spring",
    "raw_requirements": "Prerequisite(s): SOCY 105A and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -90,6 +102,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SOCY107A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers designing doable digital technology-based projects to support the social and environmental goals of community and non-profit organizations. Topics include: step-by-step project design; integrating social and technical solutions; project management and social entrepreneurship/enterprise case studies. Technical topics include: Internet resources; advanced web/database design; computer networks/maintenance. Prerequisite(s): SOCY 30A and by permission of instructor. (Formerly Designing ICT Projects for Social Enterprise.)",
@@ -100,6 +114,7 @@
    "ge_codes": [],
    "number": "107A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -110,6 +125,8 @@
   {
    "catalog_instructor": "Chris Benner",
    "code": "SOCY107B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers conversion of planned digital justice projects into a fundable grant proposal for social justice, integration of social activism, entrepreneurship and justice, and implementation of project. Topics include: funders, proposal design, field methods, project assessment, innovative digital technology applications, action research methods, project implementation. (Formerly Project Implementation and Grant Writing for Social Entrepreneurs.)",
@@ -124,6 +141,7 @@
      "SOCY107A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): SOCY 107A .",
    "repeatable": false,
@@ -134,6 +152,8 @@
   {
    "catalog_instructor": "Roberto deRoock",
    "code": "SOCY107F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides Everett Program Fellows with hands-on experience, working in teams, running a digital social enterprise and managing technology-linked projects implemented with student teams. Fellows work closely with faculty and staff of the Everett Program for Technology and Social change, managing and implementing all aspects of the program, including fundraising and financial administration, project planning and development, maintaining communication with community partners, and mentoring younger students in the project in their own technology learning and project implementation activities. Prerequisite(s): SOCY 30A , SOCY 107A , and SOCY 107B . Enrollment is by permission of the instructor.",
@@ -146,6 +166,7 @@
    ],
    "number": "107F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -156,6 +177,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY111",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the interaction between family and society by considering the historical and social influences on family life and by examining how the family unit affects the social world. Readings draw on theory, history, and ethnographic materials.",
@@ -172,6 +195,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -182,6 +206,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY113C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Explores the historical origins of contemporary civic polarization through the decades of political, cultural, technological. and legal changes that have resulted in our current combative political environment.",
@@ -192,6 +218,7 @@
    "ge_codes": [],
    "number": "113C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -202,6 +229,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY114",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the interconnections between sports and society using sociological theories and methods. Topics include class, race, and gender; mass media and popular culture; political economy; education and socialization; leisure patterns (participants and spectators); globalization and cross-national comparisons.",
@@ -214,6 +243,7 @@
    ],
    "number": "114",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -224,6 +254,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the interdisciplinary field of Sound Studies. Surveys the work of social scientists, media scholars, philosophers and others to better understand the role of sound in society. Lectures are presented in an audio-only format with a variety of listening activities and supplemental videos. By the end of the course, students will have a working understanding of the field of Sound Studies and a completed final project of their own design.",
@@ -242,6 +274,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -252,6 +285,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY116",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines media institutions, communication technologies, and their related cultural expressions. Focuses on specific ways the media—including media studies and criticism—operates as social and cultural factor. Contemporary theory or equivalent in related fields recommended.",
@@ -269,6 +304,7 @@
      "SOCY105B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 105A and SOCY 105B . Enrollment is restricted to junior and senior majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -279,6 +315,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY117E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to questions of immigration, nationalism, and racism in contemporary Europe. Addresses colonial roots of migration to Europe; patterns of immigration and responses to immigrants across different European regions; and political movements led by immigrants and other people of color.",
@@ -299,6 +337,7 @@
      "LGST10"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 , or SOCY 10 or SOCY 15 or CRES 10 or LGST 10 ; or by permission of the instructor.",
    "repeatable": false,
@@ -309,6 +348,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY117M",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The intensification of immigration enforcement in the United States and the associated rise of mass deportations have reached the lives of millions of immigrants and local communities. Course covers the context, determinants, and consequences of enforcement and deportation practices.",
@@ -328,6 +369,7 @@
      "LALS1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 or LALS 1 . Enrollment restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -338,6 +380,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers the role of popular music as a site of contemporary social practices and cultural politics. Examines the institutional organization and production of popular music, its cultural meanings, and its social uses by different communities and social formations. Also examines popular music as a vehicle through which major cultural and political debates about identity, sexuality, community, and politics are staged and performed.",
@@ -353,6 +397,7 @@
      "SOCY105B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 105A or SOCY 105B . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -363,6 +408,8 @@
   {
    "catalog_instructor": "Chris Benner",
    "code": "SOCY119",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "If people define things as real, they are real in their consequences, quipped W.I. Thomas. Surveys sociological theories about where and how knowledge comes from, and the politics of knowledge, with reference to contemporary debates surrounding issues, such as climate change, genetics, and inequality.",
@@ -378,6 +425,7 @@
      "SOCY105B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): SOCY 105A or SOCY 105B , or by permission of the instructor.",
    "repeatable": false,
@@ -388,6 +436,8 @@
   {
    "catalog_instructor": "Julie Bettie",
    "code": "SOCY120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the role feminist discourses play in cultural politics emphasizing sex, sexuality, and sex work as related to gender, race , and class. Examines the relationship between academic and popular feminisms. Interrogates post-feminism, third-wave feminism, and generational differences in feminisms. Formerly Gender, Sexuality, and Cultural Politics.)",
@@ -398,6 +448,7 @@
    "ge_codes": [],
    "number": "120",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): SOCY 126 recommended. Enrollment is restricted to junior and senior sociology, critical race and ethnic studies, feminist studies, digital justice studies, global information and enterprise, and Latin America/sociology majors, proposed majors, and minors.",
    "repeatable": false,
@@ -408,6 +459,8 @@
   {
    "catalog_instructor": "Jenny Reardon",
    "code": "SOCY121",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analysis of the current health care crises and exploration of the social relationships and formal organizations which constitute the medical institution. Study of the political, economic, and cultural factors which affect the recognition, distribution, and response to illness.",
@@ -418,6 +471,7 @@
    "ge_codes": [],
    "number": "121",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to junior and senior majors and minors in biochemistry; biological sciences; community studies; critical race and ethnic studies; sociology; the Latin American studies/sociology combined majors; proposed and declared biotechnology majors and proposed sociology majors.",
    "repeatable": false,
@@ -428,6 +482,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY121G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches critical skills for analyzing the co-production of genomics and society. Examines issues at stake as societies across the world increasingly turn to genomic data to cure disease, solve crimes, regulate immigration, revitalize economies, and answer age-old questions about who we are.",
@@ -441,10 +497,13 @@
    "number": "121G",
    "prereq_groups": [
     [
-     "SOCY10",
+     "SOCY10"
+    ],
+    [
      "SOCY105B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 10 and SOCY 105B , or by permission of the instructor. Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -455,6 +514,8 @@
   {
    "catalog_instructor": "Jaimie Morse",
    "code": "SOCY122",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST122"
@@ -467,6 +528,7 @@
    "ge_codes": [],
    "number": "122",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to sociology, community studies, global and community health BA and BS, legal studies, Latin American and Latino studies/sociology combined, and digital justice studies (formerly GISES) studies majors, proposed majors and minors.",
    "repeatable": false,
@@ -477,6 +539,8 @@
   {
    "catalog_instructor": "Jaimie Morse",
    "code": "SOCY123",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines transnational dimensions of science, technology, and medicine, with special attention to knowledge production, scientific practices, and therapeutics outside of North America and Western Europe. Students develop a conceptual foundation to analyze the global scale and impacts of scientific research.",
@@ -489,6 +553,7 @@
    ],
    "number": "123",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior sociology, anthropology, biology B.A., biotechnology, biochemistry and molecular biology, community studies, critical race and ethnic studies, feminist studies, global and community health BA and BS, history, legal studies, Latin American and Latino studies/sociology combined, politics, science and justice, and digital justice studies (formerly GISES) studies majors, proposed majors and minors.",
    "repeatable": false,
@@ -499,6 +564,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY124",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Learn to critically consume documentary, ethnographic film, photojournalism, and the genre of realism as these methods are increasingly used to describe the social world. Addresses theoretical, methodological, practical, and ethical issues of creating visual media. Optional media lab teaches students how to create visual products as well.",
@@ -509,6 +576,7 @@
    "ge_codes": [],
    "number": "124",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -519,6 +587,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A healthy society requires a stable and sustainable relationship between society and nature. Covering past, present, and future, the course covers environmental history of the U.S., the variety and extent of environmental problems today, and explores their likely development in our lifetimes.",
@@ -531,6 +601,7 @@
    ],
    "number": "125",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior majors, proposed majors, and minors in sociology, global information and enterprise, and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -541,6 +612,8 @@
   {
    "catalog_instructor": "Julie Bettie",
    "code": "SOCY126",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores social and cultural aspects of human sexuality and reproduction, including how and why meanings and behaviors are contested. Analyzes sexuality and reproduction as forms of social and political control as well as cultural expression and self-determination.",
@@ -553,6 +626,7 @@
    ],
    "number": "126",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to junior and senior sociology, critical race and ethnic studies, feminist studies, Latin American/sociology combined, and digital justice studies (formerly GISES) majors, proposed majors, and minors.",
    "repeatable": false,
@@ -563,6 +637,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY127",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST127"
@@ -575,6 +651,7 @@
    "ge_codes": [],
    "number": "127",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to majors and minors in legal studies, sociology, Latin American/sociology combined, and digital justice studies (formerly GISES).",
    "repeatable": false,
@@ -585,6 +662,8 @@
   {
    "catalog_instructor": "James Doucet-Battle",
    "code": "SOCY127P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Engages the social, historical, and economic trajectories of the drugs, illicit and licit, botanical and pharmaceutical within U.S. society. Through an examination of case studies, and other texts of encounter, explores how international, state, and local actors mediate as interlocutors between globalized interests, local knowledges, and the molecules we have increasingly come to know, ingest, and incorporate.",
@@ -595,6 +674,7 @@
    "ge_codes": [],
    "number": "127P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior sociology, anthropology, biology, biotechnology, biochemistry and molecular biology, community studies, critical race and ethnic studies, global and community health B.A. and B.S., Latin American/sociology combined, and digital justice studies (formerly GISES) majors, proposed majors, and minors.",
    "repeatable": false,
@@ -605,6 +685,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY128",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST126"
@@ -617,6 +699,7 @@
    "ge_codes": [],
    "number": "128",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to sophomore, junior, and senior majors, proposed majors, and minors in legal studies, sociology, community studies, Latin American/sociology combined, digital justice studies (formerly GISES), and critical race and ethnic studies.",
    "repeatable": false,
@@ -627,6 +710,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY128A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST128A"
@@ -641,6 +726,7 @@
    ],
    "number": "128A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -651,6 +737,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY128C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST128C"
@@ -671,6 +759,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 , SOCY 10 , or SOCY 15 . Enrollment is restricted to sophomore, junior, and senior sociology, critical race and ethnic studies, community studies, legal studies, Latin American/sociology combined, and digital justice studies (formerly GISES) majors, proposed majors, and minors.",
    "repeatable": false,
@@ -681,6 +770,8 @@
   {
    "catalog_instructor": "Hiroshi Fukurai",
    "code": "SOCY128I",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST128I"
@@ -695,6 +786,7 @@
    ],
    "number": "128I",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment restricted to sophomore, junior, and senior majors, proposed majors, and minors in legal studies, sociology, community studies, Latin American/sociology combined, digital justice studies (formerly GISES), and critical race and ethnic studies.",
    "repeatable": false,
@@ -705,6 +797,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY128J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST128J"
@@ -717,6 +811,7 @@
    "ge_codes": [],
    "number": "128J",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to sophomore, junior, and senior majors, proposed majors, and minors in legal studies, sociology, community studies, Latin American/sociology combined, digital justice studies (formerly GISES), and critical race and ethnic studies.",
    "repeatable": false,
@@ -727,6 +822,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY128M",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST128M"
@@ -739,6 +836,7 @@
    "ge_codes": [],
    "number": "128M",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to sophomore, junior, and senior majors, proposed majors, and minors in legal studies, sociology, community studies, Latin American/sociology combined, digital justice studies (formerly GISES), and critical race and ethnic studies.",
    "repeatable": false,
@@ -749,6 +847,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY129",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the hidden politics of popular pleasure, studying the workings of domination and transgression in popular culture and everyday life. Explores not only media representations but cultural practices as well. Examines both cultural production and consumption. Considers how hegemonic discourses render the politics of resistance invisible.",
@@ -764,6 +864,7 @@
      "SOCY105B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 105A or SOCY 105B . Enrollment is restricted to junior and senior majors and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -774,6 +875,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY130",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Following food from mouth to dirt, explores the politics, economy, and culture of eating, feeding, buying, selling, and growing food. Topics cover both the political economy of the food system as well as how body and nature are contested categories at either end of this system.",
@@ -784,6 +887,7 @@
    "ge_codes": [],
    "number": "130",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors. Enrollment is restricted to sociology majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -794,6 +898,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores relationship between modern forms of cultural production and the economy and society in which they emerge. Course reads, screens, and discusses variety of the cultural texts: from the historical and theoretical to the commercial, popular, and counter-cultural.",
@@ -804,6 +910,7 @@
    "ge_codes": [],
    "number": "131",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), community studies, and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -814,6 +921,8 @@
   {
    "catalog_instructor": "James Doucet-Battle",
    "code": "SOCY132",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Reviews social and cultural perspectives on science and technology, including functionalist, Marxist, Kuhnian, social constructionist, ethnographic, interactionist, anthropological, historical, feminist, and cultural studies perspectives. Topics include sociology of knowledge, science as a social problem, lab studies, representations, practice, controversies, and biomedical knowledge and work.",
@@ -824,6 +933,7 @@
    "ge_codes": [],
    "number": "132",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to junior and senior majors/minors in sociology; biology; biochemistry; community studies; critical race/ethnic studies; global information/social enterprise; Latin American studies/sociology combined; proposed sociology majors.",
    "repeatable": false,
@@ -834,6 +944,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY133",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Takes as its subject, the dialogues, debates, conceptions, and strategies of self representation produced by blacks in the U.S. and Atlantic world in the twentieth and twenty-first centuries. These issues are examined through the insights of feminist theory, cultural studies, media studies, sociology, and African American studies.",
@@ -844,6 +956,7 @@
    "ge_codes": [],
    "number": "133",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -854,6 +967,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY134",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The role of American network television in the production of the post-war American national imagination is our focus. Our approach will explore issues of media power, especially television's industrial apparatus, its network structure, its strategies of representation in relationship to the construction of the image of the nation, and the meaning of citizens, consumers, and audiences.",
@@ -864,6 +979,7 @@
    "ge_codes": [],
    "number": "134",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors and minors in sociology, Latin America and Latino studies/sociology combined, digital justice studies (formerly GISES) studies, history, literature, and film and digital media.",
    "repeatable": false,
@@ -874,6 +990,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY135",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This experiential course explores the theoretical foundations, history, and future of healing justice as a framework using an embodied approach. Healing justice has shaped wide-ranging fields, from grassroots organizing and holistic health, to grant-making, and education. While the framework informs a dynamic movement, healing justice is grounded in consistent commitments like collective healing; centering Black, indigenous and people of color knowledges; and more that guide this course. Grounded in somatic or embodied inquiry, students engage various materials—from academic articles to poetry—using some of the restorative practices that are central to healing justice work.",
@@ -887,10 +1005,13 @@
    "number": "135",
    "prereq_groups": [
     [
-     "SOCY105A",
+     "SOCY105A"
+    ],
+    [
      "SOCY105B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 105A and SOCY 105B , or by permission of the instructor.",
    "repeatable": false,
@@ -901,6 +1022,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY136",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Major theories and concepts in sociological study of social psychology. Topics include identity and social interaction, deviance, sociology of emotions, social narratives, and the social construction of reality.",
@@ -913,6 +1036,7 @@
    ],
    "number": "136",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior sociology and Latin American studies/sociology majors and proposed majors, and sociology and digital justice studies (formerly GISES) minors.",
    "repeatable": false,
@@ -923,6 +1047,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY137",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Why certain social acts are considered threatening and how individuals or groups become stigmatized. Sociological analysis of the institutions and processes of social control and the experience of becoming deviant and living with a stigmatized identity. Introductory course in sociology recommended. (Formerly Deviance and Conformity.)",
@@ -935,6 +1061,7 @@
    ],
    "number": "137",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior sociology majors, minors, and proposed majors, digital justice studies (formerly GISES) studies minors, and Latin American and Latino studies/sociology combined majors and proposed majors.",
    "repeatable": false,
@@ -945,6 +1072,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY139",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Research practicum which examines methods and problems of qualitative field research both through examining literature published in this tradition and by carrying out directed field exercises. Students also design and carry out their own research project.",
@@ -959,6 +1088,7 @@
      "SOCY3A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 3A .",
    "repeatable": false,
@@ -969,6 +1099,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY139D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces critical digital methods to examine ethical and epistemological concerns with Big Data, archives and digital collections, organizational records, mobile ethnographies, social media, and crowd-sourced data. Students use open-source text mining and data-visualization programs.",
@@ -988,6 +1120,7 @@
      "SOCY3A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 , SOCY 10 , or SOCY 15 ; and SOCY 3A . Enrollment is restricted to junior and senior sociology, Latin American and Latino studies/sociology, and digital justice studies (formerly GISES) majors, proposed majors, and minors.",
    "repeatable": false,
@@ -998,6 +1131,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY139G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces Geographic Information Systems (GIS) including methods to analyze geographic data and create maps. Students learn software, such as Google Map APIs and Bing Maps APIs, and focus on the ArcGIS mapping software. A course in statistics is recommended as preparation.",
@@ -1008,6 +1143,7 @@
    "ge_codes": [],
    "number": "139G",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to junior and senior anthropology, environmental studies, sociology, Latin American and Latino studies/sociology combined, and digital justice studies (formerly GISES) majors, proposed majors, and minors; other majors by permission of instructor.",
    "repeatable": false,
@@ -1018,6 +1154,8 @@
   {
    "catalog_instructor": "Amy Argenal",
    "code": "SOCY139I",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to critical community engaged learning and research for social change as practiced within the Sociology Department. Students build out their own internship and/or research objectives centering ethical community engaged practices. Students supported in locating internships, learning about various approaches to community engaged research and learning, and connecting to a range of opportunities to engage both on and off campus.",
@@ -1036,6 +1174,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Spring",
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 or by permission of the instructor. Enrollment is restricted to sociology majors and proposed majors, Latin American and Latino studies/sociology combined majors and proposed majors, and digital justice studies (formerly GISES) minors.",
    "repeatable": false,
@@ -1046,6 +1185,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY139T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the theories and methods associated with community-based and participatory action research. Students review relevant scholarship then engage in a collective field research project in collaboration with a community organization. Themes, collaborations, and research projects vary. Enrollment is by permission of the instructor.",
@@ -1056,6 +1197,7 @@
    "ge_codes": [],
    "number": "139T",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1066,6 +1208,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY140",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course uses historical, sociological, and social psychological materials to introduce students to issues concerning class and power, religion and power, minorities and power, women and power, the rise of the New Right, and the successes and failures of the Left.",
@@ -1083,6 +1227,7 @@
      "PSYC40"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 , SOCY 10 , SOCY 15 , or PSYC 40 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -1093,6 +1238,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY141",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Familiarizes students with the major social welfare programs and policies in the U.S., exploring changes in conceptualizations of social welfare, and offering a critical perspective on the present-day welfare state.",
@@ -1107,10 +1254,18 @@
    "prereq_groups": [
     [
      "SOCY1",
+     "SOCY10"
+    ],
+    [
+     "SOCY1",
+     "SOCY15"
+    ],
+    [
      "SOCY10",
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Two courses chosen from SOCY 1 , SOCY 10 , and SOCY 15 . Enrollment is restricted to sophomore, junior, and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1121,6 +1276,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY142",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Concerns the routine and taken-for-granted activities that make up our interactions with one another, consisting in large part—but not exclusively—of verbal exchanges. Emphasis on the socially situated character of communication, whether intimacy between two people or dominance of a group.",
@@ -1131,6 +1288,7 @@
    "ge_codes": [],
    "number": "142",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, language studies, linguistics, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1141,6 +1299,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY143",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "How have plants been part of Black-led community health and healing in the Americas? How has this botanical knowledge been central to material and discursive geographies of blackness; to how blackness is lived; and to how blackness is constructed in health narratives, policy, and movements? In addition to learning about Black botanical knowledge in North and Latin America (African-American and Afro-Latinx), students analyze their own social locations; interrogate assumptions about local and traditional plant knowledge; and encounter broad understandings of health that include environmental, economic, and spiritual dimensions. Students engage with academic texts, news stories, art, and creative writing.",
@@ -1162,6 +1322,7 @@
      "GCH1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 or CRES 10 or CRES 68 or GCH 1 , or by instructor permission. Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -1172,6 +1333,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY145",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines conflicting views on the development and state of modern masculinity as adaptation, transitional phase, or pathology. Did men lose the gender war? Do boys need rescuing? What are common and divergent social experiences of men within race, class, gender, culture, era? An introductory sociology course recommended.",
@@ -1182,6 +1345,7 @@
    "ge_codes": [],
    "number": "145",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, psychology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -1192,6 +1356,8 @@
   {
    "catalog_instructor": "Alicia Riley",
    "code": "SOCY146",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Why do people live longer today than they did 50 years ago? What drives differences in health between neighborhoods or nations? This course introduces students to questions and concepts central to the study of population health—an interdisciplinary field based in demography, sociology, and epidemiology. It examines the policy implications and limitations of research on population health. Students practice evaluating evidence, translating big-picture concepts into measurable variables, and working with data. Student learning is evaluated through class discussion forums, quizzes, data interpretation assignments, and a take-home final exam.",
@@ -1208,9 +1374,12 @@
      "GCH1",
      "SOCY1",
      "SOCY10",
-     "SOCY15"
+     "SOCY15",
+     "CRES12",
+     "SOCY12"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisites: GCH 1 or SOCY 1 or SOCY 10 or SOCY 15 or CRES/SOCY 12. Enrollment restricted to sophomore, junior or senior proposed or declared majors and minors in GCH BA, SOCY BA, LALS/SOCY combined BA, digital justice studies (formerly GISES) minor, and science and justice minor.",
    "repeatable": false,
@@ -1221,6 +1390,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY147",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "What about America is making Americans sick? In this interdisciplinary course, students consider the changing social context of health in the United States and the social and political commitments necessary to protect health as a human right. Students analyze current challenges at the intersection of structural racism, political values, and health, and examine the ways that framing health as personal versus public responsibility is consequential for social policy. Using case studies, students envision a human rights- based response to these and other health challenges. Enrollment is restricted to sophomores, juniors, and seniors.",
@@ -1233,6 +1404,7 @@
    ],
    "number": "147",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -1243,6 +1415,8 @@
   {
    "catalog_instructor": "Derrick Jones",
    "code": "SOCY148",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines educational inequality in the United States, focusing on contemporary debates and issues, especially in the California context. Covers schooling from preschool to higher education, and examines educational inequality from a system, setting, and individual-level perspective.",
@@ -1256,10 +1430,13 @@
    "number": "148",
    "prereq_groups": [
     [
-     "SOCY3A",
+     "SOCY3A"
+    ],
+    [
      "SOCY3B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): SOCY 3A and SOCY 3B , or by instructor permission. Enrollment restricted to junior, senior majors, proposed majors, and minors in sociology, education, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1270,6 +1447,8 @@
   {
    "catalog_instructor": "Megan McNamara",
    "code": "SOCY149",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Modern analyses of sexuality and gender show personal life closely linked to large-scale social structures: power relations, economic processes, structures of emotion. Explores these links, examining questions of bodily difference, femininity and masculinity, structures of inequality, the state in sexual politics, and the global re-making of gender in modern history. Recommended as background: any lower-division sociology course.",
@@ -1280,6 +1459,7 @@
    "ge_codes": [],
    "number": "149",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -1290,6 +1470,8 @@
   {
    "catalog_instructor": "Amy Argenal",
    "code": "SOCY15",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to comparative and historical sociology with focus on globalization and the underlying historical context that led to its development. Course focuses on understanding what sociology is from a global perspective, what are the debates around how we understand our world, and the historical context that has led to it. Course  looks at more contemporary global phenomena and the reactions to them within local, regional, and national contexts, like migration, rising global inequality and the rise of nationalism and populist backlashes.",
@@ -1302,6 +1484,7 @@
    ],
    "number": "15",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -1312,6 +1495,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY150",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores contemporary, historical, cross-cultural and interdisciplinary perspectives on the social psychology of death and dying. Cultural norms and institutional contexts are studied, along with the individual experience, and the ways in which our perspectives on death and dying influence our experiences of life and living.",
@@ -1330,6 +1515,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite: SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES) studies minors, and Latin American and Latino studies/sociology combined majors.",
    "repeatable": false,
@@ -1340,6 +1526,8 @@
   {
    "catalog_instructor": "Mengyang (Zoe) Zhao",
    "code": "SOCY151",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Delves into the dynamic interplay between media and activism, underscoring the ways in which grassroots communities use diverse media forms for mutual aid and social change. By analyzing case studies from across the globe, students gain a deeper understanding of the multifaceted influence of media—from its portrayal and (mis)framing of popular struggles to its capability to either propel or hinder social justice activism. Key areas of study encompass media and direct action, net histories, cyber queer and feminism, abolition technology, alternative media, gaming and tactical media, and more.",
@@ -1358,6 +1546,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -1368,6 +1557,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Critically examines the place of the human body in contemporary society.  Focuses on the social and cultural construction of bodies, including how they are gendered, racialized, sexualized, politicized, represented, colonized, contained, controlled, and inscribed. Discusses relationship between embodiment, lived experiences, and social action. Focuses on body politics in Western society and culture, especially the United States.",
@@ -1378,6 +1569,7 @@
    "ge_codes": [],
    "number": "152",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors and minors and proposed majors and minors in sociology, global information and enterprise, and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1388,6 +1580,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY153",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines sociological approaches to the understanding of emotions and the application of these approaches to work, learning, interpersonal relationships, health and illness, sports, and other aspects of everyday life.",
@@ -1398,6 +1592,7 @@
    "ge_codes": [],
    "number": "153",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -1408,6 +1603,8 @@
   {
    "catalog_instructor": "Megan McNamara",
    "code": "SOCY154",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the ways in which U.S. society pathologizes and marginalizes fat bodies, the impact that structural and social exclusion have on fat people’s lives and health, and possibilities for transforming discourses of anti-fatness in cultural conversations around body size.",
@@ -1418,6 +1615,7 @@
    "ge_codes": [],
    "number": "154",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to proposed and declared junior and senior majors and minors in sociology, Latin American and Latino studies/sociology combined, and global and community health.",
    "repeatable": false,
@@ -1428,6 +1626,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY155",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the relationship between consciousness, ideology, and political behaviors from voting to rebellion. Special attention is given to the lived experience and the identity interests that complicate the nexus of class position and political ideology. An introductory sociology course is recommended as preparation.",
@@ -1438,6 +1638,7 @@
    "ge_codes": [],
    "number": "155",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1448,6 +1649,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY156",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores historical and contemporary constructions of Latinx identities and experiences in U.S. Particular emphasis placed on transcultural social contexts, racial formations, and intersections with other identities including sexuality and gender. (Formerly U.S. Latina/o Identities: Centers and Margins).",
@@ -1460,6 +1663,7 @@
    ],
    "number": "156",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, global information and enterprise, Latin American studies, and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1470,6 +1674,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY157",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores controversies in the sociology of sexuality. Focuses on tensions and disagreements that characterize debates over sex and society, and attempts to identify political and theoretical issues at stake in these debates.",
@@ -1480,6 +1686,7 @@
    "ge_codes": [],
    "number": "157",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior and senior majors, proposed majors, and minors in sociology, feminist studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1490,6 +1697,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY158",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines sex work in an historical and cultural context, considering how it has changed over time. Considers the relationship of pornography, exotic dance, and selling sex on the Internet to racialization, queer politics, globalization, and tourism. Employs theories and methods of cultural studies in rethinking historical debates on sex work.",
@@ -1507,6 +1716,7 @@
      "SOCY126"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 120 and SOCY 126 . Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, feminist studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1517,6 +1727,8 @@
   {
    "catalog_instructor": "Christie McCullen",
    "code": "SOCY159",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the socio-cultural processes that shape the meanings, experiences, institutions, and outcomes of pregnancy and birth. Pregnancy and birth serve as a microcosm for understanding the interlocking forces of patriarchy, racial capitalism, and white supremacy, as well as the gendered and sexualized meanings and practices that work to discipline individuals and naturalize those processes. As such, course examines institutional efforts to control the reproductive capacities of people with wombs, as well as resistance to those efforts.",
@@ -1537,6 +1749,7 @@
      "GCH1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or FMST 1 or CRES 10 or GCH 1 or by permission of the instructor. Enrollment is restricted to sophomores, juniors and seniors.",
    "repeatable": false,
@@ -1547,6 +1760,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY160",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the phenomenon of homelessness and potential solutions to this troubling and persistent feature of American society. Discussions center on social research, historical context, and community and political discourse as they relate to homelessness at both the local and global level with the goal of better understanding what the trends in these areas mean for service providers, government entities, advocates, and our unhoused community members. While the course readings often center on theories and data, a key component this course is field visits and expert presentations, which introduce students to key individuals and organizations doing work or making policy to address homelessness.",
@@ -1557,6 +1772,7 @@
    "ge_codes": [],
    "number": "160",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors or by permission of the instructor.",
    "repeatable": false,
@@ -1567,6 +1783,8 @@
   {
    "catalog_instructor": "Christie McCullen",
    "code": "SOCY161",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the social processes that shape the meanings, experiences, institutions, and outcomes of the postpartum period. The postpartum period serves as a microcosm for understanding the interlocking forces of patriarchy, racial capitalism, and white supremacy, as well as the gendered and sexualized meanings and practices that work to discipline individuals and naturalize those processes. Despite that, parents organize for collective solutions, break stigma, resist shame and silence, and demand better conditions for families.",
@@ -1587,6 +1805,7 @@
      "GCH1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or FMST 1 or CRES 10 or GCH 1 , or by permission of the instructor. Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -1597,6 +1816,8 @@
   {
    "catalog_instructor": "Juan Pedroza",
    "code": "SOCY162",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to a range of sociological approaches to the study of organizations. Covers the origins of organizations and informal organization. Also introduces a number of theoretical approaches to organizational studies. The course is relevant for organizational analyses applied in the public, private, and nonprofit sectors. In addition to reading foundational texts and theory, students also apply key concepts in the course to assignments with real-world applications.",
@@ -1615,6 +1836,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 or by permission of the instructor. Enrollment is restricted to proposed and declared sophomore, junior, and senior majors in sociology, Latin American and Latino studies/sociology combined, and digital justice studies (formerly GISES) minor.",
    "repeatable": false,
@@ -1625,6 +1847,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY163",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the nature and development of the capitalist world system since 1945. Emphasis is on the power of multinational corporations as managers of the world system and the response of states: role of multilateral agencies such as the World Bank, International Monetary Fund, United Nations.",
@@ -1639,6 +1863,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 15 . Enrollment is restricted to sophomore, junior, and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1649,6 +1874,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY164",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Through comparative analysis of texts by several social theorists, explores the rise and consequences of capitalism. How has capitalism affected how humans understand and act in the world? How do oppressions along the lines of race, gender, sexuality, and nations intersect with capitalism? Is resistance desirable and/or possible?",
@@ -1661,6 +1888,7 @@
    ],
    "number": "164",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior sociology, global information and enterprise, and combined Latin American and Latin Studies/sociology majors, proposed majors, and minors, or by instructor permission.",
    "repeatable": false,
@@ -1671,6 +1899,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY164T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Along with studying Marx's anatomy of capitalist society, this course also explores the work of Marxist theorists from the early 20th century through the contemporary moment.",
@@ -1685,6 +1915,7 @@
      "SOCY105A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 105A or consent of instructor.",
    "repeatable": false,
@@ -1695,6 +1926,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY166",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Fosters economic literacy among students who are not economics majors but are interested in the political and social ramifications of economic change. Emphasizes economic institutions and policy and is taught by case-study method, which requires active student participation.",
@@ -1705,6 +1938,7 @@
    "ge_codes": [],
    "number": "166",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -1715,6 +1949,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY167",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines contemporary debates about development in the Third World: alternative meanings of development, recent work on the impact of colonial rule, how some economies have industrialized, ideas about agrarian change, and recent research on paths out of poverty. Students work in pairs to examine a development in one country since World War II. SOCY 15 recommended.",
@@ -1725,6 +1961,7 @@
    "ge_codes": [],
    "number": "167",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior majors, proposed majors, and minors in sociology, anthropology, politics, global economics, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -1735,6 +1972,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY168",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores sociological approaches to the quest for--and the realization of--social justice. Examines a range of approaches to such ongoing challenges as racism, sexism, gendered discrimination, classism, poverty, violence, militarism, environmental devastation, ableism, and ageism using non-fiction literature and biographical anthologies.",
@@ -1751,6 +1990,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to sophomores, juniors and seniors.",
    "repeatable": false,
@@ -1761,6 +2001,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY169",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of theories and systems of social stratification focusing on such phenomena as race, class, power, and prestige.",
@@ -1771,6 +2013,7 @@
    "ge_codes": [],
    "number": "169",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior sociology and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -1781,6 +2024,8 @@
   {
    "catalog_instructor": "Derrick Jones",
    "code": "SOCY170",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the enduring and changing status of ethnic and racialized minority groups in the United States, such as Latina/os, African Americans, Asian Americans, indigenous peoples within the U.S., as intersecting, historically situated, and dynamically produced categories of social identity and organization. (Formerly Ethnic and Status Groups.)",
@@ -1799,6 +2044,7 @@
      "CRES10"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or CRES 10 .",
    "repeatable": false,
@@ -1809,6 +2055,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY170P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the enduring racial and economic legacies of slavery and colonialism in relation to contemporary social problems, with an emphasis on segregation, policing, the prison industrial complex, immigration, and borders.",
@@ -1828,6 +2076,7 @@
      "CRES10"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 or CRES 10 , or by permission of the instructor.",
    "repeatable": false,
@@ -1838,6 +2087,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY171",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Seminar focusing on readings of key texts and recent research papers on several dimensions of global inequality (material, health, gender, cultural, migration) to find innovative ways of understanding the connections among different dimensions of inequality and of visualizing inequality in digital media. Students prepare visual presentations on contemporary social inequalities suitable for an online (for example, http://ucatlas.ucsc.edu/) or print atlas.",
@@ -1848,6 +2099,7 @@
    "ge_codes": [],
    "number": "171",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to seniors.",
    "repeatable": false,
@@ -1858,6 +2110,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY172",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Through readings on social movements that span the 20th century, course examines the causes of popular mobilizations, their potential for rapid social change, and the theories developed to understand and explain their role in modern social life.",
@@ -1870,6 +2124,7 @@
    ],
    "number": "172",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -1880,6 +2135,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY173",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes access to clean water, both in the American West and global South. Reviews water quality, pivotal role of water in settlement and society, history and contemporary inequalities, water supplies, international conflict over water, climate change, and human use of water.",
@@ -1892,6 +2149,7 @@
    ],
    "number": "173",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior sociology majors, and proposed majors, and minors in sociology, environmental studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1902,6 +2160,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY173X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the many manifestations of water and sanitation justice and injustice on interlocking scales (i.e. local, national, transnational) while illustrating analytical ideas connecting a range of social processes including claims for human rights, deprivation and exclusion, urbanization and infrastructure development, and privatization of land and water. Looks at various case studies in high-income and low-income countries and uses key technical and social concepts to examine rights, equity, and justice with respect to water and sanitation.",
@@ -1914,6 +2174,7 @@
    ],
    "number": "173X",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1924,6 +2185,8 @@
   {
    "catalog_instructor": "Amy Argenal",
    "code": "SOCY174",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents professional practices in the international field of human rights leading to improvements in people's lives. Addresses recent political developments in the global application of human rights and exposes students to strategic tools—\"levers of effectiveness\"—used to promote the realization of human rights standards. Course also presents the work of key international and local non-governmental organizations in promoting the capacities of rights holder to claim and enjoy their rights and in persuading duty bearers to fulfill their human rights obligations.",
@@ -1941,6 +2204,7 @@
      "LGST10"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisites: SOCY 1 or SOCY 10 or SOCY 15 or LGST 10 or by permission of the instructor. Enrollment is restricted to proposed and declared sophomore, junior, and senior majors in sociology, legal studies, Latin American and Latino studies and sociology combined studies, and digital justice studies (formerly GISES) studies minors.",
    "repeatable": false,
@@ -1951,6 +2215,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY175",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This reading-intensive elective delves into the rapid acceleration of technology and its profound societal implications, especially the ways through which workplaces, homes, and the liminal spaces in between are imagined, constructed and reshuffled. It employs a historical, intersectional, infrastructural and global perspective to dismantle and reexamine conventional notions of technology and technological labor.",
@@ -1969,6 +2235,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -1979,6 +2246,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY176",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the history of women and work; women's current conditions of work and political, economic, and social factors affecting these conditions; means by which women may shape working conditions including contributing leadership, developing policies, building unity, and creating alliances.",
@@ -1989,6 +2258,7 @@
    "ge_codes": [],
    "number": "176",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, feminist studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -1999,6 +2269,8 @@
   {
    "catalog_instructor": "Chris Benner",
    "code": "SOCY176A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses how work is organized and shapes life changes. Covers: the history of paid work; the impact of technology; race/class/gender at work; professional and service work; work and family; collective responses to work; and challenges of work in a globalizing economy.",
@@ -2009,6 +2281,7 @@
    "ge_codes": [],
    "number": "176A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, community studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -2019,6 +2292,8 @@
   {
    "catalog_instructor": "Miriam Greenberg",
    "code": "SOCY177",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Historical and contemporary examination of urban life including community, race, geography, urban and suburban cultures and lifestyles, stratification, housing, crime, economic and environmental issues, demographic changes, and global urbanization.",
@@ -2029,6 +2304,7 @@
    "ge_codes": [],
    "number": "177",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2039,6 +2315,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY177A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines roles of emerging Latino/a majorities in urban centers across the U.S. Explores the Latinization of U.S. cities and various factors affecting the life chances of Latinos/as including, but not limited to, immigration, segregation, social movements, and other forms of political participation.",
@@ -2049,6 +2327,7 @@
    "ge_codes": [],
    "number": "177A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, Latin American and latino studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2059,6 +2338,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY177E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the intersection of cities and the environment through the emerging field of urban environmental studies. Focuses on varied and often contested efforts at urban sustainability in recent history. Draws on literatures in environmental history, environmental and urban sociology, geography, political ecology, and cultural studies.",
@@ -2069,6 +2350,7 @@
    "ge_codes": [],
    "number": "177E",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, community studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2079,6 +2361,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY177G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how global cities have facilitated increasing integration of the diverse cultures and economies of the world. Using historical, sociological, and comparative methods, analyzes how these spaces both enable and constrain transnational flows of capital, labor, information, and culture.",
@@ -2089,6 +2373,7 @@
    "ge_codes": [],
    "number": "177G",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, community studies, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2099,6 +2384,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY178",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Views problems in society not as given but as social constructs. Examines the ways in which conditions in society become identified and defined as problems and consequences that follow from such a process.",
@@ -2109,6 +2396,7 @@
    "ge_codes": [],
    "number": "178",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2119,6 +2407,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY178T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Taught on a rolling basis by faculty members with each offering varying by instructor. Topics are announced by the department.",
@@ -2135,6 +2425,7 @@
      "SOCY15"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 1 or SOCY 10 or SOCY 15 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": true,
@@ -2145,6 +2436,8 @@
   {
    "catalog_instructor": "Laura Harrison",
    "code": "SOCY178Z",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An in-depth exploration of Disability Studies, an interdisciplinary field of research that seeks to question and critique dominant Western understandings of disability and to advance discussions around issues of intersectionality, equality, inclusionary politics of access, and social justice.",
@@ -2157,6 +2450,7 @@
    ],
    "number": "178Z",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -2167,6 +2461,8 @@
   {
    "catalog_instructor": "Sanjay Barbora",
    "code": "SOCY179",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Concerns about environmental change, including global warming, threats to the ozone layer, and industrial pollution, raise questions about Third World development. Simple views of the relation between society and nature, such as blaming population growth, industrialization, or poor people, seem to preclude higher living standards. Uses debates and case studies to explore more subtle and optimistic views of social-natural relations.",
@@ -2177,6 +2473,7 @@
    "ge_codes": [],
    "number": "179",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior majors, proposed majors, and minors in environmental studies, sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors. SOCY 15 recommended.",
    "repeatable": false,
@@ -2187,6 +2484,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY180",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the roots, development, and political outcomes of black civil rights organizations during the Sixties. Explores social and structural forces, mobilization of black communities, strategies and tactics used, nature of the relationships between various civil rights organizations, unity and disunity among organizations, leadership gains, and impact on race relations in the U.S.",
@@ -2197,6 +2496,7 @@
    "ge_codes": [],
    "number": "180",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -2207,6 +2507,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY184",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Why do famines happen? Why are some hungry and some over-fed? Recent advances in the understanding of food crises and chronic undernutrition are the focus of this course.",
@@ -2217,6 +2519,7 @@
    "ge_codes": [],
    "number": "184",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2227,6 +2530,8 @@
   {
    "catalog_instructor": "Lindsey Dillon",
    "code": "SOCY185",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Modern society not only assaults nature, it does so in ways that reproduce existing social inequalities. This course reviews three types of contemporary environmental inequality (environmental racism, displacement, and privilege), and the processes that produced them, with a focus on industrialization, urbanization, and the rise of capitalism in Europe and the United States.",
@@ -2239,6 +2544,7 @@
    ],
    "number": "185",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to junior and senior majors, proposed majors, and minors in sociology, community studies, digital justice studies (formerly GISES), environmental studies, and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -2249,6 +2555,8 @@
   {
    "catalog_instructor": "Madhavi Murty",
    "code": "SOCY187",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examination of shifts in 20th- and 21st-century feminist theory and epistemology. Considers various deconstructive challenges to second wave feminism based on the politics of race, ethnicity, nation, sexuality, and class. Focus changes regularly.",
@@ -2264,6 +2572,7 @@
      "FMST1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): SOCY 1 or FMST 1 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -2274,6 +2583,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY188A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores local dimensions of globalization, focusing on experiencing more global divisions of labor in both industrialized and developing countries. Themes include: economic integration and dislocation; new forms of governance; globalizing consumption and culture; gender; and popular resistance.",
@@ -2286,6 +2597,7 @@
    ],
    "number": "188A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior majors, proposed majors, and minors in sociology, digital justice studies and Latin American studies/sociology combined majors.",
    "repeatable": false,
@@ -2296,6 +2608,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY193",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides for (department-sponsored) individual field study in the vicinity of the campus under the direct supervision of a faculty sponsor (as opposed to SOCY 198 where faculty supervision is by correspondence). Up to three such courses may be taken for credit in any one quarter. Ordinarily call numbers for this course will not be issued after the first week of instruction. Students submit petition to sponsoring agency.",
@@ -2306,6 +2620,7 @@
    "ge_codes": [],
    "number": "193",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2316,6 +2631,8 @@
   {
    "catalog_instructor": "Roberto  de Roock",
    "code": "SOCY193D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Open to students in the Everett Program who have completed SOCY 107A and SOCY 107B and are in the process of completing their project requirement for the Digital Justice Studies minor/intensive concentration in sociology. This course provides hands-on experience, working in teams, to implement a digital justice project in collaboration with a community partner. Prerequisite(s): SOCY 107A and SOCY 107B . Enrollment is by permission of the instructor.",
@@ -2328,6 +2645,7 @@
    ],
    "number": "193D",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Summer",
    "raw_requirements": null,
    "repeatable": false,
@@ -2338,6 +2656,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY193F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides for department-sponsored individual field study in the vicinity of campus under the direct supervision of a faculty sponsor. May not be counted toward major requirements. Students submit petition to sponsoring agency.",
@@ -2348,6 +2668,7 @@
    "ge_codes": [],
    "number": "193F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2358,6 +2679,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY193I",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "This course, in collaboration with Global Learning, supports students in completing an internship abroad, while engaging in research and scholarly investigation around the context that the organization is working in. Students are supported with a faculty member to process skills, and engage in research that supports the work of the internship. Students must apply through the UCSC Global Internships program. Enrollment is restricted to junior and senior declared and proposed sociology and Latin American and Latino studies/sociology combined majors, and global information and social enterprise studies minors.",
@@ -2370,6 +2693,7 @@
    ],
    "number": "193I",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2380,6 +2704,8 @@
   {
    "catalog_instructor": "Steve McKay",
    "code": "SOCY193L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Experiential learning course in which students intern with labor organizations to learn organizing and advocacy skills. Through supervised fieldwork, reflective assignments, and skill-building workshops, students gain practical experience in building the contemporary labor movement. Enrollment is by permission of the instructor.",
@@ -2390,6 +2716,7 @@
    "ge_codes": [],
    "number": "193L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Summer",
    "raw_requirements": null,
    "repeatable": false,
@@ -2400,6 +2727,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -2410,6 +2739,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2420,6 +2750,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY194F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Small group study of a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -2430,6 +2762,7 @@
    "ge_codes": [],
    "number": "194F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2440,6 +2773,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY195A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. The senior thesis satisfies the comprehensive requirement. Course is for independent thesis research and writing. Courses may be taken consecutively or concurrently. Students submit petition to sponsoring agency.",
@@ -2450,6 +2785,7 @@
    "ge_codes": [],
    "number": "195A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -2460,6 +2796,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY195B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. The senior thesis satisfies the comprehensive requirement. Course is for independent thesis research and writing. Courses may be taken consecutively or concurrently. Students submit petition to sponsoring agency.",
@@ -2470,6 +2808,7 @@
    "ge_codes": [],
    "number": "195B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -2480,6 +2819,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY195C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. The senior thesis satisfies the comprehensive requirement. Course is for independent thesis research and writing. Courses may be taken consecutively or concurrently. Completion of course 195C (completion of the thesis) satisfies the W general education requirement. Prerequisite(s): Satisfaction of the Entry Level Writing and Composition requirements. Students submit petition to sponsoring agency.",
@@ -2490,6 +2831,7 @@
    "ge_codes": [],
    "number": "195C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2500,6 +2842,8 @@
   {
    "catalog_instructor": "Katharyne Mitchell",
    "code": "SOCY196G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Project practicum and evaluation are required for completion of major or minor in digital justice studies studies (DJS). Projects require approval in advance by the director of DJS. Completed projects must be uploaded electronically on the website or archive of the Everett Program. (Formerly Project Practicum: Global Information and Social Enterprise.)",
@@ -2515,6 +2859,7 @@
      "SOCY107B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): SOCY 30C or SOCY 107B .",
    "repeatable": true,
@@ -2525,6 +2870,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "SOCY196S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Small seminars that focus on advanced topics in sociology. The pedagogical aims vary but these seminars often emphasize at least one of the following: close textual analysis, critical and analytical thinking, active learning, field research, advanced research methods, or advanced theory. Topics vary yearly; consult current course listings. Enrollment by application with selection based on appropriate background and by consent of instructor. Satisfies senior comprehensive requirement. Restricted to senior sociology majors.",
@@ -2535,6 +2882,7 @@
    "ge_codes": [],
    "number": "196S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2545,6 +2893,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides for (department-sponsored) individual study program off campus for which faculty supervision is not in person (e.g., supervision is by correspondence). Up to three such courses may be taken for credit in any one quarter. Ordinarily call numbers for this course will not be issued after the first week of instruction. Students submit petition to sponsoring agency.",
@@ -2555,6 +2905,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2565,6 +2916,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced directed reading and research. Petitions may be obtained from the Sociology Department Office. Students submit petition to sponsoring agency.",
@@ -2575,6 +2928,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2585,6 +2939,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Advanced directed readingsand research. Petitions may be obtained from the Sociology Department Office. Students submit petition to sponsoring agency.",
@@ -2595,6 +2951,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2605,6 +2962,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY200A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The first in a three-quarter theory sequence that surveys major schools of modern social and political thought, including political economy, structuralism, post-structuralism, phenomenology, global Marxisms, post-colonial theory, critical race theory, and queer and feminist theory. Each quarter covers three thematic modules from the following: the history of sociology and the social sciences; the Enlightenment and the social turn; modernity and its others; political economy; culture and cultural politics; identity, subjectivity, consciousness; the social production of difference; the human and its others; space, place, and power.",
@@ -2615,6 +2974,7 @@
    "ge_codes": [],
    "number": "200A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students or by permission of the instructor.",
    "repeatable": false,
@@ -2625,6 +2985,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY200B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The second in the three-quarter theory sequence that surveys major schools of modern social and political thought, including political economy, structuralism, post-structuralism, phenomenology, global Marxisms, post-colonial theory, critical race theory, and queer and feminist theory. Each quarter covers three thematic modules from the following: the history of sociology and the social sciences; the Enlightenment and the social turn; modernity and its others; political economy; culture and cultural politics; identity, subjectivity, consciousness; the social production of difference; the human and its others; space, place, and power.",
@@ -2639,6 +3001,7 @@
      "SOCY200A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): SOCY 200A . Enrollment is restricted to sociology graduate students or by permission of the instructor.",
    "repeatable": false,
@@ -2649,6 +3012,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY200C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The third in Sociology’s three-quarter theory sequence that surveys major schools of modern social and political thought, including political economy, structuralism, post-structuralism, phenomenology, global Marxisms, post-colonial theory, critical race theory, and queer and feminist theory. Each quarter covers three thematic modules from the following: the history of sociology and the social sciences; the Enlightenment and the social turn; modernity and its others; political economy; culture and cultural politics; identity, subjectivity, consciousness; the social production of difference; the human and its others; space, place, and power.",
@@ -2661,8 +3026,12 @@
    "prereq_groups": [
     [
      "SOCY200A"
+    ],
+    [
+     "SOCY200B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: SOCY 200A and 200B. Enrollment is restricted to sociology graduate students or by permission of the instructor.",
    "repeatable": false,
@@ -2673,6 +3042,8 @@
   {
    "catalog_instructor": "Zoe Zhao",
    "code": "SOCY203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Approaches methods as a series of conscious and strategic choices for doing various kinds of research. Introduces students to the epistemological questions of method in social sciences; to key issues in technique, particularly control, reliability, and validity; and to good examples of social research.",
@@ -2683,6 +3054,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to sociology graduate students and by permission number.",
    "repeatable": false,
@@ -2693,6 +3065,8 @@
   {
    "catalog_instructor": "Juan Pedroza",
    "code": "SOCY204",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students are provided with intuitive explanation of fundamental concepts in statistics and learn how to use statistics to answer sociological questions. Experience and guidance in using computers to efficiently analyze data are provided.",
@@ -2703,6 +3077,7 @@
    "ge_codes": [],
    "number": "204",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to sociology graduate students and by permission number.",
    "repeatable": false,
@@ -2713,6 +3088,8 @@
   {
    "catalog_instructor": "Julie Bettie",
    "code": "SOCY205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Gives students first-hand experience doing fieldwork with an emphasis on participant observation and some interviewing. Students submit weekly field notes and a final project analysis. At seminar meetings, field experiences and relevant literature are examined.",
@@ -2723,6 +3100,7 @@
    "ge_codes": [],
    "number": "205",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to sociology graduate students and by permission number.",
    "repeatable": false,
@@ -2733,6 +3111,8 @@
   {
    "catalog_instructor": "Sanjay Borbora",
    "code": "SOCY206",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of research strategies and methods used in historical and social sciences. Students read works exemplifying a variety of analytical approaches. Written assignments cultivate critical skills, weighing of tradeoffs inherent in all methodological choices, and elaboration of hypothetical research designs.",
@@ -2743,6 +3123,7 @@
    "ge_codes": [],
    "number": "206",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2753,6 +3134,8 @@
   {
    "catalog_instructor": "James Doucet Battle",
    "code": "SOCY208",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Writing intensive course designed to facilitate the completion of the master's thesis, orals field statement, or the dissertation in sociology. The seminar is convened by a faculty member in conjunction with students and their adviser or appropriate committee chair. Students are expected to produce and present drafts of work completed in the seminar.",
@@ -2763,6 +3146,7 @@
    "ge_codes": [],
    "number": "208",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to sociology graduate students and by permission number.",
    "repeatable": true,
@@ -2773,6 +3157,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY209",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines material and symbolic forms such as media products, cultural artifacts, language, nonverbal communication and social practices using discourse, textual, content, interpretive, and conversation analyses as well as ethnography and different channels of communication. Theoretically, relies on cultural studies, communication studies, cultural sociology, film studies, and ethnomethodology.",
@@ -2783,6 +3169,7 @@
    "ge_codes": [],
    "number": "209",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -2793,6 +3180,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Classical concepts and contemporary approaches in macrosociology, the study of large-scale, long term social change. Readings drawn primarily from the Marxian and Weberian traditions (new institutionalism, varieties of neo-Marxism, environmental history, state centrism) as they focus on agrarian and industrial structures and commodity chains; household, village, and neighborhood organization; social movements and revolutions; culture, ideology, and consciousness; policy analysis; comparative urban, national, and civilizational development.",
@@ -2803,6 +3192,7 @@
    "ge_codes": [],
    "number": "220",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -2813,6 +3203,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of major works and themes in the relationship of politics and society, with primary emphasis on the compatibilities and contradictions of pluralist, elite, and class perspectives on the state.",
@@ -2823,6 +3215,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2833,6 +3226,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY223",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced treatment of the dominant ideas of nature and the environment in the West and their relationship to the development of Western capitalism. Leading Western theories of environmental crisis and their relation with ideologies of environmentalism and environmental movements.",
@@ -2843,6 +3238,7 @@
    "ge_codes": [],
    "number": "223",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2853,6 +3249,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY224",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the structures, processes, and movements associated with globalization processes. Reviews political economy theories, cultural theories systems, state industrial policies, and popular responses to globalization. Also assesses contribution of resistance movements informed by class, ethno-nationalism, religion, or gender.",
@@ -2863,6 +3261,7 @@
    "ge_codes": [],
    "number": "224",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2873,6 +3272,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY225",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines rudiments of historical materialism in light of advances in cultural and ecological Marxism. Basic categories of Marxist political economy. Thematic focus on the first and second contradictions of capitalism in world economy today.",
@@ -2883,6 +3284,7 @@
    "ge_codes": [],
    "number": "225",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2893,6 +3295,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY227",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Looks at several major themes in the sociology of the environment and asks how the works of environmental history address those themes. Includes reflections on how history as a method interrogates social questions. Possible themes include: sustainability; social justice; universalism vs. particularity; city and country; and social movements.",
@@ -2903,6 +3307,7 @@
    "ge_codes": [],
    "number": "227",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2913,6 +3318,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY229",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the interaction of work restructuring and existing race/class/gender inequalities. Themes include: the labor process and theories of consent; labor market segmentation; job and occupational segregation; information technologies, flexible work, and post-industrialism; flexible employment relations; and low-wage service and labor markets.",
@@ -2923,6 +3330,7 @@
    "ge_codes": [],
    "number": "229",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2933,6 +3341,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY230",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines theoretical and methodological implications of Marxist theory for empirical social research. Analyzes how historians and social scientists apply Marxist method in explaining society, social change, globalization, culture, and late capitalism. Goal is to assist students to employ Marxist theory and method creatively in their research projects.",
@@ -2943,6 +3353,7 @@
    "ge_codes": [],
    "number": "230",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2953,6 +3364,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY240",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores recent theoretical and empirical studies of race, class, gender, and sexuality with an emphasis on the production of identities and their relationship to processes and structures of power in a postcolonial context.",
@@ -2963,6 +3376,7 @@
    "ge_codes": [],
    "number": "240",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -2973,6 +3387,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY241",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Seminar examining theoretical and methodological issues in doing cross-national and cross-cultural research. In addition to a consideration of different research paradigms and approaches, representative works from each comparative tradition are examined.",
@@ -2983,6 +3399,7 @@
    "ge_codes": [],
    "number": "241",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2993,6 +3410,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY242",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides scholarly support to students doing feminist research. Examines issues concerning conceptualization of feminism and feminist research. Explores relation of feminist research to intersections of gender, class, and race; to the self; to power; and to transformative social praxis. Students present and are given assistance with their work, as well as listen to, read, and assist with the work of others.",
@@ -3003,6 +3422,7 @@
    "ge_codes": [],
    "number": "242",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3013,6 +3433,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY244",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A critical survey of the theoretical issues of persistence and change, public policy, and recent empirical studies in the field of race and ethnic relations. Readings introduce comparative race relations and a historical background of major theoretical paradigms in the field which purport to explain race and ethnic relations in general and race relations in America specifically.",
@@ -3023,6 +3445,7 @@
    "ge_codes": [],
    "number": "244",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3033,6 +3456,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY245",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examination of shifts in 20th- and 21st-century feminist theory and epistemology. Explores the decentering of universalist feminist theories and asks what constitutes feminist theory after gender has been decentered. Considers various deconstructive challenges to second-wave feminist theory based on the politics of race, ethnicity, nation, sexuality, and class. Focus changes regularly.",
@@ -3043,6 +3468,7 @@
    "ge_codes": [],
    "number": "245",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -3053,6 +3479,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY246",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes impact of ethnicity, gender, and religion on the class situation of laboring people in a globalized economy by intensive reading and critique of classic studies, explaining how social movements reflect combinations of social relations and cultural practices.",
@@ -3063,6 +3491,7 @@
    "ge_codes": [],
    "number": "246",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3073,6 +3502,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY247",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the student to the recent literature on race and class. Covers several different theoretical perspectives including internal colonialism, labor market segmentation theories, racial formation, and neo-gramscian cultural analyses. In addition to study of theory, also compares theoretical perspectives to the historical experience of minority groups, in particular, blacks, Hispanics, and Asians.",
@@ -3083,6 +3514,7 @@
    "ge_codes": [],
    "number": "247",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -3093,6 +3525,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY249",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the role feminist discourses play in contemporary cultural politics with the main focus on the politics of sex, sexuality, and sex work. Begins with considerations of (mis)representations of feminisms in popular cultures; considers the relationship between academic and popular feminisms; and interrogates the meaning of terms post-feminism and third-wave feminism .",
@@ -3103,6 +3537,7 @@
    "ge_codes": [],
    "number": "249",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3113,6 +3548,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A professional training seminar devoted to the philosophical, conceptual, and practical issues of course design, pedagogy, and grant writing. Topics covered: institutional contexts; curriculum (including syllabi, course content, assignments, evaluation); pedagogy; teaching as work/labor process; grant writing; budgets.",
@@ -3123,6 +3560,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -3133,6 +3571,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY252",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines classic and contemporary theories and concepts that play a major role in sociological studies of identity, symbolic and social interaction, and the sociology of emotions. Examines how cultural forms, rules, and rituals define, structure, and mediate emotions and how identities are situated within social institutions.",
@@ -3143,6 +3583,7 @@
    "ge_codes": [],
    "number": "252",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3153,6 +3594,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY253",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers empirical research on \"race, crime, and justice\" from multiple methodological and theoretical traditions in social science research. The course draws on historical examples of slavery, state violence, and crimes against humanity across the globe. Also covers research on the entanglement of race and crime in the United States, both historically and today.",
@@ -3163,6 +3606,7 @@
    "ge_codes": [],
    "number": "253",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3173,6 +3617,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines feminist and ethnic studies production, appropriation, and transformation of cultural studies theories and methodologies. Considers the utility of various theoretical apparatuses and methodological strategies employed in the interdisciplinary site that combines feminist, ethnic, and cultural studies.",
@@ -3183,6 +3629,7 @@
    "ge_codes": [],
    "number": "255",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3193,6 +3640,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY256",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to core writings and key theoretical pardigms in urban sociology. Examines the history and contemporary conditions of cities in the U.S. and the urban experience. Urbanization, suburbanization, community, social inequality, urban politics, relationship between the built environment and human behavior.",
@@ -3203,6 +3652,7 @@
    "ge_codes": [],
    "number": "256",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3213,6 +3663,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY257",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines colonialism, war crimes, crimes against humanity, and legal remedies, and the role of the International Criminal Court (ICC); traces the history of colonial expansionism, starting from the Roman Empire to the present American imperial dominance in global politics.",
@@ -3223,6 +3675,7 @@
    "ge_codes": [],
    "number": "257",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3233,6 +3686,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY258",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces historical analysis of lay justice participation. Examines global exploration of the use of lay judge institutions in citizen's movements and the assumption that juries are a derivative institution of democratic ideals. Focuses on corporate media creation of anti-jury sentiment.",
@@ -3243,6 +3698,7 @@
    "ge_codes": [],
    "number": "258",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3253,6 +3709,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY259",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Brings together the fields of sociology and geography to explore the complex and multiple ways of thinking together space and social difference. Course texts examine the co-constitution of space with bodies, subjectivities, and social formations.",
@@ -3263,6 +3721,7 @@
    "ge_codes": [],
    "number": "259",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3273,6 +3732,8 @@
   {
    "catalog_instructor": "Jenny Reardon",
    "code": "SOCY260",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to theoretical approaches and exemplary studies of culture, knowledge, and power which critically interrogate the relationship between cultural formations and the production, circulation, and meaning of knowledges, materials, artifacts, and symbolic forms. Explores the concrete ways that power is organized and operates through different forms and sites, how it interpolates with other forms of power, and examines knowledges and culture as specific forms of power and sites of political struggle.",
@@ -3283,6 +3744,7 @@
    "ge_codes": [],
    "number": "260",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to sociology graduate students.",
    "repeatable": false,
@@ -3293,6 +3755,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY261",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores three main issues: the social determination of knowledge, including natural science; the character of intellectual labor and intellectuals as a social group; the role of organized knowledge and knowledge industries in contemporary social change. Texts examined include class-based theories (Lukacs, Mannheim, Gramsci), feminist standpoint analysis (Smith, Harding, etc.), and theories of postmodern culture (Lyotard, Harvey, etc.).",
@@ -3303,6 +3767,7 @@
    "ge_codes": [],
    "number": "261",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3313,6 +3778,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY262",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines contemporary debates about the role of mass produced expressive symbols in modern industrial societies, and the circumstances of cultural production for its impact on the creation, organization, and use of cultural artifacts. Concern with the use and experience of popular symbols for the ways that their use involves the creation of meanings and the role of such meanings in the social organization of society.",
@@ -3323,6 +3790,7 @@
    "ge_codes": [],
    "number": "262",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3333,6 +3801,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY263",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers the cultural turn and the turn to difference in understanding relations of power and struggles over representation in studies of race, media, and culture. Examines national identity, difference, subjectivity, and authenticity, especially as they bear on quests to create new identifications, alignments, and efforts to protect existing identities.",
@@ -3343,6 +3813,7 @@
    "ge_codes": [],
    "number": "263",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3353,6 +3824,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY264",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores social and cultural perspectives on science, technology, and medicine. Analyzes theoretical approaches that open up black boxes of scientific and biomedical knowledge, including the politics of bodies, objects, and health/illness. Links are made to medical sociology.",
@@ -3363,6 +3836,7 @@
    "ge_codes": [],
    "number": "264",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3373,6 +3847,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY268A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "BME268A",
@@ -3387,6 +3863,7 @@
    "ge_codes": [],
    "number": "268A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3397,6 +3874,8 @@
   {
    "catalog_instructor": "Kriti Sharma",
    "code": "SOCY268B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "FMST268B",
@@ -3411,6 +3890,7 @@
    "ge_codes": [],
    "number": "268B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -3421,6 +3901,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY282",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Policy research. Covers a variety of theoretical perspectives found in policy studies. Surveys various methodological approaches used in policy research. Theories and methods linked to research agendas on the various phases of the policy life cycle. Students are required to design a research proposal.",
@@ -3431,6 +3913,7 @@
    "ge_codes": [],
    "number": "282",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3441,6 +3924,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY290",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The topics to be analyzed each year vary with the instructor but focus upon a specific research area. Enrollment restricted to graduate students by consent of the instructor.",
@@ -3451,6 +3936,7 @@
    "ge_codes": [],
    "number": "290",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3461,6 +3947,8 @@
   {
    "catalog_instructor": "Hilary Angelo",
    "code": "SOCY290W",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "This two-credit course, repeatable for credit, brings together faculty and graduate students interested and actively engaged in a particular research area, and does so in a variety of ways. May include: close readings and discussion, invited speakers, sharing of student and faculty work, and field trips. Working group framework enhances one-on-one mentoring experiences by creating a scholarly community and support structure on campus for scholars in this area, and by introducing students to a range of faculty on our campus and beyond. Also fosters peer-to-peer learning and collegiality among graduate students researching similar topics. Enrollment is by permission of the instructor. Enrollment is restricted to graduate students.",
@@ -3471,6 +3959,7 @@
    "ge_codes": [],
    "number": "290W",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -3481,6 +3970,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY293",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A seminar devoted to the practical problems of securing a job as a professional sociologist. Topics covered: researching colleges, universities, and public and private organizations that employ sociologists; designing a curriculum vitae; writing an application letter; preparing a job talk; handling questions during the interview process; the etiquette of visiting (and its aftermath); finding out about them; and the terms of employment: what is negotiable and what is not.",
@@ -3491,6 +3982,7 @@
    "ge_codes": [],
    "number": "293",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3501,6 +3993,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY294",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Seminar on the genres of social science writing, and the problems of starting and finishing a publishable thesis, book, or article. For advanced graduate students working on the composition of their dissertations and journal articles.",
@@ -3511,6 +4005,7 @@
    "ge_codes": [],
    "number": "294",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3521,6 +4016,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY295",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Graduate students develop, enhance, or deepen their pedagogical knowledge and skills in the field of sociology and other social sciences.",
@@ -3531,6 +4028,7 @@
    "ge_codes": [],
    "number": "295",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sociology graduate students at all stages of their graduate careers.",
    "repeatable": false,
@@ -3541,6 +4039,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY297",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -3551,6 +4051,7 @@
    "ge_codes": [],
    "number": "297",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3561,6 +4062,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY299",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -3571,6 +4074,7 @@
    "ge_codes": [],
    "number": "299",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3581,6 +4085,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY30A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The first class in a three-quarter sequence that prepares students for designing social justice and sustainability projects using digital technologies and tools in partnerships with community and non-governmental organizations. Tuesday's class topics include globalization, info-exclusion, social justice, information revolution, global civil-society networks, social entrepreneurship, and organizational assessment. Thursday's technical laboratory teaches students to develop practical digital technology skills for working in solidarity with community organizations in areas such as web design, graphic design, and digital networking. (Formerly Introduction to Global Information and Social Enterprise Studies.)",
@@ -3593,6 +4099,7 @@
    ],
    "number": "30A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall",
    "raw_requirements": null,
    "repeatable": false,
@@ -3603,6 +4110,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY3A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to major types of date and data analysis used in sociology. Designed to give students a foundation in understanding social science research articles, reports, and media reports used in political and policy debates. Topics include: general principles of research design, measurement, inductive and deductive modes of reasoning, experimental design, field work and ethnographic design, and reading and understanding basic quantitative forms of data and analysis.",
@@ -3613,6 +4122,7 @@
    "ge_codes": [],
    "number": "3A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -3623,6 +4133,8 @@
   {
    "catalog_instructor": "Juan Pedroza",
    "code": "SOCY3B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces basic quantitative data analysis found in sociological research and policy reports. Topics include: inferential statistics, such as probability distributions, sampling, and testing; and descriptive statistics, such as measures of association, bivariate, and multivariate analysis. (Formerly course 103A.)",
@@ -3635,6 +4147,7 @@
    ],
    "number": "3B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to majors, proposed majors, and minors in sociology, digital justice studies (formerly GISES), and Latin American studies/sociology combined.",
    "repeatable": false,
@@ -3645,6 +4158,8 @@
   {
    "catalog_instructor": null,
    "code": "SOCY99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Directed reading and research. Petitions may be obtained from the Sociology Department Office. Ordinarily call numbers for this course will not be issued after the first week of instruction. Students submit petition to sponsoring agency.",
@@ -3655,6 +4170,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3663,11 +4179,10 @@
    "url": "/en/current/general-catalog/courses/socy-sociology/lower-division/socy-99"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "SOCY"
 }

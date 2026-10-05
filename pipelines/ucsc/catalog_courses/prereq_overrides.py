@@ -1,7 +1,8 @@
 """Committed hand resolutions for requirement texts the parser can't settle.
 
 prereq_overrides.json maps course code -> {
-    "raw_sha1": sha1 of the exact raw_requirements text it was written for,
+    "raw_sha1": prereq_parse.raw_sha1(raw_requirements) -- sha1 of the
+                whitespace-normalized text it was written for,
     "groups": CNF ([] = no course prerequisites),
     "concurrent_ok": [codes in groups that may be taken the same term],
     "coreqs": CNF of strictly-concurrent courses (optional, default []),

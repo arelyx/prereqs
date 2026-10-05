@@ -4,6 +4,12 @@
   {
    "catalog_instructor": null,
    "code": "GRAD200",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "GRAD202"
+    ]
+   ],
    "credits": "0",
    "cross_listed": [],
    "description": "Introduces best practices in academic writing including issues of citation, plagiarism, and structure in research. Students receive feedback from instructors and peers in order to encourage a \"writing process\" and an awareness of student/faculty roles.",
@@ -14,6 +20,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Concurrent enrollment in GRAD 200 and GRAD 202 is required. Enrollment is restricted to international graduate students in the Graduate Preparation Program.",
    "repeatable": false,
@@ -24,6 +31,15 @@
   {
    "catalog_instructor": null,
    "code": "GRAD201",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "GRAD200"
+    ],
+    [
+     "GRAD202"
+    ]
+   ],
    "credits": "0",
    "cross_listed": [],
    "description": "Focuses on understanding and being understood in seminar style classroom environments, including academic conversation techniques, pronunciation as needed, and using/identifying evidence in discussion. Introduces U.S. classroom approaches to presentation and student-centered teaching and learning.",
@@ -34,6 +50,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Concurrent enrollment in GRAD 200 and GRAD 202 is required. Enrollment is restricted to international graduate students in the Graduate Preparation Program.",
    "repeatable": false,
@@ -44,6 +61,15 @@
   {
    "catalog_instructor": null,
    "code": "GRAD202",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "GRAD200"
+    ],
+    [
+     "GRAD201"
+    ]
+   ],
    "credits": "0",
    "cross_listed": [],
    "description": "Introduces reading strategies and techniques, including skimming and scanning, note-taking, and text analysis to improve critical reading skills. Also introduces students to UCSC library resources as well as the basic research skills of gathering and analyzing evidence.",
@@ -54,6 +80,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Concurrent enrollment in GRAD 200 and GRAD 201 is required. Enrollment is restricted to international graduate students in the Graduate Preparation Program.",
    "repeatable": false,
@@ -64,6 +91,8 @@
   {
    "catalog_instructor": "Roxanna Villalobos",
    "code": "GRAD213",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Supports enrolling graduate students and auditing postdoctoral scholars in STEM and Social Science programs to develop mentorship skills that create inclusive research and learning environments in higher education. Mentors engage with recent research and practice evidence-based strategies that help historically marginalized students excel in science through an equity-centered approach. To apply insights from educational research, mentors create mentoring statements that articulate their equity values and the specific strategies they use to enact equity in mentoring. Enrollment is by permission of instructor and prioritizes graduate students in STEM or Social Science discipline. Contact the instructor for a permission code. The instructor will review enrollees as needed to ensure priority is being met. Postdoctoral scholars in these fields may audit the course.",
@@ -74,6 +103,7 @@
    "ge_codes": [],
    "number": "213",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -84,6 +114,8 @@
   {
    "catalog_instructor": "Kendra Dority",
    "code": "GRAD215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Supports current and emerging graduate student instructors (GSIs) to discuss and apply research-based frameworks for developing college-level courses that center significant student learning, antiracism, accessibility, and equitable outcomes. To put the insights of educational research into practice, GSIs create the essential components of an original college-level course, including course learning outcomes, assessment plans, an equity-minded syllabus, and an engaging course structure. First priority of enrollment is given to graduate students who have been appointed to teach as GSIs in the upcoming summer sessions. Open on a space-available basis to all other graduate students.",
@@ -94,6 +126,7 @@
    "ge_codes": [],
    "number": "215",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -102,11 +135,10 @@
    "url": "/en/current/general-catalog/courses/grad-graduate/graduate/grad-215"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "GRAD"
 }
