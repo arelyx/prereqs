@@ -15,13 +15,13 @@ import sys
 
 from bs4 import BeautifulSoup
 
-from common.snapshot import latest
+from .. import editions
 
 from .segment import HEADING_CLASS_RE, PLANNER_TITLE_RE
 
 
-def render(slug: str) -> str:
-    snap = latest("ucsc", "major_requirements")
+def render(slug: str, edition: str | None = None) -> str:
+    snap = editions.latest_program_fetch(edition)
     if snap is None:
         sys.exit("no major_requirements fetch snapshot")
     path = snap / "raw" / f"{slug}.html"
@@ -74,6 +74,6 @@ def render(slug: str) -> str:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit("usage: python -m ucsc.major_requirements.render_page <slug>")
-    print(render(sys.argv[1]))
+    if len(sys.argv) not in (2, 3):
+        sys.exit("usage: python -m ucsc.major_requirements.render_page <slug> [edition]")
+    print(render(sys.argv[1], sys.argv[2] if len(sys.argv) == 3 else None))

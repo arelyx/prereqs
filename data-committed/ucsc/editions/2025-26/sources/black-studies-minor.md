@@ -1,0 +1,85 @@
+# Black Studies Minor
+
+<!-- slug: black-studies-minor | edition: 2025-26 | url: https://catalog.ucsc.edu/en/2025-2026/general-catalog/academic-units/humanities-division/critical-race-and-ethnic-studies/black-studies-minor -->
+Housed in the Critical Race and Ethnic Studies (CRES) Department, the Black Studies minor offers students grounding in the intellectual histories, political movements, cultural expressions, and critical theories of the black diaspora, all while engaging a range of methodologies from across disciplines. Attention to the significance of social justice is a hallmark of the minor. Supported by faculty expertise in Africa, the Caribbean, the Americas, Europe, and the Pacific, students can explore the globally multi-sited nature of black freedom struggles, both past and present, and examine blackness through a comparative lens.
+Through careful advising, students can pursue a set of electives, tailored to their interests, enabling broad or deep exploration of specific histories, geographic regions, and thematic concerns.
+
+## Course Requirements
+To graduate with a minor in Black studies, a student is required to complete six courses. CRES 68, Approaches to Black Studies is the expected foundational course. Students will undertake an additional 25 credits—or five upper-division elective courses—drawn from the Arts, Humanities, and Social Sciences divisions. Students can select these five electives from a list of pre-approved courses. Students who wish to substitute a course not on the approved upper-division list should complete the [Petition for Course Credit form](https://cres.ucsc.edu/undergraduate/advising/index.html)available on the CRES website. A maximum of two courses may be petitioned for credit. Some courses may be satisfied via [exam credit](https://catalog.ucsc.edu/en/current/general-catalog/undergraduate-information/undergraduate-academic-program/ap-ibh-and-a-level-examinations/). Courses may be taken for a letter grade or Pass/No Pass.
+
+### Lower-Division Courses {sc1}
+
+#### Take the following course: {sc2}
+- CRES 68 — Approaches to Black Studies (5)
+
+### Upper-Division Courses {sc1}
+Five upper-division courses from the General Electives list below. At least two of these electives must be CRES courses (i.e., under the CRES designation). Courses in the General Electives list that are cross-listed with a CRES course may also count toward the two required CRES courses.
+
+#### General Electives {sc2}
+- CRES 113 — Music and Performance (5)
+- CRES 115 — Frantz Fanon: Resistance, Revolution, and Decolonization (5)
+- CRES 118 — Abolitionist Futures (5)
+- CRES 131 — Black Freedom Movements (5)
+- CRES 132 — Black Speculations (5)
+- CRES 134 — The Black "Middle East" (5)
+- CRES 153 — A Radical History of the Korean War (5)
+- CRES 161 — The Racial and Gendered Economies of Housing (5)
+- CRES 188B — Topics in Black Studies (5)
+- CRES 190C — The Black Transnational (5)
+- CRES 190D — Black Geographies and the Imperative of Abolition (5)
+- CRES 190F — Black Queer Film (5)
+- ANTH 110G [/CRES 110G] — Westside Stories: Race, Place and the California Imaginary (5)
+- ANTH 110Q [/CRES 110Q/FMST 110Q] — Queer Sexuality in Black Popular Culture (5)
+- ANTH 130A — Anthropology of Africa. (5)
+- ANTH 130F [/CRES 130] — Blackness In Motion: Anthropology of the African Diasporas (5)
+- ANTH 130L — Ethnographies of Latin America (5)
+- ANTH 159 — Race and Anthropology (5)
+- ANTH 194L — Archaeology of the African Diaspora (5)
+- ANTH 196J — Imagining America (5)
+- ARTG 142 [/CRES 142] — Black Aesthetics: Interventions in Digital Media (5)
+- EDUC 160 — Issues in Educational Reform (5)
+- EDUC 164 — Urban Education (5)
+- EDUC 181 — Race, Class, and Culture in Education (5)
+- ENVS 130B [/LGST 130B] — Justice and Sustainability in Agriculture (5)
+- ENVS 178 — Race and the Environment (5)
+- FILM 165B — Race on Screen (5)
+- FMST 102 — Feminist Critical Race Studies (5)
+- FMST 115 — Gender, Sexuality, and Transnational Migration Across the Americas (5)
+- FMST 117 — Post Zora Interventions: Art, Activism and Anthropology (5)
+- FMST 124 — Technology, Science, and Race Across the Americas (5)
+- FMST 125 [/CRES 125] — Race, Sex, and Technology (5)
+- FMST 145 — Racial and Gender Formations in the U.S (5)
+- FMST 147 — Gender, Race, Power, Knowledge (5)
+- HAVC 140C — Race and American Visual Arts (5)
+- HIS 109A — Race, Gender, and Power in the Antebellum South (5)
+- HIS 110H — Greater Reconstruction: Race, Empire, and Citizenship in the Post-Civil War United States (5)
+- HIS 120 — W.E.B. Du Bois (5)
+- HIS 121B — African American History, 1877 to the Present (5)
+- HIS 122A — Jazz and United States Cultural History, 1900-1945 (5)
+- HIS 122B — Jazz and United States Cultural History, 1945 to the Present (5)
+- HIS 158C [/ANTH 179] — Slavery in the Atlantic World: Historical and Archaeological Perspectives (5)
+- JRLC 111 — Joy In Social Movements (5)
+- LALS 150 — Afro-Latinos/as: Social, Cultural, and Political Dimensions (5)
+- LALS 151 — Race & Mobility (5)
+- LALS 171 — Brazil in Black and White (5)
+- LIT 121N — RAGE: Race and Performance (5)
+- LIT 135A — Topics in African Literature (5)
+- LIT 148I — Toni Morrison's Americas (5)
+- LIT 154C — Hip Hop Hi Art (5)
+- LIT 161A — African American Literature (5)
+- LIT 161B — African American Women Writers (5)
+- LIT 179E [/CRES 179E] — Writing for Transformation (5)
+- LIT 190O — Studies in Slavery, Race, and Nation in the Americas (5)
+- MUSC 101F — Musics of Africa and the Americas (5)
+- PSYC 148 — Stereotyping, Prejudice, and Racism (5)
+- PSYC 159P — Race, Ethnicity, and Environmental Inequality (5)
+- SOCY 117E — Migrant Europe (5)
+- SOCY 128I [/LGST 128I] — Race and Law (5)
+- SOCY 143 — Black Botanical Medicine in the Americas (5)
+- SOCY 161 — Postpartum (5)
+- SOCY 170P — The Political Economy of Race (5)
+- SOCY 180 — Social Movements of the 1960s (5)
+- THEA 100B — Black Theater USA (5)
+- THEA 100W — Black/African Diasporic World Theater (5)
+- THEA 151A — Studies in Performance: African American Theater Arts Troupe (5)
+- THEA 167 — Africanist Aesthetics: Live Dialogues in the Americas and Africa (5)

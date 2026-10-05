@@ -1,11 +1,11 @@
-"""Interpretation of segmented rule nodes into the typed requirements tree.
+"""Interpretation of segmented rule nodes into the generic requirements tree.
 
-Deterministic-first: the SmartCatalog heading vocabulary is semi-controlled,
-so high-precision regex patterns classify most rules with zero LLM exposure.
-The qwen3:4b fallback handles the open-set remainder, with hard validation:
-- op must be in the enum;
-- a claimed count must appear verbatim (digit or number-word) in the
-  heading/prose, else the rule is quarantined (`needs_review`), never guessed.
+This is the LEGACY generic-JSON harness ("approach A" in the revamp report):
+one fixed rule vocabulary for every program, classified by regex over the
+semi-controlled SmartCatalog heading phrases. Headings no pattern matches
+become ``op: unknown`` + ``needs_review`` — never guessed. (An earlier
+version asked a 4B local model in that case; it was retired with the move to
+per-program harnesses authored by frontier agents.)
 
 Special OR encodings (research doc §3):
 - Narrative-row branches → op=options (deterministic, from segment.py).
@@ -20,10 +20,8 @@ from __future__ import annotations
 import re
 
 from common.guards import FailureBudget
-from common.ollama import DEFAULT_MODEL, OllamaError, chat_json
 from common import codes
 
-from . import prompts
 from .segment import RawRule, RawSection, SegmentedProgram
 
 WORD_NUMBERS = {
@@ -317,9 +315,8 @@ def stated_numbers(rule: RawRule) -> set[int]:
 
 def interpret_rule(
     rule: RawRule,
-    llm_stats: dict,
+    stats: dict,
     budget: FailureBudget,
-    model: str | None = DEFAULT_MODEL,
     section_kind: str = "other",
 ) -> dict:
     """RawRule → typed rule node (docs/DATA_MODEL.md shape)."""
@@ -339,45 +336,10 @@ def interpret_rule(
     det = classify_heading(rule) or default_for_section(rule, section_kind)
     if det is not None:
         node["op"], node["n"] = det
-    elif model is None:
-        # --no-llm mode: leave unmatched headings honestly unknown. Used for
-        # fast iteration on the deterministic layer and in unit tests.
+    else:
         node["op"], node["n"] = "unknown", None
         node["needs_review"] = True
-        llm_stats["fallbacks"] += 1
-    else:
-        result = None
-        try:
-            parsed, _ = chat_json(
-                prompts.SYSTEM_PROMPT,
-                prompts.user_message(
-                    rule.heading, rule.prose, len(rule.courses), len(rule.branches)
-                ),
-                model=model,
-            )
-            llm_stats["calls"] += 1
-            if isinstance(parsed, dict):
-                result = parsed
-        except OllamaError as exc:
-            budget.record(rule.heading[:60], f"ollama error: {exc}")
-
-        op = (result or {}).get("op")
-        n = (result or {}).get("n")
-        valid_ops = {"all_of", "one_of", "n_of", "options", "category_count", "unknown"}
-        if op not in valid_ops:
-            op, n = "unknown", None
-        if n is not None and (not isinstance(n, int) or n not in stated_numbers(rule)):
-            # The model invented a count — quarantine rather than trust.
-            budget.record(rule.heading[:60], f"unverifiable count {n!r}")
-            op, n = "unknown", None
-        if op == "all_of" and len(rule.courses) > 12:
-            # Same bound as the deterministic default: a small model asserting
-            # 'take all 20+' of a bare list is a guess, not a reading.
-            op, n = "unknown", None
-        node["op"], node["n"] = op, n
-        if op == "unknown":
-            node["needs_review"] = True
-        llm_stats["fallbacks"] += 1
+        stats["unmatched"] += 1
 
     # Prose-defined memberships ('numbered FILM 100-149, FILM 152-169, ... or
     # from the FILM 194 series. Production studio courses (FILM 150 ... FILM
@@ -434,10 +396,9 @@ def build_program(
     seg: SegmentedProgram,
     meta: dict,
     budget: FailureBudget,
-    model: str | None = DEFAULT_MODEL,
 ) -> dict:
     """SegmentedProgram → program record with typed requirements tree."""
-    llm_stats = {"calls": 0, "fallbacks": 0}
+    stats = {"unmatched": 0}
     sections: list[dict] = []
 
     for raw_section in seg.sections:
@@ -445,7 +406,7 @@ def build_program(
         for kind, title, rules, concentration in subsections:
             typed_rules: list[dict] = []
             for rule in rules:
-                node = interpret_rule(rule, llm_stats, budget, model=model, section_kind=kind)
+                node = interpret_rule(rule, stats, budget, section_kind=kind)
                 # Sibling-heading OR: "Or all of the following courses" merges
                 # into an options node with the previous rule.
                 if OR_SIBLING_RE.match(rule.heading) and typed_rules:
@@ -651,7 +612,7 @@ def build_program(
         **meta,
         "requirements": {"sections": sections, "info_sections": seg.info_sections},
         "stats": {
-            **llm_stats,
+            **stats,
             "rules": sum(len(s["rules"]) for s in sections),
             "needs_review": sum(
                 1 for s in sections for r in s["rules"] if r["needs_review"]

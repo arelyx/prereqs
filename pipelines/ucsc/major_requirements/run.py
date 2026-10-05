@@ -1,7 +1,8 @@
 """Structure stage runner: fetch snapshot → typed requirements snapshot.
 
-For each program: segment (deterministic) → interpret rules (deterministic
-patterns, qwen3:4b fallback) → cross-reference every course code against the
+LEGACY generic-JSON harness (approach A). For each program: segment
+(deterministic) → interpret rules (regex patterns; unmatched → needs_review)
+→ cross-reference every course code against the
 newest catalog_courses snapshot. A program whose segmentation throws is
 quarantined (recorded, requirements=null) — one weird page must not kill the
 run — but the FailureBudget aborts if >10% of programs fail (systemic drift).
@@ -15,18 +16,18 @@ import sys
 from pathlib import Path
 
 from common.guards import FailureBudget, PipelineAbort, ScrapeDriftError, expect
-from common.ollama import DEFAULT_MODEL
 from common.snapshot import SnapshotWriter, latest, load_manifest
 
+from .. import editions
 from . import segment, structure
 
 
 def run(
     fetch_snapshot: Path | None = None,
-    model: str | None = DEFAULT_MODEL,
     only_slugs: list[str] | None = None,
+    edition: str | None = None,
 ) -> None:
-    src = fetch_snapshot or latest("ucsc", "major_requirements")
+    src = fetch_snapshot or editions.latest_program_fetch(edition)
     expect(src is not None, "no major_requirements fetch snapshot")
     programs = json.loads((src / "programs.json").read_text())
     if only_slugs:
@@ -47,20 +48,20 @@ def run(
     budget = FailureBudget(total=len(programs), max_ratio=0.10)
     writer = SnapshotWriter("ucsc", "major_requirements_structured")
     try:
-        _run_inner(writer, programs, src, catalog_codes, budget, model)
+        _run_inner(writer, programs, src, catalog_codes, budget)
     except BaseException:
         writer.abort()
         raise
 
 
-def _run_inner(writer, programs, src, catalog_codes, budget, model) -> None:
+def _run_inner(writer, programs, src, catalog_codes, budget) -> None:
     results = []
-    total_llm = {"calls": 0, "fallbacks": 0}
+    unmatched = 0
     for meta in programs:
         html_path = src / "raw" / f"{meta['slug']}.html"
         try:
             seg = segment.segment_program(html_path.read_text(), meta["name"], meta["url"])
-            record = structure.build_program(seg, meta, budget, model=model)
+            record = structure.build_program(seg, meta, budget)
         except ScrapeDriftError as exc:
             budget.record(meta["slug"], str(exc))
             record = {**meta, "requirements": None, "error": str(exc)}
@@ -79,13 +80,12 @@ def _run_inner(writer, programs, src, catalog_codes, budget, model) -> None:
         )
         record["unresolved_codes"] = unknown
         stats = record.pop("stats")
-        total_llm["calls"] += stats["calls"]
-        total_llm["fallbacks"] += stats["fallbacks"]
+        unmatched += stats["unmatched"]
         record["needs_review_rules"] = stats["needs_review"]
         results.append(record)
         print(
             f"  {meta['slug']}: {stats['rules']} rules, "
-            f"{stats['fallbacks']} LLM-fallback, {stats['needs_review']} need review, "
+            f"{stats['unmatched']} unmatched, {stats['needs_review']} need review, "
             f"{len(unknown)} unresolved codes",
             file=sys.stderr,
         )
@@ -95,13 +95,11 @@ def _run_inner(writer, programs, src, catalog_codes, budget, model) -> None:
         {
             "stage": "structured",
             "source_snapshot": str(src),
-            "model": model,
-            "prompt_version": "rule_op_v1",
+            "edition": load_manifest(src).get("edition"),
             "counts": {
                 "programs": len(results),
                 "quarantined": len(budget.failures),
-                "llm_calls": total_llm["calls"],
-                "llm_fallback_rules": total_llm["fallbacks"],
+                "unmatched_rules": unmatched,
                 "needs_review_rules": sum(r.get("needs_review_rules", 0) for r in results),
             },
             "failures": budget.failures,
@@ -113,17 +111,13 @@ def _run_inner(writer, programs, src, catalog_codes, budget, model) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--fetch-snapshot", type=Path)
-    ap.add_argument("--model", default=DEFAULT_MODEL)
-    ap.add_argument(
-        "--no-llm", action="store_true",
-        help="deterministic classification only; unmatched headings stay 'unknown'",
-    )
+    ap.add_argument("--edition", help="catalog edition, e.g. 2026-27 (default: newest fetched)")
     ap.add_argument("--slugs", help="comma-separated program slugs")
     args = ap.parse_args()
     try:
         run(
             fetch_snapshot=args.fetch_snapshot,
-            model=None if args.no_llm else args.model,
+            edition=args.edition,
             only_slugs=args.slugs.split(",") if args.slugs else None,
         )
     except PipelineAbort as exc:

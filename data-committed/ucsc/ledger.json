@@ -1,0 +1,1011 @@
+{
+ "editions": {
+  "2025-26": {
+   "fetched_at": "2026-10-05T23:04:47+00:00",
+   "live": false,
+   "programs": {
+    "agroecology-ba": {
+     "skeleton": "041700d85d5835bc90dfb42cb4a364f63521997d96bee6427340217e83e04dca",
+     "text": "560e4abd565b63345423aaaa16e77d82d3090d3316ba63a3aa5082c7d29b648b"
+    },
+    "ancient-studies-ba": {
+     "skeleton": "c8b9a31f1d254fbe5b7ed76a668f8db2db56ccf3267f90853fda0fd8f46c770a",
+     "text": "5f7e109dc9226e013c7fdd0eb0c22c20e7d5181415d176bfa1ba3b7220d11dd9"
+    },
+    "anthropology-ba": {
+     "skeleton": "5504b0d8e437a5e4e46455bdc5d859cc735e1cbd8f7cd98222f48741e2ff9776",
+     "text": "18df1f9d6f30d30aedb075e47679ac09b0e8ce4efa8f64dbc2e678479b41538f"
+    },
+    "anthropology-minor": {
+     "skeleton": "05ae833a78629117d43ad97004a804b5e486273506b0da91465ee4a1217f0d93",
+     "text": "cad554f2193334274a75d5e271e5b5cc4c3a0bdcdcbd7975c5cd5fbdf07d9e22"
+    },
+    "applied-linguistics-and-multilingualism-ba": {
+     "skeleton": "529dedd7181748a8232e17ffbdd5890777275407c5a9ece830fb0a60564c0976",
+     "text": "e7c1fcdb460e76905c55cbf7736b0c67e6316fa7dbecccc314b0bf3589040360"
+    },
+    "applied-mathematics-bs": {
+     "skeleton": "ccc3175f7dee8a5fd9aaaa6c90cf46351877f9f8eaedef63a9407cd760144352",
+     "text": "b79b942319dd243d78bafa80e4994494a79b8546c0c2c9ed1b76aa7b4b46f2c7"
+    },
+    "applied-mathematics-minor": {
+     "skeleton": "27ed98397f737c229c04b52e011bae91446c950b1eaa7979e0494d8ca29501c0",
+     "text": "afe735273169784676d019d292a1c708b0293a535a68c415125303f412e72e1e"
+    },
+    "applied-physics-bs": {
+     "skeleton": "3e3b7c607addec8b7c795606b9c347688d307aaa2bfdc951c01768d78acd29b7",
+     "text": "bfe6cf2c32d879c17a9d915eb0bd2ec629d41626990464ae37beeba5b9982438"
+    },
+    "art-ba": {
+     "skeleton": "2bf5b0015b01561dcee3f03a604aa44a8e7d1a75a98a27dd9d6227a43227df47",
+     "text": "293ae40e4f5b8406bd086d1d4de93a8dce6fa20d8031dbffb5e71e81e0e18c0e"
+    },
+    "art-design-games-playable-media-ba": {
+     "skeleton": "014305c49c311d108b1047c33cda3c512bc86866345ced704c94d67276806b44",
+     "text": "8c05cb89a40b6eba18695c982b5214e4df70b1c84bf9757dab13f022d09757da"
+    },
+    "assistive-technology-minor": {
+     "skeleton": "72035a1136a02e59d44e26c4a3b9ecb5e56c5ae853e801d41a6c2a04477cde28",
+     "text": "d3b82a2aa3904242b29628cb92e8afb9b1cd091e0c1d4cccb0a7d40728f420bf"
+    },
+    "astrophysics-minor": {
+     "skeleton": "e82d51e2d634541a098efe81e4a24d00a5c1617875eece4461c6f045a46a582c",
+     "text": "ce7e444c904f6485b9363f6cc0aa53f61ad7880fb3a8aaf9b267f84507620c22"
+    },
+    "biochemistry-and-molecular-biology-bs": {
+     "skeleton": "0837c1937f4bcbb6f69c425555c2902fb033af6caed9e2a2b4548aacaa72b705",
+     "text": "485b5cbeb2f089c038fe2848dc51f4560bbcbe75668bc301fecdcd4644e08e98"
+    },
+    "bioelectronics-and-biophotonics-minor": {
+     "skeleton": "1f9e40b63b5bbae03c88af4e308df02587a761e86679eb739994832b0a28e8a8",
+     "text": "a7bcd71ae9d572d4d30e9c4805106ad9de312e7dc63d44cc6cd91192b46229c3"
+    },
+    "bioinformatics-minor": {
+     "skeleton": "b271b24f8a13a2384a4b1e01ddc28ddea051ec3c759889b17dc9b1d4c1a071ca",
+     "text": "57be60e003bf1e0832f6237d1acd21a6985d8b02ab9cb36627bbbfbe3fee793a"
+    },
+    "biology-ba": {
+     "skeleton": "fcbe6234abf89f0c4f9bac504c6d009da69f0677e2d3e411ad9fe8796b9833dd",
+     "text": "aa34d17b0b3324e0b74d880ca8403f4894a3c1693aa06a5c0ba9a7a0bd60cdc4"
+    },
+    "biology-bs": {
+     "skeleton": "917886fdffd7271c7463ff1a732d3a8eed57a76e7ac65c801fab47dbd6adc9b0",
+     "text": "f386f2df7987ad5067b92c3613bb80c0e1b5b702ef2d052776d50e66287be5ba"
+    },
+    "biology-minor": {
+     "skeleton": "33b3aa12b6a8c3c490e984ae2546fc7e6146a8056b29f4046530c28766122104",
+     "text": "d0bf97ec835bbd413c75d8a551e78bc399e8380a5d51f0ac44c5238791affeb7"
+    },
+    "biomolecular-engineering-and-bioinformatics-bs": {
+     "skeleton": "ad90e39bd226c7bf7922b71c2c211ef3f31d4ed81ae5d14ff89add80bfb6ca37",
+     "text": "b66907466ea6e754948bd62a1778d1a8459a38258ec3988477a71e25c201d989"
+    },
+    "biotechnology-ba": {
+     "skeleton": "2c21a11189a6efca8485275a4a1fae9f20e5c42200d4e9273d4570e2164fae23",
+     "text": "07b0e02e9a32474376f75493e89eecad633befe6633e5d0b9c3478ecda253ad2"
+    },
+    "black-studies-minor": {
+     "skeleton": "8be16ec4281ea409e7790da677da1ae61ac92979ec295700b27c4159cee87bf4",
+     "text": "75c1868340ec85b02634a823a67b27be9d98a48cb531c674129b4e2289c6ee7f"
+    },
+    "business-management-economics-ba": {
+     "skeleton": "5027c8fa8a3d10ecce068f5e1bb5919a0413e3c9cf3e6c7aa5548696c6b72756",
+     "text": "6d6da97b44548f846509467fa5e7f1b9e0987a2467081a95c69715b65fce2174"
+    },
+    "chemistry-ba": {
+     "skeleton": "cf63b2563825381b409a7c881216cc5fdbe71e96adc582808eb34aad7231aefe",
+     "text": "3874df66663daf8a116ca5e2c94a8675f65974a6e946f79521c6c45a8e14d267"
+    },
+    "chemistry-bs": {
+     "skeleton": "5e40b0bfbf126b3ce7f465646f209ca718265d7d226a3fadff6efc1c1b3a7ecb",
+     "text": "4c05d5faa2fb032b513fb52f2ac9a7fb24c1b5b0845991894a66460443a2653d"
+    },
+    "chemistry-minor": {
+     "skeleton": "fcdbca9f221c6fed7a25b46d2c9bad5ea4ab581555650a71c78d760a552c5592",
+     "text": "b84a14e1e5f8d28112b1a3ca7bcfa02c5a7a5e79d260310cae49485d586cfea2"
+    },
+    "classical-studies-minor": {
+     "skeleton": "738f5abb4c50c4e147795e1903911cda4e3f210409257ef1e712c1216120af33",
+     "text": "0314a54c605235c8b6164c7df359d33276d159a8f57b2de1bc1dd1efd93ab017"
+    },
+    "cognitive-science-bs": {
+     "skeleton": "f5dfcaa7f1571f7a81bac3a60122ed5ee6c65986e5c4a6cdc955ce62fbe4e582",
+     "text": "e1b5253970dcf8b2dd7b2a27e7a33349b2df734eb7c80c74a51101ec0cdbb6a2"
+    },
+    "community-studies-ba": {
+     "skeleton": "83772d437e711e4e544fc31e5f697c59d5078876edf80b9eedc4f9a219c3aa5b",
+     "text": "2e33c8190f32cf1a3706dd94a863de663a23905a3f0493658f68e2ce4469fa8d"
+    },
+    "computer-engineering-bs": {
+     "skeleton": "d3bf87c1267fe556177e84cfce8808abbea5db5a4cca0281c0c78ac37864d38e",
+     "text": "298a1dfa73626e4ef6bc4e8433e9264a5a9d43ddf4c9b28f9b26c1d0289ac04c"
+    },
+    "computer-engineering-minor": {
+     "skeleton": "d0377c6e38e22369f90d743e22f1fde8e40968c604c938e2da9f001652b83eef",
+     "text": "b59414c20004dbd5a29766f43727c852016ca47ef4e72c03c07b9d3f5c9701c7"
+    },
+    "computer-science-ba": {
+     "skeleton": "ac08ce940708e80f6f5d9dbce5e854d52b9204d521e8a26b2f91d3e435d54628",
+     "text": "de8d8f8232c7f1a089172d22f39fedf21fdbae9d999e3a70be1072998e8f1005"
+    },
+    "computer-science-bs": {
+     "skeleton": "2ce65d3c6075d6e20fbe21ce0010775b22e5ac650781e09cec7b0b890ccae309",
+     "text": "bb030511a7628795005f74dbaf1a1f4bb6937bffd4a97b195f4d29a234bf0f4b"
+    },
+    "computer-science-computer-game-design-bs": {
+     "skeleton": "dae09563386f5be3424b37cd70dc66d022e0c4213a5d4e9f9ceb1924fdb05558",
+     "text": "5f4f21fbf02eeb8473658420c5ee4718255bda528ed5b3aa57795013fb68d146"
+    },
+    "computer-science-minor": {
+     "skeleton": "d3e6fad17a6489660d4c8bd052389c60247af9f025e4b2993d42566b43afdb04",
+     "text": "ccf869e5d08582a4f827110e0ad9101aa54c0aa6edceb8ad951522b521ba04a9"
+    },
+    "creative-technologies-ba": {
+     "skeleton": "ef55b65afb0a567098105ad4cc1facdfb9145f36afb284ca4b5893f30252d1fb",
+     "text": "ccfd7490d75538087f4e176c0a4a64f3b1954dc3fa5b4e246ffd8f03a40848d4"
+    },
+    "critical-race-and-ethnic-studies-ba": {
+     "skeleton": "ce378aaf3466ec815deb4c6bb59f805014cf7cd4f83cc2c449d9cac8ecb3335a",
+     "text": "a550bf49b9cc20d2e8cd4528306bbc302bd2ee2f8a4caea7c2e536e5bf26a34f"
+    },
+    "dance-minor": {
+     "skeleton": "1ad79e44229bedaca5092fb6c1c009c2321c35f8a97b535176830bdde7dbfdee",
+     "text": "9d68bbab768503baa675494aa55a42927638cdaf8ccb07ccd784b26d827c38c6"
+    },
+    "digital-justice-studies-minor-formerly-gises": {
+     "skeleton": "fc5bebc9dba1fb6896a276290522ddc651772ae17c748dc830dc7d7aa4cd4378",
+     "text": "6c41b28ba017b896c5c96b30b215309450c39c6ee981f076330461f52f3122ef"
+    },
+    "earth-sciences-bs": {
+     "skeleton": "d35a3470246b9f662febf60cc22755757e02f92092a3b4dba1dbc05a50a9a3d8",
+     "text": "967282891a7ed855a6eeefcee2b64ebe3f716bff367ee16cb5043bf0fd0c3209"
+    },
+    "earth-sciences-minor": {
+     "skeleton": "a5337cfa904b66a86262d1b8322c0d585573fca752064fe7a73a5c6fb7173286",
+     "text": "b0060cfbd4e7ca13d0cb3cd605e7c51e2441eb3a3d33713b3716d1e229e84a70"
+    },
+    "earth-sciencesanthropology-combined-major-ba": {
+     "skeleton": "3701a43d0a0a364f62d397849dd756671543ae7a8734a42b6fb4cac79fecb75b",
+     "text": "a83a7ad3ea28fd78883bdd4ffcc180ab4d20dcc9fd6d7d6bd9e152680149aa92"
+    },
+    "east-asian-studies-minor": {
+     "skeleton": "2abae8bc4dacea8a9a31809d4d0fc46823291d2a61699f0696bfbd8b84e5b12c",
+     "text": "3cee300099de13caf4fef8fb91c6ef9d366085f85ddbcc025bdf922788101bd5"
+    },
+    "ecology-and-evolution-bs": {
+     "skeleton": "88b2640a6af11ced4a1abd1836e676754b90738cc932152067313139108a781d",
+     "text": "73b1fe7c793e191169be695853d4d089fa751877453baa35e3ec37d5c1124478"
+    },
+    "economics-ba": {
+     "skeleton": "c02e2ebc0f85116a0c12f14166636385b0ea36e8e9335016c21a8dd81a13bcfe",
+     "text": "b129446cf9b0f6fad93b64498fab2f094c234b7d10afb76986ff95d9ebd7ef0b"
+    },
+    "economics-minor": {
+     "skeleton": "c6525baf6981bd4fb32318b848e4879529877a937c93372807339a5dc305a3c2",
+     "text": "b27f4d807086b8e1fc4f950a3d388d09d35c8f8192b52a24f81ccf5985bae71c"
+    },
+    "economicsmathematics-combined-ba": {
+     "skeleton": "c5ee4a92dac959292ecd92373ef9040aa6d275f32c95b0c7ed9dbca70edddf80",
+     "text": "336e0eaddac7c2fbe0e5bc91d793c1bf9cafb30776b13c88ffed9672b88e5dd7"
+    },
+    "education-democracy-and-justice-ba": {
+     "skeleton": "60bcb9c2fb2ccc6dbdf4d40df12df32646d011ce5d584113b66d8d37d1eec524",
+     "text": "acad182c7dd73c24b2fa2de0a7675b42f0e6284b596caf8b1cf9be878c9e7218"
+    },
+    "education-minor-general": {
+     "skeleton": "ef291426c9c1efc3a4bbe5ac5abebec32376b8b67e6d55c9ad34fa5c3a22403d",
+     "text": "efe4c3e38f6ab3faf1ec27ca246e902990bd4cc2e4640af5465844a115b68b30"
+    },
+    "electrical-engineering-bs": {
+     "skeleton": "1225736edca82aeb24c57d6c592d7de839b8b5555d097422770a9c3ebfcf6291",
+     "text": "2d31f7a52f6207eff4927bd58e19456d454916803a333a72e4d525757ae01dee"
+    },
+    "electrical-engineering-minor": {
+     "skeleton": "00b6a605f11883fb08aaf52da1db7ade2401fb4c905c09a3298b9275b4e988b4",
+     "text": "e9fd7932005fc3cf2d8ab2326e8c0bc7e51346d44185fd76c27347b6b50e9d6f"
+    },
+    "electronic-music-minor": {
+     "skeleton": "9a5d8a48eff2df107d43697e23a231d628335b58ac12659329ce0aacb56ce73f",
+     "text": "84b2b383635d14e0562210598a3490957256b9041e27f5574b13f1c7c509fa06"
+    },
+    "environmental-sciences-bs": {
+     "skeleton": "23d6435eda067c8042ce5e50bf88a581475f54cd3c098d28140b1b7177707b60",
+     "text": "6ccc1583c0c3a5f9ffa0f425d3d99ca414e9b071c7c2c8bcc122bffc3bf210f7"
+    },
+    "environmental-studies-ba": {
+     "skeleton": "e07b2b6e59fae4651dc0c940c5264b5c158416d9e51a203ed4cce032826a16b4",
+     "text": "a17de8f7fe2eb932b3d219fb22ece09a9f6064d60e8491432e9bc8c3e58b735d"
+    },
+    "environmental-studiesbiology-combined-major-ba": {
+     "skeleton": "03082a0452e7c4cbf353e15a4a396ec96a0eabf59587429621233721cabbfb48",
+     "text": "4327bb852f4092cae69c31340ce0f6fb8ba400978bd2ad65b4c45457bafe790e"
+    },
+    "environmental-studiesearth-sciences-combined-major-ba": {
+     "skeleton": "08d81460dfce705601edab42a8af0b30ce93c9daf1b1665bbe446c5e82c42a69",
+     "text": "cd15c826b875424a217a64a84e47d398573fbdd92d021bdf68ee49cd018f82b7"
+    },
+    "environmental-studieseconomics-combined-major-ba": {
+     "skeleton": "aef6f1aa3be170a7453e1ea3fb954599a23a705efbec0549e6a9e5d7fd13331e",
+     "text": "4ed3e42f7e6c794f808f8059974d60fdca923ab1580518cee530578fe4e0081c"
+    },
+    "feminist-studies-ba": {
+     "skeleton": "4b7c71938e9fd5ebae620feda405ad857c51e198e4a0dd3c6f084859fd36d4fa",
+     "text": "c6cdecae551c3ff30c35bbe2c2260ebd2b6446c0e034566a6366bdec617d53ce"
+    },
+    "film-and-digital-media-ba": {
+     "skeleton": "2f8dc1ac2d43c06e88ac3a83ee94c22c93f867d5e1c74e67738e73aaf0228e48",
+     "text": "b352dd00730a57cd8f7dbc96492e4b534c39ceea6ba79aa416a6a05b917f9729"
+    },
+    "film-and-digital-media-minor": {
+     "skeleton": "3d0a4bdceca80322e299d6ed88a685ce0f5113f42846082dc256420ac2dfeef3",
+     "text": "3bee10d738fa81d425f43f4acf537d601185028bc84329824e0f0b6b04590d5c"
+    },
+    "global-and-community-health-ba": {
+     "skeleton": "1a1eb64d5e1db1e2e37c7cdb35d37ec09bcb73189faff2ed12b052117326a956",
+     "text": "bbdfd14b3966239e0647cee79aedc1d220e1b40eb46941a7c62549615ff12c30"
+    },
+    "global-and-community-health-bs": {
+     "skeleton": "4f20c26d30922f1aee228520c2c8fa446067de435a2acf7046e477ac9ef0f4b5",
+     "text": "fe299d433e780a2bf3fa60f5e3508d4dbf20d1bf963cf4a7d9678c3d10f7f9a9"
+    },
+    "global-economics-ba": {
+     "skeleton": "a10209835b16b421845514c1c8d9072b5ec1c7ae3b92b1dcd2a88dad0317b5c3",
+     "text": "f3c1b4fc276bcde3d5d0429f2727b62cabbbb21452c2fa65c22226cd0f850c4c"
+    },
+    "history-ba": {
+     "skeleton": "01574a38432166d922a3c14184116f62265b5345ca54950c7e3118a30b315639",
+     "text": "4149d29a2308f321cedf449ec7fe38ef4702245b89b5a9cd29e9e51995fa35a6"
+    },
+    "history-minor": {
+     "skeleton": "6e1f29080aa560b8d34318bca91fb903bdcfc5546d5ed454d8fd1925de6fc43c",
+     "text": "12c9945bf415927db625cf1cac6894d6935f4afef2b10bd7612d11d566a38934"
+    },
+    "history-of-art-and-visual-culture-ba": {
+     "skeleton": "4c0887236ff458c8e390ee706cff0d3a5c4c9770d850316729566ca9890bd6c5",
+     "text": "ebb934a821a41a31fc445cc35d3a9a1bf8b15bbdcab7ff369d85d425fcbb1d43"
+    },
+    "history-of-art-and-visual-culture-minor": {
+     "skeleton": "ac2508d4efd44650989a083fcc779a53ffdce90486c15b8ed2217ca9e669df48",
+     "text": "ea17aae7d8b80cf695089bc1bc2eba3ff6ecc8cd3ea2e9f535416f367d0b8d00"
+    },
+    "history-of-consciousness-minor": {
+     "skeleton": "14b6ffb3c804fc9ca7217955136b50699e0abb5944ec0575fe2e1bc2738ab702",
+     "text": "1d70efc7299e0d51930dc68fd91f4540a8dae5bd05917468418cf7d81c5aece8"
+    },
+    "italian-studies-minor": {
+     "skeleton": "2121a09b175bccfa2ad505309f6047c20d8003a8c3a3092138805fe36c6bb618",
+     "text": "9ced4ffabb4dac8706e5ee08d9a57dbfbc13692f2ea0c8ca5b3e9040d2c38a3a"
+    },
+    "jazz-spontaneous-composition-and-improvisation-minor": {
+     "skeleton": "f54cfa7c4b01916d59ea9e5d3838de152862601ef88298dd579abaaca4636649",
+     "text": "2a111157601bd8f0028550478f6d7460ef893532d330fe6dd073cb20ff78b6f0"
+    },
+    "jewish-studies-ba": {
+     "skeleton": "3b17118218e2100e6a8d7abf4a8733299cdf55a3fe9447d1fc095bfa81802925",
+     "text": "a392c50325584d9b2b94d7b073be815e29ba5bcf1c206fce22cc8df9f87c8d1f"
+    },
+    "jewish-studies-minor": {
+     "skeleton": "829ac5c72b9e301f21a1434fa21502d42f35c659d4d50713de5274e431f6ec78",
+     "text": "d2a1fd0f58cf59f0d864f136ab316e71f39a9fd524fb65b5708ac04ac21100c7"
+    },
+    "language-studies-ba": {
+     "skeleton": "f4615b4797fae0d36007bb7fbea955ebacea5f020e41e2cd000ecd629656476f",
+     "text": "3c05132da580f49f4f5b384deff306814cf64c94b31837b058d20164723b0956"
+    },
+    "language-studies-minor": {
+     "skeleton": "8502197eb6a01d6ffb5c3706afedcea6d7a5be4f4afbaebc2ff6f7d1a84d253c",
+     "text": "63d51c53c20687a490f409bd77eb651181dca4edb7dd095ea10090bf352ff49c"
+    },
+    "latin-american-and-latino-studies-ba": {
+     "skeleton": "bb6cefd9829f780ab03b938dc2bffd995b721a65e109535a7d9a1790837e22fd",
+     "text": "7f04bb7458ecee773596474cb034df6795a58448ca9a64ba60b3f11d3fdc7de3"
+    },
+    "latin-american-and-latino-studies-minor": {
+     "skeleton": "3af6e703fd51ebcb19171020b724357dcd571f25f606928c29d1a8c0837e73b7",
+     "text": "fefa1b7996914d1f56ca234815ab5f5266dc3b14965862911d44d4954167ff0b"
+    },
+    "latin-american-and-latino-studieseducation-democracy-and-justice-ba": {
+     "skeleton": "d0b44a33894100da121045bf95182957606102e6e5190235418bbad408b154c2",
+     "text": "c985567e2cfd0c911a7de330245c2f88f8a610b900094ebbeda08b4644588ade"
+    },
+    "latin-american-and-latino-studiespolitics-combined-ba": {
+     "skeleton": "27fcd6460131fe3fa81f72abed8fbd38d06cc09b60bcd868dc7d39678ef6cce0",
+     "text": "7998b42637454e31ec30da2b32bec7e711867e2de7f0862adb0a3a58bb882709"
+    },
+    "latin-american-and-latino-studiessociology-combined-ba": {
+     "skeleton": "73353d7909e88a44f3238810c4b6f57a5a4689647fade43e963a61d7aca7c116",
+     "text": "17c2be267676ece1eb079353369153d61d5bd36b8660c89e712144e0fc62cc31"
+    },
+    "legal-studies-ba": {
+     "skeleton": "9536b8285b4c3e4ac770b42342247963528882da389c209ae34ef9fc2a0de696",
+     "text": "5e357046708d3aa6a0981aa640b3ef5f74789a82e638349da891a9034100965f"
+    },
+    "legal-studies-minor": {
+     "skeleton": "aa38279ff37368901fec2903bb426cd34de31c0c9be7853254326bae0e00bba2",
+     "text": "7b79ec238aaa26631e16752762c2ec43a4819e9d6b93ee58970bf27f36253026"
+    },
+    "linguistics-ba": {
+     "skeleton": "6fb02a71a5c86e650008fff26988ba1f28c9e73343b1671a0b37f4f001fd5f88",
+     "text": "f88f6895749b77aa9a0288d6bf38ec3d60d504a0da934e6399fa38aa43833ce4"
+    },
+    "linguistics-minor": {
+     "skeleton": "bd5fc35a79d7feb68ad5e8fd46b93d24eed550e058a41d7e77a4eeb4f3362c7a",
+     "text": "0ce7bdebae3108115fb5ee420f0b2e8329404744d56f7a788165fdd1d99ba1af"
+    },
+    "literature-ba": {
+     "skeleton": "1de5a5be5d4282ea48671e1e0184408a4d8ce1169ce70ff2d6b459f785fe08a6",
+     "text": "c0e72cd1619867d49b90bb31439114b0b637e9ac497c27ebb47540a37c587efb"
+    },
+    "literature-minor": {
+     "skeleton": "04f30b821421b8e22f45388a2e8aa96ba88d4244492c506a9c94fc51c0e29b4f",
+     "text": "86e55988cb6da95c9fe2014ead68f71db0e45105e06362bab2258d3af05af95c"
+    },
+    "marine-biology-bs": {
+     "skeleton": "b78c69a5adcd5ddcf490e277f3b53e5f8eade29b309a80c098de61ea9755aec7",
+     "text": "82860d1fd73a3b0e4f6a55c1165b4e705fe31cb51fe417d0f6bb3d2f2bba6a8d"
+    },
+    "mathematics-ba": {
+     "skeleton": "4e28a011e33d61238e0bc944cafefe3911b8779d6be3455f24570fea6fa75e90",
+     "text": "63de13ee28aa82256834aa2721c8e9141a7b8d373e1d7545f2b0bcf772f6086b"
+    },
+    "mathematics-bs": {
+     "skeleton": "5b00b64d507090d907c87ff4bef8b8f0f6b38e0c93a472cea397795168c91686",
+     "text": "2a414aa20d2fb7327751e3f3dc09bdbfe2ffd8891300827753259ff250b30663"
+    },
+    "mathematics-education-ba": {
+     "skeleton": "e19b8786e29a2dbd0dc06d3917c85f014fb6035d7c29f721a37738c22cde95fd",
+     "text": "342d1763efb4ca728f8c26b4f9c949ae05d38d72da78ff0110279cdef97a0fbc"
+    },
+    "mathematics-minor": {
+     "skeleton": "7a684375383a8635613be8344a299af2ed9875c7ee7c42485baea680450fd6c5",
+     "text": "e9ac38f344741728c376e1ddefac1afe6142a9694c9d9efa920a117f2bfdc9fb"
+    },
+    "mathematics-theory-and-computation-bs": {
+     "skeleton": "6550f2a3e091d3ba531ecf82d24e918df062c06deb2763026a27443a26f40cde",
+     "text": "b530eb521e928ddde55b8f82e761bd2fbf2f27ec0c546aebe31f908c9e2d68dc"
+    },
+    "microbiology-bs": {
+     "skeleton": "8ff5faa6a29d7335bcd44b69d6ed23929ea3c46fbbce66cedc3a812dc10addbd",
+     "text": "0560ffb0590d1c197a2e9180eeef8117baa5188fbca456fdd1abb7c39fc64da0"
+    },
+    "middle-eastern-and-north-african-studies-menas-minor": {
+     "skeleton": "4c248f31450f109b7e2d524d6ee2f937f580407517318328243b8d680e3b483e",
+     "text": "8249a655a7a3fc6d5d67635d7b167f94f6fe0d7fc10161a2c479da5982869789"
+    },
+    "molecular-cell-and-developmental-biology-bs": {
+     "skeleton": "c9e0566f6ee0607768c8c82b23b2e3afca0b8c30dd8d3194ea692fd99aac5ea9",
+     "text": "2ba36e299941ef4703f166532828be8958b8fa602497b06378df682468977551"
+    },
+    "music-ba": {
+     "skeleton": "4a74622fefa9ecee47a0662d84da64bb32adf67cd0946fd7a9347b72d72bdec0",
+     "text": "9261d60f1962df5633607e5397b34b620ec4ba43cf326c97312866a08f60cb88"
+    },
+    "music-bm": {
+     "skeleton": "067ff70200be3c0e055f47365cfa48d9075f60bc0542f0e984a681130c156268",
+     "text": "26fce2968a0cd055a6cd30aa6f07453ba175a83a167659fd0f5da6c79e437c05"
+    },
+    "network-and-digital-technology-ba": {
+     "skeleton": "5b7121e624ee0d23e3f55c0adadde28a2359db2a5ff39d6ce5c9590d270c6851",
+     "text": "3c6d3a5cc0c44eb3d14ca1e64c2396a0a6daecb2f9188400795ba6a4223e4f0d"
+    },
+    "neuroscience-bs": {
+     "skeleton": "a3ce1d64c5b31c9a60e9a6b7726549af502b924f2d4b36fb682a7a5263cccc51",
+     "text": "2b4bf87615d75780c550473ede583c2baccf7ba592b3cf43d7158e4e09c927a8"
+    },
+    "philosophy-ba": {
+     "skeleton": "e0dc9119ee5ae3c3399ddc017141f038a6d17dfb31d7eaf636ac386893dafb8e",
+     "text": "19feffde2779c28f86c969a6f3231ebcd3c49d97a291bbe941450046f72da173"
+    },
+    "philosophy-minor": {
+     "skeleton": "7f0cfd01f384de1402e859e7a4754f2b9e230afc00c822306b7c68bdd0764727",
+     "text": "2a86b6802f01d88a6ef9ed8acc7694693810d7d9495f46aec126bb9b99332eeb"
+    },
+    "physics-astrophysics-bs": {
+     "skeleton": "79fa1a3768c82fc7da901c388e0ef9b4b95b9ae43ffafe21493bdad43e342bc2",
+     "text": "cd949242abe520e34999b76ca67f3db038102efde67c5059631e2c629d7af2ef"
+    },
+    "physics-bs": {
+     "skeleton": "f0393b3a512483a99f63137414c08c9d2dd5f5c4e571bd9bdd383cbf4143e204",
+     "text": "a3703d843dca5e2e1d56d7a49c8c1f6c780e69672b6f4d1b9c17e7de5e61df4c"
+    },
+    "physics-minor": {
+     "skeleton": "18ff3fc3c1347fecd23a73ad24d9f7dffa5acae540f5e31442d3308f1ff055a8",
+     "text": "30381d3ba78ca0e235e02205af7cd6dd790d2aef7d3c2fbf9cca7890d4607d16"
+    },
+    "plant-sciences-bs": {
+     "skeleton": "69b46afc8549c90ec061df23858d93806be5db5c487b9f8c1d64b7af6ce80fd1",
+     "text": "2d9f8f0a5d59c6ea9d703cd6a1ac12cc81766165dc533e8d89677d4bca9221b9"
+    },
+    "politics-ba": {
+     "skeleton": "4895f93730aed71e567b8ee68a3ddfd620a48d76419924ceee74fa047733b2c9",
+     "text": "df1bce3ce60fadc6b3594ab19657fed887928e93ecf61c592c13cc94bd3744d5"
+    },
+    "politics-minor": {
+     "skeleton": "034bac0608f7c007cbade3c647708bd0c1f30f3134dba9a2b168be24bcebec11",
+     "text": "69bf72e1543ee7d50a63b4eb57b1d06761adc391e971b1b4530d94211c8a704a"
+    },
+    "psychology-ba": {
+     "skeleton": "4f70a673daaee5d19b600dd93e1ccc61ffa478710efba4ca08bbc7e9f2652fa6",
+     "text": "3a4e7cd5da5239203ea0ef6254725311749c38989c5b452fe2bf2c7025545575"
+    },
+    "robotics-engineering-bs": {
+     "skeleton": "9f241ccbaabe72ccdcb666973e4aca2aba19a8a191a30fb9e7d163c48bc0e3fa",
+     "text": "5450fa742b6d4af7842beab84269e46b252203479b6938ecf1cb3afca768f4b4"
+    },
+    "science-education-bs": {
+     "skeleton": "4141b094323905d4f68227bbe53fdae36ac428b90d9f85badce69d3118bcd75e",
+     "text": "fbd2e2d2f5d661517f8d5a57d02f8045c56d9d3bb3e5e54848fdbdfb35aa1752"
+    },
+    "science-technology-engineering-and-mathematics-stem-education-minor": {
+     "skeleton": "7ac7808a3d9a609fb21f4833ee00527004914d3acfd66b4d61eb548f8cf8dce2",
+     "text": "36cb0daead8a08a542f0cbe091ad86b201eac17b2da915d18b6b45335754a1dc"
+    },
+    "sociology-ba": {
+     "skeleton": "3492482f1403d04960b9f927ce87be8001894ffefc7b2af4e521ad597f7d259d",
+     "text": "b692ad9c180b00b91fd4d888fdd481e7062890f0eff7213db85c2300c9ed7f0a"
+    },
+    "spanish-studies-ba": {
+     "skeleton": "5bcce99db21a3c0b6a5563c04d52a04cfd5cb74248f4f65436f581838605b687",
+     "text": "27c68f978531336de6f9ce1f94ab7b0d1ef3d7c8334398fe91fa29e809e86e4d"
+    },
+    "spanish-studies-minor": {
+     "skeleton": "c8600239b5bc3f5d8b436f4a2527401bc89e2927f216c12bf60ca7b3312ac787",
+     "text": "55b33686bb2ac3ca0a192d2fec38928ce478048262c69ff08b30fd1429b31e31"
+    },
+    "statistics-minor": {
+     "skeleton": "31f4334d1898c1b0527806bf40e3ce78b1e3e7ec8eddaf180d5a183afbb264ff",
+     "text": "535f9ace28bff51cc77b6b2f5562d6ccc07982794bbd4f843857c330a2be4a09"
+    },
+    "sustainability-studies-minor": {
+     "skeleton": "194e2b74b5d0a4572c24dc522e6e6fcc87051f013e49ddc42dce33638c113fcf",
+     "text": "d7ca268a762fff5d97ffaca39826fbd74456d7c6198dccad32a5f9bdef316d7d"
+    },
+    "technology-and-information-management-bs": {
+     "skeleton": "31211937f409af5148a2ba55a40d5d822718e774eb95716d955f4201b84b958b",
+     "text": "3af951f97ed9844627607365763a56f200f74be64fcc855eba370f9ec012aa45"
+    },
+    "technology-and-information-management-minor": {
+     "skeleton": "9dbb415a7ccf580fbf3ee18643363dec5ed4f95f5c1fc11364783c51685a6917",
+     "text": "dc88d345fd8e041239c4df73c38431d5c03ab221cbd6da80702f7b60418e8967"
+    },
+    "theater-arts-ba": {
+     "skeleton": "7f37839f0c58785f6528bfe2eb673e37fd890ad857e9907f3364f94623182f21",
+     "text": "30cb4618d6c15223ba02a0afe88a61c0b26f7da75c73b79b402561fa394f4eac"
+    },
+    "theater-arts-minor": {
+     "skeleton": "ac86715ad60fc36daba899a2f80beff92829abaeab9da31e91e6eb3d30878eb9",
+     "text": "eb5040b5ccafea7a3a88c11b9f683267f9e86d5753db1b24342c5fd41260d5ee"
+    },
+    "western-music-minor": {
+     "skeleton": "aaae12ff10d90d2431d4c784b732aaa0285153aaa625d34ade1eb63b03da93fb",
+     "text": "00c7802b37775706bee0f948f426e550da029b0d53bdf0f266ec8b4c9148aee9"
+    }
+   },
+   "snapshot": "20261005T230447Z"
+  },
+  "2026-27": {
+   "fetched_at": "2026-10-05T23:01:04+00:00",
+   "live": true,
+   "programs": {
+    "agroecology-ba": {
+     "skeleton": "886af7e76aa23e40a33c92acd070f4909ed320a7e0fce5a685e8e0d0b47c66f1",
+     "text": "be65a7825acea8e93f680810e2408711423b9fb4d9697163f00ae6c9a4f701a3"
+    },
+    "ancient-studies-ba": {
+     "skeleton": "68570b3b1acfb8c89e4d3b8a11fc6f6e500ada60f15274c42fc542039bc7dfdb",
+     "text": "d906c0f543f2b9280f19655eb6c8b2b48accaf7a16ae7bb9610d8e5b33ee41ec"
+    },
+    "anthropology-ba": {
+     "skeleton": "5504b0d8e437a5e4e46455bdc5d859cc735e1cbd8f7cd98222f48741e2ff9776",
+     "text": "92e08b174af29427b34b7cfe1d6f9a5fba2028a079bd3e6df6a6755cddba77a2"
+    },
+    "anthropology-minor": {
+     "skeleton": "833f1c57a1cdc6d2f1c5153b2595774376c2d7f4d2dcca830fdcf898bf23b34e",
+     "text": "7cfae20d858d1fcbcaed135b6e4079e757df154d6c233e5140eef9b2bffb675d"
+    },
+    "applied-linguistics-and-multilingualism-ba": {
+     "skeleton": "32a357b6696b65714c44adb71c60c4bf20cd9f5fa4a85fe251f8159223570137",
+     "text": "e4df9204f99efa7084d50683f02a1b8090e3bed28dc72e5cc6a3c85f8417f936"
+    },
+    "applied-mathematics-bs": {
+     "skeleton": "db0750bdbb10d2b8328862678e588b4c50ef4cfa1b65d9f9334a9c3b104492b7",
+     "text": "840e92a4dd3fa66cd340c1b7d694d25cfc255adcd19dec277e97476879565cfc"
+    },
+    "applied-mathematics-minor": {
+     "skeleton": "635e2b7365fc0274fb879935ed56ef4b4aa7da2186dc369940d3f8ec97fb040c",
+     "text": "4184637e49c9cf367b7b7834b9b31248b7677d73faf7273b723ec90ef4451d97"
+    },
+    "applied-physics-bs": {
+     "skeleton": "64b3ed4b14a8fff29da36736bffdfea2d488089812bf474f9f1902bfedabb6ee",
+     "text": "a59c3041a6109e46817a28247a9af77fbdf3ebacb755d67d60f7993198567149"
+    },
+    "art-ba": {
+     "skeleton": "516be10ea34795b6e94c3e88a61e2a5b1995f954a291043e20bd4b722d496311",
+     "text": "2b9da98a3707a18427e7326b8f55eef024a4960383d486468caaa247f96b3798"
+    },
+    "art-design-games-playable-media-ba": {
+     "skeleton": "5b885272f0551bdf8da641f2f27a7a897a9ca2df852b5d870dbdcad04e41f45b",
+     "text": "08e9b9c7b6389308cf6c65e9c23d08bad740cd103bf8f41bd63b4cc633d328c6"
+    },
+    "assistive-technology-minor": {
+     "skeleton": "bcd18e52469721d9ca8a85d8cf1ec7b379e0bc16e74493be87f31454fff28102",
+     "text": "e33c92d771d96b9a975732c6a0fc6ce206b62ca349b8f463fb005d16d86d201b"
+    },
+    "astrophysics-minor": {
+     "skeleton": "6c4a1f555602d6ed2eb72ea0ffa36b2720d70e19cc57885ef3a783ebedec72c4",
+     "text": "ebab088b4c0ede5c3ea0a8721dc9bd914907700657b4814d67dcee32ce2c53c3"
+    },
+    "biochemistry-and-molecular-biology-bs": {
+     "skeleton": "51e57a9c2787e36e153d04e31182f157ac967fd4e9690bf6df9bd33936edf38e",
+     "text": "6ec99b55e32d6f6aefb6424b5582f01739326f1181d0d5744584c02f3265577d"
+    },
+    "bioelectronics-and-biophotonics-minor": {
+     "skeleton": "ab8fe368fa20c505913de133408d948703a30b47474c5060316661491eab5b89",
+     "text": "772e4ab0fec97bdfd612869e82c8a304e77b45b1d03b6f2a6d5d8171bd85dad0"
+    },
+    "bioinformatics-minor": {
+     "skeleton": "b42299f381fb17d0315280ea33c60da64dffe420843f0d0a2cc58604920d66c3",
+     "text": "f3e79f83a6a408f98b790f142903a0b4bff751927b07f4eb13b29ddbd058a0eb"
+    },
+    "biology-ba": {
+     "skeleton": "32a9e298cab8db4d8b31d2da148711ad74ffd915b689cebd8f9076a2b8129f56",
+     "text": "08680a95f14dcd887d1a96a44f8db497d4aa4ad5318a632e82fcc74f558a3be4"
+    },
+    "biology-bs": {
+     "skeleton": "7b1c7470e25ea1d99718d62fa5249afd0d57881c07113ad8e4a72a27ba215827",
+     "text": "31e67cf22ef96f654fd40532ac4d30d833b3dfa629c6911346dac9a0cd589733"
+    },
+    "biology-minor": {
+     "skeleton": "62bf04f7e8bf09a4f6b87c09c70f50bcc64067b54f237f7a5da35892f8e51ac7",
+     "text": "06a4724723b9059101558a95e04304e54c4740bae56a11fe551097d46a4d11ca"
+    },
+    "biomolecular-engineering-and-bioinformatics-bs": {
+     "skeleton": "7fa2b55ce606cbc1bc7b4075e1036834f1bc028f8718708865f3775e96e4dc27",
+     "text": "6ba566261fdcdf14040ee5962897136b17ec3862163bff400881d2ab1d5253c5"
+    },
+    "biotechnology-ba": {
+     "skeleton": "567aedc6ab40fb2317e3bcde21bc71aa08a841e305fc621928231b88dd5cd544",
+     "text": "3a3dc992eb2138b54363733b88f9d506bcccde1c3e0608466c08a32c68f0d459"
+    },
+    "black-studies-minor": {
+     "skeleton": "32130adedc196979566e0b1a47b79312b9cad84b778cfa9a5fe9d449f76e382b",
+     "text": "cd472c62b1447faa86a79aa2f5ef2fa43a810f6987bfe24b816dc4e8cb878960"
+    },
+    "business-management-economics-ba": {
+     "skeleton": "d30e2141f08c65a7a2dfa711fe0255b1c11228dc0ecd92c676687d7ecabde580",
+     "text": "eda9ca352e7c3fd2aeea39ea70ce368807ded5328639ea20e6e43cb7941aee64"
+    },
+    "chemistry-ba": {
+     "skeleton": "a88aaa123e9694578d41ed6c85d9d8712069f9c414da1a949a85ca986cf7fe7b",
+     "text": "9880de061d543c11096895803f2ac221b2b1f502af30936242621fc5953abf95"
+    },
+    "chemistry-bs": {
+     "skeleton": "85a898f876a9922668dc1e50dc746245245c66b78c2fb67c310700c2f6dae9dd",
+     "text": "58dc088d785887fc16d176abee0399edc1e6daa47987706f67cb516983088913"
+    },
+    "chemistry-minor": {
+     "skeleton": "bfe9029d25933b70d179c8ad34e6ef3f97125d554eb5f60c59d77c7ef08bd52a",
+     "text": "9cedd7f907bdf5fa443e831bde7780f19024c5e4e6537578c8e27608c4ed343f"
+    },
+    "classical-studies-minor": {
+     "skeleton": "73b2b71de5da7448a1278661cd9731ab9bc0c79049773bed4bdcfa28889d5490",
+     "text": "674a5c969854851c5cce9e44dd6f306694054a3f609e8ad316e7382d8f59747e"
+    },
+    "cognitive-science-bs": {
+     "skeleton": "f679c047e4058b6c2932ad08315bf7b76583ca458dbb1c14492fb44bd25c88c7",
+     "text": "a334de6af7aa6fcfeefb79f71786d5ea2d5843bc74a54b51cbb00cdf977d27d7"
+    },
+    "community-studies-ba": {
+     "skeleton": "0fabb7b4672144350accbe282887282753627ac3e3342dc66a7db3f899b3a24a",
+     "text": "f88ca66e1597d4fa445a7d5b150966de14c1d47b0f5b2d99014ddfbc3c760696"
+    },
+    "computer-engineering-bs": {
+     "skeleton": "8183381a81a6c2ca8a3e49d2c38274eea6fa1af4dd8024411270d21d4a71d435",
+     "text": "c646cd328bdafecbb1e9cbc49df27db2656e571671f3cc676165925a964fd55e"
+    },
+    "computer-engineering-minor": {
+     "skeleton": "d0377c6e38e22369f90d743e22f1fde8e40968c604c938e2da9f001652b83eef",
+     "text": "afbf30359bb8aad818d3245d94768de21673c3da2c256a565586f8e27a01f1bd"
+    },
+    "computer-science-ba": {
+     "skeleton": "9f151ac93c2340ac1219a361042b0c679b6fc0905eb9b92c3346aba0ff87e840",
+     "text": "da50abba8b34faaf9383e9351549e3eaae023cefc965391c2835d3061669904b"
+    },
+    "computer-science-bs": {
+     "skeleton": "9f5be89bcd83249ba117fe6babd54fa6d16626786fdce0fe9d244acd0b31de86",
+     "text": "49ff084d6d00aeb25b2b37af74a1cba91f74f1a50743ab6da30bc7015223460f"
+    },
+    "computer-science-computer-game-design-bs": {
+     "skeleton": "d694fdd582b0e3938f601e672f038a5fe82dcd363fd8a9ce0b97c4109eeeb8e9",
+     "text": "9dc6152b6d65e37f9da989df4f91245a76ae6f5ea2e006cc51146289b5595e1e"
+    },
+    "computer-science-minor": {
+     "skeleton": "27f1d7c2cfc48c00c18f58347eb43207dfd17b249d27eedfeeb036f5ff811333",
+     "text": "3e146fc2046d4570c176fbfa5eaa977ec4a1442526f77f2183bc08bbe9562cb8"
+    },
+    "creative-technologies-ba": {
+     "skeleton": "3d795be2888348be594ea6888815a5846dcc3ca16dc0c1bfd9766e983ecdbe44",
+     "text": "d7185e7a11cbb22c2a4f62cc93bf3a599004736b8b24548e893afc86b031adb8"
+    },
+    "critical-race-and-ethnic-studies-ba": {
+     "skeleton": "70cb64860b0e195c01963d4427276cd4a279c1c98720669ed440534de7e4aca4",
+     "text": "2e712500df4327f1078b81d4c9f988a8567dd1716e6e9b7f2929459e14355b35"
+    },
+    "dance-minor": {
+     "skeleton": "1ad79e44229bedaca5092fb6c1c009c2321c35f8a97b535176830bdde7dbfdee",
+     "text": "d91598656a9ee2059d2d963987c4c3564fcab1ceff2c8fb951feb5aefd530233"
+    },
+    "digital-justice-studies-minor-formerly-gises": {
+     "skeleton": "fc5bebc9dba1fb6896a276290522ddc651772ae17c748dc830dc7d7aa4cd4378",
+     "text": "38c25e2f22a0f7e4a6086d338e3947e7807aae3e7b8991a6bdb203d41d9ec828"
+    },
+    "earth-sciences-bs": {
+     "skeleton": "fa52a9b3d24833afaa1c9610f5409d12743208f2fe4ec883ba66e573c0fbfed7",
+     "text": "678b4872fc06ecf2e15aa176e43000badc31908c47d73e2d36c550d57b623895"
+    },
+    "earth-sciences-minor": {
+     "skeleton": "a5337cfa904b66a86262d1b8322c0d585573fca752064fe7a73a5c6fb7173286",
+     "text": "a626eb44cc58362bc3367a0c44bd59e32e5da4cdf4515fba13e0b60c2b295332"
+    },
+    "earth-sciencesanthropology-combined-major-ba": {
+     "skeleton": "d41d79f0455e0cfc9e2ea9cd4e5127e4798fe924954ce648248b9948531cb26c",
+     "text": "2bf69483464c052a64efcd507c30e0bd069f7ef8f212234e4921d0a2b989bee2"
+    },
+    "east-asian-studies-minor": {
+     "skeleton": "8065130b696b29530b66efc538a0024a010d71c1c226d4365a429ac3ea5f2bf3",
+     "text": "b38f8b442ffe1ae6d46210efdb60a3d5da5e311c51fcbe2a7f14886a04b24db7"
+    },
+    "ecology-and-evolution-bs": {
+     "skeleton": "a1fcaf4bbee47cb8ba20bf2ce2f18756f52fee159fb255ee7c8a5fac60a04782",
+     "text": "291eca59819cc79acac5d3e2091d1ee8b5195ef5a1f939991cd94ed2b8880755"
+    },
+    "economics-ba": {
+     "skeleton": "fcff302d1161b84f342797fe6d2cb6c1b73a677842fc5540964c4536ee7d792b",
+     "text": "96b46ed154bb7e7fc5504045cb28f8730079f32ec1ebe9237c397fd9c1a91362"
+    },
+    "economics-minor": {
+     "skeleton": "c6525baf6981bd4fb32318b848e4879529877a937c93372807339a5dc305a3c2",
+     "text": "afc36b32593738337c68cac04113f25b20223f408fad36b19e163609c9cfbe2a"
+    },
+    "economicsmathematics-combined-ba": {
+     "skeleton": "c5ee4a92dac959292ecd92373ef9040aa6d275f32c95b0c7ed9dbca70edddf80",
+     "text": "63a9a46857ce26f61dc7955aba3a746affc6024570a6dfe4e031af7ae6946478"
+    },
+    "education-democracy-and-justice-ba": {
+     "skeleton": "60bcb9c2fb2ccc6dbdf4d40df12df32646d011ce5d584113b66d8d37d1eec524",
+     "text": "34d4feb09f0758a27bf49fdc41491734d38703350c5b6991b779a9bf97943160"
+    },
+    "education-minor-general": {
+     "skeleton": "ef291426c9c1efc3a4bbe5ac5abebec32376b8b67e6d55c9ad34fa5c3a22403d",
+     "text": "bdb0029de21ee3148f3e26a9ee052201fce74716423b31b077945546d630f63d"
+    },
+    "electrical-engineering-bs": {
+     "skeleton": "9d2de79a15869279b417f969ddaea218442b9a2a27d42070a3dfb66b281abb23",
+     "text": "831c05716d858fd6db18712f186acd8e537b1b946952e0d8bced2faad2527ba1"
+    },
+    "electrical-engineering-minor": {
+     "skeleton": "b2f1714d9fbaee5cd36bf84737c3bc75e11e118cc44eb8f7cb072148ce265102",
+     "text": "a2d140e836c57aacbe799495d1c1ec607568a96ef9c0083dc0e2301667b35150"
+    },
+    "electronic-music-minor": {
+     "skeleton": "11050e6b2f2f71f3e61358733043a82fe5dfe00d0090fa593a2ebd766c8b7c16",
+     "text": "ee5937fc9352650469afe8d93d652f54b3a9afc30441d7e9b9bc5f63116fd92c"
+    },
+    "environmental-sciences-bs": {
+     "skeleton": "1446f574601757a1540b4d7c644a91a44eb9422ee085a498a60a115c73985919",
+     "text": "f2033cf0c45304b77547245511f2a92d68c2c0bc02e7d6fe090119cb24d6cb8d"
+    },
+    "environmental-studies-ba": {
+     "skeleton": "a30c13ee9e8287d965fa518cca35426aa4d77ec9741f3923e2c9329f66d9ccb8",
+     "text": "8baa7741db2a7ff16b7329921e23144531384ab2e90bd7c86b4ad15cdc4ce1a1"
+    },
+    "environmental-studiesbiology-combined-major-ba": {
+     "skeleton": "9ac2210f704c5e4544dc27e0fc10cd910e1c97b137d861dfbf94d7235d844ffe",
+     "text": "3602e22a4980a4db67b79bbd69c1b937e051fcde10b8f14498b609ddd1691eb8"
+    },
+    "environmental-studiesearth-sciences-combined-major-ba": {
+     "skeleton": "0b5003260bdd40b5f8b2cc4246bd28d10906d52f0335ebee1ebcef4e5da01e54",
+     "text": "d3e29f3fb6377f95a20c13ab2e2a4dab876528a04542f5fd3810a98f06022e15"
+    },
+    "environmental-studieseconomics-combined-major-ba": {
+     "skeleton": "ca06be32072c69aed3ca74d6fe5e606eb138c61a2c9109d1d3231149ad809ac7",
+     "text": "58f0fa3d9791266b4377b1e64afb0c48d3076b2fcbfd5162b137eda8621cb058"
+    },
+    "feminist-studies-ba": {
+     "skeleton": "3453042da6795d68a79a64768d420a8e9ded937c041959127be86851f2a7c51c",
+     "text": "b8fc5ad76b7ab471f969603dd2e3ba48e3ef97e3e7072b9630492bb85766e576"
+    },
+    "film-and-digital-media-ba": {
+     "skeleton": "444dd82087ccfdae76080a4455be6df58df39a11d03cae7b3c6ba02754c941e2",
+     "text": "72eef881dad08acc0e71255759eb12b137e0c410f8c0dd60ad28cf972348558e"
+    },
+    "film-and-digital-media-minor": {
+     "skeleton": "3d0a4bdceca80322e299d6ed88a685ce0f5113f42846082dc256420ac2dfeef3",
+     "text": "d412a7331c46743c7448cfa8524f076a248881b2cca1397f9e6a530db8fa225e"
+    },
+    "global-and-community-health-ba": {
+     "skeleton": "1581d274ca9166cef46fe56f4aef396a8a1fdbf9e23c379b6a22d01ff0523d91",
+     "text": "a806f578c1401c36385fbf6e7fef8e3ef710522fa1f292597b68073008fafb69"
+    },
+    "global-and-community-health-bs": {
+     "skeleton": "012cb5871a59352f0cc0ae162cf9ace2cfe775a02fa0023a4191e6531fe7d265",
+     "text": "c6351d1c064b8fb7569d62dc328a73f83db82a1006cac7e4cc223f38b7c3c9ee"
+    },
+    "global-economics-ba": {
+     "skeleton": "a10209835b16b421845514c1c8d9072b5ec1c7ae3b92b1dcd2a88dad0317b5c3",
+     "text": "3a36007a29e2d64d5841874c19b02c85034b089d8f11fb160ddd34dec06f1ad3"
+    },
+    "history-ba": {
+     "skeleton": "b759c303a30b31be3a30bc627151ef355d4279b2adc2a83107264e4263218997",
+     "text": "1b78198d201bb481f4f91a6e5e8f69fd83acaa4b9248eb79073a5a0a93db269c"
+    },
+    "history-minor": {
+     "skeleton": "6e1f29080aa560b8d34318bca91fb903bdcfc5546d5ed454d8fd1925de6fc43c",
+     "text": "a5bec8e2043e9a36ea8a100e426140847c067762e9cb021c6bb9ab23e8b8b8b7"
+    },
+    "history-of-art-and-visual-culture-ba": {
+     "skeleton": "978033b71994f568552ad890fdb398073a2add2a268a7aa8503d77b47caab370",
+     "text": "a37e6b4a1425681f0567d7b84c4ac2a49c39b978d00e544626a48c798a6d5472"
+    },
+    "history-of-art-and-visual-culture-minor": {
+     "skeleton": "f3b01bf471688640f858dee8d5afd37754e236d4694d1ba0038607b7919f6e42",
+     "text": "a80375fbfb0a465946031e29a7b21f8836dc5ec57bce414cfcad58b1b3d2004a"
+    },
+    "history-of-consciousness-minor": {
+     "skeleton": "3348ab0f803db25b14c9b5415f1df733d72b52382ea95a20d414c2507b6e1eb8",
+     "text": "33dc614d33d9979c73e828a23e3f4cb041a50a28ec6eb8b0f9565cd69860caf5"
+    },
+    "italian-studies-minor": {
+     "skeleton": "bf98c135f357c1df0f9641a2cfe581d5adebb0d79e3e7a2a29622e947bf2e881",
+     "text": "4c1b8714dd7e73f9b4e9ec8703c0b9ee88f047aee2fe44def375cc055db52b3f"
+    },
+    "jazz-spontaneous-composition-and-improvisation-minor": {
+     "skeleton": "8881f3b1533874da462743b290126f243d7e6a561c8b212c11efd08ad073d9c1",
+     "text": "608e5fa9945803d5cf3d9565f4cb598f853a3da82f580fcca14b4d6efddcc9fb"
+    },
+    "jewish-studies-ba": {
+     "skeleton": "3b17118218e2100e6a8d7abf4a8733299cdf55a3fe9447d1fc095bfa81802925",
+     "text": "73ab4a8a6794fe0c28ef350a694873dc594e81c8a5b2d7e45030fc4334c2ee87"
+    },
+    "jewish-studies-minor": {
+     "skeleton": "829ac5c72b9e301f21a1434fa21502d42f35c659d4d50713de5274e431f6ec78",
+     "text": "62847679987b72e238278cf6f477bb69c2c1535c1b3ed1430ef8d1e8c8502d16"
+    },
+    "language-studies-ba": {
+     "skeleton": "ac4a48e1d5a3f5d9b887e290758f9e40d5ba44e0c6b7fdcf40a0c49b38bd98ea",
+     "text": "dd88be64e94d19e91f3f0b11989f96ff1749a87efdae33f76edeccf5c05de33c"
+    },
+    "language-studies-minor": {
+     "skeleton": "c70535b2322a761c00fd860c36418107185798924a4e0f0ebd1f6d48272f47a4",
+     "text": "92d07815d12d07aa6ea2dc0b383905f15be90bb0b8be1a4f5ff7b55896b28d91"
+    },
+    "latin-american-and-latino-studies-ba": {
+     "skeleton": "cd6b09fe1ebc2a040c95109903a1772ea9e499629f96777abcc593197ec2a0e3",
+     "text": "45787fbbd5d7d025071cea5302416bf6b209dbb648dfb7eae5400d2f4f5a5203"
+    },
+    "latin-american-and-latino-studies-minor": {
+     "skeleton": "9460abc5effb923943b3de5e953668d689a1321f359bdf47505eadd2ae09a0f6",
+     "text": "327bd0c266aefed23db1912f444d29f451f65cd88cd63194b8019020e52d47ef"
+    },
+    "latin-american-and-latino-studieseducation-democracy-and-justice-ba": {
+     "skeleton": "795ee91ac4f46789feb4d48e7d54076b4ca62e43fa0fc9e63dff5073201dbb93",
+     "text": "63d7a42e83ed776c97273a07dfff62cd671cd2751ea1d46d530f602b8b073c82"
+    },
+    "latin-american-and-latino-studiespolitics-combined-ba": {
+     "skeleton": "5cc51ff6267c203f3e957e05fb620050bcc08c9cdef360c789c2df8617ed6e58",
+     "text": "02c4a0d4c30e6397312f21e20cd123e25a62edacb031a82b5c99c879419c30d9"
+    },
+    "latin-american-and-latino-studiessociology-combined-ba": {
+     "skeleton": "73353d7909e88a44f3238810c4b6f57a5a4689647fade43e963a61d7aca7c116",
+     "text": "9dd30251124f5b6620973b93227ee814c6862594ac788c44b1a9323bdf7c9830"
+    },
+    "legal-studies-ba": {
+     "skeleton": "068bf3ee1e184eeb3c36446915afaf97eba20527108dd4ebdcd82f36afdad8ea",
+     "text": "485b8c5edd3df67ad080f641c2d1aa394f6c0f5d8d9a336489170a20b603d864"
+    },
+    "legal-studies-minor": {
+     "skeleton": "ab12258f00a1f30b1ad28a0c62a3f34d2b3381ca4b2c693d70a465794d6cef2c",
+     "text": "af75e1c38ae4ace2994c87c4b27a12acfa7cf91f1c3a21e7dbfab7ff3595f44d"
+    },
+    "linguistics-ba": {
+     "skeleton": "0d027be8b77e84edde0a04a9f3ad460254b5359016c9e788813240229bde17bf",
+     "text": "6790e52082520b08493c3bd9c1cdceed31dee095538d18b4bb0a36ca9585d19a"
+    },
+    "linguistics-minor": {
+     "skeleton": "bd5fc35a79d7feb68ad5e8fd46b93d24eed550e058a41d7e77a4eeb4f3362c7a",
+     "text": "fb27197479c52e74e4d8e123e11b59c4493ae820547f00be8e0230832c9847e9"
+    },
+    "literature-ba": {
+     "skeleton": "cfa53e32f4836c9777b1a07be5b13f491bf3a8dce8aa858b72135a560541dc32",
+     "text": "6b88d5e4831290bbfedd660d968ee23978a567ef9d33e2b6367768cfa122ba23"
+    },
+    "literature-minor": {
+     "skeleton": "04f30b821421b8e22f45388a2e8aa96ba88d4244492c506a9c94fc51c0e29b4f",
+     "text": "748aede71efeba067fbc954b80f4289e49fe4eb74161f51ff7d84a44503792b5"
+    },
+    "marine-biology-bs": {
+     "skeleton": "7ae6418bfaf5aa5419cfc12d1f90c1d64aa0418cec78203b4e07f9ef17d66466",
+     "text": "2afc86e600d535fd0d25879ea8c607c7f25c06e0579fcc8559ee533054f8af04"
+    },
+    "mathematics-ba": {
+     "skeleton": "847e972b52297e9a84e77e48ff9f54cc0ba6affe3ccada9c9b70766ac3a63390",
+     "text": "395a0b7a26c2768c844028e1b238dd1f459d766e1d582b832cd4fca82c163531"
+    },
+    "mathematics-bs": {
+     "skeleton": "0c6c0e121c2234318493f23ab9bf694267b01c50e569ca79519b3a43b293553b",
+     "text": "02b0021ba4106b905f5c98e7a528e9825b7a67db68e430f84253f30e5cf9501b"
+    },
+    "mathematics-education-ba": {
+     "skeleton": "3c12e04fecf38a3a297ec77b9c2acb302120e6dcf4b740a4b1ac4d5c4761e348",
+     "text": "cf7db11eb4fe9c5d3257aec048aa484ffa0e2ad9541b40cc1cab8de06d78d355"
+    },
+    "mathematics-minor": {
+     "skeleton": "c6aab529a844e83fd936b1e16e29a3d4fb8de3b79e604585a86feaeb938577bc",
+     "text": "808c197548784e716df6c456aff3ac809961f78ba05ab6937f13b22b27426714"
+    },
+    "mathematics-theory-and-computation-bs": {
+     "skeleton": "c8cd6280d22158dc59de8d07897747b54e95f1849d9a7304a778b5d09e06ece7",
+     "text": "988658101b398b27e8b128f296686ea8a76bc79a7ad822c039b26bb6e8acf610"
+    },
+    "microbiology-bs": {
+     "skeleton": "e9f0b19c4abcd0744c825dd8c355841035bfb7a4b347fe66ad37753e28582074",
+     "text": "b05f8ae14511a34cf5bd22db7978e0f820f33acfa8c96f0befe921c289cd0e70"
+    },
+    "middle-eastern-and-north-african-studies-menas-minor": {
+     "skeleton": "5ced8491abad3c805a73922d6e5a8bcd932c74443a2393db59d96f0e75544ed1",
+     "text": "f1fa9c431eb5a5f6c8324c7ec667fe6cd6912067ac7a44b0de69663284e18d33"
+    },
+    "molecular-cell-and-developmental-biology-bs": {
+     "skeleton": "7d02da2112f33b238838a34523f76c64af292e02b76f78a04481d0dc366d77b5",
+     "text": "5e26de226499ce185de7495df570136a797ae4874ec7a7c3aac790b88e6ba8e0"
+    },
+    "music-ba": {
+     "skeleton": "00b55e5acce20a38c1f15c600d710edbf65a370869cfbc886b4fa7db3516c788",
+     "text": "b13a5758814053a4343960773da7a149fd66cf2789f1d33e82051fa975da0428"
+    },
+    "music-bm": {
+     "skeleton": "e240534dfb12ad02847420754b74d511d5c01a879d6f2668348cf62fbb106341",
+     "text": "fbcf3869c8461c8ee3aff5b5f31b91115818b97c5ad7b85c81fc8edef98cf14f"
+    },
+    "network-and-digital-technology-ba": {
+     "skeleton": "c29716bc99ad5606780988122289107b667129d1ea9079ff9cee62f09029a9fb",
+     "text": "158f964f17497963d3040b01b733f0b54681cf33212b40dcaac604d70a64deb2"
+    },
+    "neuroscience-bs": {
+     "skeleton": "0f21250a54a71d19adde5beba2df5ef89fffc97aed13d4d6b4f2cd7a94babeba",
+     "text": "6e79930e36c1ca0c9574b0b8d380c41b15e49ced07d28298b5776af0e25df35e"
+    },
+    "philosophy-ba": {
+     "skeleton": "f77eaf9036889c581942ece352e4522d0910f09d3dfc009a1f334aee1cd45544",
+     "text": "12b7b44f9d4a4b46e769003a9b77c6fe98e4197f6d958cc2ec91986353a70e4d"
+    },
+    "philosophy-minor": {
+     "skeleton": "959f0b5f97321fb407b88367bc4e0c725dc4f4f9a910d972c06967c3eeaeb0ce",
+     "text": "e87b47d12aa095151ab8be44928703e18978df3efb595d02d09f6f9135b6671d"
+    },
+    "physics-astrophysics-bs": {
+     "skeleton": "1db103a214b924046bc6154e6750d1069be8cdf7b4eb1426f4a24c973640120e",
+     "text": "23c02fd5b4bce246e3f9d7119b356a7935c1d58c4982503eb9630aa9569e3e7c"
+    },
+    "physics-bs": {
+     "skeleton": "b433ae3cf07ce2ab86ad60d5b4cdc7a36614aaa5470f052b9fad7c5a52a90d0b",
+     "text": "5a55ef41a6013b3f8bf17ef2ec39c796f46ee72bb1976e35d411f23c0d996e08"
+    },
+    "physics-minor": {
+     "skeleton": "18ff3fc3c1347fecd23a73ad24d9f7dffa5acae540f5e31442d3308f1ff055a8",
+     "text": "c33d4ad3239178f83e1cc1f4fd6fa3906a2de9025c94d3bc4fb02470be0e9f6e"
+    },
+    "plant-sciences-bs": {
+     "skeleton": "dbbf189d56e9d6984b4581d492ad5a4118eb5c7b1da3c8261d90dc82a3832e4d",
+     "text": "3b90eca80deb5024cf3de9d479f3920743f155054bee9184f48e2e124701d927"
+    },
+    "politics-ba": {
+     "skeleton": "4895f93730aed71e567b8ee68a3ddfd620a48d76419924ceee74fa047733b2c9",
+     "text": "159b6e7f575fe251fdccee34b138b08805545a53127a785bb868857278eafe73"
+    },
+    "politics-minor": {
+     "skeleton": "2142ff6dc0473736148faace9b381d0ac108d8b1d384030b163ec65b8fbfe00f",
+     "text": "0c25010223d40d07754da417f7dd11d6bdf2a1deae9898f178e5fb3accd514a1"
+    },
+    "psychology-ba": {
+     "skeleton": "fc132ed89f2e14728ec0ed5ef5282c05633b45890434c9c7bfb61060a31db0bd",
+     "text": "5c47e39fee772318f8d7d3c301ca89bb5054dbcd4e83d95978c3edf7c928ac30"
+    },
+    "robotics-engineering-bs": {
+     "skeleton": "c894b3c5bc174757ab46dfa709ccf65800140c5deb47c08d9e1a3f75af0d1070",
+     "text": "06f3cd2dc2dfeb77948337ceb745e6fead9c5988f76afddbbdbf270029b0725d"
+    },
+    "science-education-bs": {
+     "skeleton": "89e5eb94e86d8d7daff0b13dab8448987888600a3f3e197be6608484c9186650",
+     "text": "4d2993d8101ec5bb328262cdfcef255bd115fcb4925d22fd2009c9fd917824e4"
+    },
+    "science-technology-engineering-and-mathematics-stem-education-minor": {
+     "skeleton": "7ac7808a3d9a609fb21f4833ee00527004914d3acfd66b4d61eb548f8cf8dce2",
+     "text": "298447709947f1105c55ab5f6c8dd22061904de2dba0680b17fb1e9d7d9b362d"
+    },
+    "sociology-ba": {
+     "skeleton": "652a2cb4f45542b20c1318bd3e7546c16587a5ea0576db223a83f1360da87ebe",
+     "text": "1558120d5f42c2e7f6bf48db7db8b39381467fb17ee27e7460201a88f5e0cc77"
+    },
+    "spanish-studies-ba": {
+     "skeleton": "49ac2f5364cc3796e80d3532b1e88a2d6e80390ec3eee50f21c1c7cb09303b07",
+     "text": "7636dcf912268dd6548b04e6da73c0df551a50589949075482c4803ad24e2600"
+    },
+    "spanish-studies-minor": {
+     "skeleton": "ed3c1d09cf0dce726e89661fbea8bbbb52a2f1b0081b4482adff0d18f91c213f",
+     "text": "5816cdff31404747501abaf22914672a16fa5f619b723bc8cb4533ed7030079b"
+    },
+    "statistics-minor": {
+     "skeleton": "31f4334d1898c1b0527806bf40e3ce78b1e3e7ec8eddaf180d5a183afbb264ff",
+     "text": "51d4480197b2ed56e6e07feea527efd317eb1707e4ba86410a8fe9ac0255f55a"
+    },
+    "sustainability-studies-minor": {
+     "skeleton": "47e17912b40a7cefe444e68e0cf4f5fac1afaea593db432f81341e37b9120711",
+     "text": "2619a64bd4d5536abcc51c3b9888fab70d3a91e091a080608d88c3d31482c9ec"
+    },
+    "technology-and-information-management-bs": {
+     "skeleton": "31211937f409af5148a2ba55a40d5d822718e774eb95716d955f4201b84b958b",
+     "text": "e689827442ce7d365383e11c7918f2be8e35cbe65e3c79f7c43f487f60de6c76"
+    },
+    "technology-and-information-management-minor": {
+     "skeleton": "9dbb415a7ccf580fbf3ee18643363dec5ed4f95f5c1fc11364783c51685a6917",
+     "text": "447f13bd11f9b36b086bda88673935f01a40ef1613599f061390be56bb0f4bd9"
+    },
+    "theater-arts-ba": {
+     "skeleton": "39401fda4ef3e159f43b85eaeb6f50ed4d9d14e3b1c3a394854d3122cb00963e",
+     "text": "004e9718f7b0c01791b1015c964f0707733ce026fa8674a1c6c61fc8bd215275"
+    },
+    "theater-arts-minor": {
+     "skeleton": "e7aa496a7978f2a4e3f8044de4877df4aef8fb5fdb83f5cd5c4e3b180afb7001",
+     "text": "da313fd2b345a6b91017b920c16a5ee2c8e5efc4eb05cabadc00a2fba7704e2c"
+    },
+    "western-music-minor": {
+     "skeleton": "aaae12ff10d90d2431d4c784b732aaa0285153aaa625d34ade1eb63b03da93fb",
+     "text": "32ad41c3697eeae050fe2d0da80b13bf1ec1b2056407543af616739fd745e23b"
+    }
+   },
+   "snapshot": "20261005T230104Z"
+  }
+ },
+ "pisa_offerings": {
+  "terms": {
+   "2218": {
+    "fetched_at": "2026-10-05T22:59:46+00:00",
+    "final": true,
+    "rows": 1578
+   },
+   "2220": {
+    "fetched_at": "2026-10-05T22:59:46+00:00",
+    "final": true,
+    "rows": 1396
+   },
+   "2222": {
+    "fetched_at": "2026-10-05T22:59:46+00:00",
+    "final": true,
+    "rows": 1411
+   },
+   "2224": {
+    "fetched_at": "2026-10-05T22:59:46+00:00",
+    "final": true,
+    "rows": 437
+   },
+   "2228": {
+    "fetched_at": "2026-10-05T22:59:46+00:00",
+    "final": true,
+    "rows": 1546
+   },
+   "2230": {
+    "fetched_at": "2026-10-05T22:59:46+00:00",
+    "final": true,
+    "rows": 1461
+   }
+  },
+  "window_years": 5
+ },
+ "soe_schedule": {
+  "academic_year": "2026-27",
+  "content_sha256": "134f4dd6fc5b14290b74cc7e8a98d4eeef0851a88eb933cad83e991ef2bfdc0c",
+  "fetched_at": "2026-10-05T23:03:29+00:00",
+  "rows": 698
+ }
+}

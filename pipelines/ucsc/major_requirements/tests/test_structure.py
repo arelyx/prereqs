@@ -78,7 +78,7 @@ def test_film_minor_elective_filter():
             "and FILM 170A through FILM 179B ) may not be used to satisfy this requirement.",
         ],
     )
-    node = structure.interpret_rule(r, {"calls": 0, "fallbacks": 0}, FailureBudget(total=1), model=None)
+    node = structure.interpret_rule(r, {"unmatched": 0}, FailureBudget(total=1))
     assert node["op"] == "range" and node["n"] == 3
     f = node["filter"]
     assert {(x["subject"], x["lo"], x["hi"]) for x in f["include_ranges"]} == {
@@ -97,13 +97,13 @@ def test_literature_style_single_range_with_exclusions():
             "excluding courses LIT 179A and LIT 179B.",
         ],
     )
-    node = structure.interpret_rule(r, {"calls": 0, "fallbacks": 0}, FailureBudget(total=1), model=None)
+    node = structure.interpret_rule(r, {"unmatched": 0}, FailureBudget(total=1))
     assert node["op"] == "range" and node["n"] == 7
     assert node["filter"]["include_ranges"] == [{"subject": "LIT", "lo": 109, "hi": 189}]
     assert set(node["filter"]["exclude_codes"]) == {"LIT179A", "LIT179B"}
 
 
-def test_llm_count_must_be_stated():
+def test_stated_numbers():
     nums = structure.stated_numbers(rule("Plus five electives", prose=["At least three from list A."]))
     assert {5, 3} <= nums
     assert 7 not in nums
@@ -191,7 +191,7 @@ def _build(rules_list):
     sec = RawSection(kind="course_requirements", title="X", concentration=None)
     sec.rules = rules_list
     seg.sections = [sec]
-    out = structure.build_program(seg, {"slug": "t"}, FailureBudget(total=len(rules_list)), model=None)
+    out = structure.build_program(seg, {"slug": "t"}, FailureBudget(total=len(rules_list)))
     return out["requirements"]["sections"][0]["rules"]
 
 
@@ -304,7 +304,7 @@ def test_section_choice_conversion():
     sec.rules = [parent, caps, thesis]
     seg.sections = [sec]
 
-    out = structure.build_program(seg, {"slug": "test"}, FailureBudget(total=3), model=None)
+    out = structure.build_program(seg, {"slug": "test"}, FailureBudget(total=3))
     rules = out["requirements"]["sections"][0]["rules"]
     assert rules[0]["op"] == "section_choice"
     assert rules[1]["op"] == "one_of"
