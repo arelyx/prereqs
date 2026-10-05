@@ -117,10 +117,14 @@ def plan(live: dict | None, today: date | None = None) -> list[Task]:
     if live:
         new_terms = [t for t in live["pisa_terms"] if newest_have is None or int(t) > int(newest_have)]
     else:
-        # Without a probe, assume the next term is published once it is
-        # within ~10 weeks of starting (pisa posts it ~6 weeks ahead).
+        # Without a probe, assume every term after the newest we have is
+        # published once it is within ~10 weeks of starting (pisa posts a
+        # quarter ~6 weeks ahead).
+        new_terms = []
         nxt = terms.next_code(newest_have) if newest_have else None
-        new_terms = [nxt] if nxt and _published_soon(nxt, today) else []
+        while nxt and _published_soon(nxt, today):
+            new_terms.append(nxt)
+            nxt = terms.next_code(nxt)
     fetch = sorted(set(new_terms) | set(non_final), key=int)
     if fetch:
         why = []
