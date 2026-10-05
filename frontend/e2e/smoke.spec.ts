@@ -117,7 +117,7 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
 })
 
 test('program: requirements in main fold, general info in sidebar', async ({ page }) => {
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. ✓' })
   // Main fold: collapsed program block; no aggregate met-counter anywhere
   // (the app mirrors the page, it does not audit degrees).
   const header = page.getByRole('button', { name: /Computer Science B\.S\./ })
@@ -155,7 +155,7 @@ test('program: requirements in main fold, general info in sidebar', async ({ pag
 
   // Full-catalog verification (2026-07-26): every program is verified, so
   // no warning badges anywhere and every option carries the checkmark.
-  await page.getByRole('combobox').selectOption({ label: 'History B.A. ✓' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'History B.A. ✓' })
   await expect(page.getByText('unverified', { exact: true })).toHaveCount(0)
 })
 
@@ -208,7 +208,7 @@ test('dormant courses are flagged red in search, planner, and drawer', async ({ 
 
 test('mobile: picker above requirements above general info', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. ✓' })
   const reqHeader = page.getByRole('button', { name: /Computer Science B\.S\./ })
   await expect(reqHeader).toBeVisible()
   const infoLink = page.getByRole('link', { name: 'official page' })
@@ -237,10 +237,22 @@ test('theme toggle switches to dark and persists across reload', async ({ page }
 
 
 test('CS B.S. electives display the CSE ranges, not just the explicit pool', async ({ page }) => {
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. \u2713' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. \u2713' })
   await page.getByRole('button', { name: /Computer Science B\.S\./ }).click()
   // The pool rule's filter is requirement content and must be visible.
   await expect(page.getByText(/CSE 100\u2013189/).first()).toBeVisible()
   await expect(page.getByText(/CSE 201\u2013279/).first()).toBeVisible()
   await expect(page.getByText(/excluding/).first()).toBeVisible()
+})
+
+test('catalog year: switching editions keeps the program, bound to the older catalog', async ({ page }) => {
+  await page.goto('/')
+  const picker = page.getByRole('combobox', { name: 'Add a program' })
+  await picker.selectOption({ label: 'Computer Science B.S. ✓' })
+  await expect(page.getByText('2026-27 catalog')).toBeVisible()
+  await page.getByRole('combobox', { name: 'Catalog year' }).selectOption('2025-26')
+  // Same slug, 2025-26 row: the info card now cites the older edition.
+  await expect(page.getByText('2025-26 catalog')).toBeVisible()
+  await page.reload()
+  await expect(page.getByRole('combobox', { name: 'Catalog year' })).toHaveValue('2025-26')
 })

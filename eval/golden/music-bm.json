@@ -1,0 +1,648 @@
+{
+  "program": "music-bm",
+  "edition": "2026-27",
+  "author_notes": "Records cover every quarter in the B.M. program with an ensemble and a lesson, so 'every quarter' and the 9/6 minimums both hold in pass records. MUSC 31 is taken in all three MUSC 30 quarters (the note's failed-section exception is not exercised). MUSC 196B is treated as the lesson for its quarter (the page says it replaces applied lessons). Ambiguities: the exact quarter a student enters the B.M. program is not in the record (the late-start pass case only omits the first fall quarter, before any B.M. audition could occur); the two-ensembles-in-one-quarter fail case necessarily leaves a lesson quarter without a concurrent ensemble, which is the same ensemble deficiency. Attestation names used: 'B.M. audition', 'continuing B.M. juries', 'senior recital'. AUDIT: removed fail-transfer-two-ensembles-one-quarter as ambiguous/multi: the quarter left without an ensemble still has a MUSC 161 lesson, which violates the lessons section's 'Concurrent enrollment in an appropriate ensemble is required', so whether one or two requirements fail depends on reading that sentence as a degree rule; the one-ensemble-per-quarter cap cannot be isolated because any missed ensemble quarter also breaks the parallel lessons rule.",
+  "cases": [
+    {
+      "id": "pass-frosh-piano",
+      "kind": "pass",
+      "description": "Frosh pianist in the B.M. program, letter grades. MUSC 30A/B/C with three quarters of MUSC 31 and MUSC 60; core history MUSC 101A, 101B, 101C, 101F; elective history MUSC 105P; theory MUSC 150A and 150T; DC via MUSC 101A; ensemble MUSC 165 in all 12 quarters; lessons (MUSC 61, then MUSC 161) in quarters 1-11 and MUSC 196B Senior Recital Preparation in the final quarter; juries attested. No language requirement for non-voice students. Complete.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "instrument": "piano"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MUSC 30A",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MUSC 30B",
+              "MUSC 31",
+              "MUSC 60",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "MUSC 30C",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "MUSC 101A",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "MUSC 101B",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "MUSC 101C",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "MUSC 150A",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "MUSC 101F",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "MUSC 105P",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MUSC 150T",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MUSC 165",
+              "MUSC 196B"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-transfer-voice-pnp-allowed",
+      "kind": "pass",
+      "description": "Trap: transfer voice student, six quarters. FREN 1 and ITAL 1; MUSC 30A/B/C, MUSC 31 x3, MUSC 60; core history MUSC 101A, 101B, 101E, 101G (two of 101A/B/C); elective history MUSC 105M; theory MUSC 150B (from the core-theory subset) and 150D; ensemble MUSC 103 every quarter (6); lessons MUSC 161 in quarters 1-5 and MUSC 196B in quarter 6. MUSC 30B (lower division) and every MUSC 103 (upper-division performing ensemble) enrollment were taken Pass, which the letter-grade policy allows. Complete.",
+      "student": {
+        "entry": "transfer",
+        "choices": {
+          "instrument": "voice"
+        },
+        "terms": [
+          {
+            "term": "2248",
+            "courses": [
+              "MUSC 30A",
+              "MUSC 31",
+              "MUSC 103",
+              "MUSC 161",
+              "FREN 1"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "MUSC 30B",
+              "MUSC 31",
+              "MUSC 60",
+              "MUSC 103",
+              "MUSC 161",
+              "ITAL 1"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "MUSC 30C",
+              "MUSC 31",
+              "MUSC 103",
+              "MUSC 161",
+              "MUSC 101A"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MUSC 101B",
+              "MUSC 150B",
+              "MUSC 103",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MUSC 101E",
+              "MUSC 105M",
+              "MUSC 103",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MUSC 101G",
+              "MUSC 150D",
+              "MUSC 103",
+              "MUSC 196B"
+            ]
+          }
+        ],
+        "grades": {
+          "MUSC 30B": "P",
+          "MUSC 103": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-core-history-only-one-western",
+      "kind": "fail",
+      "description": "Frosh piano record where core history is MUSC 101A, 101E, 101F, 101G: four core courses but only one of MUSC 101A/B/C. (DC still met by MUSC 101A.)",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "instrument": "piano"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MUSC 30A",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MUSC 30B",
+              "MUSC 31",
+              "MUSC 60",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "MUSC 30C",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "MUSC 101A",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "MUSC 101E",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "MUSC 101G",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "MUSC 150A",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "MUSC 101F",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "MUSC 105P",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MUSC 150T",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MUSC 165",
+              "MUSC 196B"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Core History/Culture: at least two of the four must be MUSC 101A, 101B or 101C",
+        "source_quote": "At least two of the courses must be MUSC 101A, 101B, or 101C."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-theory-none-from-core-subset",
+      "kind": "fail",
+      "description": "Frosh piano record with theory courses MUSC 150D and MUSC 150H; two theory courses but neither is MUSC 150A/B/C/K/T/X.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "instrument": "piano"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MUSC 30A",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MUSC 30B",
+              "MUSC 31",
+              "MUSC 60",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "MUSC 30C",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "MUSC 101A",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "MUSC 101B",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "MUSC 101C",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "MUSC 150D",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "MUSC 101F",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "MUSC 105P",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MUSC 150H",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MUSC 165",
+              "MUSC 196B"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Core and Elective Theory: at least one of MUSC 150A, 150B, 150C, 150K, 150T, 150X",
+        "source_quote": "At least one of the courses must be MUSC 150A, 150B, 150C, 150K, 150T, or 150X."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-upper-division-theory-pass-no-pass",
+      "kind": "fail",
+      "description": "Frosh piano record with MUSC 150A taken Pass (P). Upper-division courses other than performing ensembles must be letter graded.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "instrument": "piano"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MUSC 30A",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MUSC 30B",
+              "MUSC 31",
+              "MUSC 60",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "MUSC 30C",
+              "MUSC 31",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "MUSC 101A",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "MUSC 101B",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "MUSC 101C",
+              "MUSC 165",
+              "MUSC 61"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "MUSC 150A",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "MUSC 101F",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "MUSC 105P",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MUSC 150T",
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MUSC 165",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MUSC 165",
+              "MUSC 196B"
+            ]
+          }
+        ],
+        "grades": {
+          "MUSC 150A": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Letter grade policy for upper-division courses (MUSC 150A taken P cannot count, so Core and Elective Theory is one course short)",
+        "source_quote": "All upper-division courses applied toward the Music B.M. must be taken for a letter grade, except for upper-division performing ensembles, which may be taken Pass/No Pass."
+      },
+      "audit": "corrected: failing_requirement broadened; the single P grade makes MUSC 150A ineligible, which surfaces as either the letter-grade rule or the theory count, so both names are accepted for the one root cause"
+    },
+    {
+      "id": "fail-voice-missing-ital1",
+      "kind": "fail",
+      "description": "Transfer voice record without ITAL 1 (FREN 1 taken, no evidence of high-school/AP equivalent).",
+      "student": {
+        "entry": "transfer",
+        "choices": {
+          "instrument": "voice"
+        },
+        "terms": [
+          {
+            "term": "2248",
+            "courses": [
+              "MUSC 30A",
+              "MUSC 31",
+              "MUSC 103",
+              "MUSC 161",
+              "FREN 1"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "MUSC 30B",
+              "MUSC 31",
+              "MUSC 60",
+              "MUSC 103",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "MUSC 30C",
+              "MUSC 31",
+              "MUSC 103",
+              "MUSC 161",
+              "MUSC 101A"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MUSC 101B",
+              "MUSC 150B",
+              "MUSC 103",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MUSC 101E",
+              "MUSC 105M",
+              "MUSC 103",
+              "MUSC 161"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MUSC 101G",
+              "MUSC 150D",
+              "MUSC 103",
+              "MUSC 196B"
+            ]
+          }
+        ],
+        "grades": {
+          "MUSC 30B": "P",
+          "MUSC 103": "P"
+        },
+        "attested": [
+          "B.M. audition",
+          "continuing B.M. juries",
+          "senior recital"
+        ]
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Foreign language for voice students: FREN 1 and ITAL 1",
+        "source_quote": "FREN 1 and ITAL 1 are required for B.M. voice students."
+      },
+      "audit": "corrected: attested changed from \"all\" to an explicit list; with \"all\", the uncheckable high-school/AP language alternative could be read as satisfied, making the verdict flip"
+    }
+  ]
+}

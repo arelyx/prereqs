@@ -80,6 +80,11 @@ interface Store {
   addCourse: (termCode: string, code: string) => void
   removeCourse: (termCode: string, code: string) => void
   setPrograms: (ids: number[]) => void
+  // Switch catalog edition; programIds are replaced by the caller's mapping
+  // (same slugs in the new edition) in the same mutation.
+  setCatalogYear: (edition: string | null, programIds: number[]) => void
+  setChoice: (slug: string, key: string, value: string | null) => void
+  setAttested: (slug: string, names: string[]) => void
   signIn: (email: string, token: string, importLocal: boolean) => Promise<void>
   signOut: () => void
   accountDeleted: () => void
@@ -122,6 +127,27 @@ function stringArray(v: unknown): string[] {
   return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []
 }
 
+function isRecord(v: unknown): v is Record<string, unknown> {
+  return typeof v === 'object' && v !== null && !Array.isArray(v)
+}
+
+function stringRecord(v: unknown): Record<string, string> {
+  if (!isRecord(v)) return {}
+  return Object.fromEntries(
+    Object.entries(v).filter((e): e is [string, string] => typeof e[1] === 'string'),
+  )
+}
+
+function nestedStringRecord(v: unknown): Record<string, Record<string, string>> {
+  if (!isRecord(v)) return {}
+  return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, stringRecord(x)]))
+}
+
+function stringArrayRecord(v: unknown): Record<string, string[]> {
+  if (!isRecord(v)) return {}
+  return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, stringArray(x)]))
+}
+
 function normalizePlan(raw: unknown): PlanState | null {
   if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
   const r = raw as Record<string, unknown>
@@ -140,7 +166,17 @@ function normalizePlan(raw: unknown): PlanState | null {
     .map((t) => ({ term_code: String(t.term_code), courses: stringArray(t.courses) }))
   return {
     id: typeof r.id === 'string' && r.id ? r.id : newPlanId(),
-    content: { completed: stringArray(c.completed), terms },
+    content: {
+      completed: stringArray(c.completed),
+      terms,
+      catalog_year:
+        typeof c.catalog_year === 'string' && /^20\d\d-\d\d$/.test(c.catalog_year)
+          ? c.catalog_year
+          : null,
+      choices: nestedStringRecord(c.choices),
+      attested: stringArrayRecord(c.attested),
+      grades: stringRecord(c.grades),
+    },
     programIds: Array.isArray(r.programIds)
       ? r.programIds.filter((x): x is number => typeof x === 'number' && Number.isFinite(x))
       : [],
@@ -689,6 +725,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           },
         })),
       setPrograms: (ids) => update((s) => ({ ...s, programIds: ids })),
+      setCatalogYear: (edition, ids) =>
+        update((s) => ({ ...s, programIds: ids, content: { ...s.content, catalog_year: edition } })),
+      setChoice: (slug, key, value) =>
+        update((s) => {
+          const prog = { ...(s.content.choices?.[slug] ?? {}) }
+          if (value === null) delete prog[key]
+          else prog[key] = value
+          return { ...s, content: { ...s.content, choices: { ...s.content.choices, [slug]: prog } } }
+        }),
+      setAttested: (slug, names) =>
+        update((s) => ({
+          ...s,
+          content: { ...s.content, attested: { ...s.content.attested, [slug]: names } },
+        })),
       createPlan: (name) => {
         if (stateRef.current.plans.length >= MAX_PLANS) return null
         flush() // outgoing plan's pending edits push now, not post-switch

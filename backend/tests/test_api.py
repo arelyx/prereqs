@@ -252,6 +252,7 @@ def test_filter_passthrough_on_non_range_rules(client, db_session, seeded):
         kind="major",
         slug="filter-passthrough-test",
         url="https://example.test/fpt",
+        catalog_year="2026-27",
         requirements={
             "sections": [
                 {

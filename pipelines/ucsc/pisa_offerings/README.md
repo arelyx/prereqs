@@ -1,8 +1,9 @@
 # ucsc/pisa_offerings
 
 Deterministic scraper for UCSC's pisa class search
-(`https://pisa.ucsc.edu/class_search/index.php`): one `action=results` POST
-per term → offering rows per section. No LLM anywhere in this pipeline.
+(`https://pisa.ucsc.edu/class_search/index.php`): paginated POSTs per term
+(300 rows per page) → offering rows per section → committed
+`data-committed/ucsc/offerings/<term>.jsonl` via `export.py`. HOT path: no LLM.
 
 Primary research: `docs/universities/ucsc/source-pisa-class-search.md`.
 This README records what implementation added to or *corrected* in that doc.
@@ -11,13 +12,17 @@ This README records what implementation added to or *corrected* in that doc.
 
 ```bash
 cd pipelines
-.venv/bin/python -m ucsc.pisa_offerings.run --terms 2260,2262
-.venv/bin/python -m ucsc.pisa_offerings.run --from 2048 --to 2268   # full backfill
+.venv/bin/python -m ucsc.pisa_offerings.run --terms 2260,2262        # a few terms
+.venv/bin/python -m ucsc.pisa_offerings.backfill --from 2218 --to 2268  # long ranges: chunked
+.venv/bin/python -m ucsc.pisa_offerings.export                       # → data-committed/
 ```
 
-Snapshot output (`data/ucsc/pisa_offerings/<ts>/`):
+Which terms to fetch is decided by `python -m ucsc.refresh status --probe`
+(new terms in pisa's dropdown + every non-final term). Never hand-pick.
 
-- `raw/<term_code>.html` — exact bytes each parse saw (audit/replay).
+Snapshot output (`data/ucsc/pisa_offerings/<ts>/`, a gitignored cache):
+
+- `raw/<term_code>/pageNN.html` — exact bytes each parse saw (audit/replay).
 - `offerings.json` — all terms concatenated; shape mirrors
   `course_offerings` in `docs/DATA_MODEL.md`.
 - `terms.json` — per term: `term_code`, `year`, `season`, `academic_year`,
@@ -36,17 +41,15 @@ the nonexistent digits (after `2254` comes `2258`, not `2256`) — see
 `terms.enumerate_codes`. Pisa's history starts at `2048` (Fall 2004); Winter–
 Summer 2004 codes are validly formed but have no data.
 
-## Why no pagination
+## Pagination
 
-`rec_start` is **silently ignored** by `action=results` — you always get page
-1, so naive offset paging would loop on the same rows forever. Real paging
-needs `action=next` with off-by-one semantics. We avoid the whole mechanism:
-arbitrary `rec_dur` values are honored, so a single request with
-`rec_dur=3000` (a quarter tops out ~1,700 primary sections) returns
-everything. The page's own count line (`<b>1</b> - <b>N</b> of <b>TOTAL</b>`)
-is then asserted three ways: starts at 1, N == TOTAL (i.e. one page covered
-everything — fires if `rec_dur` ever becomes too small), and TOTAL == number
-of `rowpanel_*` divs parsed.
+`rec_start` is **silently ignored** by `action=results` — it always returns
+page 1. Page 1 is `action=results`; page k (k ≥ 2) is `action=next` with
+`rec_start=(k-2)*300` (off-by-one). Very large `rec_dur` values used to work
+but made 5–7 MB responses that 504'd under sustained load, so the fetcher
+pages at 300. The count line (`<b>a</b> - <b>b</b> of <b>N</b>`) is asserted
+on every page: contiguous ranges, constant N, unique class numbers, and the
+row total equals N.
 
 ## Query shape (all classes, not just open ones)
 
@@ -103,7 +106,7 @@ splits on (not literal spaces).
   the research doc's excerpt; the parser addresses fields by their
   `sr-only` labels, not positional divs, so additions like this are inert.
 - **Zero-results pages** contain `Sorry. Your search:` and no count line.
-  `parse_results` returns `[]` only for that marker; `run.py` then accepts
+  `parse_page` returns no rows only for that marker; `run.py` then accepts
   emptiness only for terms that have not started yet (`terms.is_future`,
   season start months rounded down to be strict).
 
@@ -111,8 +114,8 @@ splits on (not literal spaces).
 
 | guard | where |
 |---|---|
-| response is HTML and declares UTF-8 | `fetch.fetch_term_html` |
-| count line present (or zero-results marker), starts at 1, one page covered all, TOTAL == rowpanel count | `parse.parse_results` |
+| response is HTML and declares UTF-8 | `fetch._fetch_page` |
+| count line present (or zero-results marker); pages contiguous, N constant across pages, class numbers unique, row total == N | `parse.parse_page`, `fetch.fetch_term_rows` |
 | exactly one `CLASS_NBR` hidden input per panel; heading link id matches it | `parse._parse_panel` |
 | heading splits on triple-nbsp; code part matches `SUBJ CATNBR - SECT` | `parse._parse_panel` |
 | status icon, instructor text (≥1 name), `N of M Enrolled` present per row | `parse._parse_panel` |

@@ -1,3 +1,8 @@
+> **Legacy (approach A).** This documents the July 2026 verification of the
+> generic-JSON harness in `data-committed/ucsc/programs/` (catalog 2026-27,
+> pre-revamp). It is kept as the record behind the baseline; the current
+> warm path is described in `docs/REFRESH.md` and `docs/HARNESSES.md`.
+
 # Program verification method (for Frontier-LLM verifier agents)
 
 You are verifying that a program's committed requirements JSON faithfully

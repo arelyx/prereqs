@@ -1,92 +1,53 @@
 # Operations
 
-Day-to-day runbook. Architecture rationale: `ARCHITECTURE.md`. Per-source
-research: `universities/`. Backup/rollback detail: `../ops/backup/README.md`.
-Agent standing orders: `/AGENTS.md`. **Catalog-edition roll (yearly):
-`runbooks/ANNUAL_REFRESH.md` — the steps below are the building blocks, the
-runbook is the sequence with gates.**
+Day-to-day commands. Design: `ARCHITECTURE.md`. Data refresh: `REFRESH.md`.
+Backup/rollback: `../ops/backup/README.md`. Agent rules: `../AGENTS.md`.
 
 ## Stack
 
 ```bash
 docker compose up -d --build     # db :5433, backend :8200, frontend :5273
+docker compose exec backend python -m app.loaders.ucsc     # (re)load served data
 ```
+
+Native (no containers for backend/frontend):
+
+```bash
+export DATABASE_URL=postgresql+psycopg://prereqs:prereqs@localhost:5433/prereqs
+cd backend && .venv/bin/alembic upgrade head && .venv/bin/python -m app.loaders.ucsc
+.venv/bin/uvicorn app.main:app --port 8200 --reload
+cd frontend && VITE_API_URL=http://localhost:8200 npm run dev -- --port 5273
+```
+
+The loader reads only `data-committed/` (plus `harnesses/`), in one
+transaction: `--only courses|offerings|programs|availability` loads one part.
 
 ## Transcript import (backend env)
 
-The transcript-upload feature needs a local Ollama; without it the feature
-refuses cleanly (503, UI disabled). Backend settings (`app/config.py`):
+Needs an OpenAI-compatible LLM server; without one the feature refuses
+cleanly (503, UI disabled). Settings (`backend/app/config.py`):
 
-- `OLLAMA_URL` — default `http://localhost:11434`. Dev compose points it at
-  the host's Ollama via `host.docker.internal`; prod leaves it unset (off).
-- `TRANSCRIPT_LLM_MODEL` — default `qwen3:4b` (same model the pipelines use).
+- `LLM_URL` — default `http://localhost:8080` (llama-server). Dev compose
+  points it at the host via `host.docker.internal:8080`.
+- `TRANSCRIPT_LLM_MODEL` — default `qwen3.8-27b` (must be in `/v1/models`).
 - `TRANSCRIPT_LLM_TIMEOUT` / `TRANSCRIPT_BUDGET_SECONDS` /
   `TRANSCRIPT_MAX_BYTES` — per-call timeout, whole-request ceiling, upload cap.
 
-## Refreshing UCSC data
+Measured on the dev host: an 18-quarter transcript parses in ~2 minutes
+(one call per quarter, serialized).
 
-All pipelines run on the host from `pipelines/` (venv + local Ollama):
+## Rolling back served data
 
 ```bash
-cd pipelines && source .venv/bin/activate
-
-# 1. Catalog courses (~89 requests, ~2 min; then ~1,800 LLM calls, ~30-45 min)
-python -m ucsc.catalog_courses.fetch
-python -m ucsc.catalog_courses.structure            # resumable: --resume <staging>
-
-# 2. Offerings history — product scope is ~5 years (chunked driver; skips
-#    terms already covered by finalized snapshots)
-python -m ucsc.pisa_offerings.backfill --from 2218 --to 2268
-python -m ucsc.pisa_offerings.run --terms 2270      # typical incremental run
-
-# 3. SOE planned schedule (10 requests)
-python -m ucsc.soe_schedule.run
-
-# 4. Major requirements (~121 requests + a few dozen LLM fallback calls)
-python -m ucsc.major_requirements.fetch
-python -m ucsc.major_requirements.run               # --no-llm for a dry pass
-
-# 5. Export to the git-committed dataset — git diff is the review step!
-python -m ucsc.export_committed                     # respects hand-edited files
-git diff data-committed/                            # review the delta, then commit
-
-# 6. Load into Postgres (transactional per source; also derives availability
-#    + instructor predictions; courses/programs load from data-committed/)
-cd ../backend && DATABASE_URL=postgresql+psycopg://prereqs:prereqs@localhost:5433/prereqs \
-  .venv/bin/python -m app.loaders.ucsc
+git checkout <good-rev> -- data-committed harnesses
+cd backend && .venv/bin/python -m app.loaders.ucsc
 ```
 
-### Hard constraints learned in production
-
-- **Run LLM pipelines serially, never concurrently.** Two pipelines with
-  different system prompts alternating against one Ollama instance thrash the
-  KV prefix cache — throughput drops ~15x (measured: 60/min → 4/min on the
-  GTX 1650). The catalog structure stage and the majors run stage must not
-  overlap.
-- **pisa backfills stress the upstream server.** Historical all-subject pages
-  are ~5-7 MB and the server 504s under sustained load; the pipeline uses a
-  120s timeout, 5 retries, a 90s per-term cooldown retry, and ≥4s spacing.
-  Prefer incremental single-term runs over repeated full backfills.
-- **A pipeline abort is a feature.** `PIPELINE ABORTED` means an upstream page
-  no longer matches expectations; staging is discarded, the DB and previous
-  snapshots are untouched. Read the message, fix the pipeline (the message
-  names the exact violated expectation), re-run. Two real examples both
-  occurred on first full runs and took minutes to fix: HAVC's
-  `courseListHeader` block, CMS duplicate course blocks (MATH 24).
-
-## When a load goes wrong
-
-`pipeline_runs` records the exact snapshot dir every source was loaded from.
-Rollback = re-run the loader pointing at the previous snapshot:
+## Tests
 
 ```bash
-.venv/bin/python -m app.loaders.ucsc --courses ../data/ucsc/catalog_courses_structured/<older-ts>
-```
-
-## Verification
-
-```bash
-cd pipelines && python -m pytest          # pipeline unit tests
-cd backend && .venv/bin/python -m pytest  # API tests (SQLite, no services)
-cd frontend && npx playwright test        # e2e vs the running stack + loaded data
+cd pipelines && .venv/bin/python -m pytest
+cd backend && .venv/bin/python -m pytest       # SQLite, no services
+cd frontend && npx tsc -b && npx playwright test   # needs the running, loaded stack
+python eval/run.py --adapter "<cmd>"           # harness accuracy (eval/README.md)
 ```

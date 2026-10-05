@@ -325,7 +325,7 @@ test('hostile tombstone list is normalized and a tombstoned active plan is fixed
 
 test('slow validate response for one plan never lands on another', async ({ page }) => {
   // Plan A carries a program, so its validation grows a requirements panel.
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. ✓' })
   await expect(page.getByRole('heading', { name: 'Computer Science B.S.' })).toBeVisible()
   await createPlan(page, 'Empty B')
   await expect(switcher(page)).toHaveText(/Empty B/)

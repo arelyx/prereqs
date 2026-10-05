@@ -26,7 +26,7 @@ test('create a second plan and switch: courses and programs are isolated', async
   // Work in the default plan first.
   await page.getByPlaceholder('Add a course you already took…').fill('CSE 12')
   await page.getByRole('button', { name: /CSE 12 / }).click()
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. ✓' })
   await expect(page.getByRole('button', { name: /Computer Science B\.S\./ })).toBeVisible()
 
   // New plan starts empty: default AY row, no completed courses, no programs.

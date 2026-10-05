@@ -152,6 +152,7 @@ def seeded(db_session):
             kind="major",
             slug="computer-science-bs",
             url="https://example.test/cs-bs",
+            catalog_year="2026-27",
             requirements={
                 "sections": [
                     {

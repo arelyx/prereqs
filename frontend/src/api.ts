@@ -53,11 +53,26 @@ export interface GraphPayload {
 
 export interface ProgramSummary {
   id: number
+  slug: string
   name: string
   degree: string
   kind: string
   division: string | null
+  edition: string // catalog edition, e.g. '2026-27'
   verification: string
+  has_requirements: boolean
+}
+
+export interface Edition {
+  edition: string
+  programs: number
+  current: boolean
+}
+
+export interface ProgramSource {
+  edition: string
+  sha256: string
+  markdown: string
 }
 
 export interface InfoSection {
@@ -68,7 +83,8 @@ export interface InfoSection {
 export interface ProgramDetail extends ProgramSummary {
   department: string | null
   url: string
-  catalog_year: string | null
+  archive_url: string | null
+  source_sha256: string | null
   requirements: { sections: unknown[]; info_sections?: InfoSection[] } | null
 }
 
@@ -95,6 +111,14 @@ export interface TranscriptParseResult {
 export interface PlanContent {
   completed: string[]
   terms: { term_code: string; courses: string[] }[]
+  // Catalog edition the student is bound to; absent = newest edition.
+  catalog_year?: string | null
+  // Per program slug: declared choices (concentration, track, ...).
+  choices?: Record<string, Record<string, string>>
+  // Per program slug: non-course conditions the student attests are met.
+  attested?: Record<string, string[]>
+  // Optional letter grades by canonical course code.
+  grades?: Record<string, string>
 }
 
 export interface ServerPlan {
@@ -224,7 +248,12 @@ export const api = {
   courseDetail: (code: string) => request<CourseDetail>(`/u/${UNIVERSITY}/courses/${code}`),
   courseGraph: (code: string, depth = 3) =>
     request<GraphPayload>(`/u/${UNIVERSITY}/courses/${code}/graph?depth=${depth}`),
-  programs: () => request<ProgramSummary[]>(`/u/${UNIVERSITY}/programs`),
+  editions: () => request<Edition[]>(`/u/${UNIVERSITY}/editions`),
+  programs: (edition?: string) =>
+    request<ProgramSummary[]>(
+      `/u/${UNIVERSITY}/programs${edition ? `?edition=${encodeURIComponent(edition)}` : ''}`,
+    ),
+  programSource: (id: number) => request<ProgramSource>(`/u/${UNIVERSITY}/programs/${id}/source`),
   programDetail: (id: number) => request<ProgramDetail>(`/u/${UNIVERSITY}/programs/${id}`),
   validate: (content: PlanContent, programIds: number[]) =>
     request<ValidationResult>(`/u/${UNIVERSITY}/validate`, {

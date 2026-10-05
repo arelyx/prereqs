@@ -1,0 +1,619 @@
+{
+  "program": "computer-science-bs",
+  "edition": "2026-27",
+  "author_notes": "Cases derived from one verified frosh record by single edits. Grades default to A (letter) because Baskin requires letter grades. Pass records include CSE 20 because it is in the 'All of the following' list (test-out not modelled). Ambiguities avoided: whether CSE 195 may count as both DC and the senior-thesis comprehensive (no case relies on it); whether the lab in lecture/lab capstones such as CSE 156/156L or CSE 161/161L is required (not used); MATH 19A+20B mixing is treated as failing because the requirements page encodes an explicit either/or package (the screening section, which allows mixing, is not a completion rule). AUDIT: removed fail-calculus-mixed-regular-and-honors-package as ambiguous: the requirements list encodes MATH 19A+19B / 20A+20B as either/or packages, but the same page's qualification and screening lists for these identical courses allow mixing (one of 19A/20A plus one of 19B/20B), so whether 19A+20B completes the major is not decidable from the text.",
+  "cases": [
+    {
+      "id": "pass-frosh-capstone-cse140",
+      "kind": "pass",
+      "description": "Frosh, all courses letter-graded (A). Lower division CSE 12/13S/16/20/30/40 + ECE 30, MATH 19A/19B, AM 10, AM 30; upper core CSE 101, 101M, 102, 120, 130, CSE 112, CSE 107; DC CSE 115A; four electives CSE 111, CSE 150, CSE 180 and CSE 140, where CSE 140 is also a capstone course (a passed capstone counts toward the electives). Every requirement met.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "CSE 20",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "CSE 30",
+              "MATH 19B"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 16",
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "CSE 13S",
+              "AM 10"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "CSE 40",
+              "AM 30"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "ECE 30",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 101M",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CSE 102",
+              "CSE 120"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CSE 130",
+              "CSE 112"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 111",
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 150",
+              "CSE 180"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-honors-calc-physics-pair-substitution",
+      "kind": "pass",
+      "description": "Trap: valid alternatives everywhere. Honors calculus package MATH 20A+20B, MATH 21, MATH 23A, CSE 114A, STAT 131, DC CSE 185E. Electives: CSE 111, MATH 115, the physics pair PHYS 5A+PHYS 5B (which substitutes for one math-type elective), and capstone CSE 183. Math-type electives = MATH 115 + the physics pair = 2 (the allowed maximum), at least one CSE elective, capstone passed. Complete.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "CSE 20",
+              "MATH 20A"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "CSE 30",
+              "MATH 20B"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 16",
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "CSE 13S",
+              "MATH 21"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "CSE 40",
+              "MATH 23A"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "ECE 30",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 101M",
+              "STAT 131"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CSE 102",
+              "CSE 120"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CSE 130",
+              "CSE 114A"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 111",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MATH 115",
+              "PHYS 5A",
+              "PHYS 5B"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 183"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-electives-no-cse-course",
+      "kind": "fail",
+      "description": "Same as the frosh pass record but the four electives are CMPM 120, MATH 115, MATH 116 and CMPM 172 (CMPM 172 is a listed capstone, so comprehensive is met; two math electives is within the cap). None of the electives is a CSE course.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "CSE 20",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "CSE 30",
+              "MATH 19B"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 16",
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "CSE 13S",
+              "AM 10"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "CSE 40",
+              "AM 30"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "ECE 30",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 101M",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CSE 102",
+              "CSE 120"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CSE 130",
+              "CSE 112"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CMPM 120",
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MATH 115",
+              "MATH 116"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CMPM 172"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Electives: at least one of the four electives must be a CSE course",
+        "source_quote": "At least one course must be a computer science and engineering course."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-electives-three-math-type",
+      "kind": "fail",
+      "description": "Electives are MATH 115, MATH 116, the physics pair PHYS 5A+PHYS 5B, and capstone CSE 140. The physics pair takes the place of a math-type elective, so three of the four electives are math-type, exceeding the cap of two.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "CSE 20",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "CSE 30",
+              "MATH 19B"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 16",
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "CSE 13S",
+              "AM 10"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "CSE 40",
+              "AM 30"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "ECE 30",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 101M",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CSE 102",
+              "CSE 120"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CSE 130",
+              "CSE 112"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "MATH 115",
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MATH 116",
+              "PHYS 5A",
+              "PHYS 5B"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Electives: at most two from applied mathematics, statistics or mathematics (physics pair counts as one of them)",
+        "source_quote": "At most two courses can be from applied mathematics, statistics or mathematics, of which at most one may be substituted with two physics classes"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-dc-course-185e-used-as-elective",
+      "kind": "fail",
+      "description": "DC satisfied by CSE 115A; the student also took CSE 185E and counts it as the fourth elective (with CSE 111, CSE 150, CSE 140). DC courses CSE 115A and CSE 185E are excluded from the elective list, so only three electives.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "CSE 20",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "CSE 30",
+              "MATH 19B"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 16",
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "CSE 13S",
+              "AM 10"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "CSE 40",
+              "AM 30"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "ECE 30",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 101M",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CSE 102",
+              "CSE 120"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CSE 130",
+              "CSE 112"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 111",
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 150",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Electives: four courses required; CSE 115A/CSE 185E are not eligible electives",
+        "source_quote": "Any 5-credit or more CSE course with a number between 100 and 189, except for the DC courses CSE 115A and CSE 185E/CSE 185S."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-required-course-taken-pass-no-pass",
+      "kind": "fail",
+      "description": "Identical to the frosh pass record except CSE 101 was taken Pass/No Pass (grade P). Baskin requires letter grades for all major courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "CSE 20",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "CSE 30",
+              "MATH 19B"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 16",
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "CSE 13S",
+              "AM 10"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "CSE 40",
+              "AM 30"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "ECE 30",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 101M",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CSE 102",
+              "CSE 120"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CSE 130",
+              "CSE 112"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 111",
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 150",
+              "CSE 180"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {
+          "CSE 101": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Letter grade policy: all courses required for the major must be taken for a letter grade",
+        "source_quote": "must take all courses required for that major for a letter grade."
+      },
+      "audit": "agreed"
+    }
+  ]
+}

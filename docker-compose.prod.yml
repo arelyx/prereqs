@@ -7,9 +7,11 @@
 #   cp .env.prod.example .env   # set POSTGRES_PASSWORD
 #   docker compose -f docker-compose.prod.yml up -d --build
 #
-# Data: courses/programs load from the committed dataset baked into the
-# repo checkout; offerings history arrives via DB restore (data/ snapshots
-# are not in git) — see ops/backup/README.md.
+# Data: everything served (courses, offerings, SOE plan, program editions)
+# loads from the committed dataset in the repo checkout:
+#   docker compose -f docker-compose.prod.yml exec backend python -m app.loaders.ucsc
+# User data (accounts, plans) is the only state that needs backups —
+# see ops/backup/README.md.
 
 services:
   db:
@@ -31,13 +33,11 @@ services:
     build: ./backend
     environment:
       DATABASE_URL: postgresql+psycopg://prereqs:${POSTGRES_PASSWORD}@db:5432/prereqs
-      DATA_ROOT: /srv/data
       COMMITTED_ROOT: /srv/data-committed
     depends_on:
       db:
         condition: service_healthy
     volumes:
-      - ./data:/srv/data:ro
       - ./data-committed:/srv/data-committed:ro
     command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
     restart: unless-stopped

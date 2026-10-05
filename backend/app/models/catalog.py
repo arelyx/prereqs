@@ -155,8 +155,17 @@ class CourseAvailability(Base):
 
 
 class Program(Base):
+    """One program (major/minor) IN ONE CATALOG EDITION.
+
+    A student is bound to the edition they entered under, so the same slug
+    exists once per edition (``catalog_year`` = edition id, e.g. '2026-27').
+    ``source_md`` is the committed normalized catalog page (the ground truth
+    every harness is authored against); ``requirements`` is the legacy
+    generic-JSON harness, present only where one was built.
+    """
+
     __tablename__ = "programs"
-    __table_args__ = (UniqueConstraint("university_id", "slug"),)
+    __table_args__ = (UniqueConstraint("university_id", "slug", "catalog_year"),)
 
     id: Mapped[int] = mapped_column(primary_key=True)
     university_id: Mapped[str] = mapped_column(ForeignKey("universities.id"))
@@ -167,8 +176,11 @@ class Program(Base):
     department: Mapped[str | None] = mapped_column(String(128))
     slug: Mapped[str] = mapped_column(String(160))
     url: Mapped[str] = mapped_column(Text)
-    catalog_year: Mapped[str | None] = mapped_column(String(16))
-    requirements: Mapped[dict | None] = mapped_column(JSONVariant)  # sections/rules tree
+    catalog_year: Mapped[str] = mapped_column(String(16))  # edition id: '2026-27'
+    archive_url: Mapped[str | None] = mapped_column(Text)  # permanent /en/YYYY-YYYY/ URL
+    source_md: Mapped[str | None] = mapped_column(Text)
+    source_sha256: Mapped[str | None] = mapped_column(String(64))
+    requirements: Mapped[dict | None] = mapped_column(JSONVariant)  # legacy sections/rules tree
     verification: Mapped[str] = mapped_column(String(16), default="unverified")
     verified_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     verification_notes: Mapped[str | None] = mapped_column(Text)

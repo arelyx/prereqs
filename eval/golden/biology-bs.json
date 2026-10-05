@@ -1,0 +1,746 @@
+{
+  "program": "biology-bs",
+  "edition": "2026-27",
+  "author_notes": "Written only from sources/biology-bs.md. Grades default A (letter). Pass records start fall 2026 so CHEM 3B/3C need no separate labs, except the transfer trap which took them in 2025 with CHEM 3BL/3CL. Avoided: the STAT 5 waiver (needs advisor contact), the BIOL 20L community-college exemption (stated only in transfer admission), the at-least-half-UD-at-UCSC rule (all UD in records is at UCSC), whether a 2-credit BIOE lab (e.g. BIOE 117L) alone can be the additional L course, whether a first-list lab like METX 100L can double as the additional lab, and whether the additional lab may also count as one of the two BIOE DC courses (pass records avoid depending on it). The MATH 19A->MATH 11B transition in the trap case relies on the note permitting transitions between the 11 and 19 series; the external Calculus Series Transition Policy is not part of the source. AUDIT: removed fail-mixed-math16a-math11b as ambiguous: the page defers series mixing to the external Calculus Series Transition Policy, whose content is not in the source, so whether MATH 16A -> MATH 11B is allowed cannot be settled from the page.",
+  "cases": [
+    {
+      "id": "pass-frosh-chem3-math19-biol-dc",
+      "kind": "pass",
+      "description": "Frosh starting fall 2026. CHEM 3A/3B/3C (taken fall 2026 or later, so no separate 3BL/3CL needed), CHEM 8A/8L/8B, MATH 19A/19B, STAT 7+7L, PHYS 6A/6B/6C + PHYS 6L, BIOL 20A/20L, BIOE 20B/20C. Upper division: BIOL 100, 101, 105, BIOE 107, 109; first lab BIOL 101L; additional lab BIOL 105L (which also fulfils DC via the BIOL option and the comprehensive requirement); electives BIOL 110, BIOL 130, BIOE 131. All letter grades.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "CHEM 3A",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "CHEM 3B",
+              "MATH 19B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "CHEM 3C",
+              "BIOE 20B",
+              "BIOL 20L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CHEM 8A",
+              "BIOE 20C",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "PHYS 6A",
+              "PHYS 6L"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "BIOL 105",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "BIOL 101",
+              "BIOL 101L"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "BIOE 107"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "BIOE 109",
+              "BIOL 105L"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "BIOL 110",
+              "BIOL 130"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "BIOE 131"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-frosh-chem4-math16-bioe-dc",
+      "kind": "pass",
+      "description": "Frosh. Uses the CHEM 4A/4AL/4B/4BL chemistry package and MATH 16A/16B; PHYS 6M as the single physics lab. First lab BIOL 101L; additional lab/field course BIOE 142L (an upper-division BIOE course with \"L\"). Electives BIOE 108, BIOE 172, BIOL 125. DC satisfied through the BIOE option: BIOE 108 and BIOE 172 are both on the BIOE DC list (they also count as electives).",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "CHEM 4A",
+              "CHEM 4AL",
+              "MATH 16A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "CHEM 4B",
+              "CHEM 4BL",
+              "MATH 16B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "BIOE 20B",
+              "BIOL 20L",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CHEM 8A",
+              "BIOE 20C"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "PHYS 6A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B",
+              "PHYS 6M"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "BIOL 105",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "BIOL 101",
+              "BIOL 101L"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "BIOE 107",
+              "BIOE 108"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "BIOE 109",
+              "BIOE 142L"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "BIOE 172"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "BIOL 125"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-chem3-pre2026-without-labs",
+      "kind": "fail",
+      "description": "Same as the transfer pass record, but CHEM 3BL and CHEM 3CL are removed. CHEM 3B/3C were taken in 2025 (before fall 2026), so without the separate labs they do not satisfy the general chemistry requirement.",
+      "student": {
+        "entry": "transfer",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2248",
+            "courses": [
+              "CHEM 3A",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "CHEM 3B",
+              "MATH 11B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "CHEM 3C",
+              "BIOE 20B",
+              "BIOL 20L"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CHEM 8A",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "BIOE 20C"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "PHYS 6A",
+              "PHYS 6N"
+            ]
+          },
+          {
+            "term": "2268",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "BIOL 105",
+              "BIOL 101",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "BIOL 101L",
+              "BIOE 107",
+              "BIOL 110"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "BIOE 109",
+              "BIOL 115"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "BIOL 129L",
+              "BIOE 120",
+              "BIOE 120L"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Lower-division general chemistry (CHEM 3B/3C taken before fall 2026 also need CHEM 3BL and CHEM 3CL)",
+        "source_quote": "If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-no-first-lab-course",
+      "kind": "fail",
+      "description": "Frosh pass record with BIOL 101L removed. The student has BIOL 105L as the additional lab, but nothing from the required first-lab list (BIOL 101L, 102L, 107L, 122K, CHEM 160K, 161K, METX 100L).",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "CHEM 3A",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "CHEM 3B",
+              "MATH 19B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "CHEM 3C",
+              "BIOE 20B",
+              "BIOL 20L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CHEM 8A",
+              "BIOE 20C",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "PHYS 6A",
+              "PHYS 6L"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "BIOL 105",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "BIOL 101"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "BIOE 107"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "BIOE 109",
+              "BIOL 105L"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "BIOL 110",
+              "BIOL 130"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "BIOE 131"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Upper-division: one laboratory course from BIOL 101L / BIOL 102L / BIOL 107L / BIOL 122K / CHEM 160K / CHEM 161K / METX 100L",
+        "source_quote": "Plus one of the following laboratory courses:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-lecture-lab-combo-counted-twice",
+      "kind": "fail",
+      "description": "Frosh pass record but the three electives are BIOE 120, BIOE 120L and BIOL 130. BIOE 120 + BIOE 120L is a lecture/lab combination that counts as one course, so only two electives are complete.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "CHEM 3A",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "CHEM 3B",
+              "MATH 19B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "CHEM 3C",
+              "BIOE 20B",
+              "BIOL 20L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CHEM 8A",
+              "BIOE 20C",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "PHYS 6A",
+              "PHYS 6L"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "BIOL 105",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "BIOL 101",
+              "BIOL 101L"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "BIOE 107"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "BIOE 109",
+              "BIOL 105L"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "BIOE 120",
+              "BIOL 130"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "BIOE 120L"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Three additional upper-division electives (lecture/lab combinations count as one course)",
+        "source_quote": "Note: Lecture/lab combinations count as one course. Students must pass both the lecture and associated lab if the lab follows the lecture in the list below."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-no-physics-lab",
+      "kind": "fail",
+      "description": "Frosh pass record with PHYS 6L removed: PHYS 6A/6B/6C are complete but no introductory physics lab (6L, 6M or 6N).",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "CHEM 3A",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "CHEM 3B",
+              "MATH 19B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "CHEM 3C",
+              "BIOE 20B",
+              "BIOL 20L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CHEM 8A",
+              "BIOE 20C",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "PHYS 6A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "BIOL 105",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "BIOL 101",
+              "BIOL 101L"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "BIOE 107"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "BIOE 109",
+              "BIOL 105L"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "BIOL 110",
+              "BIOL 130"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "BIOE 131"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "One of PHYS 6L, PHYS 6M, PHYS 6N",
+        "source_quote": "PHYS 6L — Introductory Physics I Laboratory (1)"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-chem4-without-labs",
+      "kind": "fail",
+      "description": "Frosh pass record with CHEM 3A/3B/3C replaced by CHEM 4A and CHEM 4B only, without the CHEM 4AL and CHEM 4BL labs that are part of the CHEM 4 option.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "CHEM 4A",
+              "MATH 19A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "CHEM 4B",
+              "MATH 19B",
+              "BIOL 20A"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "BIOE 20B",
+              "BIOL 20L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CHEM 8A",
+              "BIOE 20C",
+              "STAT 7",
+              "STAT 7L"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CHEM 8B",
+              "CHEM 8L",
+              "PHYS 6A",
+              "PHYS 6L"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "BIOL 100",
+              "PHYS 6B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "BIOL 105",
+              "PHYS 6C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "BIOL 101",
+              "BIOL 101L"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "BIOE 107"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "BIOE 109",
+              "BIOL 105L"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "BIOL 110",
+              "BIOL 130"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "BIOE 131"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "General chemistry: CHEM 3A/3B/3C or CHEM 4A/4AL/4B/4BL",
+        "source_quote": "CHEM 4AL — Advanced General Chemistry Lab (2)"
+      },
+      "audit": "agreed"
+    }
+  ]
+}
