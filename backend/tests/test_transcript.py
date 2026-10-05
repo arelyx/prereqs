@@ -205,7 +205,7 @@ def test_status_available(client, monkeypatch):
             pass
 
         def json(self):
-            return {"models": [{"name": settings.transcript_llm_model}]}
+            return {"data": [{"id": settings.transcript_llm_model}]}
 
     monkeypatch.setattr(llm.httpx, "get", lambda *a, **k: Resp())
     body = client.get("/transcript/status").json()
@@ -229,7 +229,7 @@ def test_status_model_missing(client, monkeypatch):
             pass
 
         def json(self):
-            return {"models": [{"name": "some-other-model:1b"}]}
+            return {"data": [{"id": "some-other-model"}]}
 
     monkeypatch.setattr(llm.httpx, "get", lambda *a, **k: Resp())
     body = client.get("/transcript/status").json()
@@ -319,7 +319,7 @@ def test_parse_llm_down_refuses_503(client, seeded, monkeypatch):
 
 def test_parse_llm_dies_mid_request_503(client, seeded, llm_up, monkeypatch):
     def dead(*a, **k):
-        raise llm.OllamaUnavailable("LLM call failed: ConnectError")
+        raise llm.LLMUnavailable("LLM call failed: ConnectError")
 
     monkeypatch.setattr(llm, "chat_json", dead)
     r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))
@@ -412,13 +412,13 @@ def test_split_terms_drops_preamble_and_totals():
 
 def test_llm_serialization_lock(monkeypatch):
     """chat_json must hold the module-level lock while the request is in
-    flight — exactly one in-flight Ollama call, ever (repo invariant #1)."""
+    flight — exactly one in-flight LLM call, ever (repo invariant #1)."""
     assert isinstance(llm._LLM_LOCK, type(threading.Lock()))
     seen = {}
 
     def fake_post(body, timeout):
         seen["locked_during_call"] = llm._LLM_LOCK.locked()
-        return {"message": {"content": '{"courses": []}'}}
+        return {"choices": [{"message": {"content": '```json\n{"courses": []}\n```'}}]}
 
     monkeypatch.setattr(llm, "_post_chat", fake_post)
     out = llm.chat_json("sys", "user")
@@ -496,7 +496,7 @@ def test_parse_slot_released_on_failure(client, seeded, llm_up, monkeypatch):
     from app.api import transcript as api_transcript
 
     def boom(*a, **kw):
-        raise llm.OllamaUnavailable("down")
+        raise llm.LLMUnavailable("down")
 
     monkeypatch.setattr(llm, "chat_json", boom)
     r = upload(client, make_pdf(FAKE_TRANSCRIPT_LINES))

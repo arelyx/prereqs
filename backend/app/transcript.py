@@ -309,7 +309,7 @@ CHUNK_TERMINATOR_RE = re.compile(
     re.MULTILINE,
 )
 MAX_CHUNKS = 60  # a real transcript has well under 60 quarters
-MAX_CHUNK_CHARS = 6000  # keeps prompt + chunk safely inside num_ctx=4096
+MAX_CHUNK_CHARS = 6000  # one quarter per call keeps replies short and retries cheap
 
 
 @dataclass
@@ -452,8 +452,8 @@ def _validate_chunk(parsed: dict | None, chunk: TermChunk) -> list[CourseRow] | 
 def parse_chunk(chunk: TermChunk) -> list[CourseRow]:
     """One serial LLM call (plus at most ONE retry) for one quarter section.
 
-    Raises llm.OllamaUnavailable if the service is down and
-    llm.OllamaBadResponse if it still returns garbage after the retry.
+    Raises llm.LLMUnavailable if the service is down and
+    llm.LLMBadResponse if it still returns garbage after the retry.
     """
     text = chunk.text[:MAX_CHUNK_CHARS]
     for seed in (42, 43):
@@ -461,6 +461,6 @@ def parse_chunk(chunk: TermChunk) -> list[CourseRow]:
         rows = _validate_chunk(parsed, chunk)
         if rows is not None:
             return rows
-    raise llm.OllamaBadResponse(
+    raise llm.LLMBadResponse(
         f"LLM returned unusable output for section '{chunk.term}' after one retry"
     )
