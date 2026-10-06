@@ -1,0 +1,11 @@
+{
+ "program": "bioinformatics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "f3e79f83a6a408f98b790f142903a0b4bff751927b07f4eb13b29ddbd058a0eb",
+ "skeleton_sha256": "b42299f381fb17d0315280ea33c60da64dffe420843f0d0a2cc58604920d66c3",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:47:51Z",
+ "verified_at": "2026-10-06T00:57:49Z",
+ "notes": "verified line by line against sources/bioinformatics-minor.md; 10 tests; judgement: '25 credits of upper-division credits' read as the minor's total UD credits (two electives alone cannot reach 25); CSE 20 test-out exam = note; no grade policy on page"
+}
