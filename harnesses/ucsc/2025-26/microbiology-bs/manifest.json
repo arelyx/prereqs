@@ -1,0 +1,11 @@
+{
+ "program": "microbiology-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "0560ffb0590d1c197a2e9180eeef8117baa5188fbca456fdd1abb7c39fc64da0",
+ "skeleton_sha256": "8ff5faa6a29d7335bcd44b69d6ed23929ea3c46fbbce66cedc3a812dc10addbd",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:59Z",
+ "verified_at": "2026-10-06T23:56:36Z",
+ "notes": "ported from 2026-27 (reviewed); differences: gen chem always includes CHEM 3BL/3CL (no fall-2026 rule; no CHEM 1 note); electives two totaling >=9 credits (was three >=14); list drops METX 108/112/131, lists METX 141 (accepted with current code METX 141L, 5 credits from page); 23 tests"
+}

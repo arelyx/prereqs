@@ -1,0 +1,11 @@
+{
+ "program": "biology-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "aa34d17b0b3324e0b74d880ca8403f4894a3c1693aa06a5c0ba9a7a0bd60cdc4",
+ "skeleton_sha256": "fcbe6234abf89f0c4f9bac504c6d009da69f0677e2d3e411ad9fe8796b9833dd",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:54Z",
+ "verified_at": "2026-10-06T23:55:59Z",
+ "notes": "ported from 2026-27 (reviewed); differences: gen chem CHEM 3A+3B+3BL always (no fall-2026 rule) or 4A+4AL, plus CHEM 1A/1B/1C/1N series (note); no lab/field requirement on the 2025-26 page (node removed); 5-credit lecture + 5-credit lab count as two courses (cannot-check removed); comprehensive list without BIOE 119L/157A/157B; DC BIOE 129 still needs 129L ('except for DC requirements'); PHYS 6A/6L concurrency as note; 35 tests"
+}

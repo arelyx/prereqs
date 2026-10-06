@@ -1,0 +1,11 @@
+{
+ "program": "ecology-and-evolution-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "73b1fe7c793e191169be695853d4d089fa751877453baa35e3ec37d5c1124478",
+ "skeleton_sha256": "88b2640a6af11ced4a1abd1836e676754b90738cc932152067313139108a781d",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:55Z",
+ "verified_at": "2026-10-06T23:55:59Z",
+ "notes": "ported from 2026-27 (reviewed); differences: gen chem CHEM 3A-3C + 3BL/3CL always (no fall-2026 rule) or CHEM 4 series, plus CHEM 1A/1B/1C/1N series (note); topical list without BIOE 119L/175/176; comprehensive list without BIOE 119L/157A/157B; wording-only elsewhere (overlap sentence, general-elective sentence, lecture/lab notes now state 5-credit lecture + 5-credit lab = two courses, already modelled); 31 tests"
+}

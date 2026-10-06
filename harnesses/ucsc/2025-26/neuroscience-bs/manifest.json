@@ -1,0 +1,11 @@
+{
+ "program": "neuroscience-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "2b4bf87615d75780c550473ede583c2baccf7ba592b3cf43d7158e4e09c927a8",
+ "skeleton_sha256": "a3ce1d64c5b31c9a60e9a6b7726549af502b924f2d4b36fb682a7a5263cccc51",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:59Z",
+ "verified_at": "2026-10-06T23:56:36Z",
+ "notes": "ported from 2026-27 (reviewed); differences: gen chem always includes CHEM 3BL/3CL (no fall-2026 rule) + CHEM 1A/1B/1C/1N package; STAT 5 plain option (no waiver); heading quotes re-pointed; 24 tests"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "biology-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "d0bf97ec835bbd413c75d8a551e78bc399e8380a5d51f0ac44c5238791affeb7",
+ "skeleton_sha256": "33b3aa12b6a8c3c490e984ae2546fc7e6146a8056b29f4046530c28766122104",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:57Z",
+ "verified_at": "2026-10-06T23:56:35Z",
+ "notes": "ported from 2026-27 (reviewed); differences: BIOL 20L required; CHEM 1A/1B/1C (no lab) alternative to CHEM 3A/3B/3C per note; no CHEM 3BL/3CL rows; elective quote wording; 22 tests"
+}
