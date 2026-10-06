@@ -54,4 +54,24 @@ describe('philosophy-minor 2026-27', () => {
   it('PHIL 199 does not count as an elective', () => {
     expect(find(run(harness, { terms: swap('PHIL 125', 'PHIL 199') }), 'ud-electives').status).toBe('unmet')
   })
+
+  it('review: LGST 140P (PHIL 100D) as history covers value theory; four electives still needed', () => {
+    const t = swapIn(swap('PHIL 100C', 'LGST 140P'), 'PHIL 142', 'PHIL 122')
+    const r = run(harness, { terms: t })
+    expect(find(r, 'value-theory').status).toBe('met')
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: LGST 144 (PHIL 144) is a value theory elective', () => {
+    expect(failing(run(harness, { terms: swap('PHIL 142', 'LGST 144') }))).toEqual([])
+  })
+
+  it('review: PHIL 114 and PHIL 214 count once (catalog: no credit for both)', () => {
+    const t = swapIn(swap('PHIL 125', 'PHIL 114'), 'PHIL 133', 'PHIL 214')
+    expect(find(run(harness, { terms: t }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('review: empty plan unmet', () => {
+    expect(run(harness, { terms: [] }).status).toBe('unmet')
+  })
 })

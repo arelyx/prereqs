@@ -1,6 +1,6 @@
 // Legal Studies Minor — 2026-27
 // Source: data-committed/ucsc/editions/2026-27/sources/legal-studies-minor.md
-import { canon, codes, defineHarness, range } from '@harness'
+import { canon, codes, defineHarness } from '@harness'
 import type { Enrollment } from '@harness'
 
 const APPROVED = [
@@ -22,10 +22,16 @@ const APPROVED = [
   'SPAN 130',
 ]
 // "LGST 188A/OAKS188A and OAKS 188B/LGST 188B must both be taken to count as one course."
-const PAIR_A = ['LGST 188A', 'OAKS 188A']
-const PAIR_B = ['OAKS 188B', 'LGST 188B']
-// Independent study / thesis: "Students should contact the department if they wish to count independent study toward this requirement."
-const INDEPENDENT = ['LGST 193', 'LGST 194', 'LGST 195A', 'LGST 195B', 'LGST 195C', 'LGST 198', 'LGST 199']
+// (Partner codes OAKS 188A / LGST 188B match through the library.)
+const PAIR_A = codes('LGST 188A')
+const PAIR_B = codes('OAKS 188B')
+const INDEP_QUOTE = 'Students should contact the department if they wish to count independent study toward this requirement.'
+// Independent study (field study, group tutorial, independent field study,
+// tutorial): counts only with the department's approval (§1a petition path).
+const INDEPENDENT = ['LGST 193', 'LGST 194', 'LGST 198', 'LGST 199']
+// Senior thesis: approved for the major as its DC/comprehensive option, but
+// arguably independent study here — never decide it either way.
+const THESIS = ['LGST 195A', 'LGST 195B', 'LGST 195C']
 // On the Legal Studies B.A. thematic lists (same edition) but not on this
 // page's list: "approved for the LGST major" suggests they count, the list
 // here omits them — never call the minor unmet because of them.
@@ -35,12 +41,14 @@ export default defineHarness({
   program: 'legal-studies-minor',
   edition: '2026-27',
   title: 'Legal Studies Minor',
-  coverage: {
-    unknownOk: {
-      OAKS188A: 'cross-listed partner of LGST 188A ("LGST 188A/OAKS188A"); the catalog files it under LGST',
-      LGST188B: 'cross-listed partner of OAKS 188B ("OAKS 188B/LGST 188B"); the catalog files it under OAKS',
+  attestations: [
+    {
+      id: 'independent-approval',
+      label: 'Department approved counting your independent study toward the minor',
+      quote: INDEP_QUOTE,
+      aliases: ['independent study approval', 'independent study', 'department approval'],
     },
-  },
+  ],
   notes: [
     'Minors do not follow the major’s thematic-area, philosophy (ethics) or senior-seminar requirements.',
     'There is no letter-grade policy: P/NP courses count.',
@@ -53,20 +61,19 @@ export default defineHarness({
     // "Any five 5-credit courses approved for the LGST major." + "5-credit
     // courses crosslisted as LGST courses will also count toward this
     // requirement." — the listed courses, upper-division LGST courses, and
-    // upper-division courses cross-listed with LGST, each with its
-    // cross-listed partner codes.
+    // upper-division courses cross-listed with LGST. Partner codes match
+    // through the library (one course, either code).
     const list = [...APPROVED.map(canon)]
     for (const c of cat.all()) {
-      const lgst = c.subject === 'LGST' || c.crossListed.some((x) => x.startsWith('LGST'))
+      const lgst = [c.code, ...cat.equivalents(c.code)].some((x) => x.startsWith('LGST'))
       if (lgst && c.division === 'upper') list.push(c.code)
     }
-    const indep = new Set(INDEPENDENT.map(canon))
-    const pairCodes = [...PAIR_A, ...PAIR_B].map(canon)
-    const members = new Set(list.filter((c) => !indep.has(c) && !pairCodes.includes(c)))
-    for (const c of [...members]) for (const x of cat.get(c)?.crossListed ?? []) members.add(x)
-    const pool = codes(...members).minCredits(5)
-    pool.describe = 'courses approved for the LGST major, upper-division LGST courses, and courses cross-listed with LGST (5 credits)'
-    const pairEligible = codes(...PAIR_A, ...PAIR_B)
+    const indepSet = codes(...INDEPENDENT)
+    const thesisSet = codes(...THESIS)
+    const pairEligible = PAIR_A.or(PAIR_B)
+    const listed = codes(...list).except(indepSet).except(thesisSet).except(pairEligible).minCredits(5)
+    listed.describe = 'courses approved for the LGST major, upper-division LGST courses, and courses cross-listed with LGST (5 credits)'
+    const pool = listed.or(indepSet)
 
     const upper = h.take(
       'upper',
@@ -78,12 +85,14 @@ export default defineHarness({
         composite: {
           eligible: pairEligible,
           build: (avail: Enrollment[]) => {
-            const a = avail.find((e) => PAIR_A.map(canon).includes(e.code))
-            const b = avail.find((e) => PAIR_B.map(canon).includes(e.code))
+            const a = avail.find((e) => PAIR_A.has(e.code, cat))
+            const b = avail.find((e) => PAIR_B.has(e.code, cat))
             return a && b ? [[a, b]] : []
           },
         },
-        pool: pool.describe,
+        // Listed courses first: independent study is used only when needed.
+        prefer: (code) => (indepSet.has(code, cat) ? 1 : 0),
+        pool: `${listed.describe}; independent study (LGST 193/194/198/199) with department approval`,
         notes: ['LGST 188A and OAKS 188B must both be taken; together they count as one course.'],
       },
     )
@@ -92,16 +101,18 @@ export default defineHarness({
       upper,
     ]
     h.solve()
+    if (upper.status === 'met' && (upper.used ?? []).some((e) => indepSet.has(e.code, cat))) {
+      nodes[1] = h.group('upper-approval', 'Five upper-division courses (independent study approved)', [upper, h.attest('independent-approval')], { quote: INDEP_QUOTE })
+    }
     if (upper.status === 'unmet') {
       const mine = new Set((upper.used ?? []).map((e) => e.id))
       const have = upper.progress?.have ?? 0
       const free = (e: Enrollment) => !h.used.has(e.id) || mine.has(e.id)
-      const ind = h.taken(range('LGST', 193, 199)).filter((e) => indep.has(e.code) && free(e))
-      const majorOnly = h.taken(codes(...MAJOR_ONLY)).filter(free)
-      const extra = new Set([...ind, ...majorOnly].map((e) => e.code)).size
+      const open = h.taken(thesisSet.or(codes(...MAJOR_ONLY))).filter(free)
+      const extra = new Set(open.map((e) => e.code)).size
       if (extra && have + extra >= 5) {
         upper.status = 'cannot-check'
-        upper.detail = `Complete only if ${[...ind, ...majorOnly].map((e) => e.display).join(', ')} count${ind.length + majorOnly.length > 1 ? '' : 's'}: independent study needs the department's approval, and ART 175 / ART 186 / LIT 189A are on the major's lists but not this page's — contact the department.`
+        upper.detail = `Complete only if ${open.map((e) => e.display).join(', ')} count${open.length > 1 ? '' : 's'}: the senior thesis may be treated as independent study, and ART 175 / ART 186 / LIT 189A are on the major's lists but not this page's — contact the department.`
       }
     }
     return nodes

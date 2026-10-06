@@ -6,7 +6,7 @@
 // epistemology; PHIL 190 is the "advanced seminar" among them), and an 11th
 // course from any level. Every requirement needs P or C or better.
 import { codes, defineHarness, range } from '@harness'
-import type { CourseSet, HarnessContext } from '@harness'
+import type { HarnessContext } from '@harness'
 
 const HISTORY = ['PHIL 100A', 'PHIL 100B', 'PHIL 100C', 'PHIL 100D']
 const VALUE = ['PHIL 100D', 'PHIL 118', 'PHIL 142', 'PHIL 143', 'PHIL 144', 'PHIL 147', 'PHIL 148', 'PHIL 152', 'PHIL 153']
@@ -21,14 +21,17 @@ const EXCLUDED = ['PHIL 195A', 'PHIL 195B', 'PHIL 199', 'PHIL 199F', 'PHIL 294',
 
 const GRADE_QUOTE = 'Students must complete all requirements for the major with a grade of P, C (2.0), or better.'
 
-/** Widen a set with the catalog's cross-listed partner codes ("PHIL 100D [/LGST 140P]"). */
-function withPartners(h: HarnessContext, set: CourseSet): CourseSet {
-  const extra: string[] = []
-  const scan = set.members ? set.members.map((c) => h.catalog.get(c)).filter((c) => !!c) : h.catalog.all()
-  for (const c of scan) if (set.has(c.code, h.catalog)) extra.push(...c.crossListed)
-  if (!extra.length) return set
-  const out = set.or(codes(...extra))
-  out.describe = `${set.describe} (or a cross-listed equivalent)`
+/**
+ * Catalog "cannot receive credit for both" pairs: "Students may not receive
+ * credit for this course and PHIL 9." (PHIL 7) and "Students cannot receive
+ * credit for this course and course 214." (PHIL 114). With both on the record
+ * only one counts: PHIL 9 is required, so PHIL 7 never counts next to it; of
+ * 114/214 the graduate course is dropped.
+ */
+function noCredit(h: HarnessContext): string[] {
+  const out: string[] = []
+  for (const [keep, drop] of [['PHIL 9', 'PHIL 7'], ['PHIL 114', 'PHIL 214']])
+    if (h.has(keep) && h.has(drop)) out.push(drop)
   return out
 }
 
@@ -45,11 +48,15 @@ export default defineHarness({
     // "Students must complete all requirements for the major with a grade of P, C (2.0), or better."
     h.policy = { min: 'C', pCounts: true }
 
-    const history = withPartners(h, codes(...HISTORY))
-    const value = withPartners(h, codes(...VALUE))
-    const meta = withPartners(h, codes(...METAPHYSICS))
-    const ud = withPartners(h, range('PHIL', 100, 299).except(EXCLUDED).minCredits(5))
-    const d = withPartners(h, codes('PHIL 100D'))
+    // Cross-listed partner codes (LGST 140P for PHIL 100D, LGST 144 for
+    // PHIL 144) match through the library; membership tests pass the catalog.
+    const cat = h.catalog
+    const history = codes(...HISTORY)
+    const value = codes(...VALUE)
+    const meta = codes(...METAPHYSICS)
+    const dropped = noCredit(h)
+    const ud = range('PHIL', 100, 299).except([...EXCLUDED, ...dropped]).minCredits(5)
+    const d = codes('PHIL 100D')
     const hasD = h.taken(d).length > 0
 
     const lower = h.group('lower', 'Lower-Division Courses', [
@@ -67,7 +74,7 @@ export default defineHarness({
     // PHIL 100D first: it also covers value theory when it is a history course.
     const hist = h.take('history', 'History of philosophy (two)', ['History of philosophy', 'Two of the following courses:'], history, {
       n: 2,
-      prefer: (c) => (d.has(c) ? 0 : 1),
+      prefer: (c) => (d.has(c, cat) ? 0 : 1),
     })
     const six = h.take(
       'ud-electives',
@@ -93,7 +100,7 @@ export default defineHarness({
       'eleventh',
       'An 11th course (any level)',
       'An 11th 5-credit course from any level (lower, upper, or graduate).',
-      withPartners(h, range('PHIL', 1, 299).except(EXCLUDED).minCredits(5)),
+      range('PHIL', 1, 299).except([...EXCLUDED, ...dropped]).minCredits(5),
       { pool: 'any 5-credit PHIL course (lower, upper or graduate), except the senior essay and individual studies' },
     )
 
@@ -113,8 +120,8 @@ export default defineHarness({
     )
 
     h.solve()
-    const viaHistory = (hist.used ?? []).some((e) => d.has(e.code))
-    const viaSix = (six.used ?? []).filter((e) => value.has(e.code))
+    const viaHistory = (hist.used ?? []).some((e) => d.has(e.code, cat))
+    const viaSix = (six.used ?? []).filter((e) => value.has(e.code, cat))
     const valueNode = h.node(
       'value-theory',
       'At least one value theory course',
@@ -122,7 +129,7 @@ export default defineHarness({
       viaHistory || viaSix.length ? 'met' : 'unmet',
       {
         detail: viaHistory ? 'PHIL 100D (history) also covers value theory.' : viaSix.length ? undefined : 'Take one course from the Value Theory list.',
-        used: viaHistory ? (hist.used ?? []).filter((e) => d.has(e.code)) : viaSix.slice(0, 1),
+        used: viaHistory ? (hist.used ?? []).filter((e) => d.has(e.code, cat)) : viaSix.slice(0, 1),
         options: value.members,
       },
     )

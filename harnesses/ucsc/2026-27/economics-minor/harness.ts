@@ -1,17 +1,6 @@
 // Economics Minor — 2026-27
 // Source: data-committed/ucsc/editions/2026-27/sources/economics-minor.md
 import { codes, defineHarness, range } from '@harness'
-import type { CourseSet, HarnessContext } from '@harness'
-
-/** Cross-listed partners ("ECON 128 [/LGST 128]") are the same course. */
-function withPartners(h: HarnessContext, set: CourseSet): CourseSet {
-  const extra: string[] = []
-  for (const c of h.catalog.all()) if (set.has(c.code, h.catalog)) extra.push(...c.crossListed)
-  if (!extra.length) return set
-  const out = set.or(codes(...extra))
-  out.describe = `${set.describe} (or a cross-listed equivalent)`
-  return out
-}
 
 export default defineHarness({
   program: 'economics-minor',
@@ -40,12 +29,10 @@ export default defineHarness({
 
     // ECON 100A/100M and 100B/100N are "cannot receive credit for both" pairs
     // (catalog), so the unused partner of a core course is never an elective.
-    const electivePool = withPartners(
-      h,
-      range('ECON', 100, 189)
-        .except(['ECON 104', 'ECON 100A', 'ECON 100M', 'ECON 100B', 'ECON 100N'])
-        .minCredits(5),
-    )
+    // Cross-listed partner codes (LGST 128 for ECON 128) match through the library.
+    const electivePool = range('ECON', 100, 189)
+      .except(['ECON 104', 'ECON 100A', 'ECON 100M', 'ECON 100B', 'ECON 100N'])
+      .minCredits(5)
     const upper = h.group('upper', 'Upper-Division Courses', [
       h.take('micro', 'Intermediate Microeconomics', 'Choose one of the following courses:', codes('ECON 100A', 'ECON 100M')),
       h.take('macro', 'Intermediate Macroeconomics', 'Plus one of the following courses:', codes('ECON 100B', 'ECON 100N')),

@@ -103,4 +103,51 @@ describe('legal-studies-ba 2026-27', () => {
   it('NP never counts', () => {
     expect(find(run(harness, { terms: base, grades: { 'LGST 10': 'NP' } }), 'lgst10').status).toBe('unmet')
   })
+
+  it('review: cross-listed partner codes (LGST 116 entered as POLI 116, POLI 175 as LGST 175) count', () => {
+    const t = swapIn(swapIn(base, 'POLI 160B', 'LGST 175'), 'LGST 156', 'POLI 116')
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  it('review: OAKS 188A + LGST 188B (partner codes) also count as the one pair course', () => {
+    const t = swap('LGST 156', 'OAKS 188A')
+    t.push({ term: '2290', courses: ['LGST 188B'] })
+    expect(find(run(harness, { terms: t }), 'thematic').status).toBe('met')
+  })
+
+  it('review: an independent study counts as a thematic course only by petition', () => {
+    // "Students may petition the department to substitute only one upper-division independent study or field study toward the elective requirement"
+    const t = swap('SOCY 122', 'LGST 199')
+    expect(find(run(harness, { terms: t, attested: [] }), 'thematic-petition').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['independent-petition'] }), 'thematic-petition').status).toBe('met')
+    // not asked when six listed courses exist
+    const r = run(harness, { terms: [...base, { term: '2290', courses: ['LGST 199'] }], attested: [] })
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: only one independent / field study may substitute', () => {
+    const t = swapIn(swap('SOCY 122', 'LGST 199'), 'LGST 152', 'LGST 198')
+    expect(find(run(harness, { terms: t }), 'thematic').status).toBe('unmet')
+  })
+
+  it('review: an independent study does not cover a thematic area', () => {
+    // only C course replaced by LGST 199 (plus an extra B): no Law and Society course
+    const t = swapIn(swapIn(base, 'SOCY 122', 'LGST 199'), 'LGST 108', 'LGST 124')
+    expect(find(run(harness, { terms: t }), 'thematic').status).toBe('unmet')
+  })
+
+  it('review: P/NP limit counts LGST courses entered under a partner code', () => {
+    // POLI 116 is LGST 116 (cross-listed) — it is an LGST course for the limit
+    const t = swapIn(base, 'LGST 156', 'POLI 116')
+    const g = { 'LGST 109': 'P', 'LGST 152': 'P', 'POLI 116': 'P', 'LGST 108': 'P' }
+    expect(find(run(harness, { terms: t, grades: g }), 'pnp-limit').status).toBe('unmet')
+  })
+
+  it('review: thesis needs two quarters; LGST 195A alone is not the comprehensive', () => {
+    expect(find(run(harness, { terms: swap('LGST 196', 'LGST 195A') }), 'comprehensive').status).toBe('unmet')
+  })
+
+  it('review: empty plan is unmet', () => {
+    expect(run(harness, { terms: [] }).status).toBe('unmet')
+  })
 })

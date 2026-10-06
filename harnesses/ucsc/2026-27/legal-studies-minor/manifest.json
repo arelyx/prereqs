@@ -6,6 +6,6 @@
  "skeleton_sha256": "ab12258f00a1f30b1ad28a0c62a3f34d2b3381ca4b2c693d70a465794d6cef2c",
  "status": "verified",
  "authored_at": "2026-10-06T00:55:23Z",
- "verified_at": "2026-10-06T01:00:52Z",
- "notes": "verified line by line against sources/legal-studies-minor.md; lint clean. Pool = listed courses + upper-division LGST courses + upper-division courses cross-listed with LGST (5 credits), with partner codes; LGST 193/194/195x/198/199 and ART 175/ART 186/LIT 189A (on the major lists, absent here) only turn unmet into cannot-check. Garbled row 'SPAN 130 / SPAN 6 / SPHS 6 [/LGST 130A]' read as SPAN 130."
+ "verified_at": "2026-10-06T23:45:08Z",
+ "notes": "verified line by line against sources/legal-studies-minor.md; lint clean. Pool = listed courses + upper-division LGST courses + upper-division courses cross-listed with LGST (5 credits), with partner codes; LGST 193/194/195x/198/199 and ART 175/ART 186/LIT 189A (on the major lists, absent here) only turn unmet into cannot-check. Garbled row 'SPAN 130 / SPAN 6 / SPHS 6 [/LGST 130A]' read as SPAN 130.; reviewed 2026-10-06: removed unknownOk partner codes and partner widening; LGST 193/194/198/199 count with a department-approval attestation asked only when used (thesis / major-only courses stay cannot-check)"
 }

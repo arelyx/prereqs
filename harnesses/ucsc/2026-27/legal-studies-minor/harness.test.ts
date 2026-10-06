@@ -42,8 +42,30 @@ describe('legal-studies-minor 2026-27', () => {
     expect(find(run(harness, { terms: t }), 'upper').status).toBe('met')
   })
 
-  it('independent study only with the department: cannot-check, not unmet', () => {
-    expect(find(run(harness, { terms: swap('PSYC 147A', 'LGST 199') }), 'upper').status).toBe('cannot-check')
+  it('independent study counts only with department approval (attestation, asked only when needed)', () => {
+    // "Students should contact the department if they wish to count independent study toward this requirement."
+    const t = swap('PSYC 147A', 'LGST 199')
+    expect(find(run(harness, { terms: t, attested: [] }), 'upper-approval').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['independent-approval'] }), 'upper-approval').status).toBe('met')
+    expect(failing(run(harness, { terms: [...base, { term: '2290', courses: ['LGST 199'] }], attested: [] }))).toEqual([])
+  })
+
+  it('a senior thesis quarter is not decided either way (cannot-check)', () => {
+    expect(find(run(harness, { terms: swap('PSYC 147A', 'LGST 195A') }), 'upper').status).toBe('cannot-check')
+  })
+
+  it('review: OAKS 188A + LGST 188B partner codes are the one pair course', () => {
+    const t = swap('PSYC 147A', 'OAKS 188A')
+    t.push({ term: '2284', courses: ['LGST 188B'] })
+    expect(find(run(harness, { terms: t }), 'upper').status).toBe('met')
+  })
+
+  it('review: SPAN 130 entered as LGST 130A counts', () => {
+    expect(find(run(harness, { terms: swap('PSYC 147A', 'LGST 130A') }), 'upper').status).toBe('met')
+  })
+
+  it('review: empty plan is unmet', () => {
+    expect(run(harness, { terms: [] }).status).toBe('unmet')
   })
 
   it('a major-list course missing from the minor list (ART 175) is not called unmet', () => {

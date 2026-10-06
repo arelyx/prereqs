@@ -5,8 +5,8 @@
 // optional transcript designation). Undeclared students are checked against
 // the general major; the only place the accounting concentration is easier
 // (one computer-literacy course instead of two) asks for the choice.
-import { canon, codes, defineHarness } from '@harness'
-import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
+import { codes, defineHarness } from '@harness'
+import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const FINANCE = ['ECON 101', 'ECON 133', 'ECON 135']
 const BUSINESS = [
@@ -41,33 +41,37 @@ const ELECTIVES_QUOTE = [
   'Courses ECON 191, ECON 192, ECON 193, ECON 193F may not be used to meet major requirements. Either course ECON 195 or ECON 199 may be used to fill one of the five elective upper-division major requirements.',
 ]
 
-const canonSet = (list: string[]) => new Set(list.map(canon))
-const F = canonSet(FINANCE)
-const BM = canonSet(BUSINESS)
-const E = canonSet(ECON_GENERAL)
-const W = canonSet(INDEPENDENT)
+// Category sets are CourseSets, so a cross-listed partner code
+// ("ECON 160A [/LGST 160A]") is the same course in the assignment check too
+// (checked with the catalog; no hand-written alias map).
+const F = codes(...FINANCE)
+const BM = codes(...BUSINESS)
+const E = codes(...ECON_GENERAL)
+const W = codes(...INDEPENDENT)
+const CSE20 = codes('CSE 20')
+const ONLY = codes(...ONLY_ONE)
 
 type Cat = 'F' | 'BM' | 'E'
 const NEED: Record<Cat, number> = { F: 1, BM: 3, E: 1 }
 
 /**
- * Can these (primary-code) courses be split into 1 finance + 3 business
- * management + 1 economics elective? ECON 195/199 fills the economics
- * elective (strict) or any one of the five (lenient).
+ * Can these courses be split into 1 finance + 3 business management +
+ * 1 economics elective? ECON 195/199 fills the economics elective (strict)
+ * or any one of the five (lenient: "may be used to fill one of the five").
  */
-function assignable(codesIn: string[], lenient: boolean): boolean {
+function assignable(list: string[], h: HarnessContext, lenient: boolean): boolean {
   const left: Record<Cat, number> = { ...NEED }
-  const cats = (c: string): Cat[] => {
-    if (W.has(c)) return lenient ? ['F', 'BM', 'E'] : ['E']
+  const cats = (code: string): Cat[] => {
+    if (W.has(code, h.catalog)) return lenient ? ['F', 'BM', 'E'] : ['E']
     const out: Cat[] = []
-    if (F.has(c)) out.push('F')
-    if (BM.has(c)) out.push('BM')
-    if (E.has(c)) out.push('E')
+    if (F.has(code, h.catalog)) out.push('F')
+    if (BM.has(code, h.catalog)) out.push('BM')
+    if (E.has(code, h.catalog)) out.push('E')
     return out
   }
   const go = (i: number): boolean => {
-    if (i === codesIn.length) return true
-    for (const k of cats(codesIn[i])) {
+    if (i === list.length) return true
+    for (const k of cats(list[i])) {
       if (!left[k]) continue
       left[k]--
       if (go(i + 1)) return true
@@ -76,15 +80,6 @@ function assignable(codesIn: string[], lenient: boolean): boolean {
     return false
   }
   return go(0)
-}
-
-/** Cross-listed partners ("ECON 160A [/LGST 160A]") are the same course. */
-function partners(h: HarnessContext, list: string[]): { set: CourseSet; primary: (code: string) => string } {
-  const alias = new Map<string, string>()
-  for (const c of list) for (const x of h.catalog.get(c)?.crossListed ?? []) alias.set(x, canon(c))
-  const set = codes(...list, ...alias.keys())
-  set.describe = codes(...list).describe
-  return { set, primary: (code) => alias.get(code) ?? code }
 }
 
 export default defineHarness({
@@ -102,18 +97,16 @@ export default defineHarness({
         { value: 'accounting', label: 'Business Management with Accounting Concentration', aliases: ['accounting', 'accounting concentration'] },
       ],
     },
-    {
-      key: 'cse20testout',
-      label: 'Passed the CSE 20 test-out',
-      quote: 'CSE 20 has a [test out](https://sites.google.com/ucsc.edu/cse-20-testout) option which counts as one of the two required courses.',
-      options: [
-        { value: 'no', label: 'No', aliases: ['false'] },
-        { value: 'yes', label: 'Yes', aliases: ['true', 'passed'] },
-      ],
-      default: 'no',
-    },
   ],
   attestations: [
+    {
+      // §1a: a test-out that satisfies a listed course is an attestation,
+      // offered only when CSE 20 is not in the plan.
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'CSE 20 has a [test out](https://sites.google.com/ucsc.edu/cse-20-testout) option which counts as one of the two required courses.',
+      aliases: ['cse 20 testout', 'cse 20 test-out', 'cse20testout', 'test-out', 'testout', 'test out'],
+    },
     {
       id: 'math-petition',
       label: 'Mathematics Department petition approved for MATH 11A / 11B / 23A',
@@ -151,7 +144,7 @@ export default defineHarness({
       h.all('core-lower', 'ECON 1, 2, 10A and 10B', 'All of the following courses:', ['ECON 1', 'ECON 2', 'ECON 10A', 'ECON 10B']),
       math,
       h.all('stats', 'STAT 17 and STAT 17L', 'Plus the following statistics courses:', ['STAT 17', 'STAT 17L']),
-      comp,
+      comp.node,
     ])
 
     const upperCore = [
@@ -187,26 +180,41 @@ export default defineHarness({
     // Undeclared, one computing course short, but every accounting-concentration
     // course is in the plan: "Students electing the accounting concentration may
     // also reduce their computer literacy requirements by one course (from two to one)."
-    if (!conc && comp.status === 'unmet' && comp.progress && comp.progress.have === comp.progress.need - 1 && ACCOUNTING.every((c) => h.has(c))) {
-      comp.status = 'needs-choice'
-      comp.choice = 'concentration'
-      comp.detail = 'Declare whether you are in the accounting concentration: it needs only one computer-literacy course.'
+    const cn = comp.node
+    if (!conc && cn.status === 'unmet' && cn.progress && cn.progress.have === cn.progress.need - 1 && ACCOUNTING.every((c) => h.has(c))) {
+      cn.status = 'needs-choice'
+      cn.choice = 'concentration'
+      cn.detail = 'Declare whether you are in the accounting concentration: it needs only one computer-literacy course.'
     }
+    comp.after()
+    if (comp.node !== cn) lower.children = lower.children!.map((n) => (n === cn ? comp.node : n))
     // A package using MATH 11A/11B/23A counts only with the petition.
     if (math.status === 'met' && (math.used ?? []).some((e) => PETITION.has(e.code))) {
       lower.children = lower.children!.map((n) =>
         n === math ? h.group('math-petition-path', 'Mathematics content (by petition)', [math, h.attest('math-petition')], { quote: PETITION_QUOTE }) : n,
       )
     }
-    return [lower, upper, comprehensive]
+    const qualification = h.info(
+      'qualification',
+      'Major qualification (to declare)',
+      'Students must complete three courses, with combined GPA of 2.8 or higher, to qualify for entry to the business management economics major:',
+      'ECON 1, ECON 2 and one of AM 11A / MATH 11A / MATH 19A, letter grades, combined GPA 2.8 or higher. This gates declaration; it is not checked here.',
+    )
+    return [qualification, lower, upper, comprehensive]
   },
 })
 
-/** Computer literacy: two courses (general) or one (accounting concentration). */
-function computing(h: HarnessContext, conc: string | undefined): Node {
+/**
+ * Computer literacy: two courses (general) or one (accounting concentration).
+ * The CSE 20 test-out counts as one course; it is asked only when CSE 20 is
+ * not in the plan and the student is short by exactly that one course.
+ */
+function computing(h: HarnessContext, conc: string | undefined): { node: Node; after: () => void } {
   const accounting = conc === 'accounting'
-  const testout = h.choice('cse20testout') === 'yes'
-  const need = (accounting ? 1 : 2) - (testout ? 1 : 0)
+  const base = accounting ? 1 : 2
+  const hasCse20 = h.taken(CSE20).length > 0
+  const testout = !hasCse20 && h.attested('cse20-testout')
+  const need = base - (testout ? 1 : 0)
   const quote = [
     accounting
       ? 'Students in the accounting concentration complete one course from the following list:'
@@ -217,8 +225,12 @@ function computing(h: HarnessContext, conc: string | undefined): Node {
       : 'CSE 20 has a [test out](https://sites.google.com/ucsc.edu/cse-20-testout) option which counts as one of the two required courses.',
   ]
   const title = accounting ? 'Computer literacy (one course)' : 'Computer literacy (two courses)'
-  if (need <= 0) return h.node('computing', title, quote, 'met', { detail: 'Satisfied by the CSE 20 test-out (as you declared).' })
-  const node = h.take('computing', title, quote, codes(...COMPUTING), {
+  const sub = 'With department approval, a student may substitute other computing courses — add an approved substitute once the department confirms it.'
+  if (need <= 0) {
+    const node = h.node('computing', title, quote, 'met', { detail: 'By test-out: you confirmed passing the CSE 20 test-out.' })
+    return { node, after: () => {} }
+  }
+  const take = h.take('computing', title, quote, codes(...COMPUTING), {
     n: need,
     labs: 'catalog-merge',
     // Catalog: "Students cannot receive credit for both CSE 13S and ECE 13."
@@ -226,30 +238,33 @@ function computing(h: HarnessContext, conc: string | undefined): Node {
       chosen.some((e) => e.code === 'CSE13S') && chosen.some((e) => e.code === 'ECE13')
         ? 'CSE 13S and ECE 13 cannot both be credited (same course)'
         : null,
-    notes: [
-      'With department approval, a student may substitute other computing courses — add an approved substitute once the department confirms it.',
-      testout ? 'One course is covered by the CSE 20 test-out (as you declared).' : 'Passed the CSE 20 test-out? Say so above: it counts as one course.',
-    ],
+    notes: testout ? [sub, 'One course is covered by the CSE 20 test-out (as you confirmed).'] : [sub],
   })
-  return node
+  const out = { node: take, after: () => {} }
+  if (!hasCse20 && !testout) {
+    out.after = () => {
+      if (take.status === 'met' || !take.progress || take.progress.have < need - 1) return
+      // One course short and no CSE 20: the test-out would complete it.
+      out.node = h.either('computing-or-testout', title, quote, [
+        take,
+        h.attest('cse20-testout', undefined, { detail: 'If you passed the CSE 20 test-out, confirm it: it counts as one computer-literacy course.' }),
+      ])
+    }
+  }
+  return out
 }
 
-interface Electives {
-  nodes: Node[]
-  after: () => void
-}
-
-function generalElectives(h: HarnessContext): Electives {
+function generalElectives(h: HarnessContext): { nodes: Node[]; after: () => void } {
   const all = [...new Set([...FINANCE, ...BUSINESS, ...ECON_GENERAL, ...INDEPENDENT])]
-  const { set, primary } = partners(h, all)
+  const set = codes(...all)
   const node = h.take('electives', 'Five upper-division electives', ELECTIVES_QUOTE, set, {
     n: 5,
     atMost: [
-      { set: partners(h, ONLY_ONE).set, n: 1, label: 'only one of ECON 130, 159, 160A, 160B, 188' },
-      { set: codes(...INDEPENDENT), n: 1, label: 'ECON 195 / ECON 199' },
+      { set: ONLY, n: 1, label: 'only one of ECON 130, 159, 160A, 160B, 188' },
+      { set: W, n: 1, label: 'ECON 195 / ECON 199' },
     ],
     check: (chosen: Enrollment[]) =>
-      assignable(chosen.map((e) => primary(e.code)), false) ? null : 'need one finance, three business management and one economics elective',
+      assignable(chosen.map((e) => e.code), h, false) ? null : 'need one finance, three business management and one economics elective',
     pool: 'Finance (ECON 101, 133, 135) · Business Management list · Economics Electives list · ECON 195/199',
     notes: ['Finance: one of ECON 101, 133, 135. Business management: three from its list. Economics: one from its list.'],
   })
@@ -260,7 +275,7 @@ function generalElectives(h: HarnessContext): Electives {
     // assignment exists, do not call it unmet.
     const mine = new Set((node.used ?? []).map((e) => e.id))
     const avail = h.taken(set).filter((e) => !h.used.has(e.id) || mine.has(e.id))
-    const r = lenientFeasible(avail.map((e) => primary(e.code)))
+    const r = lenientFeasible(avail.map((e) => e.code), h)
     if (r !== false) {
       node.status = 'cannot-check'
       node.detail =
@@ -272,19 +287,27 @@ function generalElectives(h: HarnessContext): Electives {
   return { nodes: [node], after }
 }
 
-/** Lenient check over every 5-subset of the available distinct codes (bounded). */
-function lenientFeasible(list: string[]): boolean | 'maybe' {
-  const uniq = [...new Set(list)]
-  if (!uniq.some((c) => W.has(c))) return false
-  const only = canonSet(ONLY_ONE)
+/** Lenient check over every 5-subset of the available distinct courses (bounded). */
+function lenientFeasible(list: string[], h: HarnessContext): boolean | 'maybe' {
+  // One entry per course: a cross-listed partner code is the same course.
+  const seen = new Set<string>()
+  const uniq: string[] = []
+  for (const c of list) {
+    const key = [c, ...h.catalog.equivalents(c)].sort()[0]
+    if (!seen.has(key)) {
+      seen.add(key)
+      uniq.push(c)
+    }
+  }
+  if (!uniq.some((c) => W.has(c, h.catalog))) return false
   let work = 0
   const pick: string[] = []
   const go = (start: number): boolean | 'maybe' => {
     if (++work > 200_000) return 'maybe'
     if (pick.length === 5) {
-      if (pick.filter((c) => only.has(c)).length > 1) return false
-      if (pick.filter((c) => W.has(c)).length > 1) return false
-      return assignable(pick, true)
+      if (pick.filter((c) => ONLY.has(c, h.catalog)).length > 1) return false
+      if (pick.filter((c) => W.has(c, h.catalog)).length > 1) return false
+      return assignable(pick, h, true)
     }
     for (let i = start; i < uniq.length; i++) {
       pick.push(uniq[i])
@@ -297,8 +320,7 @@ function lenientFeasible(list: string[]): boolean | 'maybe' {
   return go(0)
 }
 
-function accountingElectives(h: HarnessContext): Electives {
-  const econ = partners(h, [...ECON_ACCOUNTING, ...INDEPENDENT])
+function accountingElectives(h: HarnessContext): { nodes: Node[]; after: () => void } {
   const nodes = [
     h.take('finance', 'One finance course', 'Plus one of the following finance courses:', codes(...FINANCE)),
     h.all('accounting', 'Eight accounting courses', 'Plus the following accounting courses:', ACCOUNTING),
@@ -309,7 +331,7 @@ function accountingElectives(h: HarnessContext): Electives {
         'Plus one economics elective from the following:',
         'Courses ECON 191, ECON 192, ECON 193, ECON 193F may not be used to meet major requirements. Either course ECON 195 or ECON 199 may be used to fill the upper-division economics elective.',
       ],
-      econ.set,
+      codes(...ECON_ACCOUNTING, ...INDEPENDENT),
     ),
   ]
   return { nodes, after: () => {} }

@@ -1,7 +1,7 @@
 // Politics B.A. — 2026-27
 // Source: data-committed/ucsc/editions/2026-27/sources/politics-ba.md
-import { canon, codes, defineHarness, range } from '@harness'
-import type { CourseSet, Enrollment, HarnessContext } from '@harness'
+import { codes, defineHarness, range } from '@harness'
+import type { Enrollment, HarnessContext } from '@harness'
 
 export const GROUPS: { key: string; label: string; list: string[] }[] = [
   { key: 'theory', label: 'Theory', list: ['POLI 105A', 'POLI 105B', 'POLI 105C', 'POLI 105D'] },
@@ -15,32 +15,36 @@ const CORE_QUOTE =
 const WRITING_QUOTE =
   'The student must receive prior approval from the instructor of the course with the substantial writing component, and must enroll in a two-credit independent study, POLI 199F, as part of this option.'
 
-/** Widen a set with the catalog's cross-listed partner codes ("POLI 105A [/LGST 105A]"). */
-function withPartners(h: HarnessContext, set: CourseSet): { set: CourseSet; primary: Map<string, string> } {
-  const primary = new Map<string, string>()
-  const scan = set.members ? set.members.map((c) => h.catalog.get(c)).filter((c) => !!c) : h.catalog.all()
-  for (const c of scan) if (set.has(c.code, h.catalog)) for (const x of c.crossListed) primary.set(x, c.code)
-  if (!primary.size) return { set, primary }
-  const out = set.or(codes(...primary.keys()))
-  out.describe = `${set.describe} (or a cross-listed equivalent)`
-  return { set: out, primary }
-}
+// Group sets match cross-listed partner codes ("POLI 105A [/LGST 105A]")
+// through the library.
+const GROUP_SETS = GROUPS.map((g) => ({ key: g.key, set: codes(...g.list) }))
 
 /** Group counts of the chosen core courses, largest first. */
-function pattern(chosen: Enrollment[], groupOf: Map<string, string>): number[] {
+function pattern(chosen: Enrollment[], h: HarnessContext): number[] {
   const n = new Map<string, number>()
   for (const e of chosen) {
-    const g = groupOf.get(e.code)
+    const g = GROUP_SETS.find((x) => x.set.has(e.code, h.catalog))?.key
     if (g) n.set(g, (n.get(g) ?? 0) + 1)
   }
   return [...n.values()].sort((a, b) => b - a)
 }
+
+const SUB_QUOTE =
+  'Students may petition the department to substitute only one upper-division independent study or field study toward the elective requirement in the politics major. UCDC and UCSAC internships are exempt from this limit.'
+// Upper-division (5-credit) field study, group tutorial, independent field study, tutorial.
+const INDEP = codes('POLI 193', 'POLI 194', 'POLI 198', 'POLI 199')
 
 export default defineHarness({
   program: 'politics-ba',
   edition: '2026-27',
   title: 'Politics B.A.',
   attestations: [
+    {
+      id: 'independent-petition',
+      label: 'Department approved your petition to count an independent study / field study as an elective',
+      quote: SUB_QUOTE,
+      aliases: ['independent study petition', 'field study petition', 'substitution petition', 'petition'],
+    },
     {
       id: 'writing-component',
       label: 'Instructor approved the substantial writing component (fifth/sixth electives option)',
@@ -58,7 +62,7 @@ export default defineHarness({
   },
   notes: [
     'No letter-grade policy: P/NP courses count.',
-    'Students may petition to substitute one upper-division independent study or field study toward the elective requirement (UCDC and UCSAC internships are exempt from this limit) — add an approved substitute once the department confirms it.',
+    'An approved petition may substitute one upper-division independent study or field study (POLI 193/194/198/199) for an elective; UCDC and UCSAC internships are exempt from this limit — add other approved substitutes once the department confirms them.',
   ],
   evaluate(h) {
     // "This program does not have a letter grade policy."
@@ -72,27 +76,23 @@ export default defineHarness({
       { n: 2 },
     )
 
-    const groupOf = new Map<string, string>()
-    const groupSets = GROUPS.map((g) => {
-      const x = withPartners(h, codes(...g.list))
-      for (const c of g.list) groupOf.set(canon(c), g.key)
-      for (const [alias] of x.primary) groupOf.set(alias, g.key)
-      return x.set
-    })
-    const coreSet = groupSets.reduce((a, b) => a.or(b))
+    const coreSet = GROUP_SETS.map((g) => g.set).reduce((a, b) => a.or(b))
     const core = h.take('core', 'Four upper-division core courses', CORE_QUOTE, coreSet, {
       n: 4,
       check: (chosen) => {
-        const p = pattern(chosen, groupOf)
+        const p = pattern(chosen, h)
         return p.length === 3 && p[0] === 2 ? null : 'needs two from one group, one from a second and one from a third'
       },
       pool: GROUPS.map((g) => `${g.label}: ${g.list.join(', ')}`).join(' · '),
     })
 
-    const ud = withPartners(h, range('POLI', 100, 189)).set
-    const electives = h.take('electives', 'Four upper-division electives', 'Four additional courses selected from POLI 100-POLI 189.', ud, {
+    const ud = range('POLI', 100, 189)
+    const electives = h.take('electives', 'Four upper-division electives', 'Four additional courses selected from POLI 100-POLI 189.', ud.or(INDEP), {
       n: 4,
-      pool: 'POLI 100–189',
+      atMost: [{ set: INDEP, n: 1, label: 'one independent study / field study (by petition)' }],
+      // Range courses first: the petitioned substitute is used only when needed.
+      prefer: (code) => (INDEP.has(code, h.catalog) ? 1 : 0),
+      pool: 'POLI 100–189; one POLI 193/194/198/199 by petition',
     })
     const upper = h.group('upper', 'Upper-Division Courses', [core, electives])
 
@@ -109,11 +109,18 @@ export default defineHarness({
     // literally excludes one course from each of the four groups; the page
     // may not mean to. Do not call that case unmet.
     if (core.status === 'unmet') {
-      const groups = new Set(h.taken(coreSet).map((e) => groupOf.get(e.code)))
+      const groups = new Set(h.taken(coreSet).map((e) => GROUP_SETS.find((g) => g.set.has(e.code, h.catalog))?.key))
       if (groups.size === 4) {
         core.status = 'cannot-check'
         core.detail = 'You have one core course in each of the four groups; the page asks for two from one group plus one each from two others — confirm with an advisor whether four groups is accepted, or take a second course in one group.'
       }
+    }
+
+    // A petitioned independent / field study counts only with the approval.
+    if (electives.status === 'met' && (electives.used ?? []).some((e) => INDEP.has(e.code, h.catalog))) {
+      upper.children = upper.children!.map((n) =>
+        n === electives ? h.group('electives-petition', 'Four upper-division electives (one by petition)', [electives, h.attest('independent-petition')], { quote: SUB_QUOTE }) : n,
+      )
     }
 
     // Comprehensive: created after the main allocation so the extra electives

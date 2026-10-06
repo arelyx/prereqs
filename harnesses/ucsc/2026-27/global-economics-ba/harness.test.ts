@@ -17,9 +17,33 @@ const swap = (from: string, to: string) => swapIn(base, from, to)
 const drop = (code: string) => base.map((q) => ({ ...q, courses: q.courses.filter((c) => c !== code) }))
 
 describe('global-economics-ba 2026-27', () => {
-  it('complete record: only the area-study list is left to the student', () => {
-    const r = run(harness, { terms: base })
-    expect(failing(r)).toEqual(['area-study:cannot-check'])
+  it('complete record: only the area-study declaration is left to the student', () => {
+    const r = run(harness, { terms: [...base, { term: '2290', courses: ['HIS 150A', 'LALS 100'] }] })
+    expect(failing(r)).toEqual(['area-study-1:cannot-check', 'area-study-2:cannot-check'])
+  })
+
+  it('review: declared area-study courses complete the record (with advisor pre-approval)', () => {
+    const t = [...base, { term: '2290', courses: ['HIS 150A', 'LALS 100'] }]
+    const choices = { area1: 'HIS 150A', area2: 'LALS 100' }
+    expect(failing(run(harness, { terms: t, choices }))).toEqual([])
+    expect(find(run(harness, { terms: t, choices, attested: ['study abroad'] }), 'attest:area-plan').status).toBe('needs-attestation')
+  })
+
+  it('review: area-study declarations must be non-ECON, distinct, in the plan and not used elsewhere', () => {
+    const t = [...base, { term: '2290', courses: ['HIS 150A'] }]
+    const r = run(harness, { terms: t, choices: { area1: 'ECON 150', area2: 'HIS 150A' } })
+    expect(find(r, 'area-study-1').status).toBe('unmet')
+    expect(find(r, 'area-study-2').status).toBe('met')
+    expect(find(run(harness, { terms: t, choices: { area1: 'HIS 150A', area2: 'HIS 150A' } }), 'area-study-2').status).toBe('unmet')
+    expect(find(run(harness, { terms: t, choices: { area1: 'HIS 150A', area2: 'LALS 100' } }), 'area-study-2').status).toBe('unmet')
+    // STAT 17 is already the statistics requirement
+    expect(find(run(harness, { terms: t, choices: { area1: 'HIS 150A', area2: 'STAT 17' } }), 'area-study-2').status).toBe('unmet')
+  })
+
+  it('review: no non-economics candidates and nothing declared -> unmet, not cannot-check', () => {
+    const t = base.map((q) => ({ ...q, courses: q.courses.filter((c) => !/^(SPAN)/.test(c)) }))
+    // AM/STAT are used by other requirements; nothing else outside ECON
+    expect(find(run(harness, { terms: t }), 'area-study-1').status).toBe('unmet')
   })
 
   it('study abroad must be confirmed', () => {
@@ -30,7 +54,9 @@ describe('global-economics-ba 2026-27', () => {
 
   it('language: level 6 course counts; without it the app cannot tell (equivalents count)', () => {
     expect(find(run(harness, { terms: swap('SPAN 6', 'FREN 6') }), 'language').status).toBe('met')
-    expect(find(run(harness, { terms: drop('SPAN 6') }), 'language').status).toBe('cannot-check')
+    // §1a: an equivalent (placement / prior study) is an attestation, asked only without a level-6 course
+    expect(find(run(harness, { terms: drop('SPAN 6'), attested: [] }), 'language').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: drop('SPAN 6'), attested: ['language-equivalent'] }), 'language').status).toBe('met')
   })
 
   it('three electives must come from the global list', () => {
@@ -77,5 +103,21 @@ describe('global-economics-ba 2026-27', () => {
     const r = run(harness, { terms: t })
     expect(find(r, 'dc').status).toBe('met')
     expect(find(r, 'electives').status).toBe('met')
+  })
+
+  it('review: cross-listed LGST 160A is the fourth elective', () => {
+    expect(find(run(harness, { terms: swap('ECON 150', 'LGST 160A') }), 'electives').status).toBe('met')
+  })
+
+  it('review: ECON 100M next to ECON 100A is not the fourth elective (no credit for both)', () => {
+    expect(find(run(harness, { terms: swap('ECON 150', 'ECON 100M') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: ECON 195 and ECON 199 together fill at most one elective', () => {
+    expect(find(run(harness, { terms: swapIn(swap('ECON 150', 'ECON 199'), 'ECON 141', 'ECON 195') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: empty plan is unmet', () => {
+    expect(run(harness, { terms: [], attested: [] }).status).toBe('unmet')
   })
 })

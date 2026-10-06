@@ -1,10 +1,9 @@
 // Legal Studies B.A. — 2026-27
 // Source: data-committed/ucsc/editions/2026-27/sources/legal-studies-ba.md
 //
-// Cross-listed partners ("POLI 111A [/LGST 111A]") are the same course; the
-// catalog files each under its primary code, so sets are widened with the
-// partner codes the catalog lists.
-import { canon, codes, defineHarness } from '@harness'
+// Cross-listed partners ("POLI 111A [/LGST 111A]") are the same course: the
+// library matches either code, so lists name only the page's primary code.
+import { codes, defineHarness } from '@harness'
 import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
 const PHIL = ['PHIL 7', 'PHIL 9', 'PHIL 22', 'PHIL 24', 'PHIL 27']
@@ -31,9 +30,17 @@ const SOCIETY = [
   'SOCY 122', 'SOCY 127', 'SOCY 128', 'SOCY 128I', 'SPAN 130',
 ]
 // "LGST 188A/OAKS 188A and OAKS 188B/LGST 188B must both be taken to count as one course." (Public Law list)
-const PAIR_A = ['LGST 188A', 'OAKS 188A']
-const PAIR_B = ['OAKS 188B', 'LGST 188B']
+const PAIR_A = codes('LGST 188A')
+const PAIR_B = codes('OAKS 188B')
+const PAIR_EL = codes('LGST 188A', 'OAKS 188B')
 const PAIR = 'PAIR188'
+// "Students may petition the department to substitute only one upper-division
+// independent study or field study toward the elective requirement" — the
+// LGST field study / independent field study / tutorial courses (5 credits).
+const INDEP = codes('LGST 193', 'LGST 198', 'LGST 199')
+const INDEP_TOKEN = 'INDEP'
+const SUB_QUOTE =
+  'Students may petition the department to substitute only one upper-division independent study or field study toward the elective requirement in the legal studies major. UCDC and UCSAC internships are exempt from this limit.'
 
 const THEMES: { key: 'A' | 'B' | 'C'; label: string; list: string[] }[] = [
   { key: 'A', label: 'A. Theory', list: THEORY },
@@ -45,27 +52,22 @@ const PNP_QUOTE = 'Students are permitted to take up to three LGST courses on a 
 const THEMATIC_QUOTE =
   'Legal studies majors are required to take six thematic core courses, with a minimum of one in each of the three thematic areas:'
 
-interface Xl {
-  set: CourseSet
-  primary: (code: string) => string
-}
-/** Widen an explicit list with its catalog cross-listed partners. */
-function xl(h: HarnessContext, list: string[]): Xl {
-  const alias = new Map<string, string>()
-  for (const c of list) for (const x of h.catalog.get(c)?.crossListed ?? []) alias.set(x, canon(c))
-  const set = codes(...list, ...alias.keys())
-  set.describe = codes(...list).describe
-  return { set, primary: (code) => alias.get(code) ?? code }
+type Theme = 'A' | 'B' | 'C'
+const MEMBER: Record<Theme, ReturnType<typeof codes>> = {
+  A: codes(...THEORY),
+  B: codes(...PUBLIC),
+  C: codes(...SOCIETY),
 }
 
-/** Distinct courses a∈A, b∈B, c∈C among the chosen units (strict reading). */
-function coversThemes(items: string[], member: Record<'A' | 'B' | 'C', Set<string>>): boolean {
+/** Distinct units a∈A, b∈B, c∈C among the chosen units (strict reading). */
+function coversThemes(items: string[], h: HarnessContext): boolean {
   const keys = ['A', 'B', 'C'] as const
+  const inTheme = (k: Theme, u: string) => (u === PAIR ? k === 'B' : u !== INDEP_TOKEN && MEMBER[k].has(u, h.catalog))
   const used = new Set<number>()
   const go = (k: number): boolean => {
     if (k === keys.length) return true
     for (let i = 0; i < items.length; i++) {
-      if (used.has(i) || !member[keys[k]].has(items[i])) continue
+      if (used.has(i) || !inTheme(keys[k], items[i])) continue
       used.add(i)
       if (go(k + 1)) return true
       used.delete(i)
@@ -83,13 +85,17 @@ export default defineHarness({
     ignore: {
       LGST195C: 'third thesis quarter is optional ("two or three quarters"): LGST 195A + 195B complete the thesis option',
     },
-    unknownOk: {
-      OAKS188A: 'cross-listed partner of LGST 188A ("LGST 188A/OAKS 188A"); the catalog files it under LGST',
-      LGST188B: 'cross-listed partner of OAKS 188B ("OAKS 188B/LGST 188B"); the catalog files it under OAKS',
-    },
   },
+  attestations: [
+    {
+      id: 'independent-petition',
+      label: 'Department approved your petition to count an independent study / field study as a thematic course',
+      quote: SUB_QUOTE,
+      aliases: ['independent study petition', 'field study petition', 'substitution petition', 'petition'],
+    },
+  ],
   notes: [
-    'Students may petition to substitute one upper-division independent study or field study toward the elective requirement (UCDC and UCSAC internships are exempt from this limit) — add an approved substitute once the department confirms it.',
+    'An approved petition may substitute one upper-division independent study or field study (LGST 193/198/199) toward the thematic courses; UCDC and UCSAC internships are exempt from this limit — add other approved substitutes once the department confirms them.',
     'Declaring the major needs LGST 10 with C/P or better; that gates declaration, not completion.',
   ],
   evaluate(h) {
@@ -105,49 +111,44 @@ export default defineHarness({
       ),
     ])
 
-    const con = xl(h, CONLAW)
-    const glob = xl(h, GLOBAL)
-    const themes = THEMES.map((t) => ({ ...t, x: xl(h, t.list) }))
-    const primaryOf = new Map<string, string>()
-    for (const t of themes) for (const c of t.x.set.members ?? []) primaryOf.set(c, t.x.primary(c))
-    const pairCodes = new Set([...PAIR_A, ...PAIR_B].map(canon))
-    const member = {
-      A: new Set(THEORY.map(canon)),
-      B: new Set([...PUBLIC.map(canon), PAIR]),
-      C: new Set(SOCIETY.map(canon)),
-    }
-    const thematicSet = themes.map((t) => t.x.set).reduce((a, b) => a.or(b)).except([...pairCodes])
-    const pairEligible = codes(...PAIR_A, ...PAIR_B)
+    const conSet = codes(...CONLAW)
+    const globSet = codes(...GLOBAL)
+    const themeSet = codes(...THEORY, ...PUBLIC, ...SOCIETY).except(PAIR_EL)
+    const thematicSet = themeSet.or(INDEP)
     const tokens = (chosen: Enrollment[]) => {
       const out: string[] = []
       let pair = false
       for (const e of chosen) {
-        if (pairCodes.has(e.code)) {
+        if (PAIR_EL.has(e.code, h.catalog)) {
           if (!pair) out.push(PAIR)
           pair = true
-        } else out.push(primaryOf.get(e.code) ?? e.code)
+        } else if (INDEP.has(e.code, h.catalog)) out.push(INDEP_TOKEN)
+        else out.push(e.code)
       }
       return out
     }
     const thematic = h.take('thematic', 'Six thematic core courses', [THEMATIC_QUOTE, 'Take any of the following courses:'], thematicSet, {
       n: 6,
-      atLeast: themes.map((t) => ({ set: t.key === 'B' ? t.x.set.or(pairEligible) : t.x.set, n: 1, label: t.label })),
-      check: (chosen) => (coversThemes(tokens(chosen), member) ? null : 'needs a different course in each of the three thematic areas'),
+      atLeast: THEMES.map((t) => ({ set: t.key === 'B' ? MEMBER.B.or(PAIR_EL) : MEMBER[t.key], n: 1, label: t.label })),
+      atMost: [{ set: INDEP, n: 1, label: 'one independent study / field study (by petition)' }],
+      check: (chosen) => (coversThemes(tokens(chosen), h) ? null : 'needs a different course in each of the three thematic areas'),
       composite: {
-        eligible: pairEligible,
+        eligible: PAIR_EL,
         build: (avail) => {
-          const a = avail.find((e) => PAIR_A.map(canon).includes(e.code))
-          const b = avail.find((e) => PAIR_B.map(canon).includes(e.code))
+          const a = avail.find((e) => PAIR_A.has(e.code, h.catalog))
+          const b = avail.find((e) => PAIR_B.has(e.code, h.catalog))
           return a && b ? [[a, b]] : []
         },
       },
-      pool: 'A. Theory, B. Public Law and Institutions, C. Law and Society lists (at least one from each)',
+      // Listed courses first: the petitioned substitute is used only when needed.
+      prefer: (code) => (INDEP.has(code, h.catalog) ? 1 : 0),
+      pool: 'A. Theory, B. Public Law and Institutions, C. Law and Society lists (at least one from each); one LGST 193/198/199 by petition',
       notes: ['LGST 188A/OAKS 188A and OAKS 188B/LGST 188B must both be taken; together they count as one Public Law course.'],
     })
 
     const upper = h.group('upper', 'Upper-Division Courses', [
-      h.take('conlaw', 'Constitutional Law', 'Complete one of the following "Constitutional Law" courses:', con.set),
-      h.take('global', 'Global Law', 'Plus one of the following "Global Law" courses:', glob.set),
+      h.take('conlaw', 'Constitutional Law', 'Complete one of the following "Constitutional Law" courses:', conSet),
+      h.take('global', 'Global Law', 'Plus one of the following "Global Law" courses:', globSet),
       thematic,
     ])
 
@@ -177,18 +178,28 @@ export default defineHarness({
     if (thematic.status === 'unmet') {
       const mine = new Set((thematic.used ?? []).map((e) => e.id))
       const free = (e: Enrollment) => !h.used.has(e.id) || mine.has(e.id)
-      const pairs = h.taken(pairEligible).filter(free)
-      const units = new Set(tokens(h.taken(thematicSet).filter(free)))
-      if (pairs.some((e) => PAIR_A.map(canon).includes(e.code)) && pairs.some((e) => PAIR_B.map(canon).includes(e.code))) units.add(PAIR)
-      const covered = (['A', 'B', 'C'] as const).every((k) => [...units].some((u) => member[k].has(u)))
+      // One unit per course (a cross-listed partner code is the same course).
+      const key = (c: string) => [c, ...h.catalog.equivalents(c)].sort()[0]
+      const listed = h.taken(themeSet).filter(free)
+      const units = new Set(listed.map((e) => key(e.code)))
+      const pairs = h.taken(PAIR_EL).filter(free)
+      if (pairs.some((e) => PAIR_A.has(e.code, h.catalog)) && pairs.some((e) => PAIR_B.has(e.code, h.catalog))) units.add(PAIR)
+      if (h.taken(INDEP).some(free)) units.add(INDEP_TOKEN)
+      const covered = (['A', 'B', 'C'] as const).every((k) => [...units].some((u) => (u === PAIR ? k === 'B' : u !== INDEP_TOKEN && MEMBER[k].has(u, h.catalog))))
       if (units.size >= 6 && covered) {
         thematic.status = 'cannot-check'
         thematic.detail =
           'Complete only if one course counts for two thematic areas (it is listed under both) — the page does not say; confirm with the advisor.'
       }
     }
+    // A petitioned independent / field study counts only with the approval.
+    if (thematic.status === 'met' && (thematic.used ?? []).some((e) => INDEP.has(e.code, h.catalog))) {
+      upper.children = upper.children!.map((n) =>
+        n === thematic ? h.group('thematic-petition', 'Six thematic core courses (one by petition)', [thematic, h.attest('independent-petition')], { quote: SUB_QUOTE }) : n,
+      )
+    }
 
-    const pnp = pnpLimit(h, [lower, upper, dc], [con.set, glob.set, thematicSet, pairEligible, codes(...PHIL, 'LGST 10', 'LGST 196', ...thesis)])
+    const pnp = pnpLimit(h, [lower, upper, dc], [conSet, globSet, thematicSet, PAIR_EL, codes(...PHIL, 'LGST 10', 'LGST 196', ...thesis)])
     return [pnp, lower, upper, dc, comprehensive]
   },
 })
@@ -203,7 +214,8 @@ function pnpLimit(h: HarnessContext, roots: Node[], sets: CourseSet[]): Node {
   }
   roots.forEach(visit)
   const isP = (e: Enrollment) => e.grade === 'P' || e.grade === 'S'
-  const isLgst = (code: string) => code.startsWith('LGST') || (h.catalog.get(code)?.crossListed ?? []).some((x) => x.startsWith('LGST'))
+  // An LGST code or any code cross-listed with one (either direction).
+  const isLgst = (code: string) => [code, ...h.catalog.equivalents(code)].some((x) => x.startsWith('LGST'))
   const pAll = used.filter(isP)
   const pLgst = pAll.filter((e) => isLgst(e.code))
   const title = 'P/NP limit: at most three courses'

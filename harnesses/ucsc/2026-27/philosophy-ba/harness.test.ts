@@ -95,4 +95,29 @@ describe('philosophy-ba 2026-27', () => {
     expect(find(r, 'value-theory').status).toBe('met')
     expect(failing(r)).toEqual([])
   })
+
+  it('review: PHIL 7 is not the 11th course next to PHIL 9 (catalog: no credit for both)', () => {
+    // catalog PHIL 7: "Students may not receive credit for this course and PHIL 9."
+    expect(find(run(harness, { terms: swap('PHIL 11', 'PHIL 7') }), 'eleventh').status).toBe('unmet')
+    // PHIL 8 is not excluded for the 11th course
+    expect(find(run(harness, { terms: swap('PHIL 11', 'PHIL 8') }), 'eleventh').status).toBe('met')
+  })
+
+  it('review: PHIL 114 and PHIL 214 count once (catalog: no credit for both)', () => {
+    const t = swapIn(swap('PHIL 11', 'PHIL 214'), 'PHIL 125', 'PHIL 114')
+    expect(find(run(harness, { terms: t }), 'eleventh').status).toBe('unmet')
+  })
+
+  it('review: LGST 140P (PHIL 100D) is a history course and covers value theory', () => {
+    const t = swapIn(swap('PHIL 100B', 'LGST 140P'), 'PHIL 142', 'PHIL 135')
+    const r = run(harness, { terms: t })
+    expect(find(r, 'history').status).toBe('met')
+    expect(find(r, 'value-theory').status).toBe('met')
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: a C- history course does not count; empty plan unmet', () => {
+    expect(find(run(harness, { terms: base, grades: { 'PHIL 100A': 'C-' } }), 'history').status).toBe('unmet')
+    expect(run(harness, { terms: [] }).status).toBe('unmet')
+  })
 })

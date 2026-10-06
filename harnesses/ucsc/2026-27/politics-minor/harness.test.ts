@@ -45,4 +45,18 @@ describe('politics-minor 2026-27', () => {
   it('cross-listed LGST 160B counts as POLI 160B', () => {
     expect(find(run(harness, { terms: swap('POLI 160D', 'LGST 160B') }), 'core').status).toBe('met')
   })
+
+  it('review: partner codes LGST 105A / LGST 120A fill the subfield pattern', () => {
+    expect(find(run(harness, { terms: swap('POLI 105A', 'LGST 105A') }), 'core').status).toBe('met')
+  })
+
+  it('review: LGST 185 (cross-listed POLI 180) is a POLI 100-189 elective; POLI 199 is not', () => {
+    expect(find(run(harness, { terms: swap('POLI 110', 'LGST 185') }), 'elective').status).toBe('met')
+    expect(find(run(harness, { terms: swap('POLI 110', 'POLI 199') }), 'elective').status).toBe('unmet')
+  })
+
+  it('review: P counts; empty plan unmet', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'POLI 105A': 'P' } }))).toEqual([])
+    expect(run(harness, { terms: [] }).status).toBe('unmet')
+  })
 })

@@ -36,14 +36,29 @@ describe('business-management-economics-ba 2026-27 general', () => {
     expect(find(run(harness, { terms: drop(general, 'TIM 50'), choices: G }), 'computing').status).toBe('unmet')
   })
 
-  it('CSE 20 test-out counts as one computer-literacy course', () => {
-    const r = run(harness, { terms: drop(general, 'TIM 50'), choices: { ...G, cse20testout: 'yes' } })
-    expect(find(r, 'computing').status).toBe('met')
+  it('CSE 20 test-out (attestation) counts as one computer-literacy course', () => {
+    // "CSE 20 has a test out option which counts as one of the two required courses."
+    const noCse20 = drop(general, 'CSE 20')
+    expect(find(run(harness, { terms: noCse20, choices: G, attested: ['cse20-testout'] }), 'computing').status).toBe('met')
+    const r = run(harness, { terms: noCse20, choices: G, attested: [] })
+    expect(find(r, 'computing-or-testout').status).toBe('needs-attestation')
+    expect(find(r, 'computing').status).toBe('unmet')
+  })
+
+  it('CSE 20 test-out is not offered when CSE 20 is in the plan', () => {
+    const r = run(harness, { terms: drop(general, 'TIM 50'), choices: G, attested: 'all' })
+    expect(find(r, 'computing').status).toBe('unmet')
+    expect(() => find(r, 'computing-or-testout')).toThrow()
+  })
+
+  it('test-out cannot replace both computer-literacy courses', () => {
+    const t = drop(drop(general, 'CSE 20'), 'TIM 50')
+    expect(find(run(harness, { terms: t, choices: G, attested: 'all' }), 'computing').status).toBe('unmet')
   })
 
   it('CSE 13S and ECE 13 are the same course for credit', () => {
     const t = swapIn(swapIn(general, 'CSE 20', 'CSE 13S'), 'TIM 50', 'ECE 13')
-    expect(find(run(harness, { terms: t, choices: G }), 'computing').status).toBe('unmet')
+    expect(find(run(harness, { terms: t, choices: G, attested: [] }), 'computing').status).toBe('unmet')
   })
 
   it('needs one finance elective', () => {
@@ -77,11 +92,6 @@ describe('business-management-economics-ba 2026-27 general', () => {
     expect(find(run(harness, { terms: swapIn(general, 'ECON 140', 'ECON 199'), choices: G }), 'electives').status).toBe('met')
   })
 
-  it('ECON 195 replacing a business elective is not called unmet (page: "one of the five")', () => {
-    const r = run(harness, { terms: swapIn(general, 'ECON 161A', 'ECON 195'), choices: G })
-    expect(find(r, 'electives').status).toBe('cannot-check')
-  })
-
   it('ECON 195 and ECON 199 together: only one may count', () => {
     const t = swapIn(swapIn(general, 'ECON 161A', 'ECON 195'), 'ECON 140', 'ECON 199')
     expect(find(run(harness, { terms: t, choices: G }), 'electives').status).toBe('unmet')
@@ -111,6 +121,64 @@ describe('business-management-economics-ba 2026-27 general', () => {
 })
 
 describe('business-management-economics-ba 2026-27 adversarial', () => {
+  it('ECON 195 replacing a business elective is not called unmet (page: "one of the five")', () => {
+    const r = run(harness, { terms: swapIn(general, 'ECON 161A', 'ECON 195'), choices: G })
+    expect(find(r, 'electives').status).toBe('cannot-check')
+  })
+
+  it('review: LGST 160A + ECON 160A are one course in the lenient fallback too', () => {
+    // 195 stands in for a business elective; 160A entered under both codes must not count twice
+    const t = swapIn(swapIn(swapIn(general, 'ECON 161A', 'ECON 195'), 'ECON 136', 'ECON 160A'), 'ECON 110', 'LGST 160A')
+    expect(find(run(harness, { terms: t, choices: G }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: LGST 160A (cross-listed) as a business elective satisfies the category check', () => {
+    expect(find(run(harness, { terms: swapIn(general, 'ECON 136', 'LGST 160A'), choices: G }), 'electives').status).toBe('met')
+  })
+
+  it('review: ECON 160A and LGST 160A are one course for "only one of"', () => {
+    const t = swapIn(swapIn(general, 'ECON 136', 'ECON 160A'), 'ECON 161A', 'LGST 160A')
+    expect(find(run(harness, { terms: t, choices: G }), 'electives').status).toBe('unmet')
+  })
+
+  it('a plain math package wins over a petition package', () => {
+    const t = add(general, 'MATH 11A', 'MATH 11B', 'MATH 22')
+    const r = run(harness, { terms: t, choices: G, attested: [] })
+    expect(find(r, 'math').status).toBe('met')
+    expect(() => find(r, 'math-petition-path')).toThrow()
+  })
+
+  it('MATH 19A + AM 11B needs no petition; MATH 19A/19B/23A does', () => {
+    const t = swapIn(general, 'AM 11A', 'MATH 19A')
+    expect(failing(run(harness, { terms: t, choices: G, attested: [] }))).toEqual([])
+    const p = add(drop(drop(general, 'AM 11A'), 'AM 11B'), 'MATH 19A', 'MATH 19B', 'MATH 23A')
+    expect(failing(run(harness, { terms: p, choices: G, attested: [] }))).toEqual(['attest:math-petition:needs-attestation'])
+  })
+
+  it('STAT 17 without its lab is not enough', () => {
+    expect(find(run(harness, { terms: drop(general, 'STAT 17L'), choices: G }), 'stats').status).toBe('unmet')
+  })
+
+  it('P grades count toward the major (P also satisfies the comprehensive C/P rule)', () => {
+    const r = run(harness, { terms: general, choices: G, grades: { 'ECON 136': 'P', 'ECON 1': 'P', 'ECON 113': 'P' } })
+    expect(failing(r)).toEqual([])
+  })
+
+  it('ECON 116 is an accounting-concentration course, not a business elective', () => {
+    expect(find(run(harness, { terms: swapIn(general, 'ECON 136', 'ECON 116'), choices: G }), 'electives').status).toBe('unmet')
+  })
+
+  it('empty plan: everything unmet, nothing met', () => {
+    const r = run(harness, { terms: [], choices: G, attested: [] })
+    expect(r.status).toBe('unmet')
+    expect(find(r, 'electives').status).toBe('unmet')
+  })
+
+  it('kitchen sink general record is complete', () => {
+    const t = add(general, 'ECON 101', 'ECON 130', 'ECON 159', 'ECON 195', 'ECON 199', 'ECON 193', 'MATH 19A', 'MATH 19B', 'AM 30', 'CSE 30', 'ECE 13', 'CSE 13S')
+    expect(failing(run(harness, { terms: t, choices: G, attested: [] }))).toEqual([])
+  })
+
   it('all three finance courses: one is finance, two count as business management', () => {
     // 133 (F) + 135, 101 (BM) + 110 (BM) + 140 (E)
     const t = swapIn(swapIn(general, 'ECON 136', 'ECON 135'), 'ECON 161A', 'ECON 101')
@@ -146,6 +214,17 @@ describe('business-management-economics-ba 2026-27 accounting', () => {
   it('economics elective list excludes ECON 190; ECON 199 may fill it', () => {
     expect(find(run(harness, { terms: swapIn(acct, 'ECON 150', 'ECON 190'), choices: A }), 'econ-elective').status).toBe('unmet')
     expect(find(run(harness, { terms: swapIn(acct, 'ECON 150', 'ECON 199'), choices: A }), 'econ-elective').status).toBe('met')
+  })
+
+  it('accounting: the CSE 20 test-out alone covers computer literacy', () => {
+    // "CSE 20 has a test out option which may count as the required course."
+    const t = drop(acct, 'CSE 20')
+    expect(find(run(harness, { terms: t, choices: A, attested: ['cse20-testout'] }), 'computing').status).toBe('met')
+    expect(find(run(harness, { terms: t, choices: A, attested: [] }), 'computing-or-testout').status).toBe('needs-attestation')
+  })
+
+  it('accounting: the general-only "only one of 130/159/160A/160B/188" does not bind; econ elective 130 is fine', () => {
+    expect(find(run(harness, { terms: swapIn(acct, 'ECON 150', 'ECON 130'), choices: A }), 'econ-elective').status).toBe('met')
   })
 
   it('needs a finance course', () => {

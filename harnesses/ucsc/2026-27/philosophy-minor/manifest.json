@@ -6,8 +6,8 @@
  "skeleton_sha256": "959f0b5f97321fb407b88367bc4e0c725dc4f4f9a910d972c06967c3eeaeb0ce",
  "status": "verified",
  "authored_at": "2026-10-06T00:59:29Z",
- "verified_at": "2026-10-06T23:32:17Z",
- "notes": "verified line by line against sources/philosophy-minor.md; lint clean. Value-theory and M&E lists come from the committed 2026-27 philosophy-ba source (the minor page points there). C/P policy; history prefers PHIL 100D which covers value theory; four UD electives still required.",
+ "verified_at": "2026-10-06T23:45:08Z",
+ "notes": "verified line by line against sources/philosophy-minor.md; lint clean. Value-theory and M&E lists come from the committed 2026-27 philosophy-ba source (the minor page points there). C/P policy; history prefers PHIL 100D which covers value theory; four UD electives still required.; reviewed 2026-10-06: removed withPartners; PHIL 100D/value-theory tests pass the catalog (LGST 140P); PHIL 114/214 count once (catalog no-credit-for-both)",
  "depends_on": {
   "philosophy-ba": "12b7b44f9d4a4b46e769003a9b77c6fe98e4197f6d958cc2ec91986353a70e4d"
  }

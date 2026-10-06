@@ -60,4 +60,25 @@ describe('economics-minor 2026-27', () => {
   it('ECON 100N may replace ECON 100B', () => {
     expect(failing(run(harness, { terms: swap('ECON 100B', 'ECON 100N') }))).toEqual([])
   })
+
+  it('review: CSE 166A (cross-listed with ECON 166A) counts as an elective', () => {
+    expect(find(run(harness, { terms: swap('ECON 136', 'CSE 166A') }), 'electives').status).toBe('met')
+  })
+
+  it('review: ECON 100N next to ECON 100B is not an extra elective (no credit for both)', () => {
+    expect(find(run(harness, { terms: swap('ECON 136', 'ECON 100N') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: a 6-credit ECON 114 counts; a failed elective does not', () => {
+    expect(find(run(harness, { terms: swap('ECON 136', 'ECON 114') }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: base, grades: { 'ECON 136': 'F' } }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: a retaken elective counts once', () => {
+    expect(find(run(harness, { terms: swap('ECON 136', 'ECON 130') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: empty plan is unmet', () => {
+    expect(run(harness, { terms: [] }).status).toBe('unmet')
+  })
 })
