@@ -154,6 +154,7 @@ export function CourseChip({
     <button
       type="button"
       onClick={() => onOpen?.(code)}
+      aria-label={`${display(code)} — ${{ done: 'counted', planned: 'planned', option: 'option', missing: 'still needed', excluded: 'not counted' }[kind]}`}
       title={kind === 'option' && dormant.has(code) ? 'Not offered in the last 5 years' : when ? `${display(code)} — ${when}` : display(code)}
       className={`inline-flex items-center gap-1 rounded-md border px-1.5 py-0.5 text-[11px] font-medium ${cls}`}
     >
