@@ -1,0 +1,11 @@
+{
+ "program": "philosophy-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "19feffde2779c28f86c969a6f3231ebcd3c49d97a291bbe941450046f72da173",
+ "skeleton_sha256": "e0dc9119ee5ae3c3399ddc017141f038a6d17dfb31d7eaf636ac386893dafb8e",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:36Z",
+ "verified_at": "2026-10-06T23:57:43Z",
+ "notes": "ported from 2026-27 (reviewed); differences: history sequence PHIL 100A-C only; History of Ethics (PHIL 140, catalog PHIL 100D) is value theory only, no history/value double count; lower elective excludes only PHIL 8 (PHIL 7 still no-credit with PHIL 9); residency/B-grade transfer note"
+}

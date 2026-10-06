@@ -1,0 +1,11 @@
+{
+ "program": "politics-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "df1bce3ce60fadc6b3594ab19657fed887928e93ecf61c592c13cc94bd3744d5",
+ "skeleton_sha256": "4895f93730aed71e567b8ee68a3ddfd620a48d76419924ceee74fa047733b2c9",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:34Z",
+ "verified_at": "2026-10-06T23:57:43Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

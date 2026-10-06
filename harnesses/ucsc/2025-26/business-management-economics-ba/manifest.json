@@ -1,0 +1,11 @@
+{
+ "program": "business-management-economics-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "6d6da97b44548f846509467fa5e7f1b9e0987a2467081a95c69715b65fce2174",
+ "skeleton_sha256": "5027c8fa8a3d10ecce068f5e1bb5919a0413e3c9cf3e6c7aa5548696c6b72756",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:30Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CRWN 152 not a Business Management elective; ECON 188 not on either Economics Electives list (general/accounting) and not in the 'only one of ECON 130/159/160A/160B' cap"
+}
