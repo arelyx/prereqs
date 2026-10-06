@@ -5,11 +5,12 @@
 // courses — culture, history, two literature, art — of which two must be
 // taught substantially in Italian (an overlay on the five). The page defers to
 // an external Italian studies course list and allows case-by-case additions:
-// other upper-division courses join each category as last-choice wildcards and
-// a fill that needs one is cannot-check. LIT 102 may replace one literature,
+// the student declares which of their courses the list puts in each category
+// (choice); undeclared upper-division courses join each category as
+// last-choice wildcards and a fill that needs one is cannot-check. LIT 102 may replace one literature,
 // history or art course after consulting the advisor (a confirmation).
-import { codes, defineHarness, display, series } from '@harness'
-import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
+import { canon, codes, defineHarness, display, series } from '@harness'
+import type { ChoiceDef, CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
 // Level index per course: ITAL 1A is level 1; "ITAL 1A and ITAL 1B ... equate
 // to ITAL 1-ITAL 3", so ITAL 1B completes level 3.
@@ -25,10 +26,31 @@ const IN_ITALIAN = codes('ITAL 100', 'ITAL 106', 'LIT 184B', 'LIT 185H', 'LIT 18
 const LIT102 = codes('LIT 102')
 const KNOWN = CULTURE.or(HISTORY).or(LITERATURE).or(ART).or(LIT102)
 
+const LIST_QUOTE = 'Students can consult [Italian studies course offerings](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/literature/italian-studies-course-list) for each of the above categories.'
+
+/** Free-form course list: "HIS 150, HAVC 157A" → canonical, comma-joined. */
+function parseList(raw: string): string | undefined {
+  const out = raw
+    .split(/[,;\n]+/)
+    .map((s) => s.trim())
+    .filter((s) => /^[A-Za-z]{2,5}\s*\d{1,3}[A-Za-z]{0,2}$/.test(s))
+    .map(canon)
+  return out.length ? [...new Set(out)].join(',') : undefined
+}
+// External list → the student declares which courses it puts in each category (§1a).
+const CATS = [
+  { key: 'culture_courses', label: 'Italian culture' },
+  { key: 'history_courses', label: 'Italian history' },
+  { key: 'literature_courses', label: 'Italian literature' },
+  { key: 'art_courses', label: 'Italian art' },
+]
+const listChoices: ChoiceDef[] = CATS.map((c) => ({ key: c.key, label: `Your courses on the Italian studies course list for ${c.label}`, quote: LIST_QUOTE, options: [], free: true, parse: parseList }))
+
 export default defineHarness({
   program: 'italian-studies-minor',
   edition: '2026-27',
   title: 'Italian Studies Minor',
+  choices: listChoices,
   attestations: [
     {
       id: 'equivalent-proficiency',
@@ -59,25 +81,31 @@ export default defineHarness({
 
     const lower = h.group('lower', 'Lower-Division Courses', [italianSequence(h)])
 
-    const wild = new Set(wildcards(h))
-    const w = codes(...wild)
-    const pool = (s: CourseSet, lit102: boolean) => {
+    const all = wildcards(h)
+    const declared = (key: string) => new Set((h.choice(key) ?? '').split(',').filter(Boolean))
+    const anyDeclared = new Set(CATS.flatMap((c) => [...declared(c.key)]))
+    // Undeclared candidates: a fill that needs one is cannot-check.
+    const wild = new Set(all.filter((c) => !anyDeclared.has(c)))
+    const pool = (s: CourseSet, key: string, lit102: boolean) => {
       let p = s
       if (lit102) p = p.or(LIT102)
-      return wild.size ? p.or(w) : p
+      const mine = all.filter((c) => declared(key).has(c))
+      const extra = [...mine, ...wild]
+      return extra.length ? p.or(codes(...extra)) : p
     }
-    const prefer = (c: string) => (wild.has(c) ? 2 : c === 'LIT102' ? 1 : 0)
-    const culture = h.take('culture', 'Italian Culture', ['Italian Culture', 'Take one of the following:'], pool(CULTURE, false), { prefer })
-    const history = h.take('history', 'Italian History: SOCY 117E', 'SOCY 117E — Migrant Europe (5)', pool(HISTORY, true), { prefer })
-    const literature = h.take('literature', 'Two Italian Literature courses', 'Take two courses from the LIT 185 series or the following list.', pool(LITERATURE, true), {
+    const prefer = (c: string) => (wild.has(c) ? 3 : c === 'LIT102' ? 2 : all.includes(c) ? 1 : 0)
+    const q = (title: string) => [title, LIST_QUOTE]
+    const culture = h.take('culture', 'Italian Culture', [...q('Italian Culture'), 'Take one of the following:'], pool(CULTURE, 'culture_courses', false), { prefer })
+    const history = h.take('history', 'Italian History: SOCY 117E', ['SOCY 117E — Migrant Europe (5)', LIST_QUOTE], pool(HISTORY, 'history_courses', true), { prefer })
+    const literature = h.take('literature', 'Two Italian Literature courses', ['Take two courses from the LIT 185 series or the following list.', LIST_QUOTE], pool(LITERATURE, 'literature_courses', true), {
       n: 2,
       prefer,
       pool: 'LIT 185 series (5 credits) or the listed LIT courses',
     })
-    const art = h.take('art', 'Italian History of Art and Visual Culture', ['Italian History of Art and Visual Culture Courses', 'Take one of the following:'], pool(ART, true), { prefer })
+    const art = h.take('art', 'Italian History of Art and Visual Culture', [...q('Italian History of Art and Visual Culture Courses'), 'Take one of the following:'], pool(ART, 'art_courses', true), { prefer })
     h.solve()
     const five = [culture, history, literature, art]
-    for (const n of five) flag(h, n, wild)
+    five.forEach((n, i) => flag(h, n, wild, CATS[i].key))
 
     const italian = taughtInItalian(h, five)
     const upper = h.group('upper', 'Upper-Division Courses', [culture, history, literature, art, italian], {
@@ -121,13 +149,14 @@ function wildcards(h: HarnessContext): string[] {
   return [...out]
 }
 
-function flag(h: HarnessContext, node: Node, wild: Set<string>) {
+function flag(h: HarnessContext, node: Node, wild: Set<string>, choice: string) {
   if (node.status !== 'met') return
   const used = node.used ?? []
   const wl = used.filter((e) => wild.has(e.code))
   if (wl.length) {
     node.status = 'cannot-check'
-    node.detail = `Counts only if ${wl.map((e) => display(e.code)).join(', ')} ${wl.length > 1 ? 'are' : 'is'} accepted for this category (Italian studies course list or the Literature advisor) — check it.`
+    node.choice = choice
+    node.detail = `Counts only if ${wl.map((e) => display(e.code)).join(', ')} ${wl.length > 1 ? 'are' : 'is'} accepted for this category (Italian studies course list — declare ${wl.length > 1 ? 'them' : 'it'} — or the Literature advisor) — check it.`
     return
   }
   if (used.some((e) => LIT102.has(e.code))) {

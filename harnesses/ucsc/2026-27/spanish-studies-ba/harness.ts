@@ -18,18 +18,18 @@ const REGULAR: string[][] = [['SPAN 1'], ['SPAN 2'], ['SPAN 3'], ['SPAN 4'], ['S
 const HERITAGE: string[][] = [['SPHS 4'], ['SPHS 5'], ['SPHS 6']]
 
 const CORE_LIT = codes('LIT 189A', 'LIT 189B')
-const CORE_SS = codes('LIT 189C', 'SPAN 105')
+const CORE_SS = codes('LIT 189C') // [/SPAN 105]: the library treats cross-listed codes as one course
 const CORE_LING = codes('SPAN 150')
 const CORE_LANG = codes('SPAN 114', 'SPHS 115')
 
 const LL_LIST = [
-  'SPAN 130', 'LGST 130A', 'SPAN 140', 'SPAN 141', 'SPAN 142', 'SPAN 151', 'SPAN 152', 'SPAN 153', 'SPAN 154', 'SPAN 155', 'SPAN 156A',
+  'SPAN 130', 'SPAN 140', 'SPAN 141', 'SPAN 142', 'SPAN 151', 'SPAN 152', 'SPAN 153', 'SPAN 154', 'SPAN 155', 'SPAN 156A',
   'SPAN 156E', 'SPAN 156F', 'SPAN 156J', 'SPAN 156K', 'SPAN 156L', 'SPAN 156M', 'SPAN 157', 'SPAN 158',
 ]
 // "Other 5-credit Spanish-language courses numbered SPAN 100-SPAN 189, SPAN 199
 // (except SPAN 114, SPAN 150, SPHS 115, and LIT 189C/SPAN 105) may be accepted
 // with the permission of the Spanish studies director."
-const LL_PERMISSION = range('SPAN', 100, 189).or(codes('SPAN 199')).minCredits(5).except(['SPAN 114', 'SPAN 150', 'SPAN 105', ...LL_LIST])
+const LL_PERMISSION = range('SPAN', 100, 189).or(codes('SPAN 199')).minCredits(5).except(['SPAN 114', 'SPAN 150', 'LIT 189C', ...LL_LIST])
 // "Three 5-credit literature courses numbered LIT 188-LIT 189, LIT 199.
 // Current courses within this range are listed below."
 const LC_LISTED = [
@@ -53,7 +53,7 @@ const CAPSTONE: Record<Conc, { set: CourseSet; title: string; quote: string }> =
     title: 'Languages and Linguistics capstone',
     quote: 'Languages and Linguistics Capstone Courses',
   },
-  'literature-culture': { set: codes('LIT 190X', 'SPAN 190A'), title: 'Literature and Culture capstone: LIT 190X (SPAN 190A)', quote: 'Literature and Culture Capstone Course' },
+  'literature-culture': { set: codes('LIT 190X'), title: 'Literature and Culture capstone: LIT 190X (SPAN 190A)', quote: 'Literature and Culture Capstone Course' },
 }
 
 export default defineHarness({
@@ -87,9 +87,6 @@ export default defineHarness({
   ],
   coverage: {
     unknownOk: {
-      LGST130A: 'cross-listing of SPAN 130 named on the page; not a separate catalog entry',
-      SPAN105: 'cross-listing of LIT 189C named on the page; not a separate catalog entry',
-      SPAN190A: 'cross-listing of LIT 190X named on the page; not a separate catalog entry',
       LIT199: 'named by the page for the Literature and Culture concentration; not in the current catalog',
     },
   },

@@ -4,9 +4,10 @@
 // LING 50, Level 6 in the language of concentration (or its equivalent), two
 // LING entry courses, one advanced language course in that language, two
 // electives. Cultural context courses come from an external list the app does
-// not have: an elective shortfall that unlisted upper-division courses could
-// cover is cannot-check, never unmet.
-import { anyOf, codes, defineHarness, display, range, series } from '@harness'
+// not have: the student declares which of their courses are on it (choice);
+// an elective shortfall that undeclared upper-division courses could cover is
+// cannot-check, never unmet.
+import { anyOf, canon, codes, defineHarness, display, range, series } from '@harness'
 import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
 type Lang = 'chinese' | 'french' | 'italian' | 'japanese' | 'spanish'
@@ -24,6 +25,21 @@ const ENTRY = ['LING 100', 'LING 101', 'LING 111', 'LING 112', 'LING 171']
 const SYNTAX = codes('LING 111', 'LING 112')
 const LIT_NOTE =
   'Note: The LIT courses listed above may only be used to fulfill the Advanced Language requirement if a student has completed or tested out of Level 6 of the corresponding lower-division language prior to taking the class.'
+
+const CC_QUOTE = 'The [list of approved cultural context courses](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/humanities-division/linguistics/language-studies-cultural-context-electives-course-list)'
+// "These courses include independent study (LING 199), …" / "Students may
+// apply no more than one quarter of LING 199."
+const LING199 = codes('LING 199')
+
+/** Free-form course list: "HIS 155, POLI 140A" → canonical, comma-joined. */
+function parseList(raw: string): string | undefined {
+  const out = raw
+    .split(/[,;\n]+/)
+    .map((s) => s.trim())
+    .filter((s) => /^[A-Za-z]{2,5}\s*\d{1,3}[A-Za-z]{0,2}$/.test(s))
+    .map(canon)
+  return out.length ? [...new Set(out)].join(',') : undefined
+}
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z]/g, '')
 const parseLang = (raw: string | undefined): Lang | undefined => {
@@ -44,6 +60,8 @@ export default defineHarness({
       options: LANG_KEYS.map((k) => ({ value: k, label: LANGS[k].label, aliases: [LANGS[k].subjects[0].toLowerCase()] })),
       parse: parseLang,
     },
+    // External list → the student declares which courses are on it (§1a).
+    { key: 'cultural_context_courses', label: 'Your courses on the approved cultural context list', quote: CC_QUOTE, options: [], free: true, parse: parseList },
   ],
   attestations: [
     {
@@ -66,10 +84,19 @@ export default defineHarness({
     const L = LANGS[lang]
 
     // --- lower division ----------------------------------------------------
-    const level6 = h.either('level6', `Level 6 ${L.label}`, 'Students must demonstrate a level of competency in the language of concentration.', [
-      h.take('level6/course', `Level 6 course (${L.level6.join(' or ')})`, 'This is accomplished by completing one of the Level 6 language courses below, or its equivalent.', codes(...L.level6), { exclusive: false }),
-      h.attest('level6-equivalent'),
-    ])
+    // "or its equivalent": placement is an attestation offered only when no
+    // Level 6 course is in the plan (§1a test-out convention).
+    const l6Set = codes(...L.level6)
+    const l6Title = `Level 6 course (${L.level6.join(' or ')})`
+    const l6Quote = 'This is accomplished by completing one of the Level 6 language courses below, or its equivalent.'
+    const level6 = h.enrollments.some((e) => l6Set.has(e.code))
+      ? h.group('level6', `Level 6 ${L.label}`, [h.take('level6/course', l6Title, l6Quote, l6Set, { exclusive: false })])
+      : h.attested('level6-equivalent')
+        ? h.node('level6', `Level 6 ${L.label}`, l6Quote, 'met', { detail: 'By placement / equivalent proficiency (attested).' })
+        : h.either('level6', `Level 6 ${L.label}`, 'Students must demonstrate a level of competency in the language of concentration.', [
+            h.take('level6/course', l6Title, l6Quote, l6Set, { exclusive: false }),
+            h.attest('level6-equivalent'),
+          ])
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.take('ling50', 'LING 50 Introduction to Linguistics', 'LING 50 — Introduction to Linguistics (5)', codes('LING 50')),
       level6,
@@ -91,25 +118,30 @@ export default defineHarness({
 
     // LING 111/112 are kept out of the elective pool: at most one may count
     // toward the minor and it can always sit in the "two of" slot instead.
-    const elecPool = range('LING', 100, 189).or(range('LING', 200, 289)).minCredits(5).except(SYNTAX).or(advPool)
+    const elecPool = range('LING', 100, 189).or(range('LING', 200, 289)).minCredits(5).except(SYNTAX).or(advPool).or(LING199)
     // Courses of the other concentration languages cannot align with this one.
     const otherLangs = LANG_KEYS.filter((k) => k !== lang).flatMap((k) => [...LANGS[k].subjects.map((sub) => range(sub, 1, 299)), LANGS[k].lit])
-    const wild = new Set(wildcards(h, anyOf(elecPool, SYNTAX, ...otherLangs)))
+    const outside = wildcards(h, anyOf(elecPool, SYNTAX, ...otherLangs))
+    const declared = new Set((h.choice('cultural_context_courses') ?? '').split(',').filter(Boolean))
+    const cc = outside.filter((c) => declared.has(c))
+    const wild = new Set(outside.filter((c) => !declared.has(c)))
+    const pool = [...cc, ...wild]
     const electives = h.take(
       'electives',
       'Two upper-division electives',
-      ['The minor requires two 5-credit upper-division elective courses. Courses may be chosen from:', 'LING 100-189', 'LING 200-289 (with instructor permission)', 'Additional Advanced Language courses listed above', 'Cultural context courses and advanced language courses must align with the language of concentration.'],
-      wild.size ? elecPool.or(codes(...wild)) : elecPool,
+      ['The minor requires two 5-credit upper-division elective courses. Courses may be chosen from:', 'LING 100-189', 'LING 200-289 (with instructor permission)', CC_QUOTE, 'Additional Advanced Language courses listed above', 'Students may apply no more than one quarter of LING 199.', 'Cultural context courses and advanced language courses must align with the language of concentration.'],
+      pool.length ? elecPool.or(codes(...pool)) : elecPool,
       {
         n: 2,
         repeatable: 'catalog',
-        prefer: (c) => (wild.has(c) ? 1 : 0),
-        pool: `LING 100–189 or 200–289 (5 credits), ${L.label} advanced language courses, or approved cultural context courses`,
+        prefer: (c) => (wild.has(c) ? 3 : LING199.has(c) ? 2 : cc.includes(c) ? 1 : 0),
+        atMost: [{ set: LING199, n: 1, label: 'LING 199' }],
+        pool: `LING 100–189 or 200–289 (5 credits), ${L.label} advanced language courses, approved cultural context courses, or one LING 199`,
         notes: ['If Level 6 is not yet completed, the LIT courses may count here instead of as the advanced language course.'],
       },
     )
     h.solve()
-    flagWild(electives, wild, 'list of approved cultural context courses')
+    flagWild(electives, wild)
 
     const upper = h.group('upper', 'Upper-Division Courses', [two, advanced, electives], {
       quote: 'The minor requires 25 upper-division credits. These requirements are comprised of two required linguistics courses, one advanced language course, and two electives, as follows:',
@@ -163,10 +195,11 @@ function wildcards(h: HarnessContext, known: CourseSet): string[] {
   return [...out]
 }
 
-function flagWild(node: Node, wild: Set<string>, what: string) {
+function flagWild(node: Node, wild: Set<string>) {
   if (node.status !== 'met') return
   const w = (node.used ?? []).filter((e) => wild.has(e.code))
   if (!w.length) return
   node.status = 'cannot-check'
-  node.detail = `Counts only if ${w.map((e) => display(e.code)).join(', ')} ${w.length > 1 ? 'are' : 'is'} on the ${what} (or approved by the department) — check it.`
+  node.choice = 'cultural_context_courses'
+  node.detail = `Counts only if ${w.map((e) => display(e.code)).join(', ')} ${w.length > 1 ? 'are' : 'is'} on the list of approved cultural context courses (declare ${w.length > 1 ? 'them' : 'it'} as yours) or an approved outside elective — check the list.`
 }

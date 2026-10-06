@@ -4,10 +4,12 @@
 // LING 50/53; a foreign-language OR mathematics/computer-science competency;
 // seven named upper-division LING courses; three electives; DC and
 // comprehensive as overlays. Outside elective substitutions come from an
-// external pre-approved list: unlisted upper-division courses join the
-// elective pool as wildcards, and a fill that needs one is cannot-check.
-import { anyOf, codes, defineHarness, display, range, series, subject } from '@harness'
-import type { Enrollment, HarnessContext, Node } from '@harness'
+// external pre-approved list: the student declares which of their courses are
+// on it (choice); undeclared upper-division courses join the elective pool as
+// wildcards, and a fill that needs one is cannot-check. At most three outside
+// courses (LING 195/199 and every non-LING course) count.
+import { anyOf, canon, codes, defineHarness, display, range, series, subject } from '@harness'
+import type { ChoiceDef, Enrollment, HarnessContext, Node } from '@harness'
 
 const SYNTAX = codes('LING 111', 'LING 112')
 const LING195 = codes('LING 195')
@@ -17,9 +19,22 @@ const GRAD = range('LING', 200, 289).minCredits(5)
 // LING 112, and LING 171) and/or LING 200-289"; LING 195 (two quarters) or
 // LING 199 (one) by the course substitution policy.
 const ELECTIVES = range('LING', 102, 189).minCredits(5).except(['LING 111', 'LING 112', 'LING 171']).or(GRAD).or(LING195).or(LING199)
-// The capstone's associated course: an upper-division linguistics elective
-// (LING 102-189 except 111/112, or 200-289) in the same quarter.
-const CAPSTONE_PARTNER = range('LING', 102, 189).minCredits(5).except(['LING 111', 'LING 112']).or(GRAD)
+// The capstone's associated course: "one of the upper-division electives"
+// (LING 102-189 except 111/112/171, or 200-289) in the same quarter. LING 171
+// is a required course, excluded from the electives.
+const CAPSTONE_PARTNER = range('LING', 102, 189).minCredits(5).except(['LING 111', 'LING 112', 'LING 171']).or(GRAD)
+
+const OUTSIDE_QUOTE = 'Students may substitute up to three outside courses for the upper-division electives requirement.'
+/** Free-form course list: "PHIL 123, PSYC 140C" → canonical, comma-joined. */
+function parseList(raw: string): string | undefined {
+  const out = raw
+    .split(/[,;\n]+/)
+    .map((s) => s.trim())
+    .filter((s) => /^[A-Za-z]{2,5}\s*\d{1,3}[A-Za-z]{0,2}$/.test(s))
+    .map(canon)
+  return out.length ? [...new Set(out)].join(',') : undefined
+}
+const outsideChoice: ChoiceDef = { key: 'outside_courses', label: 'Your courses on the pre-approved outside electives list', quote: OUTSIDE_QUOTE, options: [], free: true, parse: parseList }
 
 // --- Foreign language ------------------------------------------------------
 // Option 1: level 5 of one language, "or its equivalent" — the level-6 course
@@ -97,8 +112,16 @@ export default defineHarness({
         { value: 'math-cs', label: 'Mathematics/Computer Science', aliases: ['math', 'mathematics', 'computer science', 'cs'] },
       ],
     },
+    // External list → the student declares which courses are on it (§1a).
+    outsideChoice,
   ],
   attestations: [
+    {
+      id: 'cse20-test-out',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'NOTE: CSE 20 has a test-out option which will be accepted for one of the two required courses.',
+      aliases: ['cse 20 test-out', 'cse 20 testout', 'test-out', 'testout'],
+    },
     {
       id: 'language-equivalent',
       label: 'Language proficiency by placement / equivalent',
@@ -120,7 +143,6 @@ export default defineHarness({
   ],
   notes: [
     'Courses may be taken P/NP except the two major-qualification courses (C+ or better, letter grade).',
-    'If you tested out of CSE 20, add CSE 20 as a completed course: the test-out counts as one of the two mathematics/computer science courses.',
     'Up to three outside courses (LING 195/199, other departments, other institutions) may substitute for electives — see the department’s pre-approved outside courses list.',
     'You may not double major or major/minor in linguistics and language studies.',
   ],
@@ -142,7 +164,7 @@ export default defineHarness({
         'qualification',
         'Major qualification (gateway courses)',
         'In order to qualify for the linguistics major, a student must pass two gateway courses, with a grade of C+ or better in each:',
-        'LING 50 plus one of LING 53, 101, 112 or 171, each C+ or better for a letter grade. This gates declaration, not completion.',
+        'Any two of LING 50, 53, 101, 112 and 171, each C+ or better for a letter grade. This gates declaration, not completion.',
       ),
     ])
 
@@ -152,7 +174,14 @@ export default defineHarness({
       h.take('syntax', 'LING 111 or LING 112', 'Plus one of the following courses:', SYNTAX),
       h.take('three', 'Three advanced courses', 'And three of the following courses:', codes('LING 102', 'LING 113', 'LING 116', 'LING 151', 'LING 172'), { n: 3 }),
     ])
-    const wild = new Set(wildcards(h))
+    const outside = wildcards(h)
+    const declared = new Set((h.choice('outside_courses') ?? '').split(',').filter(Boolean))
+    const listed = outside.filter((c) => declared.has(c))
+    const wild = new Set(outside.filter((c) => !declared.has(c)))
+    // "These courses include Senior Thesis (LING 195), Independent Study (LING
+    // 199), courses from other UC Santa Cruz departments, and courses from
+    // other institutions." — every non-LING course is an outside course.
+    const OUTSIDE = outside.length ? LING195.or(LING199).or(codes(...outside)) : LING195.or(LING199)
     const electives = h.take(
       'electives',
       'Three upper-division electives',
@@ -161,12 +190,13 @@ export default defineHarness({
         'Students may substitute up to three outside courses for the upper-division electives requirement.',
         'Students may apply up to two quarters of LING 195 or one quarter of LING 199, but not both.',
       ],
-      wild.size ? ELECTIVES.or(codes(...wild)) : ELECTIVES,
+      outside.length ? ELECTIVES.or(codes(...outside)) : ELECTIVES,
       {
         n: 3,
         repeatable: 'catalog',
-        prefer: (c) => (wild.has(c) ? 2 : LING195.has(c) || LING199.has(c) ? 1 : 0),
+        prefer: (c) => (wild.has(c) ? 3 : LING195.has(c) || LING199.has(c) ? 2 : listed.includes(c) ? 1 : 0),
         atMost: [
+          { set: OUTSIDE, n: 3, label: 'outside courses (LING 195/199, other departments, other institutions)' },
           { set: LING195, n: 2, label: 'LING 195' },
           { set: LING199, n: 1, label: 'LING 199' },
         ],
@@ -222,13 +252,27 @@ function competency(h: HarnessContext): Node {
   if (!startedLD && (h.choice('competency') === 'foreign-language' || hasUD)) fl.push(h.attest('language-equivalent'))
   const flNode = h.either('fl', 'Foreign Language', 'Students opting to complete this requirement using foreign language may do so in one of the following three ways:', fl)
 
-  const math = h.take('math-cs', 'Mathematics/Computer Science: two courses', ['This requirement is satisfied by passing two courses chosen from the following list:', MATH_NOTE], MATHCS_SET, {
-    n: 2,
+  const mathOpts = (n: number, notes?: string[]) => ({
+    n,
     exclusive: false,
     atMost: [{ set: STAT5_GROUP, n: 1, label: 'STAT 5 and its substitutes PSYC 2 / SOCY 3B' }],
     pool: 'the listed courses (PSYC 2 or SOCY 3B for STAT 5), or any course with a listed course as a prerequisite',
+    notes,
   })
-  return h.either('competency', 'Foreign Language/Mathematics/Computer Science Requirement', 'Linguistics majors are required to demonstrate competency in either foreign language or mathematics/computer science.', [flNode, math])
+  const mathQuote = ['This requirement is satisfied by passing two courses chosen from the following list:', MATH_NOTE]
+  // "CSE 20 has a test-out option which will be accepted for one of the two
+  // required courses": attestation offered only when CSE 20 is not in the plan.
+  const hasCse20 = h.enrollments.some((e) => e.code === 'CSE20')
+  const testedOut = !hasCse20 && h.attested('cse20-test-out')
+  const math = h.take('math-cs', testedOut ? 'Mathematics/Computer Science: CSE 20 by test-out + one course' : 'Mathematics/Computer Science: two courses', mathQuote, MATHCS_SET, mathOpts(testedOut ? 1 : 2, testedOut ? ['CSE 20 by test-out counts as one of the two courses.'] : undefined))
+  const mathNode =
+    hasCse20 || testedOut
+      ? math
+      : h.either('math', 'Mathematics/Computer Science', 'NOTE: CSE 20 has a test-out option which will be accepted for one of the two required courses.', [
+          math,
+          h.group('math/test-out', 'CSE 20 test-out + one course', [h.take('math-cs/one', 'One more course', mathQuote, MATHCS_SET, mathOpts(1)), h.attest('cse20-test-out')]),
+        ])
+  return h.either('competency', 'Foreign Language/Mathematics/Computer Science Requirement', 'Linguistics majors are required to demonstrate competency in either foreign language or mathematics/computer science.', [flNode, mathNode])
 }
 
 /** Option 2: level 3 of Arabic/Hebrew/Punjabi/Yiddish plus level 3 of a different language. */
@@ -278,18 +322,21 @@ function comprehensiveNode(h: HarnessContext): Node {
   const l190 = h.taken(codes('LING 190'))
   const partner = (e: Enrollment) => h.passed.find((x) => x.term === e.term && CAPSTONE_PARTNER.has(x.code, h.catalog))
   const pairs = l190.filter((e) => e.term != null && partner(e))
+  const noTerm = l190.some((e) => e.term == null) && h.passed.some((x) => x.term == null && CAPSTONE_PARTNER.has(x.code, h.catalog))
   const pairOk = pairs.filter(after)
   const capstone = h.node(
     'comp/capstone',
     'Option 1: LING 190 with its concurrent upper-division elective',
     ['Students must enroll concurrently in an upper-division elective and in the corresponding instance of the following course:', 'LING 190 — Senior Research (2)'],
-    pairOk.length ? 'met' : 'unmet',
+    pairOk.length ? 'met' : noTerm ? 'cannot-check' : 'unmet',
     {
       used: pairOk.length ? [pairOk[0], partner(pairOk[0])!] : [],
       options: ['LING190'],
       detail: pairOk.length
         ? 'The concurrent elective must be the course this LING 190 instance is attached to.'
-        : pairs.length
+        : noTerm
+          ? 'LING 190 and an upper-division elective have no term — check that they were taken concurrently.'
+          : pairs.length
           ? `LING 190 ${orderNote}.`
           : l190.length
             ? 'LING 190 needs an upper-division linguistics elective in the same quarter.'
@@ -343,5 +390,6 @@ function flagWild(node: Node, wild: Set<string>) {
   const w = (node.used ?? []).filter((e) => wild.has(e.code))
   if (!w.length) return
   node.status = 'cannot-check'
-  node.detail = `Counts only if ${w.map((e) => display(e.code)).join(', ')} ${w.length > 1 ? 'are' : 'is'} on the pre-approved outside courses list or approved by the department — check it.`
+  node.choice = 'outside_courses'
+  node.detail = `Counts only if ${w.map((e) => display(e.code)).join(', ')} ${w.length > 1 ? 'are' : 'is'} on the pre-approved outside courses list (declare ${w.length > 1 ? 'them' : 'it'} as yours) or approved by the department — check it.`
 }

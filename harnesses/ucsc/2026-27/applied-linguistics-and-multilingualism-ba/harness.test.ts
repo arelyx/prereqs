@@ -48,9 +48,28 @@ describe('applied-linguistics-and-multilingualism-ba 2026-27', () => {
     expect(failing(run(harness, { terms: t, choices: S }))).toEqual(['electives:unmet'])
   })
 
-  it('an unlisted upper-division Spanish course for advanced is cannot-check', () => {
+  it('an unlisted upper-division Spanish course for advanced: complete list (declared) or petition', () => {
+    // "Students may petition to have other 5-credit, upper-division courses offered in the student’s target language count toward the advanced language proficiency requirement."
     const t = swap(base, 'SPAN 141', 'SPAN 199')
-    expect(find(run(harness, { terms: t, choices: S }), 'advanced').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: t, choices: S, attested: [] }), 'advanced-group').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, choices: S, attested: ['advanced language petition'] }), 'advanced-group').status).toBe('met')
+    expect(failing(run(harness, { terms: t, choices: { ...S, advanced_list_courses: 'SPAN 199' }, attested: [] }))).toEqual([])
+    // a listed course needs no petition
+    expect(failing(run(harness, { terms: base, choices: S, attested: [] }))).toEqual([])
+  })
+
+  it('LALS 171 (on the list, in none of the five languages) is cannot-check', () => {
+    expect(find(run(harness, { terms: swap(base, 'SPAN 141', 'LALS 171'), choices: S }), 'advanced').status).toBe('cannot-check')
+  })
+
+  it('SPAN 130 counts under its cross-listed code LGST 130A', () => {
+    // "SPAN 130 [/LGST 130A] — Spanish for the Legal Profession (5)"
+    expect(find(run(harness, { terms: swap(base, 'SPAN 141', 'LGST 130A'), choices: S }), 'advanced').status).toBe('met')
+  })
+
+  it('the Level 6 course need not be in the target language; an NP does not count', () => {
+    expect(failing(run(harness, { terms: swap(base, 'SPAN 6', 'FREN 6'), choices: S }))).toEqual([])
+    expect(failing(run(harness, { terms: base, choices: S, grades: { 'APLX 113': 'NP' } }))).toEqual(['electives:unmet'])
   })
 
   it('APLX 190 must be letter graded (DC and comprehensive)', () => {

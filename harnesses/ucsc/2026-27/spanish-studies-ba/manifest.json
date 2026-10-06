@@ -6,6 +6,6 @@
  "skeleton_sha256": "49ac2f5364cc3796e80d3532b1e88a2d6e80390ec3eee50f21c1c7cb09303b07",
  "status": "verified",
  "authored_at": "2026-10-06T01:02:21Z",
- "verified_at": "2026-10-06T01:06:34Z",
- "notes": "verified line by line against sources/spanish-studies-ba.md; one allocation (no course counts twice); track counts by top course (lower levels by placement implied), equivalent proficiency attestation only with no lower-division Spanish; concentration not before LIT 189C/SPAN 150 and capstone after 3 core courses (term order); unlisted SPAN 100-189/199 for L&L -> director-permission attestation; Level 4 Spanish + capstone letter grade."
+ "verified_at": "2026-10-06T23:45:53Z",
+ "notes": "verified line by line against sources/spanish-studies-ba.md; one allocation (no course counts twice); track counts by top course (lower levels by placement implied), equivalent proficiency attestation only with no lower-division Spanish; concentration not before LIT 189C/SPAN 150 and capstone after 3 core courses (term order); unlisted SPAN 100-189/199 for L&L -> director-permission attestation; Level 4 Spanish + capstone letter grade.; reviewed 2026-10-06: removed LGST 130A/SPAN 105/SPAN 190A unknownOk partner codes (library cross-listing); no logic defects found"
 }

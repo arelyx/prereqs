@@ -101,3 +101,25 @@ describe('spanish-studies-ba 2026-27', () => {
     expect(failing(run(harness, { terms: swap(ll, 'SPAN 114', 'SPHS 115'), choices: LL }))).toEqual([])
   })
 })
+
+describe('spanish-studies-ba 2026-27 review', () => {
+  it('cross-listed codes count as the same course (no partner-code workaround)', () => {
+    // "LIT 189C [/SPAN 105] — Introducción a Spanish Studies (5)"
+    expect(find(run(harness, { terms: swap(ll, 'LIT 189C', 'SPAN 105'), choices: LL, attested: [] }), 'core-spanish-studies').status).toBe('met')
+    // "SPAN 130 [/LGST 130A] — Spanish for the Legal Profession (5)"
+    expect(failing(run(harness, { terms: swap(ll, 'SPAN 140', 'LGST 130A'), choices: LL, attested: [] }))).toEqual([])
+    // "LIT 190X [/SPAN 190A] — Temas de la literatura y cultura espanolas y latinoamericanas (5)"
+    expect(failing(run(harness, { terms: swap(lc, 'LIT 190X', 'SPAN 190A'), choices: LC, attested: [] }))).toEqual([])
+  })
+
+  it('a capstone taken P/NP is not the capstone; a second LIT 189A cannot be a concentration course', () => {
+    const r = run(harness, { terms: swap(ll, 'SPAN 151', null), choices: LL, grades: { 'SPAN 157': 'P' }, attested: [] })
+    expect(find(r, 'capstone').status).toBe('unmet')
+    const twice = swap(lc, 'LIT 189L', 'LIT 189A')
+    expect(find(run(harness, { terms: twice, choices: LC, attested: [] }), 'concentration-courses').status).toBe('unmet')
+  })
+
+  it('records with no terms are not blamed for sequencing', () => {
+    expect(failing(run(harness, { terms: [], completed: ll.flatMap((q) => q.courses), choices: LL, attested: [] }))).toEqual([])
+  })
+})

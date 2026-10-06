@@ -6,6 +6,6 @@
  "skeleton_sha256": "32a357b6696b65714c44adb71c60c4bf20cd9f5fa4a85fe251f8159223570137",
  "status": "verified",
  "authored_at": "2026-10-06T00:59:44Z",
- "verified_at": "2026-10-06T01:06:33Z",
- "notes": "verified line by line against sources/applied-linguistics-and-multilingualism-ba.md; one allocation (advanced vs electives exclusive); target-language advanced list per language, unlisted UD target-language courses -> cannot-check (complete list external); LALS 171 assigned to no language; max two P/NP courses; APLX 190 letter; Level 4 B-/letter treated as qualification info."
+ "verified_at": "2026-10-06T23:45:53Z",
+ "notes": "verified line by line against sources/applied-linguistics-and-multilingualism-ba.md; one allocation (advanced vs electives exclusive); target-language advanced list per language, unlisted UD target-language courses -> cannot-check (complete list external); LALS 171 assigned to no language; max two P/NP courses; APLX 190 letter; Level 4 B-/letter treated as qualification info.; reviewed 2026-10-06: removed LGST 130A unknownOk/partner code (cross-listing handled by library); unlisted UD target-language course -> declared (complete list) or petition attestation asked only when needed; LALS 171 stays cannot-check"
 }

@@ -80,3 +80,22 @@ describe('italian-studies-minor 2026-27', () => {
     expect(find(run(harness, { terms: t, attested: [] }), 'art').status).toBe('cannot-check')
   })
 })
+
+describe('italian-studies-minor 2026-27 review', () => {
+  it('a course declared from the Italian studies course list counts in its category only', () => {
+    // "Students can consult [Italian studies course offerings](…) for each of the above categories."
+    const t = swap(base, 'SOCY 117E', 'HIS 150A')
+    expect(find(run(harness, { terms: t, attested: [] }), 'history').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: t, choices: { history_courses: 'HIS 150A' }, attested: [] }), 'history').status).toBe('met')
+    expect(find(run(harness, { terms: t, choices: { art_courses: 'HIS 150A' }, attested: [] }), 'history').status).toBe('unmet')
+  })
+
+  it('LIT 102 cannot replace the culture course', () => {
+    // "LIT 102 can substitute for one of the Italian literature, history, or art history requirements"
+    expect(find(run(harness, { terms: swap(base, 'ITAL 106', 'LIT 102') }), 'culture').status).toBe('unmet')
+  })
+
+  it('a lower-division Italian course is not an upper-division candidate', () => {
+    expect(find(run(harness, { terms: swap(base, 'HAVC 157B', 'ITAL 4'), attested: [] }), 'art').status).toBe('unmet')
+  })
+})

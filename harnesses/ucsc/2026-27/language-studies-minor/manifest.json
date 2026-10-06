@@ -6,6 +6,6 @@
  "skeleton_sha256": "c70535b2322a761c00fd860c36418107185798924a4e0f0ebd1f6d48272f47a4",
  "status": "verified",
  "authored_at": "2026-10-06T00:54:02Z",
- "verified_at": "2026-10-06T01:06:33Z",
- "notes": "verified line by line against sources/language-studies-minor.md; LING 111/112 kept out of electives (equivalent to 'not both'); LIT advanced only after Level 6 (term order or tested-out attestation); cultural-context list external -> wildcards cannot-check; language inferred only when unambiguous."
+ "verified_at": "2026-10-06T23:45:52Z",
+ "notes": "verified line by line against sources/language-studies-minor.md; LING 111/112 kept out of electives (equivalent to 'not both'); LIT advanced only after Level 6 (term order or tested-out attestation); cultural-context list external -> wildcards cannot-check; language inferred only when unambiguous.; reviewed 2026-10-06: LING 199 (one quarter) counts as an elective (was unmet); cultural-context list -> declared choice; Level 6 placement attestation only when no Level 6 course"
 }

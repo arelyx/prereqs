@@ -70,3 +70,24 @@ describe('linguistics-minor 2026-27', () => {
     expect(failing(run(harness, { terms, grades: { 'LING 100': 'P', 'LING 113': 'P' } }))).toEqual([])
   })
 })
+
+describe('linguistics-minor 2026-27 review', () => {
+  it('declared pre-approved outside courses count, at most two (with LING 199)', () => {
+    const t = swap('LING 116', 'PHIL 123')
+    expect(find(run(harness, { terms: t, choices: { outside_courses: 'PHIL 123' } }), 'electives').status).toBe('met')
+    // "Students may substitute up to two outside courses for the Upper-Division Electives requirement."
+    const three = swap('LING 116', 'LING 199').map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'LING 113' ? 'PHIL 123' : c === 'LING 171' ? 'PHIL 108' : c)) }))
+    expect(find(run(harness, { terms: three, choices: { outside_courses: 'PHIL 123, PHIL 108' } }), 'electives').status).toBe('unmet')
+  })
+
+  it('kitchen sink and empty plan', () => {
+    const sink = [...terms, { term: '2288', courses: ['LING 101', 'LING 111', 'LING 199', 'LING 199', 'LING 211', 'PHIL 123', 'LING 190', 'LING 80K'] }]
+    expect(failing(run(harness, { terms: sink }))).toEqual([])
+    expect(failing(run(harness, { terms: [] }))).toEqual(['lower/LING50:unmet', 'lower/LING53:unmet', 'entry-two:unmet', 'electives:unmet'])
+  })
+
+  it('NP does not count; planned courses are in progress', () => {
+    expect(failing(run(harness, { terms, grades: { 'LING 116': 'NP' } }))).toEqual(['electives:unmet'])
+    expect(find(run(harness, { terms, currentTerm: '2282' }), 'electives').status).toBe('in-progress')
+  })
+})

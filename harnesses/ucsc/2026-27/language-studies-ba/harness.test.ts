@@ -167,3 +167,38 @@ describe('language-studies-ba 2026-27', () => {
     expect(failing(run(harness, { terms: spanish, choices: S, grades: { 'LING 101': 'P', 'SPAN 114': 'P' } }))).toEqual([])
   })
 })
+
+describe('language-studies-ba 2026-27 review', () => {
+  const cut = (t: T, ...cs: string[]) => t.map((q) => ({ ...q, courses: q.courses.filter((c) => !cs.includes(c)) }))
+
+  it('declared cultural context course counts as an elective; a misaligned one does not', () => {
+    // "The [list of approved cultural context courses](…)" — external list, declared by the student
+    const t = add(cut(spanish, 'LING 117', 'LING 118'), '2292', 'HIS 155')
+    expect(find(run(harness, { terms: t, choices: { ...S, cultural_context_courses: 'HIS 155' } }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: t, choices: S }), 'electives').status).toBe('cannot-check')
+    // "Cultural context courses and advanced language courses must align with the language of concentration."
+    const f = add(cut(spanish, 'LING 117', 'LING 118'), '2292', 'FREN 120')
+    expect(find(run(harness, { terms: f, choices: { ...S, cultural_context_courses: 'FREN 120' } }), 'electives').status).toBe('unmet')
+  })
+
+  it('Level 6 placement is asked only when no Level 6 course is in the plan', () => {
+    const r = run(harness, { terms: spanish, choices: S, attested: [] })
+    expect(find(r, 'level6').status).toBe('met')
+    expect(() => find(r, 'attest:level6-equivalent')).toThrow()
+  })
+
+  it('only one quarter of LING 199 counts', () => {
+    // "Students may apply up to two quarters of LING 195 or one quarter of LING 199, but not both."
+    const t = add(add(cut(spanish, 'LING 117', 'LING 118', 'LING 113'), '2292', 'LING 199'), '2294', 'LING 199')
+    expect(find(run(harness, { terms: t, choices: S }), 'electives').status).toBe('unmet')
+  })
+
+  it('undated LING 190 + elective: concurrency cannot be checked', () => {
+    expect(find(run(harness, { terms: [], completed: spanish.flatMap((q) => q.courses), choices: S }), 'comp/capstone').status).toBe('cannot-check')
+  })
+
+  it('undated LIT course after a dated Level 6: cannot-check, not unmet', () => {
+    const t = swap(swap(spanish, 'SPAN 114', 'LING 119'), 'SPAN 141', 'LING 120')
+    expect(find(run(harness, { terms: t, completed: ['LIT 189F'], choices: S }), 'advanced').status).toBe('cannot-check')
+  })
+})

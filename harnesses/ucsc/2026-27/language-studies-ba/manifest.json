@@ -6,6 +6,6 @@
  "skeleton_sha256": "ac4a48e1d5a3f5d9b887e290758f9e40d5ba44e0c6b7fdcf40a0c49b38bd98ea",
  "status": "verified",
  "authored_at": "2026-10-06T00:56:19Z",
- "verified_at": "2026-10-06T01:06:32Z",
- "notes": "verified line by line against sources/language-studies-ba.md; one allocation for advanced/LING/electives, DC+comprehensive overlays. Judgement: cultural-context/outside list external -> unlisted UD courses are wildcards (cannot-check); 'minimum of 10 upper-division courses' vs itemized 9+LING 190 -> cannot-check below 10; Level 6 'or its equivalent' -> attestation (page documents placement on return from abroad); comprehensive must follow DC (strictly later term); LING 195 (<=2)/199 (<=1, not both) count as electives."
+ "verified_at": "2026-10-06T23:45:52Z",
+ "notes": "verified line by line against sources/language-studies-ba.md; one allocation for advanced/LING/electives, DC+comprehensive overlays. Judgement: cultural-context/outside list external -> unlisted UD courses are wildcards (cannot-check); 'minimum of 10 upper-division courses' vs itemized 9+LING 190 -> cannot-check below 10; Level 6 'or its equivalent' -> attestation (page documents placement on return from abroad); comprehensive must follow DC (strictly later term); LING 195 (<=2)/199 (<=1, not both) count as electives.; reviewed 2026-10-06: cultural-context list -> declared choice (undeclared still cannot-check); Level 6 placement attestation only when no Level 6 course; undated LING 190/elective -> cannot-check; undated LIT course vs dated Level 6 -> cannot-check"
 }

@@ -70,7 +70,7 @@ describe('linguistics-ba 2026-27', () => {
 
   it('math/CS: PSYC 2 substitutes for STAT 5 but both do not count', () => {
     const t = [...noSpanish(base), { term: '2292', courses: ['PSYC 2', 'STAT 5'] }]
-    expect(find(run(harness, { terms: t }), 'competency').status).toBe('unmet')
+    expect(find(run(harness, { terms: t, attested: [] }), 'competency').status).not.toBe('met')
     const t2 = [...noSpanish(base), { term: '2292', courses: ['PSYC 2', 'PHIL 9'] }]
     expect(failing(run(harness, { terms: t2 }))).toEqual([])
   })
@@ -140,5 +140,47 @@ describe('linguistics-ba 2026-27', () => {
 
   it('P/NP allowed', () => {
     expect(failing(run(harness, { terms: base, grades: { 'LING 102': 'P', 'LING 171': 'P' } }))).toEqual([])
+  })
+})
+
+describe('linguistics-ba 2026-27 review', () => {
+  it('CSE 20 test-out counts as one of the two math/CS courses (attestation only without CSE 20)', () => {
+    // "NOTE: CSE 20 has a test-out option which will be accepted for one of the two required courses."
+    const t = [...noSpanish(base), { term: '2292', courses: ['STAT 5'] }]
+    expect(find(run(harness, { terms: t, attested: ['cse 20 test-out'] }), 'competency').status).toBe('met')
+    expect(find(run(harness, { terms: t, attested: [] }), 'competency').status).toBe('needs-attestation')
+    const withCse20 = run(harness, { terms: [...noSpanish(base), { term: '2292', courses: ['CSE 20'] }], attested: ['cse 20 test-out'] })
+    expect(find(withCse20, 'competency').status).toBe('unmet')
+  })
+
+  it('LING 190 with LING 171 is not a capstone (171 is not an elective)', () => {
+    // "(excluding LING 111, LING 112, and LING 171)"; "Students must enroll concurrently in an upper-division elective and in the corresponding instance of the following course:"
+    const t = plan(
+      ['2268', 'LING 50', 'SPAN 4'],
+      ['2270', 'LING 53', 'SPAN 5'],
+      ['2278', 'LING 100', 'LING 101'],
+      ['2280', 'LING 112', 'LING 119'],
+      ['2282', 'LING 102', 'LING 113'],
+      ['2288', 'LING 116', 'LING 117', 'LING 118'],
+      ['2290', 'LING 171', 'LING 190'],
+    )
+    expect(find(run(harness, { terms: t }), 'comp/capstone').status).toBe('unmet')
+  })
+
+  it('two LING 195 + two declared outside courses fill the three electives', () => {
+    // "Students may substitute up to three outside courses for the upper-division electives requirement."
+    const t = [...base.slice(0, 5), { term: '2288', courses: ['LING 116', 'LING 195', 'PHIL 123'] }, { term: '2290', courses: ['LING 195', 'PSYC 140C'] }]
+    const r = run(harness, { terms: t, choices: { outside_courses: 'PHIL 123, PSYC 140C' } })
+    expect(find(r, 'electives').status).toBe('met')
+  })
+
+  it('a declared pre-approved outside course counts; an undeclared one is cannot-check', () => {
+    const t = swap(base, 'LING 117', 'PHIL 123')
+    expect(find(run(harness, { terms: t, choices: { outside_courses: 'PHIL 123' } }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('cannot-check')
+  })
+
+  it('undated LING 190 + elective: concurrency cannot be checked', () => {
+    expect(find(run(harness, { terms: [], completed: base.flatMap((q) => q.courses) }), 'comp/capstone').status).toBe('cannot-check')
   })
 })

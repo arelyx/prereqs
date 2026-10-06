@@ -72,3 +72,24 @@ describe('spanish-studies-minor 2026-27', () => {
     expect(failing(run(harness, { terms: base, grades: { 'SPAN 114': 'P', 'SPAN 4': 'P' } }))).toEqual([])
   })
 })
+
+describe('spanish-studies-minor 2026-27 review', () => {
+  it('cross-listed codes count as the same course', () => {
+    // "LIT 189C [/SPAN 105] — Introducción a Spanish Studies (5)"
+    expect(failing(run(harness, { terms: swap(base, 'LIT 189C', 'SPAN 105'), attested: [] }))).toEqual([])
+    // "SPAN 130 / SPAN 6 / SPHS 6 [/LGST 130A] — Spanish for the Legal Profession (5)"
+    expect(failing(run(harness, { terms: swap(base, 'SPAN 141', 'LGST 130A'), attested: [] }))).toEqual([])
+  })
+
+  it('SPAN 6 is not the elective; SPAN 150 does not double as core and elective', () => {
+    expect(find(run(harness, { terms: swap(base, 'SPAN 141', null), attested: [] }), 'elective').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap(base, 'SPAN 141', 'SPAN 150'), attested: [] }), 'elective').status).toBe('unmet')
+  })
+
+  it('heritage track by its top course; empty plan; NP fails', () => {
+    const t = [...noLower(base), { term: '2266', courses: ['SPHS 6'] }]
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual([])
+    expect(find(run(harness, { terms: [], attested: [] }), 'track').status).toBe('needs-attestation')
+    expect(failing(run(harness, { terms: base, grades: { 'LIT 189A': 'NP' } }))).toEqual(['core-literature:unmet'])
+  })
+})

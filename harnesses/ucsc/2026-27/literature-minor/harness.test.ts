@@ -50,3 +50,26 @@ describe('literature-minor 2026-27', () => {
     expect(find(run(harness, { terms, grades: { 'LIT 110A': 'F' } }), 'electives').status).toBe('unmet')
   })
 })
+
+describe('literature-minor 2026-27 review', () => {
+  it('an internship (LIT 108A) or tutorial counts only with department approval', () => {
+    // "Independent studies and internships may count toward the electives with department approval."
+    for (const c of ['LIT 108A', 'LIT 199A']) {
+      const t = swap('LIT 133C', c)
+      expect(find(run(harness, { terms: t, attested: [] }), 'electives-approval').status).toBe('needs-attestation')
+      expect(failing(run(harness, { terms: t, attested: ['department approval'] }))).toEqual([])
+    }
+    // not asked when four regular electives exist
+    expect(failing(run(harness, { terms: [...terms, { term: '2288', courses: ['LIT 108A'] }], attested: [] }))).toEqual([])
+  })
+
+  it('2-credit courses, other-department courses and LIT 190-level seminars are not electives', () => {
+    expect(find(run(harness, { terms: swap('LIT 133C', 'LIT 199F') }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('LIT 133C', 'HIS 150A') }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('LIT 133C', 'LIT 190A') }), 'electives').status).toBe('unmet')
+  })
+
+  it('empty plan', () => {
+    expect(failing(run(harness, { terms: [] }))).toEqual(['lit1:unmet', 'lit60-80:unmet', 'lit101:unmet', 'electives:unmet'])
+  })
+})

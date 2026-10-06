@@ -8,7 +8,7 @@
 // ("Courses used to fulfill the advanced language proficiency requirement
 // cannot be counted toward the APLX electives."). At most two courses used
 // for the major may be P/NP.
-import { anyOf, codes, defineHarness, display, range, series, subject } from '@harness'
+import { anyOf, canon, codes, defineHarness, display, range, series, subject } from '@harness'
 import type { CourseSet, HarnessContext, Node } from '@harness'
 
 type Lang = 'chinese' | 'french' | 'italian' | 'japanese' | 'spanish'
@@ -27,7 +27,7 @@ const ADVANCED: Record<Lang, { label: string; list: string[]; subjects: string[]
   spanish: {
     label: 'Spanish',
     list: [
-      'SPAN 114', 'SPHS 115', 'SPAN 130', 'LGST 130A', 'SPAN 140', 'SPAN 141', 'SPAN 142', 'SPAN 150', 'SPAN 151', 'SPAN 152', 'SPAN 153', 'SPAN 154',
+      'SPAN 114', 'SPHS 115', 'SPAN 130', 'SPAN 140', 'SPAN 141', 'SPAN 142', 'SPAN 150', 'SPAN 151', 'SPAN 152', 'SPAN 153', 'SPAN 154',
       'SPAN 155', 'SPAN 156A', 'SPAN 156E', 'SPAN 156F', 'SPAN 156J', 'SPAN 156K', 'SPAN 156L', 'SPAN 157', 'SPAN 158',
     ],
     subjects: ['SPAN', 'SPHS'],
@@ -46,6 +46,19 @@ const ELECTIVES = [
   'LIT 102', 'SOCY 142', 'SPAN 140', 'SPAN 150', 'SPAN 151', 'SPAN 152', 'SPAN 153', 'SPAN 154', 'SPAN 156K', 'SPAN 156L',
 ]
 const APLX = subject('APLX')
+
+const LIST_QUOTE = 'The complete [Advanced Language Proficiency course list](https://language.ucsc.edu) is posted on the department’s web page.'
+const PETITION_QUOTE = 'Students may petition to have other 5-credit, upper-division courses offered in the student’s target language count toward the advanced language proficiency requirement.'
+
+/** Free-form course list: "SPAN 199, LIT 189F" → canonical, comma-joined. */
+function parseList(raw: string): string | undefined {
+  const out = raw
+    .split(/[,;\n]+/)
+    .map((s) => s.trim())
+    .filter((s) => /^[A-Za-z]{2,5}\s*\d{1,3}[A-Za-z]{0,2}$/.test(s))
+    .map(canon)
+  return out.length ? [...new Set(out)].join(',') : undefined
+}
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z]/g, '')
 const parseLang = (raw: string | undefined): Lang | undefined => {
@@ -66,16 +79,25 @@ export default defineHarness({
       options: LANG_KEYS.map((k) => ({ value: k, label: ADVANCED[k].label, aliases: [ADVANCED[k].subjects[0].toLowerCase()] })),
       parse: parseLang,
     },
+    // External complete list → the student declares which courses are on it (§1a).
+    { key: 'advanced_list_courses', label: 'Your courses on the complete Advanced Language Proficiency list', quote: LIST_QUOTE, options: [], free: true, parse: parseList },
+  ],
+  attestations: [
+    {
+      id: 'advanced-petition',
+      label: 'Petition approved: other target-language course counts as advanced language proficiency',
+      quote: PETITION_QUOTE,
+      aliases: ['advanced language petition', 'petition'],
+    },
   ],
   notes: [
     'At most two courses used for the major may be taken P/NP; APLX 190 must be letter-graded.',
-    'Study abroad courses (up to three, 15 upper-division credits) and other upper-division courses in your target language count only by petition — add them once approved.',
+    'Study abroad courses (up to three, 15 upper-division credits) count only by petition — add them once approved.',
     'Additional electives can be considered with approval of the APLX faculty director.',
     'APLX 190 is taken in the senior year (the app does not check the year).',
   ],
   coverage: {
     ignore: Object.fromEntries(['CHIN4', 'FREN4', 'ITAL4', 'JAPN4', 'SPAN4', 'SPHS4'].map((c) => [c, 'Level 4 is a major-qualification (declaration) course, shown as info'])),
-    unknownOk: { LGST130A: 'cross-listing of SPAN 130 named on the page; not a separate catalog entry' },
   },
   evaluate(h) {
     h.policy = undefined // the P/NP rule is a count, handled below
@@ -106,16 +128,22 @@ export default defineHarness({
     // complete list posted on the department's web page.
     const listed = codes(...A.list)
     const wildPool = anyOf(...A.subjects.map((s) => range(s, 100, 199)), ...(A.lit ? [A.lit] : []), codes(...UNASSIGNED)).minCredits(5).except(listed)
-    const wild = new Set(h.passed.filter((e) => wildPool.has(e.code, h.catalog)).map((e) => e.code))
+    const declared = new Set((h.choice('advanced_list_courses') ?? '').split(',').filter(Boolean))
+    const cands = [...new Set(h.passed.filter((e) => wildPool.has(e.code, h.catalog)).map((e) => e.code))]
+    const onList = cands.filter((c) => declared.has(c))
+    const unassigned = new Set(UNASSIGNED.map(canon))
+    const wild = new Set(cands.filter((c) => !declared.has(c) && !unassigned.has(c)))
     const advanced = h.take(
       'advanced',
       `Two advanced ${A.label} proficiency courses`,
       [
         'Students must take a minimum of two courses from the following list in the student’s target language (Chinese, French, Italian, Japanese, or Spanish).',
         'Courses used to fulfill the advanced language proficiency requirement cannot be counted toward the APLX electives.',
+        LIST_QUOTE,
+        PETITION_QUOTE,
       ],
-      wild.size ? listed.or(codes(...wild)) : listed,
-      { n: 2, prefer: (c) => (wild.has(c) ? 1 : 0), pool: `${A.label} courses on the Advanced Language Proficiency list` },
+      cands.length ? listed.or(codes(...cands)) : listed,
+      { n: 2, prefer: (c) => (wild.has(c) ? 2 : onList.includes(c) ? 1 : 0), pool: `${A.label} courses on the Advanced Language Proficiency list` },
     )
     const electives = h.take(
       'electives',
@@ -126,18 +154,30 @@ export default defineHarness({
     )
     const aplx190 = h.take('aplx190', 'APLX 190 Research Seminar (letter grade)', ['In their senior year, applied linguistics and multilingualism majors must satisfy the senior exit requirement with:', 'APLX 190 — Research Seminar in Applied Linguistics (5)', 'Please note that the Level 4 course in the student\'s chosen language and APLX 190 must be taken for a letter grade.'], codes('APLX 190'), { policy: { letter: true } })
     h.solve()
-    if (advanced.status === 'met') {
+    // A fill that needs an undeclared course: on the complete list (declare it)
+    // or by petition — the petition is asked only now that it is needed (§1a).
+    let advNode: Node = advanced
+    const lals = (advanced.used ?? []).filter((e) => unassigned.has(e.code) && !declared.has(e.code))
+    if (advanced.status === 'met' && lals.length) {
+      // On the page's list, but in none of the five target languages: ask.
+      advanced.status = 'cannot-check'
+      advanced.detail = `${lals.map((e) => e.display).join(', ')} is on the list but not in one of the five target languages — confirm with the department that it counts for ${A.label}.`
+    } else if (advanced.status === 'met') {
       const w = (advanced.used ?? []).filter((e) => wild.has(e.code))
       if (w.length) {
-        advanced.status = 'cannot-check'
-        advanced.detail = `Counts only if ${w.map((e) => display(e.code)).join(', ')} ${w.length > 1 ? 'are' : 'is'} on the department’s complete Advanced Language Proficiency list (or approved by petition) — check it.`
+        const names = `${w.map((e) => display(e.code)).join(', ')}`
+        advanced.detail = h.attested('advanced-petition')
+          ? `${names} counted by petition.`
+          : `${names} counts only if on the department’s complete list (declare it) or approved by petition.`
+        advanced.choice = 'advanced_list_courses'
+        if (!h.attested('advanced-petition')) advNode = h.group('advanced-petition-group', `Two advanced ${A.label} proficiency courses`, [advanced, h.attest('advanced-petition')])
       }
     }
 
     const dc = h.take('dc', 'Disciplinary Communication (DC): APLX 190', 'The Disciplinary Communication requirement (DC) is satisfied by successfully completing:', codes('APLX 190'), { exclusive: false, policy: { letter: true } })
     h.solve()
 
-    const upper = h.group('upper', 'Upper-Division Courses', [foundation, h.group('advanced-group', 'Advanced Language Proficiency Courses', [advanced])])
+    const upper = h.group('upper', 'Upper-Division Courses', [foundation, h.group('advanced-group', 'Advanced Language Proficiency Courses', [advNode])])
     const elect = h.group('electives-group', 'Electives', [electives])
     const comprehensive = h.group('comprehensive', 'Comprehensive Requirement', [aplx190])
     const pnp = passFailCount(h, [lower, upper, elect, comprehensive])

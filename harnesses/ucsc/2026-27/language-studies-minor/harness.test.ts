@@ -80,3 +80,23 @@ describe('language-studies-minor 2026-27', () => {
     expect(failing(run(harness, { terms, choices: S, grades: { 'SPAN 114': 'P', 'LING 50': 'P' } }))).toEqual([])
   })
 })
+
+describe('language-studies-minor 2026-27 review', () => {
+  it('one quarter of LING 199 counts as an elective, a second does not', () => {
+    // "These courses include independent study (LING 199), …" / "Students may apply no more than one quarter of LING 199."
+    expect(find(run(harness, { terms: swap(terms, 'LING 113', 'LING 199'), choices: S }), 'electives').status).toBe('met')
+    const two = [...swap(swap(terms, 'LING 113', 'LING 199'), 'LING 112', 'LING 199'), { term: '2284', courses: ['LING 199'] }]
+    expect(find(run(harness, { terms: two, choices: S }), 'electives').status).toBe('unmet')
+  })
+
+  it('a declared cultural context course counts', () => {
+    const t = swap(terms, 'LING 113', 'HIS 155')
+    expect(find(run(harness, { terms: t, choices: { ...S, cultural_context_courses: 'HIS 155' } }), 'electives').status).toBe('met')
+  })
+
+  it('Level 6 placement is asked only when no Level 6 course is in the plan', () => {
+    const r = run(harness, { terms, choices: S, attested: [] })
+    expect(find(r, 'level6').status).toBe('met')
+    expect(() => find(r, 'attest:level6-equivalent')).toThrow()
+  })
+})

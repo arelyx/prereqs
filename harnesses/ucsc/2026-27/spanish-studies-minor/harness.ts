@@ -12,12 +12,13 @@ const HERITAGE: string[][] = [['SPHS 4'], ['SPHS 5'], ['SPHS 6']]
 
 // "Spanish Elective (5 credits)" list. The row "SPAN 130 / SPAN 6 / SPHS 6
 // [/LGST 130A] — Spanish for the Legal Profession" is a garbled cross-listing:
-// only SPAN 130 (= LGST 130A) is the upper-division elective it names.
+// only SPAN 130 (= LGST 130A; the library treats cross-listed codes as one
+// course) is the upper-division elective it names.
 const ELECTIVES = [
   'LIT 188A', 'LIT 188B', 'LIT 188E', 'LIT 188F', 'LIT 188G', 'LIT 188H', 'LIT 188I', 'LIT 188L', 'LIT 188M', 'LIT 188R', 'LIT 188Z',
   'LIT 189D', 'LIT 189E', 'LIT 189F', 'LIT 189G', 'LIT 189H', 'LIT 189I', 'LIT 189K', 'LIT 189L', 'LIT 189M', 'LIT 189N', 'LIT 189O',
   'LIT 189P', 'LIT 189Q', 'LIT 189R', 'LIT 189S', 'LIT 189T', 'LIT 189U', 'LIT 189V', 'LIT 189X', 'LIT 189Z', 'SPAN 156A', 'SPAN 156E',
-  'SPAN 156F', 'SPAN 156J', 'SPAN 156K', 'SPAN 156L', 'SPAN 156M', 'SPAN 157', 'SPAN 158', 'SPAN 130', 'LGST 130A', 'SPAN 140',
+  'SPAN 156F', 'SPAN 156J', 'SPAN 156K', 'SPAN 156L', 'SPAN 156M', 'SPAN 157', 'SPAN 158', 'SPAN 130', 'SPAN 140',
   'SPAN 141', 'SPAN 151', 'SPAN 152', 'SPAN 153', 'SPAN 154', 'SPAN 155',
 ]
 
@@ -33,9 +34,6 @@ export default defineHarness({
       aliases: ['equivalent proficiency', 'placement', 'proficiency'],
     },
   ],
-  coverage: {
-    unknownOk: { LGST130A: 'cross-listing of SPAN 130 named on the page; not a separate catalog entry', SPAN105: 'cross-listing of LIT 189C named on the page; not a separate catalog entry' },
-  },
   notes: ['Courses may be taken for a letter grade or P/NP.'],
   evaluate(h) {
     // "Courses may be taken for a letter grade or Pass/No Pass."
@@ -51,7 +49,7 @@ export default defineHarness({
       'Upper-Division Courses',
       [
         h.take('core-literature', 'Literature: LIT 189A or LIT 189B', ['Literature (5 credits)', 'Choose one of the following courses:'], codes('LIT 189A', 'LIT 189B')),
-        h.take('core-spanish-studies', 'Spanish Studies: LIT 189C (SPAN 105)', 'LIT 189C [/SPAN 105] — Introducción a Spanish Studies (5)', codes('LIT 189C', 'SPAN 105')),
+        h.take('core-spanish-studies', 'Spanish Studies: LIT 189C (SPAN 105)', 'LIT 189C [/SPAN 105] — Introducción a Spanish Studies (5)', codes('LIT 189C')),
         h.take('core-linguistics', 'Linguistics: SPAN 150', 'SPAN 150 — Topics in Hispanic Linguistics: Introduction to Hispanic Linguistics (5)', codes('SPAN 150')),
         h.take('core-language', 'Spanish Language: SPAN 114 or SPHS 115', ['Spanish Language (5 credits)', 'Choose one of the following courses:'], codes('SPAN 114', 'SPHS 115')),
         h.take('elective', 'Spanish elective', ['Spanish Elective (5 credits)', 'Choose one of the following courses:'], codes(...ELECTIVES)),

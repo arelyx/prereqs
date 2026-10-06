@@ -6,6 +6,6 @@
  "skeleton_sha256": "04f30b821421b8e22f45388a2e8aa96ba88d4244492c506a9c94fc51c0e29b4f",
  "status": "verified",
  "authored_at": "2026-10-06T00:51:45Z",
- "verified_at": "2026-10-06T01:06:34Z",
- "notes": "verified line by line against sources/literature-minor.md; LIT 1, LIT 60/61/80/81 series, LIT 101, four LIT 108-189 (5 cr, not 179A/B); P/NP allowed; approvals/substitutions as notes."
+ "verified_at": "2026-10-06T23:45:54Z",
+ "notes": "verified line by line against sources/literature-minor.md; LIT 1, LIT 60/61/80/81 series, LIT 101, four LIT 108-189 (5 cr, not 179A/B); P/NP allowed; approvals/substitutions as notes.; reviewed 2026-10-06: LIT 108A (internship, inside 108-189) counted with no approval -> now needs department-approval attestation, as do LIT 198/199 tutorials (asked only when needed)"
 }
