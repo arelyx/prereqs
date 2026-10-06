@@ -103,6 +103,18 @@ export interface CourseSet {
   list(catalog: Catalog): string[]
 }
 
+/** Catalog facts for a code, or for its cross-listed partner when the catalog files the course there. */
+function courseOf(c: string, cat?: Catalog): CatalogCourse | undefined {
+  if (!cat) return undefined
+  const own = cat.get(c)
+  if (own) return own
+  for (const x of cat.equivalents(c)) {
+    const p = cat.get(x)
+    if (p) return p
+  }
+  return undefined
+}
+
 function mkSet(
   has: (code: string, catalog?: Catalog) => boolean,
   describe: string,
@@ -131,7 +143,7 @@ function mkSet(
       mkSet(
         (c, cat) => {
           if (!has(c, cat)) return false
-          const cr = cat?.get(c)?.credits
+          const cr = courseOf(c, cat)?.credits
           return cr === undefined || Number.isNaN(cr) ? true : cr >= n
         },
         `${describe} (${n}+ credits)`,
@@ -141,7 +153,7 @@ function mkSet(
       mkSet(
         (c, cat) => {
           if (!has(c, cat)) return false
-          const course = cat?.get(c)
+          const course = courseOf(c, cat)
           return course ? pred(course) : false
         },
         `${describe} (${d})`,
@@ -195,7 +207,7 @@ export function subject(subj: string, division?: 'lower' | 'upper' | 'graduate')
       const p = parseCode(c)
       if (p.subject !== s) return false
       if (!division) return true
-      const d = cat?.get(c)?.division
+      const d = courseOf(c, cat)?.division
       if (d) return d === division
       return division === 'lower' ? p.number < 100 : division === 'upper' ? p.number >= 100 && p.number < 200 : p.number >= 200
     },

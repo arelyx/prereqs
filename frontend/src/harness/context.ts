@@ -103,7 +103,12 @@ export class HarnessContext {
    */
   courseKey = (e: Enrollment): string => {
     if (this.catalog.get(e.code)?.repeatable) return e.id
-    return [e.code, ...this.catalog.equivalents(e.code)].sort()[0]
+    return this.groupKey(e.code)
+  }
+
+  /** Stable name of a course across its cross-listed codes. */
+  groupKey(code: string): string {
+    return [code, ...this.catalog.equivalents(code)].sort()[0]
   }
   private allNodes: Node[] = []
 
@@ -319,7 +324,9 @@ export class HarnessContext {
         tick() // building units is real work: charge it to the allocation budget
         if (labCodes.has(e.code) || !isMember(e.code)) continue
         const rep = opts.repeatable === 'catalog' ? !!cat.get(e.code)?.repeatable : !!opts.repeatable
-        if (!rep && seenCodes.has(e.code)) continue
+        // One course however it was entered: cross-listed codes share a key.
+        const ck = this.groupKey(e.code)
+        if (!rep && seenCodes.has(ck)) continue
         const lab = pairs.get(e.code)
         let unit = [e]
         if (lab) {
@@ -329,7 +336,7 @@ export class HarnessContext {
             takenLabs.add(le.id)
           } else if (labMode === 'required') continue
         }
-        seenCodes.add(e.code)
+        seenCodes.add(ck)
         out.push(unit)
       }
       if (opts.composite) out.push(...opts.composite.build(avail.filter((e) => opts.composite!.eligible.has(e.code, cat))))
@@ -452,22 +459,31 @@ export class HarnessContext {
     const policy = opts.policy ?? this.policy
     const pk = packages.map((p) => p.map(canon))
     const members = new Set(pk.flat())
+    // A package member matches its cross-listed partner codes too.
+    const same = (want: string, code: string) =>
+      code === want || this.catalog.equivalents(want).includes(code)
+    const isMember = (code: string) => members.has(code) || this.catalog.equivalents(code).some((m) => members.has(m))
     const okGrade = (e: Enrollment) => {
       const why = policyFailure(e, policy)
-      if (why && members.has(e.code)) this.excluded.set(e.id, why)
+      if (why && isMember(e.code)) this.excluded.set(e.id, why)
       return why == null
+    }
+    // Distinct enrollments for a package (a package may name a code twice,
+    // e.g. three quarters of BME 195).
+    const pick = (p: string[], avail: Enrollment[]): Enrollment[] => {
+      const fill: Enrollment[] = []
+      for (const c of p) {
+        const e = avail.find((x) => same(c, x.code) && !fill.includes(x))
+        if (e) fill.push(e)
+      }
+      return fill
     }
     const slot: Slot = {
       id,
-      eligible: (e) => members.has(e.code) && okGrade(e),
+      eligible: (e) => isMember(e.code) && okGrade(e),
       *fills(avail) {
         for (const p of pk) {
-          const fill: Enrollment[] = []
-          for (const c of p) {
-            const e = avail.find((x) => x.code === c && !fill.includes(x))
-            if (!e) break
-            fill.push(e)
-          }
+          const fill = pick(p, avail)
           if (fill.length === p.length) yield fill
         }
       },
@@ -475,7 +491,7 @@ export class HarnessContext {
         let best: Enrollment[] = []
         let bestNeed = pk[0]?.length ?? 0
         for (const p of pk) {
-          const fill = p.map((c) => avail.find((x) => x.code === c)).filter((x): x is Enrollment => !!x)
+          const fill = pick(p, avail)
           if (fill.length / p.length > best.length / bestNeed) {
             best = fill
             bestNeed = p.length
