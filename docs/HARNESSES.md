@@ -50,6 +50,26 @@ node (tests, lint, eval) against the same catalog facts.
    build `codes(...)` sets inside a check.
 7. Comment every non-obvious decision with the quote that justifies it.
 
+## 1a. Conventions (keep all 119 programs consistent)
+
+These were settled after the full-catalog rollout, where twelve authors had
+resolved the same patterns differently. Follow them; a reviewer normalizes
+toward them.
+
+| Pattern on the page | Model it as |
+|---|---|
+| Test-out / placement exam / AP score that **satisfies or waives** a listed course ("A test-out option is available for CSE 20", "May also be satisfied with a score of 300 or higher on the ALEKS") | an **attestation** named after the exam ("Passed the CSE 20 test-out"), offered **only when the course is absent from the plan**; when attested, the course slot is met with detail "by test-out". |
+| Test-out mentioned only as advice, with no statement that it satisfies anything | a note. |
+| Petition-only path ("by petition", "with department approval", "advisor pre-approval") | an attestation that is asked **only when the allocator actually needed the petitioned course**; never a blanket pass. |
+| Category / region / approved-elective list kept on an external page | the student declares which of their courses belong (choice), as in anthropology-minor / history-ba; until declared → `cannot-check` naming the list. Never `met` on a guess; `unmet` only when no plausible candidate exists. |
+| A course "may count toward both X and Y" | an overlay (`exclusive: false`) on the second requirement. |
+| "cannot receive credit for both A and B" (catalog or page) | both codes in the same unit set so only one counts (the allocator already counts one course once across slots, including cross-listed codes). |
+| Cross-listed partner codes ("SOCY 128 [/LGST 126]") | nothing — the library treats cross-listed codes as one course. Do not add `unknownOk` partner lists for this. |
+| Qualification / declaration / screening / GPA-to-declare | `h.info` only. |
+| Residency, "taught by department faculty", instructor approval | a note (the plan has no such data). |
+| Major-wide grade rules (C or better, letter grade) | the harness `policy`; P allowed only where the page says so. |
+| Rules that span another program's page | `--depends <slug>` on the manifest (§3 step 6). |
+
 ## 2. API reference (`import { ... } from '@harness'`)
 
 ### Module shape
