@@ -136,8 +136,9 @@ describe('music-ba 2026-27 global musics', () => {
   it('MUSC 200 cannot fill both the graduate requirement and the research project', () => {
     const t = swap(swap(gmPlan, 'MUSC 253D', 'MUSC 200'), 'MUSC 105A', 'MUSC 200')
     const r = run(harness, { terms: t, choices: GM })
-    // only one MUSC 200 enrollment per term-code: two separate enrollments are present here (different terms)
-    expect(find(r, 'comprehensive').status).toBe('met')
+    // MUSC 200 is not repeatable: taking it in two quarters still earns one
+    // course, so it cannot cover both ("cannot be double counted").
+    expect([find(r, 'comprehensive').status, find(r, 'grad-research').status]).toContain('unmet')
     const once = swap(gmPlan, 'MUSC 105A', 'MUSC 200').map((q) => (q.term === '2290' ? { ...q, courses: q.courses.filter((c) => c !== 'MUSC 253D') } : q))
     const r2 = run(harness, { terms: once, choices: GM })
     expect([find(r2, 'comprehensive').status, find(r2, 'grad-research').status]).toContain('unmet')

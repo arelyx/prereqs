@@ -94,6 +94,17 @@ export class HarnessContext {
   readonly excluded = new Map<string, string>()
   private pending: PendingSlot[] = []
   private usedIds = new Set<string>()
+  private usedKeys = new Set<string>()
+
+  /**
+   * Unit of exclusivity across slots: a repeatable course (catalog flag) is
+   * counted per enrollment; any other course is ONE course however many
+   * times it was taken and under whichever cross-listed code.
+   */
+  courseKey = (e: Enrollment): string => {
+    if (this.catalog.get(e.code)?.repeatable) return e.id
+    return [e.code, ...this.catalog.equivalents(e.code)].sort()[0]
+  }
   private allNodes: Node[] = []
 
   constructor(
@@ -524,14 +535,15 @@ export class HarnessContext {
   solve(): void {
     const pending = this.pending
     this.pending = []
-    const pool = this.enrollments.filter((e) => !this.usedIds.has(e.id))
+    const pool = this.enrollments.filter((e) => !this.usedKeys.has(this.courseKey(e)))
     const excl = pending.filter((p) => p.exclusive)
     if (excl.length) {
-      const res = allocate(excl.map((p) => p.slot), pool)
+      const res = allocate(excl.map((p) => p.slot), pool, undefined, this.courseKey)
       for (const p of excl) {
         p.finish(res.chosen.get(p.slot.id) ?? [], res.satisfied.has(p.slot.id), res.partial.get(p.slot.id), res.exhausted)
       }
       for (const id of res.used) this.usedIds.add(id)
+      for (const k of res.usedKeys) this.usedKeys.add(k)
     }
     for (const p of pending.filter((x) => !x.exclusive)) {
       const res = allocate([p.slot], this.enrollments)

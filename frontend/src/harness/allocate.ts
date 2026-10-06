@@ -26,6 +26,7 @@ export interface Allocation {
   partial: Map<string, { have: number; need: number }>
   exhausted: boolean
   used: Set<string> // enrollment ids
+  usedKeys: Set<string> // course keys (see `keyOf`)
 }
 
 // Work accounting: every combination examined anywhere inside one
@@ -62,7 +63,18 @@ function hasFill(slot: Slot, avail: Enrollment[]): boolean | 'maybe' {
   }
 }
 
-export function allocate(allSlots: Slot[], pool: Enrollment[], budget = WORK_BUDGET): Allocation {
+/**
+ * `keyOf` names the unit of exclusivity. By default every enrollment is its
+ * own unit; the context passes a course key so that a non-repeatable course
+ * taken twice (or under two cross-listed codes) still counts once across all
+ * exclusive slots.
+ */
+export function allocate(
+  allSlots: Slot[],
+  pool: Enrollment[],
+  budget = WORK_BUDGET,
+  keyOf: (e: Enrollment) => string = (e) => e.id,
+): Allocation {
   // Slots with no possible fill even from the whole pool can never be
   // satisfied: search only the rest (they still get partial progress below).
   // Most specific slots first (fewest eligible enrollments; stable): among
@@ -94,7 +106,7 @@ export function allocate(allSlots: Slot[], pool: Enrollment[], budget = WORK_BUD
       let ub = sat
       for (let j = i; j < n; j++) {
         const s = slots[j]
-        const avail = pool.filter((e) => !used.has(e.id) && s.eligible(e))
+        const avail = pool.filter((e) => !used.has(keyOf(e)) && s.eligible(e))
         work += avail.length >> 3
         if (hasFill(s, avail) !== false) ub++
         if (ub > bestSat) break
@@ -107,13 +119,14 @@ export function allocate(allSlots: Slot[], pool: Enrollment[], budget = WORK_BUD
       return
     }
     const slot = slots[i]
-    const avail = pool.filter((e) => !used.has(e.id) && slot.eligible(e))
+    const avail = pool.filter((e) => !used.has(keyOf(e)) && slot.eligible(e))
     for (const fill of slot.fills(avail)) {
-      for (const e of fill) used.add(e.id)
+      const keys = fill.map(keyOf)
+      for (const k of keys) used.add(k)
       assign.set(slot.id, fill)
       dfs(i + 1, sat + 1)
       assign.delete(slot.id)
-      for (const e of fill) used.delete(e.id)
+      for (const k of keys) used.delete(k)
       if (bestSat === n || exhausted) return
     }
     dfs(i + 1, sat)
@@ -131,19 +144,24 @@ export function allocate(allSlots: Slot[], pool: Enrollment[], budget = WORK_BUD
 
   // Partial progress for unsatisfied slots from what is left, in slot order.
   const finalUsed = new Set<string>()
-  for (const fill of best.values()) for (const e of fill) finalUsed.add(e.id)
+  const finalKeys = new Set<string>()
+  const mark = (e: Enrollment) => {
+    finalUsed.add(e.id)
+    finalKeys.add(keyOf(e))
+  }
+  for (const fill of best.values()) fill.forEach(mark)
   const chosen = new Map(best)
   const partial = new Map<string, { have: number; need: number }>()
   const satisfied = new Set(best.keys())
   for (const slot of allSlots) {
     if (satisfied.has(slot.id)) continue
-    const avail = pool.filter((e) => !finalUsed.has(e.id) && slot.eligible(e))
+    const avail = pool.filter((e) => !finalKeys.has(keyOf(e)) && slot.eligible(e))
     const p = slot.partial(avail)
-    for (const e of p.chosen) finalUsed.add(e.id)
+    p.chosen.forEach(mark)
     chosen.set(slot.id, p.chosen)
     partial.set(slot.id, { have: p.have, need: p.need })
   }
-  return { chosen, satisfied, partial, exhausted, used: finalUsed }
+  return { chosen, satisfied, partial, exhausted, used: finalUsed, usedKeys: finalKeys }
 }
 
 /** k-combinations of `items` in lexicographic index order (lazy). */

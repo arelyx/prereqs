@@ -37,6 +37,12 @@ export interface Catalog {
   all(): CatalogCourse[]
   /** Subjects whose descriptions are loaded. */
   described: ReadonlySet<string>
+  /**
+   * Codes that name the same course through cross-listing (excluding `code`
+   * itself), e.g. LGST128 ↔ ECON128. Partner codes the catalog files only on
+   * the primary course (it lists each cross-listed course once) are included.
+   */
+  equivalents(code: string): string[]
 }
 
 /** One course occurrence in the plan. The same code may occur in several terms. */

@@ -58,6 +58,15 @@ export function makeCatalog(rows: RawCourse[], describedSubjects: Iterable<strin
       description: r.description ?? undefined,
     })
   }
+  // Cross-listing groups (union of every catalog course with its listed
+  // partners): a student may enter either code, and a page may name either.
+  const group = new Map<string, Set<string>>()
+  for (const c of byCode.values()) {
+    for (const x of c.crossListed) {
+      const g = new Set([...(group.get(c.code) ?? [c.code]), ...(group.get(x) ?? [x])])
+      for (const m of g) group.set(m, g)
+    }
+  }
   const sorted = [...byCode.values()].sort(
     (a, b) =>
       a.subject.localeCompare(b.subject) || a.number - b.number || a.suffix.localeCompare(b.suffix),
@@ -67,6 +76,11 @@ export function makeCatalog(rows: RawCourse[], describedSubjects: Iterable<strin
     has: (c) => byCode.has(canon(c)),
     all: () => sorted,
     described: new Set(describedSubjects),
+    equivalents: (c) => {
+      const k = canon(c)
+      const g = group.get(k)
+      return g ? [...g].filter((m) => m !== k) : []
+    },
   }
 }
 
@@ -95,7 +109,8 @@ function mkSet(
   members?: string[],
 ): CourseSet {
   const self: CourseSet = {
-    has,
+    // A course is in the set if it or any cross-listed partner code is.
+    has: (c, cat) => has(c, cat) || (!!cat && cat.equivalents(c).some((x) => has(x, cat))),
     describe,
     members,
     or: (other) =>
