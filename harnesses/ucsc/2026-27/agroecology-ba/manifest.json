@@ -1,0 +1,11 @@
+{
+ "program": "agroecology-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "be65a7825acea8e93f680810e2408711423b9fb4d9697163f00ae6c9a4f701a3",
+ "skeleton_sha256": "886af7e76aa23e40a33c92acd070f4909ed320a7e0fce5a685e8e0d0b47c66f1",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:47:35Z",
+ "verified_at": "2026-10-06T00:48:12Z",
+ "notes": "verified line by line against sources/agroecology-ba.md; practicum + 4 electives as one n=5 allocation (atLeast 1 practicum) so the ENVS 133/133B and 183A/195A exclusions hold across both lists; labs merge (catalog: labs require lecture, not reverse); math exam (AP/ALEKS) is an attestation alternative; comprehensive letter grade, DC overlay; petitions/topic rules as notes"
+}

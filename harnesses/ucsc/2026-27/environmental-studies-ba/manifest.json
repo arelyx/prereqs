@@ -1,0 +1,11 @@
+{
+ "program": "environmental-studies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "8baa7741db2a7ff16b7329921e23144531384ab2e90bd7c86b4ad15cdc4ce1a1",
+ "skeleton_sha256": "a30c13ee9e8287d965fa518cca35426aa4d77ec9741f3923e2c9329f66d9ccb8",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:21Z",
+ "verified_at": "2026-10-06T00:49:56Z",
+ "notes": "verified line by line against sources/environmental-studies-ba.md; concentration choice defaults to general (no concentration); ENVS 183A/195A double as electives and comprehensive halves, so DC and comprehensive are overlays; natural/social lists used as given (BIOE 151A-D count via the natural list except in CSP, whose elective text names only ENVS 101-179/183A/195A); ENVS 104A/130A need their catalog-required labs; GEJ natural-science rule applied to the three additional electives; GIS 'Among those seven courses' read as the four GIS electives; math AP/ALEKS path is an attestation; NRS 188 half-DC is a note"
+}

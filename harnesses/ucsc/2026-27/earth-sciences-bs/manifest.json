@@ -1,0 +1,11 @@
+{
+ "program": "earth-sciences-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "678b4872fc06ecf2e15aa176e43000badc31908c47d73e2d36c550d57b623895",
+ "skeleton_sha256": "fa52a9b3d24833afaa1c9610f5409d12743208f2fe4ec883ba66e573c0fbfed7",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:55Z",
+ "verified_at": "2026-10-06T00:53:39Z",
+ "notes": "verified line by line against sources/earth-sciences-bs.md; concentration choice (default general); per-course P/NP exception via slot check; comprehensive one exclusive slot (189A+189B composite); DC overlay; judgement calls: geophysics recommended grad courses EART 270/273/278A accepted as electives, ocean CHEM has no pre-fall-2026 lab note (followed literally), 'other options by permission' as note; lint ok"
+}

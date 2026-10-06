@@ -1,0 +1,11 @@
+{
+ "program": "earth-sciencesanthropology-combined-major-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "2bf69483464c052a64efcd507c30e0bd069f7ef8f212234e4921d0a2b989bee2",
+ "skeleton_sha256": "d41d79f0455e0cfc9e2ea9cd4e5127e4798fe924954ce648248b9948531cb26c",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:24Z",
+ "verified_at": "2026-10-06T00:53:40Z",
+ "notes": "verified line by line against sources/earth-sciencesanthropology-combined-major-ba.md; no program letter-grade policy; intro geology interchangeable; LD science via merge pairs + check (labs required, CHEM 3B/3C pre-fall-2026 labs, CHEM 3 vs 4 not both; termless CHEM 3B/3C -> cannot-check); ANTH electives counted from UD ANTH then cannot-check (external category list); comprehensive one exclusive slot, EART 198 option needs internship-director attestation; DC overlay; lint ok"
+}

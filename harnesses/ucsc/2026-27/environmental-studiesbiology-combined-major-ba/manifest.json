@@ -1,0 +1,11 @@
+{
+ "program": "environmental-studiesbiology-combined-major-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "3602e22a4980a4db67b79bbd69c1b937e051fcde10b8f14498b609ddd1691eb8",
+ "skeleton_sha256": "9ac2210f704c5e4544dc27e0fc10cd910e1c97b137d861dfbf94d7235d844ffe",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:40Z",
+ "verified_at": "2026-10-06T00:52:06Z",
+ "notes": "verified line by line against sources/environmental-studiesbiology-combined-major-ba.md; all letter-graded; 'A single course may not satisfy more than one requirement' => electives and comprehensive exclusive, DC overlay (shares ENVS 100/100L); 'labs required only when required by the lecture' uses catalog coreqs (ENVS 104A/130A, BIOE 112-163 lectures); lab-based elective requires the listed lab; DC lecture/lab pairs merge; math AP/ALEKS path is an attestation"
+}
