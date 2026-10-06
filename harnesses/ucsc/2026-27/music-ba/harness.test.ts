@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { verdict } from '@harness'
 import { failing, find, plan, run } from '@harness-tools/testing'
 import harness from './harness'
 
@@ -222,5 +223,66 @@ describe('music-ba 2026-27 western music', () => {
     const r = run(harness, { terms: wm, choices: WM, grades: { 'MUSC 161': 'P', 'MUSC 102': 'P' } })
     expect(find(r, 'lessons').status).toBe('unmet')
     expect(find(r, 'ensembles').status).toBe('met')
+  })
+})
+
+// Adversarial review (2026-10-06).
+describe('music-ba 2026-27 — review', () => {
+  it('CP: an upper-division lesson (MUSC 161) taken P/NP is not an elective ensemble/workshop', () => {
+    // "except MUSC 120 (Seminar in Composition) and upper-division workshops & performing ensembles"
+    let t = cp
+    for (let i = 0; i < 3; i++) t = swap(t, 'MUSC 168', 'MUSC 161')
+    expect(find(run(harness, { terms: t, choices: CP }), 'elective-ensembles').status).toBe('met')
+    expect(find(run(harness, { terms: t, choices: CP, grades: { 'MUSC 161': 'P' } }), 'elective-ensembles').status).toBe('unmet')
+    // ...while an upper-division ensemble taken P/NP still counts
+    expect(find(run(harness, { terms: cp, choices: CP, grades: { 'MUSC 168': 'P' } }), 'elective-ensembles').status).toBe('met')
+  })
+
+  it('GM: the undergraduate MUSC 105S is not the graduate-level course (MUSC 253S is)', () => {
+    // "Students in the Global Musics concentration are also required to take one graduate-level course."
+    const ug = swap(gmPlan, 'MUSC 253D', 'MUSC 105S')
+    expect(find(run(harness, { terms: ug, choices: GM }), 'grad-research').status).toBe('unmet')
+    const grad = swap(gmPlan, 'MUSC 253D', 'MUSC 253S')
+    expect(failing(run(harness, { terms: grad, choices: GM }))).toEqual(['modules/confirm:cannot-check'])
+  })
+
+  it('GM: creative portfolio with MUSC 120 and MUSC 196A in the same quarter', () => {
+    const t = swap(swap(gmPlan, 'MUSC 195A', 'MUSC 196A'), 'MUSC 105A', 'MUSC 120')
+    const r = run(harness, { terms: t, choices: GM })
+    expect(find(r, 'comprehensive').status).toBe('met')
+  })
+
+  it('CP: MUSC 196A taken P/NP does not count (not a workshop or ensemble)', () => {
+    expect(find(run(harness, { terms: cp, choices: CP, grades: { 'MUSC 196A': 'P' } }), 'musc196a').status).toBe('unmet')
+  })
+
+  it('WM: empty plan is incomplete', () => {
+    const r = run(harness, { terms: [], choices: WM, attested: [] })
+    expect(verdict(r).complete).toBe(false)
+    expect(find(r, 'ensembles').status).toBe('unmet')
+  })
+
+  it('WM: a theory course on the DC list (MUSC 150D) also satisfies DC', () => {
+    const DC_OTHER = ['MUSC 101A', 'MUSC 101B', 'MUSC 101F', 'MUSC 105Q', 'MUSC 105M']
+    const t = wm.map((q) => ({ ...q, courses: q.courses.filter((c) => !DC_OTHER.includes(c)) }))
+    const r = run(harness, { terms: t, choices: WM })
+    expect(find(r, 'dc').status).toBe('met')
+    expect(find(r, 'dc').used?.map((e) => e.display)).toEqual(['MUSC 150D'])
+    expect(find(r, 'theory2').status).toBe('met')
+  })
+
+  it('WM: MUSC 14 is not a Western Music requirement', () => {
+    expect(failing(run(harness, { terms: wm, choices: WM }))).toEqual([])
+  })
+
+  it('WM: the proficiency audition is asked when not attested', () => {
+    const r = run(harness, { terms: wm, choices: WM, attested: ['musc 60 waiver'] })
+    expect(find(r, 'attest:proficiency-audition').status).toBe('needs-attestation')
+    expect(verdict(r).complete).toBe(false)
+  })
+
+  it('GM: MUSC 14 absent and MUSC 30A absent → needs the placement attestation', () => {
+    const t = swap(gmPlan, 'MUSC 14', null)
+    expect(find(run(harness, { terms: t, choices: GM, attested: [] }), 'musc14').status).toBe('needs-attestation')
   })
 })

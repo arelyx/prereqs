@@ -11,10 +11,11 @@
 //
 // "If no upper-division ensembles are available for your instrument/voice
 // type, you can petition additional quarters of lower-division ensembles":
-// with that petition attested, the upper-division ensemble slot also accepts
-// lower-division ensembles (distinct from the three lower-division quarters).
-import { codes, defineHarness } from '@harness'
-import type { HarnessContext, Node } from '@harness'
+// the upper-division ensemble slot also accepts extra lower-division
+// ensembles (distinct from the three lower-division quarters), and the
+// petition attestation is asked only when one of them was needed.
+import { codes, defineHarness, isPass } from '@harness'
+import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const HISTORY = ['MUSC 11A', 'MUSC 11B', 'MUSC 11D']
 const LD_LESSONS = ['MUSC 61', 'MUSC 62', 'MUSC 63']
@@ -63,7 +64,9 @@ export default defineHarness({
         h.group('keyboard', 'Lower-Division Keyboard and Musicianship', [
           ear31(h),
           h.either('musc60', 'MUSC 60 Fundamental Keyboard Skills (or waiver)', 'MUSC 60 enrollment may be waived by instructor approval, or if the student is taking piano lessons from a UC Santa Cruz instructor.', [
-            h.take('musc60/course', 'MUSC 60 Fundamental Keyboard Skills', 'MUSC 60 — Fundamental Keyboard Skills (2)', codes('MUSC 60')),
+            h.take('musc60/course', 'MUSC 60 Fundamental Keyboard Skills', 'MUSC 60 — Fundamental Keyboard Skills (2)', codes('MUSC 60'), {
+              notes: ['The page lists MUSC 60 once; its planner shows MUSC 60 alongside each MUSC 30 course — confirm with the department how many quarters you need.'],
+            }),
             h.attest('musc60-waiver'),
           ]),
         ]),
@@ -81,38 +84,54 @@ export default defineHarness({
       }),
     ])
 
-    const petition = h.attested('ld-ensemble-petition')
-    const udEnsembles = h.take(
-      'ud-ensembles',
-      'Upper-Division Performing Ensembles: three quarters',
-      [
-        'Take three quarters of performing ensembles from any course on this list, on your primary instrument or voice.',
-        'If no upper-division ensembles are available for your instrument/voice type, you can petition additional quarters of lower-division ensembles.',
-      ],
-      petition ? codes(...UD_ENSEMBLES).or(codes(...LD_ENSEMBLES)) : codes(...UD_ENSEMBLES),
+    // Petition path: lower-division ensembles beyond the three LD quarters may
+    // fill the UD slot, but only by petition — asked only when the allocator
+    // actually needed one ("If no upper-division ensembles are available for
+    // your instrument/voice type, you can petition additional quarters of
+    // lower-division ensembles.").
+    const UD_ENS = codes(...UD_ENSEMBLES)
+    const LD_ENS = codes(...LD_ENSEMBLES)
+    const udPass = (e: Enrollment) => isPass(e.grade) && h.catalog.get(e.code)?.division !== 'lower'
+    for (const e of h.enrollments) if (udPass(e) && UD_ENS.has(e.code, h.catalog)) h.excluded.set(e.id, `${e.display}: taken P/NP, but upper-division courses need a letter grade`)
+    const udEnsCourses = h.take(
+      'ud-ensembles/courses',
+      'Three quarters of upper-division ensembles',
+      'Take three quarters of performing ensembles from any course on this list, on your primary instrument or voice.',
+      UD_ENS.or(LD_ENS),
       {
         n: 3,
         repeatable: true,
-        // Lower-division ensembles admitted by petition may be P/NP; UD ones need a letter.
-        policy: petition ? undefined : UD,
-        check: petition ? (chosen) => {
-          const bad = chosen.find((e) => e.grade === 'P' && h.catalog.get(e.code)?.division !== 'lower')
+        prefer: (c) => (UD_ENS.has(c, h.catalog) ? 0 : 1),
+        // Upper-division ensembles need a letter grade; petitioned lower-division ones may be P/NP.
+        check: (chosen) => {
+          const bad = chosen.find(udPass)
           return bad ? `${bad.display}: taken P/NP, but upper-division courses need a letter grade` : null
-        } : undefined,
-        notes: petition
-          ? ['Your lower-division ensemble petition is applied: extra lower-division ensembles count here.']
-          : ['If no upper-division ensemble fits your instrument/voice, petition (music@ucsc.edu) to use extra lower-division ensembles.'],
+        },
+        notes: ['Extra lower-division ensembles count here only by petition (music@ucsc.edu), when no upper-division ensemble fits your instrument/voice.'],
       },
     )
-    const upper = h.group('upper', 'Upper-Division Courses', [
-      udEnsembles,
-      h.take('ud-lessons', 'Upper-Division Applied Lessons: three quarters', 'Take three quarters of applied lessons from any course type on this list, on your primary instrument or voice.', codes(...UD_LESSONS), {
-        n: 3,
-        repeatable: true,
-        policy: UD,
-      }),
-      h.take('ud-electives', 'Upper-Division Electives', 'Take two (2) courses from the following list', codes(...UD_ELECTIVES), { n: 2, policy: UD }),
-    ])
+    const udLessons = h.take('ud-lessons', 'Upper-Division Applied Lessons: three quarters', 'Take three quarters of applied lessons from any course type on this list, on your primary instrument or voice.', codes(...UD_LESSONS), {
+      n: 3,
+      repeatable: true,
+      policy: UD,
+    })
+    const udElectives = h.take('ud-electives', 'Upper-Division Electives', 'Take two (2) courses from the following list', codes(...UD_ELECTIVES), { n: 2, policy: UD })
+    h.solve()
+    const viaPetition = (udEnsCourses.used ?? []).filter((e) => LD_ENS.has(e.code, h.catalog))
+    if (viaPetition.length && h.attested('ld-ensemble-petition'))
+      udEnsCourses.detail = [udEnsCourses.detail, `${viaPetition.map((e) => e.display).join(', ')} counted by your lower-division ensemble petition`].filter(Boolean).join(' · ')
+    const udEnsembles = h.group(
+      'ud-ensembles',
+      'Upper-Division Performing Ensembles: three quarters',
+      [udEnsCourses, viaPetition.length ? h.attest('ld-ensemble-petition') : null],
+      {
+        quote: [
+          'Take three quarters of performing ensembles from any course on this list, on your primary instrument or voice.',
+          'If no upper-division ensembles are available for your instrument/voice type, you can petition additional quarters of lower-division ensembles.',
+        ],
+      },
+    )
+    const upper = h.group('upper', 'Upper-Division Courses', [udEnsembles, udLessons, udElectives])
     return [lower, upper]
   },
 })

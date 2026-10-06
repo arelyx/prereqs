@@ -13,8 +13,8 @@ import { codes, defineHarness, isPass } from '@harness'
 import type { Enrollment } from '@harness'
 
 const HISTORY = ['MUSC 11A', 'MUSC 11B', 'MUSC 11C', 'MUSC 11D', 'MUSC 11E']
-// PHYS 80U is cross-listed as MUSC 80U; a transcript may show either code.
-const TECH = ['MUSC 71', 'MUSC 72', 'MUSC 80K', 'MUSC 80L', 'MUSC 80R', 'PHYS 80U', 'MUSC 80U', 'FILM 171A', 'THEA 114']
+// PHYS 80U [/MUSC 80U]: the library treats cross-listed codes as one course.
+const TECH = ['MUSC 71', 'MUSC 72', 'MUSC 80K', 'MUSC 80L', 'MUSC 80R', 'PHYS 80U', 'FILM 171A', 'THEA 114']
 const PROGRAMMING = ['CSE 5J', 'CSE 20', 'CT 20', 'ECE 101', 'ECE 153', 'ECE 171', 'PHYS 160']
 // "MUSC 254A does have an undergraduate equivalent, MUSC 105X ... Students can
 // take either 105X or MUSC 254A to satisfy an elective, but not both."
@@ -48,15 +48,17 @@ export default defineHarness({
     'Upper-division (and graduate) courses need a letter grade; lower-division courses may be P/NP.',
     'Similar courses taken here or elsewhere may be approved by the department as substitutions (email music@ucsc.edu) — add an approved substitute as the course it replaces.',
   ],
-  coverage: {
-    unknownOk: { MUSC80U: 'cross-listed alias of PHYS 80U (the catalog lists it under PHYS 80U)' },
-  },
   evaluate(h) {
     h.policy = undefined
     // Upper-division/graduate enrollments taken P/NP cannot count anywhere.
-    const udPass = new Set(
-      h.enrollments.filter((e) => isPass(e.grade) && (h.catalog.get(e.code)?.division ?? 'upper') !== 'lower').map((e) => e.id),
-    )
+    // Division through the cross-listing: MUSC 80U has no catalog row of its
+    // own but is the lower-division PHYS 80U.
+    const division = (code: string) =>
+      h.catalog.get(code)?.division ?? h.catalog.equivalents(code).map((x) => h.catalog.get(x)?.division).find(Boolean) ?? 'upper'
+    const udPass = new Set(h.enrollments.filter((e) => isPass(e.grade) && division(e.code) !== 'lower').map((e) => e.id))
+    const listed = codes(...TECH, ...PROGRAMMING, ...LECTURE, ...WORKSHOP)
+    for (const e of h.enrollments)
+      if (udPass.has(e.id) && listed.has(e.code, h.catalog)) h.excluded.set(e.id, `${e.display}: taken P/NP, but upper-division courses need a letter grade`)
     const udLetter = (chosen: Enrollment[]) => {
       const bad = chosen.find((e) => udPass.has(e.id))
       return bad ? `${bad.display}: taken P/NP, but upper-division courses need a letter grade` : null

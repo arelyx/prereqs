@@ -16,19 +16,19 @@ const CORE = ['CMMU 100', 'CMMU 101', 'CMMU 105A', 'CMMU 105B', 'CMMU 105C', 'CM
 const FIELD_STUDY = new Set(['CMMU105A', 'CMMU105B', 'CMMU105C'])
 const THESIS = ['CMMU 195A', 'CMMU 195B', 'CMMU 195C']
 
-// Topical lists, page order. Cross-listed aliases (shown as "[/X]" on the page)
-// are included so a course recorded under its other code still counts.
+// Topical lists, page order. Cross-listed codes ("[/X]" on the page) need
+// nothing: the library treats them as one course.
 const TOPICAL = [
   // Community Studies
   'CMMU 130', 'CMMU 132', 'CMMU 133', 'CMMU 134', 'CMMU 137', 'CMMU 141', 'CMMU 143', 'CMMU 145',
   'CMMU 148', 'CMMU 149', 'CMMU 151', 'CMMU 156', 'CMMU 157', 'CMMU 160', 'CMMU 161', 'CMMU 162',
-  'CMMU 163', 'CMMU 164', 'CMMU 165', 'GCH 165', 'CMMU 167', 'CMMU 186',
+  'CMMU 163', 'CMMU 164', 'CMMU 165', 'CMMU 167', 'CMMU 186',
   // Anthropology
   'ANTH 134', 'ANTH 136', 'ANTH 153', 'ANTH 194P',
   // Education
   'EDUC 135', 'EDUC 173', 'EDUC 181',
   // Environmental Studies
-  'ENVS 130B', 'LGST 130B', 'ENVS 158',
+  'ENVS 130B', 'ENVS 158',
   // History of Art and Visual Culture
   'HAVC 141K', 'HAVC 141O', 'HAVC 142',
   // History
@@ -38,11 +38,11 @@ const TOPICAL = [
   // Oakes College
   'OAKS 153',
   // Politics
-  'POLI 120C', 'LGST 120C', 'POLI 122', 'POLI 124', 'GCH 186',
+  'POLI 120C', 'POLI 122', 'POLI 124', 'GCH 186',
   // Psychology
   'PSYC 147A', 'PSYC 147B', 'PSYC 149', 'PSYC 153', 'PSYC 155', 'PSYC 159H',
   // Sociology
-  'SOCY 122', 'LGST 122', 'SOCY 127', 'LGST 127', 'SOCY 131', 'SOCY 176A', 'SOCY 177', 'SOCY 177E', 'SOCY 177G',
+  'SOCY 122', 'SOCY 127', 'SOCY 131', 'SOCY 176A', 'SOCY 177', 'SOCY 177E', 'SOCY 177G',
 ]
 
 const Q_TOPICAL_BEFORE = 'All three topical courses must be completed before a student begins full-time field study (CMMU 105A-CMMU 105B-CMMU 105C).'
@@ -56,15 +56,7 @@ export default defineHarness({
     'The topical courses must all be finished before your first quarter of full-time field study (CMMU 105A/B/C).',
     'EAP coursework may satisfy one topical course by petition — add it as a completed course once approved.',
   ],
-  coverage: {
-    unknownOk: {
-      GCH165: 'cross-listed alias of CMMU 165 shown on the page; the catalog lists the course under CMMU 165',
-      LGST130B: 'cross-listed alias of ENVS 130B',
-      LGST120C: 'cross-listed alias of POLI 120C',
-      LGST122: 'cross-listed alias of SOCY 122',
-      LGST127: 'cross-listed alias of SOCY 127',
-    },
-  },
+
   evaluate(h) {
     // "All courses for the major must be taken for a letter grade. Satisfactory
     // completion of all major course requirements is defined by a grade of C or higher."

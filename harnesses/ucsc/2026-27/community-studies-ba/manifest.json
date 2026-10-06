@@ -6,6 +6,6 @@
  "skeleton_sha256": "0fabb7b4672144350accbe282887282753627ac3e3342dc66a7db3f899b3a24a",
  "status": "verified",
  "authored_at": "2026-10-06T00:49:11Z",
- "verified_at": "2026-10-06T00:55:25Z",
- "notes": "verified line by line against sources/community-studies-ba.md; letter grade C+ policy on every slot; topical courses must precede the first CMMU 105A/B/C term (check on the slot); judgement: intro says seven core classes but six are listed, harness requires the six listed; capstone = CMMU 107 overlay; lint clean"
+ "verified_at": "2026-10-06T23:45:05Z",
+ "notes": "verified line by line against sources/community-studies-ba.md; letter grade C+ policy on every slot; topical courses must precede the first CMMU 105A/B/C term (check on the slot); judgement: intro says seven core classes but six are listed, harness requires the six listed; capstone = CMMU 107 overlay; lint clean; reviewed 2026-10-06: no logic defects; removed partner-code aliases/unknownOk; 8 adversarial tests"
 }

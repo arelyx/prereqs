@@ -8,27 +8,27 @@
 // over the courses actually applied: at least five FMST-designated courses
 // (not FMST 193/198/199; cross-listed with FMST counts), and letter grades in
 // at least 10 of the 11 (FMST 100 and the comprehensive always letter).
-import { canon, codes, defineHarness, display, range, series } from '@harness'
+import { canon, codes, defineHarness, display, isPass, range, series } from '@harness'
 import type { Catalog, Enrollment, Node } from '@harness'
 
 const LD = [
   'FMST 10', 'FMST 12', 'FMST 14', 'FMST 15', 'FMST 16', 'FMST 18', 'FMST 19', 'FMST 20', 'FMST 21',
-  'FMST 30', 'FMST 31', 'FMST 40', 'FMST 41', 'FMST 43', 'FMST 71', 'VAST 01',
+  'FMST 30', 'FMST 31', 'FMST 40', 'FMST 41', 'FMST 43', 'FMST 71',
 ]
 
-// Approved electives from affiliated departments (page order), with the
-// cross-listed codes shown in brackets on the page.
+// Approved electives from affiliated departments (page order). Bracketed
+// cross-listed codes need nothing: the library treats them as one course.
 const APPROVED = [
   // Humanities
-  'APLX 112', 'CRES 100', 'CRES 101', 'HIS 106B', 'HIS 109A', 'HIS 110A', 'HIS 112', 'HIS 113C', 'HIS 119', 'FMST 119',
+  'APLX 112', 'CRES 100', 'CRES 101', 'HIS 106B', 'HIS 109A', 'HIS 110A', 'HIS 112', 'HIS 113C', 'HIS 119',
   'HIS 121B', 'HIS 128', 'HIS 131', 'HIS 140C', 'HIS 140D', 'HIS 140E', 'HIS 150F', 'HIS 151A', 'HIS 159B', 'HIS 196H',
   'HISC 113', 'HISC 125', 'LIT 112P', 'LIT 121M', 'LIT 121O', 'LIT 146G', 'LIT 156A', 'LIT 161B', 'LIT 162C', 'LIT 166A',
-  'LIT 166E', 'LIT 167E', 'PHIL 147', 'FMST 168',
+  'LIT 166E', 'LIT 167E', 'PHIL 147',
   // Social Sciences
-  'ANTH 110G', 'CRES 110G', 'ANTH 110Q', 'CRES 110Q', 'FMST 110Q', 'ANTH 110T', 'ANTH 130E', 'ANTH 130F', 'CRES 130',
-  'ANTH 130L', 'ANTH 130O', 'ANTH 131', 'ANTH 134', 'ANTH 140', 'CRES 140', 'ANTH 148', 'FMST 148', 'ANTH 158', 'ANTH 160',
-  'ANTH 194M', 'ANTH 194X', 'CMMU 151', 'CMMU 161', 'EDUC 135', 'ECON 183', 'LGST 183', 'LALS 144', 'LALS 172', 'LALS 175',
-  'LGST 111B', 'POLI 111B', 'POLI 103', 'POLI 105B', 'LGST 105B', 'PSYC 107', 'PSYC 140G', 'PSYC 140H', 'PSYC 140L',
+  'ANTH 110G', 'ANTH 110Q', 'ANTH 110T', 'ANTH 130E', 'ANTH 130F',
+  'ANTH 130L', 'ANTH 130O', 'ANTH 131', 'ANTH 134', 'ANTH 140', 'ANTH 148', 'ANTH 158', 'ANTH 160',
+  'ANTH 194M', 'ANTH 194X', 'CMMU 151', 'CMMU 161', 'EDUC 135', 'ECON 183', 'LALS 144', 'LALS 172', 'LALS 175',
+  'LGST 111B', 'POLI 103', 'POLI 105B', 'PSYC 107', 'PSYC 140G', 'PSYC 140H', 'PSYC 140L',
   'PSYC 140Q', 'PSYC 140T', 'PSYC 149', 'PSYC 153', 'SOCY 158', 'PSYC 159A', 'PSYC 159D', 'SOCY 111', 'SOCY 120',
   'SOCY 121', 'SOCY 126', 'SOCY 132', 'SOCY 145', 'SOCY 149', 'SOCY 150', 'SOCY 152', 'SOCY 157', 'SOCY 156', 'SOCY 172',
   'SOCY 176', 'SOCY 187',
@@ -39,12 +39,9 @@ const APPROVED = [
   'JRLC 135', 'OAKS 150',
 ]
 
-// Comprehensive: the FMST 194 senior seminars (incl. the FMST 194 codes of the
-// CRES 190 cross-listings), FMST 195, and the CRES-primary cross-listings.
-const COMPREHENSIVE = series('FMST', 194).or(
-  codes('FMST 194K', 'CRES 190K', 'FMST 194M', 'CRES 190M', 'FMST 194O', 'CRES 190O', 'FMST 194Q', 'CRES 190Q', 'FMST 195',
-    'CRES 190A', 'FMST 194S', 'CRES 190L', 'FMST 194L', 'CRES 190R', 'FMST 194R', 'CRES 190U', 'FMST 194U', 'CRES 190V', 'FMST 194V'),
-)
+// Comprehensive: the FMST 194 senior seminars, FMST 195, and the CRES 190
+// seminars cross-listed as FMST 194 (either code is the same course).
+const COMPREHENSIVE = series('FMST', 194).or(codes('FMST 194K', 'FMST 194M', 'FMST 194O', 'FMST 194Q', 'FMST 195', 'CRES 190A', 'CRES 190L', 'CRES 190R', 'CRES 190U', 'CRES 190V'))
 // Codes listed explicitly in the comprehensive table (for lint coverage): FMST 194A–194Y.
 const COMP_LISTED = ['FMST 194A', 'FMST 194B', 'FMST 194C', 'FMST 194D', 'FMST 194F', 'FMST 194G', 'FMST 194H', 'FMST 194I',
   'FMST 194T', 'FMST 194W', 'FMST 194X', 'FMST 194Y']
@@ -55,7 +52,8 @@ const NOT_IN_FIVE = new Set(['FMST193', 'FMST193F', 'FMST198', 'FMST198F', 'FMST
 function isFmst(code: string, cat: Catalog): boolean {
   if (NOT_IN_FIVE.has(code)) return false
   if (code.startsWith('FMST')) return true
-  return (cat.get(code)?.crossListed ?? []).some((x) => x.startsWith('FMST') && !NOT_IN_FIVE.has(x))
+  // Either code of a cross-listing (VAST 01 = FMST 71, CRES 190K = FMST 194K).
+  return cat.equivalents(code).some((x) => x.startsWith('FMST') && !NOT_IN_FIVE.has(x))
 }
 
 const Q_ELECTIVES =
@@ -83,18 +81,7 @@ export default defineHarness({
     'The Feminist Studies Tentative Curriculum is the definitive list of courses that satisfy major requirements in a given year.',
     'FMST 1, one lower-division FMST course and FMST 100 should be completed before the senior year.',
   ],
-  coverage: {
-    unknownOk: {
-      VAST01: 'cross-listed alias of FMST 71 as written on the page',
-      FMST119: 'cross-listed alias of HIS 119', FMST168: 'cross-listed alias of PHIL 147',
-      CRES110G: 'cross-listed alias of ANTH 110G', CRES110Q: 'cross-listed alias of ANTH 110Q', FMST110Q: 'cross-listed alias of ANTH 110Q',
-      CRES130: 'cross-listed alias of ANTH 130F', CRES140: 'cross-listed alias of ANTH 140', FMST148: 'cross-listed alias of ANTH 148',
-      LGST183: 'cross-listed alias of ECON 183', POLI111B: 'cross-listed alias of LGST 111B', LGST105B: 'cross-listed alias of POLI 105B',
-      CRES190K: 'cross-listed alias of FMST 194K', CRES190M: 'cross-listed alias of FMST 194M', CRES190O: 'cross-listed alias of FMST 194O',
-      CRES190Q: 'cross-listed alias of FMST 194Q', FMST194S: 'cross-listed alias of CRES 190A', FMST194L: 'cross-listed alias of CRES 190L',
-      FMST194R: 'cross-listed alias of CRES 190R', FMST194U: 'cross-listed alias of CRES 190U', FMST194V: 'cross-listed alias of CRES 190V',
-    },
-  },
+
   evaluate(h) {
     // P/NP is allowed in one of the 11 courses (checked below), never in FMST 100 or the comprehensive.
     h.policy = undefined
@@ -133,7 +120,7 @@ export default defineHarness({
       progress: { have: Math.min(fmstCount, 5), need: 5 },
       detail: fmstCount >= 5 ? undefined : `${fmstCount} of the courses applied to the major are FMST (or cross-listed with FMST); FMST 193/198/199 do not count.`,
     })
-    const pnp = applied.filter((e) => e.grade === 'P')
+    const pnp = applied.filter((e) => isPass(e.grade))
     const letters = h.node('letter-grades', 'Letter grades in at least 10 of the 11 courses', [Q_LETTER, Q_LETTER_TWO], pnp.length <= 1 ? 'met' : 'unmet', {
       detail: pnp.length <= 1 ? undefined : `${pnp.length} applied courses were taken P/NP (${pnp.map((e) => e.display).join(', ')}); at most one may be.`,
       used: pnp,

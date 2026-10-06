@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { verdict } from '@harness'
 import { failing, find, plan, run } from '@harness-tools/testing'
 import harness from './harness'
 
@@ -67,5 +68,48 @@ describe('community-studies-ba 2026-27', () => {
     const r = run(harness, { terms: drop('CMMU 107') })
     expect(find(r, 'dc').status).toBe('unmet')
     expect(find(r, 'capstone-essay').status).toBe('unmet')
+  })
+})
+
+// Adversarial review (2026-10-06).
+describe('community-studies-ba 2026-27 — review', () => {
+  it('a topical course in the same quarter as CMMU 105A does not count', () => {
+    const t = drop('SOCY 177')
+    t[3].courses.push('SOCY 177')
+    expect(find(run(harness, { terms: t }), 'topical').status).toBe('unmet')
+  })
+
+  it('a topical course entered under its cross-listed code (GCH 165 = CMMU 165) counts', () => {
+    expect(find(run(harness, { terms: swap('SOCY 177', 'GCH 165') }), 'topical').status).toBe('met')
+  })
+
+  it('transfer (no-term) topical credit counts as before field study', () => {
+    const r = run(harness, { terms: drop('SOCY 177'), completed: ['ENVS 158'] })
+    expect(find(r, 'topical').status).toBe('met')
+  })
+
+  it('P/NP does not count, even for the lower-division course', () => {
+    expect(find(run(harness, { terms, grades: { 'CMMU 10': 'P' } }), 'lower').status).toBe('unmet')
+  })
+
+  it('CMMU 195A/B/C thesis courses do not replace CMMU 107', () => {
+    const t = [...drop('CMMU 107'), { term: '2298', courses: ['CMMU 195A', 'CMMU 195B', 'CMMU 195C'] }]
+    expect(find(run(harness, { terms: t }), 'capstone-essay').status).toBe('unmet')
+  })
+
+  it('a planned field-study start still blocks a later topical course', () => {
+    const t = drop('SOCY 177')
+    t[6].courses.push('SOCY 177')
+    const r = run(harness, { terms: t, currentTerm: '2280' })
+    expect(find(r, 'topical').status).toBe('unmet')
+  })
+
+  it('empty plan is incomplete', () => {
+    expect(verdict(run(harness, { terms: [] })).complete).toBe(false)
+  })
+
+  it('kitchen sink: four topical courses before field study and one after is complete', () => {
+    const t = terms.map((q, i) => (i === 0 ? { ...q, courses: [...q.courses, 'CMMU 20', 'HAVC 141K'] } : i === 6 ? { ...q, courses: [...q.courses, 'GCH 186', 'CMMU 195A'] } : q))
+    expect(failing(run(harness, { terms: t }))).toEqual([])
   })
 })

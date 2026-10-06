@@ -12,9 +12,10 @@
 //   membership is never "met".
 // - Grades: "All upper-division courses applied toward the music majors must be
 //   taken for a letter grade, except MUSC 120 (Seminar in Composition) and
-//   upper-division workshops & performing ensembles". Courses on the
-//   "Elective Ensembles/Performance Practice Workshops" lists (incl. lessons
-//   listed there) are treated as workshops/ensembles in those slots.
+//   upper-division workshops & performing ensembles". The exemption names
+//   workshops and ensembles only, so upper-division individual lessons
+//   (MUSC 161/161A/161B) need a letter grade wherever they count — also on the
+//   CP/GM "Elective Ensembles/Performance Practice Workshops" lists.
 // - MUSC 14 may be bypassed by the Theory Placement Exam (attestation) or an
 //   "A-" in MUSC 14; MUSC 30A in the plan is taken as evidence of placement
 //   (you cannot enroll in 30A otherwise).
@@ -218,8 +219,8 @@ function ear31(h: HarnessContext, need: number, quote: string[]): Node {
 }
 
 /** Elective ensembles/workshops: three quarters; some courses are not repeatable. */
-function electiveEnsembles(h: HarnessContext, list: string[], quote: string[]): Node {
-  return h.take('elective-ensembles', 'Elective ensembles / performance practice workshops (3 quarters)', quote, codes(...list), {
+function electiveEnsembles(h: HarnessContext, L: LFn, list: string[], quote: string[]): Node {
+  return h.take('elective-ensembles', 'Elective ensembles / performance practice workshops (3 quarters)', quote, L(codes(...list)), {
     n: 3,
     repeatable: true,
     policy: {},
@@ -240,7 +241,7 @@ function noRepeatOfNonRepeatable(chosen: Enrollment[]): string | null {
 function modules(h: HarnessContext, L: LFn, ud: { set: CourseSet; quote: string; pool: string }, ens: { list: string[]; quote: string }, listQuote: string, lowerQuote: string): Node {
   const lower = h.take('modules/lower', 'Three lower-division module courses (MUSC 11/80/81 series)', lowerQuote, LD_MODULE, { n: 3, policy: {} })
   const upper = h.take('modules/upper', 'Three upper-division module courses', ud.quote, L(ud.set), { n: 3, pool: ud.pool, policy: {} })
-  const ensembles = h.take('modules/ensembles', 'Six quarters of module ensembles/workshops', ens.quote, moduleEnsemblePool(ens.list), {
+  const ensembles = h.take('modules/ensembles', 'Six quarters of module ensembles/workshops', ens.quote, L(moduleEnsemblePool(ens.list)), {
     n: 6,
     repeatable: true,
     policy: {},
@@ -307,7 +308,7 @@ function compositional(h: HarnessContext, L: LFn): Node[] {
       L(codes(...CP_HISTORY).or(gradSeminar)),
       { policy: {}, pool: `${CP_HISTORY.join(', ')}; or a graduate-level MUSC seminar (instructor/department permission)` },
     ),
-    electiveEnsembles(h, ELECTIVE_ENSEMBLES, [
+    electiveEnsembles(h, L, ELECTIVE_ENSEMBLES, [
       'Take three quarters of any of the following courses. All courses except MUSC 20C, MUSC 71, MUSC 74, and MUSC 167R may be repeated for credit, and can count toward multiple elective requirements if repeated.',
       Q.noDoubleEns,
     ]),
@@ -351,7 +352,7 @@ function globalMusics(h: HarnessContext, L: LFn): Node[] {
       L(codes(...GM_ELECTIVES)),
       { n: 3, repeatable: 'catalog', policy: {} },
     ),
-    electiveEnsembles(h, GM_ELECTIVE_ENSEMBLES, [
+    electiveEnsembles(h, L, GM_ELECTIVE_ENSEMBLES, [
       'Take three quarters of any of the following courses. All courses except MUSC 74, MUSC 20C, MUSC 71, and MUSC 167R may be repeated for credit, and can count toward multiple elective requirements if repeated.',
       Q.noDoubleEns,
     ]),
@@ -361,7 +362,15 @@ function globalMusics(h: HarnessContext, L: LFn): Node[] {
     'Graduate-Level Research Requirement',
     ['Students in the Global Musics concentration are also required to take one graduate-level course.', 'MUSC 200 cannot be double counted if taken to satisfy the Research Project option within the Comprehensive Requirement.'],
     codes(...GRAD_RESEARCH),
-    { policy: {} },
+    {
+      policy: {},
+      // "MUSC 105S [/MUSC 253S]" is one cross-listed course, but only the
+      // graduate listing is "one graduate-level course".
+      check: (chosen) => {
+        const ug = chosen.find((e) => h.catalog.get(e.code)?.division !== 'graduate')
+        return ug ? `${ug.display} is the undergraduate listing; the requirement needs the graduate-level course (MUSC 253S)` : null
+      },
+    },
   )
   const dc = h.take('dc', 'Disciplinary Communication (DC)', 'The DC requirement for the global musics concentration of the music B.A. degree is satisfied by completing one of the following courses.', L(codes(...DC_LIST)), {
     exclusive: false,

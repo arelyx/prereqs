@@ -87,12 +87,15 @@ export default defineHarness({
 
     const eligible = h.taken(CORE_POOL)
     const candidates = [...new Set(eligible.map((e) => e.code))]
-    const assigned = new Map<string, string>() // code -> category label
+    // A cross-listed course is one course under either code (ANTH 110Q /
+    // CRES 110Q / FMST 110Q): match and de-duplicate assignments by course.
+    const course = (code: string) => [canon(code), ...h.catalog.equivalents(code)].sort()[0]
+    const assigned = new Map<string, string>() // course -> category label
     const catNodes: Node[] = CATEGORIES.map((c) => {
       const code = h.choice(c.key)
       const id = `core-${c.key}`
       if (!code) {
-        const free = eligible.filter((e) => !assigned.has(e.code))
+        const free = eligible.filter((e) => !assigned.has(course(e.code)))
         if (!free.length)
           return h.node(id, c.label, c.quote, 'unmet', { detail: 'No unassigned upper-division anthropology course in your plan.', choice: c.key, pool: CORE_POOL.describe })
         return h.cannotCheck(id, c.label, c.quote, 'Check the department’s category list, then pick which of your courses covers this core requirement.', {
@@ -102,11 +105,11 @@ export default defineHarness({
       }
       if (!CORE_POOL.has(code, h.catalog))
         return h.node(id, c.label, c.quote, 'unmet', { detail: `${display(code)} is not an upper-division anthropology course that can be a core course.`, choice: c.key, options: candidates })
-      const dup = assigned.get(code)
+      const dup = assigned.get(course(code))
       if (dup)
         return h.node(id, c.label, c.quote, 'unmet', { detail: `${display(code)} is already assigned to ${dup}; each core requirement needs its own course.`, choice: c.key, options: candidates })
-      assigned.set(code, c.label)
-      const got = eligible.filter((e) => e.code === code)
+      assigned.set(course(code), c.label)
+      const got = eligible.filter((e) => course(e.code) === course(code))
       return got.length
         ? h.node(id, c.label, c.quote, 'met', { used: got.slice(0, 1), choice: c.key, detail: 'Per your category assignment.', options: candidates })
         : h.node(id, c.label, c.quote, 'unmet', { detail: `${display(code)} is not in your plan (or was not passed).`, choice: c.key, options: candidates })

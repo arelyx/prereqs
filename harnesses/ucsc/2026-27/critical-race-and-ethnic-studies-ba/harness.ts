@@ -16,18 +16,18 @@ import { NONE, anyOf, canon, codes, defineHarness, display, parseCode, range, se
 import type { ChoiceDef, CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
 const LD_LIST = [
-  'CRES 12', 'SOCY 12', 'CRES 14', 'CRES 15', 'CRES 25', 'CRES 45', 'CRES 60E', 'CRES 68', 'CRES 70B', 'CRES 70S',
-  'CRES 70U', 'HIS 9C', 'CRES 13', 'HISC 83', 'CRES 83',
+  'CRES 12', 'CRES 14', 'CRES 15', 'CRES 25', 'CRES 45', 'CRES 60E', 'CRES 68', 'CRES 70B', 'CRES 70S',
+  'CRES 70U', 'HIS 9C', 'HISC 83',
 ]
 
 // Comprehensive: any CRES 190-series course ("Any CRES 190 series course that
 // is listed in a subsequent General Catalog will also satisfy"), plus the
-// listed seminars outside CRES and their CRES 190 cross-listed codes.
+// listed seminars outside CRES (cross-listed codes are one course).
 const COMP_LISTED = [
-  'ANTH 196G', 'CRES 190G', 'CRES 190A', 'FMST 194S', 'CRES 190B', 'CRES 190C', 'CRES 190D', 'CRES 190E', 'CRES 190F',
-  'CRES 190I', 'CRES 190L', 'FMST 194L', 'CRES 190N', 'CRES 190P', 'CRES 190T', 'CRES 190W', 'CRES 190X', 'CRES 190Y',
-  'FMST 194K', 'CRES 190K', 'FMST 194M', 'CRES 190M', 'FMST 194O', 'CRES 190O', 'FMST 194Q', 'CRES 190Q', 'CRES 190R',
-  'FMST 194R', 'CRES 190U', 'FMST 194U', 'CRES 190V', 'FMST 194V',
+  'ANTH 196G', 'CRES 190A', 'CRES 190B', 'CRES 190C', 'CRES 190D', 'CRES 190E', 'CRES 190F',
+  'CRES 190I', 'CRES 190L', 'CRES 190N', 'CRES 190P', 'CRES 190T', 'CRES 190W', 'CRES 190X', 'CRES 190Y',
+  'FMST 194K', 'FMST 194M', 'FMST 194O', 'FMST 194Q', 'CRES 190R',
+  'CRES 190U', 'CRES 190V',
 ]
 const COMPREHENSIVE = series('CRES', 190).or(codes(...COMP_LISTED))
 
@@ -67,17 +67,8 @@ export default defineHarness({
     'Every requirement needs a grade of P, C (2.0), or better.',
     'The General Electives, Transnational and Social Movements lists are on the department’s CRES B.A. Electives List page, which the app does not have: upper-division CRES courses are assumed to be on it; check other courses there, and tell the dashboard which courses cover the Transnational and Social Movements requirements.',
     'Up to two courses not on the electives list (or language study, internships, independent studies) may count by petition — add them once approved.',
-    'CRES 101 (DC) must be completed before the senior seminar.',
   ],
-  coverage: {
-    unknownOk: {
-      SOCY12: 'cross-listed alias of CRES 12 shown on the page', CRES13: 'cross-listed alias of HIS 9C', CRES83: 'cross-listed alias of HISC 83',
-      CRES190G: 'cross-listed alias of ANTH 196G', FMST194S: 'cross-listed alias of CRES 190A', FMST194L: 'cross-listed alias of CRES 190L',
-      CRES190K: 'cross-listed alias of FMST 194K', CRES190M: 'cross-listed alias of FMST 194M', CRES190O: 'cross-listed alias of FMST 194O',
-      CRES190Q: 'cross-listed alias of FMST 194Q', FMST194R: 'cross-listed alias of CRES 190R', FMST194U: 'cross-listed alias of CRES 190U',
-      FMST194V: 'cross-listed alias of CRES 190V',
-    },
-  },
+
   evaluate(h) {
     // "Students must complete all requirements for the major with a grade of P, C (2.0), or better."
     h.policy = { min: 'C', pCounts: true }
@@ -106,6 +97,7 @@ export default defineHarness({
     ])
 
     // --- upper division ---------------------------------------------------
+    const dcTerms = h.taken(codes('CRES 101')).map((e) => e.term)
     const core = h.all('core', 'CRES 100 and CRES 101', 'Take the following courses:', ['CRES 100', 'CRES 101'])
     const electives = h.take('ud-electives', 'Five upper-division electives', [Q_ELECTIVES, Q_COMP_NOT_ELECTIVE], udAny.except(codes('CRES 100', 'CRES 101')), {
       n: 5,
@@ -115,7 +107,15 @@ export default defineHarness({
     const comp = h.take('comprehensive', 'Senior seminar (CRES 190 series or listed)', [
       'The comprehensive requirement is fulfilled by completing a senior seminar from the CRES 190 series or one of the other senior seminars listed below.',
       'Any CRES 190 series course that is listed in a subsequent General Catalog will also satisfy the comprehensive requirement.',
-    ], COMPREHENSIVE, { pool: `any CRES 190-series course, or ${COMP_LISTED.filter((c) => !c.startsWith('CRES')).join(', ')}` })
+    ], COMPREHENSIVE, {
+      pool: `any CRES 190-series course, or ${COMP_LISTED.filter((c) => !c.startsWith('CRES')).join(', ')}`,
+      // "Students must complete their DC requirement prior to the Senior Seminar."
+      check: (chosen) => {
+        const sem = chosen[0]
+        if (!dcTerms.length || sem.term == null || dcTerms.some((t) => t == null || t < sem.term!)) return null
+        return `${sem.display} is not after CRES 101 (DC must be completed before the senior seminar)`
+      },
+    })
 
     h.solve()
 
@@ -163,12 +163,15 @@ export default defineHarness({
 /** Transnational ×2 and Social Movements ×1, declared by the student from their elective courses. */
 function breadthNodes(h: HarnessContext, electiveCourses: Enrollment[], compUsed: Enrollment[]): Node[] {
   const candidates = [...new Set(electiveCourses.map((e) => e.code))]
-  const compCodes = new Set(compUsed.map((e) => e.code))
-  const chosenT = new Map<string, string>() // transnational code -> slot label
+  // Cross-listed codes are one course (CRES 130 = ANTH 130F): compare by course.
+  const course = (code: string) => [canon(code), ...h.catalog.equivalents(code)].sort()[0]
+  const counted = (code: string) => electiveCourses.filter((e) => course(e.code) === course(code))
+  const compCourses = new Set(compUsed.map((e) => course(e.code)))
+  const chosenT = new Map<string, string>() // transnational course -> slot label
   return BREADTH.map((b) => {
     const id = `breadth-${b.key}`
     const code = h.choice(b.key)
-    const quote = b.key === 'social_movements' ? b.quote : [...b.quote, Q_COMP_NOT_BREADTH]
+    const quote = [...b.quote, Q_COMP_NOT_BREADTH]
     if (!code) {
       if (!candidates.length)
         return h.node(id, b.label, quote, 'unmet', { detail: 'No elective courses in your plan yet.', choice: b.key })
@@ -178,13 +181,18 @@ function breadthNodes(h: HarnessContext, electiveCourses: Enrollment[], compUsed
       })
     }
     const fail = (detail: string) => h.node(id, b.label, quote, 'unmet', { detail, choice: b.key, options: candidates })
-    if (compCodes.has(code) && !candidates.includes(code)) return fail(`${display(code)} is your senior comprehensive course, which does not count toward this requirement.`)
-    if (!candidates.includes(code)) return fail(`${display(code)} is not one of the courses counted as your lower- or upper-division electives.`)
+    // "Senior comprehensive courses do not count toward the transnational or
+    // social movements requirements." — the one used for the comprehensive and
+    // any additional senior seminar counted as an elective.
+    if (compCourses.has(course(code)) || COMPREHENSIVE.has(code, h.catalog))
+      return fail(`${display(code)} is a senior comprehensive course, which does not count toward this requirement.`)
+    const got = counted(code)
+    if (!got.length) return fail(`${display(code)} is not one of the courses counted as your lower- or upper-division electives.`)
     if (b.key.startsWith('transnational')) {
-      const dup = chosenT.get(code)
+      const dup = chosenT.get(course(code))
       if (dup) return fail(`${display(code)} is already your ${dup}; the two Transnational courses must differ.`)
-      chosenT.set(code, b.label)
+      chosenT.set(course(code), b.label)
     }
-    return h.node(id, b.label, quote, 'met', { used: electiveCourses.filter((e) => e.code === code).slice(0, 1), detail: 'Per your list assignment.', choice: b.key, options: candidates })
+    return h.node(id, b.label, quote, 'met', { used: got.slice(0, 1), detail: 'Per your list assignment.', choice: b.key, options: candidates })
   })
 }

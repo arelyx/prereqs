@@ -6,6 +6,6 @@
  "skeleton_sha256": "70cb64860b0e195c01963d4427276cd4a279c1c98720669ed440534de7e4aca4",
  "status": "verified",
  "authored_at": "2026-10-06T00:52:23Z",
- "verified_at": "2026-10-06T00:55:26Z",
- "notes": "verified line by line against sources/critical-race-and-ethnic-studies-ba.md; P/C-or-better policy; external electives list: UD CRES or CRES-cross-listed courses accepted, other UD courses (and CRES 192-199, petition only) make the elective slot cannot-check; Transnational x2 / Social Movements x1 are student-declared choices validated against the elective courses (not the comprehensive), else cannot-check; comprehensive = any CRES 190 series or listed seminars; lint clean"
+ "verified_at": "2026-10-06T23:45:05Z",
+ "notes": "verified line by line against sources/critical-race-and-ethnic-studies-ba.md; P/C-or-better policy; external electives list: UD CRES or CRES-cross-listed courses accepted, other UD courses (and CRES 192-199, petition only) make the elective slot cannot-check; Transnational x2 / Social Movements x1 are student-declared choices validated against the elective courses (not the comprehensive), else cannot-check; comprehensive = any CRES 190 series or listed seminars; lint clean; reviewed 2026-10-06: any senior comprehensive course (not just the one used) is rejected for Transnational/Social Movements; DC (CRES 101) must precede the senior seminar (enforced); breadth declarations matched by course through cross-listings; removed partner-code aliases/unknownOk; 8 adversarial tests"
 }

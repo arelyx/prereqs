@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { verdict } from '@harness'
 import { failing, find, plan, run } from '@harness-tools/testing'
 import harness from './harness'
 
@@ -81,5 +82,65 @@ describe('feminist-studies-ba 2026-27', () => {
     const r = run(harness, { terms: drop('FMST 194A') })
     expect(find(r, 'dc').status).toBe('unmet')
     expect(find(r, 'comprehensive').status).toBe('unmet')
+  })
+})
+
+// Adversarial review (2026-10-06).
+describe('feminist-studies-ba 2026-27 — review', () => {
+  // A record with exactly five FMST courses: FMST 1, LD, 100, one elective, 194K.
+  const five = plan(
+    ['2268', 'FMST 1', 'FMST 20'],
+    ['2278', 'FMST 100', 'FMST 102'],
+    ['2280', 'SOCY 120', 'SOCY 149'],
+    ['2282', 'SOCY 121', 'HIS 112'],
+    ['2288', 'LIT 166E', 'FILM 165A'],
+    ['2290', 'FMST 194K'],
+  )
+
+  it('a senior seminar entered under its CRES code (CRES 190K) is an FMST course toward the five', () => {
+    // "Courses cross-listed with a FMST course will count toward this five-course minimum."
+    expect(failing(run(harness, { terms: five }))).toEqual([])
+    const r = run(harness, { terms: five.map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'FMST 194K' ? 'CRES 190K' : c)) })) })
+    expect(find(r, 'fmst-five').status).toBe('met')
+    expect(failing(r)).toEqual([])
+  })
+
+  it('the lower-division course entered as VAST 01 (= FMST 71) counts toward the five', () => {
+    const r = run(harness, { terms: five.map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'FMST 20' ? 'VAST 01' : c)) })) })
+    expect(find(r, 'ld-fmst').status).toBe('met')
+    expect(find(r, 'fmst-five').status).toBe('met')
+  })
+
+  it('a non-FMST course cross-listed only with non-FMST codes does not count toward the five', () => {
+    const r = run(harness, { terms: five.map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'FMST 102' ? 'ECON 183' : c)) })) })
+    expect(find(r, 'fmst-five').status).toBe('unmet')
+  })
+
+  it('empty plan is incomplete', () => {
+    const r = run(harness, { terms: [], attested: [] })
+    expect(verdict(r).complete).toBe(false)
+  })
+
+  it('a 2-credit FMST upper-division course is not one of the seven electives', () => {
+    expect(find(run(harness, { terms: swap('FILM 165A', 'FMST 193F') }), 'electives').status).toBe('unmet')
+  })
+
+  it('an extra senior seminar may be an elective', () => {
+    expect(failing(run(harness, { terms: swap('FILM 165A', 'FMST 194B') }))).toEqual([])
+  })
+
+  it('the one P/NP course may be an elective, not FMST 100', () => {
+    expect(failing(run(harness, { terms, grades: { 'FMST 102': 'P' } }))).toEqual([])
+    expect(find(run(harness, { terms, grades: { 'FMST 100': 'P' } }), 'fmst100').status).toBe('unmet')
+  })
+
+  it('transfer (no-term) FMST 1 counts', () => {
+    const t = terms.map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'FMST 1') }))
+    expect(failing(run(harness, { terms: t, completed: ['FMST 1'] }))).toEqual([])
+  })
+
+  it('planned seminar is in progress', () => {
+    const r = run(harness, { terms, currentTerm: '2290' })
+    expect(find(r, 'comprehensive').status).toBe('in-progress')
   })
 })

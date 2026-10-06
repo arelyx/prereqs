@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { verdict } from '@harness'
 import { failing, find, plan, run } from '@harness-tools/testing'
 import harness from './harness'
 
@@ -100,5 +101,57 @@ describe('critical-race-and-ethnic-studies-ba 2026-27', () => {
     const n = find(run(harness, { terms: swap('CRES 150', 'CRES 199'), choices }), 'ud-electives')
     expect(n.status).toBe('cannot-check')
     expect(n.detail).toMatch(/petition/)
+  })
+})
+
+// Adversarial review (2026-10-06).
+describe('critical-race-and-ethnic-studies-ba 2026-27 — review', () => {
+  it('an additional senior seminar counted as an elective cannot be a Transnational course', () => {
+    // "Senior comprehensive courses do not count toward the transnational or social movements requirements."
+    const t = swap('CRES 150', 'CRES 190C')
+    expect(find(run(harness, { terms: t, choices }), 'ud-electives').status).toBe('met')
+    const r = run(harness, { terms: t, choices: { ...choices, transnational_1: 'CRES 190C' } })
+    expect(find(r, 'breadth-transnational_1').status).toBe('unmet')
+    const r2 = run(harness, { terms: t, choices: { ...choices, social_movements: 'CRES 190C' } })
+    expect(find(r2, 'breadth-social_movements').status).toBe('unmet')
+  })
+
+  it('CRES 101 (DC) must be completed before the senior seminar', () => {
+    // "Students must complete their DC requirement prior to the Senior Seminar."
+    const same = terms.map((q) => (q.term === '2272' ? { ...q, courses: [] } : q.term === '2282' ? { ...q, courses: [...q.courses, 'CRES 101'] } : q))
+    const n = find(run(harness, { terms: same, choices }), 'comprehensive')
+    expect(n.status).toBe('unmet')
+    expect(failing(run(harness, { terms, choices }))).toEqual([])
+  })
+
+  it('a breadth course declared under its cross-listed code matches the course taken', () => {
+    const t = swap('CRES 173', 'ANTH 130F')
+    expect(failing(run(harness, { terms: t, choices: { ...choices, transnational_1: 'CRES 130' } }))).toEqual([])
+    // ...and the same course under two codes is not two Transnational courses
+    const r = run(harness, { terms: t, choices: { ...choices, transnational_1: 'CRES 130', transnational_2: 'ANTH 130F' } })
+    expect(find(r, 'breadth-transnational_2').status).toBe('unmet')
+  })
+
+  it('a lower-division elective entered under its cross-listed code (SOCY 12 = CRES 12) counts', () => {
+    expect(find(run(harness, { terms: swap('CRES 68', 'SOCY 12'), choices }), 'ld-elective').status).toBe('met')
+  })
+
+  it('a seminar entered under its CRES code (CRES 190K = FMST 194K) satisfies the comprehensive', () => {
+    expect(find(run(harness, { terms: swap('CRES 190B', 'CRES 190K'), choices }), 'comprehensive').status).toBe('met')
+  })
+
+  it('empty plan is incomplete', () => {
+    const r = run(harness, { terms: [] })
+    expect(verdict(r).complete).toBe(false)
+    expect(find(r, 'breadth-transnational_1').status).toBe('unmet')
+  })
+
+  it('a D in an elective does not count', () => {
+    expect(find(run(harness, { terms, choices, grades: { 'CRES 150': 'D' } }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('transfer (no-term) CRES 10 counts', () => {
+    const t = terms.map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'CRES 10') }))
+    expect(failing(run(harness, { terms: t, choices, completed: ['CRES 10'] }))).toEqual([])
   })
 })
