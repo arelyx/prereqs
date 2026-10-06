@@ -6,6 +6,6 @@
  "skeleton_sha256": "fc5bebc9dba1fb6896a276290522ddc651772ae17c748dc830dc7d7aa4cd4378",
  "status": "verified",
  "authored_at": "2026-10-06T00:54:32Z",
- "verified_at": "2026-10-06T00:58:08Z",
- "notes": "verified line by line; lint clean. P/NP allowed; electives SOCY 110-189, external DJS list -> cannot-check; 196G + deliverable-mounted attestation."
+ "verified_at": "2026-10-06T23:43:34Z",
+ "notes": "verified line by line; lint clean. P/NP allowed; electives SOCY 110-189, external DJS list -> cannot-check; 196G + deliverable-mounted attestation.; reviewed 2026-10-06: no defects; adversarial regression tests added"
 }

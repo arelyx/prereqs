@@ -6,6 +6,9 @@
  "skeleton_sha256": "9460abc5effb923943b3de5e953668d689a1321f359bdf47505eadd2ae09a0f6",
  "status": "verified",
  "authored_at": "2026-10-06T00:50:20Z",
- "verified_at": "2026-10-06T00:58:06Z",
- "notes": "verified line by line; lint clean. P/NP allowed, no C rule on this page; core = LALS 100 or 100A+100L (other may be an elective, 100A/100L merged); outside pre-approved list -> cannot-check within two-course limit; AP Spanish as a note."
+ "verified_at": "2026-10-06T23:43:33Z",
+ "notes": "verified line by line; lint clean. P/NP allowed, no C rule on this page; core = LALS 100 or 100A+100L (other may be an elective, 100A/100L merged); outside pre-approved list -> cannot-check within two-course limit; AP Spanish as a note.; reviewed 2026-10-06: C-or-better-or-P policy from the LALS B.A. Letter Grade Policy ('Major and minor requirements'); AP Spanish 4+ attestation when the LD elective is missing; cross-listed LALS codes not treated as outside",
+ "depends_on": {
+  "latin-american-and-latino-studies-ba": "45787fbbd5d7d025071cea5302416bf6b209dbb648dfb7eae5400d2f4f5a5203"
+ }
 }

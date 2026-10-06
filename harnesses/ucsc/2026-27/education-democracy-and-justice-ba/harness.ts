@@ -11,11 +11,24 @@
 // substitution policy" (up to two): at most two, EDUC 194 once, and an
 // attestation for the department approval whenever one is used. The two topic
 // lists (emphases) are recommendations, not requirements: they are all inside
-// EDUC 102-187 except CRES 121 [/EDUC 121] and EDUC 178's KRSG 178 partner.
-import { codes, defineHarness, range } from '@harness'
+// EDUC 102-187 (CRES 121 [/EDUC 121] and EDUC 178 [/KRSG 178] through their
+// cross-listings, which the library treats as the same course).
+//
+// Other substitutions ("upper-division electives from other UCSC departments,
+// individual study courses, education abroad electives, or other four-year
+// institution electives", up to two in all, by petition): when the six are
+// short and unused upper-division courses could fill the gap within the
+// two-course limit, an attestation for the approved petition is asked.
+import { codes, defineHarness, display, policyFailure, range } from '@harness'
+import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const OUTSIDE = codes('EDUC 194', 'ENVS 177', 'PSYC 108', 'SOCY 148')
-const ELECTIVES = range('EDUC', 102, 187).minCredits(5).or(codes('CRES 121', 'KRSG 178')).or(OUTSIDE)
+// "six, 5-credit electives from EDUC 102–187". OAKS 151A/151B [/EDUC 151A/B] are 2- and 3-credit
+// courses filed under OAKS; excluded so the 5-credit rule holds under their EDUC codes too.
+const ELECTIVES = range('EDUC', 102, 187).minCredits(5).except(['OAKS 151A', 'OAKS 151B']).or(OUTSIDE)
+// EDUC 194 "can only count once"; EDUC 190 is the capstone.
+const NOT_SUBSTITUTE = codes('EDUC 194', 'EDUC 190')
+const Q_PETITION = 'Students are limited in the number of outside electives accepted toward the major and must petition for approval of the course prior to applying it to the major.'
 const FOUNDATION = codes('EDUC 110', 'EDUC 180')
 // Topic-area lists (guidance only; every course is already in the elective pool).
 const SOCIAL_CONTEXTS = [
@@ -36,15 +49,18 @@ export default defineHarness({
       id: 'outside-elective-approval',
       label: 'Department approval for the outside elective(s) used',
       quote: 'The Outside Electives list includes courses which may count as electives with department approval, and count toward the program\'s course substitution policy, outlined in the Information and Policies section.',
-      aliases: ['outside elective', 'department approval', 'petition'],
+      aliases: ['outside elective', 'department approval'],
+    },
+    {
+      id: 'elective-petition',
+      label: 'Petition approved to substitute an outside course for an elective',
+      quote: Q_PETITION,
+      aliases: ['petition', 'course exception', 'substitution'],
     },
   ],
-  coverage: {
-    unknownOk: { KRSG178: 'cross-listed partner of EDUC 178 ([/KRSG 178] in the source); the catalog files it under EDUC' },
-  },
   notes: [
     'Courses may be taken for a letter grade or Pass/No Pass.',
-    'Up to two electives may be substituted by petition with upper-division courses from other departments, individual study, education abroad or other four-year institutions — only the listed outside electives are counted here.',
+    'Up to two electives (including the listed outside electives) may be substituted by petition with upper-division courses from other departments, individual study, education abroad or other four-year institutions.',
   ],
   evaluate(h) {
     // "Any requirement of the major, including major qualification, may be taken for a letter grade or Pass/No Pass."
@@ -101,6 +117,42 @@ export default defineHarness({
 
     h.solve()
     if ((six.used ?? []).some((e) => OUTSIDE.has(e.code))) electives.children!.splice(1, 0, h.attest('outside-elective-approval'))
+    petition(h, six)
     return [lower, upper, electives, dc, comprehensive]
   },
 })
+
+/**
+ * "EDJ B.A. students may substitute up to two of the upper-division elective
+ * requirements with upper-division electives from other UCSC departments,
+ * individual study courses, education abroad electives, or other four-year
+ * institution electives." Asked only when the six are short and unused
+ * upper-division courses can close the gap within the two-course limit
+ * (which the listed outside electives also count toward).
+ */
+function petition(h: HarnessContext, six: Node) {
+  if (six.status !== 'unmet' || !six.progress) return
+  const gap = six.progress.need - six.progress.have
+  const room = 2 - (six.used ?? []).filter((e) => OUTSIDE.has(e.code)).length
+  const usedCodes = new Set(h.enrollments.filter((e) => h.used.has(e.id)).map((e) => e.code))
+  const cand = [
+    ...new Map(
+      h.passed
+        .filter((e: Enrollment) => {
+          const c = h.catalog.get(e.code)
+          return !h.used.has(e.id) && !usedCodes.has(e.code) && !!c && c.division === 'upper' && c.credits >= 5 && !NOT_SUBSTITUTE.has(e.code) && policyFailure(e, h.policy) == null
+        })
+        .map((e) => [e.code, e]),
+    ).values(),
+  ]
+  if (gap > room || cand.length < gap) return
+  const names = cand.map((e) => display(e.code)).join(', ')
+  if (h.attested('elective-petition')) {
+    six.status = 'met'
+    six.detail = `${gap} by approved petition (you confirmed) — from ${names}.`
+  } else {
+    six.status = 'needs-attestation'
+    six.attest = h.attestations.find((a) => a.id === 'elective-petition')
+    six.detail = `${gap} more needed: ${names} may count only by an approved petition (at most two outside courses in all).`
+  }
+}

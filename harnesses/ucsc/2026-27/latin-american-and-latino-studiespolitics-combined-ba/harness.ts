@@ -8,18 +8,18 @@
 // elective). DC and the comprehensive are overlays (no other slot can use a
 // LALS 194 or POLI 190 course anyway).
 import { codes, defineHarness, range, series } from '@harness'
+import type { HarnessContext } from '@harness'
 
 const POLICY = { min: 'C', pCounts: true }
 
-// "Three politics core courses chosen from:" — with their LGST cross-listings.
+// "Three politics core courses chosen from:" — the [/LGST …] cross-listings are the
+// same courses (the library resolves them; a pair counts once).
+/** One key per course across its cross-listed codes. */
+const sameCourse = (h: HarnessContext, code: string) => [code, ...h.catalog.equivalents(code)].sort()[0]
 const POLI_CORE = [
-  'POLI 105A', 'LGST 105A', 'POLI 105B', 'LGST 105B', 'POLI 105C', 'LGST 105C', 'POLI 105D', 'LGST 105D',
-  'POLI 120A', 'LGST 120A', 'POLI 120B', 'LGST 120B', 'POLI 120C', 'LGST 120C', 'POLI 140A', 'POLI 140D',
-  'POLI 140E', 'POLI 160A', 'POLI 160B', 'LGST 160B', 'POLI 160C', 'POLI 160D',
+  'POLI 105A', 'POLI 105B', 'POLI 105C', 'POLI 105D', 'POLI 120A', 'POLI 120B', 'POLI 120C',
+  'POLI 140A', 'POLI 140D', 'POLI 140E', 'POLI 160A', 'POLI 160B', 'POLI 160C', 'POLI 160D',
 ]
-const LGST_PARTNERS = POLI_CORE.filter((c) => c.startsWith('LGST'))
-// Same course under its POLI number (for the core-course distinctness check).
-const sameCourse = (code: string) => code.replace(/^LGST/, 'POLI')
 
 const Q_COMP = 'Students satisfy the Comprehensive Requirement by completing either an LALS senior seminar (LALS 194 A-Z, excluding L) and seminar lab (LALS 194L), or a politics senior seminar (POLI 190 A-Z).'
 const Q_DC = 'The DC requirement for the LALS and politics combined B.A. is met by completing:'
@@ -28,11 +28,6 @@ export default defineHarness({
   program: 'latin-american-and-latino-studiespolitics-combined-ba',
   edition: '2026-27',
   title: 'Latin American and Latino Studies/Politics Combined B.A.',
-  coverage: {
-    unknownOk: Object.fromEntries(
-      LGST_PARTNERS.map((c) => [c.replace(' ', ''), 'cross-listed partner of a POLI course ([/LGST …] in the source); the catalog files it under POLI']),
-    ),
-  },
   notes: ['Major courses need a C or better, or a P.'],
   evaluate(h) {
     // "Major and minor requirements will be met with grades of C or better or Pass"
@@ -52,7 +47,9 @@ export default defineHarness({
       h.all('core', 'LALS 100, 100A, 100L and POLI 140C', 'Take the following courses:', ['LALS 100', 'LALS 100A', 'LALS 100L', 'POLI 140C']),
       h.take('poli-core', 'Three politics core courses', 'Three politics core courses chosen from:', codes(...POLI_CORE), {
         n: 3,
-        check: (chosen) => (new Set(chosen.map((e) => sameCourse(e.code))).size === chosen.length ? null : 'a cross-listed POLI/LGST pair is one course'),
+        // The library counts a course once across slots, but within one slot a course entered under
+        // both of its cross-listed codes (POLI 105A and LGST 105A) still forms two units: one course.
+        check: (chosen) => (new Set(chosen.map((e) => sameCourse(h, e.code))).size === chosen.length ? null : 'a cross-listed POLI/LGST pair is one course'),
       }),
       h.group(
         'electives',
@@ -63,7 +60,7 @@ export default defineHarness({
             repeatable: 'catalog',
             pool: 'LALS 101–190 (5 credits)',
           }),
-          h.take('poli-elective', 'One POLI elective (100–189)', 'one additional 5-credit upper-division elective from politics courses numbered 100-189', range('POLI', 100, 189).minCredits(5).or(codes(...LGST_PARTNERS)), {
+          h.take('poli-elective', 'One POLI elective (100–189)', 'one additional 5-credit upper-division elective from politics courses numbered 100-189', range('POLI', 100, 189).minCredits(5), {
             repeatable: 'catalog',
             pool: 'POLI 100–189 (5 credits), including a politics core course not used above',
           }),

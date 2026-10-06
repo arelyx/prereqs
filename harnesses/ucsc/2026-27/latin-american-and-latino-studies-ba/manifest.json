@@ -6,6 +6,9 @@
  "skeleton_sha256": "cd6b09fe1ebc2a040c95109903a1772ea9e499629f96777abcc593197ec2a0e3",
  "status": "verified",
  "authored_at": "2026-10-06T00:49:26Z",
- "verified_at": "2026-10-06T00:58:06Z",
- "notes": "verified line by line against source; lint clean. Calls: concentration defaults to the plain LALS major; C/P policy; pre-approved outside list (external) -> elective cannot-check only within the two-outside-course limit; independent study -> cannot-check (advisor); intensive second-language rule = 2 from the Spanish list (LALS 157/183, Spanish-taught per the LALS/EDJ page, -> cannot-check); AP Spanish 4+ as a note."
+ "verified_at": "2026-10-06T23:43:33Z",
+ "notes": "verified line by line against source; lint clean. Calls: concentration defaults to the plain LALS major; C/P policy; pre-approved outside list (external) -> elective cannot-check only within the two-outside-course limit; independent study -> cannot-check (advisor); intensive second-language rule = 2 from the Spanish list (LALS 157/183, Spanish-taught per the LALS/EDJ page, -> cannot-check); AP Spanish 4+ as a note.; reviewed 2026-10-06: AP Spanish 4+ now an attestation offered only when an LD elective is missing (covers one); cross-listed LALS partner codes (PHIL 80E) no longer count as outside courses; dropped SPAN 105 alias/unknownOk; depends on LALS/EDJ page for LALS 157/183",
+ "depends_on": {
+  "latin-american-and-latino-studieseducation-democracy-and-justice-ba": "63d7a42e83ed776c97273a07dfff62cd671cd2751ea1d46d530f602b8b073c82"
+ }
 }

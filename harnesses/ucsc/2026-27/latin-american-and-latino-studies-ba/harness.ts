@@ -7,6 +7,10 @@
 // seminar are one allocation. DC (LALS 100A/100L) and the comprehensive
 // (the senior seminar) are overlays.
 //
+// AP Spanish: "May also be satisfied with a score of 4+ on the AP Spanish
+// Literature and Culture exam." An attestation, offered only when a
+// lower-division elective is actually missing (it covers one elective).
+//
 // Outside courses: "up to two courses taken outside the LALS Department"
 // may count, from a pre-approved list the source only links to. The app
 // counts LALS courses (and, for the concentration, the listed Spanish-taught
@@ -15,7 +19,7 @@
 // elective is cannot-check (never unmet) as long as the two-course limit
 // leaves room for them.
 import { codes, defineHarness, display, policyFailure, range, series } from '@harness'
-import type { Enrollment, GradePolicy, HarnessContext, Node } from '@harness'
+import type { AttestationDef, Enrollment, GradePolicy, HarnessContext, Node } from '@harness'
 
 const POLICY: GradePolicy = { min: 'C', pCounts: true }
 
@@ -29,21 +33,33 @@ const SEMINAR = series('LALS', 194).except(codes('LALS 194L'))
 // Independent study / senior project numbers outside 101-194: advisor approval only.
 const INDEPENDENT = codes('LALS 195B', 'LALS 195C', 'LALS 198', 'LALS 199')
 
-// "Courses taught primarily in Spanish" (Language Intensive Concentration). LIT 189C [/SPAN 105].
+// "Courses taught primarily in Spanish" (Language Intensive Concentration).
+// LIT 189C [/SPAN 105]: the library treats the cross-listed code as the same course.
 const SPANISH_LALS = ['LALS 135', 'LALS 147']
 const SPANISH_OTHER = [
-  'LIT 188R', 'LIT 189A', 'LIT 189B', 'LIT 189C', 'SPAN 105', 'LIT 189F', 'LIT 189G', 'LIT 189L', 'LIT 189O',
+  'LIT 188R', 'LIT 189A', 'LIT 189B', 'LIT 189C', 'LIT 189F', 'LIT 189G', 'LIT 189L', 'LIT 189O',
   'LIT 189Q', 'LIT 189S', 'LIT 189V', 'LIT 189X', 'LIT 189Z', 'SPAN 156A', 'SPAN 156F', 'SPAN 156J', 'SPAN 156M',
   'SPHS 115',
 ]
 const SPANISH = codes(...SPANISH_LALS, ...SPANISH_OTHER)
 const SPANISH_NON_LALS = codes(...SPANISH_OTHER)
-// Listed as "taught primarily in Spanish" on the LALS/EDJ combined major page, not on this list.
+// Listed as "taught primarily in Spanish" on the LALS/EDJ combined major page, not on this list
+// (manifest depends_on that page).
 const MAYBE_SPANISH = codes('LALS 157', 'LALS 183')
 
 const Q_SEMINAR = 'All students complete one senior seminar (LALS 194 A-Z, excluding L) and seminar lab (LALS 194L).'
 const Q_COMPREHENSIVE = 'The Comprehensive Requirement is fulfilled by completing one senior seminar (LALS 194 A-Z, excluding L) and seminar lab (LALS 194L).'
-const AP_NOTE = 'A score of 4+ on the AP Spanish Literature and Culture exam may satisfy one lower-division elective — if so, ask the LALS advisor to record it.'
+const AP_SPANISH: AttestationDef = {
+  id: 'ap-spanish',
+  label: 'Scored 4+ on the AP Spanish Literature and Culture exam',
+  quote: 'May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam.',
+  aliases: ['ap spanish', 'spanish literature and culture'],
+}
+
+/** A course code of the LALS Department, including a cross-listed partner code (PHIL 80E = LALS 80E). */
+function isLals(h: HarnessContext, code: string): boolean {
+  return code.startsWith('LALS') || h.catalog.equivalents(code).some((c) => c.startsWith('LALS'))
+}
 
 export default defineHarness({
   program: 'latin-american-and-latino-studies-ba',
@@ -61,9 +77,7 @@ export default defineHarness({
       default: 'lals',
     },
   ],
-  coverage: {
-    unknownOk: { SPAN105: 'cross-listed partner of LIT 189C ([/SPAN 105] in the source); the catalog files it under LIT' },
-  },
+  attestations: [AP_SPANISH],
   notes: [
     'Major courses need a C or better, or a P.',
     'At most two courses from outside the LALS Department (other UCSC departments, other institutions, study abroad) may count. The pre-approved outside elective list is a separate catalog page the app does not have: an outside course is shown as “check yourself”, never counted automatically.',
@@ -83,7 +97,7 @@ function major(h: HarnessContext): Node[] {
     'One lower-division LALS elective',
     ['One 5-credit course from from LALS courses numbered 1-99, including additional LALS introductory courses (LALS 1, 5, or 10).', 'May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam.'],
     LD_LALS,
-    { pool: 'LALS 1–99 (5 credits), including another of LALS 1, 5 or 10', notes: [AP_NOTE] },
+    { pool: 'LALS 1–99 (5 credits), including another of LALS 1, 5 or 10' },
   )
   const lower = h.group('lower', 'Lower-Division Requirements', [intro, ldElective])
 
@@ -102,10 +116,12 @@ function major(h: HarnessContext): Node[] {
   const comprehensive = comprehensiveNode(h, Q_COMPREHENSIVE)
 
   h.solve()
+  apCredit(h, ldElective)
   maybeOutside(h, [
     { node: ldElective, lower: true },
     { node: electives, lower: false },
   ])
+  apAsk(h, ldElective)
   return [lower, upper, dc, comprehensive]
 }
 
@@ -116,7 +132,7 @@ function intensive(h: HarnessContext): Node[] {
     'Two lower-division LALS electives',
     ['Two 5-credit courses chosen from LALS courses numbered 1-99 including additional LALS introductory courses (LALS 1, 5, or 10).', 'One elective may be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam.'],
     LD_LALS,
-    { n: 2, pool: 'LALS 1–99 (5 credits), including another of LALS 1, 5 or 10', notes: [AP_NOTE] },
+    { n: 2, pool: 'LALS 1–99 (5 credits), including another of LALS 1, 5 or 10' },
   )
   const lower = h.group('lower', 'Lower-Division Requirements', [intro, ldElectives])
 
@@ -144,10 +160,12 @@ function intensive(h: HarnessContext): Node[] {
   const comprehensive = comprehensiveNode(h, Q_SEMINAR)
 
   h.solve()
+  apCredit(h, ldElectives)
   maybeOutside(h, [
     { node: ldElectives, lower: true },
     { node: electives, lower: false },
   ])
+  apAsk(h, ldElectives)
   if (secondLanguage.status === 'unmet') {
     const maybe = h.taken(MAYBE_SPANISH)
     if (maybe.length) {
@@ -206,12 +224,36 @@ function comprehensiveNode(h: HarnessContext, quote: string): Node {
 }
 
 /**
+ * AP Spanish 4+ covers one lower-division elective. Attested: a slot short by
+ * one is met "by AP"; a slot short by two (concentration) is credited one.
+ */
+function apCredit(h: HarnessContext, node: Node): void {
+  if (node.status !== 'unmet' || !node.progress || !h.attested(AP_SPANISH.id)) return
+  node.progress = { ...node.progress, have: node.progress.have + 1 }
+  if (node.progress.have >= node.progress.need) {
+    node.status = 'met'
+    node.detail = 'One elective by AP Spanish Literature and Culture (score 4+), as you confirmed.'
+  } else {
+    node.detail = 'One elective counted by AP Spanish Literature and Culture (score 4+); the other still needed.'
+  }
+}
+
+/** Not attested and exactly one elective missing: offer the AP Spanish attestation. */
+function apAsk(h: HarnessContext, node: Node): void {
+  if (node.status !== 'unmet' || !node.progress || h.attested(AP_SPANISH.id)) return
+  if (node.progress.need - node.progress.have !== 1) return
+  node.status = 'needs-attestation'
+  node.attest = AP_SPANISH
+  node.detail = 'One elective missing — unless you scored 4+ on the AP Spanish Literature and Culture exam (confirm it).'
+}
+
+/**
  * An unmet elective slot may still be fillable by unused outside courses on
  * the pre-approved list (not in the app), within the two-course limit, or by
  * an advisor-approved independent study. Then it is cannot-check, not unmet.
  */
 function maybeOutside(h: HarnessContext, slots: { node: Node; lower: boolean }[]): void {
-  const outsideUsed = slots.reduce((n, s) => n + (s.node.used ?? []).filter((e) => !e.code.startsWith('LALS')).length, 0)
+  const outsideUsed = slots.reduce((n, s) => n + (s.node.used ?? []).filter((e) => !isLals(h, e.code)).length, 0)
   let room = 2 - outsideUsed
   const taken = new Set<string>()
   for (const { node, lower } of slots) {
@@ -221,7 +263,7 @@ function maybeOutside(h: HarnessContext, slots: { node: Node; lower: boolean }[]
       uniqueCodes(h.passed.filter((e) => !h.used.has(e.id) && !taken.has(e.code) && policyFailure(e, POLICY) == null && pred(e)))
     const outside = free((e) => {
       const c = h.catalog.get(e.code)
-      return !!c && !e.code.startsWith('LALS') && c.credits >= 5 && c.division === (lower ? 'lower' : 'upper')
+      return !!c && !isLals(h, e.code) && c.credits >= 5 && c.division === (lower ? 'lower' : 'upper')
     })
     const indep = lower ? [] : free((e) => INDEPENDENT.has(e.code))
     const usable = Math.min(outside.length, Math.max(room, 0)) + indep.length

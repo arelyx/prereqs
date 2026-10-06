@@ -9,6 +9,11 @@
 // of current offerings; the rule itself is "numbered EDUC 102-EDUC 187".
 import { codes, defineHarness, range } from '@harness'
 
+// "two additional 5-credit courses numbered EDUC 102-EDUC 187" OAKS 151A/151B [/EDUC 151A/B] are 2- and 3-credit
+// courses filed under OAKS; excluded so the 5-credit rule also holds under their EDUC codes.
+// (CRES 121 [/EDUC 121] counts through its cross-listing.)
+const EDUC_ELECTIVES = range('EDUC', 102, 187).minCredits(5).except(['OAKS 151A', 'OAKS 151B'])
+
 const CLD = ['EDUC 125', 'EDUC 128', 'EDUC 135', 'EDUC 140', 'EDUC 141', 'EDUC 164', 'EDUC 177', 'EDUC 181', 'EDUC 110']
 
 export default defineHarness({
@@ -32,7 +37,7 @@ export default defineHarness({
       h.take('educ185', 'EDUC 185B or EDUC 185C', 'Plus one of the following courses:', codes('EDUC 185B', 'EDUC 185C')),
       h.take('educ185l', 'EDUC 185L CalTeach 3', 'Plus the following course:', codes('EDUC 185L')),
       h.take('cld', 'One cultural and linguistic diversity course', 'Plus one cultural and linguistic diversity course:', codes(...CLD)),
-      h.take('electives', 'Two EDUC electives (102–187)', 'Students take two additional 5-credit courses numbered EDUC 102-EDUC 187.', range('EDUC', 102, 187).minCredits(5), {
+      h.take('electives', 'Two EDUC electives (102–187)', 'Students take two additional 5-credit courses numbered EDUC 102-EDUC 187.', EDUC_ELECTIVES, {
         n: 2,
         repeatable: 'catalog',
         pool: 'EDUC 102–187 (5 credits)',

@@ -5,7 +5,8 @@
 // 180, three EDUC 102-187, two LALS 101-190, and the senior seminar + lab
 // (comprehensive). One allocation, so EDUC 110 and 180 taken together count
 // once each (one required, one elective). The Spanish-taught elective and
-// DC are overlays.
+// DC are overlays. CRES 121 [/EDUC 121] is in the EDUC range as the same
+// course (the library resolves cross-listings).
 import { codes, defineHarness, range, series } from '@harness'
 import type { Node } from '@harness'
 
@@ -15,6 +16,12 @@ const SEMINAR = series('LALS', 194).except(codes('LALS 194L'))
 // Courses that could be "pre-approved outside electives ... taught in Spanish":
 // Spanish-language courses in other departments.
 const SPANISH_ELSEWHERE = range('SPAN', 100, 199).or(range('SPHS', 100, 199)).or(range('LIT', 188, 189))
+// LALS 147 (Violencia Cotidiana en las Americas) is on the LALS B.A. page's list of "Courses taught
+// primarily in Spanish" but not on this page's list (manifest depends_on latin-american-and-latino-studies-ba).
+const MAYBE_SPANISH = codes('LALS 147')
+// "Three 5-credit EDUC courses from 102-187." OAKS 151A/151B [/EDUC 151A/B] are 2- and 3-credit
+// courses filed under OAKS; listed so the 5-credit rule also excludes them under their EDUC codes.
+const EDUC_ELECTIVES = range('EDUC', 102, 187).minCredits(5).except(['OAKS 151A', 'OAKS 151B'])
 
 const Q_COMP = 'The Comprehensive Requirement is fulfilled by completing one senior seminar (LALS 194 A-Z, excluding L) and a Writing Lab (LALS 194L).'
 const Q_DC = 'The DC requirement for the combined LALS and EDJ B.A. is met by completing:'
@@ -61,7 +68,7 @@ export default defineHarness({
       'electives',
       'Upper-Division Elective Courses',
       [
-        h.take('educ-electives', 'Three EDUC courses (102–187)', 'Three 5-credit EDUC courses from 102-187.', range('EDUC', 102, 187).minCredits(5).or(codes('CRES 121')), {
+        h.take('educ-electives', 'Three EDUC courses (102–187)', 'Three 5-credit EDUC courses from 102-187.', EDUC_ELECTIVES, {
           n: 3,
           repeatable: 'catalog',
           pool: 'EDUC 102–187 (5 credits)',
@@ -91,6 +98,10 @@ export default defineHarness({
 
     h.solve()
     const out: Node[] = [lower, upper, electives, comprehensive, dc]
+    if (spanish.status === 'unmet' && h.taken(MAYBE_SPANISH).length) {
+      spanish.status = 'cannot-check'
+      spanish.detail = 'LALS 147 is listed as taught primarily in Spanish on the LALS B.A. page but not on this list — ask the LALS advisor whether it counts.'
+    }
     if (spanish.status === 'unmet') {
       const cand = h.taken(SPANISH_ELSEWHERE)
       if (cand.length) {
@@ -100,6 +111,12 @@ export default defineHarness({
           spanish.status = 'met'
           spanish.used = cand.slice(0, 1)
           spanish.detail = `${cand[0].display}, approved by the LALS advisor (you confirmed).`
+          // An approved "outside elective" taught in Spanish takes the place of an elective: a short
+          // LALS elective slot may be filled by it, which the page does not settle — check, never unmet.
+          if (lalsElectives.status === 'unmet' && lalsElectives.progress && lalsElectives.progress.need - lalsElectives.progress.have === 1 && cand.some((e) => !h.used.has(e.id))) {
+            lalsElectives.status = 'cannot-check'
+            lalsElectives.detail = `One LALS elective short: ask the LALS advisor whether the approved outside course (${cand[0].display}) also counts as an elective.`
+          }
         } else {
           spanish.status = 'needs-attestation'
           spanish.detail = `${cand.map((e) => e.display).join(', ')} counts only if the LALS advisor approved it.`

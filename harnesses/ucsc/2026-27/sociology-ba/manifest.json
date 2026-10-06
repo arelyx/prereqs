@@ -6,6 +6,6 @@
  "skeleton_sha256": "652a2cb4f45542b20c1318bd3e7546c16587a5ea0576db223a83f1360da87ebe",
  "status": "verified",
  "authored_at": "2026-10-06T00:53:37Z",
- "verified_at": "2026-10-06T00:58:07Z",
- "notes": "verified line by line; lint clean. Concentration defaults to general; letter-grade rule on qualification/prep courses -> P grade gives cannot-check; C+/B- and DJS director approval are qualification (info); SOCY 3A subs LALS 100A/PSYC 100 via attestations consulted only when used; one thesis course may double as elective once thesis done; external outside lists -> cannot-check (general cap 2, DJS uncapped); DJS deliverable attestation; AP Stats note."
+ "verified_at": "2026-10-06T23:43:34Z",
+ "notes": "verified line by line; lint clean. Concentration defaults to general; letter-grade rule on qualification/prep courses -> P grade gives cannot-check; C+/B- and DJS director approval are qualification (info); SOCY 3A subs LALS 100A/PSYC 100 via attestations consulted only when used; one thesis course may double as elective once thesis done; external outside lists -> cannot-check (general cap 2, DJS uncapped); DJS deliverable attestation; AP Stats note.; reviewed 2026-10-06: AP Statistics 4+ now an attestation offered only when SOCY 3B/STAT 5/STAT 7/PSYC 2 is missing"
 }

@@ -6,8 +6,27 @@
 // to two courses taken outside the LALS department" from a pre-approved list
 // the source only links to — an elective short of courses while unused
 // outside courses could fill it (within the two-course limit) is cannot-check.
+//
+// Grades: this page says "Courses may be taken for a letter grade or
+// Pass/No Pass."; the LALS B.A. page's Letter Grade Policy adds "Major and
+// minor requirements will be met with grades of C or better or Pass" (manifest
+// depends_on latin-american-and-latino-studies-ba).
+//
+// AP Spanish 4+ ("May also be satisfied with a score of 4+ on the AP Spanish
+// Literature and Culture exam.") is an attestation offered only when the
+// lower-division elective is missing.
 import { codes, defineHarness, display, policyFailure, range } from '@harness'
-import type { Enrollment, HarnessContext, Node } from '@harness'
+import type { AttestationDef, Enrollment, GradePolicy, HarnessContext, Node } from '@harness'
+
+const POLICY: GradePolicy = { min: 'C', pCounts: true }
+const AP_SPANISH: AttestationDef = {
+  id: 'ap-spanish',
+  label: 'Scored 4+ on the AP Spanish Literature and Culture exam',
+  quote: 'May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam.',
+  aliases: ['ap spanish', 'spanish literature and culture'],
+}
+/** A LALS course code, including a cross-listed partner code (PHIL 80E = LALS 80E). */
+const isLals = (h: HarnessContext, code: string) => code.startsWith('LALS') || h.catalog.equivalents(code).some((c) => c.startsWith('LALS'))
 
 const LD_LALS = range('LALS', 1, 99).minCredits(5)
 // "Four additional 5-credit upper-division electives chosen from LALS 100-194."
@@ -18,13 +37,15 @@ export default defineHarness({
   program: 'latin-american-and-latino-studies-minor',
   edition: '2026-27',
   title: 'Latin American and Latino Studies Minor',
+  attestations: [AP_SPANISH],
   notes: [
-    'Courses may be taken for a letter grade or Pass/No Pass.',
+    'Courses may be taken for a letter grade or Pass/No Pass; a letter grade must be C or better (LALS Letter Grade Policy).',
     'At most two courses from outside the LALS department (other UCSC departments, other institutions, study abroad) may count. The pre-approved outside elective list is a separate catalog page the app does not have: outside courses are shown as “check yourself”, never counted automatically.',
   ],
   evaluate(h) {
-    // "Courses may be taken for a letter grade or Pass/No Pass."
-    h.policy = undefined
+    // "Courses may be taken for a letter grade or Pass/No Pass." + (LALS B.A. page)
+    // "Major and minor requirements will be met with grades of C or better or Pass"
+    h.policy = POLICY
 
     const intro = h.take('intro', 'One LALS introductory course', 'One LALS introductory course', codes('LALS 1', 'LALS 5', 'LALS 10'))
     const ldElective = h.take(
@@ -32,10 +53,7 @@ export default defineHarness({
       'One lower-division elective',
       ['One 5-credit course chosen from LALS 1-99 including additional LALS introductory courses (LALS 1, LALS 5, or LALS 10).', 'May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam.'],
       LD_LALS,
-      {
-        pool: 'LALS 1–99 (5 credits), including another of LALS 1, 5 or 10',
-        notes: ['A score of 4+ on the AP Spanish Literature and Culture exam may satisfy this — if so, ask the LALS advisor to record it.'],
-      },
+      { pool: 'LALS 1–99 (5 credits), including another of LALS 1, 5 or 10' },
     )
     const lower = h.group('lower', 'Lower-Division Courses', [intro, ldElective])
 
@@ -64,10 +82,19 @@ export default defineHarness({
     const upper = h.group('upper', 'Upper-Division Courses', [core, electives])
 
     h.solve()
+    if (ldElective.status === 'unmet' && h.attested(AP_SPANISH.id)) {
+      ldElective.status = 'met'
+      ldElective.detail = 'By AP Spanish Literature and Culture (score 4+), as you confirmed.'
+    }
     maybeOutside(h, [
       { node: ldElective, lower: true },
       { node: electives, lower: false },
     ])
+    if (ldElective.status === 'unmet') {
+      ldElective.status = 'needs-attestation'
+      ldElective.attest = AP_SPANISH
+      ldElective.detail = 'Missing — unless you scored 4+ on the AP Spanish Literature and Culture exam (confirm it).'
+    }
     return [lower, upper]
   },
 })
@@ -83,7 +110,7 @@ function maybeOutside(h: HarnessContext, slots: { node: Node; lower: boolean }[]
       uniqueCodes(h.passed.filter((e) => !h.used.has(e.id) && !taken.has(e.code) && policyFailure(e, h.policy) == null && pred(e)))
     const outside = free((e) => {
       const c = h.catalog.get(e.code)
-      return !!c && !e.code.startsWith('LALS') && c.credits >= 5 && c.division === (lower ? 'lower' : 'upper')
+      return !!c && !isLals(h, e.code) && c.credits >= 5 && c.division === (lower ? 'lower' : 'upper')
     })
     const indep = lower ? [] : free((e) => INDEPENDENT.has(e.code))
     const outUse = Math.min(outside.length, Math.max(room, 0), gap)

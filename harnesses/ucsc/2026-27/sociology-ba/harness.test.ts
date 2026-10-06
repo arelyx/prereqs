@@ -38,7 +38,7 @@ describe('sociology-ba 2026-27 general', () => {
 
   it('SOCY 3B substitutes: STAT 5, STAT 7, PSYC 2', () => {
     for (const s of ['STAT 5', 'STAT 7', 'PSYC 2']) expect(find(run(harness, { terms: swap('SOCY 3B', s) }), 'socy3b').status).toBe('met')
-    expect(find(run(harness, { terms: swap('SOCY 3B') }), 'socy3b').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('SOCY 3B'), attested: [] }), 'socy3b').status).toBe('needs-attestation')
   })
 
   it('LALS 100A substitutes for SOCY 3A only for a LALS double major/minor', () => {
@@ -164,5 +164,56 @@ describe('sociology-ba 2026-27 adversarial', () => {
   it('SOCY 3A present and LALS 100A also taken: no attestation needed', () => {
     const r = run(harness, { terms: [...general, ...plan(['2290', 'LALS 100A'])], attested: [] })
     expect(failing(r)).toEqual([])
+  })
+})
+
+describe('sociology-ba 2026-27 review (wave 2)', () => {
+  const t = (from: string, ...to: string[]) => swapIn(general, from, ...to)
+
+  // "as well as an AP Statistics score of 4 or more, may substitute for SOCY 3B."
+  it('AP Statistics 4+ is an attestation asked only when SOCY 3B (or a listed substitute) is missing', () => {
+    const r = run(harness, { terms: t('SOCY 3B'), attested: [] })
+    expect(find(r, 'socy3b').status).toBe('needs-attestation')
+    expect(find(r, 'socy3b').attest?.id).toBe('ap-stats')
+    expect(failing(run(harness, { terms: t('SOCY 3B'), attested: ['AP Statistics'] }))).toEqual([])
+    expect(failing(run(harness, { terms: general, attested: [] }))).toEqual([])
+  })
+
+  it('LALS 186 entered under its LALS code is SOCY 186 (cross-listed): a sociology elective', () => {
+    expect(failing(run(harness, { terms: t('SOCY 185', 'LALS 186'), attested: [] }))).toEqual([])
+  })
+
+  it('LGST 126 is SOCY 128 (cross-listed): a sociology elective', () => {
+    expect(failing(run(harness, { terms: t('SOCY 185', 'LGST 126'), attested: [] }))).toEqual([])
+  })
+
+  it('a 2-credit SOCY course in 110-189 is not an elective', () => {
+    expect(find(run(harness, { terms: t('SOCY 185', 'SOCY 113C') }), 'advanced').status).toBe('unmet')
+  })
+
+  it('a P in SOCY 105A counts (only qualification courses need letter grades)', () => {
+    expect(failing(run(harness, { terms: general, grades: { 'SOCY 105A': 'P' } }))).toEqual([])
+  })
+
+  it('a failing grade in SOCY 196S: no comprehensive', () => {
+    expect(find(run(harness, { terms: general, grades: { 'SOCY 196S': 'F' } }), 'comprehensive').status).toBe('unmet')
+  })
+
+  it('a 2-credit graduate SOCY course does not satisfy the comprehensive', () => {
+    expect(find(run(harness, { terms: t('SOCY 196S', 'SOCY 290W') }), 'comprehensive').status).toBe('unmet')
+  })
+
+  it('DJS: SOCY 30A for a letter grade is needed but the qualification B- is not a completion rule', () => {
+    expect(failing(run(harness, { terms: djs, choices: D, grades: { 'SOCY 30A': 'C' } }))).toEqual([])
+  })
+
+  it('no-term (transfer) credit, empty plan, kitchen sink', () => {
+    expect(failing(run(harness, { terms: t('SOCY 1'), completed: ['SOCY 1'] }))).toEqual([])
+    const e = run(harness, { terms: [], attested: [] })
+    expect(find(e, 'prep').status).toBe('unmet')
+    expect(find(e, 'comprehensive').status).toBe('unmet')
+    const sink = [...djs, ...plan(['2290', 'SOCY 10', 'SOCY 111', 'SOCY 120', 'STAT 7', 'LALS 100A', 'SOCY 195A', 'SOCY 195B', 'SOCY 222'])]
+    expect(failing(run(harness, { terms: sink }))).toEqual([])
+    expect(failing(run(harness, { terms: sink, choices: D }))).toEqual([])
   })
 })

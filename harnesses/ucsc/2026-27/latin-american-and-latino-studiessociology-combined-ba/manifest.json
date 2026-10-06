@@ -6,6 +6,6 @@
  "skeleton_sha256": "73353d7909e88a44f3238810c4b6f57a5a4689647fade43e963a61d7aca7c116",
  "status": "verified",
  "authored_at": "2026-10-06T00:52:13Z",
- "verified_at": "2026-10-06T00:58:07Z",
- "notes": "verified line by line; lint clean. C/P; comprehensive LALS 194+194L or SOCY 196S (application in advance noted, not attested)."
+ "verified_at": "2026-10-06T23:43:33Z",
+ "notes": "verified line by line; lint clean. C/P; comprehensive LALS 194+194L or SOCY 196S (application in advance noted, not attested).; reviewed 2026-10-06: no defects; adversarial regression tests added"
 }

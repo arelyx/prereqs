@@ -24,7 +24,7 @@ describe('latin-american-and-latino-studies-ba 2026-27 major', () => {
   })
 
   it('2-credit lower-division courses do not count as the elective', () => {
-    expect(find(run(harness, { terms: swap(major, 'LALS 30', 'LALS 95') }), 'ld-elective').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap(major, 'LALS 30', 'LALS 95'), attested: [] }), 'ld-elective').status).toBe('needs-attestation')
   })
 
   it('needs five upper-division electives; the senior seminar is not one of them', () => {
@@ -87,13 +87,14 @@ describe('latin-american-and-latino-studies-ba 2026-27 language intensive', () =
   })
 
   it('the plain-major record is not enough for the concentration', () => {
-    const r = run(harness, { terms: major, choices: I })
-    expect(find(r, 'ld-electives').status).toBe('unmet')
+    const r = run(harness, { terms: major, choices: I, attested: [] })
+    expect(find(r, 'ld-electives').status).toBe('needs-attestation')
     expect(find(r, 'ud-electives').status).toBe('unmet')
   })
 
   it('needs two lower-division electives', () => {
-    expect(find(run(harness, { terms: swap(intensive, 'LALS 45'), choices: I }), 'ld-electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap(intensive, 'LALS 45'), choices: I, attested: [] }), 'ld-electives').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: swap(swap(intensive, 'LALS 45'), 'LALS 30'), choices: I, attested: [] }), 'ld-electives').status).toBe('unmet')
   })
 
   it('needs two electives taught in a second language', () => {
@@ -138,5 +139,88 @@ describe('latin-american-and-latino-studies-ba 2026-27 adversarial', () => {
   it('an outside course under the C rule (C-) is not a possible substitute', () => {
     const r = run(harness, { terms: swap(major, 'LALS 158', 'HIS 140B'), grades: { 'HIS 140B': 'C-' } })
     expect(find(r, 'ud-electives').status).toBe('unmet')
+  })
+})
+
+describe('latin-american-and-latino-studies-ba 2026-27 review (wave 2)', () => {
+  // "May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam."
+  it('AP Spanish 4+ is an attestation offered only when the lower-division elective is missing', () => {
+    const noLd = swap(major, 'LALS 30')
+    const asked = find(run(harness, { terms: noLd, attested: [] }), 'ld-elective')
+    expect(asked.status).toBe('needs-attestation')
+    expect(asked.attest?.id).toBe('ap-spanish')
+    expect(failing(run(harness, { terms: noLd, attested: ['AP Spanish'] }))).toEqual([])
+    // With the course present, nothing is asked.
+    expect(failing(run(harness, { terms: major, attested: [] }))).toEqual([])
+  })
+
+  // "One elective may be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam."
+  it('concentration: AP Spanish covers only one of the two lower-division electives', () => {
+    const one = swap(intensive, 'LALS 45')
+    expect(failing(run(harness, { terms: one, choices: I, attested: ['ap spanish'] }))).toEqual([])
+    const none = swap(one, 'LALS 30')
+    expect(find(run(harness, { terms: none, choices: I, attested: ['ap spanish'] }), 'ld-electives').status).toBe('unmet')
+  })
+
+  it('PHIL 80E (cross-listed LALS 80E) is a LALS course: it does not use up the two-outside-course limit', () => {
+    let t = swap(major, 'LALS 30', 'PHIL 80E')
+    t = swap(t, 'LALS 158', 'HIS 140B')
+    t = swap(t, 'LALS 143', 'POLI 140C')
+    const r = run(harness, { terms: t })
+    expect(find(r, 'ld-elective').status).toBe('met')
+    expect(find(r, 'ud-electives').status).toBe('cannot-check')
+  })
+
+  it('LIT 189C and its SPAN 105 cross-listing are one Spanish-list course', () => {
+    const r = run(harness, { terms: [...swap(intensive, 'LALS 135', 'LIT 189C'), ...plan(['2290', 'SPAN 105'])], choices: I })
+    expect(find(r, 'second-language').status).toBe('met')
+    expect(find(r, 'ud-electives').status).toBe('met')
+  })
+
+  it('the same senior seminar twice counts once (seminar, not also an elective)', () => {
+    expect(find(run(harness, { terms: [...swap(major, 'LALS 158'), ...plan(['2290', 'LALS 194A'])] }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('a lab without its lecture: LALS 100L alone fails core and DC', () => {
+    const r = run(harness, { terms: swap(major, 'LALS 100A') })
+    expect(find(r, 'core').status).toBe('unmet')
+    expect(find(r, 'dc').status).toBe('unmet')
+  })
+
+  it('no-term (transfer/AP) credit counts as a completed course', () => {
+    const r = run(harness, { terms: swap(major, 'LALS 1'), completed: ['LALS 1'] })
+    expect(failing(r)).toEqual([])
+  })
+
+  it('a C- intro course does not count; the other intro may replace it', () => {
+    expect(find(run(harness, { terms: major, grades: { 'LALS 1': 'C-' } }), 'intro').status).toBe('unmet')
+    expect(failing(run(harness, { terms: swap(major, 'LALS 30', 'LALS 10'), grades: { 'LALS 1': 'C-' }, attested: [] }))).not.toContain('intro:unmet')
+  })
+
+  it('concentration: three non-LALS Spanish courses — only two count as electives', () => {
+    let t = swap(intensive, 'LALS 143', 'LIT 189B')
+    t = swap(t, 'LALS 158', 'SPAN 156A', 'LALS 158')
+    const r = run(harness, { terms: t, choices: I })
+    expect(find(r, 'ud-electives').status).toBe('met')
+    expect(failing(r)).toEqual([])
+  })
+
+  it('concentration: outside limit already used by Spanish-list courses leaves no room for another outside course', () => {
+    let t = swap(intensive, 'LALS 143', 'LIT 189B')
+    t = swap(t, 'LALS 158', 'HIS 140B')
+    expect(find(run(harness, { terms: t, choices: I }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('empty plan: everything unmet, nothing met', () => {
+    const r = run(harness, { terms: [], attested: [] })
+    expect(find(r, 'intro').status).toBe('unmet')
+    expect(find(r, 'ud-electives').status).toBe('unmet')
+    expect(find(r, 'comprehensive').status).toBe('unmet')
+  })
+
+  it('kitchen sink: every listed course plus extras is complete in both shapes', () => {
+    const sink = [...intensive, ...plan(['2290', 'LALS 1', 'LALS 10', 'LALS 147', 'LIT 189Z', 'SPAN 156M', 'SPHS 115', 'LALS 199', 'HIS 140B'])]
+    expect(failing(run(harness, { terms: sink }))).toEqual([])
+    expect(failing(run(harness, { terms: sink, choices: I }))).toEqual([])
   })
 })

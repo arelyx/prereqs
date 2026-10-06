@@ -19,6 +19,8 @@
 // - Pre-approved outside courses (general: up to two; DJS: no limit) come
 //   from external lists: a short elective requirement with unused outside
 //   upper-division courses is cannot-check.
+// - AP Statistics 4+ "may substitute for SOCY 3B": an attestation offered
+//   only when no SOCY 3B (or STAT 5 / STAT 7 / PSYC 2) is in the plan.
 import { codes, defineHarness, display, policyFailure, range } from '@harness'
 import type { Enrollment, HarnessContext, Node } from '@harness'
 
@@ -35,6 +37,7 @@ const Q_DC = 'The following courses satisfy the Disciplinary Communication requi
 const Q_THESIS_ELECTIVE = 'One thesis individual study course may also count toward both the thesis requirement as well as one of the upper-division elective courses required for the major.'
 const Q_LALS = 'who are pursuing a double major or minor in Latin American and Latino Studies (LALS) may substitute SOCY 3A with LALS 100A.'
 const Q_PSYC = 'who are double majoring in psychology or cognitive science, may substitute SOCY 3A with PSYC 100.'
+const Q_SOCY3B_SUBS = 'STAT 5, STAT 7, PSYC 2, or their articulated equivalents, as well as an AP Statistics score of 4 or more, may substitute for SOCY 3B.'
 const Q_DJS_DELIVERABLE = 'To complete the final requirements for DJS, the integrated project practicum—narrative and digital deliverable—must be mounted on the appropriate web-enabled database managed by the Everett Program.'
 
 export default defineHarness({
@@ -60,12 +63,12 @@ export default defineHarness({
   attestations: [
     { id: 'lals-double', label: 'Pursuing a double major or minor in Latin American and Latino Studies (LALS)', quote: Q_LALS, aliases: ['lals', 'latin american'] },
     { id: 'psyc-double', label: 'Double majoring in psychology or cognitive science', quote: Q_PSYC, aliases: ['psychology', 'cognitive science', 'psyc'] },
+    { id: 'ap-stats', label: 'Scored 4+ on the AP Statistics exam', quote: Q_SOCY3B_SUBS, aliases: ['ap statistics', 'ap stats'] },
     { id: 'djs-deliverable', label: 'DJS project practicum deliverable mounted on the Everett Program database', quote: Q_DJS_DELIVERABLE, aliases: ['deliverable', 'everett', 'capstone project', 'djs project'] },
   ],
   notes: [
     'Major qualification courses (SOCY 1/10/15, and SOCY 30A for DJS) must be taken for a letter grade; other major courses may be taken P/NP.',
     'Pre-approved outside courses come from department lists the app does not have — outside upper-division courses are shown as “check yourself”, never counted automatically.',
-    'An AP Statistics score of 4 or more may substitute for SOCY 3B — if so, ask the Sociology advisor to record it.',
   ],
   evaluate(h) {
     // "All other major requirements may be taken as a letter grade or Pass/No Pass."
@@ -102,15 +105,15 @@ export default defineHarness({
       quote: djs ? 'Students must take the following three courses or their articulated equivalents.' : 'All sociology majors are required to take two lower-division preparation courses, or their articulated equivalents.',
     })
 
+    const socy3b = h.take('socy3b', 'SOCY 3B Statistical Methods (or STAT 5, STAT 7, PSYC 2)', Q_SOCY3B_SUBS, codes('SOCY 3B', 'STAT 5', 'STAT 7', 'PSYC 2'), {
+      prefer: (c) => (c === 'SOCY3B' ? 0 : 1),
+    })
     const methods = h.group(
       'ld-core',
       'Lower-division core courses',
       [
         socy3a(h, djs),
-        h.take('socy3b', 'SOCY 3B Statistical Methods (or STAT 5, STAT 7, PSYC 2)', 'STAT 5, STAT 7, PSYC 2, or their articulated equivalents, as well as an AP Statistics score of 4 or more, may substitute for SOCY 3B.', codes('SOCY 3B', 'STAT 5', 'STAT 7', 'PSYC 2'), {
-          prefer: (c) => (c === 'SOCY3B' ? 0 : 1),
-          notes: ['An AP Statistics score of 4 or more also substitutes — if so, ask the Sociology advisor to record it.'],
-        }),
+        socy3b,
       ],
       { quote: 'The following two sociology courses, or their articulated equivalents, are required as the foundation of statistical and research methods in the discipline.' },
     )
@@ -170,6 +173,13 @@ export default defineHarness({
     ])
 
     h.solve()
+    if (socy3b.status === 'unmet') {
+      // "as well as an AP Statistics score of 4 or more, may substitute for SOCY 3B"
+      const ok = h.attested('ap-stats')
+      socy3b.status = ok ? 'met' : 'needs-attestation'
+      socy3b.attest = h.attestations.find((a) => a.id === 'ap-stats')
+      socy3b.detail = ok ? 'By AP Statistics (score 4+), as you confirmed.' : 'Missing — unless you scored 4+ on the AP Statistics exam (confirm it).'
+    }
     letterGradeCaveat(h, prep, PREP, 2)
     if (djs) letterGradeCaveat(h, prepChildren[0], codes('SOCY 30A'), 1)
     maybeOutside(h, advanced, djs, thesisDone)

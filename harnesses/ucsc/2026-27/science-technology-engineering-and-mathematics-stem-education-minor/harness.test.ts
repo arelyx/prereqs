@@ -48,3 +48,38 @@ describe('science-technology-engineering-and-mathematics-stem-education-minor 20
     expect(failing(run(harness, { terms: base, grades: { 'EDUC 50A': 'P', 'EDUC 185L': 'P' } }))).toEqual([])
   })
 })
+
+describe('science-technology-engineering-and-mathematics-stem-education-minor 2026-27 review (wave 2)', () => {
+  // "Students take two additional 5-credit courses numbered EDUC 102-EDUC 187."
+  it('2-/3-credit OAKS 151A/B [/EDUC 151A/B] are not 5-credit electives', () => {
+    expect(find(run(harness, { terms: swap('EDUC 166', 'OAKS 151B') }), 'electives').status).toBe('unmet')
+  })
+
+  it('CRES 121 [/EDUC 121] is an EDUC elective', () => {
+    expect(failing(run(harness, { terms: swap('EDUC 166', 'CRES 121') }))).toEqual([])
+  })
+
+  it('EDUC 185L (3 credits) without EDUC 185B/C: 185B/C unmet', () => {
+    expect(find(run(harness, { terms: swap('EDUC 185B') }), 'educ185').status).toBe('unmet')
+  })
+
+  it('EDUC 185B and 185C both taken: one counts as the required course, the other as an elective', () => {
+    expect(failing(run(harness, { terms: swap('EDUC 166', 'EDUC 185C') }))).toEqual([])
+  })
+
+  it('EDUC 110 is a diversity course; a second diversity course can be an elective', () => {
+    expect(failing(run(harness, { terms: swap('EDUC 166', 'EDUC 110') }))).toEqual([])
+  })
+
+  it('two CalTeach 1 courses do not stand in for CalTeach 2', () => {
+    expect(find(run(harness, { terms: swap('EDUC 100A', 'EDUC 50B') }), 'educ100').status).toBe('unmet')
+  })
+
+  it('no-term credit, empty plan, kitchen sink', () => {
+    expect(failing(run(harness, { terms: swap('EDUC 60'), completed: ['EDUC 60'] }))).toEqual([])
+    const e = run(harness, { terms: [] })
+    expect(find(e, 'educ185l').status).toBe('unmet')
+    const sink = [...base, ...plan(['2290', 'EDUC 50B', 'EDUC 50C', 'EDUC 100B', 'EDUC 100C', 'EDUC 185C', 'EDUC 125', 'EDUC 128', 'EDUC 190'])]
+    expect(failing(run(harness, { terms: sink }))).toEqual([])
+  })
+})

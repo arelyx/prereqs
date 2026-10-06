@@ -6,6 +6,6 @@
  "skeleton_sha256": "7ac7808a3d9a609fb21f4833ee00527004914d3acfd66b4d61eb548f8cf8dce2",
  "status": "verified",
  "authored_at": "2026-10-06T00:56:07Z",
- "verified_at": "2026-10-06T00:58:08Z",
- "notes": "verified line by line; lint clean. P/NP allowed; one allocation so EDUC 185B/C and the CLD course are not also electives; electives = 5-credit EDUC 102-187 per the stated rule (spreadsheet of current offerings noted)."
+ "verified_at": "2026-10-06T23:43:35Z",
+ "notes": "verified line by line; lint clean. P/NP allowed; one allocation so EDUC 185B/C and the CLD course are not also electives; electives = 5-credit EDUC 102-187 per the stated rule (spreadsheet of current offerings noted).; reviewed 2026-10-06: OAKS 151A/B [/EDUC 151A/B] (2-3 cr) excluded from 5-credit electives"
 }

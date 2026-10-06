@@ -40,7 +40,7 @@ describe('latin-american-and-latino-studies-minor 2026-27', () => {
 
   it('the lower-division elective must be LALS 1-99, 5 credits; another intro course counts', () => {
     expect(find(run(harness, { terms: swap('LALS 80F', 'LALS 1') }), 'ld-elective').status).toBe('met')
-    expect(find(run(harness, { terms: swap('LALS 80F', 'LALS 56L') }), 'ld-elective').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('LALS 80F', 'LALS 56L'), attested: [] }), 'ld-elective').status).toBe('needs-attestation')
   })
 
   it('P grades are allowed', () => {
@@ -54,7 +54,58 @@ describe('latin-american-and-latino-studies-minor 2026-27', () => {
   it('outside courses are limited to two across the minor', () => {
     let t = swap('LALS 80F', 'HIS 10A')
     t = t.map((q) => ({ ...q, courses: q.courses.flatMap((c) => (c === 'LALS 181' ? ['HIS 140B'] : c === 'LALS 170' ? ['POLI 140C'] : [c])) }))
-    const r = run(harness, { terms: t })
+    // (attested: [] — with an AP Spanish attestation the lower-division slot would not need HIS 10A)
+    const r = run(harness, { terms: t, attested: [] })
     expect(find(r, 'ud-electives').status).toBe('unmet')
+  })
+})
+
+describe('latin-american-and-latino-studies-minor 2026-27 review (wave 2)', () => {
+  // LALS B.A. Letter Grade Policy: "Major and minor requirements will be met with grades of C or better or Pass"
+  it('a C- does not count toward the minor (C or better, or P)', () => {
+    expect(find(run(harness, { terms: base, grades: { 'LALS 143': 'C-' } }), 'ud-electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: base, grades: { 'LALS 10': 'D' } }), 'intro').status).toBe('unmet')
+    expect(failing(run(harness, { terms: base, grades: { 'LALS 143': 'C' } }))).toEqual([])
+  })
+
+  // "May also be satisfied with a score of 4+ on the AP Spanish Literature and Culture exam."
+  it('AP Spanish is asked only when the lower-division elective is missing', () => {
+    const t = swap('LALS 80F')
+    expect(find(run(harness, { terms: t, attested: [] }), 'ld-elective').status).toBe('needs-attestation')
+    expect(failing(run(harness, { terms: t, attested: ['AP Spanish Literature and Culture'] }))).toEqual([])
+    expect(failing(run(harness, { terms: base, attested: [] }))).toEqual([])
+  })
+
+  it('PHIL 80E (cross-listed LALS 80E) is a LALS lower-division elective', () => {
+    expect(failing(run(harness, { terms: swap('LALS 80F', 'PHIL 80E'), attested: [] }))).toEqual([])
+  })
+
+  it('SOCY 186 is LALS 186 (cross-listed): counts as an elective without approval', () => {
+    expect(failing(run(harness, { terms: swap('LALS 181', 'SOCY 186'), attested: [] }))).toEqual([])
+  })
+
+  it('LALS 100 cannot be both the core and an elective', () => {
+    expect(find(run(harness, { terms: [...swap('LALS 181'), ...plan(['2290', 'LALS 100'])] }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('LALS 100L alone is neither core nor elective', () => {
+    const r = run(harness, { terms: swap('LALS 100', 'LALS 100L') })
+    expect(find(r, 'core').status).toBe('unmet')
+  })
+
+  it('independent study needs advisor approval: cannot-check', () => {
+    expect(find(run(harness, { terms: swap('LALS 181', 'LALS 199') }), 'ud-electives').status).toBe('cannot-check')
+  })
+
+  it('empty plan and kitchen sink', () => {
+    const e = run(harness, { terms: [], attested: [] })
+    expect(find(e, 'intro').status).toBe('unmet')
+    expect(find(e, 'ud-electives').status).toBe('unmet')
+    const sink = [...base, ...plan(['2290', 'LALS 1', 'LALS 5', 'LALS 100A', 'LALS 100L', 'LALS 194A', 'LALS 194L', 'HIS 140B'])]
+    expect(failing(run(harness, { terms: sink, attested: [] }))).toEqual([])
+  })
+
+  it('no-term credit counts', () => {
+    expect(failing(run(harness, { terms: swap('LALS 10'), completed: ['LALS 10'] }))).toEqual([])
   })
 })

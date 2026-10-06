@@ -6,6 +6,6 @@
  "skeleton_sha256": "60bcb9c2fb2ccc6dbdf4d40df12df32646d011ce5d584113b66d8d37d1eec524",
  "status": "verified",
  "authored_at": "2026-10-06T00:55:15Z",
- "verified_at": "2026-10-06T00:58:08Z",
- "notes": "verified line by line; lint clean. P/NP allowed; second of EDUC 110/180 is an elective; Outside Electives list counted (max 2, EDUC 194 once) with a department-approval attestation only when used; topic lists are guidance (info); other petitions as a note."
+ "verified_at": "2026-10-06T23:43:34Z",
+ "notes": "verified line by line; lint clean. P/NP allowed; second of EDUC 110/180 is an elective; Outside Electives list counted (max 2, EDUC 194 once) with a department-approval attestation only when used; topic lists are guidance (info); other petitions as a note.; reviewed 2026-10-06: removed CRES 121/KRSG 178 aliases + unknownOk; OAKS 151A/B excluded; course-substitution petition (up to two, shared with outside list) -> attestation asked only when the six are short"
 }
