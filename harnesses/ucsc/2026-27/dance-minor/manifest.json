@@ -6,6 +6,6 @@
  "skeleton_sha256": "1ad79e44229bedaca5092fb6c1c009c2321c35f8a97b535176830bdde7dbfdee",
  "status": "verified",
  "authored_at": "2026-10-06T00:49:52Z",
- "verified_at": "2026-10-06T00:55:27Z",
- "notes": "verified line by line; tests from the page. Electives = list + UD practice/critical lists, exclusive (not double counted); repeatable per catalog; THEA 139 at most twice; excluded list as info; no grade policy."
+ "verified_at": "2026-10-06T23:42:12Z",
+ "notes": "verified line by line; tests from the page. Electives = list + UD practice/critical lists, exclusive (not double counted); repeatable per catalog; THEA 139 at most twice; excluded list as info; no grade policy.; reviewed 2026-10-06: removed cross-listed partner codes + unknownOk; no logic defects found"
 }

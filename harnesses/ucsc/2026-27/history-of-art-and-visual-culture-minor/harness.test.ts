@@ -40,4 +40,15 @@ describe('history-of-art-and-visual-culture-minor 2026-27', () => {
   it('P grades count', () => {
     expect(failing(run(harness, { terms, grades: { 'HAVC 10': 'P', 'HAVC 151': 'P' } }))).toEqual([])
   })
+
+  it('review: a lower-division course retaken counts once (two regions still needed)', () => {
+    const t = [...swap(terms, 'HAVC 22', null), { term: '2290', courses: ['HAVC 10'] }]
+    expect(find(run(harness, { terms: t }), 'lower').status).toBe('unmet')
+  })
+
+  it('review: VAST 188J counts as HAVC 188J; HAVC 195 and 2-credit 199F do not', () => {
+    expect(find(run(harness, { terms: swap(terms, 'HAVC 151', 'VAST 188J') }), 'upper').status).toBe('met')
+    expect(find(run(harness, { terms: swap(terms, 'HAVC 151', 'HAVC 195') }), 'upper').status).toBe('unmet')
+  })
+
 })

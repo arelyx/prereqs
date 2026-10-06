@@ -8,7 +8,7 @@
 // overlap; one course fills one slot). The senior comprehensive IS the
 // Performance/Portfolio/Exhibition requirement. ARTG 170A and 170B are
 // equivalent: when both are taken only the first counts.
-import { canon, codes, defineHarness, display, range } from '@harness'
+import { codes, defineHarness, display, range } from '@harness'
 import type { HarnessContext, Node } from '@harness'
 
 const LD_ARTS = [
@@ -17,19 +17,8 @@ const LD_ARTS = [
   'MUSC 80L', 'THEA 10', 'THEA 14', 'THEA 15', 'THEA 17', 'THEA 18C', 'THEA 19', 'THEA 20', 'THEA 21', 'THEA 22',
   'THEA 30', 'THEA 31C', 'THEA 33C', 'THEA 36', 'THEA 37', 'THEA 40', 'THEA 50', 'THEA 80Z',
 ]
-// Cross-listed partners ([/X] in the source). The catalog files each course
-// under the first code; the partner code is accepted too.
-const XL: Record<string, string> = {
-  'THEA 117': 'ART 147T',
-  'ARTG 138': 'FMST 138',
-  'ARTG 139': 'CRES 139',
-  'ARTG 142': 'CRES 142',
-  'ARTG 143': 'THEA 143',
-  'CMPM 179': 'ARTG 179',
-  'DANM 140': 'ART 105',
-}
-const withXL = (list: string[]) => list.flatMap((c) => (XL[c] ? [c, XL[c]] : [c]))
-
+// Cross-listed partners ([/X] in the source) need nothing: the library treats
+// cross-listed codes as one course.
 const CRAFT = [
   'ARTG 118', 'ARTG 120', 'ARTG 131', 'ARTG 132', 'ARTG 136', 'ARTG 137', 'ARTG 140', 'THEA 113', 'THEA 115A',
   'THEA 116A', 'THEA 117', 'THEA 124', 'THEA 126', 'THEA 139', 'THEA 145R', 'THEA 151', 'THEA 151A', 'THEA 157',
@@ -73,9 +62,6 @@ export default defineHarness({
         'listed only under Transfer Admission Screening Policy (gates admission, not a completion requirement)',
       ]),
     ),
-    unknownOk: Object.fromEntries(
-      Object.values(XL).map((c) => [canon(c), 'cross-listed partner ([/X] in the source); the catalog files the course under the first code']),
-    ),
   },
   notes: [
     'Major courses may be taken for a letter grade or Pass/No Pass (campus 25% P/NP limit applies).',
@@ -91,7 +77,7 @@ export default defineHarness({
     const b = h.passed.find((e) => e.code === 'ARTG170B')
     const dup = a && b ? (Number(b.term ?? -1) >= Number(a.term ?? -1) ? 'ARTG 170B' : 'ARTG 170A') : null
     const no = dup ? [dup] : []
-    const list = (l: string[]) => codes(...withXL(l)).except(no)
+    const list = (l: string[]) => codes(...l).except(no)
 
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.group('foundational', 'Foundational Courses', [
@@ -116,7 +102,7 @@ export default defineHarness({
       { detail: 'Satisfied by the Performance/Portfolio/Exhibition course above.' },
     )
     const electivePool = range('ARTG', 100, 189)
-      .or(codes(...withXL([...CRAFT, ...SOCIAL, ...PPE, ...ELECTIVE_LIST])))
+      .or(codes(...CRAFT, ...SOCIAL, ...PPE, ...ELECTIVE_LIST))
       .except(no)
     const electives = h.take(
       'electives',
@@ -142,6 +128,9 @@ function artsElective(h: HarnessContext): Node {
     notes: ['Check with departments and the General Catalog for restrictions or prerequisites.'],
   })
   if (h.entry !== 'transfer') return course
+  // §1a: the screening waiver is asked only when no listed course fills the slot.
+  h.solve()
+  if (course.status === 'met') return course
   return h.either('arts-elective-or-screening', 'Lower-Division Arts Elective (or transfer screening)', 'Junior transfers fulfill the lower-division arts elective requirement as part of the transfer screening requirements.', [
     course,
     h.attest('transfer-screening'),

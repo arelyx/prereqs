@@ -74,4 +74,24 @@ describe('art-ba 2026-27', () => {
   it('needs three ART 20 courses', () => {
     expect(find(run(harness, { terms: swap(terms, 'ART 20I', 'ART 10F') }), 'intro').status).toBe('unmet')
   })
+  it('review: AP Art History 3+ stands for Europe and the Americas only when no such course is in the plan', () => {
+    const t = swap(terms, 'HAVC 30', null)
+    expect(find(run(harness, { terms: t, attested: [] }), 'havc-europe-or-ap').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['AP Art History'] }), 'havc-europe-or-ap').status).toBe('met')
+    // the exam never covers the other-regions course
+    expect(find(run(harness, { terms: swap(terms, 'HAVC 22', null), attested: ['AP Art History'] }), 'havc-other').status).toBe('unmet')
+    // with a Europe/Americas course the exam is not asked
+    expect(() => find(run(harness, { terms, attested: [] }), 'havc-europe-or-ap')).toThrow()
+  })
+
+  it('review: the portfolio waiver is not asked of a transfer student who has the foundations', () => {
+    const r = run(harness, { terms, entry: 'transfer', attested: [] })
+    expect(failing(r)).toEqual([])
+    expect(find(r, 'foundation').status).toBe('met')
+  })
+
+  it('review: a planned Europe/Americas course is in progress, not waived', () => {
+    const r = run(harness, { terms, currentTerm: '2268', attested: [] })
+    expect(find(r, 'havc-europe').status).toBe('in-progress')
+  })
 })

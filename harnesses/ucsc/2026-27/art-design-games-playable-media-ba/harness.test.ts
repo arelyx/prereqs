@@ -68,4 +68,27 @@ describe('art-design-games-playable-media-ba 2026-27', () => {
   it('a cross-listed partner code counts (THEA 143 = ARTG 143)', () => {
     expect(find(run(harness, { terms: swap(terms, 'ARTG 138', 'THEA 143') }), 'social').status).toBe('met')
   })
+  it('review: cross-listed partner codes count through the catalog (no alias list)', () => {
+    expect(find(run(harness, { terms: swap(terms, 'ARTG 118', 'ART 147T') }), 'craft').status).toBe('met')
+    expect(find(run(harness, { terms: swap(terms, 'ARTG 138', 'CRES 139') }), 'social').status).toBe('met')
+    expect(find(run(harness, { terms: swap(terms, 'ART 101', 'ART 105') }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: swap(terms, 'ART 101', 'ARTG 179') }), 'electives').status).toBe('met')
+  })
+
+  it('review: a cross-listed pair taken under both codes is one course', () => {
+    // ARTG 143 = THEA 143: Social Interventions and PPE cannot both use it
+    const t = swap(swap(terms, 'ARTG 138', 'ARTG 143'), 'ARTG 181', 'THEA 143')
+    expect(failing(run(harness, { terms: t })).length).toBeGreaterThan(0)
+  })
+
+  it('review: transfer screening is not asked when a listed arts elective is in the plan', () => {
+    const r = run(harness, { terms, entry: 'transfer', attested: [] })
+    expect(failing(r)).toEqual([])
+    expect(find(r, 'arts-elective').status).toBe('met')
+  })
+
+  it('review: a 5-credit HAVC seminar or cross-listed VAST 188J satisfies the HAVC course', () => {
+    expect(find(run(harness, { terms: swap(terms, 'HAVC 30', 'HAVC 190A') }), 'havc').status).toBe('met')
+    expect(find(run(harness, { terms: swap(terms, 'HAVC 30', 'VAST 188J') }), 'havc').status).toBe('met')
+  })
 })

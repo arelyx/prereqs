@@ -6,7 +6,9 @@
 // comprehensive = ART 190A plus one of four options. Only ART 190B is a
 // course; the exhibition / portfolio review and the extra studio project are
 // non-course conditions (one attestation). ART 190B counts as a studio AND
-// the comprehensive option, so the comprehensive nodes are overlays.
+// the comprehensive option, so the comprehensive nodes are overlays. The
+// portfolio review (transfer) and the AP Art History exam are waiver
+// attestations offered only when no course fills the slot (§1a).
 import { codes, defineHarness, range } from '@harness'
 import type { HarnessContext, Node } from '@harness'
 
@@ -38,6 +40,14 @@ export default defineHarness({
       aliases: ['portfolio review', 'portfolio'],
     },
     {
+      // §1a: an AP score that satisfies a listed requirement is an attestation
+      // named after the exam, offered only when no course fills the slot.
+      id: 'ap-art-history',
+      label: 'Scored 3 or higher on the AP Art History exam',
+      quote: 'Note: A score of 3 or higher on the Advanced Placement (AP) Art History exam will satisfy the Europe and the Americas requirement.',
+      aliases: ['ap art history', 'art history exam', 'ap art'],
+    },
+    {
       id: 'comprehensive-review',
       label: 'Comprehensive option completed: faculty review of an exhibition or portfolio, or an additional project in an upper-division studio',
       quote: 'Presenting an exhibition and, by appointment, meeting with a faculty member for review and critique of the exhibition; or',
@@ -47,7 +57,6 @@ export default defineHarness({
   notes: [
     'Art courses need a C or better, or a P, to count toward the major.',
     'At most three courses from outside the Art Department (including UC EAP) may substitute for art courses, with a major advisor’s approval — add them only once approved.',
-    'A score of 3+ on the AP Art History exam satisfies the Europe and the Americas requirement — add the exam credit to your plan as the HAVC course it articulates to.',
   ],
   evaluate(h) {
     h.policy = POLICY
@@ -55,20 +64,7 @@ export default defineHarness({
       foundation(h),
       h.take('intro', 'Introduction to Contemporary Art Practice (three ART 20 courses)', 'Three of the following (junior transfers should complete them at a community college):', codes(...INTRO), { n: 3 }),
       h.take('art80t', 'ART 80T Digital Tools for Contemporary Art Practice', 'Students must take:', codes('ART 80T')),
-      h.group(
-        'havc',
-        'Critical Theory and Historical Context (two HAVC courses)',
-        [
-          h.take('havc-europe', 'Europe and the Americas', 'One course from Europe and the Americas: HAVC courses numbered 30-49 or 130-149', EUROPE_AMERICAS, {
-            pool: 'HAVC 30–49 or 130–149',
-            notes: ['A score of 3 or higher on the AP Art History exam satisfies this requirement.'],
-          }),
-          h.take('havc-other', 'Africa, Asia, Mediterranean, Native Americas, or Oceania', 'One course from Africa, Asia, Mediterranean, Native Americas, or Oceania: HAVC courses numbered 10-29, 50-80, 110-129, or 150-179.', OTHER_REGIONS, {
-            pool: 'HAVC 10–29, 50–80, 110–129, or 150–179',
-          }),
-        ],
-        { quote: 'Students complete two courses from the History of Art and Visual Culture (HAVC) geographic regions:' },
-      ),
+      havc(h),
     ])
 
     const studios = h.take(
@@ -101,12 +97,35 @@ export default defineHarness({
   },
 })
 
-/** Two foundations; for transfer students the portfolio review waives them. */
+/**
+ * Two foundations; for transfer students the portfolio review waives them.
+ * §1a: the waiver is offered only when the courses do not already fill the slot.
+ */
 function foundation(h: HarnessContext): Node {
   const courses = h.take('foundation', 'The Foundation (two of ART 10D, 10E, 10F)', 'Two of the following or their equivalents.', codes(...FOUNDATION), { n: 2 })
   if (h.entry !== 'transfer') return courses
+  h.solve()
+  if (courses.status === 'met') return courses
   return h.either('foundation-or-portfolio', 'The Foundation (or the portfolio review, for transfer students)', 'Two of the following or their equivalents. Transfer students passing the portfolio review have this requirement waived.', [
     courses,
     h.attest('portfolio-review'),
   ])
+}
+
+/** Two HAVC regional courses; the AP Art History exam can stand for Europe and the Americas. */
+function havc(h: HarnessContext): Node {
+  const europe = h.take('havc-europe', 'Europe and the Americas', 'One course from Europe and the Americas: HAVC courses numbered 30-49 or 130-149', EUROPE_AMERICAS, {
+    pool: 'HAVC 30–49 or 130–149',
+  })
+  const other = h.take('havc-other', 'Africa, Asia, Mediterranean, Native Americas, or Oceania', 'One course from Africa, Asia, Mediterranean, Native Americas, or Oceania: HAVC courses numbered 10-29, 50-80, 110-129, or 150-179.', OTHER_REGIONS, {
+    pool: 'HAVC 10–29, 50–80, 110–129, or 150–179',
+  })
+  h.solve()
+  const europeNode =
+    europe.status === 'met'
+      ? europe
+      : h.either('havc-europe-or-ap', 'Europe and the Americas (or AP Art History 3+)', 'Note: A score of 3 or higher on the Advanced Placement (AP) Art History exam will satisfy the Europe and the Americas requirement.', [europe, h.attest('ap-art-history')])
+  return h.group('havc', 'Critical Theory and Historical Context (two HAVC courses)', [europeNode, other], {
+    quote: 'Students complete two courses from the History of Art and Visual Culture (HAVC) geographic regions:',
+  })
 }

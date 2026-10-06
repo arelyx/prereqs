@@ -77,4 +77,16 @@ describe('theater-arts-ba 2026-27', () => {
   it('ARTG studio courses on the list count; P grades count', () => {
     expect(failing(run(harness, { terms: swap(terms, 'THEA 115A', 'ARTG 180'), grades: { 'THEA 160': 'P' } }))).toEqual([])
   })
+
+  it('review: cross-listed partner codes count through the catalog', () => {
+    expect(failing(run(harness, { terms: swap(terms, 'THEA 161M', 'COWL 161Y') }))).toEqual([])
+    expect(failing(run(harness, { terms: swap(terms, 'THEA 115A', 'ART 143T') }))).toEqual([])
+    expect(failing(run(harness, { terms: swap(terms, 'THEA 164', 'CRES 142') }))).toEqual([])
+  })
+
+  it('review: THEA 50 credit with no term (transfer/no-term) counts per enrollment', () => {
+    const t = terms.map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'THEA 50') }))
+    expect(failing(run(harness, { terms: t, completed: ['THEA 50', 'THEA 50', 'THEA 50'] }))).toEqual([])
+  })
+
 })

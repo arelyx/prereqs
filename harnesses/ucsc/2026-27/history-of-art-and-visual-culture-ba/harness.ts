@@ -68,11 +68,17 @@ const SEMINAR = range('HAVC', 190, 191)
 const APPROVED = [
   'HAVC 40', 'HAVC 141L', 'HAVC 141M', 'HAVC 141N', 'HAVC 141Z', 'HAVC 142M', 'HAVC 143F', 'HAVC 178', 'HAVC 185',
   'HAVC 188A', 'HAVC 188B', 'HAVC 188C', 'HAVC 188M', 'ANTH 187', 'ANTH 187B', 'ANTH 196J', 'HIS 104D', 'VAST 188J',
-  'HAVC 188J',
 ]
+// "Upper-division concentration courses fulfill elective requirements for the major" —
+// for CHM students the non-HAVC approved upper-division courses are electives too
+// (the Honors section: "non-HAVC courses satisfying major requirements").
+const CHM_NON_HAVC_UD = codes('ANTH 187', 'ANTH 187B', 'ANTH 196J', 'HIS 104D')
 // "at least two of the four courses must be HAVC-sponsored courses" — judgement:
-// VAST 188J is cross-listed as HAVC 188J, so it is treated as HAVC-sponsored.
-const HAVC_SPONSORED = range('HAVC', 1, 199).or(codes('VAST 188J'))
+// VAST 188J [/HAVC 188J] is a HAVC course through its cross-listing (the
+// library treats cross-listed codes as one course, so the HAVC range matches it).
+const HAVC_SPONSORED = range('HAVC', 1, 199)
+// "Students may petition for HAVC 199 or HIS 199 to count for a concentration course under certain circumstances."
+const PETITIONABLE = codes('HAVC 199', 'HIS 199')
 
 // "Only courses completed with grades of C or better (or Pass) may be used to satisfy major requirements."
 const POLICY = { min: 'C', pCounts: true }
@@ -96,9 +102,14 @@ export default defineHarness({
       default: 'general',
     },
   ],
-  coverage: {
-    unknownOk: { HAVC188J: 'cross-listed partner of VAST 188J ([/HAVC 188J] in the source); the catalog files it under VAST' },
-  },
+  attestations: [
+    {
+      id: 'chm-petition',
+      label: 'HAVC undergraduate advisor approved my HAVC 199 / HIS 199 as a concentration course',
+      quote: 'Students may petition for HAVC 199 or HIS 199 to count for a concentration course under certain circumstances.',
+      aliases: ['havc 199 petition', 'his 199 petition', 'concentration petition', 'chm petition'],
+    },
+  ],
   notes: [
     'Major courses need a C or better, or a P.',
     'Up to three lower-division and two upper-division art history courses may transfer from other institutions; at least eight courses must be regularly scheduled UCSC HAVC courses — the app does not track where a course was taken.',
@@ -128,16 +139,23 @@ export default defineHarness({
     const upper = h.group('upper', 'Upper-Division Courses', [
       h.take('havc100a', 'HAVC 100A Approaches to Visual Studies', 'Take the following course:', codes('HAVC 100A')),
       regional,
-      h.take('electives', 'Five upper-division electives', ['Plus five upper-division electives:', 'These are any HAVC courses numbered 110-191.'], ELECTIVES, {
-        n: 5,
-        repeatable: 'catalog',
-        pool: 'HAVC 110–191',
-      }),
+      h.take(
+        'electives',
+        'Five upper-division electives',
+        chm
+          ? ['Plus five upper-division electives:', 'These are any HAVC courses numbered 110-191.', 'Upper-division concentration courses fulfill elective requirements for the major, or if appropriate, concentration courses can be used to fulfill geographic regional requirements.']
+          : ['Plus five upper-division electives:', 'These are any HAVC courses numbered 110-191.'],
+        chm ? ELECTIVES.or(CHM_NON_HAVC_UD) : ELECTIVES,
+        {
+          n: 5,
+          repeatable: 'catalog',
+          pool: chm ? 'HAVC 110–191, or an upper-division approved concentration course (ANTH 187, 187B, 196J, HIS 104D)' : 'HAVC 110–191',
+        },
+      ),
       h.take('seminar', 'Senior exit seminar (HAVC 190–191)', ['Plus one senior exit seminar:', 'HAVC seminar courses are numbered 190-191.'], SEMINAR, { pool: 'HAVC 190–191 series' }),
     ])
 
-    const extra: Node[] = []
-    if (chm) extra.push(concentration(h))
+    const chmSlots = chm ? concentration(h) : null
 
     const dc = h.take('dc', 'Disciplinary Communication: HAVC 100A', 'Students in HAVC meet the DC requirement by completing:', codes('HAVC 100A'), { exclusive: false })
     const comprehensive = h.take(
@@ -149,7 +167,7 @@ export default defineHarness({
     )
     const breadth = h.info('breadth', 'Six geographic regions', 'Students must take courses in each of the six different geographic regions listed below to ensure cultural, methodological, and disciplinary breadth.', `Covered by the lower-division and upper-division regional courses: ${REGION_NAMES.join(', ')}.`)
     h.solve()
-    if (chm) petitionFallback(h, extra[0])
+    const extra = chmSlots ? [withPetition(h, chmSlots)] : []
     return [breadth, lower, upper, ...extra, dc, comprehensive]
   },
 })
@@ -165,30 +183,35 @@ function udCheck(chosen: Enrollment[], ldCands: number[][]): string | null {
   return 'the two courses must be from different regions, and together with four lower-division courses cover all six regions'
 }
 
-function concentration(h: HarnessContext): Node {
-  return h.take(
-    'chm',
-    'Curation, Heritage, and Museums: four approved concentration courses',
-    [
-      'In fulfilling the major requirements, students in the concentration must successfully complete four courses from the “Approved Concentration Courses” list below. No more than one of the four courses can be lower-division and at least two of the four courses must be HAVC-sponsored courses.',
-      'Upper-division concentration courses fulfill elective requirements for the major, or if appropriate, concentration courses can be used to fulfill geographic regional requirements.',
-    ],
-    codes(...APPROVED),
-    {
-      n: 4,
-      exclusive: false,
-      atMost: [{ set: codes('HAVC 40'), n: 1, label: 'at most one lower-division course' }],
-      atLeast: [{ set: HAVC_SPONSORED, n: 2, label: 'HAVC-sponsored courses' }],
-      notes: ['Courses not on the list count only by an approved syllabus petition (HAVC 199 / HIS 199 under certain circumstances).'],
-    },
-  )
+const Q_CHM = [
+  'In fulfilling the major requirements, students in the concentration must successfully complete four courses from the “Approved Concentration Courses” list below. No more than one of the four courses can be lower-division and at least two of the four courses must be HAVC-sponsored courses.',
+  'Upper-division concentration courses fulfill elective requirements for the major, or if appropriate, concentration courses can be used to fulfill geographic regional requirements.',
+]
+const chmOpts = {
+  n: 4,
+  exclusive: false,
+  atMost: [{ set: codes('HAVC 40'), n: 1, label: 'at most one lower-division course' }],
+  atLeast: [{ set: HAVC_SPONSORED, n: 2, label: 'HAVC-sponsored courses' }],
 }
 
-/** "Students may petition for HAVC 199 or HIS 199 to count for a concentration course" — don't call it unmet when one is in the plan. */
-function petitionFallback(h: HarnessContext, node: Node): void {
-  if (node.status !== 'unmet') return
-  const petitionable = h.taken(codes('HAVC 199', 'HIS 199'))
-  if (!petitionable.length) return
-  node.status = 'cannot-check'
-  node.detail = `${node.detail ? node.detail + ' · ' : ''}${petitionable.map((e) => e.display).join(', ')} may count by petition (consult the HAVC undergraduate advisor) — check whether yours was approved.`
+/** The approved-list slot, and the same slot widened by the petitionable HAVC 199 / HIS 199. */
+function concentration(h: HarnessContext): { strict: Node; petition: Node } {
+  const strict = h.take('chm', 'Curation, Heritage, and Museums: four approved concentration courses', Q_CHM, codes(...APPROVED), {
+    ...chmOpts,
+    notes: ['Courses not on the list count only by an approved syllabus petition (HAVC 199 / HIS 199 under certain circumstances).'],
+  })
+  const petition = h.take('chm-with-petition', 'Four concentration courses, counting a petitioned HAVC 199 / HIS 199', ['Students may petition for HAVC 199 or HIS 199 to count for a concentration course under certain circumstances.'], codes(...APPROVED).or(PETITIONABLE), chmOpts)
+  return { strict, petition }
+}
+
+/**
+ * §1a petition convention: the HAVC 199 / HIS 199 petition is asked only when
+ * the approved list falls short and the petitioned course would complete it.
+ */
+function withPetition(h: HarnessContext, { strict, petition }: { strict: Node; petition: Node }): Node {
+  if (strict.status === 'met' || petition.status !== 'met') return strict
+  return h.either('chm-or-petition', 'Curation, Heritage, and Museums (approved list, or with a petitioned HAVC 199 / HIS 199)', Q_CHM, [
+    strict,
+    h.group('chm-petition-path', 'With a petitioned HAVC 199 / HIS 199', [petition, h.attest('chm-petition')]),
+  ])
 }

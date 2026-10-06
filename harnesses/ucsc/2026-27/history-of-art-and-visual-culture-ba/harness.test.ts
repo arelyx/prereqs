@@ -115,9 +115,36 @@ describe('history-of-art-and-visual-culture-ba 2026-27 CHM', () => {
     expect(find(r, 'chm').status).toBe('unmet')
   })
 
-  it('HAVC 199 in the plan makes a short concentration a petition question, not unmet', () => {
+  it('review: HAVC 199 in the plan makes a short concentration a petition attestation (asked only then)', () => {
     const three = swap(swap(chm, 'ANTH 187', null), 'HAVC 141M', 'HAVC 135B')
-    const r = run(harness, { terms: [...three, { term: '2290', courses: ['HAVC 199'] }], choices: C })
-    expect(find(r, 'chm').status).toBe('cannot-check')
+    const t = [...three, { term: '2290', courses: ['HAVC 199'] }]
+    expect(find(run(harness, { terms: t, choices: C, attested: [] }), 'chm-or-petition').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, choices: C, attested: ['HAVC 199 petition'] }), 'chm-or-petition').status).toBe('met')
+    // not asked when the approved list already has four
+    expect(() => find(run(harness, { terms: [...chm, { term: '2290', courses: ['HAVC 199'] }], choices: C, attested: [] }), 'chm-or-petition')).toThrow()
+    // two short: one petitioned course cannot complete it
+    const two = swap(three, 'HAVC 141L', 'HAVC 141A')
+    expect(find(run(harness, { terms: [...two, { term: '2290', courses: ['HAVC 199'] }], choices: C }), 'chm').status).toBe('unmet')
+  })
+
+  it('review: upper-division non-HAVC concentration courses are major electives for CHM students', () => {
+    // electives: 141L, 141M, 111 + ANTH 187 + ANTH 187B (two HAVC electives replaced)
+    const t = plan(
+      ['2268', 'HAVC 10', 'HAVC 22', 'HAVC 40'],
+      ['2270', 'HAVC 51', 'HAVC 100A'],
+      ['2278', 'HAVC 160A', 'HAVC 170', 'HAVC 141L'],
+      ['2280', 'HAVC 141M', 'HAVC 111', 'ANTH 187'],
+      ['2288', 'ANTH 187B', 'HAVC 190B'],
+    )
+    expect(failing(run(harness, { terms: t, choices: C }))).toEqual([])
+    // the general major does not count ANTH courses as electives
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: VAST 188J counts as HAVC 188J (HAVC-sponsored, an elective) through its cross-listing', () => {
+    const t = swap(swap(chm, 'HAVC 188A', 'VAST 188J'), 'ANTH 187', null)
+    // approved: HAVC 40, 141L, 141M, VAST 188J
+    expect(failing(run(harness, { terms: t, choices: C }))).toEqual([])
+    expect(find(run(harness, { terms: swap(terms, 'HAVC 188A', 'HAVC 188J') }), 'electives').status).toBe('met')
   })
 })

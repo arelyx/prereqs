@@ -11,8 +11,8 @@ import { codes, defineHarness } from '@harness'
 const LD_CREATIVE = ['THEA 30', 'THEA 36']
 const LD_CROSS = ['THEA 31A', 'THEA 31B', 'THEA 31C', 'THEA 31L', 'THEA 31M', 'THEA 37', 'THEA 80R', 'THEA 80U', 'THEA 80Z']
 const UD_PRACTICE = ['THEA 131A', 'THEA 131B', 'THEA 131C', 'THEA 131L', 'THEA 135', 'THEA 136']
-// ARTG 143 [/THEA 143], THEA 161R [/LALS 161R]: the catalog files them under the first code.
-const UD_CRITICAL = ['ARTG 143', 'THEA 143', 'THEA 161R', 'LALS 161R', 'THEA 164', 'THEA 165', 'THEA 166', 'THEA 167', 'THEA 168']
+// ARTG 143 [/THEA 143], THEA 161R [/LALS 161R]: the library treats cross-listed codes as one course.
+const UD_CRITICAL = ['ARTG 143', 'THEA 161R', 'THEA 164', 'THEA 165', 'THEA 166', 'THEA 167', 'THEA 168']
 const UD_ELECTIVE = ['THEA 100A', 'THEA 124', 'THEA 137', 'THEA 137A', 'THEA 139', 'THEA 151I', 'THEA 161D']
 const EXCLUDED = ['THEA 55A', 'THEA 55B', 'THEA 158', 'THEA 190', 'THEA 198', 'THEA 199']
 
@@ -20,12 +20,6 @@ export default defineHarness({
   program: 'dance-minor',
   edition: '2026-27',
   title: 'Dance Minor',
-  coverage: {
-    unknownOk: {
-      THEA143: 'cross-listed partner of ARTG 143 ([/THEA 143] in the source); the catalog files it under ARTG',
-      LALS161R: 'cross-listed partner of THEA 161R; the catalog files it under THEA',
-    },
-  },
   notes: [
     'Courses may be taken Pass/No Pass (campus P/NP limit applies).',
     'Theater arts majors: lower-division courses may count for both, but the minor needs its own upper-division courses — the app does not check across programs.',

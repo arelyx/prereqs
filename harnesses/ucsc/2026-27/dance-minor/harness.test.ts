@@ -51,4 +51,20 @@ describe('dance-minor 2026-27', () => {
   it('ARTG 143 (Ecofutures) fills critical studies', () => {
     expect(find(run(harness, { terms: swap(terms, 'THEA 164', 'ARTG 143') }), 'ud-critical').status).toBe('met')
   })
+
+  it('review: cross-listed partner codes count through the catalog (THEA 143, LALS 161R)', () => {
+    expect(find(run(harness, { terms: swap(terms, 'THEA 164', 'THEA 143') }), 'ud-critical').status).toBe('met')
+    expect(find(run(harness, { terms: swap(terms, 'THEA 164', 'LALS 161R') }), 'ud-critical').status).toBe('met')
+  })
+
+  it('review: a non-repeatable course taken twice fills only one slot', () => {
+    // THEA 131C is not repeatable for credit: practice slot + elective would need two courses
+    const t = [...swap(terms, 'THEA 161D', null), { term: '2284', courses: ['THEA 131C'] }]
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: an unlisted upper-division course is not an elective without approval (note only)', () => {
+    expect(find(run(harness, { terms: swap(terms, 'THEA 161D', 'THEA 161M') }), 'electives').status).toBe('unmet')
+  })
+
 })

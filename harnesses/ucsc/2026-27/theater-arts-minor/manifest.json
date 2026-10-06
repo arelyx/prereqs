@@ -6,6 +6,6 @@
  "skeleton_sha256": "e7aa496a7978f2a4e3f8044de4877df4aef8fb5fdb83f5cd5c4e3b180afb7001",
  "status": "verified",
  "authored_at": "2026-10-06T00:50:18Z",
- "verified_at": "2026-10-06T00:55:28Z",
- "notes": "verified line by line; tests from the page. atMost one of THEA 137/137A/139/151/151A/151I/155 in studio; area of focus advisory (no choice); excluded list as info; cross-listed partners accepted."
+ "verified_at": "2026-10-06T23:42:13Z",
+ "notes": "verified line by line; tests from the page. atMost one of THEA 137/137A/139/151/151A/151I/155 in studio; area of focus advisory (no choice); excluded list as info.; reviewed 2026-10-06: removed cross-listed partner codes + unknownOk; no logic defects found"
 }

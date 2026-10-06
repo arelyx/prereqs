@@ -12,32 +12,28 @@ const LD_PRACTICE = [
   'THEA 10', 'THEA 20', 'THEA 21', 'THEA 30', 'THEA 31A', 'THEA 31B', 'THEA 31C', 'THEA 31L', 'THEA 31M', 'THEA 33C',
   'THEA 36', 'THEA 37', 'THEA 40', 'THEA 80Z',
 ]
-// Cross-listed partners ([/X] in the source) are accepted alongside the catalog code.
+// Cross-listed partners ([/X] in the source) need nothing: the library treats
+// cross-listed codes as one course.
 const HTCS = [
   'THEA 100A', 'THEA 100B', 'THEA 100C', 'THEA 100W', 'THEA 104', 'THEA 108', 'THEA 113', 'THEA 116A', 'THEA 122',
   'THEA 160', 'THEA 161', 'THEA 161B', 'THEA 161C', 'THEA 161D', 'THEA 161H', 'THEA 161M', 'THEA 161P', 'THEA 161Q',
-  'THEA 161R', 'LALS 161R', 'THEA 161S', 'THEA 161T', 'THEA 161U', 'THEA 161Y', 'COWL 161Y', 'THEA 163A', 'THEA 163E',
+  'THEA 161R', 'THEA 161S', 'THEA 161T', 'THEA 161U', 'THEA 161Y', 'THEA 163A', 'THEA 163E',
   'THEA 163G', 'THEA 163H', 'THEA 163K', 'THEA 164', 'THEA 165', 'THEA 166', 'THEA 167', 'THEA 168', 'ARTG 138',
-  'FMST 138', 'ARTG 139', 'CRES 139', 'ARTG 142', 'CRES 142', 'ARTG 143', 'THEA 143', 'LIT 111D',
+  'ARTG 139', 'ARTG 142', 'ARTG 143', 'LIT 111D',
 ]
 const STUDIO = [
-  'THEA 103', 'ART 143T', 'THEA 106', 'ART 146T', 'THEA 114', 'THEA 115A', 'THEA 115B', 'THEA 117', 'ART 147T',
-  'THEA 117A', 'THEA 118', 'THEA 119', 'THEA 120', 'THEA 121', 'THEA 123', 'THEA 124', 'THEA 126', 'THEA 126M',
+  'THEA 103', 'THEA 106', 'THEA 114', 'THEA 115A', 'THEA 115B', 'THEA 117', 'THEA 117A', 'THEA 118', 'THEA 119', 'THEA 120', 'THEA 121', 'THEA 123', 'THEA 124', 'THEA 126', 'THEA 126M',
   'THEA 131A', 'THEA 131B', 'THEA 131C', 'THEA 131L', 'THEA 135', 'THEA 136', 'THEA 137', 'THEA 137A', 'THEA 141',
   'THEA 142', 'THEA 145R', 'THEA 139', 'THEA 151', 'THEA 151A', 'THEA 151I', 'THEA 152', 'THEA 155', 'THEA 157',
   'THEA 158', 'THEA 159',
 ]
 const ONE_ONLY = ['THEA 137', 'THEA 137A', 'THEA 139', 'THEA 151', 'THEA 151A', 'THEA 151I', 'THEA 155']
 const EXCLUDED = ['THEA 55A', 'THEA 55B', 'THEA 190', 'THEA 198', 'THEA 199']
-const XL_REASON = 'cross-listed partner ([/X] in the source); the catalog files the course under the other code'
 
 export default defineHarness({
   program: 'theater-arts-minor',
   edition: '2026-27',
   title: 'Theater Arts Minor',
-  coverage: {
-    unknownOk: Object.fromEntries(['LALS161R', 'COWL161Y', 'FMST138', 'CRES139', 'CRES142', 'THEA143', 'ART143T', 'ART146T', 'ART147T'].map((c) => [c, XL_REASON])),
-  },
   notes: [
     'Courses may be taken Pass/No Pass (campus P/NP limit applies).',
     'Transfer equivalents of lower-division courses count only by petition — add them once approved.',

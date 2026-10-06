@@ -46,4 +46,10 @@ describe('theater-arts-minor 2026-27', () => {
     expect(failing(run(harness, { terms, grades: { 'THEA 160': 'P' } }))).toEqual([])
     expect(find(run(harness, { terms, grades: { 'THEA 160': 'NP' } }), 'htcs').status).toBe('unmet')
   })
+
+  it('review: cross-listed partner codes count through the catalog', () => {
+    expect(failing(run(harness, { terms: swap(terms, 'THEA 121', 'ART 147T') }))).toEqual([])
+    expect(failing(run(harness, { terms: swap(terms, 'THEA 161M', 'LALS 161R') }))).toEqual([])
+  })
+
 })

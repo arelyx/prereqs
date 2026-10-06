@@ -44,4 +44,16 @@ describe('film-and-digital-media-minor 2026-27', () => {
   it('P grades count', () => {
     expect(failing(run(harness, { terms, grades: { 'FILM 20A': 'P', 'FILM 194B': 'P' } }))).toEqual([])
   })
+
+  it('review: FILM 20B and 20C together do not make an elective; FILM 195/199 are not electives', () => {
+    expect(find(run(harness, { terms: swap(terms, 'FILM 120', 'FILM 20B') }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap(terms, 'FILM 120', 'FILM 195') }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap(terms, 'FILM 120', 'FILM 199') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: FILM 152 and the FILM 194 series count; empty plan fails every slot', () => {
+    expect(find(run(harness, { terms: swap(terms, 'FILM 120', 'FILM 152') }), 'electives').status).toBe('met')
+    expect(failing(run(harness, { terms: [] }))).toHaveLength(6)
+  })
+
 })
