@@ -1,0 +1,11 @@
+{
+ "program": "linguistics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "fb27197479c52e74e4d8e123e11b59c4493ae820547f00be8e0230832c9847e9",
+ "skeleton_sha256": "bd5fc35a79d7feb68ad5e8fd46b93d24eed550e058a41d7e77a4eeb4f3362c7a",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:24Z",
+ "verified_at": "2026-10-06T01:06:33Z",
+ "notes": "verified line by line against sources/linguistics-minor.md; not-both LING 111/112 via exclusion from electives; LING 199 max one; up to two outside courses as wildcards (cannot-check)."
+}

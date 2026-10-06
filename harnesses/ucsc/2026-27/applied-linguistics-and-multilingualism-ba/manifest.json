@@ -1,0 +1,11 @@
+{
+ "program": "applied-linguistics-and-multilingualism-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "e4df9204f99efa7084d50683f02a1b8090e3bed28dc72e5cc6a3c85f8417f936",
+ "skeleton_sha256": "32a357b6696b65714c44adb71c60c4bf20cd9f5fa4a85fe251f8159223570137",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:59:44Z",
+ "verified_at": "2026-10-06T01:06:33Z",
+ "notes": "verified line by line against sources/applied-linguistics-and-multilingualism-ba.md; one allocation (advanced vs electives exclusive); target-language advanced list per language, unlisted UD target-language courses -> cannot-check (complete list external); LALS 171 assigned to no language; max two P/NP courses; APLX 190 letter; Level 4 B-/letter treated as qualification info."
+}

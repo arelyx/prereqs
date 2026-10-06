@@ -1,0 +1,11 @@
+{
+ "program": "literature-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "748aede71efeba067fbc954b80f4289e49fe4eb74161f51ff7d84a44503792b5",
+ "skeleton_sha256": "04f30b821421b8e22f45388a2e8aa96ba88d4244492c506a9c94fc51c0e29b4f",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:45Z",
+ "verified_at": "2026-10-06T01:06:34Z",
+ "notes": "verified line by line against sources/literature-minor.md; LIT 1, LIT 60/61/80/81 series, LIT 101, four LIT 108-189 (5 cr, not 179A/B); P/NP allowed; approvals/substitutions as notes."
+}
