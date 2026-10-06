@@ -6,6 +6,6 @@
  "skeleton_sha256": "6e1f29080aa560b8d34318bca91fb903bdcfc5546d5ed454d8fd1925de6fc43c",
  "status": "verified",
  "authored_at": "2026-10-06T00:48:43Z",
- "verified_at": "2026-10-06T00:58:50Z",
- "notes": "verified line by line against sources/history-minor.md; 5 UD + 3 any HIS (5-credit) in one allocation; P/NP max two counted post-solve (cannot-check if a spare letter-graded course could swap in)"
+ "verified_at": "2026-10-06T23:41:27Z",
+ "notes": "verified line by line against sources/history-minor.md; 5 UD + 3 any HIS (5-credit) in one allocation; P/NP max two counted post-solve (cannot-check if a spare letter-graded course could swap in); reviewed 2026-10-06: both slots catalog-repeatable (a topics course taken twice counted once)"
 }

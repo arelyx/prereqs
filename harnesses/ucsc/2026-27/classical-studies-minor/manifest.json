@@ -6,6 +6,6 @@
  "skeleton_sha256": "73b2b71de5da7448a1278661cd9731ab9bc0c79049773bed4bdcfa28889d5490",
  "status": "verified",
  "authored_at": "2026-10-06T00:49:24Z",
- "verified_at": "2026-10-06T00:58:50Z",
- "notes": "verified line by line; page title is Ancient Studies Minor; GREE/LATN 1+2 package, LIT 184A/186A, four from list (one allocation); cross-listings HIS 159M/LGST 105A accepted; P/NP max two; 'or equivalent' prior knowledge is a note"
+ "verified_at": "2026-10-06T23:37:02Z",
+ "notes": "verified line by line; page title is Ancient Studies Minor; GREE/LATN 1+2 package, LIT 184A/186A, four from list (one allocation); P/NP max two; reviewed 2026-10-06: removed HIS 159M/LGST 105A partner codes + unknownOk (library cross-listing); four now catalog-repeatable (special topics taken twice counted once); 'or equivalent' prior knowledge now a faculty-determination attestation asked only when the sequence is absent"
 }

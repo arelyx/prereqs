@@ -36,11 +36,18 @@ export default defineHarness({
   program: 'jewish-studies-ba',
   edition: '2026-27',
   title: 'Jewish Studies B.A.',
+  attestations: [
+    {
+      id: 'language-placement',
+      label: 'Placed past (some of) the Hebrew/Yiddish language courses on the placement exam',
+      quote: 'Students with prior knowledge of Hebrew or Yiddish are advised to complete a language placement exam to determine if they have satisfied any of the elementary language course requirements.',
+      aliases: ['placement exam', 'language placement', 'hebrew placement', 'yiddish placement', 'language equivalent'],
+    },
+  ],
   notes: [
     'Plan the major with a Jewish studies faculty advisor.',
     'Up to two major requirements may be taken Pass/No Pass; the comprehensive requirement needs a letter grade.',
     'Transfer (up to three), EAP (up to three), related unlisted courses (up to two) and independent studies (up to one) may count by petition — add them once approved. At least five regularly scheduled courses plus the comprehensive must be taught by UC Santa Cruz Jewish studies faculty.',
-    'Prior knowledge of Hebrew or Yiddish: take the language placement exam; add any credit it grants as completed courses.',
   ],
   evaluate(h) {
     // P/NP for up to two requirements (counted below); the comprehensive slot is letter-only.
@@ -70,8 +77,15 @@ export default defineHarness({
       used: comp.used,
     })
 
+    // "(or equivalent)" + the placement exam that may satisfy "any of the
+    // elementary language course requirements": asked only when the three
+    // quarters are not in the plan.
+    const langNode = lang.status === 'met'
+      ? lang
+      : h.either('language-or-placement', 'Three quarters of Hebrew or Yiddish (or placement)', 'Students with prior knowledge of Hebrew or Yiddish are advised to complete a language placement exam to determine if they have satisfied any of the elementary language course requirements.', [lang, h.attest('language-placement')])
+
     return [
-      h.group('lower', 'Lower-Division Courses', [lang, h.group('ld-core', 'Lower-Division Core Courses', [coreA, coreB])]),
+      h.group('lower', 'Lower-Division Courses', [langNode, h.group('ld-core', 'Lower-Division Core Courses', [coreA, coreB])]),
       h.group('upper', 'Upper-Division Courses', [ud]),
       h.group('electives-group', 'Electives', [el]),
       h.group('dc-group', 'Disciplinary Communication (DC) Requirement', [dc]),

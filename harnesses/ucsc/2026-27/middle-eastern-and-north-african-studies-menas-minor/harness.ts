@@ -11,24 +11,20 @@ import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 const ARBC = ['ARBC 1', 'ARBC 2', 'ARBC 3', 'ARBC 4']
 const HEBR = ['HEBR 1', 'HEBR 2', 'HEBR 3', 'HEBR 4']
 const LOWER = ['HIS 5B', 'HIS 41', 'HIS 50', 'HIS 51', 'HIS 58', 'HIS 74A', 'HIS 74B', 'LIT 81D']
-// Cross-listed partners not in the current catalog under their own codes
-// (LGST 126C, HIS 159M, LGST 184) are accepted too.
 const UPPER = [
-  'ANTH 126', 'LGST 126C', 'ANTH 130T', 'ANTH 130Y', 'CRES 134', 'CRES 170', 'CRES 171', 'CRES 172', 'CRES 173', 'CRES 174', 'FILM 168',
+  'ANTH 126', 'ANTH 130T', 'ANTH 130Y', 'CRES 134', 'CRES 170', 'CRES 171', 'CRES 172', 'CRES 173', 'CRES 174', 'FILM 168',
   'HAVC 153', 'HAVC 154', 'HAVC 155', 'HAVC 190C', 'HAVC 190N',
   'HIS 154', 'HIS 156A', 'HIS 156B', 'HIS 156C', 'HIS 157', 'HIS 159A', 'HIS 159B', 'HIS 159C', 'HIS 159D', 'HIS 163B', 'HIS 163C', 'HIS 170C',
   'HIS 185C', 'HIS 185M', 'HIS 185O', 'HIS 194L', 'HIS 194S', 'HIS 194V', 'HIS 194W',
-  'LIT 117A', 'LIT 125H', 'LIT 130B', 'LIT 130D', 'LIT 141A', 'LIT 141D', 'LIT 141E', 'LIT 141G', 'LIT 159M', 'HIS 159M', 'LIT 168A', 'LIT 168B',
-  'POLI 140E', 'POLI 184', 'LGST 184', 'POLI 187',
+  'LIT 117A', 'LIT 125H', 'LIT 130B', 'LIT 130D', 'LIT 141A', 'LIT 141D', 'LIT 141E', 'LIT 141G', 'LIT 159M', 'LIT 168A', 'LIT 168B',
+  'POLI 140E', 'POLI 184', 'POLI 187',
 ]
 const SIX = codes(...LOWER, ...UPPER)
 
 
 /** Departments a course can stand for: its subject plus cross-listed subjects. */
 function depts(h: HarnessContext, e: Enrollment): string[] {
-  const own = parseCode(e.code).subject
-  const xl = (h.catalog.get(e.code)?.crossListed ?? []).map((c) => parseCode(c).subject)
-  return [...new Set([own, ...xl])]
+  return [...new Set([e.code, ...h.catalog.equivalents(e.code)].map((c) => parseCode(c).subject))]
 }
 
 export default defineHarness({
@@ -43,13 +39,6 @@ export default defineHarness({
       aliases: ['placement exam', 'proficiency exam', 'language placement', 'language proficiency'],
     },
   ],
-  coverage: {
-    unknownOk: {
-      LGST126C: 'cross-listing of ANTH 126 named on the page',
-      HIS159M: 'cross-listing of LIT 159M named on the page',
-      LGST184: 'cross-listing of POLI 184 named on the page',
-    },
-  },
   notes: [
     'Up to two MENAS requirements may be taken Pass/No Pass; the rest need a letter grade.',
     'Transfer courses (up to three), EAP courses, related courses not on the list, and independent/field studies (up to two) may count by petition — add them once approved.',
@@ -61,15 +50,15 @@ export default defineHarness({
     // The language courses are not among the "six additional courses"; they
     // never appear in another list, so the alternatives are overlays.
     const sameLanguage = (chosen: Enrollment[]) => (new Set(chosen.map((e) => parseCode(e.code).subject)).size > 1 ? 'all three must be in one language' : null)
-    const language = h.either('language', 'Language: Arabic or Hebrew', 'At least three quarters of language instruction from a single language or complete the highest level of your chosen language (ARBC 4, HEBR 4), or demonstrate proficiency above the level of ARBC 4 or HEBR 4 through a placement exam.', [
-      h.take('language/three', 'Three quarters of one language', ['Take three from the following OR complete the highest-level course, ARBC 4.', 'Take three from the following OR complete the highest-level course, HEBR 4.'], codes(...ARBC, ...HEBR), { n: 3, exclusive: false, check: sameLanguage }),
-      h.take('language/level4', 'ARBC 4 or HEBR 4', 'complete the highest level of your chosen language (ARBC 4, HEBR 4)', codes('ARBC 4', 'HEBR 4'), { exclusive: false }),
-      h.attest('placement'),
-    ])
+    const three = h.take('language/three', 'Three quarters of one language', ['Take three from the following OR complete the highest-level course, ARBC 4.', 'Take three from the following OR complete the highest-level course, HEBR 4.'], codes(...ARBC, ...HEBR), { n: 3, exclusive: false, check: sameLanguage })
+    const level4 = h.take('language/level4', 'ARBC 4 or HEBR 4', 'complete the highest level of your chosen language (ARBC 4, HEBR 4)', codes('ARBC 4', 'HEBR 4'), { exclusive: false })
 
     const lower = h.take('lower', 'One lower-division survey', 'Plus at least one lower-division survey course from the following list:', codes(...LOWER))
     const upper = h.take('upper', 'Five upper-division courses', 'Plus at least five upper-division courses from the following list.', codes(...UPPER), { n: 5 })
     h.solve()
+    // The placement exam is asked only when neither course path is in the plan.
+    const language = h.either('language', 'Language: Arabic or Hebrew', 'At least three quarters of language instruction from a single language or complete the highest level of your chosen language (ARBC 4, HEBR 4), or demonstrate proficiency above the level of ARBC 4 or HEBR 4 through a placement exam.',
+      three.status === 'met' || level4.status === 'met' ? [three, level4] : [three, level4, h.attest('placement')])
 
     const twoDepts = departments(h, lower, upper)
 
@@ -98,7 +87,7 @@ function departments(h: HarnessContext, lower: Node, upper: Node): Node {
   const plain = new Set(six.map((e) => parseCode(e.code).subject))
   if (plain.size >= 2) return h.node('departments', title, quote, 'met', { detail: [...plain].join(', ') })
   const only = [...plain][0]
-  const spare = h.passed.filter((e) => !h.used.has(e.id) && SIX.has(e.code) && parseCode(e.code).subject !== only)
+  const spare = h.passed.filter((e) => !h.used.has(e.id) && SIX.has(e.code, h.catalog) && parseCode(e.code).subject !== only)
   if (spare.length)
     return h.node('departments', title, quote, 'met', { detail: `Count ${spare[0].display} in place of one of your ${only} courses.`, used: [spare[0]] })
   const xl = six.filter((e) => depts(h, e).length > 1)

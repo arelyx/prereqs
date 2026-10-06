@@ -187,3 +187,54 @@ describe('history-ba 2026-27 — intensive', () => {
     expect(find(run(harness, { terms: latin, choices: ic, attested: [] }), 'language').status).toBe('met')
   })
 })
+
+describe('history-ba 2026-27 — review', () => {
+  it('review: a cross-listed partner on the transcript (LIT 159M) matches the code listed (HIS 159M)', () => {
+    const r = run(harness, { terms: swap('HIS 185J', 'LIT 159M'), choices: { ...choices, europe_courses: 'HIS 160A, HIS 172A, HIS 178A, HIS 159M, HIS 196G' } })
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: an undeclared cross-listed history course (LIT 159M = HIS 159M) leaves the region open, not unmet', () => {
+    expect(find(run(harness, { terms: swap('HIS 185J', 'LIT 159M'), choices }), 'concentration').status).toBe('cannot-check')
+  })
+
+  it('review: breadth 3 + 1 is not accepted when one of the three is listed under its cross-listed code', () => {
+    // LIT 141B is listed as HIS 141A (Asia); with HIS 101D and the HIS 40A survey that is three Asia courses and only one Americas.
+    const t = drop('HIS 10A', swap('HIS 150B', 'LIT 141B'))
+    const r = run(harness, { terms: t, choices: { ...choices, asia_courses: 'HIS 101D, HIS 141A' } })
+    expect(find(r, 'breadth').status).toBe('unmet')
+  })
+
+  it('review: an independent study counted toward the major asks for the substitution petition', () => {
+    const t = swap('HIS 101D', 'HIS 199')
+    const c = { ...choices, asia_courses: 'HIS 150B' }
+    expect(find(run(harness, { terms: t, choices: c, attested: ['senior check-in'] }), 'attest:independent-study-petition').status).toBe('needs-attestation')
+    expect(() => find(run(harness, { terms: base, choices, attested: [] }), 'attest:independent-study-petition')).toThrow()
+  })
+
+  it('review: a repeatable topics seminar counted twice is open (cannot-check), not unmet', () => {
+    const t = [...drop('HIS 185J'), { term: '2290', courses: ['HIS 196G'] }]
+    expect(find(run(harness, { terms: t, choices }), 'unique').status).toBe('cannot-check')
+  })
+
+  it('review: a non-repeatable course retaken still counts once', () => {
+    const t = [...drop('HIS 185J'), { term: '2290', courses: ['HIS 172A'] }]
+    expect(find(run(harness, { terms: t, choices }), 'concentration').status).toBe('unmet')
+  })
+
+  it('review: HIS 198 field study is not advanced research (the page names HIS 199)', () => {
+    const t = [...base, { term: '2290', courses: ['HIS 198', 'HIS 194L', 'HIS 178B', 'SPAN 1', 'SPAN 2', 'SPAN 3'] }]
+    const ic = { ...choices, track: 'intensive', europe_courses: choices.europe_courses + ', HIS 194L' }
+    expect(find(run(harness, { terms: t, choices: ic }), 'advanced').status).not.toBe('met')
+    expect(find(run(harness, { terms: swap('HIS 198', 'HIS 199', t), choices: ic }), 'advanced').status).toBe('met')
+  })
+
+  it('review: the language alternative is asked only when the three quarters are missing', () => {
+    const t = [...base, { term: '2290', courses: ['HIS 190G', 'HIS 194L', 'HIS 178B', 'SPAN 1', 'SPAN 2', 'SPAN 3'] }]
+    const ic = { ...choices, track: 'intensive', europe_courses: choices.europe_courses + ', HIS 194L', americas_courses: 'HIS 104C, HIS 190G' }
+    expect(() => find(run(harness, { terms: t, choices: ic, attested: [] }), 'attest:language-alternative')).toThrow()
+    const none = t.map((q) => ({ ...q, courses: q.courses.filter((c) => !c.startsWith('SPAN')) }))
+    expect(find(run(harness, { terms: none, choices: ic, attested: [] }), 'attest:language-alternative').status).toBe('needs-attestation')
+  })
+})
+

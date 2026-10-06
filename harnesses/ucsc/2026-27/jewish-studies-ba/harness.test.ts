@@ -88,4 +88,25 @@ describe('jewish-studies-ba 2026-27', () => {
     expect(failing(run(harness, { terms: base, grades: { 'HEBR 1': 'P', 'HIS 2B': 'P' } }))).toEqual([])
     expect(find(run(harness, { terms: base, grades: { 'HEBR 1': 'P', 'HIS 2B': 'P', 'HIS 155': 'P' } }), 'pnp-limit').status).toBe('unmet')
   })
+  it('review: without the language courses, the placement exam is asked (and only then)', () => {
+    const t = base.map((q) => ({ ...q, courses: q.courses.filter((c) => !c.startsWith('HEBR')) }))
+    expect(find(run(harness, { terms: t, attested: [] }), 'attest:language-placement').status).toBe('needs-attestation')
+    expect(failing(run(harness, { terms: t, attested: ['language placement'] }))).toEqual([])
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'attest:language-placement')).toThrow()
+  })
+
+  it('review: a second lower-division elective breaks the three-upper-division rule', () => {
+    expect(find(run(harness, { terms: swap('LIT 112I', 'HIS 75') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: HIS 75 and HIS 76 both taken: the second is an elective', () => {
+    expect(failing(run(harness, { terms: swap('HIS 2B', 'HIS 75') }))).toEqual([])
+  })
+
+  it('review: a repeatable LIT 164G taken twice fills a core and an elective slot', () => {
+    const t = swap('LIT 164C', 'LIT 164G').map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'LIT 112I') }))
+    const r = run(harness, { terms: [...t, { term: '2290', courses: ['LIT 164G'] }] })
+    expect(failing(r)).toEqual([])
+    expect(find(r, 'electives').used?.map((e) => e.display)).toContain('LIT 164G')
+  })
 })

@@ -25,8 +25,21 @@ describe('history-of-consciousness-minor 2026-27', () => {
     expect(find(run(harness, { terms: swap('HISC 199', 'HISC 80N') }), 'upper-five').status).toBe('unmet')
   })
 
-  it('graduate seminars do not count without petition (HISC 200+ outside 100–199)', () => {
-    expect(find(run(harness, { terms: swap('HISC 199', 'HISC 203A') }), 'upper-five').status).toBe('unmet')
+  it('review: a graduate seminar counts for one upper-division course only by petition (asked only when used)', () => {
+    const t = swap('HISC 199', 'HISC 203A')
+    expect(find(run(harness, { terms: t, attested: [] }), 'attest:grad-seminar-petition').status).toBe('needs-attestation')
+    expect(failing(run(harness, { terms: t, attested: ['graduate seminar petition'] }))).toEqual([])
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'attest:grad-seminar-petition')).toThrow()
+  })
+
+  it('review: only one graduate seminar may substitute', () => {
+    const t = swap('HISC 199', 'HISC 203A').map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'HISC 120' ? 'HISC 205' : c)) }))
+    expect(find(run(harness, { terms: t }), 'upper-five').status).toBe('unmet')
+  })
+
+  it('review: a spare graduate seminar is not used (nor petitioned) when five HISC 100–199 are present', () => {
+    const r = run(harness, { terms: [...base, { term: '2288', courses: ['HISC 203A'] }], attested: [] })
+    expect(failing(r)).toEqual([])
   })
 
   it('P counts; C counts; C- does not', () => {
@@ -37,5 +50,16 @@ describe('history-of-consciousness-minor 2026-27', () => {
 
   it('courses from other departments do not count', () => {
     expect(find(run(harness, { terms: swap('HISC 120', 'HIS 120') }), 'upper-five').status).toBe('unmet')
+  })
+  it('review: a repeatable HISC 199 taken twice counts twice', () => {
+    expect(failing(run(harness, { terms: [...swap('HISC 120', 'HISC 199')] }))).toEqual([])
+  })
+
+  it('review: a cross-listed partner code (CRES 117 = HISC 117) counts', () => {
+    expect(failing(run(harness, { terms: swap('HISC 120', 'CRES 117') }))).toEqual([])
+  })
+
+  it('review: a non-repeatable course retaken counts once', () => {
+    expect(find(run(harness, { terms: swap('HISC 120', 'HISC 110') }), 'upper-five').status).toBe('unmet')
   })
 })

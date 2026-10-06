@@ -14,8 +14,6 @@ const CHIN_UD = ['CHIN 103', 'CHIN 104', 'CHIN 105', 'CHIN 107', 'CHIN 108']
 const JAPN_UD = ['JAPN 103', 'JAPN 104', 'JAPN 105', 'JAPN 109']
 const LD_LANG = ['CHIN 1', 'CHIN 2', 'CHIN 3', 'CHIN 4', 'CHIN 5', 'CHIN 6', 'JAPN 1', 'JAPN 2', 'JAPN 3', 'JAPN 4', 'JAPN 5', 'JAPN 6']
 const CORE = ['HIS 40A', 'HIS 40B', 'HIS 80C', 'HIS 81']
-// Cross-listed partners not in the current catalog under their own codes
-// (LGST 126, LGST 128J, HIS 141A, HIS 141B) are accepted too.
 const ELECTIVES = [
   'ANTH 130C', 'ANTH 130G', ...CHIN_UD, 'CHIN 199', 'ECON 149',
   'HAVC 122A', 'HAVC 122B', 'HAVC 122C', 'HAVC 122D', 'HAVC 122E', 'HAVC 122F', 'HAVC 127A', 'HAVC 127B', 'HAVC 190D', 'HAVC 190F', 'HAVC 190G',
@@ -23,11 +21,13 @@ const ELECTIVES = [
   'HIS 150A', 'HIS 150B', 'HIS 150C', 'HIS 150D', 'HIS 150E', 'HIS 150F', 'HIS 150G', 'HIS 190G',
   'HIS 194C', 'HIS 194E', 'HIS 194M', 'HIS 194U', 'HIS 194Y',
   ...JAPN_UD, 'JAPN 199',
-  'LIT 133F', 'LIT 133E', 'LIT 133G', 'LIT 133H', 'LIT 133I', 'LIT 141B', 'HIS 141A', 'LIT 141C', 'HIS 141B', 'LIT 149C', 'LIT 162B',
+  'LIT 133F', 'LIT 133E', 'LIT 133G', 'LIT 133H', 'LIT 133I', 'LIT 141B', 'LIT 141C', 'LIT 149C', 'LIT 162B',
   'POLI 140D', 'POLI 141', 'POLI 161', 'POLI 190T',
-  'SOCY 128', 'LGST 126', 'THEA 161D', 'SOCY 128J', 'LGST 128J',
+  'SOCY 128', 'THEA 161D', 'SOCY 128J',
 ]
-const LISTED = new Set(ELECTIVES.map(canon))
+// Membership goes through the catalog so a cross-listed partner code
+// (LGST 126 for SOCY 128, HIS 141A for LIT 141B) counts as listed.
+const LISTED = codes(...ELECTIVES)
 // "one of which may be a topically appropriate individual study: CHIN 199,
 // HIS 199, JAPN 199, LIT 199, etc." — any 5-credit 199 may be the one, but
 // whether one outside the list is topically appropriate is the program's call.
@@ -45,14 +45,6 @@ export default defineHarness({
   program: 'east-asian-studies-minor',
   edition: '2026-27',
   title: 'East Asian Studies Minor',
-  coverage: {
-    unknownOk: {
-      HIS141A: 'cross-listing of LIT 141B named on the page',
-      HIS141B: 'cross-listing of LIT 141C named on the page',
-      LGST126: 'cross-listing of SOCY 128 named on the page',
-      LGST128J: 'cross-listing of SOCY 128J named on the page',
-    },
-  },
   notes: [
     'Up to two of the minor courses may be taken Pass/No Pass.',
     'Chinese or Japanese courses taken abroad require a language placement exam on return; add them once the program accepts them.',
@@ -73,13 +65,14 @@ export default defineHarness({
       repeatable: 'catalog',
       // At most one individual study (199) among the three.
       check: (chosen) => (chosen.filter((e) => isInd(e.code)).length > 1 ? 'only one may be an individual study' : null),
-      prefer: (c) => (LISTED.has(c) && !isInd(c) ? 0 : 1),
+      // Listed courses first; a listed 199 (CHIN/JAPN 199) before an off-list one.
+      prefer: (c) => (!LISTED.has(c, h.catalog) ? 2 : isInd(c) ? 1 : 0),
     })
     h.solve()
 
     // An individual study outside the list (HIS 199, LIT 199, …) is the
     // program's judgement ("topically appropriate").
-    const offList = (electives.used ?? []).filter((e) => !LISTED.has(e.code))
+    const offList = (electives.used ?? []).filter((e) => !LISTED.has(e.code, h.catalog))
     if (electives.status === 'met' && offList.length) {
       electives.status = 'cannot-check'
       electives.detail = `${offList.map((e) => e.display).join(', ')} counts only if it is a topically appropriate East Asian individual study — confirm with the program.`

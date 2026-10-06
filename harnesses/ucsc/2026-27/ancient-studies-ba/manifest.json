@@ -6,6 +6,6 @@
  "skeleton_sha256": "68570b3b1acfb8c89e4d3b8a11fc6f6e500ada60f15274c42fc542039bc7dfdb",
  "status": "verified",
  "authored_at": "2026-10-06T00:50:08Z",
- "verified_at": "2026-10-06T00:58:51Z",
- "notes": "verified line by line; LIT 184/186 whole series for the three; electives list (repeats 184/186); DC overlay (exclusive:false) two of 184B-E/186B-D; comprehensive exam = attestation, ANCS 197F a course slot (same-quarter rule not checkable, note); P/NP max two"
+ "verified_at": "2026-10-06T23:36:09Z",
+ "notes": "verified line by line; LIT 184/186 whole series for the three; electives list (repeats 184/186); DC overlay (exclusive:false) two of 184B-E/186B-D; comprehensive exam = attestation, ANCS 197F a course slot (same-quarter rule not checkable, note); P/NP max two; reviewed 2026-10-06: removed HIS 159M/LGST 105A partner codes + unknownOk (library cross-listing); added faculty-determined 'or equivalent' language attestation, asked only when the sequence is absent"
 }

@@ -76,4 +76,24 @@ describe('middle-eastern-and-north-african-studies-menas-minor 2026-27', () => {
     const r = run(harness, { terms: base, attested: none, grades: { 'HIS 41': 'P', 'HIS 157': 'P', 'ARBC 1': 'P' } })
     expect(find(r, 'pnp-limit').status).toBe('cannot-check')
   })
+  it('review: the cross-listed LGST 184 counts like POLI 184 and as a second department', () => {
+    const t = plan(['2268', 'HIS 41', 'ARBC 1', 'ARBC 2', 'ARBC 3'], ['2270', 'HIS 154', 'HIS 157', 'HIS 156A', 'HIS 156B', 'HIS 194W', 'LGST 184'])
+    expect(failing(run(harness, { terms: t, attested: none }))).toEqual([])
+    expect(failing(run(harness, { terms: swap('CRES 173', 'LGST 184'), attested: none }))).toEqual([])
+  })
+
+  it('review: the placement exam is asked only when neither language path is in the plan', () => {
+    expect(() => find(run(harness, { terms: base, attested: none }), 'attest:placement')).toThrow()
+    const t = base.map((q) => ({ ...q, courses: q.courses.filter((c) => !c.startsWith('ARBC')) }))
+    expect(find(run(harness, { terms: t, attested: none }), 'attest:placement').status).toBe('needs-attestation')
+  })
+
+  it('review: mixed Hebrew and Arabic quarters are not three of one language', () => {
+    const t = swap('ARBC 1', 'HEBR 1').map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'ARBC 2' ? 'HEBR 2' : c)) }))
+    expect(find(run(harness, { terms: t, attested: none }), 'language').status).not.toBe('met')
+  })
+
+  it('review: a second lower-division survey is not an upper-division course', () => {
+    expect(find(run(harness, { terms: swap('CRES 173', 'HIS 58'), attested: none }), 'upper').status).toBe('unmet')
+  })
 })

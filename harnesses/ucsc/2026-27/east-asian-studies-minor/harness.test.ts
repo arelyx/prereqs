@@ -74,4 +74,27 @@ describe('east-asian-studies-minor 2026-27', () => {
   it('the cross-listed HIS 141A counts like LIT 141B', () => {
     expect(failing(run(harness, { terms: swap('HAVC 122E', 'HIS 141A') }))).toEqual([])
   })
+  it('review: the cross-listed LGST 126 counts like SOCY 128 and is not flagged as off-list', () => {
+    expect(failing(run(harness, { terms: swap('HAVC 122E', 'LGST 126') }))).toEqual([])
+  })
+
+  it('review: with a listed CHIN 199 and an off-list HIS 199, the listed one is the individual study', () => {
+    const t = [...swap('HAVC 122E', 'HIS 199'), { term: '2294', courses: ['CHIN 199'] }]
+    const r = run(harness, { terms: t })
+    expect(find(r, 'electives').status).toBe('met')
+    expect(find(r, 'electives').used?.map((e) => e.display)).toContain('CHIN 199')
+  })
+
+  it('review: a core survey is not an upper-division elective', () => {
+    expect(find(run(harness, { terms: swap('HAVC 122E', 'HIS 40A') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: a 2-credit 199F is not a 5-credit elective', () => {
+    expect(find(run(harness, { terms: swap('HAVC 122E', 'HIS 199F') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: mixed Chinese and Japanese: two of one language + extras as electives', () => {
+    const t = plan(['2268', 'HIS 81'], ['2270', 'CHIN 103', 'JAPN 103', 'JAPN 104', 'CHIN 104', 'JAPN 105'])
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
 })

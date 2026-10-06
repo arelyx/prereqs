@@ -20,15 +20,13 @@ const SURVEY = [
 // not only the courses listed under it.
 const GREEK_LATIN = anyOf(series('LIT', 184), series('LIT', 186)).minCredits(5)
 const LISTED_GL = ['LIT 184A', 'LIT 184B', 'LIT 184C', 'LIT 184D', 'LIT 184E', 'LIT 186A', 'LIT 186B', 'LIT 186C', 'LIT 186D']
-// Cross-listed partners (HIS 159M, LGST 105A) are not in the current catalog
-// under their own codes; accept them if a transcript uses them.
 const ELECTIVES = [
   'HIS 147A', 'HIS 150A', 'HIS 159A', 'HIS 159B', 'HIS 159C', 'HIS 159D', 'HIS 160A', 'HIS 160C', 'HIS 161B', 'HIS 163B', 'HIS 194S', 'HIS 196S',
   'HAVC 135F', 'HAVC 151', 'HAVC 152', 'HAVC 154', 'HAVC 155', 'HAVC 190C',
-  'LIT 116C', 'LIT 116I', 'LIT 117A', 'LIT 118A', 'LIT 121A', 'LIT 125A', 'LIT 130A', 'LIT 154B', 'LIT 159M', 'HIS 159M',
+  'LIT 116C', 'LIT 116I', 'LIT 117A', 'LIT 118A', 'LIT 121A', 'LIT 125A', 'LIT 130A', 'LIT 154B', 'LIT 159M',
   ...LISTED_GL,
   'LIT 181A', 'LIT 181B', 'LIT 181D', 'LIT 181E', 'LIT 181F',
-  'PHIL 100A', 'PHIL 118', 'POLI 105A', 'LGST 105A',
+  'PHIL 100A', 'PHIL 118', 'POLI 105A',
 ]
 const DC = ['LIT 184B', 'LIT 184C', 'LIT 184D', 'LIT 184E', 'LIT 186B', 'LIT 186C', 'LIT 186D']
 const ALL = anyOf(codes('GREE 1', 'GREE 2', 'LATN 1', 'LATN 2', 'ANCS 197F', ...SURVEY, ...ELECTIVES), GREEK_LATIN)
@@ -39,17 +37,20 @@ export default defineHarness({
   title: 'Ancient Studies B.A.',
   attestations: [
     {
+      id: 'language-equivalent',
+      label: 'Ancient studies faculty determined my prior Greek/Latin satisfies the elementary language courses',
+      quote: 'Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements.',
+      aliases: ['prior knowledge', 'language equivalent', 'elementary language waived', 'or equivalent'],
+    },
+    {
       id: 'comprehensive-exam',
       label: 'Passed the senior comprehensive examination',
       quote: 'Ancient studies majors are required to pass a senior comprehensive examination.',
       aliases: ['comprehensive exam', 'senior comprehensive', 'comprehensive examination', 'senior exam'],
     },
   ],
-  coverage: {
-    unknownOk: { HIS159M: 'cross-listing of LIT 159M named on the page', LGST105A: 'cross-listing of POLI 105A named on the page' },
-  },
   notes: [
-    'Students with prior knowledge of ancient Greek or Latin should consult the ancient studies faculty about the elementary language courses; add any credit they grant as completed courses.',
+    'Students with prior knowledge of ancient Greek or Latin should consult the ancient studies faculty about the elementary language courses; transfer/AP credit for GREE/LATN goes in the plan as the course itself.',
     'Up to two major requirements may be taken Pass/No Pass.',
     'Up to three elective requirements may be completed abroad (EAP) — add approved EAP courses once the program accepts them.',
     'ANCS 197F must be taken in the same quarter as the comprehensive examination; the app cannot check the exam quarter.',
@@ -81,8 +82,16 @@ export default defineHarness({
     })
     h.solve()
 
+    // "(or equivalent)" + "consult with the ancient studies faculty to determine
+    // if they have satisfied any of the elementary language course
+    // requirements": a faculty determination, asked only when the sequence is
+    // not in the plan.
+    const langNode = lang.status === 'met'
+      ? lang
+      : h.either('language-or-equivalent', 'Elementary Greek or Latin (or equivalent)', 'Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements.', [lang, h.attest('language-equivalent')])
+
     return [
-      h.group('lower', 'Lower-Division Courses', [lang, survey]),
+      h.group('lower', 'Lower-Division Courses', [langNode, survey]),
       h.group('upper', 'Upper-Division Courses', [gl]),
       h.group('electives-group', 'Electives', [electives]),
       h.group('dc-group', 'Disciplinary Communication (DC) Requirement', [dc]),

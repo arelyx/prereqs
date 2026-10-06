@@ -84,4 +84,26 @@ describe('ancient-studies-ba 2026-27 (more)', () => {
   it('the cross-listed LGST 105A counts like POLI 105A', () => {
     expect(failing(run(harness, { terms: swap('LIT 125A', 'LGST 105A') }))).toEqual([])
   })
+  it('review: the cross-listed HIS 159M counts like LIT 159M (library cross-listing, no partner list)', () => {
+    expect(failing(run(harness, { terms: swap('LIT 125A', 'HIS 159M') }))).toEqual([])
+  })
+
+  it('review: no elementary language in the plan asks for the faculty determination (or equivalent)', () => {
+    const t = base.map((q) => ({ ...q, courses: q.courses.filter((c) => !c.startsWith('GREE')) }))
+    expect(find(run(harness, { terms: t, attested: [] }), 'attest:language-equivalent').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['language-equivalent'] }), 'language-or-equivalent').status).toBe('met')
+  })
+
+  it('review: with the sequence in the plan the determination is not asked', () => {
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'attest:language-equivalent')).toThrow()
+  })
+
+  it('review: LIT 186A (an introduction) does not count toward DC', () => {
+    const t = swap('LIT 184B', 'LIT 186A')
+    expect(find(run(harness, { terms: t }), 'dc').status).toBe('unmet')
+  })
+
+  it('review: a lower-division survey cannot fill an upper-division elective', () => {
+    expect(find(run(harness, { terms: swap('LIT 125A', 'HIS 61') }), 'electives').status).toBe('unmet')
+  })
 })

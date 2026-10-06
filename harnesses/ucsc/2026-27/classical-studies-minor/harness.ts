@@ -7,15 +7,13 @@
 import { codes, defineHarness, isPass } from '@harness'
 import type { CourseSet, HarnessContext, Node } from '@harness'
 
-// Cross-listed partners (HIS 159M, LGST 105A) are not in the current catalog
-// under their own codes; accept them if a transcript uses them.
 const LIST = [
   'HIS 147A', 'HIS 150A', 'HIS 159A', 'HIS 159B', 'HIS 159C', 'HIS 159D', 'HIS 160A', 'HIS 160C', 'HIS 161B', 'HIS 163B', 'HIS 194S', 'HIS 196S',
   'HAVC 135F', 'HAVC 151', 'HAVC 152', 'HAVC 154', 'HAVC 155', 'HAVC 190C',
-  'LIT 116C', 'LIT 116I', 'LIT 117A', 'LIT 118A', 'LIT 121A', 'LIT 125A', 'LIT 130A', 'LIT 154B', 'LIT 159M', 'HIS 159M',
+  'LIT 116C', 'LIT 116I', 'LIT 117A', 'LIT 118A', 'LIT 121A', 'LIT 125A', 'LIT 130A', 'LIT 154B', 'LIT 159M',
   'LIT 181A', 'LIT 181B', 'LIT 181D', 'LIT 181E', 'LIT 181F',
   'LIT 184A', 'LIT 184B', 'LIT 184C', 'LIT 184D', 'LIT 184E', 'LIT 186A', 'LIT 186B', 'LIT 186C', 'LIT 186D',
-  'PHIL 100A', 'PHIL 118', 'POLI 105A', 'LGST 105A',
+  'PHIL 100A', 'PHIL 118', 'POLI 105A',
 ]
 const ALL = codes('GREE 1', 'GREE 2', 'LATN 1', 'LATN 2', ...LIST)
 
@@ -23,11 +21,16 @@ export default defineHarness({
   program: 'classical-studies-minor',
   edition: '2026-27',
   title: 'Ancient Studies Minor',
-  coverage: {
-    unknownOk: { HIS159M: 'cross-listing of LIT 159M named on the page', LGST105A: 'cross-listing of POLI 105A named on the page' },
-  },
+  attestations: [
+    {
+      id: 'language-equivalent',
+      label: 'Ancient studies faculty determined my prior Greek/Latin satisfies the elementary language courses',
+      quote: 'Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements.',
+      aliases: ['prior knowledge', 'language equivalent', 'elementary language waived', 'or equivalent'],
+    },
+  ],
   notes: [
-    'Students with prior knowledge of ancient Greek or Latin should consult the ancient studies faculty about the elementary language courses; add any credit they grant as completed courses.',
+    'Students with prior knowledge of ancient Greek or Latin should consult the ancient studies faculty about the elementary language courses; transfer/AP credit for GREE/LATN goes in the plan as the course itself.',
     'Up to two of the minor courses may be taken Pass/No Pass.',
   ],
   evaluate(h) {
@@ -38,10 +41,21 @@ export default defineHarness({
       ['LATN 1', 'LATN 2'],
     ])
     const intro = h.take('intro', 'LIT 184A or LIT 186A', ['Choose one of the following courses:', 'Reading proficiency in ancient Greek or Latin required for these courses.'], codes('LIT 184A', 'LIT 186A'))
-    const four = h.take('four', 'Four more upper-division ancient studies courses', 'Plus any four of the upper-division courses listed below', codes(...LIST), { n: 4 })
+    const four = h.take('four', 'Four more upper-division ancient studies courses', 'Plus any four of the upper-division courses listed below', codes(...LIST), {
+      n: 4,
+      // Special-topics courses (HIS 194S/196S, LIT 184E/186D, ...) are
+      // catalog-repeatable; a second offering is another 5 upper-division
+      // credits toward "minimum of 25 upper-division credits".
+      repeatable: 'catalog',
+    })
     h.solve()
+    // "(or equivalent)" + the NOTE on consulting the faculty: a faculty
+    // determination, asked only when the sequence is not in the plan.
+    const langNode = lang.status === 'met'
+      ? lang
+      : h.either('language-or-equivalent', 'Elementary Greek or Latin (or equivalent)', 'Students with prior knowledge of ancient Greek or Latin are advised to consult with the ancient studies faculty to determine if they have satisfied any of the elementary language course requirements.', [lang, h.attest('language-equivalent')])
     return [
-      h.group('lower', 'Lower-Division Courses', [lang]),
+      h.group('lower', 'Lower-Division Courses', [langNode]),
       h.group('upper', 'Upper-Division Courses', [intro, four]),
       pnpLimit(h, [lang, intro, four], ALL, 'Students are allowed to complete up to two of their minor courses for pass/no pass grades.'),
     ]

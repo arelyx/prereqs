@@ -50,4 +50,18 @@ describe('jewish-studies-minor 2026-27', () => {
     expect(failing(run(harness, { terms: base, grades: { 'HEBR 1': 'P', 'HEBR 2': 'P' } }))).toEqual([])
     expect(find(run(harness, { terms: base, grades: { 'HEBR 1': 'P', 'HEBR 2': 'P', 'HIS 74': 'P' } }), 'pnp-limit').status).toBe('unmet')
   })
+  it('review: extra lower-division core courses cannot stand in for the two upper-division electives', () => {
+    const t = plan(['2268', 'HIS 74', 'HIS 74A', 'HIS 74B', 'HIS 75', 'HIS 76'], ['2270', 'HIS 155', 'LIT 164C', 'HIS 185J'])
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: an exit seminar not on the minor list (HIS 194L) is not an elective', () => {
+    const t = plan(['2268', 'HIS 74', 'HEBR 1', 'HEBR 2'], ['2270', 'HIS 155', 'LIT 164C', 'HIS 185J'], ['2272', 'HIS 194L', 'HIS 178C'])
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: a repeatable tutorial (JWST 199) taken twice counts twice (the minor page sets no limit)', () => {
+    const t = plan(['2268', 'HIS 74', 'HEBR 1', 'HEBR 2'], ['2270', 'HIS 155', 'LIT 164C', 'HIS 185J'], ['2272', 'JWST 199'], ['2274', 'JWST 199'])
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
 })

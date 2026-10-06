@@ -57,4 +57,21 @@ describe('history-minor 2026-27', () => {
   it('a failed course does not count', () => {
     expect(find(run(harness, { terms: base, grades: { 'HIS 172A': 'F' } }), 'upper').status).toBe('unmet')
   })
+  it('review: a catalog-repeatable topics course taken twice counts twice', () => {
+    const t = [...swap('HIS 185J', 'HIS 196G'), { term: '2288', courses: ['HIS 196G'] }].map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'HIS 172A') }))
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  it('review: a non-repeatable course retaken counts once', () => {
+    const t = [...drop('HIS 185J'), { term: '2288', courses: ['HIS 172A'] }]
+    expect(find(run(harness, { terms: t }), 'upper').status).toBe('unmet')
+  })
+
+  it('review: a cross-listed history course under its partner code (LIT 159M = HIS 159M) counts', () => {
+    expect(failing(run(harness, { terms: swap('HIS 185J', 'LIT 159M') }))).toEqual([])
+  })
+
+  it('review: eight upper-division courses also complete the minor', () => {
+    expect(failing(run(harness, { terms: plan(['2268', 'HIS 100', 'HIS 101D', 'HIS 140B', 'HIS 150A', 'HIS 160A', 'HIS 172A', 'HIS 185J', 'HIS 178A']) }))).toEqual([])
+  })
 })

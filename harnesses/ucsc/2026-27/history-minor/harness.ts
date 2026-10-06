@@ -20,10 +20,14 @@ export default defineHarness({
     const upper = h.take('upper', 'Five upper-division history courses', ['Eight history courses are required, five of which must be 5-credit upper-division courses.', 'Five 5-credit upper-division (HIS 100–HIS 199) history courses.'], UPPER, {
       n: 5,
       pool: 'HIS 100–199, 5 credits',
+      // Topics courses (HIS 196G, HIS 194 series, HIS 199) are catalog-repeatable:
+      // a second offering is another of the "Eight history courses".
+      repeatable: 'catalog',
     })
     const lower = h.take('lower', 'Three more history courses (lower- or upper-division)', 'Three 5-credit lower-division (HIS 1–HIS 99) and/or 5-credit upper-division (HIS 100–HIS 199) history courses.', ANY, {
       n: 3,
       pool: 'HIS 1–199, 5 credits',
+      repeatable: 'catalog',
     })
     h.solve()
     return [

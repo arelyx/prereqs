@@ -44,6 +44,8 @@ const SURVEY_QUOTE: Record<Region, string> = {
 const SEMINARS = anyOf(series('HIS', 190), series('HIS', 194), series('HIS', 196))
 const THESIS = ['HIS 195A', 'HIS 195B']
 const INDEPENDENT = range('HIS', 198, 199)
+// Advanced research names "independent studies (HIS 199)" only — not HIS 198 field study.
+const ADV_INDEPENDENT = codes('HIS 199')
 const UD5 = (c: { division: string; credits: number }) => c.division === 'upper' && !(c.credits < 5)
 const UPPER5 = range('HIS', 100, 199).minCredits(5)
 // Courses that never need a region (methods, thesis).
@@ -128,6 +130,12 @@ export default defineHarness({
       aliases: ['thesis exception', 'seminar exception'],
     },
     {
+      id: 'independent-study-petition',
+      label: 'Petition approved: independent/field study applied to the major',
+      quote: 'For information and instructions on how to petition courses from the above categories, visit the [History Department webpage on course substitutions](https://history.ucsc.edu/undergraduate/student-advising/#substitutions).',
+      aliases: ['independent study petition', 'his 199 petition', 'field study petition'],
+    },
+    {
       id: 'language-alternative',
       label: 'Language requirement met another way (placement, approved study abroad, or petition)',
       quote: 'With prior approval by the undergraduate director, the language training requirement may be satisfied by at least one quarter study abroad with foreign language instruction.',
@@ -150,8 +158,10 @@ export default defineHarness({
     const others = REGIONS.filter((r) => r !== region)
     // Courses on the student's pre-1800 list are tried first (they also
     // serve the chronological distribution), after the UD preference.
-    const pre = new Set((h.choice('pre1800_courses') ?? '').split(',').filter(Boolean))
-    const preRank = (c: string) => (pre.has(c) ? 0 : 1)
+    // Lists are matched through the catalog, so a course listed under one
+    // cross-listed code (HIS 159M) matches the partner on the transcript (LIT 159M).
+    const pre = codes(...(h.choice('pre1800_courses') ?? '').split(',').filter(Boolean))
+    const preRank = (c: string) => (pre.has(c, h.catalog) ? 0 : 1)
     const udFirst = (c: string) => (h.catalog.get(c)?.division === 'upper' ? 0 : 2) + preRank(c)
 
     const declared: Record<Region, Set<string>> = {
@@ -164,10 +174,14 @@ export default defineHarness({
       asia: new Set([...SURVEY.asia.map(canon), ...declared.asia]),
       europe: new Set([...SURVEY.europe.map(canon), ...declared.europe]),
     }
-    const regionSet = (r: Region): CourseSet => codes(...inRegion[r]).minCredits(5)
-    const known = (code: string) => REGIONS.some((r) => inRegion[r].has(code))
-    // Courses in the plan whose region the app cannot know yet.
-    const unknown = h.passed.filter((e) => e.code.startsWith('HIS') && /^HIS\d/.test(e.code) && !NO_REGION.has(e.code) && !known(e.code) && (h.catalog.get(e.code)?.credits ?? 5) >= 5)
+    const regionAny: Record<Region, CourseSet> = { americas: codes(...inRegion.americas), asia: codes(...inRegion.asia), europe: codes(...inRegion.europe) }
+    const inR = (r: Region, code: string) => regionAny[r].has(code, h.catalog)
+    const regionSet = (r: Region): CourseSet => regionAny[r].minCredits(5)
+    const known = (code: string) => REGIONS.some((r) => inR(r, code))
+    // History courses (or their cross-listed partners, e.g. LIT 159M = HIS 159M)
+    // in the plan whose region the app cannot know yet.
+    const isHistory = (code: string) => [code, ...h.catalog.equivalents(code)].some((c) => /^HIS\d/.test(c))
+    const unknown = h.passed.filter((e) => isHistory(e.code) && !NO_REGION.has(e.code) && !known(e.code) && (h.catalog.get(e.code)?.credits ?? 5) >= 5)
     const unknownNote = (what: string) =>
       `${unknown.map((e) => e.display).join(', ')} ${unknown.length > 1 ? 'have' : 'has'} no region yet — check the History Course List and list ${unknown.length > 1 ? 'them' : 'it'} under ${what}.`
 
@@ -183,7 +197,7 @@ export default defineHarness({
       prefer: udFirst,
       pool: `courses you listed under ${REGION_LABEL[region]} (plus that region’s survey courses)`,
     })
-    const regionSeminars = [...new Set(h.passed.filter((e) => SEMINARS.has(e.code) && inRegion[region].has(e.code)).map((e) => e.code))]
+    const regionSeminars = [...new Set(h.passed.filter((e) => SEMINARS.has(e.code, h.catalog) && inR(region, e.code)).map((e) => e.code))]
     const comp = h.options('comprehensive', 'Comprehensive: research seminar in your region, or senior thesis', ['One comprehensive requirement: All students must complete either a research seminar (HIS 190 series, HIS 194 series, or HIS 196 series), or a senior thesis (HIS 195A and HIS 195B) in their area of concentration.', "Seminars must be taken in the student's chosen area of concentration to qualify as their comprehensive requirement.", 'History majors may take up to two of their history major courses Pass/No Pass, with the exception of the Senior Comprehensive Requirement'], [...regionSeminars.map((s) => [s]), THESIS], {
       policy: { letter: true },
     })
@@ -195,8 +209,8 @@ export default defineHarness({
     const needUD = concLD >= 2 ? 2 : 1
     const [rb, rc] = others
     const breadthCheck = (chosen: Enrollment[]) => {
-      const b = chosen.filter((e) => inRegion[rb].has(e.code) && !inRegion[rc].has(e.code)).length
-      const c = chosen.filter((e) => inRegion[rc].has(e.code) && !inRegion[rb].has(e.code)).length
+      const b = chosen.filter((e) => inR(rb, e.code) && !inR(rc, e.code)).length
+      const c = chosen.filter((e) => inR(rc, e.code) && !inR(rb, e.code)).length
       if (b > 2 || c > 2) return `two courses from each of ${REGION_LABEL[rb]} and ${REGION_LABEL[rc]}`
       const ud = chosen.filter((e) => { const k = h.catalog.get(e.code); return !!k && UD5(k) }).length
       if (ud < needUD) return `${needUD === 2 ? 'two lower-division courses went to your region, so at least two' : 'at least one'} of the four must be 5-credit upper-division (${ud} now)`
@@ -208,7 +222,7 @@ export default defineHarness({
       prefer: udFirst,
       pool: `courses you listed under ${REGION_LABEL[rb]} or ${REGION_LABEL[rc]} (plus their survey courses)`,
     })
-    const advanced = (code: string) => SEMINARS.has(code) || INDEPENDENT.has(code) || THESIS.map(canon).includes(code)
+    const advanced = (code: string) => SEMINARS.has(code) || ADV_INDEPENDENT.has(code) || THESIS.map(canon).includes(code)
     const electives = intensive
       ? h.take('electives', 'Four upper-division history electives', 'Four 5-credit upper-division history courses from any of the three regions of concentration.', UPPER5, {
           n: 4,
@@ -231,7 +245,7 @@ export default defineHarness({
     }
     if (breadth.status === 'unmet') {
       const phase1 = [...(conc.used ?? []), ...(comp.used ?? []), ...(survey.used ?? [])]
-      const shared = phase1.filter((e) => inRegion[rb].has(e.code) || inRegion[rc].has(e.code))
+      const shared = phase1.filter((e) => inR(rb, e.code) || inR(rc, e.code))
       if (unknown.length) {
         breadth.status = 'cannot-check'
         breadth.detail = unknownNote(`${REGION_LABEL[rb]} or ${REGION_LABEL[rc]}`)
@@ -240,7 +254,7 @@ export default defineHarness({
         breadth.detail = `${shared.map((e) => e.display).join(', ')} is listed in more than one region and is counted in your concentration; ask an advisor where it should count.`
       }
     }
-    const unknownSeminars = unknown.filter((e) => SEMINARS.has(e.code))
+    const unknownSeminars = unknown.filter((e) => SEMINARS.has(e.code, h.catalog))
     if (comp.status === 'unmet' && unknownSeminars.length) {
       comp.status = 'cannot-check'
       comp.detail = `${unknownSeminars.map((e) => e.display).join(', ')}: list it under ${REGION_LABEL[region]} if the History Course List places it there.`
@@ -252,7 +266,7 @@ export default defineHarness({
     let thesisNode: Node | null = null
     if (thesisUsed) {
       const q = 'Before undertaking an independent thesis, students must complete one research seminar in their region of concentration.'
-      const sem = h.passed.filter((e) => SEMINARS.has(e.code) && inRegion[region].has(e.code))
+      const sem = h.passed.filter((e) => SEMINARS.has(e.code, h.catalog) && inR(region, e.code))
       if (sem.length) thesisNode = h.node('thesis-seminar', 'A research seminar in your region before the thesis', q, 'met', { used: sem.slice(0, 1) })
       else if (h.attested('thesis-exception')) thesisNode = h.attest('thesis-exception')
       else if (unknownSeminars.length) thesisNode = h.cannotCheck('thesis-seminar', 'A research seminar in your region before the thesis', q, `${unknownSeminars.map((e) => e.display).join(', ')}: list it under ${REGION_LABEL[region]} if the History Course List places it there (or confirm a petitioned exception).`)
@@ -261,6 +275,16 @@ export default defineHarness({
 
     const counted = [survey, conc, comp, his100, breadth, electives]
     const countedUsed = counted.flatMap((n) => n.used ?? [])
+    // "Independent and field studies (limit of one)" is one of the Course
+    // Substitution categories applied by petition: asked only when a HIS
+    // 198/199 was actually counted.
+    const indUsed = countedUsed.filter((e) => INDEPENDENT.has(e.code, h.catalog))
+    const indNode = indUsed.length
+      ? h.attest('independent-study-petition', 'Independent/field study applied to the major by petition', {
+          quote: ['Independent and field studies (limit of one)', 'For information and instructions on how to petition courses from the above categories, visit the [History Department webpage on course substitutions](https://history.ucsc.edu/undergraduate/student-advising/#substitutions).'],
+          detail: `${indUsed.map((e) => e.display).join(', ')} is counted toward the major.`,
+        })
+      : null
 
     const dc = h.node('dc', 'Disciplinary Communication (DC)', 'History students fulfill the upper-division disciplinary communication (DC) requirement by completing a comprehensive requirement in their region of concentration.', comp.status === 'met' ? 'met' : comp.status === 'cannot-check' ? 'cannot-check' : 'unmet', {
       detail: 'Satisfied by your comprehensive seminar or thesis.',
@@ -270,17 +294,16 @@ export default defineHarness({
     const extra: Node[] = []
     if (intensive) {
       extra.push(advancedResearch(h, countedUsed))
-      extra.push(
-        h.either('language', 'Three quarters of one language', 'Intensive majors must pursue training in a second language by completing three quarters of college-level language study (or equivalent) in a single, non-English modern or ancient language (e.g. SPAN 1–SPAN 3, ITAL 2–ITAL 4, etc.).', [
-          h.take('language/courses', 'Three quarters in a single language', 'Intensive majors must pursue training in a second language by completing three quarters of college-level language study (or equivalent) in a single, non-English modern or ancient language (e.g. SPAN 1–SPAN 3, ITAL 2–ITAL 4, etc.).', LANGUAGE, {
-            n: 3,
-            exclusive: false,
-            check: (chosen) => (new Set(chosen.map((e) => languageOf(e.code))).size > 1 ? 'all three in one language' : null),
-            pool: 'first- and second-year courses (1–6) in one language; HEBR 80 / LIT 181A–B (Biblical Hebrew); LIT 184 / 186 series (Greek / Latin); CHIN 103–105, JAPN 103–106',
-          }),
-          h.attest('language-alternative'),
-        ]),
-      )
+      const langCourses = h.take('language/courses', 'Three quarters in a single language', 'Intensive majors must pursue training in a second language by completing three quarters of college-level language study (or equivalent) in a single, non-English modern or ancient language (e.g. SPAN 1–SPAN 3, ITAL 2–ITAL 4, etc.).', LANGUAGE, {
+        n: 3,
+        exclusive: false,
+        check: (chosen) => (new Set(chosen.map((e) => languageOf(e.code))).size > 1 ? 'all three in one language' : null),
+        pool: 'first- and second-year courses (1–6) in one language; HEBR 80 / LIT 181A–B (Biblical Hebrew); LIT 184 / 186 series (Greek / Latin); CHIN 103–105, JAPN 103–106',
+      })
+      h.solve()
+      // The placement / approved-abroad / petition alternative is asked only
+      // when three quarters of one language are not in the plan.
+      extra.push(h.either('language', 'Three quarters of one language', 'Intensive majors must pursue training in a second language by completing three quarters of college-level language study (or equivalent) in a single, non-English modern or ancient language (e.g. SPAN 1–SPAN 3, ITAL 2–ITAL 4, etc.).', langCourses.status === 'met' ? [langCourses] : [langCourses, h.attest('language-alternative')]))
     }
 
     const total = intensive ? 15 : 12
@@ -291,6 +314,7 @@ export default defineHarness({
         h.group('breadth-group', 'Breadth Requirements (4 Courses)', [breadth]),
         h.group('skills', 'Historical Skills and Methods (1 Course)', [his100]),
         h.group('electives-group', intensive ? 'Electives (4 Courses)' : 'Elective (1 Course)', [electives]),
+        ...(indNode ? [indNode] : []),
         ...extra,
         pre1800(h, countedUsed),
         uniqueCount(h, countedUsed, total, intensive),
@@ -306,7 +330,8 @@ export default defineHarness({
 function pre1800(h: HarnessContext, used: Enrollment[]): Node {
   const title = 'Chronological distribution: two courses set before 1800'
   const listed = new Set((h.choice('pre1800_courses') ?? '').split(',').filter(Boolean))
-  const hits = used.filter((e) => listed.has(e.code))
+  const listedSet = codes(...listed)
+  const hits = used.filter((e) => listedSet.has(e.code, h.catalog))
   const uniqueHits = [...new Map(hits.map((e) => [e.code, e])).values()]
   if (uniqueHits.length >= 2) return h.node('pre1800', title, PRE1800_QUOTE, 'met', { used: uniqueHits.slice(0, 2), progress: { have: 2, need: 2 } })
   if (!listed.size) {
@@ -316,7 +341,7 @@ function pre1800(h: HarnessContext, used: Enrollment[]): Node {
       options: [...new Set(used.map((e) => e.code))],
     })
   }
-  const spare = h.passed.filter((e) => listed.has(e.code) && !used.some((u) => u.code === e.code))
+  const spare = h.passed.filter((e) => listedSet.has(e.code, h.catalog) && !used.some((u) => h.courseKey(u) === h.courseKey(e)))
   if (spare.length)
     return h.cannotCheck('pre1800', title, PRE1800_QUOTE, `${spare.map((e) => e.display).join(', ')} is on your pre-1800 list but not counted toward the major — an advisor may be able to count it in place of another course.`, { choice: 'pre1800_courses' })
   return h.node('pre1800', title, PRE1800_QUOTE, 'unmet', {
@@ -338,6 +363,10 @@ function uniqueCount(h: HarnessContext, used: Enrollment[], total: number, inten
   if (!dup.length) return h.node('unique', title, quote, 'met', { minor: true, detail: 'No more than four lower-division courses follows from the region and breadth rules.' })
   const spare = h.passed.filter((e) => !h.used.has(e.id) && UPPER5.has(e.code, h.catalog))
   const detail = `${dup.map(display).join(', ')} is counted twice; each course counts once.`
+  // A catalog-repeatable topics course (HIS 196G, HIS 199) taken twice may be
+  // two different courses; whether both are "unique" is the department's call.
+  if (dup.every((c) => h.catalog.get(c)?.repeatable))
+    return h.cannotCheck('unique', title, quote, `${dup.map(display).join(', ')} is counted twice; it is repeatable for credit — confirm with an advisor that both offerings count as unique courses.`)
   return spare.length ? h.cannotCheck('unique', title, quote, `${detail} ${spare.map((e) => e.display).join(', ')} may be able to replace it — ask an advisor.`) : h.node('unique', title, quote, 'unmet', { detail })
 }
 
@@ -351,14 +380,14 @@ function uniqueCount(h: HarnessContext, used: Enrollment[], total: number, inten
 function advancedResearch(h: HarnessContext, used: Enrollment[]): Node {
   const title = 'Advanced research: three courses'
   const quote = ['Three of the 15 courses required for the intensive major must require advanced historical research.', 'Advanced research seminars (HIS 190 series, HIS 194 series, or HIS 196 series), the senior thesis (HIS 195A and HIS 195B) and/or independent studies (HIS 199) conducted under faculty supervisor may satisfy this requirement.']
-  const sem = used.filter((e) => SEMINARS.has(e.code) || INDEPENDENT.has(e.code))
+  const sem = used.filter((e) => SEMINARS.has(e.code, h.catalog) || ADV_INDEPENDENT.has(e.code, h.catalog))
   const thesis = used.some((e) => e.code === 'HIS195A') && used.some((e) => e.code === 'HIS195B')
   const have = sem.length + (thesis ? 1 : 0)
   const thesisUsed = used.filter((e) => THESIS.map(canon).includes(e.code))
   if (have >= 3) return h.node('advanced', title, quote, 'met', { used: [...sem, ...thesisUsed], progress: { have: 3, need: 3 } })
   if (thesis && have + 1 >= 3)
     return h.cannotCheck('advanced', title, quote, 'Counting your thesis (HIS 195A + 195B) as two advanced-research courses would meet this; the page does not say whether it counts as one or two — ask an advisor.', { used: [...sem, ...thesisUsed] })
-  const spare = h.passed.filter((e) => !h.used.has(e.id) && (SEMINARS.has(e.code) || codes('HIS 199').has(e.code)) && UPPER5.has(e.code, h.catalog))
+  const spare = h.passed.filter((e) => !h.used.has(e.id) && (SEMINARS.has(e.code, h.catalog) || ADV_INDEPENDENT.has(e.code, h.catalog)) && UPPER5.has(e.code, h.catalog))
   if (spare.length)
     return h.cannotCheck('advanced', title, quote, `${spare.map((e) => e.display).join(', ')} could replace another course to reach three — ask an advisor.`)
   return h.node('advanced', title, quote, 'unmet', { used: [...sem, ...thesisUsed], progress: { have, need: 3 }, detail: `${have} of 3 advanced-research courses among your counted courses.` })

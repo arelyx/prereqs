@@ -54,4 +54,26 @@ describe('classical-studies-minor 2026-27', () => {
     expect(failing(run(harness, { terms: base, grades: { 'LATN 1': 'P', 'HIS 161B': 'P' } }))).toEqual([])
     expect(find(run(harness, { terms: base, grades: { 'LATN 1': 'P', 'HIS 161B': 'P', 'HAVC 152': 'P' } }), 'pnp-limit').status).toBe('unmet')
   })
+  it('review: the cross-listed LGST 105A counts like POLI 105A (library cross-listing)', () => {
+    expect(failing(run(harness, { terms: swap('HAVC 152', 'LGST 105A') }))).toEqual([])
+  })
+
+  it('review: a repeatable special-topics course taken twice counts twice', () => {
+    const t = plan(['2268', 'LATN 1'], ['2270', 'LATN 2'], ['2278', 'LIT 186A', 'HIS 196S'], ['2280', 'HIS 196S', 'PHIL 100A'], ['2282', 'HAVC 152'])
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  it('review: a non-repeatable course taken twice counts once', () => {
+    expect(find(run(harness, { terms: swap('HAVC 152', 'PHIL 100A') }), 'four').status).toBe('unmet')
+  })
+
+  it('review: no elementary language in the plan asks for the faculty determination', () => {
+    const t = base.slice(2)
+    expect(find(run(harness, { terms: t, attested: [] }), 'attest:language-equivalent').status).toBe('needs-attestation')
+    expect(failing(run(harness, { terms: t, attested: ['language-equivalent'] }))).toEqual([])
+  })
+
+  it('review: a lower-division survey is not one of the four', () => {
+    expect(find(run(harness, { terms: swap('HAVC 152', 'HIS 61') }), 'four').status).toBe('unmet')
+  })
 })
