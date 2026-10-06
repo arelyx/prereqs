@@ -1,0 +1,11 @@
+{
+ "program": "jewish-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "d2a1fd0f58cf59f0d864f136ab316e71f39a9fd524fb65b5708ac04ac21100c7",
+ "skeleton_sha256": "829ac5c72b9e301f21a1434fa21502d42f35c659d4d50713de5274e431f6ec78",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:06Z",
+ "verified_at": "2026-10-06T23:55:35Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (typo fix)"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "classical-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "0314a54c605235c8b6164c7df359d33276d159a8f57b2de1bc1dd1efd93ab017",
+ "skeleton_sha256": "738f5abb4c50c4e147795e1903911cda4e3f210409257ef1e712c1216120af33",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:02Z",
+ "verified_at": "2026-10-06T23:55:33Z",
+ "notes": "ported from 2026-27 (reviewed); differences: LIT 116C not on the upper-division list; LIT 190T added; otherwise wording only (minor called classical studies in the requirement sentence)"
+}
