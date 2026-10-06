@@ -2,7 +2,8 @@
 
 from ucsc.major_requirements import source_text
 
-PAGE = """<html><body><div><div>2026-2027 UCSC General Catalog</div><h1>Test B.S.</h1>
+# Real pages wrap everything after the <h1> in container divs.
+PAGE = """<html><body><div><div>2026-2027 UCSC General Catalog</div><h1>Test B.S.</h1><div>
 <h4 class="sc-RequiredCoursesHeading2">Advanced Lab</h4>
 <table>
 <tr><td class="sc-coursenumber"><a class="sc-courselink" href="/en/current/general-catalog/courses/astr/upper-division/astr-136">ASTR 136</a></td>
@@ -11,7 +12,7 @@ PAGE = """<html><body><div><div>2026-2027 UCSC General Catalog</div><h1>Test B.S
 <td class="sc-coursetitle"></td><td><p class="credits"></p></td></tr>
 <tr><td class="sc-coursenumber"><a class="sc-courselink" href="/en/current/general-catalog/courses/narrative-courses/or-these-courses"> </a></td>
 <td class="sc-coursetitle">or these courses</td><td><p class="credits"></p></td></tr>
-</table></div></body></html>"""
+</table></div></div></body></html>"""
 
 
 def test_narrative_label_from_title_or_number_cell():
