@@ -1,0 +1,11 @@
+{
+ "program": "applied-mathematics-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b79b942319dd243d78bafa80e4994494a79b8546c0c2c9ed1b76aa7b4b46f2c7",
+ "skeleton_sha256": "ccc3175f7dee8a5fd9aaaa6c90cf46351877f9f8eaedef63a9407cd760144352",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:50Z",
+ "verified_at": "2026-10-06T23:55:30Z",
+ "notes": "ported from 2026-27 (reviewed); differences: no ECON 22P programming; no CSE 40 or PHYS 15A/15C LD electives; no BME 110 or STAT 204 UD electives; no exit survey; AM 112/114 quoted from separate list; ASTR 171 cross-list"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-education-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "342d1763efb4ca728f8c26b4f9c949ae05d38d72da78ff0110279cdef97a0fbc",
+ "skeleton_sha256": "e19b8786e29a2dbd0dc06d3917c85f014fb6035d7c29f721a37738c22cde95fd",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:47Z",
+ "verified_at": "2026-10-06T23:55:29Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

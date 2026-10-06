@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-theory-and-computation-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b530eb521e928ddde55b8f82e761bd2fbf2f27ec0c546aebe31f908c9e2d68dc",
+ "skeleton_sha256": "6550f2a3e091d3ba531ecf82d24e918df062c06deb2763026a27443a26f40cde",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:49Z",
+ "verified_at": "2026-10-06T23:55:29Z",
+ "notes": "ported from 2026-27 (reviewed); differences: MATH 114 and MATH 139 removed from elective list; ASTR 171 listed as PHYS 171 cross-list"
+}

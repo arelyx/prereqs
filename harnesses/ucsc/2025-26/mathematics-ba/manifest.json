@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "63de13ee28aa82256834aa2721c8e9141a7b8d373e1d7545f2b0bcf772f6086b",
+ "skeleton_sha256": "4e28a011e33d61238e0bc944cafefe3911b8779d6be3455f24570fea6fa75e90",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:46Z",
+ "verified_at": "2026-10-06T23:55:29Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (no extra-courses sentences or recommended-electives list; second list course still MATH 101-190 elective)"
+}
