@@ -6,6 +6,6 @@
  "skeleton_sha256": "9dbb415a7ccf580fbf3ee18643363dec5ed4f95f5c1fc11364783c51685a6917",
  "status": "verified",
  "authored_at": "2026-10-06T00:54:24Z",
- "verified_at": "2026-10-06T00:57:40Z",
- "notes": "verified line by line against sources/technology-and-information-management-minor.md; either-pairs in electives as atMost; CSE 20 Test Out = attestation"
+ "verified_at": "2026-10-06T23:45:00Z",
+ "notes": "verified line by line against sources/technology-and-information-management-minor.md; either-pairs in electives as atMost; CSE 20 Test Out = attestation; reviewed 2026-10-06: CSE 20 test-out normalized to 1a (asked only when CSE 20 absent; failed CSE 20 stays unmet)"
 }

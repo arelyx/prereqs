@@ -53,4 +53,13 @@ describe('technology-and-information-management-minor 2026-27', () => {
   it('P/NP allowed', () => {
     expect(failing(run(harness, { terms: base, grades: { 'TIM 50': 'P', 'CSE 150': 'P' } }))).toEqual([])
   })
+
+  it('review: a failed CSE 20 is not rescued by the test-out attestation', () => {
+    expect(find(run(harness, { terms: base, grades: { 'CSE 20': 'F' } }), 'programming').status).toBe('unmet')
+  })
+
+  it('review: mixed calculus AM 11A + MATH 19B is fine (two independent one-of lists)', () => {
+    const t = swap('MATH 11A', 'AM 11A').map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'MATH 11B' ? 'MATH 19B' : c)) }))
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
 })

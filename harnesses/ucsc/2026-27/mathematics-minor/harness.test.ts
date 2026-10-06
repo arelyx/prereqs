@@ -57,4 +57,13 @@ describe('mathematics-minor 2026-27', () => {
     const t = swap('MATH 110', 'MATH 111A').map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'MATH 115' ? 'MATH 111T' : c)) }))
     expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
   })
+
+  it('review: PHYS 107 is the cross-listed AM 107 and so is the one AM/STAT elective', () => {
+    expect(find(run(harness, { terms: swap('AM 114', 'PHYS 107') }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: swap('MATH 115', 'PHYS 107') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: AM 100 (below 101) is not an elective', () => {
+    expect(find(run(harness, { terms: swap('MATH 115', 'AM 100').map((t) => ({ ...t, courses: t.courses.map((c) => (c === 'AM 114' ? 'MATH 134' : c)) })) }), 'electives').status).toBe('unmet')
+  })
 })

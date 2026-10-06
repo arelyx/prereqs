@@ -10,9 +10,8 @@
 import { codes, defineHarness, range } from '@harness'
 import type { HarnessContext } from '@harness'
 
+// "AM 107 [/PHYS 107]": the library treats the cross-listed PHYS 107 code as AM 107.
 const OTHER_DEPT = ['AM 107', 'AM 114', 'AM 147', 'BME 118', 'STAT 108', 'STAT 131', 'STAT 132']
-// "AM 107 [/PHYS 107]" — the cross-listed partner is the same course.
-const OTHER_ALIASES = ['PHYS 107']
 // Recommended electives (all inside MATH 101–190; listed so the dashboard can suggest them).
 const RECOMMENDED = [
   'MATH 101', 'MATH 105B', 'MATH 106', 'MATH 107', 'MATH 114', 'MATH 115', 'MATH 116', 'MATH 118',
@@ -31,9 +30,6 @@ export default defineHarness({
     'There are no grading-option restrictions for Mathematics Department courses (P/NP counts).',
     'Course substitutions and courses taken abroad need approval from the Mathematics Department (exception to policy request).',
   ],
-  coverage: {
-    unknownOk: { PHYS107: 'cross-listing of AM 107 named on the page ([/PHYS 107]); the catalog files it under AM' },
-  },
   evaluate(h) {
     // "There are no restrictions on grading options for Mathematics Department courses."
     h.policy = undefined
@@ -57,7 +53,7 @@ export default defineHarness({
       h.take('senior', 'Senior seminar or thesis (MATH 194 or 195)', 'Plus one of the following courses:', codes('MATH 194', 'MATH 195')),
     ])
 
-    const other = codes(...OTHER_DEPT, ...OTHER_ALIASES)
+    const other = codes(...OTHER_DEPT)
     const electives = h.take('electives', 'Three electives', [Q_ELECTIVES, 'Recommended electives from the Mathematics Department are below.', 'Approved Elective Courses from Other Departments:'], range('MATH', 101, 190).minCredits(5).except(noDouble).or(other), {
       n: 3,
       atMost: [{ set: other, n: 2, label: 'at most two from the approved other-department list' }],

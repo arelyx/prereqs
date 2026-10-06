@@ -33,7 +33,7 @@ export default defineHarness({
     },
     {
       id: 'cse20-testout',
-      label: 'Prior programming course, exam credit, or cleared the CSE 20 “Test-out” bar',
+      label: 'Passed the CSE 20 test-out',
       quote: 'Students with a prior programming course, exam credit, or clearing the',
       aliases: ['cse 20 testout', 'cse 20 test-out', 'testout', 'test-out', 'test out'],
     },
@@ -124,15 +124,26 @@ export default defineHarness({
 })
 
 /**
- * "Students with a prior programming course, exam credit, or clearing the
- * Test-out bar will start with CSE 30 and CSE 12." The page lists CSE 20 among
- * the required courses and does not say it is waived for them — so without
- * CSE 20, a student who says they tested out gets cannot-check, not met.
+ * §1a test-out convention (as computer-engineering-minor reads the same
+ * sentence): "Students with a prior programming course, exam credit, or
+ * clearing the “Test-out” bar will start with CSE 30 and CSE 12." Exam credit
+ * is a course in the plan (add it as CSE 20). The test-out is an attestation,
+ * offered only when CSE 20 is absent from the plan; attested ⇒ the CSE 20 line
+ * is met by test-out. A failed CSE 20 stays unmet.
  */
 function cse20TestOut(h: HarnessContext, cse20: Node) {
-  if (cse20.status === 'met' || !h.attested('cse20-testout')) return
-  cse20.status = 'cannot-check'
-  cse20.detail = 'You indicated prior programming / exam credit / the CSE 20 Test-out: the page says such students start with CSE 30 and CSE 12 but still lists CSE 20 — confirm with Baskin advising whether CSE 20 is waived.'
+  if (cse20.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  const def = h.attestations.find((a) => a.id === 'cse20-testout')!
+  if (h.attested('cse20-testout')) {
+    cse20.status = 'met'
+    cse20.detail = 'Met by test-out (Passed the CSE 20 test-out).'
+    return
+  }
+  cse20.status = 'needs-attestation'
+  cse20.attest = def
+  cse20.detail = h.has('CSE 30')
+    ? 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm it; if you started at CSE 30 because of a prior programming course, check with Baskin advising; exam credit: add it as CSE 20.'
+    : 'Take CSE 20, or confirm you passed the CSE 20 test-out (exam credit: add it as CSE 20).'
 }
 
 /** A TIM 193/195/198/199 used as a BE elective needs the department's prior approval. */

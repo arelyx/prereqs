@@ -27,17 +27,22 @@ const ELECTIVE_LIST = [
   'ECE 153', 'ECON 104', 'ECON 113', 'ECON 114', 'ECON 124', 'ECON 166A', 'ECON 166B', 'PHYS 116C',
   'PHYS 139A', 'PHYS 139B', 'PHYS 171',
 ]
-// Cross-listed partners named on the page ("AM 107 [/PHYS 107]", …): the same course.
-const ALIASES = ['PHYS 107', 'OCEA 172', 'CSE 166A', 'CSE 166B']
+// Cross-listed partners named on the page ("AM 107 [/PHYS 107]", "ECON 166A [/CSE 166A]", …)
+// are the same course to the library, so PHYS 107, OCEA 172, CSE 166A/B need no listing.
+
+// "Students who have taken a lower-division coding course can request a
+// substitution for the coding requirement." The page names no list; these are
+// the UCSC lower-division programming courses (Java, C, Python, assembly/C).
+const LD_CODING = codes('CSE 5J', 'CSE 12', 'CSE 13S', 'CSE 20', 'CSE 30')
+const Q_SUBST = 'Students who have taken a lower-division coding course can request a substitution for the coding requirement.'
 
 const Q_PETITION =
   'Students who are declared in the Computer Science B.S. and wish to double major in the Mathematics Theory and Computation B.S. may petition to use CSE courses toward the upper-division coding requirement and the three required upper-division electives for the Mathematics Theory and Computation B.S. major.'
 const Q_ELECTIVES =
   'Three elective courses are required. If a student takes more than one course from the Analysis or Algebra Computation requirement lists, the extra course(s) can be counted toward the elective requirements. Other elective options are listed below.'
 
-/** CSE courses usable only under the CS double-major petition (aliases of ECON courses excluded). */
-const PETITION_CSE = range('CSE', 100, 199).except(['CSE 166A', 'CSE 166B'])
-const preferNonCse = (code: string) => (PETITION_CSE.has(code) ? 1 : 0)
+/** CSE courses usable only under the CS double-major petition (ECON 166A/B's cross-listed CSE codes excluded: they are listed electives). */
+const PETITION_CSE = range('CSE', 100, 199).except(['ECON 166A', 'ECON 166B'])
 
 export default defineHarness({
   program: 'mathematics-theory-and-computation-bs',
@@ -50,12 +55,13 @@ export default defineHarness({
       quote: Q_PETITION,
       aliases: ['cse petition', 'computer science double major', 'cs double major'],
     },
+    {
+      id: 'coding-substitution',
+      label: 'Approved substitution of a lower-division coding course for the coding requirement',
+      quote: Q_SUBST,
+      aliases: ['coding substitution', 'coding requirement substitution'],
+    },
   ],
-  coverage: {
-    unknownOk: Object.fromEntries(
-      ALIASES.map((c) => [c.replace(' ', ''), 'cross-listed partner named on the page ([/X]); the catalog files it under the other subject']),
-    ),
-  },
   notes: [
     'There are no grading-option restrictions for Mathematics Department courses (P/NP counts).',
     'Course substitutions and courses taken abroad need approval from the Mathematics Department (exception to policy request).',
@@ -74,14 +80,24 @@ export default defineHarness({
       h.take('ode', 'Differential equations (MATH 24 or AM 20)', 'Plus one of the following courses:', codes('AM 20', 'MATH 24'), { notes: ['MATH 24 is preferred.'] }),
     ])
 
+    const isPetitionCse = (code: string) => PETITION_CSE.has(code, h.catalog)
+    const preferNonCse = (code: string) => (isPetitionCse(code) ? 1 : 0)
     const hasCse = h.taken(PETITION_CSE).length > 0
-    const coding = h.take('coding', 'Coding requirement', ['Plus one of the following courses or equivalent:', Q_PETITION], hasCse ? codes(...CODING).or(PETITION_CSE) : codes(...CODING), {
-      prefer: preferNonCse,
-      notes: [
-        'MATH 152 is preferred; ASTR 119, EART 112, EART 119A and PHYS 115 are intended for double majors.',
-        'Students who have taken a lower-division coding course can request a substitution for the coding requirement; “or equivalent” courses need department approval.',
-      ],
-    })
+    const codingSet = hasCse ? codes(...CODING).or(PETITION_CSE) : codes(...CODING)
+    const codingNotes = [
+      'MATH 152 is preferred; ASTR 119, EART 112, EART 119A and PHYS 115 are intended for double majors.',
+      'Students who have taken a lower-division coding course can request a substitution for the coding requirement; “or equivalent” courses need department approval.',
+    ]
+    // No upper-division coding course at all, but a lower-division coding
+    // course: the substitution the page offers is the only path, so ask for it.
+    const ldCoding = h.taken(codingSet).length === 0 ? h.taken(LD_CODING) : []
+    const coding = ldCoding.length
+      ? h.attest('coding-substitution', 'Coding requirement (by substitution)', {
+          detail: `No listed coding course; ${ldCoding.map((e) => e.display).join(', ')} can stand in only with an approved substitution.`,
+          used: ldCoding,
+          notes: codingNotes,
+        })
+      : h.take('coding', 'Coding requirement', ['Plus one of the following courses or equivalent:', Q_PETITION], codingSet, { prefer: preferNonCse, notes: codingNotes })
     const upper = h.group('upper', 'Upper-Division Courses', [
       h.take('math100', 'MATH 100', 'The following course:', codes('MATH 100')),
       coding,
@@ -91,7 +107,7 @@ export default defineHarness({
       h.take('algebra-comp', 'Algebra Computation (MATH 115, 116, 134, 140, 160 or 162)', ['Plus one of the following courses:', 'Students who take more than one course from the Algebra Computation Requirement may use the extra courses toward the three major electives requirement.'], codes(...ALGEBRA_COMP)),
     ])
 
-    const electiveSet = codes(...ELECTIVE_LIST, ...ALIASES, ...ANALYSIS_COMP, ...ALGEBRA_COMP)
+    const electiveSet = codes(...ELECTIVE_LIST, ...ANALYSIS_COMP, ...ALGEBRA_COMP)
     const electivesTake = h.take('electives-courses', 'Three electives', [Q_ELECTIVES, Q_PETITION], hasCse ? electiveSet.or(PETITION_CSE) : electiveSet, {
       n: 3,
       prefer: preferNonCse,
@@ -104,11 +120,15 @@ export default defineHarness({
 
     h.solve()
     // A CSE course was needed → it counts only under the CS double-major petition.
-    const viaPetition = (n: Node) => (n.used ?? []).filter((e: Enrollment) => PETITION_CSE.has(e.code))
-    const cseUsed = [...viaPetition(coding), ...viaPetition(electivesTake)]
-    if (cseUsed.length) {
-      electives.children!.push(h.attest('cse-petition', undefined, { detail: `${cseUsed.map((e) => e.display).join(', ')} count only under an approved petition (CS B.S. double majors).` }))
-    }
+    const viaPetition = (n: Node) => (n.used ?? []).filter((e: Enrollment) => isPetitionCse(e.code))
+    // The petition is shown where the CSE course was used, so the right
+    // requirement is blamed when it is missing.
+    const petition = (used: Enrollment[], id?: string) =>
+      h.attest('cse-petition', undefined, { detail: `${used.map((e) => e.display).join(', ')} ${used.length > 1 ? 'count' : 'counts'} only under an approved petition (CS B.S. double majors).`, ...(id ? { id } : {}) })
+    const cseCoding = viaPetition(coding)
+    const cseElectives = viaPetition(electivesTake)
+    if (cseCoding.length) upper.children!.push(petition(cseCoding))
+    if (cseElectives.length) electives.children!.push(petition(cseElectives, cseCoding.length ? 'attest:cse-petition:electives' : undefined))
 
     // DC: MATH 100 plus MATH 194/195 — courses already counted above (overlay).
     const dcQuote = 'The DC requirement in the mathematics B.S. is satisfied by:'

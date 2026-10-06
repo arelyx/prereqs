@@ -67,10 +67,39 @@ describe('mathematics-theory-and-computation-bs 2026-27', () => {
     expect(ids(r)).not.toContain('attest:cse-petition')
   })
 
-  it('CSE course for the coding requirement also needs the petition', () => {
+  it('CSE course for the coding requirement also needs the petition (blamed on the upper-division group, not electives)', () => {
     const r = run(harness, { terms: swap('MATH 152', 'CSE 130'), attested: [] })
     expect(find(r, 'coding').status).toBe('met')
-    expect(find(r, 'electives').status).toBe('needs-attestation')
+    expect(find(r, 'upper').status).toBe('needs-attestation')
+    expect(find(r, 'electives').status).toBe('met')
+  })
+
+  it('review: CSE courses in both coding and electives ask the petition in both places', () => {
+    const t = swap('MATH 152', 'CSE 130').map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'MATH 106' ? 'CSE 101' : c)) }))
+    const r = run(harness, { terms: t, attested: [] })
+    expect(failing(r)).toEqual(['attest:cse-petition:needs-attestation', 'attest:cse-petition:electives:needs-attestation'])
+    expect(failing(run(harness, { terms: t, attested: ['cse-petition'] }))).toEqual([])
+  })
+
+  it('review: with no listed coding course, a lower-division coding course asks for the substitution the page offers', () => {
+    // "Students who have taken a lower-division coding course can request a substitution for the coding requirement."
+    const t = swap('MATH 152', 'CSE 20')
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['attest:coding-substitution:needs-attestation'])
+    expect(failing(run(harness, { terms: t, attested: ['coding-substitution'] }))).toEqual([])
+    // no coding course of any kind: plainly unmet
+    expect(failing(run(harness, { terms: swap('MATH 152') }))).toEqual(['coding:unmet'])
+  })
+
+  it('review: cross-listed codes PHYS 107 / OCEA 172 / CSE 166A count as the listed electives without a petition', () => {
+    const t = swap('MATH 106', 'PHYS 107').map((x) => ({ ...x, courses: x.courses.flatMap((c) => (c === 'STAT 131' ? ['OCEA 172'] : c === 'MATH 124' ? ['CSE 166A'] : [c])) }))
+    const r = run(harness, { terms: t, attested: [] })
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: a second ALGEBRA THEORY course is not an elective; computation extras are', () => {
+    expect(find(run(harness, { terms: swap('MATH 106', 'MATH 111A') }), 'electives').status).toBe('unmet')
+    const t = base.map((x) => ({ ...x, courses: x.courses.flatMap((c) => (c === 'MATH 106' ? ['MATH 145'] : c === 'STAT 131' ? ['AM 114'] : c === 'MATH 124' ? ['MATH 116'] : [c])) }))
+    expect(failing(run(harness, { terms: t }))).toEqual([])
   })
 
   it('comprehensive and DC need MATH 194 or 195', () => {

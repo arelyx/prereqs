@@ -118,4 +118,38 @@ describe('applied-mathematics-bs 2026-27', () => {
     const t = swap('AM 115', 'ECON 100A').map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'CSE 101' ? 'ECON 100M' : c)) }))
     expect(find(run(harness, { terms: t }), 'ud-electives').status).toBe('unmet')
   })
+
+  it('review: AM 212A is no elective next to core AM 112 (catalog: no credit for both)', () => {
+    // AM 212A: "Students cannot receive credit for this course and AM 112."
+    expect(find(run(harness, { terms: swap('AM 115', 'AM 212A') }), 'ud-electives').status).toBe('unmet')
+    // AM 115 and AM 215 likewise count once
+    expect(find(run(harness, { terms: swap('CSE 101', 'AM 215') }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('review: CSE 20 test-out is offered only when CSE 20 is absent; a failed or P/NP CSE 20 stays unmet', () => {
+    expect(find(run(harness, { terms: swap('CSE 20') }), 'programming').detail).toContain('test-out')
+    const failed = run(harness, { terms: base, grades: { 'CSE 20': 'F' } })
+    expect(find(failed, 'programming').status).toBe('unmet')
+    expect(find(run(harness, { terms: base, grades: { 'CSE 20': 'P' } }), 'programming').status).toBe('unmet')
+  })
+
+  it('review: CSE 20 taken after CSE 30 earns no credit and does not satisfy programming', () => {
+    // CSE 20: "Students may not receive credit for CSE 20 after receiving credit for CSE 30."
+    const t = [{ term: '2266', courses: ['CSE 30'] }, ...base]
+    expect(find(run(harness, { terms: t }), 'programming').status).toBe('unmet')
+    expect(find(run(harness, { terms: [...t, { term: '2292', courses: ['ECON 22P'] }] }), 'programming').status).toBe('met')
+  })
+
+  it('review: cross-listed CSE 109 (PHYS 150) and EART 260 (OCEA 260) are listed electives', () => {
+    const t = swap('CSE 101', 'CSE 109').map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'MATH 105A' ? 'EART 260' : c)) }))
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  it('review: a lab alone (CSE 161L) is not an elective', () => {
+    expect(find(run(harness, { terms: swap('CSE 101', 'CSE 161L') }), 'ud-electives').status).toBe('unmet')
+  })
+
+  it('review: mixed calculus series MATH 19A + MATH 20B is not one of the two series', () => {
+    expect(find(run(harness, { terms: swap('MATH 19B', 'MATH 20B') }), 'calc').status).toBe('unmet')
+  })
 })

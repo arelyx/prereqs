@@ -58,4 +58,28 @@ describe('mathematics-education-ba 2026-27', () => {
   it('P grades count', () => {
     expect(failing(run(harness, { terms: base, grades: { 'EDUC 50B': 'P', 'STAT 131': 'P' } }))).toEqual([])
   })
+
+  it('review: STAT 5 taken after STAT 7 earns no catalog credit and does not fill the STAT 5 requirement', () => {
+    const t = [{ term: '2266', courses: ['STAT 7'] }, ...base]
+    expect(find(run(harness, { terms: t }), 'stat5').status).toBe('unmet')
+    // STAT 7 alone is not STAT 5 either
+    expect(find(run(harness, { terms: swap('STAT 5', 'STAT 7') }), 'stat5').status).toBe('unmet')
+    // STAT 7 taken later does not void the earlier STAT 5
+    expect(failing(run(harness, { terms: [...base, { term: '2290', courses: ['STAT 7'] }] }))).toEqual([])
+  })
+
+  it('review: AM 30 + AM 100 is the alternative multivariable package; a mixed pair is not', () => {
+    const am = base.map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'MATH 23A' ? 'AM 30' : c === 'MATH 23B' ? 'AM 100' : c)) }))
+    expect(failing(run(harness, { terms: am }))).toEqual([])
+    expect(find(run(harness, { terms: swap('MATH 23B', 'AM 100') }), 'multivar').status).toBe('unmet')
+  })
+
+  it('review: two Cal Teach 1 courses do not stand in for Cal Teach 2', () => {
+    expect(find(run(harness, { terms: swap('EDUC 100B', 'EDUC 50A') }), 'calteach2').status).toBe('unmet')
+  })
+
+  it('review: exam/transfer credit with no term counts', () => {
+    const r = run(harness, { terms: base.slice(3), completed: ['MATH 19A', 'MATH 21', 'MATH 19B', 'MATH 23A', 'EDUC 50B', 'MATH 23B', 'STAT 5'], entry: 'transfer' })
+    expect(failing(r)).toEqual([])
+  })
 })

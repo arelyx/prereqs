@@ -6,6 +6,6 @@
  "skeleton_sha256": "db0750bdbb10d2b8328862678e588b4c50ef4cfa1b65d9f9334a9c3b104492b7",
  "status": "verified",
  "authored_at": "2026-10-06T00:51:51Z",
- "verified_at": "2026-10-06T00:57:39Z",
- "notes": "verified line by line against sources/applied-mathematics-bs.md; letter grades; AM elective pool excludes the six core courses (incl. AM 147) and AM 170A/170B (judgement), AM 195/198 max one; either-pairs and catalog credit-once pairs as atMost; PHYS 116A/116C for AM 100/112 and CSE 20 Testout and exit survey = attestations; AM 147+MATH 148 both taken with one elective short = cannot-check"
+ "verified_at": "2026-10-06T23:44:59Z",
+ "notes": "verified line by line against sources/applied-mathematics-bs.md; letter grades; AM elective pool excludes the six core courses (incl. AM 147) and AM 170A/170B (judgement), AM 195/198 max one; either-pairs and catalog credit-once pairs as atMost; PHYS 116A/116C for AM 100/112 and CSE 20 Testout and exit survey = attestations; AM 147+MATH 148 both taken with one elective short = cannot-check; reviewed 2026-10-06: removed cross-listing aliases/unknownOk; AM 212A excluded as elective next to AM 112 and AM 115/215, AM 160/261, AM 212/212B credit-once (catalog); CSE 20 test-out normalized to 1a (asked only when CSE 20 absent, single programming slot); CSE 20 after CSE 30 earns no credit; ambiguous-elective cannot-check extended to AM 170B not used by the capstone"
 }

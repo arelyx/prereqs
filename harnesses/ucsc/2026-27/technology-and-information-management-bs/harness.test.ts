@@ -87,9 +87,14 @@ describe('technology-and-information-management-bs 2026-27', () => {
     expect(failing(run(harness, { terms: t }))).toEqual([])
   })
 
-  it('without CSE 20: unmet, unless the student reports test-out (then cannot-check)', () => {
-    expect(find(run(harness, { terms: swap('CSE 20'), attested: [] }), 'cse-ld/CSE20').status).toBe('unmet')
-    expect(find(run(harness, { terms: swap('CSE 20'), attested: ['CSE 20 test-out'] }), 'cse-ld/CSE20').status).toBe('cannot-check')
+  it('without CSE 20: the test-out attestation is asked; attested ⇒ met by test-out (§1a)', () => {
+    expect(find(run(harness, { terms: swap('CSE 20'), attested: [] }), 'cse-ld/CSE20').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: swap('CSE 20'), attested: ['CSE 20 test-out'] }), 'cse-ld/CSE20').status).toBe('met')
+  })
+
+  it('review: a failed or P/NP CSE 20 is not rescued by the test-out', () => {
+    expect(find(run(harness, { terms: base, grades: { 'CSE 20': 'F' } }), 'cse-ld/CSE20').status).toBe('unmet')
+    expect(find(run(harness, { terms: base, grades: { 'CSE 20': 'P' } }), 'cse-ld/CSE20').status).toBe('unmet')
   })
 
   it('ECON 100M next to ECON 100A is not the economics elective (credit for only one)', () => {

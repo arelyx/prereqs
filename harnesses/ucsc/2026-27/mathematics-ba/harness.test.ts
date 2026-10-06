@@ -93,4 +93,29 @@ describe('mathematics-ba 2026-27', () => {
   it('MATH 111A and MATH 111T: credit for only one (the second is not an elective)', () => {
     expect(find(run(harness, { terms: swap('MATH 134', 'MATH 111T') }), 'electives').status).toBe('unmet')
   })
+
+  it('review: MATH 23A + AM 100 mixes the two packages and does not satisfy the multivariable option', () => {
+    expect(find(run(harness, { terms: swap('MATH 23B', 'AM 100') }), 'multivar').status).toBe('unmet')
+  })
+
+  it('review: a lab alone (MATH 145L) is not an elective', () => {
+    expect(find(run(harness, { terms: swap('MATH 134', 'MATH 145L') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: MATH 111T taken first fills algebra; the later MATH 111A earns no credit', () => {
+    const t = [{ term: '2266', courses: ['MATH 111T'] }, ...base]
+    const r = run(harness, { terms: t })
+    expect(find(r, 'algebra').used?.map((e) => e.code)).toEqual(['MATH111T'])
+    expect(find(run(harness, { terms: [{ term: '2266', courses: ['MATH 111T'] }, ...swap('MATH 134')] }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: NP in MATH 100 blames MATH 100 and the DC requirement', () => {
+    const r = run(harness, { terms: base, grades: { 'MATH 100': 'NP' } })
+    expect(failing(r)).toEqual(['math100:unmet', 'dc-math100:unmet'])
+  })
+
+  it('review: exam/transfer credit with no term counts', () => {
+    const r = run(harness, { terms: base.slice(3), completed: ['MATH 19A', 'MATH 21', 'MATH 19B', 'MATH 23A', 'MATH 23B', 'MATH 24'], entry: 'transfer' })
+    expect(failing(r)).toEqual([])
+  })
 })

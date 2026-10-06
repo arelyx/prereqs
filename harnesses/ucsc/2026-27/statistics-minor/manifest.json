@@ -6,6 +6,6 @@
  "skeleton_sha256": "31f4334d1898c1b0527806bf40e3ce78b1e3e7ec8eddaf180d5a183afbb264ff",
  "status": "verified",
  "authored_at": "2026-10-06T00:52:54Z",
- "verified_at": "2026-10-06T00:57:40Z",
- "notes": "verified line by line against sources/statistics-minor.md; STAT 7/17 need their labs (listed as packages); CSE 20 test-out = attestation; STAT 205 (recommended but not on the elective list) closing the gap = cannot-check"
+ "verified_at": "2026-10-06T23:44:59Z",
+ "notes": "verified line by line against sources/statistics-minor.md; STAT 7/17 need their labs (listed as packages); CSE 20 test-out = attestation; STAT 205 (recommended but not on the elective list) closing the gap = cannot-check; reviewed 2026-10-06: CSE 20 test-out normalized to 1a (asked only when CSE 20 absent; failed CSE 20 stays unmet); STAT 5 after STAT 7/17 does not fill statistical concepts (catalog)"
 }

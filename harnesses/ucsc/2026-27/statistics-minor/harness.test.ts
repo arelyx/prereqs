@@ -65,4 +65,26 @@ describe('statistics-minor 2026-27', () => {
     expect(find(run(harness, { terms: swap('CSE 20'), attested: [] }), 'programming').status).toBe('needs-attestation')
     expect(find(run(harness, { terms: swap('CSE 20'), attested: ['CSE 20 test-out'] }), 'programming').status).toBe('met')
   })
+
+  it('review: the test-out is offered only when CSE 20 is absent; a failed CSE 20 stays unmet', () => {
+    const r = run(harness, { terms: base, grades: { 'CSE 20': 'F' } })
+    expect(find(r, 'programming').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('CSE 20') }), 'programming').detail).toContain('test-out')
+  })
+
+  it('review: STAT 5 taken after STAT 7 earns no credit, so it does not fill statistical concepts', () => {
+    // STAT 5: "Students cannot receive credit for this course if they have already received credit for STAT 7 or STAT 17."
+    const t = [{ term: '2266', courses: ['STAT 7'] }, ...base]
+    expect(find(run(harness, { terms: t }), 'concepts').status).toBe('unmet')
+    expect(find(run(harness, { terms: [{ term: '2266', courses: ['STAT 7', 'STAT 7L'] }, ...base] }), 'concepts').status).toBe('met')
+  })
+
+  it('review: a lab alone or STAT 17 without STAT 17L is not statistical concepts', () => {
+    expect(find(run(harness, { terms: swap('STAT 5', 'STAT 17') }), 'concepts').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('STAT 5', 'STAT 17L') }), 'concepts').status).toBe('unmet')
+  })
+
+  it('review: a probability course does not double as an elective', () => {
+    expect(find(run(harness, { terms: swap('ECON 113', 'CSE 107') }), 'electives').status).toBe('unmet')
+  })
 })

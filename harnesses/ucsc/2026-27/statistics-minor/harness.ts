@@ -28,6 +28,11 @@ export default defineHarness({
     // "Courses may be taken for a letter grade or Pass/No Pass."
     h.policy = undefined
     const fourQ = 'Plus one course from each of the following four categories'
+    // Catalog (STAT 5): "Students cannot receive credit for this course if they
+    // have already received credit for STAT 7 or STAT 17."
+    const first = (c: string) => Math.min(...h.taken(codes(c)).map((e) => Number(e.term ?? 0)))
+    const stat5Void = Number.isFinite(first('STAT 5')) && first('STAT 5') > Math.min(first('STAT 7'), first('STAT 17'))
+    const programming = h.take('programming', 'Computer Programming', [fourQ, 'Computer Programming', 'Take one of the following courses:'], codes('BME 160', 'CSE 20', 'CSE 30', 'ASTR 119', 'MATH 152'))
 
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.options('calc', 'Basic calculus sequence', 'Basic calculus sequence', [
@@ -36,12 +41,12 @@ export default defineHarness({
         ['MATH 19A', 'MATH 19B'],
         ['MATH 20A', 'MATH 20B'],
       ]),
-      h.options('concepts', 'Statistical concepts: STAT 5, STAT 7 + 7L, or STAT 17 + 17L', [fourQ, 'Statistical concepts'], [['STAT 5'], ['STAT 7', 'STAT 7L'], ['STAT 17', 'STAT 17L']]),
-      // "Passing the CSE 20 test-out exam will satisfy this requirement." — an exam, not a course.
-      h.either('programming', 'Computer Programming', [fourQ, 'Computer Programming'], [
-        h.take('programming-course', 'One programming course', 'Take one of the following courses:', codes('BME 160', 'CSE 20', 'CSE 30', 'ASTR 119', 'MATH 152')),
-        h.attest('cse20-testout'),
-      ]),
+      h.options('concepts', 'Statistical concepts: STAT 5, STAT 7 + 7L, or STAT 17 + 17L', [fourQ, 'Statistical concepts'], [...(stat5Void ? [] : [['STAT 5']]), ['STAT 7', 'STAT 7L'], ['STAT 17', 'STAT 17L']], {
+        notes: stat5Void ? ['STAT 5 taken after STAT 7 or STAT 17 earns no credit (catalog), so it does not count here.'] : undefined,
+      }),
+      // "Passing the CSE 20 test-out exam will satisfy this requirement." — an exam, not a
+      // course: §1a test-out attestation, offered only when CSE 20 is absent (below).
+      programming,
       h.take('linalg', 'Linear Algebra', [fourQ, 'One of the following courses:'], codes('AM 10', 'MATH 21', 'PHYS 116A'), {
         notes: ['It is recommended that students also take AM 20 or MATH 24.'],
       }),
@@ -56,10 +61,29 @@ export default defineHarness({
       electives,
     ])
     h.solve()
+    cse20TestOut(h, programming)
     stat205(h, electives)
     return [lower, upper]
   },
 })
+
+/**
+ * §1a test-out convention: "Passing the CSE 20 test-out exam CSE 20 will
+ * satisfy this requirement." Offered only when CSE 20 is absent from the plan;
+ * attested ⇒ the line is met by test-out. A failed CSE 20 stays unmet.
+ */
+function cse20TestOut(h: HarnessContext, n: Node) {
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  const def = h.attestations.find((a) => a.id === 'cse20-testout')!
+  if (h.attested('cse20-testout')) {
+    n.status = 'met'
+    n.detail = 'Met by test-out (Passed the CSE 20 test-out exam).'
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = def
+  n.detail = 'Take one of the listed programming courses, or confirm you passed the CSE 20 test-out exam.'
+}
 
 /**
  * STAT 205 is recommended for the electives ("STAT 204 , STAT 205") but is not

@@ -58,4 +58,12 @@ describe('applied-mathematics-minor 2026-27', () => {
   it('P/NP allowed', () => {
     expect(failing(run(harness, { terms: base, grades: { 'AM 100': 'P' } }))).toEqual([])
   })
+
+  it('review: AM 212A is not the elective next to AM 112 (catalog: no credit for both)', () => {
+    const without = [...swap('AM 129'), { term: '2292', courses: ['AM 212A'] }]
+    expect(find(run(harness, { terms: without }), 'elective').status).toBe('unmet')
+    // with MATH 107 for the PDE category instead, AM 212A is a fine elective
+    const alt = without.map((x) => ({ ...x, courses: x.courses.map((c) => (c === 'AM 112' ? 'MATH 107' : c)) }))
+    expect(failing(run(harness, { terms: alt }))).toEqual([])
+  })
 })

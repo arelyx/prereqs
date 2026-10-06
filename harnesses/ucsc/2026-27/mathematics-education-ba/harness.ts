@@ -17,6 +17,11 @@ export default defineHarness({
   evaluate(h) {
     // "There are no restrictions on grading options for Mathematics Department courses."
     h.policy = undefined
+    // Catalog (STAT 5): "Students cannot receive credit for this course if they
+    // have already received credit for STAT 7 or STAT 17." A STAT 5 taken
+    // after either one earns no credit, so it cannot be the STAT 5 requirement.
+    const firstTerm = (c: string) => Math.min(...h.taken(codes(c)).map((e) => Number(e.term ?? 0)))
+    const stat5Void = firstTerm('STAT 5') > Math.min(firstTerm('STAT 7'), firstTerm('STAT 17')) && Number.isFinite(firstTerm('STAT 5')) ? ['STAT 5'] : []
 
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.take('calc-a', 'MATH 19A or 20A', 'One of the following courses:', codes('MATH 19A', 'MATH 20A')),
@@ -26,7 +31,9 @@ export default defineHarness({
         notes: ['MATH 23A and MATH 23B are preferred.'],
       }),
       h.take('calteach1', 'Cal Teach 1 (EDUC 50A or 50B)', ['Plus one of the following courses:', 'EDUC 50B preferred.'], codes('EDUC 50A', 'EDUC 50B')),
-      h.take('stat5', 'STAT 5', 'Plus the following course:', codes('STAT 5')),
+      h.take('stat5', 'STAT 5', 'Plus the following course:', codes('STAT 5').except(stat5Void), {
+        notes: stat5Void.length ? ['STAT 5 taken after STAT 7 or STAT 17 earns no credit (catalog), so it cannot fill this requirement; ask the undergraduate vice chair about a course substitution.'] : undefined,
+      }),
     ])
 
     const allQ = 'All of the following courses:'

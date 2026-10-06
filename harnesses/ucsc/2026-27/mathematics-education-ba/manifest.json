@@ -6,6 +6,6 @@
  "skeleton_sha256": "3c12e04fecf38a3a297ec77b9c2acb302120e6dcf4b740a4b1ac4d5c4761e348",
  "status": "verified",
  "authored_at": "2026-10-06T00:48:22Z",
- "verified_at": "2026-10-06T00:57:39Z",
- "notes": "verified line by line against sources/mathematics-education-ba.md; fixed lists, EDUC 50A/B and 100A/B one-of, DC/comprehensive overlays"
+ "verified_at": "2026-10-06T23:44:58Z",
+ "notes": "verified line by line against sources/mathematics-education-ba.md; fixed lists, EDUC 50A/B and 100A/B one-of, DC/comprehensive overlays; reviewed 2026-10-06: STAT 5 taken after STAT 7/17 no longer fills STAT 5 (catalog no-credit rule); tests for AM 30+AM 100, Cal Teach, no-term credit"
 }

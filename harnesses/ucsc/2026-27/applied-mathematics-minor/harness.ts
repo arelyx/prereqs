@@ -33,9 +33,11 @@ export default defineHarness({
       ),
     ])
 
+    // Catalog (AM 212A): "Students cannot receive credit for this course and AM 112."
+    const twin = h.taken(codes('AM 112')).length ? ['AM 212A'] : []
     const amElective = range('AM', 100, 279)
       .minCredits(5)
-      .except(['AM 100', 'AM 114', 'AM 147', 'AM 112', 'AM 198', 'AM 200', 'AM 211'])
+      .except(['AM 100', 'AM 114', 'AM 147', 'AM 112', 'AM 198', 'AM 200', 'AM 211', ...twin])
     const upper = h.group('upper', 'Upper Division Courses', [
       h.take('methods', 'Mathematical Methods: AM 100', [Q_EACH, 'Mathematical Methods'], codes('AM 100')),
       h.take('dynamical', 'Dynamical Systems: AM 114', [Q_EACH, 'Dynamical Systems'], codes('AM 114')),

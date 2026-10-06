@@ -6,6 +6,6 @@
  "skeleton_sha256": "635e2b7365fc0274fb879935ed56ef4b4aa7da2186dc369940d3f8ec97fb040c",
  "status": "verified",
  "authored_at": "2026-10-06T00:52:25Z",
- "verified_at": "2026-10-06T00:57:39Z",
- "notes": "verified line by line against sources/applied-mathematics-minor.md; linear algebra+ODE packages incl. mixed AM/MATH and PHYS 116A alone; elective = AM 100-279 5cr minus category courses/AM 198/200/211 or listed courses"
+ "verified_at": "2026-10-06T23:44:59Z",
+ "notes": "verified line by line against sources/applied-mathematics-minor.md; linear algebra+ODE packages incl. mixed AM/MATH and PHYS 116A alone; elective = AM 100-279 5cr minus category courses/AM 198/200/211 or listed courses; reviewed 2026-10-06: AM 212A no longer the elective next to AM 112 (catalog no-credit rule)"
 }

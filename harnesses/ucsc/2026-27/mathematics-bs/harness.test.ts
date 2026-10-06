@@ -75,4 +75,17 @@ describe('mathematics-bs 2026-27', () => {
   it('MATH 111A and MATH 111T: credit for only one (the second is not an elective)', () => {
     expect(find(run(harness, { terms: swap('MATH 134', 'MATH 111T') }), 'electives').status).toBe('unmet')
   })
+
+  it('review: PHYS 107 is the cross-listed AM 107 (other-department elective)', () => {
+    expect(find(run(harness, { terms: swap('MATH 134', 'PHYS 107') }), 'electives').status).toBe('met')
+  })
+
+  it('review: a second geometry course and MATH 110/111B fill the electives', () => {
+    const t = swap('MATH 115', 'MATH 129').map((x) => ({ ...x, courses: x.courses.flatMap((c) => (c === 'MATH 134' ? ['MATH 110'] : c === 'STAT 131' ? ['MATH 111B'] : [c])) }))
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  it('review: a lab alone (MATH 148L) is not an elective', () => {
+    expect(find(run(harness, { terms: swap('MATH 134', 'MATH 148L') }), 'electives').status).toBe('unmet')
+  })
 })

@@ -1,6 +1,7 @@
 // Technology and Information Management Minor — 2026-27
 // Source: data-committed/ucsc/editions/2026-27/sources/technology-and-information-management-minor.md
 import { codes, defineHarness } from '@harness'
+import type { HarnessContext, Node } from '@harness'
 
 const ELECTIVES = [
   'CSE 150', 'CSE 180', 'CSE 182', 'ECON 100A', 'ECON 100M', 'ECON 100B', 'ECON 100N', 'TIM 172A',
@@ -16,7 +17,7 @@ export default defineHarness({
   attestations: [
     {
       id: 'cse20-testout',
-      label: 'Cleared the CSE 20 “Test Out” bar',
+      label: 'Passed the CSE 20 test-out',
       quote: 'will also satisfy this requirement.',
       aliases: ['cse 20 testout', 'cse 20 test-out', 'testout', 'test-out', 'test out'],
     },
@@ -26,17 +27,16 @@ export default defineHarness({
     // "Courses may be taken for a letter grade or pass/no pass."
     h.policy = undefined
 
+    const programming = h.take('programming', 'CSE 20 or CSE 30', 'One of the following', codes('CSE 20', 'CSE 30'))
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.group('math', 'Mathematics (2 Courses)', [
         h.take('calc-a', 'AM 11A, MATH 11A, MATH 20A or MATH 19A', 'One of the following', codes('AM 11A', 'MATH 11A', 'MATH 20A', 'MATH 19A')),
         h.take('calc-b', 'AM 11B, MATH 11B, MATH 19B or MATH 20B', 'Plus one of the following', codes('AM 11B', 'MATH 11B', 'MATH 19B', 'MATH 20B')),
       ]),
       h.group('cse', 'Computer Science and Engineering (3 Courses)', [
-        // "Clearing the CSE 20 “Test Out” bar will also satisfy this requirement." — not a course.
-        h.either('programming', 'CSE 20 or CSE 30', 'One of the following', [
-          h.take('programming-course', 'CSE 20 or CSE 30', 'One of the following', codes('CSE 20', 'CSE 30')),
-          h.attest('cse20-testout'),
-        ]),
+        // "Clearing the CSE 20 “Test Out” bar will also satisfy this requirement." — not a
+        // course: §1a test-out attestation, offered only when CSE 20 is absent (below).
+        programming,
         h.take('tim50', 'TIM 50', 'Plus the following course', codes('TIM 50')),
         h.take('tim58-80c', 'TIM 58 or TIM 80C', 'Plus one of the following options', codes('TIM 58', 'TIM 80C')),
       ]),
@@ -56,6 +56,25 @@ export default defineHarness({
       }),
     ])
 
+    h.solve()
+    cse20TestOut(h, programming)
     return [lower, upper]
   },
 })
+
+/**
+ * §1a test-out convention: offered only when CSE 20 is absent from the plan;
+ * attested ⇒ the programming line is met by test-out. A failed CSE 20 stays unmet.
+ */
+function cse20TestOut(h: HarnessContext, n: Node) {
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  const def = h.attestations.find((a) => a.id === 'cse20-testout')!
+  if (h.attested('cse20-testout')) {
+    n.status = 'met'
+    n.detail = 'Met by test-out (Passed the CSE 20 test-out).'
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = def
+  n.detail = 'Take CSE 20 or CSE 30, or confirm you cleared the CSE 20 test-out bar.'
+}
