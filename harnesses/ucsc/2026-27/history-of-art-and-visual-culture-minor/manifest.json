@@ -1,0 +1,11 @@
+{
+ "program": "history-of-art-and-visual-culture-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a80375fbfb0a465946031e29a7b21f8836dc5ec57bce414cfcad58b1b3d2004a",
+ "skeleton_sha256": "f3b01bf471688640f858dee8d5afd37754e236d4694d1ba0038607b7919f6e42",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:45Z",
+ "verified_at": "2026-10-06T00:55:28Z",
+ "notes": "verified line by line; tests from the page. Three LD from distinct regions (HAVC 80 flexible), six HAVC 100-191 (repeatable per catalog); P/NP allowed."
+}

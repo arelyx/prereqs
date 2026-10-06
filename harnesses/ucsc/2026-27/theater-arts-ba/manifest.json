@@ -1,0 +1,11 @@
+{
+ "program": "theater-arts-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "004e9718f7b0c01791b1015c964f0707733ce026fa8674a1c6c61fc8bd215275",
+ "skeleton_sha256": "39401fda4ef3e159f43b85eaeb6f50ed4d9d14e3b1c3a394854d3122cb00963e",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:54:09Z",
+ "verified_at": "2026-10-06T00:55:28Z",
+ "notes": "verified line by line; tests from the page. THEA 50 x3 (repeatable slot); production requirement as overlay (LD 55A/56R can be LD elective, UD production can be UD elective); UD electives from listed sections, repeatable per catalog; an unlisted UD THEA course turns a short elective count into cannot-check ('One or both ... may be chosen from' is not exhaustive)."
+}
