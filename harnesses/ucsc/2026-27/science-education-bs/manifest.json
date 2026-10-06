@@ -6,6 +6,6 @@
  "skeleton_sha256": "89e5eb94e86d8d7daff0b13dab8448987888600a3f3e197be6608484c9186650",
  "status": "verified",
  "authored_at": "2026-10-06T00:55:27Z",
- "verified_at": "2026-10-06T00:57:26Z",
- "notes": "verified line by line against sources/science-education-bs.md. Fields are a required choice (6 pairs). Judgement: 'MATH 19A and MATH 19B are required for students who choose physics' (Getting Started) enforced. CSET General Science is a choice defaulting to no (an exam, but an attested-by-default exam would hide missing courses); waives non-specialization LD fields except EART, with the CHEM 3A/4A proviso."
+ "verified_at": "2026-10-06T23:45:07Z",
+ "notes": "verified line by line against sources/science-education-bs.md. Fields are a required choice (6 pairs). Judgement: 'MATH 19A and MATH 19B are required for students who choose physics' (Getting Started) enforced. CSET General Science is a choice defaulting to no (an exam, but an attested-by-default exam would hide missing courses); waives non-specialization LD fields except EART, with the CHEM 3A/4A proviso.; reviewed 2026-10-06: CSET General Science waiver converted from a default-no choice to an exam attestation offered only when a non-specialization field is incomplete; qualification as info"
 }

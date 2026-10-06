@@ -6,16 +6,22 @@
 //  - Letter grade AND C or better in every course used.
 //  - General chemistry: CHEM 3A–3C (3B/3C taken before fall 2026 also need
 //    CHEM 3BL/3CL) or CHEM 4A/4AL/4B/4BL.
-//  - Calculus: MATH 11A+11B or 19A+19B; mixing the series is allowed by the
-//    page (transition policy external) — accepted with a note, as biology-bs.
+//  - Calculus: MATH 11A+11B or 19A+19B; a complete mixed pair is
+//    cannot-check (the page defers to the Mathematics Department's external
+//    Calculus Series Transition Policy; rule 3: never met on a guess).
 //  - Physics: PHYS 5 or PHYS 6 series with labs. Mixing is allowed "but should
 //    contact a ... advisor to make sure the Physics Transition policies will be
 //    satisfied" → a complete mixed set is cannot-check, not met.
 //  - CHEM 8M ↔ CHEM 8N, CHEM 110L ↔ CHEM 110N (honors labs, by invitation).
 //  - General major: the BIOC 100A–C series fulfils CHEM 103 plus one elective.
+//  - General major electives: a chemistry graduate course "with permission
+//    from the instructor and department" is asked as an attestation only
+//    when the allocator needed it (§1a petition).
+//  - CHEM 8N / 110N accepted without an attestation: enrolling in the honors
+//    lab is itself "by permission and invitation of the instructor".
 //  - DC and comprehensive: CHEM 151L + one listed lab; overlays that reuse
 //    courses counted elsewhere.
-import { codes, defineHarness, policyFailure } from '@harness'
+import { codes, defineHarness, policyFailure, subject } from '@harness'
 import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const FALL_2026 = 2268
@@ -25,6 +31,9 @@ const Q_PHYS_MIX =
   'A student may combine the PHYS 5 series with the PHYS 6 series to complete this portion of the major requirement(s) but should contact a Chemistry & Biochemistry Department advisor to make sure the Physics Transition policies will be satisfied.'
 // The source sentence embeds a markdown link around CHEM 103; quote the parts around it.
 const Q_BIOC_SERIES = ['should take the biochemistry and molecular biology (BIOC) 100ABC series. Completing the series will fulfill the requirement of', '(Biochemistry) plus fulfill one elective.']
+
+const Q_GRAD = 'Students may also satisfy the elective requirement by completing a chemistry graduate course with permission from the instructor and department.'
+const GRAD = subject('CHEM', 'graduate')
 
 const ELECTIVES = [
   'BIOC 100C', 'CHEM 122', 'CHEM 124', 'CHEM 143', 'CHEM 144', 'CHEM 151B', 'CHEM 156C', 'CHEM 169',
@@ -48,10 +57,12 @@ export default defineHarness({
       ],
     },
   ],
+  attestations: [
+    { id: 'grad-elective', label: 'Instructor and department permitted a chemistry graduate course as an elective', quote: Q_GRAD, aliases: ['graduate course', 'grad elective', 'department permission'] },
+  ],
   notes: [
     'All courses used for the major must be taken for a letter grade, with a grade of C or higher.',
     'At least half of the upper-division courses (CHEM 100–CHEM 199) must be taken through the department at UC Santa Cruz (the plan does not record where a course was taken).',
-    'A chemistry graduate course may satisfy an elective with permission of the instructor and department (add it once approved).',
   ],
   evaluate(h) {
     // "All courses used to satisfy degree requirements in any of the Chemistry and
@@ -62,13 +73,7 @@ export default defineHarness({
 
     const lower = h.group('lower', 'Lower-Division Courses', [
       generalChem(h),
-      h.options(
-        'calculus',
-        'Calculus: MATH 11A+11B or 19A+19B',
-        ['Choose one of the following options:', bioc ? 'Students may combine the MATH 11 and MATH 19 series in accordance with the' : 'A student may combine the MATH 11 and MATH 19 series in accordance with the'],
-        [['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B'], ['MATH 19A', 'MATH 11B'], ['MATH 11A', 'MATH 19B']],
-        { notes: ['Mixed MATH 11/19 sequences follow the Mathematics Department’s Calculus Series Transition Policy (external).'] },
-      ),
+      calculus(h, bioc ? 'Students may combine the MATH 11 and MATH 19 series in accordance with the' : 'A student may combine the MATH 11 and MATH 19 series in accordance with the'),
       h.options('multivariable', 'Multivariable Calculus', 'Multivariable Calculus:', [['MATH 22'], ['MATH 23A', 'MATH 23B'], ['AM 30']]),
       h.take('adv-math', 'Advanced Mathematics', 'Advanced Mathematics:', codes('AM 10', 'MATH 21', 'MATH 24')),
       bioc ? h.all('intro-bio', 'Introductory Biology', 'Introductory Biology:', ['BIOL 20A', 'BIOE 20B']) : null,
@@ -93,16 +98,30 @@ export default defineHarness({
         : h.all('pchem', 'Physical Chemistry', 'Physical Chemistry:', ['CHEM 163A', 'CHEM 163B', 'CHEM 163C', 'CHEM 164']),
     ])
 
-    const nodes: Node[] = [lower, upper]
+    const qualification = h.info(
+      'qualification',
+      'Major qualification (to declare)',
+      'Students must complete each of the following qualification courses, or their equivalents, by their campus-established declaration deadline with a grade of C or better and with a cumulative grade point average (GPA) of 2.50 or greater:',
+      'General chemistry, calculus and multivariable calculus with a 2.50 GPA gate declaration; not a graduation requirement.',
+    )
+    const nodes: Node[] = [qualification, lower, upper]
     if (!bioc) {
       h.solve()
       const biochem = upper.children!.find((c) => c.id === 'biochem')!
       const series = !!biochem.used?.some((e) => e.code === 'BIOC100C')
+      const LISTED = codes(...ELECTIVES)
+      const electives = h.take('electives', series ? 'Electives (one more; the BIOC 100A–C series counts as one)' : 'Two electives', series ? ['At least two from the following list:', ...Q_BIOC_SERIES] : 'At least two from the following list:', LISTED.or(GRAD), {
+        n: series ? 1 : 2,
+        prefer: (c) => (LISTED.has(c, h.catalog) ? 0 : 1),
+        pool: 'the listed electives; or a chemistry graduate course with permission',
+        notes: ['CHEM 122 is required for American Chemical Society certification.'],
+      })
+      h.solve()
+      const grad = (electives.used ?? []).filter((e) => !LISTED.has(e.code, h.catalog))
       nodes.push(
-        h.take('electives', series ? 'Electives (one more; the BIOC 100A–C series counts as one)' : 'Two electives', series ? ['At least two from the following list:', ...Q_BIOC_SERIES] : 'At least two from the following list:', codes(...ELECTIVES), {
-          n: series ? 1 : 2,
-          notes: ['CHEM 122 is required for American Chemical Society certification.'],
-        }),
+        grad.length
+          ? h.group('electives-permitted', electives.title, [electives, h.attest('grad-elective', `Permission for ${grad.map((e) => e.display).join(', ')} as an elective`)], { quote: Q_GRAD })
+          : electives,
       )
     }
 
@@ -165,6 +184,18 @@ function generalChem(h: HarnessContext): Node {
     detail: `Still need ${(closerA ? missingA : missingB).join(', ')}`,
     progress: closerA ? { have: a.filter(Boolean).length, need: 3 } : { have: usedB.length, need: 4 },
   })
+}
+
+/** MATH 11A+11B or 19A+19B; a complete mixed pair is cannot-check (external transition policy). */
+function calculus(h: HarnessContext, mixQuote: string): Node {
+  const quote = ['Choose one of the following options:', mixQuote]
+  const a = h.taken(codes('MATH 11A', 'MATH 19A'))[0]
+  const b = h.taken(codes('MATH 11B', 'MATH 19B'))[0]
+  const pure = (n: string) => h.taken(codes(`MATH ${n}A`)).length && h.taken(codes(`MATH ${n}B`)).length
+  if (a && b && !pure('11') && !pure('19'))
+    return h.cannotCheck('calculus', 'Calculus: MATH 11A+11B or 19A+19B', quote,
+      `You combined ${a.display} and ${b.display}: check the Mathematics Department’s Calculus Series Transition Policy.`, { used: [a, b] })
+  return h.options('calculus', 'Calculus: MATH 11A+11B or 19A+19B', quote, [['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B']])
 }
 
 /** PHYS 5A–5C + 5L/5M/5N or PHYS 6A–6C + 6L/6M/6N; a complete mixed set is cannot-check. */

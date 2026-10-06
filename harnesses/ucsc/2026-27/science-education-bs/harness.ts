@@ -7,11 +7,11 @@
 //    one of their specializations" (otherwise MATH 11A/11B also count).
 //  - MATH 22 waived for chemistry + biology and Earth sciences + biology.
 //  - General chemistry: CHEM 3B/3C taken before fall 2026 also need 3BL/3CL.
-//  - CSET General Science passed (a declared choice, default "no", so that an
-//    unconfirmed exam never hides missing courses): the lower-division
-//    courses of the two non-specialization fields are waived, except the EART
-//    5/10/20 + lab package; if chemistry is waived but biology is not,
-//    CHEM 3A or CHEM 4A is still required.
+//  - CSET General Science passed (an exam that waives courses → attestation,
+//    §1a): offered for a non-specialization field's lower-division courses
+//    only when they are not complete in the plan; never for the EART 5/10/20
+//    + lab package; if chemistry is waived but biology is not, CHEM 3A or
+//    CHEM 4A is still required.
 //  - DC (EDUC 100A/100C + EDUC 185L) and comprehensive (EDUC 185C) reuse
 //    upper-division courses: overlays.
 import { codes, defineHarness, policyFailure, range } from '@harness'
@@ -57,16 +57,9 @@ export default defineHarness({
       options: PAIRS.map(([a, b]) => ({ value: `${a}+${b}`, label: `${label(a)} and ${label(b)}` })),
       parse: parseFields,
     },
-    {
-      key: 'cset',
-      label: 'Passed the CSET General Science examination?',
-      quote: Q_CSET,
-      default: 'no',
-      options: [
-        { value: 'no', label: 'No', aliases: ['false', 'not passed'] },
-        { value: 'yes', label: 'Yes (passed)', aliases: ['true', 'passed'] },
-      ],
-    },
+  ],
+  attestations: [
+    { id: 'cset', label: 'Passed the CSET General Science examination', quote: Q_CSET, aliases: ['cset general science', 'cset'] },
   ],
   notes: [
     'All courses used to satisfy any of the major requirements must be taken for a letter grade.',
@@ -79,10 +72,19 @@ export default defineHarness({
     if (ask) return [ask]
     const fields = h.choice('fields')!.split('+') as Field[]
     const spec = (f: Field) => fields.includes(f)
-    const cset = h.choice('cset') === 'yes'
-    const waived = (f: Field) => cset && !spec(f) && f !== 'earth'
-    const waivedNode = (id: string, title: string, quote: string | string[]) =>
-      h.node(id, title, [Q_CSET, ...(Array.isArray(quote) ? quote : [quote])], 'met', { detail: 'Waived: you passed the CSET General Science examination.' })
+    // CSET General Science waives the lower-division courses of the two
+    // non-specialization fields (never the EART package).
+    const waivable = (f: Field) => !spec(f) && f !== 'earth'
+    const has = (list: string[]) => list.every((c) => h.taken(codes(c)).length > 0)
+    const csetNode = () =>
+      h.attested('cset') ? h.attest('cset', undefined, { detail: 'Waived by the CSET General Science examination (as you confirmed).' }) : h.attest('cset')
+    /** The field's courses, or (when not complete and the field is not a specialization) the CSET waiver. */
+    const orCset = (f: Field, id: string, title: string, courses: Node, complete: boolean, waiver: () => Node = csetNode) =>
+      waivable(f) && !complete ? h.either(`${id}-or-cset`, `${title} (or CSET waiver)`, Q_CSET, [courses, waiver()]) : courses
+    const PHYS5 = ['PHYS 5A', 'PHYS 5L', 'PHYS 5B', 'PHYS 5M', 'PHYS 5C', 'PHYS 5N']
+    const PHYS6 = ['PHYS 6A', 'PHYS 6L', 'PHYS 6B', 'PHYS 6M', 'PHYS 6C', 'PHYS 6N']
+    const BIO = ['BIOL 20A', 'BIOE 20B', 'BIOE 20C']
+    const chem = generalChem(h)
 
     const phys = spec('physics')
     const lower = h.group('lower', 'Lower-Division Courses', [
@@ -95,21 +97,23 @@ export default defineHarness({
       spec('biology') && (spec('chemistry') || spec('earth'))
         ? h.node('math22', 'MATH 22 (waived for your fields)', Q_22, 'met', { detail: 'Waived for chemistry + biology and Earth sciences + biology.' })
         : h.take('math22', 'MATH 22', ['Plus the following course:', Q_22], codes('MATH 22')),
-      waived('physics')
-        ? waivedNode('physics', 'Physics series', 'Plus one of the following options:')
-        : h.options('physics', 'PHYS 5A–5C with labs, or PHYS 6A–6C with labs', 'Plus one of the following options:', [
-            ['PHYS 5A', 'PHYS 5L', 'PHYS 5B', 'PHYS 5M', 'PHYS 5C', 'PHYS 5N'],
-            ['PHYS 6A', 'PHYS 6L', 'PHYS 6B', 'PHYS 6M', 'PHYS 6C', 'PHYS 6N'],
-          ]),
-      waived('chemistry')
-        ? waived('biology')
-          ? waivedNode('gen-chem', 'General chemistry', 'Plus one of the following options:')
-          : h.take('gen-chem', 'CHEM 3A or CHEM 4A (chemistry waived by CSET)', [Q_CSET, Q_CSET_CHEM], codes('CHEM 3A', 'CHEM 4A'))
-        : generalChem(h),
+      orCset('physics', 'physics', 'Physics series',
+        h.options('physics', 'PHYS 5A–5C with labs, or PHYS 6A–6C with labs', 'Plus one of the following options:', [PHYS5, PHYS6]),
+        has(PHYS5) || has(PHYS6)),
+      // Chemistry waived while biology is not: CHEM 3A or 4A is still needed
+      // (it is the prerequisite to BIOL 20A).
+      orCset('chemistry', 'gen-chem', 'General Chemistry', chem, chem.status === 'met', () =>
+        waivable('biology')
+          ? csetNode()
+          : h.group('gen-chem-waiver', 'CSET waiver, plus CHEM 3A or CHEM 4A', [
+              csetNode(),
+              h.take('gen-chem-3a4a', 'CHEM 3A or CHEM 4A', [Q_CSET, Q_CSET_CHEM], codes('CHEM 3A', 'CHEM 4A')),
+            ], { quote: Q_CSET_CHEM }),
+      ),
       h.options('earth', 'EART 5, 10 or 20 with its lab', 'Plus one of the following options:', [['EART 5', 'EART 5L'], ['EART 10', 'EART 10L'], ['EART 20', 'EART 20L']]),
-      waived('biology')
-        ? waivedNode('biology', 'Introductory biology', 'Plus all of the following courses:')
-        : h.all('biology', 'BIOL 20A, BIOE 20B, BIOE 20C', 'Plus all of the following courses:', ['BIOL 20A', 'BIOE 20B', 'BIOE 20C']),
+      orCset('biology', 'biology', 'Introductory biology',
+        h.all('biology', 'BIOL 20A, BIOE 20B, BIOE 20C', 'Plus all of the following courses:', BIO),
+        has(BIO)),
       h.take('astronomy', 'Introductory astronomy', 'Plus one of the following courses:', codes('ASTR 1', 'ASTR 2', 'ASTR 5', 'ASTR 10')),
       h.options('statistics', 'STAT 5, STAT 7 + 7L, or ASTR 119', 'Plus one of the following options:', [['STAT 5'], ['STAT 7', 'STAT 7L'], ['ASTR 119']], {
         notes: phys ? ['ASTR 119 should be taken by students who select physics as a field, to enable them to take PHYS 133.'] : undefined,
@@ -150,7 +154,13 @@ export default defineHarness({
       h.take('dc-educ185l', 'EDUC 185L', 'Plus the following course:', codes('EDUC 185L'), { exclusive: false }),
     ], { quote: 'The disciplinary communication requirement for this major is fulfilled by completing:' })
     const comprehensive = h.take('comprehensive', 'Comprehensive Requirement: EDUC 185C', 'The senior capstone requirement for this major is fulfilled by completing:', codes('EDUC 185C'), { exclusive: false })
-    return [lower, upper, electives, dc, comprehensive]
+    const qualification = h.info(
+      'qualification',
+      'Major qualification (to declare)',
+      'Students must complete at least six 5-credit courses from the lower-division course requirements, and complete or be enrolled in EDUC 50C, before they can declare the major.',
+      'Gates declaration; not a graduation requirement.',
+    )
+    return [qualification, lower, upper, electives, dc, comprehensive]
   },
 })
 

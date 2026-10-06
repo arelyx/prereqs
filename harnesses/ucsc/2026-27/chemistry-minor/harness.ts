@@ -11,9 +11,15 @@
 //    CHEM 103 plus one elective (composite unit, then one elective fewer).
 //    CHEM 110 / 151A are preferred so CHEM 103 is used only when needed (the
 //    BIOC 100A exclusion depends on whether CHEM 103 is counted).
+//  - Calculus: MATH 11A+11B or 19A+19B; MATH 19A then 11B is the page's own
+//    example of a valid mix; any other mix (MATH 11A + 19B) defers to the
+//    external Calculus Series Transition Policy → cannot-check.
+//  - A chemistry graduate course "with the permission of the instructor and
+//    department" may be an elective: asked as an attestation only when the
+//    allocator needed it (§1a petition).
 //  - Electives: two from the list; BIOC 100C also counts once CHEM 103 is
 //    finished; not both BIOC 100A and CHEM 103; not both BIOC 163B and CHEM 163B.
-import { codes, defineHarness } from '@harness'
+import { codes, defineHarness, subject } from '@harness'
 import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const Q_PHYS_MIX =
@@ -21,6 +27,10 @@ const Q_PHYS_MIX =
 const Q_SERIES = 'Completing the series will fulfill the requirement of CHEM 103 (Biochemistry) plus fulfill one elective.'
 const Q_100C = 'Students who have finished CHEM 103 can, with instructor permission, enroll in BIOC 100C without taking BIOC 100A and BIOC 100B. In this case, BIOC 100C may be used as an elective.'
 const Q_NOT_BOTH = 'Students cannot receive elective credit toward the minor for 1) both BIOC 100A and CHEM 103; 2) both BIOC 163B and CHEM 163B.'
+
+const Q_GRAD = 'Students may also satisfy the elective requirements by completing a chemistry graduate course with the permission of the instructor and department.'
+const Q_CALC_MIX = 'A student may combine the MATH 11 series with the MATH 19 series to complete this portion of the major requirement(s), (for example, a student can take and complete MATH 19A and then take and complete MATH 11B) but must follow the'
+const GRAD = subject('CHEM', 'graduate')
 
 const ELECTIVES = [
   'BIOC 100A', 'BIOC 100B', 'BIOC 163B', 'CHEM 122', 'CHEM 143', 'CHEM 144', 'CHEM 151B', 'CHEM 156C',
@@ -32,10 +42,12 @@ export default defineHarness({
   program: 'chemistry-minor',
   edition: '2026-27',
   title: 'Chemistry Minor',
+  attestations: [
+    { id: 'grad-elective', label: 'Instructor and department permitted a chemistry graduate course as an elective', quote: Q_GRAD, aliases: ['graduate course', 'grad elective', 'department permission'] },
+  ],
   notes: [
     'All courses used for the minor must be taken for a letter grade, with a grade of C or higher.',
     'A student cannot double major/minor in chemistry and any other major/minor offered by the Chemistry and Biochemistry Department.',
-    'A chemistry graduate course may satisfy an elective with permission of the instructor and department (add it once approved).',
   ],
   evaluate(h) {
     // "All courses used to satisfy degree requirements in the chemistry minor must be taken for a
@@ -45,13 +57,7 @@ export default defineHarness({
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.options('gen-chem', 'General chemistry', 'Chemistry', [['CHEM 3A', 'CHEM 3B', 'CHEM 3C'], ['CHEM 4A', 'CHEM 4B', 'CHEM 4AL', 'CHEM 4BL']]),
       h.all('orgo', 'Organic chemistry', 'and these courses:', ['CHEM 8A', 'CHEM 8B', 'CHEM 8L', 'CHEM 8M']),
-      h.options(
-        'calculus',
-        'Calculus: MATH 11A+11B or 19A+19B',
-        ['One of the following options', 'A student may combine the MATH 11 series with the MATH 19 series to complete this portion of the major requirement(s)'],
-        [['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B'], ['MATH 19A', 'MATH 11B'], ['MATH 11A', 'MATH 19B']],
-        { notes: ['Mixed MATH 11/19 sequences must follow the Mathematics Department’s Calculus Series Transition Policy (external).'] },
-      ),
+      calculus(h),
       h.options('multivariable', 'Multivariable calculus', 'Plus one of the following options', [['MATH 22'], ['MATH 23A', 'MATH 23B'], ['AM 30']]),
       physics(h),
     ])
@@ -75,21 +81,39 @@ export default defineHarness({
     h.solve()
     const series = !!twoOf.used?.some((e) => e.code === 'BIOC100C')
     const counted103 = !!twoOf.used?.some((e) => e.code === 'CHEM103')
-    const set = codes(...ELECTIVES, ...(chem103 ? ['BIOC 100C'] : [])).except(counted103 ? ['BIOC 100A'] : [])
+    const listed = codes(...ELECTIVES, ...(chem103 ? ['BIOC 100C'] : [])).except(counted103 ? ['BIOC 100A'] : [])
     const electives = h.take(
       'electives',
       series ? 'Electives (one more; the BIOC 100A–C series counts as one)' : 'Two electives',
       ['Plus two chemistry upper-division electives from the following:', Q_NOT_BOTH, ...(series ? [Q_SERIES] : []), ...(chem103 ? [Q_100C] : [])],
-      set,
+      listed.or(GRAD),
       {
         n: series ? 1 : 2,
         atMost: [{ set: codes('BIOC 163B', 'CHEM 163B'), n: 1, label: 'BIOC 163B / CHEM 163B' }],
+        prefer: (c) => (listed.has(c, h.catalog) ? 0 : 1),
+        pool: 'the listed electives; or a chemistry graduate course with permission',
         notes: counted103 ? ['BIOC 100A cannot count as an elective because CHEM 103 is counted above.'] : undefined,
       },
     )
-    return [lower, upperCore, electives]
+    h.solve()
+    const grad = (electives.used ?? []).filter((e) => !listed.has(e.code, h.catalog))
+    const electivesNode = grad.length
+      ? h.group('electives-permitted', electives.title, [electives, h.attest('grad-elective', `Permission for ${grad.map((e) => e.display).join(', ')} as an elective`)], { quote: Q_GRAD })
+      : electives
+    return [lower, upperCore, electivesNode]
   },
 })
+
+/** MATH 11A+11B, 19A+19B, or the page's example mix 19A + 11B; MATH 11A + 19B is cannot-check. */
+function calculus(h: HarnessContext): Node {
+  const quote = ['One of the following options', Q_CALC_MIX]
+  const has = (c: string) => h.taken(codes(c)).length > 0
+  const pure = (has('MATH 11A') && has('MATH 11B')) || (has('MATH 19A') && has('MATH 19B'))
+  if (!pure && !(has('MATH 19A') && has('MATH 11B')) && has('MATH 11A') && has('MATH 19B'))
+    return h.cannotCheck('calculus', 'Calculus: MATH 11A+11B or 19A+19B', quote,
+      'You combined MATH 11A and MATH 19B: check the Mathematics Department’s Calculus Series Transition Policy.', { used: [...h.taken(codes('MATH 11A')), ...h.taken(codes('MATH 19B'))] })
+  return h.options('calculus', 'Calculus: MATH 11A+11B or 19A+19B', quote, [['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B'], ['MATH 19A', 'MATH 11B']])
+}
 
 /** PHYS 5A–5C + 5L/5M/5N or PHYS 6A–6C + 6L/6M/6N; a complete mixed set is cannot-check. */
 function physics(h: HarnessContext): Node {

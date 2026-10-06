@@ -72,4 +72,45 @@ describe('chemistry-ba 2026-27', () => {
     expect(failing(run(harness, { terms: edit(edit(base, 'CHEM 8M', 'CHEM 8N'), 'CHEM 110L', 'CHEM 110N') }))).toEqual([])
     expect(find(run(harness, { terms: edit(base, 'CHEM 8M', null) }), 'chem8m').status).toBe('unmet')
   })
+
+  // --- review 2026-10-06: adversarial records ---
+  it('review: a chemistry graduate course may be an elective, asked only when needed', () => {
+    // "Students may also satisfy the elective requirement by completing a chemistry graduate course with the permission of the instructor and department."
+    const t = edit(base, 'CHEM 171', 'CHEM 200A')
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['attest:grad-elective:needs-attestation'])
+    expect(failing(run(harness, { terms: add(base, 'CHEM 200A'), attested: [] }))).toEqual([])
+  })
+
+  it('review: a mixed MATH 11/19 pair defers to the external transition policy (cannot-check)', () => {
+    // "Students may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy."
+    expect(find(run(harness, { terms: edit(base, 'MATH 11B', 'MATH 19B') }), 'calculus').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: edit(edit(base, 'MATH 11A', 'MATH 19A'), 'MATH 11B', 'MATH 19B') }), 'calculus').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'MATH 11B', null) }), 'calculus').status).toBe('unmet')
+  })
+
+  it('review: BIOC 100A and CHEM 103 both taken: only one counts as an elective', () => {
+    const t = edit(base, 'CHEM 171', 'BIOC 100A')
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: C- fails the C rule; P fails the letter rule', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'CHEM 8L': 'C-' } }))).toEqual(['orgo-core/CHEM8L:unmet'])
+    expect(failing(run(harness, { terms: base, grades: { 'CHEM 151L': 'P' } }))).toContain('inorganic/CHEM151L:unmet')
+  })
+
+  it('review: a lab without its lecture does not complete physics; CHEM 4 series with labs completes general chemistry', () => {
+    expect(find(run(harness, { terms: edit(base, 'PHYS 5C', null) }), 'physics').status).toBe('unmet')
+    let t = base
+    for (const [a, b] of [['CHEM 3A', 'CHEM 4A'], ['CHEM 3B', 'CHEM 4AL'], ['CHEM 3C', 'CHEM 4B']]) t = edit(t, a, b)
+    expect(find(run(harness, { terms: t }), 'gen-chem').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(t, 'CHEM 4BL') }), 'gen-chem').status).toBe('met')
+  })
+
+  it('review: empty plan', () => {
+    const f = failing(run(harness, { terms: [], attested: [] }))
+    expect(f).toContain('gen-chem:unmet')
+    expect(f).toContain('electives:unmet')
+    expect(f).toContain('adv-lab:unmet')
+  })
 })

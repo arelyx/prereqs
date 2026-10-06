@@ -73,4 +73,36 @@ describe('chemistry-minor 2026-27', () => {
     expect(find(run(harness, { terms: edit(base, 'PHYS 6A', 'PHYS 5A') }), 'physics').status).toBe('cannot-check')
     expect(find(run(harness, { terms: edit(base, 'PHYS 6M', null) }), 'physics').status).toBe('unmet')
   })
+
+  // --- review 2026-10-06: adversarial records ---
+  it('review: MATH 19A then 11B (the page example) is met; MATH 11A + 19B defers to the external policy', () => {
+    // "(for example, a student can take and complete MATH 19A and then take and complete MATH 11B) but must follow the Mathematics Department’s Calculus Series Transition Policy"
+    expect(find(run(harness, { terms: edit(base, 'MATH 19B', 'MATH 11B') }), 'calculus').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'MATH 19A', 'MATH 11A') }), 'calculus').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: edit(base, 'MATH 19B', null) }), 'calculus').status).toBe('unmet')
+  })
+
+  it('review: a chemistry graduate course may be an elective, asked only when needed', () => {
+    // "Students may also satisfy the elective requirements by completing a chemistry graduate course with the permission of the instructor and department."
+    const t = edit(base, 'CHEM 171', 'CHEM 200B')
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['attest:grad-elective:needs-attestation'])
+    expect(failing(run(harness, { terms: add(base, 'CHEM 200B'), attested: [] }))).toEqual([])
+  })
+
+  it('review: a course used in the two-of is not also an elective', () => {
+    expect(find(run(harness, { terms: add(edit(base, 'CHEM 171', null), 'CHEM 110') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: CHEM 4 series with both labs; a lab missing fails', () => {
+    let t = base
+    for (const [a, b] of [['CHEM 3A', 'CHEM 4A'], ['CHEM 3B', 'CHEM 4B'], ['CHEM 3C', 'CHEM 4AL']]) t = edit(t, a, b)
+    expect(find(run(harness, { terms: t }), 'gen-chem').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(t, 'CHEM 4BL') }), 'gen-chem').status).toBe('met')
+  })
+
+  it('review: empty plan', () => {
+    const f = failing(run(harness, { terms: [], attested: [] }))
+    expect(f).toEqual(expect.arrayContaining(['gen-chem:unmet', 'calculus:unmet', 'physics:unmet', 'two-of:unmet', 'electives:unmet']))
+  })
 })

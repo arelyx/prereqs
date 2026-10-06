@@ -10,8 +10,7 @@ const ELECTIVES = [
   'ASTR 111', 'ASTR 112', 'ASTR 113', 'ASTR 117', 'ASTR 118', 'ASTR 119', 'PHYS 129', 'PHYS 133',
   'ASTR 136', 'PHYS 171', 'EART 160', 'EART 162', 'EART 163', 'EART 164', 'AM 107',
 ]
-// AM 107 is cross-listed as PHYS 107 on the page.
-const ALIASES = ['PHYS 107']
+// AM 107 [/PHYS 107]: the library matches the partner code.
 
 export default defineHarness({
   program: 'astrophysics-minor',
@@ -21,9 +20,6 @@ export default defineHarness({
     'Courses may be taken for a letter grade or Pass/No Pass.',
     'Some courses may be satisfied via exam credit (add them as completed courses).',
   ],
-  coverage: {
-    unknownOk: { PHYS107: 'cross-listing of AM 107 named on the page; not a separate catalog entry' },
-  },
   evaluate(h) {
     // "Courses may be taken for a letter grade or Pass/No Pass."
     h.policy = undefined
@@ -42,7 +38,7 @@ export default defineHarness({
     ])
     const upper = h.group('upper', 'Upper-Division Courses', [
       h.take('phys102', 'Modern Physics: PHYS 102', 'Modern Physics:', codes('PHYS 102')),
-      h.take('electives', 'Four astronomy electives', 'Four of the upper-division astronomy electives chosen from the following:', codes(...ELECTIVES, ...ALIASES), { n: 4 }),
+      h.take('electives', 'Four astronomy electives', 'Four of the upper-division astronomy electives chosen from the following:', codes(...ELECTIVES), { n: 4 }),
     ])
     return [lower, upper]
   },

@@ -95,17 +95,62 @@ describe('science-education-bs 2026-27', () => {
   it('CSET General Science waives the two non-specialization fields’ lower-division courses (not EART)', () => {
     // physics + chemistry: biology lower-division waived
     const noBio = edit(edit(edit(pc, 'BIOL 20A', null), 'BIOE 20B', null), 'BIOE 20C', null)
-    expect(find(run(harness, { terms: noBio, choices: PC }), 'biology').status).toBe('unmet')
-    expect(failing(run(harness, { terms: noBio, choices: { ...PC, cset: 'yes' } }))).toEqual([])
+    expect(find(run(harness, { terms: noBio, choices: PC, attested: [] }), 'biology-or-cset').status).toBe('needs-attestation')
+    expect(failing(run(harness, { terms: noBio, choices: PC }))).toEqual([])
     // EART package never waived
-    expect(find(run(harness, { terms: edit(noBio, 'EART 10L', null), choices: { ...PC, cset: 'yes' } }), 'earth').status).toBe('unmet')
+    expect(find(run(harness, { terms: edit(noBio, 'EART 10L', null), choices: PC }), 'earth').status).toBe('unmet')
+    // a specialization field is never waived
+    expect(find(run(harness, { terms: edit(pc, 'PHYS 6C', null), choices: PC }), 'physics').status).toBe('unmet')
   })
 
   it('CSET: chemistry waived but biology not → CHEM 3A or 4A still needed', () => {
     const noChem = edit(edit(edit(be, 'CHEM 3A', null), 'CHEM 3B', null), 'CHEM 3C', null)
-    const r = run(harness, { terms: noChem, choices: { ...BE, cset: 'yes' } })
-    expect(find(r, 'gen-chem').status).toBe('unmet')
-    expect(find(r, 'physics').status).toBe('met') // physics waived
-    expect(failing(run(harness, { terms: edit(be, 'CHEM 3B', null), choices: { ...BE, cset: 'yes' } }))).toEqual([])
+    const r = run(harness, { terms: noChem, choices: BE })
+    expect(find(r, 'gen-chem-or-cset').status).toBe('unmet')
+    expect(find(r, 'gen-chem-3a4a').status).toBe('unmet')
+    expect(failing(run(harness, { terms: edit(be, 'CHEM 3B', null), choices: BE }))).toEqual([])
+  })
+
+  // --- review 2026-10-06: adversarial records ---
+  it('review: the CSET waiver is an exam attestation, offered only when the field is incomplete', () => {
+    // "a student who has passed the California Subject Examinations for Teachers (CSET) General Science Examination will have the lower-division courses ... waived"
+    const r = run(harness, { terms: pc, choices: PC, attested: [] })
+    expect(failing(r)).toEqual([])
+    // physics waived for biology + Earth sciences (the old choice defaulted to "no" and hid this path)
+    const noPhys = be.map((q) => ({ ...q, courses: q.courses.filter((c) => !c.startsWith('PHYS 6')) }))
+    expect(failing(run(harness, { terms: noPhys, choices: BE }))).toEqual([])
+    expect(failing(run(harness, { terms: noPhys, choices: BE, attested: [] }))).toEqual(['physics:unmet', 'attest:cset:needs-attestation'])
+  })
+
+  it('review: physics + Earth sciences with CSET: chemistry AND biology waived, no CHEM 3A needed', () => {
+    const pe = [
+      ...common.map((q) => ({ ...q, courses: q.courses.filter((c) => !/^(CHEM|BIOL|BIOE)/.test(c)) })),
+      ...plan(['2292', 'PHYS 5D', 'EART 110B', 'EART 110M'], ['2298', 'PHYS 102', 'OCEA 90'], ['2300', 'PHYS 133', 'EART 120']),
+    ]
+    expect(failing(run(harness, { terms: pe, choices: { fields: 'physics and earth sciences' } }))).toEqual([])
+  })
+
+  it('review: EART 110A cannot double as the Earth-sciences upper-division EART course', () => {
+    expect(find(run(harness, { terms: edit(be, 'EART 120', null), choices: BE }), 'field-earth-ud').status).toBe('unmet')
+  })
+
+  it('review: a lab without its lecture does not satisfy the EART package', () => {
+    expect(find(run(harness, { terms: edit(pc, 'EART 10', 'EART 5'), choices: PC }), 'earth').status).toBe('unmet')
+  })
+
+  it('review: CHEM 4 series with labs is the alternative general chemistry', () => {
+    let t = pc
+    for (const [a, b] of [['CHEM 3A', 'CHEM 4A'], ['CHEM 3B', 'CHEM 4B'], ['CHEM 3C', 'CHEM 4AL']]) t = edit(t, a, b)
+    expect(find(run(harness, { terms: t, choices: PC, attested: [] }), 'gen-chem').status).toBe('unmet')
+    expect(failing(run(harness, { terms: [...t, { term: '2302', courses: ['CHEM 4BL'] }], choices: PC }))).toEqual([])
+  })
+
+  it('review: the second field must be the declared one', () => {
+    expect(failing(run(harness, { terms: pc, choices: { fields: 'physics and biology' }, attested: [] }))).toContain('field-biology/BIOL105:unmet')
+  })
+
+  it('review: CHEM 3B/3C transfer credit (no term) without 3BL/3CL is cannot-check, not met', () => {
+    const t = edit(edit(pc, 'CHEM 3B', null), 'CHEM 3C', null)
+    expect(find(run(harness, { terms: t, completed: ['CHEM 3B', 'CHEM 3C'], choices: PC }), 'gen-chem').status).toBe('cannot-check')
   })
 })

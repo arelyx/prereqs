@@ -6,6 +6,6 @@
  "skeleton_sha256": "b433ae3cf07ce2ab86ad60d5b4cdc7a36614aaa5470f052b9fad7c5a52a90d0b",
  "status": "verified",
  "authored_at": "2026-10-06T00:48:14Z",
- "verified_at": "2026-10-06T00:57:25Z",
- "notes": "verified line by line against sources/physics-bs.md; tests from the page. Default path General Major (QIS by choice). AP Physics C score-5 lab exemption offered as attestation only when PHYS 5A/5C is term-less credit. QIS PHYS 116C waiver uses the QIS paragraph (which says 'applied physics'). Astrophysics-minor overlap shown as a note."
+ "verified_at": "2026-10-06T23:45:06Z",
+ "notes": "verified line by line against sources/physics-bs.md; tests from the page. Default path General Major (QIS by choice). AP Physics C score-5 lab exemption offered as attestation only when PHYS 5A/5C is term-less credit. QIS PHYS 116C waiver uses the QIS paragraph (which says 'applied physics'). Astrophysics-minor overlap shown as a note.; reviewed 2026-10-06: AP Physics C score-5 exemption now an exam attestation offered whenever PHYS 5A/15A (5C/15C) is absent (was only for term-less credit, so a student without the course had no path); CSE 20 test-out attestation; department-approved UD science/engineering elective (one, petition asked only when used); removed cross-list unknownOk/partner codes; qualification as info"
 }

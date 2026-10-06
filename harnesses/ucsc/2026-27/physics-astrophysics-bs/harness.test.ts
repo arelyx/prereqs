@@ -82,4 +82,54 @@ describe('physics-astrophysics-bs 2026-27', () => {
     expect(find(run(harness, { terms: t }), 'dc').status).toBe('unmet')
     expect(find(run(harness, { terms: add(t, 'PHYS 195B') }), 'dc').status).toBe('met')
   })
+
+  // --- review 2026-10-06: adversarial records ---
+  const strip = (t: StudentRecord['terms'], ...cs: string[]) => t.map((q) => ({ ...q, courses: q.courses.filter((c) => !cs.includes(c)) }))
+
+  it('review: AP Physics C Mechanics 5 with no PHYS 5A/5L in the plan is offered as the exam attestation', () => {
+    // "Students with a score of 5 on the AP Physics C Mechanics ... are exempt from taking PHYS 5A ... and the associated lab courses."
+    const t = strip(base, 'PHYS 5A', 'PHYS 5L')
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual([
+      'phys-a:unmet', 'attest:ap-mech:needs-attestation', 'phys-5l:unmet', 'attest:ap-mech:needs-attestation',
+    ])
+  })
+
+  it('review: CSE 20 test-out satisfies the programming course (offered only when none is in the plan)', () => {
+    // "A test-out option is available for CSE 20."
+    const t = strip(base, 'ASTR 119')
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['programming:unmet', 'attest:cse20-testout:needs-attestation'])
+  })
+
+  it('review: cross-listed codes count without partner lists', () => {
+    // AM 107 [/PHYS 107], PHYS 130 [/ASTR 114], PHYS 135A [/ASTR 135A]
+    expect(failing(run(harness, { terms: edit(base, 'PHYS 171', 'PHYS 107') }))).toEqual([])
+    expect(failing(run(harness, { terms: add(strip(base, 'PHYS 135'), 'ASTR 135A', 'ASTR 135B') }))).toEqual([])
+  })
+
+  it('review: a lab used for the advanced-lab option also satisfies the comprehensive requirement, never an elective', () => {
+    const r = run(harness, { terms: add(strip(base, 'PHYS 171'), 'ASTR 136') })
+    expect(find(r, 'electives').status).toBe('unmet')
+    expect(find(r, 'comprehensive').status).toBe('met')
+  })
+
+  it('review: the same ASTR 136 module twice is not two of the three', () => {
+    const t = add(strip(base, 'PHYS 135'), 'ASTR 136A', 'ASTR 136B', 'ASTR 136B')
+    expect(find(run(harness, { terms: t }), 'adv-lab').status).toBe('unmet')
+  })
+
+  it('review: PHYS 139B (recommended) is not an elective; ASTR 119 / ASTR 136 neither', () => {
+    expect(find(run(harness, { terms: add(strip(base, 'PHYS 171'), 'PHYS 139B', 'ASTR 136') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: P grade on a required lab fails the letter-grade rule', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'PHYS 5M': 'P' } }))).toEqual(['phys-5m:unmet'])
+  })
+
+  it('review: empty plan has no met requirement', () => {
+    const r = run(harness, { terms: [], attested: [] })
+    expect(failing(r)).toContain('astr-intro:unmet')
+    expect(failing(r)).toContain('comprehensive:unmet')
+  })
 })

@@ -5,8 +5,9 @@
 //  - Letter grade AND C or better in every course used.
 //  - General chemistry: CHEM 3A–3C (3B/3C taken before fall 2026 also need
 //    CHEM 3BL/3CL) or CHEM 4A/4B/4AL/4BL.
-//  - Calculus: MATH 11A+11B or 19A+19B; a mix is accepted with a note
-//    (transition policy external), as in biology-bs.
+//  - Calculus: MATH 11A+11B or 19A+19B; a complete mixed pair is
+//    cannot-check (the page defers to the Mathematics Department's external
+//    Calculus Series Transition Policy; rule 3: never met on a guess).
 //  - Physics: PHYS 5 or PHYS 6 series with labs; a complete mixed set is
 //    cannot-check (advisor must confirm the Physics Transition policies).
 //  - Physical chemistry: CHEM 163A+163B, or "BIOC 163A and BIOC 163B" (the
@@ -52,13 +53,7 @@ export default defineHarness({
 
     const lower = h.group('lower', 'Lower-Division Courses', [
       generalChem(h),
-      h.options(
-        'calculus',
-        'Calculus: MATH 11A+11B or 19A+19B',
-        ['Calculus', 'Students may combine the MATH 11 and MATH 19 series in accordance with the'],
-        [['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B'], ['MATH 19A', 'MATH 11B'], ['MATH 11A', 'MATH 19B']],
-        { notes: ['Mixed MATH 11/19 sequences follow the Mathematics Department’s Calculus Series Transition Policy (external).'] },
-      ),
+      calculus(h),
       h.options('statistics', 'Statistics: STAT 5, or STAT 7 and 7L', 'Statistics', [['STAT 5'], ['STAT 7', 'STAT 7L']]),
       h.group('intro-bio', 'Introductory Biology', [
         h.all('intro-bio-core', 'BIOL 20A and BIOE 20B', 'Introductory Biology', ['BIOL 20A', 'BIOE 20B']),
@@ -86,9 +81,27 @@ export default defineHarness({
       notes: ['The DC requirement must be satisfied at UC Santa Cruz.'],
     })
     const comprehensive = h.take('comprehensive', 'Comprehensive Requirement', 'Students must satisfy the senior comprehensive requirement by receiving a passing letter grade in any of the Senior Exit Lab options.', codes(...EXIT_LABS), { exclusive: false })
-    return [lower, upper, exit, dc, comprehensive]
+    const qualification = h.info(
+      'qualification',
+      'Major qualification (to declare)',
+      'Students must complete each of the following qualification courses, or their equivalents, by their campus-established declaration deadline with a grade of C (2.0) or better and with a cumulative grade point average (GPA) of 2.50 or greater:',
+      'General chemistry, BIOL 20A, CHEM 8A/8B and MATH 11A or 19A with a 2.50 GPA gate declaration; not a graduation requirement.',
+    )
+    return [qualification, lower, upper, exit, dc, comprehensive]
   },
 })
+
+/** MATH 11A+11B or 19A+19B; a complete mixed pair is cannot-check (external transition policy). */
+function calculus(h: HarnessContext): Node {
+  const quote = ['Calculus', 'Students may combine the MATH 11 and MATH 19 series in accordance with the']
+  const a = h.taken(codes('MATH 11A', 'MATH 19A'))[0]
+  const b = h.taken(codes('MATH 11B', 'MATH 19B'))[0]
+  const pure = (n: string) => h.taken(codes(`MATH ${n}A`)).length && h.taken(codes(`MATH ${n}B`)).length
+  if (a && b && !pure('11') && !pure('19'))
+    return h.cannotCheck('calculus', 'Calculus: MATH 11A+11B or 19A+19B', quote,
+      `You combined ${a.display} and ${b.display}: check the Mathematics Department’s Calculus Series Transition Policy.`, { used: [a, b] })
+  return h.options('calculus', 'Calculus: MATH 11A+11B or 19A+19B', quote, [['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B']])
+}
 
 /** CHEM 163A + 163B, or BIOC 163A + 163B; a mixed pair is cannot-check. */
 function pchem(h: HarnessContext): Node {

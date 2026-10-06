@@ -43,7 +43,8 @@ describe('physics-minor 2026-27', () => {
   })
 
   it('PHYS electives must be 5 credits and in PHYS 100–180', () => {
-    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'PHYS 182') }), 'electives').status).toBe('unmet')
+    // PHYS 182 is above PHYS 180: only as an adviser-approved substitute
+    expect(failing(run(harness, { terms: edit(base, 'PHYS 115', 'PHYS 182'), attested: [] }))).toEqual(['attest:elective-approval:needs-attestation'])
     expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'PHYS 135A') }), 'electives').status).toBe('unmet')
   })
 
@@ -54,8 +55,15 @@ describe('physics-minor 2026-27', () => {
     expect(find(run(harness, { terms: t, choices: { 'major-dept': 'ECE' } }), 'electives').status).toBe('unmet')
   })
 
-  it('an unlisted outside course does not count', () => {
-    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'ECE 174'), choices: { 'major-dept': 'other' } }), 'electives').status).toBe('unmet')
+  it('an unlisted outside course counts only with adviser approval', () => {
+    // "Other courses may be taken as electives with the approval of the Physics Department undergraduate faculty adviser."
+    const t = edit(base, 'PHYS 115', 'ECE 175')
+    expect(failing(run(harness, { terms: t, choices: { 'major-dept': 'other' }, attested: [] }))).toEqual(['attest:elective-approval:needs-attestation'])
+    expect(failing(run(harness, { terms: t, choices: { 'major-dept': 'other' } }))).toEqual([])
+    // still subject to the major-department rule
+    expect(find(run(harness, { terms: t, choices: { 'major-dept': 'ece' } }), 'electives').status).toBe('unmet')
+    // a non-science course is not a plausible substitute
+    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'LIT 101'), choices: { 'major-dept': 'other' } }), 'electives').status).toBe('unmet')
   })
 
   it('cross-listed elective EART 172 / OCEA 172 is blocked for either department', () => {
@@ -77,5 +85,41 @@ describe('physics-minor 2026-27', () => {
   it('an extra physics course is preferred over an outside course', () => {
     const t = [...base, { term: '2290', courses: ['ECE 101'] }]
     expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  // --- review 2026-10-06: adversarial records ---
+  it('review: cross-listed partner codes need no alias table (OCEA 172, PHYS 107, CSE 109)', () => {
+    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'OCEA 172'), choices: { 'major-dept': 'eart' } }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'CSE 109'), choices: { 'major-dept': 'math' } }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'CSE 109'), choices: { 'major-dept': 'cse' } }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: an approval is not asked when listed electives suffice', () => {
+    expect(failing(run(harness, { terms: [...base, { term: '2290', courses: ['CHEM 163A'] }], attested: [] }))).toEqual([])
+  })
+
+  it('review: a retaken elective counts once', () => {
+    const t = [...edit(base, 'PHYS 115', null), { term: '2290', courses: ['PHYS 105'] }]
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: the PHYS 5 series mixed with a PHYS 6 lab is not a package', () => {
+    expect(find(run(harness, { terms: edit(base, 'PHYS 5N', 'PHYS 6N') }), 'physics-series').status).toBe('unmet')
+  })
+
+  it('review: exam credit (no term) counts as the course', () => {
+    const t = edit(edit(base, 'PHYS 5A', null), 'MATH 19A', null)
+    expect(failing(run(harness, { terms: t, completed: ['PHYS 5A', 'MATH 19A'] }))).toEqual([])
+  })
+
+  it('review: empty plan', () => {
+    expect(failing(run(harness, { terms: [], attested: [] }))).toEqual([
+      'physics-series:unmet', 'phys5d:unmet', 'calc-a:unmet', 'calc-b:unmet', 'vector-calc/MATH23A:unmet', 'vector-calc/MATH23B:unmet',
+      'ud-core/PHYS102:unmet', 'ud-core/PHYS133:unmet', 'electives:unmet',
+    ])
+  })
+
+  it('review: PHYS 135A / ASTR 135A (3 credits) is no elective, even as a substitute', () => {
+    expect(find(run(harness, { terms: edit(base, 'PHYS 115', 'ASTR 135A'), choices: { 'major-dept': 'other' } }), 'electives').status).toBe('unmet')
   })
 })

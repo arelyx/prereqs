@@ -73,4 +73,41 @@ describe('biochemistry-and-molecular-biology-bs 2026-27', () => {
     expect(find(run(harness, { terms: edit(base, 'PHYS 6C', 'PHYS 5C') }), 'physics').status).toBe('cannot-check')
     expect(find(run(harness, { terms: edit(base, 'PHYS 6L', null) }), 'physics').status).toBe('unmet')
   })
+
+  // --- review 2026-10-06: adversarial records ---
+  const add = (t: StudentRecord['terms'], ...cs: string[]) => [...t, { term: '2300', courses: cs }]
+
+  it('review: a mixed MATH 11/19 pair defers to the external transition policy (cannot-check)', () => {
+    // "Students may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy."
+    expect(find(run(harness, { terms: edit(base, 'MATH 19B', 'MATH 11B') }), 'calculus').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: edit(edit(base, 'MATH 19A', 'MATH 11A'), 'MATH 19B', 'MATH 11B') }), 'calculus').status).toBe('met')
+  })
+
+  it('review: a CURE J lab is not also the upper-division K/L lab, and an exit lab is not the BMB lab', () => {
+    expect(find(run(harness, { terms: edit(base, 'BIOL 101L', 'CHEM 160L') }), 'bmb-lab').status).toBe('unmet')
+    expect(find(run(harness, { terms: edit(base, 'BIOL 101L', 'CHEM 160J') }), 'bmb-lab').status).toBe('unmet')
+  })
+
+  it('review: two exit labs do not substitute for the elective', () => {
+    expect(find(run(harness, { terms: add(edit(base, 'CHEM 171', null), 'CHEM 186L') }), 'elective').status).toBe('unmet')
+  })
+
+  it('review: no CHEM 8N honors substitute is stated on this page', () => {
+    expect(find(run(harness, { terms: edit(base, 'CHEM 8M', 'CHEM 8N') }), 'orgo').status).toBe('unmet')
+  })
+
+  it('review: P in a required course fails the letter-grade rule; C passes', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'BIOL 115': 'P' } }))).toEqual(['euk:unmet'])
+    expect(failing(run(harness, { terms: base, grades: { 'BIOL 115': 'C' } }))).toEqual([])
+  })
+
+  it('review: exam credit (no term) counts as the course', () => {
+    const t = edit(base, 'STAT 5', null)
+    expect(failing(run(harness, { terms: t, completed: ['STAT 5'] }))).toEqual([])
+  })
+
+  it('review: empty plan', () => {
+    const f = failing(run(harness, { terms: [], attested: [] }))
+    expect(f).toEqual(expect.arrayContaining(['gen-chem:unmet', 'calculus:unmet', 'exit-lab:unmet', 'dc:unmet', 'comprehensive:unmet', 'elective:unmet']))
+  })
 })

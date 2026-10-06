@@ -6,6 +6,6 @@
  "skeleton_sha256": "6c4a1f555602d6ed2eb72ea0ffa36b2720d70e19cc57885ef3a783ebedec72c4",
  "status": "verified",
  "authored_at": "2026-10-06T00:50:19Z",
- "verified_at": "2026-10-06T00:57:26Z",
- "notes": "verified line by line against sources/astrophysics-minor.md; PHYS 5D required with either series; P/NP allowed."
+ "verified_at": "2026-10-06T23:45:07Z",
+ "notes": "verified line by line against sources/astrophysics-minor.md; PHYS 5D required with either series; P/NP allowed.; reviewed 2026-10-06: removed cross-list alias/unknownOk (PHYS 107 matches AM 107 through the library); added adversarial tests"
 }

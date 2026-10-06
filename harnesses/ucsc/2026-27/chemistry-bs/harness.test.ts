@@ -74,8 +74,10 @@ describe('chemistry-bs 2026-27', () => {
     expect(find(run(harness, { terms: edit(general, 'MATH 21', null) }), 'adv-math').status).toBe('unmet')
   })
 
-  it('MATH 11/19 mix accepted', () => {
-    expect(find(run(harness, { terms: edit(general, 'MATH 19B', 'MATH 11B') }), 'calculus').status).toBe('met')
+  it('review: a MATH 11/19 mix defers to the external transition policy (cannot-check)', () => {
+    // "A student may combine the MATH 11 and MATH 19 series in accordance with the Mathematics Department’s Calculus Series Transition Policy."
+    expect(find(run(harness, { terms: edit(general, 'MATH 19B', 'MATH 11B') }), 'calculus').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: edit(general, 'MATH 19B', null) }), 'calculus').status).toBe('unmet')
   })
 
   it('physics: one full series; a 5/6 mix needs advisor confirmation', () => {
@@ -120,5 +122,42 @@ describe('chemistry-bs 2026-27', () => {
   it('biochemistry concentration needs BIOL 20A/BIOE 20B and all of BIOC 100A–C', () => {
     expect(find(run(harness, { terms: edit(bioc, 'BIOE 20B', null), choices: bc }), 'intro-bio').status).toBe('unmet')
     expect(find(run(harness, { terms: edit(bioc, 'BIOC 100C', 'CHEM 103'), choices: bc }), 'biochem').status).toBe('unmet')
+  })
+
+  // --- review 2026-10-06: adversarial records ---
+  it('review: a chemistry graduate course may be an elective, asked only when needed', () => {
+    // "Students may also satisfy the elective requirement by completing a chemistry graduate course with permission from the instructor and department."
+    const t = edit(general, 'CHEM 143', 'CHEM 200A')
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['attest:grad-elective:needs-attestation'])
+    expect(failing(run(harness, { terms: add(general, 'CHEM 200A'), attested: [] }))).toEqual([])
+    // the concentration has no electives at all
+    expect(failing(run(harness, { terms: bioc, choices: bc, attested: [] }))).toEqual([])
+  })
+
+  it('review: BIOC 100A+100B without 100C does not replace CHEM 103', () => {
+    const t = add(edit(general, 'CHEM 103', 'BIOC 100A'), 'BIOC 100B')
+    expect(find(run(harness, { terms: t }), 'biochem').status).toBe('unmet')
+  })
+
+  it('review: a general-major record does not complete the concentration', () => {
+    const f = failing(run(harness, { terms: general, choices: bc }))
+    expect(f).toContain('intro-bio/BIOL20A:unmet')
+    expect(f).toContain('biochem/BIOC100A:unmet')
+  })
+
+  it('review: CHEM 164 is not required in the concentration', () => {
+    expect(failing(run(harness, { terms: edit(bioc, 'CHEM 164', null), choices: bc }))).toEqual([])
+  })
+
+  it('review: the DC lab may also be an elective (CHEM 124 as both)', () => {
+    const t = edit(edit(general, 'CHEM 146A', 'CHEM 124'), 'CHEM 143', null)
+    expect(failing(run(harness, { terms: t }))).toEqual([])
+  })
+
+  it('review: C- in the DC lab fails DC and the comprehensive', () => {
+    const r = run(harness, { terms: general, grades: { 'CHEM 146A': 'C-' } })
+    expect(find(r, 'dc').status).toBe('unmet')
+    expect(find(r, 'comprehensive').status).toBe('unmet')
   })
 })

@@ -11,8 +11,14 @@
 //    cross-listing, e.g. AM 107/PHYS 107, PHYS 150/CSE 109) are then excluded.
 //    If a course offered outside Physics is counted and no department is
 //    declared, the electives node is cannot-check rather than met.
+//  - "Other courses may be taken as electives with the approval of the
+//    Physics Department undergraduate faculty adviser": any other 5-credit
+//    upper-division science/engineering course, asked as an attestation only
+//    when the allocator needed it (§1a petition).
+//  - Cross-listed codes (AM 107/PHYS 107, EART 172/OCEA 172, PHYS 150/CSE 109)
+//    match through the library; "offered by" reads the catalog's equivalents.
 //  - P/NP allowed.
-import { codes, defineHarness, parseCode, range } from '@harness'
+import { anyOf, codes, defineHarness, parseCode, range, subject } from '@harness'
 import type { Catalog, Enrollment } from '@harness'
 
 const OUTSIDE = [
@@ -20,9 +26,6 @@ const OUTSIDE = [
   'EART 172', 'ECE 101', 'ECE 102', 'ECE 103', 'ECE 130', 'ECE 136', 'ECE 141', 'ECE 171', 'ECE 172',
   'ECE 178', 'MATH 130',
 ]
-// Cross-listed codes: AM 107 [/PHYS 107] and EART 172 [/OCEA 172] from the page; CSE 109,
-// ASTR 114 and ASTR 135 are catalog cross-listings of PHYS 150, PHYS 130 and PHYS 135.
-const ALIASES = ['OCEA 172', 'CSE 109', 'ASTR 114', 'ASTR 135']
 
 // Department → subjects it offers. A course counts as offered by a department
 // when its own subject or any cross-listing's subject belongs to it.
@@ -36,12 +39,19 @@ const DEPTS: { value: string; label: string; subjects: string[]; aliases: string
   { value: 'math', label: 'Mathematics', subjects: ['MATH'], aliases: ['math', 'mathematics'] },
   { value: 'other', label: 'Another department (none of the above)', subjects: [], aliases: ['other', 'none'] },
 ]
-// Cross-listed codes a student may enter that are not separate catalog entries → the catalog course.
-const ALIAS_OF: Record<string, string> = { PHYS107: 'AM107', OCEA172: 'EART172', CSE109: 'PHYS150', ASTR114: 'PHYS130', ASTR135: 'PHYS135' }
 
 const Q_ELECT = 'These can be any 5-credit physics upper-division courses chosen from PHYS 100 to PHYS 180, or courses from the following list:'
 const Q_DEPT = 'The elective courses cannot be offered by the department that sponsors the student’s major.'
+const Q_PETITION = 'Other courses may be taken as electives with the approval of the Physics Department undergraduate faculty adviser.'
 const PHYS_UD = range('PHYS', 100, 180).minCredits(5)
+const LISTED = PHYS_UD.or(codes(...OUTSIDE))
+// Adviser-approved substitutes: other upper-division science/engineering courses.
+const SCI_ENG = ['AM', 'ASTR', 'BIOC', 'BIOE', 'BIOL', 'BME', 'CHEM', 'CSE', 'EART', 'ECE', 'MATH', 'METX', 'OCEA', 'PHYS', 'STAT']
+// .where (not .minCredits): a cross-listed partner code missing from the catalog
+// (ASTR 135A for the 3-credit PHYS 135A) must not pass as "credits unknown".
+const PETITION_POOL = anyOf(...SCI_ENG.map((s) => subject(s, 'upper')))
+  .except(LISTED)
+  .where((c) => c.credits >= 5, '5+ credits')
 
 export default defineHarness({
   program: 'physics-minor',
@@ -55,19 +65,13 @@ export default defineHarness({
       options: DEPTS.map((d) => ({ value: d.value, label: d.label, aliases: d.aliases })),
     },
   ],
+  attestations: [
+    { id: 'elective-approval', label: 'Physics Department undergraduate faculty adviser approved this course as a minor elective', quote: Q_PETITION, aliases: ['elective approval', 'adviser approval', 'advisor approval', 'approved elective'] },
+  ],
   notes: [
     'Courses may be taken for a letter grade or Pass/No Pass.',
     'Students who complete a major sponsored by the Physics Department cannot complete the physics minor.',
-    'Other courses may count as electives with the approval of the Physics Department undergraduate faculty adviser (add them once approved).',
   ],
-  coverage: {
-    unknownOk: {
-      OCEA172: 'cross-listing of EART 172 named on the page; not a separate catalog entry',
-      CSE109: 'cross-listing of PHYS 150; not a separate catalog entry',
-      ASTR114: 'cross-listing of PHYS 130; not a separate catalog entry',
-      ASTR135: 'cross-listing of PHYS 135; not a separate catalog entry',
-    },
-  },
   evaluate(h) {
     // "Courses may be taken for a letter grade or Pass/No Pass."
     h.policy = undefined
@@ -95,21 +99,26 @@ export default defineHarness({
     ])
 
     // "The elective courses cannot be offered by the department that sponsors the student’s major."
-    const pool = PHYS_UD.or(codes(...OUTSIDE, ...ALIASES))
+    const pool = LISTED.or(PETITION_POOL)
     const blockedCodes = blocked.size
       ? [...new Set(h.enrollments.map((e) => e.code))].filter((c) => pool.has(c, h.catalog) && offering(c, h.catalog).some((s) => blocked.has(s)))
       : []
     const outside = (e: Enrollment) => offering(e.code, h.catalog).some((s) => s !== 'PHYS')
     const electives = h.take('electives', 'Three electives', [Q_ELECT, Q_DEPT], pool.except(blockedCodes), {
       n: 3,
-      // courses offered only by Physics first, so outside/cross-listed courses are used only when needed
-      prefer: (c) => (offering(c, h.catalog).every((s) => s === 'PHYS') ? 0 : 1),
-      pool: 'PHYS 100–180 (5 credits), or the listed AM/ASTR/EART/ECE/MATH courses',
+      // courses offered only by Physics first, then listed outside courses, then adviser-approved substitutes
+      prefer: (c) => (!LISTED.has(c, h.catalog) ? 2 : offering(c, h.catalog).every((s) => s === 'PHYS') ? 0 : 1),
+      pool: 'PHYS 100–180 (5 credits), or the listed AM/ASTR/EART/ECE/MATH courses; other upper-division science/engineering courses with adviser approval',
     })
-    const upper = h.group('upper', 'Upper-Division Courses', [h.all('ud-core', 'PHYS 102 and PHYS 133', 'All of the following courses:', ['PHYS 102', 'PHYS 133']), electives])
+    const core = h.all('ud-core', 'PHYS 102 and PHYS 133', 'All of the following courses:', ['PHYS 102', 'PHYS 133'])
 
     h.solve()
     const used = electives.used ?? []
+    const petitioned = used.filter((e) => !LISTED.has(e.code, h.catalog))
+    const electivesNode = petitioned.length
+      ? h.group('electives-approved', 'Three electives', [electives, h.attest('elective-approval', `Adviser approval for ${petitioned.map((e) => e.display).join(', ')} as an elective`)], { quote: Q_PETITION })
+      : electives
+    const upper = h.group('upper', 'Upper-Division Courses', [core, electivesNode])
     if (!dept && electives.status === 'met' && used.some(outside)) {
       electives.status = 'cannot-check'
       electives.detail = `${used.filter(outside).map((e) => e.display).join(', ')} count only if not offered by your major’s department — tell the dashboard which department sponsors your major.`
@@ -121,7 +130,5 @@ export default defineHarness({
 
 /** Subjects that offer a course: its own subject plus its cross-listings' subjects. */
 function offering(code: string, catalog: Catalog): string[] {
-  const primary = ALIAS_OF[code] ?? code
-  const c = catalog.get(primary)
-  return [...new Set([parseCode(code).subject, parseCode(primary).subject, ...(c?.crossListed ?? []).map((x) => parseCode(x).subject)])]
+  return [...new Set([code, ...catalog.equivalents(code)].map((x) => parseCode(x).subject))]
 }

@@ -55,4 +55,35 @@ describe('astrophysics-minor 2026-27', () => {
     expect(failing(run(harness, { terms: base, grades: { 'ASTR 112': 'P', 'PHYS 102': 'P' } }))).toEqual([])
     expect(find(run(harness, { terms: base, grades: { 'ASTR 112': 'NP' } }), 'electives').status).toBe('unmet')
   })
+
+  // --- review 2026-10-06: adversarial records ---
+  const add = (t: StudentRecord['terms'], ...cs: string[]) => [...t, { term: '2300', courses: cs }]
+
+  it('review: a retaken elective counts once', () => {
+    expect(find(run(harness, { terms: add(edit(base, 'EART 160', null), 'ASTR 112') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: PHYS 5 lectures with PHYS 6 labs are not a package', () => {
+    let t = base
+    for (const [a, b] of [['PHYS 6A', 'PHYS 5A'], ['PHYS 6B', 'PHYS 5B'], ['PHYS 6C', 'PHYS 5C']]) t = edit(t, a, b)
+    expect(find(run(harness, { terms: t }), 'physics').status).toBe('unmet')
+  })
+
+  it('review: calculus packages cannot be mixed (MATH 19A + 20B)', () => {
+    expect(find(run(harness, { terms: edit(base, 'MATH 19B', 'MATH 20B') }), 'calculus').status).toBe('unmet')
+  })
+
+  it('review: exam credit (no term) counts as the course', () => {
+    const t = edit(edit(base, 'MATH 19A', null), 'MATH 19B', null)
+    expect(failing(run(harness, { terms: t, completed: ['MATH 19A', 'MATH 19B'] }))).toEqual([])
+  })
+
+  it('review: ASTR 136 modules, ASTR 135 and other ASTR courses are not on the list', () => {
+    expect(find(run(harness, { terms: add(edit(base, 'EART 160', null), 'ASTR 136A', 'ASTR 116', 'PHYS 135') }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: kitchen sink completes; empty plan blames every requirement', () => {
+    expect(failing(run(harness, { terms: add(base, 'MATH 20A', 'MATH 20B', 'PHYS 5A', 'PHYS 5L', 'PHYS 129', 'PHYS 171', 'AM 107') }))).toEqual([])
+    expect(failing(run(harness, { terms: [] }))).toEqual(['calculus:unmet', 'math23a:unmet', 'physics:unmet', 'phys102:unmet', 'electives:unmet'])
+  })
 })
