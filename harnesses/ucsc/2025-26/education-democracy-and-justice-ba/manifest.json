@@ -1,0 +1,11 @@
+{
+ "program": "education-democracy-and-justice-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "acad182c7dd73c24b2fa2de0a7675b42f0e6284b596caf8b1cf9be878c9e7218",
+ "skeleton_sha256": "60bcb9c2fb2ccc6dbdf4d40df12df32646d011ce5d584113b66d8d37d1eec524",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:16Z",
+ "verified_at": "2026-10-06T23:53:34Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (intro/advising/honors/declaration/planner text; no requirement changes)"
+}

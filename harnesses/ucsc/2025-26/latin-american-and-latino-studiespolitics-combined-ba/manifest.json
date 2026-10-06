@@ -1,0 +1,11 @@
+{
+ "program": "latin-american-and-latino-studiespolitics-combined-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "7998b42637454e31ec30da2b32bec7e711867e2de7f0862adb0a3a58bb882709",
+ "skeleton_sha256": "27fcd6460131fe3fa81f72abed8fbd38d06cc09b60bcd868dc7d39678ef6cce0",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:13Z",
+ "verified_at": "2026-10-06T23:53:33Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (intro/advising/honors/declaration/planner text; no requirement changes)"
+}

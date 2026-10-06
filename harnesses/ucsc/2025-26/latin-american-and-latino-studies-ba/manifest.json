@@ -1,0 +1,14 @@
+{
+ "program": "latin-american-and-latino-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "7f04bb7458ecee773596474cb034df6795a58448ca9a64ba60b3f11d3fdc7de3",
+ "skeleton_sha256": "bb6cefd9829f780ab03b938dc2bffd995b721a65e109535a7d9a1790837e22fd",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:11Z",
+ "verified_at": "2026-10-06T23:53:33Z",
+ "notes": "ported from 2026-27 (reviewed); differences: Language Intensive 'Courses taught primarily in Spanish' list adds LALS 127 and LALS 129S (test added); exam-credit sentence absent; honors/planner wording only. Depends on LALS/EDJ page for LALS 157/183",
+ "depends_on": {
+  "latin-american-and-latino-studieseducation-democracy-and-justice-ba": "c985567e2cfd0c911a7de330245c2f88f8a610b900094ebbeda08b4644588ade"
+ }
+}

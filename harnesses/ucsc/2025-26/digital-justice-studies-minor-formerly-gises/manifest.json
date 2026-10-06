@@ -1,0 +1,11 @@
+{
+ "program": "digital-justice-studies-minor-formerly-gises",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "6c41b28ba017b896c5c96b30b215309450c39c6ee981f076330461f52f3122ef",
+ "skeleton_sha256": "fc5bebc9dba1fb6896a276290522ddc651772ae17c748dc830dc7d7aa4cd4378",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:15Z",
+ "verified_at": "2026-10-06T23:53:34Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (intro/advising/honors/declaration/planner text; no requirement changes)"
+}

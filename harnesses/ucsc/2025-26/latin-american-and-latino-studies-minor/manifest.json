@@ -1,0 +1,14 @@
+{
+ "program": "latin-american-and-latino-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "fefa1b7996914d1f56ca234815ab5f5266dc3b14965862911d44d4954167ff0b",
+ "skeleton_sha256": "3af6e703fd51ebcb19171020b724357dcd571f25f606928c29d1a8c0837e73b7",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:12Z",
+ "verified_at": "2026-10-06T23:53:33Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (LALS 100L called 'writing lab'; quote updated; intro sentence on declaring is info)",
+ "depends_on": {
+  "latin-american-and-latino-studies-ba": "7f04bb7458ecee773596474cb034df6795a58448ca9a64ba60b3f11d3fdc7de3"
+ }
+}
