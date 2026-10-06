@@ -1,0 +1,11 @@
+{
+ "program": "technology-and-information-management-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "447f13bd11f9b36b086bda88673935f01a40ef1613599f061390be56bb0f4bd9",
+ "skeleton_sha256": "9dbb415a7ccf580fbf3ee18643363dec5ed4f95f5c1fc11364783c51685a6917",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:54:24Z",
+ "verified_at": "2026-10-06T00:57:40Z",
+ "notes": "verified line by line against sources/technology-and-information-management-minor.md; either-pairs in electives as atMost; CSE 20 Test Out = attestation"
+}

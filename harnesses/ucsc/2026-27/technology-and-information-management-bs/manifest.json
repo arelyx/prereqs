@@ -1,0 +1,11 @@
+{
+ "program": "technology-and-information-management-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "e689827442ce7d365383e11c7918f2be8e35cbe65e3c79f7c43f487f60de6c76",
+ "skeleton_sha256": "31211937f409af5148a2ba55a40d5d822718e774eb95716d955f4201b84b958b",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:55:23Z",
+ "verified_at": "2026-10-06T00:57:40Z",
+ "notes": "verified line by line against sources/technology-and-information-management-bs.md; letter grades; BE electives = 5+ cr AM/BME/CMPM/CSE/ECE/STAT/TIM/GAME/HCI/NLP 100-189 or 200-289 (subject list is outside knowledge), labs required, STAT 131/CSE 107 max one, TIM 193/195/198/199 max one + approval attestation; TIM 172A/P and 172B/Q concurrency checked by term; CSE 20 missing + test-out attested = cannot-check (page implies but does not state a waiver); ECON 100A/100M credit-once"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-education-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "cf7db11eb4fe9c5d3257aec048aa484ffa0e2ad9541b40cc1cab8de06d78d355",
+ "skeleton_sha256": "3c12e04fecf38a3a297ec77b9c2acb302120e6dcf4b740a4b1ac4d5c4761e348",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:22Z",
+ "verified_at": "2026-10-06T00:57:39Z",
+ "notes": "verified line by line against sources/mathematics-education-ba.md; fixed lists, EDUC 50A/B and 100A/B one-of, DC/comprehensive overlays"
+}

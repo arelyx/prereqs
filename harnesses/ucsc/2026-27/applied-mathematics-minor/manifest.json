@@ -1,0 +1,11 @@
+{
+ "program": "applied-mathematics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "4184637e49c9cf367b7b7834b9b31248b7677d73faf7273b723ec90ef4451d97",
+ "skeleton_sha256": "635e2b7365fc0274fb879935ed56ef4b4aa7da2186dc369940d3f8ec97fb040c",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:25Z",
+ "verified_at": "2026-10-06T00:57:39Z",
+ "notes": "verified line by line against sources/applied-mathematics-minor.md; linear algebra+ODE packages incl. mixed AM/MATH and PHYS 116A alone; elective = AM 100-279 5cr minus category courses/AM 198/200/211 or listed courses"
+}

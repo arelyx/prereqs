@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-theory-and-computation-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "988658101b398b27e8b128f296686ea8a76bc79a7ad822c039b26bb6e8acf610",
+ "skeleton_sha256": "c8cd6280d22158dc59de8d07897747b54e95f1849d9a7304a778b5d09e06ece7",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:50Z",
+ "verified_at": "2026-10-06T00:57:39Z",
+ "notes": "verified line by line against sources/mathematics-theory-and-computation-bs.md; electives = explicit list + extra COMPUTATION-list courses only (theory extras do not count; no 101-190 range on this page); CS double-major CSE petition = attestation, asked only when a CSE 100-199 course is actually needed for coding/electives"
+}
