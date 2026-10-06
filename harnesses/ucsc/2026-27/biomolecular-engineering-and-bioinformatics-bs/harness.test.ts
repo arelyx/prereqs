@@ -184,3 +184,31 @@ describe('biomolecular-engineering-and-bioinformatics-bs 2026-27 — BINF', () =
     expect(failing(run(harness, { terms: edit(binfBase, 'CSE 182', 'BIOC 100B'), choices: BINF }))).toEqual([])
   })
 })
+
+describe('biomolecular-engineering-and-bioinformatics-bs 2026-27 — review 2026-10-06', () => {
+  // "CSE 20 has a test-out exam that will also be accepted."
+  it('CSE 20 test-out: offered only when neither BME 160 nor CSE 20 is planned', () => {
+    const t = edit(bmeBase, 'BME 160', null)
+    expect(find(run(harness, { terms: t, choices: BME }), 'bme160-testout').status).toBe('met')
+    const no = run(harness, { terms: t, choices: BME, attested: ['exit'] })
+    expect(find(no, 'bme160-or-testout').status).toBe('needs-attestation')
+    expect(() => find(run(harness, { terms: bmeBase, choices: BME, attested: ['exit'] }), 'bme160-or-testout')).toThrow()
+  })
+
+  // "CSE 40 has a test-out option which can satisfy this requirement."
+  it('CSE 40 test-out satisfies BINF lower-division statistics', () => {
+    const t = edit(binfBase, 'CSE 40', null)
+    expect(failing(run(harness, { terms: t, choices: BINF }))).toEqual([])
+    expect(find(run(harness, { terms: t, choices: BINF, attested: ['exit'] }), 'ld-stats-or-testout').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, choices: BINF, attested: ['exit', 'Passed the CSE 40 test-out'] }), 'ld-stats-testout').status).toBe('met')
+  })
+
+  it('two quarters of BME 195 explain the shortfall', () => {
+    const two = [...bmeBase.slice(0, 8), { term: '2298', courses: ['BME 195'] }, { term: '2300', courses: ['BME 195'] }]
+    expect(find(run(harness, { terms: two, choices: BME }), 'capstone').detail).toMatch(/2 of 3 quarters/)
+  })
+
+  it('cross-listed PHIL 80G counts as BME 80G', () => {
+    expect(failing(run(harness, { terms: edit(binfBase, 'BME 80G', 'PHIL 80G'), choices: BINF }))).toEqual([])
+  })
+})

@@ -68,4 +68,24 @@ describe('creative-technologies-ba 2026-27', () => {
   it('P grades count', () => {
     expect(failing(run(harness, { terms: base, choices: B, grades: { 'CT 101': 'P' } }))).toEqual([])
   })
+
+  // review 2026-10-06: a course counts once
+  it('a retaken CT core course cannot also be a breadth elective', () => {
+    const t = [...base, { term: '2298', courses: ['CT 101'] }]
+    const r = run(harness, { terms: t, choices: { ...B, breadth3: 'CT 101' } })
+    expect(find(r, 'breadth/3').status).toBe('unmet')
+    expect(find(r, 'breadth/3').detail).toMatch(/already counts/)
+  })
+
+  it('a cross-listed partner of a core course (ART 102 = CT 100) is not a breadth elective', () => {
+    const r = run(harness, { terms: base, choices: { ...B, breadth3: 'ART 102' } })
+    expect(find(r, 'breadth/3').detail).toMatch(/already counts/)
+    // and ART 102 on the record satisfies CT 100
+    expect(find(run(harness, { terms: edit(base, 'CT 100', 'ART 102'), choices: B }), 'ud-core').status).toBe('met')
+  })
+
+  it('a fourth CT 1 (repeatable) stays available', () => {
+    const t = [...base, { term: '2298', courses: ['CT 1'] }]
+    expect(find(run(harness, { terms: t, choices: { ...B, breadth2: 'CT 1' } }), 'breadth/2').status).toBe('met')
+  })
 })

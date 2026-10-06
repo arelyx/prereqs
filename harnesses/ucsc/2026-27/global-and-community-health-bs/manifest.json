@@ -6,6 +6,6 @@
  "skeleton_sha256": "012cb5871a59352f0cc0ae162cf9ace2cfe775a02fa0023a4191e6531fe7d265",
  "status": "verified",
  "authored_at": "2026-10-06T00:54:17Z",
- "verified_at": "2026-10-06T00:57:50Z",
- "notes": "verified line by line; 18 tests over both concentrations; garbled 'Physiology of Disease' row filled by METX 41 (only catalog course with that title); SPAN 1-4 'or the equivalent' = attestation for levels below highest taken; BIOL 20L CC waiver = cannot-check; STAT 5 pre-UCSC petition = attestation; DC overlay; comprehensive = BIOL 189"
+ "verified_at": "2026-10-06T23:42:50Z",
+ "notes": "verified line by line; 18 tests over both concentrations; garbled 'Physiology of Disease' row filled by METX 41 (only catalog course with that title); SPAN 1-4 'or the equivalent' = attestation for levels below highest taken; BIOL 20L CC waiver = cannot-check; STAT 5 pre-UCSC petition = attestation; DC overlay; comprehensive = BIOL 189; reviewed 2026-10-06: STAT 5 petition offered only when STAT 7+7L are not both planned; BIOL 189 taken P = cannot-check (page says 'passing grade' but major requires letter grades); +4 tests"
 }

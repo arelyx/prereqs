@@ -14,6 +14,12 @@
 //  - DC = PSYC 100 + a seminar; comprehensive = passing a senior seminar
 //    (overlays on the courses above).
 //  - No letter-grade rule for completion (only for declaration).
+//  - "CSE 20 may be satisfied by successfully completing the CSE 20 Test Out
+//    Exam": attestation offered only when no programming course is in the
+//    plan (docs/HARNESSES.md §1a).
+//  - "LING 111 formerly LING 55" / "LING 112 formerly LING 52": the former
+//    codes count as interdisciplinary electives (not as upper-division: the
+//    catalog no longer lists them).
 import { codes, defineHarness, range } from '@harness'
 import type { Enrollment, HarnessContext, Node } from '@harness'
 
@@ -37,8 +43,12 @@ const INTERDISCIPLINARY = [
   'LING 124', 'LING 125', 'LING 140', 'LING 151', 'LING 152', 'LING 155', 'LING 171', 'LING 172', 'LING 174',
   'PHIL 7', 'PHIL 9', 'PHIL 11', 'PHIL 23', 'PHIL 80S', 'PHIL 100B', 'PHIL 100C', 'PHIL 121', 'PHIL 123', 'PHIL 125',
   'PHIL 133', 'PHIL 135',
+  // former codes: "LING 111 formerly LING 55LING 112 formerly LING 52"
+  'LING 55', 'LING 52',
 ]
+const PROGRAMMING = ['CSE 13S', 'CSE 20', 'CSE 30', 'ECE 13']
 const INTER_SET = codes(...INTERDISCIPLINARY)
+const PROGRAMMING_SET = codes(...PROGRAMMING)
 const INTER_LABS: [string, string][] = [['BIOE 124', 'BIOE 124L'], ['BIOE 129', 'BIOE 129L']]
 const UD_INTER = INTER_SET.where((c) => c.division === 'upper', 'upper-division')
 const UD_PSYC = range('PSYC', 100, 199)
@@ -57,8 +67,20 @@ export default defineHarness({
   title: 'Cognitive Science B.S.',
   attestations: [
     { id: 'grad-petition', label: 'Petition approved for a PSYC 204–252 graduate course as an elective', quote: Q_GRAD, aliases: ['graduate petition', 'grad petition'] },
+    {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'CSE 20 may be satisfied by successfully completing the',
+      aliases: ['cse 20 test-out', 'cse 20 testout', 'cse20 testout', 'cse 20 test out'],
+    },
     { id: 'phil190-petition', label: 'Petition approved for PHIL 190 as an interdisciplinary elective', quote: 'PHIL 190 satisfies this requirement by petition only.', aliases: ['phil 190', 'phil190'] },
   ],
+  coverage: {
+    unknownOk: {
+      LING55: 'former code of LING 111 ("LING 111 formerly LING 55"); no longer in the catalog',
+      LING52: 'former code of LING 112 ("LING 112 formerly LING 52"); no longer in the catalog',
+    },
+  },
   notes: [
     'PSYC 100 and the senior seminar must be taken at UC Santa Cruz (the plan does not record where a course was taken).',
     'Up to three Global Learning courses may be approved for the major.',
@@ -71,9 +93,7 @@ export default defineHarness({
       h.take('psyc20', 'PSYC 20 Introduction to Cognition', 'PSYC 20 — Cognition: Fundamental Theories (5)', codes('PSYC 20')),
       h.options('stats', 'Statistics', ['Choose one of the following courses:', 'Lecture and lab combinations count as a single course.'], [['PSYC 2'], ['STAT 5'], ['STAT 7', 'STAT 7L']]),
       h.take('calc', 'Calculus', 'Choose one of the following courses:', codes('AM 11A', 'MATH 11A', 'MATH 16A', 'MATH 19A', 'MATH 20A')),
-      h.take('programming', 'Computer Programming', 'Choose one of the following courses:', codes('CSE 13S', 'CSE 20', 'CSE 30', 'ECE 13'), {
-        notes: ['CSE 20 may be satisfied by passing the CSE 20 Test Out Exam — if you did, ask an advisor to record it.'],
-      }),
+      programming(h),
     ])
 
     const psyc100 = h.take('psyc100', 'PSYC 100 Research Methods', 'PSYC 100 — Research Methods in Psychology (7)', codes('PSYC 100'))
@@ -119,7 +139,19 @@ export default defineHarness({
       const mine = new Set((inter.used ?? []).map((e) => e.id))
       const free = (e: Enrollment) => !h.used.has(e.id) || mine.has(e.id)
       const ld = new Set(h.passed.filter((e) => INTER_SET.has(e.code) && free(e) && h.catalog.get(e.code)?.division === 'lower').map((e) => e.code))
-      const spare = h.passed.find((e) => UD_PSYC.has(e.code) && !h.used.has(e.id) && !SEMINAR.has(e.code) && h.catalog.get(e.code)?.division === 'upper')
+      // A course counts once (a retaken PSYC 100/121 is not "additional"), and
+      // "PSYC 193, PSYC 193I, PSYC 193S*, PSYC 194A, PSYC 194B, and PSYC 195A
+      // may satisfy only one elective requirement".
+      const usedKeys = new Set(h.enrollments.filter((e) => h.used.has(e.id)).map(h.courseKey))
+      const fieldUsed = h.enrollments.some((e) => h.used.has(e.id) && FIELD.has(e.code))
+      const spare = h.passed.find(
+        (e) =>
+          UD_PSYC.has(e.code) &&
+          !usedKeys.has(h.courseKey(e)) &&
+          !SEMINAR.has(e.code) &&
+          !(fieldUsed && FIELD.has(e.code)) &&
+          h.catalog.get(e.code)?.division === 'upper',
+      )
       if (ld.size >= 4 && spare) {
         inter.status = 'met'
         inter.detail = `Four lower-division electives; ${spare.display} counts toward the upper-division requirement.`
@@ -134,6 +166,16 @@ export default defineHarness({
     return [lower, upper, electives, dc, comprehensive]
   },
 })
+
+/** Programming: one listed course, or the CSE 20 test-out when none is in the plan. */
+function programming(h: HarnessContext): Node {
+  const slot = h.take('programming', 'Computer Programming', 'Choose one of the following courses:', codes(...PROGRAMMING))
+  const present = h.enrollments.some((e) => PROGRAMMING_SET.has(e.code, h.catalog))
+  if (present) return slot
+  const quote = 'CSE 20 may be satisfied by successfully completing the'
+  if (h.attested('cse20-testout')) return h.node('programming-testout', 'Computer Programming', quote, 'met', { detail: 'by test-out (CSE 20 Test Out Exam)' })
+  return h.either('programming-or-testout', 'Computer Programming, or the CSE 20 test-out', quote, [slot, h.attest('cse20-testout')])
+}
 
 function petition(h: HarnessContext, node: Node, needs: (code: string) => boolean, id: string) {
   const hit = (node.used ?? []).find((e) => needs(e.code))

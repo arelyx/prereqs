@@ -7,6 +7,10 @@
 //  - Transfer students may use PHIL 22/24/28 articulated courses taken before
 //    UCSC in place of BME 80G: accepted only for courses with no UCSC term.
 //  - CSE 20 for BME 160, BIOL 105 for BME 105 (explicit substitutions).
+//  - Test-outs ("CSE 20 has a test-out exam that will also be accepted",
+//    "CSE 40 has a test-out option which can satisfy this requirement"):
+//    attestations offered only when no course of the slot is in the plan
+//    (docs/HARNESSES.md §1a).
 //  - The elective "cannot satisfy other requirements of the major": an
 //    exclusive slot, so it never shares a course with the modeling/design
 //    sequence, the capstone (BME 205/230A are 5-credit graduate courses) etc.
@@ -54,6 +58,18 @@ export default defineHarness({
       quote: 'Students are required to submit a portfolio, exit survey, and attend an exit interview.',
       aliases: ['portfolio', 'exit survey', 'exit interview', 'exit requirement'],
     },
+    {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'CSE 20 has a test-out exam that will also be accepted.',
+      aliases: ['cse 20 test-out', 'cse 20 testout', 'cse20 testout', 'cse 20 test out'],
+    },
+    {
+      id: 'cse40-testout',
+      label: 'Passed the CSE 40 test-out',
+      quote: 'CSE 40 has a test-out option which can satisfy this requirement.',
+      aliases: ['cse 40 test-out', 'cse 40 testout', 'cse40 testout', 'cse 40 test out'],
+    },
   ],
   notes: [
     'Baskin Engineering requires letter grades for all courses in an engineering major.',
@@ -84,10 +100,9 @@ function bmeCore(h: HarnessContext): Node {
   return h.group('bme-core', 'Biomolecular Engineering core', [
     h.take('bme105', 'BME 105 (or BIOL 105)', ['BME 105 — Genetics in the Genomics Era (5)', Q_SUBS], codes('BME 105', 'BIOL 105'), { prefer: (c) => (c === 'BME105' ? 0 : 1) }),
     h.take('bme110', 'BME 110', 'BME 110 — Computational Biology Tools (5)', codes('BME 110')),
-    h.take('bme160', 'BME 160 (or CSE 20)', ['BME 160 — Research Programming in the Life Sciences (6)', Q_SUBS], codes('BME 160', 'CSE 20'), {
+    testOut(h, 'cse20-testout', ['BME160', 'CSE20'], h.take('bme160', 'BME 160 (or CSE 20)', ['BME 160 — Research Programming in the Life Sciences (6)', Q_SUBS], codes('BME 160', 'CSE 20'), {
       prefer: (c) => (c === 'BME160' ? 0 : 1),
-      notes: ['Passing the CSE 20 test-out exam is also accepted — if you did, ask an advisor to record it.'],
-    }),
+    })),
     h.take('bme163', 'BME 163', 'BME 163 — Applied Visualization and Analysis of Scientific Data (5)', codes('BME 163')),
   ], { quote: 'All of these courses:' })
 }
@@ -158,6 +173,7 @@ function bmeConcentration(h: HarnessContext): Node[] {
       ],
     },
   )
+  thesisDetail(h, capstone)
   return [lower, upper, el, dc, capstone, exit(h)]
 }
 
@@ -174,9 +190,7 @@ function binfConcentration(h: HarnessContext): Node[] {
       c.linalg,
       h.options('multivar', 'Multivariable calculus', ['Plus one of the following:', 'Either this course', 'or this course', 'or these courses'], [['AM 30'], ['MATH 22'], ['MATH 23A', 'MATH 23B']]),
     ]),
-    h.take('ld-stats', 'Statistics: CSE 40 or STAT 132', 'One of the following:', codes('CSE 40', 'STAT 132'), {
-      notes: ['CSE 40 has a test-out option which can satisfy this requirement — if you passed it, ask an advisor to record it.'],
-    }),
+    testOut(h, 'cse40-testout', ['CSE40', 'STAT132'], h.take('ld-stats', 'Statistics: CSE 40 or STAT 132', 'One of the following:', codes('CSE 40', 'STAT 132'))),
   ])
   const [tw, dc] = technicalWritingAndDc(h, 'Also satisfies the Disciplinary Communication (DC) requirement.', 'BMEB majors satisfy the DC requirement by completing the following course.')
   const upper = h.group('upper', 'Upper-Division Courses', [
@@ -201,7 +215,27 @@ function binfConcentration(h: HarnessContext): Node[] {
       notes: ['Senior thesis: three quarters of BME 195 (typically 5 credits each) after an approved proposal.'],
     },
   )
+  thesisDetail(h, capstone)
   return [lower, upper, el, dc, capstone, exit(h)]
+}
+
+/**
+ * Test-out convention: when no course of the slot is in the plan, the
+ * test-out attestation is offered next to the slot; attested ⇒ met "by test-out".
+ */
+function testOut(h: HarnessContext, attId: string, slotCodes: string[], slot: Node): Node {
+  if (h.enrollments.some((e) => slotCodes.includes(e.code))) return slot
+  if (h.attested(attId)) return h.node(`${slot.id}-testout`, slot.title, slot.quote, 'met', { detail: 'by test-out' })
+  return h.either(`${slot.id}-or-testout`, `${slot.title}, or its test-out`, h.attestations.find((a) => a.id === attId)!.quote, [slot, h.attest(attId)])
+}
+
+/** Senior thesis: "three quarters of BME 195" — explain a short count. */
+function thesisDetail(h: HarnessContext, capstone: Node) {
+  h.solve()
+  if (capstone.status !== 'unmet') return
+  const n = h.taken(codes('BME 195')).length
+  if (n > 0 && (capstone.used ?? []).every((e) => e.code === 'BME195'))
+    capstone.detail = `Senior thesis: ${n} of 3 quarters of BME 195 — or complete another capstone option`
 }
 
 function exit(h: HarnessContext): Node {

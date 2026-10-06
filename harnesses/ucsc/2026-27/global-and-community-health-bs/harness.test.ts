@@ -140,3 +140,29 @@ describe('global-and-community-health-bs 2026-27 — public and community health
     expect(find(r, 'dc').status).toBe('unmet')
   })
 })
+
+describe('global-and-community-health-bs 2026-27 — review 2026-10-06', () => {
+  it('the STAT 5 petition is not offered when STAT 7 + 7L are in the plan', () => {
+    const r = run(harness, { terms: biomed, completed: ['STAT 5'], choices: BIO, attested: [] })
+    expect(() => find(r, 'attest:stat5-waiver')).toThrow()
+    expect(failing(r)).toEqual([])
+  })
+
+  // "receiving a passing grade in the Health Sciences Internship, BIOL 189" vs the letter-grade policy
+  it('BIOL 189 taken P/NP cannot be decided', () => {
+    const r = run(harness, { terms: biomed, choices: BIO, grades: { 'BIOL 189': 'P' } })
+    expect(find(r, 'internship').status).toBe('cannot-check')
+    expect(find(r, 'comprehensive').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: biomed, choices: BIO, grades: { 'BIOL 189': 'NP' } }), 'internship').status).toBe('unmet')
+  })
+
+  it('SPAN 5M alone (placement past SPAN 4) asks for the equivalence attestation', () => {
+    const t = ['SPAN 1', 'SPAN 2', 'SPAN 3', 'SPAN 4'].reduce((acc, c) => edit(acc, c, null), biomed)
+    expect(find(run(harness, { terms: t, choices: BIO, attested: [] }), 'span-1-4').status).toBe('needs-attestation')
+  })
+
+  it('a retaken non-STEM elective counts once; METX 135L alone is not a STEM elective', () => {
+    expect(find(run(harness, { terms: add(edit(pch, 'SOCY 121', null), 'CMMU 160'), choices: PCH }), 'non-stem').status).toBe('unmet')
+    expect(find(run(harness, { terms: edit(pch, 'METX 133', 'METX 135L'), choices: PCH }), 'stem').status).toBe('unmet')
+  })
+})

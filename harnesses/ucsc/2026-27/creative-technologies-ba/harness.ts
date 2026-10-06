@@ -86,9 +86,11 @@ function breadthNode(h: HarnessContext): Node {
       return h.cannotCheck(id, title, Q_BREADTH_LIST, 'Check the Breadth of Arts elective list, then pick which of your courses this is.', { choice: k, options: poolCodes })
     }
     if (taken.has(code)) return h.node(id, title, Q_BREADTH_LIST, 'unmet', { detail: `${display(code)} is already one of your breadth electives.`, choice: k, options: poolCodes })
-    const e = pool.find((x) => x.code === code)
+    // Match by course (cross-listed codes are one course: ART 102 = CT 100).
+    const same = (x: Enrollment) => x.code === code || h.catalog.equivalents(code).includes(x.code)
+    const e = pool.find(same)
     if (!e) {
-      const elsewhere = h.passed.some((x) => x.code === code)
+      const elsewhere = h.passed.some(same)
       return h.node(id, title, Q_BREADTH_LIST, 'unmet', {
         detail: elsewhere ? `${display(code)} already counts for a creative technologies requirement.` : `${display(code)} is not in your plan (or was not passed).`,
         choice: k,
@@ -112,7 +114,12 @@ function breadthNode(h: HarnessContext): Node {
   return h.group('breadth', 'Breadth of Arts Electives', kids, { quote: [Q_BREADTH, Q_PETITION] })
 }
 
-/** Passed courses not used by any CT requirement (candidates for breadth). */
+/**
+ * Passed courses not used by any CT requirement (candidates for breadth). A
+ * non-repeatable course counts once, so a retake of a course a CT requirement
+ * already uses (e.g. a second CT 101) is not a candidate (review 2026-10-06).
+ */
 function breadthPool(h: HarnessContext): Enrollment[] {
-  return h.passed.filter((e) => !h.used.has(e.id))
+  const usedKeys = new Set(h.enrollments.filter((e) => h.used.has(e.id)).map(h.courseKey))
+  return h.passed.filter((e) => !h.used.has(e.id) && !usedKeys.has(h.courseKey(e)))
 }

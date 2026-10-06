@@ -80,4 +80,28 @@ describe('biotechnology-ba 2026-27', () => {
   it('letter grades are required', () => {
     expect(find(run(harness, { terms: base, grades: { 'BME 130': 'P' } }), 'electives').status).toBe('unmet')
   })
+
+  // review 2026-10-06: "CSE 20 has a test-out exam that will also be accepted."
+  it('CSE 20 test-out replaces BME 160 and then needs a fourth elective', () => {
+    const t = edit(base, 'BME 160', null)
+    const r = run(harness, { terms: t })
+    expect(find(r, 'bme160-testout').status).toBe('met')
+    expect(find(r, 'electives').status).toBe('unmet')
+    expect(failing(run(harness, { terms: add(t, 'METX 100') }))).toEqual([])
+    const no = run(harness, { terms: add(t, 'METX 100'), attested: [] })
+    expect(find(no, 'bme160-or-testout').status).toBe('needs-attestation')
+    // not asked when BME 160 is in the plan
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'bme160-or-testout')).toThrow()
+  })
+
+  it('a failed BME 160 with CSE 20 still needs four electives', () => {
+    const r = run(harness, { terms: add(base, 'CSE 20'), grades: { 'BME 160': 'F' } })
+    expect(find(r, 'bme160').status).toBe('met')
+    expect(find(r, 'electives').status).toBe('unmet')
+  })
+
+  it('BME 175 (comprehensive) and a retaken elective do not count as electives', () => {
+    expect(find(run(harness, { terms: edit(base, 'SOCY 121', 'BME 175') }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(edit(base, 'SOCY 121', null), 'BME 130') }), 'electives').status).toBe('unmet')
+  })
 })

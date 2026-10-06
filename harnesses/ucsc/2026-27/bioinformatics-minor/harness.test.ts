@@ -77,4 +77,27 @@ describe('bioinformatics-minor 2026-27', () => {
     const t = edit(edit(base, 'BME 130', 'BME 205'), 'BME 132', 'BME 230A')
     expect(failing(run(harness, { terms: t }))).toEqual([])
   })
+
+  // review 2026-10-06: "CSE 20 has a test-out exam that will also be accepted."
+  it('CSE 20 test-out: attestation offered only when neither BME 160 nor CSE 20 is in the plan', () => {
+    const t = edit(add(base, 'BME 140'), 'BME 160', null)
+    const yes = run(harness, { terms: t })
+    expect(find(yes, 'bme160-testout').status).toBe('met')
+    expect(failing(yes)).toEqual([])
+    const no = run(harness, { terms: t, attested: [] })
+    expect(find(no, 'bme160-or-testout').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['Passed the CSE 20 test-out'] }), 'bme160-testout').status).toBe('met')
+    // with BME 160 present the test-out is not asked
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'bme160-or-testout')).toThrow()
+  })
+
+  it('a retaken elective counts once', () => {
+    const r = run(harness, { terms: add(edit(base, 'BME 132', null), 'BME 130') })
+    expect(find(r, 'electives').status).toBe('unmet')
+  })
+
+  it('cross-listed PHIL 80G and transfer BIOL 20A count', () => {
+    const t = edit(edit(base, 'BME 80G', 'PHIL 80G'), 'BIOL 20A', null)
+    expect(failing(run(harness, { terms: t, completed: ['BIOL 20A'] }))).toEqual([])
+  })
 })

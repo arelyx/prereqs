@@ -100,4 +100,24 @@ describe('global-and-community-health-ba 2026-27', () => {
     expect(failing(run(harness, { terms: add(edit(base, 'BIOL 80J', 'CHEM 4A'), 'CHEM 4AL') }))).toEqual([])
     expect(find(run(harness, { terms: edit(base, 'STAT 5', 'STAT 7L') }), 'ld-c').status).toBe('unmet')
   })
+
+  // review 2026-10-06: "For courses with a required concurrently enrolled lab, only successful
+  // completion of the lecture is required for the major." ENVS 104A is the lecture, 104L its lab.
+  it('ENVS 104A (the lecture) alone counts for Area IV; ENVS 104L absorbs into it', () => {
+    expect(failing(run(harness, { terms: edit(base, 'AM 115', 'ENVS 104A') }))).toEqual([])
+    const both = add(edit(base, 'AM 115', 'ENVS 104A'), 'ENVS 104L')
+    // the pair is one course: it cannot also fill an "additional" elective
+    expect(find(run(harness, { terms: edit(both, 'POLI 189', null) }), 'area-additional').status).toBe('unmet')
+  })
+
+  it('language test-out is offered only when no listed language course is in the plan', () => {
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'attest:language-test-out')).toThrow()
+    expect(find(run(harness, { terms: edit(base, 'SPAN 3', null), attested: [] }), 'attest:language-test-out').status).toBe('needs-attestation')
+  })
+
+  it('cross-listed codes count (GCH 165 for CMMU 165, GCH 20 for list B); ENVS/LGST 130B counts once', () => {
+    expect(failing(run(harness, { terms: edit(edit(base, 'CMMU 165', 'GCH 165'), 'SOCY 1', 'GCH 20') }))).toEqual([])
+    const t = edit(edit(base, 'METX 115', 'LGST 130B'), 'ECON 156', 'ENVS 130B')
+    expect(find(run(harness, { terms: t }), 'areas').status).toBe('unmet')
+  })
 })

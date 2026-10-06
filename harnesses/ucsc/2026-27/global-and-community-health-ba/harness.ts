@@ -17,7 +17,7 @@
 //    petition (attestation, only when such a course is actually used).
 //  - Comprehensive = the DC courses.
 import { codes, defineHarness } from '@harness'
-import type { CourseSet, Node } from '@harness'
+import type { CourseSet, HarnessContext, Node } from '@harness'
 
 const LIST_A = [
   'ANTH 1', 'BIOE 19', 'BIOL 20A', 'BIOL 80A', 'BIOL 80J', 'BIOL 86', 'BIOL 88', 'BME 5', 'BME 18', 'BME 80H',
@@ -31,6 +31,7 @@ const LIST_B = [
 const LIST_C = ['BIOE 80S', 'CMMU 30', 'LALS 15', 'STAT 5', 'STAT 7', 'STAT 17']
 const LIST_C_LABS: [string, string][] = [['STAT 7', 'STAT 7L'], ['STAT 17', 'STAT 17L']]
 const LIST_D = ['ARBC 3', 'CHIN 3', 'FREN 3', 'HEBR 3', 'ITAL 3', 'JAPN 3', 'PUNJ 3', 'SPAN 3', 'SPAN 5M', 'SPHS 6', 'YIDD 3']
+const LIST_D_SET = codes(...LIST_D)
 
 const AREA_I = [
   'ANTH 104', 'ANTH 110F', 'ANTH 111', 'ANTH 112', 'ANTH 136', 'BIOE 118', 'BIOL 117', 'BIOL 188', 'CMMU 162',
@@ -52,10 +53,14 @@ const AREA_IV = [
   'HIS 101D', 'HIS 101F', 'HIS 151', 'HIS 151A', 'JRLC 136', 'LALS 126', 'LALS 143', 'LALS 151', 'LALS 152',
   'LIT 121O', 'LIT 160C', 'LIT 167G', 'LIT 167I', 'POLI 187', 'SOCY 123', 'SOCY 132',
 ]
-// ENVS 104A (2 credits) and ENVS 104L (5) are listed separately but require
-// concurrent enrollment in each other; "lecture/lab combinations count as one
-// course" — ENVS 104L is the counting unit, ENVS 104A is absorbed into it.
-const AREA_IV_LABS: [string, string][] = [['ENVS 104L', 'ENVS 104A']]
+// ENVS 104A (2 credits, the lecture: "Introduction to Environmental Field
+// Methods") and ENVS 104L (5, "Field Methods Laboratory") require concurrent
+// enrollment in each other. "All lecture/lab combinations count as one course.
+// For courses with a required concurrently enrolled lab, only successful
+// completion of the lecture is required for the major." — ENVS 104A is the
+// counting unit and absorbs ENVS 104L (review 2026-10-06: the pair was
+// reversed, so ENVS 104A alone did not count).
+const AREA_IV_LABS: [string, string][] = [['ENVS 104A', 'ENVS 104L']]
 
 const Q_LD_LABS =
   'All lecture/lab combinations count as one course. For courses with a required concurrently enrolled lab, only successful completion of the lecture is required for the major. Successful completion of the lab may count toward total degree credits.'
@@ -104,10 +109,7 @@ export default defineHarness({
         h.take('ld-c', 'C) Quantitative competency', ['C) one from the quantitative competency list; and,', Q_LD_LABS], codes(...LIST_C), {
           labs: { pairs: LIST_C_LABS, mode: 'merge' },
         }),
-        h.either('ld-d', 'D) Language competency', ['D) one from the language competency list.', 'Students are expected to complete or test out of a first-year language series.'], [
-          h.take('ld-d/course', 'A listed language course', 'D) one from the language competency list.', codes(...LIST_D)),
-          h.attest('language-test-out'),
-        ]),
+        language(h),
       ], { quote: 'One course required from each of the four lists.' }),
     ])
 
@@ -168,6 +170,18 @@ export default defineHarness({
     return [lower, h.group('upper', 'Upper-Division Courses', [core, areas]), comprehensive, dc]
   },
 })
+
+/**
+ * Language (D): a listed course, or the test-out — offered only when no listed
+ * language course is in the plan (docs/HARNESSES.md §1a test-out convention).
+ */
+function language(h: HarnessContext): Node {
+  const quote = ['D) one from the language competency list.', 'Students are expected to complete or test out of a first-year language series.']
+  const slot = h.take('ld-d/course', 'A listed language course', 'D) one from the language competency list.', codes(...LIST_D))
+  if (h.enrollments.some((e) => LIST_D_SET.has(e.code, h.catalog))) return h.group('ld-d', 'D) Language competency', [slot], { quote })
+  if (h.attested('language-test-out')) return h.node('ld-d', 'D) Language competency', quote, 'met', { detail: 'by test-out of a first-year language series' })
+  return h.either('ld-d', 'D) Language competency', quote, [slot, h.attest('language-test-out')])
+}
 
 /** Upper-division independent study / field study (by catalog title), not the GCH senior thesis. */
 function isIndependentStudy(c: { division: string; title: string; code: string } | undefined): boolean {

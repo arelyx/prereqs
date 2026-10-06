@@ -10,6 +10,9 @@
 //    courses (core, electives, DC BME 185, comprehensive BME 175) — with
 //    BME 160 (6 credits) + three 5-credit electives that is 41, with CSE 20 +
 //    four electives 40, which is how the page's two rules fit together.
+//  - "CSE 20 has a test-out exam that will also be accepted": attestation
+//    offered only when neither BME 160 nor CSE 20 is in the plan (§1a); the
+//    test-out stands in for CSE 20, so four electives are then required.
 //  - One upper-division BIOL course may count as an elective by petition
 //    (attestation, asked only when such a course is actually needed).
 import { codes, defineHarness, range } from '@harness'
@@ -36,6 +39,12 @@ export default defineHarness({
       label: 'Petition approved to count an upper-division biology course as an elective',
       quote: Q_PETITION,
       aliases: ['biology petition', 'biol petition', 'petition'],
+    },
+    {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'CSE 20 has a test-out exam that will also be accepted.',
+      aliases: ['cse 20 test-out', 'cse 20 testout', 'cse20 testout', 'cse 20 test out'],
     },
   ],
   notes: [
@@ -65,16 +74,24 @@ export default defineHarness({
     ])
 
     const bme160Taken = h.taken(codes('BME 160')).length > 0
-    const prog = h.take('bme160', 'BME 160 (or CSE 20)', ['BME 160 — Research Programming in the Life Sciences (6)', Q_CSE20], codes('BME 160', 'CSE 20'), {
+    const Q_BME160 = ['BME 160 — Research Programming in the Life Sciences (6)', Q_CSE20]
+    const progSlot = h.take('bme160', 'BME 160 (or CSE 20)', Q_BME160, codes('BME 160', 'CSE 20'), {
       prefer: (c) => (c === 'BME160' ? 0 : 1),
-      notes: ['Passing the CSE 20 test-out exam is also accepted — if you did, ask an advisor to record it.'],
     })
+    // Test-out: offered only when neither BME 160 nor CSE 20 is in the plan.
+    const progAbsent = !h.enrollments.some((e) => e.code === 'BME160' || e.code === 'CSE20')
+    const testedOut = progAbsent && h.attested('cse20-testout')
+    const prog: Node = !progAbsent
+      ? progSlot
+      : testedOut
+        ? h.node('bme160-testout', 'BME 160 (or CSE 20)', Q_BME160, 'met', { detail: 'by test-out (CSE 20 test-out exam)' })
+        : h.either('bme160-or-testout', 'BME 160, CSE 20, or the CSE 20 test-out', 'CSE 20 has a test-out exam that will also be accepted.', [progSlot, h.attest('cse20-testout')])
     const core = h.group('ud-core', 'Biotechnology Upper-Division Core', [
       h.take('bme105', 'BME 105', 'BME 105 — Genetics in the Genomics Era (5)', codes('BME 105')),
       h.take('bme110', 'BME 110', 'BME 110 — Computational Biology Tools (5)', codes('BME 110')),
       prog,
     ])
-    const cse20Taken = !bme160Taken && h.taken(codes('CSE 20')).length > 0
+    const cse20Taken = !bme160Taken && (h.taken(codes('CSE 20')).length > 0 || testedOut)
     const n = cse20Taken ? 4 : 3
     const electives = h.take('electives', cse20Taken ? 'Four electives (CSE 20 instead of BME 160)' : 'Three electives', [Q_ELECTIVES, Q_PETITION], ELECTIVE_SET.or(UD_BIOL), {
       n,
@@ -102,7 +119,7 @@ export default defineHarness({
     }
 
     // 40 upper-division credits over the major's upper-division courses.
-    const counted: Enrollment[] = [core, electives, dc, comprehensive].flatMap((x) => (x.children ?? [x]).flatMap((c) => c.used ?? []))
+    const counted: Enrollment[] = [...core.children!.filter((c) => c !== prog), progSlot, electives, dc, comprehensive].flatMap((c) => c.used ?? [])
     const ids = new Set(counted.map((e) => e.id))
     const extra = h.taken(ELECTIVE_SET).filter((e) => !ids.has(e.id) && !h.used.has(e.id))
     const seen = new Set<string>()

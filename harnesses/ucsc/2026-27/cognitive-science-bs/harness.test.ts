@@ -106,4 +106,30 @@ describe('cognitive-science-bs 2026-27', () => {
     const r = run(harness, { terms: edit(edit(base, 'PSYC 124', 'PSYC 193I'), 'PSYC 130', null) })
     expect(find(r, 'cog-two').status).toBe('unmet')
   })
+
+  // review 2026-10-06
+  it('CSE 20 test-out: offered only when no programming course is in the plan', () => {
+    const t = edit(base, 'CSE 20', null)
+    expect(find(run(harness, { terms: t }), 'programming-testout').status).toBe('met')
+    expect(find(run(harness, { terms: t, attested: [] }), 'programming-or-testout').status).toBe('needs-attestation')
+    expect(() => find(run(harness, { terms: base, attested: [] }), 'programming-or-testout')).toThrow()
+  })
+
+  it('the "additional upper-division PSYC course" cannot be a retake of a course already counted', () => {
+    const allLower = edit(base, 'LING 171', 'LING 80D')
+    expect(find(run(harness, { terms: add(allLower, 'PSYC 121') }), 'interdisciplinary').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(allLower, 'PSYC 100') }), 'interdisciplinary').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(allLower, 'PSYC 133') }), 'interdisciplinary').status).toBe('met')
+  })
+
+  // "PSYC 193, PSYC 193I, PSYC 193S*, PSYC 194A, PSYC 194B, and PSYC 195A may satisfy only one elective requirement."
+  it('a second field study / thesis course cannot be the additional upper-division PSYC course', () => {
+    const t = add(edit(edit(base, 'LING 171', 'LING 80D'), 'PSYC 124', 'PSYC 193'), 'PSYC 195A')
+    expect(find(run(harness, { terms: t }), 'interdisciplinary').status).toBe('unmet')
+  })
+
+  // "LING 111 formerly LING 55LING 112 formerly LING 52"
+  it('former code LING 55 counts as an interdisciplinary elective', () => {
+    expect(failing(run(harness, { terms: edit(base, 'PHIL 9', 'LING 55') }))).toEqual([])
+  })
 })

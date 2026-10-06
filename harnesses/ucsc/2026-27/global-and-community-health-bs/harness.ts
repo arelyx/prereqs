@@ -166,7 +166,16 @@ export default defineHarness({
       }
     }
 
-    const comprehensive = h.node('comprehensive', 'Comprehensive Requirement', Q_COMPREHENSIVE, internship.status === 'met' ? 'met' : 'unmet', {
+    // "receiving a passing grade in the Health Sciences Internship, BIOL 189"
+    // vs. "All courses that are taken to satisfy any major requirement must be
+    // taken for a letter grade": a P in BIOL 189 is a passing grade but not a
+    // letter grade — the page does not settle which rule wins.
+    if (internship.status === 'unmet' && h.enrollments.some((e) => e.code === 'BIOL189' && (e.grade === 'P' || e.grade === 'S'))) {
+      internship.status = 'cannot-check'
+      internship.detail = 'BIOL 189 taken P/NP: the comprehensive requirement asks for "a passing grade" but the major requires letter grades — confirm with GCH B.S. advising.'
+    }
+
+    const comprehensive = h.node('comprehensive', 'Comprehensive Requirement', Q_COMPREHENSIVE, internship.status === 'met' ? 'met' : internship.status === 'cannot-check' ? 'cannot-check' : 'unmet', {
       used: internship.used,
       detail: internship.status === 'met' ? 'Satisfied by BIOL 189.' : 'Satisfied by passing the Health Sciences Internship (BIOL 189).',
     })
@@ -176,7 +185,10 @@ export default defineHarness({
 
 /** STAT 7 + 7L, or the petition waiver for a pre-UCSC STAT 5 articulated course. */
 function statistics(h: HarnessContext): Node {
-  const stat5 = h.taken(codes('STAT 5')).filter((e) => e.term == null)
+  // Petition convention: offered only when it is actually needed, i.e. a
+  // pre-UCSC STAT 5 is on record and STAT 7 + 7L are not both in the plan.
+  const hasStat7 = h.taken(codes('STAT 7')).length > 0 && h.taken(codes('STAT 7L')).length > 0
+  const stat5 = hasStat7 ? [] : h.taken(codes('STAT 5')).filter((e) => e.term == null)
   return h.either('stats', 'Statistics', 'STAT 7 — Statistical Methods for the Biological, Environmental, and Health Sciences (5)', [
     h.all('stat7', 'STAT 7 and STAT 7L', 'STAT 7 — Statistical Methods for the Biological, Environmental, and Health Sciences (5)', ['STAT 7', 'STAT 7L']),
     stat5.length
