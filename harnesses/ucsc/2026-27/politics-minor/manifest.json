@@ -1,0 +1,11 @@
+{
+ "program": "politics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "0c25010223d40d07754da417f7dd11d6bdf2a1deae9898f178e5fb3accd514a1",
+ "skeleton_sha256": "2142ff6dc0473736148faace9b381d0ac108d8b1d384030b163ec65b8fbfe00f",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:57:09Z",
+ "verified_at": "2026-10-06T01:00:53Z",
+ "notes": "verified line by line against sources/politics-minor.md; lint clean. Core: exactly two courses from each of two subfields; elective POLI 100-189 (extra core course may fill it); lower: 5-credit POLI 1-70."
+}

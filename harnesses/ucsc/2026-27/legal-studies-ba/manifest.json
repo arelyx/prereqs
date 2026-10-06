@@ -1,0 +1,11 @@
+{
+ "program": "legal-studies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "485b8c5edd3df67ad080f641c2d1aa394f6c0f5d8d9a336489170a20b603d864",
+ "skeleton_sha256": "068bf3ee1e184eeb3c36446915afaf97eba20527108dd4ebdcd82f36afdad8ea",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:54:27Z",
+ "verified_at": "2026-10-06T01:00:52Z",
+ "notes": "verified line by line against sources/legal-studies-ba.md; lint clean. All slots exclusive (a constitutional/global law course is not reused as a thematic course). Thematic: 6 courses, distinct course per area; if only counting a two-list course for two areas completes it -> cannot-check. LGST 188A+OAKS 188B composite = one Public Law course. DC exclusive, comprehensive overlay (LGST 196 or 195A+195B). P/NP limit: >3 P among counted courses -> unmet if >3 are LGST/LGST-cross-listed and no spare letter-graded course, else cannot-check."
+}

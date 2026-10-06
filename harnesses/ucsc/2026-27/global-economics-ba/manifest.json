@@ -1,0 +1,11 @@
+{
+ "program": "global-economics-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "3a36007a29e2d64d5841874c19b02c85034b089d8f11fb160ddd34dec06f1ad3",
+ "skeleton_sha256": "a10209835b16b421845514c1c8d9072b5ec1c7ae3b92b1dcd2a88dad0317b5c3",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:45Z",
+ "verified_at": "2026-10-06T01:00:52Z",
+ "notes": "verified line by line against sources/global-economics-ba.md; lint clean. Language: met by a level-6 course (CHIN/FREN/ITAL/JAPN/SPAN/SPHS 6), else cannot-check (equivalents allowed). Area study: cannot-check (external list + advisor pre-approval). Study abroad: attestation. Electives: >=3 from the list + 1 any 5-credit ECON 100-189 / CRWN 152 / ECON 195|199; 195/199 standing in for a list course -> cannot-check. ECON 104 may be the 4th elective when ECON 197 is the DC (literal 'any ... numbered 100-189')."
+}

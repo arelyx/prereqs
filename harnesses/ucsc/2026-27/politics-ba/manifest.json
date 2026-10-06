@@ -1,0 +1,11 @@
+{
+ "program": "politics-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "159b6e7f575fe251fdccee34b138b08805545a53127a785bb868857278eafe73",
+ "skeleton_sha256": "4895f93730aed71e567b8ee68a3ddfd620a48d76419924ceee74fa047733b2c9",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:56:38Z",
+ "verified_at": "2026-10-06T01:00:52Z",
+ "notes": "verified line by line against sources/politics-ba.md; lint clean. Core: exact 2+1+1 group pattern; 1+1+1+1 (literal text excludes it) -> cannot-check. DC overlay: 3 core courses. Comprehensive either: POLI 190 series overlay; fifth+sixth electives (created after the main allocation, leftovers only) + POLI 199F + instructor-approval attestation; graduate seminar POLI 200-290 -> cannot-check (paper unverifiable); thesis 195A+195B."
+}
