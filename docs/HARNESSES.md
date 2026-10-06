@@ -180,6 +180,11 @@ restart the dev server after adding a new `View.tsx` or harness directory.
    - `npm run typecheck`
 6. Re-read the source **line by line** against the code. Only then:
    `manifest.ts <ed> <slug> --verified --notes "<method>"`.
+   If the harness relies on ANOTHER program's page (a minor using lists
+   printed on its major's page, a combined major using a parent major's
+   comprehensive options), add `--depends <slug>[,<slug>]` — the manifest
+   then pins those pages' hashes too, lint fails and `refresh status` lists
+   the harness when one of them changes.
 7. `python eval/run.py --adapter eval/adapters/c-code.sh` (repo root). Fix a
    harness only when the SOURCE supports the change; if a golden case looks
    wrong, report it with the quote — never edit it.

@@ -91,7 +91,8 @@ def harness_manifests() -> dict[tuple[str, str], dict]:
     program harness lives in ``harnesses/ucsc/<edition>/<slug>/`` and has a
     ``manifest.json`` with at least ``{"program", "edition",
     "source_sha256", "status"}``, where ``source_sha256`` is the hash of the
-    committed source text the harness was authored/verified against.
+    committed source text the harness was authored/verified against, and
+    optionally ``depends_on: {slug: sha}`` for other programs' pages it uses.
     """
     out = {}
     if not HARNESS_ROOT.exists():
@@ -192,12 +193,16 @@ def plan(live: dict | None, today: date | None = None) -> list[Task]:
     manifests = harness_manifests()
     for ed in eds:
         progs = led["editions"][ed]["programs"]
-        missing, stale_struct, stale_text = [], [], []
+        missing, stale_struct, stale_text, stale_dep = [], [], [], []
         for slug, h in sorted(progs.items()):
             m = manifests.get((ed, slug))
             if m is None:
                 missing.append(slug)
-            elif m.get("source_sha256") != h["text"]:
+                continue
+            for dep, sha in (m.get("depends_on") or {}).items():
+                if progs.get(dep, {}).get("text") != sha:
+                    stale_dep.append(f"{slug} (uses {dep})")
+            if m.get("source_sha256") != h["text"]:
                 if m.get("skeleton_sha256") and m["skeleton_sha256"] == h["skeleton"]:
                     stale_text.append(slug)
                 else:
@@ -208,6 +213,9 @@ def plan(live: dict | None, today: date | None = None) -> list[Task]:
         if stale_text:
             tasks.append(Task("warm", "harness", f"edition {ed}: wording changed since authored (review diff; may be cosmetic)",
                               items=stale_text))
+        if stale_dep:
+            tasks.append(Task("warm", "harness", f"edition {ed}: a page this harness relies on changed",
+                              items=stale_dep))
         if missing and manifests:
             tasks.append(Task("warm", "harness", f"edition {ed}: no harness yet", items=missing))
 

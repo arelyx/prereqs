@@ -86,3 +86,13 @@ def test_term_finality_and_successor():
     assert terms.is_final("2264", TODAY)        # summer 2026 graded by mid-Sept
     assert not terms.is_final("2268", TODAY)    # fall 2026 in progress
     assert terms.next_code("2268") == "2270" and terms.next_code("2264") == "2268"
+
+
+def test_harness_dependency_on_another_programs_page(monkeypatch):
+    manifests = {
+        ("2026-27", "music-bm"): {"source_sha256": "t1", "skeleton_sha256": "s1",
+                                   "depends_on": {"cs-bs": "OLD"}},
+        ("2026-27", "cs-bs"): {"source_sha256": "t2", "skeleton_sha256": "s2"},
+    }
+    warm = [t for t in _plan(monkeypatch, _ledger(), manifests=manifests) if t.path == "warm"]
+    assert [t.items for t in warm] == [["music-bm (uses cs-bs)"]]

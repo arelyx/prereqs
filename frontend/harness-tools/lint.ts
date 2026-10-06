@@ -11,7 +11,8 @@
 //   3. COVERAGE every course row in the source ("- SUBJ 123 — Title") must be
 //               referenced by harness.ts (literally, via lettered(), or be in
 //               harness.coverage.ignore with a reason).
-//   4. MANIFEST manifest.json hashes must match programs.json (else: stale).
+//   4. MANIFEST manifest.json hashes must match programs.json (else: stale),
+//      including any `depends_on` programs whose pages the harness relies on.
 // Exit code 1 on any error.
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
@@ -112,6 +113,11 @@ async function lintOne(edition: string, slug: string): Promise<{ errors: string[
     else {
       if (m.source_sha256 !== idx.source_sha256) errors.push('manifest source_sha256 is stale (source text changed)')
       if (m.skeleton_sha256 !== idx.skeleton_sha256) errors.push('manifest skeleton_sha256 is stale (structure changed)')
+    }
+    for (const [dep, sha] of Object.entries((m.depends_on ?? {}) as Record<string, string>)) {
+      const d = programIndex(edition).find((p) => p.slug === dep)
+      if (!d) errors.push(`depends_on ${dep} is not in ${edition}/programs.json`)
+      else if (d.source_sha256 !== sha) errors.push(`depends_on ${dep}: that program's source changed — re-verify the parts taken from it`)
     }
     if (m.program !== slug || m.edition !== edition) errors.push('manifest program/edition mismatch')
     if (h.program !== slug || h.edition !== edition) errors.push(`harness says ${h.program}/${h.edition}`)
