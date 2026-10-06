@@ -1,0 +1,11 @@
+{
+ "program": "computer-science-computer-game-design-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "9dc6152b6d65e37f9da989df4f91245a76ae6f5ea2e006cc51146289b5595e1e",
+ "skeleton_sha256": "d694fdd582b0e3938f601e672f038a5fe82dcd363fd8a9ce0b97c4109eeeb8e9",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:55:10Z",
+ "verified_at": "2026-10-06T00:57:02Z",
+ "notes": "verified line by line against sources/computer-science-computer-game-design-bs.md; areas exclusive; CGE five with atMost 2 'other skills' (all nine named courses, page says seven); required labs per catalog; CMPM 179/180 once; DC overlay on CMPM 130; comprehensive as one track package slot; CSE 20 missing + CSE 30 -> cannot-check"
+}

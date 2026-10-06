@@ -1,0 +1,11 @@
+{
+ "program": "robotics-engineering-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "06f3cd2dc2dfeb77948337ceb745e6fead9c5988f76afddbbdbf270029b0725d",
+ "skeleton_sha256": "c894b3c5bc174757ab46dfa709ccf65800140c5deb47c08d9e1a3f75af0d1070",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:50:57Z",
+ "verified_at": "2026-10-06T00:57:01Z",
+ "notes": "verified line by line against sources/robotics-engineering-bs.md; required concurrent labs via catalog-required; ECE 218 for ECE 118 by petition attestation; DC slot + capstone overlay; exit requirement attestation; CSE 20 missing + CSE 30 -> cannot-check"
+}

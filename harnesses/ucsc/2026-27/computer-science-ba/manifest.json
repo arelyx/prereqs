@@ -1,0 +1,11 @@
+{
+ "program": "computer-science-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "da50abba8b34faaf9383e9351549e3eaae023cefc965391c2835d3061669904b",
+ "skeleton_sha256": "9f151ac93c2340ac1219a361042b0c679b6fc0905eb9b92c3346aba0ff87e840",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:53:13Z",
+ "verified_at": "2026-10-06T00:57:01Z",
+ "notes": "verified line by line against sources/computer-science-ba.md; BA electives pool = list + CSE 100-189 + CSE 195 (>=1 CSE), labs required when offered; DC competes with electives; capstone overlay (16-course count leaves no separate slot); thesis/DC single CSE 195 -> cannot-check; CSE 40 test-out attestation; 'Additional courses may be accepted by petition' as note only"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "electrical-engineering-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a2d140e836c57aacbe799495d1c1ec607568a96ef9c0083dc0e2301667b35150",
+ "skeleton_sha256": "b2f1714d9fbaee5cd36bf84737c3bc75e11e118cc44eb8f7cb072148ce265102",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:39Z",
+ "verified_at": "2026-10-06T00:57:01Z",
+ "notes": "verified line by line against sources/electrical-engineering-minor.md; core as two packages allocated before electives (ECE 141 cannot count twice); 15-credit electives computed in code over one concentration list (best list unless declared); lab credits only with lecture passed; ECE 183 approval and ECE 218 petition as attestations"
+}
