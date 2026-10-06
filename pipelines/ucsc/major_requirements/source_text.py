@@ -73,7 +73,10 @@ def _course_row(tr: Tag) -> str | None:
     title_td = tr.find("td", class_="sc-coursetitle")
     title = _clean(title_td.get_text(" ")) if title_td else ""
     if "narrative-courses" in href:
-        return f"- ⟨{title or href.rsplit('/', 1)[-1].replace('-', ' ')}⟩"
+        # The marker's words live in the title cell, or (rarely, e.g.
+        # "or any three of these courses") in the course-number cell itself.
+        label = title or _clean(num.get_text(" ")) or href.rsplit("/", 1)[-1].replace("-", " ")
+        return f"- ⟨{label}⟩"
     cross = [_clean(d.get_text(" ")) for d in num.find_all("div", class_="sc-crosslisted")]
     for d in num.find_all("div", class_="sc-crosslisted"):
         d.extract()

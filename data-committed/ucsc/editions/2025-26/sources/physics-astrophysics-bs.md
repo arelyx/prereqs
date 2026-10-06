@@ -163,7 +163,7 @@ The department awards "honors" (3.5 grade point average or better) and "highest 
 - PHYS 135B [/ASTR 135B] — Astrophysics Advanced Laboratory (2)
 - ⟨or this course⟩
 - ASTR 136 — Advanced Astronomy Laboratory (5)
-- ⟨phys astrophysics⟩
+- ⟨or any three of these courses⟩
 - ASTR 136A — Advanced Astronomy Lab: Astrometry (2)
 - ASTR 136B — Advanced Astronomy Lab: Galaxy Rotation Curves and Dark Matter (2)
 - ASTR 136C — Advanced Astronomy Lab: Stellar Photometry (2)
@@ -209,7 +209,7 @@ The comprehensive requirement is satisfied by completing one of the following op
 - PHYS 135B [/ASTR 135B] — Astrophysics Advanced Laboratory (2)
 - ⟨or this course⟩
 - ASTR 136 — Advanced Astronomy Laboratory (5)
-- ⟨phys astrophysics⟩
+- ⟨or any three of these courses⟩
 - ASTR 136A — Advanced Astronomy Lab: Astrometry (2)
 - ASTR 136B — Advanced Astronomy Lab: Galaxy Rotation Curves and Dark Matter (2)
 - ASTR 136C — Advanced Astronomy Lab: Stellar Photometry (2)

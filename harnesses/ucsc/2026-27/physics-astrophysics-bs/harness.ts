@@ -6,10 +6,8 @@
 //    courses": offered only when PHYS 5A/5C is credit without a term.
 //  - ASTR 21, or ASTR 9A + 9B (one package).
 //  - Advanced lab (= comprehensive requirement): PHYS 135, PHYS 135A + 135B,
-//    ASTR 136, or a set of ASTR 136A–H modules. The committed source shows
-//    the marker for the module option as "⟨phys astrophysics⟩" (garbled); the
-//    upstream catalog page's narrative row reads "or any three of these
-//    courses", which is what is implemented. Reported as a source-text defect.
+//    ASTR 136, or "⟨or any three of these courses⟩" of the ASTR 136A–H
+//    modules.
 //  - PHYS 116A / 116C substitutions as in the other physics majors.
 import { codes, combinations, defineHarness } from '@harness'
 import type { Enrollment, HarnessContext, Node } from '@harness'
@@ -133,7 +131,7 @@ function advancedLab(h: HarnessContext, id: string, title: string, quote: string
       },
     },
     notes: [
-      'Options: PHYS 135 [/ASTR 135]; PHYS 135A and 135B; ASTR 136; or any three of ASTR 136A–H (the module count is from the catalog page; the committed text garbles that line).',
+      'Options: PHYS 135 [/ASTR 135]; PHYS 135A and 135B; ASTR 136; or any three of ASTR 136A–H.',
       'PHYS 135A and PHYS 135B are not scheduled to be offered in the next few years.',
     ],
   })
