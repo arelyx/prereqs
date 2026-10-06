@@ -1,8 +1,11 @@
+# Build context is the REPO ROOT (see docker-compose*.yml): the app imports
+# program harnesses from ../harnesses at build time (src/harness/registry.ts).
 FROM node:22-alpine AS dev
 WORKDIR /srv/frontend
-COPY package*.json ./
+COPY frontend/package*.json ./
 RUN npm ci
-COPY . .
+COPY frontend/ ./
+COPY harnesses/ /srv/harnesses/
 EXPOSE 5173
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
@@ -15,6 +18,6 @@ ENV VITE_API_URL=$VITE_API_URL VITE_ENABLE_AUTH=$VITE_ENABLE_AUTH
 RUN npm run build
 
 FROM nginx:alpine AS prod
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /srv/frontend/dist /usr/share/nginx/html
 EXPOSE 80
