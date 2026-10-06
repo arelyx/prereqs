@@ -145,6 +145,9 @@ export default defineHarness({
     // --- lower division -----------------------------------------------------
     const level3 = h.either('language-proficiency', 'Language proficiency (Level 3 reading)', 'Students must demonstrate Level 3 reading proficiency in a non-English language.', [
       h.take('language-proficiency/course', 'A level-3 language course', ['Complete one of the following courses:', 'Completion of GERM 1B is equivalent to GERM 3. Completion of ITAL 1B is equivalent to ITAL 3.'], codes(...LEVEL3, ...LEVEL3_EQUIV), { exclusive: false }),
+      // A level 4–6 course can only be taken after level 3 or placement into
+      // level 4+, so it demonstrates the same proficiency.
+      h.take('language-proficiency/higher', 'A level 4–6 course in the same languages', 'Take a Language Placement Assessment and place into level 4 or higher', anyOf(...['ARBC', 'CHIN', 'FREN', 'GERM', 'HEBR', 'ITAL', 'JAPN', 'PUNJ', 'SPAN', 'YIDD'].map((s) => range(s, 4, 6))), { exclusive: false }),
       h.attest('language-exam', 'Proficiency exam or placement into level 4+'),
     ])
     const ld: Node[] = [
@@ -209,6 +212,8 @@ export default defineHarness({
 
     // Distribution among the seven electives (catalog tags).
     const sevenUsed = (electives.used ?? []).filter((e) => electivePool.has(e.code, h.catalog))
+    // For the bespoke View's matrix: each counted elective's catalog tags.
+    electives.data = { tags: Object.fromEntries(sevenUsed.map((e) => [e.id, distributionTags(h, e.code)])) }
     const distNodes = DIST.map((d) => {
       const hits = sevenUsed.filter((e) => distributionTags(h, e.code).includes(d.tag))
       const untagged = sevenUsed.filter((e) => distributionTags(h, e.code).length === 0)

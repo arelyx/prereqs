@@ -49,12 +49,33 @@ export function ChoiceControl({
   def,
   value,
   onChange,
+  suggestions,
 }: {
   def: ChoiceDef
   value: string | undefined
   onChange: (v: string | null) => void
+  /** For free course-code choices: the student's candidate courses. */
+  suggestions?: string[]
 }) {
   const store = useStore()
+  if (def.free && def.input !== 'term' && suggestions) {
+    const opts = [...new Set([...(value ? [value] : []), ...suggestions])]
+    return (
+      <select
+        aria-label={def.label}
+        className="rounded-md border border-zinc-300 bg-white px-2 py-1 text-xs dark:border-zinc-700 dark:bg-zinc-900"
+        value={value ?? ''}
+        onChange={(e) => onChange(e.target.value || null)}
+      >
+        <option value="">Pick the course that covers this…</option>
+        {opts.map((c) => (
+          <option key={c} value={c}>
+            {c.replace(/^([A-Z]+)/, '$1 ')}
+          </option>
+        ))}
+      </select>
+    )
+  }
   if (def.free && def.input === 'term') {
     const terms = store.content.terms.map((t) => t.term_code).sort()
     return (
@@ -123,7 +144,8 @@ export function ChoiceControl({
 }
 
 export function ChoiceBar({ report, setChoice, skip = [] }: { report: ProgressReport; setChoice: ViewProps['setChoice']; skip?: string[] }) {
-  const defs = report.choices.filter((c) => !skip.includes(c.key))
+  // Free course-code choices are asked inline, next to the requirement they serve.
+  const defs = report.choices.filter((c) => !skip.includes(c.key) && (!c.free || c.input === 'term'))
   if (!defs.length) return null
   return (
     <div className="flex flex-wrap items-center gap-x-5 gap-y-2 rounded-md bg-zinc-50 px-3 py-2 dark:bg-zinc-900/60">
@@ -191,7 +213,8 @@ function Leaf({ node, onOpen, setAttested, setChoice, report }: { node: N; onOpe
         {p && p.need > 1 && <Bar have={p.have} need={p.need} status={node.status} className="mt-1 max-w-xs" />}
         {node.detail && node.status !== 'met' && <p className={`mt-0.5 text-xs ${STATUS[node.status].text}`}>{node.detail}</p>}
         {node.detail && node.status === 'met' && <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">{node.detail}</p>}
-        <Chips node={node} onOpen={onOpen} />
+        {!(choiceDef?.free && choiceDef.input !== 'term') && <Chips node={node} onOpen={onOpen} />}
+        {choiceDef?.free && choiceDef.input !== 'term' && node.used?.length ? <Chips node={{ ...node, options: [] }} onOpen={onOpen} /> : null}
         {node.attest && (
           <label className="mt-1.5 inline-flex cursor-pointer items-center gap-2 rounded-md border border-amber-300 bg-amber-50 px-2 py-1 text-xs text-amber-900 dark:border-amber-800 dark:bg-amber-950/50 dark:text-amber-200">
             <input
@@ -205,7 +228,7 @@ function Leaf({ node, onOpen, setAttested, setChoice, report }: { node: N; onOpe
         )}
         {choiceDef && (
           <div className="mt-1.5">
-            <ChoiceControl def={choiceDef} value={report.activeChoices[choiceDef.key]} onChange={(v) => setChoice(choiceDef.key, v)} />
+            <ChoiceControl def={choiceDef} value={report.activeChoices[choiceDef.key]} onChange={(v) => setChoice(choiceDef.key, v)} suggestions={node.options} />
           </div>
         )}
         {node.notes?.map((n, i) => (

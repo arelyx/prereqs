@@ -29,8 +29,11 @@ describe('economics-ba 2026-27', () => {
   it('MATH 11A/11B/23A options need the Mathematics petition', () => {
     const t = swap('AM 11A', 'MATH 11A')
     const r = run(harness, { terms: t, attested: [] })
-    expect(find(r, 'math').status).toBe('needs-attestation')
-    expect(find(run(harness, { terms: t, attested: ['math petition'] }), 'math').status).toBe('met')
+    expect(find(r, 'math-petition-path').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['math petition'] }), 'math-petition-path').status).toBe('met')
+    // a plain package present alongside petition courses never asks for the petition
+    const both = [...t, { term: '2290', courses: ['AM 11A'] }]
+    expect(() => find(run(harness, { terms: both, attested: [] }), 'math-petition-path')).toThrow()
   })
 
   it('at least three General electives', () => {

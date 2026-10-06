@@ -119,6 +119,8 @@ export interface ProgressReport {
   attested: string[]
   /** Program-wide caveats shown at the top. */
   notes: string[]
+  /** Harness bugs detected while evaluating (lint fails on any). */
+  authoringErrors?: string[]
 }
 
 /** Raw student data a harness is evaluated against (from PlanContent or an eval case). */

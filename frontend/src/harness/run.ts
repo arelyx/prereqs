@@ -98,6 +98,7 @@ export function runHarness(harness: Harness, student: StudentRecord, catalog: Ca
     attestations: harness.attestations ?? [],
     attested: all.h.attestedRaw === 'all' ? (harness.attestations ?? []).map((a) => a.id) : (harness.attestations ?? []).filter((a) => all.h.attested(a.id)).map((a) => a.id),
     notes: harness.notes ?? [],
+    authoringErrors: all.h.authoringErrors,
   }
 }
 
@@ -107,8 +108,9 @@ export function unmetLabels(report: ProgressReport, statuses: Status[] = ['unmet
   const visit = (n: ReqNode, path: string[]) => {
     const here = [...path, n.title]
     if (n.children?.length && (n as Node).combine) {
-      if ((n as Node).combine === 'any' && statuses.includes(n.status)) {
-        out.push(`${here.join(': ')}${n.detail ? ` — ${n.detail}` : ''}`)
+      if ((n as Node).combine === 'any') {
+        // Alternatives: report the group as a whole, never its unchosen branches.
+        if (statuses.includes(n.status)) out.push(`${here.join(': ')}${n.detail ? ` — ${n.detail}` : ''}`)
         return
       }
       n.children.forEach((c) => visit(c, here))

@@ -50,32 +50,23 @@ export default defineHarness({
     // "The Economics Department allows classes toward major requirements taken for the pass/no pass (P/NP) grade notification."
     h.policy = undefined
 
-    const math = h.either(
+    // One slot, so alternative packages never compete with each other for
+    // courses; the plain packages come first, so a petition is only asked for
+    // when no plain package is complete.
+    const PETITION = new Set(['MATH11A', 'MATH11B', 'MATH23A'])
+    const math = h.options(
       'math',
       'Mathematics content',
-      'Plus one of the following mathematics content options:',
+      ['Plus one of the following mathematics content options:', PETITION_QUOTE],
       [
-        h.options('math-direct', 'AM 11A–11B, MATH 19A–19B–AM 30, or MATH 19A–AM 11B', 'Plus one of the following mathematics content options:', [
-          ['AM 11A', 'AM 11B'],
-          ['MATH 19A', 'MATH 19B', 'AM 30'],
-          ['MATH 19A', 'AM 11B'],
-        ]),
-        h.group(
-          'math-petition-path',
-          'An option using MATH 11A, 11B or 23A (by petition)',
-          [
-            h.options('math-petitioned', 'MATH 11A–11B–22, MATH 19A–19B–23A, or MATH 11A–AM 11B', PETITION_QUOTE, [
-              ['MATH 11A', 'MATH 11B', 'MATH 22'],
-              ['MATH 19A', 'MATH 19B', 'MATH 23A'],
-              ['MATH 11A', 'AM 11B'],
-            ]),
-            h.attest('math-petition'),
-          ],
-          { quote: PETITION_QUOTE },
-        ),
+        ['AM 11A', 'AM 11B'],
+        ['MATH 19A', 'MATH 19B', 'AM 30'],
+        ['MATH 19A', 'AM 11B'],
+        ['MATH 11A', 'MATH 11B', 'MATH 22'],
+        ['MATH 19A', 'MATH 19B', 'MATH 23A'],
+        ['MATH 11A', 'AM 11B'],
       ],
     )
-
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.all('econ-intro', 'ECON 1 and ECON 2', 'All of the following courses:', ['ECON 1', 'ECON 2']),
       math,
@@ -124,6 +115,13 @@ export default defineHarness({
       ],
       { quote: compQuote, notes: ['These must be taken at UC Santa Cruz.'] },
     )
+    h.solve()
+    // A package using MATH 11A/11B/23A counts only with the petition.
+    if (math.status === 'met' && (math.used ?? []).some((e) => PETITION.has(e.code))) {
+      lower.children = lower.children!.map((n) =>
+        n === math ? h.group('math-petition-path', 'Mathematics content (by petition)', [math, h.attest('math-petition')], { quote: PETITION_QUOTE }) : n,
+      )
+    }
     return [lower, upper, comprehensive]
   },
 })

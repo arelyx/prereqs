@@ -9,7 +9,7 @@
 import { codes, defineHarness, range } from '@harness'
 import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
-const SUBFIELDS: { key: string; label: string; set: CourseSet }[] = [
+export const SUBFIELDS: { key: string; label: string; set: CourseSet }[] = [
   { key: 'dev', label: 'Developmental', set: range('PSYC', 101, 119) },
   { key: 'cog', label: 'Cognitive', set: range('PSYC', 120, 139) },
   { key: 'soc', label: 'Social', set: range('PSYC', 140, 159) },

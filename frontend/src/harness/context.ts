@@ -215,8 +215,20 @@ export class HarnessContext {
     })
   }
 
-  /** Alternatives: met when any child is met (e.g. "either PHYS 182, or 195A and 195B"). */
+  /** Harness-authoring mistakes detected at evaluation time (lint fails on these). */
+  readonly authoringErrors: string[] = []
+
+  /**
+   * Alternatives: met when any child is met (e.g. "either PHYS 182, or 195A
+   * and 195B"). Pitfall: if two branches hold EXCLUSIVE slots, the allocator
+   * treats every branch as required and the branches compete for courses —
+   * use one h.options() slot (packages) instead, or make branches overlays.
+   */
   either(id: string, title: string, quote: string | string[], children: Node[], opts: { detail?: string; notes?: string[] } = {}): Node {
+    const exclusiveNodes = new Set(this.pending.filter((p) => p.exclusive).map((p) => p.node))
+    const holds = (n: Node): boolean => exclusiveNodes.has(n) || (n.children ?? []).some(holds)
+    if (children.filter(holds).length > 1)
+      this.authoringErrors.push(`either('${id}'): more than one branch holds exclusive slots — use h.options() or exclusive:false`)
     return this.group(id, title, children, { quote, combine: 'any', ...opts })
   }
 
@@ -385,6 +397,10 @@ export class HarnessContext {
           for (const c of atLeast) {
             const got = count(cu, c.set)
             if (got < c.n) msgs.push(`${c.label}: ${got} of ${c.n}`)
+          }
+          for (const [eid, why] of this.excluded) {
+            const e = this.enrollments.find((x) => x.id === eid)
+            if (e && isMember(e.code) && !chosen.includes(e)) msgs.push(why)
           }
           if (opts.check && have === n) {
             const why = opts.check(chosen)

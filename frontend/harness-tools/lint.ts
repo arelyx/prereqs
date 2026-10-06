@@ -74,11 +74,12 @@ async function lintOne(edition: string, slug: string): Promise<{ errors: string[
         if (!qs.length && !n.children?.length) warnings.push(`node ${n.id} has no source quote`)
         for (const q of qs) if (q && !src.includes(norm(q))) badQuotes.add(`${n.id}: "${q.slice(0, 90)}"`)
       }
+      for (const e of rep.authoringErrors ?? []) badQuotes.add(`AUTHORING: ${e}`)
       for (const c of rep.choices) if (c.quote && !src.includes(norm(c.quote))) badQuotes.add(`choice ${c.key}: "${c.quote}"`)
       for (const a of rep.attestations) if (!src.includes(norm(a.quote))) badQuotes.add(`attestation ${a.id}: "${a.quote}"`)
     }
   }
-  for (const q of badQuotes) errors.push(`quote not in source — ${q}`)
+  for (const q of badQuotes) errors.push(q.startsWith('AUTHORING') ? q : `quote not in source — ${q}`)
 
   // 2. codes
   const coverage = (h as Harness & { coverage?: { ignore?: Record<string, string>; unknownOk?: Record<string, string> } }).coverage ?? {}

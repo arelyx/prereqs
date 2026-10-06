@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 @import 'reactflow/dist/style.css';
+/* Bespoke harness Views live outside src. */
+@source '../../harnesses';
 
 /* Class-based dark mode: the `dark` class lands on <html> (set pre-paint by
    the inline script in index.html, toggled from the navbar). */

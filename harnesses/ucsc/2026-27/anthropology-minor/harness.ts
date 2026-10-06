@@ -62,6 +62,7 @@ export default defineHarness({
     )
 
     const eligible = h.taken(UD_ANTH)
+    const candidates = [...new Set(eligible.map((e) => e.code))]
     const assigned = new Map<string, string>() // code -> category label
     const catNodes: Node[] = CATEGORIES.map((c) => {
       const code = h.choice(c.key)
@@ -76,15 +77,15 @@ export default defineHarness({
         })
       }
       if (!UD_ANTH.has(code, h.catalog))
-        return h.node(`cat-${c.key}`, title, c.quote, 'unmet', { detail: `${display(code)} is not an upper-division anthropology course that counts.`, choice: c.key })
+        return h.node(`cat-${c.key}`, title, c.quote, 'unmet', { detail: `${display(code)} is not an upper-division anthropology course that counts.`, choice: c.key, options: candidates })
       const dup = assigned.get(code)
       if (dup)
-        return h.node(`cat-${c.key}`, title, c.quote, 'unmet', { detail: `${display(code)} is already assigned to ${dup}; each category needs its own course.`, choice: c.key })
+        return h.node(`cat-${c.key}`, title, c.quote, 'unmet', { detail: `${display(code)} is already assigned to ${dup}; each category needs its own course.`, choice: c.key, options: candidates })
       assigned.set(code, c.label)
       const got = eligible.filter((e) => e.code === code)
       return got.length
-        ? h.node(`cat-${c.key}`, title, c.quote, 'met', { used: got.slice(0, 1), choice: c.key, detail: 'Per your category assignment.' })
-        : h.node(`cat-${c.key}`, title, c.quote, 'unmet', { detail: `${display(code)} is not in your plan (or was not passed).`, choice: c.key })
+        ? h.node(`cat-${c.key}`, title, c.quote, 'met', { used: got.slice(0, 1), choice: c.key, detail: 'Per your category assignment.', options: candidates })
+        : h.node(`cat-${c.key}`, title, c.quote, 'unmet', { detail: `${display(code)} is not in your plan (or was not passed).`, choice: c.key, options: candidates })
     })
 
     const upper = h.group(
