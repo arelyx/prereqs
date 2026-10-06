@@ -1,0 +1,11 @@
+{
+ "program": "classical-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "674a5c969854851c5cce9e44dd6f306694054a3f609e8ad316e7382d8f59747e",
+ "skeleton_sha256": "73b2b71de5da7448a1278661cd9731ab9bc0c79049773bed4bdcfa28889d5490",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:24Z",
+ "verified_at": "2026-10-06T00:58:50Z",
+ "notes": "verified line by line; page title is Ancient Studies Minor; GREE/LATN 1+2 package, LIT 184A/186A, four from list (one allocation); cross-listings HIS 159M/LGST 105A accepted; P/NP max two; 'or equivalent' prior knowledge is a note"
+}

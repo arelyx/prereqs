@@ -1,0 +1,11 @@
+{
+ "program": "jewish-studies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "73ab4a8a6794fe0c28ef350a694873dc594e81c8a5b2d7e45030fc4334c2ee87",
+ "skeleton_sha256": "3b17118218e2100e6a8d7abf4a8733299cdf55a3fe9447d1fc095bfa81802925",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:17Z",
+ "verified_at": "2026-10-06T00:58:51Z",
+ "notes": "verified line by line; language n=3 any combination; two LD core slots; four UD core; electives pool = list + language + core (atLeast 3 UD5, JWST 199 at most one); comprehensive = options (seminars | JWST 195A+B), letter-only; DC mirrors comprehensive; classical distribution overlay; P/NP max two excluding comprehensive"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "history-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a5bec8e2043e9a36ea8a100e426140847c067762e9cb021c6bb9ab23e8b8b8b7",
+ "skeleton_sha256": "6e1f29080aa560b8d34318bca91fb903bdcfc5546d5ed454d8fd1925de6fc43c",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:43Z",
+ "verified_at": "2026-10-06T00:58:50Z",
+ "notes": "verified line by line against sources/history-minor.md; 5 UD + 3 any HIS (5-credit) in one allocation; P/NP max two counted post-solve (cannot-check if a spare letter-graded course could swap in)"
+}
