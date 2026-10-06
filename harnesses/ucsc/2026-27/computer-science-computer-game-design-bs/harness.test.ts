@@ -62,12 +62,28 @@ describe('computer-science-computer-game-design-bs 2026-27', () => {
     expect(failing(run(harness, { terms: base.map((q) => ({ ...q, courses: q.courses.map((c) => m[c] ?? c) })) }))).toEqual([])
   })
 
-  it('CSE 20 missing but CSE 30 passed is cannot-check; AP credit counts', () => {
-    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual(['cse20:cannot-check'])
-    expect(failing(run(harness, { terms: swap('CSE 20', []), completed: ['CSE 20'] }))).toEqual([])
+  it('CSE 20 test-out (review: §1a): attestation only when CSE 20 is absent; AP credit counts', () => {
+    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual([])
+    expect(failing(run(harness, { terms: swap('CSE 20', []), attested: [] }))).toEqual(['cse20:needs-attestation'])
+    expect(failing(run(harness, { terms: swap('CSE 20', []), completed: ['CSE 20'], attested: [] }))).toEqual([])
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 20': 'F' } }))).toEqual(['cse20:unmet'])
   })
 
   it('letter grades are required', () => {
     expect(find(run(harness, { terms: base, grades: { 'CMPM 171': 'P' } }), 'comprehensive').status).toBe('unmet')
+  })
+
+  it('review: cross-listed codes are one course (ARTG 179 = CMPM 179; CSE 166A = ECON 166A, still capped as "other skills")', () => {
+    expect(find(run(harness, { terms: swap('CMPM 179', ['ARTG 179']) }), 'cge').status).toBe('met')
+    expect(find(run(harness, { terms: swap('CMPM 146', ['ARTG 179']) }), 'cge').status).toBe('unmet')
+    const t = swap('CMPM 146', ['CSE 166A']).map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'CMPM 163' ? 'CSE 103' : c)) }))
+    expect(find(run(harness, { terms: t }), 'cge').status).toBe('unmet')
+  })
+
+  it('review: a required lab is needed (CMPM 164L, CSE 161L); a core course (CSE 101) is not an elective; a failed elective does not count', () => {
+    expect(find(run(harness, { terms: swap('CMPM 146', ['CMPM 164']) }), 'cge').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('CMPM 146', ['CSE 161']) }), 'cge').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('CMPM 146', []) }), 'cge').status).toBe('unmet')
+    expect(find(run(harness, { terms: base, grades: { 'CSE 160': 'F' } }), 'cge').status).toBe('unmet')
   })
 })

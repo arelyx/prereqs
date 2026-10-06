@@ -6,6 +6,6 @@
  "skeleton_sha256": "b2f1714d9fbaee5cd36bf84737c3bc75e11e118cc44eb8f7cb072148ce265102",
  "status": "verified",
  "authored_at": "2026-10-06T00:48:39Z",
- "verified_at": "2026-10-06T00:57:01Z",
- "notes": "verified line by line against sources/electrical-engineering-minor.md; core as two packages allocated before electives (ECE 141 cannot count twice); 15-credit electives computed in code over one concentration list (best list unless declared); lab credits only with lecture passed; ECE 183 approval and ECE 218 petition as attestations"
+ "verified_at": "2026-10-06T23:46:45Z",
+ "notes": "verified line by line against sources/electrical-engineering-minor.md; core as two packages allocated before electives (ECE 141 cannot count twice); 15-credit electives computed in code over one concentration list (best list unless declared); lab credits only with lecture passed; ECE 183 approval and ECE 218 petition as attestations; reviewed 2026-10-06: cross-listed CSE 208 recognised as ECE 253 (with credits); retaken ECE 141 used by core excluded from electives; ECE 118 counted before ECE 218 so petition asked only when needed; ECE 183 + ECE 218 together -> needs-attestation, not unmet"
 }

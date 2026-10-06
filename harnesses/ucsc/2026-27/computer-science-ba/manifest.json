@@ -6,6 +6,6 @@
  "skeleton_sha256": "9f151ac93c2340ac1219a361042b0c679b6fc0905eb9b92c3346aba0ff87e840",
  "status": "verified",
  "authored_at": "2026-10-06T00:53:13Z",
- "verified_at": "2026-10-06T00:57:01Z",
- "notes": "verified line by line against sources/computer-science-ba.md; BA electives pool = list + CSE 100-189 + CSE 195 (>=1 CSE), labs required when offered; DC competes with electives; capstone overlay (16-course count leaves no separate slot); thesis/DC single CSE 195 -> cannot-check; CSE 40 test-out attestation; 'Additional courses may be accepted by petition' as note only"
+ "verified_at": "2026-10-06T23:46:46Z",
+ "notes": "verified line by line against sources/computer-science-ba.md; BA electives pool = list + CSE 100-189 + CSE 195 (>=1 CSE), labs required when offered; DC competes with electives; capstone overlay (16-course count leaves no separate slot); thesis/DC single CSE 195 -> cannot-check; CSE 40 test-out attestation; 'Additional courses may be accepted by petition' as note only; reviewed 2026-10-06: elective pool widened to 5+ credit Baskin Engineering 100-189 and CSE 201-279 and DC courses CSE 115A/185E excluded; single CSE 195 may be DC and thesis (was cannot-check); DC prefers non-195; capstone labs catalog-required; CSE 20/40 test-outs normalized; partner-code unknownOk removed, generic cross-list dedupe in electives"
 }

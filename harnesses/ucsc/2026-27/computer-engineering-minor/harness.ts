@@ -4,11 +4,20 @@ import { codes, defineHarness } from '@harness'
 import type { HarnessContext, Node } from '@harness'
 
 const Q_CSE20 = ['Students with no prior programming will take CSE 20 before CSE 30, and CSE 12.', 'bar will start with CSE 30 and CSE 12.']
+const Q_TESTOUT = 'Students with a prior programming course, AP credit, or clearing the [“Test-out”](https://sites.google.com/ucsc.edu/cse-20-testout) bar will start with CSE 30 and CSE 12.'
 
 export default defineHarness({
   program: 'computer-engineering-minor',
   edition: '2026-27',
   title: 'Computer Engineering Minor',
+  attestations: [
+    {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: Q_TESTOUT,
+      aliases: ['test-out', 'testout', 'cse 20 test'],
+    },
+  ],
   notes: [
     'Courses for the minor may be taken P/NP, but your major may require letter grades for the same courses (all Baskin Engineering majors do).',
     'Exam credit (AP etc.) for a course counts as that course — add it to your plan as completed.',
@@ -59,13 +68,23 @@ function cse20Node(root: Node): Node {
 }
 
 /**
- * CSE 20 is listed as required, but the page says students who clear the
- * CSE 20 test-out "will start with CSE 30" without saying whether the test-out
- * itself satisfies the CSE 20 line. AP credit is a course in the plan; a
- * test-out is not. If CSE 20 is missing but CSE 30 was passed, do not guess.
+ * §1a test-out convention. "Students with a prior programming course, AP
+ * credit, or clearing the “Test-out” bar will start with CSE 30 and CSE 12."
+ * AP credit is a course in the plan (add it as CSE 20). The test-out is an
+ * attestation, offered only when CSE 20 is absent from the plan; attested ⇒
+ * the CSE 20 line is met by test-out. A failed CSE 20 stays unmet.
  */
 function cse20TestOut(h: HarnessContext, n: Node) {
-  if (n.status !== 'unmet' || !h.has('CSE 30')) return
-  n.status = 'cannot-check'
-  n.detail = 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm with an advisor that it satisfies this line; otherwise take CSE 20 (AP credit: add it as CSE 20).'
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  const def = h.attestations.find((a) => a.id === 'cse20-testout')!
+  if (h.attested('cse20-testout')) {
+    n.status = 'met'
+    n.detail = 'Met by test-out (Passed the CSE 20 test-out).'
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = def
+  n.detail = h.has('CSE 30')
+    ? 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm it; if you started at CSE 30 because of a prior programming course, check with an advisor; AP credit: add it as CSE 20.'
+    : 'Take CSE 20, or confirm you passed the CSE 20 test-out (AP credit: add it as CSE 20).'
 }

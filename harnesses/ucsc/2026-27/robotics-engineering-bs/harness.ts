@@ -17,6 +17,12 @@ export default defineHarness({
   title: 'Robotics Engineering B.S.',
   attestations: [
     {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'Students with a prior programming course, AP credit, or clearing the “[Test-out](https://sites.google.com/ucsc.edu/cse-20-testout)” bar will start with CSE 30.',
+      aliases: ['test-out', 'testout', 'cse 20 test'],
+    },
+    {
       id: 'ece218-petition',
       label: 'Petition to substitute ECE 218 for ECE 118 approved',
       quote: 'Students can petition to substitute ECE 218 for ECE 118 to fulfill program requirements, but ECE 218 will not fulfill the PR GE requirement.',
@@ -114,14 +120,23 @@ function petition218(h: HarnessContext, upper: Node) {
 }
 
 /**
- * "Students with a prior programming course, AP credit, or clearing the
- * Test-out bar will start with CSE 30." The page lists CSE 20 as required and
- * does not say whether the test-out itself satisfies it; if CSE 20 is missing
- * but CSE 30 was passed, do not guess.
+ * §1a test-out convention. "Students with a prior programming course, AP
+ * credit, or clearing the “Test-out” bar will start with CSE 30." AP credit
+ * is a course in the plan (add it as CSE 20). The test-out is an attestation,
+ * offered only when CSE 20 is absent from the plan; attested ⇒ the CSE 20
+ * line is met by test-out. A failed CSE 20 stays unmet.
  */
 function cse20TestOut(h: HarnessContext, lower: Node) {
   const n = findNode(lower, 'cse20')!
-  if (n.status !== 'unmet' || !h.has('CSE 30')) return
-  n.status = 'cannot-check'
-  n.detail = 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm with an advisor that it satisfies this line; otherwise take CSE 20 (AP credit: add it as CSE 20).'
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  if (h.attested('cse20-testout')) {
+    n.status = 'met'
+    n.detail = 'Met by test-out (Passed the CSE 20 test-out).'
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = h.attestations.find((a) => a.id === 'cse20-testout')!
+  n.detail = h.has('CSE 30')
+    ? 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm it; if you started at CSE 30 because of a prior programming course, check with an advisor; AP credit: add it as CSE 20.'
+    : 'Take CSE 20, or confirm you passed the CSE 20 test-out (AP credit: add it as CSE 20).'
 }

@@ -57,4 +57,19 @@ describe('assistive-technology-minor 2026-27', () => {
   it('a failed course does not count', () => {
     expect(find(run(harness, { terms: base, grades: { 'ECE 167': 'F' } }), 'core-ud/ECE167').status).toBe('unmet')
   })
+
+  it('review: CHEM 1A as no-term transfer credit counts; CHEM 3B does not', () => {
+    expect(failing(run(harness, { terms: swap('CHEM 3A', []), completed: ['CHEM 1A'], entry: 'transfer' }))).toEqual([])
+    expect(failing(run(harness, { terms: swap('CHEM 3A', ['CHEM 3B']) }))).toEqual(['chem:unmet'])
+  })
+
+  it('review: ECE 141 cannot stand in for the required ECE 118; a lab without its lecture is not enough', () => {
+    expect(failing(run(harness, { terms: swap('ECE 118', ['ECE 141']) }))).toEqual(['core-ud/ECE118:unmet'])
+    expect(failing(run(harness, { terms: swap('METX 135', []) }))).toEqual(['core-ud/METX135:unmet'])
+  })
+
+  it('review: NP does not count; planned courses are in progress', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'BIOE 20B': 'NP' } }))).toEqual(['bio-cse/BIOE20B:unmet'])
+    expect(run(harness, { terms: base, currentTerm: '2288' }).status).toBe('in-progress')
+  })
 })

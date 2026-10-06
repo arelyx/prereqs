@@ -47,4 +47,16 @@ describe('bioelectronics-and-biophotonics-minor 2026-27', () => {
     expect(failing(run(harness, { terms: base, grades: { 'ECE 167': 'P' } }))).toEqual([])
     expect(find(run(harness, { terms: base, grades: { 'ECE 167': 'NP' } }), 'core-ud/ECE167').status).toBe('unmet')
   })
+
+  it('review: ECE 130L alone, or graduate ECE 230 + 130L, does not complete the option; a failed ECE 104 does not count', () => {
+    expect(failing(run(harness, { terms: swap('ECE 104', ['ECE 130L']) }))).toEqual(['bio-option:unmet'])
+    expect(failing(run(harness, { terms: swap('ECE 104', ['ECE 230', 'ECE 130L']) }))).toEqual(['bio-option:unmet'])
+    expect(failing(run(harness, { terms: base, grades: { 'ECE 104': 'F' } }))).toEqual(['bio-option:unmet'])
+  })
+
+  it('review: PHYS 15A still needs PHYS 5L; no-term transfer credit counts', () => {
+    const t = swap('PHYS 5A', ['PHYS 15A']).map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'PHYS 5L') }))
+    expect(failing(run(harness, { terms: t }))).toEqual(['phys5l:unmet'])
+    expect(failing(run(harness, { terms: [], completed: base.flatMap((q) => q.courses), entry: 'transfer' }))).toEqual([])
+  })
 })

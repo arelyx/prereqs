@@ -30,8 +30,9 @@ describe('computer-science-ba 2026-27', () => {
     // CSE 115A is used for DC; without CSE 183 there are only two electives
     const t = swap('CSE 183', [])
     expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
-    // a second DC-list course can be an elective
-    expect(find(run(harness, { terms: swap('CSE 183', ['CSE 185E']) }), 'electives').status).toBe('met')
+    // review: "except for the DC courses CSE 115A and CSE 185E/CSE 185S" — a
+    // second DC-list course is not an elective either
+    expect(find(run(harness, { terms: swap('CSE 183', ['CSE 185E']) }), 'electives').status).toBe('unmet')
   })
 
   it('a lecture with a lab counts only with its lab (ENVS 115A needs 115L)', () => {
@@ -49,7 +50,7 @@ describe('computer-science-ba 2026-27', () => {
   })
 
   it('breadth needs three courses from the breadth lists', () => {
-    const t = swap('CSE 120', ['MATH 115']).map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'CSE 183' ? 'CSE 185E' : c)) }))
+    const t = swap('CSE 120', ['MATH 115']).map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'CSE 183' ? 'CSE 107' : c)) }))
     const r = run(harness, { terms: t })
     expect(find(r, 'breadth').status).toBe('unmet')
     expect(find(r, 'electives').status).toBe('met')
@@ -67,19 +68,28 @@ describe('computer-science-ba 2026-27', () => {
     expect(failing(r)).toEqual(['capstone:unmet', 'thesis:unmet'])
   })
 
-  it('senior thesis: CSE 195 used for DC and thesis at once is flagged', () => {
+  it('review: one CSE 195 may be both the DC course and the senior thesis', () => {
+    // "CSE 195 can count toward satisfying the minimum number of upper-division
+    // electives requirement or completing the DC requirement, but not both."
     const t = swap('CSE 140', ['CSE 142']).map((q) => ({ ...q, courses: q.courses.flatMap((c) => (c === 'CSE 183' ? ['CSE 118'] : c === 'CSE 115A' ? ['CSE 195'] : [c])) }))
-    expect(find(run(harness, { terms: t }), 'thesis').status).toBe('cannot-check')
+    const r = run(harness, { terms: t })
+    expect(find(r, 'thesis').status).toBe('met')
+    expect(failing(r)).toEqual([])
   })
 
-  it('CSE 40 test-out is an attestation alternative', () => {
+  it('CSE 40 test-out (review: §1a): offered only when CSE 40 is absent; attested ⇒ met by test-out', () => {
     const t = swap('CSE 40', [])
-    expect(find(run(harness, { terms: t, attested: [] }), 'cse40-or-testout').status).toBe('needs-attestation')
-    expect(find(run(harness, { terms: t }), 'cse40-or-testout').status).toBe('met')
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['cse40:needs-attestation'])
+    const r = run(harness, { terms: t })
+    expect(find(r, 'cse40').status).toBe('met')
+    expect(find(r, 'cse40').detail).toMatch(/test-out/)
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 40': 'F' } }))).toEqual(['cse40:unmet'])
   })
 
-  it('CSE 20 missing but CSE 30 passed is cannot-check', () => {
-    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual(['cse20:cannot-check'])
+  it('CSE 20 test-out (review: §1a): attestation when CSE 20 is absent', () => {
+    expect(failing(run(harness, { terms: swap('CSE 20', []), attested: [] }))).toEqual(['cse20:needs-attestation'])
+    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual([])
+    expect(failing(run(harness, { terms: base, attested: [] }))).toEqual([])
   })
 
   it('MATH 20A/20B option; mixed packages do not count', () => {
@@ -90,5 +100,40 @@ describe('computer-science-ba 2026-27', () => {
 
   it('letter grades are required', () => {
     expect(find(run(harness, { terms: base, grades: { 'MATH 110': 'P' } }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: any 5+ credit Baskin Engineering course 100–189 and CSE 201–279 are B.A. electives; CSE 280–289 are not', () => {
+    // "1. Any 5-credit or more upper-division course with a number between 100 and 189 offered by Baskin Engineering"
+    expect(find(run(harness, { terms: swap('LING 112', ['AM 147']) }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: swap('LING 112', ['ECE 101', 'ECE 101L']) }), 'electives').status).toBe('met')
+    // "2. Any 5-credit or more CSE course with a number between 201 and 279."
+    expect(find(run(harness, { terms: swap('LING 112', ['CSE 201']) }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: swap('LING 112', ['CSE 280A']) }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: cross-listed codes are one course (PHYS 150 = CSE 109; CSE 185S = CSE 185E)', () => {
+    expect(find(run(harness, { terms: swap('LING 112', ['CSE 109']) }), 'electives').status).toBe('met')
+    const both = swap('LING 112', ['CSE 109', 'PHYS 150']).map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'MATH 110') }))
+    expect(find(run(harness, { terms: both }), 'electives').status).toBe('unmet')
+    expect(failing(run(harness, { terms: swap('CSE 115A', ['CSE 185S']) }))).toEqual([])
+  })
+
+  it('review: a capstone lecture with a required lab counts only with it; a lab alone is not a capstone', () => {
+    const noCap = swap('CSE 140', ['CSE 142'])
+    const t = (extra: string[]) => noCap.map((q) => ({ ...q, courses: q.courses.flatMap((c) => (c === 'CSE 183' ? ['CSE 118', ...extra] : [c])) }))
+    expect(find(run(harness, { terms: t(['CSE 156']) }), 'capstone').status).toBe('unmet')
+    expect(find(run(harness, { terms: t(['CSE 156L']) }), 'capstone').status).toBe('unmet')
+    expect(find(run(harness, { terms: t(['CSE 156', 'CSE 156L']) }), 'capstone').status).toBe('met')
+  })
+
+  it('review: with CSE 115A and CSE 195, CSE 115A is the DC course and CSE 195 an elective', () => {
+    const r = run(harness, { terms: swap('LING 112', ['CSE 195']) })
+    expect((find(r, 'dc').used ?? []).map((e) => e.code)).toEqual(['CSE115A'])
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: a repeatable or cross-listed course is still one elective', () => {
+    const t = swap('LING 112', ['CSE 109', 'PHYS 150']).map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'MATH 110') }))
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
   })
 })

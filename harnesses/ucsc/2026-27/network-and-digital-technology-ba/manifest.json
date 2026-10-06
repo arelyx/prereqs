@@ -6,6 +6,6 @@
  "skeleton_sha256": "c29716bc99ad5606780988122289107b667129d1ea9079ff9cee62f09029a9fb",
  "status": "verified",
  "authored_at": "2026-10-06T00:54:20Z",
- "verified_at": "2026-10-06T00:57:02Z",
- "notes": "verified line by line against sources/network-and-digital-technology-ba.md; electives as in CE BS template (5+ credits, 115A/185E/185S excluded, labs required), external approved list -> cannot-check; CSE 180/182 exclusion; DC overlay on required CSE 185E; comprehensive overlay or petition attestation + CSE/ECE upper-division course"
+ "verified_at": "2026-10-06T23:46:46Z",
+ "notes": "verified line by line against sources/network-and-digital-technology-ba.md; electives as in CE BS template (5+ credits, 115A/185E/185S excluded, labs required), external approved list -> cannot-check; CSE 180/182 exclusion; DC overlay on required CSE 185E; comprehensive overlay or petition attestation + CSE/ECE upper-division course; reviewed 2026-10-06: one comprehensive course (CSE 115A/ECE list) may count as an elective; external approved list now a declared choice (cannot-check until declared); CSE 20 test-out normalized; CSE 185S unknownOk removed; cross-list dedupe in electives"
 }

@@ -101,10 +101,7 @@ export default defineHarness({
       transfer
         ? h.info('ece-intro', 'ECE 80T or ECE 8', 'This course is waived for transfer students.', 'Waived: you entered as a transfer student.')
         : h.take('ece-intro', 'ECE 80T or ECE 8', ['One of these courses:', 'This course is waived for transfer students.'], codes('ECE 80T', 'ECE 8')),
-      h.either('programming', 'CSE 20 or CSE 30', 'A test-out option is available for CSE 20.', [
-        h.take('cse20-30', 'CSE 20 or CSE 30', 'One of these courses:', codes('CSE 20', 'CSE 30')),
-        h.attest('cse20-testout'),
-      ]),
+      h.take('programming', 'CSE 20 or CSE 30', ['One of these courses:', 'A test-out option is available for CSE 20.'], codes('CSE 20', 'CSE 30')),
       h.take('cse12', 'CSE 12', 'Plus this course:', codes('CSE 12')),
       h.take('c-prog', 'C programming', 'And one of the following', codes('ECE 13', 'CSE 13S')),
       h.all('calc', 'MATH 19A, 19B', 'Take the following courses:', ['MATH 19A', 'MATH 19B']),
@@ -145,7 +142,13 @@ export default defineHarness({
           labs: { pairs: LAB_PAIRS, mode: 'merge' },
           atLeast: [{ set: concSet, n: 3, label: `at least three from the ${concLabel} list` }],
           prefer: (c) => (c === 'ECE183' || c === 'ECE218' ? 1 : 0),
-          check: electiveCheck,
+          // "ECE 253 [/CSE 208]": cross-listed codes are one course. The
+          // allocator dedupes them across slots but not within one n>1 slot
+          // (library gap, reported), so guard here.
+          check: (chosen) => {
+            const keys = chosen.map((e) => [e.code, ...h.catalog.equivalents(e.code)].sort()[0])
+            return new Set(keys).size !== keys.length ? 'cross-listed codes are the same course' : electiveCheck(chosen)
+          },
           notes: [
             'The design elective (ECE 157 needs ECE 157L) must be completed in a quarter before your first ECE 129A.',
             '(ECE 130/230), (ECE 141/241), (ECE 172/221), (ECE 152/252), (ECE 153/250): only one of each pair counts.',
@@ -157,6 +160,7 @@ export default defineHarness({
     const capstonePackages = [['ECE 129A', 'ECE 129B', 'ECE 129C'], ['ECE 129A', 'ECE 195', 'ECE 195']]
     const dc = h.options('dc', 'Disciplinary Communication (DC)', ['The DC requirement is satisfied by completing the senior capstone course sequence:', 'Either these three courses:', 'Or these two courses:', '10 credits for the senior thesis course, ECE 195, must be completed for this option.'], capstonePackages)
     h.solve()
+    cse20TestOut(h, lower.children!.find((n) => n.id === 'programming')!)
     if (electives.id === 'electives') approvals(h, electives)
     const timing = electives.id === 'electives' ? designTiming(h, electives) : null
 
@@ -172,6 +176,23 @@ export default defineHarness({
     return [lower, upper, electivesNode, dc, comprehensive, overlap]
   },
 })
+
+/**
+ * §1a test-out convention: "A test-out option is available for CSE 20." The
+ * attestation is offered only when CSE 20 is absent from the plan (a failed
+ * CSE 20 is not rescued); attested ⇒ the line is met by test-out.
+ */
+function cse20TestOut(h: HarnessContext, n: Node) {
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  if (h.attested('cse20-testout')) {
+    n.status = 'met'
+    n.detail = 'Met by test-out (Passed the CSE 20 test-out).'
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = h.attestations.find((a) => a.id === 'cse20-testout')!
+  n.detail = 'Take CSE 20 or CSE 30, or confirm you passed the CSE 20 test-out.'
+}
 
 /** Term of the first ECE 129A (null = none, or completed with no term). */
 function first129A(h: HarnessContext): { term: string | null } | null {

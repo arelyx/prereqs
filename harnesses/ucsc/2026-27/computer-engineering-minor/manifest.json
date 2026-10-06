@@ -6,6 +6,6 @@
  "skeleton_sha256": "d0377c6e38e22369f90d743e22f1fde8e40968c604c938e2da9f001652b83eef",
  "status": "verified",
  "authored_at": "2026-10-06T00:46:15Z",
- "verified_at": "2026-10-06T00:57:01Z",
- "notes": "verified line by line against sources/computer-engineering-minor.md; physics lecture/lab combos as packages; CSE 20 missing + CSE 30 passed -> cannot-check (test-out note does not say it satisfies CSE 20); P/NP allowed"
+ "verified_at": "2026-10-06T23:46:45Z",
+ "notes": "verified line by line against sources/computer-engineering-minor.md; physics lecture/lab combos as packages; CSE 20 missing + CSE 30 passed -> cannot-check (test-out note does not say it satisfies CSE 20); P/NP allowed; reviewed 2026-10-06: CSE 20 test-out normalized to attestation (only when CSE 20 absent, failed CSE 20 stays unmet)"
 }

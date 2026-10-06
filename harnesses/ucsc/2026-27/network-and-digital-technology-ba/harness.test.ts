@@ -24,8 +24,11 @@ describe('network-and-digital-technology-ba 2026-27', () => {
     expect(failing(run(harness, { terms: swap('CSE 118', []) }))).toEqual(['electives:unmet'])
   })
 
-  it('CSE 115A (a DC course) is not an elective, but satisfies the comprehensive requirement', () => {
-    expect(find(run(harness, { terms: swap('CSE 118', ['CSE 115A']) }), 'electives').status).toBe('unmet')
+  it('CSE 115A satisfies the comprehensive requirement, and (review) as that course may be one of the five electives', () => {
+    // "This course can count as one of the five required electives."
+    const r0 = run(harness, { terms: swap('CSE 118', ['CSE 115A']) })
+    expect(find(r0, 'electives').status).toBe('met')
+    expect(find(r0, 'comp-course').used?.map((e) => e.display)).toEqual(['CSE 115A'])
     const t = swap('CSE 156', ['CSE 115A']).map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'CSE 156L' ? 'CSE 117' : c === 'CSE 183' ? 'CSE 119' : c)) }))
     const r = run(harness, { terms: t })
     expect(failing(r)).toEqual([])
@@ -74,11 +77,37 @@ describe('network-and-digital-technology-ba 2026-27', () => {
     expect(failing(run(harness, { terms: swap('PHYS 5L', []) }))).toEqual(['phys-a:unmet'])
   })
 
-  it('CSE 20 missing but CSE 30 passed is cannot-check', () => {
-    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual(['cse20:cannot-check'])
+  it('CSE 20 test-out (review: §1a): attestation offered only when CSE 20 is absent', () => {
+    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual([])
+    expect(failing(run(harness, { terms: swap('CSE 20', []), attested: [] }))).toEqual(['cse20:needs-attestation'])
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 20': 'F' } }))).toEqual(['cse20:unmet'])
   })
 
   it('letter grades required', () => {
     expect(find(run(harness, { terms: base, grades: { 'CSE 150': 'P' } }), 'cse150').status).toBe('unmet')
+  })
+
+  it('review: an ECE comprehensive course may be one of the five electives (as the comprehensive course); only one such', () => {
+    const t = swap('CSE 118', ['ECE 171', 'ECE 171L'])
+    const r = run(harness, { terms: t })
+    expect(failing(r)).toEqual([])
+    expect(find(r, 'comp-course').used?.map((e) => e.display)).toEqual(['ECE 171', 'ECE 171L'])
+    // two such courses: the second is not an elective by this rule (maybe the external list: cannot-check)
+    const two = swap('CSE 118', ['ECE 171', 'ECE 171L']).map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'CSE 180' ? 'ECE 121' : c)) }))
+    expect(find(run(harness, { terms: two }), 'electives').status).toBe('cannot-check')
+  })
+
+  it('review: approved-list electives are declared by the student; until then cannot-check', () => {
+    const t = swap('CSE 118', ['LING 112'])
+    const r = run(harness, { terms: t })
+    expect(find(r, 'electives').status).toBe('cannot-check')
+    expect(find(r, 'electives').choice).toBe('approved-electives')
+    expect(failing(run(harness, { terms: t, choices: { 'approved-electives': 'LING 112' } }))).toEqual([])
+    expect(find(run(harness, { terms: t, choices: { 'approved-electives': 'ECON 101' } }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: CSE 185S is CSE 185E (cross-listed); CSE 185E is not also an elective', () => {
+    expect(failing(run(harness, { terms: swap('CSE 185E', ['CSE 185S']) }))).toEqual([])
+    expect(find(run(harness, { terms: swap('CSE 118', []) }), 'electives').status).toBe('unmet')
   })
 })

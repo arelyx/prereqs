@@ -132,4 +132,37 @@ describe('electrical-engineering-bs 2026-27', () => {
   it('missing ECE 103L fails', () => {
     expect(failing(run(harness, { terms: drop(rec(eo), 'ECE 103L'), choices: EO }))).toEqual(['core/ECE103L:unmet'])
   })
+
+  it('review: the CSE 20 test-out is offered only when CSE 20 is absent; attested ⇒ met by test-out', () => {
+    const none = drop(rec(eo), 'CSE 20')
+    const r = run(harness, { terms: none, choices: EO, attested: ['exit survey'] })
+    expect(failing(r)).toEqual(['programming:needs-attestation'])
+    expect(find(r, 'programming').attest?.id).toBe('cse20-testout')
+    expect(find(run(harness, { terms: none, choices: EO }), 'programming').detail).toMatch(/test-out/)
+    // A failed CSE 20 (no CSE 30) is unmet even with every attestation.
+    expect(failing(run(harness, { terms: rec(eo), choices: EO, grades: { 'CSE 20': 'F' } }))).toEqual(['programming:unmet'])
+  })
+
+  it('review: a lab alone is not an elective; a repeated ECE 198 counts once; ECE 218 and ECE 118 count once', () => {
+    expect(find(run(harness, { terms: rec(['ECE 121', 'ECE 104', 'ECE 172', 'ECE 130L']), choices: EO }), 'electives').status).toBe('unmet')
+    const t = [...rec(['ECE 121', 'ECE 104', 'ECE 198']), { term: '2276', courses: ['ECE 198'] }]
+    expect(find(run(harness, { terms: t, choices: EO }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: rec(['ECE 218', 'ECE 118', 'ECE 104', 'ECE 172']), choices: EO }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: ECE 183 approval is not asked when four other electives suffice; a design course in the same term as ECE 129A is late', () => {
+    const r = run(harness, { terms: rec(['ECE 183', 'ECE 121', 'ECE 104', 'ECE 172', 'ECE 136']), choices: EO, attested: ['exit survey'] })
+    expect(find(r, 'electives').status).toBe('met')
+    const late = [...core, { term: '2272', courses: ['ECE 104', 'ECE 172', 'ECE 136'] }, { term: '2278', courses: ['ECE 129A', 'ECE 121'] }, ...cap.slice(1)]
+    expect(failing(run(harness, { terms: late, choices: EO }))).toEqual(['design-timing:unmet'])
+  })
+
+  it('review: P in a capstone course fails DC and the project course', () => {
+    expect(failing(run(harness, { terms: rec(eo), choices: EO, grades: { 'ECE 129B': 'P' } }))).toEqual(['dc:unmet', 'project:unmet'])
+  })
+
+  it('review: ECE 253 and its cross-listed code CSE 208 are one elective', () => {
+    expect(find(run(harness, { terms: rec(['ECE 121', 'CSE 208', 'ECE 152', 'ECE 153']), choices: CSS }), 'electives').status).toBe('met')
+    expect(find(run(harness, { terms: rec(['ECE 121', 'CSE 208', 'ECE 253', 'ECE 153']), choices: CSS }), 'electives').status).toBe('unmet')
+  })
 })

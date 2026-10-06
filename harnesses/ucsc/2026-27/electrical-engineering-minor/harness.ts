@@ -73,6 +73,11 @@ const CONCENTRATIONS: { value: string; label: string; heading: string; list: str
   },
 ]
 const LISTS = new Map(CONCENTRATIONS.map((c) => [c.value, new Set(c.list.map(canon))]))
+// Course sets are cross-listing aware ("ECE 253 [/CSE 208]": either code is the course).
+const LIST_SETS = new Map(CONCENTRATIONS.map((c) => [c.value, codes(...c.list)]))
+// Courses that count only with an approval/petition are tallied last, so the
+// approval is asked only when the other courses fall short.
+const NEEDS_APPROVAL = new Set(['ECE183', 'ECE218'])
 
 // "(ECE 130 and ECE 230, ECE 141 and ECE 241, and ECE 153 and ECE 250 are
 // undergraduate and graduate courses taught in conjunction, and only one can
@@ -157,7 +162,8 @@ export default defineHarness({
 })
 
 const credits = (h: HarnessContext, e: Enrollment) => {
-  const c = h.catalog.get(e.code)?.credits
+  // A cross-listed partner code may be missing from the catalog (CSE 208 → ECE 253).
+  const c = (h.catalog.get(e.code) ?? h.catalog.equivalents(e.code).map((x) => h.catalog.get(x)).find(Boolean))?.credits
   return c === undefined || Number.isNaN(c) ? 0 : c
 }
 
@@ -170,23 +176,30 @@ interface Tally {
 }
 
 function tally(h: HarnessContext, value: string, avail: Enrollment[]): Tally {
+  const set = LIST_SETS.get(value)!
   const list = LISTS.get(value)!
-  const passedCodes = new Set(h.passed.map((e) => e.code))
+  // One key per course however it was entered (cross-listed codes are one course).
+  const key = (code: string) => [code, ...h.catalog.equivalents(code)].sort()[0]
+  const passedKeys = new Set(h.passed.map((e) => key(e.code)))
   const seen = new Set<string>()
   const used: Enrollment[] = []
   const pending = new Map<string, { credits: number; used: Enrollment[] }>()
   let total = 0
-  const conj = (code: string) => CONJOINED.find((p) => p.includes(code))
-  for (const e of avail) {
+  const conj = (k: string) => CONJOINED.find((p) => p.includes(k))
+  const ordered = [...avail].sort((a, b) => Number(NEEDS_APPROVAL.has(a.code)) - Number(NEEDS_APPROVAL.has(b.code)))
+  for (const e of ordered) {
     // ECE 218 by petition stands in for ECE 118 (stated only for the
     // Communications Signal Processing list).
     const as = e.code === 'ECE218' && list.has('ECE118') ? 'ECE118' : e.code
-    if (!list.has(as) || seen.has(as)) continue
+    if (!(as === 'ECE118' ? list.has(as) : set.has(as, h.catalog))) continue
+    const k = key(as)
+    // "Each of ECE 183, ECE 193 and ECE 198 courses can be taken only once"; no course counts twice.
+    if (seen.has(k)) continue
     // Labs: "students must pass the lecture and lab in order to use the lab credits".
-    if (as.endsWith('L') && h.catalog.has(as.slice(0, -1)) && !passedCodes.has(as.slice(0, -1))) continue
-    const pair = conj(as)
-    if (pair && pair.some((p) => p !== as && seen.has(p))) continue
-    seen.add(as)
+    if (as.endsWith('L') && h.catalog.has(as.slice(0, -1)) && !passedKeys.has(key(as.slice(0, -1)))) continue
+    const pair = conj(k)
+    if (pair && pair.some((p) => p !== k && seen.has(p))) continue
+    seen.add(k)
     const attId = as === 'ECE183' ? 'ece183-approval' : e.code === 'ECE218' ? 'ece218-petition' : null
     if (attId && !h.attested(attId)) {
       const p = pending.get(attId) ?? { credits: 0, used: [] }
@@ -202,7 +215,11 @@ function tally(h: HarnessContext, value: string, avail: Enrollment[]): Tally {
 }
 
 function electiveNode(h: HarnessContext): Node {
-  const avail = h.passed.filter((e) => !h.used.has(e.id))
+  // "ECE 141 may not count toward the core requirement and the elective
+  // requirement": exclude every enrollment of a course another slot used
+  // (a retaken ECE 141 is still the same course).
+  const usedKeys = new Set(h.enrollments.filter((e) => h.used.has(e.id)).map(h.courseKey))
+  const avail = h.passed.filter((e) => !h.used.has(e.id) && !usedKeys.has(h.courseKey(e)))
   const chosen = h.choice('concentration')
   const values = chosen ? [chosen] : CONCENTRATIONS.map((c) => c.value)
   const tallies = values.map((v) => tally(h, v, avail))
@@ -223,18 +240,21 @@ function electiveNode(h: HarnessContext): Node {
       detail: `${met.total} credits from the ${label(met.value)} list.`,
     })
   }
-  // Would an approval / petition complete it?
+  // Would an approval / petition complete it? (one alone first, then both)
   for (const t of tallies) {
-    for (const [attId, p] of t.pending) {
-      if (t.total + p.credits >= 15) {
-        const def = h.attestations.find((a) => a.id === attId)!
-        return h.node('electives', 'Electives (15 credits, one concentration)', Q_ELECTIVES, 'needs-attestation', {
-          ...extra,
-          used: [...t.used, ...p.used],
-          attest: def,
-          detail: `${p.used.map((e) => e.display).join(', ')} counts only with approval: ${def.label.toLowerCase()}.`,
-        })
-      }
+    const all = [...t.pending]
+    const tries = [...all.map((x) => [x]), ...(all.length > 1 ? [all] : [])]
+    for (const combo of tries) {
+      const add = combo.reduce((n, [, p]) => n + p.credits, 0)
+      if (t.total + add < 15) continue
+      const defs = combo.map(([attId]) => h.attestations.find((a) => a.id === attId)!)
+      const extraUsed = combo.flatMap(([, p]) => p.used)
+      return h.node('electives', 'Electives (15 credits, one concentration)', Q_ELECTIVES, 'needs-attestation', {
+        ...extra,
+        used: [...t.used, ...extraUsed],
+        attest: defs[0],
+        detail: `${extraUsed.map((e) => e.display).join(', ')} count only with approval: ${defs.map((d) => d.label.toLowerCase()).join('; ')}.`,
+      })
     }
   }
   const short = 15 - best.total

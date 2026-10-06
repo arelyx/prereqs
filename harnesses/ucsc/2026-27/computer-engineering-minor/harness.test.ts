@@ -43,14 +43,34 @@ describe('computer-engineering-minor 2026-27', () => {
     expect(failing(run(harness, { terms: t }))).toEqual([])
   })
 
-  it('no CSE 20 but CSE 30 passed (test-out?) is cannot-check; no CSE 20 and no CSE 30 is unmet', () => {
-    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual(['cse20:cannot-check'])
-    const r = run(harness, { terms: swap('CSE 20', []).map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'CSE 30') })) })
-    expect(find(r, 'cse20').status).toBe('unmet')
+  it('CSE 20 test-out: offered only when CSE 20 is absent; attested ⇒ met by test-out', () => {
+    const noCse20 = swap('CSE 20', [])
+    const r = run(harness, { terms: noCse20 })
+    expect(failing(r)).toEqual([])
+    expect(find(r, 'cse20').detail).toMatch(/test-out/)
+    const r2 = run(harness, { terms: noCse20, attested: [] })
+    expect(failing(r2)).toEqual(['cse20:needs-attestation'])
+    expect(find(r2, 'cse20').attest?.id).toBe('cse20-testout')
+    // CSE 20 in the plan: no attestation asked.
+    expect(failing(run(harness, { terms: base, attested: [] }))).toEqual([])
+  })
+
+  it('review: a failed CSE 20 is not rescued by the test-out attestation', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 20': 'F' } }))).toEqual(['cse20:unmet'])
   })
 
   it('AP credit recorded as completed CSE 20 counts', () => {
     expect(failing(run(harness, { terms: swap('CSE 20', []), completed: ['CSE 20'] }))).toEqual([])
+  })
+
+  it('review: failing or NP grades do not count; ECE 13 + CSE 13S together still complete', () => {
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 12': 'F' } }))).toEqual(['cse12:unmet'])
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 101': 'NP' } }))).toEqual(['core-ud2/CSE101:unmet'])
+    expect(failing(run(harness, { terms: swap('CSE 13S', ['ECE 13']) }))).toEqual([])
+  })
+
+  it('review: PHYS 15A is not listed on this page as a PHYS 5A substitute', () => {
+    expect(failing(run(harness, { terms: swap('PHYS 5A', ['PHYS 15A']) }))).toEqual(['phys-a:unmet'])
   })
 
   it('P/NP is accepted; missing ECE 101L fails', () => {

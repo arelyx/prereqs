@@ -85,4 +85,31 @@ describe('electrical-engineering-minor 2026-27', () => {
     const r = run(harness, { terms: add('ECE 115', 'ECE 145', 'ECE 149'), currentTerm: '2282' })
     expect(find(r, 'electives').status).toBe('in-progress')
   })
+
+  it('review: ECE 253 entered as its cross-listed code CSE 208 counts with its credits', () => {
+    expect(find(run(harness, { terms: add('CSE 208', 'ECE 251', 'ECE 255') }), 'electives').status).toBe('met')
+  })
+
+  it('review: a retaken ECE 141 used by the alternative core still cannot count as an elective', () => {
+    const alt = [...lower.slice(0, 3), { term: '2278', courses: ['ECE 101', 'ECE 101L', 'ECE 141', 'PHYS 116A', 'PHYS 116C', 'PHYS 133'] }, lower[4]]
+    const t = [...alt, { term: '2282', courses: ['ECE 104', 'ECE 110', 'ECE 141'] }]
+    expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+  })
+
+  it('review: ECE 118 is counted before ECE 218, so the petition is not asked when ECE 118 is in the plan', () => {
+    const r = run(harness, { terms: add('ECE 218', 'ECE 118', 'ECE 136'), attested: [] })
+    const n = find(r, 'electives')
+    expect(n.status).toBe('met')
+    expect((n.used ?? []).map((e) => e.code)).not.toContain('ECE218')
+  })
+
+  it('review: when only ECE 183 and ECE 218 together reach 15 credits, ask for the approvals (not unmet)', () => {
+    expect(find(run(harness, { terms: add('ECE 183', 'ECE 218'), attested: [] }), 'electives').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: add('ECE 183', 'ECE 218') }), 'electives').status).toBe('met')
+  })
+
+  it('review: a lab whose lecture failed adds no credits; NP does not count', () => {
+    expect(find(run(harness, { terms: add('ECE 136', 'ECE 141', 'ECE 130', 'ECE 130L'), grades: { 'ECE 130': 'F' } }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: add('ECE 115', 'ECE 145', 'ECE 149'), grades: { 'ECE 149': 'NP' } }), 'electives').status).toBe('unmet')
+  })
 })

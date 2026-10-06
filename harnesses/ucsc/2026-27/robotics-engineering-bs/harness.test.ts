@@ -57,9 +57,24 @@ describe('robotics-engineering-bs 2026-27', () => {
     expect(failing(run(harness, { terms: swap('ECE 10', []) }))).toEqual(['ld-all/ECE10:unmet'])
   })
 
-  it('CSE 20 missing with CSE 30 passed is cannot-check (test-out); AP credit counts', () => {
-    expect(failing(run(harness, { terms: swap('CSE 20', []) }))).toEqual(['cse20:cannot-check'])
-    expect(failing(run(harness, { terms: swap('CSE 20', []), completed: ['CSE 20'] }))).toEqual([])
+  it('CSE 20 test-out (review: §1a): offered only when CSE 20 is absent; attested ⇒ met by test-out; AP credit counts', () => {
+    const r = run(harness, { terms: swap('CSE 20', []) })
+    expect(failing(r)).toEqual([])
+    expect(find(r, 'cse20').detail).toMatch(/test-out/)
+    expect(failing(run(harness, { terms: swap('CSE 20', []), attested: ['exit survey'] }))).toEqual(['cse20:needs-attestation'])
+    expect(failing(run(harness, { terms: swap('CSE 20', []), completed: ['CSE 20'], attested: ['exit survey'] }))).toEqual([])
+    // A failed CSE 20 is not rescued by the attestation.
+    expect(failing(run(harness, { terms: base, grades: { 'CSE 20': 'F' } }))).toEqual(['cse20:unmet'])
+  })
+
+  it('review: ECE 118 in the plan means no ECE 218 petition is asked; a lab alone is not the elective', () => {
+    expect(failing(run(harness, { terms: swap('ECE 118', ['ECE 118', 'ECE 218']), attested: ['exit survey'] }))).toEqual([])
+    expect(failing(run(harness, { terms: swap('CSE 142', ['ECE 171L']) }))).toEqual(['ud-grad:unmet'])
+  })
+
+  it('review: a second advanced robotics course does not fill the UD/graduate elective; P in a non-ECE course fails', () => {
+    expect(failing(run(harness, { terms: swap('CSE 142', ['ECE 243']) }))).toEqual(['ud-grad:unmet'])
+    expect(failing(run(harness, { terms: swap('CSE 142', ['CMPM 146']), grades: { 'CMPM 146': 'P' } }))).toEqual(['ud-grad:unmet'])
   })
 
   it('letter grades are required, also for courses from other departments', () => {

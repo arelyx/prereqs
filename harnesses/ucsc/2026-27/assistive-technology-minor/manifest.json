@@ -6,6 +6,6 @@
  "skeleton_sha256": "bcd18e52469721d9ca8a85d8cf1ec7b379e0bc16e74493be87f31454fff28102",
  "status": "verified",
  "authored_at": "2026-10-06T00:45:07Z",
- "verified_at": "2026-10-06T00:57:00Z",
- "notes": "verified line by line against sources/assistive-technology-minor.md; CHEM 1A accepted per 'prior completion of CHEM 1A or equivalent'; PHYS 15A/15C substitutes; P/NP allowed; Motor-concentration exclusion shown as info"
+ "verified_at": "2026-10-06T23:46:45Z",
+ "notes": "verified line by line against sources/assistive-technology-minor.md; CHEM 1A accepted per 'prior completion of CHEM 1A or equivalent'; PHYS 15A/15C substitutes; P/NP allowed; Motor-concentration exclusion shown as info; reviewed 2026-10-06: no defects; regression tests added"
 }

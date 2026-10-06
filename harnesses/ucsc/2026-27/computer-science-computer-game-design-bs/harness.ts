@@ -6,16 +6,16 @@ import type { HarnessContext, Node } from '@harness'
 const CGE = [
   'CMPM 110', 'CMPM 119', 'CMPM 122', 'CMPM 125', 'CMPM 131', 'CMPM 132', 'CMPM 146', 'CMPM 147', 'CMPM 148',
   'CMPM 150', 'CMPM 151', 'CMPM 152', 'CMPM 163', 'CMPM 164', 'CMPM 169', 'CMPM 172', 'CMPM 123', 'CMPM 177',
-  'CMPM 178', 'CMPM 179', 'ARTG 179', 'CMPM 180', 'CSE 102', 'CSE 103', 'CSE 104', 'CSE 110A', 'CSE 110B', 'CSE 112',
+  'CMPM 178', 'CMPM 179', 'CMPM 180', 'CSE 102', 'CSE 103', 'CSE 104', 'CSE 110A', 'CSE 110B', 'CSE 112',
   'CSE 113', 'CSE 115A', 'CSE 115B', 'CSE 115C', 'CSE 117', 'CSE 118', 'CSE 119', 'CSE 120', 'CSE 130', 'CSE 132',
   'CSE 138', 'CSE 140', 'CSE 142', 'CSE 144', 'CSE 145', 'CSE 146', 'CSE 150', 'CSE 156', 'CSE 157', 'CSE 160',
   'CSE 161', 'CSE 162', 'CSE 163', 'CSE 164', 'CSE 165', 'CSE 167', 'CSE 168', 'CSE 180', 'CSE 181', 'CSE 183',
-  'CSE 186', 'CSE 187', 'CSE 184', 'ECE 118', 'ECON 166A', 'CSE 166A',
+  'CSE 186', 'CSE 187', 'CSE 184', 'ECE 118', 'ECON 166A',
 ]
 // "No more than two of the five can be from CMPM 110, CMPM 122, CMPM 131,
 // CMPM 132, CMPM 150, CMPM 177, CSE 103, CSE 104, or ECON 166A." (the page
 // says "These seven courses" but names nine; all nine are capped)
-const OTHER_SKILLS = codes('CMPM 110', 'CMPM 122', 'CMPM 131', 'CMPM 132', 'CMPM 150', 'CMPM 177', 'CSE 103', 'CSE 104', 'ECON 166A', 'CSE 166A')
+const OTHER_SKILLS = codes('CMPM 110', 'CMPM 122', 'CMPM 131', 'CMPM 132', 'CMPM 150', 'CMPM 177', 'CSE 103', 'CSE 104', 'ECON 166A')
 // "Associated labs are required only when required by the lecture." The
 // catalog requires concurrent labs for these listed lectures.
 const REQUIRED_LABS: [string, string][] = [['CSE 156', 'CSE 156L'], ['CSE 161', 'CSE 161L'], ['CSE 162', 'CSE 162L'], ['CMPM 164', 'CMPM 164L']]
@@ -24,12 +24,14 @@ export default defineHarness({
   program: 'computer-science-computer-game-design-bs',
   edition: '2026-27',
   title: 'Computer Science: Computer Game Design B.S.',
-  coverage: {
-    unknownOk: {
-      ARTG179: 'cross-listed with CMPM 179 on the page; not in the committed ARTG catalog',
-      CSE166A: 'cross-listed with ECON 166A on the page; not in the committed CSE catalog',
+  attestations: [
+    {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'Students with a prior programming course, AP credit, or clearing the [“Test-out”](https://sites.google.com/ucsc.edu/cse-20-testout) bar will start with CSE 30 and CSE 12.',
+      aliases: ['test-out', 'testout', 'cse 20 test'],
     },
-  },
+  ],
   notes: [
     'The Baskin School of Engineering requires letter grades for all courses in an engineering major.',
     'Course requirements are divided into five areas and a course may count in only one of them.',
@@ -65,12 +67,12 @@ export default defineHarness({
       n: 5,
       labs: { pairs: REQUIRED_LABS, mode: 'required' },
       atMost: [{ set: OTHER_SKILLS, n: 2, label: 'at most two from CMPM 110/122/131/132/150/177, CSE 103/104, ECON 166A' }],
-      // cross-listed pairs are one course: "CMPM 179 [/ARTG 179]", "ECON 166A [/CSE 166A]"
+      // "CMPM 179 [/ARTG 179]", "ECON 166A [/CSE 166A]": cross-listed codes are
+      // one course. The allocator dedupes them across slots but not within one
+      // n>1 slot (library gap, reported), so guard here generically.
       check: (chosen) => {
-        const c = new Set(chosen.map((e) => e.code))
-        if (c.has('CMPM179') && c.has('ARTG179')) return 'CMPM 179 and ARTG 179 are the same course'
-        if (c.has('ECON166A') && c.has('CSE166A')) return 'ECON 166A and CSE 166A are the same course'
-        return null
+        const keys = chosen.map((e) => [e.code, ...h.catalog.equivalents(e.code)].sort()[0])
+        return new Set(keys).size !== keys.length ? 'cross-listed codes are the same course' : null
       },
       notes: ['Enrollment restrictions might apply to any of the CSE courses listed here.'],
     })
@@ -104,10 +106,23 @@ function findNode(root: Node, id: string): Node | undefined {
   return undefined
 }
 
-/** CSE 20 is listed as required; a test-out student "will start with CSE 30" — the page does not say it satisfies the line. */
+/**
+ * §1a test-out convention. "Students with a prior programming course, AP
+ * credit, or clearing the “Test-out” bar will start with CSE 30 and CSE 12."
+ * The attestation is offered only when CSE 20 is absent from the plan (a
+ * failed CSE 20 is not rescued); attested ⇒ met by test-out.
+ */
 function cse20TestOut(h: HarnessContext, root: Node) {
   const n = findNode(root, 'cse20')!
-  if (n.status !== 'unmet' || !h.has('CSE 30')) return
-  n.status = 'cannot-check'
-  n.detail = 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm with an advisor that it satisfies this line; otherwise take CSE 20 (AP credit: add it as CSE 20).'
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === 'CSE20')) return
+  if (h.attested('cse20-testout')) {
+    n.status = 'met'
+    n.detail = 'Met by test-out (Passed the CSE 20 test-out).'
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = h.attestations.find((a) => a.id === 'cse20-testout')!
+  n.detail = h.has('CSE 30')
+    ? 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm it; if you started at CSE 30 because of a prior programming course, check with an advisor; AP credit: add it as CSE 20.'
+    : 'Take CSE 20, or confirm you passed the CSE 20 test-out (AP credit: add it as CSE 20).'
 }

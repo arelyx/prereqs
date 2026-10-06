@@ -9,18 +9,30 @@ const BREADTH_1 = [
 ]
 const BREADTH_2 = ['CSE 110A', 'CSE 130', 'CSE 132', 'CSE 134', 'CSE 138', 'CSE 160', 'CSE 180', 'CSE 186']
 const BA_ELECTIVES = [
-  'ARTG 118', 'EART 124', 'EART 125', 'EART 172', 'OCEA 172', 'ECON 100M', 'ECON 100N', 'ECON 101', 'ENVS 115A', 'ENVS 115L',
+  'ARTG 118', 'EART 124', 'EART 125', 'EART 172', 'ECON 100M', 'ECON 100N', 'ECON 101', 'ENVS 115A', 'ENVS 115L',
   'FILM 170A', 'LING 112', 'LING 113', 'LING 118', 'LING 125', 'MATH 110', 'MATH 115', 'MATH 116', 'MATH 117',
   'MATH 118', 'MATH 134', 'MATH 140', 'MATH 145', 'MATH 145L', 'MATH 148', 'MATH 160', 'MATH 161', 'MUSC 123A',
-  'MUSC 123B', 'MUSC 123C', 'PHYS 115', 'PHYS 150', 'CSE 109',
+  'MUSC 123B', 'MUSC 123C', 'PHYS 115', 'PHYS 150',
 ]
 const CAPSTONES = [
   'CSE 110A', 'CSE 115C', 'CSE 115D', 'CSE 134', 'CSE 138', 'CSE 140', 'CSE 143', 'CSE 144', 'CSE 145', 'CSE 156',
   'CSE 156L', 'CSE 157', 'CSE 160', 'CSE 161', 'CSE 161L', 'CSE 162', 'CSE 162L', 'CSE 163', 'CSE 168', 'CSE 181',
   'CSE 183', 'CSE 184', 'CSE 187', 'CMPM 172',
 ]
+// "1. Any 5-credit or more upper-division course with a number between 100 and
+// 189 offered by Baskin Engineering, except for the DC courses CSE 115A and
+// CSE 185E/CSE 185S." Baskin Engineering subjects (departments: Applied
+// Mathematics, Biomolecular Engineering, Computational Media, Computer Science
+// and Engineering, Electrical and Computer Engineering, Statistics, Technology
+// Management) — as in technology-and-information-management-bs.
+const BE_SUBJECTS = ['AM', 'BME', 'CMPM', 'CSE', 'ECE', 'STAT', 'TIM']
+const BE_UD = anyOf(...BE_SUBJECTS.map((s) => range(s, 100, 189))).except(['CSE 115A', 'CSE 185E']).minCredits(5)
+// "2. Any 5-credit or more CSE course with a number between 201 and 279."
+const CSE_GRAD = range('CSE', 201, 279).minCredits(5)
+// "3. CSE 195 (if not used to satisfy the DC requirement)."
+const ELECTIVE_POOL = anyOf(BE_UD, CSE_GRAD, codes('CSE 195'), codes(...BA_ELECTIVES))
+// "including at least one upper-division CSE course(s) numbered between 100 and 189, or CSE 195"
 const CSE_UD = range('CSE', 100, 189).or(codes('CSE 195'))
-const ELECTIVE_POOL = anyOf(CSE_UD, codes(...BA_ELECTIVES))
 
 const Q_LABS = 'Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.'
 
@@ -30,6 +42,12 @@ export default defineHarness({
   title: 'Computer Science B.A.',
   attestations: [
     {
+      id: 'cse20-testout',
+      label: 'Passed the CSE 20 test-out',
+      quote: 'Students with a prior programming course, AP credit, or clearing the CSE 20 “[Test-out](https://sites.google.com/ucsc.edu/cse-20-testout)” bar will start with CSE 30, and CSE 12.',
+      aliases: ['cse 20 test', 'cse20 test'],
+    },
+    {
       id: 'cse40-testout',
       label: 'Passed the CSE 40 test-out',
       quote: 'CSE 40 has a test-out option that can satisfy this requirement.',
@@ -38,11 +56,6 @@ export default defineHarness({
   ],
   coverage: {
     ignore: { CSE13S: 'major qualification course only; the page says "CSE 13S is not required for the CS B.A."' },
-    unknownOk: {
-      CSE185S: 'cross-listed with CSE 185E on the page; not in the committed CSE catalog',
-      CSE109: 'cross-listed with PHYS 150 on the page; not in the committed CSE catalog',
-      OCEA172: 'cross-listed with EART 172 on the page; not in the committed catalog',
-    },
   },
   notes: [
     'Baskin Engineering requires a letter grade in every course used for the major (including courses from other departments).',
@@ -57,10 +70,7 @@ export default defineHarness({
       h.take('cse16', 'CSE 16', 'All of the following', codes('CSE 16')),
       h.take('cse20', 'CSE 20', ['All of the following', 'Students with no prior programming will take CSE 20 before CSE 30, and CSE 12.'], codes('CSE 20')),
       h.take('cse30', 'CSE 30', 'All of the following', codes('CSE 30')),
-      h.either('cse40-or-testout', 'CSE 40 (or its test-out)', 'CSE 40 has a test-out option that can satisfy this requirement.', [
-        h.take('cse40', 'CSE 40', 'All of the following', codes('CSE 40')),
-        h.attest('cse40-testout'),
-      ]),
+      h.take('cse40', 'CSE 40', ['All of the following', 'CSE 40 has a test-out option that can satisfy this requirement.'], codes('CSE 40')),
       h.options('calc', 'Calculus', 'Plus one of the following options', [
         ['MATH 19A', 'MATH 19B'],
         ['MATH 20A', 'MATH 20B'],
@@ -84,21 +94,29 @@ export default defineHarness({
       n: 3,
       labs: { pairs: labPairs, mode: 'required' },
       atLeast: [{ set: CSE_UD, n: 1, label: 'at least one CSE 100–189 or CSE 195' }],
-      // "PHYS 150 [/CSE 109]" and "EART 172 [/OCEA 172]" are one course each.
+      // "PHYS 150 [/CSE 109]", "EART 172 [/OCEA 172]": cross-listed codes are
+      // one course. The allocator dedupes them across slots but not within one
+      // n>1 slot (library gap, reported), so guard here generically.
       check: (chosen) => {
-        const c = new Set(chosen.map((e) => e.code))
-        if (c.has('PHYS150') && c.has('CSE109')) return 'PHYS 150 and CSE 109 are the same course'
-        if (c.has('EART172') && c.has('OCEA172')) return 'EART 172 and OCEA 172 are the same course'
-        return null
+        const keys = chosen.map((e) => [e.code, ...h.catalog.equivalents(e.code)].sort()[0])
+        return new Set(keys).size !== keys.length ? 'cross-listed codes are the same course' : null
       },
-      pool: 'any upper-division CSE 100–189 or CSE 195, or a course on the list of B.A. electives (at least one must be CSE)',
-      notes: ['Additional courses may be accepted by petition.'],
+      pool: 'any 5+ credit Baskin Engineering (AM, BME, CMPM, CSE, ECE, STAT, TIM) course 100–189 except CSE 115A/185E/185S, any 5+ credit CSE 201–279, CSE 195, or a course on the list of B.A. electives (at least one CSE 100–189 or CSE 195)',
+      notes: [
+        'Additional courses may be accepted by petition.',
+        'Approval for courses with numbers 290 and above may be requested by submitting a course substitution petition to the BE Undergraduate Advising Office.',
+      ],
     })
 
     const dc = h.take('dc', 'Disciplinary Communication (DC)', [
       'The DC requirement for the computer science B.A. is satisfied by completing one of the following additional courses:',
       'The course used for the DC requirement cannot also be used as an upper-division elective.',
-    ], codes('CSE 115A', 'CSE 185E', 'CSE 185S', 'CSE 195'))
+    ], codes('CSE 115A', 'CSE 185E', 'CSE 195'), {
+      // CSE 195 last, so it stays free for the electives when another DC course
+      // exists ("CSE 195 (if not used to satisfy the DC requirement)"; it is
+      // not repeatable, so it can never count for both).
+      prefer: (c) => (c === 'CSE195' ? 1 : 0),
+    })
     h.solve()
 
     // Comprehensive: one capstone OR a senior thesis. The 16-course count
@@ -110,13 +128,15 @@ export default defineHarness({
       'Students need to pass the capstone course to pass the exit requirement.',
     ], codes(...CAPSTONES), {
       exclusive: false,
-      labs: 'catalog-merge',
+      // "lecture/lab combinations count as one course": a lecture with a
+      // catalog-required lab (CSE 156/156L) counts only with it.
+      labs: 'catalog-required',
       notes: ['No course may be attempted more than twice without prior approval from the chair of the department offering the course. Withdrawals count as an attempted class for this purpose.'],
     })
     const thesis = h.take('thesis', 'Senior thesis (CSE 195)', 'A student wishing to complete a senior thesis must successfully complete a minimum of 5 credits in CSE 195, Senior Thesis Research.', codes('CSE 195'), { exclusive: false })
     h.solve()
-    thesisDoubleCount(h, thesis, dc)
-    cse20TestOut(h, lower)
+    testOut(h, findNode(lower, 'cse20')!, 'CSE20', 'cse20-testout', 'Take CSE 20, or confirm you passed the CSE 20 test-out (AP credit: add it as CSE 20).')
+    testOut(h, findNode(lower, 'cse40')!, 'CSE40', 'cse40-testout', 'Take CSE 40, or confirm you passed the CSE 40 test-out.')
 
     const comprehensive = h.either('comprehensive', 'Comprehensive Requirement', 'In addition to the above B.A. requirements, students in the computer science majors must satisfy one of the following two exit requirements:', [capstone, thesis])
 
@@ -145,24 +165,22 @@ function findNode(root: Node, id: string): Node | undefined {
 }
 
 /**
- * The page lists CSE 20 as required but says students who clear the CSE 20
- * test-out "will start with CSE 30"; it does not say whether the test-out
- * satisfies the CSE 20 line. CSE 20 missing + CSE 30 passed: do not guess.
+ * §1a test-out convention: "CSE 40 has a test-out option that can satisfy this
+ * requirement."; "Students with a prior programming course, AP credit, or
+ * clearing the CSE 20 “Test-out” bar will start with CSE 30". The attestation
+ * is offered only when the course is absent from the plan (a failed attempt
+ * is not rescued); attested ⇒ the line is met by test-out.
  */
-function cse20TestOut(h: HarnessContext, lower: Node) {
-  const n = findNode(lower, 'cse20')!
-  if (n.status !== 'unmet' || !h.has('CSE 30')) return
-  n.status = 'cannot-check'
-  n.detail = 'No CSE 20 in your plan, but you passed CSE 30. If you cleared the CSE 20 test-out, confirm with an advisor that it satisfies this line; otherwise take CSE 20 (AP credit: add it as CSE 20).'
+function testOut(h: HarnessContext, n: Node, code: string, att: string, ask: string) {
+  if (n.status !== 'unmet' || h.enrollments.some((e) => e.code === code)) return
+  const def = h.attestations.find((a) => a.id === att)!
+  if (h.attested(att)) {
+    n.status = 'met'
+    n.detail = `Met by test-out (${def.label}).`
+    return
+  }
+  n.status = 'needs-attestation'
+  n.attest = def
+  n.detail = ask
 }
 
-/** One CSE 195 as both DC and the senior thesis: the page does not say. */
-function thesisDoubleCount(h: HarnessContext, thesis: Node, dc: Node) {
-  if (thesis.status !== 'met') return
-  const d = new Set((dc.used ?? []).map((e) => e.id))
-  const t = thesis.used ?? []
-  if (t.length && t.every((e) => d.has(e.id)) && h.taken(codes('CSE 195')).length < 2) {
-    thesis.status = 'cannot-check'
-    thesis.detail = 'Your only CSE 195 is counted as your DC course; the catalog does not say whether it may also be the senior thesis — ask an advisor.'
-  }
-}

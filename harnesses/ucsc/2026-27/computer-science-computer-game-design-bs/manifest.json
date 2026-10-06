@@ -6,6 +6,6 @@
  "skeleton_sha256": "d694fdd582b0e3938f601e672f038a5fe82dcd363fd8a9ce0b97c4109eeeb8e9",
  "status": "verified",
  "authored_at": "2026-10-06T00:55:10Z",
- "verified_at": "2026-10-06T00:57:02Z",
- "notes": "verified line by line against sources/computer-science-computer-game-design-bs.md; areas exclusive; CGE five with atMost 2 'other skills' (all nine named courses, page says seven); required labs per catalog; CMPM 179/180 once; DC overlay on CMPM 130; comprehensive as one track package slot; CSE 20 missing + CSE 30 -> cannot-check"
+ "verified_at": "2026-10-06T23:46:46Z",
+ "notes": "verified line by line against sources/computer-science-computer-game-design-bs.md; areas exclusive; CGE five with atMost 2 'other skills' (all nine named courses, page says seven); required labs per catalog; CMPM 179/180 once; DC overlay on CMPM 130; comprehensive as one track package slot; CSE 20 missing + CSE 30 -> cannot-check; reviewed 2026-10-06: CSE 20 test-out normalized; partner-code unknownOk and lists removed; cross-listed CMPM/ARTG 179 counted once within CGE (repeatable-aware key)"
 }
