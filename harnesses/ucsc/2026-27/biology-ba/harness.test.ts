@@ -139,8 +139,9 @@ describe('biology-ba 2026-27', () => {
     // a non-EEB research course may count: ask
     expect(find(run(harness, { terms: t }), 'electives').status).toBe('met')
     expect(find(run(harness, { terms: add(t, '2288', 'BIOL 186L') }), 'comprehensive').status).toBe('cannot-check')
-    // BIOL 186L is an upper-division lab, so it does satisfy the lab/field requirement
-    expect(find(run(harness, { terms: add(t, '2288', 'BIOL 186L') }), 'lab-field').status).toBe('met')
+    // BIOL 186L is a lab but not one of the eight courses unless counted as the one
+    // research-based upper-division course — ask (reviewed 2026-10-06)
+    expect(find(run(harness, { terms: add(t, '2288', 'BIOL 186L') }), 'lab-field').status).toBe('cannot-check')
   })
 
   it('comprehensive via senior thesis leaves the lab/field requirement to an advisor', () => {
@@ -153,5 +154,91 @@ describe('biology-ba 2026-27', () => {
     const t = noLab()
     const r = run(harness, { terms: add(t, '2288', 'BIOE 183W'), grades: { 'BIOE 183W': 'P' } })
     expect(find(r, 'comprehensive').status).toBe('cannot-check')
+  })
+
+  // --- adversarial review 2026-10-06 ---
+  describe('review 2026-10-06', () => {
+    it('CHEM 3B taken before fall 2026 and retaken fall 2026 or later needs no CHEM 3BL', () => {
+      const t = [{ term: '2262', courses: ['CHEM 3B'] }, ...base]
+      expect(find(run(harness, { terms: t, grades: {} }), 'gen-chem').status).toBe('met')
+    })
+
+    it('transfer CHEM 3B with no term and no CHEM 3BL is cannot-check', () => {
+      const r = run(harness, { terms: edit(base, 'CHEM 3B', null), completed: ['CHEM 3B'] })
+      expect(find(r, 'gen-chem').status).toBe('cannot-check')
+    })
+
+    it('lab/field must be one of the eight courses: CRSN 152 satisfies comprehensive only', () => {
+      // "A total of eight (8) upper-division biology courses …: one must include laboratory or fieldwork"
+      const r = run(harness, { terms: add(noLab(), '2288', 'CRSN 152') })
+      expect(find(r, 'comprehensive').status).toBe('met')
+      expect(find(r, 'lab-field').status).toBe('unmet')
+      expect(find(r, 'lab-field').detail).toContain('CRSN 152')
+    })
+
+    it('lab/field: a 5-credit MCD lab outside the elective list (BIOL 105L) is not one of the eight', () => {
+      expect(find(run(harness, { terms: add(noLab(), '2288', 'BIOL 105L') }), 'lab-field').status).toBe('unmet')
+    })
+
+    it('lab/field: BIOE 131 with its optional lab BIOE 131L as the anatomy course counts', () => {
+      const t = add(edit(noLab(), 'BIOE 136', 'BIOE 131'), '2280', 'BIOE 131L')
+      const r = run(harness, { terms: t })
+      expect(find(r, 'lab-field').status).toBe('met')
+      expect(failing(r)).toEqual([])
+    })
+
+    it('lab/field: a surplus elective-eligible field course can be swapped into the electives', () => {
+      const r = run(harness, { terms: add(noLab(), '2288', 'BIOE 128L') })
+      expect(find(r, 'lab-field').status).toBe('met')
+      expect(failing(r)).toEqual([])
+    })
+
+    it('catalog "cannot receive credit for both" BIOE 150 and BIOE 151A: only one is an elective', () => {
+      const t = edit(edit(base, 'BIOE 140', 'BIOE 150'), 'BIOE 165', 'BIOE 151A')
+      expect(find(run(harness, { terms: t }), 'electives').status).toBe('unmet')
+      expect(find(run(harness, { terms: add(t, '2288', 'BIOE 147') }), 'electives').status).toBe('met')
+    })
+
+    it('DC: BIOE 150L and BIOE 151B cannot both count (no credit for both)', () => {
+      const t = add(edit(edit(noLab(), 'BIOE 108', 'BIOE 150L'), 'BIOE 172', 'BIOE 151B'), '2282', 'BIOE 147')
+      expect(find(run(harness, { terms: t }), 'dc').status).toBe('unmet')
+      expect(find(run(harness, { terms: add(t, '2282', 'BIOE 174') }), 'dc').status).toBe('met')
+    })
+
+    it('three electives + an unused research course (BIOE 193) or graduate course is cannot-check, not unmet', () => {
+      const t = edit(base, 'BIOE 140', null)
+      // "Only one upper-division course requirement may be met with a research-based independent study or graduate-level UC Santa Cruz biology course."
+      expect(find(run(harness, { terms: add(t, '2288', 'BIOE 193') }), 'electives').status).toBe('cannot-check')
+      expect(find(run(harness, { terms: add(t, '2288', 'BIOE 247') }), 'electives').status).toBe('cannot-check')
+      // a non-research 180+ course is still unmet
+      expect(find(run(harness, { terms: add(t, '2288', 'BIOE 189F') }), 'electives').status).toBe('unmet')
+    })
+
+    it('qualification grades (C- in BIOL 20A) gate declaration only; shown as info', () => {
+      const r = run(harness, { terms: base, grades: { 'BIOL 20A': 'C-' } })
+      expect(find(r, 'qualification').status).toBe('info')
+      expect(failing(r)).toEqual([])
+    })
+
+    it('METX 135 + METX 135L as anatomy satisfies anatomy, lab/field and comprehensive', () => {
+      const t = add(edit(noLab(), 'BIOE 136', 'METX 135'), '2280', 'METX 135L')
+      expect(failing(run(harness, { terms: t }))).toEqual([])
+    })
+
+    it('METX 135 without METX 135L (required concurrent lab) is not the anatomy course', () => {
+      expect(find(run(harness, { terms: edit(noLab(), 'BIOE 136', 'METX 135') }), 'anat-phys').status).toBe('unmet')
+    })
+
+    it('empty plan fails without crashing', () => {
+      const r = run(harness, { terms: [] })
+      expect(r.status).toBe('unmet')
+      expect(find(r, 'lab-field').status).toBe('unmet')
+    })
+
+    it('kitchen sink: every listed course in one plan is complete', () => {
+      const all = add([...base, { term: '2290', courses: [] }], '2290', 'BIOE 145', 'BIOE 145L', 'BIOE 150', 'BIOE 150L', 'BIOE 151A', 'BIOE 151B',
+        'BIOE 129', 'BIOE 129L', 'BIOL 105', 'BIOL 100', 'BIOL 101', 'METX 100', 'METX 100L', 'CRSN 152', 'BIOE 195', 'NRS 188')
+      expect(failing(run(harness, { terms: all }))).toEqual([])
+    })
   })
 })

@@ -9,7 +9,12 @@
 //    and comprehensive are overlays ("may also fulfill a lab/field
 //    requirement and/or a DC"). Every DC course is itself elective-eligible,
 //    so "two must apply to the DC requirement" holds whenever the overlay is
-//    met (a DC course can always be swapped into the four electives).
+//    met (a DC course can always be swapped into the four electives). The
+//    lab/field course must be one of the eight (checked after allocation).
+//  - Catalog "cannot receive credit for both" pairs (BIOE 151A-D vs BIOE
+//    150/150L) count once in electives and DC.
+//  - One elective short with an unused research/graduate course → cannot-check
+//    ("Only one upper-division course requirement may be met with …").
 //  - Lecture + required concurrent 2-credit lab = one course, both needed.
 //    Which labs are required comes from the catalog ("Concurrent enrollment
 //    in BIOE 112L is required" etc.); BIOE 129L and 131L are optional.
@@ -81,6 +86,23 @@ const MAYBE_RESEARCH = range('BIOE', 180, 199)
   .or(range('METX', 190, 199))
   .except(codes(...COMP_EEB, ...EEB_RESEARCH))
 
+// Catalog: BIOE 151A-D "Students cannot receive credit for this course and
+// BIOE 150 , BIOE 150L , ENVS 104A or ENVS 196A." → never both in one count.
+const NO_BOTH: [string, string][] = ['BIOE 151A', 'BIOE 151B', 'BIOE 151C', 'BIOE 151D'].flatMap(
+  (x): [string, string][] => [[x, 'BIOE 150'], [x, 'BIOE 150L']],
+)
+const NO_BOTH_LIMITS = NO_BOTH.map(([a, b]) => ({ set: codes(a, b), n: 1, label: `no credit for both ${a} and ${b}` }))
+// "Only one upper-division course requirement may be met with a
+// research-based independent study or graduate-level UC Santa Cruz biology course."
+// Full (5+ credit) research/thesis courses per catalog titles, or graduate courses.
+const GRAD = range('BIOE', 200, 299).or(range('BIOL', 200, 299)).or(range('METX', 200, 299))
+const RESEARCH_SUB = codes(
+  'BIOE 193', 'BIOE 195', 'BIOE 197', 'BIOE 199', 'BIOL 186L', 'BIOL 186R', 'BIOL 195', 'BIOL 198', 'BIOL 199',
+  'METX 195', 'METX 198', 'METX 199',
+).or(GRAD.minCredits(5))
+// Lab/field: any research course or graduate course might be the one that includes lab/fieldwork.
+const RESEARCH_OR_GRAD = codes(...EEB_RESEARCH).or(MAYBE_RESEARCH).or(GRAD)
+
 const LAB_FIELD = codes(...COMP_EEB, ...COMP_OTHER).or(
   range('BIOE', 100, 199)
     .or(range('BIOL', 100, 199))
@@ -94,6 +116,10 @@ const Q_UPPER =
   'A total of eight (8) upper-division biology courses, including relevant electives: one must include laboratory or fieldwork; two must apply to the Disciplinary Communications requirement.'
 const Q_OVERLAP =
   'Courses appearing in more than one requirement group can only fulfill one, but, if appropriate, may also fulfill a lab/field requirement and/or a DC.'
+const Q_QUAL =
+  "The following qualification courses, or their equivalents, must be completed with a grade of C (2.0) or better before the student's declaration deadline arrives."
+const Q_RESEARCH =
+  'Only one upper-division course requirement may be met with a research-based independent study or graduate-level UC Santa Cruz biology course.'
 const Q_COMBO =
   'For 5-credit lecture courses with required, concurrent 2-credit labs, successful completion of both the lab and lecture is required and counts as one course for major requirements. For 5-credit lectures with optional labs, only the lecture must be successfully completed to count as one course.'
 
@@ -153,17 +179,24 @@ export default defineHarness({
       {
         n: 4,
         labs,
-        atMost: FIVE_PAIRS.map(([a, b]) => ({ set: codes(a, b), n: 1, label: `${a}/${b} as one course` })),
+        atMost: [
+          ...FIVE_PAIRS.map(([a, b]) => ({ set: codes(a, b), n: 1, label: `${a}/${b} as one course` })),
+          ...NO_BOTH_LIMITS,
+        ],
         pool: `any BIOE 100–179 course of 5+ credits, or ${ELECTIVE_LIST.join(', ')} (not a course used above)`,
       },
     )
 
+    // "A total of eight (8) upper-division biology courses …: one must include
+    // laboratory or fieldwork" — the lab/field course is one of the eight (or
+    // the lab of one of them). This overlay only finds candidates; the status
+    // is decided after the allocation below.
     const labField = h.take(
       'lab-field',
-      'One course with laboratory or fieldwork',
-      Q_UPPER,
+      'One of the eight courses includes laboratory or fieldwork',
+      [Q_UPPER, Q_OVERLAP],
       LAB_FIELD,
-      { exclusive: false, pool: 'a field/laboratory course from the comprehensive lists, or any upper-division BIOE/BIOL/METX lab (“L”)' },
+      { exclusive: false, pool: 'one of your eight upper-division courses that is a listed field/laboratory course, an upper-division BIOE/BIOL/METX lab (“L”), or a lecture taken with its lab' },
     )
 
     const dc = h.take(
@@ -179,6 +212,7 @@ export default defineHarness({
         n: 2,
         exclusive: false,
         labs: { pairs: DC_PAIRS, mode: 'required' },
+        atMost: NO_BOTH_LIMITS,
         check: (chosen) => {
           const early = chosen.find((e) => CA_ECOLOGY_C.has(e.code) && e.term != null && Number(e.term) < SPRING_2023)
           return early ? `${early.display} counts for DC only if taken spring 2023 or later` : null
@@ -200,6 +234,28 @@ export default defineHarness({
 
     h.solve()
 
+    // Lab/field: a candidate counts only when it is one of the eight courses —
+    // used by a core/anatomy/elective slot, the lab of a lecture so used, or an
+    // unused elective-eligible course that could replace an elective.
+    if (labField.status === 'met') {
+      const udSlots = [...(core.children ?? []).flatMap((c) => (c.children?.length ? c.children : [c])), anat, electives]
+      const udIds = new Set(udSlots.flatMap((n) => n.used ?? []).map((e) => e.id))
+      const udCodes = new Set(h.enrollments.filter((e) => udIds.has(e.id)).map((e) => e.code))
+      const inEight = h.taken(LAB_FIELD).filter(
+        (e) =>
+          udIds.has(e.id) ||
+          (e.code.endsWith('L') && udCodes.has(e.code.slice(0, -1))) ||
+          (electives.status === 'met' && electivePool.has(e.code, h.catalog) && !h.used.has(e.id)),
+      )
+      if (inEight.length) labField.used = inEight
+      else {
+        const outside = h.taken(LAB_FIELD)
+        labField.used = []
+        labField.status = 'unmet'
+        labField.detail = `${outside.map((e) => e.display).join(', ')} include${outside.length === 1 ? 's' : ''} lab/fieldwork but ${outside.length === 1 ? 'is' : 'are'} not one of your eight upper-division courses`
+      }
+    }
+
     // 5-credit lecture/lab pairs: counting them as two might complete the electives.
     if (electives.status === 'unmet') {
       const used = new Set(electives.used?.map((e) => e.code))
@@ -211,6 +267,14 @@ export default defineHarness({
       if ((electives.progress?.have ?? 0) + extra >= 4) {
         electives.status = 'cannot-check'
         electives.detail = 'Complete only if a 5-credit lecture and its 5-credit lab (e.g. BIOE 145 and 145L) count as two electives — the page says lecture/lab combinations count as one; ask an EEB advisor.'
+      }
+    }
+    // One elective short, with an unused research or graduate-level biology course.
+    if (electives.status === 'unmet' && (electives.progress?.have ?? 0) === 3) {
+      const sub = h.taken(RESEARCH_SUB).filter((e) => !h.used.has(e.id))
+      if (sub.length) {
+        electives.status = 'cannot-check'
+        electives.detail = `${Q_RESEARCH} Ask an EEB advisor whether ${sub.map((e) => e.display).join(', ')} can count as your fourth elective.`
       }
     }
 
@@ -230,7 +294,7 @@ export default defineHarness({
       }
     }
     if (labField.status === 'unmet') {
-      const research = h.taken(codes(...EEB_RESEARCH).or(MAYBE_RESEARCH), {})
+      const research = h.taken(RESEARCH_OR_GRAD, {})
       if (research.length) {
         labField.status = 'cannot-check'
         labField.detail = `None of your courses is a listed lab/field course; ask an EEB advisor whether ${research.map((e) => e.display).join(', ')} includes laboratory or fieldwork.`
@@ -238,7 +302,14 @@ export default defineHarness({
     }
 
     const upper = h.group('upper', 'Upper-Division Courses', [core, anat, labField], { quote: [Q_UPPER, Q_OVERLAP] })
-    return [lower, upper, electives, dc, comp]
+    // Qualification gates declaration, not completion.
+    const qual = h.info(
+      'qualification',
+      'Major qualification (to declare)',
+      Q_QUAL,
+      'BIOL 20A, BIOE 20B, BIOE 20C and CHEM 3A+3B or CHEM 4A with C (2.0) or better before your declaration deadline; not checked here.',
+    )
+    return [qual, lower, upper, electives, dc, comp]
   },
 })
 
@@ -256,7 +327,10 @@ function generalChem(h: HarnessContext): Node {
   const quote = ['General Chemistry:', 'Choose one of the following options:', Q_CHEM_NOTE]
   const options = ['CHEM3A', 'CHEM3B', 'CHEM3BL', 'CHEM4A', 'CHEM4AL']
   const a3 = first('CHEM3A')
-  const b3 = first('CHEM3B')
+  // A retake of CHEM 3B in fall 2026 or later includes the lab: prefer it.
+  const b3s = h.enrollments.filter((e) => e.code === 'CHEM3B' && policyFailure(e, h.policy) == null)
+  const b3 =
+    b3s.find((e) => e.term != null && Number(e.term) >= FALL_2026) ?? b3s.find((e) => e.term == null) ?? b3s[0]
   const bl = first('CHEM3BL')
   const missingA = [!a3 && 'CHEM 3A', !b3 && 'CHEM 3B'].filter((x): x is string => !!x)
   let undated = false

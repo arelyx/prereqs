@@ -55,10 +55,11 @@ describe('marine-biology-bs 2026-27', () => {
     expect(find(run(harness, { terms: edit(base, 'PHYS 6L', 'PHYS 6M') }), 'physics').status).toBe('unmet')
   })
 
-  it('STAT 5 instead of STAT 7/7L: met for a transfer (transfer list option), cannot-check for frosh', () => {
+  it('STAT 5 instead of STAT 7/7L: cannot-check for a transfer (transfer-prep option only), unmet for frosh', () => {
+    // reviewed 2026-10-06: was met for transfers; normalized to EEB / plant sciences (never met on a guess)
     const t = edit(edit(base, 'STAT 7', 'STAT 5'), 'STAT 7L', null)
-    expect(find(run(harness, { terms: t, entry: 'transfer' }), 'biostat').status).toBe('met')
-    expect(find(run(harness, { terms: t }), 'biostat').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: t, entry: 'transfer' }), 'biostat').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: t }), 'biostat').status).toBe('unmet')
     expect(find(run(harness, { terms: edit(base, 'STAT 7L', null) }), 'biostat').status).toBe('unmet')
   })
 
@@ -167,5 +168,53 @@ describe('marine-biology-bs 2026-27', () => {
     const r = run(harness, { terms: t })
     expect(find(r, 'general').status).toBe('met')
     expect(find(r, 'lab-field').status).toBe('cannot-check')
+  })
+
+  describe('review 2026-10-06 (adversarial)', () => {
+    // marine = BIOE 126 (no lab); topical BIOE 108, 165, 136; general BIOE 140, BIOL 100, METX 100
+    const noLab = edit(edit(edit(edit(edit(base, 'BIOE 120', 'BIOE 126'), 'BIOE 120L', null), 'BIOE 127', 'BIOE 165'), 'BIOE 127L', null), 'BIOE 161L', 'BIOE 136')
+
+    it('a course whose description mentions a lab (EART 105 "Laboratory: 3 hours") makes lab/field cannot-check, not unmet', () => {
+      const t = edit(edit(base, 'BIOE 127', 'BIOE 136'), 'BIOE 127L', null)
+      const r = run(harness, { terms: edit(t, 'BIOE 161L', 'EART 105') })
+      expect(find(r, 'lab-field').status).toBe('cannot-check')
+      expect(find(r, 'lab-field').detail).toContain('EART 105')
+    })
+
+    it('no lab/field candidate at all is unmet', () => {
+      expect(find(run(harness, { terms: noLab }), 'lab-field').status).toBe('unmet')
+    })
+
+    it('lab/field does not depend on allocation order: spare lab courses are used as electives', () => {
+      const r = run(harness, { terms: add(noLab, '2298', 'METX 100L', 'BIOE 155L') })
+      expect(find(r, 'lab-field').status).toBe('met')
+    })
+
+    it('BIOE 165 and ENVS 120 (catalog: no credit for both) count once; the later one is dropped', () => {
+      // general: BIOE 165 (2290), BIOL 100, ENVS 120 (2298) → ENVS 120 not counted → two general electives
+      const r = run(harness, { terms: edit(edit(base, 'METX 100', 'ENVS 120'), 'BIOE 140', 'BIOE 165') })
+      expect(find(r, 'general').status).toBe('unmet')
+      expect(find(r, 'general').notes?.join(' ')).toContain('ENVS 120')
+      expect(run(harness, { terms: edit(base, 'METX 100', 'ENVS 120') }).status).toBe('met')
+    })
+
+    it('BIOE 150L and BIOE 151B (catalog: no credit for both) give one DC course, not two', () => {
+      const t = edit(edit(edit(edit(edit(edit(base, 'BIOE 108', 'BIOE 165'), 'BIOE 120', 'BIOE 129'), 'BIOE 120L', null), 'BIOE 127', 'BIOE 136'), 'BIOE 127L', null), 'BIOE 161L', 'BIOE 155L')
+      expect(find(run(harness, { terms: add(t, '2298', 'BIOE 150L', 'BIOE 151B') }), 'dc').status).toBe('unmet')
+      expect(find(run(harness, { terms: add(t, '2298', 'BIOE 150L', 'BIOE 158L') }), 'dc').status).toBe('met')
+    })
+
+    it('ECON 166A via its cross-listed code CSE 166A counts as a general elective', () => {
+      expect(run(harness, { terms: edit(base, 'METX 100', 'CSE 166A') }).status).toBe('met')
+    })
+
+    it('a graduate course is not a general elective', () => {
+      expect(find(run(harness, { terms: edit(base, 'BIOE 140', 'BIOE 200') }), 'general').status).toBe('unmet')
+    })
+
+    it('planned courses are in-progress; empty plan is unmet', () => {
+      expect(run(harness, { terms: base, currentTerm: '2290' }).status).toBe('in-progress')
+      expect(run(harness, { terms: [] }).status).toBe('unmet')
+    })
   })
 })

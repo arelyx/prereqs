@@ -6,6 +6,6 @@
  "skeleton_sha256": "0f21250a54a71d19adde5beba2df5ef89fffc97aed13d4d6b4f2cd7a94babeba",
  "status": "verified",
  "authored_at": "2026-10-06T00:47:00Z",
- "verified_at": "2026-10-06T00:47:54Z",
- "notes": "verified line by line against sources/neuroscience-bs.md; modelled on biology-bs; BIOL 129L required slot with DC/comprehensive overlays; BIOE 131/131L merged (lab not required), lone BIOE 131L elective is cannot-check; C-or-better qualification shown as info; missing BIOL 20L for transfer with term-less BIOL 20A/BIOE 20B is cannot-check; 15 tests"
+ "verified_at": "2026-10-06T23:38:21Z",
+ "notes": "verified line by line against sources/neuroscience-bs.md; modelled on biology-bs; BIOL 129L required slot with DC/comprehensive overlays; BIOE 131/131L merged (lab not required), lone BIOE 131L elective is cannot-check; C-or-better qualification shown as info; missing BIOL 20L for transfer with term-less BIOL 20A/BIOE 20B is cannot-check; 15 tests; reviewed 2026-10-06: STAT 5 waiver only for term-less (pre-UCSC) STAT 5, not a UCSC-term STAT 5; note on department permission for BIOL 20A/100/105/101/110 elsewhere; 8 adversarial regression tests"
 }

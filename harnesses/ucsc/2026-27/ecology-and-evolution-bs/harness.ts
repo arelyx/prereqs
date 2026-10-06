@@ -13,9 +13,12 @@
 //    successful completion of both the lab and lecture is required and counts
 //    as one course". Which labs are required-concurrent comes from the
 //    catalog (coreqs): BIOE 112, 114, 117, 120, 122, 124, 127, 133, 134, 135,
-//    137, 163 (and EART 100/101, ENVS 104A/104L, 115A/115L, 130A/130L).
+//    137, 163 (and EART 100/101, ENVS 104A/104L, 130A/130L).
 //  - BIOE 131L is optional everywhere; BIOE 129L is optional for the topical
 //    and general electives but required for the Organism slot and the DC.
+//  - ENVS 115L is not a concurrent corequisite in the catalog ("Previous or
+//    concurrent enrollment in ENVS 115L ..., or permission of instructor"), so
+//    ENVS 115A counts alone, like an optional lab.
 //  - Optional 2-credit labs are left out of the elective sets (a 2-credit lab
 //    cannot count as a course by itself), so the lecture alone counts.
 //  - 5-credit labs (BIOE 145L, 150L, 155L, 161L, METX 100L) are courses of
@@ -36,9 +39,19 @@ const REQUIRED_PAIRS: [string, string][] = [
 ]
 const OTHER_REQUIRED_PAIRS: [string, string][] = [
   ['EART 100', 'EART 100L'], ['EART 101', 'EART 101L'], ['ENVS 104A', 'ENVS 104L'],
-  ['ENVS 115A', 'ENVS 115L'], ['ENVS 130A', 'ENVS 130L'],
+  ['ENVS 130A', 'ENVS 130L'],
 ]
-const OPTIONAL_LABS = ['BIOE 129L', 'BIOE 131L']
+const OPTIONAL_LABS = ['BIOE 129L', 'BIOE 131L', 'ENVS 115L']
+
+// Catalog "Students cannot receive credit for this course and ..." among the
+// listed courses (BIOE 165 / ENVS 120; BIOE 150 / ENVS 104A; BIOE 151A-D /
+// BIOE 150, 150L, ENVS 104A): only the earlier-taken one counts.
+const NOT_BOTH: [string, string][] = [
+  ['BIOE 165', 'ENVS 120'], ['BIOE 150', 'ENVS 104A'],
+  ...['BIOE 151A', 'BIOE 151B', 'BIOE 151C', 'BIOE 151D'].flatMap((s) =>
+    ['BIOE 150', 'BIOE 150L', 'ENVS 104A'].map((o) => [o, s] as [string, string]),
+  ),
+]
 
 const PHYSIOLOGY = ['BIOE 131', 'BIOE 131L', 'BIOE 133', 'BIOE 133L', 'BIOE 134', 'BIOE 134L', 'BIOE 135', 'BIOE 135L', 'BIOE 136']
 const ORGANISM = [
@@ -105,11 +118,15 @@ const LABFIELD = new Set(
   [...COMP_EEB, ...COMP_OTHER, 'ENVS 107A', 'ENVS 107B', 'ENVS 107C'].map((c) => c.replace(' ', '')),
 )
 const isLabField = (code: string) => LABFIELD.has(code) || /^[A-Z]+1\d\dL$/.test(code)
+// Electives try lab/field courses (and lectures whose lab is required) first,
+// so the eleven include them when possible ("two must include laboratory or fieldwork").
+const WITH_LAB = new Set([...REQUIRED_PAIRS, ...OTHER_REQUIRED_PAIRS].map(([lec]) => lec.replace(' ', '')))
+const labFirst = (code: string) => (isLabField(code) || WITH_LAB.has(code) ? 0 : 1)
 const MAYBE_LABFIELD = /laborator|\blab\b|field (trip|work|stud|research|project|course|quarter|method|exercise)|fieldwork/i
 
 // lecture → its 2-credit (or smaller) lab
 const SMALL_LAB_OF = new Map(
-  [...REQUIRED_PAIRS, ...OTHER_REQUIRED_PAIRS, ['BIOE 129', 'BIOE 129L'] as [string, string], ['BIOE 131', 'BIOE 131L'] as [string, string]].map(([a, b]) => [
+  [...REQUIRED_PAIRS, ...OTHER_REQUIRED_PAIRS, ['BIOE 129', 'BIOE 129L'] as [string, string], ['BIOE 131', 'BIOE 131L'] as [string, string], ['ENVS 115A', 'ENVS 115L'] as [string, string]].map(([a, b]) => [
     a.replace(' ', ''),
     b.replace(' ', ''),
   ]),
@@ -125,6 +142,9 @@ const Q_UPPER =
   'A total of eleven (11) upper-division courses, including relevant electives; two must include laboratory or fieldwork; two must apply to the Disciplinary Communication requirement.'
 const Q_OVERLAP =
   'Courses appearing in more than one requirement group can fulfill only one, but, if appropriate, may also fulfill a lab/field requirement and/or a DC.'
+const Q_LETTER =
+  'All courses used to satisfy any major requirement must be taken for a letter grade, except for approved courses which are ONLY offered as Pass/No Pass (P/NP).'
+const RESEARCH_SET = codes('BIOE 183W', 'BIOE 183L', 'BIOE 193', 'BIOE 193F', 'BIOE 195', 'ENVS 183')
 const Q_LECLAB =
   'For 5-credit lecture courses with required, concurrent 2-credit labs, successful completion of both the lab and lecture is required and counts as one course for major requirements. For 5-credit lectures with optional labs, only the lecture must be successfully completed to count as one course.'
 
@@ -133,11 +153,6 @@ export default defineHarness({
   edition: '2026-27',
   title: 'Ecology and Evolution B.S.',
   catalogNeeds: { descriptions: ['BIOE', 'BIOL', 'EART', 'ENVS', 'METX', 'OCEA', 'ECON', 'PSYC'] },
-  coverage: {
-    ignore: {
-      'STAT 5': 'transfer-preparation recommendation only; the major requirement is STAT 7 + STAT 7L',
-    },
-  },
   notes: [
     'All courses used for the major must be taken for a letter grade (except approved courses offered only P/NP).',
     'At least half of the upper-division BIOE 100–179 courses must be taken in EEB at UC Santa Cruz (the plan does not record where a course was taken).',
@@ -149,6 +164,14 @@ export default defineHarness({
     // letter grade, except for approved courses which are ONLY offered as
     // Pass/No Pass (P/NP)." No course this page lists is P/NP-only in the catalog.
     h.policy = { letter: true }
+    const drop = creditOnce(h)
+
+    const qualification = h.info(
+      'qualification',
+      'Major qualification (to declare)',
+      "The following qualification courses, or their equivalents, must be completed with a grade of C (2.0) or better before the student's declaration deadline arrives.",
+      'BIOL 20A, BIOE 20B, BIOE 20C; CHEM 3A + 3B or CHEM 4A; MATH 11A, 16A or 19A — each with C or better to declare. This gates declaration; it is not a graduation requirement.',
+    )
 
     const lower = h.group('lower', 'Lower-Division Courses', [
       h.all('bio-intro', 'Introductory Biology', 'Introductory Biology:', ['BIOL 20A', 'BIOE 20B', 'BIOE 20C']),
@@ -158,9 +181,9 @@ export default defineHarness({
         'Mathematics',
         'Choose one of the following options:',
         [['MATH 16A', 'MATH 16B'], ['MATH 11A', 'MATH 11B'], ['MATH 19A', 'MATH 19B']],
-        { notes: ['This page lists only the three complete series (no mixed MATH 11/19 note, unlike the MCD majors); ask an EEB advisor about a mixed sequence.'] },
+        { notes: ['MATH 16A/16B is the recommended series.'] },
       ),
-      h.all('stats', 'Biostatistics', 'Biostatistics:', ['STAT 7', 'STAT 7L']),
+      statistics(h),
       h.options('physics', 'Physics', 'Physics:', [
         ['PHYS 6A', 'PHYS 6L', 'PHYS 6B'],
         ['PHYS 6A', 'PHYS 6L', 'PHYS 6C'],
@@ -197,10 +220,10 @@ export default defineHarness({
         'BIOE 129 can satisfy a topical elective without BIOE 129L',
         Q_LECLAB,
       ],
-      codes(...strip(TOPICAL)),
-      { n: 3, labs: { pairs: REQUIRED_PAIRS, mode: 'required' } },
+      codes(...strip(TOPICAL)).except(drop),
+      { n: 3, labs: { pairs: REQUIRED_PAIRS, mode: 'required' }, prefer: labFirst },
     )
-    const general = generalElectives(h)
+    const general = generalElectives(h, drop)
     const electives = h.group('electives', 'Electives', [topical, general])
 
     h.solve()
@@ -215,18 +238,50 @@ export default defineHarness({
         'receiving a passing grade in an independent research course, or field/laboratory course listed below.',
         'completing a senior thesis.',
       ],
-      codes(...COMP_EEB, ...COMP_OTHER, ...COMP_RESEARCH),
+      codes(...COMP_EEB, ...COMP_OTHER, ...COMP_RESEARCH).except(drop),
       { exclusive: false, notes: ['Independent research: BIOE 183L, 193, 193F; senior thesis: BIOE 195.'] },
     )
     h.solve()
-    return [lower, upper, electives, labField, dc, comprehensive]
+
+    // Math: the page lists only whole series; a mixed MATH 11/19 sequence is not addressed.
+    const mathNode = lower.children!.find((n) => n.id === 'math')!
+    if (mathNode.status === 'unmet') {
+      const has = (c: string) => h.taken(codes(c)).length > 0
+      if ((has('MATH 11A') && has('MATH 19B')) || (has('MATH 19A') && has('MATH 11B'))) {
+        mathNode.status = 'cannot-check'
+        mathNode.detail = 'Mixed MATH 11/19 sequence: this page lists only complete series — confirm with an EEB advisor.'
+      }
+    }
+
+    // "except for approved courses which are ONLY offered as Pass/No Pass (P/NP)":
+    // the catalog does not record grading mode, so a P in a research course is
+    // undecided where it would decide the outcome.
+    const pResearch = h.enrollments.filter((e) => (e.grade === 'P' || e.grade === 'S') && RESEARCH_SET.has(e.code))
+    for (const n of [general, comprehensive]) {
+      const oneShort = (n.progress?.have ?? 0) >= (n.progress?.need ?? 1) - 1
+      if (n.status === 'unmet' && pResearch.length && oneShort) {
+        n.status = 'cannot-check'
+        n.detail = `${pResearch.map((e) => e.display).join(', ')} taken P/NP: it counts only if the course is offered only P/NP — check with an EEB advisor.`
+        n.quote = [...(Array.isArray(n.quote) ? n.quote : [n.quote]), Q_LETTER]
+      }
+    }
+    // "receiving a passing grade in an independent research course": the page
+    // does not limit this to EEB's research courses.
+    if (comprehensive.status === 'unmet') {
+      const other = h.taken(range('BIOL', 193, 199).or(range('ENVS', 193, 199)).or(range('METX', 193, 199)).or(range('OCEA', 193, 199)))
+      if (other.length) {
+        comprehensive.status = 'cannot-check'
+        comprehensive.detail = `${other.map((e) => e.display).join(', ')}: ask an EEB advisor whether this independent research course satisfies the comprehensive requirement.`
+      }
+    }
+    return [qualification, lower, upper, electives, labField, dc, comprehensive]
   },
 })
 
 /** Three general electives; at most one "5 credits of undergraduate research" unit or ENVS 183. */
-function generalElectives(h: HarnessContext): Node {
+function generalElectives(h: HarnessContext, drop: string[]): Node {
   const research = codes(...RESEARCH)
-  const set = range('BIOE', 100, 179).minCredits(5).or(codes(...GENERAL_LISTED)).or(codes('ENVS 183'))
+  const set = range('BIOE', 100, 179).minCredits(5).or(codes(...strip(GENERAL_LISTED))).or(codes('ENVS 183')).except(drop)
   const credits = (e: Enrollment) => {
     const c = h.catalog.get(e.code)?.credits
     return c == null || Number.isNaN(c) ? 0 : c
@@ -244,6 +299,7 @@ function generalElectives(h: HarnessContext): Node {
     {
       n: 3,
       labs: { pairs: [...REQUIRED_PAIRS, ...OTHER_REQUIRED_PAIRS], mode: 'required' },
+      prefer: labFirst,
       atMost: [{ set: codes(...ONE_EXTRA), n: 1, label: 'at most one research unit or ENVS 183' }],
       // "Any 5 credits of undergraduate research": minimal combinations of
       // BIOE 183W/183L/193/193F/195 totalling 5+ credits count as one course.
@@ -263,7 +319,10 @@ function generalElectives(h: HarnessContext): Node {
         },
       },
       pool: 'BIOE 100–179 (5+ credits); BIOL 100, 101; listed EART, ECON, ENVS, METX, OCEA, PSYC courses; or one 5-credit undergraduate-research unit (BIOE 183W/183L/193/193F/195) or ENVS 183',
-      notes: ['Environmental Studies courses are by permission of the instructor.'],
+      notes: [
+        'Environmental Studies courses are by permission of the instructor.',
+        ...(drop.length ? [`Not counted (the catalog gives no credit for both it and a course taken earlier): ${drop.join(', ')}`] : []),
+      ],
     },
   )
 }
@@ -310,7 +369,7 @@ function dcNode(h: HarnessContext): Node {
     'The DC requirement in ecology and evolution is satisfied by completing two of the following ecology and evolutionary biology courses:',
     'Lecture and 2-credit lab combinations count as a single course. BIOE 117 and BIOE 137 require concurrent enrollment in 2-credit labs, BIOE 117L and BIOE 137L, respectively, but these are not part of the DC requirement. To receive DC credit for BIOE 129, BIOE 129L must be successfully completed.',
   ]
-  const dc = h.take('dc', 'Disciplinary Communication (DC)', quote, codes(...DC_LIST), {
+  const dc = h.take('dc', 'Disciplinary Communication (DC)', quote, codes(...DC_LIST).except(creditOnce(h)), {
     n: 2,
     exclusive: false,
     labs: { pairs: DC_PAIRS, mode: 'required' },
@@ -330,6 +389,35 @@ function dcNode(h: HarnessContext): Node {
       { used: [...(dc.used ?? []), ...b188] },
     )
   return dc
+}
+
+/** Of each catalog "cannot receive credit for both" pair the student took, the later-taken code. */
+function creditOnce(h: HarnessContext): string[] {
+  const first = (c: string) => Math.min(...h.taken(codes(c)).map((e) => Number(e.term ?? 0)))
+  const out: string[] = []
+  for (const [a, b] of NOT_BOTH) {
+    const ta = first(a)
+    const tb = first(b)
+    if (Number.isFinite(ta) && Number.isFinite(tb)) out.push(tb >= ta ? b : a)
+  }
+  return out
+}
+
+/** STAT 7 + 7L; a transfer student's STAT 5 (named on the transfer-preparation list) is cannot-check. */
+function statistics(h: HarnessContext): Node {
+  const node = h.all('stats', 'Biostatistics', 'Biostatistics:', ['STAT 7', 'STAT 7L'])
+  const stat5 = h.taken(codes('STAT 5'))
+  if (!stat5.length || h.entry !== 'transfer') return node
+  return h.either('stats-or', 'Biostatistics', 'Biostatistics:', [
+    node,
+    h.cannotCheck(
+      'stats-stat5',
+      'STAT 5 (transfer preparation option)',
+      'Plus one of the following statistics options:',
+      'The transfer-preparation list names STAT 5 as a statistics option, but the major requirements list only STAT 7/7L — confirm with an EEB advisor that your STAT 5 counts.',
+      { used: stat5 },
+    ),
+  ])
 }
 
 /** CHEM 3A-3C (+3BL/3CL when 3B/3C were taken before fall 2026) or CHEM 4A/4AL/4B/4BL. */

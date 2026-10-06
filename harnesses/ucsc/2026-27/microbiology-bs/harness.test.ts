@@ -101,4 +101,56 @@ describe('microbiology-bs 2026-27', () => {
   it('METX 141L (a stand-alone lab on the list) counts as an elective', () => {
     expect(find(run(harness, { terms: edit(base, 'CHEM 171', 'METX 141L') }), 'electives').status).toBe('met')
   })
+
+  describe('review 2026-10-06 (adversarial)', () => {
+    const noBio = edit(edit(edit(base, 'BIOL 20A', null), 'BIOE 20B', null), 'BIOL 20L', null)
+
+    it('BIOL 20L waiver: transfer with term-less BIOL 20A + BIOE 20B and no 20L is cannot-check', () => {
+      // "BIOL 20L is waived for students who have completed BIOL 20A and BIOE 20B from California community colleges."
+      const r = run(harness, { terms: noBio, completed: ['BIOL 20A', 'BIOE 20B'], entry: 'transfer' })
+      expect(find(r, 'ld-core/BIOL20L').status).toBe('cannot-check')
+      expect(r.status).toBe('cannot-check')
+      expect(failing(r)).toEqual(['ld-core/BIOL20L:cannot-check'])
+    })
+
+    it('BIOL 20L waiver does not apply to a frosh or to UCSC-term BIOL 20A/20B', () => {
+      expect(find(run(harness, { terms: noBio, completed: ['BIOL 20A', 'BIOE 20B'], entry: 'frosh' }), 'ld-core/BIOL20L').status).toBe('unmet')
+      expect(find(run(harness, { terms: edit(base, 'BIOL 20L', null), entry: 'transfer' }), 'ld-core/BIOL20L').status).toBe('unmet')
+    })
+
+    it('CHEM 3B before fall 2026 with 3BL, CHEM 3C fall 2026 without 3CL is met', () => {
+      const t = [
+        ...plan(['2262', 'CHEM 3A'], ['2264', 'CHEM 3B', 'CHEM 3BL']),
+        ...edit(edit(edit(base, 'CHEM 3A', null), 'CHEM 3B', null), 'CHEM 3C', null),
+        ...plan(['2300', 'CHEM 3C']),
+      ]
+      expect(find(run(harness, { terms: t }), 'gen-chem').status).toBe('met')
+    })
+
+    it('a P-graded elective does not count (letter grade policy)', () => {
+      const r = run(harness, { terms: base, grades: { 'CHEM 171': 'P' } })
+      expect(failing(r)).toEqual(['electives:unmet'])
+    })
+
+    it('METX 100L C- blames the core, DC and comprehensive only', () => {
+      const r = run(harness, { terms: base, grades: { 'METX 100L': 'C-' } })
+      expect(failing(r)).toEqual(['upper/METX100L:unmet', 'dc:unmet', 'comprehensive:unmet'])
+    })
+
+    it('term-less (transfer/exam) credit counts as a course in the plan', () => {
+      expect(run(harness, { terms: edit(base, 'PHYS 6A', null), completed: ['PHYS 6A'] }).status).toBe('met')
+    })
+
+    it('planned courses show in-progress, not met', () => {
+      const r = run(harness, { terms: base, currentTerm: '2290' })
+      expect(r.status).toBe('in-progress')
+      expect(find(r, 'electives').status).toBe('in-progress')
+    })
+
+    it('kitchen sink plan is met; empty plan is unmet everywhere', () => {
+      const extra = ['METX 108', 'METX 135', 'METX 135L', 'METX 141L', 'BME 160', 'CHEM 4A', 'CHEM 4AL', 'STAT 5', 'MATH 11A', 'MATH 19B']
+      expect(run(harness, { terms: [...base, { term: '2300', courses: extra }] }).status).toBe('met')
+      expect(run(harness, { terms: [] }).status).toBe('unmet')
+    })
+  })
 })

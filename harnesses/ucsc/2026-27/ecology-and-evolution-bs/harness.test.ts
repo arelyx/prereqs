@@ -148,4 +148,75 @@ describe('ecology-and-evolution-bs 2026-27', () => {
     expect(find(run(harness, { terms: edit(base, 'BIOE 149', 'BIOE 124') }), 'general').status).toBe('unmet')
     expect(find(run(harness, { terms: add(edit(base, 'BIOE 149', 'BIOE 124'), '2298', 'BIOE 124L') }), 'general').status).toBe('met')
   })
+
+  // --- adversarial review 2026-10-06 ---
+  const noLab = edit(edit(edit(base, 'BIOE 112', 'METX 100'), 'BIOE 112L', null), 'BIOE 145L', 'BIOE 125')
+
+  it('review: lab/field counts extra lab courses the student has (electives prefer them)', () => {
+    expect(find(run(harness, { terms: noLab }), 'lab-field').status).not.toBe('met')
+    const r = run(harness, { terms: add(noLab, '2298', 'BIOE 150L', 'BIOE 155L') })
+    expect(find(r, 'lab-field').status).toBe('met')
+    expect(failing(r)).toEqual([])
+  })
+
+  it('review: transfer STAT 5 (transfer-preparation statistics option) is cannot-check, frosh STAT 5 unmet', () => {
+    const t = edit(edit(base, 'STAT 7', 'STAT 5'), 'STAT 7L', null)
+    expect(run(harness, { terms: t }).status).toBe('unmet')
+    const r = run(harness, { terms: t, entry: 'transfer' })
+    expect(find(r, 'stats-stat5').status).toBe('cannot-check')
+    expect(r.status).toBe('cannot-check')
+  })
+
+  it('review: a mixed MATH 11/19 sequence is cannot-check (page lists only whole series)', () => {
+    const t = edit(edit(base, 'MATH 16A', 'MATH 11A'), 'MATH 16B', 'MATH 19B')
+    expect(find(run(harness, { terms: t }), 'math').status).toBe('cannot-check')
+  })
+
+  it('review: ENVS 115A counts without ENVS 115L (not a concurrent corequisite); ENVS 115L alone does not', () => {
+    expect(find(run(harness, { terms: edit(base, 'BIOE 149', 'ENVS 115A') }), 'general').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'BIOE 149', 'ENVS 115L') }), 'general').status).toBe('unmet')
+  })
+
+  it('review: comprehensive — another department\'s research course is cannot-check; P in BIOE 195 is cannot-check', () => {
+    expect(find(run(harness, { terms: noLab }), 'comprehensive').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(noLab, '2298', 'BIOL 199') }), 'comprehensive').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: add(noLab, '2298', 'BIOE 195'), grades: { 'BIOE 195': 'P' } }), 'comprehensive').status).toBe('cannot-check')
+    expect(find(run(harness, { terms: add(noLab, '2298', 'BIOE 195') }), 'comprehensive').status).toBe('met')
+  })
+
+  it('review: catalog no-credit-for-both pair counts once (BIOE 165 / ENVS 120)', () => {
+    const t = edit(edit(base, 'BIOE 149', 'BIOE 165'), 'BIOE 147', 'ENVS 120')
+    expect(find(run(harness, { terms: t }), 'general').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(t, '2298', 'ENVS 108') }), 'general').status).toBe('met')
+  })
+
+  it('review: a 2-credit lab alone fills no physiology slot (BIOE 133L without BIOE 133)', () => {
+    expect(find(run(harness, { terms: edit(base, 'BIOE 136', 'BIOE 133L') }), 'physiology').status).toBe('unmet')
+  })
+
+  it('review: BIOE 129 alone is a topical elective; with 129L it is a DC course and a lab/field course', () => {
+    const t = edit(edit(edit(base, 'BIOE 145L', 'BIOE 129'), 'BIOE 145', 'BIOE 129L'), 'BIOE 108', 'BIOE 125')
+    const r = run(harness, { terms: t })
+    expect(find(r, 'dc').status).toBe('met')
+    expect(find(r, 'lab-field').status).toBe('met')
+    expect(find(run(harness, { terms: edit(t, 'BIOE 129L', null) }), 'dc').status).toBe('unmet')
+  })
+
+  it('review: term-less transfer CHEM 3B/3C is cannot-check (lab rule depends on the term)', () => {
+    const t = edit(edit(base, 'CHEM 3B', null), 'CHEM 3C', null)
+    expect(find(run(harness, { terms: t, completed: ['CHEM 3B', 'CHEM 3C'], entry: 'transfer' }), 'gen-chem').status).toBe('cannot-check')
+  })
+
+  it('review: planned courses are in-progress; empty plan is unmet with qualification as info', () => {
+    expect(run(harness, { terms: base, currentTerm: '2290' }).status).toBe('in-progress')
+    const r = run(harness, { terms: [] })
+    expect(r.status).toBe('unmet')
+    expect(find(r, 'qualification').status).toBe('info')
+    expect(find(r, 'lab-field').status).toBe('unmet')
+  })
+
+  it('review: kitchen-sink plan is met', () => {
+    const r = run(harness, { terms: add(base, '2298', 'BIOE 117', 'BIOE 117L', 'BIOE 137', 'BIOE 137L', 'ENVS 120', 'BIOE 165', 'BIOE 193', 'BIOE 195', 'BIOL 188', 'ENVS 183', 'METX 100', 'METX 100L', 'BIOE 131', 'BIOE 131L', 'BIOE 129', 'BIOE 129L') })
+    expect(failing(r)).toEqual([])
+  })
 })

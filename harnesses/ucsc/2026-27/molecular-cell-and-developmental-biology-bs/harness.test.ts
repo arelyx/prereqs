@@ -114,4 +114,50 @@ describe('molecular-cell-and-developmental-biology-bs 2026-27', () => {
     const r = run(harness, { terms: edit(base, 'BIOL 105L', 'BIOL 120L') })
     expect(failing(r)).toEqual([])
   })
+
+  describe('review 2026-10-06 (adversarial)', () => {
+    const noStat = edit(edit(base, 'STAT 7', null), 'STAT 7L', null)
+
+    it('STAT 5 taken at UCSC (with a term) does not open the pre-UCSC waiver, even when attested', () => {
+      // "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5, they will have this requirement waived ..."
+      const r = run(harness, { terms: add(noStat, '2272', 'STAT 5') })
+      expect(find(r, 'stats').status).toBe('unmet')
+      expect(r.status).toBe('unmet')
+    })
+
+    it('BIOL 128 fills the developmental slot; BIOL 120 is not an elective', () => {
+      const r = run(harness, { terms: edit(edit(base, 'BIOL 112', 'BIOL 128'), 'BIOE 109', 'BIOL 120') })
+      expect(failing(r)).toEqual(['electives-two:unmet'])
+    })
+
+    it('BIOL 104A fills bioinformatics while BIOL 104B is the lab elective', () => {
+      expect(run(harness, { terms: edit(edit(base, 'BME 110', 'BIOL 104A'), 'BIOL 105L', 'BIOL 104B') }).status).toBe('met')
+    })
+
+    it('any one of PHYS 6L/6M/6N; none fails only the physics lab', () => {
+      expect(run(harness, { terms: edit(base, 'PHYS 6L', 'PHYS 6N') }).status).toBe('met')
+      expect(failing(run(harness, { terms: edit(base, 'PHYS 6L', null) }))).toEqual(['physics-lab:unmet'])
+    })
+
+    it('a P-graded lab elective fails the lab, DC and comprehensive (letter grade policy)', () => {
+      const r = run(harness, { terms: edit(base, 'BIOL 105L', 'BIOL 186L'), grades: { 'BIOL 186L': 'P' } })
+      expect(failing(r)).toEqual(['elective-lab:unmet', 'dc:unmet', 'comprehensive:unmet'])
+    })
+
+    it('planned courses are in-progress', () => {
+      const r = run(harness, { terms: base, currentTerm: '2292' })
+      expect(r.status).toBe('in-progress')
+      expect(find(r, 'elective-lab').status).toBe('in-progress')
+    })
+
+    it('term-less transfer credit counts as a course', () => {
+      expect(run(harness, { terms: edit(base, 'PHYS 6A', null), completed: ['PHYS 6A'] }).status).toBe('met')
+    })
+
+    it('kitchen sink is met; empty plan is unmet', () => {
+      const extra = ['BIOL 111A', 'BIOL 125', 'BIOL 129L', 'CHEM 160L', 'BIOL 128', 'BME 178', 'BIOL 104L', 'CHEM 4A', 'CHEM 4AL', 'STAT 5', 'MATH 16A', 'PHYS 6N']
+      expect(run(harness, { terms: [...base, { term: '2300', courses: extra }] }).status).toBe('met')
+      expect(run(harness, { terms: [] }).status).toBe('unmet')
+    })
+  })
 })

@@ -118,9 +118,9 @@ describe('plant-sciences-bs 2026-27', () => {
     expect(find(run(harness, { terms: add(oneDc, '2298', 'BIOE 122', 'BIOE 122L') }), 'dc').status).toBe('met')
   })
 
-  it('DC: a paired 2-credit lab must be taken in the same term', () => {
+  it('review: DC BIOE 129 + 129L need not share a term ("BIOE 129L must be successfully completed")', () => {
     const split = add(add(oneDc, '2298', 'BIOE 129'), '2302', 'BIOE 129L')
-    expect(find(run(harness, { terms: split }), 'dc').status).toBe('unmet')
+    expect(find(run(harness, { terms: split }), 'dc').status).toBe('met')
   })
 
   it('NRS/BIOL 188 half-DC cannot be confirmed from the catalog', () => {
@@ -161,5 +161,75 @@ describe('plant-sciences-bs 2026-27', () => {
     const t = add(edit(base, 'ENVS 160', 'BIOE 120'), '2290', 'BIOE 120L')
     const r = run(harness, { terms: t })
     expect(r.status).toBe('met')
+  })
+
+  // --- adversarial review 2026-10-06 ---
+  // no lab/field course among the eleven: BIOE 117/117L → 139/125, 135/135L → ENVS 162, 122/122L → 149
+  const noLabs = edit(edit(edit(edit(edit(edit(base, 'BIOE 135', 'ENVS 162'), 'BIOE 135L', null), 'BIOE 122', 'BIOE 149'), 'BIOE 122L', null), 'BIOE 117L', 'BIOE 125'), 'BIOE 117', 'BIOE 120')
+
+  it('review: lab/field is unmet when no counted course can include lab or fieldwork', () => {
+    // BIOE 120 without its lab is not counted; METX 100/BIOE 108/118/125/149 etc. are lectures
+    const r = run(harness, { terms: edit(edit(noLabs, 'BIOE 145', 'BIOE 121'), 'BIOE 107', 'BIOE 145') })
+    expect(['unmet', 'cannot-check']).toContain(find(r, 'lab-field').status)
+    expect(r.status).toBe('unmet')
+    const empty = run(harness, { terms: [] })
+    expect(find(empty, 'lab-field').status).toBe('unmet')
+  })
+
+  it('review: two clear lab/field units meet lab/field (BIOE 120+120L and BIOE 145L)', () => {
+    const r = run(harness, { terms: add(noLabs, '2302', 'BIOE 120L', 'BIOE 145L') })
+    expect(find(r, 'lab-field').status).toBe('met')
+  })
+
+  it('review: cross-listed partner codes count as the listed course (BIOE 188 = SCIC 160, LGST 130B = ENVS 130B)', () => {
+    expect(find(run(harness, { terms: edit(base, 'ENVS 160', 'BIOE 188') }), 'topical').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'ENVS 160', 'LGST 130B') }), 'topical').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'METX 100', 'CSE 166A') }), 'general').status).toBe('met')
+  })
+
+  it('review: catalog no-credit-for-both pair counts once (BIOE 165 / ENVS 120)', () => {
+    // general = METX 100 + BIOE 108 + BIOE 122/122L; swap 108 and METX 100 for the exclusive pair
+    const t = edit(edit(base, 'METX 100', 'BIOE 165'), 'BIOE 108', 'ENVS 120')
+    const r = run(harness, { terms: t })
+    expect(find(r, 'general').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(t, '2302', 'ENVS 108') }), 'general').status).toBe('met')
+  })
+
+  it('review: ENVS 115A counts without its optional ENVS 115L; ENVS 115L alone does not', () => {
+    expect(find(run(harness, { terms: edit(base, 'METX 100', 'ENVS 115A') }), 'general').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'METX 100', 'ENVS 115L') }), 'general').status).toBe('unmet')
+  })
+
+  it('review: another department\'s research course for the comprehensive is cannot-check', () => {
+    // remove every comprehensive course: 117L, 135L, 122L
+    const t = edit(edit(edit(edit(base, 'BIOE 135', 'ENVS 162'), 'BIOE 135L', null), 'BIOE 122', 'BIOE 149'), 'BIOE 122L', null)
+    const t2 = edit(edit(t, 'BIOE 117', 'BIOE 120'), 'BIOE 117L', 'BIOE 120L')
+    expect(find(run(harness, { terms: edit(t2, 'BIOE 120L', null) }), 'comprehensive').status).toBe('unmet')
+    expect(find(run(harness, { terms: add(edit(t2, 'BIOE 120L', null), '2302', 'BIOL 199') }), 'comprehensive').status).toBe('cannot-check')
+  })
+
+  it('review: P in BIOE 195 as the only comprehensive course is cannot-check, not met', () => {
+    const t = edit(edit(edit(edit(edit(base, 'BIOE 135', 'ENVS 162'), 'BIOE 135L', null), 'BIOE 122', 'BIOE 149'), 'BIOE 122L', null), 'BIOE 117L', null)
+    const r = run(harness, { terms: add(t, '2302', 'BIOE 195'), grades: { 'BIOE 195': 'P' } })
+    expect(find(r, 'comprehensive').status).toBe('cannot-check')
+  })
+
+  it('review: BIOE 145 fills ecology OR a topical elective, not both; BIOE 145L is its own course', () => {
+    const r = run(harness, { terms: edit(base, 'BIOE 107', 'BIOE 145L') })
+    expect(find(r, 'ecology').used?.map((e) => e.display)).toEqual(['BIOE 145'])
+    expect(find(r, 'topical').used?.map((e) => e.display)).not.toContain('BIOE 145')
+  })
+
+  it('review: transfer with term-less STAT 5 and qualification shown as info only', () => {
+    const t = edit(edit(base, 'STAT 7', null), 'STAT 7L', null)
+    const r = run(harness, { terms: t, completed: ['STAT 5'], entry: 'transfer' })
+    expect(find(r, 'stats-stat5').status).toBe('cannot-check')
+    expect(r.status).toBe('cannot-check')
+    expect(find(run(harness, { terms: [] }), 'qualification').status).toBe('info')
+  })
+
+  it('review: kitchen-sink plan is met', () => {
+    const r = run(harness, { terms: add(base, '2302', 'BIOE 120', 'BIOE 120L', 'BIOE 193', 'BIOE 195', 'ENVS 183', 'BIOL 188', 'SCIC 160', 'BIOE 129', 'BIOE 129L', 'ENVS 104A', 'ENVS 104L', 'METX 100L') })
+    expect(failing(r)).toEqual([])
   })
 })

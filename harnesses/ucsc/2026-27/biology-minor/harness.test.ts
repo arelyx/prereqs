@@ -56,4 +56,57 @@ describe('biology-minor 2026-27', () => {
     const r = run(harness, { terms: edit(base, 'BIOL 20A', null), completed: ['BIOL 20A'] })
     expect(failing(r)).toEqual([])
   })
+
+  // --- adversarial review 2026-10-06 ---
+  describe('review 2026-10-06', () => {
+    const el = (code: string) => find(run(harness, { terms: edit(base, 'BIOL 110', code) }), 'ud-elective').status
+
+    it('a 5-credit upper-division lab in range (BIOL 100L, BIOE 128L) is an elective', () => {
+      // "one upper-division elective of five credits or more chosen from BIOE 100-BIOE 181 or BIOL 100-BIOL 181"
+      expect(el('BIOL 100L')).toBe('met')
+      expect(el('BIOE 128L')).toBe('met')
+    })
+
+    it('BIOE 106 is not a minor core course, so it may be the elective', () => {
+      expect(el('BIOE 106')).toBe('met')
+    })
+
+    it('under-5-credit courses in range (BIOL 124, BIOE 182F) are not electives', () => {
+      expect(el('BIOL 124')).toBe('unmet')
+      expect(el('BIOE 182F')).toBe('unmet')
+    })
+
+    it('P in a lower-division course fails the letter-grade rule; detail names it', () => {
+      const r = run(harness, { terms: base, grades: { 'CHEM 3A': 'P' } })
+      expect(find(r, 'gen-chem').status).toBe('unmet')
+      expect(r.status).toBe('unmet')
+    })
+
+    it('a failing grade does not count (F in CHEM 8A)', () => {
+      expect(find(run(harness, { terms: base, grades: { 'CHEM 8A': 'F' } }), 'ld-core').status).toBe('unmet')
+    })
+
+    it('a planned elective is in progress, not met', () => {
+      const r = run(harness, { terms: base, currentTerm: '2292' })
+      expect(find(r, 'ud-elective').status).toBe('in-progress')
+    })
+
+    it('transfer/exam credit with no term for all general chemistry counts', () => {
+      const t = edit(edit(edit(base, 'CHEM 3A', null), 'CHEM 3B', null), 'CHEM 3C', null)
+      expect(failing(run(harness, { terms: t, completed: ['CHEM 3A', 'CHEM 3B', 'CHEM 3C'] }))).toEqual([])
+    })
+
+    it('two core-course duplicates do not make an elective (BIOL 100 twice)', () => {
+      expect(find(run(harness, { terms: edit(base, 'BIOL 110', 'BIOL 100') }), 'ud-elective').status).toBe('unmet')
+    })
+
+    it('empty plan fails', () => {
+      expect(run(harness, { terms: [] }).status).toBe('unmet')
+    })
+
+    it('kitchen sink with extra courses is complete', () => {
+      const t = [...base, { term: '2294', courses: ['BIOE 175', 'CHEM 4A', 'BIOL 186L', 'BIOE 20C'] }]
+      expect(failing(run(harness, { terms: t }))).toEqual([])
+    })
+  })
 })

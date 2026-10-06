@@ -53,6 +53,7 @@ export default defineHarness({
   notes: [
     'All courses used for any major requirement must be taken for a letter grade.',
     'At least half of the upper-division courses must be taken at UC Santa Cruz (the plan does not record where a course was taken).',
+    'Once matriculated, BIOL 20A, BIOL 100, BIOL 105, BIOL 101 or BIOL 110 taken at another institution needs department permission.',
   ],
   evaluate(h) {
     // "All courses that are taken to satisfy any major requirement must be taken for a letter grade."
@@ -172,9 +173,14 @@ function generalChem(h: HarnessContext): Node {
   })
 }
 
-/** STAT 7 + 7L, or the advisor waiver for a STAT 5 articulated course taken before UCSC. */
+/**
+ * STAT 7 + 7L, or the advisor waiver for a STAT 5 articulated course taken
+ * before UCSC: "If, prior to enrolling at UCSC, a student takes a course
+ * articulated to STAT 5, ...". Only term-less STAT 5 credit (transfer/exam,
+ * i.e. before UCSC) opens the waiver; a STAT 5 taken in a UCSC term does not.
+ */
 function statistics(h: HarnessContext): Node {
-  const stat5 = h.taken(codes('STAT 5'))
+  const stat5 = h.taken(codes('STAT 5')).filter((e) => e.term == null)
   return h.either('stats', 'Statistics', 'Plus all of the following:', [
     h.all('stat7', 'STAT 7 and STAT 7L', 'Plus all of the following:', ['STAT 7', 'STAT 7L']),
     stat5.length

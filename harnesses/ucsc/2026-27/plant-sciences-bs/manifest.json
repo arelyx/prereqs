@@ -6,6 +6,6 @@
  "skeleton_sha256": "dbbf189d56e9d6984b4581d492ad5a4118eb5c7b1da3c8261d90dc82a3832e4d",
  "status": "verified",
  "authored_at": "2026-10-06T00:49:01Z",
- "verified_at": "2026-10-06T00:49:36Z",
- "notes": "verified line by line against sources/plant-sciences-bs.md; 21 tests from the page; required lecture/lab pairs from catalog corequisites; lab/field rule cannot-check below two known lab/field units; mixed MATH 11/19, transfer STAT 5, BIOL 188 half-DC and P-graded research courses are cannot-check"
+ "verified_at": "2026-10-06T23:40:38Z",
+ "notes": "verified line by line against sources/plant-sciences-bs.md; 21 tests from the page; required lecture/lab pairs from catalog corequisites; lab/field rule cannot-check below two known lab/field units; mixed MATH 11/19, transfer STAT 5, BIOL 188 half-DC and P-graded research courses are cannot-check; reviewed 2026-10-06: removed invented same-term rule for DC BIOE 129/129L; lab/field unmet when no plausible candidate (description check), electives prefer lab/field courses; removed cross-list unknownOk/partner codes; ENVS 104A/104L pair oriented lecture-first; catalog no-credit-for-both pairs count once; qualification info; 31 tests"
 }

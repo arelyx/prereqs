@@ -11,6 +11,10 @@
 //  - Electives: three courses totalling ≥ 14 credits; METX 135 + METX 135L
 //    count as one course (their credits together).
 //  - DC and comprehensive are both METX 100L (overlays on the core list).
+//  - "BIOL 20L is waived for students who have completed BIOL 20A and BIOE 20B
+//    from California community colleges." The plan does not record where a
+//    course was taken: a transfer with term-less BIOL 20A + BIOE 20B and no
+//    BIOL 20L is cannot-check, not unmet (same as MCDB / neuroscience).
 import { codes, defineHarness, policyFailure } from '@harness'
 import type { Enrollment, HarnessContext, Node } from '@harness'
 
@@ -24,6 +28,8 @@ const ELECTIVES = [
 // "Note: Lecture/lab combinations count as one course." METX 135L (3 credits)
 // is listed with its lecture; the catalog requires concurrent enrollment.
 const ELECTIVE_PAIRS: [string, string][] = [['METX 135', 'METX 135L']]
+
+const Q_20L = 'BIOL 20L is waived for students who have completed BIOL 20A and BIOE 20B from California community colleges.'
 
 const Q_CHEM_NOTE =
   'CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL.'
@@ -42,12 +48,13 @@ export default defineHarness({
     // attained to meet major and minor requirements for graduation."
     h.policy = { letter: true, min: 'C' }
 
+    let ldCore: Node
     const lower = h.group('lower', 'Lower-Division Courses', [
       generalChem(h),
-      h.all('ld-core', 'Chemistry, biology and physics', 'And these courses', [
+      (ldCore = h.all('ld-core', 'Chemistry, biology and physics', 'And these courses', [
         'CHEM 8A', 'CHEM 8L', 'CHEM 8B', 'BIOL 20A', 'BIOL 20L', 'BIOE 20B', 'BIOE 20C',
         'PHYS 6A', 'PHYS 6L', 'PHYS 6B',
-      ]),
+      ], { notes: [Q_20L] })),
       h.options(
         'stats',
         'Statistics',
@@ -77,6 +84,8 @@ export default defineHarness({
 
     const dc = h.take('dc', 'Disciplinary Communication (DC)', 'The DC requirement for the microbiology B.S. is satisfied by completing the following course:', codes('METX 100L'), { exclusive: false })
     const comprehensive = h.take('comprehensive', 'Comprehensive Requirement', 'The comprehensive requirement is satisfied by completing the following course:', codes('METX 100L'), { exclusive: false })
+    h.solve()
+    biol20lTransfer(h, ldCore)
     return [lower, upper, electives, dc, comprehensive]
   },
 })
@@ -138,4 +147,18 @@ function generalChem(h: HarnessContext): Node {
     detail: [`Still need ${(closerA ? missingA : missingB).join(', ')}`, ...excluded].join(' · '),
     progress: closerA ? { have: a.filter(Boolean).length, need: 3 } : { have: usedB.length, need: 4 },
   })
+}
+
+/**
+ * BIOL 20L waiver for community-college BIOL 20A + BIOE 20B (see header).
+ * Call after h.solve().
+ */
+function biol20lTransfer(h: HarnessContext, group: Node): void {
+  const slot = group.children?.find((c) => c.id === `${group.id}/BIOL20L`)
+  if (!slot || slot.status === 'met' || h.entry !== 'transfer') return
+  const transferred = (code: string) => h.taken(codes(code)).some((e) => e.term == null)
+  if (!transferred('BIOL 20A') || !transferred('BIOE 20B')) return
+  slot.status = 'cannot-check'
+  slot.detail = 'Waived if you completed BIOL 20A and BIOE 20B at a California community college — check with the microbiology advisor.'
+  slot.quote = Q_20L
 }

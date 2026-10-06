@@ -113,4 +113,49 @@ describe('neuroscience-bs 2026-27', () => {
     expect(find(r, 'dc').status).toBe('unmet')
     expect(find(r, 'comprehensive').status).toBe('unmet')
   })
+
+  describe('review 2026-10-06 (adversarial)', () => {
+    const noStat = edit(edit(base, 'STAT 7', null), 'STAT 7L', null)
+
+    it('STAT 5 taken at UCSC (with a term) does not open the pre-UCSC waiver, even when attested', () => {
+      // "If, prior to enrolling at UCSC, a student takes a course articulated to STAT 5, they will have this requirement waived ..."
+      const r = run(harness, { terms: add(noStat, '2272', 'STAT 5') })
+      expect(find(r, 'stats').status).toBe('unmet')
+      expect(r.status).toBe('unmet')
+    })
+
+    it('BIOE 20C does not replace BIOE 20B', () => {
+      expect(failing(run(harness, { terms: edit(base, 'BIOE 20B', 'BIOE 20C') }))).toEqual(['bio-intro/BIOE20B:unmet'])
+    })
+
+    it('a second BIOL 129 topics course is not an elective', () => {
+      expect(failing(run(harness, { terms: edit(base, 'PSYC 123', 'BIOL 129B') }))).toEqual(['elective:unmet'])
+    })
+
+    it('no C minimum for completion: a D passes, NP does not', () => {
+      expect(run(harness, { terms: base, grades: { 'BIOL 125': 'D' } }).status).toBe('met')
+      expect(failing(run(harness, { terms: base, grades: { 'BIOL 125': 'NP' } }))).toEqual(['ud-core/BIOL125:unmet'])
+    })
+
+    it('CHEM 4A/4AL/4B/4BL path is met', () => {
+      const t = add(edit(edit(edit(base, 'CHEM 3A', 'CHEM 4A'), 'CHEM 3B', 'CHEM 4B'), 'CHEM 3C', 'CHEM 4AL'), '2272', 'CHEM 4BL')
+      expect(find(run(harness, { terms: t }), 'gen-chem').status).toBe('met')
+    })
+
+    it('term-less transfer credit counts as a course', () => {
+      expect(run(harness, { terms: edit(base, 'PHYS 6A', null), completed: ['PHYS 6A'] }).status).toBe('met')
+    })
+
+    it('planned courses are in-progress', () => {
+      const r = run(harness, { terms: base, currentTerm: '2292' })
+      expect(r.status).toBe('in-progress')
+      expect(find(r, 'dc').status).toBe('in-progress')
+    })
+
+    it('kitchen sink is met; empty plan is unmet', () => {
+      const extra = ['BIOE 131', 'BIOE 131L', 'BIOL 110', 'CHEM 4A', 'CHEM 4AL', 'MATH 11A', 'STAT 5', 'BIOL 129B', 'BIOL 102L']
+      expect(run(harness, { terms: [...base, { term: '2300', courses: extra }] }).status).toBe('met')
+      expect(run(harness, { terms: [] }).status).toBe('unmet')
+    })
+  })
 })
