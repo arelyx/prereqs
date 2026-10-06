@@ -7,6 +7,7 @@ from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from ..db import get_db
+from ..programs.info import info_sections
 from ..models import (
     Course,
     CourseAvailability,
@@ -351,6 +352,8 @@ def program_detail(university_id: str, program_id: int, db: Session = Depends(ge
         "source_sha256": p.source_sha256,
         "verification": p.verification,
         "requirements": p.requirements,
+        # General information panels, from the committed page text.
+        "info_sections": info_sections(p.source_md),
     }
 
 

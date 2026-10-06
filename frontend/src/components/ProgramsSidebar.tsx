@@ -9,6 +9,31 @@ import { api } from '../api'
 import type { Edition, ProgramDetail, ProgramSummary } from '../api'
 import { useStore } from '../store'
 
+// One line of committed source text: "**Lead-in**" sub-headings, "- " /
+// "1. " list items, and [label](url) links; everything else is a paragraph.
+function InfoLine({ text }: { text: string }) {
+  const lead = text.match(/^\*\*(.+)\*\*$/)
+  if (lead) return <p className="pt-1 text-xs font-semibold text-zinc-700 dark:text-zinc-300">{lead[1]}</p>
+  const item = text.match(/^(?:- |\d+\. )(.*)$/)
+  const body = item ? item[1] : text
+  const parts = body.split(/(\[[^\]]+\]\([^)]+\))/g).map((seg, i) => {
+    const m = seg.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    return m ? (
+      <a key={i} href={m[2]} target="_blank" rel="noreferrer" className="text-sky-600 dark:text-sky-400 hover:underline">
+        {m[1]}
+      </a>
+    ) : (
+      seg
+    )
+  })
+  return (
+    <p className={`text-xs leading-relaxed text-zinc-600 dark:text-zinc-400${item ? ' pl-3 -indent-2' : ''}`}>
+      {item && '• '}
+      {parts}
+    </p>
+  )
+}
+
 export function ProgramPicker() {
   const store = useStore()
   const [allPrograms, setAllPrograms] = useState<ProgramSummary[]>([])
@@ -121,7 +146,7 @@ export function ProgramInfoPanels() {
       {store.programIds.map((id) => {
         const d = details[id]
         if (!d) return null
-        const info = d.requirements?.info_sections ?? []
+        const info = d.info_sections ?? []
         return (
           <div key={id} className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-3 shadow-sm">
             <div className="mb-1 flex items-center gap-2">
@@ -156,9 +181,7 @@ export function ProgramInfoPanels() {
                 </summary>
                 <div className="mt-1 space-y-1.5">
                   {s.paragraphs.map((p, pi) => (
-                    <p key={pi} className="text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
-                      {p}
-                    </p>
+                    <InfoLine key={pi} text={p} />
                   ))}
                 </div>
               </details>

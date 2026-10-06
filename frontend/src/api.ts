@@ -85,6 +85,7 @@ export interface ProgramDetail extends ProgramSummary {
   url: string
   archive_url: string | null
   source_sha256: string | null
+  info_sections: InfoSection[]
   requirements: { sections: unknown[]; info_sections?: InfoSection[] } | null
 }
 
