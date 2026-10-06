@@ -114,3 +114,19 @@ Anonymous storage: `localStorage["prereqs.plans.v2"] = {"plans": [{"id",
 
 Validation results (prereq issues, availability warnings, GE and program
 progress) are computed on request, never stored.
+
+Harness interpretation of the per-program keys (approach C): `choices[slug]`
+holds the harness's declared choice keys (e.g. `concentration`, `language`,
+`intensive`, `entry`, `bm_start` as a term code, anthropology category →
+course code); `attested[slug]` holds attestation **ids** declared by that
+harness (`juries`, `senior-recital`, `language-exam`…). Degree progress
+from harnesses is computed in the browser, never stored.
+
+## Catalog facts for harnesses
+
+`GET /u/{univ}/catalog/compact[?describe=LIT,PSYC]` →
+`{"described": [...], "courses": [{code, display_code, subject, number,
+credits, division, title, cross_listed?, repeatable?, description?}]}` —
+every course (≈970 KB raw, ≈190 KB gzipped with LIT+PSYC descriptions);
+descriptions only for the subjects a harness lists in `catalogNeeds`. Node
+tooling reads the same facts from `data-committed/ucsc/courses/*.json`.
