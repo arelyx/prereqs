@@ -1,0 +1,11 @@
+{
+ "program": "community-studies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "f88ca66e1597d4fa445a7d5b150966de14c1d47b0f5b2d99014ddfbc3c760696",
+ "skeleton_sha256": "0fabb7b4672144350accbe282887282753627ac3e3342dc66a7db3f899b3a24a",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:11Z",
+ "verified_at": "2026-10-06T00:55:25Z",
+ "notes": "verified line by line against sources/community-studies-ba.md; letter grade C+ policy on every slot; topical courses must precede the first CMMU 105A/B/C term (check on the slot); judgement: intro says seven core classes but six are listed, harness requires the six listed; capstone = CMMU 107 overlay; lint clean"
+}

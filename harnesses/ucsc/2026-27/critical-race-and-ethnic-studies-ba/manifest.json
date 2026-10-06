@@ -1,0 +1,11 @@
+{
+ "program": "critical-race-and-ethnic-studies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "2e712500df4327f1078b81d4c9f988a8567dd1716e6e9b7f2929459e14355b35",
+ "skeleton_sha256": "70cb64860b0e195c01963d4427276cd4a279c1c98720669ed440534de7e4aca4",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:23Z",
+ "verified_at": "2026-10-06T00:55:26Z",
+ "notes": "verified line by line against sources/critical-race-and-ethnic-studies-ba.md; P/C-or-better policy; external electives list: UD CRES or CRES-cross-listed courses accepted, other UD courses (and CRES 192-199, petition only) make the elective slot cannot-check; Transnational x2 / Social Movements x1 are student-declared choices validated against the elective courses (not the comprehensive), else cannot-check; comprehensive = any CRES 190 series or listed seminars; lint clean"
+}

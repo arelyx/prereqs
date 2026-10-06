@@ -1,0 +1,11 @@
+{
+ "program": "electronic-music-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "ee5937fc9352650469afe8d93d652f54b3a9afc30441d7e9b9bc5f63116fd92c",
+ "skeleton_sha256": "11050e6b2f2f71f3e61358733043a82fe5dfe00d0090fa593a2ebd766c8b7c16",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:38Z",
+ "verified_at": "2026-10-06T00:51:38Z",
+ "notes": "c-code; verified line by line against sources/electronic-music-minor.md. UD letter-grade rule applied by catalog division with no ensemble exception (MUSC 73 is LD so P/NP ok; MUSC 129/167/167R need letters). Theory = MUSC 14 or MUSC 30A in plan or attested placement; programming = list course or attested CSE 20 test-out. MUSC 105X added to the UD lecture list per the 254A/105X note, at most one of the two. MUSC 80U accepted as alias of PHYS 80U. Department-approved substitutions are notes only. 11 tests."
+}
