@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "72eef881dad08acc0e71255759eb12b137e0c410f8c0dd60ad28cf972348558e",
  "skeleton_sha256": "444dd82087ccfdae76080a4455be6df58df39a11d03cae7b3c6ba02754c941e2",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:48:18Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:42Z",
+ "notes": "verified line by line against sources/film-and-digital-media-ba.md; lint: quotes verbatim, all course rows referenced"
 }

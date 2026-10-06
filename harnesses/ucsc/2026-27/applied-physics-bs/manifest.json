@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "a59c3041a6109e46817a28247a9af77fbdf3ebacb755d67d60f7993198567149",
  "skeleton_sha256": "64b3ed4b14a8fff29da36736bffdfea2d488089812bf474f9f1902bfedabb6ee",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:48:09Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:40Z",
+ "notes": "verified line by line against sources/applied-physics-bs.md; lint: quotes verbatim, all course rows referenced"
 }

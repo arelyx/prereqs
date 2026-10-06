@@ -15,9 +15,15 @@ const base = plan(
 const swap = (from: string, to: string | null) =>
   base.map((q) => ({ ...q, courses: q.courses.flatMap((c) => (c === from ? (to ? [to] : []) : [c])) }))
 
-describe('computer-science-bs 2026-27', () => {
+describe('computer-science-bs 2025-26', () => {
   it('complete record (capstone CSE 138 also counts as an elective)', () => {
     const r = run(harness, { terms: base })
+    expect(failing(r)).toEqual([])
+  })
+
+  it('2025-26: CSE 103 may replace CSE 102', () => {
+    const r = run(harness, { terms: swap('CSE 102', 'CSE 103') })
+    expect(find(r, 'algorithms').status).toBe('met')
     expect(failing(r)).toEqual([])
   })
 
@@ -42,6 +48,9 @@ describe('computer-science-bs 2026-27', () => {
     const noEl = swap('CSE 144', null).map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'CSE 142') }))
     const t = [...noEl, { term: '2292', courses: ['PHYS 5A', 'PHYS 5C', 'MATH 115'] }]
     expect(find(run(harness, { terms: t }), 'electives').status).toBe('met')
+    // 2025-26: no honors (15A/15C) alternates in the pairs
+    const honors = [...noEl, { term: '2292', courses: ['PHYS 15A', 'PHYS 15C', 'MATH 115'] }]
+    expect(find(run(harness, { terms: honors }), 'electives').status).toBe('unmet')
     // two physics pairs never count as two electives
     const t2 = [...swap('CSE 144', null).map((q) => ({ ...q, courses: q.courses.filter((c) => c !== 'CSE 142') })), { term: '2292', courses: ['PHYS 5A', 'PHYS 5C', 'PHYS 6A', 'PHYS 6B'] }]
     expect(find(run(harness, { terms: t2 }), 'electives').status).toBe('unmet')

@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "7cfae20d858d1fcbcaed135b6e4079e757df154d6c233e5140eef9b2bffb675d",
  "skeleton_sha256": "833f1c57a1cdc6d2f1c5153b2595774376c2d7f4d2dcca830fdcf898bf23b34e",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:48:19Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:40Z",
+ "notes": "verified line by line against sources/anthropology-minor.md; lint: quotes verbatim, all course rows referenced"
 }

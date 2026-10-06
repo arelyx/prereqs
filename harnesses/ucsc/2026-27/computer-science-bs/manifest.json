@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "49ff084d6d00aeb25b2b37af74a1cba91f74f1a50743ab6da30bc7015223460f",
  "skeleton_sha256": "9f5be89bcd83249ba117fe6babd54fa6d16626786fdce0fe9d244acd0b31de86",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:53:33Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:41Z",
+ "notes": "verified line by line against sources/computer-science-bs.md; lint: quotes verbatim, all course rows referenced"
 }

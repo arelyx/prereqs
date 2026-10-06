@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "fbcf3869c8461c8ee3aff5b5f31b91115818b97c5ad7b85c81fc8edef98cf14f",
  "skeleton_sha256": "e240534dfb12ad02847420754b74d511d5c01a879d6f2668348cf62fbb106341",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:44:12Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:42Z",
+ "notes": "verified line by line against sources/music-bm.md; lint: quotes verbatim, all course rows referenced"
 }

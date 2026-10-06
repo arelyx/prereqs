@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "31e67cf22ef96f654fd40532ac4d30d833b3dfa629c6911346dac9a0cd589733",
  "skeleton_sha256": "7b1c7470e25ea1d99718d62fa5249afd0d57881c07113ad8e4a72a27ba215827",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:46:38Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:41Z",
+ "notes": "verified line by line against sources/biology-bs.md; lint: quotes verbatim, all course rows referenced"
 }

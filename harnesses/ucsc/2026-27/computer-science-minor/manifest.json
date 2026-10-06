@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "3e146fc2046d4570c176fbfa5eaa977ec4a1442526f77f2183bc08bbe9562cb8",
  "skeleton_sha256": "27f1d7c2cfc48c00c18f58347eb43207dfd17b249d27eedfeeb036f5ff811333",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:44:12Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:41Z",
+ "notes": "verified line by line against sources/computer-science-minor.md; lint: quotes verbatim, all course rows referenced"
 }

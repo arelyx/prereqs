@@ -4,8 +4,8 @@
  "approach": "c-code",
  "source_sha256": "96b46ed154bb7e7fc5504045cb28f8730079f32ec1ebe9237c397fd9c1a91362",
  "skeleton_sha256": "fcff302d1161b84f342797fe6d2cb6c1b73a677842fc5540964c4536ee7d792b",
- "status": "draft",
+ "status": "verified",
  "authored_at": "2026-10-05T23:48:18Z",
- "verified_at": null,
- "notes": ""
+ "verified_at": "2026-10-06T00:24:42Z",
+ "notes": "verified line by line against sources/economics-ba.md; lint: quotes verbatim, all course rows referenced"
 }
