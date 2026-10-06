@@ -1,0 +1,11 @@
+{
+ "program": "chemistry-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "9cedd7f907bdf5fa443e831bde7780f19024c5e4e6537578c8e27608c4ed343f",
+ "skeleton_sha256": "bfe9029d25933b70d179c8ad34e6ef3f97125d554eb5f60c59d77c7ef08bd52a",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:53:28Z",
+ "verified_at": "2026-10-06T00:57:26Z",
+ "notes": "verified line by line against sources/chemistry-minor.md. No CHEM 3BL/3CL rule on this page. BIOC 100A-C series as CHEM 103 substitute (composite) + one elective; BIOC 100C elective only after CHEM 103; BIOC 100A excluded when CHEM 103 counted; CHEM 110/151A preferred over CHEM 103. Physics mix cannot-check."
+}

@@ -1,0 +1,11 @@
+{
+ "program": "physics-astrophysics-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "23c02fd5b4bce246e3f9d7119b356a7935c1d58c4982503eb9630aa9569e3e7c",
+ "skeleton_sha256": "1db103a214b924046bc6154e6750d1069be8cdf7b4eb1426f4a24c973640120e",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:11Z",
+ "verified_at": "2026-10-06T00:57:25Z",
+ "notes": "verified line by line against sources/physics-astrophysics-bs.md. Judgement: ASTR 136A-H option marker is garbled in the committed text ('⟨phys astrophysics⟩'); upstream page reads 'or any three of these courses' — implemented as three modules. Advanced lab is exclusive; comprehensive is an overlay on the same list. AP lab exemption as attestation only with term-less PHYS 5A/5C."
+}

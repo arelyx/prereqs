@@ -1,0 +1,11 @@
+{
+ "program": "chemistry-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "58dc088d785887fc16d176abee0399edc1e6daa47987706f67cb516983088913",
+ "skeleton_sha256": "85a898f876a9922668dc1e50dc746245245c66b78c2fb67c310700c2f6dae9dd",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:41Z",
+ "verified_at": "2026-10-06T00:57:26Z",
+ "notes": "verified line by line against sources/chemistry-bs.md. Letter grade + C minimum. General: BIOC 100A-C series fulfils CHEM 103 + one elective (two-phase solve). Physics 5/6 mix = cannot-check; MATH 11/19 mix accepted. DC/comprehensive overlays (CHEM 124 may be elective and DC lab)."
+}
