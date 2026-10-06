@@ -1,0 +1,11 @@
+{
+ "program": "biochemistry-and-molecular-biology-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "485b5cbeb2f089c038fe2848dc51f4560bbcbe75668bc301fecdcd4644e08e98",
+ "skeleton_sha256": "0837c1937f4bcbb6f69c425555c2902fb033af6caed9e2a2b4548aacaa72b705",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:57Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHEM 3BL/3CL required; no calculus mixing note (mix stays cannot-check); BIOC 163A/B primary with CHEM 163A/B substitute (same rule); Senior Exit Lab list drops BIOL 104B and BIOL 105B"
+}

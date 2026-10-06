@@ -1,0 +1,11 @@
+{
+ "program": "chemistry-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "3874df66663daf8a116ca5e2c94a8675f65974a6e946f79521c6c45a8e14d267",
+ "skeleton_sha256": "cf63b2563825381b409a7c881216cc5fdbe71e96adc582808eb34aad7231aefe",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:54Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHEM 3BL/3CL required; laboratory-course list excludes CHEM 124 (DC/comprehensive still include it); electives drop CHEM 122 and PHYS 161, add METX 102; MATH 19A+11B example mix accepted"
+}
