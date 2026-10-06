@@ -4,7 +4,7 @@ import { useState } from 'react'
 import type { ChoiceDef, ProgressReport, ReqNode } from '../../harness/types'
 import type { ViewProps } from '../../harness/registry'
 import { termLabel } from '../../harness/terms'
-import { Bar, Card, CourseChip, Quote, STATUS, StatusIcon, StatusPill, countLeaves } from './ui'
+import { Bar, Card, CourseChip, Quote, QuoteButton, QuoteText, STATUS, StatusIcon, StatusPill, countLeaves } from './ui'
 import { useStore } from '../../store'
 
 type N = ReqNode & { combine?: 'all' | 'any'; flat?: boolean; packages?: string[][] }
@@ -192,6 +192,7 @@ function Chips({ node, onOpen }: { node: N; onOpen: (c: string) => void }) {
 function Leaf({ node, onOpen, setAttested, setChoice, report }: { node: N; onOpen: (c: string) => void; report: ProgressReport } & Pick<ViewProps, 'setAttested' | 'setChoice'>) {
   const p = node.progress
   const choiceDef = node.choice ? report.choices.find((c) => c.key === node.choice) : undefined
+  const [q, setQ] = useState(false)
   return (
     <div className="flex gap-2.5 py-2" data-node={node.id}>
       <div className="pt-0.5">
@@ -199,7 +200,9 @@ function Leaf({ node, onOpen, setAttested, setChoice, report }: { node: N; onOpe
       </div>
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-          <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">{node.title}</span>
+          <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+            {node.title} <QuoteButton open={q} onClick={() => setQ(!q)} />
+          </span>
           <span className="flex items-center gap-2">
             {p && p.need > 1 && (
               <span className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
@@ -236,7 +239,7 @@ function Leaf({ node, onOpen, setAttested, setChoice, report }: { node: N; onOpe
             ⓘ {n}
           </p>
         ))}
-        <Quote quote={node.quote} />
+        {q && <QuoteText quote={node.quote} />}
       </div>
     </div>
   )
@@ -246,6 +249,7 @@ function Leaf({ node, onOpen, setAttested, setChoice, report }: { node: N; onOpe
 function FlatList({ node, onOpen }: { node: N; onOpen: (c: string) => void }) {
   const kids = node.children ?? []
   const done = kids.filter((k) => k.status === 'met').length
+  const [q, setQ] = useState(false)
   return (
     <div className="flex gap-2.5 py-2" data-node={node.id}>
       <div className="pt-0.5">
@@ -253,7 +257,9 @@ function FlatList({ node, onOpen }: { node: N; onOpen: (c: string) => void }) {
       </div>
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-          <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">{node.title}</span>
+          <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+            {node.title} <QuoteButton open={q} onClick={() => setQ(!q)} />
+          </span>
           <span className="flex items-center gap-2">
             <span className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
               {done}/{kids.length}
@@ -283,7 +289,7 @@ function FlatList({ node, onOpen }: { node: N; onOpen: (c: string) => void }) {
               {k.title}: {k.detail}
             </p>
           ))}
-        <Quote quote={node.quote} />
+        {q && <QuoteText quote={node.quote} />}
       </div>
     </div>
   )

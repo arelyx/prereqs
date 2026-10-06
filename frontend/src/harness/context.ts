@@ -392,7 +392,12 @@ export class HarnessContext {
           node.status = 'unmet'
           const msgs: string[] = []
           const left = n - have
-          if (left > 0) msgs.push(`${left} more needed`)
+          const gradeBlocked = [...this.excluded].some(([eid]) => {
+            const e = this.enrollments.find((x) => x.id === eid)
+            return !!e && isMember(e.code) && !chosen.includes(e)
+          })
+          // "1 more needed" would mislead when the course was taken but a grade rule blocks it.
+          if (left > 0 && !(gradeBlocked && left === 1 && n === 1)) msgs.push(`${left} more needed`)
           const cu = chosen.filter((e) => !labCodes.has(e.code)).map((e) => [e])
           for (const c of atLeast) {
             const got = count(cu, c.set)

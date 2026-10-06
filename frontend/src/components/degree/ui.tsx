@@ -173,6 +173,34 @@ export function shortTerm(term: string | null): string {
   return `${s}${yy}`
 }
 
+/** Small toggle for a row's title line; pair with <QuoteText>. */
+export function QuoteButton({ open, onClick }: { open: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-expanded={open}
+      aria-label="catalog wording"
+      title="Show the catalog wording this requirement implements"
+      className={`rounded px-1 font-serif text-sm leading-none ${open ? 'bg-zinc-200 text-zinc-800 dark:bg-zinc-700 dark:text-zinc-100' : 'text-zinc-400 hover:text-sky-700 dark:hover:text-sky-300'}`}
+    >
+      “”
+    </button>
+  )
+}
+
+export function QuoteText({ quote }: { quote: string | string[] }) {
+  const qs = (Array.isArray(quote) ? quote : [quote]).filter(Boolean)
+  if (!qs.length) return null
+  return (
+    <blockquote className="mt-1 space-y-1 border-l-2 border-zinc-300 pl-2 text-[11px] italic leading-relaxed text-zinc-600 dark:border-zinc-700 dark:text-zinc-400">
+      {qs.map((q, i) => (
+        <p key={i}>“{q}”</p>
+      ))}
+    </blockquote>
+  )
+}
+
 /** "From the catalog" disclosure with the verbatim source quote(s). */
 export function Quote({ quote }: { quote: string | string[] }) {
   const [open, setOpen] = useState(false)
