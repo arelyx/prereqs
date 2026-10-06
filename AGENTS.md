@@ -79,7 +79,7 @@ harness primitive) is fine — but make it a separate, explained commit.
 | `pipelines/ucsc/catalog_courses/` | hot (+warm overrides) | catalog fetch, parse, deterministic prereq parser, `prereq_overrides.json` |
 | `pipelines/ucsc/pisa_offerings/` | hot | per-term class search → `offerings/<term>.jsonl` |
 | `pipelines/ucsc/soe_schedule/` | hot | Baskin planned schedule → `soe/<year>.jsonl` |
-| `pipelines/ucsc/major_requirements/` | hot | program pages per edition → `editions/<ed>/sources/*.md`; legacy generic-JSON structurer |
+| `pipelines/ucsc/major_requirements/` | hot | program pages per edition → `editions/<ed>/sources/*.md` (+ text/skeleton hashes) |
 | `pipelines/common/` | cold | http, guards (`expect`), snapshot cache |
 | `data/` | — | gitignored fetch cache (raw HTML + snapshots) |
 | `data-committed/ucsc/` | hot output | canonical served data + `ledger.json` |

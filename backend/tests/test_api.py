@@ -110,22 +110,18 @@ def test_validate_availability_and_ge(client, seeded):
     assert ge["CC"] is True and ge["TA"] is False
 
 
-def test_validate_requirements_progress(client, seeded):
+def test_program_detail_info_and_source(client, seeded):
     programs = client.get("/u/ucsc/programs").json()
-    prog_id = programs[0]["id"]
-    body = {
-        "content": {
-            "completed": ["CSE12", "CSE16", "CSE101"],
-            "terms": [],
-        },
-        "program_ids": [prog_id],
-    }
-    out = client.post("/u/ucsc/validate", json=body).json()
-    sections = out["programs"][0]["sections"]
-    lower = next(s for s in sections if s["kind"] == "lower_div")["rules"][0]
-    assert lower["done"] == 2 and lower["needed"] == 3 and not lower["satisfied"]
-    upper = next(s for s in sections if s["kind"] == "upper_div")["rules"][0]
-    assert upper["done"] == 1 and upper["needed"] == 2
+    p = programs[0]
+    assert p["slug"] == "computer-science-bs" and p["edition"] == "2026-27"
+    detail = client.get(f"/u/ucsc/programs/{p['id']}").json()
+    assert detail["info_sections"] == [{"title": "Introduction", "paragraphs": ["Study computing."]}]
+    src = client.get(f"/u/ucsc/programs/{p['id']}/source").json()
+    assert "CSE 12" in src["markdown"]
+    # validation accepts the program (requirements are evaluated client-side)
+    out = client.post("/u/ucsc/validate", json={"content": {"completed": ["CSE12"], "terms": []},
+                                               "program_ids": [p["id"]]}).json()
+    assert "issues" in out and "programs" not in out
 
 
 def test_plan_crud_requires_auth(client, seeded):
@@ -266,58 +262,6 @@ def test_validate_dormant_course_error(client, seeded):
     assert len(dormant) == 1
     assert dormant[0]["severity"] == "error"
     assert "five years" in dormant[0]["message"]
-
-
-def test_filter_passthrough_on_non_range_rules(client, db_session, seeded):
-    """Filters are requirement content: every op must expose filter+matching
-    (the CS B.S. electives bug hid 'any CSE 100-189' behind a list op)."""
-    from app.models import Program
-
-    prog = Program(
-        university_id="ucsc",
-        name="Filter Passthrough Test B.S.",
-        degree="BS",
-        kind="major",
-        slug="filter-passthrough-test",
-        url="https://example.test/fpt",
-        catalog_year="2026-27",
-        requirements={
-            "sections": [
-                {
-                    "kind": "electives",
-                    "title": "Electives",
-                    "concentration": None,
-                    "rules": [
-                        {"op": "n_of", "n": 4, "courses": [], "branches": None,
-                         "constraints": [], "source": {"heading": "Electives"},
-                         "notes": [], "needs_review": False,
-                         "from_following_lists": True},
-                        {"op": "list", "n": None, "courses": ["ANTH2"],
-                         "branches": None, "constraints": [],
-                         "source": {"heading": "List:"}, "notes": [],
-                         "needs_review": False,
-                         "filter": {"include_ranges": [{"subject": "CSE", "lo": 100, "hi": 189}],
-                                    "include_series": [], "exclude_ranges": [],
-                                    "exclude_codes": ["CSE115A"]}},
-                    ],
-                }
-            ]
-        },
-    )
-    db_session.add(prog)
-    db_session.commit()
-    body = {
-        "content": {"completed": ["CSE101", "CSE130"], "terms": []},
-        "program_ids": [prog.id],
-    }
-    out = client.post("/u/ucsc/validate", json=body).json()
-    rules = out["programs"][0]["sections"][0]["rules"]
-    # the list rule must expose its filter and the taken courses matching it
-    lst = rules[1]
-    assert lst["filter"]["include_ranges"][0]["subject"] == "CSE"
-    assert lst["matching"] == ["CSE101", "CSE130"]
-    # and the pool-fed parent counts range matches (evaluation was already right)
-    assert rules[0]["done"] == 2 and rules[0]["have"] == ["CSE101", "CSE130"]
 
 
 def test_catalog_compact(client, seeded):

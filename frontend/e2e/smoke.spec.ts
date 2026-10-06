@@ -138,31 +138,22 @@ test('program with a harness: client-side degree dashboard in main fold', async 
   await expect(page.getByRole('region', { name: 'Computer Science B.S. degree progress' }).getByText('Lower-Division Courses')).toHaveCount(0)
 })
 
-test('program without a harness: legacy mirror in main fold, general info in sidebar', async ({ page }) => {
-  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'History B.A. ✓' })
-  // Main fold: collapsed program block; no aggregate met-counter anywhere
-  // (the legacy view mirrors the page, it does not audit degrees).
-  const header = page.getByRole('button', { name: /History B\.A\./ })
-  await expect(header).toBeVisible()
-  await expect(page.getByText(/requirements met/)).toHaveCount(0)
-  const sections = page.getByRole('button', { name: /Course Requirements/ })
-  await expect(sections).toHaveCount(0) // collapsed
-  await header.click()
-  await expect(sections.first()).toBeVisible()
-  await expect(page.getByText('⚠ verify manually').first()).toBeVisible()
-  await header.click()
-  await expect(sections).toHaveCount(0)
+test('every program has a dashboard; general info in the sidebar comes from the page text', async ({ page }) => {
+  // Every program in the current catalog carries a verified harness (✓).
+  const picker = page.getByRole('combobox', { name: 'Add a program' })
+  const labels = await picker.locator('option').allTextContents()
+  const programs = labels.filter((l) => !l.startsWith('Add a'))
+  expect(programs.length).toBeGreaterThanOrEqual(119)
+  expect(programs.filter((l) => !l.endsWith('✓'))).toEqual([])
 
-  // Sidebar: general info card with catalog link + info sections (all
-  // collapsed by default).
+  await picker.selectOption({ label: 'History B.A. ✓' })
+  await expect(page.getByRole('region', { name: 'History B.A. degree progress' })).toBeVisible()
+  // Sidebar: general info card with catalog link + collapsed info sections
+  // derived from the committed source text.
   await expect(page.getByRole('link', { name: 'official page' })).toBeVisible()
-  const infoTab = page.getByText(/Introduction|Learning Outcomes/).first()
-  await expect(infoTab).toBeVisible()
+  await expect(page.getByText(/Introduction|Learning Outcomes/).first()).toBeVisible()
   await expect(page.locator('details[open]')).toHaveCount(0)
-
-  // Full-catalog verification (2026-07-26): every program is verified, so
-  // no warning badges anywhere and every option carries the checkmark.
-  await expect(page.getByText('unverified', { exact: true })).toHaveCount(0)
+  await expect(page.getByText('not verified', { exact: true })).toHaveCount(0)
 })
 
 test('auth lifecycle: register imports plan, sign out, sign in, delete', async ({ page }) => {

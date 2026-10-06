@@ -28,9 +28,12 @@ import re
 from bs4 import BeautifulSoup, NavigableString, Tag
 
 from .. import editions
-from .segment import HEADING_CLASS_RE
 
 _WS = re.compile(r"\s+")
+# Requirement-group headings carry their SmartCatalog level as a class
+# (sc-RequiredCoursesHeading1..6); the level is semantically stable, the
+# h-tag level is not (it shifts between majors and minors).
+HEADING_CLASS_RE = re.compile(r"sc-RequiredCoursesHeading([1-6])")
 
 
 def _clean(text: str) -> str:

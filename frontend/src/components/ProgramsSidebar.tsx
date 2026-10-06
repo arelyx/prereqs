@@ -7,7 +7,14 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api'
 import type { Edition, ProgramDetail, ProgramSummary } from '../api'
+import { findHarness } from '../harness/registry'
 import { useStore } from '../store'
+
+// ✓ = a verified harness exists for this program in this catalog edition.
+function harnessLabel(p: ProgramSummary): string {
+  const status = findHarness(p.edition, p.slug)?.manifest.status
+  return status === 'verified' ? '✓' : status === 'draft' ? '(draft)' : '(not modelled)'
+}
 
 // One line of committed source text: "**Lead-in**" sub-headings, "- " /
 // "1. " list items, and [label](url) links; everything else is a paragraph.
@@ -98,7 +105,7 @@ export function ProgramPicker() {
         <option value="">Add a major or minor…</option>
         {programs.map((p) => (
           <option key={p.id} value={p.id}>
-            {p.name} {p.verification === 'verified' ? '✓' : '(unverified)'}
+            {p.name} {harnessLabel(p)}
           </option>
         ))}
       </select>
@@ -151,12 +158,12 @@ export function ProgramInfoPanels() {
           <div key={id} className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-3 shadow-sm">
             <div className="mb-1 flex items-center gap-2">
               <h3 className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{d.name}</h3>
-              {d.verification !== 'verified' && (
+              {findHarness(d.edition, d.slug)?.manifest.status !== 'verified' && (
                 <span
                   className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-[10px] font-medium text-amber-800 dark:text-amber-300"
-                  title="Structured automatically from the catalog page; not yet hand-verified."
+                  title="This program's requirements are not yet modelled and verified for this catalog year."
                 >
-                  unverified
+                  not verified
                 </span>
               )}
             </div>

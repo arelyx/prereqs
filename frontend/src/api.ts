@@ -59,8 +59,6 @@ export interface ProgramSummary {
   kind: string
   division: string | null
   edition: string // catalog edition, e.g. '2026-27'
-  verification: string
-  has_requirements: boolean
 }
 
 export interface Edition {
@@ -86,7 +84,6 @@ export interface ProgramDetail extends ProgramSummary {
   archive_url: string | null
   source_sha256: string | null
   info_sections: InfoSection[]
-  requirements: { sections: unknown[]; info_sections?: InfoSection[] } | null
 }
 
 export interface TranscriptStatus {
@@ -139,41 +136,9 @@ export interface ValidationIssue {
   severity: 'error' | 'warning' | 'info'
 }
 
-export interface CourseFilter {
-  include_ranges?: { subject: string; lo: number; hi: number }[]
-  include_series?: { subject: string; prefix: string }[]
-  exclude_ranges?: { subject: string; lo: number; hi: number }[]
-  exclude_codes?: string[]
-}
-
-export interface RuleProgress {
-  op: string
-  n: number | null
-  courses: string[]
-  branches: string[][] | null
-  have: string[]
-  filter?: CourseFilter
-  matching?: string[]
-  needed?: number | null
-  done?: number | null
-  satisfied: boolean | null
-  unevaluated?: boolean
-  manual?: boolean
-  best_branch_progress?: number
-  source?: { heading?: string; prose?: string[] }
-  notes: string[]
-  constraints: { type: string; text: string }[]
-}
-
 export interface ValidationResult {
   issues: ValidationIssue[]
   ge_progress: { category: string; label: string; satisfied: boolean; by: { ge: string; courses: string[] }[] }[]
-  programs: {
-    program_id: number
-    name: string
-    verification: string
-    sections: { kind: string; title: string; concentration: string | null; rules: RuleProgress[] }[]
-  }[]
 }
 
 function token(): string | null {

@@ -24,13 +24,12 @@ written by hot-path exporters) and **Postgres** (a projection of it loaded by
 | Path | Shape |
 |---|---|
 | `ledger.json` | what every source was built from and when — see `docs/REFRESH.md` §2 |
-| `index.json` | counts (courses, subjects, legacy programs) |
+| `index.json` | counts (courses, subjects, programs per edition) |
 | `courses/<SUBJ>.json` | `{subject, catalog_year, origin, provenance{parser_version, overrides_sha1}, courses: [Course]}` |
 | `offerings/<term>.jsonl` | one pisa section per line: `course_code, section, class_number, title, instructors[] (names, "Last,F."), days_times, location, modality, enrolled, capacity, status` |
 | `soe/<academic-year>.jsonl` | one planned section per line: `course_code, dept, display_code, section, title, instructors[{name, cruzid}], modality_note, term{academic_year, quarter, term_code}` |
 | `editions/<ed>/programs.json` | `[{slug, name, degree, kind, division, department, url, edition, archive_url, source_sha256, skeleton_sha256}]` |
 | `editions/<ed>/sources/<slug>.md` | normalized official page text (format: `pipelines/ucsc/major_requirements/source_text.py`) |
-| `programs/<slug>.json` | legacy generic-JSON harness (approach A), edition 2026-27, frozen |
 
 `Course` (in `courses/<SUBJ>.json`):
 
@@ -77,8 +76,10 @@ written by hot-path exporters) and **Postgres** (a projection of it loaded by
 - **programs** — one row per **(slug, catalog edition)**: `name` (index
   anchor text, never the slug), `degree` (`BA|BS|BM|minor`), `kind`,
   `division`, `department`, `url` (edition-pinned for archived editions),
-  `catalog_year` (edition id), `archive_url`, `source_md`, `source_sha256`,
-  `requirements` (legacy generic JSON, 2026-27 only), `verification`.
+  `catalog_year` (edition id), `archive_url`, `source_md`, `source_sha256`.
+  Requirements are not stored: they are harness code, evaluated in the
+  browser (`docs/HARNESSES.md`); verification status is in each harness's
+  manifest.
   Unique `(university_id, slug, catalog_year)`.
 - **pipeline_runs** — one row per loaded source with a provenance manifest.
 
@@ -112,8 +113,9 @@ Anonymous storage: `localStorage["prereqs.plans.v2"] = {"plans": [{"id",
 (capped at 100) stop deleted plans resurrecting. The legacy single-plan key
 `prereqs.plan` is migrated once on load.
 
-Validation results (prereq issues, availability warnings, GE and program
-progress) are computed on request, never stored.
+Validation results (prereq/co-requisite issues, availability warnings, GE
+progress) are computed by the API on request; program progress is computed
+in the browser by the program's harness. Neither is stored.
 
 Harness interpretation of the per-program keys (approach C): `choices[slug]`
 holds the harness's declared choice keys (e.g. `concentration`, `language`,

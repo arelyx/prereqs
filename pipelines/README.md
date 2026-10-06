@@ -29,9 +29,9 @@ cd pipelines
 - `ucsc/catalog_courses/` — course catalog + deterministic prereq parser.
 - `ucsc/pisa_offerings/` — class search per term (+ chunked `backfill`).
 - `ucsc/soe_schedule/` — Baskin planned schedule.
-- `ucsc/major_requirements/` — program pages per edition → source texts;
-  also the frozen legacy generic-JSON structurer (`segment`, `structure`, `run`).
-- `ucsc/export_committed.py` — courses (and legacy programs) → `data-committed/`.
+- `ucsc/major_requirements/` — program pages per edition → committed source
+  texts (`fetch`, `source_text`, `export_sources`).
+- `ucsc/export_committed.py` — structured courses → `data-committed/`.
 
 ## Rules for any stage
 

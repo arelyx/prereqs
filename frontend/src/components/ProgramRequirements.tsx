@@ -1,9 +1,8 @@
-// Main-fold program requirements: a faithful mirror of the catalog page's
-// requirement structure with per-rule progress highlighting. Deliberately
-// NOT a degree audit — no aggregate met-counters, and non-mechanical rules
-// (electives, ranges, categories) render gray with a verify-manually hazard.
-// Programs and their sections both collapse; the arrangement persists in
-// localStorage so a reload isn't a jarring reset (no network involved).
+// Main-fold degree progress: one dashboard per chosen program. Requirements
+// are program harnesses (harnesses/ucsc/<edition>/<slug>/), evaluated in the
+// browser against the plan; the registry picks the harness for the plan's
+// catalog edition. A program without a harness for that edition gets an
+// honest "not modelled yet" card — never a guessed checklist.
 
 import { useEffect, useState } from 'react'
 import { api } from '../api'
@@ -11,11 +10,7 @@ import type { ProgramSummary } from '../api'
 import { findHarness } from '../harness/registry'
 import { useStore } from '../store'
 import ProgramDashboard from './degree/ProgramDashboard'
-import { RuleRow } from './rules'
 
-// Programs with a harness (harnesses/ucsc/<edition>/<slug>/) get the
-// client-side degree dashboard; every other program keeps the legacy
-// generic-JSON mirror below.
 let programsCache: Promise<ProgramSummary[]> | null = null
 function usePrograms(): ProgramSummary[] {
   const [list, setList] = useState<ProgramSummary[]>([])
@@ -29,129 +24,35 @@ function usePrograms(): ProgramSummary[] {
   return list
 }
 
-const HIDDEN_KINDS = new Set(['qualification', 'screening'])
-
-const COLLAPSE_KEY = 'prereqs.reqCollapse'
-
-// Explicit open/closed choices only; anything unkeyed falls back to the
-// defaults (programs collapsed, sections expanded).
-interface CollapseState {
-  programs: Record<string, boolean>
-  sections: Record<string, boolean>
-}
-
-function readCollapse(): CollapseState {
-  try {
-    const raw = localStorage.getItem(COLLAPSE_KEY)
-    if (raw) {
-      const parsed = JSON.parse(raw)
-      return { programs: parsed.programs ?? {}, sections: parsed.sections ?? {} }
-    }
-  } catch {
-    // corrupted state: fall through to defaults
-  }
-  return { programs: {}, sections: {} }
-}
-
 export default function ProgramRequirements({
   onOpenCourse,
 }: {
   onOpenCourse: (code: string) => void
 }) {
   const store = useStore()
-  const [collapse, setCollapse] = useState<CollapseState>(readCollapse)
   const programs = usePrograms()
-  const summaries = store.programIds
+  const chosen = store.programIds
     .map((id) => programs.find((p) => p.id === id))
     .filter((p): p is ProgramSummary => !!p)
-  const harnessed = summaries
-    .map((p) => ({ p, entry: findHarness(p.edition, p.slug) }))
-    .filter((x): x is { p: ProgramSummary; entry: NonNullable<ReturnType<typeof findHarness>> } => !!x.entry)
-  const covered = new Set(harnessed.map((x) => x.p.id))
-  const progress = (store.validation?.programs ?? []).filter((p) => !covered.has(p.program_id))
-  if (!progress.length && !harnessed.length) return null
-
-  const save = (next: CollapseState) => {
-    setCollapse(next)
-    try {
-      localStorage.setItem(COLLAPSE_KEY, JSON.stringify(next))
-    } catch {
-      // storage full/unavailable: state still applies for this session
-    }
-  }
-
-  const programOpen = (id: number) => collapse.programs[id] ?? false
-  const sectionOpen = (key: string) => collapse.sections[key] ?? true
-  const toggleProgram = (id: number) =>
-    save({ ...collapse, programs: { ...collapse.programs, [id]: !programOpen(id) } })
-  const toggleSection = (key: string) =>
-    save({ ...collapse, sections: { ...collapse.sections, [key]: !sectionOpen(key) } })
+  if (!chosen.length) return null
 
   return (
     <>
-      {harnessed.map(({ p, entry }) => (
-        <ProgramDashboard key={`${p.id}`} program={p} entry={entry} onOpenCourse={onOpenCourse} />
-      ))}
-      {progress.map((prog) => {
-        const isOpen = programOpen(prog.program_id)
-        const sections = prog.sections.filter((s) => !HIDDEN_KINDS.has(s.kind))
+      {chosen.map((p) => {
+        const entry = findHarness(p.edition, p.slug)
+        if (entry) return <ProgramDashboard key={p.id} program={p} entry={entry} onOpenCourse={onOpenCourse} />
         return (
           <section
-            key={prog.program_id}
-            className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm"
+            key={p.id}
+            className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-4 shadow-sm"
           >
-            <button
-              className="flex w-full items-baseline gap-3 p-4 text-left"
-              onClick={() => toggleProgram(prog.program_id)}
-              aria-expanded={isOpen}
-            >
-              <span className="text-zinc-400">{isOpen ? '▾' : '▸'}</span>
-              <h2 className="text-base font-bold text-zinc-900 dark:text-zinc-100">{prog.name}</h2>
-              {prog.verification !== 'verified' && (
-                <span
-                  className="rounded bg-amber-100 dark:bg-amber-950 px-1.5 py-0.5 text-[10px] font-medium text-amber-800 dark:text-amber-300"
-                  title="Structured automatically from the catalog page; not yet hand-verified. Cross-check with the official catalog."
-                >
-                  unverified
-                </span>
-              )}
-            </button>
-            {isOpen && (
-              <div className="space-y-4 px-4 pb-4">
-                <p className="text-[11px] text-zinc-400">
-                  Mirrors the official catalog page — confirm your degree progress with an
-                  academic adviser.
-                </p>
-                {sections.map((section, si) => {
-                  const key = `${prog.program_id}:${si}:${section.title}`
-                  const secOpen = sectionOpen(key)
-                  return (
-                    <div key={si}>
-                      <button
-                        className="mb-1.5 flex w-full items-center gap-1.5 text-left"
-                        onClick={() => toggleSection(key)}
-                        aria-expanded={secOpen}
-                      >
-                        <span className="text-xs text-zinc-400">{secOpen ? '▾' : '▸'}</span>
-                        <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-                          {section.title}
-                          {section.concentration &&
-                            section.concentration !== section.title &&
-                            ` — ${section.concentration}`}
-                        </h3>
-                      </button>
-                      {secOpen && (
-                        <div className="space-y-1.5">
-                          {section.rules.map((r, ri) => (
-                            <RuleRow key={ri} rule={r} onOpenCourse={onOpenCourse} />
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )
-                })}
-              </div>
-            )}
+            <h2 className="text-base font-bold text-zinc-900 dark:text-zinc-100">
+              {p.name} <span className="text-sm font-normal text-zinc-500">{p.edition} catalog</span>
+            </h2>
+            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+              Requirements for this program in the {p.edition} catalog aren&apos;t modelled yet. Read the
+              official page and confirm with an adviser.
+            </p>
           </section>
         )
       })}

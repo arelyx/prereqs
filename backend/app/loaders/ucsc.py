@@ -8,7 +8,6 @@ projection of it. Rollback = ``git checkout <rev> -- data-committed/`` + reload.
   soe/<academic-year>.jsonl       Baskin planned schedule (is_planned=True)
   editions/<ed>/programs.json     program index per catalog edition
   editions/<ed>/sources/<slug>.md committed official page text
-  programs/<slug>.json            legacy generic-JSON harness (2026-27 only)
 
 Everything runs in one transaction per invocation; every load is recorded
 in pipeline_runs.
@@ -259,17 +258,11 @@ def load_offerings(db: Session) -> None:
     print(f"  offerings: {pisa_rows} pisa rows over {len(term_files)} terms, {soe_rows} planned")
 
 
-# The legacy generic-JSON harness predates two CMS slug fixes.
-LEGACY_SLUG_ALIASES = {"physics-bs": "copy-of-physics-bs"}
-LEGACY_EDITION = "2026-27"
-
-
 def load_programs_committed(db: Session) -> None:
     """Programs for every committed edition — (slug, edition)-keyed upsert.
 
-    Preserved row ids keep saved plan program_ids valid across reloads. The
-    legacy generic-JSON harness (programs/<slug>.json) is attached to its
-    edition where present; its ``verification`` block maps to the DB status.
+    Preserved row ids keep saved plan program_ids valid across reloads.
+    Requirements live in harnesses/ (evaluated client-side), not in the DB.
     """
     root = snapshots.COMMITTED_ROOT / UNIVERSITY_ID
     edition_dirs = sorted(d for d in (root / "editions").glob("*") if (d / "programs.json").exists())
@@ -304,7 +297,6 @@ def load_programs_committed(db: Session) -> None:
             row.source_sha256 = meta.get("source_sha256")
             src = ed_dir / "sources" / f"{meta['slug']}.md"
             row.source_md = src.read_text() if src.exists() else None
-            _attach_legacy(row, root / "programs", edition)
     removed = [k for k in existing if k not in seen]
     for k in removed:
         db.delete(existing[k])
@@ -315,29 +307,6 @@ def load_programs_committed(db: Session) -> None:
     )
     print(f"  programs: {updated} updated, {inserted} inserted, {len(removed)} removed "
           f"across editions {[d.name for d in edition_dirs]}")
-
-
-def _attach_legacy(row: Program, legacy_dir: Path, edition: str) -> None:
-    f = legacy_dir / f"{LEGACY_SLUG_ALIASES.get(row.slug, row.slug)}.json"
-    if edition != LEGACY_EDITION or not f.exists():
-        row.requirements = None
-        row.verification = "unverified"
-        row.verified_at = row.verification_notes = None
-        return
-    d = json.loads(f.read_text())
-    row.requirements = d["requirements"]
-    v = d.get("verification") or {}
-    if v.get("status") == "frontier-verified":
-        row.verification = "verified"
-        row.verified_at = (
-            datetime.fromisoformat(v["date"]).replace(tzinfo=timezone.utc)
-            if v.get("date") else None
-        )
-        row.verification_notes = v.get("notes")
-    else:
-        row.verification = "unverified"
-        row.verified_at = None
-        row.verification_notes = None
 
 
 def main() -> None:

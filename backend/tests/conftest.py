@@ -155,44 +155,11 @@ def seeded(db_session):
             slug="computer-science-bs",
             url="https://example.test/cs-bs",
             catalog_year="2026-27",
-            requirements={
-                "sections": [
-                    {
-                        "kind": "lower_div",
-                        "title": "Lower-Division Courses",
-                        "concentration": None,
-                        "rules": [
-                            {
-                                "op": "all_of",
-                                "n": None,
-                                "courses": ["CSE12", "CSE16", "CSE30"],
-                                "branches": None,
-                                "constraints": [],
-                                "source": {"heading": "All of the following"},
-                                "notes": [],
-                                "needs_review": False,
-                            }
-                        ],
-                    },
-                    {
-                        "kind": "upper_div",
-                        "title": "Upper-Division Courses",
-                        "concentration": None,
-                        "rules": [
-                            {
-                                "op": "n_of",
-                                "n": 2,
-                                "courses": ["CSE101", "CSE130"],
-                                "branches": None,
-                                "constraints": [],
-                                "source": {"heading": "Plus two of the following"},
-                                "notes": [],
-                                "needs_review": False,
-                            }
-                        ],
-                    },
-                ]
-            },
+            source_md=(
+                "# Computer Science B.S.\n\n<!-- slug: computer-science-bs -->\n\n"
+                "## Information and Policies\n\n### Introduction {sc1}\nStudy computing.\n\n"
+                "## Requirements and Planners\n- CSE 12 — Systems (7)\n"
+            ),
         )
     )
     db_session.commit()

@@ -77,11 +77,10 @@ export default function ExportButton() {
       const codes = [...content.completed, ...content.terms.flatMap((t) => t.courses)]
       const courses = await lookupCourses(codes).catch(() => new Map<string, CourseInfo>())
 
-      // Program names: the validation response already carries them; fall
-      // back to the programs list, then to bare ids — never block the export.
+      // Program names from the programs list; bare ids if that fails —
+      // never block the export.
       const byId = new Map<number, string>()
-      for (const p of store.validation?.programs ?? []) byId.set(p.program_id, p.name)
-      if (programIds.some((id) => !byId.has(id))) {
+      if (programIds.length) {
         await api
           .programs()
           .then((all) => all.forEach((p) => byId.set(p.id, p.name)))

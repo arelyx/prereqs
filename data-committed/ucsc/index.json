@@ -1,7 +1,10 @@
 {
  "catalog_year": "2026-2027",
  "courses": 6172,
- "programs": 119,
+ "programs_by_edition": {
+  "2025-26": 119,
+  "2026-27": 119
+ },
  "subjects": 86,
  "university": "ucsc"
 }

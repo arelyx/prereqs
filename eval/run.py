@@ -5,7 +5,7 @@
 An adapter is any command that reads ONE JSON object per line on stdin —
 ``{"case": <case>, "program": <program-meta>}`` — and writes one verdict
 per line on stdout (contract: eval/README.md). Adapters can be written in any
-language (a TS approach runs under node, the legacy one in Python), which
+language (the harness adapter runs TypeScript under node), which
 keeps the scoring identical across approaches.
 
 Program meta = the committed index entry

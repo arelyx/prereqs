@@ -165,8 +165,8 @@ class Program(Base):
     A student is bound to the edition they entered under, so the same slug
     exists once per edition (``catalog_year`` = edition id, e.g. '2026-27').
     ``source_md`` is the committed normalized catalog page (the ground truth
-    every harness is authored against); ``requirements`` is the legacy
-    generic-JSON harness, present only where one was built.
+    every harness is authored against). Requirements themselves are
+    harness code in ``harnesses/`` and never stored here.
     """
 
     __tablename__ = "programs"
@@ -185,10 +185,6 @@ class Program(Base):
     archive_url: Mapped[str | None] = mapped_column(Text)  # permanent /en/YYYY-YYYY/ URL
     source_md: Mapped[str | None] = mapped_column(Text)
     source_sha256: Mapped[str | None] = mapped_column(String(64))
-    requirements: Mapped[dict | None] = mapped_column(JSONVariant)  # legacy sections/rules tree
-    verification: Mapped[str] = mapped_column(String(16), default="unverified")
-    verified_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    verification_notes: Mapped[str | None] = mapped_column(Text)
 
 
 class PipelineRun(Base):

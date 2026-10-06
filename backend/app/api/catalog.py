@@ -321,8 +321,6 @@ def list_programs(
             "kind": p.kind,
             "division": p.division,
             "edition": p.catalog_year,
-            "verification": p.verification,
-            "has_requirements": p.requirements is not None,
         }
         for p in db.scalars(q.order_by(func.lower(Program.name), Program.degree, Program.catalog_year))
     ]
@@ -350,8 +348,6 @@ def program_detail(university_id: str, program_id: int, db: Session = Depends(ge
         "archive_url": p.archive_url,
         "edition": p.catalog_year,
         "source_sha256": p.source_sha256,
-        "verification": p.verification,
-        "requirements": p.requirements,
         # General information panels, from the committed page text.
         "info_sections": info_sections(p.source_md),
     }

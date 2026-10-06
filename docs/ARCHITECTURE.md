@@ -49,7 +49,6 @@ The repo is organized around that split:
 |---|---|---|
 | `data/` | fetch stages | anything else (it is a cache; deleting it loses nothing committed) |
 | `data-committed/ucsc/{courses,offerings,soe,editions}/`, `ledger.json` | hot-path exporters | humans/agents by hand — the next refresh would overwrite the edit |
-| `data-committed/ucsc/programs/` | legacy generic-JSON pipeline (approach A, frozen) | — |
 | `harnesses/` | warm-path agents | hot path (it only *reports* staleness) |
 | `pipelines/ucsc/catalog_courses/prereq_overrides.json` | warm-path agents | hot path (reads it; reports stale entries) |
 | `eval/golden/` | test authors, from source text only | anyone looking at a harness |
@@ -134,12 +133,19 @@ harnesses/ucsc/<edition>/<slug>/
   `npm run harness:lint` (quotes verbatim in the source, codes in the
   catalog, every source course row referenced, manifest hashes current,
   authoring pitfalls), `eval/adapters/c-code.sh`.
-- Programs without a harness keep the legacy mirror below.
+- Coverage: every program in every committed edition has a harness; one
+  that doesn't (a new program before its warm task is done) renders an
+  explicit "not modelled yet" card, never a guessed checklist.
+- Manifests may pin OTHER programs' pages a harness relies on
+  (`depends_on`), so a change there also makes the harness stale.
 
-The legacy approach — one generic JSON rule vocabulary for every program,
-classified by regex (`data-committed/ucsc/programs/`, evaluated by
-`backend/app/planner.py:evaluate_requirements`) — is kept as the baseline
-("approach A").
+Why harness-as-code (and not one generic rule schema): four approaches were
+built and scored head to head before the rollout — the old generic JSON, a
+typed declarative IR with a generic solver, this approach, and a "literate
+catalog" (annotations on the page text). See the revamp report for the
+comparison; the short version: every major has once-only caveats, code
+expresses them without a schema cliff, and lint + tests + adversarial
+review keep the code honest.
 
 ## Cold path: backend and frontend
 
@@ -147,7 +153,8 @@ classified by regex (`data-committed/ucsc/programs/`, evaluated by
   in one transaction; id-preserving upserts keep saved plans valid; derives
   prereq edges, availability, instructor predictions, dormant flags.
 - `backend/app/planner.py` — plan validation: unknown/duplicate courses,
-  missing prereqs (same-term = concurrent info), never-offered-that-season /
+  missing prereqs (same quarter only where the catalog allows concurrent
+  enrollment), strict co-requisites, never-offered-that-season /
   dormant warnings, GE progress, program progress.
 - `backend/app/api/` — catalog (courses, graph, programs per edition,
   program source text), plans (validate is public; CRUD needs a token),
