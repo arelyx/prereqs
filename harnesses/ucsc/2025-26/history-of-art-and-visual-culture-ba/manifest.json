@@ -1,0 +1,11 @@
+{
+ "program": "history-of-art-and-visual-culture-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "ebb934a821a41a31fc445cc35d3a9a1bf8b15bbdcab7ff369d85d425fcbb1d43",
+ "skeleton_sha256": "4c0887236ff458c8e390ee706cff0d3a5c4c9770d850316729566ca9890bd6c5",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:52:15Z",
+ "verified_at": "2026-10-06T23:56:10Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHM approved list has no HAVC 141Z and no VAST 188J; honors wording changed (not modeled)"
+}

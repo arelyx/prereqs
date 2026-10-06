@@ -1,0 +1,11 @@
+{
+ "program": "film-and-digital-media-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b352dd00730a57cd8f7dbc96492e4b534c39ceea6ba79aa416a6a05b917f9729",
+ "skeleton_sha256": "2f8dc1ac2d43c06e88ac3a83ee94c22c93f867d5e1c74e67738e73aaf0228e48",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:10Z",
+ "verified_at": "2026-10-06T23:56:08Z",
+ "notes": "ported from 2026-27 (reviewed); differences: general core is FILM 120 + one from EACH of Groups 1-3 (no Group 4 / FILM 170A-B; 2026-27 is three of four groups); ICPC critical-studies list has FILM 145 instead of FILM 152; MQ drops FILM 20P (info only, not modeled)"
+}
