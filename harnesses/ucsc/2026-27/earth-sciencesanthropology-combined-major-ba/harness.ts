@@ -9,14 +9,38 @@
 //    CHEM 3BL/3CL; CHEM 3 and CHEM 4 series may not both count.
 //  - Anthropology electives come from an external course list (categories
 //    Archeology / Biological-Medical-Environmental / Laboratory Methods):
-//    counted from upper-division ANTH courses, then cannot-check.
+//    §1a — the student declares which of their courses the list places
+//    there (choice); undeclared → four UD ANTH candidates give cannot-check,
+//    fewer give unmet.
 //  - Comprehensive = ONE exclusive slot (not also an elective); DC = overlay.
 //    The EART 198 internship option also needs the internship director's
 //    prior approval (attestation).
-import { codes, defineHarness, range } from '@harness'
-import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
+import { canon, codes, defineHarness, range } from '@harness'
+import type { ChoiceDef, CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
 const FALL_2026 = 2268
+
+const Q_ANTH =
+  'Four 5-credit or more upper-division archeology, biological/medical/environmental anthropology, or laboratory methods courses. Students should consult the [Anthropology Department’s course list](https://catalog.ucsc.edu/current/general-catalog/academic-units/social-sciences-division/anthropology/anthropology-course-list/), and reference courses listed under the Archeology, Biological/Medical/Environmental Anthropology, and Laboratory Methods courses heading.'
+const UD_ANTH = range('ANTH', 100, 199).minCredits(5)
+
+/** Free-form course list: "ANTH 110, ANTH 130; ANTH 172" → canonical, comma-joined. */
+function parseList(raw: string): string | undefined {
+  const out = raw
+    .split(/[,;\n]+/)
+    .map((s) => s.trim())
+    .filter((s) => /^[A-Za-z]{2,5}\s*\d{1,3}[A-Za-z]{0,2}$/.test(s))
+    .map(canon)
+  return out.length ? [...new Set(out)].join(',') : undefined
+}
+const ANTH_LIST_CHOICE: ChoiceDef = {
+  key: 'anth_courses',
+  label: 'Your upper-division ANTH courses listed under Archeology, Biological/Medical/Environmental Anthropology, or Laboratory Methods',
+  quote: Q_ANTH,
+  options: [],
+  free: true,
+  parse: parseList,
+}
 
 const ANTH_SEMINARS = [
   'ANTH 194C', 'ANTH 194H', 'ANTH 194L', 'ANTH 194U', 'ANTH 194V', 'ANTH 194Y',
@@ -67,6 +91,7 @@ export default defineHarness({
   program: 'earth-sciencesanthropology-combined-major-ba',
   edition: '2026-27',
   title: 'Earth Sciences/Anthropology Combined Major B.A.',
+  choices: [ANTH_LIST_CHOICE],
   attestations: [
     {
       id: 'internship-approval',
@@ -126,11 +151,13 @@ export default defineHarness({
         pool: 'EART 100–199 (not 196B or 198), 5+ credits; a lecture counts only with its lab',
       },
     )
-    const Q_ANTH =
-      'Four 5-credit or more upper-division archeology, biological/medical/environmental anthropology, or laboratory methods courses. Students should consult the [Anthropology Department’s course list](https://catalog.ucsc.edu/current/general-catalog/academic-units/social-sciences-division/anthropology/anthropology-course-list/), and reference courses listed under the Archeology, Biological/Medical/Environmental Anthropology, and Laboratory Methods courses heading.'
-    const anthElectives = h.take('anth-electives', 'Four anthropology electives', Q_ANTH, range('ANTH', 100, 199).minCredits(5), {
+    const declared = new Set((h.choice('anth_courses') ?? '').split(',').filter(Boolean))
+    const anthSet = declared.size ? UD_ANTH.where((c) => declared.has(c.code), 'the courses you listed') : UD_ANTH
+    const anthElectives = h.take('anth-electives', 'Four anthropology electives', Q_ANTH, anthSet, {
       n: 4,
-      pool: 'upper-division ANTH courses (5+ credits) listed under Archeology, Biological/Medical/Environmental Anthropology, or Laboratory Methods on the department’s course list',
+      pool: declared.size
+        ? 'your listed upper-division ANTH courses (5+ credits)'
+        : 'upper-division ANTH courses (5+ credits) listed under Archeology, Biological/Medical/Environmental Anthropology, or Laboratory Methods on the department’s course list',
     })
 
     const dc = h.either('dc', 'Disciplinary Communication (DC)', ['In order to satisfy the DC requirement, students must fulfill one of the two options:', 'Courses may simultaneously satisfy both the DC requirement and the upper-division Earth sciences or anthropology elective requirement.'], [
@@ -142,7 +169,8 @@ export default defineHarness({
     const comprehensive = comprehensiveReq(h)
     h.solve()
     fixScience(h, science)
-    fixAnth(anthElectives)
+    anthElectives.choice = 'anth_courses'
+    if (!declared.size) fixAnth(anthElectives)
     fixInternship(h, comprehensive)
 
     return [
@@ -201,7 +229,7 @@ function fixScience(h: HarnessContext, node: Node): void {
 function fixAnth(node: Node): void {
   if (node.status !== 'met') return
   node.status = 'cannot-check'
-  node.detail = `Check that ${node.used?.map((e) => e.display).join(', ')} are listed under Archeology, Biological/Medical/Environmental Anthropology, or Laboratory Methods on the Anthropology Department’s course list.`
+  node.detail = `Check the Anthropology Department’s course list, then list which of your courses (e.g. ${node.used?.map((e) => e.display).join(', ')}) appear under Archeology, Biological/Medical/Environmental Anthropology, or Laboratory Methods.`
 }
 
 function fixInternship(h: HarnessContext, node: Node): void {

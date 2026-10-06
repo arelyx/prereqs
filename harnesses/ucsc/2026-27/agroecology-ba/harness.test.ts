@@ -111,7 +111,7 @@ describe('agroecology-ba 2026-27', () => {
   })
 
   it('LGST 130B is the same course as ENVS 130B', () => {
-    expect(find(run(harness, { terms: edit(base, 'ENVS 130B', 'LGST 130B') }), 'envs130b').status).toBe('met')
+    expect(failing(run(harness, { terms: edit(base, 'ENVS 130B', 'LGST 130B') }))).toEqual([])
   })
 
   it('ENVS 130L is required with ENVS 130A', () => {
@@ -124,5 +124,32 @@ describe('agroecology-ba 2026-27', () => {
 
   it('repeating ENVS 133 does not fill a second elective slot', () => {
     expect(find(run(harness, { terms: edit(base, 'CMMU 149', 'ENVS 133') }), 'practicum-electives').status).toBe('unmet')
+  })
+  it('review (§1a petition path): one unlisted ENVS 104–179 or UD SOCY/LALS/ANTH elective needs an approved petition', () => {
+    // "Students in the agroecology B.A may petition to substitute one of the four agroecology upper-division elective courses from:"
+    const one = edit(base, 'CMMU 149', 'ENVS 156')
+    expect(find(run(harness, { terms: one, attested: [] }), 'practicum-electives').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: one, attested: ['elective petition'] }), 'practicum-electives').status).toBe('met')
+    expect(find(run(harness, { terms: edit(base, 'CMMU 149', 'SOCY 130') }), 'practicum-electives').status).toBe('met')
+    // only one substitution
+    const two = edit(edit(base, 'CMMU 149', 'ENVS 156'), 'ENVS 160', 'SOCY 130')
+    expect(find(run(harness, { terms: two }), 'practicum-electives').status).toBe('unmet')
+    // a lower-division course is not a substitute; not asked when the list suffices
+    expect(find(run(harness, { terms: edit(base, 'CMMU 149', 'SOCY 15') }), 'practicum-electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: [...base, { term: '2292', courses: ['ENVS 156'] }], attested: [] }), 'practicum-electives').status).toBe('met')
+  })
+  it('review (§1a): ALEKS is offered only when no math course is in the plan', () => {
+    expect(find(run(harness, { terms: base, grades: { 'MATH 11A': 'F' }, attested: [] }), 'math').status).toBe('unmet')
+  })
+  it('review: a graduate seminar by instructor invitation can be the comprehensive', () => {
+    // "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor."
+    const t = edit(base, 'ENVS 190', 'ENVS 290')
+    expect(find(run(harness, { terms: t, attested: [] }), 'comprehensive').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['graduate seminar'] }), 'comprehensive').status).toBe('met')
+    expect(find(run(harness, { terms: t, grades: { 'ENVS 290': 'P' } }), 'comprehensive').status).toBe('unmet')
+  })
+  it('review: ENVS 133 as the practicum and ENVS 133B as an elective cannot both count', () => {
+    const r = run(harness, { terms: edit(base, 'CMMU 149', 'ENVS 133B') })
+    expect(failing(r)).toEqual(['practicum-electives:unmet'])
   })
 })

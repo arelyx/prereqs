@@ -17,16 +17,7 @@ import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const FALL_2026 = 2268
 
-// Cross-listed partners named on the page ("ECON 128 [/LGST 128]").
-const XL: Record<string, string> = {
-  'ECON 128': 'LGST 128',
-  'ECON 160A': 'LGST 160A',
-  'ECON 162': 'LGST 162',
-  'ECON 169': 'LGST 169',
-  'ECON 183': 'LGST 183',
-}
-const withXL = (list: string[]) => list.flatMap((c) => (XL[c] ? [c, XL[c]] : [c]))
-
+// Cross-listed partners ("ECON 128 [/LGST 128]") are one course in the library.
 const ECON_ELECTIVES = [
   'ECON 100B', 'ECON 100N', 'ECON 101', 'ECON 114', 'ECON 115', 'ECON 120', 'ECON 128', 'ECON 130',
   'ECON 131', 'ECON 133', 'ECON 135', 'ECON 136', 'ECON 138', 'ECON 139A', 'ECON 139B', 'ECON 140',
@@ -69,9 +60,6 @@ export default defineHarness({
       aliases: ['comprehensive exam', 'economics comprehensive', 'comp exam'],
     },
   ],
-  coverage: {
-    unknownOk: Object.fromEntries(Object.values(XL).map((c) => [canon(c), 'cross-listed partner of an ECON course ([/X] on the page); the catalog files it under ECON'])),
-  },
   notes: [
     'No letter-grade policy except the senior comprehensive (ENVS exit option), which must be taken for a letter grade.',
     'Upper-division electives cannot be substituted (including courses taken abroad).',
@@ -100,7 +88,7 @@ export default defineHarness({
     ])
 
     const electives = h.group('electives', 'Electives (six)', [
-      h.take('econ-electives', 'Three economics electives', 'Three courses from the Economics Electives list below', codes(...withXL(ECON_ELECTIVES)), { n: 3 }),
+      h.take('econ-electives', 'Three economics electives', 'Three courses from the Economics Electives list below', codes(...ECON_ELECTIVES), { n: 3 }),
       h.take(
         'envs-electives',
         'Three ENVS electives (ENVS 101-179)',

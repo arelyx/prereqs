@@ -91,7 +91,7 @@ describe('earth-sciences-bs 2026-27 — general major', () => {
 
   it('DC may reuse the comprehensive course; missing DC is reported alone', () => {
     // Summer field as comprehensive; no EART 191/195 → DC still met via 189A+189B.
-    const t = swap(general, 'EART 191', 'EART 189A', 'EART 189B')
+    const t = [...swap(general, 'EART 191'), { term: '2294', courses: ['EART 189A', 'EART 189B'] }]
     expect(failing(run(harness, { terms: t }))).toEqual([])
     // Thesis comprehensive, DC via thesis.
     expect(failing(run(harness, { terms: swap(general, 'EART 191', 'EART 195') }))).toEqual([])
@@ -101,6 +101,27 @@ describe('earth-sciences-bs 2026-27 — general major', () => {
     const r = run(harness, { terms: swap(general, 'EART 191', 'EART 152') })
     expect(find(r, 'comprehensive').status).toBe('unmet')
     expect(find(r, 'dc').status).toBe('unmet')
+  })
+
+  it('review: EART 189B outside a summer term is not the summer field comprehensive', () => {
+    // "EART 189B must be completed in the summer."
+    const r = run(harness, { terms: swap(general, 'EART 191', 'EART 189A', 'EART 189B') })
+    expect(failing(r)).toEqual(['comprehensive:unmet'])
+    expect(find(r, 'comprehensive').detail).toContain('summer')
+  })
+
+  it('review: one course cannot fill both the math/programming slot and a field/lab slot', () => {
+    const r = run(harness, { terms: swap(swap(general, 'MATH 22', 'EART 119A'), 'EART 116') })
+    expect(failing(r)).toEqual(['electives:unmet'])
+  })
+
+  it('review: CHEM 3B transfer credit with no term and no CHEM 3BL cannot be checked', () => {
+    expect(find(run(harness, { terms: swap(general, 'CHEM 3B'), completed: ['CHEM 3B'] }), 'gen-chem').status).toBe('cannot-check')
+  })
+
+  it('review: empty plan blames every requirement', () => {
+    const f = failing(run(harness, { terms: [] }))
+    for (const id of ['intro-geology:unmet', 'gen-chem:unmet', 'calc:unmet', 'math-data:unmet', 'field-lab:unmet', 'electives:unmet', 'comprehensive:unmet']) expect(f).toContain(id)
   })
 
   it('EART 189A alone is not the summer field option', () => {
@@ -239,6 +260,11 @@ describe('earth-sciences-bs 2026-27 — geophysics', () => {
   it('summer field is not a geophysics comprehensive option', () => {
     const r = run(harness, { terms: add(swap(geophysics, 'EART 195'), 'EART 189A', 'EART 189B'), choices: GPH })
     expect(find(r, 'comprehensive').status).toBe('unmet')
+  })
+  it('review: the geophysics comprehensive offers no "other options" by adviser permission', () => {
+    const r = run(harness, { terms: swap(geophysics, 'EART 195'), choices: GPH })
+    expect(find(r, 'comprehensive').status).toBe('unmet')
+    expect((find(r, 'comprehensive').notes ?? []).join(' ')).not.toContain('Other options')
   })
   it('EART 191C satisfies both DC and comprehensive', () => {
     expect(failing(run(harness, { terms: swap(geophysics, 'EART 195', 'EART 191C'), choices: GPH }))).toEqual([])

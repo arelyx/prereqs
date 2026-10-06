@@ -125,4 +125,17 @@ describe('sustainability-studies-minor 2026-27', () => {
     expect(r.status).toBe('unmet')
     expect(failing(run(harness, { terms: edit(base, 'CRSN 161', 'ECE 176', 'ECE 176L') }))).toEqual([])
   })
+  it('review: a cross-listed partner code (LGST 140E = ENVS 140) counts its credits toward the 25 upper-division credits', () => {
+    // "A minimum of 25 upper-division credits are required to complete the minor."
+    expect(failing(run(harness, { terms: edit(base, 'SOCY 125', 'LGST 140E') }))).toEqual([])
+    expect(failing(run(harness, { terms: edit(base, 'SOCY 125', 'POLI 179') }))).toEqual([])
+  })
+  it('review: CRSN 152 twice is not the IDEASS capstone', () => {
+    const r = run(harness, { terms: edit(edit(base, 'ENVS 120', 'CRSN 152'), 'SOCY 125', 'CRSN 152') })
+    expect(find(r, 'capstone').status).toBe('unmet')
+  })
+  it('review: empty plan', () => {
+    const f = failing(run(harness, { terms: [] }))
+    for (const id of ['ud-credits:unmet', 'crsn55:unmet', 'ud-elective:unmet']) expect(f).toContain(id)
+  })
 })

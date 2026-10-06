@@ -84,6 +84,28 @@ describe('environmental-studies-ba 2026-27', () => {
     expect(find(run(harness, { terms: early }), 'chem').status).toBe('met')
   })
 
+  it('review (§1a): ALEKS placement is offered only when no math course is in the plan; a failed course stays unmet', () => {
+    const t = edit(base, 'MATH 3')
+    expect(find(run(harness, { terms: t }), 'math').detail).toMatch(/placement/)
+    const failed = run(harness, { terms: base, grades: { 'MATH 3': 'F' }, attested: [] })
+    expect(find(failed, 'math').status).toBe('unmet')
+  })
+
+  it('review: a graduate seminar by instructor invitation is a general-major comprehensive option', () => {
+    // "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor."
+    const t = edit(edit(base, 'ENVS 195B'), 'ENVS 195A', 'ENVS 156', 'ENVS 290')
+    expect(find(run(harness, { terms: t, attested: [] }), 'comprehensive').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['graduate seminar'] }), 'comprehensive').status).toBe('met')
+    // letter grade still required
+    expect(find(run(harness, { terms: t, grades: { 'ENVS 290': 'P' } }), 'comprehensive').status).toBe('unmet')
+    // not offered in a concentration
+    expect(find(run(harness, { terms: t, choices: { concentration: 'gis' } }), 'comprehensive').status).toBe('unmet')
+  })
+
+  it('review: cross-listed POLI 179 counts as ENVS 144 (social science) with no alias map', () => {
+    expect(failing(run(harness, { terms: edit(base, 'ENVS 140', 'POLI 179') }))).toEqual([])
+  })
+
   it('math: course, or AP/ALEKS attestation', () => {
     const t = edit(base, 'MATH 3')
     expect(find(run(harness, { terms: t, attested: [] }), 'math').status).toBe('needs-attestation')

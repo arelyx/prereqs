@@ -15,19 +15,14 @@
 import { codes, defineHarness, range } from '@harness'
 import type { CourseSet, Enrollment, HarnessContext } from '@harness'
 
-// Cross-listed partners ("ENVS 149 [/LGST 149]") are the same course.
-const XL: Record<string, string> = {
-  'ENVS 130B': 'LGST 130B', 'ENVS 140': 'LGST 140E', 'ENVS 149': 'LGST 149', 'ENVS 150': 'LGST 150A',
-  'ENVS 151': 'LGST 151A', 'ENVS 152': 'POLI 170', 'ENVS 165': 'LGST 165A',
-}
-const withXL = (list: string[]) => list.flatMap((c) => (XL[c] ? [c, XL[c]] : [c]))
 const SOCIAL = [
   'ENVS 110', 'ENVS 130B', 'ENVS 140', 'ENVS 141', 'ENVS 143', 'ENVS 145', 'ENVS 147', 'ENVS 149', 'ENVS 150',
   'ENVS 151', 'ENVS 152', 'ENVS 154', 'ENVS 158', 'ENVS 165', 'ENVS 172', 'ENVS 173', 'ENVS 174', 'ENVS 176',
   'ENVS 178',
 ]
-const SOCIAL_SET = codes(...withXL(SOCIAL))
-const ENVS_POOL = range('ENVS', 101, 179).or(SOCIAL_SET)
+// Cross-listed partners ("ENVS 149 [/LGST 149]") are one course in the library.
+const SOCIAL_SET = codes(...SOCIAL)
+const ENVS_POOL = range('ENVS', 101, 179)
 // ENVS lecture/lab combinations in ENVS 101–179 (catalog).
 const ENVS_LABS: [string, string][] = [
   ['ENVS 104A', 'ENVS 104L'], ['ENVS 106A', 'ENVS 106M'], ['ENVS 108', 'ENVS 108L'], ['ENVS 115A', 'ENVS 115L'],
@@ -53,19 +48,27 @@ const pkg = (a: string, b: string) => (avail: Enrollment[]): Enrollment[][] => {
   const y = avail.find((e) => e.code === b)
   return x && y ? [[x, y]] : []
 }
+// "Students with advanced skills in one of the graduate focal areas may also
+// take a graduate seminar by invitation from the instructor." — an ENVS
+// graduate seminar counts for the comprehensive only with that invitation
+// (attestation asked only when the allocator needed the seminar).
+const GRAD_SEMINAR = range('ENVS', 200, 296).where((c) => !/Laborator/i.test(c.title), 'not a laboratory')
+const Q_GRAD = 'Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor.'
 const COMP_PACKAGES = [pkg('ENVS183A', 'ENVS183B'), pkg('ENVS195A', 'ENVS195B'), pkg('EART189A', 'EART189B')]
 
 export default defineHarness({
   program: 'environmental-studiesearth-sciences-combined-major-ba',
   edition: '2026-27',
   title: 'Environmental Studies/Earth Sciences Combined Major B.A.',
-  coverage: {
-    unknownOk: {
-      ...Object.fromEntries(
-        Object.values(XL).map((c) => [c.replace(' ', ''), 'cross-listed partner of an ENVS course ([/X] on the page); the catalog files it under ENVS']),
-      ),
-      PHIL80G: 'cross-listed partner of BME 80G ([/PHIL 80G] on the page); the catalog files it under BME',
+  attestations: [
+    {
+      id: 'grad-seminar-invitation',
+      label: 'Invited by the instructor to take a graduate seminar for the senior comprehensive',
+      quote: Q_GRAD,
+      aliases: ['graduate seminar', 'grad seminar'],
     },
+  ],
+  coverage: {
     ignore: {
       AM3: 'transfer admission screening list only (not a completion requirement)',
       MATH3: 'transfer admission screening list only (not a completion requirement)',
@@ -97,7 +100,7 @@ export default defineHarness({
       ]),
       h.take('ecology', 'Ecology', 'Plus one of the following courses:', codes('ENVS 24', 'BIOE 20C')),
       h.take('envs25', 'ENVS 25', 'Plus the following course:', codes('ENVS 25')),
-      h.take('society', 'Society, culture or ethics course', 'Plus one of the following courses:', codes('ANTH 2', 'BME 80G', 'PHIL 80G', 'PHIL 22', 'PHIL 24', 'PHIL 28', 'SOCY 1', 'SOCY 10', 'SOCY 15')),
+      h.take('society', 'Society, culture or ethics course', 'Plus one of the following courses:', codes('ANTH 2', 'BME 80G', 'PHIL 22', 'PHIL 24', 'PHIL 28', 'SOCY 1', 'SOCY 10', 'SOCY 15')),
     ])
 
     const upper = h.group('upper', 'Upper-Division Courses', [
@@ -166,12 +169,14 @@ export default defineHarness({
         'One of the senior comprehensive options for single environmental studies B.A. majors (see options listed below);',
         'One of the senior comprehensive options for Earth sciences B.S. (see Comprehensive Requirement under the Earth Sciences B.S.).',
         'All courses used to satisfy the senior comprehensive requirement must be taken for a letter grade.',
+        Q_GRAD,
       ],
       // ENVS B.A. options listed on this page, plus the Earth Sciences B.S.
       // (general major) options: EART 189A + 189B, EART 195, EART 191/191C/191D.
-      codes('BIOE 151B', 'ENVS 190', 'ENVS 196', 'EART 195', 'EART 191', 'EART 191C', 'EART 191D'),
+      codes('BIOE 151B', 'ENVS 190', 'ENVS 196', 'EART 195', 'EART 191', 'EART 191C', 'EART 191D').or(GRAD_SEMINAR),
       {
         policy: { letter: true },
+        prefer: (c) => (GRAD_SEMINAR.has(c) ? 1 : 0),
         composite: {
           eligible: codes('ENVS 183A', 'ENVS 183B', 'ENVS 195A', 'ENVS 195B', 'EART 189A', 'EART 189B'),
           build: (avail) => COMP_PACKAGES.flatMap((f) => f(avail)),
@@ -181,10 +186,17 @@ export default defineHarness({
           'The Earth Sciences B.S. options are not printed on this page; they are taken from that major’s general comprehensive list (EART 189A + 189B, EART 195, EART 191, 191C, 191D). Its “other options by permission of the faculty adviser” need an advisor.',
           'Courses used for an Earth Sciences B.S. comprehensive option are not also counted as electives.',
           'The senior thesis and senior internship need a faculty mentor arranged early and two consecutive quarters (ENVS 195A/183A the quarter before 195B/183B).',
-          'Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor.',
+          'An ENVS graduate seminar counts only by invitation from the instructor (you will be asked to confirm it).',
         ],
       },
     )
+    h.solve()
+    const grad = comprehensive.used?.find((e) => GRAD_SEMINAR.has(e.code, h.catalog))
+    if (grad && (comprehensive.status === 'met' || comprehensive.status === 'in-progress') && !h.attested('grad-seminar-invitation')) {
+      comprehensive.status = 'needs-attestation'
+      comprehensive.attest = h.attestations.find((a) => a.id === 'grad-seminar-invitation')
+      comprehensive.detail = `${grad.display} counts for the comprehensive only by invitation from the instructor — confirm it.`
+    }
     return [lower, upper, electives, dc, comprehensive]
   },
 })

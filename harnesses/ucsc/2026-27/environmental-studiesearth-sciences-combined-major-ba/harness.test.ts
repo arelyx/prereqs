@@ -81,4 +81,26 @@ describe('environmental-studiesearth-sciences-combined-major-ba 2026-27', () => 
   it('no program letter-grade rule outside the comprehensive', () => {
     expect(failing(run(harness, { terms: base, grades: { 'ENVS 149': 'P', 'STAT 7': 'P', 'EART 116': 'P' } }))).toEqual([])
   })
+  it('review: cross-listed partners count with no alias map (PHIL 80G, POLI 179 = ENVS 144)', () => {
+    expect(failing(run(harness, { terms: swap('PHIL 28', 'PHIL 80G') }))).toEqual([])
+    // ENVS 144 [/POLI 179] is ENVS 101–179 but not on the social science list
+    expect(find(run(harness, { terms: swap('ENVS 160', 'POLI 179') }), 'envs-electives').status).toBe('met')
+    expect(find(run(harness, { terms: swap('ENVS 149', 'POLI 179') }), 'envs-electives').status).toBe('unmet')
+  })
+  it('review: a graduate seminar is a comprehensive option only by instructor invitation', () => {
+    // "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor."
+    const t = swap('ENVS 190', 'ENVS 290')
+    expect(find(run(harness, { terms: t, attested: [] }), 'comprehensive').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: t, attested: ['graduate seminar'] }), 'comprehensive').status).toBe('met')
+    // not asked when a listed option is present
+    expect(find(run(harness, { terms: [...base, { term: '2252', courses: ['ENVS 290'] }], attested: [] }), 'comprehensive').status).toBe('met')
+    // independent study is not a seminar
+    expect(find(run(harness, { terms: swap('ENVS 190', 'ENVS 297A') }), 'comprehensive').status).toBe('unmet')
+  })
+  it('review: EART 110A used for the UD option is not also an EART elective', () => {
+    expect(failing(run(harness, { terms: swap('EART 110B') }))).toEqual(['eart-electives:unmet'])
+  })
+  it('review: EART 199 is outside EART 100–191C', () => {
+    expect(find(run(harness, { terms: swap('EART 116', 'EART 199') }), 'eart-electives').status).toBe('unmet')
+  })
 })

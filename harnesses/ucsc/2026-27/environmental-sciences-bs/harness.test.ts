@@ -40,9 +40,26 @@ describe('environmental-sciences-bs 2026-27', () => {
   it('EART lecture with a catalog lab needs the lab', () => {
     expect(failing(run(harness, { terms: swap('EART 146L') }))).toEqual(['electives:unmet'])
   })
-  it('ESCI numbered above 189, EART 198 and other departments do not count', () => {
+  it('ESCI numbered above 189 and EART 198 do not count', () => {
     expect(find(run(harness, { terms: swap('METX 150', 'EART 198') }), 'electives').status).toBe('unmet')
-    expect(find(run(harness, { terms: swap('METX 150', 'BIOE 107') }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('METX 150', 'ESCI 190') }), 'electives').status).toBe('unmet')
+  })
+  it('review (§1a petition path): up to two other-department courses need a faculty advisor’s permission', () => {
+    // "Up to two courses from other departments may be considered for upper-division elective credit by permission of a faculty advisor."
+    const one = swap('METX 150', 'BIOE 107')
+    expect(find(run(harness, { terms: one, attested: [] }), 'electives').status).toBe('needs-attestation')
+    expect(find(run(harness, { terms: one, attested: ['faculty advisor'] }), 'electives').status).toBe('met')
+    // not asked when the listed electives already suffice
+    expect(find(run(harness, { terms: [...base, { term: '2292', courses: ['BIOE 107'] }], attested: [] }), 'electives').status).toBe('met')
+    // a third other-department course does not count; nor do lower-division ones
+    const three = swap('METX 150', 'BIOE 107').map((t) => ({ ...t, courses: t.courses.map((c) => (c === 'OCEA 120' ? 'BIOE 108' : c === 'ESCI 150' ? 'ECON 170' : c)) }))
+    expect(find(run(harness, { terms: three }), 'electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('METX 150', 'BIOE 20C') }), 'electives').status).toBe('unmet')
+    // ENVS 115A without 115L is not an other-department elective
+    expect(find(run(harness, { terms: swap('METX 150', 'ENVS 115A') }), 'electives').status).toBe('unmet')
+  })
+  it('review: cross-listed OCEA 141 / ESCI 141 counts', () => {
+    expect(failing(run(harness, { terms: swap('METX 150', 'OCEA 141') }))).toEqual([])
   })
   it('one quarter of EART 199/OCEA 199 at most', () => {
     expect(failing(run(harness, { terms: swap('METX 150', 'EART 199') }))).toEqual([])

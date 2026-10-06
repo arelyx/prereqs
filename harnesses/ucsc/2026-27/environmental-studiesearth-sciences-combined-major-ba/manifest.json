@@ -6,8 +6,8 @@
  "skeleton_sha256": "0b5003260bdd40b5f8b2cc4246bd28d10906d52f0335ebee1ebcef4e5da01e54",
  "status": "verified",
  "authored_at": "2026-10-06T00:55:37Z",
- "verified_at": "2026-10-06T00:56:08Z",
- "notes": "verified line by line against sources/environmental-studiesearth-sciences-combined-major-ba.md (discontinued program, continuing students); lists followed literally (CHEM 3A+3C / 4A+4AL+4B, strict EART intro pairs); electives merge lecture/lab (labs not required, a lab alone never counts), >=1 social-science ENVS incl. LGST/POLI cross-lists; comprehensive one exclusive letter-graded slot = ENVS B.A. options on this page + Earth Sciences B.S. general-major options (EART 189A+B, 195, 191, 191C, 191D) taken from that page; DC overlay; lint ok",
+ "verified_at": "2026-10-06T23:41:05Z",
+ "notes": "verified line by line against sources/environmental-studiesearth-sciences-combined-major-ba.md (discontinued program, continuing students); lists followed literally (CHEM 3A+3C / 4A+4AL+4B, strict EART intro pairs); electives merge lecture/lab (labs not required, a lab alone never counts), >=1 social-science ENVS incl. LGST/POLI cross-lists; comprehensive one exclusive letter-graded slot = ENVS B.A. options on this page + Earth Sciences B.S. general-major options (EART 189A+B, 195, 191, 191C, 191D) taken from that page; DC overlay; lint ok; reviewed 2026-10-06: removed hand-written cross-list alias map and unknownOk partner codes (library handles cross-listing); graduate-seminar comprehensive option added behind an instructor-invitation attestation asked only when used",
  "depends_on": {
   "earth-sciences-bs": "678b4872fc06ecf2e15aa176e43000badc31908c47d73e2d36c550d57b623895"
  }

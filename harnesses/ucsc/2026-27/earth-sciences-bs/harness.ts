@@ -16,7 +16,7 @@
 //    lab when the catalog has one, ENVS 115A + 115L together = one elective.
 //  - Comprehensive courses may not also be electives or field/lab courses
 //    (exclusive slot); DC may reuse anything (overlay).
-import { canon, codes, defineHarness, isPass, policyFailure, range } from '@harness'
+import { canon, codes, defineHarness, isPass, isSummer, policyFailure, range } from '@harness'
 import type { CourseSet, Enrollment, HarnessContext, Node } from '@harness'
 
 type Conc = 'general' | 'geology' | 'planetary' | 'ocean' | 'geophysics'
@@ -178,6 +178,10 @@ export default defineHarness({
 
     // --- comprehensive (exclusive: not also an elective or field/lab course) -
     const comprehensive = comprehensiveReq(h, conc)
+    h.solve()
+    const offSeason = h.enrollments.find((e) => e.code === 'EART189B' && e.term != null && !isSummer(e.term))
+    if (conc !== 'geophysics' && offSeason && comprehensive.status !== 'met' && comprehensive.status !== 'in-progress')
+      comprehensive.detail = `${offSeason.display} is planned outside a summer term; EART 189B must be completed in the summer to count as the summer field option.`
 
     const info = h.info('comp-timing', 'Before the senior comprehensive', Q_COMP_TIMING, 'Advice on timing; enrollment in the senior comprehensive is by petition or application.')
     return [lower, upper, electives, dc, comprehensive, info, h.info('letter-grades', 'Letter Grade Policy', Q_LETTER)]
@@ -309,13 +313,17 @@ function comprehensiveReq(h: HarnessContext, conc: Conc): Node {
   const notes: string[] = []
   if (summerOk) notes.push('EART 189B must be completed in the summer; EART 109/109L, 110A and 110B/110M are prerequisites for the summer field option.')
   if (singles.length) notes.push('Capstone course offerings vary year to year; a senior thesis needs a faculty supervisor (contact the department at least three quarters before graduation).')
-  if (conc !== 'geology') notes.push(`${Q_OTHER_OPTIONS} If you have an approved alternative, ask an advisor to record it — the app cannot see it.`)
-  const quote = [intro, overlap, ...(summerOk ? ['Satisfactory completion of Summer Field'] : []), ...(singles.includes('EART 195') ? [thesisQuote] : [])]
+  // The geophysics comprehensive lists only the thesis and EART 191C; "Other
+  // options" appear for the general, planetary and ocean sciences majors only.
+  if (conc !== 'geology' && conc !== 'geophysics') notes.push(`${Q_OTHER_OPTIONS} If you have an approved alternative, ask an advisor to record it — the app cannot see it.`)
+  const quote = [intro, overlap, ...(summerOk ? ['Satisfactory completion of Summer Field', 'EART 189B must be completed in the summer.'] : []), ...(singles.includes('EART 195') ? [thesisQuote] : [])]
   const set = singles.length ? codes(...singles) : codes()
+  // "EART 189B must be completed in the summer." A dated EART 189B outside a
+  // summer term does not complete the summer field option (no term = accepted).
   const summerUnit = (avail: Enrollment[]): Enrollment[][] => {
     if (!summerOk) return []
     const a = avail.find((e) => e.code === 'EART189A')
-    const b = avail.find((e) => e.code === 'EART189B')
+    const b = avail.find((e) => e.code === 'EART189B' && (e.term == null || isSummer(e.term)))
     return a && b ? [[a, b]] : []
   }
   return h.take('comprehensive', 'Senior Comprehensive Requirement', quote, set, {

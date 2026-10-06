@@ -51,4 +51,12 @@ describe('earth-sciences-minor 2026-27', () => {
     expect(find(run(harness, { terms: swap('EART 116', 'EART 110B') }), 'upper').status).toBe('unmet')
     expect(find(run(harness, { terms: swap('EART 116', 'EART 110B', 'EART 110M') }), 'upper').status).toBe('met')
   })
+  it('review: EART 110A (no catalog lab) counts alone; 3-credit EART 189A and labs alone do not', () => {
+    expect(find(run(harness, { terms: swap('EART 116', 'EART 110A') }), 'upper').status).toBe('met')
+    expect(find(run(harness, { terms: swap('EART 116', 'EART 189A') }), 'upper').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('EART 116', 'EART 150L') }), 'upper').status).toBe('unmet')
+  })
+  it('review: a course taken twice counts once', () => {
+    expect(find(run(harness, { terms: [...swap('EART 116'), { term: '2288', courses: ['EART 104'] }] }), 'upper').status).toBe('unmet')
+  })
 })

@@ -106,4 +106,20 @@ describe('environmental-studiesbiology-combined-major-ba 2026-27', () => {
   it('ENVS internship (ENVS 183) is not an ENVS elective', () => {
     expect(find(run(harness, { terms: edit(base, 'ENVS 160', 'ENVS 183') }), 'envs-electives').status).toBe('unmet')
   })
+  it('review: cross-listed LGST 140E counts as the social-science ENVS 140 with no alias map', () => {
+    expect(failing(run(harness, { terms: edit(base, 'ENVS 147', 'LGST 140E') }))).toEqual([])
+  })
+  it('review (§1a): ALEKS placement only when no math course is in the plan; failed course stays unmet', () => {
+    expect(find(run(harness, { terms: edit(base, 'MATH 3') }), 'math').status).toBe('met')
+    expect(find(run(harness, { terms: base, grades: { 'MATH 3': 'F' }, attested: [] }), 'math').status).toBe('unmet')
+  })
+  it('review: a graduate seminar by instructor invitation can be the comprehensive', () => {
+    // "Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor."
+    const t = edit(base, 'ENVS 190', 'ENVS 290')
+    expect(failing(run(harness, { terms: t, attested: [] }))).toEqual(['comprehensive:needs-attestation'])
+    expect(failing(run(harness, { terms: t, attested: ['graduate seminar'] }))).toEqual([])
+  })
+  it('review: one course cannot be both the lab-based elective and a BIOE elective', () => {
+    expect(failing(run(harness, { terms: edit(base, 'BIOE 172') }))).toEqual(['bio-electives:unmet'])
+  })
 })

@@ -3,16 +3,16 @@ import { failing, find, plan, run } from '@harness-tools/testing'
 import harness from './harness'
 
 // Science: BIOL 20A, BIOE 20C, PHYS 6A+6L, CHEM 3A, CHEM 3B (fall 2026+).
-// EART electives 104, 140+140L, 102; ANTH electives 110, 130, 172, 176;
+// EART electives 104, 140+140L, 102; ANTH electives 101, 170, 172, 176A;
 // comprehensive ANTH 194H (also DC).
 const base = plan(
   ['2268', 'ANTH 1', 'EART 10', 'EART 10L', 'MATH 19A', 'CHEM 3A'],
   ['2270', 'ANTH 2', 'MATH 19B', 'CHEM 3B'],
   ['2272', 'ANTH 3', 'BIOL 20A', 'PHYS 6A', 'PHYS 6L'],
   ['2278', 'BIOE 20C', 'EART 110A'],
-  ['2280', 'EART 104', 'ANTH 110', 'ANTH 130'],
+  ['2280', 'EART 104', 'ANTH 101', 'ANTH 170'],
   ['2282', 'EART 140', 'EART 140L', 'ANTH 172'],
-  ['2288', 'EART 102', 'ANTH 176'],
+  ['2288', 'EART 102', 'ANTH 176A'],
   ['2290', 'ANTH 194H'],
 )
 const swap = (from: string, ...to: string[]) =>
@@ -25,12 +25,12 @@ describe('earth-sciencesanthropology-combined-major-ba 2026-27', () => {
   })
 
   it('fewer than four upper-division ANTH electives is unmet', () => {
-    expect(find(run(harness, { terms: swap('ANTH 176') }), 'anth-electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('ANTH 176A') }), 'anth-electives').status).toBe('unmet')
   })
 
   it('the comprehensive seminar cannot also be an anthropology elective', () => {
     // With one ANTH elective missing, ANTH 194H stays with the comprehensive.
-    const r = run(harness, { terms: swap('ANTH 176') })
+    const r = run(harness, { terms: swap('ANTH 176A') })
     expect(find(r, 'comprehensive').status).toBe('met')
     expect(find(r, 'anth-electives').status).toBe('unmet')
   })
@@ -99,5 +99,37 @@ describe('earth-sciencesanthropology-combined-major-ba 2026-27', () => {
   it('EART 110C counts as an EART elective only with EART 110N', () => {
     expect(find(run(harness, { terms: swap('EART 102', 'EART 110C') }), 'eart-electives').status).toBe('unmet')
     expect(find(run(harness, { terms: swap('EART 102', 'EART 110C', 'EART 110N') }), 'eart-electives').status).toBe('met')
+  })
+  const DECL = { anth_courses: 'ANTH 101, ANTH 170; ANTH 172, ANTH 176A' }
+  it('review (§1a): declaring the four listed anthropology courses meets the requirement', () => {
+    // "Students should consult the [Anthropology Department’s course list] ..." — the student declares.
+    expect(failing(run(harness, { terms: base, choices: DECL }))).toEqual([])
+  })
+  it('review: a declared list with only three courses in the plan is unmet', () => {
+    const r = run(harness, { terms: base, choices: { anth_courses: 'ANTH 101, ANTH 170, ANTH 172' } })
+    expect(failing(r)).toEqual(['anth-electives:unmet'])
+  })
+  it('review: a declared comprehensive seminar is not also an anthropology elective', () => {
+    const r = run(harness, { terms: base, choices: { anth_courses: 'ANTH 101, ANTH 170, ANTH 172, ANTH 194H' } })
+    expect(find(r, 'comprehensive').used?.map((e) => e.display)).toEqual(['ANTH 194H'])
+    expect(find(r, 'anth-electives').status).toBe('unmet')
+  })
+  it('review: a declared lower-division or 2-credit ANTH course does not count', () => {
+    const r = run(harness, { terms: swap('ANTH 176A', 'ANTH 188A'), choices: { anth_courses: 'ANTH 101, ANTH 170, ANTH 172, ANTH 188A' } })
+    expect(find(r, 'anth-electives').status).toBe('unmet')
+  })
+  it('review: EART 199 taken twice is one elective; EART 110A is not also an elective', () => {
+    const t = swap('EART 102', 'EART 199').map((q) => ({ ...q, courses: q.courses.map((c) => (c === 'EART 104' ? 'EART 199' : c)) }))
+    expect(find(run(harness, { terms: t, choices: DECL }), 'eart-electives').status).toBe('unmet')
+    expect(find(run(harness, { terms: swap('EART 102'), choices: DECL }), 'eart-electives').status).toBe('unmet')
+  })
+  it('review: EART 191C is DC but not a comprehensive option here', () => {
+    const r = run(harness, { terms: swap('ANTH 194H', 'EART 191C'), choices: DECL })
+    expect(find(r, 'dc').status).toBe('met')
+    expect(failing(r)).toEqual(['comprehensive:unmet'])
+  })
+  it('review: empty plan', () => {
+    const f = failing(run(harness, { terms: [] }))
+    for (const id of ['calc:unmet', 'science:unmet', 'eart110a:unmet', 'eart-electives:unmet', 'anth-electives:unmet', 'comprehensive:unmet']) expect(f).toContain(id)
   })
 })

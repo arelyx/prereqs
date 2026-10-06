@@ -21,18 +21,17 @@ import { codes, defineHarness, display } from '@harness'
 import type { Enrollment, Node } from '@harness'
 
 const CRSN_ELECTIVES = ['CRSN 151C', 'CRSN 155S', 'CRSN 161']
-// Breadth list in page order; cross-listed partners ([/X]) follow their course.
+// Breadth list in page order; cross-listed partners ("ENVS 140 [/LGST 140E]")
+// are one course in the library, so only the listed code appears here.
 const BREADTH = [
   'ANTH 110E', 'ANTH 110K', 'ANTH 111', 'ANTH 135A', 'ANTH 137', 'ANTH 146', 'ANTH 147', 'ANTH 160',
   'ANTH 161', 'ART 125', 'BIOE 107', 'BIOE 108', 'BIOE 145', 'BIOE 147', 'BIOE 155', 'CMMU 133',
   'CMMU 149', 'CMMU 156', 'CMMU 162', 'CMMU 186', 'EART 116', 'EART 121', 'EART 142', 'EART 146',
   'EART 191', 'ECE 175', 'ECE 176', 'ECE 177', 'ECE 180J', 'ECON 170', 'ECON 171', 'ECON 175',
-  'ENVS 110', 'ENVS 120', 'ENVS 130A', 'ENVS 130C', 'ENVS 135', 'ENVS 140', 'LGST 140E', 'ENVS 142',
-  'ENVS 143', 'ENVS 144', 'POLI 179', 'ENVS 145', 'ENVS 149', 'LGST 149', 'ENVS 151', 'LGST 151A',
-  'ENVS 152', 'POLI 170', 'ENVS 165', 'LGST 165A', 'ENVS 166', 'FMST 124', 'FMST 131', 'FMST 133',
+  'ENVS 110', 'ENVS 120', 'ENVS 130A', 'ENVS 130C', 'ENVS 135', 'ENVS 140', 'ENVS 142',
+  'ENVS 143', 'ENVS 144', 'ENVS 145', 'ENVS 149', 'ENVS 151', 'ENVS 152', 'ENVS 165', 'ENVS 166', 'FMST 124', 'FMST 131', 'FMST 133',
   'HAVC 48', 'HAVC 141K', 'HAVC 143B', 'HIS 101C', 'HIS 101F', 'HIS 151', 'HIS 196F', 'LALS 152',
-  'LALS 163', 'LGST 137', 'LGST 159', 'METX 101', 'OCEA 101', 'OCEA 102', 'POLI 132', 'LGST 132',
-  'POLI 174', 'PSYC 159E', 'SOCY 30A', 'SOCY 119', 'SOCY 125', 'SOCY 130', 'SOCY 132', 'SOCY 167',
+  'LALS 163', 'LGST 137', 'LGST 159', 'METX 101', 'OCEA 101', 'OCEA 102', 'POLI 132', 'POLI 174', 'PSYC 159E', 'SOCY 30A', 'SOCY 119', 'SOCY 125', 'SOCY 130', 'SOCY 132', 'SOCY 167',
   'SOCY 173', 'SOCY 177E', 'SOCY 177G', 'SOCY 179', 'ANTH 110IG', 'ANTH 110I',
 ]
 // "Labs are required only when required by the lecture." The catalog requires
@@ -45,13 +44,11 @@ const BREADTH_LABS: [string, string][] = [
 const LOWER_LISTED = ['HAVC 48', 'SOCY 30A']
 const UD_BREADTH = BREADTH.filter((c) => !LOWER_LISTED.includes(c))
 const KNOWN_CRSN = new Set(['CRSN151A', 'CRSN151B', 'CRSN152'])
-const ALL_LISTED = new Set([...BREADTH, ...CRSN_ELECTIVES, ...BREADTH_LABS.map((p) => p[1])].map((c) => c.replace(' ', '')))
+const ALL_LISTED = codes(...BREADTH, ...CRSN_ELECTIVES, ...BREADTH_LABS.map((p) => p[1]))
 
 const Q_LIST_NOTE =
   'The list of breadth elective courses applies to all of the upper-division options above. This list is updated regularly, but course offerings change.'
 const Q_151C = 'Topics taught in CRSN 151C vary by quarter. It may be repeated for additional upper-division credit or as a capstone option if the repeated course is on a different topic.'
-
-const partner = 'cross-listed partner named in [/X] in the source; the catalog files the course under the other code'
 
 export default defineHarness({
   program: 'sustainability-studies-minor',
@@ -65,9 +62,6 @@ export default defineHarness({
       aliases: ['151c', 'different topic'],
     },
   ],
-  coverage: {
-    unknownOk: Object.fromEntries(['LGST 140E', 'POLI 179', 'LGST 149', 'LGST 151A', 'POLI 170', 'LGST 165A', 'LGST 132'].map((c) => [c.replace(' ', ''), partner])),
-  },
   notes: [
     'Courses may be taken for a letter grade or Pass/No Pass.',
     'Substitutes for any of the required courses must be approved by the program director (add an approved substitute only once it is approved).',
@@ -123,7 +117,7 @@ export default defineHarness({
     const usedIds = new Set(used.map((e) => e.id))
     // Candidates the catalog list may not know about (the list "is updated regularly").
     const unclassified = h.passed.filter(
-      (e) => !usedIds.has(e.id) && !ALL_LISTED.has(e.code) && !KNOWN_CRSN.has(e.code) && h.catalog.get(e.code)?.division === 'upper',
+      (e) => !usedIds.has(e.id) && !ALL_LISTED.has(e.code, h.catalog) && !KNOWN_CRSN.has(e.code) && (h.catalog.get(e.code) ?? h.catalog.get(h.catalog.equivalents(e.code)[0] ?? ''))?.division === 'upper',
     )
     const listedLower = h.passed.filter((e) => LOWER_LISTED.some((c) => c.replace(' ', '') === e.code))
     const softenElective = (n: Node) => {
@@ -158,9 +152,12 @@ export default defineHarness({
     }
 
     // "A minimum of 25 upper-division credits are required to complete the minor."
-    const ud = used.filter((e) => h.catalog.get(e.code)?.division === 'upper')
-    const unknown = ud.filter((e) => Number.isNaN(h.catalog.get(e.code)?.credits ?? NaN))
-    const sum = ud.reduce((s, e) => s + (Number.isNaN(h.catalog.get(e.code)?.credits ?? NaN) ? 0 : h.catalog.get(e.code)!.credits), 0)
+    // A cross-listed partner code the catalog files under the other code
+    // (LGST 140E = ENVS 140) takes that course's credits and division.
+    const info = (code: string) => h.catalog.get(code) ?? h.catalog.equivalents(code).map((c) => h.catalog.get(c)).find(Boolean)
+    const ud = used.filter((e) => info(e.code)?.division === 'upper')
+    const unknown = ud.filter((e) => Number.isNaN(info(e.code)?.credits ?? NaN))
+    const sum = ud.reduce((s, e) => s + (Number.isNaN(info(e.code)?.credits ?? NaN) ? 0 : info(e.code)!.credits), 0)
     const qCredits = 'A minimum of 25 upper-division credits are required to complete the minor.'
     const credits =
       sum >= 25

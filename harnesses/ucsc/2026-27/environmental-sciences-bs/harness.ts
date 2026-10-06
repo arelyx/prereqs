@@ -11,6 +11,11 @@
 //    METX 150 and ECE 180J also allowed. METX 150L is a separate field course
 //    in the catalog, not METX 150's lab, so lab pairs are built only for the
 //    EART/OCEA/ESCI range.
+//  - "Up to two courses from other departments may be considered for
+//    upper-division elective credit by permission of a faculty advisor":
+//    §1a petition path — up to two upper-division 5+-credit courses from other
+//    departments in the plan may fill electives (tried last); the advisor's
+//    permission is asked only when the allocator needed one.
 //  - Comprehensive = ESCI 195 or ESCI 191 (exclusive: not also an elective);
 //    DC = the same two courses (overlay).
 import { canon, codes, defineHarness, isPass, policyFailure, range } from '@harness'
@@ -25,6 +30,7 @@ const letterExcept = (chosen: Enrollment[]): string | null => {
 const Q_CHEM_NOTE =
   'CHEM 3B and CHEM 3C taken fall 2026 or later will satisfy this requirement as they are inclusive of lab curriculum. If taken prior to fall 2026, students must also have completed CHEM 3BL and CHEM 3CL.'
 
+const Q_OTHER_DEPT = 'Up to two courses from other departments may be considered for upper-division elective credit by permission of a faculty advisor.'
 const RANGE = range('EART', 100, 199).except(['EART 196B', 'EART 198']).or(range('OCEA', 100, 199)).or(range('ESCI', 100, 189))
 const POOL = RANGE.or(codes('METX 150', 'ECE 180J')).minCredits(5)
 const ENVS115 = codes('ENVS 115A', 'ENVS 115L')
@@ -51,9 +57,17 @@ export default defineHarness({
   program: 'environmental-sciences-bs',
   edition: '2026-27',
   title: 'Environmental Sciences B.S.',
+  attestations: [
+    {
+      id: 'other-dept-electives',
+      label: 'A faculty advisor approved my upper-division course(s) from other departments as electives',
+      quote: Q_OTHER_DEPT,
+      aliases: ['other department', 'faculty advisor', 'advisor permission'],
+    },
+  ],
   notes: [
     'All courses used for the major must be taken for a letter grade, except ESCI 195, EART 198, EART 199 and OCEA 199 (P/NP allowed).',
-    'Up to two upper-division courses from other departments may count as electives by permission of a faculty advisor; other substitutions need an approved petition — add them only once approved.',
+    'Up to two upper-division courses from other departments may count as electives by permission of a faculty advisor (you will be asked to confirm it when one is needed); other substitutions need an approved petition — add them only once approved.',
     'You may not combine this major with the Earth Sciences minor, the Earth Sciences B.S., or the Earth Sciences/Anthropology combined major; double majors complete DC and comprehensive requirements for each major.',
     'Major qualification (CHEM, MATH 11A/11B, PHYS 6A/6L with C or better, an approved academic plan) gates declaration and is not tracked here.',
   ],
@@ -82,23 +96,35 @@ export default defineHarness({
 
     // Lecture/lab pairs for the EART/OCEA/ESCI range only (not METX 150).
     const pairs = labPairs(h, RANGE)
+    // Other-department candidates: upper-division, 5+ credits, outside the
+    // listed pool (per student, so the set stays a plain code list).
+    const otherCodes = [...new Set(h.enrollments.map((e) => e.code))].filter((c) => {
+      const cc = h.catalog.get(c)
+      return !!cc && cc.division === 'upper' && cc.credits >= 5 && !/^(EART|OCEA|ESCI)\d/.test(c) && !POOL.has(c, h.catalog) && !ENVS115.has(c, h.catalog)
+    })
+    const OTHER = codes(...otherCodes)
     const electives = h.take(
       'electives',
       'Five upper-division electives',
       [
         'Students take five upper-division Earth sciences, ocean sciences, and/or environmental sciences courses of 5 credits or more, chosen from EART 100-199 (excluding EART 196B and 198), OCEA 100-199, and/or ESCI (100-189). No more than one quarter of EART 199 or OCEA 199 may be used as an elective. Lecture/lab combinations count as one course. If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement.',
         'ENVS 115A and 115L, taken together, are approved as one elective. METX 150 and ECE 180J are also allowed as electives.',
+        Q_OTHER_DEPT,
       ],
-      POOL,
+      POOL.or(OTHER),
       {
         n: 5,
+        prefer: (c) => (OTHER.has(c, h.catalog) ? 1 : 0),
         policy: {},
         check: letterExcept,
         labs: { pairs, mode: 'required' },
-        atMost: [{ set: codes('EART 199', 'OCEA 199'), n: 1, label: 'at most one quarter of EART 199 or OCEA 199' }],
+        atMost: [
+          { set: codes('EART 199', 'OCEA 199'), n: 1, label: 'at most one quarter of EART 199 or OCEA 199' },
+          { set: OTHER, n: 2, label: 'at most two courses from other departments' },
+        ],
         composite: { eligible: ENVS115, build: envs115Unit },
-        pool: 'EART 100–199 (not 196B or 198), OCEA 100–199 or ESCI 100–189, 5+ credits; METX 150; ECE 180J; ENVS 115A + 115L together; a lecture counts only with its lab',
-        notes: ['Courses used for the comprehensive requirement may not also count as electives.', 'Up to two courses from other departments may be considered for upper-division elective credit by permission of a faculty advisor.'],
+        pool: 'EART 100–199 (not 196B or 198), OCEA 100–199 or ESCI 100–189, 5+ credits; METX 150; ECE 180J; ENVS 115A + 115L together; a lecture counts only with its lab; up to two upper-division courses from other departments with a faculty advisor’s permission',
+        notes: ['Courses used for the comprehensive requirement may not also count as electives.'],
       },
     )
 
@@ -125,6 +151,13 @@ export default defineHarness({
         notes: ['ESCI 195 needs a faculty sponsor’s approval before starting; ESCI 191 is limited to environmental science majors with senior standing.'],
       },
     )
+    h.solve()
+    const petitioned = (electives.used ?? []).filter((e) => OTHER.has(e.code, h.catalog))
+    if (petitioned.length && (electives.status === 'met' || electives.status === 'in-progress') && !h.attested('other-dept-electives')) {
+      electives.status = 'needs-attestation'
+      electives.attest = h.attestations.find((a) => a.id === 'other-dept-electives')
+      electives.detail = `${petitioned.map((e) => e.display).join(', ')} count${petitioned.length === 1 ? 's' : ''} as an elective only with a faculty advisor’s permission — confirm it.`
+    }
     return [lower, upper, electives, dc, comprehensive, h.info('letter-grades', 'Letter Grade Policy', 'All courses used to satisfy requirements for the environmental sciences major must be taken for a letter grade, with the exception of the following courses, which may be taken pass/no pass: ESCI 195, EART 198 and EART 199 and OCEA 199.')]
   },
 })

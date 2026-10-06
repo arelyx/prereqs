@@ -87,4 +87,11 @@ describe('environmental-studieseconomics-combined-major-ba 2026-27', () => {
     expect(find(run(harness, { terms: t }), 'envs-electives').status).toBe('unmet')
     expect(find(run(harness, { terms: edit(base, 'ENVS 160', 'ENVS 130A', 'ENVS 130L') }), 'envs-electives').status).toBe('met')
   })
+  it('review: cross-listed LGST 128 counts as ECON 128 with no alias map', () => {
+    expect(failing(run(harness, { terms: edit(base, 'ECON 120', 'LGST 128') }))).toEqual([])
+  })
+  it('review: BIOE 151B cannot be both the comprehensive and the natural-science ENVS elective', () => {
+    const r = run(harness, { terms: edit(edit(base, 'ENVS 196', 'BIOE 151B'), 'ENVS 160') })
+    expect(failing(r)).toEqual(['envs-electives:unmet'])
+  })
 })

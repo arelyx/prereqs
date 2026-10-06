@@ -21,19 +21,7 @@ import type { Enrollment, HarnessContext, Node } from '@harness'
 
 const FALL_2026 = 2268
 
-// Cross-listed partners named on the page ("ENVS 130B [/LGST 130B]").
-const XL: Record<string, string> = {
-  'ENVS 130B': 'LGST 130B',
-  'ENVS 140': 'LGST 140E',
-  'ENVS 144': 'POLI 179',
-  'ENVS 149': 'LGST 149',
-  'ENVS 150': 'LGST 150A',
-  'ENVS 151': 'LGST 151A',
-  'ENVS 152': 'POLI 170',
-  'ENVS 165': 'LGST 165A',
-}
-const withXL = (list: string[]) => list.flatMap((c) => (XL[c] ? [c, XL[c]] : [c]))
-
+// Cross-listed partners ("ENVS 130B [/LGST 130B]") are one course in the library.
 const NATURAL = [
   'ENVS 104A', 'ENVS 106A', 'ENVS 107A', 'ENVS 107B', 'ENVS 107C', 'ENVS 108', 'BIOE 151A', 'BIOE 151B',
   'BIOE 151C', 'BIOE 151D', 'ENVS 120', 'ENVS 122', 'ENVS 123', 'ENVS 130A', 'ENVS 130C', 'ENVS 131',
@@ -83,11 +71,11 @@ function requiredLabs(chosen: Enrollment[]): string | null {
 }
 
 const NATURAL_SET = codes(...NATURAL)
-const SOCIAL_SET = codes(...withXL(SOCIAL))
+const SOCIAL_SET = codes(...SOCIAL)
 const NOT_BOTH = codes('ENVS 183A', 'ENVS 195A')
 // "ENVS 101-179, ENVS 183A, and ENVS 195A" (5 credits or more; ENVS 104A is
 // 2 credits but counts with its 5-credit lab).
-const ENVS_POOL = range('ENVS', 101, 179).minCredits(5).or(codes('ENVS 104A', 'ENVS 183A', 'ENVS 195A', ...withXL(SOCIAL)))
+const ENVS_POOL = range('ENVS', 101, 179).minCredits(5).or(codes('ENVS 104A', 'ENVS 183A', 'ENVS 195A', ...SOCIAL))
 const LISTED_POOL = ENVS_POOL.or(NATURAL_SET)
 
 const Q_CHEM_NOTE =
@@ -96,6 +84,13 @@ const Q_NOT_BOTH = 'Students cannot take both ENVS 183A and ENVS 195A.'
 const Q_LABS = 'Associated labs are required only when required by the lecture.'
 const Q_COMP_LETTER = 'All courses used to satisfy the senior comprehensive requirement must be taken for a letter grade.'
 const Q_DC = 'The DC requirement in environmental studies is satisfied by completing'
+const Q_MATH_NOTE = 'May also be satisfied with a score of 3 or higher on the AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement Exam.'
+const MATH = codes('AM 3', 'AM 11A', 'AM 11B', 'MATH 3', 'MATH 11A', 'MATH 16A', 'MATH 19A')
+// "Students with advanced skills in one of the graduate focal areas may also
+// take a graduate seminar by invitation from the instructor." (general major
+// only) — an ENVS graduate seminar, asked about only when no listed option is met.
+const Q_GRAD = 'Students with advanced skills in one of the graduate focal areas may also take a graduate seminar by invitation from the instructor.'
+const GRAD_SEMINAR = range('ENVS', 200, 296).where((c) => !/Laborator/i.test(c.title), 'not a laboratory')
 
 type Conc = 'general' | 'gis' | 'gej' | 'csp'
 
@@ -121,14 +116,19 @@ export default defineHarness({
   attestations: [
     {
       id: 'math-placement',
-      label: 'AP Calculus score of 3+ or ALEKS Math Placement score of 300+ (in place of the math course)',
+      label: 'Scored 300 or higher on the ALEKS Math Placement Exam (in place of the math course)',
       quote: 'May also be satisfied with a score of 3 or higher on the AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement Exam.',
-      aliases: ['aleks', 'ap calculus', 'math placement'],
+      aliases: ['aleks', 'math placement', 'placement exam'],
+    },
+    {
+      id: 'grad-seminar-invitation',
+      label: 'Invited by the instructor to take a graduate seminar for the senior comprehensive',
+      quote: Q_GRAD,
+      aliases: ['graduate seminar', 'grad seminar'],
     },
   ],
   coverage: {
     unknownOk: {
-      ...Object.fromEntries(Object.values(XL).map((c) => [c.replace(' ', ''), 'cross-listed partner of an ENVS course ([/X] on the page); the catalog files it under ENVS'])),
       XENV188: 'California Ecology and Conservation (CEC) field course named on the page; not in the course catalog',
       ENVS188: 'NRS/ENVS 188 (CEC course) named in the DC note; not in the course catalog',
     },
@@ -143,14 +143,18 @@ export default defineHarness({
     h.policy = undefined
     const conc = (h.choice('concentration') ?? 'general') as Conc
 
+    // §1a test-out: "May also be satisfied with a score of 3 or higher on the
+    // AP Calculus exam or a score of 300 or higher on the ALEKS Math Placement
+    // Exam." AP credit is a course in the plan; ALEKS is an attestation offered
+    // only when no listed math course is in the plan.
+    const math = h.take('math', 'Mathematics', ['Plus one of the following courses:', Q_MATH_NOTE], MATH, {
+      notes: ['AP Calculus (score 3+): add the exam credit to your plan as the course it grants.'],
+    })
     const lower = h.group('lower', 'Lower-Division Courses', [
       chemistry(h),
       h.take('ecology', 'ENVS 24 or BIOE 20C', 'Plus one of the following courses:', codes('ENVS 24', 'BIOE 20C')),
       h.take('envs25', 'ENVS 25', 'Plus the following course:', codes('ENVS 25')),
-      h.either('math', 'Mathematics', 'Plus one of the following courses:', [
-        h.take('math-course', 'One mathematics course', 'Plus one of the following courses:', codes('AM 3', 'AM 11A', 'AM 11B', 'MATH 3', 'MATH 11A', 'MATH 16A', 'MATH 19A')),
-        h.attest('math-placement'),
-      ]),
+      math,
       h.options('stats', 'Statistics series', 'Plus one of these statistics series:', [['STAT 7', 'STAT 7L'], ['STAT 17', 'STAT 17L']]),
       h.take('social', 'Social science course', 'Plus one of the following:', codes('ANTH 2', 'ENVS 26', 'SOCY 1', 'SOCY 10', 'SOCY 15')),
     ], { notes: ['Continuing students must complete all lower-division requirements before taking ENVS 100 and ENVS 100L.'] })
@@ -191,7 +195,7 @@ export default defineHarness({
         { ...electiveOpts(4, true), notes: ['The department strongly recommends at least one internship related to GIS applications.'] },
       )
     } else if (conc === 'gej') {
-      upperExtra.push(h.take('ej-electives', 'Four environmental justice electives', 'Plus four of the following environmental justice electives:', codes(...withXL(EJ)), { n: 4 }))
+      upperExtra.push(h.take('ej-electives', 'Four environmental justice electives', 'Plus four of the following environmental justice electives:', codes(...EJ), { n: 4 }))
       // "Among those four courses, at least one course must be from the list
       // below of courses based in the natural sciences." The EJ list has no
       // natural-science course, so this constrains the three additional electives.
@@ -210,8 +214,8 @@ export default defineHarness({
     } else {
       upperExtra.push(
         h.take('csp-conservation', 'ENVS 120, ENVS 160, or BIOE 165', 'Plus one of the following:', codes('ENVS 120', 'ENVS 160', 'BIOE 165')),
-        h.take('csp-policy', 'ENVS 140 or ENVS 150', 'Plus one of the following:', codes(...withXL(['ENVS 140', 'ENVS 150']))),
-        h.take('csp-electives', 'Two CSP electives', ['Plus two of the following CSP electives:', 'No duplicate courses from lists above.', 'Lecture/lab combinations count as a single course.'], codes(...withXL(CSP_ELECTIVES)), {
+        h.take('csp-policy', 'ENVS 140 or ENVS 150', 'Plus one of the following:', codes('ENVS 140', 'ENVS 150')),
+        h.take('csp-electives', 'Two CSP electives', ['Plus two of the following CSP electives:', 'No duplicate courses from lists above.', 'Lecture/lab combinations count as a single course.'], codes(...CSP_ELECTIVES), {
           n: 2,
           labs: { pairs: [['ENVS 115A', 'ENVS 115L']], mode: 'merge' },
         }),
@@ -253,7 +257,7 @@ export default defineHarness({
       gej: [['ENVS 183A', 'ENVS 183B'], ['ENVS 190'], ['ENVS 195A', 'ENVS 195B'], ['ENVS 196'], ['ENVS 196G']],
       csp: [['BIOE 151B'], ['ENVS 183A', 'ENVS 183B'], ['ENVS 190'], ['ENVS 195A', 'ENVS 195B'], ['ENVS 196'], ['ENVS 196G']],
     }
-    const compQuote = ['The senior comprehensive may be satisfied by completing one of the options listed below.', Q_COMP_LETTER]
+    const compQuote = ['The senior comprehensive may be satisfied by completing one of the options listed below.', Q_COMP_LETTER, ...(conc === 'general' ? [Q_GRAD] : [])]
     const topic: Record<Conc, string | null> = {
       general: null,
       gis: 'The topic engaged in the senior comprehensive courses must be relevant to the field of Geographic Information Systems.',
@@ -263,7 +267,7 @@ export default defineHarness({
     const compNotes = [
       'The senior thesis and senior internship options require applying to a faculty mentor early and at least a two-quarter commitment.',
       ...(topic[conc] ? [`${topic[conc]} (reviewed by the course instructor)`] : []),
-      ...(conc === 'general' ? ['Students with advanced skills may take a graduate seminar by invitation from the instructor (confirm with an advisor).'] : []),
+      ...(conc === 'general' ? ['An ENVS graduate seminar counts only by invitation from the instructor (you will be asked to confirm it).'] : []),
     ]
     const comprehensive = h.options('comprehensive', 'Comprehensive Requirement (letter grade)', compQuote, compPackages[conc], {
       exclusive: false,
@@ -271,6 +275,31 @@ export default defineHarness({
       notes: compNotes,
     })
 
+    h.solve()
+    if (math.status === 'unmet' && !h.enrollments.some((e) => MATH.has(e.code, h.catalog))) {
+      if (h.attested('math-placement')) {
+        math.status = 'met'
+        math.detail = 'Met by placement (ALEKS score of 300 or higher).'
+      } else {
+        math.status = 'needs-attestation'
+        math.attest = h.attestations.find((a) => a.id === 'math-placement')
+        math.detail = 'Take one of the listed courses (AP Calculus credit: add it as the course it grants), or confirm an ALEKS score of 300 or higher.'
+      }
+    }
+    if (conc === 'general' && comprehensive.status === 'unmet') {
+      const grad = h.passed.find((e) => GRAD_SEMINAR.has(e.code, h.catalog) && policyFailure(e, { letter: true }) == null)
+      if (grad) {
+        comprehensive.used = [grad]
+        if (h.attested('grad-seminar-invitation')) {
+          comprehensive.status = 'met'
+          comprehensive.detail = `${grad.display}: graduate seminar taken by invitation from the instructor.`
+        } else {
+          comprehensive.status = 'needs-attestation'
+          comprehensive.attest = h.attestations.find((a) => a.id === 'grad-seminar-invitation')
+          comprehensive.detail = `${grad.display} counts for the comprehensive only if the instructor invited you — confirm it.`
+        }
+      }
+    }
     return [lower, upper, electives, dc, comprehensive]
 
     function electiveOpts(n: number, social: boolean) {
