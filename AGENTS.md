@@ -55,6 +55,11 @@ harness primitive) is fine — but make it a separate, explained commit.
    harness. A held-out split lives outside the repo; don't go looking.
    A perfect golden score is not proof — also probe harnesses adversarially.
 10. **Back up before a production load** (`ops/backup/backup.sh`).
+11. **Harness code is pure** (no network/DOM/clock/randomness) and never
+    confidently wrong: unknowable ⇒ `cannot-check`, not `met`. Every harness
+    node quotes the committed source verbatim; `npm run harness:lint` must
+    pass, and a manifest is `verified` only after a line-by-line re-read of
+    the source.
 
 ## Environment (non-default ports — this host runs other projects)
 
@@ -78,11 +83,23 @@ harness primitive) is fine — but make it a separate, explained commit.
 | `pipelines/common/` | cold | http, guards (`expect`), snapshot cache |
 | `data/` | — | gitignored fetch cache (raw HTML + snapshots) |
 | `data-committed/ucsc/` | hot output | canonical served data + `ledger.json` |
-| `harnesses/ucsc/<ed>/<slug>/` | warm output | per-program requirement harnesses |
+| `harnesses/ucsc/<ed>/<slug>/` | warm output | per program per edition: `harness.ts`, `harness.test.ts`, `manifest.json`, optional `View.tsx` |
+| `frontend/src/harness/` | cold | harness standard library (`@harness`), browser registry, catalog client |
+| `frontend/src/components/degree/` | cold | degree dashboards (default renderer + building blocks for Views) |
+| `frontend/harness-tools/` | cold | harness lint, manifest stamp, edition port, profiler, node catalog |
 | `eval/` | cold | golden cases (dev split), runner, adapters |
-| `backend/` | cold | FastAPI API, loader, planner engine, transcript import |
+| `backend/` | cold | FastAPI API (incl. `GET /u/{univ}/catalog/compact` for harnesses), loader, planner engine, transcript import |
 | `frontend/` | cold | React app |
 | `docs/` | — | ARCHITECTURE, REFRESH (temporal runbook), HARNESSES, DATA_MODEL, OPERATIONS, per-source research |
+
+## Harness commands (from `frontend/`)
+
+```bash
+npx vitest run                 # harness tests
+npm run harness:lint           # all harnesses (or -- <ed>/<slug>)
+npm run typecheck              # app + harnesses + tooling
+cd .. && python eval/run.py --adapter eval/adapters/c-code.sh
+```
 
 ## Verification bar for any change
 

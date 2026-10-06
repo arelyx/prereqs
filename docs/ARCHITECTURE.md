@@ -116,6 +116,26 @@ harnesses/ucsc/<edition>/<slug>/
 - `eval/` scores any approach against golden cases through an adapter
   (`eval/README.md`).
 
+**This repo's approach (C, "harness as code")** — details and the API in
+`docs/HARNESSES.md`:
+
+- A harness is a TypeScript module (`harness.ts`, plus `harness.test.ts`,
+  optional bespoke `View.tsx`) written by the frontier agent straight from
+  the source text, on a small standard library (`frontend/src/harness/`,
+  imported as `@harness`): course sets, grade policies, an exclusive-slot
+  ALLOCATION solver (deterministic, bounded), per-term helpers, declared
+  choices and attestations, and a `ProgressReport` whose every node carries
+  a verbatim source quote. Code may bypass the library for once-only rules.
+- Evaluation is **client-side**: the browser loads the harness for the
+  plan's (edition, slug) through a Vite-globbed registry, fetches catalog
+  facts once (`GET /u/{univ}/catalog/compact`), and re-evaluates on every
+  edit. The same modules run under node for tests, lint and eval.
+- Review gates: `harness.test.ts` (vitest), `npm run typecheck`,
+  `npm run harness:lint` (quotes verbatim in the source, codes in the
+  catalog, every source course row referenced, manifest hashes current,
+  authoring pitfalls), `eval/adapters/c-code.sh`.
+- Programs without a harness keep the legacy mirror below.
+
 The legacy approach — one generic JSON rule vocabulary for every program,
 classified by regex (`data-committed/ucsc/programs/`, evaluated by
 `backend/app/planner.py:evaluate_requirements`) — is kept as the baseline
@@ -132,6 +152,8 @@ classified by regex (`data-committed/ucsc/programs/`, evaluated by
 - `backend/app/api/` — catalog (courses, graph, programs per edition,
   program source text), plans (validate is public; CRUD needs a token),
   auth, transcript.
+- `frontend/src/harness/` + `frontend/src/components/degree/` — harness
+  library, registry, and the degree dashboards (default + bespoke Views).
 - `frontend/src/store.tsx` — plans live in localStorage
   (`prereqs.plans.v2`), synced per plan to the server when signed in; plan
   content is identical in both places.

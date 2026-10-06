@@ -1,0 +1,11 @@
+// Harness standard library — import everything from '@harness'.
+export * from './types'
+export * from './courses'
+export * from './grades'
+export * from './terms'
+export { allocate, combinations } from './allocate'
+export type { Slot, Allocation } from './allocate'
+export { HarnessContext, worst, best, rollUp } from './context'
+export type { Node, TakeOpts, Constraint, Combine } from './context'
+export { defineHarness, runHarness, verdict, unmetLabels } from './run'
+export type { Harness } from './run'

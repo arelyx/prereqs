@@ -318,3 +318,17 @@ def test_filter_passthrough_on_non_range_rules(client, db_session, seeded):
     assert lst["matching"] == ["CSE101", "CSE130"]
     # and the pool-fed parent counts range matches (evaluation was already right)
     assert rules[0]["done"] == 2 and rules[0]["have"] == ["CSE101", "CSE130"]
+
+
+def test_catalog_compact(client, seeded):
+    r = client.get("/u/ucsc/catalog/compact")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["described"] == []
+    codes = {c["code"] for c in body["courses"]}
+    assert "CSE12" in codes
+    assert all("description" not in c for c in body["courses"])
+    subj = body["courses"][0]["subject"]
+    r = client.get(f"/u/ucsc/catalog/compact?describe={subj.lower()}")
+    with_desc = [c for c in r.json()["courses"] if "description" in c]
+    assert with_desc and all(c["subject"] == subj for c in with_desc)

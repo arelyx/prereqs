@@ -5,9 +5,29 @@
 // Programs and their sections both collapse; the arrangement persists in
 // localStorage so a reload isn't a jarring reset (no network involved).
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { api } from '../api'
+import type { ProgramSummary } from '../api'
+import { findHarness } from '../harness/registry'
 import { useStore } from '../store'
+import ProgramDashboard from './degree/ProgramDashboard'
 import { RuleRow } from './rules'
+
+// Programs with a harness (harnesses/ucsc/<edition>/<slug>/) get the
+// client-side degree dashboard; every other program keeps the legacy
+// generic-JSON mirror below.
+let programsCache: Promise<ProgramSummary[]> | null = null
+function usePrograms(): ProgramSummary[] {
+  const [list, setList] = useState<ProgramSummary[]>([])
+  useEffect(() => {
+    programsCache ??= api.programs().catch((e) => {
+      programsCache = null
+      throw e
+    })
+    programsCache.then(setList).catch(() => {})
+  }, [])
+  return list
+}
 
 const HIDDEN_KINDS = new Set(['qualification', 'screening'])
 
@@ -40,8 +60,16 @@ export default function ProgramRequirements({
 }) {
   const store = useStore()
   const [collapse, setCollapse] = useState<CollapseState>(readCollapse)
-  const progress = store.validation?.programs ?? []
-  if (!progress.length) return null
+  const programs = usePrograms()
+  const summaries = store.programIds
+    .map((id) => programs.find((p) => p.id === id))
+    .filter((p): p is ProgramSummary => !!p)
+  const harnessed = summaries
+    .map((p) => ({ p, entry: findHarness(p.edition, p.slug) }))
+    .filter((x): x is { p: ProgramSummary; entry: NonNullable<ReturnType<typeof findHarness>> } => !!x.entry)
+  const covered = new Set(harnessed.map((x) => x.p.id))
+  const progress = (store.validation?.programs ?? []).filter((p) => !covered.has(p.program_id))
+  if (!progress.length && !harnessed.length) return null
 
   const save = (next: CollapseState) => {
     setCollapse(next)
@@ -61,6 +89,9 @@ export default function ProgramRequirements({
 
   return (
     <>
+      {harnessed.map(({ p, entry }) => (
+        <ProgramDashboard key={`${p.id}`} program={p} entry={entry} onOpenCourse={onOpenCourse} />
+      ))}
       {progress.map((prog) => {
         const isOpen = programOpen(prog.program_id)
         const sections = prog.sections.filter((s) => !HIDDEN_KINDS.has(s.kind))

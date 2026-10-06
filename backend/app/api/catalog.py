@@ -257,6 +257,40 @@ def course_graph(
     return {"root": root.code, "nodes": list(nodes.values()), "edges": edges}
 
 
+@router.get("/u/{university_id}/catalog/compact")
+def catalog_compact(
+    university_id: str,
+    describe: str = Query("", max_length=200, description="comma-separated subjects whose descriptions to include"),
+    db: Session = Depends(get_db),
+) -> dict:
+    """Every course with the facts program harnesses evaluate against, in one
+    fetch (harnesses run client-side). Descriptions are large, so they are
+    included only for the subjects a harness asks for (``describe=LIT,PSYC``)."""
+    want = {s.strip().upper() for s in describe.split(",") if s.strip()}
+    rows = db.execute(
+        select(
+            Course.code, Course.display_code, Course.subject, Course.number, Course.credits,
+            Course.division, Course.title, Course.cross_listed, Course.repeatable, Course.description,
+        )
+        .where(Course.university_id == university_id)
+        .order_by(Course.subject, Course.number, Course.code)
+    ).all()
+    courses = []
+    for r in rows:
+        c = {
+            "code": r.code, "display_code": r.display_code, "subject": r.subject, "number": r.number,
+            "credits": r.credits, "division": r.division, "title": r.title,
+        }
+        if r.cross_listed:
+            c["cross_listed"] = r.cross_listed
+        if r.repeatable:
+            c["repeatable"] = True
+        if r.subject in want:
+            c["description"] = r.description
+        courses.append(c)
+    return {"described": sorted(want), "courses": courses}
+
+
 @router.get("/u/{university_id}/editions")
 def list_editions(university_id: str, db: Session = Depends(get_db)) -> list[dict]:
     """Catalog editions with program data, newest first. A plan is bound to

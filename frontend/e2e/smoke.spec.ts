@@ -116,35 +116,42 @@ test('GE panel tracks categories from completed courses', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'CSE 16', exact: true }).nth(1)).toBeVisible()
 })
 
-test('program: requirements in main fold, general info in sidebar', async ({ page }) => {
+test('program with a harness: client-side degree dashboard in main fold', async ({ page }) => {
   await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. ✓' })
+  const dash = page.getByRole('region', { name: 'Computer Science B.S. degree progress' })
+  await expect(dash).toBeVisible()
+  // Summary bar + requirement sections, expanded by default.
+  await expect(dash.getByText(/of \d+ requirements/)).toBeVisible()
+  await expect(dash.getByText('Lower-Division Courses')).toBeVisible()
+  // Every requirement carries the verbatim catalog wording behind a toggle.
+  await dash.getByRole('button', { name: /catalog wording/ }).first().click()
+  await expect(dash.getByText('“All of the following”').first()).toBeVisible()
+  // Adding a course updates progress instantly (evaluated in the browser).
+  await page.getByPlaceholder('Add a course you already took…').fill('CSE 12')
+  await page.getByRole('button', { name: /CSE 12 Computer Systems/ }).click()
+  await expect(dash.getByRole('button', { name: 'CSE 12 — counted' })).toBeVisible()
+  // Collapse persists across reload.
+  const header = dash.getByRole('button', { name: /Computer Science B\.S\./ }).first()
+  await header.click()
+  await expect(dash.getByText('Lower-Division Courses')).toHaveCount(0)
+  await page.reload()
+  await expect(page.getByRole('region', { name: 'Computer Science B.S. degree progress' }).getByText('Lower-Division Courses')).toHaveCount(0)
+})
+
+test('program without a harness: legacy mirror in main fold, general info in sidebar', async ({ page }) => {
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'History B.A. ✓' })
   // Main fold: collapsed program block; no aggregate met-counter anywhere
-  // (the app mirrors the page, it does not audit degrees).
-  const header = page.getByRole('button', { name: /Computer Science B\.S\./ })
+  // (the legacy view mirrors the page, it does not audit degrees).
+  const header = page.getByRole('button', { name: /History B\.A\./ })
   await expect(header).toBeVisible()
   await expect(page.getByText(/requirements met/)).toHaveCount(0)
-  await expect(page.getByText('Lower-Division')).toHaveCount(0) // collapsed
+  const sections = page.getByRole('button', { name: /Course Requirements/ })
+  await expect(sections).toHaveCount(0) // collapsed
   await header.click()
-  await expect(page.getByText('Lower-Division').first()).toBeVisible()
-  // Elective/range rules are gray manual-verification items.
+  await expect(sections.first()).toBeVisible()
   await expect(page.getByText('⚠ verify manually').first()).toBeVisible()
   await header.click()
-  await expect(page.getByText('Lower-Division')).toHaveCount(0)
-
-  // Sections collapse too, and the arrangement survives a reload
-  // (persisted in localStorage, not reset per visit).
-  await header.click()
-  const sectionToggle = page.getByRole('button', { name: /Lower-Division/ }).first()
-  const allOf = page.getByText(/All of \d+/)
-  await expect(allOf.first()).toBeVisible() // sections expanded by default
-  const expandedCount = await allOf.count()
-  await sectionToggle.click()
-  await expect(allOf).toHaveCount(expandedCount - 1)
-  await page.reload()
-  await expect(page.getByRole('button', { name: /Lower-Division/ }).first()).toBeVisible() // program stayed open
-  await expect(allOf).toHaveCount(expandedCount - 1) // section stayed collapsed
-  await page.getByRole('button', { name: /Lower-Division/ }).first().click()
-  await expect(allOf).toHaveCount(expandedCount)
+  await expect(sections).toHaveCount(0)
 
   // Sidebar: general info card with catalog link + info sections (all
   // collapsed by default).
@@ -155,7 +162,6 @@ test('program: requirements in main fold, general info in sidebar', async ({ pag
 
   // Full-catalog verification (2026-07-26): every program is verified, so
   // no warning badges anywhere and every option carries the checkmark.
-  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'History B.A. ✓' })
   await expect(page.getByText('unverified', { exact: true })).toHaveCount(0)
 })
 
@@ -238,11 +244,11 @@ test('theme toggle switches to dark and persists across reload', async ({ page }
 
 test('CS B.S. electives display the CSE ranges, not just the explicit pool', async ({ page }) => {
   await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. \u2713' })
-  await page.getByRole('button', { name: /Computer Science B\.S\./ }).click()
-  // The pool rule's filter is requirement content and must be visible.
+  // The elective pool is requirement content and must be visible (dashboard
+  // shows it on the open electives requirement).
   await expect(page.getByText(/CSE 100\u2013189/).first()).toBeVisible()
   await expect(page.getByText(/CSE 201\u2013279/).first()).toBeVisible()
-  await expect(page.getByText(/excluding/).first()).toBeVisible()
+  await expect(page.getByText(/not CSE 115A/).first()).toBeVisible()
 })
 
 test('catalog year: switching editions keeps the program, bound to the older catalog', async ({ page }) => {
@@ -252,7 +258,11 @@ test('catalog year: switching editions keeps the program, bound to the older cat
   await expect(page.getByText('2026-27 catalog')).toBeVisible()
   await page.getByRole('combobox', { name: 'Catalog year' }).selectOption('2025-26')
   // Same slug, 2025-26 row: the info card now cites the older edition.
-  await expect(page.getByText('2025-26 catalog')).toBeVisible()
+  await expect(page.getByText('2025-26 catalog').first()).toBeVisible()
+  // The dashboard runs the 2025-26 harness (CSE 102 OR 103 that year).
+  const dash = page.getByRole('region', { name: 'Computer Science B.S. degree progress' })
+  await expect(dash.getByText('CSE 102 or CSE 103')).toBeVisible()
   await page.reload()
   await expect(page.getByRole('combobox', { name: 'Catalog year' })).toHaveValue('2025-26')
+  await expect(dash.getByText('CSE 102 or CSE 103')).toBeVisible()
 })

@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 
 from .api import auth as auth_api
 from .api import catalog as catalog_api
@@ -21,6 +22,8 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+    # The compact catalog (harnesses evaluate client-side) is ~700 KB raw.
+    app.add_middleware(GZipMiddleware, minimum_size=2048)
     app.include_router(auth_api.router)
     app.include_router(catalog_api.router)
     app.include_router(plans_api.router)
