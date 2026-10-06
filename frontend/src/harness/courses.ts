@@ -35,6 +35,7 @@ export interface RawCourse {
   division?: string
   title?: string
   cross_listed?: string[]
+  repeatable?: boolean
   description?: string | null
 }
 
@@ -53,6 +54,7 @@ export function makeCatalog(rows: RawCourse[], describedSubjects: Iterable<strin
       division: r.division ?? '',
       title: r.title ?? '',
       crossListed: (r.cross_listed ?? []).map(canon),
+      repeatable: !!r.repeatable,
       description: r.description ?? undefined,
     })
   }

@@ -28,7 +28,51 @@ export interface Allocation {
   used: Set<string> // enrollment ids
 }
 
-export function allocate(slots: Slot[], pool: Enrollment[], budget = 400_000): Allocation {
+// Work accounting: every combination examined anywhere inside one
+// allocate() call (including inside slots' fill generators) costs one unit.
+// Deterministic — it counts steps, never time.
+let work = 0
+let workLimit = Infinity
+const EXHAUSTED = new Error('allocation work budget exhausted')
+
+/** Charge one unit of work; throws (caught by allocate) past the budget. */
+export function tick(): void {
+  if (++work > workLimit) throw EXHAUSTED
+}
+
+/** Default work budget per allocate() call (~0.1–0.3 s in a browser). */
+export const WORK_BUDGET = 100_000
+/** Budget for proving a single slot has (no) fill. */
+const PROBE_BUDGET = 5_000
+
+/** Does `slot` have any fill from `avail`? 'maybe' when the probe budget runs out. */
+function hasFill(slot: Slot, avail: Enrollment[]): boolean | 'maybe' {
+  const outer = workLimit
+  const start = work
+  workLimit = Math.min(outer, work + PROBE_BUDGET)
+  try {
+    return !slot.fills(avail)[Symbol.iterator]().next().done
+  } catch (e) {
+    if (e !== EXHAUSTED) throw e
+    if (outer !== Infinity && work >= outer) throw e // the real budget is gone
+    return 'maybe'
+  } finally {
+    workLimit = outer
+    if (outer === Infinity) work = start
+  }
+}
+
+export function allocate(allSlots: Slot[], pool: Enrollment[], budget = WORK_BUDGET): Allocation {
+  // Slots with no possible fill even from the whole pool can never be
+  // satisfied: search only the rest (they still get partial progress below).
+  // Most specific slots first (fewest eligible enrollments; stable): among
+  // equally good assignments, an explicit list keeps its courses and an
+  // open-ended pool takes what is left.
+  const slots = allSlots
+    .filter((s) => hasFill(s, pool.filter((e) => s.eligible(e))) !== false)
+    .map((s, i) => ({ s, i, k: pool.filter((e) => s.eligible(e)).length }))
+    .sort((a, b) => a.k - b.k || a.i - b.i)
+    .map((x) => x.s)
   const n = slots.length
   let nodes = 0
   let exhausted = false
@@ -43,7 +87,20 @@ export function allocate(slots: Slot[], pool: Enrollment[], budget = 400_000): A
       exhausted = true
       return
     }
+    tick()
     if (sat + (n - i) <= bestSat) return
+    // Tighter bound: only slots that still have some fill from the unused pool can be satisfied.
+    if (i < n && bestSat >= 0) {
+      let ub = sat
+      for (let j = i; j < n; j++) {
+        const s = slots[j]
+        const avail = pool.filter((e) => !used.has(e.id) && s.eligible(e))
+        work += avail.length >> 3
+        if (hasFill(s, avail) !== false) ub++
+        if (ub > bestSat) break
+      }
+      if (ub <= bestSat) return
+    }
     if (i === n) {
       bestSat = sat
       best = new Map(assign)
@@ -61,7 +118,16 @@ export function allocate(slots: Slot[], pool: Enrollment[], budget = 400_000): A
     }
     dfs(i + 1, sat)
   }
-  dfs(0, 0)
+  work = 0
+  workLimit = budget
+  try {
+    dfs(0, 0)
+  } catch (e) {
+    if (e !== EXHAUSTED) throw e
+    exhausted = true
+  } finally {
+    workLimit = Infinity
+  }
 
   // Partial progress for unsatisfied slots from what is left, in slot order.
   const finalUsed = new Set<string>()
@@ -69,7 +135,7 @@ export function allocate(slots: Slot[], pool: Enrollment[], budget = 400_000): A
   const chosen = new Map(best)
   const partial = new Map<string, { have: number; need: number }>()
   const satisfied = new Set(best.keys())
-  for (const slot of slots) {
+  for (const slot of allSlots) {
     if (satisfied.has(slot.id)) continue
     const avail = pool.filter((e) => !finalUsed.has(e.id) && slot.eligible(e))
     const p = slot.partial(avail)
@@ -90,6 +156,7 @@ export function* combinations<T>(items: T[], k: number): Generator<T[]> {
   }
   const idx = Array.from({ length: k }, (_, i) => i)
   while (true) {
+    tick()
     yield idx.map((i) => items[i])
     let i = k - 1
     while (i >= 0 && idx[i] === n - k + i) i--

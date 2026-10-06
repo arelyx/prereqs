@@ -26,6 +26,7 @@ export interface CatalogCourse {
   division: string // 'lower' | 'upper' | 'graduate' | …
   title: string
   crossListed: string[] // canonical codes
+  repeatable: boolean // "may be repeated for credit" per the catalog
   description?: string // only for subjects a harness asked for (catalogNeeds)
 }
 

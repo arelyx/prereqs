@@ -36,6 +36,8 @@ export function ids(report: ProgressReport): string[] {
 export function failing(report: ProgressReport): string[] {
   const out: string[] = []
   const visit = (n: ReqNode) => {
+    // A satisfied alternative group hides its unchosen branches.
+    if (n.children?.length && (n as { combine?: string }).combine === 'any' && n.status === 'met') return
     if (n.children?.length) return n.children.forEach(visit)
     if (n.status !== 'met' && n.status !== 'info') out.push(`${n.id}:${n.status}`)
   }

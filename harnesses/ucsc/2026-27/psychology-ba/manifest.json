@@ -1,0 +1,11 @@
+{
+ "program": "psychology-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "5c47e39fee772318f8d7d3c301ca89bb5054dbcd4e83d95978c3edf7c928ac30",
+ "skeleton_sha256": "fc132ed89f2e14728ec0ed5ef5282c05633b45890434c9c7bfb61060a31db0bd",
+ "status": "draft",
+ "authored_at": "2026-10-05T23:46:58Z",
+ "verified_at": null,
+ "notes": ""
+}

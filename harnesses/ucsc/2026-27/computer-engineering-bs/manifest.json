@@ -1,0 +1,11 @@
+{
+ "program": "computer-engineering-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "c646cd328bdafecbb1e9cbc49df27db2656e571671f3cc676165925a964fd55e",
+ "skeleton_sha256": "8183381a81a6c2ca8a3e49d2c38274eea6fa1af4dd8024411270d21d4a71d435",
+ "status": "draft",
+ "authored_at": "2026-10-05T23:53:34Z",
+ "verified_at": null,
+ "notes": ""
+}

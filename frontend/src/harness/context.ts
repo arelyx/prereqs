@@ -5,7 +5,7 @@
 // them) and fills in the nodes. The runner calls solve() once more after
 // evaluate() returns, then rolls group statuses up.
 
-import { allocate, combinations } from './allocate'
+import { allocate, combinations, tick } from './allocate'
 import type { Slot } from './allocate'
 import { canon, codes as codeSet, display, labFor } from './courses'
 import type { CourseSet } from './courses'
@@ -47,8 +47,10 @@ export interface TakeOpts {
    * Or explicit [lecture, lab] pairs with a mode.
    */
   labs?: 'none' | 'catalog-required' | 'catalog-merge' | { pairs: [string, string][]; mode: 'required' | 'merge' }
-  /** The same course code may count more than once (repeatable courses). */
-  repeatable?: boolean
+  /** The same course code may count more than once: true, or 'catalog' = when the catalog marks it repeatable. */
+  repeatable?: boolean | 'catalog'
+  /** Candidate ordering (lower = tried first), e.g. prefer LIT 102 over its substitutes. */
+  prefer?: (code: string) => number
   /** Grade policy for this slot (default: the harness-wide policy). */
   policy?: GradePolicy
   /** false = an overlay that may reuse courses counted elsewhere (e.g. DC). */
@@ -58,6 +60,13 @@ export interface TakeOpts {
   notes?: string[]
   /** Hide from summary counts. */
   minor?: boolean
+  /**
+   * Extra composite units beyond single courses (e.g. "two physics classes
+   * may substitute for one elective"). `eligible` widens which enrollments the
+   * slot may consume; `build` returns candidate units (each a list of
+   * enrollments counted as ONE course) from the available ones.
+   */
+  composite?: { eligible: CourseSet; build: (avail: Enrollment[]) => Enrollment[][] }
 }
 
 interface PendingSlot {
@@ -167,9 +176,11 @@ export class HarnessContext {
     })
   }
 
+  private passedCache: Enrollment[] | null = null
   /** Passing enrollments (campus pass), any policy aside. */
   get passed(): Enrollment[] {
-    return this.enrollments.filter((e) => policyFailure(e, undefined) == null)
+    this.passedCache ??= this.enrollments.filter((e) => policyFailure(e, undefined) == null)
+    return this.passedCache
   }
 
   /** Passing enrollments whose code is in `set`. */
@@ -265,7 +276,7 @@ export class HarnessContext {
     const pairs = this.labPairs(set, opts.labs)
     const labCodes = new Set([...pairs.values()])
     const isMember = (code: string) => set.has(code, cat)
-    const eligibleCode = (code: string) => isMember(code) || labCodes.has(code)
+    const eligibleCode = (code: string) => isMember(code) || labCodes.has(code) || !!opts.composite?.eligible.has(code, cat)
     const okGrade = (e: Enrollment) => {
       const why = policyFailure(e, policy)
       if (why && eligibleCode(e.code)) this.excluded.set(e.id, why)
@@ -282,8 +293,10 @@ export class HarnessContext {
       const takenLabs = new Set<string>()
       const seenCodes = new Set<string>()
       for (const e of avail) {
+        tick() // building units is real work: charge it to the allocation budget
         if (labCodes.has(e.code) || !isMember(e.code)) continue
-        if (!opts.repeatable && seenCodes.has(e.code)) continue
+        const rep = opts.repeatable === 'catalog' ? !!cat.get(e.code)?.repeatable : !!opts.repeatable
+        if (!rep && seenCodes.has(e.code)) continue
         const lab = pairs.get(e.code)
         let unit = [e]
         if (lab) {
@@ -296,10 +309,19 @@ export class HarnessContext {
         seenCodes.add(e.code)
         out.push(unit)
       }
+      if (opts.composite) out.push(...opts.composite.build(avail.filter((e) => opts.composite!.eligible.has(e.code, cat))))
+      if (opts.prefer) {
+        const p = opts.prefer
+        return out.map((u, i) => ({ u, i, k: p(u[0].code) })).sort((a, b) => a.k - b.k || a.i - b.i).map((x) => x.u)
+      }
       return out
     }
+    const overlap = (chosen: Enrollment[][]) => {
+      const ids = chosen.flat().map((e) => e.id)
+      return new Set(ids).size !== ids.length
+    }
     const count = (chosen: Enrollment[][], s: CourseSet) => chosen.filter((u) => s.has(u[0].code, cat)).length
-    const violates = (chosen: Enrollment[][]) => atMost.some((c) => count(chosen, c.set) > c.n)
+    const violates = (chosen: Enrollment[][]) => overlap(chosen) || atMost.some((c) => count(chosen, c.set) > c.n)
     const deficit = (chosen: Enrollment[][]) =>
       atLeast.reduce((d, c) => d + Math.max(0, c.n - count(chosen, c.set)), 0)
     const fullOk = (chosen: Enrollment[][]) =>
@@ -444,11 +466,12 @@ export class HarnessContext {
       slot,
       node,
       exclusive: opts.exclusive !== false,
-      finish: (chosen, satisfied, partial) => {
+      finish: (chosen, satisfied, partial, exhausted) => {
         node.used = chosen
         node.progress = satisfied ? { have: chosen.length, need: chosen.length } : partial
-        node.status = satisfied ? 'met' : 'unmet'
-        if (!satisfied) {
+        node.status = satisfied ? 'met' : exhausted ? 'cannot-check' : 'unmet'
+        if (!satisfied && exhausted) node.detail = 'Too many combinations to check automatically — ask an advisor.'
+        else if (!satisfied) {
           const p = pk.find((x) => chosen.length && chosen.every((e) => x.includes(e.code))) ?? pk[0]
           const missing = p.filter((c) => !chosen.some((e) => e.code === c))
           node.detail = `Complete one option${chosen.length ? ` — closest: still need ${missing.map(display).join(', ')}` : ''}`
