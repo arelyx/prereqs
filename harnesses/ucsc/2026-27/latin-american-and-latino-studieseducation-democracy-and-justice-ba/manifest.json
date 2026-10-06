@@ -1,0 +1,11 @@
+{
+ "program": "latin-american-and-latino-studieseducation-democracy-and-justice-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "63d7a42e83ed776c97273a07dfff62cd671cd2751ea1d46d530f602b8b073c82",
+ "skeleton_sha256": "795ee91ac4f46789feb4d48e7d54076b4ca62e43fa0fc9e63dff5073201dbb93",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:01Z",
+ "verified_at": "2026-10-06T00:58:07Z",
+ "notes": "verified line by line; lint clean. C/P; Spanish elective overlay from LALS 135/157/183; outside Spanish-taught course (SPAN/SPHS/LIT 188-189) -> attestation for advisor approval; CRES 121 counted as its EDUC 121 cross-listing; EAP substitutions as a note; seminar+194L exclusive."
+}

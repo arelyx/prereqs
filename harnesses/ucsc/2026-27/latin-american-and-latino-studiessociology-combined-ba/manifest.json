@@ -1,0 +1,11 @@
+{
+ "program": "latin-american-and-latino-studiessociology-combined-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "9dd30251124f5b6620973b93227ee814c6862594ac788c44b1a9323bdf7c9830",
+ "skeleton_sha256": "73353d7909e88a44f3238810c4b6f57a5a4689647fade43e963a61d7aca7c116",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:13Z",
+ "verified_at": "2026-10-06T00:58:07Z",
+ "notes": "verified line by line; lint clean. C/P; comprehensive LALS 194+194L or SOCY 196S (application in advance noted, not attested)."
+}

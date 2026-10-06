@@ -1,0 +1,11 @@
+{
+ "program": "latin-american-and-latino-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "327bd0c266aefed23db1912f444d29f451f65cd88cd63194b8019020e52d47ef",
+ "skeleton_sha256": "9460abc5effb923943b3de5e953668d689a1321f359bdf47505eadd2ae09a0f6",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:50:20Z",
+ "verified_at": "2026-10-06T00:58:06Z",
+ "notes": "verified line by line; lint clean. P/NP allowed, no C rule on this page; core = LALS 100 or 100A+100L (other may be an elective, 100A/100L merged); outside pre-approved list -> cannot-check within two-course limit; AP Spanish as a note."
+}

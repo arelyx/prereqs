@@ -1,0 +1,11 @@
+{
+ "program": "sociology-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "1558120d5f42c2e7f6bf48db7db8b39381467fb17ee27e7460201a88f5e0cc77",
+ "skeleton_sha256": "652a2cb4f45542b20c1318bd3e7546c16587a5ea0576db223a83f1360da87ebe",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:53:37Z",
+ "verified_at": "2026-10-06T00:58:07Z",
+ "notes": "verified line by line; lint clean. Concentration defaults to general; letter-grade rule on qualification/prep courses -> P grade gives cannot-check; C+/B- and DJS director approval are qualification (info); SOCY 3A subs LALS 100A/PSYC 100 via attestations consulted only when used; one thesis course may double as elective once thesis done; external outside lists -> cannot-check (general cap 2, DJS uncapped); DJS deliverable attestation; AP Stats note."
+}
