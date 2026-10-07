@@ -1,0 +1,11 @@
+{
+ "program": "psychology-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "3a4e7cd5da5239203ea0ef6254725311749c38989c5b452fe2bf2c7025545575",
+ "skeleton_sha256": "4f70a673daaee5d19b600dd93e1ccc61ffa478710efba4ca08bbc7e9f2652fa6",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:56Z",
+ "verified_at": "2026-10-07T00:01:50Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/psychology-ba.md; differences: PSYC 193S not on intensive independent-study list; outside-psych course 'may not count toward another major or minor' (note; 2026-27 'may or may not'); no cog-sci double-major ban (not modeled); View.tsx ported unchanged"
+}

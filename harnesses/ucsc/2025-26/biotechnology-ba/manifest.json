@@ -1,0 +1,11 @@
+{
+ "program": "biotechnology-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "07b0e02e9a32474376f75493e89eecad633befe6633e5d0b9c3478ecda253ad2",
+ "skeleton_sha256": "2c21a11189a6efca8485275a4a1fae9f20e5c42200d4e9273d4570e2164fae23",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:59Z",
+ "verified_at": "2026-10-07T00:01:50Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/biotechnology-ba.md; differences: CSE 20 is a lower-division requirement (waived by passed BME 160; test-out or other intro programming course by attestation); BME 160 has no CSE 20 substitute; exactly three electives (no 40-credit/fourth-elective rule); CHEM 1A also satisfies chemistry"
+}
