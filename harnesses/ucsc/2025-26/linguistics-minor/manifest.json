@@ -1,0 +1,11 @@
+{
+ "program": "linguistics-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "0ce7bdebae3108115fb5ee420f0b2e8329404744d56f7a788165fdd1d99ba1af",
+ "skeleton_sha256": "bd5fc35a79d7feb68ad5e8fd46b93d24eed550e058a41d7e77a4eeb4f3362c7a",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:06Z",
+ "verified_at": "2026-10-06T23:59:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "spanish-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "55b33686bb2ac3ca0a192d2fec38928ce478048262c69ff08b30fd1429b31e31",
+ "skeleton_sha256": "c8600239b5bc3f5d8b436f4a2527401bc89e2927f216c12bf60ca7b3312ac787",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:09Z",
+ "verified_at": "2026-10-06T23:59:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: SPAN 130 not on the elective list"
+}

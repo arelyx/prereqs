@@ -1,0 +1,11 @@
+{
+ "program": "italian-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "9ced4ffabb4dac8706e5ee08d9a57dbfbc13692f2ea0c8ca5b3e9040d2c38a3a",
+ "skeleton_sha256": "2121a09b175bccfa2ad505309f6047c20d8003a8c3a3092138805fe36c6bb618",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:09Z",
+ "verified_at": "2026-10-06T23:59:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: culture is a closed list (ITAL 101/106); LIT 102 on the literature list (no substitution/in-Italian attestations); three (not two) of the five taught in Italian from a closed list; unlisted LIT 185 courses cannot-check for the Italian count"
+}
