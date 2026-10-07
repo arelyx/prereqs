@@ -1,0 +1,11 @@
+{
+ "program": "computer-engineering-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "298a1dfa73626e4ef6bc4e8433e9264a5a9d43ddf4c9b28f9b26c1d0289ac04c",
+ "skeleton_sha256": "d3bf87c1267fe556177e84cfce8808abbea5db5a4cca0281c0c78ac37864d38e",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:39Z",
+ "verified_at": "2026-10-06T23:59:51Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CSE 185E in core (DC overlay); Computer Systems drops CSE 110A option; all concentration electives from external approved list (DH also DH grad-level list) declared by student, Networks/System Programming may use CSE 151+151L; no PHYS 15A/15C"
+}

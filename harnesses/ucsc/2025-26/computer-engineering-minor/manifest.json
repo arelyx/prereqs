@@ -1,0 +1,11 @@
+{
+ "program": "computer-engineering-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b59414c20004dbd5a29766f43727c852016ca47ef4e72c03c07b9d3f5c9701c7",
+ "skeleton_sha256": "d0377c6e38e22369f90d743e22f1fde8e40968c604c938e2da9f001652b83eef",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:44Z",
+ "verified_at": "2026-10-06T23:59:49Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "electrical-engineering-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "2d31f7a52f6207eff4927bd58e19456d454916803a333a72e4d525757ae01dee",
+ "skeleton_sha256": "1225736edca82aeb24c57d6c592d7de839b8b5555d097422770a9c3ebfcf6291",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:40Z",
+ "verified_at": "2026-10-06T23:59:51Z",
+ "notes": "ported from 2026-27 (reviewed); differences: ECE 80T only (no ECE 8); CSE 12 and ECE 13 both required (no CSE 13S); no PHYS 15A/15C; E/O list lacks ECE 170 and PHYS 137; no ECE 218 petition; outcomes assessment (exit survey/interview + GPA/thesis/portfolio option) replaces exit requirement"
+}

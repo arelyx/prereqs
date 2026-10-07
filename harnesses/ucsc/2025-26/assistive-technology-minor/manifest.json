@@ -1,0 +1,11 @@
+{
+ "program": "assistive-technology-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "d3b82a2aa3904242b29628cb92e8afb9b1cd091e0c1d4cccb0a7d40728f420bf",
+ "skeleton_sha256": "72035a1136a02e59d44e26c4a3b9ecb5e56c5ae853e801d41a6c2a04477cde28",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:43Z",
+ "verified_at": "2026-10-06T23:59:50Z",
+ "notes": "ported from 2026-27 (reviewed); differences: ECE 13 required (no CSE 13S); no PHYS 15A/15C; overlap note adds Robotics Engineering B.S. and ECE 121/141/167 not EE B.S. electives"
+}

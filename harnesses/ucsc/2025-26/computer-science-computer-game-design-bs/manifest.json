@@ -1,0 +1,11 @@
+{
+ "program": "computer-science-computer-game-design-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "5f4f21fbf02eeb8473658420c5ee4718255bda528ed5b3aa57795013fb68d146",
+ "skeleton_sha256": "dae09563386f5be3424b37cd70dc66d022e0c4213a5d4e9f9ceb1924fdb05558",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:46Z",
+ "verified_at": "2026-10-06T23:59:51Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CMPM 170+171 required in Game Design and Development and the only comprehensive (no tracks); CGE list lacks CMPM 119, CSE 164/165/167/168"
+}

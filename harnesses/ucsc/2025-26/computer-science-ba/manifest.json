@@ -1,0 +1,11 @@
+{
+ "program": "computer-science-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "de8d8f8232c7f1a089172d22f39fedf21fdbae9d999e3a70be1072998e8f1005",
+ "skeleton_sha256": "ac08ce940708e80f6f5d9dbce5e854d52b9204d521e8a26b2f91d3e435d54628",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:45Z",
+ "verified_at": "2026-10-06T23:59:49Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (transfer screening, honors, planners text; none modeled)"
+}

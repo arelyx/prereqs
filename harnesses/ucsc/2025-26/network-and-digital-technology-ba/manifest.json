@@ -1,0 +1,11 @@
+{
+ "program": "network-and-digital-technology-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "3c6d3a5cc0c44eb3d14ca1e64c2396a0a6daecb2f9188400795ba6a4223e4f0d",
+ "skeleton_sha256": "5b7121e624ee0d23e3f55c0adadde28a2359db2a5ff39d6ce5c9590d270c6851",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:46Z",
+ "verified_at": "2026-10-06T23:59:50Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CSE 101 required (no ECE 101+101L alternative); elective pool = the two focus lists + external approved list (no CSE 100-189/201-279/195 ranges; CSE 115A counts); comprehensive list has no ECE courses; no PHYS 15A/15C"
+}

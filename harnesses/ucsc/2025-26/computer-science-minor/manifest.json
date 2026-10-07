@@ -1,0 +1,11 @@
+{
+ "program": "computer-science-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "ccf869e5d08582a4f827110e0ad9101aa54c0aa6edceb8ad951522b521ba04a9",
+ "skeleton_sha256": "d3e6fad17a6489660d4c8bd052389c60247af9f025e4b2993d42566b43afdb04",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:39Z",
+ "verified_at": "2026-10-06T23:59:49Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (list order)"
+}
