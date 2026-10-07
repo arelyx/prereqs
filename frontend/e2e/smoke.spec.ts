@@ -141,6 +141,8 @@ test('program with a harness: client-side degree dashboard in main fold', async 
 test('every program has a dashboard; general info in the sidebar comes from the page text', async ({ page }) => {
   // Every program in the current catalog carries a verified harness (✓).
   const picker = page.getByRole('combobox', { name: 'Add a program' })
+  // Options arrive from the API: wait for the full current-edition list.
+  await expect.poll(() => picker.locator('option').count()).toBeGreaterThanOrEqual(120)
   const labels = await picker.locator('option').allTextContents()
   const programs = labels.filter((l) => !l.startsWith('Add a'))
   expect(programs.length).toBeGreaterThanOrEqual(119)
