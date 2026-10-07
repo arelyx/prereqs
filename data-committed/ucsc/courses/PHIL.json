@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL100A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Survey of ancient Greek philosophy of the Classical and Hellenistic periods. Begins with Socrates and the pre-Socratics, then undertakes an intensive study of Plato and Aristotle. Course then surveys the main developments that follow: Epicureanism, Stoicism, and Skepticism.",
@@ -29,6 +31,7 @@
      "PHIL80S"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 9 ; one course from PHIL 11 or PHIL 22 or PHIL 23 or PHIL 24 or PHIL 80E or BME 80G /PHIL 80G or PHIL 80M or PHIL 80S ; and satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -39,6 +42,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL100B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A study of the historical background and the present relevance of Descartes, Spinoza, and Leibniz.",
@@ -64,6 +69,7 @@
      "PHIL80S"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 9 ; one course from PHIL 11 or PHIL 22 or PHIL 23 or PHIL 24 or PHIL 80E or BME 80G /PHIL 80G or PHIL 80M or PHIL 80S ; and satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -74,6 +80,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL100C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A critical study (based on original texts) of Locke, Berkeley, and especially Hume on the nature of knowledge, perception, causation, morality, religion, and political society.",
@@ -99,6 +107,7 @@
      "PHIL80S"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 9 ; one course from PHIL 11 or PHIL 22 or PHIL 23 or PHIL 24 or PHIL 80E or BME 80G /PHIL 80G or PHIL 80M or PHIL 80S ; and satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -109,6 +118,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL100D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST140P"
@@ -136,6 +147,7 @@
      "PHIL80S"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 9 ; one course from PHIL 11 or PHIL 22 or PHIL 23 or PHIL 24 or PHIL 80E or BME 80G /PHIL 80G or PHIL 80M or PHIL 80S ; and satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -146,6 +158,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL106",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Intensive study of Kant's philosophy, particularly his epistemology and metaphysics developed in his Critique of Pure Reason.",
@@ -163,6 +177,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -173,6 +188,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL107",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A study of some European philosophers of the 19th century, with particular attention to Hegel, Schopenhauer, and Nietzsche. (Formerly course 108.)",
@@ -190,6 +207,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -200,6 +218,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL108",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to phenomenology, either through a survey of philosophical positions grouped under phenomenology or through a study of the writings of one or more philosophers of the phenomenological tradition. Topics may include the nature of consciousness, agency, subjectivity, and intersubjectivity.",
@@ -217,6 +237,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -227,6 +248,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL11",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to the main areas of philosophy through critical reflection on and analysis of both classical and contemporary texts. Focuses on central and enduring problems in philosophy such as skepticism about the external world, the mind-body problem, and the nature of morality.",
@@ -239,6 +262,7 @@
    ],
    "number": "11",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -249,6 +273,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the background and main themes of existentialist philosophy. Readings may include texts from authors such as Soren Kierkegaard, Friedrich Nietzsche, Jean-Paul Sartre, Simone de Beauvoir, Frantz Fanon, Albert Camus, Martin Heidegger, Emil Cioran, Gabriel Marcel, Laurie Paul, and so on. What these philosophers have had to say concerning the issue of selfhood, self-making and self-choosing, and its relation to the meaning or truth of human existence is the central topic of the course. Themes may include freedom, responsibility, anxiety, authenticity, bad faith, the meaning of life, absurdity.",
@@ -266,6 +292,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -276,6 +303,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL111",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Study of recent work in continental philosophy. Topics vary.",
@@ -293,6 +322,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -303,6 +333,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL112",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Study of classical American philosophers, specifically Emerson, Peirce, James, and Dewey, with emphasis on their views of metaphysics, epistemology, ethics, and philosophy of religion. Some attention is also paid to recent pragmatic tendencies in American philosophy.",
@@ -320,6 +352,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -330,6 +363,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL113",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examination of the beginnings and development of analytic philosophy, with primary interest in the reformulation of traditional philosophical problems beginning with Frege. Other figures studied include, but are not limited to, Russell, Carnap, Wittgenstein, Quine, and Sellars.",
@@ -347,6 +382,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -357,6 +393,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL114",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies the philosophical foundations of probability, induction, and confirmation. Different interpretations of probability studied, and solutions to various problems and paradoxes investigated. Students cannot receive credit for this course and course 214.",
@@ -374,6 +412,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -384,6 +423,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL116",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to basic set theory, recursive definitions, and mathematical induction. Provides a bridge between course 9 and courses 117 and 119. Strong emphasis on proving theorems and constructing proofs, both formal proofs and proofs in the customary, informal style used by mathematicians.",
@@ -401,6 +442,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -411,6 +453,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL117",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigations of non-classical logic. Studies several non-classical logics, such as various modal logics, multi-valued logics, and relevance logics. Investigates meta-theoretic results for each logic studied.",
@@ -428,6 +472,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -438,6 +483,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys Stoic Ethics in the Hellenistic and Roman Periods, attending both to the theoretical writings of early Stoa (e.g., Zeno and Chrysippus) as well as to the therapeutic and protreptic writings of later figures (e.g., Seneca and Epictetus).",
@@ -455,6 +502,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -465,6 +513,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL119",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Detailed treatment of the semantics of first order logic and formal computability. Completeness, undecidability of first order logic and Lowenheim-Skolem results also proven. Nature and formal limits of computability and introduction to incompleteness also investigated. Students cannot receive credit for this course and course 219.",
@@ -482,6 +532,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -492,6 +543,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL12",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Explores the philosophy of film through the viewing and discussionof several philosophically interesting films. Examines both the aesthetics of film and a variety of philosophical issues that particular films raise.",
@@ -502,6 +555,7 @@
    "ge_codes": [],
    "number": "12",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -512,6 +566,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL121",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A sustained look at central problems in epistemology. Topics might include the problem of other minds, the nature of justification and knowledge, skepticism of the external world, the nature and limits of human rationality, the problem of induction. (Formerly Knowledge and Rationality.)",
@@ -529,6 +585,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -539,6 +596,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL122",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Survey of contemporary analytic metaphysics. Topics may include nominalism, metaphysical realism, and the ontological analysis of concrete particulars, including problems of modality and persistence through time.",
@@ -556,6 +615,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -566,6 +626,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL123",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Current theories of the nature and preconditions of language, the nature of meaning, and the nature of truth.",
@@ -583,6 +645,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -593,6 +656,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL124",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An examination of the traditional philosophical problem of other minds and related contemporary scientific issues concerning what it is to encounter a mind that is not one's own and is relevantly unlike one's own.",
@@ -610,6 +675,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -620,6 +686,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An examination of various topics that arise in thinking about science. Different philosophical problems, such as realism, instrumentalism, confirmation, explanation, space and time, and rational decision making are extensively discussed and criticized.",
@@ -637,6 +705,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -647,6 +716,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL126",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines philosophical concerns regarding the methods and assumptions of the social sciences. For example, must the methods of the social sciences differ in some important ways from those used by the natural sciences? Another issue concerns problems arising from studying groups where the very notion of rationality appears to vary from culture to culture or over historical periods.",
@@ -664,6 +735,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -674,6 +746,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL127",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Can developmental processes be reduced to gene expression? Does the history of life exhibit trends (e.g. increasing complexity)? How are we to understand key concepts such as fitness, species, adaptation, and gene? Is there such a thing as human nature? Course surveys these and other core philosophical topics in the biological sciences.",
@@ -691,6 +765,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -701,6 +776,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL13",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers perspectives of Eastern philosophy; specifically, Hinduism, Jainism, Buddhism, Daoism, and Confucianism. Includes views concerning the nature of ultimate reality, personal identity, morality, the afterlife, god(s), and the problem of evil.",
@@ -711,6 +788,7 @@
    "ge_codes": [],
    "number": "13",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -721,6 +799,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL133",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on philosophical questions concerning the nature of mind. Central topics include the relation between mind and matter,  and the nature of consciousness. Other topics typically explored include: artificial intelligence; animal consciousness and intelligence; and the relation between thought and language.",
@@ -738,6 +818,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -748,6 +829,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL135",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Looks at philosophical issues raised by current research on the nature of perception, cognition, and consciousness in psychology and cognitive science or neuroscience. Can there be a science of the mind? Could machines be conscious? Do animals have minds? How did the mind evolve? These and a host of related questions form the subject matter of this course.",
@@ -765,6 +848,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D . Enrollment is restricted to sophomores, juniors and seniors.",
    "repeatable": false,
@@ -775,6 +859,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL142",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An examination of central issues in ethical theory including the nature of and justification for the moral point of view, the place of reason in ethics, the status of moral principles, and the nature of moral experience.",
@@ -792,6 +878,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -802,6 +889,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL143",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Intensive application of ethics through Ethics Bowl-style debate. Cases change annually. Students develop oral advocacy skills and are given the opportunity to compete for a position on the extracurricular Ethics Bowl team.",
@@ -812,6 +901,7 @@
    "ge_codes": [],
    "number": "143",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -822,6 +912,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL144",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST144"
@@ -841,6 +933,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": true,
@@ -851,6 +944,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL145",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI104"
@@ -865,6 +960,7 @@
    ],
    "number": "145",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -875,6 +971,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL147",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "FMST168"
@@ -894,6 +992,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -904,6 +1003,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL148",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "By using the historiography of the Holocaust as a case study, examines the epistemology and ontology of historical knowledge, i.e., how the past is known, and what about it there is to know.",
@@ -921,6 +1022,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D .",
    "repeatable": false,
@@ -931,6 +1033,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL15",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides a clearer understanding of what technology is how it relates to knowledge and human life. Students read and discuss texts by Plato, Aristotle, Husserl, and Heidegger.",
@@ -941,6 +1045,7 @@
    "ge_codes": [],
    "number": "15",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -951,6 +1056,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Problems about form, meaning, and interpretation in art, as found in major aesthetic theories from the philosophical tradition, and also in a variety of encounters between recent philosophy and the arts.",
@@ -968,6 +1075,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -978,6 +1086,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL153",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LGST143"
@@ -997,6 +1107,7 @@
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 100A or PHIL 100B or PHIL 100C or PHIL 100D . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -1007,6 +1118,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL17",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "FMST17"
@@ -1021,6 +1134,7 @@
    ],
    "number": "17",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1031,6 +1145,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL190",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Special topics. Format varies each quarter.",
@@ -1047,10 +1163,25 @@
     [
      "PHIL100A",
      "PHIL100B",
+     "PHIL100C"
+    ],
+    [
+     "PHIL100A",
+     "PHIL100B",
+     "PHIL100D"
+    ],
+    [
+     "PHIL100A",
+     "PHIL100C",
+     "PHIL100D"
+    ],
+    [
+     "PHIL100B",
      "PHIL100C",
      "PHIL100D"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHIL 9 ; and two from PHIL 100A , PHIL 100B , PHIL 100C , and PHIL 100D . Enrollment restricted to senior philosophy majors. Junior philosophy majors may enroll by permission of the instructor.",
    "repeatable": true,
@@ -1061,6 +1192,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL195A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of senior essay (approximately 25 pages) during one quarter. Students submit petition to sponsoring agency.",
@@ -1071,6 +1204,7 @@
    "ge_codes": [],
    "number": "195A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1081,6 +1215,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL195B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Under exceptional circumstances, a second senior essay continuing the work of the first essay is permitted but only when the first senior essay has been completed. Students submit petition to sponsoring agency.",
@@ -1091,6 +1227,7 @@
    "ge_codes": [],
    "number": "195B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1101,6 +1238,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "",
@@ -1111,6 +1250,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1121,6 +1261,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1131,6 +1273,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1141,6 +1284,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Topics will vary each quarter and will focus on some major ancient Greek philosophical figure or work.",
@@ -1151,6 +1296,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": true,
@@ -1161,6 +1307,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores autism and its implications for various fields of inquiry, especially philosophy. Previous familiarity with autism is not presupposed. Some background in philosophy of mind, cognitive science, and psychology recommended.",
@@ -1171,6 +1319,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1181,6 +1330,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL213",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analytic philosophy remains the dominant philosophical style worldwide. As a style of philosophy, analytic philosophy places emphasis on logical form and on the use of logical structure as the key element for evaluating the normative status (the logical merits) of a specific position. The history of analytic philosophy remains key since core debates turn on the status of logic as a supposedly value-neutral tool. This impacts philosophical understanding regarding logic, mathematics, and the relation of these areas to the natural and social sciences.",
@@ -1191,6 +1342,7 @@
    "ge_codes": [],
    "number": "213",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1201,6 +1353,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL214",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies the philosophical foundations of probability, induction, and confirmation. Different interpretations of probability studied, and solutions to various problems and paradoxes investigated. Students cannot receive credit for this course and PHIL 114 .",
@@ -1211,6 +1365,7 @@
    "ge_codes": [],
    "number": "214",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1221,6 +1376,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL22",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A consideration of ethical issues and theories focusing on the foundation of moral value and the principles governing character and behavior. Designed to extend and develop the student's abilities in philosophical reasoning about ethics.",
@@ -1233,6 +1390,7 @@
    ],
    "number": "22",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1243,6 +1401,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced introduction to topics in 20th century and contemporary analytic metaphysics. Divided into five main parts dealing, respectively, with issues about the nature of existence, properties, time, change and persistence, and material constitution.",
@@ -1253,6 +1413,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": false,
@@ -1263,6 +1424,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL224",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced introduction to issues in the philosophy of language—primarily concerning the nature of reference, meaning, and truth. Works from such 20th-century figures as Russell, Wittgenstein, Kripke, Lewis, and Putnam discussed. Topics include what it is for a sign or a bit of language to be meaningful, or for it to identify or represent something; what it is for a statement to be truthful; what it is to be a language; and how reference works when attributed to beliefs.",
@@ -1273,6 +1436,7 @@
    "ge_codes": [],
    "number": "224",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": false,
@@ -1283,6 +1447,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL225",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys representative works by three iconic \"Pittsburgh School\" thinkers, Wilfrid Sellars, Robert Brandom, and John McDowell, and how the issues they pursue, and the way they approach them, forms a unique and important line of thought in contemporary philosophy. These constitute an important counterexample to any claim that the problems and approaches of continental and analytic philosophy cannot be fruitfully integrated, or that analytic philosophy remains fated to be ahistorical. Course examines how Kant and Hegel, and Heideggar as well, powerfully inform the philosophical writings of all three. Also investigates how Sellars articulates an original philosophical vision that his younger colleagues and intellectual heirs at Pittsburgh further develop and yet make their own.",
@@ -1293,6 +1459,7 @@
    "ge_codes": [],
    "number": "225",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1303,6 +1470,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL23",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the philosophical issues that arise in cognitive science, particularly issues concerning the nature of minds. Students consider the idea that the mind is a digital computer,  then analyze alternatives, such as connectionism and dynamics.",
@@ -1315,6 +1484,7 @@
    ],
    "number": "23",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1325,6 +1495,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL231",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "May focus on topics such as naturalized epistemology, probabilistic epistemology, theories of justification, a priori knowledge, memory, and virtue epistemology.",
@@ -1335,6 +1507,7 @@
    "ge_codes": [],
    "number": "231",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": true,
@@ -1345,6 +1518,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers topics central to philosophical questions about value: ethics, normativity, practical reason, relativism, skepticism, responsibility, motivation, emotion, and so forth. In some instances, the investigation will proceed through influential historical figures, ancient to modern.",
@@ -1355,6 +1530,7 @@
    "ge_codes": [],
    "number": "232",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": true,
@@ -1365,6 +1541,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL233",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A study of one or more topics in contemporary philosophy of mind.",
@@ -1375,6 +1553,7 @@
    "ge_codes": [],
    "number": "233",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1385,6 +1564,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL235",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Looks at philosophical issues raised by current research on the nature of perception, cognition, and consciousness in psychology and cognitive science or neuroscience. Can there be a science of the mind? Could machines be conscious? Do animals have minds? How did the mind evolve? These and a host of related questions form the subject matter of this course.",
@@ -1395,6 +1576,7 @@
    "ge_codes": [],
    "number": "235",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): One course in philosophy, psychology, or linguistics. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1405,6 +1587,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL237",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "How does the mind come to be a thing which science can study? Readings focus on how diagnostic categories, for example, multiple personality disorder, attain scientific cachet and what issues surround the medicalization of the mind.",
@@ -1415,6 +1599,7 @@
    "ge_codes": [],
    "number": "237",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1425,6 +1610,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL239",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigation of various topics in philosophy of religion.",
@@ -1435,6 +1622,7 @@
    "ge_codes": [],
    "number": "239",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students or by permission of instructor.",
    "repeatable": true,
@@ -1445,6 +1633,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL24",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An examination of the conceptual and moral issues that arise in connection with a variety of specific ethical issues. Topics vary according to the interests of the instructor, but among those commonly discussed are:  abortion, war and violence, euthanasia, world hunger, human rights, and animal rights. The readings are typically drawn from recent philosophical articles on these topics, but earlier sources (important in the history of philosophy) can be considered as well.",
@@ -1457,6 +1647,7 @@
    ],
    "number": "24",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1467,6 +1658,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL246",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "BIOE287"
@@ -1479,6 +1672,7 @@
    "ge_codes": [],
    "number": "246",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1489,6 +1683,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL26",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of recent movements in European thought, such as phenomenology, existentialism, hermeneutics, critical theory, continental feminism, and poststructuralism, with some attention to their 19th-century precursors. Selections from major philosophical treatises are supplemented with literary works.",
@@ -1499,6 +1695,7 @@
    "ge_codes": [],
    "number": "26",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1509,6 +1706,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL27",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examination of the ethical issues that arise in connection with a variety of specific business contexts. Common topics include: advertising, environmental harm, employee-employer relationships, finance, capitalism, market failure, government regulation, work-life balance, and consumer rights.",
@@ -1521,6 +1720,7 @@
    ],
    "number": "27",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1531,6 +1731,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL270",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A research seminar to develop the skills of the profession with special focus on critical reading, constructing feedback, and philosophical research and writing. Enrollment is restricted to third-year Ph.D. students, and students must complete it by the end of their third year.",
@@ -1541,6 +1743,7 @@
    "ge_codes": [],
    "number": "270",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students. Other students may enroll with instructor permission.",
    "repeatable": true,
@@ -1551,6 +1754,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL28",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course is an introduction to the moral issues raised by our interactions with nonhuman animals and with the rest of the natural environment.  The course will relate traditional moral theories to contemporary literature on the ethics of nature conservation and environmental protection.  The course is intended as a first course in philosophy as well as a first course in ethics; therefore, questions concerning the nature of philosophical inquiry and the ways in which philosophical inquiry is different from inquiries conducted within other disciplines will also be addressed.",
@@ -1563,6 +1768,7 @@
    ],
    "number": "28",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1573,6 +1779,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL280",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "This colloquia series sponsors speakers each quarter. Students must attend all colloquia and are encouraged to form discussion groups after each lecture.",
@@ -1583,6 +1791,7 @@
    "ge_codes": [],
    "number": "280",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": false,
@@ -1593,6 +1802,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL281",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides training for graduate students in university-level pedagogy in general and in the pedagogy of philosophy specially, under the supervision of a faculty member.",
@@ -1603,6 +1814,7 @@
    "ge_codes": [],
    "number": "281",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1613,6 +1825,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines issues that arise with respect to constructing histories. Inter alia, these include: the traditional philosophy of history (e.g., Hegel and Marx); modes of explanation (including narrative); the reality of the past; and underdetermination in history.",
@@ -1623,6 +1837,7 @@
    "ge_codes": [],
    "number": "290A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1633,6 +1848,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Topics vary but the course focuses on major questions in contemporary ethical theory, or figures influential on contemporary moral philosophy. Examines different foundational ethical principles and arguments for those principles, contrasting accounts of moral action and moral motivation, as well as the epistemological and motivational role of emotions in ethical theory.",
@@ -1643,6 +1860,7 @@
    "ge_codes": [],
    "number": "290C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": true,
@@ -1653,6 +1871,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Philosophy of biology is one of the fastest-growing areas of philosophy of science. Course is designed to give seniors and graduate students an overview of many of the diverse topics currently under discussion in modern philosophy of biology and provide a foundation for further research, regardless of previous experience with the biological sciences.",
@@ -1663,6 +1883,7 @@
    "ge_codes": [],
    "number": "290F",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1673,6 +1894,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "What is our proper moral stance toward the natural environment? This question encompasses our ethical relations to individual non-human animals, to other species of living beings, and toward the biotic community as a whole. It leads us to consider the broader question: What makes anything at all worthy of our moral respect or even our moral consideration? How are we to understand the very idea of the environment, the distinction between the human world, and the natural world, and the relationships between them.",
@@ -1683,6 +1906,7 @@
    "ge_codes": [],
    "number": "290H",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1693,6 +1917,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Careful study of any one of the main moral theories in the history of philosophy, with some emphasis on the relation to contemporary moral philosophy.",
@@ -1703,6 +1929,7 @@
    "ge_codes": [],
    "number": "290J",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1713,6 +1940,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers the relevance of philosophical matters to the practice of science. Using quantum physics as a case study, explores historical and contemporary perspectives on issues such as those raised by the Schrodinger cat paradox, Bell's inequalities, and quantum erasers.",
@@ -1723,6 +1952,7 @@
    "ge_codes": [],
    "number": "290K",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1733,6 +1963,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290O",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on philosophical writings and significance of a single major figure in the history of philosophy, ancient, medieval, or modern.",
@@ -1743,6 +1975,7 @@
    "ge_codes": [],
    "number": "290O",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": true,
@@ -1753,6 +1986,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on philosophical writings and significance of a single figure in contemporary (20th- and 21st-century) philosophy. May include, but not be limited to, Russell, Whitehead, Wittgenstein, Husserl, Carnap, Murdoch, Quine, Irigaray, Derrida, and Davidson.",
@@ -1763,6 +1998,7 @@
    "ge_codes": [],
    "number": "290P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to philosophy graduate students.",
    "repeatable": true,
@@ -1773,6 +2009,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290Q",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the problems of contemporary analytic philosophy of mathematics. Do mathematical objects exist? Are mathematical statements true? How can we know? We will examine the historical background to contemporary debates and the positions which have been taken within them.",
@@ -1783,6 +2021,7 @@
    "ge_codes": [],
    "number": "290Q",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1793,6 +2032,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An examination of a topic in current philosophy of science. The material for the course is chosen from topics such as realism and instrumentalism, scientific explanation, space and time, the confirmation of theories, laws of nature, and scientific abstraction.",
@@ -1803,6 +2044,7 @@
    "ge_codes": [],
    "number": "290S",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1813,6 +2055,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL290W",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Historical study of philosophical theories of consciousness and self-consciousness. Problems include the relation of self and other, consciousness and body, and self-consciousness and ethical agency. Readings are from Kant, Hegel, Nietzsche, and Heidegger, followed by phenomenologists, poststructuralists, and analytic philosophy.",
@@ -1823,6 +2067,7 @@
    "ge_codes": [],
    "number": "290W",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1833,6 +2078,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL294",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Directed graduate research and writing coordinated with the teaching of undergraduates.",
@@ -1843,6 +2090,7 @@
    "ge_codes": [],
    "number": "294",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1853,6 +2101,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL295",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Directed reading which does not involve a term paper.",
@@ -1863,6 +2113,7 @@
    "ge_codes": [],
    "number": "295",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1873,6 +2124,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL295F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Focuses on selected philosophical areas and/or specific philosophers. Students meet with the instructor to discuss readings and deepen their knowledge on a particular subject. Enrollment restricted to graduate students.",
@@ -1883,6 +2136,7 @@
    "ge_codes": [],
    "number": "295F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1893,6 +2147,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL296",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A seminar for graduate students arranged between students and a faculty member. Students submit petition to sponsoring agency.",
@@ -1903,6 +2159,7 @@
    "ge_codes": [],
    "number": "296",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1913,6 +2170,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL297",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1923,6 +2182,7 @@
    "ge_codes": [],
    "number": "297",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1933,6 +2193,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL297F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to course sponsoring agency. Enrollment restricted to graduate students.",
@@ -1943,6 +2205,7 @@
    "ge_codes": [],
    "number": "297F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1953,6 +2216,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL299",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1963,6 +2228,7 @@
    "ge_codes": [],
    "number": "299",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1973,6 +2239,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL299F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency. Enrollment is by permission of the instructor.",
@@ -1983,6 +2251,7 @@
    "ge_codes": [],
    "number": "299F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1993,6 +2262,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL30S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines some aspect of the nature of goodness or value. Topics vary each quarter and may include themes in aesthetics, ethics, and social and political philosophy.",
@@ -2005,6 +2276,7 @@
    ],
    "number": "30S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2015,6 +2287,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL31S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the nature of knowledge and the fundamental structure and nature of reality. Topics vary each quarter and may include nominalism, metaphysical realism, and the ontological analysis of concrete particulars, problems of modality and persistence through time, the problem of other minds, the nature of justification and knowledge, skepticism of the external world, the nature and limits of human rationality, and the problem of induction.",
@@ -2027,6 +2301,7 @@
    ],
    "number": "31S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2037,6 +2312,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL32S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the nature of mind. Topics vary each quarter and may include the relation between mind and matter, the nature of consciousness, artificial intelligence, animal consciousness and intelligence, and the relation between thought and language.",
@@ -2047,6 +2324,7 @@
    "ge_codes": [],
    "number": "32S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2057,6 +2335,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL33S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the nature of science. Topics vary each quarter and may include realism, instrumentalism, confirmation, explanation, space and time, and rational decision making.",
@@ -2069,6 +2349,7 @@
    ],
    "number": "33S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2079,6 +2360,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL34S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the nature of language. Topics vary each quarter and may include theories of meaning, representation, reference and truth.",
@@ -2091,6 +2374,7 @@
    ],
    "number": "34S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2101,6 +2385,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL35S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines historical philosophical texts. Topics vary each quarter and focus on some major philosophical period, figure, or work in the history of philosophy.",
@@ -2113,6 +2399,7 @@
    ],
    "number": "35S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2123,6 +2410,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL36S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines aesthetic, ethical, and/or political aspects of contemporary culture. Topics vary each quarter and may include the philosophy of film, music and other genres of popular culture and may consider issues such as authenticity, rebellion, identity, and politics.",
@@ -2135,6 +2424,7 @@
    ],
    "number": "36S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2145,6 +2435,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL7",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the critical tools and elementary formal methods for evaluating arguments with an emphasis on sentential logic and its applications. Students may not receive credit for this course and PHIL 9 . PHIL 7 is intended for non-majors and does not fulfill a major requirement for philosophy majors. PHIL 9 is the introductory course that fulfills the requirement for majors.",
@@ -2157,6 +2449,7 @@
    ],
    "number": "7",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2167,6 +2460,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL8",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces critical tools for assessing and assimilating information. Topics include echo chambers, misleading statistics, the Bias Blind Spot, degrees of confidence, epistemic injustice, polarization; credibility and distrust; epistemic blame; base rates, relativism, p-values, and biased samples. Readings are drawn from philosophy, social psychology, behavioral economics, and statistics. (Formerly Reason, Logic, and the Idols of Thought.)",
@@ -2179,6 +2474,7 @@
    ],
    "number": "8",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2189,6 +2485,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL80C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "What is the nature of love? Is marriage a means of social control? Does pornography empower or oppress women? How is gender constructed? This course provides a systematic investigation of the development of Western philosophical perspectives on gender and sexuality from Ancient Greece to the 21st century. Topics include love, marriage, sexual perversion, promiscuity and monogamy, pornography, feminism, and sexual morality. Aims to promote critical reflection with regard to the ethical, political,and social implications for contemporary society.",
@@ -2199,6 +2497,7 @@
    "ge_codes": [],
    "number": "80C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2209,6 +2508,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL80E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "LALS80E"
@@ -2221,6 +2522,7 @@
    "ge_codes": [],
    "number": "80E",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2231,6 +2533,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL80M",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the urgent ethical and political issues raised by data science and society, building on consideration of foundational issues in moral philosophy and a technical understanding of advances in machine learning. Topics include: algorithmic bias and discrimination, predictive policing, self-driving cars, consent to data collection, surveillance and privacy rights, democracy and free speech online, attentional modification, technology and disability, and the singularity. Each unit pairs readings from philosophical and legal scholarship with case studies documented in scientific articles, news stories, and podcasts. (Formerly Philosophical Foundations of Science Studies.)",
@@ -2243,6 +2547,7 @@
    ],
    "number": "80M",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2253,6 +2558,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL80S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of what philosophers have said about the nature of science and scientific change. Emphasis is placed on whether science is best characterized as the gradual accumulation of truth or whether truth is irrelevant to scientific change.",
@@ -2263,6 +2570,7 @@
    "ge_codes": [],
    "number": "80S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2273,6 +2581,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL9",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A first course in symbolic deductive logic. Major topics include (but are not limited to) the study of systems of sentential logic and predicate logic, including formal deduction, semantics, and translation from natural to symbolic languages. Formerly Introduction to Logic. Students may not receive credit for this course and PHIL 7 .",
@@ -2285,6 +2595,7 @@
    ],
    "number": "9",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2295,6 +2606,8 @@
   {
    "catalog_instructor": null,
    "code": "PHIL99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "",
@@ -2305,6 +2618,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2313,11 +2627,10 @@
    "url": "/en/current/general-catalog/courses/phil-philosophy/lower-division/phil-99"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "PHIL"
 }

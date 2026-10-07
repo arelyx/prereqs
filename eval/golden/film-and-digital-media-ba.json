@@ -1,0 +1,828 @@
+{
+  "program": "film-and-digital-media-ba",
+  "edition": "2026-27",
+  "author_notes": "Written only from sources/film-and-digital-media-ba.md. choices.concentration is \"general\" or \"integrated-critical-practice\"; ICPC admission is attested (\"all\"). Elective lists in pass records use only courses whose elective status is unambiguous (FILM 145, FILM 150, FILM 160, FILM 180, FILM 170-series courses, extra core courses). Ambiguities avoided: whether \"FILM 160\" and \"FILM 150\" mean only those numbers or the whole 160/150 series (e.g. FILM 162, 165A, 151, 152) for general-major electives; whether a second FILM 194/196 course counts as a general elective; whether ICPC must also satisfy the general diversity requirement (ICPC pass record includes FILM 165B anyway); whether an ICPC Group 4 course can double as a production elective; the two-course outside-department/institution cap (needs institution and pre-approval data); the \"taken after its respective core requirement\" ordering beyond the simple case used; the \"at least one MQ course at UCSC\" transfer rule (qualification, excluded).",
+  "cases": [
+    {
+      "id": "pass-general-frosh",
+      "kind": "pass",
+      "description": "General FDM major, frosh. Lower division FILM 20A + FILM 20B + FILM 20P. Upper division: FILM 120; core from three different groups: FILM 132A (Group 1, also the diversity course and DC first category), FILM 134B (Group 2), FILM 170A (Group 4); senior comprehensive FILM 194A (also DC second category); five electives FILM 145, FILM 160, FILM 170B, FILM 172, FILM 180. Ten upper-division courses, all grade A.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20B"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 132A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 170A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 134B",
+              "FILM 160"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 180"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 145"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 194A"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-icpc-frosh",
+      "kind": "pass",
+      "description": "Integrated Critical Practice Concentration (admission attested). Lower division FILM 20A, 20C, 20P. Upper division: FILM 120; one from each of five groups: FILM 130 (G1), FILM 134A (G2), FILM 136D (G3), FILM 170B (G4), FILM 194H (G5); comprehensive FILM 199 + FILM 195; critical studies electives FILM 165B and FILM 185S; production electives FILM 150, FILM 172, FILM 175. DC via FILM 130 + FILM 194H. Thirteen upper-division courses. FILM 165B is also on the diversity list.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "integrated-critical-practice"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20C"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 130"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 134A",
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 136D",
+              "FILM 150"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 165B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 185S"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "FILM 194H",
+              "FILM 175"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 199"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 195"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-only-one-extra-20-level",
+      "kind": "fail",
+      "description": "General frosh pass record with FILM 20P removed: only FILM 20A plus one other 20-level course (FILM 20B).",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20B"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 132A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 170A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 134B",
+              "FILM 160"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 180"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 145"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 194A"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Lower division: FILM 20A plus two of FILM 20B/20C/20P",
+        "source_quote": "Plus two additional 20-level courses:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-no-diversity-course",
+      "kind": "fail",
+      "description": "General frosh pass record with FILM 132A replaced by FILM 130 (Silent Cinema, still Group 1 and DC first category). No course on the diversity list remains.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20B"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 130"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 170A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 134B",
+              "FILM 160"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 180"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 145"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 194A"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Diversity requirement",
+        "source_quote": "Students take at least one course from the following list focusing on non-Western perspectives, races, ethnicities, genders, classes, sexualities, or abilities."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-elective-185F-excluded",
+      "kind": "fail",
+      "description": "General frosh pass record with elective FILM 145 replaced by FILM 185F (2 credits). FILM 185F is explicitly excluded, so only four electives count.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20B"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 132A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 170A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 134B",
+              "FILM 160"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 180"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 185F"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 194A"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Five upper-division electives (FILM 185F excluded)",
+        "source_quote": "FILM 185F (a two-credit course) is excluded from this list."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-only-four-electives",
+      "kind": "fail",
+      "description": "General frosh pass record with elective FILM 180 removed: four electives instead of five.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20B"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 132A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 170A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 134B",
+              "FILM 160"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 145"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 194A"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Five upper-division electives",
+        "source_quote": "Five (5-credit) upper-division elective courses are to meet the following criteria:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-icpc-missing-group3",
+      "kind": "fail",
+      "description": "ICPC pass record with FILM 136D removed. ICPC requires one course from each of five groups; Group 3 (FILM 136A-D) is now missing (a general-major student would not need it).",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "integrated-critical-practice"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20C"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 130"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 134A",
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 150"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 165B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 185S"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "FILM 194H",
+              "FILM 175"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 199"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 195"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "ICPC: one course from each of the five groups (Group 3 missing)",
+        "source_quote": "One course from each of the following five groups"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-icpc-group5-196A-not-seminar",
+      "kind": "fail",
+      "description": "ICPC pass record with FILM 194H replaced by FILM 196A. FILM 196A satisfies DC second category, but ICPC Group 5 lists only the FILM 194 seminars, so Group 5 is unmet.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "integrated-critical-practice"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20C"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 130"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 134A",
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 136D",
+              "FILM 150"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 165B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 185S"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "FILM 196A",
+              "FILM 175"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 199"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 195"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "ICPC Group 5: one FILM 194 seminar",
+        "source_quote": "FILM 194S — Special Topics Seminar (5)"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-icpc-only-one-critical-studies-elective",
+      "kind": "fail",
+      "description": "ICPC pass record with critical-studies elective FILM 185S replaced by production course FILM 171A. Now only one critical studies elective (FILM 165B) and four production courses; ICPC needs two critical studies electives.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "integrated-critical-practice"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "FILM 20A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "FILM 20C"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "FILM 20P"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "FILM 120"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "FILM 130"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "FILM 134A",
+              "FILM 170B"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "FILM 136D",
+              "FILM 150"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "FILM 165B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "FILM 172",
+              "FILM 171A"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "FILM 194H",
+              "FILM 175"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "FILM 199"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "FILM 195"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "ICPC electives: two upper-division critical studies courses",
+        "source_quote": "Two upper-division critical studies courses"
+      },
+      "audit": "agreed"
+    }
+  ]
+}

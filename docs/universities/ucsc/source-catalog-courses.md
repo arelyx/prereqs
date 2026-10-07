@@ -1,5 +1,11 @@
 # Data Source: UCSC General Catalog — Course Pages
 
+> **Status (2026-10):** page research from July 2026, still accurate for page
+> shape. Its LLM recommendations are superseded: prerequisite prose is parsed
+> deterministically (`pipelines/ucsc/catalog_courses/prereq_parse.py`) with
+> warm-path overrides for the residue — see that package's README.
+
+
 - **Root:** `https://catalog.ucsc.edu/en/current/general-catalog/courses`
 - **Platform:** SmartCatalog IQ (Watermark) — server-rendered HTML, no JS needed for course content
 - **Verified live:** 2026-07-25 (11 polite curl requests). Current edition = **2026-2027 UCSC General Catalog** (per breadcrumb).

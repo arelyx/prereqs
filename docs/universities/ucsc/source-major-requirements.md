@@ -1,5 +1,13 @@
 # UCSC Catalog — Academic Program (Major) Requirement Pages
 
+> **Status (2026-10):** page research from July 2026, still accurate for page
+> shape and hazards. §8's "small-LLM structuring" strategy is superseded:
+> the hot path now only renders each page to committed source text
+> (`editions/<ed>/sources/`), and requirements are captured per program by
+> a frontier agent in `harnesses/` (`docs/ARCHITECTURE.md`, `docs/HARNESSES.md`).
+> Archived editions live at `/en/YYYY-YYYY/...` with identical markup.
+
+
 **Source root:** `https://catalog.ucsc.edu/en/current/general-catalog/academic-programs`
 **Surveyed:** 2026-07-25 (catalog year "current"; ~13 polite curl requests)
 **Platform:** SmartCatalog IQ (Watermark) — confirmed via `cdn-prod.smartcatalogiq.com/catalog/bundle.js`, `sc-*` CSS classes, and a generic smartcatalogiq `robots.txt`.

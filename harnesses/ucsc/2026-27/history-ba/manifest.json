@@ -1,0 +1,11 @@
+{
+ "program": "history-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "1b78198d201bb481f4f91a6e5e8f69fd83acaa4b9248eb79073a5a0a93db269c",
+ "skeleton_sha256": "b759c303a30b31be3a30bc627151ef355d4279b2adc2a83107264e4263218997",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:56:33Z",
+ "verified_at": "2026-10-06T23:41:00Z",
+ "notes": "verified line by line; region membership and pre-1800 from the external History Course List -> free-form student lists (anthropology-minor pattern); undeclared HIS courses make region/breadth/comprehensive cannot-check, never unmet; two-phase solve (region+HIS100, then breadth with 2/2 + UD check + electives); thesis needs prior region seminar or petition attestation; intensive: 4 electives, advanced research (thesis counted as one, cannot-check when two would decide), language overlay or attestation; senior check-in attestation; P/NP max two, comprehensive letter-only; reviewed 2026-10-06: region/pre-1800 list matching through the catalog (cross-listed partners; breadth 2+2 check was fooled by a partner code), cross-listed HIS partners count as unknown-region history courses, HIS 198 no longer advanced research (page names HIS 199), independent/field study counted -> substitution-petition attestation, repeatable topics course counted twice -> cannot-check, language alternative asked only when the three quarters are missing"
+}

@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Game writers create worlds, characters, and stories—and also craft computational systems so players can experience these fictions interactively. This course covers the fundamentals of authoring fictions and systems that work together toward powerful player experiences. All offerings support students with required synchronous section meetings.",
@@ -18,6 +20,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 , or by permission of the instructor.",
    "repeatable": true,
@@ -28,6 +31,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to develop a template for a 10-week-long engineering design project. Teaches teamwork, leadership skills, inclusive team practices, Agile process, engineering ethics, and identity formation in engineers.",
@@ -40,6 +45,7 @@
    ],
    "number": "115",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -50,6 +56,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM115A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students work in teams to develop a template for a significant engineering project and document their collaborative process. Over the course of 10 weeks, students work together to design, develop, and iterate on the proposed prototype to showcase specified technical and professional engineering skills. In parallel, teams experientially learn and practice teamwork, project management, and professional communication skills. Project topics are based on approval through application only. Enrollment is restricted to juniors and seniors, and by permission of the instructor only.",
@@ -60,6 +68,7 @@
    "ge_codes": [],
    "number": "115A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -70,6 +79,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM115B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Student-leaders work in teams to develop experiential learning content for a 3-credit design-build experience, a skill-building course where learners are set up to complete a significant engineering artifact. Student-leaders practice active learning that facilitates learners in traversing the engineering design cycle with room for iteration and to learn and recover from failure. CMPM 115B employs professional skills learned in CMPM 115A : teamwork, leadership, inclusive practices, Agile processes, and engineering ethics. Topics developed are accepted by proposal from the student-leaders. Prerequisite(s): CMPM 115A . Enrollment is restricted to juniors and seniors. Enrollment is by permission of the instructor and by permission code only.",
@@ -82,6 +93,7 @@
    ],
    "number": "115B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -92,6 +104,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Guides small student teams through the performance of a quarter-long research project. Provides an overview of the process of performing research, research communities, and processes for finding and presenting research results.",
@@ -102,6 +116,7 @@
    "ge_codes": [],
    "number": "118",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -112,6 +127,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM118S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Students work with faculty to develop the technical and research skills required to contribute to the lab’s research goals. These courses include peer and near-peer mentorship, skill building/technical training, literature review, and authentic research activities. Enrollment is by permission of the instructor.",
@@ -122,6 +139,7 @@
    "ge_codes": [],
    "number": "118S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -132,6 +150,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM119",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches students to design, develop, and evaluate games for diverse user populations including players with disabilities. Through hands-on prototyping and rigorous playtesting methodologies, students learn to implement technical accessibility features using industry-standard development tools and frameworks.",
@@ -146,6 +166,7 @@
      "CMPM80K"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite: CMPM 80K . Programming experience (C#, JavaScript, or Python) is recommended. Enrollment is restricted to Computer Game Design proposed and declared majors.",
    "repeatable": false,
@@ -156,6 +177,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches the concrete programming and collaboration skills associated with making a digital game from start to finish, including but not limited to: establishing a team, concepting, storyboarding, prototyping, producing, and testing a game for release. Students are organized into groups and work together to create and produce a playable game.",
@@ -179,6 +202,7 @@
      "CMPM35"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 80K ; and FILM 80V ; and CSE 30 or CMPM 35 .",
    "repeatable": false,
@@ -189,6 +213,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM121",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced game programming focused on software design patterns and refactoring. Introduces classic software design patterns, as well as game programming patterns. Introduces software refactoring, including code smells and widely used refactoring patterns.",
@@ -203,6 +229,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 .",
    "repeatable": false,
@@ -213,6 +240,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM122",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Ten-week course to provide instruction on important business topics for videogame creators—many related to the games themselves and others for pursuing success in bringing the games to customers: publishing, distribution, marketing, funding, operations, and more.",
@@ -223,6 +252,7 @@
    "ge_codes": [],
    "number": "122",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -233,6 +263,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM123",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course introduces students to current and emerging advanced programming methods used in building complex, high-performance, and networked interactive media systems. Students use tools like debuggers and profiles to inspect and resolve software performance bottlenecks in a compiled language.",
@@ -248,6 +280,7 @@
      "CMPM35"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: CSE 101 or CMPM 35 .",
    "repeatable": false,
@@ -258,6 +291,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to construction of games using game engine technology, using a specific game engine as a focus. Covers major game engine features: input, collision, animation, model import, lighting, camera, rendering, textures, particle systems. Introduction to a specific game scripting language, custom game logic, game programming patterns. (Formerly offered as CMPM 121 .)",
@@ -272,6 +307,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 .",
    "repeatable": false,
@@ -282,6 +318,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM130",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students develop skills and interactive prototypes for addressing three communication challenges: first, software itself communicating with interactors; second, developers of software communicating about the design of the software's interactions and users' experiences; and third, communicating results of design processes.",
@@ -292,6 +330,7 @@
    "ge_codes": [],
    "number": "130",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to computer science: computer game design majors.",
    "repeatable": false,
@@ -302,6 +341,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Theories and practices for approaching the design problems of interactive media holistically, beyond usability and accessibility. Includes hands-on learning, application of human-centered design and evaluation skills in group projects, and peer critique. This class is asynchronous online, with secondary sections offered as in-person meetings.",
@@ -312,6 +353,7 @@
    "ge_codes": [],
    "number": "131",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -322,6 +364,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM132",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Practice-based interaction design studio course. Students learn about design-led approaches to Human-Computer Interaction through participating in group projects. Course offers introductions to design methods and actionable strategies to do interaction design work and design-led technology research.",
@@ -332,6 +376,7 @@
    "ge_codes": [],
    "number": "132",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -342,6 +387,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM146",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the use of artificial intelligence (AI) in games. Covers core AI technologies for search, control, and learning, and the application of AI to improve game design, development, and game play. Examines the AI content in multiple commercial games. This is an online class; most lectures are asynchronous. The weekly lab is synchronous, focused on Q&A and group discussion of work in progress.",
@@ -356,6 +403,7 @@
      "CSE101"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 101 or equivalent; familiarity with python a plus, though not required. Enrollment is restricted to sophomores, juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -366,6 +414,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM147",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces generative methods for design. Uses algorithmic techniques to generate and evaluate game content (images, sounds, map designs) along with mechanics and progression systems. Search-based and learning-based techniques with connections to artificial intelligence are also covered.",
@@ -380,6 +430,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 .",
    "repeatable": false,
@@ -390,6 +441,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM148",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers a range of design approaches and technologies including storytelling in games, interactive fiction, interactive drama, and artificial intelligence-based story generation. Through a mixture of readings, assignments, and project work, students explore the theoretical positions, debates, and technical and design issues arising from these approaches.",
@@ -405,6 +458,7 @@
      "CMPM35"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 101 or CMPM 35 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -415,6 +469,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM15",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "1",
    "cross_listed": [],
    "description": "Curious about what’s next in your field and what inspires you? In low-commitment reading groups, join like-minded peers to discuss the creative and societally impactful work of UCSC faculty from human-centered AI and sustainable computing to generative AI and health tech. Spark your curiosity, see real-world connections, and connect with research opportunities. Designed for students of all backgrounds, years, and majors who want to explore, not just those interested in research. Browse themes at the Exploratory Reading Groups website (see Class Notes). May be repeated for credit. (Formerly Research Explorations.)",
@@ -425,6 +481,7 @@
    "ge_codes": [],
    "number": "15",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -435,6 +492,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM150",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces digital sound recording and editing technologies, sound synthesis, and concepts in sound design for media production. Covers the basics of sound capture, microphones, audio manipulation and editing, effects, sound formats, mixing and dynamics, synthesizers, audio software, and game audio.",
@@ -447,6 +506,7 @@
    ],
    "number": "150",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -457,6 +517,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM151",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces compositional techniques and procedural audio as exhibited in the sound and music of video games. Surveys different styles of music implemented in video games and associated compositional approaches. Students develop skill in procedural audio via a series of workshops and assignments.",
@@ -467,6 +529,7 @@
    "ge_codes": [],
    "number": "151",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -477,6 +540,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys the relationship between music and data as exhibited in industry and research implementations of sonification and music information retrieval. Students introduced to various styles and algorithms of sound analysis and modeling and develop skills to program unique approaches in this area.",
@@ -494,6 +559,7 @@
      "CMPM151"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: CMPM 35 or CMPM 120 or CMPM 150 or CMPM 151 or by permission of instructor. Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -504,6 +570,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM163",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces real-time, hardware-accelerated graphics programming suitable for game development, visual effects, and interactive multimedia projects. Emphasizes  contemporary shader-programming techniques and developing custom effects using game engines and multimedia software.",
@@ -518,6 +586,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 (exceptions granted in special cases with permission of the instructor).",
    "repeatable": false,
@@ -528,6 +597,12 @@
   {
    "catalog_instructor": null,
    "code": "CMPM164",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "CMPM164L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the graphic elements in computer games. Topics include modifying, optimizing, adding components, and building a game engine. Course evaluation based on exams and several programming projects, including a game built using the student's game engine.",
@@ -543,6 +618,7 @@
      "CSE160"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 163 or CSE 160 . Concurrent enrollment in CMPM 164L is required.",
    "repeatable": false,
@@ -553,6 +629,12 @@
   {
    "catalog_instructor": null,
    "code": "CMPM164L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "CMPM164"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides hands-on experience in using, designing, and building game engines. Students also explore different special effects, such as particle systems, spring systems, and game physics.",
@@ -568,6 +650,7 @@
      "CSE160"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 163 or CSE 160 . Concurrent enrollment in CMPM 164 is required.",
    "repeatable": false,
@@ -578,6 +661,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM169",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys seminal and contemporary artworks and interactive installations that utilize and critically analyze new media, new technologies, and new algorithms. Students introduced to creative coding practices and encouraged to emulate existing digital arts techniques and to develop their own computational arts projects.",
@@ -594,6 +679,7 @@
      "CMPM163"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: CMPM 35 or CMPM 120 or CMPM 163 or by permission of instructor. Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -604,6 +690,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM17",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Introduction to design thinking and the engineering design cycle via a design-build-evaluate-iterate process, resulting in a functional artifact. Students work in groups while learning discipline-specific standards of good engineering practice. Specific project details and disciplines explored vary with instructor. No prerequisites or prior learning required.",
@@ -616,6 +704,7 @@
    ],
    "number": "17",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores and frosh. Seniors and juniors may enroll by permission of the instructor.",
    "repeatable": true,
@@ -626,6 +715,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM170",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Working in multiple small teams, students practice multiple cycles of the interactive media design process. Cycles involve ideation, research, prototyping, release, and reflection. Students will understand how to follow the design process as a way to build knowledge, understanding, and empathy for a system’s users rather than just as a means to produce those systems. The course draws on design philosophies from inside and outside of the computer games industry. (Formerly Game Design Studio I.)",
@@ -640,6 +731,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 . Enrollment is restricted to senior computer science: computer game design majors or by permission of the instructor.",
    "repeatable": false,
@@ -650,6 +742,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM171",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Students work in teams to create a fully-functional subset (\"vertical slice\") of an interactive, playable software system. Focus is on experience design, systems design, integrating assets (visual, auditory, and written), testing, and project management. May be repeated for credit. (Formerly offered as Game Design Studio II.)",
@@ -673,6 +767,7 @@
      "CMPM176"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: CMPM 120 and CMPM 130 and CMPM 170 and CMPM 176 .",
    "repeatable": true,
@@ -683,6 +778,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM172",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Students work in teams to produce fully functional games based on previously developed game subsets. Focus on production including scaling, long-term player experience, teaching mechanics through interaction, developing multi-stage narratives/scenarios, and varying gameplay as players develop new understandings and abilities. Prerequisite(s): CMPM 171 , or by instructor permission. Enrollment is by permission of the instructor. Formerly offered as Game Design Studio III.",
@@ -693,6 +790,7 @@
    "ge_codes": [],
    "number": "172",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -703,6 +801,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM173",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces multiple methods for prototyping computational media projects and challenges students to use these in response to design briefs. Students work in teams to develop mini-projects that may be included in their portfolios along with statements of individual contributions to group efforts.",
@@ -717,6 +817,7 @@
      "CMPM120"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -727,6 +828,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM174",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Students work in teams on building the Minimum Viable Product (MVP) for a computational media project. The focus is on designing a production plan, and executing it through an iterative process. Projects may cover the entire range of computational media, from interactive art installations to mobile apps.",
@@ -744,6 +847,7 @@
      "CMPM173"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 130 and CMPM 173 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -754,6 +858,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM176",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents game design as the interplay of multiple interacting game systems. Surveys various game systems: movement, combat, reward, economic, logistics, quest, information visibility, narrative. Students explore systems via study, design, and play of board, card, and computer games.",
@@ -768,6 +874,7 @@
      "CMPM80K"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 80K .",
    "repeatable": false,
@@ -778,6 +885,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM177",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys tactical, structural, contextual, and other methods to enhance creativity and innovation in the design of games and other interactive media. Investigates strategies for creativity and innovation drawn from diverse fields, including interactive affordances, narrative and poetics, biology, contextual inquiry, and design research. To innovate in a field of fixed genres is challenging: the allure of modeling exemplars is strong. Although imitation can be successful in the marketplace, the most creative action occurs on the leading edge of change. Innovation benefits from strategies and methods that are directly aimed at exploring new perspectives and structures to learn through the process of discovery.",
@@ -788,6 +897,7 @@
    "ge_codes": [],
    "number": "177",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -798,6 +908,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM178",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students move through a rigorous design-research process involving skills and principles in human-centered design research as well as selected formal research methods. They learn to use tools for ideation, human-centered qualitative research, domestic probes, mock-ups, and prototypes.",
@@ -810,6 +922,7 @@
    ],
    "number": "178",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -820,6 +933,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM179",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "ARTG179"
@@ -841,6 +956,7 @@
      "CMPM80K"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 120 and CMPM 80K .",
    "repeatable": true,
@@ -851,6 +967,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM180",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Allows students to explore topics in the computational media field and practice design in a wide variety of applications and areas, including but not limited to interactive computational experiences, AI and poetry, smart cities and game design, ethics and computational media, and computational media culture. Course presentation and assessment will vary by topic and instructor.",
@@ -861,6 +979,7 @@
    "ge_codes": [],
    "number": "180",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -871,6 +990,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM181",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to develop serious games. Course involves multiple aspects of game development, with an emphasis on identifying the topic and goal for the game, initiating research on the topic, and developing an initial concept design. The concept design phase will include several iterations and experimentation with various techniques and game elements toward addressing the goal established. The process also involves identifying assessment and efficacy measures given the goal identified. These measures are theory-based and will be developed based on the initial research conducted. The outcome should be a concept design and prototype. Taught in conjunction with CMPM 255 . Students cannot receive credit for this course and CMPM 255 .",
@@ -881,6 +1002,7 @@
    "ge_codes": [],
    "number": "181",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -891,6 +1013,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM182",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to polish and assess their games. This is a continuation of the Games for Impact Studio series from Studio I. The course will involve aspects of (I) game production, with an emphasis on tuning the design and polishing it, and (II) assessment, where students develop their methods for assessment, which include usability testing, as well as goal assessment based on metrics development, data collection, and analysis. The outcomes are: the game is polished and tested, as well as a report on the evaluation of the game. Taught in conjunction with CMPM 256 . Students cannot receive credit for this course and CMPM 256 .",
@@ -905,6 +1029,7 @@
      "CMPM181"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 181 .",
    "repeatable": false,
@@ -915,6 +1040,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit a petition to the sponsoring agency.",
@@ -925,6 +1052,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -935,6 +1063,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM194F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit a petition to the sponsoring agency.",
@@ -945,6 +1075,7 @@
    "ge_codes": [],
    "number": "194F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -955,6 +1086,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM195",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit a petition to the sponsoring agency.",
@@ -965,6 +1098,7 @@
    "ge_codes": [],
    "number": "195",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -975,6 +1109,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM195F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Intended for majors. Students submit a petition to the sponsoring agency.",
@@ -985,6 +1121,7 @@
    "ge_codes": [],
    "number": "195F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -995,6 +1132,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -1005,6 +1144,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1015,6 +1155,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Intended for majors. Students submit petition to sponsoring agency.",
@@ -1025,6 +1167,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1035,6 +1178,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "For fourth-year students majoring in computational media. Students submit a petition to the sponsoring agency.",
@@ -1045,6 +1190,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1055,6 +1201,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "For fourth-year students majoring in computational media. Students submit a petition to the sponsoring agency.",
@@ -1065,6 +1213,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1075,6 +1224,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM20",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "GCH20"
@@ -1089,6 +1240,7 @@
    ],
    "number": "20",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1099,6 +1251,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a broad foundation in the history, theory, and contemporary practice of computational media, examining its roots in a variety of fields and current structures of participation. Also covers a selection of key critical lenses for understanding computational media.",
@@ -1109,6 +1263,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to computational media graduate students, or by permission of the instructor.",
    "repeatable": false,
@@ -1119,6 +1274,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of computational media research strategies. Includes case studies of how particular projects were defined and completed and how interdisciplinary concerns have been successfully integrated. Considers the expressive and authorial affordances of different system architecture approaches.",
@@ -1133,6 +1290,7 @@
      "CMPM201"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 201 , or by permission of the instructor. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1143,6 +1301,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of major methods in computational media research. Includes non-numerical methods such as playtesting, arts critique, ethnographic observation, and humanistic interpretation. Also includes numerically oriented methods such as survey instruments, data mining, user experiments, and characterizing expressive/generative spaces.",
@@ -1153,6 +1313,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to Computational Media graduate students.",
    "repeatable": false,
@@ -1163,6 +1324,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM204",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students define the topic, approach, and scope for an M.S. thesis or project. Includes discussion of successful past projects and theses, visits from faculty presenting open problems, reviews of related literature, topic and timeline presentations, and critiques.",
@@ -1173,6 +1336,7 @@
    "ge_codes": [],
    "number": "204",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to computational media graduate students, or by permission of the instructor.",
    "repeatable": false,
@@ -1183,6 +1347,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on developing students’ abilities to do research across multiple disciplines. Discusses multidisciplinary epistemologies and methodologies toward developing research voice and ability across the disciplines. Students engage with diverse sources and media, analyzing how information from computer science, media studies, design, and social sciences can converge in computational contexts. Students are encouraged to integrate and synthesize knowledge from multiple fields and develop a structured argument, building their view within computational media.",
@@ -1193,6 +1359,7 @@
    "ge_codes": [],
    "number": "205",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to Ph.D. students in computational media.",
    "repeatable": true,
@@ -1203,6 +1370,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM206",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers skills for finding relevant literature for a novel research topic, integrating that literature, and communicating the results. Also covers how to select work for a research portfolio, present that work, and describe contributions. Enrollment is by permission of the instructor. Prerequisite(s): CMPM 201 , CMPM 202 , and CMPM 203 for an understanding of media creation and computer programming; good standing in the Ph.D. program. Enrollment is restricted to graduate students.",
@@ -1213,6 +1382,7 @@
    "ge_codes": [],
    "number": "206",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1223,6 +1393,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM230",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the topic of data science in computational experiences such as games, digital apps, and social media. Students develop methods to model behavioral patterns using data with the goal of supporting user research goals and/or improving the user experience. Covers the tools, methods, and principles of data science, including knowledge discovery, data collection, feature extraction and selection, pattern recognition, visualization, and reporting. Also covers analytics across computational media forms, e.g., games, digital apps, and social media. Enrollment is restricted to graduate students in Computational Media, and by permission of the instructor. Students must have a computational background to enroll. Enrollment is by permission of the instructor. (Formerly Game Data Science.)",
@@ -1233,6 +1405,7 @@
    "ge_codes": [],
    "number": "230",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1243,6 +1416,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Psychology plays an important aspect in users' engagement and understanding psychological aspects that can affect users as they interact with technology. This course discusses theories of motivation, perception, emotions, personality, and preferences. Also discusses how such theories affect users' interaction with technologies, such as games, social media, mobile application, and other common technologies used today. Also reviews new papers and results showing the types of models affecting users engagement and their influence and use in the different phases of design or development.",
@@ -1253,6 +1428,7 @@
    "ge_codes": [],
    "number": "232",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in games and playable media, serious games, human computer interaction, and computational media programs, or by permission of the instructor.",
    "repeatable": false,
@@ -1263,6 +1439,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM233",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces methods and techniques for user research evaluation of various types of interfaces. Students review and apply various methods to study user interaction at different stages of development. These include heuristic evaluation and methods that involve conducting user studies, such as observations, surveys, and interviews. In some cases, students use methods to test concept design that may involve a Wizard of Oz approach, where a human takes the role of an AI, making decisions about the interface or interaction behind the scenes. Students learn how to apply these methods and evaluate interaction at various levels of development.",
@@ -1273,6 +1451,7 @@
    "ge_codes": [],
    "number": "233",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in computational media and human computer interaction.",
    "repeatable": false,
@@ -1283,6 +1462,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM235",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents a variety of evaluation methodologies to assess usability, acceptance, and effectiveness of technology with the intended users. Combines lectures and exercises for students to gain firsthand experiences of these methodologies with real users.",
@@ -1293,6 +1474,7 @@
    "ge_codes": [],
    "number": "235",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Seniors may enroll with completion of CSE 165 .",
    "repeatable": false,
@@ -1303,6 +1485,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM237",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Study of current topics in human-robot interaction design and research. Topics vary, but are expected to include how people think, act, and behave around robotic agents; telepresence and teleoperated robotics; applications of human-robot systems; collaborative robotics; and social robotics.",
@@ -1313,6 +1497,7 @@
    "ge_codes": [],
    "number": "237",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1323,6 +1508,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM243",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an interdisciplinary view of computational systems and human interaction, with an emphasis on human-computer interaction and algorithmic economics. Students learn about seminal and cutting-edge research contributions and methodologies, and carry out a quarter-long research project. (Formerly Technology and Information Management 243.)",
@@ -1333,6 +1520,7 @@
    "ge_codes": [],
    "number": "243",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): A background in either mathematical proofs or user-centered design and programming. Enrollment is restricted to graduate students; undergraduates may enroll by permission.of the instructor.",
    "repeatable": false,
@@ -1343,6 +1531,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM244",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The use of AI techniques to enable new player interactions, game mechanics, and genres. Combines elements from academic AI and machine learning with industry game AI techniques. Includes lecture and paper discussions as well as AI programming exercises and projects.",
@@ -1353,6 +1543,7 @@
    "ge_codes": [],
    "number": "244",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; others by permission.",
    "repeatable": false,
@@ -1363,6 +1554,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM248",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers wide range of practices including hypertext, interactive fiction, embedded narratives in games, interactive drama, and artificial intelligence-based story generation. Through a mixture of readings, assignments, and project work, explores the theoretical positions, debates, and technical and design issues arising from these different approaches.",
@@ -1373,6 +1566,7 @@
    "ge_codes": [],
    "number": "248",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1383,6 +1577,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM25",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces theory and techniques of 3D computer graphics. Topics include: capabilities of modern graphics hardware; 3D coordinate spaces; modeling with polygons; NURBS and subdivision surfaces; applying textures and materials; lighting; and simple effects. Students develop proficiency in 3D modeling via lectures and assignments focused on the use of a 3D modeling tool.",
@@ -1395,6 +1591,7 @@
    ],
    "number": "25",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1405,6 +1602,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to develop serious games. Course involves multiple aspects of game development, with an emphasis on identifying the topic and goal for the game, initiating research on the topic, and developing an initial concept design. The concept design phase will include several iterations and experimentation with various techniques and game elements toward addressing the goal established. The process also involves identifying assessment and efficacy measures given the goal identified. These measures are theory-based and will be developed based on the initial research conducted. The outcome should be a concept design and prototype. Taught in conjunction with CMPM 181 . Students cannot receive credit for this course and CMPM 181 .",
@@ -1415,6 +1614,7 @@
    "ge_codes": [],
    "number": "255",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to graduate students in computational media.",
    "repeatable": false,
@@ -1425,6 +1625,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM256",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to polish and assess their games. This is a continuation of the Games for Impact Studio series from Studio I. The course involves aspects of (I) game production, with an emphasis on tuning the design and polishing it; and (II) assessment, where students develop their methods for assessment, which include usability testing, as well as goal assessment based on metrics development, data collection, and analysis. The outcomes are: the game is polished and tested, as well as a report on the evaluation of the game. Taught in conjunction with CMPM 182 . Students cannot receive credit for this course and CMPM 182 .",
@@ -1439,6 +1641,7 @@
      "CMPM255"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 255 . Enrollment is restricted to graduate students in computational media.",
    "repeatable": false,
@@ -1449,6 +1652,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM26",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces theories and techniques of 3D computer animation. Topics include: character animation; rigging; simulation of cloth, liquids, and fire; motion capture; rendering; and editing animated scenes. Students develop proficiency in 3D animation via lectures and assignments focused on the use of a 3D animation tool and use of motion-capture software.",
@@ -1465,6 +1670,7 @@
      "CMPM25"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 25 .",
    "repeatable": false,
@@ -1475,6 +1681,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM265",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "In-depth exploration of algorithms for the automated generation of 2D and 3D models and content. Covers multiple approaches, including noise, grammars, genetic algorithms and programming, parametric design, and answer-set programming. Includes application of techniques to computer-game content and level design.",
@@ -1485,6 +1693,7 @@
    "ge_codes": [],
    "number": "265",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1495,6 +1704,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM268",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigates how new immersive display technologies and interaction techniques can support analytical reasoning and decision making in a variety of contexts.",
@@ -1505,6 +1716,7 @@
    "ge_codes": [],
    "number": "268",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1515,6 +1727,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM269",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces contemporary techniques in deep learning focusing on the application of these techniques to a range of tasks related to art and design outputs.",
@@ -1529,6 +1743,7 @@
      "CMPM202"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: CMPM 202 or by permission of the instructor. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1539,6 +1754,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM27",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the development of physically based materials in Substance Designer and Substance Painter. These are then applied to a range of character and machine models within either the Blender or Maya 3D modeling applications.",
@@ -1553,6 +1770,7 @@
      "CMPM25"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CMPM 25 or by permission of the instructor.",
    "repeatable": false,
@@ -1563,6 +1781,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Graduate seminar with speakers from academia and industry. Covers state of the art research and industry trends in Computational Media and related areas.",
@@ -1573,6 +1793,7 @@
    "ge_codes": [],
    "number": "280C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to computational media and games and playable media graduate students.",
    "repeatable": true,
@@ -1583,6 +1804,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Covers advanced topics and current research in creative coding as it intersects computational media. Focuses on student presentations and seminar participation. Enrollment is restricted to graduate students and by permission of instructor. This class can be taken for Satisfactory/Unsatisfactory credit only.",
@@ -1593,6 +1816,7 @@
    "ge_codes": [],
    "number": "280F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1603,6 +1827,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar covering advanced topics and current research in generative methods--the field focused on algorithms for creation of 2D and 3D models and content.",
@@ -1613,6 +1839,7 @@
    "ge_codes": [],
    "number": "280G",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1623,6 +1850,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Covers advanced topics and current research in human-computer interaction as it intersects computational media. Focuses on student presentations and seminar participation. Enrollment restricted to graduate students and by permission of the instructor.",
@@ -1633,6 +1862,7 @@
    "ge_codes": [],
    "number": "280H",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1643,6 +1873,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280I",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Ongoing participatory seminar toward staying informed about the current state of the art in Human Computer Research, both within the Computational Media department, as well as in the broader field. Course consists of weekly lectures and discussion. Graduate students will take part in giving presentations.",
@@ -1653,6 +1885,7 @@
    "ge_codes": [],
    "number": "280I",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to computational media and games and playable media graduate students.",
    "repeatable": true,
@@ -1663,6 +1896,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Covers advanced topics and current research in interactive systems for individuals who have special needs. Focuses on student presentations and seminar participation.",
@@ -1673,6 +1908,7 @@
    "ge_codes": [],
    "number": "280K",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1683,6 +1919,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Covers advanced topics and current research in player experience and modeling. Delves into topics related to: artificial intelligence, psychology, data science, as well as computer human interaction as they intersect with games and player experience. Course is conducted as a studio/seminar, where students read and analyze previous research within this area. Students are asked to present and discuss current state of the art of research in the area of player experience and modeling and then develop their own research within this area. Through interaction with the instructor and other colleagues within the class, students work toward refining their research. This course can be taken for Satisfactory/Unsatisfactory credit only.",
@@ -1693,6 +1931,7 @@
    "ge_codes": [],
    "number": "280P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1703,6 +1942,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280R",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Focuses on human-centered design and research approaches to the development of robotic technologies. Students read primary research papers, examine prototype robotic systems, and build upon those materials to lead group discussions, propose research projects, and conduct HRI research.",
@@ -1713,6 +1954,7 @@
    "ge_codes": [],
    "number": "280R",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1723,6 +1965,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar series of current research on a special topic in information systems and technology management. The theme of research presented throughout the course selected by the instructor. Topics may include, but are not limited to, knowledge planning, new product development and management of technology. Enrollment with permission of instructor. (Formerly Technology and Information Management 280S.)",
@@ -1733,6 +1977,7 @@
    "ge_codes": [],
    "number": "280S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1743,6 +1988,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280W",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Covers advanced topics and current research in digital media—the interdisciplinary field at the intersection of computer science, media authoring, and models of interpretation from the humanities and social sciences. Focuses on student presentations and seminar participation.",
@@ -1753,6 +2000,7 @@
    "ge_codes": [],
    "number": "280W",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1763,6 +2011,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM280X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar covering topics of current research in artificial intelligence applied to interactive art and entertainment, including computer games. Enrollment by permission of instructor.  Enrollment restricted to graduate students.",
@@ -1773,6 +2023,7 @@
    "ge_codes": [],
    "number": "280X",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1783,6 +2034,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM290A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students learn about a current research area in computational media and make a contribution. Each course offering focuses on a different aspect of technical, creative, and/or interpretive work in the field.",
@@ -1793,6 +2046,7 @@
    "ge_codes": [],
    "number": "290A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to computational media and human computer interaction graduate students.",
    "repeatable": true,
@@ -1803,6 +2057,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM290J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "DANM250D"
@@ -1815,6 +2071,7 @@
    "ge_codes": [],
    "number": "290J",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1825,6 +2082,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM290K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on enhancing social and emotional capabilities and qualities in interactive systems. Students read research, look at sample systems, and engage in evaluation, design, and prototyping exercises. A research project and helping to lead class discussions are also required.",
@@ -1835,6 +2094,7 @@
    "ge_codes": [],
    "number": "290K",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1845,6 +2105,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM290P",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "DANM290P"
@@ -1857,6 +2119,7 @@
    "ge_codes": [],
    "number": "290P",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1867,6 +2130,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM296",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work on their master's project with a faculty supervisor. Students submit petition to sponsoring agency. Assessment is done based on project goals and the ability of the student to apply his/her knowledge and skills accumulated through the master's classes into the project.",
@@ -1877,6 +2142,7 @@
    "ge_codes": [],
    "number": "296",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1887,6 +2153,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -1897,6 +2165,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1907,6 +2176,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -1917,6 +2188,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1927,6 +2199,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM297C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -1937,6 +2211,7 @@
    "ge_codes": [],
    "number": "297C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1947,6 +2222,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM297F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -1957,6 +2234,7 @@
    "ge_codes": [],
    "number": "297F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1967,6 +2245,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM297G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "1",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -1977,6 +2257,7 @@
    "ge_codes": [],
    "number": "297G",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1987,6 +2268,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Thesis research conducted under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -1997,6 +2280,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2007,6 +2291,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Thesis research conducted under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -2017,6 +2303,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2027,6 +2314,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM299C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Thesis research conducted under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements. Students submit petition to sponsoring agency.",
@@ -2037,6 +2326,7 @@
    "ge_codes": [],
    "number": "299C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2047,6 +2337,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM35",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to common data structures, algorithms that operate on them, and techniques for implementation. Uses digital authoring of interactive media as a frame to motivate asymptotic (big-O) analysis of design scalability. Students will program in a strongly typed language.",
@@ -2061,6 +2353,7 @@
      "CSE30"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 30",
    "repeatable": false,
@@ -2071,6 +2364,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM80A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of the physical, psychological, cultural, and psychosocial aspects of disability and how they impact game play. Discusses implications for universal and accessible game design.",
@@ -2083,6 +2378,7 @@
    ],
    "number": "80A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2093,6 +2389,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM80H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "As AI technologies start to integrate and permeate our everyday lives, we become aware of how they impact our lives and the biases inherent in these systems. Course introduces Human-Centered AI, investigating humanistic values and issues of a variety of current AI systems, including those in your car, on your phone (e.g., Siri), on public streets (delivery robots), and at different vendors. Introduces various societal, economic, and humanistic issues such as bias, trust, and accountability, and delves into methods that can be used to design more human-centered AI systems.",
@@ -2105,6 +2403,7 @@
    ],
    "number": "80H",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2115,6 +2414,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM80I",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to Human Computer Interaction (HCI) as a field, using their everyday experience with technology as a starting point. Students learn key HCI concepts and concerns in lectures, and try out HCI design techniques in sections.",
@@ -2127,6 +2428,7 @@
    ],
    "number": "80I",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2137,6 +2439,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM80J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines games as technical and cultural artifacts—shaped by society and, in turn, shaping it. Core topics are traced over time, including social, technical, and artistic topics (for example: conceptions of war, platform affordances, and genre evolution).",
@@ -2147,6 +2451,7 @@
    "ge_codes": [],
    "number": "80J",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Satisfaction of the Entry Level Writing and Composition requirements.",
    "repeatable": false,
@@ -2157,6 +2462,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM80K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how video games (and games broadly) shape experiences and express ideas. Students develop novel games, interpret games, and survey related topics. No programming experience is required. All offerings support students with required synchronous section meetings and optional synchronous events.",
@@ -2169,6 +2476,7 @@
    ],
    "number": "80K",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2179,6 +2487,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM80L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a framework for leadership in entrepreneurial organizations. Topics include leading with authenticity, motivation and personality, storytelling, teamwork and management, organizational culture and processes. Learning is integrated with practice through deep engagement with entrepreneurial leaders and a time-intensive entrepreneurial project. (Formerly Technology and Information Management 80L.)",
@@ -2191,6 +2501,7 @@
    ],
    "number": "80L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2201,6 +2512,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM94",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit a petition to the sponsoring agency.",
@@ -2211,6 +2524,7 @@
    "ge_codes": [],
    "number": "94",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2221,6 +2535,8 @@
   {
    "catalog_instructor": null,
    "code": "CMPM94F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit a petition to the sponsoring agency.",
@@ -2231,6 +2547,7 @@
    "ge_codes": [],
    "number": "94F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2239,11 +2556,10 @@
    "url": "/en/current/general-catalog/courses/cmpm-computational-media/lower-division/cmpm-94f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "CMPM"
 }

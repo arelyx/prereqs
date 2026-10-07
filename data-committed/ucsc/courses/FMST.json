@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "Anjali Arondekar",
    "code": "FMST1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the core concepts underlying the interdisciplinary field-formation of feminist studies within multiple geopolitical contexts. Explores how feminist inquiry rethinks disciplinary assumptions and categories, and animates our engagement with culture, history, and society. Topics include: the social construction of gender; the gendered division of labor, production, and reproduction; intersections of gender, race, class, and ethnicity; and histories of sexuality.",
@@ -16,6 +18,7 @@
    ],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": "Anjali  Arondekar",
    "code": "FMST10",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores feminist theories from domestic U.S. and global contexts in order to ask how interventions of women of color in the U.S. and of radical feminist movements in non-U.S. locations radically re-imagine feminist politics. Rather than focusing on feminist movements that represent different regions of the world, course examines feminist theory through multiple histories of colonialism, post-colonialism, and globalization.",
@@ -38,6 +43,7 @@
    ],
    "number": "10",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -48,6 +54,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST100",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Core course for feminist studies. Serves as an introduction to thinking theoretically about issues of feminism within multiple contexts and intellectual traditions. Sustained discussion of gender and its critical connections to productions of race, class, and sexuality. Focus will change each year.",
@@ -58,6 +66,7 @@
    "ge_codes": [],
    "number": "100",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -68,6 +77,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST102",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Working from the perspective that race is a cultural invention and racism is a political, economic, and social relation, investigates how race is produced as a meaningful and powerful social category, examines the effects of racism as a social relation, and argues for the necessity of combining feminist and critical race studies. By considering different historical periods and places, aims to equip students with the tools necessary to critically examine the production and reproduction of race and racism in the U.S.",
@@ -78,6 +89,7 @@
    "ge_codes": [],
    "number": "102",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): one course from feminist studies. Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -88,6 +100,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST105",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Recommended for transfer students. Focuses on particular debates about feminist methodology. Specific methodological debates vary each year but might include feminist theorizing of experience, epistemology, situated knowledges, notions of truth and the real. Feminist methods may include transnational approaches, as well as queer, decolonial, postcolonial, and critical race methodologies. Enrollment is by permission of the instructor.  (Formerly FMST 75.)",
@@ -98,6 +112,7 @@
    "ge_codes": [],
    "number": "105",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -108,6 +123,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST112",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI112"
@@ -120,6 +137,7 @@
    "ge_codes": [],
    "number": "112",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to feminist studies, politics, legal studies, and Latin American and Latino studies/politics combined majors during first and second pass enrollment.",
    "repeatable": false,
@@ -130,6 +148,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines migration as a mode of inquiry into transnational practices across geographic locales and temporal zones. Analyzes migration in relation to the transnational formation of gender, race, and sexuality as well as processes of neocolonialism, the state, and globalization.",
@@ -148,6 +168,7 @@
      "FMST145"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 , FMST 100 , or FMST 145 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -158,6 +179,8 @@
   {
    "catalog_instructor": "Gina Athena Ulysse",
    "code": "FMST117",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This experimental course situates the pioneer and controversial ethnographer, novelist, and playwright Zora Neale Hurston as an avant-garde. Analyzing her influence on academics, activists and artists, students consider the complex ways anthropology functions as material (from the textual to the visual), a source of both inspiration and refusal. In the process of exploration, students critically ponder what constitutes an intervention in academia, on the streets, or in artistic settings?",
@@ -168,6 +191,7 @@
    "ge_codes": [],
    "number": "117",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -178,6 +202,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST12",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the basics of podcasting and guides students to become contributors to Feminist Files, a podcast that makes feminist scholarship and scholars accessible to the public. This course gives students the theoretical and practical framework to critique a variety of podcasts and engage in the podcast movement. Students learn how to conceptualize stories, research topics, interview guests, write scripts, host shows, records and edit audio. Students also build their collaboration skills by working in groups to produce segments.",
@@ -188,6 +214,7 @@
    "ge_codes": [],
    "number": "12",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Completion of at least one other lower-division feminist studies course.",
    "repeatable": false,
@@ -198,6 +225,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the emergence of transnational feminism through U.S. women of color and postcolonial feminism. Underscores the role of globalization, nationalism, and state formation in relation to feminist theorizing, activism, and labor across the Global South. In an attempt to understand the salience of inequalities, the course interrogates the continuation of feminist critique that is attentive to the war on terror, neocolonialism, and empire.",
@@ -214,6 +243,7 @@
      "FMST1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -224,6 +254,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST123",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores relationship between feminism and culture. Topics will vary and include different forms of cultural production such as film and literature. Regional/national focus will also vary.",
@@ -238,6 +270,7 @@
      "FMST1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -248,6 +281,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST124",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines new ways of understanding the body and race through the intersection of technology and science. Addresses how broader structures of power and the rise of new technological and scientific discoveries mediate power relations and alter how race, national boundaries, the body, and citizenship are normalized and contested from colonialism to the present. Course content may vary; themes may include: U.S. eugenics, I.Q. tests, patenting debates, sterilization, assisted reproduction, biometrics, and genetics across the Americas.",
@@ -260,6 +295,7 @@
    ],
    "number": "124",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior feminist studies majors.",
    "repeatable": false,
@@ -270,6 +306,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES125"
@@ -284,6 +322,7 @@
    ],
    "number": "125",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -294,6 +333,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST126",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the analysis of visual images and text with particular emphasis on feminist critical methodologies. Using case studies from photography, film, TV, advertising, and new media, students learn how to read and analyze culture.",
@@ -306,6 +347,7 @@
    ],
    "number": "126",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -316,6 +358,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST129",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Situates current debates about reproductive rights and the repeal of Roe v. Wade in the United States in a transnational context of population governance and carceral power. Readings draw from ethnography, critical race, feminist and queer theory to trouble the concepts of privacy, bodily autonomy, and freedom that have shaped articulations of the \"right to choose.\" Taking a comparative approach to reproductive justice movements in global norths and souths, students explore counter traditions of collective and social rights claims, belonging and responsibility, and practices of care and mutual aid in order to expand our vision of what is politically possible and necessary for a post-Roe era.",
@@ -326,6 +370,7 @@
    "ge_codes": [],
    "number": "129",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -336,6 +381,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers how things--what we may think of as objects, matter, nature, technology, bodies--are constitutive elements of social and political life. What happens to the political as a category if we take this matter seriously?",
@@ -350,6 +397,7 @@
      "FMST1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 .",
    "repeatable": false,
@@ -360,6 +408,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST132",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Postcolonial feminist studies. Explores how discourses of gender and sexuality shaped the policies and ideologies of the historical processes of colonialism, the civilizing mission, and anticolonial nationalism. Considers orientalism as a gendered discourse as well as colonial understandings of gender and sexuality in decolonialization. Explores Western media representations, literature, the law, and the place of gender in the current debate between cultural relativism and universalism. Provides an understanding of some key terms in postcolonial studies and an in-depth examination of the place of gender in these processes.",
@@ -370,6 +420,7 @@
    "ge_codes": [],
    "number": "132",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -380,6 +431,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST133",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Contemporary technoscientific practices, such as nano-, info-, and biotechnologies, are rapidly reworking what it means to be human. Course examines how both our understanding of the human and the very nature of the human are constituted through technoscientific practices.",
@@ -399,6 +452,7 @@
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -409,6 +463,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST135",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the multiple debates animating the linkages between science, race, and sexuality. Interrogates the interrelated, epistemological frameworks of science and sexuality/queer studies across a range of interdisciplinary and geopolitical locations.",
@@ -424,6 +480,7 @@
      "FMST145"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 100 or FMST 145 . Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": true,
@@ -434,6 +491,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST136",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES136",
@@ -449,6 +508,7 @@
    ],
    "number": "136",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -459,6 +519,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST139",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers African American women as central to understanding of U.S. history, focusing on everyday survival, resistance, and movements for social change. Discussion of critical theories for historical research, gender, and race. Emphasis on biography, cultural history, and documentary and archival research.",
@@ -471,6 +533,7 @@
    ],
    "number": "139",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -481,6 +544,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST14",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Popular culture enables people to make sense of their modern selves and their place in the world. Focusing on South Asia, this course explores the region's rich and variegated popular culture forms, including film, music, television, the painted and printed image, and sport. It also investigates how the popular articulates with nation and global conjunctures and how it constructs hierarchies of class, gender, caste, and sexuality.",
@@ -493,6 +558,7 @@
    ],
    "number": "14",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -503,6 +569,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST145",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES145"
@@ -517,6 +585,7 @@
    ],
    "number": "145",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -527,6 +596,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST147",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the possibility that forces of social oppression, stratification, and domination emerge not first and foremost from ignorance, but rather from socially legitimated and institutionally embedded forms of knowledge. Primary engagement is with feminist of color texts, science studies, Black and Indigenous studies. Course supports students in building reading, writing, and analytic skills while investigating the intersections of knowledge, power, oppression, and liberation.",
@@ -537,6 +608,7 @@
    "ge_codes": [],
    "number": "147",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -547,6 +619,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST15",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines migration as a mode of inquiry into transnational practices across geographic locales and temporal zones. Analyzes migration in relation to the transnational formation of gender, race, and sexuality as well as processes of neocolonialism, the state, and globalization. Taught in conjunction with FMST 115 .",
@@ -559,6 +633,7 @@
    ],
    "number": "15",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -569,6 +644,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST150",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "From a foundation in semiotics, considers the ways race and gender are constructed, understood, performed, embraced, commodified, and exploited through representations. Uses representations of, by, and for the margins to engage theories of communication, identity, and representation. Creative final projects encouraged.",
@@ -581,6 +658,7 @@
    ],
    "number": "150",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior feminist studies majors or by permission of instructor.",
    "repeatable": false,
@@ -591,6 +669,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST16",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The news is a set of narratives that produce, maintain, repair, and transform reality. Using three events that brought together old and new media, this course traces how the interaction of new media with news has changed how we make sense of the world around us and our place in it.",
@@ -603,6 +683,7 @@
    ],
    "number": "16",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -613,6 +694,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST175",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced topics in gender and sexuality in Latin America and Latina/o studies. Analyzes role of power, race, coloniality, national and transnational processes in the production and analysis of genders and sexualities. Materials include memoir, fiction, ethnography, social documentary and history.",
@@ -625,6 +708,7 @@
    ],
    "number": "175",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomore, junior, and senior feminist studies majors or by permission of instructor.",
    "repeatable": false,
@@ -635,6 +719,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST176",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "VAST176"
@@ -647,6 +733,7 @@
    "ge_codes": [],
    "number": "176",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -657,6 +744,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST18",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Black feminist theoretical and methodological approaches to the dailiness of women's lives, which considers historical and contemporary Black feminist interventions and praxis that challenge ethnographic hegemony. Students revisit old and new debates to ponder questions of authority, genres, positionality, and citation politics.",
@@ -669,6 +758,7 @@
    ],
    "number": "18",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -679,6 +769,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST188",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on a particular topic in feminist theory. Topics vary each offering but might include theorizing the gendered subject, racializing gender, politics and feminism, the relationship between queer theory and feminism, transgender studies, women of color feminisms, postcolonial and decolonial feminisms, feminist science studies.",
@@ -689,6 +781,7 @@
    "ge_codes": [],
    "number": "188",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": true,
@@ -699,6 +792,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST189",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focus on a particular problem in feminist theory. Problems vary each year but might include theorizing the gendered subject, racializing gender, the meeting points of psychoanalysis and social-political analysis in theorizing gender, the relationship between queer theory and feminist theory, postcolonial feminist theory.",
@@ -713,6 +808,7 @@
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 100 . Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": true,
@@ -723,6 +819,8 @@
   {
    "catalog_instructor": "Gina Athena Ulysse",
    "code": "FMST19",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on key issues, core concepts and debates foundational to Black feminisms. With some consideration from the Black diaspora, students examine processes of self-making from resistance to a history of violence, practices and strategies of creative survivalism, and the ongoing struggle to liberation.",
@@ -735,6 +833,7 @@
    ],
    "number": "19",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -745,6 +844,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST193",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual field study in the vicinity of the campus under the direct supervision of a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -755,6 +856,7 @@
    "ge_codes": [],
    "number": "193",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -765,6 +867,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST193F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Individual field study in the vicinity of the campus under the direct supervision of a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -775,6 +879,7 @@
    "ge_codes": [],
    "number": "193F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -785,6 +890,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Approaches legal reasoning from a feminist and intersectional perspective with attention to structures and jurisdiction, case materials, and emerging international frameworks for gender justice. Designed to facilitate completion of a substantial research essay based in feminist legal philosophy.",
@@ -796,10 +903,13 @@
    "number": "194A",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -810,6 +920,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Providing for a critical examination of canonical formations in history and archives, this course proposes new ways of thinking about history from the point of view of those who have been marginalized or excluded by race, class, gender, or sexuality.",
@@ -821,10 +933,13 @@
    "number": "194B",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -835,6 +950,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines icons and the processes through which an iconicity is constructed and circulated in its complexity. Icons and iconicities often link or articulate various ideologies, affects, and systems of thought into a potent symbol or a mythology. Icons constitute norms, but also disrupt them; icons could articulate new technologies, aesthetics and their representations of the self with purportedly older modes of being in the world, such as a transcendent belief in a god, a faith, etc.",
@@ -846,10 +963,13 @@
    "number": "194C",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements, and FMST 1 and FMST 100 . Enrollment restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -860,6 +980,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines different feminist approaches to understanding the nature of scientific practices. Particular attention paid to notions of evidence, methods, cultural and material constraints, and the heterogeneous nature of laboratory practices. Considers the ways in which gender, race, and sexuality are constructed by science and how they influence both scientific practices and conceptions of science. Also examines the feminist commitment to taking social factors into account without forfeiting the notion of objectivity.",
@@ -871,10 +993,13 @@
    "number": "194D",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -885,6 +1010,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Traces the intersection between Chicana studies and Latin American studies through transnational forms of cultural production, imaginaries, and empowerment. Analysis of theories of cultural production and discussion of the political salience of culture as a site for resistance, critique, and creativity.",
@@ -896,10 +1023,13 @@
    "number": "194F",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -910,6 +1040,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores questions of colonialism, empire, race, gender, and geopolitics in the proliferating images--filmic, televisual, and media--of Africa in the United States. Facilitates the completion of a substantial research essay based on the study of popular culture.",
@@ -921,10 +1053,13 @@
    "number": "194G",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -935,6 +1070,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "French philosopher Michel Foucault's writings on modern forms of knowledge, power, and subjectivity provide a serious challenge to how we negotiate social oppression. Engages some of Foucault's most cited works, and grapples specifically with his primary claim that modern societies are marked less by freedom and autonomy than by discipline and docility.",
@@ -946,10 +1083,13 @@
    "number": "194H",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -960,6 +1100,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194I",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed to train students in oral history and memoir writing. Emphasizes the specialness of transgressive voices; race, class, and sexuality, women's silence, erasure, censorship, and marginalization are addressed. The politics of memory, narratives, storytelling, and editorial judgment are considered.",
@@ -971,10 +1113,13 @@
    "number": "194I",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -985,6 +1130,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES190K"
@@ -998,10 +1145,13 @@
    "number": "194K",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1012,6 +1162,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194M",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES190M"
@@ -1025,10 +1177,13 @@
    "number": "194M",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1039,6 +1194,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194O",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES190O"
@@ -1052,10 +1209,13 @@
    "number": "194O",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1066,6 +1226,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194Q",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES190Q"
@@ -1079,10 +1241,13 @@
    "number": "194Q",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1093,6 +1258,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores literature from the natural sciences, anthropology, history, cultural studies, and sociology. Provides theoretical approaches to complex questions in queer studies and geopolitics, and a framework for understanding embodiment, medical regulation, gender formation, the human/animal divide, etc.",
@@ -1104,10 +1271,13 @@
    "number": "194T",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1118,6 +1288,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194W",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Senior seminar focusing on questions of the politics of space, time, and matter. Readings informed by fields, such as indigenous studies, queer studies, afrofuturism, borderland studies, critical race studies, decolonial studies, disability studies, feminist science studies, and new materialisms.",
@@ -1129,10 +1301,13 @@
    "number": "194W",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1143,6 +1318,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the entanglements of histories, genders and archives across a number of intellectual and imperial contexts. Our inquiry approaches the concept of the archive to reflect on who counts as a historical and/or gendered subject and what are the ethics of representation that guide such archival formations. In approaching these questions, students draw on literature from the disciplines of philosophy, gender/sexuality studies, anthropology, history, and literary criticism.",
@@ -1154,10 +1331,13 @@
    "number": "194X",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 , and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": true,
@@ -1168,6 +1348,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST194Y",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "What would we learn about the pressing questions of our time if we centered sound, noise, voice, and music? To think with sound or to think sonically \"is to think conjuncturally about sound and culture.\" Such a \"sonic imagination,\" not only enables us to immerse ourselves in the questions and problems of our time but has the potential to \"redescribe them from unexpected standpoints.\" Thinking with a feminist and sonic imagination, this course is interested in exploring conjunctures and culture by using sound as its point of departure. It serves as an immersive introduction to sound studies and as a senior seminar encourages students to center soundscapes in their own research.",
@@ -1179,10 +1361,13 @@
    "number": "194Y",
    "prereq_groups": [
     [
-     "FMST1",
+     "FMST1"
+    ],
+    [
      "FMST100"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 and FMST 100 ; satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior feminist studies majors.",
    "repeatable": false,
@@ -1193,6 +1378,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST195",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The senior thesis/project which satisfies the major requirement. Course is for independent research and writing. Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; students submit petition to sponsoring agency.",
@@ -1203,6 +1390,7 @@
    "ge_codes": [],
    "number": "195",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1213,6 +1401,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides for individual study program off campus for which faculty supervision is not in person. Students submit petition to sponsoring agency.",
@@ -1223,6 +1413,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1233,6 +1424,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides for individual study program off campus for which faculty supervision is not in person. Students submit petition to sponsoring agency.",
@@ -1243,6 +1436,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1253,6 +1447,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual directed study for upper-division undergraduates. Students submit petition to sponsoring agency.",
@@ -1263,6 +1459,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1273,6 +1470,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Individual directed study for upper-division undergraduates. Students submit petition to sponsoring agency.",
@@ -1283,6 +1482,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1293,6 +1493,8 @@
   {
    "catalog_instructor": "Nicholas O Mitchell",
    "code": "FMST20",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines, and critically analyzes, select post-World War II movements for social justice in the United States from feminist perspectives. Considers how those movements and their participants responded to issues of race, class, gender, and sexuality. A feminist, transnational, analytic framework is also developed to consider how those movements may have embraced, enhanced, or debilitated feminist formations in other parts of the world.",
@@ -1305,6 +1507,7 @@
    ],
    "number": "20",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1315,6 +1518,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introductory required course for feminist studies graduate students. Covers major theorists, debates, and current questions as well as foundational texts through which feminist critiques have been grounded. Content changes with instructor.",
@@ -1325,6 +1530,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1335,6 +1541,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores feminist theorizing across disciplinary and cultural contexts for both methodology (theories about the research process) and epistemology (theories of knowledge). Goal is to orient students toward changes in organization of knowledge and provide them with different feminist methodologies in their pursuit of both an object of study and an epistemology.",
@@ -1345,6 +1553,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1355,6 +1564,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Prepares students to develop research skills and initiate their research projects. Students consider what is meant by feminist research and undertake designing and performing feminist research.",
@@ -1372,6 +1583,7 @@
      "FMST201"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 200 and FMST 201 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1382,6 +1594,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines feminist pedagogies as projects in transgressing traditional disciplinary boundaries. Examines historical examples of alternative pedagogies and contemporary models for creating communities dedicated to social justice. Designed to assist graduate students develop teaching strategies in multiple fields.",
@@ -1392,6 +1606,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1402,6 +1617,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST207",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the interrelated epistemological frameworks of critical race studies and queer studies. Through the study of a range of philosophical, scientific, literary, and cinematic texts, course historicizes and theorizes discourses of race and sexuality.",
@@ -1412,6 +1629,7 @@
    "ge_codes": [],
    "number": "207",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1422,6 +1640,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST208",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES208"
@@ -1434,6 +1654,7 @@
    "ge_codes": [],
    "number": "208",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1444,6 +1665,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST209",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the interrelated, epistemological frameworks of race, slavery and gender across multiple Oceanic and imperial networks. Histories of empire and slavery have been over-determinedly tethered to singular histories of nation-states, temporalities and/or geopolitics. Bypassing the idea of slavery and/or empire as a stable or temporal concept, students are guided instead by an interdisciplinary and comparative framework, seeking more the robust vernaculars and geo-histories that found our current understandings of face, gender and sexuality.",
@@ -1454,6 +1677,7 @@
    "ge_codes": [],
    "number": "209",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1464,6 +1688,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST21",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces dominant discourses about Christianity and Islam in the American public sphere, with particular attention paid to race, gender, sexuality, and class in thinking about religion. Visual and textual media, political commentary, and popular ethnographies are analyzed.",
@@ -1476,6 +1702,7 @@
    ],
    "number": "21",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1486,6 +1713,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST211",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes the ways transnational processes intersect with changing notions of gender, sexuality, and race. Examines processes such as tourism, the Internet, capitalism, and labor spanning Brazil, the Dominican Republic, and the United States.",
@@ -1496,6 +1725,7 @@
    "ge_codes": [],
    "number": "211",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1506,6 +1736,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST212",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "HISC212"
@@ -1518,6 +1750,7 @@
    "ge_codes": [],
    "number": "212",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1528,6 +1761,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST214",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Graduate seminar on feminist science studies. Topics will vary and may include: the joint consideration of science studies and poststructuralist theory; the relationship between discursive practices and material phenomena; and the relationship between ontology, epistemology, and ethics.",
@@ -1538,6 +1773,7 @@
    "ge_codes": [],
    "number": "214",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1548,6 +1784,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses the intersection of the postcolonial and the postsocialist as theoretical ground. Considers how (neo)liberal ideologies about race, class, gender, secularism, and democracy are shaped by the intersection between postsocialist geopolitics and imperial legacies. (Formerly Postsocialism, Postcolonialism, Neoliberalism.)",
@@ -1558,6 +1796,7 @@
    "ge_codes": [],
    "number": "215",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1568,6 +1807,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST216",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the entanglements of archives, genders, and histories across a number of intellectual and imperial contexts. Approaches the concept of the archive to reflect on who counts as a historical and/or gendered subject and what are the ethics of representation that guide such archival formations. Draws on literature from philosophy, gender/sexuality studies, anthropology, history, and literary criticism.",
@@ -1578,6 +1819,7 @@
    "ge_codes": [],
    "number": "216",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1588,6 +1830,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the increasing importance of religion as a category of analysis in feminist theory. Addresses the relationship of religion, feminist politics, and activism in connection with nationalism, the family, sexuality, and geopolitics.",
@@ -1598,6 +1842,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1608,6 +1853,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST224",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRES224"
@@ -1620,6 +1867,7 @@
    "ge_codes": [],
    "number": "224",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1630,6 +1878,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Variable topics that could include postcolonial approaches to questions of epistemology and knowledge production, theories of nationalism and nation-state formation, subaltern historiography, analyses of modernization and developmental theory, postcolonial approaches to globalization, and transnationalism. Significant component of feminist contributions to these literatures.",
@@ -1640,6 +1890,7 @@
    "ge_codes": [],
    "number": "232",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1650,6 +1901,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST260",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Re-visions and extends Reconstruction from 1865-1920 from a black feminist standpoint. Topics include: redefining democracy; labor; literacy and education; suffrage; re-visioning sexuality; childbirth; parenting, etc. Analyzes traditional historiography and the methodological implications of the boundaries between history and fiction, and archival and oral traditions.",
@@ -1660,6 +1913,7 @@
    "ge_codes": [],
    "number": "260",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students",
    "repeatable": false,
@@ -1670,6 +1924,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST270",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on generative interfaces within and at the edge of the anthropological discipline, in particular, the way ethnographies and fields are being reconfigured by feminist, postcolonial, and decolonial perspectives and methodologies in science and technology studies (STS).",
@@ -1680,6 +1936,7 @@
    "ge_codes": [],
    "number": "270",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1690,6 +1947,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST290",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "First-year graduate students meet with the teaching assistant trainer for bi-weekly meetings covering pedagogical approaches. Also includes class visits and shadowing. Enrollment is restricted to graduate students. (Formerly offered as First-Year Advising.)",
@@ -1700,6 +1959,7 @@
    "ge_codes": [],
    "number": "290",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1710,6 +1970,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST291",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Independent study formalizing the advisee-adviser relationship. Regular meetings to plan, assess, and monitor academic progress, and to evaluate coursework as necessary. May be used to develop general bibliography of background reading trajectory of study in preparation for the qualifying examination. Enrollment restricted to graduate students.",
@@ -1720,6 +1982,7 @@
    "ge_codes": [],
    "number": "291",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1730,6 +1993,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -1740,6 +2005,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1750,6 +2016,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -1760,6 +2028,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1770,6 +2039,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST297F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.  Enrollment is restricted to graduate students.",
@@ -1780,6 +2051,7 @@
    "ge_codes": [],
    "number": "297F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1790,6 +2062,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Prerequisite(s): advancement to candidacy. Enrollment restricted to graduate students.",
@@ -1800,6 +2074,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1810,6 +2085,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Prerequisite(s): advancement to candidacy. Enrollment restricted to graduate students.",
@@ -1820,6 +2097,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1830,6 +2108,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST30",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores questions of science and justice. Examines the nature of scientific practice, the culture of science, and the possibilities for the responsible practice of science. Rather than focusing on feminist critiques of science, the course examines how science and technology are changing our world and the workings of power.",
@@ -1842,6 +2122,7 @@
    ],
    "number": "30",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1852,6 +2133,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST31",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces students to the key critical concepts, debates, and questions of practice in the emerging field of disability studies, with a focus on feminist and critical race approaches to disability.",
@@ -1864,6 +2147,7 @@
    ],
    "number": "31",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1874,6 +2158,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST40",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the relationship between sexuality and the contemporary term globalization as a dense entanglement of processes that emerges from a history of U.S. empire. Sexuality cannot be separated from power struggles over the classification of bodies, territories, and questions of temporality. Examines how sexualized contact zones produce new knowledge, commerce, inequalities, possibilities, and identities.",
@@ -1886,6 +2172,7 @@
    ],
    "number": "40",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1896,6 +2183,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST41",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Draws from representations of transgender/transsexual people in popular, biomedical, and political contexts. Examines the impact of transgender lives on concepts of gender, identity, and technology. Engages with biological and sexological frameworks of sex/gender, trans experience, and social movements and theories.",
@@ -1906,6 +2195,7 @@
    "ge_codes": [],
    "number": "41",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1916,6 +2206,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST43",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Centering Black feminist Toni Cade Bambara's existential question, \"Are you sure, Sweetheart, that you want to be well?\" this course puts the emphasis on transnational feminist praxis to consider interdisciplinary approaches and methods to living with inequity while pursuing wholeness and well-being. Considering notions of individual and community, care and personhood, environment and nature, self-love and happiness, and other themes, we find theoretical grounding in the concept of rasanblaj (the gathering of ideas, things, people, and spirits).",
@@ -1930,6 +2222,7 @@
      "FMST1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FMST 1 .",
    "repeatable": true,
@@ -1940,6 +2233,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST44",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Women are subject to diverse forms of discrimination which creates barriers to their socio-economic advancement.  The course explores the benefits and hardships produced through gendered migration, how migration is not universally experienced, and how in a globalized world women’s participation in migration differs from each other due to intersectionality.  Also, the class examines what motivates women to migrate in globalization from one nation to another, how they are impacted by such movement, and the impacts on their families and support systems.",
@@ -1952,6 +2247,7 @@
    ],
    "number": "44",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1962,6 +2258,8 @@
   {
    "catalog_instructor": null,
    "code": "FMST71",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "VAST01"
@@ -1976,6 +2274,7 @@
    ],
    "number": "71",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1984,11 +2283,10 @@
    "url": "/en/current/general-catalog/courses/fmst-feminist-studies/lower-division/fmst-71"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "FMST"
 }

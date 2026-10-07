@@ -1,0 +1,11 @@
+{
+ "program": "feminist-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "c6cdecae551c3ff30c35bbe2c2260ebd2b6446c0e034566a6366bdec617d53ce",
+ "skeleton_sha256": "4b7c71938e9fd5ebae620feda405ad857c51e198e4a0dd3c6f084859fd36d4fa",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:12Z",
+ "verified_at": "2026-10-07T00:01:22Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (five-FMST-course quote reworded; comprehensive list prints FMST 194R/U/V instead of CRES 190R/U/V, same courses; three core courses at UCSC absent petition -> note)"
+}

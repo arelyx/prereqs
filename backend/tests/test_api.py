@@ -62,9 +62,37 @@ def test_validate_missing_and_concurrent_prereqs(client, seeded):
     issues = r.json()["issues"]
     kinds = {(i["kind"], i["course"]) for i in issues}
     assert ("missing_prereq", "CSE101") in kinds  # CSE30 not taken anywhere before
-    assert ("concurrent_prereq", "CSE101") in kinds  # CSE16 same quarter
+    assert ("concurrent_prereq", "CSE101") in kinds  # CSE16 same quarter, allowed
     # CSE130 in a later term sees CSE101 from the earlier term: no missing_prereq
     assert ("missing_prereq", "CSE130") not in kinds
+    assert ("missing_coreq", "CSE130") not in kinds  # coreq CSE16 taken earlier
+
+
+def test_same_quarter_prereq_only_when_catalog_allows(client, seeded):
+    body = {
+        "content": {
+            "completed": ["CSE12", "CSE16", "CSE30"],
+            "terms": [{"term_code": "2270", "courses": ["CSE101", "CSE130"]}],
+        },
+        "program_ids": [],
+    }
+    issues = client.post("/u/ucsc/validate", json=body).json()["issues"]
+    by_course = {(i["kind"], i["course"]): i for i in issues}
+    # CSE101 is not on CSE130's concurrent-allowed list: must come first.
+    assert ("missing_prereq", "CSE130") in by_course
+    assert "same quarter" in by_course[("missing_prereq", "CSE130")]["message"]
+
+
+def test_strict_coreq_reported(client, seeded):
+    body = {
+        "content": {
+            "completed": ["CSE12", "CSE30", "CSE101"],
+            "terms": [{"term_code": "2270", "courses": ["CSE130"]}],
+        },
+        "program_ids": [],
+    }
+    issues = client.post("/u/ucsc/validate", json=body).json()["issues"]
+    assert ("missing_coreq", "CSE130") in {(i["kind"], i["course"]) for i in issues}
 
 
 def test_validate_availability_and_ge(client, seeded):
@@ -82,22 +110,18 @@ def test_validate_availability_and_ge(client, seeded):
     assert ge["CC"] is True and ge["TA"] is False
 
 
-def test_validate_requirements_progress(client, seeded):
+def test_program_detail_info_and_source(client, seeded):
     programs = client.get("/u/ucsc/programs").json()
-    prog_id = programs[0]["id"]
-    body = {
-        "content": {
-            "completed": ["CSE12", "CSE16", "CSE101"],
-            "terms": [],
-        },
-        "program_ids": [prog_id],
-    }
-    out = client.post("/u/ucsc/validate", json=body).json()
-    sections = out["programs"][0]["sections"]
-    lower = next(s for s in sections if s["kind"] == "lower_div")["rules"][0]
-    assert lower["done"] == 2 and lower["needed"] == 3 and not lower["satisfied"]
-    upper = next(s for s in sections if s["kind"] == "upper_div")["rules"][0]
-    assert upper["done"] == 1 and upper["needed"] == 2
+    p = programs[0]
+    assert p["slug"] == "computer-science-bs" and p["edition"] == "2026-27"
+    detail = client.get(f"/u/ucsc/programs/{p['id']}").json()
+    assert detail["info_sections"] == [{"title": "Introduction", "paragraphs": ["Study computing."]}]
+    src = client.get(f"/u/ucsc/programs/{p['id']}/source").json()
+    assert "CSE 12" in src["markdown"]
+    # validation accepts the program (requirements are evaluated client-side)
+    out = client.post("/u/ucsc/validate", json={"content": {"completed": ["CSE12"], "terms": []},
+                                               "program_ids": [p["id"]]}).json()
+    assert "issues" in out and "programs" not in out
 
 
 def test_plan_crud_requires_auth(client, seeded):
@@ -240,52 +264,15 @@ def test_validate_dormant_course_error(client, seeded):
     assert "five years" in dormant[0]["message"]
 
 
-def test_filter_passthrough_on_non_range_rules(client, db_session, seeded):
-    """Filters are requirement content: every op must expose filter+matching
-    (the CS B.S. electives bug hid 'any CSE 100-189' behind a list op)."""
-    from app.models import Program
-
-    prog = Program(
-        university_id="ucsc",
-        name="Filter Passthrough Test B.S.",
-        degree="BS",
-        kind="major",
-        slug="filter-passthrough-test",
-        url="https://example.test/fpt",
-        requirements={
-            "sections": [
-                {
-                    "kind": "electives",
-                    "title": "Electives",
-                    "concentration": None,
-                    "rules": [
-                        {"op": "n_of", "n": 4, "courses": [], "branches": None,
-                         "constraints": [], "source": {"heading": "Electives"},
-                         "notes": [], "needs_review": False,
-                         "from_following_lists": True},
-                        {"op": "list", "n": None, "courses": ["ANTH2"],
-                         "branches": None, "constraints": [],
-                         "source": {"heading": "List:"}, "notes": [],
-                         "needs_review": False,
-                         "filter": {"include_ranges": [{"subject": "CSE", "lo": 100, "hi": 189}],
-                                    "include_series": [], "exclude_ranges": [],
-                                    "exclude_codes": ["CSE115A"]}},
-                    ],
-                }
-            ]
-        },
-    )
-    db_session.add(prog)
-    db_session.commit()
-    body = {
-        "content": {"completed": ["CSE101", "CSE130"], "terms": []},
-        "program_ids": [prog.id],
-    }
-    out = client.post("/u/ucsc/validate", json=body).json()
-    rules = out["programs"][0]["sections"][0]["rules"]
-    # the list rule must expose its filter and the taken courses matching it
-    lst = rules[1]
-    assert lst["filter"]["include_ranges"][0]["subject"] == "CSE"
-    assert lst["matching"] == ["CSE101", "CSE130"]
-    # and the pool-fed parent counts range matches (evaluation was already right)
-    assert rules[0]["done"] == 2 and rules[0]["have"] == ["CSE101", "CSE130"]
+def test_catalog_compact(client, seeded):
+    r = client.get("/u/ucsc/catalog/compact")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["described"] == []
+    codes = {c["code"] for c in body["courses"]}
+    assert "CSE12" in codes
+    assert all("description" not in c for c in body["courses"])
+    subj = body["courses"][0]["subject"]
+    r = client.get(f"/u/ucsc/catalog/compact?describe={subj.lower()}")
+    with_desc = [c for c in r.json()["courses"] if "description" in c]
+    assert with_desc and all(c["subject"] == subj for c in with_desc)

@@ -1,46 +1,51 @@
-# pipelines
+# pipelines — the hot path
 
-Scraping + LLM structuring pipelines, one package per university. See
-`docs/ARCHITECTURE.md` for the acquisition-layer contract (immutable
-snapshots, fail-fast guards, LLM roles) and `docs/universities/<univ>/` for
-per-source research: page shapes, quirks, hazards, and fail-fast markers.
+Deterministic acquisition: fetch upstream pages into a gitignored cache
+(`data/`), parse them under fail-fast guards, and export canonical files to
+`data-committed/`. No AI inference anywhere in this tree. Design:
+`docs/ARCHITECTURE.md`; procedure: `docs/REFRESH.md`; per-source page
+research: `docs/universities/ucsc/`.
 
-## Layout
-
-- `common/` — shared primitives, university-agnostic:
-  - `guards.py` — `expect()` / `expect_range()` raise `ScrapeDriftError` on page-shape
-    drift; `FailureBudget` quarantines per-item LLM failures but aborts the run past
-    a threshold.
-  - `http.py` — `PoliteSession`: throttled, retried; non-200 ⇒ drift error.
-  - `snapshot.py` — write-once snapshot dirs `data/<univ>/<source>/<ts>/` with
-    provenance manifests; staging + atomic rename so aborted runs leave nothing.
-  - `ollama.py` — tuned qwen3:4b JSON-mode client (num_ctx=4096 for 4GB VRAM,
-    think off; see module docstring for the full rationale).
-  - `codes.py` — course-code normalization (`CSE 12` ⇄ `CSE12`) and the
-    verbatim-presence extractor used to reject hallucinated codes.
-- `ucsc/` — UC Santa Cruz (full support).
-- `ucdavis/`, `ucsd/` — preliminary, not integrated.
-
-## Running
+## Entry point
 
 ```bash
 cd pipelines
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-pytest                # unit tests
+.venv/bin/python -m ucsc.refresh status --probe   # ledger + cadence + live checks → work order
+.venv/bin/python -m ucsc.refresh hot --probe      # run every due hot task, stop on first failure
 ```
 
-Pipelines require a local Ollama with `qwen3:4b` for structuring stages only;
-fetch stages are pure scraping.
+## Layout
 
-## Rules for adding a pipeline
+- `common/` — university-agnostic primitives
+  - `guards.py` — `expect()` / `expect_range()` raise `ScrapeDriftError` on
+    page-shape drift; `FailureBudget` aborts a run past a per-item failure rate.
+  - `http.py` — `PoliteSession`: throttled, retried, UTF-8 default; non-200 ⇒ drift.
+  - `snapshot.py` — write-once cache dirs `data/<univ>/<source>/<ts>/` with
+    manifests; staging + atomic rename so aborted runs leave nothing behind.
+  - `codes.py` — course-code normalization (`CSE 12` ⇄ `CSE12`) and extraction.
+- `ucsc/refresh.py` — the orchestrator (cadence rules, probes, work order).
+- `ucsc/ledger.py` — `data-committed/ucsc/ledger.json` read/write + canonical dump.
+- `ucsc/editions.py` — catalog edition ids, archive URLs, edition detection.
+- `ucsc/catalog_courses/` — course catalog + deterministic prereq parser.
+- `ucsc/pisa_offerings/` — class search per term (+ chunked `backfill`).
+- `ucsc/soe_schedule/` — Baskin planned schedule.
+- `ucsc/major_requirements/` — program pages per edition → committed source
+  texts (`fetch`, `source_text`, `export_sources`).
+- `ucsc/export_committed.py` — structured courses → `data-committed/`.
 
-1. Fetch and structure are separate stages with separate snapshots; the
-   structure stage reads a *snapshot*, never the network.
-2. Every structural assumption about the upstream page is an `expect()` call.
-   When one fires, the run halts, staging is discarded, and the served data is
-   untouched — that is the intended behavior, not an error to be swallowed.
-3. LLM prompts live in the pipeline package with a version identifier;
-   manifests record model + prompt version + guard results.
-4. Document every quirk you discover in the pipeline's README — future audit
-   runs (LLM or human) rely on it.
+## Rules for any stage
+
+1. Fetch and parse/export are separate; parse/export read the cache, never
+   the network.
+2. Every structural assumption about an upstream page is an `expect()`. When
+   one fires the run halts and nothing is published — fix the parser, don't
+   loosen the guard.
+3. Exporters write with `ucsc.ledger.dump` (canonical JSON) or sorted JSONL,
+   rewrite files only when content changed, and update their ledger block.
+4. Record every quirk you discover in the package README or the research doc.
+
+## Tests
+
+```bash
+.venv/bin/python -m pytest -q
+```

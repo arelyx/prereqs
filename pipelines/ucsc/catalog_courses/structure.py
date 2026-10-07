@@ -1,42 +1,46 @@
-"""Structure stage: fetch snapshot → LLM prereq groups → structured snapshot.
+"""Structure stage: fetch snapshot -> deterministic prereq groups -> structured snapshot.
 
 Reads courses.json from the newest (or a named) catalog_courses fetch
-snapshot; never touches the network except localhost Ollama. Progress is
-appended to progress.jsonl in staging so an interrupted run can --resume
-without re-paying for completed LLM calls (a full catalog run is ~1,800 calls
-/ ~30 min on the 4GB GPU).
+snapshot. No network, no model: every course's raw_requirements goes through
+prereq_parse (the hot path); texts the parser marks ambiguous are resolved by
+prereq_overrides.json (the warm path, hand-written by a frontier agent and
+keyed by the text's sha1). A full catalog run takes about a second.
+
+Per-course output fields:
+  prereq_groups   CNF (outer AND, inner OR); [] = none; null = unresolved
+  coreqs          CNF of courses that must be taken in the same term
+  concurrent_ok   codes in prereq_groups that may be taken in the same term
+  prereq_source   "parser" | "override" | "unresolved" | "none" (no text)
 
 Guards:
-- Per-course: model output failing to parse/validate → course quarantined
-  with prereq_groups=null (never guessed), recorded in the FailureBudget;
-  budget over 5% aborts the run (systemic drift, not item noise).
-- Cross-reference: prereq codes not present in the scraped catalog are kept
-  (they may reference another edition) but reported in the manifest as
-  unresolved for audit.
+- Unresolved (ambiguous and not overridden) courses get prereq_groups=null,
+  never a guess, and are listed in the snapshot's ambiguous.json (the work
+  queue for the warm path). Over 10% unresolved aborts the run: that means the
+  catalog's phrasing changed, not that a few texts are odd.
+- Stale overrides (raw text changed since the override was written) are
+  ignored and reported; so are overrides for codes no longer in the catalog.
+- Prereq codes not present in the scraped catalog are kept (they may
+  reference another edition) but reported in the manifest as unresolved codes.
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
-import shutil
 import sys
-import time
+from collections import Counter
 from pathlib import Path
 
 from common.guards import FailureBudget, PipelineAbort, expect
-from common.ollama import DEFAULT_MODEL, OllamaError, chat_json
 from common.snapshot import SnapshotWriter, latest, load_manifest
 
-from . import prompts
+from . import prereq_overrides, prereq_parse
+
+MAX_UNRESOLVED_RATIO = 0.10
 
 
-def run(
-    fetch_snapshot: Path | None = None,
-    model: str = DEFAULT_MODEL,
-    limit: int | None = None,
-    resume_from: Path | None = None,
-) -> None:
+def run(fetch_snapshot: Path | None = None) -> Path:
     src = fetch_snapshot or latest("ucsc", "catalog_courses")
     expect(src is not None, "no catalog_courses fetch snapshot to structure")
     src_manifest = load_manifest(src)
@@ -46,130 +50,136 @@ def run(
         path=str(src),
     )
     courses = json.loads((src / "courses.json").read_text())
-
-    done: dict[str, dict] = {}
-    if resume_from is not None:
-        for line in (resume_from / "progress.jsonl").read_text().splitlines():
-            rec = json.loads(line)
-            done[rec["code"]] = rec
-        print(f"resuming: {len(done)} courses already structured", file=sys.stderr)
+    overrides = prereq_overrides.load()
 
     writer = SnapshotWriter("ucsc", "catalog_courses_structured")
-    progress_path = writer.path("progress.jsonl")
     try:
-        _run_inner(writer, progress_path, courses, src, src_manifest, model, limit, done)
+        return _run_inner(writer, courses, src, src_manifest, overrides)
     except BaseException:
-        # Keep staging for --resume instead of discarding paid LLM work.
-        preserved = writer.staging_dir
-        print(f"aborted; progress preserved for --resume at {preserved}", file=sys.stderr)
+        writer.abort()
         raise
 
 
-def _run_inner(writer, progress_path, courses, src, src_manifest, model, limit, done):
-    llm_courses = [c for c in courses if prompts.needs_llm(c["raw_requirements"])]
-    if limit:
-        llm_courses = llm_courses[:limit]
-    budget = FailureBudget(total=max(len(llm_courses), 1), max_ratio=0.05)
+def structure_courses(courses: list[dict], overrides: dict[str, dict]) -> tuple[list[dict], dict]:
+    """Pure core: returns (structured records, report). Raises GuardViolation
+    when the unresolved ratio exceeds MAX_UNRESOLVED_RATIO."""
     catalog_codes = {c["code"] for c in courses}
+    with_text = [c for c in courses if (c.get("raw_requirements") or "").strip()]
+    budget = FailureBudget(total=max(len(with_text), 1), max_ratio=MAX_UNRESOLVED_RATIO)
 
-    t0 = time.monotonic()
-    calls = 0
-    with progress_path.open("a") as progress:
-        for i, course in enumerate(llm_courses):
-            if course["code"] in done:
-                continue
-            raw = course["raw_requirements"]
-            groups: list | None = []
-            try:
-                parsed, _metrics = chat_json(
-                    prompts.SYSTEM_PROMPT,
-                    prompts.user_message(prompts.preprocess(raw)),
-                    model=model,
-                )
-                calls += 1
-                if parsed is None:
-                    budget.record(course["code"], "unparseable model output")
-                    groups = None
-                else:
-                    groups = prompts.clean_groups(parsed, raw)
-            except OllamaError as exc:
-                budget.record(course["code"], f"ollama error: {exc}")
-                groups = None
-            progress.write(json.dumps({"code": course["code"], "prereq_groups": groups}) + "\n")
-            progress.flush()
-            done[course["code"]] = {"code": course["code"], "prereq_groups": groups}
-            if (i + 1) % 100 == 0:
-                rate = calls / max(time.monotonic() - t0, 1)
-                print(
-                    f"  {i + 1}/{len(llm_courses)} ({rate:.1f} calls/s, "
-                    f"{len(budget.failures)} failures)",
-                    file=sys.stderr,
-                )
-
-    structured = []
-    unresolved: set[str] = set()
-    with_groups = 0
+    counts: Counter = Counter()
+    stale: list[dict] = []
+    ambiguous: list[dict] = []
+    unresolved_codes: set[str] = set()
+    structured: list[dict] = []
     for course in courses:
         rec = dict(course)
-        entry = done.get(course["code"])
-        if entry is not None:
-            rec["prereq_groups"] = entry["prereq_groups"]
-        elif prompts.needs_llm(course["raw_requirements"]):
-            rec["prereq_groups"] = None  # not processed in a --limit run
-        else:
-            rec["prereq_groups"] = []
-        if rec["prereq_groups"]:
-            with_groups += 1
-            for group in rec["prereq_groups"]:
-                unresolved.update(g for g in group if g not in catalog_codes)
+        raw = course.get("raw_requirements") or ""
+        if not raw.strip():
+            rec.update(prereq_groups=[], coreqs=[], concurrent_ok=[], prereq_source="none")
+            structured.append(rec)
+            continue
+        try:
+            parsed = prereq_parse.parse(raw, catalog_codes, self_code=course["code"])
+        except Exception as exc:  # a parser bug must not be silently skipped
+            parsed = prereq_parse.ParseResult(
+                groups=None, confidence=prereq_parse.AMBIGUOUS, reason=f"parser error: {exc!r}"
+            )
+        counts[parsed.confidence] += 1
+        res = prereq_overrides.resolve(course["code"], raw, parsed, overrides)
+        counts[res.source] += 1
+        if res.stale:
+            stale.append({"code": course["code"], "raw_sha1": prereq_parse.raw_sha1(raw)})
+        if res.source == "unresolved":
+            ambiguous.append(
+                {
+                    "code": course["code"],
+                    "raw_requirements": raw,
+                    "raw_sha1": prereq_parse.raw_sha1(raw),
+                    "reason": parsed.reason,
+                    "parser_best_effort": parsed.to_dict(),
+                }
+            )
+            budget.record(course["code"], f"ambiguous: {parsed.reason}")
+        rec.update(
+            prereq_groups=(res.groups or []) if res.source != "unresolved" else None,
+            coreqs=res.coreqs,
+            concurrent_ok=res.concurrent_ok,
+            prereq_source=res.source,
+        )
+        for group in (rec["prereq_groups"] or []) + rec["coreqs"]:
+            unresolved_codes.update(g for g in group if g not in catalog_codes)
         structured.append(rec)
 
+    orphans = sorted(set(overrides) - catalog_codes)
+    report = {
+        "counts": {
+            "courses": len(structured),
+            "with_requirement_text": len(with_text),
+            "parser_certain": counts[prereq_parse.CERTAIN],
+            "parser_ambiguous": counts[prereq_parse.AMBIGUOUS],
+            "from_parser": counts["parser"],
+            "overridden": counts["override"],
+            "unresolved": counts["unresolved"],
+            "stale_overrides": len(stale),
+            "orphan_overrides": len(orphans),
+            "with_prereq_groups": sum(1 for r in structured if r["prereq_groups"]),
+            "with_coreqs": sum(1 for r in structured if r["coreqs"]),
+        },
+        "stale_overrides": stale,
+        "orphan_overrides": orphans,
+        "unresolved": [{"code": a["code"], "reason": a["reason"]} for a in ambiguous],
+        "unresolved_prereq_codes": sorted(unresolved_codes),
+        "ambiguous": ambiguous,
+    }
+    return structured, report
+
+
+def _run_inner(writer, courses, src, src_manifest, overrides) -> Path:
+    structured, report = structure_courses(courses, overrides)
+    ambiguous = report.pop("ambiguous")
     writer.write_json("courses.json", structured)
+    writer.write_json("ambiguous.json", ambiguous)
+    overrides_sha1 = hashlib.sha1(prereq_overrides.OVERRIDES_PATH.read_bytes()).hexdigest() \
+        if prereq_overrides.OVERRIDES_PATH.exists() else None
     final = writer.finalize(
         {
             "stage": "structured",
             "source_snapshot": str(src),
             "catalog_year": src_manifest.get("catalog_year"),
-            "model": model,
-            "prompt_version": prompts.PROMPT_VERSION,
-            "counts": {
-                "courses": len(structured),
-                "llm_candidates": len(llm_courses),
-                "llm_calls": calls,
-                "with_prereq_groups": with_groups,
-                "quarantined": len(budget.failures),
-            },
-            "failures": budget.failures,
-            "unresolved_prereq_codes": sorted(unresolved),
+            # exporter provenance reads model/prompt_version; there is no model.
+            "model": "none (deterministic parser)",
+            "prompt_version": prereq_parse.PARSER_VERSION,
+            "parser_version": prereq_parse.PARSER_VERSION,
+            "overrides_sha1": overrides_sha1,
+            **report,
         }
     )
+    c = report["counts"]
+    print(
+        f"structured {c['with_requirement_text']} requirement texts: {c['from_parser']} parser, "
+        f"{c['overridden']} override, {c['unresolved']} unresolved, {c['stale_overrides']} stale overrides",
+        file=sys.stderr,
+    )
+    for s in report["stale_overrides"]:
+        print(f"  STALE override (text changed): {s['code']}", file=sys.stderr)
+    for code in report["orphan_overrides"]:
+        print(f"  ORPHAN override (code not in catalog): {code}", file=sys.stderr)
+    if report["unresolved"]:
+        print(f"  unresolved queue: {final / 'ambiguous.json'}", file=sys.stderr)
     print(f"snapshot: {final}")
+    return final
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description=__doc__)
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--fetch-snapshot", type=Path, help="specific fetch snapshot dir")
-    ap.add_argument("--model", default=DEFAULT_MODEL)
-    ap.add_argument("--limit", type=int, help="only structure the first N LLM candidates")
-    ap.add_argument(
-        "--resume", type=Path, dest="resume_from",
-        help="path to an aborted run's .staging dir (reuses its progress.jsonl)",
-    )
     args = ap.parse_args()
     try:
-        run(
-            fetch_snapshot=args.fetch_snapshot,
-            model=args.model,
-            limit=args.limit,
-            resume_from=args.resume_from,
-        )
+        run(fetch_snapshot=args.fetch_snapshot)
     except PipelineAbort as exc:
         print(f"PIPELINE ABORTED: {exc}", file=sys.stderr)
         sys.exit(2)
-    finally:
-        # Old finalized staging dirs from --resume runs are safe to clean by hand;
-        # we never auto-delete them here.
-        pass
 
 
 if __name__ == "__main__":

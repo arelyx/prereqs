@@ -1,0 +1,11 @@
+{
+ "program": "environmental-sciences-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "6ccc1583c0c3a5f9ffa0f425d3d99ca414e9b071c7c2c8bcc122bffc3bf210f7",
+ "skeleton_sha256": "23d6435eda067c8042ce5e50bf88a581475f54cd3c098d28140b1b7177707b60",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:53Z",
+ "verified_at": "2026-10-07T00:06:02Z",
+ "notes": "ported from 2026-27 (reviewed); differences: chemistry needs CHEM 3BL/3CL (fall-2026+ without = cannot-check) or CHEM 1A/1C/1N; intro geology matched pair; comprehensive wording; EART 146 needs no lab"
+}

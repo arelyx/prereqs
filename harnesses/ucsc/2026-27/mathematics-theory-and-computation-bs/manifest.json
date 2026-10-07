@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-theory-and-computation-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "988658101b398b27e8b128f296686ea8a76bc79a7ad822c039b26bb6e8acf610",
+ "skeleton_sha256": "c8cd6280d22158dc59de8d07897747b54e95f1849d9a7304a778b5d09e06ece7",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:50Z",
+ "verified_at": "2026-10-06T23:44:59Z",
+ "notes": "verified line by line against sources/mathematics-theory-and-computation-bs.md; electives = explicit list + extra COMPUTATION-list courses only (theory extras do not count; no 101-190 range on this page); CS double-major CSE petition = attestation, asked only when a CSE 100-199 course is actually needed for coding/electives; reviewed 2026-10-06: removed cross-listing aliases/unknownOk; CSE petition attestation now shown on the requirement that used the CSE course (coding -> upper group, not electives); added coding-substitution attestation asked only when no listed coding course but a lower-division coding course (CSE 5J/12/13S/20/30) is present; CSE-petition test now catalog-aware"
+}

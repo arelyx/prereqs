@@ -1,0 +1,14 @@
+{
+ "program": "environmental-studiesearth-sciences-combined-major-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "cd15c826b875424a217a64a84e47d398573fbdd92d021bdf68ee49cd018f82b7",
+ "skeleton_sha256": "08d81460dfce705601edab42a8af0b30ce93c9daf1b1665bbe446c5e82c42a69",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:56Z",
+ "verified_at": "2026-10-07T00:06:03Z",
+ "notes": "ported from 2026-27 (reviewed); differences: chemistry series CHEM 3A+3B+3BL+3C or CHEM 4A+4AL+4B+4BL as printed; EART 191B added to the Earth Sciences B.S. comprehensive options (2025-26 earth-sciences-bs page)",
+ "depends_on": {
+  "earth-sciences-bs": "967282891a7ed855a6eeefcee2b64ebe3f716bff367ee16cb5043bf0fd0c3209"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "program": "science-education-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "fbd2e2d2f5d661517f8d5a57d02f8045c56d9d3bb3e5e54848fdbdfb35aa1752",
+ "skeleton_sha256": "4141b094323905d4f68227bbe53fdae36ac428b90d9f85badce69d3118bcd75e",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:53Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: general chemistry requires CHEM 3BL/3CL always (no fall-2026 rule); CHEM 1A/1B/1C/1M/1N series also satisfies it; qualification no longer requires EDUC 50C (info)"
+}

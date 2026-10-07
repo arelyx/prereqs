@@ -1,0 +1,557 @@
+{
+  "program": "anthropology-minor",
+  "edition": "2026-27",
+  "author_notes": "Written only from sources/anthropology-minor.md. The four category requirements reference an external \"Courses in Anthropology by Category\" list that is NOT in the source text; categories were assigned only where the course title makes the category unambiguous (e.g. \"Anthropology of Africa\" = regional, \"Archaeological Research Design\" = archaeology, \"Human Evolution\" = biological), and each record uses distinct courses per category so no case depends on whether one course may fill two categories. Implementations without the category list may need to abstain on the category cases. Avoided: upper-division transfer credit (up to 2 by petition), the campus 25% P/NP cap, 2-credit courses, graduate seminars.",
+  "cases": [
+    {
+      "id": "pass-frosh",
+      "kind": "pass",
+      "description": "Anthropology minor, frosh. ANTH 1, 2, 3; regional ANTH 130A (Anthropology of Africa); sociocultural ANTH 124 (Anthropology of Religion); archaeology ANTH 172 (Archaeological Research Design); biological ANTH 101 (Human Evolution); three additional ANTH 102A, ANTH 138, ANTH 174. Seven upper-division courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "ANTH 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 101"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 172"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 102A"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 138"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 174"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-pnp-grades",
+      "kind": "pass",
+      "description": "TRAP. Same as the frosh pass record but four of the courses (ANTH 2, ANTH 124, ANTH 138, ANTH 174) were taken Pass/No Pass and passed. The department sets no limit on P/NP for the minor.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "ANTH 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 101"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 172"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 102A"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 138"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 174"
+            ]
+          }
+        ],
+        "grades": {
+          "ANTH 2": "P",
+          "ANTH 124": "P",
+          "ANTH 138": "P",
+          "ANTH 174": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-missing-anth2",
+      "kind": "fail",
+      "description": "Frosh pass record with ANTH 2 removed.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 101"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 172"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 102A"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 138"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 174"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Lower division: ANTH 1, ANTH 2, ANTH 3",
+        "source_quote": "ANTH 2 — Introduction to Cultural Anthropology (5)"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-independent-study-as-elective",
+      "kind": "fail",
+      "description": "Frosh pass record with ANTH 138 replaced by ANTH 199 (Tutorial, an independent study). Independent study cannot count, so only six upper-division courses count.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "ANTH 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 101"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 172"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 102A"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 199"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 174"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Independent study cannot count toward the minor",
+        "source_quote": "Independent study courses cannot count toward the minor requirements."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-no-archaeology",
+      "kind": "fail",
+      "description": "Frosh pass record with archaeology courses ANTH 172 and ANTH 174 replaced by ANTH 123 (Psychological Anthropology) and ANTH 163 (Kinship). Still seven upper-division courses, but none in archaeology.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "ANTH 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 101"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 123"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 102A"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 138"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 163"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "One upper-division course in archaeology",
+        "source_quote": "one course in archaeology"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-no-biological-medical-environmental",
+      "kind": "fail",
+      "description": "Frosh pass record with ANTH 101 and ANTH 102A replaced by ANTH 125 (Magic, Science, and Religion) and ANTH 144 (Anthropology of Poverty and Welfare). No biological, medical or environmental anthropology course remains.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "ANTH 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 125"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 172"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 144"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 138"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 174"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "One upper-division course in biological, medical, or environmental anthropology",
+        "source_quote": "one course in biological, medical, or environmental anthropology"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-np-in-upper-division",
+      "kind": "fail",
+      "description": "Frosh pass record but ANTH 174 was graded NP (not passed), leaving six completed upper-division courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "ANTH 1"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "ANTH 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "ANTH 3"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "ANTH 101"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ANTH 124"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "ANTH 172"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "ANTH 130A"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "ANTH 102A"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "ANTH 138"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "ANTH 174"
+            ]
+          }
+        ],
+        "grades": {
+          "ANTH 174": "NP"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Seven upper-division courses (ANTH 174 not passed)",
+        "source_quote": "Students receive a P (Pass) for work that is performed at C level or better."
+      },
+      "audit": "agreed"
+    }
+  ]
+}

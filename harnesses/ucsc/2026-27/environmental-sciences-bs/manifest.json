@@ -1,0 +1,11 @@
+{
+ "program": "environmental-sciences-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "f2033cf0c45304b77547245511f2a92d68c2c0bc02e7d6fe090119cb24d6cb8d",
+ "skeleton_sha256": "1446f574601757a1540b4d7c644a91a44eb9422ee085a498a60a115c73985919",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:45Z",
+ "verified_at": "2026-10-06T23:45:29Z",
+ "notes": "verified line by line against sources/environmental-sciences-bs.md; per-course P/NP exception via slot check; CHEM fall-2026 lab rule; intro geology interchangeable; electives pool EART/OCEA/ESCI 100-189 + METX 150 + ECE 180J + ENVS 115A+L composite, lab pairs from catalog (+EART 110B/110M, 110C/110N; METX 150L treated as a separate course); comprehensive exclusive, DC overlay; lint ok; reviewed 2026-10-06: 'up to two courses from other departments ... by permission of a faculty advisor' changed from a note to the §1a petition path (up to two UD 5+-credit other-department courses tried last; advisor-permission attestation asked only when one is used)"
+}

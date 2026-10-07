@@ -1,0 +1,11 @@
+{
+ "program": "chemistry-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b84a14e1e5f8d28112b1a3ca7bcfa02c5a7a5e79d260310cae49485d586cfea2",
+ "skeleton_sha256": "fcdbca9f221c6fed7a25b46d2c9bad5ea4ab581555650a71c78d760a552c5592",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:56Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: letter grade only (no C-or-better); CHEM 3BL/3CL required; no BIOC 100A-C series rule and BIOC 100C not an elective; electives drop CHEM 122, add METX 102; physics-mix note wording"
+}

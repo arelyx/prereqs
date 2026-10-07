@@ -1,0 +1,11 @@
+{
+ "program": "feminist-studies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "b8fc5ad76b7ab471f969603dd2e3ba48e3ef97e3e7072b9630492bb85766e576",
+ "skeleton_sha256": "3453042da6795d68a79a64768d420a8e9ded937c041959127be86851f2a7c51c",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:50:48Z",
+ "verified_at": "2026-10-06T23:45:05Z",
+ "notes": "verified line by line against sources/feminist-studies-ba.md; one allocation over FMST 1, LD FMST, FMST 100, 7 electives (FMST 100-199 5cr or listed, aliases included), comprehensive (FMST 194 series/CRES 190 cross-lists/FMST 195); five-FMST minimum (not 193/198/199, cross-listed counts) and 10-of-11 letter grades checked over applied courses; FMST 195 needs thesis-petition attestation; lint clean; reviewed 2026-10-06: five-FMST minimum now recognises FMST cross-listings entered under the partner code (CRES 190K, VAST 01); P/NP count uses isPass; removed partner-code aliases/unknownOk; 9 adversarial tests"
+}

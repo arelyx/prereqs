@@ -1,0 +1,11 @@
+{
+ "program": "spanish-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "27c68f978531336de6f9ce1f94ab7b0d1ef3d7c8334398fe91fa29e809e86e4d",
+ "skeleton_sha256": "5bcce99db21a3c0b6a5563c04d52a04cfd5cb74248f4f65436f581838605b687",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:08Z",
+ "verified_at": "2026-10-06T23:59:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: SPAN 130 not on the Languages and Linguistics list (director permission); LALS 127, LALS 145 added to electives; permission wording adds faculty advisor"
+}

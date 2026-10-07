@@ -17,7 +17,7 @@ let a 39 KB upload burn 262 s of CPU and a 160 KB one 82 minutes, degrading
 every other endpoint for the duration.
 
 Error taxonomy:
-- 503  LLM (local Ollama) unreachable or model missing — feature refused.
+- 503  local LLM server unreachable or model missing — feature refused.
 - 502  LLM answered but produced unusable output after one retry.
 - 422  input problem: unreadable PDF, no text layer, no quarter sections,
        or a PDF too large/complex to extract inside the budget.
@@ -240,13 +240,13 @@ def _parse_pdf(university_id: str, data: bytes, session_factory) -> dict:
             )
         try:
             rows.extend(transcript.parse_chunk(chunk))
-        except llm.OllamaUnavailable as exc:
+        except llm.LLMUnavailable as exc:
             raise HTTPException(
                 503,
                 "the local LLM service became unavailable while parsing the "
                 "transcript — nothing was saved, try again later",
             ) from exc
-        except llm.OllamaBadResponse as exc:
+        except llm.LLMBadResponse as exc:
             # Section name only — never transcript text.
             raise HTTPException(502, str(exc)) from exc
 

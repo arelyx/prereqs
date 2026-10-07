@@ -1,0 +1,11 @@
+{
+ "program": "western-music-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "32ad41c3697eeae050fe2d0da80b13bf1ec1b2056407543af616739fd745e23b",
+ "skeleton_sha256": "aaae12ff10d90d2431d4c784b732aaa0285153aaa625d34ade1eb63b03da93fb",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:11Z",
+ "verified_at": "2026-10-06T23:45:04Z",
+ "notes": "c-code; verified line by line. UD letter grade applies to UD ensembles and lessons (no exception stated). MUSC 31 x3 with the NOTE's failed-section exception (final section passed + two passed); MUSC 60 once, or attested waiver. Each lesson/ensemble enrollment counts as a quarter, slots exclusive. LD-ensemble petition attestation lets the UD ensemble slot accept extra LD ensembles. Primary-instrument rule is a note. 10 tests.; reviewed 2026-10-06: LD-ensemble petition is now asked only when an extra LD ensemble was actually needed for the UD ensemble slot (was a silent blanket switch); MUSC 60 planner note; 9 adversarial tests"
+}

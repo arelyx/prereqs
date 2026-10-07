@@ -1,0 +1,11 @@
+{
+ "program": "microbiology-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "b05f8ae14511a34cf5bd22db7978e0f820f33acfa8c96f0befe921c289cd0e70",
+ "skeleton_sha256": "e9f0b19c4abcd0744c825dd8c355841035bfb7a4b347fe66ad37753e28582074",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:46:07Z",
+ "verified_at": "2026-10-06T23:36:28Z",
+ "notes": "verified line by line against sources/microbiology-bs.md; template biology-bs (gen-chem helper); policy letter+C; STAT 5 alt; mixed MATH 11/19 -> cannot-check (page lists unmixed series only); electives 3 units >=14 credits with METX 135+135L merged; DC/comprehensive = METX 100L overlays; reviewed 2026-10-06: BIOL 20L waiver for community-college BIOL 20A+BIOE 20B (transfer, term-less) -> cannot-check instead of unmet; 8 adversarial regression tests"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "dance-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "9d68bbab768503baa675494aa55a42927638cdaf8ccb07ccd784b26d827c38c6",
+ "skeleton_sha256": "1ad79e44229bedaca5092fb6c1c009c2321c35f8a97b535176830bdde7dbfdee",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:52:12Z",
+ "verified_at": "2026-10-06T23:56:09Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (THEA 100A title, advising text)"
+}

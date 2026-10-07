@@ -1,0 +1,11 @@
+{
+ "program": "language-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "3c05132da580f49f4f5b384deff306814cf64c94b31837b058d20164723b0956",
+ "skeleton_sha256": "f4615b4797fae0d36007bb7fbea955ebacea5f020e41e2cd000ecd629656476f",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:04Z",
+ "verified_at": "2026-10-06T23:59:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: German concentration added (no Level 6 course listed: equivalent by attestation; GERM 100-199 / LIT 183); French advanced FREN 100-199"
+}

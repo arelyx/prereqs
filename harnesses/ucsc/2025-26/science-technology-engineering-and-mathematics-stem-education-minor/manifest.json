@@ -1,0 +1,11 @@
+{
+ "program": "science-technology-engineering-and-mathematics-stem-education-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "36cb0daead8a08a542f0cbe091ad86b201eac17b2da915d18b6b45335754a1dc",
+ "skeleton_sha256": "7ac7808a3d9a609fb21f4833ee00527004914d3acfd66b4d61eb548f8cf8dce2",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:18Z",
+ "verified_at": "2026-10-06T23:53:35Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (intro/advising/honors/declaration/planner text; no requirement changes)"
+}

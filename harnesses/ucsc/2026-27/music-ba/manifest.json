@@ -1,0 +1,11 @@
+{
+ "program": "music-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "b13a5758814053a4343960773da7a149fd66cf2789f1d33e82051fa975da0428",
+ "skeleton_sha256": "00b55e5acce20a38c1f15c600d710edbf65a370869cfbc886b4fa7db3516c788",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:37Z",
+ "verified_at": "2026-10-06T23:45:04Z",
+ "notes": "verified line by line against sources/music-ba.md; 26 tests over all three concentrations. Judgement calls: module lists are external -> wide count pools (LD MUSC 11/80/81; CP any non-ensemble MUSC 100-299 for 'MUSC 150 or equivalent'; GM 101/105/120/150; ensembles = elective list + repeatable <=3cr MUSC) + cannot-check, never met; MUSC 30A in plan counts as placement past MUSC 14, else Theory Placement attestation; lessons on the elective ensemble/workshop lists treated as workshops (P/NP ok), WM UD lessons need letter; GM capstone = listed course + MUSC 195A/196A same quarter as one exclusive unit; CP grad seminar (MUSC 200-299, 5cr, excl. 295/297/298/299) may replace the history elective; WM proficiency audition attestation, advisory audition (feedback only) not modelled; CP senior composition recital/portfolio attestation with MUSC 196A; MUSC 60 waiver attestation.; reviewed 2026-10-06: UD lessons (MUSC 161/161A/161B) on the CP/GM elective and module ensemble lists now need a letter grade (exemption names only MUSC 120 and UD workshops & performing ensembles); GM graduate-level requirement rejects the undergraduate listing MUSC 105S of cross-listed MUSC 253S; 9 adversarial tests"
+}

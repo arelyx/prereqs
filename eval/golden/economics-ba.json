@@ -1,0 +1,629 @@
+{
+ "program": "economics-ba",
+ "edition": "2026-27",
+ "author_notes": "All records have every course taken at UC Santa Cruz. Ambiguities avoided: the MATH 11A/11B/23A petition note (no record uses those courses); which elective list ECON 195/199 belongs to (the ECON 199 pass case already has three General and one Finance); the 'recommend no more than two courses P/NP' guidance is advice, not a rule (one P is used in a pass case).",
+ "cases": [
+  {
+   "id": "pass-frosh-standard",
+   "kind": "pass",
+   "description": "Frosh: ECON 1, ECON 2, AM 11A+11B, STAT 17+17L, ECON 100A, 100B, 113 (all A, at UCSC), DC ECON 197; electives ECON 120, 140, 150 (General), ECON 135 (Finance), ECON 136 (Business Management). Complete.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "AM 11A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 150"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 135"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 136"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": true
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "pass-mixed-math-package-two-finance-pnp-core",
+   "kind": "pass",
+   "description": "Trap: math via the MATH 19A + AM 11B package; math-intensive ECON 100M and ECON 100N (100N taken Pass, which meets 'C/P or better'); DC ECON 104; electives three General (120, 140, 150) plus two Finance (ECON 135, 133), the maximum allowed. Complete.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100M"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100N"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 104"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 150"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 135"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 133"
+      ]
+     }
+    ],
+    "grades": {
+     "ECON 100N": "P"
+    },
+    "attested": "all"
+   },
+   "expect": {
+    "complete": true
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-two-business-electives",
+   "kind": "fail",
+   "description": "Standard record with ECON 135 replaced by ECON 161A: electives 120, 140, 150 (General) + ECON 136 and ECON 161A (both Business Management).",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "AM 11A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 150"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 161A"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 136"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Electives: no more than one Business Management elective",
+    "source_quote": "No more than one course may come from the Business Management Electives."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-only-two-general-electives",
+   "kind": "fail",
+   "description": "Standard record with ECON 150 replaced by ECON 133: electives 120, 140 (General), 133, 135 (Finance, 2 = max) and 136 (Business, 1 = max). Only two General Economics electives.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "AM 11A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 133"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 135"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 136"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Electives: at least three from the General Economics Electives list",
+    "source_quote": "At least three courses must come from the General Economics Electives list."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-core-econ100a-below-c",
+   "kind": "fail",
+   "description": "Standard record but ECON 100A earned a C- (passing for credit but below C). The comprehensive requires C/P or better in the core.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "AM 11A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 150"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 135"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 136"
+      ]
+     }
+    ],
+    "grades": {
+     "ECON 100A": "C-"
+    },
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Comprehensive: ECON 100A/100M, 100B/100N, 113 with C/P or better",
+    "source_quote": "The comprehensive requirement is satisfied by passing the following intermediate core courses with grades of C/P or better at UC Santa Cruz:"
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-econ193-not-allowed",
+   "kind": "fail",
+   "description": "Standard record with ECON 135 replaced by ECON 193 as the fifth elective. ECON 193 may not be used for the major, leaving four electives.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "AM 11A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 150"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 193"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 136"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Five economics electives (ECON 193 not allowed)",
+    "source_quote": "ECON 191, ECON 192, ECON 193, and ECON 193F may not be used to meet major requirements."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-missing-stat17l",
+   "kind": "fail",
+   "description": "Standard record with STAT 17 but not the STAT 17L lab.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "AM 11A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "AM 11B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "STAT 17"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 113"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 120"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 140",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 150"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "ECON 135"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "ECON 136"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Statistics: STAT 17 and STAT 17L",
+    "source_quote": "STAT 17L — Statistical Methods for Business and Economics Laboratory (2)"
+   },
+   "audit": "agreed"
+  }
+ ]
+}

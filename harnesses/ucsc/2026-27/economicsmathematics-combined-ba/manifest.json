@@ -1,0 +1,11 @@
+{
+ "program": "economicsmathematics-combined-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "63a9a46857ce26f61dc7955aba3a746affc6024570a6dfe4e031af7ae6946478",
+ "skeleton_sha256": "c5ee4a92dac959292ecd92373ef9040aa6d275f32c95b0c7ed9dbca70edddf80",
+ "status": "verified",
+ "authored_at": "2026-10-05T23:48:19Z",
+ "verified_at": "2026-10-06T00:24:42Z",
+ "notes": "verified line by line against sources/economicsmathematics-combined-ba.md; lint: quotes verbatim, all course rows referenced"
+}

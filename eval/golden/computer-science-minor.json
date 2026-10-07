@@ -1,0 +1,493 @@
+{
+  "program": "computer-science-minor",
+  "edition": "2026-27",
+  "author_notes": "Written only from sources/computer-science-minor.md. Records list only courses relevant to the minor. Avoided: whether a student who tests out of CSE 20 still needs it (all records take CSE 20); CSE 290+ by petition; whether a list course beyond the two can fill an additional slot (assumed yes in pass record since CSE 115A/183 are also plain CSE 100-189 courses, so either reading passes). The mixed-calculus fail follows the page structure (three two-course options, no transition note unlike some majors). AUDIT: removed fail-mixed-calculus-series (MATH 19A + MATH 11B) as ambiguous: the page lists packages without a transition note, but UCSC has a campus Calculus Series Transition Policy (cited on other program pages) that may allow 19A->11B, so the verdict cannot be settled from this page.",
+  "cases": [
+    {
+      "id": "pass-frosh-standard",
+      "kind": "pass",
+      "description": "Frosh CS minor. MATH 19A/19B, MATH 21, CSE 12, CSE 16, CSE 20, CSE 30, CSE 13S; upper division CSE 101, two from the list (CSE 130, CSE 180), and two additional upper-division CSE courses numbered 100-189 (CSE 115A, CSE 183). Thirteen courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 21",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CSE 13S"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "CSE 130"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "CSE 180"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "CSE 183"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-honors-calc-am148-grad-course-pnp",
+      "kind": "pass",
+      "description": "TRAP. MATH 20A/20B honors calculus, AM 10 linear algebra, ECE 13 instead of CSE 13S; CSE 101; list courses CSE 102 and CSE 140; additional courses AM 148 (named on the additional-course list) and CSE 201 (a 5-credit graduate CSE course numbered 201-279). Several courses (CSE 16, CSE 140, AM 148) taken Pass/No Pass, which the minor allows.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 20A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 20B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "AM 10",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ECE 13"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "CSE 102"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "CSE 140"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "AM 148"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "CSE 201"
+            ]
+          }
+        ],
+        "grades": {
+          "CSE 16": "P",
+          "CSE 140": "P",
+          "AM 148": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-additional-lecture-without-lab",
+      "kind": "fail",
+      "description": "Frosh pass record with additional course CSE 183 replaced by CSE 151 taken without its lab CSE 151L. A lecture that has a lab only counts if the lab is passed, so only one valid additional course remains.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 21",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CSE 13S"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "CSE 130"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "CSE 180"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "CSE 151"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Two additional upper-division courses (lecture with lab requires the lab)",
+        "source_quote": "If a lecture has a lab offered (required or optional), the lab must be passed to count for this requirement."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-additional-independent-study-198",
+      "kind": "fail",
+      "description": "Frosh pass record with additional course CSE 183 replaced by CSE 198 (independent field study). It is neither numbered 100-189 nor CSE 195, nor in 201-279, nor on the named list.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 21",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CSE 13S"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "CSE 130"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "CSE 180"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "CSE 198"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Two additional upper-division courses (CSE 100-189 or CSE 195, CSE 201-279, or AM 148/AM 160)",
+        "source_quote": "Any 5-credit or more upper-division CSE course with a number between 100 and 189 or CSE 195."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-only-one-course-from-list",
+      "kind": "fail",
+      "description": "Frosh pass record with upper division CSE 101, CSE 130, CSE 111, CSE 112, CSE 185E. Five upper-division courses, but only CSE 130 is on the specific list; two list courses are required.",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 21",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CSE 13S"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "CSE 130"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "CSE 111"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "CSE 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "CSE 185E"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Two upper-division courses from the specified CSE list",
+        "source_quote": "Plus two upper-division computer science and engineering courses from the following list"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-only-four-upper-division",
+      "kind": "fail",
+      "description": "Frosh pass record with CSE 183 removed: CSE 101 + two list courses + only one additional course (12 courses total).",
+      "student": {
+        "entry": "frosh",
+        "choices": {},
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 21",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "CSE 12"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "CSE 13S"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "CSE 130"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "CSE 180"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "CSE 115A"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Two additional upper-division courses",
+        "source_quote": "Plus two additional upper-division courses"
+      },
+      "audit": "agreed"
+    }
+  ]
+}

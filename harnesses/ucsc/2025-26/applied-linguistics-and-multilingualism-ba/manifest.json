@@ -1,0 +1,11 @@
+{
+ "program": "applied-linguistics-and-multilingualism-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "e7c1fcdb460e76905c55cbf7736b0c67e6316fa7dbecccc314b0bf3589040360",
+ "skeleton_sha256": "529dedd7181748a8232e17ffbdd5890777275407c5a9ece830fb0a60564c0976",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:07Z",
+ "verified_at": "2026-10-06T23:59:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: Arabic target language (approved Global Engagement coursework, attestation; Level 6 cannot-check without a listed Level 6 course); FREN 105, FREN 115, JAPN 111, SPAN 130 not on the advanced list; ARBC 4 in qualification (info)"
+}

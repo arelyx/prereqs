@@ -1,0 +1,11 @@
+{
+ "program": "biotechnology-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "3a3dc992eb2138b54363733b88f9d506bcccde1c3e0608466c08a32c68f0d459",
+ "skeleton_sha256": "567aedc6ab40fb2317e3bcde21bc71aa08a841e305fc621928231b88dd5cd544",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:00Z",
+ "verified_at": "2026-10-06T23:42:41Z",
+ "notes": "verified line by line; 10 tests; electives 3 (4 with CSE 20), 40 UD credits over core+electives+BME 185+BME 175; one UD BIOL by petition = attestation when used; transferred BIOL 20A (no term) waives CHEM 3A; STAT 131 substitute accepted; reviewed 2026-10-06: CSE 20 test-out now an attestation (only when BME 160/CSE 20 absent) and counts as CSE 20, so four electives are required; +3 tests"
+}

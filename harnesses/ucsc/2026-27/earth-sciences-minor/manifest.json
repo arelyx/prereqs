@@ -1,0 +1,11 @@
+{
+ "program": "earth-sciences-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a626eb44cc58362bc3367a0c44bd59e32e5da4cdf4515fba13e0b60c2b295332",
+ "skeleton_sha256": "a5337cfa904b66a86262d1b8322c0d585573fca752064fe7a73a5c6fb7173286",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:38Z",
+ "verified_at": "2026-10-06T23:37:38Z",
+ "notes": "verified line by line against sources/earth-sciences-minor.md; intro lecture/lab interchangeable per NOTE (two slots); UD pool with catalog-required labs, one-199 cap, ENVS 115A+L composite; per-course P/NP exception via check; lint ok; reviewed 2026-10-06: no harness defects, regression tests added"
+}

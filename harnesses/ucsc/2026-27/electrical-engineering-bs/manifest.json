@@ -1,0 +1,11 @@
+{
+ "program": "electrical-engineering-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "831c05716d858fd6db18712f186acd8e537b1b946952e0d8bced2faad2527ba1",
+ "skeleton_sha256": "9d2de79a15869279b417f969ddaea218442b9a2a27d42070a3dfb66b281abb23",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:56Z",
+ "verified_at": "2026-10-06T23:46:44Z",
+ "notes": "verified line by line against sources/electrical-engineering-bs.md; four electives from union of lists, >=3 from concentration; conjoined UG/grad pairs and design elective in check; design-before-ECE 129A as separate node (cannot-check when another earlier design course exists); DC slot + comprehensive overlay; CSE 20 test-out, ECE 183, ECE 218, exit survey/interview as attestations; ECE 80T/8 waived for transfer entry; reviewed 2026-10-06: CSE 20 test-out normalized (single slot, attestation only when CSE 20 absent, failed CSE 20 not rescued); cross-listed ECE 253/CSE 208 counted once within electives"
+}

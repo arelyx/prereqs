@@ -1,0 +1,11 @@
+{
+ "program": "ancient-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "5f7e109dc9226e013c7fdd0eb0c22c20e7d5181415d176bfa1ba3b7220d11dd9",
+ "skeleton_sha256": "c8b9a31f1d254fbe5b7ed76a668f8db2db56ccf3267f90853fda0fd8f46c770a",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:01Z",
+ "verified_at": "2026-10-06T23:55:33Z",
+ "notes": "ported from 2026-27 (reviewed); differences: seminar named CLST 197F (accepted with its renumbered catalog code ANCS 197F; CLST197F unknownOk); LIT 116C not on the elective list; LIT 190T added"
+}

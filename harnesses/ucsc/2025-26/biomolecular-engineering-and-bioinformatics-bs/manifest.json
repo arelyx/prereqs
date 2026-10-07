@@ -1,0 +1,11 @@
+{
+ "program": "biomolecular-engineering-and-bioinformatics-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b66907466ea6e754948bd62a1778d1a8459a38258ec3988477a71e25c201d989",
+ "skeleton_sha256": "ad90e39bd226c7bf7922b71c2c211ef3f31d4ed81ae5d14ff89add80bfb6ca37",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:58Z",
+ "verified_at": "2026-10-07T00:01:50Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/biomolecular-engineering-and-bioinformatics-bs.md; differences: CHEM 3BL/3CL always required (no fall-2026 rule) + pre-2023 CHEM 1A/1B/1M/1C/1N series; BME stats STAT 131 only; CSE 20 (and test-out) for BME 160 only in BINF; BINF multivariable = AM 30 or MATH 23A"
+}

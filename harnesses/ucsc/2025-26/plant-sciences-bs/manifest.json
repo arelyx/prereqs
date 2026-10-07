@@ -1,0 +1,11 @@
+{
+ "program": "plant-sciences-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "2d9f8f0a5d59c6ea9d703cd6a1ac12cc81766165dc533e8d89677d4bca9221b9",
+ "skeleton_sha256": "69b46afc8549c90ec061df23858d93806be5db5c487b9f8c1d64b7af6ce80fd1",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:56Z",
+ "verified_at": "2026-10-06T23:55:08Z",
+ "notes": "ported from 2026-27 (reviewed); differences: no fall-2026 CHEM 3B/3C rule — CHEM 3BL/3CL always required (gen-chem now one options slot); added CHEM 1A/1B/1C/1N prior-completion package (CHEM 1B unknownOk); BIOE 119L not a topical elective (still a general elective via BIOE 100-179); BIOE 119L, 157A, 157B not on the comprehensive list (157B still DC); qualification info quotes 2025-26 wording incl. CHEM 1A/1B/1C/1M/1N; overlap/lec-lab/general/DC quotes re-pointed (no rule change: lab/field and DC stay overlays); 4 new 2025-26 tests, 34 tests"
+}

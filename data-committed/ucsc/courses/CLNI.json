@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Addresses large-scale political, cultural, and economic issues to inform global citizenship.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to college members.",
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "JRLC110"
@@ -38,6 +43,7 @@
    ],
    "number": "110",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -48,6 +54,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Offers an applied experience of collaborative planning, production, and leadership. Students plan workshops and other event components; conduct outreach and publicity; and address all aspects of educational event planning. Enrollment restricted to members of the spring volunteer Practical Activism planning group. Enrollment by permission of the instructor.",
@@ -60,6 +68,7 @@
    ],
    "number": "120",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -70,6 +79,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI191",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Undergraduates at upper-division level participate in teaching discussion groups for CLNI 85 (W). Prerequisite(s): permission of instructor: essay describing interest in becoming course assistant, copies of evaluations, and letter of recommendation from faculty member and/or college staff member. Enrollment is restricted to College Nine juniors and seniors.",
@@ -80,6 +91,7 @@
    "ge_codes": [],
    "number": "191",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -90,6 +102,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual directed study for upper-division college members with college-affiliated faculty. Students must submit petition with one of the college academic advisers with accompanying letter from faculty adviser. Approval of provost required. Enrollment is restricted to upper-division College Nine members.",
@@ -100,6 +114,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -110,6 +125,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Individual directed study for upper-division college members with college-affiliated faculty. Students must submit petition with one of the college academic advisers with accompanying letter from faculty adviser. Approval of provost required. Enrollment is restricted to upper-division College Nine members.",
@@ -120,6 +137,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -130,6 +148,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI1A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "1",
    "cross_listed": [],
    "description": "Orientation to and exploration of the nature of the liberal arts, and of learning at research universities. Topics include: academic planning for upper-division coursework; enrollment processes; and understanding pathways to degree completion; UCSC resources that support health and well-being strategies for academic success; the cultivation of just communities; the prevention of sexual harassment and violence; campus conduct policies; awareness of risks associated with drug and/or alcohol use; and an introduction to traditions of community-engaged learning, ground-breaking research, and interdisciplinary thinking that define a UC Santa Cruz degree. This course can be taken for Pass/No Pass grading only.",
@@ -140,6 +160,7 @@
    "ge_codes": [],
    "number": "1A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to entering first-year College Nine students.",
    "repeatable": false,
@@ -150,6 +171,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI30",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [
     "JRLC30"
@@ -162,6 +185,7 @@
    "ge_codes": [],
    "number": "30",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -172,6 +196,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI35",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "JRLC35"
@@ -186,6 +212,7 @@
    ],
    "number": "35",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -196,6 +223,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI45",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [
     "JRLC45"
@@ -208,6 +237,7 @@
    "ge_codes": [],
    "number": "45",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -218,6 +248,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI55",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [
     "JRLC55"
@@ -230,6 +262,7 @@
    "ge_codes": [],
    "number": "55",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -240,6 +273,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI65",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Introduces students to the art of DJing. Becoming a skilled DJ requires many things: a deep love of music, the ability to read one’s audience, technical skill, and knowledge of DJ cultures and their histories. Students learn to DJ using both vinyl and digital formats, as well as how to organize events centered around dance music.",
@@ -252,6 +287,7 @@
    ],
    "number": "65",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -262,6 +298,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI70",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [
     "JRLC70"
@@ -274,6 +312,7 @@
    "ge_codes": [],
    "number": "70",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -284,6 +323,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI80",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Offers perspectives on feminist movements, both historical and contemporary, across Asia, Africa, Europe, and the Americas. Students explore the values of specific movements from around the world that align with larger international trends, as well as the culturally unique tenets and organizing structures of the movements. Assignments encourage students to critically analyze the motivating factors in the creation of feminist movements and the complications in transnational feminist spaces.",
@@ -294,6 +335,7 @@
    "ge_codes": [],
    "number": "80",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -304,6 +346,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI85",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Workshop facilitated by peer instructors. Students learn about current international and global issues through interactive exercises, small-group discussions, and faculty presentations. Students develop an action plan to raise awareness about one or more of these concerns and take practical steps to create positive change in the world.",
@@ -316,6 +360,7 @@
    ],
    "number": "85",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -326,6 +371,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI90",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides an opportunity to enhance the intercultural experience, increase cultural competency, promote further understanding, and examine the various trends facing a uniquely diverse community. Geared toward U.S. and international students affiliated with the International Living Center.",
@@ -336,6 +383,7 @@
    "ge_codes": [],
    "number": "90",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -346,6 +394,8 @@
   {
    "catalog_instructor": null,
    "code": "CLNI92",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Supports the development of cross-cultural understanding and media literacy to navigate diverse perspectives, examining how U.S. media portrays Muslim, Arab, North African, and Middle Eastern identities, analyzing the construction, reinforcement, and challenge of stereotypes across film, news, television, and social media.",
@@ -358,6 +408,7 @@
    ],
    "number": "92",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -366,11 +417,10 @@
    "url": "/en/current/general-catalog/courses/clni-college-nine/lower-division/clni-92"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "CLNI"
 }

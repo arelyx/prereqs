@@ -1,0 +1,11 @@
+{
+ "program": "applied-mathematics-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "afe735273169784676d019d292a1c708b0293a535a68c415125303f412e72e1e",
+ "skeleton_sha256": "27ed98397f737c229c04b52e011bae91446c950b1eaa7979e0494d8ca29501c0",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:50Z",
+ "verified_at": "2026-10-06T23:55:30Z",
+ "notes": "ported from 2026-27 (reviewed); differences: mixed AM 10+MATH 24 / MATH 21+AM 20 combos not accepted; ASTR 171 cross-list"
+}

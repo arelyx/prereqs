@@ -1,0 +1,11 @@
+{
+ "program": "computer-science-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "bb030511a7628795005f74dbaf1a1f4bb6937bffd4a97b195f4d29a234bf0f4b",
+ "skeleton_sha256": "2ce65d3c6075d6e20fbe21ce0010775b22e5ac650781e09cec7b0b890ccae309",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:22:53Z",
+ "verified_at": "2026-10-06T00:24:40Z",
+ "notes": "verified line by line against sources/computer-science-bs.md; lint: quotes verbatim, all course rows referenced; ported from 2026-27 via harness-tools/port.ts"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "395a0b7a26c2768c844028e1b238dd1f459d766e1d582b832cd4fca82c163531",
+ "skeleton_sha256": "847e972b52297e9a84e77e48ff9f54cc0ba6affe3ccada9c9b70766ac3a63390",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:47:27Z",
+ "verified_at": "2026-10-06T23:44:58Z",
+ "notes": "verified line by line against sources/mathematics-ba.md; electives = MATH 101-190 (5+ cr, lab merged) or listed other-dept (max 2), extra analysis/algebra/geometry fall through via shared allocation; DC/comprehensive overlays on MATH 100 + 194/195; catalog no-credit-for-both MATH 111A/111T enforced (later one dropped); reviewed 2026-10-06: removed PHYS 107 alias/unknownOk (library cross-listing); regression tests for mixed multivar package, lab-only elective, 111T-first, NP MATH 100, no-term credit"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "literature-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "86e55988cb6da95c9fe2014ead68f71db0e45105e06362bab2258d3af05af95c",
+ "skeleton_sha256": "04f30b821421b8e22f45388a2e8aa96ba88d4244492c506a9c94fc51c0e29b4f",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:10Z",
+ "verified_at": "2026-10-06T23:59:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (identical text)"
+}

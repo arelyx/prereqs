@@ -1,0 +1,11 @@
+{
+ "program": "art-design-games-playable-media-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "8c05cb89a40b6eba18695c982b5214e4df70b1c84bf9757dab13f022d09757da",
+ "skeleton_sha256": "014305c49c311d108b1047c33cda3c512bc86866345ced704c94d67276806b44",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:52:12Z",
+ "verified_at": "2026-10-06T23:56:09Z",
+ "notes": "ported from 2026-27 (reviewed); differences: ARTG 143 not on Social Interventions list (still PPE); MUSC 167 (2 cr) listed as elective but 'All courses must be at least 5 credits and upper-division' so all UD slots require 5+ credits; DC exclusivity reworded only"
+}

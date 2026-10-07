@@ -10,7 +10,7 @@ from __future__ import annotations
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel, Field, StringConstraints
+from pydantic import BaseModel, Field, StringConstraints, field_validator
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
@@ -36,9 +36,42 @@ class TermIn(BaseModel):
     courses: list[CourseCode] = Field(default_factory=list, max_length=30)
 
 
+ShortKey = Annotated[str, StringConstraints(max_length=160)]
+ShortVal = Annotated[str, StringConstraints(max_length=200)]
+
+
 class PlanContent(BaseModel):
+    """Per-plan student data — exactly the localStorage shape.
+
+    - ``catalog_year``: the edition the student is bound to (e.g. '2026-27');
+      null means the newest edition.
+    - ``choices``: per program slug, declared choices a harness asks for
+      (concentration, track, instrument, entry type...).
+    - ``attested``: per program slug, names of non-course conditions the
+      student says are satisfied (auditions, juries, petitions...).
+    - ``grades``: optional letter grades by course code (default: passing).
+    """
+
     completed: list[CourseCode] = Field(default_factory=list, max_length=200)
     terms: list[TermIn] = Field(default_factory=list, max_length=24)
+    catalog_year: Annotated[str, StringConstraints(pattern=r"^20\d\d-\d\d$")] | None = None
+    choices: dict[ShortKey, dict[ShortKey, ShortVal]] = Field(default_factory=dict)
+    attested: dict[ShortKey, list[ShortVal]] = Field(default_factory=dict)
+    grades: dict[CourseCode, Annotated[str, StringConstraints(max_length=4)]] = Field(default_factory=dict)
+
+    @field_validator("choices", "attested")
+    @classmethod
+    def _bounded(cls, v: dict) -> dict:
+        if len(v) > 8 or any(len(x) > 32 for x in v.values()):
+            raise ValueError("too many entries")
+        return v
+
+    @field_validator("grades")
+    @classmethod
+    def _bounded_grades(cls, v: dict) -> dict:
+        if len(v) > 400:
+            raise ValueError("too many grades")
+        return v
 
 
 class ValidateRequest(BaseModel):
@@ -53,7 +86,9 @@ class PlanIn(BaseModel):
     content: PlanContent
 
 
-def _programs(db: Session, university_id: str, ids: list[int]) -> list[Program]:
+def _programs(
+    db: Session, university_id: str, ids: list[int], catalog_year: str | None = None
+) -> list[Program]:
     if not ids:
         return []
     rows = db.scalars(
@@ -61,6 +96,8 @@ def _programs(db: Session, university_id: str, ids: list[int]) -> list[Program]:
     ).all()
     if len(rows) != len(set(ids)):
         raise HTTPException(404, "one or more programs not found")
+    if catalog_year and any(p.catalog_year != catalog_year for p in rows):
+        raise HTTPException(422, "programs must belong to the plan's catalog year")
     return rows
 
 
@@ -69,7 +106,7 @@ def validate(university_id: str, req: ValidateRequest, db: Session = Depends(get
     if db.get(University, university_id) is None:
         raise HTTPException(404, "unknown university")
     ctx = build_context(db, university_id)
-    programs = _programs(db, university_id, req.program_ids)
+    programs = _programs(db, university_id, req.program_ids, req.content.catalog_year)
     normalized = {
         "completed": [c.replace(" ", "").upper() for c in req.content.completed],
         "terms": [
@@ -116,7 +153,7 @@ def create_plan(
         raise HTTPException(
             422, f"plan limit reached ({MAX_PLANS} plans per account); delete a plan first"
         )
-    _programs(db, body.university_id, body.program_ids)
+    _programs(db, body.university_id, body.program_ids, body.content.catalog_year)
     plan = Plan(
         user_id=user.id,
         university_id=body.university_id,
@@ -144,7 +181,7 @@ def update_plan(
     db: Session = Depends(get_db),
 ) -> dict:
     plan = _own_plan(db, user, plan_id)
-    _programs(db, body.university_id, body.program_ids)
+    _programs(db, body.university_id, body.program_ids, body.content.catalog_year)
     plan.name = body.name
     plan.university_id = body.university_id
     plan.program_ids = body.program_ids

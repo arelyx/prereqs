@@ -1,0 +1,11 @@
+{
+ "program": "statistics-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "535f9ace28bff51cc77b6b2f5562d6ccc07982794bbd4f843857c330a2be4a09",
+ "skeleton_sha256": "31f4334d1898c1b0527806bf40e3ce78b1e3e7ec8eddaf180d5a183afbb264ff",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:51Z",
+ "verified_at": "2026-10-06T23:55:30Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

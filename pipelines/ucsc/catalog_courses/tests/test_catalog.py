@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from common.guards import ScrapeDriftError
-from ucsc.catalog_courses import parse, prompts
+from ucsc.catalog_courses import parse
 
 FIXTURE = (Path(__file__).parent / "fixture_cse_trimmed.html").read_text()
 
@@ -91,24 +91,12 @@ def test_unknown_class_detection():
     assert "brandNewThing" in d.unknown_classes
 
 
-def test_needs_llm_prefilter():
-    assert not prompts.needs_llm(None)
-    assert not prompts.needs_llm("Enrollment is restricted to seniors.")
-    assert prompts.needs_llm("Prerequisite(s): CSE 12.")
-    assert prompts.needs_llm("Phys 116A or Math 21 required.")  # title-case codes
+def test_division_from_number_fallback():
+    from ucsc.catalog_courses.parse import division_from_number
 
-
-def test_preprocess_strips_standalone_coreq_keeps_inline():
-    s = "Prerequisite(s): CSE 150 . Concurrent enrollment in CSE 151L is required."
-    assert "151L" not in prompts.preprocess(s)
-    s2 = "Prerequisite(s): CSE 12 ; previous or concurrent enrollment in CSE 100L is required."
-    assert "CSE 100L" in prompts.preprocess(s2)
-
-
-def test_clean_groups_hallucination_guard():
-    raw = "Prerequisite(s): CSE 12 or BME 160."
-    parsed = {"groups": [["CSE12", "BME160", "CSE999"], ["MATH19A"]]}
-    # CSE999 and MATH19A don't appear in the source text -> dropped entirely.
-    assert prompts.clean_groups(parsed, raw) == [["CSE12", "BME160"]]
-    assert prompts.clean_groups(None, raw) == []
-    assert prompts.clean_groups({"groups": "nope"}, raw) == []
+    assert division_from_number("1") == "lower"
+    assert division_from_number("99L") == "lower"
+    assert division_from_number("100") == "upper"
+    assert division_from_number("194F") == "upper"
+    assert division_from_number("200") == "graduate"
+    assert division_from_number("") == ""

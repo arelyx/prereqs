@@ -1,0 +1,11 @@
+{
+ "program": "mathematics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "808c197548784e716df6c456aff3ac809961f78ba05ab6937f13b22b27426714",
+ "skeleton_sha256": "c6aab529a844e83fd936b1e16e29a3d4fb8de3b79e604585a86feaeb938577bc",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:46Z",
+ "verified_at": "2026-10-06T23:44:58Z",
+ "notes": "verified line by line against sources/mathematics-minor.md; 4 electives MATH/AM/STAT 101-190 5+ cr, max one AM/STAT, lab merged, 111A/111T credit-once; reviewed 2026-10-06: no defects; tests for PHYS 107 as the one AM/STAT elective and AM 100 out of range"
+}

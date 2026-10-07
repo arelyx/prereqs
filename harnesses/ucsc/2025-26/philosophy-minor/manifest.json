@@ -1,0 +1,14 @@
+{
+ "program": "philosophy-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "2a86b6802f01d88a6ef9ed8acc7694693810d7d9495f46aec126bb9b99332eeb",
+ "skeleton_sha256": "7f0cfd01f384de1402e859e7a4754f2b9e230afc00c822306b7c68bdd0764727",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:36Z",
+ "verified_at": "2026-10-06T23:57:43Z",
+ "notes": "ported from 2026-27 (reviewed); differences: no letter grade policy (C- counts); history PHIL 100A-C only; PHIL 140/100D value theory only; lower elective excludes only PHIL 8 (PHIL 7 no-credit with PHIL 9 added)",
+ "depends_on": {
+  "philosophy-ba": "19feffde2779c28f86c969a6f3231ebcd3c49d97a291bbe941450046f72da173"
+ }
+}

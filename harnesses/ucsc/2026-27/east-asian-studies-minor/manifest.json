@@ -1,0 +1,11 @@
+{
+ "program": "east-asian-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "b38f8b442ffe1ae6d46210efdb60a3d5da5e311c51fcbe2a7f14886a04b24db7",
+ "skeleton_sha256": "8065130b696b29530b66efc538a0024a010d71c1c226d4365a429ac3ea5f2bf3",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:05Z",
+ "verified_at": "2026-10-06T23:38:12Z",
+ "notes": "verified line by line; LD CHIN/JAPN 1-6 shown as info (not among the six courses; placement allowed); two UD language same language via check; electives with at most one 199; an off-list 199 (HIS/LIT 199 'etc.') is cannot-check (topicality); P/NP max two; reviewed 2026-10-06: removed LGST 126/LGST 128J/HIS 141A/HIS 141B partner codes + unknownOk; listed/off-list test now via catalog (partner codes no longer flagged cannot-check); prefer a listed 199 over an off-list one"
+}

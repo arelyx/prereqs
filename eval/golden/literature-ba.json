@@ -1,0 +1,749 @@
+{
+ "program": "literature-ba",
+ "edition": "2026-27",
+ "author_notes": "Distribution membership (Pre-1750, Global, Poetry, Research) is taken from each course's own catalog description ('Distribution requirement(s): ...' in courses/LIT.json), since the external Distribution Requirements Course List is not in the source. Distribution is counted only among the seven electives. Ambiguities avoided: the Language Literature line 'completion of two years of college-level language coursework, or the equivalent' (Spanish pass record takes SPAN 1-6; the Ancient case is a fail regardless); whether a senior seminar such as LIT 190X counts toward the five language courses (cases do not rely on it); LIT 108A internships in the General range (109-189 vs 108-189) because internships may count 'with department approval'; independent-study caps that depend on approval.",
+ "cases": [
+  {
+   "id": "pass-general-literature",
+   "kind": "pass",
+   "description": "Frosh, General Literature, non-intensive, all letter grades. SPAN 1-3 (Level 3 proficiency), LIT 1, LIT 61P, LIT 101, LIT 102, seven electives LIT 111D (Poetry, Pre-1750), LIT 114B (Pre-1750), LIT 131D (Global), LIT 119A (Research), LIT 125B, LIT 146B, LIT 149B (distribution tags from each course's catalog description); senior seminar LIT 190U. All distribution areas covered.",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "General Literature",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "SPAN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "SPAN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "SPAN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 102",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 114B"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 146B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 149B"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "LIT 190U"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": true
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "pass-creative-writing-repeated-179b",
+   "kind": "pass",
+   "description": "Frosh, accepted to the Creative Writing concentration (poetry). SPAN 1-3, LIT 1, LIT 61P, workshop LIT 91B, LIT 101, LIT 102; seven electives LIT 179A, LIT 179B, LIT 179B again (LIT 179 courses may be repeated; three LIT 179 courses total), LIT 111D (Poetry, Pre-1750), LIT 116F (Pre-1750), LIT 131D (Global), LIT 119A (Research); senior seminar LIT 190W in spring. Complete.",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "Creative Writing",
+     "track": "poetry",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "SPAN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "SPAN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "LIT 91B",
+       "SPAN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 102",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 116F"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 179A"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 179B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 179B"
+      ]
+     },
+     {
+      "term": "2262",
+      "courses": [
+       "LIT 190W"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": true
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "pass-general-lit102-substituted-by-french-course",
+   "kind": "pass",
+   "description": "Trap: General Literature record with no LIT 102. The student (FREN 1-3) took LIT 182E (French poetry, read in French) as the allowed substitute for LIT 102, and it is not counted for anything else; the seven English-language electives are the same as the base record. Complete.",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "General Literature",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "FREN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "FREN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "FREN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 182E",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 114B"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 146B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 149B"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "LIT 190U"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": true
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-general-uses-lit179a",
+   "kind": "fail",
+   "description": "General Literature record where the seventh elective is LIT 179A instead of LIT 149B. LIT 179A is excluded for non-Creative-Writing students, so only six electives count.",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "General Literature",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "SPAN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "SPAN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "SPAN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 102",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 114B"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 146B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 179A"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "LIT 190U"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Upper-division electives: seven from LIT 109-189 excluding LIT 179A/179B",
+    "source_quote": "Students take seven 5-credit upper-division electives chosen from LIT 109-189, excluding courses LIT 179A and LIT 179B"
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-lit102-substitute-also-counted-as-elective",
+   "kind": "fail",
+   "description": "Like the LIT 102-substitution record (LIT 182E replaces LIT 102) but LIT 149B is missing, so LIT 182E would also have to be the seventh elective. The substitute may not fulfill any other major requirement.",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "General Literature",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "FREN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "FREN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "FREN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 182E",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 114B"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 146B"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "LIT 190U"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "LIT 102 substitute may not fulfill other requirements (only six electives)",
+    "source_quote": "Such a course may not fulfill any other major requirements."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-fewer-than-seven-upper-division-letter-grades",
+   "kind": "fail",
+   "description": "General Literature record where four electives (LIT 114B, LIT 125B, LIT 146B, LIT 149B) were taken P/NP (P). Only six of the upper-division courses (LIT 101, 102, 111D, 131D, 119A, 190U) have letter grades.",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "General Literature",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "SPAN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "SPAN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "SPAN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 102",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 114B"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 146B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 149B"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "LIT 190U"
+      ]
+     }
+    ],
+    "grades": {
+     "LIT 114B": "P",
+     "LIT 125B": "P",
+     "LIT 146B": "P",
+     "LIT 149B": "P"
+    },
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Letter grade policy: at least seven upper-division courses for a letter grade",
+    "source_quote": "must take at least seven courses counting toward the upper-division requirements for a letter grade."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-language-lit-only-four-in-language",
+   "kind": "fail",
+   "description": "Spanish Language Literature record where LIT 189K is replaced by LIT 131D (English-language, Global). Only four electives are in Spanish (LIT 188B, 188E, 189E, 189L); the senior seminar is LIT 190U (English).",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "Language Literature",
+     "language": "Spanish",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "SPAN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 80P",
+       "SPAN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "SPAN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "SPAN 4",
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "SPAN 5"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "SPAN 6",
+       "LIT 102"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 188B",
+       "LIT 148B"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 188E"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 189E",
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 189L"
+      ]
+     },
+     {
+      "term": "2260",
+      "courses": [
+       "LIT 131D"
+      ]
+     },
+     {
+      "term": "2262",
+      "courses": [
+       "LIT 190U"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Language Literature: five literature courses in the language of concentration",
+    "source_quote": "Language Literature Concentration students take five literature courses in their chosen language of concentration."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-creative-writing-only-two-lit179",
+   "kind": "fail",
+   "description": "Creative Writing record where the repeated LIT 179B is replaced by LIT 125B, leaving only two LIT 179-series workshops (179A, 179B).",
+   "student": {
+    "entry": "frosh",
+    "choices": {
+     "concentration": "Creative Writing",
+     "track": "poetry",
+     "intensive": false
+    },
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "LIT 1",
+       "SPAN 1"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "LIT 61P",
+       "SPAN 2"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "LIT 91B",
+       "SPAN 3"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "LIT 101"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "LIT 102",
+       "LIT 111D"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "LIT 116F"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "LIT 131D",
+       "LIT 119A"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "LIT 179A"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "LIT 125B"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "LIT 179B"
+      ]
+     },
+     {
+      "term": "2262",
+      "courses": [
+       "LIT 190W"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Creative Writing: three courses from the LIT 179 series",
+    "source_quote": "Creative Writing students take any three courses from the LIT 179 series."
+   },
+   "audit": "agreed"
+  }
+ ]
+}

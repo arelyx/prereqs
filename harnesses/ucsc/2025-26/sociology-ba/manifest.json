@@ -1,0 +1,11 @@
+{
+ "program": "sociology-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b692ad9c180b00b91fd4d888fdd481e7062890f0eff7213db85c2300c9ed7f0a",
+ "skeleton_sha256": "3492482f1403d04960b9f927ce87be8001894ffefc7b2af4e521ad597f7d259d",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:15Z",
+ "verified_at": "2026-10-06T23:53:34Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (intro/advising/honors/declaration/planner text; no requirement changes)"
+}

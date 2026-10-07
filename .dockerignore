@@ -1,0 +1,15 @@
+# Root build context (frontend image): ship only frontend/ + harnesses/.
+**/node_modules
+**/.venv
+**/__pycache__
+.git
+data
+data-committed
+backups
+pipelines
+backend
+docs
+eval
+frontend/dist
+frontend/test-results
+frontend/playwright-report

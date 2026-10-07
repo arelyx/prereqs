@@ -7,6 +7,9 @@
 // slow sign-in survives the post-sign-in adoption.
 // Requires loaded UCSC data (catalog + offerings + programs).
 
+// Side instances (PW_BASE_URL) run their own backend: PW_API_URL points at it.
+const API = process.env.PW_API_URL ?? 'http://localhost:8200'
+
 import { expect, test } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
@@ -219,12 +222,12 @@ test('an edit in another tab during a slow sign-in is not lost', async ({ page, 
   await expect
     .poll(
       async () =>
-        page.evaluate(async () => {
-          const r = await fetch('http://localhost:8200/plans', {
+        page.evaluate(async (API) => {
+          const r = await fetch(`${API}/plans`, {
             headers: { Authorization: `Bearer ${localStorage.getItem('prereqs.token')}` },
           })
           return JSON.stringify(await r.json())
-        }),
+        }, API),
       { timeout: 8000 },
     )
     .toContain('CSE16')
@@ -248,12 +251,12 @@ test('a 404 from a bad program id never discards the local plan', async ({ page 
   await page.getByRole('button', { name: 'Create account' }).click()
   await expect(page.getByText(email)).toBeVisible()
   await page.waitForTimeout(1200)
-  const before = await page.evaluate(async () => {
-    const r = await fetch('http://localhost:8200/plans', {
+  const before = await page.evaluate(async (API) => {
+    const r = await fetch(`${API}/plans`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('prereqs.token')}` },
     })
     return (await r.json()).length
-  })
+  }, API)
   expect(before).toBe(1)
 
   // Poison programIds with an id no program has (hand-edited state, or a
@@ -270,13 +273,13 @@ test('a 404 from a bad program id never discards the local plan', async ({ page 
   // The plan survived locally with its work; nothing was tombstoned, and no
   // duplicate reseed row was pushed to the server.
   await expect(page.getByRole('button', { name: 'CSE 12', exact: true })).toBeVisible()
-  const after = await page.evaluate(async () => {
+  const after = await page.evaluate(async (API) => {
     const blob = JSON.parse(localStorage.getItem('prereqs.plans.v2')!)
-    const r = await fetch('http://localhost:8200/plans', {
+    const r = await fetch(`${API}/plans`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('prereqs.token')}` },
     })
     return { plans: blob.plans.length, deleted: (blob.deleted ?? []).length, server: (await r.json()).length }
-  })
+  }, API)
   expect(after.plans).toBe(1)
   expect(after.deleted).toBe(0)
   expect(after.server).toBe(1)
@@ -325,7 +328,7 @@ test('hostile tombstone list is normalized and a tombstoned active plan is fixed
 
 test('slow validate response for one plan never lands on another', async ({ page }) => {
   // Plan A carries a program, so its validation grows a requirements panel.
-  await page.getByRole('combobox').selectOption({ label: 'Computer Science B.S. ✓' })
+  await page.getByRole('combobox', { name: 'Add a program' }).selectOption({ label: 'Computer Science B.S. ✓' })
   await expect(page.getByRole('heading', { name: 'Computer Science B.S.' })).toBeVisible()
   await createPlan(page, 'Empty B')
   await expect(switcher(page)).toHaveText(/Empty B/)

@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "Renée  Cailloux",
    "code": "FREN1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to French language and culture with practice in all four language skills: listening, speaking, reading, and writing. Intended for students with no previous study of French.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN105",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "“Tell me what you eat, and I will tell you what you are.” This famous quote is the title of a book by the French gastrosopher (philosopher of gastronomy) Brillat-Savarin in XIX-century France. His work was highly influential on brilliant authors such as Balzac and Barthes. This English course explores French regional cultures, traditions, and savoir-faire and their impact on the people.",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "105",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN108",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigation of a variety of topics (historical, cultural, and linguistic) in France and the French-speaking world. Topics are explored through film. Conducted in English.",
@@ -56,6 +64,7 @@
    ],
    "number": "108",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -66,6 +75,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN111",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Intensive work in French composition with the aim of attaining fluency and accuracy of expression while developing literary appreciation. May be repeated for credit with consent of instructor.",
@@ -80,6 +91,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment. Students interested in this course who have not taken the prerequisite should meet with the instructor prior to the first class meeting.",
    "repeatable": true,
@@ -90,6 +102,8 @@
   {
    "catalog_instructor": "Bryan Donaldson",
    "code": "FREN114",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the French sound system and basic phonetics. Extensive practice of French pronunciation and phonetic transcriptions of both written and spoken language samples.",
@@ -104,6 +118,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment.",
    "repeatable": false,
@@ -114,6 +129,8 @@
   {
    "catalog_instructor": "Bryan Donaldson",
    "code": "FREN115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Spoken French refers to spontaneous everyday French speech; in France, everyday spoken French presents numerous differences from the normative written variety and has long been considered “faulty” and inferior to “standard” French. Linguists, however, see spoken French as a legitimate linguistic system in and of itself, and it is the subject of vibrant research activity. Gaining familiarity with the structures of spoken French is key for second-language speakers of French who wish to communicate and interact successfully and naturally. This course, taught in English, offers a survey of structures and features that distinguish everyday spoken French from normative/standard written French.",
@@ -125,11 +142,14 @@
    "number": "115",
    "prereq_groups": [
     [
-     "FREN3",
+     "FREN3"
+    ],
+    [
      "LING50",
      "APLX80"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 3 or equivalent; and LING 50 or APLX 80 .",
    "repeatable": false,
@@ -140,6 +160,8 @@
   {
    "catalog_instructor": "The Staff, Bryan Donaldson",
    "code": "FREN120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Major topics in contemporary French linguistics, covering both formal and social properties of French. Descriptive and theoretical study of phonetics and phonology, lexicon, morphology, syntax, sociolinguistic variation, status of regional and minority languages, and language planning. Taught in French.",
@@ -154,6 +176,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment, or by consent of the instructor.",
    "repeatable": false,
@@ -164,6 +187,8 @@
   {
    "catalog_instructor": null,
    "code": "FREN121",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of the history and development of the French language from Latin to early modern French. Sound changes, grammatical and lexical changes, language policy (e.g., l'Academie francaise), external influences on the language. Taught in French.",
@@ -178,6 +203,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment, or by permission of the instructor.",
    "repeatable": false,
@@ -188,6 +214,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN125A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Survey of the important historical events, social changes, and artistic movements contributing to the development of French culture during the 19th century.",
@@ -202,6 +230,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment.",
    "repeatable": false,
@@ -212,6 +241,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN125B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A survey of the important historical events, social changes, and artistic movements contributing to the development of French culture during the 20th century.",
@@ -226,6 +257,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment.",
    "repeatable": false,
@@ -236,6 +268,8 @@
   {
    "catalog_instructor": "The Staff, Renee Cailloux",
    "code": "FREN130",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students better understand administrative organization in France through preparation of their own professional dossier in French, and preparation to look for professional opportunities in France. Taught in French.",
@@ -250,6 +284,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 , or placement by assessment, or by permission of the instructor.",
    "repeatable": false,
@@ -260,6 +295,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the French tradition of musical activism from the French Revolution to the present. Societal issues such as war, racism, poverty, environmental issues, globalization, and terrorism are addressed.",
@@ -276,6 +313,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment, or by interview with consent of instructor.",
    "repeatable": false,
@@ -286,6 +324,8 @@
   {
    "catalog_instructor": "Carnie Rohmer",
    "code": "FREN136",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "In-depth multidisciplinary study of one or more French-speaking regions of the world. Topics may include history, language, society, literature, and the arts. All coursework will be done in French.",
@@ -300,6 +340,7 @@
      "FREN6"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 6 or placement by assessment.",
    "repeatable": true,
@@ -310,6 +351,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -320,6 +363,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -330,6 +374,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -340,6 +386,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -350,6 +397,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -360,6 +409,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -370,6 +420,8 @@
   {
    "catalog_instructor": "Renée  Cailloux , Carine",
    "code": "FREN2",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Further development of cultural competence and basic French language skills, both written and spoken. Students learn past tenses in this course.",
@@ -384,6 +436,7 @@
      "FREN1"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter, Spring",
    "raw_requirements": "Prerequisite(s): FREN 1 or placement by assessment.",
    "repeatable": false,
@@ -394,6 +447,8 @@
   {
    "catalog_instructor": "Renée  Cailloux",
    "code": "FREN3",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Final quarter of first-year sequence. Students complete study of French language basics, including the future tense and the conditional and the subjunctive moods, while continuing to learn about French and Francophone cultures.",
@@ -408,6 +463,7 @@
      "FREN2"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): FREN 2 or placement by assessment.",
    "repeatable": false,
@@ -418,6 +474,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN35",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work on developing fluency and spontaneity in French conversation, focusing on oral expression in a range of common daily situations, including social interactions, navigating transportation systems, securing lodging and accommodations, ordering food in restaurants, and so forth. Students also focus on acquiring vocabulary related to each theme. This course aims to build students’ oral proficiency as well as confidence, especially for students interesting in further French coursework or a sojourn abroad in a French-speaking context (such as one of the UCEAP programs in France).",
@@ -432,6 +490,7 @@
      "FREN3"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): FREN 3 .",
    "repeatable": false,
@@ -442,6 +501,8 @@
   {
    "catalog_instructor": "Carine Rohmer",
    "code": "FREN4",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "First course in intermediate sequence. Students review and expand upon their previous study of the language through short literary readings, vocabulary building, grammar study, composition, and discussions.",
@@ -458,6 +519,7 @@
      "FREN3"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisite(s): FREN 3 or placement by assessment.",
    "repeatable": false,
@@ -468,6 +530,8 @@
   {
    "catalog_instructor": "Renée  Cailloux",
    "code": "FREN5",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Further development of intermediate-level oral and written skills through study of vocabulary and structures. Students also read and discuss a French or Francophone play.",
@@ -484,6 +548,7 @@
      "FREN4"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): FREN 4 or placement by assessment.",
    "repeatable": false,
@@ -494,6 +559,8 @@
   {
    "catalog_instructor": "Renée  Cailloux",
    "code": "FREN6",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Final course of intermediate sequence includes grammar study, vocabulary building, extensive writing, and discussion. Reading of a French or Francophone novel is an integral part of course.",
@@ -510,6 +577,7 @@
      "FREN5"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): FREN 5 or placement by assessment.",
    "repeatable": false,
@@ -520,6 +588,8 @@
   {
    "catalog_instructor": "Carine Rohmer",
    "code": "FREN85",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Taught in English, this course examines core values and events in France, such as Republican values (in the French sense of \"Republican\"), secularism, globalization, immigration, that have helped shape current French society.",
@@ -532,6 +602,7 @@
    ],
    "number": "85",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -542,6 +613,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN94",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -552,6 +625,7 @@
    "ge_codes": [],
    "number": "94",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -562,6 +636,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -572,6 +648,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -582,6 +659,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "FREN99F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -592,6 +671,7 @@
    "ge_codes": [],
    "number": "99F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -600,11 +680,10 @@
    "url": "/en/current/general-catalog/courses/fren-french/lower-division/fren-99f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "FREN"
 }

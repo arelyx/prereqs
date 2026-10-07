@@ -1,0 +1,11 @@
+{
+ "program": "earth-sciences-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "967282891a7ed855a6eeefcee2b64ebe3f716bff367ee16cb5043bf0fd0c3209",
+ "skeleton_sha256": "d35a3470246b9f662febf60cc22755757e02f92092a3b4dba1dbc05a50a9a3d8",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:50Z",
+ "verified_at": "2026-10-07T00:06:01Z",
+ "notes": "ported from 2026-27 (reviewed); differences: chemistry needs CHEM 3BL/3CL (no fall-2026 rule; fall-2026+ 3B/3C without lab = cannot-check) or CHEM 1A/1B/1C/1M/1N; DC = two courses from one 16-course list in every concentration (list subject to change: unmet with other UD EART courses = cannot-check); EART 189A added to field/lab list; EART 191B added to capstones; EART 114 dropped (geophysics); EART 146 has no lab (146L absent); summer rule quoted from planners"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "environmental-studieseconomics-combined-major-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "58f0fa3d9791266b4377b1e64afb0c48d3076b2fcbfd5162b137eda8621cb058",
+ "skeleton_sha256": "ca06be32072c69aed3ca74d6fe5e606eb138c61a2c9109d1d3231149ad809ac7",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:53:08Z",
+ "verified_at": "2026-10-06T23:48:10Z",
+ "notes": "verified line by line against sources/environmental-studieseconomics-combined-major-ba.md; P/NP allowed except the comprehensive ENVS exit option (letter); comprehensive = exit option (exclusive slot) + economics comprehensive exam portions (attestation); DC overlay on ENVS 100/100L; ENVS electives >=1 from the natural-sciences list (BIOE 151A-D on that list count); ENVS 104A/130A need their catalog-required labs; cross-listed LGST partners accepted; reviewed 2026-10-06: removed cross-list alias map/unknownOk (library handles cross-listing); no logic defects found"
+}

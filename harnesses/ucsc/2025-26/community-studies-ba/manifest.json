@@ -1,0 +1,11 @@
+{
+ "program": "community-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "2e33c8190f32cf1a3706dd94a863de663a23905a3f0493658f68e2ce4469fa8d",
+ "skeleton_sha256": "83772d437e711e4e544fc31e5f697c59d5078876edf80b9eedc4f9a219c3aa5b",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:12Z",
+ "verified_at": "2026-10-07T00:01:22Z",
+ "notes": "ported from 2026-27 (reviewed); differences: lower-division course is CMMU 10 only (no CMMU 20); qualification needs CMMU 10 plus a topical course (info); program director may approve other topical courses (note)"
+}

@@ -89,12 +89,14 @@ def seeded(db_session):
             "Data Structures and Algorithms",
             division="upper",
             prereq_groups=[["CSE12"], ["CSE16"], ["CSE30"]],
+            concurrent_ok=["CSE16"],
         ),
         _course(
             "CSE130",
             "Systems Design",
             division="upper",
             prereq_groups=[["CSE101"]],
+            coreqs=[["CSE16"]],
         ),
         _course("ANTH2", "Cultural Anthropology", ge_codes=["CC"]),
         # Catalog-listed but zero offerings in the data window.
@@ -152,44 +154,12 @@ def seeded(db_session):
             kind="major",
             slug="computer-science-bs",
             url="https://example.test/cs-bs",
-            requirements={
-                "sections": [
-                    {
-                        "kind": "lower_div",
-                        "title": "Lower-Division Courses",
-                        "concentration": None,
-                        "rules": [
-                            {
-                                "op": "all_of",
-                                "n": None,
-                                "courses": ["CSE12", "CSE16", "CSE30"],
-                                "branches": None,
-                                "constraints": [],
-                                "source": {"heading": "All of the following"},
-                                "notes": [],
-                                "needs_review": False,
-                            }
-                        ],
-                    },
-                    {
-                        "kind": "upper_div",
-                        "title": "Upper-Division Courses",
-                        "concentration": None,
-                        "rules": [
-                            {
-                                "op": "n_of",
-                                "n": 2,
-                                "courses": ["CSE101", "CSE130"],
-                                "branches": None,
-                                "constraints": [],
-                                "source": {"heading": "Plus two of the following"},
-                                "notes": [],
-                                "needs_review": False,
-                            }
-                        ],
-                    },
-                ]
-            },
+            catalog_year="2026-27",
+            source_md=(
+                "# Computer Science B.S.\n\n<!-- slug: computer-science-bs -->\n\n"
+                "## Information and Policies\n\n### Introduction {sc1}\nStudy computing.\n\n"
+                "## Requirements and Planners\n- CSE 12 — Systems (7)\n"
+            ),
         )
     )
     db_session.commit()

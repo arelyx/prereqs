@@ -1,0 +1,11 @@
+{
+ "program": "western-music-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "00c7802b37775706bee0f948f426e550da029b0d53bdf0f266ec8b4c9148aee9",
+ "skeleton_sha256": "aaae12ff10d90d2431d4c784b732aaa0285153aaa625d34ade1eb63b03da93fb",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:09Z",
+ "verified_at": "2026-10-07T00:01:21Z",
+ "notes": "ported from 2026-27 (reviewed); differences: MUSC 31 failed-section exception absent (three passed sections required); MUSC 30A admission needs A/A+ in MUSC 14 (note); C-ID note absent"
+}

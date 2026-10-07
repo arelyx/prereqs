@@ -1,0 +1,11 @@
+{
+ "program": "history-of-art-and-visual-culture-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a37e6b4a1425681f0567d7b84c4ac2a49c39b978d00e544626a48c798a6d5472",
+ "skeleton_sha256": "978033b71994f568552ad890fdb398073a2add2a268a7aa8503d77b47caab370",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:18Z",
+ "verified_at": "2026-10-06T23:42:13Z",
+ "notes": "verified line by line; tests from the page. Regions computed from number ranges on the page (no external list needed); HAVC 80 = Africa/NA/Oceania; UD regional check matches against any four passed LD courses so the six regions are covered; CHM = overlay of four approved courses (<=1 LD, >=2 HAVC-sponsored; VAST 188J counted as HAVC-sponsored via its HAVC cross-listing); default concentration = general.; reviewed 2026-10-06: CHM: upper-division non-HAVC approved courses (ANTH 187/187B/196J, HIS 104D) now count as major electives (\"Upper-division concentration courses fulfill elective requirements for the major\"); HAVC 199/HIS 199 petition is an attestation asked only when it completes the concentration (was cannot-check, even when it could not complete it); removed HAVC 188J alias + unknownOk"
+}

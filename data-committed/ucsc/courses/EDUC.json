@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "Paulo Tan",
    "code": "EDUC10",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Survey course exploring the foundational perspectives on learning, especially when considering learners from non-dominant communities, how those views of learning are reflected in what and how students learn in school and out of school, and how those views of learning can impact teaching practices.",
@@ -16,6 +18,7 @@
    ],
    "number": "10",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Winter, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -26,6 +29,8 @@
   {
    "catalog_instructor": "Heather Wygant",
    "code": "EDUC100A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines students, schools, and science and/or mathematics instruction with emphasis on developing an instructional project aligned with state-mandated content standards. Concurrent participation in a secondary school internship required. Course content supports and enhances students' internship experience.",
@@ -42,6 +47,7 @@
      "EDUC50C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter, Spring",
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; EDUC 50A , EDUC 50B , or EDUC 50C ; and acceptance into the Cal Teach program. Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -52,6 +58,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC100B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines students, schools, and  mathematics instruction with emphasis on developing an instructional project aligned with state-mandated content standards. Concurrent participation in a secondary school internship required. Course content supports and enhances students' internship experience.",
@@ -68,6 +76,7 @@
      "EDUC50C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; EDUC 50A , EDUC 50B , or EDUC 50C ; and acceptance into the Cal Teach program. Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -78,6 +87,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC100C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines students, schools, and science  instruction with emphasis on developing an instructional project aligned with state-mandated content standards. Student must concurrently participate in a K-12 school internship. Concurrent participation in a secondary school internship required. Course content supports and enhances students' internship experience.",
@@ -94,6 +105,7 @@
      "EDUC50C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; EDUC 50A , EDUC 50B , or EDUC 50C ; and acceptance into the Cal Teach program. Enrollment is restricted to sophomores, juniors, and seniors.",
    "repeatable": false,
@@ -104,6 +116,8 @@
   {
    "catalog_instructor": "Nolan Higdon",
    "code": "EDUC102",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focusing on ways the media (both news and the entertainment industry) portrays schools, teachers, and students to the public, investigates the way society views education, the way education is presented in the media, and the way education is influenced by society.",
@@ -116,6 +130,7 @@
    ],
    "number": "102",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to declared EDJ majors or education minors or by permission of instructor.",
    "repeatable": false,
@@ -126,6 +141,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC104",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Emphasizes a philosophical exploration of the moral complexities of teaching. Students read theoretical investigations of these complexities, and examine case studies that pose difficult moral questions and illuminate the dilemmas of everyday life in classrooms. Course is grounded in a dialogical approach to learning.",
@@ -136,6 +153,7 @@
    "ge_codes": [],
    "number": "104",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors; science education majors; and STEM and EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -146,6 +164,8 @@
   {
    "catalog_instructor": "Emily Reigh , GSI, who will be mentored by Emily Reigh",
    "code": "EDUC105",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides guided field experiences for prospective teachers to explore how K-12 math and science teachers build inclusive and caring classroom communities at the beginning of the academic year. Internship in a school of 25 hours required. Course addresses equity- and justice-focused theories and teaching practices. Assignments involve close observation and analysis of classroom teaching practices. Prerequisite(s): EDUC 50B , EDUC 50C , EDUC 180 , or similar experience. Enrollment by instructor consent. Participants must be accepted to a Cal Teach program and be in good standing. Open to students from other UC campuses. New students should submit intent to participate at calteach.ucsc.edu. (Formerly Cal Teach: Establishing Effective Classroom Communities.)",
@@ -156,6 +176,7 @@
    "ge_codes": [],
    "number": "105",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -166,6 +187,8 @@
   {
    "catalog_instructor": "Amanda Lashaw",
    "code": "EDUC110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines transformative learning and action at the heart of movements for social justice. Investigates principles and practices of \"popular education\" and other grassroots education traditions that have emerged from struggles for liberation and democracy. Topics include: abolition-democracy, critical consciousness, humanization, critical literacy, problem-posing, praxis, counter-narrative, participatory action research, and cultural organizing.",
@@ -180,6 +203,7 @@
      "EDUC60"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry-Level Writing and Composition requirements and EDUC 60 . Enrollment is restricted to education, democracy and justice majors, science education majors, STEM education minors, and education minors, or by permission of instructor.",
    "repeatable": false,
@@ -190,6 +214,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an overview of educational testing.  Appropriate use and interpretation of standardized, classroom achievement and special needs assessments are examined. Issues on fair testing of diverse populations of students are discussed within each topic area.",
@@ -200,6 +226,7 @@
    "ge_codes": [],
    "number": "115",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to declared education, democracy and justice majors, science or math education major, STEM ED or EDUC minor, or by permission of instructor.",
    "repeatable": false,
@@ -210,6 +237,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC120",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the historical legacy of the arts within education; considers aesthetic education as an inter-arts philosophical and practical endeavor; studies alternatives to the current situation of the arts in education; develops theory, curricula and methods necessary to teach the arts. Addresses both elementary and secondary teaching in the arts. Meets third-course requirements.",
@@ -222,6 +251,7 @@
    ],
    "number": "120",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior education minors; STEM education minors; education, democracy and justice majors; science education majors; or by permission of instructor.",
    "repeatable": false,
@@ -232,6 +262,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Offers opportunities for undergraduate and graduate students to learn about fundamental aspects of children's literature, increase their knowledge of range and quality of children's literature, enhance their understanding of multicultural children's literature, and develop ways to integrate children's literature into elementary- and middle-school curriculum areas.",
@@ -242,6 +274,7 @@
    "ge_codes": [],
    "number": "125",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior education democracy and justice majors, education minors, and STEM education minors, or by permission of instructor.",
    "repeatable": false,
@@ -252,6 +285,8 @@
   {
    "catalog_instructor": "Michelle Aguilera",
    "code": "EDUC126",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Offers an overview of historical and contemporary perspectives regarding literacy learning in America. Using a socio-cultural lens and research findings to analyze instructional practices, it provides foundational knowledge for potential teachers and policy makers regarding literary education.",
@@ -269,6 +304,7 @@
      "EDUC180"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): EDUC 60 and EDUC 180 .",
    "repeatable": false,
@@ -279,6 +315,8 @@
   {
    "catalog_instructor": "Eduardo Mosqueda",
    "code": "EDUC128",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Research and theory on the education of immigrant students. Major topics include the Americanization movement and America's changing demography, identity maintenance and change, home-school relations, and educators' roles in meeting the needs of culturally and linguistically diverse student populations.",
@@ -291,6 +329,7 @@
    ],
    "number": "128",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors; science education majors; and STEM and EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -301,6 +340,8 @@
   {
    "catalog_instructor": "Rekia Jibrin",
    "code": "EDUC135",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses the changing but continuing patterns of unequal expectations, opportunities, and treatment throughout the educational system for all students, female and male, who do not match a standard model of gender performance.",
@@ -311,6 +352,7 @@
    "ge_codes": [],
    "number": "135",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors, science education majors, STEM & EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -321,6 +363,8 @@
   {
    "catalog_instructor": "Michelle Aguilera",
    "code": "EDUC140",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the intersection between language, diversity, and education to examine the education of youth who have been historically underserved by schools. Topics include dialect and register variation; language policy; and sociocultural perspectives on learning/teaching of language.",
@@ -333,6 +377,7 @@
    ],
    "number": "140",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors; science education majors; and STEM and EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -343,6 +388,8 @@
   {
    "catalog_instructor": "Nora Lang",
    "code": "EDUC141",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces participants to issues related to the schooling of students who speak languages other than or in addition to English. Uses a multidisciplinary perspective to understand the circumstances these students face in schools and considers approaches and policies that best meet their needs.",
@@ -353,6 +400,7 @@
    "ge_codes": [],
    "number": "141",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors, science education majors, STEM & EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -363,6 +411,8 @@
   {
    "catalog_instructor": "Rene Kissell",
    "code": "EDUC160",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores a variety of perspectives on key educational policy issues including desegregation, bilingual education, affirmative action, charter schools, national and state curriculum standards, student assessment and the assessment and certification of teachers.",
@@ -373,6 +423,7 @@
    "ge_codes": [],
    "number": "160",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors, science education majors, STEM & EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -383,6 +434,8 @@
   {
    "catalog_instructor": "Michelle Aguilera",
    "code": "EDUC162",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines youth as a social construction, relation, and achievement to understand the everyday lives, experiences, learning, and education of youth. Explores the development, histories, cultures, politics, and resistance of youth in education, focusing on race, gender/sexuality, class, and their intersections.",
@@ -395,6 +448,7 @@
    ],
    "number": "162",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment restricted to junior and senior education minors.",
    "repeatable": false,
@@ -405,6 +459,8 @@
   {
    "catalog_instructor": "Amanda Lashaw",
    "code": "EDUC164",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on urban schooling through critical readings, fieldwork, group projects, and extensive writing. Students explore how socialization, marginalization, and assimilation impede or support academic success, how class intersects with race, and how culture affects one's orientation to education.",
@@ -417,6 +473,7 @@
    "ge_codes": [],
    "number": "164",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors; science education majors; critical race and ethnic studies majors; and STEM, EDUC and Black studies minors, or by permission of instructor.",
    "repeatable": false,
@@ -427,6 +484,8 @@
   {
    "catalog_instructor": "Nolan Higdon",
    "code": "EDUC166",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the history of technology in education from approximately 1950 to the present, addressing the interpersonal, epistemological, and pedagogical differences between digital and analog learning. Although no programming experience is required, participants will create an instructional application.",
@@ -437,6 +496,7 @@
    "ge_codes": [],
    "number": "166",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior education minors, STEM education minors, education democracy and justice majors, science education majors, or by permission of instructor.",
    "repeatable": false,
@@ -447,6 +507,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC173",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Philosophical and pedagogical exploration of relationships among oppression, power, society, education, and change. Examines how history, power, economics, and discrimination shape societal perspectives and schooling practices, and considers ways to transform education.",
@@ -457,6 +519,7 @@
    "ge_codes": [],
    "number": "173",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to declared Education students or by permission of instructor.",
    "repeatable": true,
@@ -467,6 +530,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC174",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores ethnographic research as an important path for future teachers in understanding how diverse communities provide and support schooling at all levels.",
@@ -481,6 +546,7 @@
      "EDUC60"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): EDUC 60 . EDUC 180 recommended. Enrollment is restricted to declared junior and senior education major or minor students or by permission of instructor.",
    "repeatable": false,
@@ -491,6 +557,8 @@
   {
    "catalog_instructor": "Eduardo Mosqueda",
    "code": "EDUC177",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines equity issues in the learning and teaching of math and science in culturally and linguistically diverse school settings. Draws on multicultural, bilingual, and math/science education perspectives. Intended for undergraduate majors considering a K-12 teaching career. Satisfies an elective requirement for the minor in education program. Prior completion of EDUC 180 is advised. (Formerly Teaching Culturally and Linguistically Diverse Students Math and Science.)",
@@ -503,6 +571,7 @@
    ],
    "number": "177",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors, science education majors, STEM & EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -513,6 +582,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC178",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "KRSG178"
@@ -525,6 +596,7 @@
    "ge_codes": [],
    "number": "178",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior education and STEM minors, education, democracy, and justice, science education, and sociology majors or by permission of instructor.",
    "repeatable": true,
@@ -535,6 +607,8 @@
   {
    "catalog_instructor": "Soleste Hillberg, Josephine Pham",
    "code": "EDUC180",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed to encourage students to think about teaching in new ways. Assumptions about teaching and schooling are examined as well as considering what it takes to teach so that children learn and understand. Not a course in how to teach, but an opportunity to reconsider what teaching should try to accomplish and what kinds of learning teachers should foster. Practicum in the schools of 30 hours per quarter required.",
@@ -551,6 +625,7 @@
      "EDUC60"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter",
    "raw_requirements": "Prerequisite(s): Entry Level Writing and Composition requirements; and EDUC 60 . Enrollment is restricted to education, democracy and justice majors, science education majors, STEM education minors, and education minors, or by permission of instructor.",
    "repeatable": false,
@@ -561,6 +636,8 @@
   {
    "catalog_instructor": "Amanda Lashaw",
    "code": "EDUC181",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the schooling experience and educational attainment of racial/ethnic minority students in the U.S. Focuses primarily on domestic minorities. Addresses issues of variability between and within minority groups and the role of cultural, structural, and psychological factors in the educational attainment of these students.",
@@ -573,6 +650,7 @@
    ],
    "number": "181",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors, science education majors, STEM & EDUC minors, or by permission of instructor.",
    "repeatable": false,
@@ -583,6 +661,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC182",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the social, cultural, historical, and policy context of teachers' work in the United States. Examines the historical evolution and development of the teaching profession, explores contemporary images of teachers, analyzes demographics of the teaching workforce, and investigates the sources of teacher motivation, satisfaction and frustration. In particular, students examine student, cultural, media, teacher and policy representations of teachers and their work. Whenever possible, students will engage with what teachers' themselves say about their work, rather than relying on second-hand accounts with the aim of building a picture of the complexity of teachers' work. (Formerly American Teacher.)",
@@ -593,6 +673,7 @@
    "ge_codes": [],
    "number": "182",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to junior and senior education or STEM minors, education, democracy and justice, science education, sociology, and critical race and ethnic studies majors, or by permission of instructor.",
    "repeatable": false,
@@ -603,6 +684,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC183",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an introduction to children's mathematical thinking and an overview of major themes, issues, and questions that researchers in mathematics education  have studied in relation to children's mathematical thinking.",
@@ -617,6 +700,7 @@
      "EDUC60"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): EDUC 60 . Enrollment is restricted to education or STEM minors; physics education majors; students with math education concentration; Earth Sciences science education concentration; biology B.A. bioeducation; or by instructor permission.",
    "repeatable": false,
@@ -627,6 +711,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC185B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an introduction to principles and practices for mathematics education; examines how research on learning and teaching mathematics informs approaches to teaching mathematics; provides an introduction to national and state standards, mathematics curricula, and other current issues in mathematics education.",
@@ -639,25 +725,230 @@
    "prereq_groups": [
     [
      "MATH11A",
-     "MATH11B"
-    ],
-    [
      "MATH19A",
-     "MATH19B"
-    ],
-    [
      "MATH20A",
-     "MATH20B"
-    ],
-    [
      "AM11A",
-     "AM11B"
+     "ECON11A"
     ],
     [
-     "ECON11A",
+     "MATH11A",
+     "MATH19A",
+     "MATH20A",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19A",
+     "MATH20A",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19A",
+     "MATH20A",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19A",
+     "MATH20B",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19A",
+     "MATH20B",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19A",
+     "MATH20B",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19A",
+     "MATH20B",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20A",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20A",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20A",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20A",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20B",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20B",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20B",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11A",
+     "MATH19B",
+     "MATH20B",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20A",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20A",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20A",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20A",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20B",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20B",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20B",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19A",
+     "MATH20B",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20A",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20A",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20A",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20A",
+     "AM11B",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20B",
+     "AM11A",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20B",
+     "AM11A",
+     "ECON11B"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20B",
+     "AM11B",
+     "ECON11A"
+    ],
+    [
+     "MATH11B",
+     "MATH19B",
+     "MATH20B",
+     "AM11B",
      "ECON11B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): MATH 11A and MATH 11B , or MATH 19A and MATH 19B ; or MATH 20A and MATH 20B ; or AM 11A and AM 11B ; or ECON 11A and ECON 11B; or equivalent courses (by instructor approval); or by permission of the instructor.",
    "repeatable": false,
@@ -668,6 +959,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC185C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to the principles and practices for teaching science in secondary classrooms. Course examines theoretical and practical approaches to teaching science, provides an introduction to national and state standards and an overview of science curricula and current issues in science teaching.",
@@ -678,6 +971,7 @@
    "ge_codes": [],
    "number": "185C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to junior and senior education, democracy and justice majors, science education majors, STEM education minors, and education minors, or by permission of instructor.",
    "repeatable": false,
@@ -688,6 +982,8 @@
   {
    "catalog_instructor": "Molly Shaw",
    "code": "EDUC185L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Supplements theoretical and practical introduction to the teaching of science or mathematics with subject-pedagogical approaches. Concurrent participation in an advanced Cal Teach internship provides context to apply theory and practical techniques. Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements; EDUC 50A, EDUC 50B , or EDUC 50C ; EDUC 100A, EDUC 100B , or EDUC 100C ; EDUC 185B or EDUC 185C . Enrollment restricted to juniors and seniors or education minors, or by permission of instructor.",
@@ -698,6 +994,7 @@
    "ge_codes": [],
    "number": "185L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -708,6 +1005,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC187",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses the question, How do people learn? by examining theories of learning and research on cognition, learning, and instruction.",
@@ -718,6 +1017,7 @@
    "ge_codes": [],
    "number": "187",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors, seniors, or education minors, or by permission of instructor.",
    "repeatable": false,
@@ -728,6 +1028,8 @@
   {
    "catalog_instructor": "Eduardo Mosqueda, Amanda Lashaw, Rene Kissell",
    "code": "EDUC190",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Senior seminars focus on advanced topics in education. The pedagogical goals vary by instructor but often emphasize at least one of the following: critical and analytical thinking, field research, advanced research methods (qualitative or quantitative), or advanced theory. Satisfies senior capstone requirement.",
@@ -749,6 +1051,7 @@
      "EDUC180"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Prerequisite(s): Entry Level Writing and Composition requirements. EDUC 10 and EDUC 60 ; EDUC 110 or EDUC 180 . Enrollment is restricted to education, democracy and justice majors, or by permission of instructor.",
    "repeatable": false,
@@ -759,6 +1062,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -769,6 +1074,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -779,6 +1085,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC194F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -789,6 +1097,7 @@
    "ge_codes": [],
    "number": "194F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -799,6 +1108,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC197A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "1",
    "cross_listed": [],
    "description": "Work with K-12 students on science or math projects, ideally involving inquiry-based learning. Site supervision provided by a credentialed teacher. Project-dependent reading and writing assignments negotiated with instructor. Projects will be offered as available or initiated by student.  Enrollment is by interview only. Prerequisite(s): EDUC 50A, EDUC 50B , or EDUC 50C . Enrollment is restricted to majors in the physical and biological sciences and majors in the school of engineering or by permission of instructor.",
@@ -809,6 +1120,7 @@
    "ge_codes": [],
    "number": "197A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -819,6 +1131,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC197B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Work with K-12 students on science or math projects, ideally involving inquiry-based learning. Site supervision provided by a credentialed teacher. Project-dependent reading and writing assignments negotiated with instructor. Projects will be offered as available or initiated by student.  Enrollment is by interview only. Prerequisite(s): EDUC 50A, EDUC 50B , or EDUC 50C . Enrollment is restricted to majors in the physical and biological sciences and majors in the school of engineering or by permission of instructor.",
@@ -829,6 +1143,7 @@
    "ge_codes": [],
    "number": "197B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -839,6 +1154,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC197C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Work with K-12 students on science or math projects, ideally involving inquiry-based learning. Site supervision provided by a credentialed teacher. Project-dependent reading and writing assignments negotiated with instructor. Projects will be offered as available or initiated by student.  Enrollment is by interview only. Prerequisite(s): course 50A, 50B, or 50C. Enrollment is restricted to majors in the physical and biological sciences and majors in the school of engineering or by permission of instructor.",
@@ -849,6 +1166,7 @@
    "ge_codes": [],
    "number": "197C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -859,6 +1177,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -869,6 +1189,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -879,6 +1200,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -889,6 +1212,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -899,6 +1223,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -909,6 +1235,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -919,6 +1246,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -929,6 +1258,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -939,6 +1269,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A required course that introduces students to the diverse cultural and linguistic settings of today's classrooms. Classroom practices, instructional strategies, and analysis are emphasized. First course in the student teaching placement series. Placements are used to examine and apply teaching methods while developing classroom management skills. Class meetings include discussion and demonstration of teaching methods.",
@@ -949,6 +1281,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -959,6 +1292,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed to provide students enrolled in the UCSC teacher education program a coherent, integrated, pre-professional experience in public school classrooms. Students assume part-time student teaching responsibilities totalling 14–16 hours per week under the direct supervision of an exemplary classroom teacher. Weekly seminars and ongoing supervision by department staff are required.",
@@ -973,6 +1308,7 @@
      "EDUC200"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): EDUC 200 . Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -983,6 +1319,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC201A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides advanced pre-professional experience for single subject teaching candidates who progressively assume full-time responsibility for public school student teaching beginning in winter quarter. Taken concurrently with EDUC 201. Weekly supervision and seminars with teacher supervisors are required.",
@@ -997,6 +1335,7 @@
      "EDUC200"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): EDUC 200 . Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1007,6 +1346,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC202A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed for students who have extensive field and course experience in education, and who wish to qualify for the single-subject or multiple-subject teaching credential by undertaking a quarter of full-time, supervised student teaching.",
@@ -1021,6 +1362,7 @@
      "EDUC201"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): EDUC 201 . Enrollment is restricted to M.A./credential students.",
    "repeatable": false,
@@ -1031,6 +1373,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC202B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed for students who have extensive field and course experience in education, and who wish to qualify for the single-subject or multiple-subject teaching credential by undertaking a quarter of full-time, supervised student teaching.",
@@ -1045,6 +1389,7 @@
      "EDUC201"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): EDUC 201 . Enrollment is restricted to M.A./credential students.",
    "repeatable": false,
@@ -1055,6 +1400,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC202C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Designed for students who have extensive field and course experience in education, and who wish to qualify for the single-subject or multiple-subject teaching credential by undertaking a quarter of full-time, supervised student teaching.",
@@ -1069,6 +1416,7 @@
      "EDUC201"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): EDUC 201 . Enrollment is restricted to M.A./credential students.",
    "repeatable": false,
@@ -1079,6 +1427,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course will help future educators develop a practical theory for teaching English as a second language in K-5 schools. Topics include the theoretical foundation for language acquisition; current trends and research in the  field; the role of culture in teaching English learners; language assessment; and the design of instructional units. Also focuses on teaching social studies to English learners. Enrollment restricted to M.A./credential students.",
@@ -1089,6 +1439,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1099,6 +1450,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC204",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course helps future educators develop a practical theory for teaching English in the elementary and secondary schools to students who speak other languages. Topics include current trends in the field, language assessment, and the design of instructional units.",
@@ -1109,6 +1462,7 @@
    "ge_codes": [],
    "number": "204",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1119,6 +1473,8 @@
   {
    "catalog_instructor": "Josephine Pham, The Staff",
    "code": "EDUC205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Required for master's students in education other than those in an approved 4+1 pathway who have the option to waive the course; offered in summer. Three basic units comprise the subject matter: teaching/learning, with such topics as development, learning, pedagogy, and socialization theories; schooling, as the context of teaching/learning both in its existent structures and its reform movements; and the sociocultural context in which educational institutions exist, topics such as cultural and historical forces, political and economic condition, family, and community structures.",
@@ -1129,6 +1485,7 @@
    "ge_codes": [],
    "number": "205",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Summer",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1139,6 +1496,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC206",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Required for master's students in education; offered in summer. Three basic units comprise the subject matter: teaching/learning, with such topics as development, learning, pedagogy, and socialization theories; schooling, as the context of teaching/learning both in its existent structures and its reform movements; and the sociocultural context in which educational institutions exist, including topics such as cultural and historical forces, political and economic conditions, family, and community structures.",
@@ -1149,6 +1508,7 @@
    "ge_codes": [],
    "number": "206",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1159,6 +1519,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC207",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Offered in summer. A sustained inquiry into the social, political, economic, and historical foundations of schools with an emphasis on community attitudes toward education. Student narratives of engagement and resistance will provide a basis for insights and interventions useful to educators.",
@@ -1169,6 +1531,7 @@
    "ge_codes": [],
    "number": "207",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Summer",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1179,6 +1542,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC208",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Offered in summer. Provides student and faculty adviser with time to confer over the completion of the required portfolio.",
@@ -1189,6 +1554,7 @@
    "ge_codes": [],
    "number": "208",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1199,6 +1565,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Offered in summer. Addresses the preparation of teachers for creating a supportive, healthy environment for student learning. Covers topics related to physical, emotional, and social health.",
@@ -1209,6 +1577,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Summer",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1219,6 +1588,8 @@
   {
    "catalog_instructor": "Paulo Tan",
    "code": "EDUC211",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Addresses the preparation of teachers for meeting needs of special populations within the general education setting. Covers basic knowledge, skills, and strategies. (Formerly Topics in Elementary Education: Teaching Special Populations.)",
@@ -1229,6 +1600,7 @@
    "ge_codes": [],
    "number": "211",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1239,6 +1611,8 @@
   {
    "catalog_instructor": "Janet Johns",
    "code": "EDUC212A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Taught in Spanish. Prepares future bilingual teachers to be knowledgeable about history, politics, theory, and practices related to bilingual instructional programs. Topics: second-language acquisition, bilingual-program models, equity pedagogy.",
@@ -1249,6 +1623,7 @@
    "ge_codes": [],
    "number": "212A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1259,6 +1634,8 @@
   {
    "catalog_instructor": "Janet Johns",
    "code": "EDUC212B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Taught in Spanish. Prepares future bilingual teachers to teach language, literacy, and the content areas in ways that address the needs of culturally and linguistically diverse students. Topics: literacy in two languages; academic language; assessment.",
@@ -1269,6 +1646,7 @@
    "ge_codes": [],
    "number": "212B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1279,6 +1657,8 @@
   {
    "catalog_instructor": "Janet Johns",
    "code": "EDUC212C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Taught in Spanish. Provides opportunities for future bilingual teachers to develop culturally relevant practices that build collaboration between the school, students' families, and community. Topics: Latino culture and history, school-parent communication.",
@@ -1289,6 +1669,7 @@
    "ge_codes": [],
    "number": "212C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1299,6 +1680,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC213",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Offered in summer. Addresses theories of child and adolescent development and how these theories apply to student success in school. Topics include: cognitive, social, emotional, and physical development, and how this knowledge influences decisions teachers make about instruction and their interaction with students.",
@@ -1309,6 +1692,7 @@
    "ge_codes": [],
    "number": "213",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Summer",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1319,6 +1703,8 @@
   {
    "catalog_instructor": "Soleste Hilberg",
    "code": "EDUC214",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses current issues in California's educational landscape. Potential topics include the teaching of LGBTQ curricula, understanding youth gang participation, the initiation of ethnic studies courses, school funding and school district budgets, and new technologies for student assessment. May be repeated for credit.",
@@ -1329,6 +1715,7 @@
    "ge_codes": [],
    "number": "214",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to MA/Credential graduate students.",
    "repeatable": true,
@@ -1339,6 +1726,8 @@
   {
    "catalog_instructor": "Josephine Pham",
    "code": "EDUC215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Supports collective development and practices as K-12 ethnic studies teachers, specifically through: 1) review of ethnic studies pedagogical reasoning and decision-making; 2) routine connections and systematic analyses drawn between ethnic studies teaching frameworks and K-12 classroom settings; and 3) field-based inquiry of teaching practices. Alongside empirical texts that offer resources for conceptualizing what ethnic studies education can look and feel like (and to what ends), course examines, applies, and reflects on pedagogical designs for teaching ethnic studies and core content areas (multiple subject, social studies, English language arts, math, science) through an ethnic studies framework.",
@@ -1349,6 +1738,7 @@
    "ge_codes": [],
    "number": "215",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1359,6 +1749,8 @@
   {
    "catalog_instructor": "Molly Shaw",
    "code": "EDUC216",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Supports student teachers in designing K-12 curriculum which is centered on equitable field-based learning. Field-based learning is an approach in which teaching is extended to a site outside of the classroom, exposing students to a real-world setting. Students learn through direct interaction with an environment that reflects taught concepts rather than learning through indirect presentations of the setting such as textbooks or lectures. The goals of FBLI are to empower diverse educators to in turn empower their students via equitable field-based learning opportunities, ultimately fostering diverse leadership, voices, and cultural traditions, leading to just and thriving communities.",
@@ -1369,6 +1761,7 @@
    "ge_codes": [],
    "number": "216",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -1379,6 +1772,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC217",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines pedagogical understanding in teaching physical education. Introduces candidates to theoretical and research basis in physical education and content standards and frameworks. Also investigates and presents instructional practices.",
@@ -1389,6 +1784,7 @@
    "ge_codes": [],
    "number": "217",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1399,6 +1795,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC218",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines pedagogical understanding in teaching visual arts. Introduces candidates to theoretical and research basis for teaching visual arts and content standards and frameworks. Also investigates and presents instructional practices.",
@@ -1409,6 +1807,7 @@
    "ge_codes": [],
    "number": "218",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1419,6 +1818,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC219",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines pedagogical understanding in teaching performing arts. Introduces candidates to theoretical and research basis for teaching performing arts and content standards and frameworks. Also investigates and presents instructional practices.",
@@ -1429,6 +1830,7 @@
    "ge_codes": [],
    "number": "219",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1439,6 +1841,8 @@
   {
    "catalog_instructor": "Jennifer Jones Hinz",
    "code": "EDUC220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course provides both a theoretical and practical foundation for literacy instruction, emphasizing reading and language arts instruction in grades K–8. Interactive instruction and field experience will be used to examine curricula, methods, materials, and literacy evaluation.",
@@ -1449,6 +1853,7 @@
    "ge_codes": [],
    "number": "220",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1459,6 +1864,8 @@
   {
    "catalog_instructor": "Molly Shaw",
    "code": "EDUC221",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines constructivist and sociocultural approaches to the learning and teaching of science in elementary classrooms, including beliefs about the nature of science and theories of how children learn science. Provides a critical overview of curricula, instructional theories, and multiple approaches to teaching the big ideas in elementary science.",
@@ -1469,6 +1876,7 @@
    "ge_codes": [],
    "number": "221",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1479,6 +1887,8 @@
   {
    "catalog_instructor": "Johnnie Wilson",
    "code": "EDUC222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course is required for the multiple subject credential. Examines constructivist and sociocultural approaches to the learning and teaching of mathematics in elementary classrooms, including the nature of mathematics and theories of how children learn mathematics. Provides an introduction to mathematics teaching standards and a critical overview of curricula, instructional theories, and multiple approaches to teaching the big ideas in elementary mathematics.",
@@ -1489,6 +1899,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1499,6 +1910,8 @@
   {
    "catalog_instructor": "Nora Lang",
    "code": "EDUC225",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a theoretical and practical foundation for teaching reading within content area instruction in middle school and secondary classrooms. Field experiences and interactive instruction will facilitate learning about strategies, curricula, methods, materials, and observation. Intended for students pursuing a single subject credential.",
@@ -1509,6 +1922,7 @@
    "ge_codes": [],
    "number": "225",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1519,6 +1933,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC226",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Required for the single subject English credential student. Examines sociocultural approaches to the learning and teaching of English in secondary classrooms, including theories of how children learn English language, literature, and composition.",
@@ -1529,6 +1945,7 @@
    "ge_codes": [],
    "number": "226",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1539,6 +1956,8 @@
   {
    "catalog_instructor": "DeWitt",
    "code": "EDUC227",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Prepares English single subject credential candidates for student teaching in winter and spring. Course focuses on developing curricula and strategies in the content area. Through classroom placements, students observe and apply techniques to develop curriculum units used in student teaching.",
@@ -1549,6 +1968,7 @@
    "ge_codes": [],
    "number": "227",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1559,6 +1979,8 @@
   {
    "catalog_instructor": "Judit Moschkovich",
    "code": "EDUC228",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines research on the learning and teaching of mathematics. Topics include the nature of mathematics cognition and learning, how children learn mathematics, mathematical discourse, and perspectives on addressing diversity in mathematics classrooms. Course is required for M.A./credential students in secondary (single subject) mathematics and of Ph.D. students in mathematics education.",
@@ -1569,6 +1991,7 @@
    "ge_codes": [],
    "number": "228",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1579,6 +2002,8 @@
   {
    "catalog_instructor": "Sumita Jaggar",
    "code": "EDUC229",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines constructivist and sociocultural approaches to teaching mathematics in the secondary classroom. Course will provide an introduction to mathematics teaching standards and a critical overview of curricula, instructional theories, and multiple approaches to teaching the big ideas in secondary mathematics. Required for mathematics secondary credential.",
@@ -1593,6 +2018,7 @@
      "EDUC228"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): EDUC 228 . Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1603,6 +2029,8 @@
   {
    "catalog_instructor": "Paulo Tan",
    "code": "EDUC230",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines theoretical approaches to the learning and teaching of science including the nature of scientific knowledge, theories of how children learn science, approaches to scientific discourse, and perspectives on addressing diversity in science classrooms. Course is required for single subjects science credential.",
@@ -1613,6 +2041,7 @@
    "ge_codes": [],
    "number": "230",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1623,6 +2052,8 @@
   {
    "catalog_instructor": "Molly Shaw",
    "code": "EDUC231",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines constructivist and sociocultural approaches to teaching science in secondary classrooms. Course will provide a critical overview of curricula, instructional theories, and multiple approaches to teaching the big ideas in science.",
@@ -1633,6 +2064,7 @@
    "ge_codes": [],
    "number": "231",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1643,6 +2075,8 @@
   {
    "catalog_instructor": "Daisy Martin",
    "code": "EDUC232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Required for the single subject social science credential student. Tracks both the implicit and explicit connections between theory and practice, illustrating that theory suggests best practice while practice informs theory-formation and testing.",
@@ -1653,6 +2087,7 @@
    "ge_codes": [],
    "number": "232",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1663,6 +2098,8 @@
   {
    "catalog_instructor": "Daisy Martin",
    "code": "EDUC233",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Prepares social science single subject credential candidates for student teaching in winter and spring. Course focuses on developing curricula and strategies in the content area. Through classroom placements, students observe and apply techniques to develop curriculum units that are used in student teaching.",
@@ -1673,6 +2110,7 @@
    "ge_codes": [],
    "number": "233",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to MA/credential students.",
    "repeatable": false,
@@ -1683,6 +2121,8 @@
   {
    "catalog_instructor": "Arshad Ali",
    "code": "EDUC235",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses foundational knowledge needed to understand and conduct educational inquiry and research. Topics include epistemology in the human sciences, philosophical foundations of modern research strategies, and general classes of research investigations in education.",
@@ -1693,6 +2133,7 @@
    "ge_codes": [],
    "number": "235",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1703,6 +2144,8 @@
   {
    "catalog_instructor": "Eduardo Mosqueda",
    "code": "EDUC236",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an introductory-level knowledge of quantitative research methods in educational settings. Students learn the foundations of quantitative data theory, general logic behind statistical inference, and specific methods of data analysis in educational contexts.",
@@ -1713,6 +2156,7 @@
    "ge_codes": [],
    "number": "236",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1723,6 +2167,8 @@
   {
    "catalog_instructor": "Arshad Ali",
    "code": "EDUC237",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Graduate level introduction to qualitative methods, with special attention to ethnographic research on schooling. Moves from overview of different methods, through examination of selected studies, to discussion of issues in research design, data collection, analysis, and writing.",
@@ -1733,6 +2179,7 @@
    "ge_codes": [],
    "number": "237",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Enrollment is restricted to graduate students; priority is given to graduate students in education.",
    "repeatable": false,
@@ -1743,6 +2190,8 @@
   {
    "catalog_instructor": "Lora Bartlett",
    "code": "EDUC250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the historical, socio-political, and research contours of the teaching profession. Investigates histories of teaching and teacher's work in the 19th and 20th centuries. Analyzes the contemporary era of teachers and teaching in the United States.",
@@ -1753,6 +2202,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1763,6 +2213,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC251",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes topics, which vary systematically from year to year, including analysis of classroom interaction, video recording and transcription, coding and analysis of discourse data, and software programs for qualitative analysis.",
@@ -1777,6 +2229,7 @@
      "EDUC237"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): EDUC 237 . Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1787,6 +2240,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC252",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigates philosophical hermeneutics to deeply interrogate education. Addresses such questions as: What is hermeneutics? How is education an hermeneutic enterprise? How does knowing hermeneutics deepen the ability to engage in education research?",
@@ -1797,6 +2252,7 @@
    "ge_codes": [],
    "number": "252",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1807,6 +2263,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC253",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines multiple approaches to designing research studies in mathematics and science education. Introduces multiple types of research designs and principles used by education researchers examining mathematics/science learning and teaching.",
@@ -1817,6 +2275,7 @@
    "ge_codes": [],
    "number": "253",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1827,6 +2286,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC254",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines theoretical foundations of critical and alternative research paradigms commonly used in education, including critical ethnography, participatory research, counter-storytelling, and social-design experiments. Examines critiques of qualitative/quantitative research from feminist and critical theory; surveys how such critiques have informed the development of new paradigms in education research; and explores the benefits and limits of selected alternative paradigms.",
@@ -1837,6 +2298,7 @@
    "ge_codes": [],
    "number": "254",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1847,6 +2309,8 @@
   {
    "catalog_instructor": "Eduardo Mosqueda",
    "code": "EDUC255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the applied statistical modeling and analysis of educational data (large-scale data sets), not on the mathematical foundations of science. Students learn to address quantitative research questions using general linear model (GLM) statistical methods. GLM includes regression analysis, analysis of variance (ANOVA), and analysis of covariance (ANCOVA). Students learn statistics by doing statistics.",
@@ -1861,6 +2325,7 @@
      "EDUC236"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): introductory statistics course ( EDUC 236 or equivalent). Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1871,6 +2336,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC256",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Emphasizes the analysis of qualitative data in education research and introduces interpretive analytical approaches for its use with empirical data, the use of coding software for ethnographic analysis, and video recording and transcription.",
@@ -1881,6 +2348,7 @@
    "ge_codes": [],
    "number": "256",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -1891,6 +2359,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC260",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores empirical and theoretical interconnections between teachers and teaching on the one side, and schools as situated organizations on the other. The course examines these various interconnections in relation to contemporary educational research, practice, and policy reform.",
@@ -1901,6 +2371,7 @@
    "ge_codes": [],
    "number": "260",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1911,6 +2382,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC261",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines multiple theoretical perspectives on thinking, learning, and teaching; the development of the whole person in a variety of cultural contexts; the roles thinking, learning, and teaching play in that development; and how researchers' and educators' conceptions shape instruction.",
@@ -1921,6 +2394,7 @@
    "ge_codes": [],
    "number": "261",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1931,6 +2405,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC262",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Application of anthropological and sociological theories to study of education. Examines social, cultural, and linguistic context of schooling with particular attention to role of race, class, culture, power, and language in influencing schooling outcomes.",
@@ -1941,6 +2417,7 @@
    "ge_codes": [],
    "number": "262",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1951,6 +2428,8 @@
   {
    "catalog_instructor": "Rene Kissell",
    "code": "EDUC263",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides students with multiple analytic perspectives from which to examine important educational issues by analyzing political, historical, and philosophical origins of educational reform in the U.S. and internationally.",
@@ -1961,6 +2440,7 @@
    "ge_codes": [],
    "number": "263",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1971,6 +2451,8 @@
   {
    "catalog_instructor": "Josephine Pham",
    "code": "EDUC264",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses personal and professional development of teachers. Explores models of teacher education with specific attention to methods and processes by which teachers can be better prepared to work with culturally and linguistically diverse students.",
@@ -1981,6 +2463,7 @@
    "ge_codes": [],
    "number": "264",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1991,6 +2474,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC265",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on the role teachers play in making/implementing educational policy. Addresses how this topic is implicated in enhancing the educational opportunities available to students who, historically, have been underserved by schools.",
@@ -2001,6 +2486,7 @@
    "ge_codes": [],
    "number": "265",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2011,6 +2497,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC266",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Overview of the purpose of and practice in program evaluations in a variety of contexts with a specific focus on educational settings. Students learn the techniques of program evaluation; the historical and theoretical context of program evaluations, including its relation to experimental research; and how action research can be used in conducting field-based evaluations. Students should be familiar with basic quantitative and qualitative methodologies.",
@@ -2021,6 +2509,7 @@
    "ge_codes": [],
    "number": "266",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2031,6 +2520,8 @@
   {
    "catalog_instructor": "Michelle Aguilera",
    "code": "EDUC268",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the nexus of schools, communities, and families, and, in particular, how collaboration across institutional boundaries can facilitate school and community reform.",
@@ -2041,6 +2532,7 @@
    "ge_codes": [],
    "number": "268",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2051,6 +2543,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC271",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines theoretical perspectives, educational issues, and scholarship related to use and development of literacy among diverse populations, particularly those who have not fared well in U.S. schools.",
@@ -2061,6 +2555,7 @@
    "ge_codes": [],
    "number": "271",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2071,6 +2566,8 @@
   {
    "catalog_instructor": "Michelle Aguilera",
    "code": "EDUC272",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigates discipline of sociolinguistics and explores actual ways in which sociolinguistics has become a useful lens for better understanding teaching, learning, and schooling. Conduct own sociolinguistic analyses of data collected for culminating project.",
@@ -2081,6 +2578,7 @@
    "ge_codes": [],
    "number": "272",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2091,6 +2589,8 @@
   {
    "catalog_instructor": "George Bunch",
    "code": "EDUC273",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Foundations of first- and second-language acquisition and bilingualism with emphasis on implications for education in linguistically diverse settings. Topics include linguistic, cognitive, sociolinguistic, and sociocultural approaches to development of languages and the nature of individual and societal bilingualism.",
@@ -2101,6 +2601,7 @@
    "ge_codes": [],
    "number": "273",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2111,6 +2612,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC274",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines relationships between sociopolitical struggles and language/language practices.  Students study ways in which Marxism, critical theory, and post structuralism have represented links between language and power, and investigate contemporary studies of language and power in education.",
@@ -2121,6 +2624,7 @@
    "ge_codes": [],
    "number": "274",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2131,6 +2635,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC276",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores first and second language-writing theory, research, and practice, especially relating to language minority students and others considered academically under-prepared. Focuses on educational settings from pre-school settings including families and communities.",
@@ -2141,6 +2647,7 @@
    "ge_codes": [],
    "number": "276",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2151,6 +2658,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC277A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Three-quarter seminar supporting second-year doctoral students as they progress through their second year research project from proposal, through data collection and analysis, to final paper and presentation.",
@@ -2161,6 +2670,7 @@
    "ge_codes": [],
    "number": "277A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to education doctoral students working on their second-year project.",
    "repeatable": false,
@@ -2171,6 +2681,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC277B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Three-quarter seminar supporting second-year doctoral students as they progress through their second year research project from proposal, through data collection and analysis, to final paper and presentation.",
@@ -2181,6 +2693,7 @@
    "ge_codes": [],
    "number": "277B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to education doctoral students working on their second-year project.",
    "repeatable": false,
@@ -2191,6 +2704,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC277C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Three-quarter seminar supporting second-year doctoral students as they progress through their second-year research project from proposal, through data collection and analysis, to final paper and presentation.",
@@ -2201,6 +2716,7 @@
    "ge_codes": [],
    "number": "277C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to education doctoral students working on their second-year project.",
    "repeatable": false,
@@ -2211,6 +2727,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC278",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Doctoral seminar that examines historical and current research on reading processes and instructional practices. Intensive study of factors affecting the development of proficient, engaged, and reflective readers who can acquire new knowledge from text.",
@@ -2221,6 +2739,7 @@
    "ge_codes": [],
    "number": "278",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2231,6 +2750,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC279",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Directed reading that does not involve a final paper. Students submit a petition to the course-sponsoring agency. May be repeated for credit up to four times. Enrollment is restricted to graduate students.",
@@ -2241,6 +2762,7 @@
    "ge_codes": [],
    "number": "279",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2251,6 +2773,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC279F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Directed reading that does not involve a final paper. Students submit a petition to the course-sponsoring agency. May be repeated for credit up to four times. Enrollment is restricted to graduate students.",
@@ -2261,6 +2785,7 @@
    "ge_codes": [],
    "number": "279F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2271,6 +2796,8 @@
   {
    "catalog_instructor": "George Bunch",
    "code": "EDUC280",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Considers and critiques conceptualizations of the language used for academic pursuits, from the early years of schooling to higher education. Focuses on implications for research and practice related to the education of students in linguistically diverse schools and societies.",
@@ -2281,6 +2808,7 @@
    "ge_codes": [],
    "number": "280",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2291,6 +2819,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC281",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines approaches in cognitive science, mathematics education, and science education to documenting student conceptions in science and mathematics, defining conceptual change, and describing relationship between conceptual change and learning with understanding.",
@@ -2301,6 +2831,7 @@
    "ge_codes": [],
    "number": "281",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2311,6 +2842,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC282",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores research on learning outside of school in multiple settings such as museums, after-school clubs, aquariums, workplaces, and homes. Readings draw from multiple fields and disciplines, including cognitive psychology, cognitive anthropology, cognitive science, education, museum education and evaluation, science, and mathematics education. Examine theoretical approaches to describing and understanding how people learn science and mathematics outside of school, empirical studies documenting learning in multiple non-school settings, and diversity issues in out-of-school settings.",
@@ -2321,6 +2854,7 @@
    "ge_codes": [],
    "number": "282",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2331,6 +2865,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC283",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the theory, research, policy and practice of social justice and equity in mathematics and science education in local, national, and international contexts. Emphasizes the promotion of equity and critical mathematics and science literacy in schools and communities.",
@@ -2341,6 +2877,7 @@
    "ge_codes": [],
    "number": "283",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2351,6 +2888,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC284",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores basic aspects of gender in the fields of mathematics and science education. Discusses historical trends, current dilemmas, and how science and mathematics block or enable access for women.",
@@ -2361,6 +2900,7 @@
    "ge_codes": [],
    "number": "284",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2371,6 +2911,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC285",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines multiple approaches to the study of the relation between culture and learning. Readings include historical and contemporary perspectives from cognitive science, cognitive anthropology, cross-cultural psychology, cultural psychology, and socio-cultural theories as frameworks for the study of culture and learning.",
@@ -2381,6 +2923,7 @@
    "ge_codes": [],
    "number": "285",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2391,6 +2934,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC286",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on particular issues of theoretical importance to research in mathematics and science education. Topics vary from year to year. Particular issues in cognition, learning, teaching, curriculum, and assessment in mathematics and science education may be covered.",
@@ -2401,6 +2946,7 @@
    "ge_codes": [],
    "number": "286",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2411,6 +2957,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC287",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Familiarizes students with the basic concepts of educational assessment and explores issues related to the design and implementation of educational assessment as well as the application of educational assessment in educational research.",
@@ -2421,6 +2969,7 @@
    "ge_codes": [],
    "number": "287",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2431,6 +2980,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC288",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Offers opportunity to critique a range of book-length ethnographic studies of education focusing on relationship between culture, learning, and schooling in the U.S. with comparative studies from other countries.",
@@ -2441,6 +2992,7 @@
    "ge_codes": [],
    "number": "288",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2451,6 +3003,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC289",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Applies multiple perspectives drawn from organizational theory, highlighting important aspects of organization of schools, including their operational environment, instructional organization, and professional and bureaucratic dimensions.",
@@ -2461,6 +3015,7 @@
    "ge_codes": [],
    "number": "289",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2471,6 +3026,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC290",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to cultural-historical activity theory (CHAT) based on work of Vygotsky, Bakhtin, and contemporary developments of their ideas. Explores the utility of CHAT as a framework for thinking about educational practice and research.",
@@ -2481,6 +3038,7 @@
    "ge_codes": [],
    "number": "290",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2491,6 +3049,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC291",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines educational access and advancement in several nations affected by globalization, national policies, and localized identity and opportunity structures. Attention to language and cultural expectations relevant to research in international contexts and how this knowledge provides reflection on the American condition.",
@@ -2501,6 +3061,7 @@
    "ge_codes": [],
    "number": "291",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2511,6 +3072,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC292",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Philosophical study of the theory of ideology from Marx to the present and how ideologies (racism, sexism, classism, linguicism, abilityism) become embodied, reproduced, resisted, and transformed (and particularly the role of education therein).",
@@ -2521,6 +3084,7 @@
    "ge_codes": [],
    "number": "292",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2531,6 +3095,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC293A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Research apprenticeship under guidance of faculty member during first or second year of doctoral studies. May also be taken in the third year and beyond. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -2541,6 +3107,7 @@
    "ge_codes": [],
    "number": "293A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2551,6 +3118,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC293B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Research apprenticeship under guidance of faculty member during first or second year of doctoral studies. May also be taken in the third year and beyond. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -2561,6 +3130,7 @@
    "ge_codes": [],
    "number": "293B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2571,6 +3141,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC294",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Doctoral students work with faculty advisors to plan, carry out, and write up small independent research project during second year of graduate studies. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
@@ -2581,6 +3153,7 @@
    "ge_codes": [],
    "number": "294",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2591,6 +3164,8 @@
   {
    "catalog_instructor": "Rekia Jibrin",
    "code": "EDUC295",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigates critical theories in education. Situates the themes against and within critical theory and philosophic foundations of Paulo Freire's theory of liberation education. Elaborates these themes within the discourses on critical race theory and education, and feminism and education.",
@@ -2601,6 +3176,7 @@
    "ge_codes": [],
    "number": "295",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2611,6 +3187,8 @@
   {
    "catalog_instructor": "Lora Bartlett",
    "code": "EDUC296",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on both the conceptual and methodological developments in the study of policy and on the research relation to the policy context of teachers' work.",
@@ -2621,6 +3199,7 @@
    "ge_codes": [],
    "number": "296",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2631,6 +3210,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC297",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -2641,6 +3222,7 @@
    "ge_codes": [],
    "number": "297",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2651,6 +3233,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC297F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -2661,6 +3245,7 @@
    "ge_codes": [],
    "number": "297F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2671,6 +3256,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC298",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students work with a faculty member who is teaching an undergraduate or MA/Credential course. Students will not be responsible for final grades, narrative evaluations, or holding discussion section. The expected course time commitment is limited to 2-3 hours per week, plus class meeting time. Students gain perspectives and practices of teaching undergraduate and graduate courses, working with the instructor on lesson planning, class instruction, and grading some student work.",
@@ -2681,6 +3268,7 @@
    "ge_codes": [],
    "number": "298",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2691,6 +3279,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC299",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -2701,6 +3291,7 @@
    "ge_codes": [],
    "number": "299",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2711,6 +3302,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC50A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Introductory seminar exploring secondary students, teaching, and schools in the context of science and/or mathematics instruction. Concurrent participation in a secondary school internship required. Course material supports and enhances students' placement experiences. Prerequisite(s): Acceptance into CAL Teach and concurrent participation in a secondary school internship in a science or math classroom.",
@@ -2723,6 +3316,7 @@
    ],
    "number": "50A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2733,6 +3327,8 @@
   {
    "catalog_instructor": "Hayley Vandercook",
    "code": "EDUC50B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Introductory seminar exploring secondary students, teaching, and schools in the context of mathematics instruction. Concurrent participation in a secondary school internship required. Course material supports and enhances students' placement experiences. Prerequisite(s): Acceptance into CAL Teach and concurrent participation in a secondary school internship in a math classroom.",
@@ -2745,6 +3341,7 @@
    ],
    "number": "50B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -2755,6 +3352,8 @@
   {
    "catalog_instructor": "Emily Maddox",
    "code": "EDUC50C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Introductory seminar exploring secondary students, teaching, and schools in the context of science instruction. Concurrent participation in a secondary school internship required. Course material supports and enhances students' placement experiences. Prerequisite(s): Acceptance into CAL Teach and concurrent participation in a secondary school internship in a science classroom.",
@@ -2767,6 +3366,7 @@
    ],
    "number": "50C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter",
    "raw_requirements": null,
    "repeatable": false,
@@ -2777,6 +3377,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "EDUC60",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Survey course exploring the foundations of public education in the United States, including: the social and political forces within schools and school systems in the U.S. the history and formation of the system and the educational policies and practices in our culturally and linguistically diverse nation. (Formerly Introduction to Education: Learning, Schooling, and Society.)",
@@ -2789,6 +3391,7 @@
    ],
    "number": "60",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Spring",
    "raw_requirements": null,
    "repeatable": false,
@@ -2799,6 +3402,8 @@
   {
    "catalog_instructor": null,
    "code": "EDUC99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -2809,6 +3414,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -2817,11 +3423,10 @@
    "url": "/en/current/general-catalog/courses/educ-education/lower-division/educ-99"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "EDUC"
 }

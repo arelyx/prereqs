@@ -1,0 +1,11 @@
+{
+ "program": "linguistics-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "f88f6895749b77aa9a0288d6bf38ec3d60d504a0da934e6399fa38aa43833ce4",
+ "skeleton_sha256": "6fb02a71a5c86e650008fff26988ba1f28c9e73343b1671a0b37f4f001fd5f88",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:05Z",
+ "verified_at": "2026-10-06T23:59:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: option 1 adds ARBC 5, GERM 5; option 2 languages are Hebrew/Persian/Portuguese/Punjabi/Yiddish (Arabic moved to option 1); ECON 22P not on the math/CS list"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "physics-astrophysics-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a976390d477c49360ee28065f65495eeba7df96961ebeb876be86047eb418a87",
+ "skeleton_sha256": "55047ae8df2c993d600d8fd408bb14320bceb735bb9a7ad2d46bbc2de41b1efb",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:11Z",
+ "verified_at": "2026-10-06T23:45:06Z",
+ "notes": "Re-verified 2026-10-06 after the source renderer fix: the module option's narrative marker now reads 'or any three of these courses' (previously rendered from the URL slug). Logic unchanged — it already followed the catalog page.; reviewed 2026-10-06: AP Physics C exemption offered whenever PHYS 5A/5C absent; CSE 20 test-out attestation; removed cross-list alias lists/unknownOk (composite lab units now catalog-aware); qualification as info"
+}

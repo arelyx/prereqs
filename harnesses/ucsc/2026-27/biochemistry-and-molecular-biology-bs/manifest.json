@@ -1,0 +1,11 @@
+{
+ "program": "biochemistry-and-molecular-biology-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "6ec99b55e32d6f6aefb6424b5582f01739326f1181d0d5744584c02f3265577d",
+ "skeleton_sha256": "51e57a9c2787e36e153d04e31182f157ac967fd4e9690bf6df9bd33936edf38e",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:54:17Z",
+ "verified_at": "2026-10-06T23:45:08Z",
+ "notes": "verified line by line against sources/biochemistry-and-molecular-biology-bs.md. Letter + C. Judgement: page allows 'BIOC 163A and BIOC 163B' as a substitute pair but not mixing → mixed pair cannot-check. Senior Exit Lab exclusive; DC/comprehensive overlays. Physics mix cannot-check.; reviewed 2026-10-06: mixed MATH 11/19 calculus now cannot-check (was met); qualification as info"
+}

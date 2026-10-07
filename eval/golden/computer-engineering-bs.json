@@ -1,0 +1,803 @@
+{
+  "program": "computer-engineering-bs",
+  "edition": "2026-27",
+  "author_notes": "Base record (Computer Systems) verified against every section; each fail is one edit. Concentration electives use only CSE 100-189 courses, because the approved CE elective list is an external page not in the source. Ambiguities avoided: whether one CSE 195 enrollment may satisfy both DC and the senior-thesis capstone (Networks pass uses CSE 195 only for DC); whether a System Programming course (e.g. CSE 113 or CSE 156) may fill both the elective and the final 'one of' list (no case relies on that).",
+  "cases": [
+    {
+      "id": "pass-computer-systems-123ab",
+      "kind": "pass",
+      "description": "Frosh, Computer Systems concentration, letter grades. MATH 19A/19B, AM 30, AM 10, AM 20, CSE 12, CSE 13S, CSE 16, CSE 20, CSE 30, PHYS 5A/5L, 5C/5N, PHYS 5B+5M; upper core CSE 100/100L, 101, 120, 121, ECE 101/101L, ECE 103/103L, CSE 107; DC CSE 185E; capstone CSE 123A+123B; concentration CSE 125, CSE 130, CSE 111, and elective CSE 140.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Computer Systems"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "CSE 13S",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 125",
+              "CSE 130",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 123A",
+              "CSE 111"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 123B",
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-digital-hardware-ece118-capstone",
+      "kind": "pass",
+      "description": "Trap: Digital Hardware concentration using alternatives. ECE 13 instead of CSE 13S; concentration CSE 125, the ECE 171+171L option, CSE 122 from the second list, elective CSE 140; capstone is ECE 118 (not used as the elective). Rest of core as standard. Complete.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Digital Hardware"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "ECE 13",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 125",
+              "ECE 171",
+              "ECE 171L",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "ECE 118",
+              "CSE 122"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-digital-hardware-cse122-used-twice",
+      "kind": "fail",
+      "description": "Digital Hardware record without ECE 171/171L: CSE 122 is used to satisfy the 'ECE 171+171L or CSE 122' option and nothing else from the following 'one of' list was taken. CSE 122 cannot be reused for the second list.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Digital Hardware"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "ECE 13",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 125",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "ECE 118",
+              "CSE 122"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Digital Hardware: one course from the second list (CSE 122/ECE 171 cannot be used again)",
+        "source_quote": "Note that CSE 122 or ECE 171 and ECE 171L cannot be used again here."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-networks-missing-cse156l",
+      "kind": "fail",
+      "description": "Networks record with CSE 156 but without the required CSE 156L lab.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Networks"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "CSE 13S",
+              "PHYS 15A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "ECE 9"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 150",
+              "CSE 130",
+              "CSE 195",
+              "CSE 129A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 129B",
+              "CSE 156"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 129C",
+              "CSE 151",
+              "CSE 151L"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Networks concentration: CSE 156L",
+        "source_quote": "CSE 156L — Network Programming Laboratory (2)"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-capstone-mixed-sequences",
+      "kind": "fail",
+      "description": "Computer Systems record whose capstone courses are CSE 123A, CSE 129B and CSE 129C (no CSE 123B, no CSE 129A). Neither capstone sequence is complete.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Computer Systems"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "CSE 13S",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 125",
+              "CSE 130",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 123A",
+              "CSE 111"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 129B",
+              "CSE 129C",
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Capstone: complete one full capstone sequence",
+        "source_quote": "All computer engineering students complete one of the following capstone sequences:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-dc-cse115a-not-ce-dc",
+      "kind": "fail",
+      "description": "Computer Systems record where the DC course taken is CSE 115A (a CS DC course) instead of CSE 185E; CE DC is only CSE 185E or CSE 195.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Computer Systems"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "CSE 13S",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 125",
+              "CSE 130",
+              "CSE 115A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 123A",
+              "CSE 111"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 123B",
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Disciplinary Communication: CSE 185E or CSE 195",
+        "source_quote": "The DC requirement in computer engineering is satisfied by one of the following:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-required-course-pass-no-pass",
+      "kind": "fail",
+      "description": "Computer Systems pass record except ECE 101 was taken P/NP (grade P). Baskin requires letter grades for all major courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "Computer Systems"
+        },
+        "terms": [
+          {
+            "term": "2228",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2230",
+            "courses": [
+              "MATH 19B",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2232",
+            "courses": [
+              "CSE 12",
+              "CSE 16"
+            ]
+          },
+          {
+            "term": "2238",
+            "courses": [
+              "AM 10",
+              "CSE 13S",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2240",
+            "courses": [
+              "AM 30",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2242",
+            "courses": [
+              "AM 20",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2248",
+            "courses": [
+              "CSE 100",
+              "CSE 100L",
+              "CSE 101"
+            ]
+          },
+          {
+            "term": "2250",
+            "courses": [
+              "ECE 101",
+              "ECE 101L",
+              "CSE 120",
+              "CSE 107"
+            ]
+          },
+          {
+            "term": "2252",
+            "courses": [
+              "ECE 103",
+              "ECE 103L",
+              "CSE 121"
+            ]
+          },
+          {
+            "term": "2258",
+            "courses": [
+              "CSE 125",
+              "CSE 130",
+              "CSE 185E"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "CSE 123A",
+              "CSE 111"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "CSE 123B",
+              "CSE 140"
+            ]
+          }
+        ],
+        "grades": {
+          "ECE 101": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Letter grade policy",
+        "source_quote": "must take all courses required for that major for a letter grade."
+      },
+      "audit": "agreed"
+    }
+  ]
+}

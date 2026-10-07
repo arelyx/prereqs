@@ -1,0 +1,11 @@
+{
+ "program": "physics-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "a3703d843dca5e2e1d56d7a49c8c1f6c780e69672b6f4d1b9c17e7de5e61df4c",
+ "skeleton_sha256": "f0393b3a512483a99f63137414c08c9d2dd5f5c4e571bd9bdd383cbf4143e204",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:51Z",
+ "verified_at": "2026-10-06T23:57:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (IGETC vs Cal-GETC, declaration/honors text, planners)"
+}

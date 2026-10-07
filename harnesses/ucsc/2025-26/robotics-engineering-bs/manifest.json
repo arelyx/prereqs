@@ -1,0 +1,11 @@
+{
+ "program": "robotics-engineering-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "5450fa742b6d4af7842beab84269e46b252203479b6938ecf1cb3afca768f4b4",
+ "skeleton_sha256": "9f241ccbaabe72ccdcb666973e4aca2aba19a8a191a30fb9e7d163c48bc0e3fa",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:42Z",
+ "verified_at": "2026-10-06T23:59:51Z",
+ "notes": "ported from 2026-27 (reviewed); differences: ECE 13 required (no CSE 13S); no PHYS 15A/15C; no ECE 218 petition; advanced list lacks ECE 263, UD/grad list lacks ECE 264/269; combinations policy info added; no GPA<2.5 essay note"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "east-asian-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "3cee300099de13caf4fef8fb91c6ef9d366085f85ddbcc025bdf922788101bd5",
+ "skeleton_sha256": "2abae8bc4dacea8a9a31809d4d0fc46823291d2a61699f0696bfbd8b84e5b12c",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:03Z",
+ "verified_at": "2026-10-06T23:55:34Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (typo 'may be need' requoted; list rows reordered)"
+}

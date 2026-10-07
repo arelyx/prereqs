@@ -20,7 +20,17 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Harness modules live outside src (../harnesses); see tsconfig.harness.json */
+    "paths": {
+      "@harness": ["./src/harness/index.ts"],
+      "@harness/*": ["./src/harness/*"],
+      "@app/*": ["./src/*"],
+      "react": ["./node_modules/@types/react"],
+      "react/*": ["./node_modules/@types/react/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../harnesses/**/View.tsx"],
+  "exclude": ["src/**/*.test.ts"]
 }

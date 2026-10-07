@@ -1,0 +1,11 @@
+{
+ "program": "jewish-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "62847679987b72e238278cf6f477bb69c2c1535c1b3ed1430ef8d1e8c8502d16",
+ "skeleton_sha256": "829ac5c72b9e301f21a1434fa21502d42f35c659d4d50713de5274e431f6ec78",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:32Z",
+ "verified_at": "2026-10-06T23:42:54Z",
+ "notes": "verified line by line; LD core, three UD core, four electives from list or unused core (atLeast 2 UD 5-credit) in one allocation; P/NP max two; reviewed 2026-10-06: no defects found (adversarial regression tests added)"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "global-and-community-health-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "bbdfd14b3966239e0647cee79aedc1d220e1b40eb46941a7c62549615ff12c30",
+ "skeleton_sha256": "1a1eb64d5e1db1e2e37c7cdb35d37ec09bcb73189faff2ed12b052117326a956",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:59Z",
+ "verified_at": "2026-10-07T00:01:50Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/global-and-community-health-ba.md; differences: list contents only — no GCH 41 (B), no GCH 166 (core 1); Area I +METX 102 -LALS 174; Area II +ECON 104 FMST 124/125/133 HIS 101D/101F/151/151A LALS 112/143/151/152 SOCY 132 -SOCY 154; Area III +LALS 143J/172 POLI 187 -POLI 155; Area IV +LALS 186/187F -FMST 124/133 HIS/LALS/POLI 187/SOCY 132"
+}

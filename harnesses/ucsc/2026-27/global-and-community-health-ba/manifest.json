@@ -1,0 +1,11 @@
+{
+ "program": "global-and-community-health-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a806f578c1401c36385fbf6e7fef8e3ef710522fa1f292597b68073008fafb69",
+ "skeleton_sha256": "1581d274ca9166cef46fe56f4aef396a8a1fdbf9e23c379b6a22d01ff0523d91",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:52:27Z",
+ "verified_at": "2026-10-06T23:42:41Z",
+ "notes": "verified line by line; 13 tests; C or better letter grades; lab sentence wins over STAT 7/7L package (lecture only); language test-out = attestation; UD core+areas one exclusive allocation; one independent/field study by petition = attestation when used; comprehensive mirrors DC; reviewed 2026-10-06: ENVS 104A/104L lecture-lab pair was reversed (lecture ENVS 104A alone did not count); language test-out offered only when no listed language course is planned (§1a); +3 tests"
+}

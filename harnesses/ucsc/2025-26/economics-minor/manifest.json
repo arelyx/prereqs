@@ -1,0 +1,11 @@
+{
+ "program": "economics-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "b27f4d807086b8e1fc4f950a3d388d09d35c8f8192b52a24f81ccf5985bae71c",
+ "skeleton_sha256": "c6525baf6981bd4fb32318b848e4879529877a937c93372807339a5dc305a3c2",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:31Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

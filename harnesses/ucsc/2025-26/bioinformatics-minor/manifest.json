@@ -1,0 +1,11 @@
+{
+ "program": "bioinformatics-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "57be60e003bf1e0832f6237d1acd21a6985d8b02ab9cb36627bbbfbe3fee793a",
+ "skeleton_sha256": "b271b24f8a13a2384a4b1e01ddc28ddea051ec3c759889b17dc9b1d4c1a071ca",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:57Z",
+ "verified_at": "2026-10-07T00:01:50Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/bioinformatics-minor.md; differences: no CSE 20 substitution/test-out for BME 160; statistics STAT 131 only; electives = one of BME 118/122H/130/132, no 25-credit rule"
+}

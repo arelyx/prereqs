@@ -1,0 +1,11 @@
+{
+ "program": "biomolecular-engineering-and-bioinformatics-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "6ba566261fdcdf14040ee5962897136b17ec3862163bff400881d2ab1d5253c5",
+ "skeleton_sha256": "7fa2b55ce606cbc1bc7b4075e1036834f1bc028f8718708865f3775e96e4dc27",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:44Z",
+ "verified_at": "2026-10-06T23:42:41Z",
+ "notes": "verified line by line; 24 tests over both concentrations; CHEM 3B/3C pre-fall-2026 lab rule; PHIL 22/24/28 only with no UCSC term; elective exclusive (cannot satisfy other requirements), BME 201-279 5cr; capstone packages incl. 3x BME 195; exit portfolio/survey/interview = attestation; test-outs = notes; reviewed 2026-10-06: CSE 20 and CSE 40 test-outs now attestations offered only when the slot's courses are absent (§1a); senior-thesis shortfall detail fixed (library options partial reported 3x BME 195 with an empty 'still need'); +4 tests"
+}

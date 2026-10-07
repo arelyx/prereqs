@@ -1,0 +1,271 @@
+# Applied Physics B.S.
+
+<!-- slug: applied-physics-bs | edition: 2026-27 | url: https://catalog.ucsc.edu/en/current/general-catalog/academic-units/physical-and-biological-sciences-division/physics/applied-physics-bs -->
+
+## Information and Policies
+
+### Program Learning Outcomes {sc1}
+Learning outcomes summarize the most important knowledge, skills, abilities, and attitudes that students are expected to develop over the course of their studies. The program learning outcomes communicate the faculty’s expectations to students, provide a framework for faculty evaluation of the curriculum based on empirical data, and help improve and measure the impact of implemented changes. Students graduating with a B.S. in Applied Physics will demonstrate:
+PLO 1. Ability to solve problems using concepts in classical and quantum mechanics, statistical mechanics and electromagnetism.
+PLO 2. Proficiency in mathematics and the mathematical concepts needed for a proper understanding of physics.
+PLO 3. Ability to take measurements in a physics laboratory and analyze the measurements to draw valid conclusions.
+PLO 4. Ability to communicate scientific content effectively, both orally and in writing.
+
+### Academic Advising for the Program {sc1}
+The department undergraduate adviser (physicsadvising@ucsc.edu) works closely with students interested in pursuing the major to ensure that they begin the program immediately and follow the appropriate steps toward its completion.
+
+### Getting Started in the Major: Frosh {sc1}
+Before coming to the University of California, Santa Cruz:
+High school students coming to UC Santa Cruz, as frosh should emphasize their mathematics preparation with the expectation that they will take the first calculus course, MATH 19A, before their second quarter at UCSC. Students who come to UCSC with credit for MATH 19A will be able to start the Physics 5 series or Physics 15 series in the first quarter. PHYS 5A is offered in the fall and winter quarters each year. Students with a score of 5 on the AP Physics C Mechanics and AP Physics C Electricity and Magnetism examinations are exempt from taking PHYS 5A and PHYS 5C respectively, and the associated lab courses.
+After coming to UC Santa Cruz:
+This major is highly course intensive and sequential; students who intend to pursue this major must begin taking classes for the major in their first quarter at UCSC.
+Incoming students in the Physics major should complete the Math Placement process as early as possible, so that the placement is posted before enrollment begins. For more information, please review the [Math Placement website](https://mathplacement.science.ucsc.edu/).
+In their first term, students should enroll in the highest course in the following sequence that they are eligible for: MATH 2, MATH 3, MATH 19A, MATH 19B, MATH 23A, MATH 23B. Students should not take MATH 11A or MATH 11B or MATH 16A or MATH 16B. Graduating in four years is still possible for a student who places into MATH 2 or MATH 3; the department undergraduate adviser and the department's [Alternatives webpage](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/alternatives/) should be consulted.
+Students who come to UC Santa Cruz with credit for MATH 19A, and have room in their schedule, should take PHYS 5A or PHYS 15A and PHYS 5L (unless they have a score of 5 on the AP Physics C Mechanics examination) in their first term. Those who come to UCSC with credit for MATH 19B and PHYS 5A and PHYS 5L, and have room in their schedule, may consider taking PHYS 5C or PHYS 15C and PHYS 5N (unless they have a score of 5 on the AP Physics C Electricity & Magnetism examination) in their first term. The Physics Department tries to match incoming students who are interested with research opportunities, if they are available.
+Students who for some reason do not start the courses for the major in their first term should consult the department undergraduate adviser and [the Alternatives webpage](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/alternatives/). Students who do not begin the lower-division requirements during their first year will have difficulty completing the program within four years.
+
+### Transfer Information and Policy {sc1}
+
+#### Transfer Admission Screening Policy {sc2}
+The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall:
+- PHYS 5A — Introduction to Physics I (5)
+- PHYS 5B — Introduction to Physics II (5)
+- PHYS 5C — Introduction to Physics III (5)
+- MATH 19A — Calculus for Science, Engineering, and Mathematics (5)
+- MATH 19B — Calculus for Science, Engineering, and Mathematics (5)
+- MATH 23A — Vector Calculus (5)
+
+##### A minimum GPA of 2.7 must be obtained in the following courses {sc3}
+- PHYS 5A — Introduction to Physics I (5)
+- PHYS 5B — Introduction to Physics II (5)
+- PHYS 5C — Introduction to Physics III (5)
+
+##### In addition, the following course is recommended prior to transfer to ensure timely graduation: {sc3}
+- PHYS 5D — Introduction to Physics IV (5)
+This major also has a concentration in computational physics. Students interested in this concentration are encouraged to complete the equivalent of CSE 20 prior to transfer.Prospective students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or to complete all UC Santa Cruz general education requirements before matriculation.
+
+##### Students entering UC Santa Cruz in the winter quarter must complete {sc3}
+- PHYS 5D — Introduction to Physics IV (5)
+- MATH 23B — Vector Calculus (5)
+In addition to the requirements for students entering in the fall quarter. (This is true for years when winter admission is open.)
+
+#### Getting Started in the Major: Transfer Students {sc2}
+Transfer students admitted to UC Santa Cruz in the applied physics major who have satisfied the above screening requirements may declare the major immediately upon arrival at UC Santa Cruz. They should contact the undergraduate adviser to draw up an academic plan.
+Incoming transfer students should enroll in the following courses in their first term:
+- PHYS 5D, unless they have credit for the course, in which case PHYS 102;
+- MATH 23B, unless they have credit for the course, in which case they may enroll in PHYS 116A or an elective or general education course;
+- ASTR 119, unless they have knowledge of the Python programming language and basic statistics, in which case they may enroll in PHYS 133 after obtaining a permission code.
+Students who have completed courses that should be equivalent to PHYS 5D or MATH 23B but is not formally articulated as such should contact the undergraduate adviser to have their courses evaluated.
+Transfer students entering UC Santa Cruz in the winter quarter should meet with the undergraduate adviser upon arrival to draw up an academic plan.
+Students who are proposed in a different major (other than physics or physics (astrophysics)) and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major.
+
+### Major Qualification Policy and Declaration Process {sc1}
+
+#### Major Qualification {sc2}
+To qualify to declare the Applied Physics major, students must achieve a cumulative grade point average (GPA) of 2.70 or greater in the following courses, or their equivalents:
+- PHYS 5A — Introduction to Physics I (5)
+- PHYS 5B — Introduction to Physics II (5)
+- PHYS 5C — Introduction to Physics III (5)
+> NOTE: PHYS 15A can be used instead of PHYS 5A, and PHYS 15C instead of PHYS 5C. All qualification courses must be completed prior to the major declaration deadline.
+When determining qualification to declare the major:All courses must be taken for a letter grade.If PHYS 5A is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5A when calculating their cumulative GPA.If PHYS 5C is satisfied with AP credit based on an AP examination score of 5, students may substitute a grade of A for PHYS 5C when calculating their cumulative GPA.Students with two or more grades of NP, C-, D+, D, D-, or F in the major qualification policy courses are not eligible to declare even if the courses are retaken and the grades replaced.Students who achieve a GPA of 2.66 or higher (but less than 2.70) in the three courses may declare the major if they receive a B or better in PHYS 5D.
+
+#### Appeal Process {sc2}
+Students who are informed that they are not eligible to declare the major may appeal this decision by submitting a letter to the department chair by the later date of either 15 days from the date the notification was sent, or one week after the start of instruction during the quarter after the final relevant grade was received (generally in PHYS 5C or PHYS 5D). They also must arrange to meet with one of the faculty mentors listed for [Declaring the Major](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/declaring-your-major/). Within 15 days of receipt of the appeal, after consulting with the faculty mentor, the department chair will either finalize the denial of admission or specify further conditions for admission or approve admission to the major, and will notify the student and their college of the decision. For more information about the appeal process, see [Appeal Process](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/appeal/).
+
+#### How to Declare a Major {sc2}
+Students should submit a petition to declare as soon as they complete the major qualification requirements. Students who have reached their declaration deadline quarter and have not yet completed the major declaration requirements have to go through the formal [Appeal Process](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/appeal/).
+All students are required to review their academic plan with a faculty mentor prior to declaring the major. For instructions on petitioning to declare, go to [Declaring Your Major](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/declaring-your-major/).
+
+### Letter Grade Policy {sc1}
+All courses used to satisfy any of the applied physics major requirements must be taken for a letter grade, except the lower-division chemistry requirement.
+
+### Double Majors and Major/Minor Combinations Policy {sc1}
+Students who complete a major sponsored by the Physics Department cannot complete a second major sponsored by the Physics Department or a physics minor.
+
+### Honors {sc1}
+The department awards "honors" (3.50-3.79 GPA) and "highest honors" (3.80 GPA or better) to top graduating students each year, based on PHYS and ASTR courses. The department also awards "honors" for outstanding work on the senior thesis, made upon the recommendation of the faculty thesis adviser.
+
+### Timely Graduation and Alternative Plans {sc1}
+- Students planning a senior thesis should find a faculty thesis adviser as early as possible, but no later than the beginning of the senior year for four-year students or the beginning of the second year for transfer students. For further information about the senior thesis, see [Senior Thesis.](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/senior_thesis/)
+- Students who join a major program of the Physics Department with some of the required courses completed, or have room in their program for additional courses, should consult with the Physics Department undergraduate adviser.
+- Students who fall behind the planners should consult the Physics Department undergraduate adviser and [Alternatives.](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/alternatives/)
+- All the transfer major planners assume that California General Education Transfer Curriculum (Cal-GETC) has been completed in community college, or has been partially completed and can be finished while at UC Santa Cruz (including summers).
+
+## Standard Applied Physics Major
+
+### Course Requirements {sc1}
+
+#### Lower-Division Courses {sc2}
+
+##### Choose one of the following courses: {sc3}
+- MATH 19A — Calculus for Science, Engineering, and Mathematics (5)
+- MATH 20A — Honors Calculus (5)
+
+##### Plus one of the following courses: {sc3}
+- MATH 19B — Calculus for Science, Engineering, and Mathematics (5)
+- MATH 20B — Honors Calculus (5)
+
+##### Plus one of the following courses: {sc3}
+- PHYS 5A — Introduction to Physics I (5)
+- PHYS 15A — Honors Introduction to Physics I (5)
+
+##### Plus one of the following courses: {sc3}
+- PHYS 5C — Introduction to Physics III (5)
+- PHYS 15C — Honors Introduction to Physics - III (5)
+
+##### Plus all of the following courses: {sc3}
+- PHYS 5B — Introduction to Physics II (5)
+- PHYS 5L — Introduction to Physics I Laboratory (1)
+- PHYS 5M — Introduction to Physics II Laboratory (1)
+- PHYS 5N — Introduction to Physics Laboratory III (1)
+- PHYS 5D — Introduction to Physics IV (5)
+> NOTE: At present, there is no Honors version of PHYS 5B.
+
+##### Plus all of the following courses: {sc3}
+- MATH 23A — Vector Calculus (5)
+- MATH 23B — Vector Calculus (5)
+
+##### Plus one of the following courses: {sc3}
+- CHEM 3A — General Chemistry (5)
+- CHEM 4A — Advanced General Chemistry: Molecular Structure and Reactivity (5)
+> NOTE: CHEM 4A has a corequisite lab course, CHEM 4AL. The lab is not required for the major, but counts toward overall credits for graduation.
+
+##### Plus one of the following courses or equivalent: {sc3}
+- ASTR 119 — Introduction to Scientific Computing (5)
+- CSE 20 — Beginning Programming in Python (5)
+- ASTR 19 — Practical Programming for the Sciences (5)
+> NOTE: A test-out option is available for CSE 20.
+
+#### Upper-Division Courses {sc2}
+
+##### All of the following courses: {sc3}
+- PHYS 102 — Modern Physics (5)
+- PHYS 116A — Mathematical Methods in Physics (5)
+- PHYS 116C — Mathematical Methods in Physics (5)
+- PHYS 105 — Mechanics (5)
+- PHYS 110A — Electricity, Magnetism, and Optics (5)
+- PHYS 110B — Electricity, Magnetism, and Optics (5)
+- PHYS 112 — Thermodynamics and Statistical Mechanics (5)
+- PHYS 133 — Intermediate Laboratory (5)
+- PHYS 134 — Physics Advanced Laboratory (5)
+> NOTE: Students may take ECE 135/ECE 135L instead of PHYS 110A and PHYS 110B. This is not recommended for students who wish to pursue graduate studies in physics.Capacity in the lab courses PHYS 133 and PHYS 134 is limited, and they should be taken as early as possible.Completing both MATH 21 and MATH 24 can substitute for PHYS 116A.PHYS 116C is waived for students who are pursuing a dual major in applied physics and a mathematics B.A. or B.S., and take MATH 107 in fall 2017 or later.
+
+#### Electives {sc2}
+Complete three courses chosen from the following, at least one of which has to be a Physics Department course:
+- PHYS 115 — Computational Physics (5)
+- PHYS 120 — Polymer Physics (5)
+- PHYS 137 — Advanced Optics Laboratory (5)
+- PHYS 139A — Quantum Mechanics I (5)
+- PHYS 139B — Quantum Mechanics II (5)
+- PHYS 157 — Frontier of Quantum Materials (5)
+- PHYS 150 [/CSE 109] — Quantum Computing (5)
+- PHYS 152 — Physics and Machine Learning (5)
+- PHYS 156 — Applications of Quantum Materials (5)
+- PHYS 160 — Practical Electronics (5)
+- PHYS 180 — Biophysics (5)
+- AM 107 [/PHYS 107] — Introduction to Fluid Dynamics (5)
+- CHEM 163B — Chemical Thermodynamics (5)
+- EART 121 — The Atmosphere (5)
+- EART 172 [/OCEA 172] — Geophysical Fluid Dynamics (5)
+- ECE 101 — Introduction to Electronic Circuits (5)
+- ECE 130 — Introduction to Optoelectronics and Photonics (5)
+- ECE 136 — Engineering Electromagnetics (5)
+- ECE 141 — Feedback Control Systems (5)
+> NOTE: Or other courses with approval of the undergraduate faculty advisor.Students interested in going to graduate school in physics should consider completing the Physics B.S. instead of the Applied Physics B.S. Students who wish to go to graduate school in physics after the Applied Physics B.S. are recommended to complete PHYS 110A and PHYS 110B instead of ECE 135 and ECE 135L, and complete PHY 139A and PHYS 139B.
+Students interested in going to graduate school in aerospace engineering are recommended to complete ECE 141, PHYS 160 or ECE 101, and AM 107 as their electives. Other courses of possible interest are ECE 163, ECE 167 and ECE 118, but these courses have additional prerequisites and do not satisfy major requirements. In addition to UCSC courses, interested students can cross-enroll into a number of aerospace-related courses at San Jose State University. Up-to-date information about cross-enrollment can be found on [SJSU Cross-Enrollment page](https://physics.ucsc.edu/academic-programs/undergrads/major-minor-info/cross-enrollment-at-sjsu/) of Physics Department website. Note that SJSU courses do not satisfy major requirements.
+
+#### Disciplinary Communication (DC) Requirement {sc2}
+Students of every major must satisfy the upper-division disciplinary communication (DC) requirement. Students in the applied physics major satisfy the DC requirement by completing one of the following options:
+- ⟨Either this course⟩
+- PHYS 182 — Scientific Communication for Physicists (5)
+- ⟨or these courses⟩
+- PHYS 195A — Senior Thesis I (5)
+- PHYS 195B — Senior Thesis II (5)
+Students interested in doing a senior thesis should have found a faculty thesis adviser by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance.
+
+#### Comprehensive Requirement {sc2}
+The comprehensive requirement is satisfied by completing the following course:
+- PHYS 134 — Physics Advanced Laboratory (5)
+
+### Planners {sc1}
+Academic planners for this and all majors can be found at [programmaps.ucsc.edu](http://programmaps.ucsc.edu).
+
+## Computational Physics Concentration
+
+### Course Requirements {sc1}
+
+#### Lower-Division Courses {sc2}
+
+##### Choose one of the following courses: {sc3}
+- MATH 19A — Calculus for Science, Engineering, and Mathematics (5)
+- MATH 20A — Honors Calculus (5)
+
+##### Plus one of the following courses: {sc3}
+- MATH 19B — Calculus for Science, Engineering, and Mathematics (5)
+- MATH 20B — Honors Calculus (5)
+
+##### Plus one of the following courses: {sc3}
+- PHYS 5A — Introduction to Physics I (5)
+- PHYS 15A — Honors Introduction to Physics I (5)
+
+##### Plus one of the following courses: {sc3}
+- PHYS 5C — Introduction to Physics III (5)
+- PHYS 15C — Honors Introduction to Physics - III (5)
+
+##### Plus all of the following courses: {sc3}
+- PHYS 5B — Introduction to Physics II (5)
+- PHYS 5L — Introduction to Physics I Laboratory (1)
+- PHYS 5M — Introduction to Physics II Laboratory (1)
+- PHYS 5N — Introduction to Physics Laboratory III (1)
+- PHYS 5D — Introduction to Physics IV (5)
+> NOTE: At present, there is no Honors version of PHYS 5B.
+
+##### Plus all of the following courses: {sc3}
+- MATH 23A — Vector Calculus (5)
+- MATH 23B — Vector Calculus (5)
+
+##### Plus both of the following courses: {sc3}
+- CSE 20 — Beginning Programming in Python (5)
+- CSE 30 — Programming Abstractions: Python (7)
+> NOTE: A test-out option is available for CSE 20.
+
+#### Upper-Division Courses {sc2}
+
+##### All of the following courses: {sc3}
+- PHYS 102 — Modern Physics (5)
+- PHYS 116A — Mathematical Methods in Physics (5)
+- PHYS 116C — Mathematical Methods in Physics (5)
+- PHYS 105 — Mechanics (5)
+- PHYS 110A — Electricity, Magnetism, and Optics (5)
+- PHYS 112 — Thermodynamics and Statistical Mechanics (5)
+- STAT 131 — Introduction to Probability Theory (5)
+- PHYS 115 — Computational Physics (5)
+> NOTE: Completing both MATH 21 and MATH 24 can substitute for PHYS 116A.PHYS 116C is waived for students who are pursuing a dual major in applied physics and a mathematics B.A. or B.S., and take MATH 107 in fall 2017 or later.
+
+#### Electives {sc2}
+Complete three courses chosen from the following, of which at least one must be PHYS 150 or PHYS 152.
+- PHYS 150 [/CSE 109] — Quantum Computing (5)
+- PHYS 152 — Physics and Machine Learning (5)
+- PHYS 110B — Electricity, Magnetism, and Optics (5)
+- PHYS 139A — Quantum Mechanics I (5)
+- AM 148 — GPU Programming for Scientific Computations (5)
+- BME 205 — Bioinformatics Models and Algorithms (5)
+- CHEM 264 — Computational Materials (5)
+- EART 124 — Modeling Earth's Climate (5)
+> NOTE: At most one course can be taken from PHYS 110B and PHYS 139A.BME 205 has several prerequisites which are not major requirements.This concentration is not intended for students who wish to go to graduate school in physics. A student who wishes to do so should take PHYS 139A, PHYS 139B, PHYS 110B and PHYS 116B, as part of the major requirements or in addition to them.
+
+#### Disciplinary Communication (DC) Requirement {sc2}
+Students of every major must satisfy the upper-division disciplinary communication (DC) requirement. Students in the applied physics major satisfy the DC requirement by completing one of the following options:
+- ⟨Either this course⟩
+- PHYS 182 — Scientific Communication for Physicists (5)
+- ⟨or these courses⟩
+- PHYS 195A — Senior Thesis I (5)
+- PHYS 195B — Senior Thesis II (5)
+Students interested in doing a senior thesis should have found a faculty thesis adviser by the beginning of their senior year. They should contact physicsadvising@ucsc.edu or their faculty mentor if they need assistance.
+
+#### Comprehensive Requirement {sc2}
+The comprehensive requirement is satisfied by completing the following course:
+- PHYS 115 — Computational Physics (5)
+
+### Planners {sc1}
+Academic planners for this and all majors can be found at [programmaps.ucsc.edu](http://programmaps.ucsc.edu).

@@ -1,0 +1,11 @@
+{
+ "program": "art-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "293ae40e4f5b8406bd086d1d4de93a8dce6fa20d8031dbffb5e71e81e0e18c0e",
+ "skeleton_sha256": "2bf5b0015b01561dcee3f03a604aa44a8e7d1a75a98a27dd9d6227a43227df47",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:52:11Z",
+ "verified_at": "2026-10-06T23:56:08Z",
+ "notes": "ported from 2026-27 (reviewed); differences: all three ART 10 foundations required (2026-27: two); transfer portfolio review waives two foundations, third still needed (judgement from 'All three ART 10 series courses are required for junior transfers'); comprehensive has three options (no extra-project-in-studio option); ART 20L AP Drawing 4+ note"
+}

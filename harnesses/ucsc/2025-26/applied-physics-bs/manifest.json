@@ -1,0 +1,11 @@
+{
+ "program": "applied-physics-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "bfe6cf2c32d879c17a9d915eb0bd2ec629d41626990464ae37beeba5b9982438",
+ "skeleton_sha256": "3e3b7c607addec8b7c795606b9c347688d307aaa2bfdc951c01768d78acd29b7",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:50Z",
+ "verified_at": "2026-10-06T23:57:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHEM 1A or CHEM 1B can substitute for CHEM 3A (standard path)"
+}

@@ -7,6 +7,7 @@ from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from ..db import get_db
+from ..programs.info import info_sections
 from ..models import (
     Course,
     CourseAvailability,
@@ -257,39 +258,105 @@ def course_graph(
     return {"root": root.code, "nodes": list(nodes.values()), "edges": edges}
 
 
+@router.get("/u/{university_id}/catalog/compact")
+def catalog_compact(
+    university_id: str,
+    describe: str = Query("", max_length=200, description="comma-separated subjects whose descriptions to include"),
+    db: Session = Depends(get_db),
+) -> dict:
+    """Every course with the facts program harnesses evaluate against, in one
+    fetch (harnesses run client-side). Descriptions are large, so they are
+    included only for the subjects a harness asks for (``describe=LIT,PSYC``)."""
+    want = {s.strip().upper() for s in describe.split(",") if s.strip()}
+    rows = db.execute(
+        select(
+            Course.code, Course.display_code, Course.subject, Course.number, Course.credits,
+            Course.division, Course.title, Course.cross_listed, Course.repeatable, Course.description,
+        )
+        .where(Course.university_id == university_id)
+        .order_by(Course.subject, Course.number, Course.code)
+    ).all()
+    courses = []
+    for r in rows:
+        c = {
+            "code": r.code, "display_code": r.display_code, "subject": r.subject, "number": r.number,
+            "credits": r.credits, "division": r.division, "title": r.title,
+        }
+        if r.cross_listed:
+            c["cross_listed"] = r.cross_listed
+        if r.repeatable:
+            c["repeatable"] = True
+        if r.subject in want:
+            c["description"] = r.description
+        courses.append(c)
+    return {"described": sorted(want), "courses": courses}
+
+
+@router.get("/u/{university_id}/editions")
+def list_editions(university_id: str, db: Session = Depends(get_db)) -> list[dict]:
+    """Catalog editions with program data, newest first. A plan is bound to
+    one edition (the catalog year the student entered under)."""
+    rows = db.execute(
+        select(Program.catalog_year, func.count())
+        .where(Program.university_id == university_id)
+        .group_by(Program.catalog_year)
+        .order_by(Program.catalog_year.desc())
+    ).all()
+    return [{"edition": ed, "programs": n, "current": i == 0} for i, (ed, n) in enumerate(rows)]
+
+
 @router.get("/u/{university_id}/programs")
-def list_programs(university_id: str, db: Session = Depends(get_db)) -> list[dict]:
+def list_programs(
+    university_id: str, edition: str | None = None, db: Session = Depends(get_db)
+) -> list[dict]:
+    q = select(Program).where(Program.university_id == university_id)
+    if edition:
+        q = q.where(Program.catalog_year == edition)
     return [
         {
             "id": p.id,
+            "slug": p.slug,
             "name": p.name,
             "degree": p.degree,
             "kind": p.kind,
             "division": p.division,
-            "verification": p.verification,
+            "edition": p.catalog_year,
         }
-        for p in db.scalars(
-            select(Program)
-            .where(Program.university_id == university_id)
-            .order_by(func.lower(Program.name), Program.degree)
-        )
+        for p in db.scalars(q.order_by(func.lower(Program.name), Program.degree, Program.catalog_year))
     ]
+
+
+def _program(db: Session, university_id: str, program_id: int) -> Program:
+    p = db.get(Program, program_id)
+    if p is None or p.university_id != university_id:
+        raise HTTPException(404, "program not found")
+    return p
 
 
 @router.get("/u/{university_id}/programs/{program_id}")
 def program_detail(university_id: str, program_id: int, db: Session = Depends(get_db)) -> dict:
-    p = db.get(Program, program_id)
-    if p is None or p.university_id != university_id:
-        raise HTTPException(404, "program not found")
+    p = _program(db, university_id, program_id)
     return {
         "id": p.id,
+        "slug": p.slug,
         "name": p.name,
         "degree": p.degree,
         "kind": p.kind,
         "division": p.division,
         "department": p.department,
         "url": p.url,
-        "catalog_year": p.catalog_year,
-        "verification": p.verification,
-        "requirements": p.requirements,
+        "archive_url": p.archive_url,
+        "edition": p.catalog_year,
+        "source_sha256": p.source_sha256,
+        # General information panels, from the committed page text.
+        "info_sections": info_sections(p.source_md),
     }
+
+
+@router.get("/u/{university_id}/programs/{program_id}/source")
+def program_source(university_id: str, program_id: int, db: Session = Depends(get_db)) -> dict:
+    """The committed normalized catalog page for this program edition."""
+    p = _program(db, university_id, program_id)
+    if p.source_md is None:
+        raise HTTPException(404, "no source text for this program")
+    return {"edition": p.catalog_year, "sha256": p.source_sha256, "markdown": p.source_md}

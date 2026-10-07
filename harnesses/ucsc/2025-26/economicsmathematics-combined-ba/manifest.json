@@ -1,0 +1,11 @@
+{
+ "program": "economicsmathematics-combined-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "336e0eaddac7c2fbe0e5bc91d793c1bf9cafb30776b13c88ffed9672b88e5dd7",
+ "skeleton_sha256": "c5ee4a92dac959292ecd92373ef9040aa6d275f32c95b0c7ed9dbca70edddf80",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:29Z",
+ "verified_at": "2026-10-06T23:57:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only (math-electives quote 'Choose three three')"
+}

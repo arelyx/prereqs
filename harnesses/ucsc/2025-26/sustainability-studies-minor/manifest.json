@@ -1,0 +1,11 @@
+{
+ "program": "sustainability-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "d7ca268a762fff5d97ffaca39826fbd74456d7c6198dccad32a5f9bdef316d7d",
+ "skeleton_sha256": "194e2b74b5d0a4572c24dc522e6e6fcc87051f013e49ddc42dce33638c113fcf",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:58Z",
+ "verified_at": "2026-10-07T00:06:03Z",
+ "notes": "ported from 2026-27 (reviewed); differences: breadth list adds EART 107 and LALS 80P (lower-division, treated like HAVC 48/SOCY 30A); listed courses missing from the catalog make the 25-credit check cannot-check"
+}

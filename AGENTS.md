@@ -1,64 +1,110 @@
 # Agent standing orders — prereqs
 
-Academic planner for UCSC students. FastAPI + Postgres + React, data produced
-by scraping pipelines with a **Local LLM** (Ollama qwen3:4b) structuring
-stage, reviewed and served from a git-committed dataset. You are expected to
-work autonomously but leave a full audit trail: branch → PR → merge for every
-change, including data refreshes.
+UCSC academic planner: students lay out courses quarter by quarter and see
+prerequisite problems, offering history, GE progress, and progress toward
+their majors/minors. FastAPI + Postgres + React. All served data comes from
+a git-committed dataset; the database is a disposable projection of it.
+(`CLAUDE.md` is a symlink to this file — edit AGENTS.md, never write through
+the link.)
 
-**Doing the annual catalog refresh? Follow `docs/runbooks/ANNUAL_REFRESH.md`
-step by step. Do not improvise the sequence.**
+**Refreshing data? Start with `python -m ucsc.refresh status --probe`
+(from `pipelines/`) and follow `docs/REFRESH.md`.** Do not improvise the
+sequence or hand-pick which terms/programs to update.
 
-## Invariants — violating any of these has broken production before
+## The three paths (read docs/ARCHITECTURE.md before changing anything)
 
-1. **LLM pipelines run serially, never concurrently.** Two different system
-   prompts alternating against one Ollama instance thrash the KV prefix cache
-   (~15x throughput collapse, measured). One LLM stage at a time, ever.
-2. **`PIPELINE ABORTED` is a feature, not a bug.** It means an upstream page
-   changed shape; staging was discarded and nothing was corrupted. Read the
-   named expectation, fix the parser, re-run. Never loosen a guard to make an
-   abort go away, and never retry-loop past one.
-3. **Never `--force` over `origin: hand-edited` files** in `data-committed/`
-   (80 of 119 program files carry manual corrections). The exporter refuses
-   for a reason. The merge protocol is in the annual-refresh runbook, Phase 5.
-4. **`git diff data-committed/` IS the data review step.** Committed data is
-   canonical; the DB is a projection of it. Review the diff before loading,
-   commit it with the code that produced it.
-5. **A program whose content changed loses `frontier-verified` status** (the
-   exporter resets it). Changed programs must be re-verified per
-   `docs/universities/ucsc/VERIFY_METHOD.md` before the load ships.
-6. **pisa backfills must use the chunked driver** (`ucsc.pisa_offerings.backfill`),
-   never a monolithic range fetch — the upstream 504s under sustained load.
-7. **Always `ensure_ascii=False`** when writing committed JSON (canonical dump:
-   `json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=True) + "\n"`).
-   Agents have mangled Unicode in 12 files before.
-8. **Back up before any load** (`ops/backup/backup.sh`). Rollback paths:
-   committed data = git; snapshots = `--courses/--offerings/--soe <older-dir>`
-   loader flags; user data = `restore.sh <dir> userdata`.
+| Path | What | Who runs it | Changes when |
+|---|---|---|---|
+| **HOT** | Deterministic fetch → committed data: course catalog + prereqs, pisa offerings, SOE plan, program page *source texts*, the ledger | `python -m ucsc.refresh hot` — no AI | every refresh |
+| **WARM** | Frontier-agent work: program harnesses (`harnesses/`), prereq overrides for prose the parser can't decide | a Claude Code agent following docs/REFRESH.md §4 and docs/HARNESSES.md | when the hot path reports a change set |
+| **COLD** | Structure: backend engine/API/loader, frontend shell, pipeline framework, eval harness | deliberate engineering only | never as a side effect of a data refresh |
+
+A refresh that needs a COLD change (a parser fix after an abort, a new
+harness primitive) is fine — but make it a separate, explained commit.
+
+## Invariants — each one has broken things before
+
+1. **`PIPELINE ABORTED` is a feature.** An upstream page changed shape; the
+   run discarded its staging dir and nothing was corrupted. Read the named
+   expectation, fix the parser, re-run. Never loosen a guard to make an abort
+   go away, and never retry-loop past one.
+2. **`git diff data-committed/ harnesses/` IS the review step.** Read it
+   before loading; commit it with the code that produced it.
+3. **Never hand-edit hot-path output** (`data-committed/ucsc/{courses,
+   offerings,soe,editions,ledger.json}`): the next refresh overwrites it.
+   Corrections go in the warm layer (prereq overrides, harnesses) or in the
+   pipeline code.
+4. **A harness is pinned to the source text it was written against**
+   (`manifest.json: source_sha256`). If the source changed, the harness is
+   stale until re-verified — `refresh status` lists them. Never just bump
+   the hash.
+5. **Programs are per catalog edition.** Students are bound to the edition
+   they entered under. A new edition is ADDED (`editions/<new>/`); old ones
+   are kept and re-fetched once from the archive URL. Never overwrite an
+   older edition's sources with the current page.
+6. **pisa ranges go through the chunked driver**
+   (`ucsc.pisa_offerings.backfill`) — upstream 504s under sustained load.
+   Polite spacing stays as configured.
+7. **Canonical JSON dump** for committed files:
+   `json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=True) + "\n"`
+   (`ucsc.ledger.dump`). Agents have mangled Unicode before.
+8. **The local LLM is for transcript import only** (llama-server,
+   `qwen3.8-27b`, `--parallel 1`, one request in flight via the backend's
+   lock). No pipeline and no requirement check uses an LLM.
+9. **Golden eval cases are written from the source text only**, never from a
+   harness. A held-out split lives outside the repo; don't go looking.
+   A perfect golden score is not proof — also probe harnesses adversarially.
+10. **Back up before a production load** (`ops/backup/backup.sh`).
+11. **Harness code is pure** (no network/DOM/clock/randomness) and never
+    confidently wrong: unknowable ⇒ `cannot-check`, not `met`. Every harness
+    node quotes the committed source verbatim; `npm run harness:lint` must
+    pass, and a manifest is `verified` only after a line-by-line re-read of
+    the source.
 
 ## Environment (non-default ports — this host runs other projects)
 
-- Postgres `localhost:5433`, backend `:8200`, frontend `:5273`
+- Postgres `localhost:5433`, backend `:8200`, frontend `:5273`; llama-server `:8080`
 - `DATABASE_URL=postgresql+psycopg://prereqs:prereqs@localhost:5433/prereqs`
-- Venvs: `pipelines/.venv`, `backend/.venv`; pipelines run from `pipelines/`
-  as `python -m ucsc.<source>.<stage>`; loader is
-  `backend/.venv/bin/python -m app.loaders.ucsc` (accepts `--only`)
+- Venvs: `pipelines/.venv`, `backend/.venv`. Pipelines run from `pipelines/`
+  as `python -m ucsc.<pkg>.<stage>`; the loader is
+  `backend/.venv/bin/python -m app.loaders.ucsc [--only ...]`.
+- `docker compose up -d` brings up db + backend + frontend.
 
 ## Repo map
 
-| Path | What |
-|---|---|
-| `pipelines/ucsc/` | scrape + structure: `catalog_courses`, `major_requirements`, `pisa_offerings`, `soe_schedule`, `export_committed.py` |
-| `pipelines/common/guards.py` | `expect()` fail-fast machinery every pipeline uses |
-| `data/` (gitignored) | immutable timestamped snapshots + manifests |
-| `data-committed/ucsc/` | canonical courses + programs, one entity per file |
-| `backend/app/loaders/` | id-preserving upserts; availability/dormant derivation |
-| `docs/OPERATIONS.md` | day-to-day commands; `docs/runbooks/` — multi-phase procedures |
-| `docs/universities/ucsc/` | per-source quirk research, VERIFY_METHOD.md, VERIFICATION.md campaign log |
+| Path | Path class | What |
+|---|---|---|
+| `pipelines/ucsc/refresh.py` | hot | entry point: status / work order / run hot tasks |
+| `pipelines/ucsc/{ledger,editions}.py` | hot | the temporal ledger; catalog-edition helpers |
+| `pipelines/ucsc/catalog_courses/` | hot (+warm overrides) | catalog fetch, parse, deterministic prereq parser, `prereq_overrides.json` |
+| `pipelines/ucsc/pisa_offerings/` | hot | per-term class search → `offerings/<term>.jsonl` |
+| `pipelines/ucsc/soe_schedule/` | hot | Baskin planned schedule → `soe/<year>.jsonl` |
+| `pipelines/ucsc/major_requirements/` | hot | program pages per edition → `editions/<ed>/sources/*.md` (+ text/skeleton hashes) |
+| `pipelines/common/` | cold | http, guards (`expect`), snapshot cache |
+| `data/` | — | gitignored fetch cache (raw HTML + snapshots) |
+| `data-committed/ucsc/` | hot output | canonical served data + `ledger.json` |
+| `harnesses/ucsc/<ed>/<slug>/` | warm output | per program per edition: `harness.ts`, `harness.test.ts`, `manifest.json`, optional `View.tsx` |
+| `frontend/src/harness/` | cold | harness standard library (`@harness`), browser registry, catalog client |
+| `frontend/src/components/degree/` | cold | degree dashboards (default renderer + building blocks for Views) |
+| `frontend/harness-tools/` | cold | harness lint, manifest stamp, edition port, profiler, node catalog |
+| `eval/` | cold | golden cases (dev split), runner, adapters |
+| `backend/` | cold | FastAPI API (incl. `GET /u/{univ}/catalog/compact` for harnesses), loader, planner engine, transcript import |
+| `frontend/` | cold | React app |
+| `docs/` | — | ARCHITECTURE, REFRESH (temporal runbook), HARNESSES, DATA_MODEL, OPERATIONS, per-source research |
+
+## Harness commands (from `frontend/`)
+
+```bash
+npx vitest run                 # harness tests
+npm run harness:lint           # all harnesses (or -- <ed>/<slug>)
+npm run typecheck              # app + harnesses + tooling
+cd .. && python eval/run.py --adapter eval/adapters/c-code.sh
+```
 
 ## Verification bar for any change
 
-`backend: .venv/bin/python -m pytest` · `pipelines: python -m pytest` ·
-`frontend: npx playwright test` (needs the loaded stack) — plus a headless
+`pipelines: .venv/bin/python -m pytest` · `backend: .venv/bin/python -m pytest`
+· `frontend: npx tsc -b && npx playwright test` (needs the loaded stack) ·
+`eval: python eval/run.py --adapter ...` for harness changes — plus a
 screenshot check for UI work. Report failures honestly; never ship on a red
-suite, and never mask exit codes by chaining `| tail` before checking.
+suite, and never mask exit codes by piping into `tail` before checking.

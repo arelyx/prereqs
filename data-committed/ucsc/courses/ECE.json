@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE1",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Hands-on introduction to computer engineering practice and research, including computer hardware, robotics, and embedded systems. Encourages interaction with UCSC's School of Engineering community. Designed for students without previous background in computer engineering. (Formerly Computer Engineering 1.)",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "1",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to first-year students and sophomores.",
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE10",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the theory and application of mathematical models to analyze the kinematics and dynamics of robot mechanisms or their components using vector algebra, differential equations, and computer simulations; also covers robot vehicle kinematics, robot arm kinematics, and robot dynamics with computational examples and problems. Some basic programming skills and familiarity with MATLAB are expected. (Formerly CMPE 10.)",
@@ -42,6 +47,7 @@
      "MATH24"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 9 , and AM 20 or MATH 24 .",
    "repeatable": false,
@@ -52,6 +58,14 @@
   {
    "catalog_instructor": null,
    "code": "ECE101",
+   "concurrent_ok": [
+    "AM20"
+   ],
+   "coreqs": [
+    [
+     "ECE101L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the physical basis and mathematical models of electrical components and circuits. Topics include circuit theorems (Thevenin and Norton Equivalents, Superposition), constant and sinusoidal inputs, natural and forced response of linear circuits. Introduction to circuit/network design, maximum power transfer, analog filters, and circuit analysis using Matlab. Topics in elementary electronics including amplifiers and feedback. (Formerly EE 101.)",
@@ -65,20 +79,28 @@
     [
      "PHYS5C",
      "PHYS15C",
-     "PHYS5N"
+     "PHYS6C"
     ],
     [
-     "PHYS6C",
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5N",
      "PHYS6N"
     ],
     [
      "MATH24",
-     "PHYS116A"
-    ],
-    [
+     "PHYS116A",
      "AM20"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYS 5C or PHYS 15C and PHYS 5N ; or PHYS 6C and PHYS 6N ; and MATH 24 or PHYS 116A , or previous or concurrent enrollment in AM 20 . Concurrent enrollment in ECE 101L is required.",
    "repeatable": false,
@@ -89,6 +111,14 @@
   {
    "catalog_instructor": null,
    "code": "ECE101L",
+   "concurrent_ok": [
+    "AM20"
+   ],
+   "coreqs": [
+    [
+     "ECE101"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Illustrates topics covered in ECE 101 . One two-hour laboratory session per week.",
@@ -102,20 +132,28 @@
     [
      "PHYS5C",
      "PHYS15C",
-     "PHYS5N"
+     "PHYS6C"
     ],
     [
-     "PHYS6C",
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5N",
      "PHYS6N"
     ],
     [
      "MATH24",
-     "PHYS116A"
-    ],
-    [
+     "PHYS116A",
      "AM20"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYS 5C or PHYS 15C and PHYS 5N ; or PHYS 6C and PHYS 6N ; and MATH 24 or PHYS 116A , or previous or concurrent enrollment in AM 20 . Concurrent enrollment in ECE 101 is required.",
    "repeatable": false,
@@ -126,6 +164,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE102",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE102L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "The fundamental electrical, optical, and magnetic properties of materials, with emphasis on metals and semiconductors: chemical bonds, crystal structures, elementary quantum mechanics, energy bands. Electrical and thermal conduction. Optical and magnetic properties. (Formerly EE 145.)",
@@ -139,29 +183,161 @@
     [
      "PHYS5A",
      "PHYS15A",
-     "PHYS5L"
+     "PHYS6A"
     ],
     [
-     "PHYS5B",
-     "PHYS5M"
-    ],
-    [
-     "PHYS5C",
-     "PHYS15C"
-    ],
-    [
-     "PHYS6A",
+     "PHYS5A",
+     "PHYS15A",
      "PHYS6L"
     ],
     [
-     "PHYS6B",
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5A",
+     "PHYS15A",
      "PHYS6M"
     ],
     [
-     "PHYS6C",
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5N",
      "PHYS6N"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYS 5A or PHYS 15A and PHYS 5L , PHYS 5B and PHYS 5M , and PHYS 5C or PHYS 15C and 5N; or PHYS 6A and PHYS 6L , PHYS 6B and PHYS 6M , and PHYS 6C and PHYS 6N . Concurrent enrollment in ECE 102L is required.",
    "repeatable": false,
@@ -172,6 +348,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE102L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE102"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Laboratory sequence illustrating topics covered in course 145. One two-hour laboratory per week.",
@@ -185,29 +367,161 @@
     [
      "PHYS5A",
      "PHYS15A",
-     "PHYS5L"
+     "PHYS6A"
     ],
     [
-     "PHYS5B",
-     "PHYS5M"
-    ],
-    [
-     "PHYS5C",
-     "PHYS15C"
-    ],
-    [
-     "PHYS6A",
+     "PHYS5A",
+     "PHYS15A",
      "PHYS6L"
     ],
     [
-     "PHYS6B",
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5A",
+     "PHYS15A",
      "PHYS6M"
     ],
     [
-     "PHYS6C",
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5B",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5N",
      "PHYS6N"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYS 5A or PHYS 15A and PHYS 5L , PHYS 5B and PHYS 5M , and PHYS 5C or PHYS 15C and 5N; or PHYS 6A and PHYS 6L , PHYS 6B and PHYS 6M , and PHYS 6C and PHYS 6N . Concurrent enrollment in ECE 102 is required.",
    "repeatable": false,
@@ -218,6 +532,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE103",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course covers the following topics: characterization and analysis of continuous-time signals and linear systems, time domain analysis using convolution, frequency domain analysis using the Fourier series and the Fourier transform, the Laplace transform, transfer functions and block diagrams, continuous-time filters, sampling of continuous time signals, examples of applications to communications and control systems.  (Formerly EE 103.)",
@@ -239,6 +555,7 @@
      "MATH24"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L ; and AM 20 or MATH 24 .",
    "repeatable": false,
@@ -249,6 +566,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE103L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE103"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Use and operation of spectrum analyzers; advanced signal analysis using oscilloscopes; measuring impulse response, step response, frequency response, and computer analysis of real signals. MATLAB programming is taught and used as a tool for signal analysis. Students are billed a materials fee.  (Formerly EE 103L.)",
@@ -270,6 +593,7 @@
      "MATH24"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L and AM 20 or MATH 24 . Concurrent enrollment in ECE 103 is required.",
    "repeatable": false,
@@ -280,6 +604,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE104",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers selected case studies in interfacing electronic devices with biological systems. from Galvani to neuronal stimulation and electroceuticals. These studies include: the squid giant axon, the pace maker, deep brain stimulation, organic bioelectronics, bionanoelectronics and optogenetics, bioenergetics, and bioprotonics electroceuticals. Students are assessed through weekly student papers on case studies and through a final presentation. (Formerly EE 104.)",
@@ -290,6 +616,7 @@
    "ge_codes": [],
    "number": "104",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -300,6 +627,10 @@
   {
    "catalog_instructor": null,
    "code": "ECE11",
+   "concurrent_ok": [
+    "ECE9"
+   ],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the basics of rapid prototyping for robotics design from limiting stresses to optimal design. Discusses fast prototyping methods, advantages, and disadvantages. Introduces CAD, CAD packages, 3D printing with different materials, and 3D scanning.  (Formerly CMPE 11.)",
@@ -314,6 +645,7 @@
      "ECE9"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ECE 9 .",
    "repeatable": false,
@@ -324,6 +656,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE110",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies how the computational principles of the brain can be applied to build efficient machine learning models in software and hardware. Topics include the neuroscience of deep learning, spiking neural networks, hardware accelerators, and memory circuit design. Taught in conjunction with ECE 210 . Students cannot receive credit for this course and ECE 210 .",
@@ -338,6 +672,7 @@
      "ECE101"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 .",
    "repeatable": false,
@@ -348,6 +683,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the solid mechanics of materials. Topics include: stress and strain, torsion, bending of beams, shearing stresses in beams, compound stresses, principal stresses, deflections of beams, and statically indeterminate members and columns.  (Formerly CMPE 115.)",
@@ -370,6 +707,7 @@
      "MATH21"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 9 ; and MATH 19B or MATH 20B ; and AM 10 or MATH 21 .",
    "repeatable": false,
@@ -380,6 +718,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Technologies involved in mechatronics (intelligent electro-mechanical systems) and techniques necessary to integrate these technologies into mechatronic systems. Topics include electronics (A/D, D/A converters, opamps, filters, power devices), software program design (event-driven programming, state machine-based design), DC and stepper motors, basic sensing, and basic mechanical design (machine elements and mechanical CAD). Combines lab component of structured assignments with a large and open-ended team project. Students who enrolled in this class will learn how to solve engineering problems using the C Programming Language. Cannot receive credit for this course and ECE 218 .",
@@ -410,6 +750,7 @@
      "CSE13E"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L ; and CSE 100 and CSE 100L ; and ECE 13 or CSE 13S or CSE 13E. ECE 121 and ECE 167 are highly recommended (but not required).",
    "repeatable": false,
@@ -420,6 +761,15 @@
   {
    "catalog_instructor": null,
    "code": "ECE121",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE101"
+    ],
+    [
+     "ECE101L"
+    ]
+   ],
    "credits": "7",
    "cross_listed": [],
    "description": "Focus is on the design and use of microcontroller-based embedded systems, specifically addressing issues of low-level functionality, direct manipulation of input/output using various specialized peripheral sets, and multiple communications protocols. Covers timers, Input Capture, Output Compare, ADC, PWM, interrupts, bus and memory organization, DMA, SPI, I2C, device driver programming, serial packet communication, and clocking. Students enrolled in this class learn how to use the C programming language to solve engineering problems.",
@@ -438,6 +788,7 @@
      "CSE13E"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 12 ; and ECE 13 or CSE 13E. Concurrent enrollment in ECE 101 and ECE 101L is required.",
    "repeatable": false,
@@ -448,6 +799,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE122A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course is the first quarter of a three quarter series of courses that together comprise the IDEASS Program (Impact Designs: Engineering and Sustainability through Student Service), which provides students with opportunities to plan, implement, and evaluate interdisciplinary sustainable design projects in the built environment for the Monterey Bay Region. In fall quarter students are introduced to project topics and background information. In collaboration with an outside mentor project teams design, revise, and complete a project plan including project goals and deliverables, timeline of key activities and major milestones, stakeholder map, evaluation plan, and budget (as applicable). Students apply online; selected applicants complete in-person interviews.  (Formerly EE 122A.)",
@@ -458,6 +811,7 @@
    "ge_codes": [],
    "number": "122A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -468,6 +822,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE122B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The second of a three-quarter sequence that together comprise the IDEASS Program (Impact Designs: Engineering and Sustainability through Student Service) which provides opportunities for students to plan, implement, and evaluate interdisciplinary sustainable-design projects in the built environment for the Monterey Bay Region. In winter quarter, project teams work collaboratively to implement the project plans approved during the fall quarter. Students participate in a weekly seminary series that includes guest lectures and field trips as well as workshops in project management, public speaking, writing skills, and other professional development. Prerequisite(s): ECE 122A . Students apply online; selected applicants complete in-person interviews. Enrollment is restricted to juniors and seniors. (Formerly EE 122B.)",
@@ -478,6 +834,7 @@
    "ge_codes": [],
    "number": "122B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -488,6 +845,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE122C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The third of a three-quarter sequence that together comprise the IDEASS Program (Impact Designs: Engineering and Sustainability through Student Service) which provides opportunities for students to plan, implement, and evaluate interdisciplinary sustainable-design projects in the built environment for the Monterey Bay Region. In spring quarter, project teams work collaboratively to continue implementation of project plans approved during the fall quarter, then evaluate projects impacts. Students participate in a weekly seminary series that includes guest lectures and field trips as well as workshops in project management, public speaking, writing skills, and other professional development. Students also work in the community on educational public outreach regarding project impacts. Prerequisite(s): ECE 122A . Students apply online; selected applicants complete in-person interviews. Enrollment is restricted to juniors and seniors. (Formerly EE 122C.)",
@@ -498,6 +857,7 @@
    "ge_codes": [],
    "number": "122C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -508,6 +868,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE129A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "First of a three-course sequence in which students apply knowledge and skills gained in elective track to complete a major design project. In this first course, students complete the specification and planning for a substantial project. Topics covered: engineering design cycle, engineering teams, and professional practices. (Formerly EE 129A.)",
@@ -522,19 +884,21 @@
      "CSE100"
     ],
     [
-     "ECE171"
+     "ECE171",
+     "ECE118"
+    ],
+    [
+     "ECE171",
+     "ECE121"
     ],
     [
      "ECE157",
      "ECE173",
      "ECE118",
      "ECE121"
-    ],
-    [
-     "ECE118",
-     "ECE121"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and CSE 100 ; enrollment restricted to senior Electrical Engineering and Robotics Engineering majors. Electrical Engineering majors must complete ECE 171 ; and ECE 157 or ECE 173 or ECE 118 or ECE 121 . Robotics Engineering majors must complete ECE 118 and ECE 121 .",
    "repeatable": false,
@@ -545,6 +909,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE129B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Second of a three-course sequence in which students apply knowledge and skills gained in elective track to complete a major design project. In this second course, students complete the training, research, and procurement for a substantial project and a preliminary implementation.",
@@ -561,6 +927,7 @@
      "ECE129A"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and ECE 129A . Enrollment is restricted to seniors.",
    "repeatable": false,
@@ -571,6 +938,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE129C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Third of a three-course sequence in which students apply knowledge and skills gained in this elective track to complete a major design project. In this third course, students work in teams to complete the project specified and advance on the results of  the work in the first two courses. A formal written report, oral presentation, and demonstration of the successful project to a review panel of engineering faculty is required.",
@@ -585,6 +954,7 @@
      "ECE129B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and ECE 129B . Enrollment is restricted to seniors.",
    "repeatable": false,
@@ -595,6 +965,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE13",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Computer Systems and C Programming is intended to bring students up to speed on programming small and large programs in C. Originally written in 1978, C remains the most popular programming language, and the most used one in terms of numbers of computer programs written in it. The course approaches C from an embedded paradigm, and all programming assignments are on a 32-bit embedded micro, the Microchip PIC32. Students learn how to program in C, how to write modular code, and some of the tips and tricks when dealing with an embedded micro. This is a programming class and students will write lots of code. Expect to spend at least 15-20 hours outside of class playing with the code to get things to work. (Formerly CSE 13E Embedded Systems and C Programming; Students cannot receive credit for ECE 13 , CSE 13S , and CSE 13E.)",
@@ -609,6 +981,7 @@
      "CSE12"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 12 . CSE 20 or CSE 30 (Python programming background) is recommended but not required. Programming experience in any other language is also acceptable.",
    "repeatable": false,
@@ -619,6 +992,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE130",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE130L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to optics, photonics and optoelectronics, fiber optic devices and communication systems: Topics include: ray optics, electromagnetic optics, resonator optics, interaction between photons and atoms, dielectric waveguides and fibers, semiconductor light sources and detectors, modulators, amplifiers, switches, and optical fiber communication systems.  Taught in conjunction with course 230. Students cannot receive credit for this course and ECE 230 .  (Formerly EE 130.)",
@@ -631,15 +1010,26 @@
    "prereq_groups": [
     [
      "PHYS5B",
-     "PHYS5C",
      "PHYS15C",
-     "PHYS6B",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5B",
+     "PHYS15C",
      "PHYS6C"
     ],
     [
-     "ECE130L"
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6B"
+    ],
+    [
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYS 5B and PHYS 5C , or PHYS 15C , or PHYS 6B and PHYS 6C ; and concurrent enrollment in ECE 130L .",
    "repeatable": false,
@@ -650,6 +1040,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE130L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE130"
+    ]
+   ],
    "credits": "1",
    "cross_listed": [],
    "description": "Includes a series of projects to provide hands-on experience needed for basic concepts and laboratory techniques of optical fiber technology.",
@@ -662,18 +1058,42 @@
    "prereq_groups": [
     [
      "PHYS5L",
-     "PHYS5M",
-     "PHYS5N"
+     "PHYS6L"
     ],
     [
-     "PHYS6L",
-     "PHYS6M",
+     "PHYS5L",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5L",
      "PHYS6N"
     ],
     [
-     "ECE130"
+     "PHYS5M",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5M",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6M"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6N"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYS 5L , PHYS 5M , and PHYS 5N , or PHYS 6L , PHYS 6M , and PHYS 6N ; concurrent enrollment in ECE 130 .",
    "repeatable": false,
@@ -684,6 +1104,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE135",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE135L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Vector analysis. Electrostatic fields. Magnetostatic fields. Time-varying fields and Maxwell's equations. Plane waves. (Formerly EE 135.)",
@@ -696,13 +1122,19 @@
    "prereq_groups": [
     [
      "ECE101",
+     "PHYS102"
+    ],
+    [
      "ECE101L",
-     "PHYS102",
+     "PHYS102"
+    ],
+    [
      "AM20",
      "PHYS116A",
      "MATH24"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L , or PHYS 102 ; and AM 20 or PHYS 116A or MATH 24 . Students must concurrently enroll in ECE 135L .",
    "repeatable": false,
@@ -713,6 +1145,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE135L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE135"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Laboratory sequence illustrating topics in course 135. One two-hour laboratory session per week.",
@@ -725,13 +1163,19 @@
    "prereq_groups": [
     [
      "ECE101",
+     "PHYS102"
+    ],
+    [
      "ECE101L",
-     "PHYS102",
+     "PHYS102"
+    ],
+    [
      "AM20",
      "PHYS116A",
      "MATH24"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L , or PHYS 102 ; and AM 20 or PHYS 116A or MATH 24 . Students must concurrently enroll in ECE 135 .",
    "repeatable": false,
@@ -742,6 +1186,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE136",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course will cover electromagnetic wave propagation, transmission lines, waveguides, and antennas. (Formerly EE 136.)",
@@ -759,6 +1205,7 @@
      "ECE135L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 135 and ECE 135L . Enrollment is restricted to School of Engineering and Division of Physical and Biological Sciences majors or permission of instructor.",
    "repeatable": false,
@@ -769,6 +1216,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE141",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analysis and design of continuous linear feedback control systems. Essential principles and advantages of feedback. Design by root locus, frequency response, and state space methods and comparisons of these techniques. Applications. (Formerly CMPE 141 and EE 153.)",
@@ -780,14 +1229,19 @@
    "number": "141",
    "prereq_groups": [
     [
-     "ECE103"
+     "ECE103",
+     "PHYS116A"
     ],
     [
-     "PHYS116A",
-     "PHYS116C",
+     "ECE103",
+     "PHYS116C"
+    ],
+    [
+     "ECE103",
      "PHYS133"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 103 , and majors in the School of Engineering and Division of Physical and Biological Sciences programs, with the exception of physics majors. Prerequisites for physics majors: PHYS 116A , PHYS 116C , and PHYS 133 .",
    "repeatable": false,
@@ -798,6 +1252,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE145",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides practical knowledge of Kalman filtering and introduces control theory for stochastic processes. Selected topics include: state-space modeling; discrete- and continuous-time Kalman filter; smoothing; and applications in feedback control. Students learn through hands-on experience. Students cannot receive credit for this course and course 245. Enrollment by permission of instructor. (Formerly CMPE 145.)",
@@ -810,6 +1266,7 @@
    ],
    "number": "145",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -820,6 +1277,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE149",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents the basic concepts and tools for the study of cyber-physical systems, including modeling and analysis tools for continuous-time and discrete-time systems, finite state machines, stateflow, timed and hybrid automata, concurrency, invariants, linear temporal logic, verification, and numerical simulation. Students are guided on methods for simulation and encouraged to apply them to several applications. The course is self-contained. Students are expected to have a basic background in logic circuits, programming, the mathematical modeling of dynamical systems ( ECE 8 is recommended), differential equations, linear algebra, and basic calculus. Knowledge of MATLAB/Simulink is useful. Students cannot receive credit for this course and ECE 249 .",
@@ -831,7 +1290,9 @@
    "number": "149",
    "prereq_groups": [
     [
-     "CSE100",
+     "CSE100"
+    ],
+    [
      "CSE100L"
     ],
     [
@@ -839,6 +1300,7 @@
      "CSE13E"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 100 and CSE 100L or equivalent, and ECE 13 or CSE 13E or equivalent.",
    "repeatable": false,
@@ -849,6 +1311,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE151",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "An introduction to communication systems. Analysis and design of communication systems based on radio, transmission lines, and fiber optics. Topics include fundamentals of analog and digital signal transmission in the context of baseband communications, including concepts such as modulation and demodulation techniques, multiplexing and multiple access, channel loss, distortion, bandwidth, signal-to-noise ratios and error control. Digital communication concepts include an introduction to sampling and quantization, transmission coding and error control.  (Formerly EE 151.)",
@@ -860,8 +1324,12 @@
    "number": "151",
    "prereq_groups": [
     [
-     "ECE103",
-     "ECE101",
+     "ECE103"
+    ],
+    [
+     "ECE101"
+    ],
+    [
      "ECE101L"
     ],
     [
@@ -869,6 +1337,7 @@
      "STAT131"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 103 , ECE 101 , and ECE 101L ; and CSE 107 or STAT 131 or probability theory and random variables background. Enrollment is restricted to School of Engineering and Physical and Biological Sciences majors.",
    "repeatable": false,
@@ -879,6 +1348,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the principles of wireless communications systems. Wireless propagation channels and their impact on digital communications. Modulation techniques for wireless systems and their performance. Multi-antenna systems and diversity. Multicarrier and spread spectrum. Multi-access methods: FDMA, TDMA, CDMA. The structure of cellular systems. Students cannot receive credit for this course and course 252. (Formerly EE 152.)",
@@ -890,10 +1361,13 @@
    "number": "152",
    "prereq_groups": [
     [
-     "CSE107",
+     "CSE107"
+    ],
+    [
      "ECE151"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 107 and ECE 151 , or by consent of instructor. Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -904,6 +1378,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE153",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to the principles of signal processing, including discrete-time signals and systems, the z-transform, sampling of continuous-time signals, transform analysis of linear time-invariant systems, structures for discrete-time systems, the discrete Fourier transform, computation of the discrete Fourier transform, and filter design techniques. Taught in conjunction with Electrical Engineering 250. Students cannot receive credit for this course and Electrical Engineering 250. (Formerly EE 153 and CMPE 153.)",
@@ -918,6 +1394,7 @@
      "ECE103"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 103 . Enrollment is restricted to School of Engineering and Division of Physical and Biological Sciences majors or permission of instructor.",
    "repeatable": false,
@@ -928,6 +1405,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE157",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE157L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Engineering design cycle for wireless and RF systems: design, practical hardware implementation, and prototype. (Formerly EE 157.)",
@@ -939,13 +1422,22 @@
    "number": "157",
    "prereq_groups": [
     [
-     "ECE101",
-     "ECE101L",
-     "ECE103",
-     "ECE171",
+     "ECE101"
+    ],
+    [
+     "ECE101L"
+    ],
+    [
+     "ECE103"
+    ],
+    [
+     "ECE171"
+    ],
+    [
      "ECE174"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L , ECE 103 , and ECE 171 , and ECE 174 ; or consent of instructor. Concurrent enrollment in ECE 157L is required.",
    "repeatable": false,
@@ -956,6 +1448,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE157L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE157"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Laboratory to accompany course 157, emphasizing hardware-design practice and principles applies to RF apparatus. Students design and implement a substantial final project during the last half of the course.",
@@ -967,13 +1465,22 @@
    "number": "157L",
    "prereq_groups": [
     [
-     "ECE101",
-     "ECE101L",
-     "ECE103",
-     "ECE171",
+     "ECE101"
+    ],
+    [
+     "ECE101L"
+    ],
+    [
+     "ECE103"
+    ],
+    [
+     "ECE171"
+    ],
+    [
      "ECE174"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L , ECE 103 , and ECE 171 , and ECE 174 ; or consent of instructor. Concurrent enrollment in ECE 157 is required.",
    "repeatable": false,
@@ -984,6 +1491,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE163",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Technologies involved in the modeling and simulation of small-scale unmanned aerial vehicles (UAVs) with an emphasis on control applications, from low-level flight stabilization to higher level path planning and vision-based control. Topics include coordinate frames, aerodynamics, equations of motion, full non-linear simulation, linearized dynamics models and trim states, force and moment balances for steady flight, flight controls by successive loop closure, state space control, path planning and guidance, sensors and estimation. Students enrolled in this class learn how to use the Python programming language to solve engineering problems. Taught in conjunction with ECE 263 . Students cannot receive credit for this course and ECE 263 .",
@@ -1008,6 +1517,7 @@
      "CSE13S"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 141 or ECE 241 or ECE 242 ; and CSE 30 or ECE 13 or CSE 13E or CSE 13S . ECE 121 , ECE 167 , and ECE 145 recommended but not required. Enrollment is restricted to sophomores, juniors and seniors.",
    "repeatable": false,
@@ -1018,6 +1528,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE167",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Introduces fundamental issues in sensing of temperature, motion, sound, light, position, etc. Sensors are integrated into a digital system using filtering, amplification, and analog-to-digital conversion. Advanced topics may include noise, temperature, and other sources of variability. Students who enrolled in this class will learn how to solve engineering problems using the C Programming Language.",
@@ -1039,6 +1551,7 @@
      "ECE103L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 13E or ECE 13 ; and ECE 103 and ECE 103L .",
    "repeatable": false,
@@ -1049,6 +1562,8 @@
   {
    "catalog_instructor": "Leila Parsa",
    "code": "ECE168",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analysis of mechanical systems and motor drives. Physics-based models of common types of electric motors; dc, permanent-magnet ac, and induction. Theory of three-phase bridge converters. Average and detailed modeling and simulation of motor drive systems. In some quarters, the course will be taught in conjunction with ECE 268 . Students cannot receive credit for this course and ECE 268 .",
@@ -1063,6 +1578,7 @@
      "ECE176"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Prerequisite(s): ECE 176 . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -1073,6 +1589,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE169",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced modeling and analysis of synchronous generators, permanent-magnet ac machines, and dual-fed induction machines. Machine control techniques including droop control, field weakening, multiple reference frame control, and indirect vector control. Taught in conjunction with ECE 269 . Students cannot receive credit for this course and ECE 269 .",
@@ -1090,6 +1608,7 @@
      "ECE176L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: ECE 176 and ECE 176L , or by permission of the instructor.",
    "repeatable": false,
@@ -1100,6 +1619,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE170",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced topics in power electronics including SCR circuits, modulation techniques, multilevel power converters, active and current-source rectifiers, magnetic circuit design, state-space averaging, power converter controller design and stability. Taught in conjunction with ECE 270 . Students cannot receive credit for this course and ECE 270 .",
@@ -1114,6 +1635,7 @@
      "ECE177"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: ECE 177 or equivalent or instructor approval. Enrollment is restricted to seniors.",
    "repeatable": false,
@@ -1124,6 +1646,10 @@
   {
    "catalog_instructor": null,
    "code": "ECE171",
+   "concurrent_ok": [
+    "ECE171L"
+   ],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to (semiconductor) electronic devices. Conduction of electric currents in semiconductors, the semiconductor p-n junction, the transistor. Analysis and synthesis of linear and nonlinear electronic circuits containing diodes and transistors. Biasing, small signal models, frequency response, and feedback. Operational amplifiers and integrated circuits. (Formerly EE 171.)",
@@ -1144,6 +1670,7 @@
      "ECE171L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L ; previous or concurrent enrollment in ECE 171L is required.",
    "repeatable": false,
@@ -1154,6 +1681,10 @@
   {
    "catalog_instructor": null,
    "code": "ECE171L",
+   "concurrent_ok": [
+    "ECE171"
+   ],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Laboratory sequence illustrating topics covered in course 171. One two-hour laboratory session per week.",
@@ -1174,6 +1705,7 @@
      "ECE171"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L ; previous or concurrent enrollment in ECE 171 is required.",
    "repeatable": false,
@@ -1184,6 +1716,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE172",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analog circuit design covering the basic amplifier configurations, current mirrors, differential amplifiers, frequency response, feedback amplifiers, noise, bandgap references, one- and two-stage operational amplifier design, feedback amplifier stability, switched capacitor circuits and optionally the fundamentals of digital-to-analog and analog-to-digital converters. Emphasis throughout will be on the development of approximate and intuitive methods for understanding and designing circuits. Cannot receive credit for this course and course 221. (Formerly EE 172.)",
@@ -1198,6 +1732,7 @@
      "ECE171"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 171 .",
    "repeatable": false,
@@ -1208,6 +1743,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE173",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Studies of analog circuit principles relevant to high-speed digital design: signal propagation, crosstalk, and electromagnetic interference. Topics include electrical characteristics of digital circuits, interfacing different logic families, measurement techniques, distributed circuits and transmission lines, ground planes and grounding, terminations, power systems, electromagnetic compatibility and noise suppression. Laboratory sequence illustrates fundamental lecture topics and includes completion of a final design project.",
@@ -1219,11 +1756,16 @@
    "number": "173",
    "prereq_groups": [
     [
-     "ECE101",
-     "ECE101L",
+     "ECE101"
+    ],
+    [
+     "ECE101L"
+    ],
+    [
      "ECE174"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L and ECE 174 , or by permission of the instructor. ECE 171 and ECE 121 are recommended.",
    "repeatable": false,
@@ -1234,6 +1776,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE174",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Focus on EDA tools for design of printed-circuit boards. Elements of design flow covered: schematic capture and simulation to final PCB layout. Final project is required. Students are billed a materials fee.",
@@ -1251,6 +1795,7 @@
      "ECE101L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 and ECE 101L or consent of instructor.",
    "repeatable": false,
@@ -1261,6 +1806,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE175",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE175L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces electrical energy generation, sensing, and control, emphasizing the emerging smart grid. Topics include 3-phase AC power systems, voltage and transient stability, fault analysis, grid protection, power-flow analysis, economic dispatch, and high voltage DC distribution (HVDC). (Formerly EE 175.)",
@@ -1275,6 +1826,7 @@
      "ECE101"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 . Concurrent enrollment in ECE 175L is required.",
    "repeatable": false,
@@ -1285,6 +1837,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE175L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE175"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Computer analysis and simulation of energy generation, components, power-flow analysis, systems, and control covering topics from course 195. Weekly computer simulations reinforce the concepts introduced in course 175. (Formerly EE 175L.)",
@@ -1299,6 +1857,7 @@
      "ECE101"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 . Concurrent enrollment in ECE 175 is required.",
    "repeatable": false,
@@ -1309,6 +1868,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE176",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE176L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "AC/DC electric-machine drives for speed/position control. Integrated discussion of electric machines, power electronics, and control systems. Computer simulations. Applications in electric transportation, hybrid-car technology, robotics, process control, and energy conservation. (Formerly EE 176.)",
@@ -1323,6 +1888,7 @@
      "ECE101"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 . Concurrent enrollment in ECE 176L is required.",
    "repeatable": false,
@@ -1333,6 +1899,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE176L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE176"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Simulink-based simulations of electric machines/drives in applications such as energy conservation and motion control in robotics and electric vehicles. (Formerly EE 176L.)",
@@ -1347,6 +1919,7 @@
      "ECE101"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 101 . Concurrent enrollment in ECE 176 is required.",
    "repeatable": false,
@@ -1357,6 +1930,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE177",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE177L"
+    ]
+   ],
    "credits": "5",
    "cross_listed": [],
    "description": "Switch-mode power converter design and analysis. Non-switching power supplies. Electronic power-factor correction. Soft switching. Power-semiconductor devices. Use in energy conservation, renewable energy, lighting, and power transmission. (Formerly EE 177.)",
@@ -1371,6 +1950,7 @@
      "ECE103"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 103 . Concurrent enrollment in ECE 177L is required.",
    "repeatable": false,
@@ -1381,6 +1961,12 @@
   {
    "catalog_instructor": null,
    "code": "ECE177L",
+   "concurrent_ok": [],
+   "coreqs": [
+    [
+     "ECE177"
+    ]
+   ],
    "credits": "2",
    "cross_listed": [],
    "description": "Buck, boost, buck-boost, flyback, and forward converter design and control.",
@@ -1395,6 +1981,7 @@
      "ECE103"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 103 . Concurrent enrollment in ECE 177 is required.",
    "repeatable": false,
@@ -1405,6 +1992,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE178",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course reviews the fundamental principles, device's materials, and design and introduces the operation of several semiconductor devices. Topics include the motion of charge carriers in solids, equilibrium statistics, the electronic structure of solids, doping, the pn junction, the junction transistor, the Schottky diode, the field-effect transistor, the light-emitting diode, and the photodiode. (Formerly EE 178.)",
@@ -1428,6 +2017,7 @@
      "ECE171L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 102 and ECE 102L and ECE 171 and ECE 171L . Enrollment is restricted to School of Engineering and Division of Physical and Biological Sciences majors or permission of instructor.",
    "repeatable": false,
@@ -1438,6 +2028,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE179",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents decision tools/theory with a focus on investment, finance, management, technology, and policy. Often, irreversible decisions are made without enough information to analyze the possible consequences. Course uses systematic approaches to analyze these types of situations to enable rational decisions. (CSE 174.)",
@@ -1461,6 +2053,7 @@
      "ECON100M"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): AM 30 or MATH 22 or MATH 23A ; and ECON 113 ; and ECON 100A or ECON 100M . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -1471,6 +2064,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE180J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a comprehensive overview of renewable energy, storage, and smart grids. Fundamental energy-conversion limits based on physics and existing material properties are discussed. Various sources and facilities, such as solar, wind, hydropower, geothermal, tidal energy, and fuel cells are described. Solar- and wind-site assessment, electric vehicles, as well as sustainable microgrids are also discussed. Finally, the latest research on smart grids and smart cities is introduced. Students who enroll in this class will learn how to use Matlab to solve engineering problems.(Formerly EE 180J.)",
@@ -1499,6 +2094,7 @@
      "CSE107"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): AM 11A or MATH 11A or MATH 19A or MATH 19B or MATH 20A or MATH 20B ; and STAT 5 or STAT 7 or STAT 17 or STAT 131 or CSE 107 . PHYS 5C or PHYS 15C and PHYS 5N or PHYS 6C and PHYS 6N are recommended.",
    "repeatable": false,
@@ -1509,6 +2105,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE181J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Provides a fundamental understanding of renewable energies in practice by experiencing them in a functional context. Students visit and evaluate renewable-energy facilities, such as wind power, solar energy, hydrogen storage, biofuel production, waste-water testing facilities, biomass, biodiesel, and biogas. This intensive one-month program allows students to carry out applied research in a real-life, industrial-scale, renewable-energy context. Prerequisite(s): course 80J or equivalent. Enrollment restricted to junior, senior, and graduate students and by permission of instructor. (Formerly EE 181J.)",
@@ -1519,6 +2117,7 @@
    "ge_codes": [],
    "number": "181J",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1529,6 +2128,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE183",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Topics vary with instructor. Sample topics include smart grids, bioelectronics, antennas, etc. Enrollment by instructor permission. Approval of undergraduate adviser required for credit as an upper-division elective. (Formerly EE 183.)",
@@ -1539,6 +2140,7 @@
    "ge_codes": [],
    "number": "183",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1549,6 +2151,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE185",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches students about the U.S. electricity industry. Topics include power generation costs, electric grid, power flows, retail market and tariff design, regulation and market monitoring, locational marginal pricing, risk management, market power, and contemporary issues.",
@@ -1562,13 +2166,23 @@
     [
      "PHYS5C",
      "PHYS15C",
-     "PHYS5N"
+     "PHYS6C"
     ],
     [
-     "PHYS6C",
+     "PHYS5C",
+     "PHYS15C",
+     "PHYS6N"
+    ],
+    [
+     "PHYS5N",
+     "PHYS6C"
+    ],
+    [
+     "PHYS5N",
      "PHYS6N"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: PHYS 5C or PHYS 15C and PHYS 5N ; or PHYS 6C and PHYS 6N . Enrollment is restricted to juniors and seniors.",
    "repeatable": false,
@@ -1579,6 +2193,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE186",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Guides students through the process of creating a new high-growth technology company. Students learn how to create a strategic vision and define the product(s) that can achieve the vision; validate the vision and product with target customers; identify the growth rates, size and competitive landscape of thei serviceable target market; and build a team with the requisite skills to achieve the strategic vision. Students create the pro forma income statements, balance sheets and cash flow statements to determine the financing requirements of their new company, and create a \"Pitch\" summarizing their vision, to be used for raising institutional investment. There are no required prerequisites, but students should be proficient in using spreadsheets, such as Excel or Numbers.",
@@ -1591,6 +2207,7 @@
    ],
    "number": "186",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1601,6 +2218,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE187",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Guides students through the process of securing financing for their new high-growth technology company. Discusses the various types and sources of financing, the financing and due diligence processes, the expectations of institutional investors and the underlying drivers for those expectations. Students also analyze the implications of the various terms and conditions of a financing term sheet to understand the typical negotiation options available when negotiating terms with investors. Course also reviews the required set of legal documents required to close a financing round. ECE 186 , Entrepreneurship I, is highly recommended but not required. Students must be fluent in the use of spreadsheets, including doing optimization on them.",
@@ -1611,6 +2230,7 @@
    "ge_codes": [],
    "number": "187",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1621,6 +2241,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE193",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides for individual programs of study with specific academic objectives carried out under the direction of a faculty member of the electrical engineering program and a willing sponsor at the field site and using resources not normally available on campus. Credit is based on the presentation of evidence of achieving the objectives by submitting a written and oral presentation. May not normally be repeated for credit.",
@@ -1631,6 +2253,7 @@
    "ge_codes": [],
    "number": "193",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1641,6 +2264,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE193F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides for individual programs of study with specific academic objectives carried out under the direction of a faculty member of the electrical engineering program and a willing sponsor at the field site and using resources not normally available on campus. Credit is based on the presentation of evidence of achieving the objectives by submitting a written and oral presentation. May not normally be repeated for credit.",
@@ -1651,6 +2276,7 @@
    "ge_codes": [],
    "number": "193F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1661,6 +2287,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE195",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual directed study for upper-division undergraduates. Students submit petition to sponsoring agency. If using this course to replace the capstone design requirement ( ECE 129A , ECE129B, ECE 129C ), students must take ECE 129A . Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements.",
@@ -1671,6 +2299,7 @@
    "ge_codes": [],
    "number": "195",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1681,6 +2310,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE195F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Prerequisite(s): petition on file with sponsoring agency. Students submit petition to sponsoring agency.",
@@ -1691,6 +2322,7 @@
    "ge_codes": [],
    "number": "195F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1701,6 +2333,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides for department-sponsored individual study program off campus, for which faculty supervision is not in person, but by correspondence. Students submit petition to sponsoring agency.",
@@ -1711,6 +2345,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1721,6 +2356,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Provides for department-sponsored individual study program off campus for which faculty supervision is not in person, but by correspondence. Students submit petition to sponsoring agency.",
@@ -1731,6 +2368,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1741,6 +2379,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual directed study for upper-division undergraduates. Students submit petition to sponsoring agency.",
@@ -1751,6 +2391,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1761,6 +2402,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Individual directed study for upper-division undergraduates. Students submit petition to sponsoring agency.",
@@ -1771,6 +2414,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -1781,6 +2425,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Basic teaching techniques for TAs: responsibilities and rights, resource materials, computer security, leading discussion or lab sessions, presentations techniques, maintaining class records, electronic handling of homework, and grading. Examines research and professional training: use of library and online databases, technical typesetting, writing journal and conference papers, publishing, giving talks, and ethical issues. (Formerly EE 200.)",
@@ -1791,6 +2437,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1801,6 +2448,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to underlying principles of nanoscience and nanotechnology. Intended for multidisciplinary audience with a variety of backgrounds. Introduces scientific principles and laws relevant on the nanoscale. Discusses applications in engineering, physics, chemistry, and biology.  (Formerly EE 211.)",
@@ -1815,6 +2464,7 @@
      "ECE102"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 102 or consent of instructor.",
    "repeatable": false,
@@ -1825,6 +2475,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE203",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the many characterization techniques used to characterize materials from volumes less than one cubic micrometer, including the basic physics of each method, the methodology used to get quantitative results, and the advantages and limitations of each technique. (Formerly EE 213.)",
@@ -1835,6 +2487,7 @@
    "ge_codes": [],
    "number": "203",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment restricted to graduate students, or to undergraduates majoring in engineering or science by permission of instructor.",
    "repeatable": false,
@@ -1845,6 +2498,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE204",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers selected case studies in interfacing electronic devices with biological systems from Galvani to neuronal stimulation and electroceuticals. Studies include: the squid giant axon, the pacemaker, deep-brain stimulation, organic bioelectronics, bionanoelectronics and optogenetics, bioenergetics, and bioprotonics electroceuticals. Students are assessed through weekly papers on case studies and through a final presentation.  (Formerly EE 204.)",
@@ -1855,6 +2510,7 @@
    "ge_codes": [],
    "number": "204",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1865,6 +2521,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE205",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers microscopic theory of electron transport in nanoelectronic devices and transistors. Topics include: ballistic transport; quantum conductance, NEGF-Landauer formalisms; molecular conductors; graphene and carbon nanotubes, quantum resonant tunneling devices; nanotransistors; and spintronics.  (Formerly EE 218.)",
@@ -1880,6 +2538,7 @@
      "ECE207"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 201 or ECE 207 . Enrollment is restricted to graduate students. Students with background in basic matrix algebra and MATLAB programming may enroll with permission of instructor.",
    "repeatable": false,
@@ -1890,6 +2549,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE207",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Materials controlled at nanometer-scale will revolutionize existing technologies. Course offers opportunities of learning materials that exhibit peculiar physical characteristics at the nanometer scales. Course also includes discussions of unique device architecture based on materials crafted at the nanometer scale. (Formerly EE 216.)",
@@ -1900,6 +2561,7 @@
    "ge_codes": [],
    "number": "207",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -1910,6 +2572,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies how the computational principles of the brain can be applied to build efficient machine learning models in software and hardware. Topics include the neuroscience of deep learning, spiking neural networks, hardware accelerators, and memory circuit design. Taught in conjunction with ECE 110 . Students cannot receive credit for this course and ECE 110 .",
@@ -1920,6 +2584,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -1930,6 +2595,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Theory and application of mathematical models to analyze, design, and program serial kinematic chains (robot arms). Covers models of arbitrary articulated robotic or biological arms and their application to realistic arms and tasks, including the homogeneous coordinate model of positioning tasks; the forward and inverse kinematic models; the Jacobian matrix; trajectory generation;and dynamic models, including Newton-Euler and Lagrangian formulations.  (Formerly CMPE 215.)",
@@ -1941,11 +2608,14 @@
    "number": "215",
    "prereq_groups": [
     [
-     "ECE141",
+     "ECE141"
+    ],
+    [
      "AM10",
      "MATH21"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; and to seniors who have taken ECE 141 , and AM 10 or MATH 21 ; or by permission of instructor.",
    "repeatable": false,
@@ -1956,6 +2626,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE216",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents the principles of biological locomotion and application to robotics problems. Students learn about effective movements in the biological world (slithering, walking, climbing, and flying); extract their underlying principles; and apply them creatively to robotics design. (Formerly CMPE 216.)",
@@ -1970,6 +2642,7 @@
      "ECE9"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 9 or equivalent. Enrollment is restricted to graduate students, and seniors by permission of instructor.",
    "repeatable": false,
@@ -1980,6 +2653,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE218",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Examines technologies involved in mechatronics (intelligent electro-mechanical systems)and techniques necessary to integrate these technologies. Topics include electronics (A/D, D/A converters, opamps, filters, power devices), software program design (event-driven programming, state machine-based design), DC and stepper motors, basic sensing, and basic mechanical design (machine elements and mechanical CAD). Students learn how to solve engineering problems using C Programming Language. Combines lab component of structured assignments with a large and open-ended team project. Students cannot receive credit for this course and ECE 118 .",
@@ -1990,6 +2665,7 @@
    "ge_codes": [],
    "number": "218",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2000,6 +2676,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE220",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Lectures covering technologies for different imaging modalities, detectors, and instrumentations with discussion of properties of the signal generation, image reconstruction, and image data quantification.",
@@ -2010,6 +2688,7 @@
    "ge_codes": [],
    "number": "220",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to seniors and graduate students.",
    "repeatable": false,
@@ -2020,6 +2699,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE221",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analog integrated circuit design with emphasis on fundamentals of designing linear circuits using CMOS. Covers MOS devices and device modeling, current mirrors, op-amp design, op-amp compensation, comparators, multipliers, voltage references, sample-and-holds, noise, and an introduction to more complicated systems using these building blocks, such as phase locked loops and analog-to-digital converters. If time permits, integrated circuit layout issues and device/circuit fabrication. Students cannot receive credit for this course and ECE 172 .  (Formerly EE 221.)",
@@ -2032,11 +2713,9 @@
    "prereq_groups": [
     [
      "ECE171"
-    ],
-    [
-     "ECE178"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): course ECE 171 or equivalent; ECE 178 or equivalent recommended.",
    "repeatable": false,
@@ -2047,6 +2726,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Digital integrated circuit design covered with an emphasis on high-speed and low-power applications. Covers signaling techniques and circuits including transmitters and receivers, with emphasis on on-chip interconnect, timing fundamentals and timing circuits. Theoretical fundamentals of phase locked loops and design issues of implementation addressed. Course has a project design component. Interview to assess technical skills of student. Enrollment is restricted to electrical engineering and computer engineering graduate students.  (Formerly EE 222.)",
@@ -2057,6 +2738,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2067,6 +2749,10 @@
   {
    "catalog_instructor": null,
    "code": "ECE222A",
+   "concurrent_ok": [
+    "ECE290"
+   ],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Agricultural technology draws from a wide variety of areas. Topics discussed include agricultural applications of cyber-physical systems and robotics, electronic design of sensor technology, energy harvesting and reliable communication for sensor networks, and signal/image processing techniques for sensor data.",
@@ -2081,6 +2767,7 @@
      "ECE290"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): previous or concurrent enrollment in ECE 290 , and/or have experience in reading academic research papers. Enrollment is restricted to graduate students; undergraduates may enroll with permission of the instructor.",
    "repeatable": false,
@@ -2091,6 +2778,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE223",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Solid-state devices advance rapidly by employing new materials, new architecture, and new functional principles. Class offers opportunities to learn the latest advancements in solid-state devices (e.g., electronic, optoelectronic, photonic devices, and smart sensors) viewed from various scientific, technological, and engineering aspects, such as energy conversion and computation. (Formerly EE 223.)",
@@ -2101,6 +2790,7 @@
    "ge_codes": [],
    "number": "223",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2111,6 +2801,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE224",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Reviews the fundamentals of semiconductors and then explores the structure, design, and operation of the most important and widely used semiconductor devices. Topics include the motion of charge carriers in solids, equilibrium statistics, the electronic structure of solids, doping, the pn junction, the junction transistor, the Schottky diode, field-effect transistor, the light-emitting diode, and the photodiode.",
@@ -2121,6 +2813,7 @@
    "ge_codes": [],
    "number": "224",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2131,6 +2824,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE225",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Addresses principles of semiconductor processing with applications for semiconductor materials engineering, research, and development. The materials fabrication and processing topics include preparation of silicon, III-V compounds, and dielectric thin films, including thin film deposition techniques, diffusion, ion implantation, and standard device fabrication sequences. Applications of these processing principles for semiconductor materials engineering and bandgap engineering in semiconductor heterostructures are discussed for devices, such as LEDs, lasers, photoreceptors, modulators, and high-speed transistors.",
@@ -2141,6 +2836,7 @@
    "ge_codes": [],
    "number": "225",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2151,6 +2847,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE226",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers narrowband and high-frequency techniques, noise, distortion, nonlinearities, low-noise amplifiers, power amplifiers, mixers, receivers, and transmitters for wireless communications. Topics are presented in the context of integrated designs in CMOS, but topics are fundamental and widely applicable.  (Formerly EE 226.)",
@@ -2166,6 +2864,7 @@
      "ECE221"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 172 or ECE 221 or permission of instructor.",
    "repeatable": false,
@@ -2176,6 +2875,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE227",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Semiconductor physics is examined for advanced new materials and devices. Discusses how familiar concepts are extended to new electronics. Intended for students interested in electrical engineering, physics, and materials science applications. Good familiarity with basic electromagnetism and quantum physics is assumed. (Formerly EE 227.)",
@@ -2186,6 +2887,7 @@
    "ge_codes": [],
    "number": "227",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2196,6 +2898,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE228",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers key processes to build a coherent picture of the deposition of thin films. Offers an opportunity to implement general computing resources in describing the formation of thin films. The deposition of thin films plays a key role in technology due to their unprecedented physical properties. Their deposition depends on such factors as thermodynamics in the deposition environment and kinetics on the solid surfaces where atoms are assembled; therefore, understanding the fundamental processes involved is important. (Formerly EE 217.)",
@@ -2206,6 +2910,7 @@
    "ge_codes": [],
    "number": "228",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Students should have a background in solid-state materials that is equivalent to ECE 102 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2216,6 +2921,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE229",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers basic theory of interaction of electromagnetic radiation with resonant atomic transitions and density matrix treatment; and applications including Rabi oscillations, slow light; nonlinear optics; coherent radiation, and noise in photodetectors and lasers.  (Formerly EE 232.)",
@@ -2230,6 +2937,7 @@
      "ECE231"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 231 or equivalent.",
    "repeatable": false,
@@ -2240,6 +2948,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE230",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Components and system design of optical fiber communication. Topics include step-index fibers, graded-index fibers, fiber modes, single-mode fibers, multimode fibers, dispersion, loss mechanics, fiber fabrication, light-emission processes in semiconductors, light-emitting diodes, laser diodes, modulation response, source-fiber coupling, photodetectors, receivers, receiver noise and sensitivity, system design, power budget and rise-time budget, fiber-optic networks (FDDI, SONET, etc.), wavelength division multiplexing (WDM). Students cannot receive credit for this course and ECE 130 . (Formerly EE 230.)",
@@ -2250,6 +2960,7 @@
    "ge_codes": [],
    "number": "230",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2260,6 +2971,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE231",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to phenomena, devices, and applications of optoelectronics. Main emphasis is on optical properties of semiconductors and semiconductor lasers. (Formerly EE 231.)",
@@ -2277,6 +2990,7 @@
      "ECE102L"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 102 and ECE 102L .",
    "repeatable": true,
@@ -2287,6 +3001,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers use of integrated optics for study of biological material; fluorescence spectroscopy, single molecule detection, optical tweezers, layered dielectric media, hollow-core waveguides, photonic crystals, optofluidics, biophotonic systems, and applications.",
@@ -2297,6 +3013,7 @@
    "ge_codes": [],
    "number": "232",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2307,6 +3024,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE236",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the basic principles of optics and microscopy. Topics include geometrical optics, simple ray tracing, diffraction, Fourier optics, image formation in the human eye, the photographic camera, and different types of microscopes. Hands-on experience is provided in laboratories. Requires basic mathematics. (Formerly EE 266.)",
@@ -2317,6 +3036,7 @@
    "ge_codes": [],
    "number": "236",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Undergraduate students may enroll with permission of the instructor.",
    "repeatable": false,
@@ -2327,6 +3047,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE237",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Fundamental concepts in digital image processing and reconstruction. Continuous and discrete images; image acquisition, sampling. Linear transformations of images, convolution and superposition. Image enhancement and restoration, spatial and spectral filtering. Temporal image processing: change detection, image registration, motion estimation. Image reconstruction from incomplete data. Applications. (Formerly EE 264.)",
@@ -2341,6 +3063,7 @@
      "ECE153"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 153 or permission of instructor.",
    "repeatable": false,
@@ -2351,6 +3074,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE238",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "This course covers how modern medical images are generated from raw data, and how they are presented to radiologists and doctors. It also explains key image quality metrics, their evaluation, and how they inform system design.",
@@ -2361,6 +3086,7 @@
    "ge_codes": [],
    "number": "238",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Undergraduates may enroll with permission of the instructor. This course requires basic knowledge of math and physics such as calculus, linear algebra, and statistics. ECE 80B is helpful for undergraduates, but is not required.",
    "repeatable": false,
@@ -2371,6 +3097,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE240",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to applied linear algebra and linear dynamical systems with applications to circuits, signal processing, communications, and control systems. Topics include the following: Least-squares approximations of over-determined equations and least-norm solutions of underdetermined equations. Symmetric matrices, matrix norm and singular value decomposition. Eigenvalues, left and right eigenvectors, and dynamical interpretation. Matrix exponential, stability, and asymptotic behavior. Multi-input multi-output systems, impulse and step matrices; convolution and transfer matrix descriptions. Control, reachability, state transfer, and least-norm inputs. Observability and least-squares state estimation. (Formerly CMPE 240.)",
@@ -2382,10 +3110,13 @@
    "number": "240",
    "prereq_groups": [
     [
-     "ECE103",
+     "ECE103"
+    ],
+    [
      "AM147"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; undergraduates may enroll if they have completed ECE 103 and AM 147 .",
    "repeatable": false,
@@ -2396,6 +3127,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE241",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Graduate-level introduction to control of continuous linear systems using classical feedback techniques. Design of feedback controllers for command-following error, disturbance rejection, stability, and dynamic response specifications. Root locus and frequency response design techniques. Extensive use of Matlab for computer-aided controller design. Course has concurrent lectures with ECE 141 .",
@@ -2406,6 +3139,7 @@
    "ge_codes": [],
    "number": "241",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2416,6 +3150,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE242",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Sequel to ECE 141 and ECE 241 . After reviewing control design techniques examined in ECE 141 and ECE 241 , this course explores state space control, discrete time control, and two case studies in control design. Students design and implement feedback controllers on an inverted pendulum experiment.",
@@ -2431,6 +3167,7 @@
      "ECE241"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 141 or ECE 241 . Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -2441,6 +3178,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE243",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Course provides introduction to the construction of linear dynamical models from experimental data using parametric and non-parametric identification techniques. Theoretical and practical aspects of these techniques addressed. (Formerly CMPE 243.)",
@@ -2455,6 +3194,7 @@
      "ECE240"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 240 , or by permission of instructor.",
    "repeatable": false,
@@ -2465,6 +3205,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE244",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches the design and analysis of digital control systems. The topics covered are discrete-time system modeling; z-transform; stability, controllability, and observability of discrete-time systems; various design approaches to control design in which sensor, computer hardware, actuation, communication, and user interface are part of the design. Note: knowledge of linear algebra, calculus, basic differential equations, Laplace transform, signals and systems, linear-system control theory, MATLAB, and the use of word-processing software are assumed. (Formerly CMPE 244.)",
@@ -2480,6 +3222,7 @@
      "ECE241"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 141 or ECE 241 . Enrollment is restricted to graduate students, or by permission of the instructor.",
    "repeatable": false,
@@ -2490,6 +3233,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE245",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides practical knowledge of Kalman filtering and introduces control theory for stochastic processes. Selected topics include: state-space modeling; discrete- and continuous-time Kalman filter; smoothing; and applications in feedback control. Students learn through hands-on experience. Students cannot receive credit for this course and course 145. (Formerly CMPE 245.)",
@@ -2505,6 +3250,7 @@
      "ECE241"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 240 or ECE 241 . Knowledge of Matlab is expected. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2515,6 +3261,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE246",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the modeling and analysis of hybrid dynamical systems, including the modeling of hybrid systems, the concept of solutions, Zeno behavior, equilibrium sets, stability, convergence, Lyapunov-based conditions, robustness, and simulation. Students are guided on methods for simulation and encouraged to apply them to several applications. (Formerly CMPE 246.)",
@@ -2531,6 +3279,7 @@
      "ECE242"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 240 or ECE 241 or ECE 242 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2541,6 +3290,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE249",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Presents the basic concepts and tools for the study of cyber-physical systems, including modeling and analysis tools for continuous-time and discrete-time systems, finite state machines, stateflow, timed and hybrid automata, concurrency, invariants, linear temporal logic, verification, and numerical simulation. Students are guided on methods for simulation and encouraged to apply them to several applications. The course is self-contained. Students are expected to have a basic background in logic circuits, programming, the mathematical modeling of dynamical systems ( ECE 8 is recommended), differential equations, linear algebra, and basic calculus. Knowledge of MATLAB/Simulink is useful. Students cannot receive credit for this course and ECE 149 .",
@@ -2552,7 +3303,9 @@
    "number": "249",
    "prereq_groups": [
     [
-     "CSE100",
+     "CSE100"
+    ],
+    [
      "CSE100L"
     ],
     [
@@ -2560,6 +3313,7 @@
      "CSE13E"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 100 and CSE 100L or equivalent, and ECE 13 or CSE 13E or equivalent.",
    "repeatable": false,
@@ -2570,6 +3324,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "In-depth study of signal processing techniques, including discrete-time signals and systems, the z-transform, sampling of continuous-time signals, transform analysis of linear time-invariant systems, structures for discrete-time systems, the discrete Fourier transform, computation of the discrete Fourier transform, filter design techniques. Students cannot receive credit for this course and course 153. (Formerly EE 250.)",
@@ -2580,6 +3336,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2590,6 +3347,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE251",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A core course on digital communications theory. Provides an introduction to digital communication, including source coding, characterization of communication signals and systems, modulation and demodulation for the additive Gaussian channel, digital signaling, and over bandwidth constrained linear filter channels and over fading multipath channels. (Formerly EE 251.)",
@@ -2610,6 +3369,7 @@
      "CSE107"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 151 and ECE 153 and CSE 107 .",
    "repeatable": false,
@@ -2620,6 +3380,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE252",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "In-depth study of the physical layer of wireless communications. Wireless propagation channels and their impact on digital communications. Modulation techniques for wireless systems and their performance. Multi-antenna systems and diversity. Multicarrier and spread spectrum. Multi-access methods: FDMA, TDMA, CDMA. The structure of cellular systems. Students cannot receive credit for this course and course 152. (Formerly EE 252.)",
@@ -2634,6 +3396,7 @@
      "ECE251"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 251 .",
    "repeatable": false,
@@ -2644,6 +3407,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE253",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CSE208"
@@ -2656,6 +3421,7 @@
    "ge_codes": [],
    "number": "253",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2666,6 +3432,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE254",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces radar signal processing, synthetic aperture radar (SAR), and inverse SAR (ISAR). Focuses on the fundamentals and design principles of modern radar systems. Students use hands-on computer simulations to build a strong background in radar sensor systems that can be applied to a variety of problems, such as medical imaging, ground-penetrating radar imaging for geophysical exploration, and the use of radar sensor systems for satellite-based SAR. (Formerly EE 288.)",
@@ -2680,6 +3448,7 @@
      "ECE153"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 153 . Enrollment is restricted to juniors, seniors, and graduate students.",
    "repeatable": false,
@@ -2690,6 +3459,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers the following topics: introduction to algebra; linear block code; cyclic codes; BCH code; RS codes; spectral domain study of codes; CRC; and product codes.  (Formerly EE 261.)",
@@ -2700,6 +3471,7 @@
    "ge_codes": [],
    "number": "255",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2710,6 +3482,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE256",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Covers fundamental approaches to designing optimal estimators and detectors of deterministic and random parameters and processes in noise, and includes analysis of their performance. Binary hypothesis testing: the Neyman-Pearson Theorem. Receiver operating characteristics. Deterministic versus random signals. Detection with unknown parameters. Optimal estimation of the unknown parameters: least square, maximum likelihood, Bayesian estimation. Will review the fundamental mathematical and statistical techniques employed. Many applications of the techniques are presented throughout the course. Note: While a review of probability and statistics is provided, this is not a basic course on this material. (Formerly EE 262.)",
@@ -2721,10 +3495,13 @@
    "number": "256",
    "prereq_groups": [
     [
-     "ECE103",
+     "ECE103"
+    ],
+    [
      "CSE107"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): ECE 103 and CSE 107 , or permission of instructor.",
    "repeatable": false,
@@ -2735,6 +3512,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE257",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the intersection of classical signal processing and modern machine learning. Covers stochastic signal processing, adaptive filtering (Wiener, LMS), and time-series analysis. Bridges these topics to machine learning fundamentals, including neural networks, sparse representations (Lasso, compressed sensing), and deep learning models (RNNs, LSTMs) for sequential data.",
@@ -2745,6 +3524,7 @@
    "ge_codes": [],
    "number": "257",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2755,6 +3535,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE258",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Fundamental approaches and techniques in solving inverse problems in engineering and applied sciences, particularly in imaging. Initial emphasis on fundamental mathematical, numerical, and statistical formulations and known solution methods. Sampling of applications presented from diverse set of areas (astronomical, medical and optical imaging, and geophysical exploration). (Formerly EE 265.)",
@@ -2765,6 +3547,7 @@
    "ge_codes": [],
    "number": "258",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2775,6 +3558,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE263",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Technologies involved in the modeling and simulation of small-scale unmanned aerial vehicles (UAVs) with an emphasis on control applications, from low-level flight stabilization to higher level path planning and vision-based control. Topics include coordinate frames, aerodynamics, equations of motion, full non-linear simulation, linearized dynamics models and trim states, force and moment balances for steady flight, flight controls by successive loop closure, state space control, path planning and guidance, sensors and estimation. Students enrolled in this class learn how to use the Python programming language to solve engineering problems. Students gain team leadership and project management skills. Taught in conjunction with ECE 163 . Students cannot receive credit for this course and ECE 163 .",
@@ -2785,6 +3570,7 @@
    "ge_codes": [],
    "number": "263",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: Students should have an understanding of Feedback Controls and Programming (Python preferred). It is recommended but not required that students have a background in Sensors, Microcontrollers, Kalman Filtering, and Estimation. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2795,6 +3581,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE264",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "7",
    "cross_listed": [],
    "description": "Introduces the mathematical foundations of visual navigation in mobile robotics. Topics include 3D geometry, 2D camera projective geometry, optimization, visual-inertial navigation, and SLAM. This class consists of lectures and several team-based projects with aerial robotics applications.",
@@ -2805,6 +3593,7 @@
    "ge_codes": [],
    "number": "264",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "There are no required prerequisites, but students should have working knowledge of linear algebra and programming in C++ and Python. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2815,6 +3604,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE268",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analysis of mechanical systems and motor drives. Physics-based models of common types of electric motors; dc, permanent-magnet ac, and induction. Theory of three-phase bridge converters. Average and detailed modeling and simulation of motor drive systems. In some quarters, the course is taught in conjunction with ECE 168 . Students cannot receive credit for this course and ECE 168 .",
@@ -2825,6 +3616,7 @@
    "ge_codes": [],
    "number": "268",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): Enrollment is restricted to graduate students. Students should have knowledge of electric machines that is equivalent to ECE 176 .",
    "repeatable": false,
@@ -2835,6 +3627,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE269",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced modeling and analysis of synchronous generators, permanent-magnet ac machines, and dual-fed induction machines. Machine control techniques including droop control, field weakening, multiple reference frame control, and indirect vector control. Taught in conjunction with ECE 169 . Students cannot receive credit for this course and ECE 169 .",
@@ -2849,6 +3643,7 @@
      "ECE176"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students who have taken ECE 176 or an equivalent undergraduate course on classical electric machinery.",
    "repeatable": false,
@@ -2859,6 +3654,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE270",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced topics in power electronics including SCR circuits, modulation techniques, multilevel power converters, active and current-source rectifiers, magnetic circuit design, state-space averaging, power converter controller design and stability. Taught in conjunction with ECE 170 . Students cannot receive credit for this course and ECE 170 .",
@@ -2869,6 +3666,7 @@
    "ge_codes": [],
    "number": "270",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisites: Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2879,9 +3677,11 @@
   {
    "catalog_instructor": null,
    "code": "ECE271",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
-   "description": "Introduction to semiconductor devices and integrated circuits, focusing on transistor operation, biasing, small-signal models, frequency response, feedback, and operational amplifiers, with emphasis on the design and analysis of analog integrated circuits. In some quarters, the course is taught in conjunction with ECE 171 . Students cannot receive credit for this course and ECE 171 .",
+   "description": "Introduction to semiconductor devices and integrated circuits, focusing on transistor operation, biasing, small-signal models, frequency response, feedback, and operational amplifiers, with emphasis on the design and analysis of analog integrated circuits. Enrollment is by permission of the instructor and is restricted to graduate students. In some quarters, the course is taught in conjunction with ECE 171 . Students cannot receive credit for this course and ECE 171 .",
    "display_code": "ECE 271",
    "division": "graduate",
    "extra_fields": {},
@@ -2889,6 +3689,7 @@
    "ge_codes": [],
    "number": "271",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2899,9 +3700,11 @@
   {
    "catalog_instructor": null,
    "code": "ECE273",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
-   "description": "As circuits operate at ever-higher speeds, this course explores advanced analog principles critical to high-speed digital design, addressing challenges like signal integrity, crosstalk, and power integrity, and developing innovative solutions for reliable performance in modern high-frequency systems. In some quarters, the course is taught in conjunction with ECE 173 . Students cannot receive credit for this course and ECE 173 .",
+   "description": "As circuits operate at ever-higher speeds, this course explores advanced analog principles critical to high-speed digital design, addressing challenges like signal integrity, crosstalk, and power integrity, and developing innovative solutions for reliable performance in modern high-frequency systems. Enrollment is by permission of the instructor and is restricted to graduate students. In some quarters, the course is taught in conjunction with ECE 173 . Students cannot receive credit for this course and ECE 173 .",
    "display_code": "ECE 273",
    "division": "graduate",
    "extra_fields": {},
@@ -2909,6 +3712,7 @@
    "ge_codes": [],
    "number": "273",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -2919,6 +3723,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE275",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The power industry is responsible for a large fraction of the U.S.'s emissions of SO2, NOx, and CO2, as well as much other water, solid waste, and land impacts. Its large environmental as well as economic footprint make it a target of many environmental policies, as well as an inherently interesting sector to study. The recent development of energy and climate policy at the global, the U.S. federal, and state-level has made Energy & Climate Policy an intriguing and dynamic topic for both industries and academia. This course will present fundamental analytical tools (optimization and simulation) for modeling firm and market behavior for the energy sector, with a focus on electric power. However, these models can be used for planning investments in generation, transmission, and energy conservation, and for analysis of public policy.",
@@ -2929,6 +3735,7 @@
    "ge_codes": [],
    "number": "275",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -2939,6 +3746,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE279",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a comprehensive overview of power systems. Students learn how mathematical tools are used for the system planning and operation. Advanced topics include smart grids, electric vehicles and energy data analytics.",
@@ -2949,6 +3758,7 @@
    "ge_codes": [],
    "number": "279",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students. Undergraduates admitted with permission of the instructor.",
    "repeatable": false,
@@ -2959,6 +3769,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "A weekly seminar to discuss current topics in applied microscopy and neuronal imaging.  (Formerly EE 280A.)",
@@ -2969,6 +3781,7 @@
    "ge_codes": [],
    "number": "280A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -2979,6 +3792,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar covering current research in integrated bioelectronics. Enrollment is by permission of the instructor and is restricted to students who have research in bioelectronics. (Formerly EE 280B.)",
@@ -2989,6 +3804,7 @@
    "ge_codes": [],
    "number": "280B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -2999,6 +3815,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar series covering topics of current research in theory and application of control to engineering systems. Current research work and literature in these areas discussed. (Formerly CMPE 280C.)",
@@ -3009,6 +3827,7 @@
    "ge_codes": [],
    "number": "280C",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
    "repeatable": true,
@@ -3019,6 +3838,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar series in topics of current research in information systems and technology management. Enrollment by permission of instructor. (Formerly TIM 280A.)",
@@ -3029,6 +3850,7 @@
    "ge_codes": [],
    "number": "280D",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3039,6 +3861,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280N",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly series covering current research in nanophotonics and lab-on-chip systems including nanoplasmonic biosensors; nanospectroscopy (Raman and vibrational mid-infrared spectroscopy); nanofabrication; nanophotonics devices for energy conversion and thermoplasmonics; acoustic fluids; and microfluidic integration. Current research work and recent literature are discussed. Enrollment is by permission of the instructor and restricted to graduate students. Sophomores, juniors, and seniors may enroll by permission of instructor. (Formerly EE 280N.)",
@@ -3049,6 +3873,7 @@
    "ge_codes": [],
    "number": "280N",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3059,6 +3884,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280O",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly seminar series covering topics of current research in applied optics, including integrated, quantum, nonlinear, and nano-optics. Current research work and literature in these areas are discussed. Enrollment by permission of instructor. (Formerly EE 280O.)",
@@ -3069,6 +3896,7 @@
    "ge_codes": [],
    "number": "280O",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3079,6 +3907,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE280Z",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Weekly series covering state-of-the-art research in smart power grids, machine learning, communications, and signal processing. Current research works and recent literature are discussed. Enrollment is by permission of the instructor and is restricted to graduate students. Undergraduates may enroll by permission of the instructor. (Formerly EE 280Z.)",
@@ -3089,6 +3919,7 @@
    "ge_codes": [],
    "number": "280Z",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3099,6 +3930,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE283",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "Graduate seminar on a research topic in electrical engineering that varies with the particular instructor. Topics may include, but are not limited to, electromagnetics, antennas, electronics biotechnology, nanotechnology, signal processing, communications, VLSI, MEMS, and radio frequency. Enrollment is restricted to graduate students and consent of instructor. (Formerly EE 283.)",
@@ -3109,6 +3942,7 @@
    "ge_codes": [],
    "number": "283",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3119,6 +3953,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE290",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Leading speakers from academia and industry present their latest research.",
@@ -3129,6 +3965,7 @@
    "ge_codes": [],
    "number": "290",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to computer engineering, electrical engineering, and electrical and computer engineering graduate students.",
    "repeatable": true,
@@ -3139,6 +3976,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE291",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "3",
    "cross_listed": [],
    "description": "The aim of this course is two-fold: (1) inform, motivate, and prepare graduate students for possible careers in academia and industry; (2) expose graduate students to the professional skills required for possible career options in engineering and science. Enrollment is restricted to graduate students, and by permission of the instructor. Course is for Satisfactory/Unsatisfactory grade only.",
@@ -3149,6 +3988,7 @@
    "ge_codes": [],
    "number": "291",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -3159,6 +3999,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE293",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Graduate seminar on a research topic in electrical engineering that varies with the particular instructor. Typical topics include, but are not limited to, electromagnetics, antennas, electronics biotechnology, nanotechnology, signal processing, communications, VLSI, and MEMS.  Prerequisite(s):Enrollment is by permission of the instructor and is restricted to graduate students. In some quarters course will be taught in conjunction with ECE 183 . (Formerly EE 293.)",
@@ -3169,6 +4011,7 @@
    "ge_codes": [],
    "number": "293",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3179,6 +4022,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE296",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Master project conducted under faculty supervision. Petition on file with sponsor faculty.",
@@ -3189,6 +4034,7 @@
    "ge_codes": [],
    "number": "296",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3199,6 +4045,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE297A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3209,6 +4057,7 @@
    "ge_codes": [],
    "number": "297A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3219,6 +4068,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE297B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3229,6 +4080,7 @@
    "ge_codes": [],
    "number": "297B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3239,6 +4091,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE297C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3249,6 +4103,7 @@
    "ge_codes": [],
    "number": "297C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3259,6 +4114,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE297F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3269,6 +4126,7 @@
    "ge_codes": [],
    "number": "297F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3279,6 +4137,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE299A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Thesis research conducted under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3289,6 +4149,7 @@
    "ge_codes": [],
    "number": "299A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3299,6 +4160,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE299B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Thesis research conducted under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3309,6 +4172,7 @@
    "ge_codes": [],
    "number": "299B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3319,6 +4183,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE299C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "15",
    "cross_listed": [],
    "description": "Thesis research conducted under faculty supervision. Students submit petition to sponsoring agency.",
@@ -3329,6 +4195,7 @@
    "ge_codes": [],
    "number": "299C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3339,6 +4206,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE30",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Suitable for sophomores pursuing computer science and engineering careers. Aims at deriving basic engineering principles directly from examples relevant to computing and electronics: 1) Newton's Laws and related fundamental mechanics; 2) basic thermodynamics and heat/energy transfer; 3) key electromagnetic principles, including Coulomb's Law, Gauss's Law, and basic circuit analysis using Kirchoff's Laws/Rules; and 4) Ray optics for fiber optic communications and camera electronics.",
@@ -3356,6 +4225,7 @@
      "MATH20B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): MATH 19B or MATH 20B . Enrollment is restricted to computer engineering, computer science: computer game design, computer science, network and digital technology, and technology and information management majors and proposed majors; and to computer engineering, computer science, and technology and information management minors.",
    "repeatable": false,
@@ -3366,6 +4236,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE8",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Fundamental concepts in robotics, dynamical systems, modeling, analysis and robustness to uncertainty. Control as it occurs naturally, and the design of control laws to engineer desirable motion or dynamic response. The course also introduces students to MATLAB. (Formerly Robot Automation: Intelligence through Feedback Control.)",
@@ -3387,6 +4259,7 @@
      "BME160"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): CSE 20 or CSE 5J or CSE 10 or ASTR 19 or ASTR 119 or BME 160 or by permission of the instructor. Prerequisites may be waived if students have passed the CSE 20 test-out exam.",
    "repeatable": false,
@@ -3397,6 +4270,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces to a lay audience engineering innovations that have had an impact in medicine and biology. Course is designed for non-engineering majors, or pre-med students, as well as pre-engineering to provide a broad understanding of how technology has improved and keeps on improving healthcare.",
@@ -3409,6 +4284,7 @@
    ],
    "number": "80B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3419,6 +4295,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Ethical theories, analysis, and their application to issues in the practice of engineering, such as safety and liability, professional responsibility to clients and employers, codes of ethics, legal obligations, environmental issues, and social issues. Emphasis on developing independent ethical analysis through the use of case studies.  (Formerly CMPE 80E.)",
@@ -3431,6 +4309,7 @@
    ],
    "number": "80E",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3441,6 +4320,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRSN80G"
@@ -3455,6 +4336,7 @@
    ],
    "number": "80G",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3465,6 +4347,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "CRSN80H"
@@ -3479,6 +4363,7 @@
    ],
    "number": "80H",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3489,6 +4374,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces energy sources and storage with special emphasis on renewables as part of smart grids. Fundamental energy-conversion limits based on physics and existing source properties are studied. Various sources, such as solar, wind, hydropower, geothermal, tidal energy, and fuel cells are described. Electric vehicles, sustainable microgrids, and the integration to smart grids are studied. Finally, smart meters, demand response, the energy market, and policy are covered. Students cannot receive credit for this course and course 81J.  (Formerly EE 80J.)",
@@ -3501,6 +4388,7 @@
    ],
    "number": "80J",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3511,6 +4399,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Topical introduction to principles and practices of sustainability engineering and ecological design with emphasis on implementation in society. Provides an understanding of basic scientific, engineering, and social principles in the design, deployment, and operation of resource-based human systems, and how they can be maintained for this and future generations. No specialized background in engineering, science, or social sciences is assumed. (Formerly EE 80S.)",
@@ -3523,6 +4413,7 @@
    ],
    "number": "80S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3533,6 +4424,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE80T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Basic knowledge of electricity and how things work, how technology evolves, its impact on society and history, and basic technical literacy for the non-specialist. Broad overview of professional aspects of engineering and introduction and overview of basic systems and components. Topics include electrical power, radio, television, radar, computers, robots, telecommunications, and the Internet. (Formerly EE 80T.)",
@@ -3545,6 +4438,7 @@
    ],
    "number": "80T",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -3555,6 +4449,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE9",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Theory and application of statics and mechanics of materials for mechanical and biomechanical systems. Covers statics of particles; equilibrium of rigid bodies; free-body diagrams; analysis of structure; friction; concepts of stress and strain; axial loading; torsion and bending; and failure criteria. (Formerly Introduction to Statics, Dynamics, and Biomechanics.)",
@@ -3572,10 +4468,19 @@
     [
      "PHYS5A",
      "PHYS15A",
-     "PHYS5L"
+     "PHYS6A"
     ],
     [
-     "PHYS6A",
+     "PHYS5A",
+     "PHYS15A",
+     "PHYS6L"
+    ],
+    [
+     "PHYS5L",
+     "PHYS6A"
+    ],
+    [
+     "PHYS5L",
      "PHYS6L"
     ],
     [
@@ -3583,6 +4488,7 @@
      "MATH21"
     ]
    ],
+   "prereq_source": "override",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): MATH 19A or MATH 20A ; and PHYS 5A or PHYS 15A and PHYS 5L ; or PHYS 6A and PHYS 6L ; and AM 10 or MATH 21 .",
    "repeatable": false,
@@ -3593,6 +4499,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE94",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A means for a small group of students to study a particular topic  in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -3603,6 +4511,7 @@
    "ge_codes": [],
    "number": "94",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3613,6 +4522,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE94F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "A means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -3623,6 +4534,7 @@
    "ge_codes": [],
    "number": "94F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3633,6 +4545,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE99",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -3643,6 +4557,7 @@
    "ge_codes": [],
    "number": "99",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3653,6 +4568,8 @@
   {
    "catalog_instructor": null,
    "code": "ECE99F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students submit petition to sponsoring agency.",
@@ -3663,6 +4580,7 @@
    "ge_codes": [],
    "number": "99F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -3671,11 +4589,10 @@
    "url": "/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/lower-division/ece-99f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "ECE"
 }

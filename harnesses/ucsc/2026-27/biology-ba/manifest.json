@@ -1,0 +1,11 @@
+{
+ "program": "biology-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "08680a95f14dcd887d1a96a44f8db497d4aa4ad5318a632e82fcc74f558a3be4",
+ "skeleton_sha256": "32a9e298cab8db4d8b31d2da148711ad74ffd915b689cebd8f9076a2b8129f56",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:01Z",
+ "verified_at": "2026-10-06T23:39:32Z",
+ "notes": "verified line by line against sources/biology-ba.md; 22 tests; 8 UD = 3 core + 1 anat/phys + 4 electives (one exclusive allocation), lab/field, DC, comprehensive as overlays; required concurrent 2-credit labs from catalog coreqs; 5-cr lecture+5-cr lab as two electives -> cannot-check; P in comprehensive/lab-field candidate -> cannot-check (P/NP-only exception); non-EEB research courses for comprehensive -> cannot-check; NRS/XBIO/XENV 188 (not in catalog) half DC if term >= spring 2023; reviewed 2026-10-06: lab/field must be one of the eight UD courses (CRSN 152/BIOL 105L outside them no longer count); BIOE 151A-D vs 150/150L no-credit-for-both in electives+DC; one-short electives with research/grad course -> cannot-check; CHEM 3B retake fall 2026+ needs no 3BL; qualification info node; 36 tests"
+}

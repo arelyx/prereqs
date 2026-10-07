@@ -1,0 +1,11 @@
+{
+ "program": "molecular-cell-and-developmental-biology-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "5e26de226499ce185de7495df570136a797ae4874ec7a7c3aac790b88e6ba8e0",
+ "skeleton_sha256": "7d02da2112f33b238838a34523f76c64af292e02b76f78a04481d0dc366d77b5",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:46:59Z",
+ "verified_at": "2026-10-06T23:38:21Z",
+ "notes": "verified line by line against sources/molecular-cell-and-developmental-biology-bs.md; modelled on biology-bs (CHEM 3BL/3CL before fall 2026, MATH 11/19 transitions, STAT 5 waiver attestation); elective lab + DC + comprehensive are one list (DC/comprehensive overlays); C-or-better qualification shown as info; lone missing BIOL 20L for transfer with term-less BIOL 20A/BIOE 20B is cannot-check; 15 tests; reviewed 2026-10-06: STAT 5 waiver only for term-less (pre-UCSC) STAT 5, not a UCSC-term STAT 5; note on department permission for BIOL 20A/100/105/101/110 elsewhere; 8 adversarial regression tests"
+}

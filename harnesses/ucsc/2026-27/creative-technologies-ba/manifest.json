@@ -1,0 +1,11 @@
+{
+ "program": "creative-technologies-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "d7185e7a11cbb22c2a4f62cc93bf3a599004736b8b24548e893afc86b031adb8",
+ "skeleton_sha256": "3d795be2888348be594ea6888815a5846dcc3ca16dc0c1bfd9766e983ecdbe44",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:56:35Z",
+ "verified_at": "2026-10-06T23:42:51Z",
+ "notes": "verified line by line; 9 tests; Breadth of Arts list is external: student declares three courses (validated: in plan, passed, unused, distinct, one 100+), undeclared = cannot-check (anthropology-minor pattern); CT 1 x3 repeatable; DC/comprehensive overlays; reviewed 2026-10-06: a retake of a counted CT course (or its cross-listed partner, ART 102 = CT 100) can no longer be declared a breadth elective; +3 tests"
+}

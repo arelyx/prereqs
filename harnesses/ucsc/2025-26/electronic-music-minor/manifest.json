@@ -1,0 +1,11 @@
+{
+ "program": "electronic-music-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "84b2b383635d14e0562210598a3490957256b9041e27f5574b13f1c7c509fa06",
+ "skeleton_sha256": "9a5d8a48eff2df107d43697e23a231d628335b58ac12659329ce0aacb56ce73f",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:06Z",
+ "verified_at": "2026-10-07T00:01:20Z",
+ "notes": "ported from 2026-27 (reviewed); differences: MUSC 80R not a technical sound elective; CT 20 not a programming elective; MUSC 254A/105X not on the lecture list (105X/254A not-both rule removed); C-ID articulation note absent; MUSC 123A formerly MUSC 123 note"
+}

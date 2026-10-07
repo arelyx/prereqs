@@ -1,0 +1,11 @@
+{
+ "program": "cognitive-science-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "a334de6af7aa6fcfeefb79f71786d5ea2d5843bc74a54b51cbb00cdf977d27d7",
+ "skeleton_sha256": "f679c047e4058b6c2932ad08315bf7b76583ca458dbb1c14492fb44bd25c88c7",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:55:43Z",
+ "verified_at": "2026-10-06T23:42:51Z",
+ "notes": "verified line by line; 15 tests; one allocation for core/cog/interdisciplinary; at most one PSYC 193/193I/193S/194A/194B/195A; PSYC 204-252 and PHIL 190 petitions = attestations when used; 4 LD interdisciplinary + spare UD PSYC path; DC/comprehensive seminar overlays; no completion grade rule; reviewed 2026-10-06: CSE 20 test-out now an attestation (§1a); spare UD PSYC course can no longer be a retake of a counted course or a second PSYC 193/194/195A; former codes LING 55/52 accepted; +4 tests"
+}

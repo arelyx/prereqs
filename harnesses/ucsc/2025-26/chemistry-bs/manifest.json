@@ -1,0 +1,11 @@
+{
+ "program": "chemistry-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "4c05d5faa2fb032b513fb52f2ac9a7fb24c1b5b0845991894a66460443a2653d",
+ "skeleton_sha256": "5e40b0bfbf126b3ce7f465646f209ca718265d7d226a3fadff6efc1c1b3a7ecb",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:55Z",
+ "verified_at": "2026-10-06T23:57:42Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHEM 3BL/3CL required; general B.S. adds required laboratory course (CHEM 146A/B/C, 160L, 161L, 186L); biochemistry concentration adds BIOC 110L/CHEM 160L/161L/186L lab; electives drop PHYS 161, add METX 102; MATH 19A+11B example mix accepted"
+}

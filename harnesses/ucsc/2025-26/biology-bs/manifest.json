@@ -1,0 +1,11 @@
+{
+ "program": "biology-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "f386f2df7987ad5067b92c3613bb80c0e1b5b702ef2d052776d50e66287be5ba",
+ "skeleton_sha256": "917886fdffd7271c7463ff1a732d3a8eed57a76e7ac65c801fab47dbd6adc9b0",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:53Z",
+ "verified_at": "2026-10-06T23:56:35Z",
+ "notes": "ported from 2026-27 (reviewed); differences: gen chem always CHEM 3A/3B/3BL/3C/3CL (no fall-2026 rule) or 4A/4AL/4B/4BL, plus CHEM 1A/1B/1C/1N package from the note; STAT 5 is a plain option (no advisor-waiver attestation); METX 100L not a first-lab option; quotes re-pointed to 2025-26 headings; 13 tests"
+}

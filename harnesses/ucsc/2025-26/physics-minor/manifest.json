@@ -1,0 +1,11 @@
+{
+ "program": "physics-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "30381d3ba78ca0e235e02205af7cd6dd790d2aef7d3c2fbf9cca7890d4607d16",
+ "skeleton_sha256": "18ff3fc3c1347fecd23a73ad24d9f7dffa5acae540f5e31442d3308f1ff055a8",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:52Z",
+ "verified_at": "2026-10-06T23:57:40Z",
+ "notes": "ported from 2026-27 (reviewed); differences: wording only"
+}

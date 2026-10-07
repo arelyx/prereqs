@@ -1,0 +1,11 @@
+{
+ "program": "marine-biology-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "82860d1fd73a3b0e4f6a55c1165b4e705fe31cb51fe417d0f6bb3d2f2bba6a8d",
+ "skeleton_sha256": "b78c69a5adcd5ddcf490e277f3b53e5f8eade29b309a80c098de61ea9755aec7",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:55Z",
+ "verified_at": "2026-10-06T23:55:08Z",
+ "notes": "ported from 2026-27 (reviewed); differences: no fall-2026 CHEM 3B/3C rule — CHEM 3BL/3CL always required (gen-chem now one options slot); added CHEM 1A/1B/1C/1N prior-completion package (CHEM 1B unknownOk); BIOE 119L, 157A, 157B not on the comprehensive list (157B still DC); overlap/lec-lab/general-elective quotes re-pointed to 2025-26 wording (no rule change: lab/field and DC stay overlays of the eleven); 3 new 2025-26 tests, 29 tests"
+}

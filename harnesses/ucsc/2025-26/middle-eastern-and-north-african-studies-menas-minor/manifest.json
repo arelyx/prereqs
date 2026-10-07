@@ -1,0 +1,11 @@
+{
+ "program": "middle-eastern-and-north-african-studies-menas-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "8249a655a7a3fc6d5d67635d7b167f94f6fe0d7fc10161a2c479da5982869789",
+ "skeleton_sha256": "4c248f31450f109b7e2d524d6ee2f937f580407517318328243b8d680e3b483e",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:07Z",
+ "verified_at": "2026-10-06T23:55:35Z",
+ "notes": "ported from 2026-27 (reviewed); differences: no placement-exam path for the language requirement (attestation removed); HIS 5B not on the lower-division list; ANTH 126, ANTH 130Y, HIS 163B, HIS 163C not on the upper-division list"
+}

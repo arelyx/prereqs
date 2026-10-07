@@ -1,0 +1,11 @@
+{
+ "program": "business-management-economics-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "eda9ca352e7c3fd2aeea39ea70ce368807ded5328639ea20e6e43cb7941aee64",
+ "skeleton_sha256": "d30e2141f08c65a7a2dfa711fe0255b1c11228dc0ecd92c676687d7ecabde580",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:00Z",
+ "verified_at": "2026-10-06T23:45:07Z",
+ "notes": "verified line by line against sources/business-management-economics-ba.md; lint clean. General electives = one 5-course slot with an exact 1 finance/3 business/1 economics assignment check plus 'only one of 130/159/160A/160B/188'. ECON 195/199 strictly fills the economics elective; if only a lenient 'one of the five' assignment completes it -> cannot-check. Undeclared students are checked as general; one computing course + all 8 accounting courses -> needs-choice. CSE 20 test-out is a declared choice (default no), not an attestation, so it cannot hide the two-course rule. CSE 13S/ECE 13 not both (catalog). Math petition attestation as in economics-ba.; reviewed 2026-10-06: removed hand-written cross-list alias map (category check now catalog-aware, lenient fallback dedupes partner codes); CSE 20 test-out is now an attestation offered only when CSE 20 is absent and one course short (was a declared choice); added major-qualification info node"
+}

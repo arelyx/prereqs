@@ -1,0 +1,11 @@
+{
+ "program": "physics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "c33d4ad3239178f83e1cc1f4fd6fa3906a2de9025c94d3bc4fb02470be0e9f6e",
+ "skeleton_sha256": "18ff3fc3c1347fecd23a73ad24d9f7dffa5acae540f5e31442d3308f1ff055a8",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:53Z",
+ "verified_at": "2026-10-06T23:45:07Z",
+ "notes": "verified line by line against sources/physics-minor.md. Electives 'cannot be offered by the department that sponsors the student's major': optional major-department choice; courses whose subject or cross-listing belongs to it are excluded; counting a non-PHYS-only course with no department declared is cannot-check. P/NP allowed.; reviewed 2026-10-06: adviser-approved other electives now a petition attestation asked only when used (was a note: unlisted courses were unmet); removed hand-written cross-list alias maps (offered-by now reads catalog equivalents); petition pool uses credits >= 5 via where() so ASTR 135A (3 cr) cannot slip through"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "spanish-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "5816cdff31404747501abaf22914672a16fa5f619b723bc8cb4533ed7030079b",
+ "skeleton_sha256": "ed3c1d09cf0dce726e89661fbea8bbbb52a2f1b0081b4482adff0d18f91c213f",
+ "status": "verified",
+ "authored_at": "2026-10-06T01:00:57Z",
+ "verified_at": "2026-10-06T23:45:53Z",
+ "notes": "verified line by line against sources/spanish-studies-minor.md; garbled row 'SPAN 130 / SPAN 6 / SPHS 6' read as SPAN 130 (=LGST 130A) only; track logic as spanish-studies-ba.; reviewed 2026-10-06: removed LGST 130A/SPAN 105 unknownOk partner codes; no logic defects found"
+}

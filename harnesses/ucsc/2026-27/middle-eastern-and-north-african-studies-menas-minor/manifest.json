@@ -1,0 +1,11 @@
+{
+ "program": "middle-eastern-and-north-african-studies-menas-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "f1fa9c431eb5a5f6c8324c7ec667fe6cd6912067ac7a44b0de69663284e18d33",
+ "skeleton_sha256": "5ced8491abad3c805a73922d6e5a8bcd932c74443a2393db59d96f0e75544ed1",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:53:19Z",
+ "verified_at": "2026-10-06T23:43:52Z",
+ "notes": "verified line by line; language either(three of one language overlay | ARBC/HEBR 4 | placement attestation); LD 1 + UD 5; two-department rule post-solve by subject code (swap with spare other-dept course; cross-listed-only -> cannot-check); P/NP max two over the six, cannot-check if only language P/NP pushes past two; reviewed 2026-10-06: removed LGST 126C/HIS 159M/LGST 184 partner codes + unknownOk; spare-course and department lookups now go through the catalog (partner codes); placement attestation asked only when neither course path is in the plan"
+}

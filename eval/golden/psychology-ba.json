@@ -1,0 +1,823 @@
+{
+  "program": "psychology-ba",
+  "edition": "2026-27",
+  "author_notes": "Written only from sources/psychology-ba.md. choices.concentration is \"general\" or \"intensive\". Grades default A. Avoided: B- grade thresholds for PSYC 1 / statistics (these are stated as declaration/qualification rules); the ALEKS 300 alternative for math; the at-least-four-PSYC-courses-at-UCSC and PSYC 100/seminar-at-UCSC location rules (records do not encode institution, all UD is at UCSC); \"taught by psychology faculty\"; whether an Independent Study course (193-199) in intensive can count both as an additional-subfield course and toward the two quarters; whether PSYC 181/182 can double as the Methods additional course; whether \"two quarters of study from one of the following\" requires both quarters in the same course. Intensive pass records draw the three additional courses from Dev/Cog/Social/Clinical only, so they do not depend on those overlaps.",
+  "cases": [
+    {
+      "id": "pass-general-frosh",
+      "kind": "pass",
+      "description": "General psychology major, frosh. Lower division PSYC 1, PSYC 2, PSYC 10, PSYC 20, MATH 3. Upper division: PSYC 100; subfield core PSYC 102 (Developmental), PSYC 120 (Cognitive), PSYC 140B (Social); three additional from three different subfields: PSYC 160 (Clinical-Personality), PSYC 181 (Methods), PSYC 159A (Social; also the seminar for DC/comprehensive); outside course SOCY 111 (Sociology, 5 credits). Eight upper-division courses total.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 3"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 102"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 120"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 140B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 160"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 181"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 159A"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "SOCY 111"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-general-transfer-stat5-metx108",
+      "kind": "pass",
+      "description": "TRAP. General major, transfer. Statistics via STAT 5 (instead of PSYC 2), math via AM 6. Upper division: PSYC 100; PSYC 104 (Dev), PSYC 121 (Cog), PSYC 142 (Soc); additional PSYC 139B (Cognitive seminar), PSYC 166 (Clinical-Personality), PSYC 182 (Methods); and METX 108 as the outside-psychology course, which is explicitly on the list of specific courses (it only may not substitute for PSYC 100). PSYC 112 is an extra course.",
+      "student": {
+        "entry": "transfer",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2258",
+            "courses": [
+              "PSYC 1",
+              "AM 6"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "STAT 5",
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 100",
+              "PSYC 104"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 121",
+              "PSYC 142"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 139B",
+              "PSYC 166"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 182",
+              "METX 108"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 112"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-intensive-frosh-thesis",
+      "kind": "pass",
+      "description": "Intensive concentration, frosh. Lower division PSYC 1, PSYC 2, PSYC 10, PSYC 20, MATH 11A. Upper division: PSYC 100; PSYC 104 (Dev), PSYC 121 (Cog), PSYC 142 (Soc); additional PSYC 119A (Developmental seminar), PSYC 130 (Cognitive), PSYC 166 (Clinical-Personality); advanced methods PSYC 182; two quarters of senior thesis PSYC 195A + PSYC 195B; outside course LING 112. Eleven upper-division courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "intensive"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 11A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 104"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 121"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 142",
+              "PSYC 182"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 119A",
+              "LING 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 130",
+              "PSYC 195A"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 166",
+              "PSYC 195B"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-additional-not-three-subfields",
+      "kind": "fail",
+      "description": "General frosh pass record with PSYC 181 (Methods) replaced by PSYC 165 (Clinical-Personality). The three additional courses then come from only two subfields (two Clinical-Personality, one Social) no matter how the Social courses are assigned.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 3"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 102"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 120"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 140B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 160"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 165"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 159A"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "SOCY 111"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Three additional upper-division psychology courses, each from a separate subfield",
+        "source_quote": "One additional 5-credit upper-division course from THREE of the subfields listed below (i.e., a total of three courses, each from a separate subfield):"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-no-seminar",
+      "kind": "fail",
+      "description": "General frosh pass record with PSYC 159A replaced by PSYC 141 (a Social course that is not in the 119/139/159/179 seminar series). Subfield coverage is still fine (Clinical, Methods, Social as additional), but no seminar was taken, so the seminar/DC/comprehensive requirement is unmet.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 3"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 102"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 120"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 140B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 160"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 181"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 141"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "SOCY 111"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Upper-division seminar (PSYC 119/139/159/179 series), required for DC and the comprehensive requirement",
+        "source_quote": "One of the upper-division courses must be an upper-division seminar"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-outside-course-2-credits",
+      "kind": "fail",
+      "description": "General frosh pass record with outside course SOCY 111 replaced by SOCY 107F, a 2-credit sociology course. The outside course must be 5 credits.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 3"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 102"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 120"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 140B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 160"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 181"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 159A"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "SOCY 107F"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "One 5-credit upper-division course outside psychology",
+        "source_quote": "The course must be 5 credits, and neither cross-listed with psychology nor taught by psychology faculty."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-general-metx108-instead-of-psyc100",
+      "kind": "fail",
+      "description": "General frosh pass record where PSYC 100 was never taken; instead the student took METX 108 (in addition to SOCY 111 as the outside course). METX 108 cannot substitute for PSYC 100.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 3"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "METX 108"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 102"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 120"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 140B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 160"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 181"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 159A"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "SOCY 111"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "PSYC 100 Research Methods (also the PSYC 100 half of the DC requirement)",
+        "source_quote": "METX 108 will NOT be accepted as a substitution for PSYC 100."
+      },
+      "audit": "corrected: failing_requirement now notes that missing PSYC 100 also leaves the DC requirement ('satisfied by completing PSYC 100 and a seminar') unmet, since both stem from the same missing course; verdict unchanged"
+    },
+    {
+      "id": "fail-general-math-not-on-list",
+      "kind": "fail",
+      "description": "General frosh pass record with MATH 3 replaced by MATH 2 (College Algebra), which is not one of the listed mathematics courses.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "general"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 2"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 102"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 120"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 140B"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 160"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 181"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 159A"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "SOCY 111"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Mathematics: one of AM 3, AM 6, AM 11A, MATH 3, MATH 4, MATH 11A, MATH 16A, MATH 19A",
+        "source_quote": "MATH 3 — Precalculus (5)"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-intensive-one-quarter-independent-study",
+      "kind": "fail",
+      "description": "Intensive pass record with PSYC 195B removed: only one quarter (PSYC 195A) of the required two quarters of research/field study/thesis.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "intensive"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "PSYC 1",
+              "MATH 11A"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PSYC 2"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PSYC 10"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PSYC 20"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PSYC 100"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PSYC 104"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PSYC 121"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PSYC 142",
+              "PSYC 182"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PSYC 119A",
+              "LING 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PSYC 130",
+              "PSYC 195A"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PSYC 166"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Intensive: two quarters of independent study (PSYC 193/193I/193S/194A-D/195A-C)",
+        "source_quote": "Two quarters of study from one of the following:"
+      },
+      "audit": "agreed"
+    }
+  ]
+}

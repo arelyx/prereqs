@@ -1,0 +1,11 @@
+{
+ "program": "latin-american-and-latino-studiespolitics-combined-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "02c4a0d4c30e6397312f21e20cd123e25a62edacb031a82b5c99c879419c30d9",
+ "skeleton_sha256": "5cc51ff6267c203f3e957e05fb620050bcc08c9cdef360c789c2df8617ed6e58",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:37Z",
+ "verified_at": "2026-10-06T23:43:33Z",
+ "notes": "verified line by line; lint clean. C/P; POLI core list with LGST partners (unknownOk); 4th core course may be the POLI 100-189 elective; comprehensive either LALS 194+194L or POLI 190 (overlays).; reviewed 2026-10-06: removed LGST partner codes/unknownOk; within-slot cross-listed dedup check now generic via catalog equivalents"
+}

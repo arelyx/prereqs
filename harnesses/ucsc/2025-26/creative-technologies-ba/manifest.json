@@ -1,0 +1,11 @@
+{
+ "program": "creative-technologies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "ccfd7490d75538087f4e176c0a4a64f3b1954dc3fa5b4e246ffd8f03a40848d4",
+ "skeleton_sha256": "ef55b65afb0a567098105ad4cc1facdfb9145f36afb284ca4b5893f30252d1fb",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:02Z",
+ "verified_at": "2026-10-07T00:01:51Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/creative-technologies-ba.md; differences: breadth list printed on the page (3, one 100+, unlisted arts courses by petition attestation) replaces declared choices; UD core CT 100/101/110/120/125/195 (no CT 151) + one CT 160-series; pending CT 110 — CT 167I (same title) cannot-check; colloquium 'at least three quarters'"
+}

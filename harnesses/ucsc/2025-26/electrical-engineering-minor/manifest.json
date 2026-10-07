@@ -1,0 +1,11 @@
+{
+ "program": "electrical-engineering-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "e9fd7932005fc3cf2d8ab2326e8c0bc7e51346d44185fd76c27347b6b50e9d6f",
+ "skeleton_sha256": "00b6a605f11883fb08aaf52da1db7ade2401fb4c905c09a3298b9275b4e988b4",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:41Z",
+ "verified_at": "2026-10-06T23:59:50Z",
+ "notes": "ported from 2026-27 (reviewed); differences: single upper-division core (no ECE 141 + PHYS 116A/116C/133 package); ECE 176 on Electronics and Photonics list; no ECE 218 petition; no PHYS 15A/15C"
+}

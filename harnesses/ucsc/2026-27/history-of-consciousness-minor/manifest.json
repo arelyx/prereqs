@@ -1,0 +1,11 @@
+{
+ "program": "history-of-consciousness-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "33dc614d33d9979c73e828a23e3f4cb041a50a28ec6eb8b0f9565cd69860caf5",
+ "skeleton_sha256": "3348ab0f803db25b14c9b5415f1df733d72b52382ea95a20d414c2507b6e1eb8",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:58Z",
+ "verified_at": "2026-10-06T23:44:44Z",
+ "notes": "verified line by line; HISC 1 + five HISC 100-199 (5 cr); policy min C, P counts; reviewed 2026-10-06: graduate-seminar substitution now a petition attestation asked only when a HISC 200-289 seminar is actually counted (at most one); upper slot catalog-repeatable (HISC 199/160 twice counted once); LD alternative and affiliated-faculty petitions stay notes (not identifiable)"
+}

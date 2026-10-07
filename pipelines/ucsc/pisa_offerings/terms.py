@@ -93,3 +93,28 @@ def is_future(code: str, today: date | None = None) -> bool:
     year, season = parse_code(code)
     today = today or date.today()
     return date(year, _SEASON_START_MONTH[season], 1) > today
+
+
+# Approximate end of each season's grading period (month, day). A term is
+# "final" — its offerings no longer change — once this date has passed;
+# until then enrollment counts and instructors keep moving and the term is
+# re-fetched on every refresh.
+_SEASON_FINAL: dict[str, tuple[int, int]] = {
+    "winter": (4, 5), "spring": (6, 30), "summer": (9, 15), "fall": (12, 31),
+}
+
+
+def is_final(code: str, today: date | None = None) -> bool:
+    """True once a term's offerings are frozen (grading period over)."""
+    year, season = parse_code(code)
+    month, day = _SEASON_FINAL[season]
+    return date(year, month, day) < (today or date.today())
+
+
+def next_code(code: str) -> str:
+    """The chronologically next term code ('2268' -> '2270')."""
+    year, season = parse_code(code)
+    i = SEASON_ORDER.index(season) + 1
+    if i == len(SEASON_ORDER):
+        return code_for(year + 1, SEASON_ORDER[0])
+    return code_for(year, SEASON_ORDER[i])

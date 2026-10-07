@@ -1,0 +1,11 @@
+{
+ "program": "philosophy-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "12b7b44f9d4a4b46e769003a9b77c6fe98e4197f6d958cc2ec91986353a70e4d",
+ "skeleton_sha256": "f77eaf9036889c581942ece352e4522d0910f09d3dfc009a1f334aee1cd45544",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:58:12Z",
+ "verified_at": "2026-10-06T23:45:08Z",
+ "notes": "verified line by line against sources/philosophy-ba.md; lint clean. Harness-wide C/P policy ('complete all requirements ... P, C (2.0), or better'). PHIL 190 counts inside the six UD electives (2+2+6+1=11) and as seminar/comprehensive overlays. History slot prefers PHIL 100D, which then covers value theory; six still required. UD pool PHIL 100-299 5cr minus 195A/195B/199 and individual studies (199F, 294, 295, 297, 299). 11th: any 5-credit PHIL (PHIL 7/8 allowed, not excluded for it).; reviewed 2026-10-06: removed withPartners; PHIL 100D/value-theory tests now pass the catalog (LGST 140P); PHIL 7 no longer counts as the 11th course next to PHIL 9 and PHIL 114/214 count once (catalog no-credit-for-both)"
+}

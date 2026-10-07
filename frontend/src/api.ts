@@ -53,11 +53,24 @@ export interface GraphPayload {
 
 export interface ProgramSummary {
   id: number
+  slug: string
   name: string
   degree: string
   kind: string
   division: string | null
-  verification: string
+  edition: string // catalog edition, e.g. '2026-27'
+}
+
+export interface Edition {
+  edition: string
+  programs: number
+  current: boolean
+}
+
+export interface ProgramSource {
+  edition: string
+  sha256: string
+  markdown: string
 }
 
 export interface InfoSection {
@@ -68,8 +81,9 @@ export interface InfoSection {
 export interface ProgramDetail extends ProgramSummary {
   department: string | null
   url: string
-  catalog_year: string | null
-  requirements: { sections: unknown[]; info_sections?: InfoSection[] } | null
+  archive_url: string | null
+  source_sha256: string | null
+  info_sections: InfoSection[]
 }
 
 export interface TranscriptStatus {
@@ -95,6 +109,14 @@ export interface TranscriptParseResult {
 export interface PlanContent {
   completed: string[]
   terms: { term_code: string; courses: string[] }[]
+  // Catalog edition the student is bound to; absent = newest edition.
+  catalog_year?: string | null
+  // Per program slug: declared choices (concentration, track, ...).
+  choices?: Record<string, Record<string, string>>
+  // Per program slug: non-course conditions the student attests are met.
+  attested?: Record<string, string[]>
+  // Optional letter grades by canonical course code.
+  grades?: Record<string, string>
 }
 
 export interface ServerPlan {
@@ -114,41 +136,9 @@ export interface ValidationIssue {
   severity: 'error' | 'warning' | 'info'
 }
 
-export interface CourseFilter {
-  include_ranges?: { subject: string; lo: number; hi: number }[]
-  include_series?: { subject: string; prefix: string }[]
-  exclude_ranges?: { subject: string; lo: number; hi: number }[]
-  exclude_codes?: string[]
-}
-
-export interface RuleProgress {
-  op: string
-  n: number | null
-  courses: string[]
-  branches: string[][] | null
-  have: string[]
-  filter?: CourseFilter
-  matching?: string[]
-  needed?: number | null
-  done?: number | null
-  satisfied: boolean | null
-  unevaluated?: boolean
-  manual?: boolean
-  best_branch_progress?: number
-  source?: { heading?: string; prose?: string[] }
-  notes: string[]
-  constraints: { type: string; text: string }[]
-}
-
 export interface ValidationResult {
   issues: ValidationIssue[]
   ge_progress: { category: string; label: string; satisfied: boolean; by: { ge: string; courses: string[] }[] }[]
-  programs: {
-    program_id: number
-    name: string
-    verification: string
-    sections: { kind: string; title: string; concentration: string | null; rules: RuleProgress[] }[]
-  }[]
 }
 
 function token(): string | null {
@@ -224,7 +214,12 @@ export const api = {
   courseDetail: (code: string) => request<CourseDetail>(`/u/${UNIVERSITY}/courses/${code}`),
   courseGraph: (code: string, depth = 3) =>
     request<GraphPayload>(`/u/${UNIVERSITY}/courses/${code}/graph?depth=${depth}`),
-  programs: () => request<ProgramSummary[]>(`/u/${UNIVERSITY}/programs`),
+  editions: () => request<Edition[]>(`/u/${UNIVERSITY}/editions`),
+  programs: (edition?: string) =>
+    request<ProgramSummary[]>(
+      `/u/${UNIVERSITY}/programs${edition ? `?edition=${encodeURIComponent(edition)}` : ''}`,
+    ),
+  programSource: (id: number) => request<ProgramSource>(`/u/${UNIVERSITY}/programs/${id}/source`),
   programDetail: (id: number) => request<ProgramDetail>(`/u/${UNIVERSITY}/programs/${id}`),
   validate: (content: PlanContent, programIds: number[]) =>
     request<ValidationResult>(`/u/${UNIVERSITY}/validate`, {

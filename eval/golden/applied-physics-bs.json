@@ -1,0 +1,952 @@
+{
+  "program": "applied-physics-bs",
+  "edition": "2026-27",
+  "author_notes": "Written only from sources/applied-physics-bs.md. choices.concentration is \"standard\" or \"computational-physics\". Grades default A (letter). Avoided: AM 107 [/PHYS 107] as the \"Physics Department course\" for the standard elective rule (cross-listing makes it ambiguous); PHYS 150 via CSE 109 (CSE 109 is not in the course catalog); \"or other courses with approval\"; the PHYS 116C waiver for math double majors; whether ECE 135 without ECE 135L would suffice (the trap uses both); the 2.70 GPA rule (declaration only). The double-major restriction with other Physics majors/minor is not tested.",
+  "cases": [
+    {
+      "id": "pass-standard-frosh",
+      "kind": "pass",
+      "description": "Standard applied physics, frosh. MATH 19A/19B, PHYS 5A/5B/5C/5D with labs 5L/5M/5N, MATH 23A/23B, CHEM 3A, CSE 20. Upper division PHYS 102, 116A, 116C, 105, 110A, 110B, 112, 133, 134 (comprehensive). Electives PHYS 160 (a Physics Department course), ECE 101, ECE 141. DC PHYS 182. All letter grades.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "standard"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "PHYS 133"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 110B",
+              "PHYS 160"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 134",
+              "ECE 101"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182",
+              "ECE 141"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-standard-transfer-substitutions",
+      "kind": "pass",
+      "description": "TRAP. Standard concentration, transfer. Uses three stated alternatives: ECE 135 + ECE 135L instead of PHYS 110A and PHYS 110B; MATH 21 + MATH 24 instead of PHYS 116A; and CHEM 3A taken Pass/No Pass (P), which the letter-grade policy exempts. Electives PHYS 115 (Physics Department), ECE 130, CHEM 163B. PHYS 133, PHYS 134, PHYS 102, 105, 112, 116C, DC PHYS 182 all complete.",
+      "student": {
+        "entry": "transfer",
+        "choices": {
+          "concentration": "standard"
+        },
+        "terms": [
+          {
+            "term": "2258",
+            "courses": [
+              "MATH 19A",
+              "PHYS 5A",
+              "PHYS 5L",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "term": "2260",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5B",
+              "PHYS 5M",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2262",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2264",
+            "courses": [
+              "MATH 23B",
+              "MATH 21"
+            ]
+          },
+          {
+            "term": "2268",
+            "courses": [
+              "PHYS 5D",
+              "MATH 24",
+              "PHYS 102"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "PHYS 105",
+              "PHYS 116C",
+              "PHYS 133"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "PHYS 112",
+              "ECE 135",
+              "ECE 135L"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "PHYS 134",
+              "PHYS 115"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "ECE 130",
+              "CHEM 163B"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 182"
+            ]
+          }
+        ],
+        "grades": {
+          "CHEM 3A": "P"
+        },
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "pass-computational-frosh",
+      "kind": "pass",
+      "description": "Computational Physics concentration, frosh. MATH 19A/19B, PHYS 5A-5D with labs, MATH 23A/23B, CSE 20 + CSE 30 (no chemistry is required in this concentration). Upper division PHYS 102, 116A, 116C, 105, 110A, 112, STAT 131, PHYS 115 (comprehensive). Electives PHYS 152 (the required PHYS 150/152 course), PHYS 139A, AM 148. DC PHYS 182.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "computational-physics"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "STAT 131"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 115",
+              "PHYS 152"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 139A",
+              "AM 148"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": true
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-standard-electives-no-physics-course",
+      "kind": "fail",
+      "description": "Standard frosh pass record with elective PHYS 160 replaced by ECE 130. All three electives (ECE 101, ECE 130, ECE 141) are from the approved list, but none is a Physics Department course.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "standard"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "PHYS 133"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 110B",
+              "ECE 130"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 134",
+              "ECE 101"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182",
+              "ECE 141"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Electives: three from the list, at least one a Physics Department course",
+        "source_quote": "Complete three courses chosen from the following, at least one of which has to be a Physics Department course:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-standard-dc-thesis-only-first-quarter",
+      "kind": "fail",
+      "description": "Standard frosh pass record with PHYS 182 replaced by PHYS 195A only. The thesis DC option needs both PHYS 195A and PHYS 195B.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "standard"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "PHYS 133"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 110B",
+              "PHYS 160"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 134",
+              "ECE 101"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 195A",
+              "ECE 141"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "DC: PHYS 182, or PHYS 195A + PHYS 195B",
+        "source_quote": "PHYS 195B — Senior Thesis II (5)"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-standard-math21-without-math24",
+      "kind": "fail",
+      "description": "Standard frosh pass record with PHYS 116A replaced by MATH 21 alone. The substitution requires both MATH 21 and MATH 24.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "standard"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "MATH 21"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "PHYS 133"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 110B",
+              "PHYS 160"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 134",
+              "ECE 101"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182",
+              "ECE 141"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "PHYS 116A (or both MATH 21 and MATH 24)",
+        "source_quote": "Completing both MATH 21 and MATH 24 can substitute for PHYS 116A."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-standard-missing-phys134",
+      "kind": "fail",
+      "description": "Standard frosh pass record with PHYS 134 (Physics Advanced Laboratory) removed; it is both a required upper-division course and the comprehensive requirement.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "standard"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "PHYS 133"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 110B",
+              "PHYS 160"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "ECE 101"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182",
+              "ECE 141"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "PHYS 134 (required course and comprehensive requirement)",
+        "source_quote": "The comprehensive requirement is satisfied by completing the following course:"
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-computational-110B-and-139A",
+      "kind": "fail",
+      "description": "Computational pass record with elective AM 148 replaced by PHYS 110B. Electives are PHYS 152, PHYS 139A and PHYS 110B, but at most one of PHYS 110B / PHYS 139A may count, leaving two electives.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "computational-physics"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105",
+              "STAT 131"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 115",
+              "PHYS 152"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 139A",
+              "PHYS 110B"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Computational electives: at most one of PHYS 110B and PHYS 139A",
+        "source_quote": "At most one course can be taken from PHYS 110B and PHYS 139A."
+      },
+      "audit": "agreed"
+    },
+    {
+      "id": "fail-computational-missing-stat131",
+      "kind": "fail",
+      "description": "Computational pass record with STAT 131 removed.",
+      "student": {
+        "entry": "frosh",
+        "choices": {
+          "concentration": "computational-physics"
+        },
+        "terms": [
+          {
+            "term": "2268",
+            "courses": [
+              "MATH 19A",
+              "CSE 20"
+            ]
+          },
+          {
+            "term": "2270",
+            "courses": [
+              "MATH 19B",
+              "PHYS 5A",
+              "PHYS 5L",
+              "CSE 30"
+            ]
+          },
+          {
+            "term": "2272",
+            "courses": [
+              "MATH 23A",
+              "PHYS 5B",
+              "PHYS 5M"
+            ]
+          },
+          {
+            "term": "2278",
+            "courses": [
+              "MATH 23B",
+              "PHYS 5C",
+              "PHYS 5N"
+            ]
+          },
+          {
+            "term": "2280",
+            "courses": [
+              "PHYS 5D"
+            ]
+          },
+          {
+            "term": "2282",
+            "courses": [
+              "PHYS 116A"
+            ]
+          },
+          {
+            "term": "2288",
+            "courses": [
+              "PHYS 102",
+              "PHYS 116C"
+            ]
+          },
+          {
+            "term": "2290",
+            "courses": [
+              "PHYS 105"
+            ]
+          },
+          {
+            "term": "2292",
+            "courses": [
+              "PHYS 110A",
+              "PHYS 112"
+            ]
+          },
+          {
+            "term": "2298",
+            "courses": [
+              "PHYS 115",
+              "PHYS 152"
+            ]
+          },
+          {
+            "term": "2300",
+            "courses": [
+              "PHYS 139A",
+              "AM 148"
+            ]
+          },
+          {
+            "term": "2302",
+            "courses": [
+              "PHYS 182"
+            ]
+          }
+        ],
+        "grades": {},
+        "attested": "all"
+      },
+      "expect": {
+        "complete": false,
+        "failing_requirement": "Computational upper division: STAT 131",
+        "source_quote": "STAT 131 — Introduction to Probability Theory (5)"
+      },
+      "audit": "agreed"
+    }
+  ]
+}

@@ -19,11 +19,11 @@ services:
     build: ./backend
     environment:
       DATABASE_URL: postgresql+psycopg://prereqs:prereqs@db:5432/prereqs
-      DATA_ROOT: /srv/data
       COMMITTED_ROOT: /srv/data-committed
-      # Dev only: transcript import talks to the host's Ollama. Prod compose
-      # leaves this unset, so the feature refuses cleanly (503 / hidden UI).
-      OLLAMA_URL: http://host.docker.internal:11434
+      # Dev only: transcript import talks to the host's llama-server
+      # (OpenAI-compatible, qwen3.8-27b). Prod points LLM_URL nowhere, so
+      # the feature refuses cleanly (503 / hidden UI).
+      LLM_URL: http://host.docker.internal:8080
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
@@ -33,13 +33,13 @@ services:
         condition: service_healthy
     volumes:
       - ./backend:/srv/backend
-      - ./data:/srv/data:ro
       - ./data-committed:/srv/data-committed:ro
     command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
 
   frontend:
     build:
-      context: ./frontend
+      context: .
+      dockerfile: frontend/Dockerfile
       target: dev
     environment:
       VITE_API_URL: http://localhost:8200
@@ -48,6 +48,7 @@ services:
       - "5273:5173"
     volumes:
       - ./frontend:/srv/frontend
+      - ./harnesses:/srv/harnesses:ro
       - /srv/frontend/node_modules
     command: npm run dev -- --host 0.0.0.0
 

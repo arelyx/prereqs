@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST10",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to U.S. and comparative legal institutions and practices. Examines diverse areas of law from torts to civil rights to international human rights. Why is America portrayed as having an activist legal culture; why is law used to decide so many questions from presidential elections to auto accidents; can law resolve disputes that, historically, have led to war and violence; is the legal system fair and/or effective, and, if so, for whom and under what conditions?",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "10",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": "Staff",
    "code": "LGST106",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines advanced topics in the field of legal studies. The theme of this course is law, colonialism, and authoritarianism.",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "106",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST107",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes arguments concerning speech and toleration in the Western philosophical tradition. Is the freedom to think and speak freely a good thing? Why or why not? To what extent is this true? When does expression constitute harm, to either the community or individuals? What does it mean to tolerate those beliefs or practices you find bigoted? Evil? Dangerous to society? What kinds of disagreements can exist without destroying the political community, and what kinds can we simply not abide? Students will know and understand the very best arguments for free speech, for restricting certain kinds of speech and become empowered to engage with the speech disputes in our own political moment.",
@@ -54,6 +62,7 @@
    "ge_codes": [],
    "number": "107",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -64,6 +73,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST108",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analysis of legal issues related to gender, sexuality, and sexual orientation. Introduction to the key areas of gender and sexuality regulated by law and critical analysis of how law and policy should and do treat these issues.",
@@ -74,6 +85,7 @@
    "ge_codes": [],
    "number": "108",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -84,6 +96,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST109",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Offers systematic exploration of alternative conceptions of the nature of law, including positivism, natural law, formalism, realism, pragmatism, and theories of justice. Additional focus on the nature of law; relation of law and morality, rights and other legal concepts; and philosophical debates such as critical legal studies and critical race theory.",
@@ -94,6 +108,7 @@
    "ge_codes": [],
    "number": "109",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -104,6 +119,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST111B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI111B"
@@ -116,6 +133,7 @@
    "ge_codes": [],
    "number": "111B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -126,6 +144,8 @@
   {
    "catalog_instructor": "Ryan Coonerty",
    "code": "LGST111C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Surveys First Amendment jurisprudence using history, case law, and philosophical writings. Class discusses emerging issues in free expression, including defamation, incitement to violence, hate speech, and freedom of the press. (Formerly Issues in Constitutional Law.)",
@@ -136,6 +156,7 @@
    "ge_codes": [],
    "number": "111C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -146,6 +167,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST113",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines relevant court cases as well as local, state, and federal laws that define boundaries for legal recognition of sexual orientation and personal sexuality. Explores legal assumptions behind current and historical cases defining personal sexuality and sexual orientation and considers the social and political impetus in each era that drove the courts and legislatures to make such decisions.",
@@ -156,6 +179,7 @@
    "ge_codes": [],
    "number": "113",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -166,6 +190,8 @@
   {
    "catalog_instructor": "Ryan Coonerty",
    "code": "LGST114",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores how Jews have influenced and been impacted by the American legal system. Students explore significant cases, debates, and trends in the law as it relates to Jewish identity, religious freedom, and conceptions of justice.",
@@ -176,6 +202,7 @@
    "ge_codes": [],
    "number": "114",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -186,6 +213,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST115",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines the Nazi philosophy of law, and how it was used to pervert Germany's legal system in order to discriminate against, ostracize, dehumanize, and ultimately eliminate certain classes of human beings, and the role of international law in rectifying the damage.",
@@ -196,6 +225,7 @@
    "ge_codes": [],
    "number": "115",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -206,6 +236,8 @@
   {
    "catalog_instructor": "Jacqueline Gehring",
    "code": "LGST116",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI116"
@@ -220,6 +252,7 @@
    ],
    "number": "116",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -230,6 +263,8 @@
   {
    "catalog_instructor": "Jacqueline Gehring",
    "code": "LGST117",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Investigates the relationship between sports, law, and politics, focusing on racism, colonialism, post-colonialism, and globalization.",
@@ -240,6 +275,7 @@
    "ge_codes": [],
    "number": "117",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -250,6 +286,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST118",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Law and literature have been understood as separate fields of social, expressive endeavors. This class thinks about how these two modes of writing represent and reshape each other, and the social worlds in which they circulate. Students read literary texts that narrate and refigure the problems of law, justice, and legal modernity. The class mixes law and literature “classics”—Merchant of Venice, Antigone, Billy Budd—and more contemporary literature. Course also pairs readings of primary literary texts with secondary law and literature criticism.",
@@ -260,6 +298,7 @@
    "ge_codes": [],
    "number": "118",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -270,6 +309,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST124",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Studies the history of America's regime of government secrecy from a human rights perspective. Focus is the dispiriting history of judicial deference to executive authority that enabled the massive secrecy regime to establish and perpetuate itself. Tracing the origin of the secrecy state to the nuclear program during World War II, students consider how the \"state secrets doctrine\" was codified in early Cold War jurisprudence as an all-purpose alibi for government interventions abroad and surveillance at home. The second half of the course turns to the 21st century War on Terror, highlighting the kidnappings, torture, and assassinations perpetrated by the secrecy state, with an eye on the role of the court system as a vehicle for exposure and redress.",
@@ -280,6 +321,7 @@
    "ge_codes": [],
    "number": "124",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -290,6 +332,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST125",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the history and theory of U.S. state punishment from its 17th-century beginnings to the present and notes evolving models of criminal deviance, focusing on how punishment systems legitimate particular models of criminal deviance, crime, and its correction.",
@@ -300,6 +344,7 @@
    "ge_codes": [],
    "number": "125",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -310,6 +355,8 @@
   {
    "catalog_instructor": "Elizabeth Beaumont",
    "code": "LGST130",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the complex relationship between race and the law in American society. Included subjects are critical race theory, civil rights and voting rights law, issues of the criminal justice system, intersections with issues of class and gender, and the social construction of race through law and legal decisions. (Formerly Race and the Law.)",
@@ -320,6 +367,7 @@
    "ge_codes": [],
    "number": "130",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -330,6 +378,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST131",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to wildlife, wilderness, and natural resources law, policy, and management. Examines rules governing resource allocation and use including discussion of fundamental legal concepts. Explores laws and management policies affecting wildlife and wilderness, including their origins and impacts. Examines how conflicts over natural resources are being negotiated today.",
@@ -340,6 +390,7 @@
    "ge_codes": [],
    "number": "131",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -350,6 +401,8 @@
   {
    "catalog_instructor": "Ryan Coonerty",
    "code": "LGST133",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI133"
@@ -362,6 +415,7 @@
    "ge_codes": [],
    "number": "133",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -372,6 +426,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST137",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "International environmental law (IEL) endeavors to control pollution and depletion of natural resources within a framework of sustainable development and is formally a branch of public international law—a body of law created by nation states for nation states, to govern problems between nation states. Examines landmark developments of IEL since 1972 within a historical continuum to better understand their strengths and weaknesses.",
@@ -382,6 +438,7 @@
    "ge_codes": [],
    "number": "137",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -392,6 +449,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST139",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores complex international human rights/humanitarian law issues surrounding genocide and other mass violence, beginning with the Nuremberg trials following World War II up to recent atrocities in Rwanda, Bosnia, and elsewhere. Covers basic legal framework of human rights law, examines specific situations on a case by case basis, and discusses what options the international community, the nations themselves, and individuals have in the wake of such catastrophes.",
@@ -402,6 +461,7 @@
    "ge_codes": [],
    "number": "139",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -412,6 +472,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST146",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduction to topics in the philosophy of law. Begins by discussing some famously difficult legal cases. These motivate students to consider more generally how to theorize about law and legality. Course ends by examining a handful of modern legal issues from a philosophical perspective. Course asks students to formulate and defend their positions on classic and contemporary legal debates and provides them tools from moral and legal philosophy with which to work.",
@@ -422,6 +484,7 @@
    "ge_codes": [],
    "number": "146",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -432,6 +495,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST148",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "ENVS148"
@@ -444,6 +509,7 @@
    "ge_codes": [],
    "number": "148",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -454,6 +520,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST150",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores the legal rights of children. Topics may include juvenile justice, gang offenses, free speech and Internet censorship, religious rights, child custody and support, adoption, foster care, abuse and sexual harassment, special needs, public benefits, and medical care.",
@@ -464,6 +532,7 @@
    "ge_codes": [],
    "number": "150",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -474,6 +543,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST152",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A study of the role of courts in society and the uses of litigation to address and deflect social problems. Focus is on recent developments in American litigation, but comparative materials may be considered.",
@@ -484,6 +555,7 @@
    "ge_codes": [],
    "number": "152",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -494,6 +566,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST153",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores U.S. laws and policies regarding immigration and citizenship from historical and contemporary perspectives. Includes studying landmark court cases, key statues and regulations governing immigration and citizenship, and scholarly treatments in order to critically examine historical developments and contemporary debates.",
@@ -504,6 +578,7 @@
    "ge_codes": [],
    "number": "153",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -514,6 +589,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST154",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Lawyers stand between the legal system and those who are affected by it.  Examines this relationship descriptively and normatively, and from the point of view of sociological theory. Concentrates on the U.S. profession, with some comparative material.",
@@ -524,6 +601,7 @@
    "ge_codes": [],
    "number": "154",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -534,6 +612,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST155",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores some aspects of early American constitutional thought, particularly immediately preceding the American Revolution, situating early colonial constitutional thought within some of the larger themes and controversies of the 17th-century English constitutionalism, then considering some aspects of American constitutional thought in the founding period against the background of the colonial experience.",
@@ -544,6 +624,7 @@
    "ge_codes": [],
    "number": "155",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -554,6 +635,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST156",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The rise of the regulatory state brings with it a host of questions regarding the exercise of state power and separation of powers. Takes up some of these questions; in particular, questions about administrative agencies and their relationship to the judiciary, the legislature and private individuals and groups. (Formerly Administrative Jurisprudence.)",
@@ -564,6 +647,7 @@
    "ge_codes": [],
    "number": "156",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -574,6 +658,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST157",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Explores some themes in legal and political theory, especially on the relationship of theories of justice, law, and ethics.",
@@ -584,6 +670,7 @@
    "ge_codes": [],
    "number": "157",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to legal studies majors during first and second pass enrollment.",
    "repeatable": false,
@@ -594,6 +681,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST158",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI158"
@@ -608,6 +697,7 @@
    ],
    "number": "158",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -618,6 +708,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST159",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Begins with an examination of the concept of property, then covers how different cultures characterize property and determine ownership and the laws and policies that define property in modern society. Topics include theories of property law, common property, property and natural resources, zoning, regulatory takings, and intellectual and cultural property",
@@ -628,6 +720,7 @@
    "ge_codes": [],
    "number": "159",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -638,6 +731,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST161",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced study of the concepts, practices, and history of intellectual property. Topically, it is a study of how, when, and why you can own something like an idea, a story, a mathematical algorithm, a business process, or an arrangement of cells. Course is organized around different kinds of things one might own: artistic creation and representation (copyright), scientific discovery and invention (patents), and business processes and secrets (trademark and trade secrets). Studies different intellectual property regimes and the philosophical and moral issues underlying claims to intellectual property.",
@@ -648,6 +743,7 @@
    "ge_codes": [],
    "number": "161",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -658,6 +754,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST173",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI173"
@@ -672,6 +770,7 @@
    ],
    "number": "173",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -682,6 +781,8 @@
   {
    "catalog_instructor": "Ryan Coonerty",
    "code": "LGST185",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [
     "POLI180"
@@ -696,6 +797,7 @@
    ],
    "number": "185",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to politics and legal studies majors.",
    "repeatable": true,
@@ -706,6 +808,8 @@
   {
    "catalog_instructor": "Henry Martin",
    "code": "LGST188A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [
     "OAKS188A"
@@ -718,6 +822,7 @@
    "ge_codes": [],
    "number": "188A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -728,6 +833,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST193",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Field research performed off-campus, under the supervision of a member of the legal studies faculty.",
@@ -738,6 +845,7 @@
    "ge_codes": [],
    "number": "193",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -748,6 +856,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST194",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
@@ -758,6 +868,7 @@
    "ge_codes": [],
    "number": "194",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -768,6 +879,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST195A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. When taken as a multiple-term course extending over two or three quarters, the grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students submit petition to sponsoring agency.",
@@ -778,6 +891,7 @@
    "ge_codes": [],
    "number": "195A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -788,6 +902,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST195B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. When taken as a multiple-term course extending over two or three quarters, the grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students submit petition to sponsoring agency.",
@@ -798,6 +914,7 @@
    "ge_codes": [],
    "number": "195B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -808,6 +925,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST195C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Preparation of a senior thesis over one, two, or three quarters, beginning in any quarter. When taken as a multiple-term course extending over two or three quarters, the grade and evaluation submitted for the final quarter apply to each of the previous quarters. Students submit petition to sponsoring agency.",
@@ -818,6 +937,7 @@
    "ge_codes": [],
    "number": "195C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": false,
@@ -828,6 +948,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST196",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Examines related legal topics from an interdisciplinary perspective. Each focuses broadly on the relationship between law as a distinct system and law as an attempt to achieve justice, which requires that law remain open to claims of political morality generally. To what extent are legal norms internal to a separate system called law and to what extent are claims of political right in general relevant to question of what law is?",
@@ -838,6 +960,7 @@
    "ge_codes": [],
    "number": "196",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior legal studies majors.",
    "repeatable": false,
@@ -848,6 +971,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST198",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Individual studies undertaken off-campus for which faculty supervision is not in person, but by correspondence. Students submit petition to sponsoring agency.",
@@ -858,6 +983,7 @@
    "ge_codes": [],
    "number": "198",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -868,6 +994,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST198F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Individual studies undertaken off-campus for which faculty supervision is not in person, but by correspondence. Students submit petition to sponsoring agency.",
@@ -878,6 +1006,7 @@
    "ge_codes": [],
    "number": "198F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -888,6 +1017,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST199",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "A student normally approaches a faculty member and proposes a LGST 199 course on a subject he or she has chosen. Students submit petition to sponsoring agency.",
@@ -898,6 +1029,7 @@
    "ge_codes": [],
    "number": "199",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -908,6 +1040,8 @@
   {
    "catalog_instructor": null,
    "code": "LGST199F",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "A student normally approaches a faculty member and proposes a LGST 199 course on a subject he or she has chosen. Students submit petition to sponsoring agency.",
@@ -918,6 +1052,7 @@
    "ge_codes": [],
    "number": "199F",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -926,11 +1061,10 @@
    "url": "/en/current/general-catalog/courses/lgst-legal-studies/upper-division/lgst-199f"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "LGST"
 }

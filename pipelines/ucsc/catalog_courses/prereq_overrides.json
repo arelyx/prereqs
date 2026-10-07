@@ -1,0 +1,1493 @@
+{
+ "AM114": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "AM10",
+    "MATH21"
+   ],
+   [
+    "AM20",
+    "MATH24"
+   ],
+   [
+    "AM30",
+    "MATH23A",
+    "MATH22",
+    "PHYS116A"
+   ]
+  ],
+  "note": "'; or PHYS 116A' attached to the immediately preceding segment (multivariable calculus; PHYS 116A covers partial differentiation/multiple integrals/vector analysis).",
+  "raw_sha1": "a00b0a1277119e57e79a24cbe6ee3cca130fca5b"
+ },
+ "AM160": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "AM20",
+    "MATH24",
+    "PHYS116A"
+   ],
+   [
+    "AM30",
+    "MATH24",
+    "PHYS116A"
+   ],
+   [
+    "AM129",
+    "CSE30"
+   ]
+  ],
+  "note": "literal comma reading: (AM 20 and AM 30, or MATH 24, or PHYS 116A) and (AM 129 or CSE 30).",
+  "raw_sha1": "c5fe84045515c0baef13e77bb6b1ef0cb45fd92a"
+ },
+ "ANTH208C": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [],
+  "note": "grad-standing restriction; 'first-year students are required to take ANTH 208A' is a program note, not a prerequisite.",
+  "raw_sha1": "71b1f6617b288d378c9936f40eda10c0f1bf90bd"
+ },
+ "ARTG138": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [],
+  "note": "restriction only: games majors, or FMST majors/minors who have taken FMST 1 (applies to one population, not a course prerequisite).",
+  "raw_sha1": "ac2f160e088a5da67e514c860e4f085d8a113d57"
+ },
+ "BIOE119L": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "BIOL20A"
+   ],
+   [
+    "BIOE20B"
+   ],
+   [
+    "BIOE20C"
+   ],
+   [
+    "BIOL105",
+    "BIOE106"
+   ]
+  ],
+  "note": "read like BIOE 109/172: intro series (20A, 20B, 20C) and genetics (BIOL 105 or BIOE 106).",
+  "raw_sha1": "45a3382214a4133d4e8aef832a5f44e0006c1376"
+ },
+ "BIOL104L": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "BME105",
+    "BIOL105"
+   ],
+   [
+    "BIOC100A",
+    "BIOL100"
+   ],
+   [
+    "BIOC100B",
+    "BIOL100"
+   ],
+   [
+    "BIOL20L",
+    "BIOL101L"
+   ]
+  ],
+  "note": "(BIOC 100A and 100B) or BIOL 100: two-quarter vs one-quarter biochemistry.",
+  "raw_sha1": "81de89e686ed68a4025afc4d60cbdccc07193076"
+ },
+ "BIOL109L": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "BIOL100",
+    "BIOC100A"
+   ],
+   [
+    "BIOL100",
+    "BIOC100B"
+   ],
+   [
+    "BIOL101",
+    "BIOC100A"
+   ],
+   [
+    "BIOL101",
+    "BIOC100B"
+   ],
+   [
+    "BIOL101L",
+    "BIOL102L",
+    "BIOL107L"
+   ],
+   [
+    "BIOL105"
+   ]
+  ],
+  "note": "'; or' alternative pairs the two biochemistry tracks, as in BIOL 110.",
+  "raw_sha1": "f5d309baeb35b173dbe613ec7b28e5e3a9e57f1b"
+ },
+ "BME278": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [],
+  "note": "graduate program restriction only; CB3 is a program acronym, not a course.",
+  "raw_sha1": "f3564c50194f33d4981d3877ac250f06e4568c81"
+ },
+ "CHEM4A": {
+  "concurrent_ok": [
+   "MATH3"
+  ],
+  "coreqs": [
+   [
+    "CHEM4AL"
+   ]
+  ],
+  "groups": [
+   [
+    "MATH3"
+   ]
+  ],
+  "note": "previous or concurrent MATH 3 (placement alternative dropped); CHEM 4AL concurrent; ALEKS module is not a course.",
+  "raw_sha1": "921458becdcfe8a71ad6c36263ad374174d2888f"
+ },
+ "CSE160": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "CSE101"
+   ],
+   [
+    "MATH21",
+    "AM10"
+   ]
+  ],
+  "note": "prompt few-shot example 7; MATH 21 and AM 10 are linear-algebra equivalents.",
+  "raw_sha1": "61aa16f70259ae677b8630c7292c3f3f242778a2"
+ },
+ "CSE167": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "CSE13S",
+    "CSE13E",
+    "ECE13",
+    "CSE15"
+   ],
+   [
+    "CSE13S",
+    "CSE13E",
+    "ECE13",
+    "CSE15L"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6A"
+   ],
+   [
+    "AM10",
+    "MATH21"
+   ]
+  ],
+  "note": "the '; or' run lists programming alternatives (13S / 13E / ECE 13 / 15+15L); '; and' segments are separate requirements.",
+  "raw_sha1": "c509defc8fa0cbbfe98f437137af0845e574f61d"
+ },
+ "CSE228A": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [],
+  "note": "experience in two of three areas, courses given only as examples (e.g.).",
+  "raw_sha1": "ca34cb2d06da3ac0a1726073d53dc6b460489f5b"
+ },
+ "EART112": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "MATH21",
+    "AM10"
+   ],
+   [
+    "MATH19A",
+    "MATH11A",
+    "AM15A"
+   ],
+   [
+    "MATH19A",
+    "MATH11A",
+    "AM15B"
+   ],
+   [
+    "MATH19A",
+    "MATH11B",
+    "AM15A"
+   ],
+   [
+    "MATH19A",
+    "MATH11B",
+    "AM15B"
+   ],
+   [
+    "MATH19B",
+    "MATH11A",
+    "AM15A"
+   ],
+   [
+    "MATH19B",
+    "MATH11A",
+    "AM15B"
+   ],
+   [
+    "MATH19B",
+    "MATH11B",
+    "AM15A"
+   ],
+   [
+    "MATH19B",
+    "MATH11B",
+    "AM15B"
+   ]
+  ],
+  "note": "one calculus series: 19A+19B, 11A+11B, or AM 15A+15B.",
+  "raw_sha1": "0c9b95926fb8976cafd11527ef650cd6841cd6fb"
+ },
+ "EART119A": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "MATH19A",
+    "MATH11A",
+    "MATH20A"
+   ],
+   [
+    "EART5",
+    "EART10",
+    "EART20"
+   ]
+  ],
+  "note": "two same-subject alternative lists joined by 'and'.",
+  "raw_sha1": "aee25ab67a99efe229716a738f630174b92e36b7"
+ },
+ "EART124": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "MATH11B",
+    "MATH19B"
+   ],
+   [
+    "PHYS6B",
+    "PHYS5B"
+   ]
+  ],
+  "note": "two alternative pairs joined by 'and'.",
+  "raw_sha1": "5f027eb2e4e46051c9a578d85cb00de8fff5cf79"
+ },
+ "ECE101": {
+  "concurrent_ok": [
+   "AM20"
+  ],
+  "coreqs": [
+   [
+    "ECE101L"
+   ]
+  ],
+  "groups": [
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ],
+   [
+    "MATH24",
+    "PHYS116A",
+    "AM20"
+   ]
+  ],
+  "note": "((PHYS 5C or 15C) and 5N) or (6C and 6N); and MATH 24 or PHYS 116A or previous/concurrent AM 20.",
+  "raw_sha1": "48e53196efd7b3f11ad2207af34206823fdaa6e0"
+ },
+ "ECE101L": {
+  "concurrent_ok": [
+   "AM20"
+  ],
+  "coreqs": [
+   [
+    "ECE101"
+   ]
+  ],
+  "groups": [
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ],
+   [
+    "MATH24",
+    "PHYS116A",
+    "AM20"
+   ]
+  ],
+  "note": "((PHYS 5C or 15C) and 5N) or (6C and 6N); and MATH 24 or PHYS 116A or previous/concurrent AM 20.",
+  "raw_sha1": "4a9fa195b191fbcb449c389a854512343fef384f"
+ },
+ "ECE102": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "ECE102L"
+   ]
+  ],
+  "groups": [
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ]
+  ],
+  "note": "the full PHYS 5 series with labs (5A/15A+5L, 5B+5M, 5C/15C+5N) or the full PHYS 6 series with labs.",
+  "raw_sha1": "de48bb5dc74717e74c015eda67a7b2624e3b27a4"
+ },
+ "ECE102L": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "ECE102"
+   ]
+  ],
+  "groups": [
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6B"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ]
+  ],
+  "note": "the full PHYS 5 series with labs (5A/15A+5L, 5B+5M, 5C/15C+5N) or the full PHYS 6 series with labs.",
+  "raw_sha1": "74fc72deaff4447af6222bfcc9407bf9515aae44"
+ },
+ "ECE103L": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "ECE103"
+   ]
+  ],
+  "groups": [
+   [
+    "ECE101"
+   ],
+   [
+    "ECE101L"
+   ],
+   [
+    "AM20",
+    "MATH24"
+   ]
+  ],
+  "note": "AM 20 or MATH 24 are ODE equivalents.",
+  "raw_sha1": "cd767b9a75fd42a675289a78996a1a1b6a964252"
+ },
+ "ECE129A": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "CSE100"
+   ],
+   [
+    "ECE171",
+    "ECE118"
+   ],
+   [
+    "ECE171",
+    "ECE121"
+   ],
+   [
+    "ECE157",
+    "ECE173",
+    "ECE118",
+    "ECE121"
+   ]
+  ],
+  "note": "CSE 100 plus the major-specific path: EE majors ECE 171 and one of 157/173/118/121, or Robotics majors ECE 118 and 121 (encoded as either path).",
+  "raw_sha1": "133399c049d99a0e62e4571dd78acc68e114a280"
+ },
+ "ECE130L": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "ECE130"
+   ]
+  ],
+  "groups": [
+   [
+    "PHYS5L",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5M",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6M"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ]
+  ],
+  "note": "PHYS 5 lab series or PHYS 6 lab series.",
+  "raw_sha1": "a840d6b8d4e8ef13f7eb21b3417d6f2b36b12af1"
+ },
+ "ECE141": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "ECE103",
+    "PHYS116A"
+   ],
+   [
+    "ECE103",
+    "PHYS116C"
+   ],
+   [
+    "ECE103",
+    "PHYS133"
+   ]
+  ],
+  "note": "ECE 103, or (physics majors) PHYS 116A, 116C and 133.",
+  "raw_sha1": "04e5e9260d89fd89d9f0ae14051a8a32c827803f"
+ },
+ "ECE185": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ]
+  ],
+  "note": "((PHYS 5C or 15C) and 5N) or (6C and 6N).",
+  "raw_sha1": "c81d796b589bf6cfcf9e4702dc556a4ad8bf0791"
+ },
+ "ECE269": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "ECE176"
+   ]
+  ],
+  "note": "graduate students who have taken ECE 176 or equivalent.",
+  "raw_sha1": "0050188440a49176f18999ddd6457b2119ad6847"
+ },
+ "ECE9": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "MATH19A",
+    "MATH20A"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6L"
+   ],
+   [
+    "AM10",
+    "MATH21"
+   ]
+  ],
+  "note": "((PHYS 5A or 15A) and 5L) or (6A and 6L).",
+  "raw_sha1": "9f8ea272a4a7a7dbb044ba44f59991345d531ba6"
+ },
+ "ECON224": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "ECON211A",
+    "ECON216"
+   ],
+   [
+    "ECON211A",
+    "ECON217"
+   ],
+   [
+    "ECON211B",
+    "ECON216"
+   ],
+   [
+    "ECON211B",
+    "ECON217"
+   ],
+   [
+    "ECON211C",
+    "ECON216"
+   ],
+   [
+    "ECON211C",
+    "ECON217"
+   ]
+  ],
+  "note": "the 211 sequence, or 216 and 217.",
+  "raw_sha1": "5942162d8730855d1389da867579f506eca8e4c9"
+ },
+ "ENVS100": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "ENVS100L"
+   ]
+  ],
+  "groups": [
+   [
+    "ENVS23",
+    "CHEM1A",
+    "CHEM3B",
+    "CHEM4B"
+   ],
+   [
+    "ENVS24",
+    "BIOE20C"
+   ],
+   [
+    "ENVS25"
+   ],
+   [
+    "STAT7",
+    "STAT17",
+    "ECON113",
+    "OCEA90"
+   ],
+   [
+    "STAT7",
+    "STAT17L",
+    "ECON113",
+    "OCEA90"
+   ],
+   [
+    "STAT7L",
+    "STAT17",
+    "ECON113",
+    "OCEA90"
+   ],
+   [
+    "STAT7L",
+    "STAT17L",
+    "ECON113",
+    "OCEA90"
+   ],
+   [
+    "ENVS26",
+    "ANTH2",
+    "SOCY1",
+    "SOCY10",
+    "SOCY15",
+    "PHIL21",
+    "PHIL22",
+    "PHIL24",
+    "PHIL28",
+    "PHIL80G"
+   ]
+  ],
+  "note": "parser groups are right; 'Concurrent enrollment in 100L' is ENVS 100L.",
+  "raw_sha1": "588db44b80594390e171acf98505bb43554f098c"
+ },
+ "ENVS150": {
+  "concurrent_ok": [
+   "ENVS100",
+   "ENVS100L"
+  ],
+  "coreqs": [],
+  "groups": [
+   [
+    "ENVS100"
+   ],
+   [
+    "ENVS100L"
+   ]
+  ],
+  "note": "'ENV 100' is a typo for ENVS 100; previous or concurrent.",
+  "raw_sha1": "ce4b821a5cdde6aad8d73ad58af685bb65308068"
+ },
+ "ENVS215C": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "GIST215L",
+    "ENVS215L"
+   ]
+  ],
+  "groups": [
+   [
+    "GIST215B",
+    "ENVS215B"
+   ]
+  ],
+  "note": "cross-listed GIST/ENVS 215B; 'EVS 215L' is a typo for ENVS 215L (cross-listed with GIST 215L).",
+  "raw_sha1": "d2eaba3e0b6daf50c7b795e3f0fe6a3904fe8407"
+ },
+ "ESCI150": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "CHEM3C",
+    "CHEM4B",
+    "CHEM1C"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6B"
+   ],
+   [
+    "MATH11B",
+    "MATH19B"
+   ],
+   [
+    "ESCI30",
+    "BIOE20C"
+   ]
+  ],
+  "note": "', or' lists inside ', and' separators.",
+  "raw_sha1": "30c909d070af4aeeeebea8a93be4766f9573f4f2"
+ },
+ "FILM170B": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "FILM20A",
+    "FILM20B"
+   ]
+  ],
+  "note": "second requirement (FILM 120 or any FILM 130/160/180-series course) not enumerable; omitted (permissive).",
+  "raw_sha1": "0775a21636b8047eaf7005ccf2482fa7187787e9"
+ },
+ "FILM196A": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "FILM170B"
+   ]
+  ],
+  "note": "plus two additional FILM 150/170-series courses (not enumerable; omitted, permissive).",
+  "raw_sha1": "321a45585036dd02463a5d78de73bb781aecc7ca"
+ },
+ "FILM196C": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "FILM170B"
+   ]
+  ],
+  "note": "plus two additional FILM 150/170-series courses (not enumerable; omitted, permissive).",
+  "raw_sha1": "178b2cb376e3fd7d5a0185f156a22e8d6bde97cc"
+ },
+ "ITAL100": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "ITAL6"
+   ]
+  ],
+  "note": "'IITAL 6' is a typo for ITAL 6; placement/permission alternatives dropped.",
+  "raw_sha1": "3f67dcc16930c8c50d805f7ebf25c2fa9732efb2"
+ },
+ "LALS194L": {
+  "concurrent_ok": [],
+  "coreqs": [
+   [
+    "LALS194A",
+    "LALS194B",
+    "LALS194E",
+    "LALS194F",
+    "LALS194G",
+    "LALS194H",
+    "LALS194J",
+    "LALS194R",
+    "LALS194S",
+    "LALS194T",
+    "LALS194V",
+    "LALS194X"
+   ]
+  ],
+  "groups": [],
+  "note": "concurrent enrollment in one of the LALS 194 seminars (enumerated from the 2026-27 catalog).",
+  "raw_sha1": "f5179670cac4ba86a66d2c9bac522332c3dd6bb4"
+ },
+ "NLP245": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "NLP201"
+   ],
+   [
+    "NLP243",
+    "CSE244B"
+   ]
+  ],
+  "note": "NLP 201, and NLP 243 or CSE 244B (alternatives).",
+  "raw_sha1": "e3ef5452975d30f50138199fe1b4f4c307282c09"
+ },
+ "NLP267": {
+  "concurrent_ok": [
+   "NLP202"
+  ],
+  "coreqs": [],
+  "groups": [
+   [
+    "NLP201"
+   ],
+   [
+    "NLP243",
+    "CSE244B"
+   ],
+   [
+    "NLP202"
+   ]
+  ],
+  "note": "as NLP 245, plus previous or concurrent NLP 202.",
+  "raw_sha1": "f178fbbc601782d1b3ad2c3dbce3cbe97d2ae786"
+ },
+ "OCEA118": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "BIOE20C",
+    "BIOE21C"
+   ],
+   [
+    "CHEM3C",
+    "CHEM4B",
+    "CHEM1C"
+   ]
+  ],
+  "note": "', or' list after ', and'.",
+  "raw_sha1": "2d4c28e0368e520b759470f444c816cdc4921112"
+ },
+ "OCEA124": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "CHEM3C",
+    "CHEM4B",
+    "CHEM1C"
+   ],
+   [
+    "CHEM8A",
+    "CHEM8B"
+   ]
+  ],
+  "note": "', or' list, then 'and at least one quarter of CHEM 8A or 8B'.",
+  "raw_sha1": "e0e0943b0fe2297ad66c0f2ca6fb2d06d5b79a55"
+ },
+ "PHYS110A": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS5C",
+    "PHYS15C"
+   ],
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ],
+   [
+    "PHYS116C",
+    "MATH107"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "a302b8e7d3842caafdeaa24d760ba28495229944"
+ },
+ "PHYS115": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS102"
+   ],
+   [
+    "PHYS105"
+   ],
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ],
+   [
+    "PHYS116C",
+    "MATH107"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "2b902ce687790bb1207c2fab781109a02b2084b5"
+ },
+ "PHYS116C": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ],
+   [
+    "MATH23A"
+   ],
+   [
+    "MATH23B"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "1b8e426928305deb79fb5a4ada4e8b55f95ceb7f"
+ },
+ "PHYS116D": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ],
+   [
+    "PHYS116C"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "61c3613792e27f1e29c5c4d3a605542046d1b0c9"
+ },
+ "PHYS139A": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS102"
+   ],
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ],
+   [
+    "PHYS116C",
+    "MATH107"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "df268148d39d65746b79e2625d3031b2c987d223"
+ },
+ "PHYS139B": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS102"
+   ],
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ],
+   [
+    "PHYS116C",
+    "MATH107"
+   ],
+   [
+    "PHYS139A"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "33660ac63b9e02ce94e0c3c349d27b12ef7efbb7"
+ },
+ "PHYS160": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5C",
+    "PHYS15C",
+    "PHYS6N"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6C"
+   ],
+   [
+    "PHYS5N",
+    "PHYS6N"
+   ]
+  ],
+  "note": "((PHYS 5C or 15C) and 5N) or (6C and 6N).",
+  "raw_sha1": "dfe0bc7f6be7f2ab4ec261cd28cacb34bc42f97b"
+ },
+ "PHYS171": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS105"
+   ],
+   [
+    "PHYS110A"
+   ],
+   [
+    "PHYS110B"
+   ],
+   [
+    "PHYS116A",
+    "MATH21"
+   ],
+   [
+    "PHYS116A",
+    "MATH24"
+   ]
+  ],
+  "note": "PHYS 116A or (MATH 21 and MATH 24).",
+  "raw_sha1": "47371263c8ecf27af24beef20d7b247fa9047bcc"
+ },
+ "PHYS5D": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5A",
+    "PHYS15A",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6A"
+   ],
+   [
+    "PHYS5L",
+    "PHYS6L"
+   ],
+   [
+    "PHYS5B",
+    "PHYS6B"
+   ],
+   [
+    "MATH19B",
+    "MATH20B"
+   ]
+  ],
+  "note": "((PHYS 5A or 15A) and 5L) or (6A and 6L).",
+  "raw_sha1": "db1ac8fe681ddf859257e442d3495ab94676fd20"
+ },
+ "PHYS7B": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PHYS7A"
+   ],
+   [
+    "MATH11B",
+    "MATH19B",
+    "MATH20B",
+    "AM15B"
+   ]
+  ],
+  "note": "PHYS 7A, and one of the calculus courses.",
+  "raw_sha1": "ae02b8bf3b858dba815d2b56d7ead4360c0f339f"
+ },
+ "PSYC100": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "AM3",
+    "AM6",
+    "MATH3",
+    "MATH4",
+    "MATH11A",
+    "AM11A",
+    "ECON11A"
+   ],
+   [
+    "PSYC2",
+    "STAT5",
+    "STAT7"
+   ],
+   [
+    "PSYC2",
+    "STAT5",
+    "STAT7L"
+   ]
+  ],
+  "note": "math: AM 3/6, MATH 3 or a higher course (examples listed), placement alternatives dropped; and PSYC 2, STAT 5, or STAT 7+7L.",
+  "raw_sha1": "cb9274ed001239d0dd39ad17086c88099b0daa4c"
+ },
+ "PSYC105": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PSYC10",
+    "PSYC20"
+   ],
+   [
+    "PSYC100"
+   ]
+  ],
+  "note": "PSYC 10 or 20 (intro alternatives), and PSYC 100.",
+  "raw_sha1": "1565200767ace856dc53dd08a228256217edeaeb"
+ },
+ "PSYC109": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "PSYC10",
+    "PSYC20"
+   ],
+   [
+    "PSYC100"
+   ]
+  ],
+  "note": "subject carry-over: PSYC 10 or PSYC 20, and PSYC 100.",
+  "raw_sha1": "aacbe87598e4515245217b4e0812a865400914c2"
+ },
+ "SPAN156F": {
+  "concurrent_ok": [],
+  "coreqs": [],
+  "groups": [
+   [
+    "SPAN6",
+    "SPHS6"
+   ]
+  ],
+  "note": "'Spanish 156F' is the placement target (this course), not a prerequisite.",
+  "raw_sha1": "5d48525bad094feaa69b40a50f65fdb8d491abf5"
+ }
+}

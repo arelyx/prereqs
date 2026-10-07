@@ -1,0 +1,11 @@
+{
+ "program": "economics-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "afc36b32593738337c68cac04113f25b20223f408fad36b19e163609c9cfbe2a",
+ "skeleton_sha256": "c6525baf6981bd4fb32318b848e4879529877a937c93372807339a5dc305a3c2",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:51:55Z",
+ "verified_at": "2026-10-06T23:45:07Z",
+ "notes": "verified line by line against sources/economics-minor.md; lint clean. No petition note on the minor page, so all six math packages are plain. Electives: ECON 100-189, 5 credits, minus ECON 104 and minus ECON 100A/100M/100B/100N (catalog no-credit-for-both pairs); cross-listed partner codes accepted.; reviewed 2026-10-06: removed withPartners cross-list widening (library handles partner codes); added adversarial regression tests"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "marine-biology-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "2afc86e600d535fd0d25879ea8c607c7f25c06e0579fcc8559ee533054f8af04",
+ "skeleton_sha256": "7ae6418bfaf5aa5419cfc12d1f90c1d64aa0418cec78203b4e07f9ef17d66466",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:36Z",
+ "verified_at": "2026-10-06T23:42:21Z",
+ "notes": "verified line by line against sources/marine-biology-bs.md; 19 tests; UD groups one exclusive allocation, lab/field + DC + comprehensive overlays; required 2-credit labs per catalog coreqs; mixed MATH 11/19, frosh STAT 5, NRS/BIOL 188 half-DC, research as lab/field, P in comprehensive = cannot-check; STAT 5 met for transfers per transfer-prep list; reviewed 2026-10-06: catalog no-credit-for-both pairs (BIOE 165/ENVS 120, BIOE 150/ENVS 104A, BIOE 151A-D/BIOE 150,150L,ENVS 104A) count once in electives and DC; lab/field cannot-check (not unmet) when a counted course's description mentions lab/field (EART 105); electives prefer lab/field courses so lab/field does not depend on allocation; transfer STAT 5 now cannot-check and frosh STAT 5 unmet (normalized to EEB/plant sciences); removed CSE 166A/B unknownOk cross-list workaround; 8 adversarial regression tests"
+}

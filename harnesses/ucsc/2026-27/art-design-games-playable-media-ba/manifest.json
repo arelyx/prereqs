@@ -1,0 +1,11 @@
+{
+ "program": "art-design-games-playable-media-ba",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "08e9b9c7b6389308cf6c65e9c23d08bad740cd103bf8f41bd63b4cc633d328c6",
+ "skeleton_sha256": "5b885272f0551bdf8da641f2f27a7a897a9ca2df852b5d870dbdcad04e41f45b",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:49:18Z",
+ "verified_at": "2026-10-06T23:42:12Z",
+ "notes": "verified line by line; tests from the page. Upper division = eight exclusive slots (topic lists overlap; one course per slot); comprehensive = PPE (info); ARTG 170A/170B equivalence drops the later one; transfer screening attestation for LD arts elective only when entry=transfer; screening-only course rows ignored with reason.; reviewed 2026-10-06: removed hand-written cross-list alias map + unknownOk (library handles partners); transfer-screening attestation asked only when no listed LD arts elective is in the plan"
+}

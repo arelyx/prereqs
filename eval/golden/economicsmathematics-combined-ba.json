@@ -1,0 +1,533 @@
+{
+ "program": "economicsmathematics-combined-ba",
+ "edition": "2026-27",
+ "author_notes": "Ambiguity: the page lists 'MATH 23A and MATH 23B' as a package but also says 'MATH 23A may be taken to satisfy the mathematics content only by petition'; pass records therefore use MATH 22 and the only 23A case is a fail regardless (no MATH 23B). All core courses taken at UC Santa Cruz.",
+ "cases": [
+  {
+   "id": "pass-standard-econ-dc",
+   "kind": "pass",
+   "description": "Frosh: ECON 1, 2, MATH 19A, 19B, 21, 22, STAT 17+17L, ECON 100A, 100B, 113, MATH 100, 105A; economics electives ECON 120, 166A; math electives MATH 115, MATH 117, STAT 131; DC ECON 197. Complete.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "MATH 19B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "MATH 21",
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "MATH 22",
+       "MATH 100"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 100B",
+       "MATH 105A"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 113",
+       "MATH 115"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 120",
+       "MATH 117"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 166A",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "STAT 131"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": true
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-math-electives-lecture-lab-counted-twice",
+   "kind": "fail",
+   "description": "Standard record with math electives MATH 115, MATH 145 and MATH 145L (replacing MATH 117 and STAT 131). MATH 145 and 145L count as one course, so only two math electives.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "MATH 19B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "MATH 21",
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "MATH 22",
+       "MATH 100"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 100B",
+       "MATH 105A"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 113",
+       "MATH 115"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 120",
+       "MATH 145"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 166A",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "MATH 145L"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Mathematics electives: three courses (lecture/lab pairs count as one)",
+    "source_quote": "Note: Lecture/lab combinations (i.e., MATH 145 and MATH 145L, MATH 148 and MATH 148L) count as one course."
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-econ190-not-on-combined-list",
+   "kind": "fail",
+   "description": "Standard record with ECON 166A replaced by ECON 190 (an Economics B.A. general elective that is not on the combined major's list).",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "MATH 19B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "MATH 21",
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "MATH 22",
+       "MATH 100"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 100B",
+       "MATH 105A"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 113",
+       "MATH 115"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 120",
+       "MATH 117"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 190",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "STAT 131"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Economics electives: two from the combined major's list",
+    "source_quote": "Choose two from the following:"
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-math-dc-option-incomplete",
+   "kind": "fail",
+   "description": "The mathematics-DC record without MATH 194: MATH 100 alone, with no MATH 194/195 and no ECON 104/197.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "MATH 19B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "MATH 21",
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "MATH 22",
+       "MATH 100"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100M"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 100N",
+       "MATH 105A"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 113",
+       "MATH 145",
+       "MATH 145L"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 135",
+       "MATH 148",
+       "MATH 148L"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 136"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "MATH 105B"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Disciplinary Communication: ECON 104/197, or MATH 100 plus MATH 194/195",
+    "source_quote": "The DC requirement in the economics/mathematics combined major is satisfied by completing one of the following options:"
+   },
+   "audit": "agreed"
+  },
+  {
+   "id": "fail-23a-without-23b",
+   "kind": "fail",
+   "description": "Standard record with MATH 22 replaced by MATH 23A only (no MATH 23B). Neither 'MATH 22' nor 'MATH 23A and MATH 23B' is complete. No petitions granted (attested empty), so the 'MATH 23A ... only by petition' substitution does not apply.",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "MATH 19B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "MATH 21",
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "MATH 23A",
+       "MATH 100"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 100B",
+       "MATH 105A"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 113",
+       "MATH 115"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 120",
+       "MATH 117"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 166A",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "STAT 131"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": []
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Mathematics: MATH 22, or MATH 23A and MATH 23B",
+    "source_quote": "MATH 23B — Vector Calculus (5)"
+   },
+   "audit": "corrected: attested changed from 'all' to [] because the page lets MATH 23A satisfy the mathematics content by petition; with every petition attested, 23A alone could arguably pass. Empty attestation makes the single failure unambiguous."
+  },
+  {
+   "id": "fail-missing-math105a",
+   "kind": "fail",
+   "description": "Standard record without MATH 105A (Real Analysis).",
+   "student": {
+    "entry": "frosh",
+    "choices": {},
+    "terms": [
+     {
+      "term": "2228",
+      "courses": [
+       "ECON 1",
+       "MATH 19A"
+      ]
+     },
+     {
+      "term": "2230",
+      "courses": [
+       "ECON 2",
+       "MATH 19B"
+      ]
+     },
+     {
+      "term": "2232",
+      "courses": [
+       "MATH 21",
+       "STAT 17",
+       "STAT 17L"
+      ]
+     },
+     {
+      "term": "2238",
+      "courses": [
+       "MATH 22",
+       "MATH 100"
+      ]
+     },
+     {
+      "term": "2240",
+      "courses": [
+       "ECON 100A"
+      ]
+     },
+     {
+      "term": "2242",
+      "courses": [
+       "ECON 100B"
+      ]
+     },
+     {
+      "term": "2248",
+      "courses": [
+       "ECON 113",
+       "MATH 115"
+      ]
+     },
+     {
+      "term": "2250",
+      "courses": [
+       "ECON 120",
+       "MATH 117"
+      ]
+     },
+     {
+      "term": "2252",
+      "courses": [
+       "ECON 166A",
+       "ECON 197"
+      ]
+     },
+     {
+      "term": "2258",
+      "courses": [
+       "STAT 131"
+      ]
+     }
+    ],
+    "grades": {},
+    "attested": "all"
+   },
+   "expect": {
+    "complete": false,
+    "failing_requirement": "Upper-division mathematics: MATH 100 and MATH 105A",
+    "source_quote": "MATH 105A — Real Analysis (5)"
+   },
+   "audit": "agreed"
+  }
+ ]
+}

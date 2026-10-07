@@ -1,0 +1,11 @@
+{
+ "program": "history-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "4149d29a2308f321cedf449ec7fe38ef4702245b89b5a9cd29e9e51995fa35a6",
+ "skeleton_sha256": "01574a38432166d922a3c14184116f62265b5345ca54950c7e3118a30b315639",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:04Z",
+ "verified_at": "2026-10-06T23:55:46Z",
+ "notes": "ported from 2026-27 (reviewed); differences: chronological distribution is three courses (one before 600 C.E. plus two more before 1800 C.E.; new free-form pre600_courses list, unioned with the pre1800 list; cannot-check while a needed list is undeclared); HIS 31A not on the Americas/Africa or Europe survey lists; requoted History Course List and course-substitution sentences"
+}

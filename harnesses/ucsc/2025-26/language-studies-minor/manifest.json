@@ -1,0 +1,11 @@
+{
+ "program": "language-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "63d51c53c20687a490f409bd77eb651181dca4edb7dd095ea10090bf352ff49c",
+ "skeleton_sha256": "8502197eb6a01d6ffb5c3706afedcea6d7a5be4f4afbaebc2ff6f7d1a84d253c",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:05Z",
+ "verified_at": "2026-10-06T23:59:41Z",
+ "notes": "ported from 2026-27 (reviewed); differences: LING 100 required plus LING 111 or 112 (not two of LING 100/101/111/112/171); electives LING 101-189 excl. 111/112 and LING 200-289; French advanced FREN 100-199; German added (Level 6 by attestation; GERM 100-199 / LIT 183)"
+}

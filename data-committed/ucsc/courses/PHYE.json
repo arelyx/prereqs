@@ -4,6 +4,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE15B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course providing instruction in fundamentals, offensive and defensive strategies, rules, and conditioning designed primarily for beginning and intermediate level players.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "15B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE15N",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course introducing the basics of forehand, backhand, and serve and introduces the volley, overhead, and lob.",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "15N",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE15S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course offered for students who desire to learn and improve the basic skills, as well as to understand the rules.",
@@ -54,6 +62,7 @@
    "ge_codes": [],
    "number": "15S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -64,6 +73,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE15T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course for students who desire to learn and improve the basic skills, as well as to understand the rules.",
@@ -74,6 +85,7 @@
    "ge_codes": [],
    "number": "15T",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -84,6 +96,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE209B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course in practical boating safety using 15-foot sailboats. Includes introduction to rigging, nomenclature, seamanship, proper boat-handling techniques, and general boating and aquatic safety. Satisfactory completion meets prerequisites for intermediate-level dinghy course.",
@@ -94,6 +108,7 @@
    "ge_codes": [],
    "number": "209B",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall",
    "raw_requirements": "Prerequisites(s): swimming ability. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -104,6 +119,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE209C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Course includes a review of basic sailing with an emphasis on the further development and refinement of small-boat sailing techniques. Fifteen-foot sailboats are used with two students per boat.",
@@ -119,6 +136,7 @@
      "PHYE209B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Winter",
    "raw_requirements": "Prerequisite(s): PHYE 9B or PHYE 209B , or equivalent skills; and swimming ability. Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -129,6 +147,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE209S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Combines hands-on rigging and docking practice in the harbor and sailing practice on Monterey Bay with instruction in sail-trimming, de-powering, powering-up, person-overboard recovery techniques, boating safety, weather, ocean conditions, sailing theory, rigging, navigation, and the maritime rules of the road. Twenty-seven foot, ultralight, displacement keelboats are used.",
@@ -144,6 +164,7 @@
      "PHYE209C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Spring",
    "raw_requirements": "Prerequisite(s): PHYE 9C or PHYE 209C . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -154,6 +175,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE20A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course with emphasis on principles of movement, style, and execution of ballet technique.",
@@ -164,6 +187,7 @@
    "ge_codes": [],
    "number": "20A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -174,6 +198,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE20C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course of jazz dance emphasizing basic technique, styling, rhythm, and isolations.",
@@ -184,6 +210,7 @@
    "ge_codes": [],
    "number": "20C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -194,6 +221,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE20D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course with an emphasis on basic techniques and building phrases of movement.",
@@ -204,6 +233,7 @@
    "ge_codes": [],
    "number": "20D",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -214,6 +244,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE21A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Designed for students with little or no golf experience. Beginning golf instruction consists of pre-shot development, putting, chipping, short iron skills, etiquette, and strategy. Focus is on the rules of golf, history of the game, and ball flight.",
@@ -224,6 +256,7 @@
    "ge_codes": [],
    "number": "21A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -234,6 +267,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE25A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Basic instruction in the techniques, strategy, and general methodology of modern fencing.  Emphasis on épée fencing as a development from the traditional French and Italian dueling sword styles as they have evolved to form the modern electrical game.",
@@ -244,6 +279,7 @@
    "ge_codes": [],
    "number": "25A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -254,6 +290,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE28K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Sections are offered in field soccer and indoor soccer. Instruction in the basic techniques, tactics, laws of the game, and injury prevention for players of all levels. Prerequisite(s): determination at first class meeting.",
@@ -264,6 +302,7 @@
    "ge_codes": [],
    "number": "28K",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -274,6 +313,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE30J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introduction to safe and effective methods of weight training and other personal conditioning activities. Topics covered include proper weight-training techniques, care of body and equipment, and elementary exercise physiology.",
@@ -284,6 +325,7 @@
    "ge_codes": [],
    "number": "30J",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -294,6 +336,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE30L",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Offered at beginning levels of a variety of yoga exercises.",
@@ -304,6 +348,7 @@
    "ge_codes": [],
    "number": "30L",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -314,6 +359,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE43A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory-level course in nonviolent, noncompetitive Japanese martial art emphasizing mind-body harmony, balance, relaxation, and the understanding of vital energy. Aikido self-defense techniques aim toward the creative resolution of conflict and the growth of the individual.",
@@ -324,6 +371,7 @@
    "ge_codes": [],
    "number": "43A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -334,6 +382,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE43B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Intermediate-level course in nonviolent, noncompetitive Japanese martial art emphasizing mind-body harmony, balance, relaxation, and the understanding of vital energy. Aikido self-defense techniques aim toward the creative resolution of conflict and the growth of the individual.",
@@ -344,6 +394,7 @@
    "ge_codes": [],
    "number": "43B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -354,6 +405,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Water exploration and primary skills development. Course is designed to teach only non-swimmers how to swim. The following is taught: Red Cross swimming instruction in overcoming fears, water adjustment, floating, breath holding, and rhythmic breathing. Skills to be learned are: water entries, sculling, treading, elementary backstroke, freestyle, methods of water safety, and survival techniques. Prerequisite(s): instructor determines skill level at first class meeting.",
@@ -364,6 +417,7 @@
    "ge_codes": [],
    "number": "5A",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -374,6 +428,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Primary skills development. Course is designed to teach \"non-swimmers\" how to swim better. The following is taught: Red Cross swimming instruction in overcoming fears, water adjustment, floating, breath holding, and rhythmic breathing. Skills to be learned are: water entries, sculling, treading, elementary backstroke, freestyle, methods of water safety, and survival techniques. Prerequisite(s): instructor determines skill level at first class meeting.",
@@ -384,6 +440,7 @@
    "ge_codes": [],
    "number": "5B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -394,6 +451,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Stroke readiness and development. Course is for those who have completed Swimming Level I or who can swim freestyle and demonstrate elementary backstroke. Skills to be learned are underwater swimming, turns, improvement of freestyle and elementary backstroke, beginning side stroke, backstroke, breaststroke, diving, personal safety skills, and basic rescue techniques. Prerequisite(s): instructor determines skill level at first class meeting, which involves passing Swimming Level I course or demonstrating equivalent skills.",
@@ -404,6 +463,7 @@
    "ge_codes": [],
    "number": "5C",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -414,6 +474,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5E",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Red Cross certified lifeguard training. Provides the necessary minimum skills training to qualify as a non-surf lifeguard. Certification includes CPR Pro, AED, PDT, D2, ADMIN, and Title 22 First Aid. Candidates must successfully pass final skill tests and a written final exam with 80 percent score. Prerequisite(s): must have ability to swim 500 yards in ten minutes, tread water for one minute, strong swimming skills in free, back, breast, side, and elementary backstroke; must purchase Red Cross LT textbook.",
@@ -424,6 +486,7 @@
    "ge_codes": [],
    "number": "5E",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -434,6 +497,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5G",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Open to all students who wish to explore swimming as a conditioning and fitness exercise. Students should know three competitive strokes, and should be able to swim fifteen minutes without stopping. Short health and fitness lectures precede some classes. Prerequisite(s): instructor determination at first class meeting.",
@@ -444,6 +509,7 @@
    "ge_codes": [],
    "number": "5G",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -454,6 +520,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5R",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Sections geared toward the successful completion of NAUI Scuba Diver Certification. The course is divided into three parts: lecture, pool lab, and open water experience. Four open water training dives are offered. Emphasis is on training for open water scuba diving, using the beach as a base of operation. Prerequisite(s): pass swimming skills tests and medical clearance. It is strongly recommended that students enroll in PHYE 5S.",
@@ -464,6 +532,7 @@
    "ge_codes": [],
    "number": "5R",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -474,6 +543,8 @@
   {
    "catalog_instructor": null,
    "code": "PHYE5S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Sections are offered to facilitate the development of the basic scuba diver's open water techniques. A minimum of six open water experiences is offered. Course is geared toward successful completion of NAUI  Advanced Scuba Diver Certification. Prerequisite(s): PHYE 5R or pass swimming skills test and medical clearance.",
@@ -484,6 +555,7 @@
    "ge_codes": [],
    "number": "5S",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -494,6 +566,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE5T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Course geared toward the successful completion of NAUI Rescue Diver Certification. Course consists of lectures, pool laboratory, and open-water experience. Emphasis is on training divers to manage risks and effectively handle limited in-water problems. Prerequisite(s): Scuba certification and medical clearance.",
@@ -504,6 +578,7 @@
    "ge_codes": [],
    "number": "5T",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -514,6 +589,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9B",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Introductory course in practical boating safety using 15-foot sailboats. Includes introduction to rigging, nomenclature, seamanship, proper boat-handling techniques, and general boating and aquatic safety. Satisfactory completion meets prerequisites for intermediate-level dinghy course. Prerequisite(s): swimming ability.",
@@ -524,6 +601,7 @@
    "ge_codes": [],
    "number": "9B",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -534,6 +612,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9C",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Course includes a review of basic sailing with an emphasis on the further development and refinement of small-boat sailing techniques. Fifteen-foot sailboats are used with two students per boat.",
@@ -548,6 +628,7 @@
      "PHYE9B"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Prerequisite(s): PHYE 9B or equivalent skills.",
    "repeatable": true,
@@ -558,6 +639,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9D",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. For students interested in high-performance dinghy sailing. Learn to sail solo in the Olympic-class Laser or fly the spinnaker on the RS Vision. Includes special techniques used in racing conditions. Wetsuits are required.",
@@ -572,6 +655,7 @@
      "PHYE9C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): PHYE 9C or equivalent skills.",
    "repeatable": true,
@@ -582,6 +666,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9H",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Course designed to cover types of rowing boats, nomenclature, fundamental skills, and specific safety and rescue aspects related to the activity. Students will row singly as well as in groups using 15-foot to 22-foot rowing dories. Prerequisite(s): swimming ability.",
@@ -592,6 +678,7 @@
    "ge_codes": [],
    "number": "9H",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": null,
    "repeatable": true,
@@ -602,6 +689,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9J",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational intermediate course designed to cover more advanced rowing techniques and the skills needed for safe open water rowing. Prerequisite(s): basic rowing or permission of instructor.",
@@ -616,6 +705,7 @@
      "PHYE9H"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): successful completion of PHYE 9H or equivalent skills.",
    "repeatable": true,
@@ -626,6 +716,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9K",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Co-educational course that teaches novice kayakers the skills to safely use UCSC kayaks in Monterey Bay. Topics include: basic paddling strokes and maneuvers; self and assisted deep-water rescues; beach launching; landing through surf; and marine hazards and navigation.",
@@ -636,6 +728,7 @@
    "ge_codes": [],
    "number": "9K",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -646,6 +739,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9S",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Combines hands-on rigging and docking practice in the harbor and sailing practice on Monterey Bay with instruction in sail-trimming, de-powering, powering-up, person-overboard recovery techniques, boating safety, weather, ocean conditions, sailing theory, rigging, navigation, and the maritime rules of the road. Twenty-seven foot, ultralight, displacement keelboats are used.",
@@ -660,6 +755,7 @@
      "PHYE9C"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Prerequisite(s): PHYE 9C or equivalent skills.",
    "repeatable": true,
@@ -670,6 +766,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9T",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Further development and refinement of boat-handling techniques, including advanced maneuvering, anchoring, and racing with an introduction to the use of spinnakers.",
@@ -684,6 +782,7 @@
      "PHYE9S"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": "Fall, Winter, Spring",
    "raw_requirements": "Prerequisite(s): PHYE 9S .",
    "repeatable": true,
@@ -694,6 +793,8 @@
   {
    "catalog_instructor": "The Staff",
    "code": "PHYE9X",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "0",
    "cross_listed": [],
    "description": "Coeducational. Designed for the experienced sailor who desires to bareboat larger vessels in the future. Focus is on managing boat systems, navigation, anchoring and passage-making on a 34-foot sailboat. Prerequisite(s): successful completion of PHYE 9T and 40 or more hours of keelboat usage. Enrollment is by instructor approval only.",
@@ -704,6 +805,7 @@
    "ge_codes": [],
    "number": "9X",
    "prereq_groups": [],
+   "prereq_source": "none",
    "quarters_offered_text": null,
    "raw_requirements": null,
    "repeatable": true,
@@ -712,11 +814,10 @@
    "url": "/en/current/general-catalog/courses/phye-physical-education/lower-division/phye-9x"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "PHYE"
 }

@@ -1,0 +1,11 @@
+{
+ "program": "legal-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "7b79ec238aaa26631e16752762c2ec43a4819e9d6b93ee58970bf27f36253026",
+ "skeleton_sha256": "aa38279ff37368901fec2903bb426cd34de31c0c9be7853254326bae0e00bba2",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:33Z",
+ "verified_at": "2026-10-06T23:57:43Z",
+ "notes": "ported from 2026-27 (reviewed); differences: pool is LGST 100-187 + the 2025-26 list + courses cross-listed as LGST (not 'approved for the LGST major'); shorter list (FMST 112 no longer counts); ART 175/186, LIT 189A do not count; LGST 196 outside 100-187 is cannot-check; PHIL 140 = PHIL 100D"
+}

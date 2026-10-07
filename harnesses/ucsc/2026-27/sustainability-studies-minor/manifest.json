@@ -1,0 +1,11 @@
+{
+ "program": "sustainability-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "2619a64bd4d5536abcc51c3b9888fab70d3a91e091a080608d88c3d31482c9ec",
+ "skeleton_sha256": "47e17912b40a7cefe444e68e0cf4f5fac1afaea593db432f81341e37b9120711",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:50:03Z",
+ "verified_at": "2026-10-06T23:44:19Z",
+ "notes": "verified line by line against sources/sustainability-studies-minor.md; Option 2 shares one allocation with the UD elective (Option 2 skipped when CRSN 152 x3 is done); repeated CRSN 151C in the capstone needs a different-topic attestation; breadth list 'updated regularly' => unmet elective/capstone with an unlisted UD course (or listed lower-division HAVC 48/SOCY 30A) is cannot-check; ECE 175-177 labs required per catalog; 25 UD credits summed over counted courses; reviewed 2026-10-06: 25-credit count now reads credits/division of cross-listed partner codes (LGST 140E etc. were counted as 0 credits); removed partner codes and unknownOk from the breadth list"
+}

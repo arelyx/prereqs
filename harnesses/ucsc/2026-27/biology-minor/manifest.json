@@ -1,0 +1,11 @@
+{
+ "program": "biology-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "06a4724723b9059101558a95e04304e54c4740bae56a11fe551097d46a4d11ca",
+ "skeleton_sha256": "62bf04f7e8bf09a4f6b87c09c70f50bcc64067b54f237f7a5da35892f8e51ac7",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:46:55Z",
+ "verified_at": "2026-10-06T23:39:33Z",
+ "notes": "verified line by line against sources/biology-minor.md; 9 tests; elective = BIOE/BIOL 100-181 5+ credits, exclusive of the four core courses; no CHEM 4 or CHEM 3BL/3CL rule since the page lists none; reviewed 2026-10-06: no defects, 10 adversarial tests added (19 tests)"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "global-and-community-health-bs",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "fe299d433e780a2bf3fa60f5e3508d4dbf20d1bf963cf4a7d9678c3d10f7f9a9",
+ "skeleton_sha256": "4f20c26d30922f1aee228520c2c8fa446067de435a2acf7046e477ac9ef0f4b5",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:00Z",
+ "verified_at": "2026-10-07T00:01:51Z",
+ "notes": "ported from 2026-27 (reviewed); verified line by line against sources/global-and-community-health-bs.md; differences: CHEM 3BL/3CL always required (no fall-2026 rule); breadth -GCH 41; STEM +METX 102; non-STEM +FMST 125 -POLI 155 -SOCY 154; internship text (80-hour rule absent; not modeled)"
+}

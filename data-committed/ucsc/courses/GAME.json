@@ -4,6 +4,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME200",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Analyzes how games aggregate mechanics to create dynamic, interactive systems. Students analyze and design systems by general categories (e.g., movement, economy, conflict) to better understand their histories, relationships, and implementations.",
@@ -14,6 +16,7 @@
    "ge_codes": [],
    "number": "200",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -24,6 +27,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME201",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Level design integrates architecture, psychology, and drama with the tools of game making. Course explores both 2D and 3D level design through both analysis and construction of video game levels, along with key readings, particularly in architecture.",
@@ -34,6 +39,7 @@
    "ge_codes": [],
    "number": "201",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -44,6 +50,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME202",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced course on build methods in HCI, applicable to any computing domain including gaming. Course covers a combination of HCI theory and practice to design, build, deploy, iterate, document, and demo novel prototypes of varying purpose to multiple stakeholders. Advanced topics may include physical computing, input devices (e.g., alternative controllers), wearable computing, IoT, AR, VR, 3D fabrication, programmatic wireframing, and accessible designs. May be taught in conjunction with HCI 202B. Students cannot receive credit for this course and HCI 202B. (Formerly offered as Alternative Controllers, AR, and VR.)",
@@ -54,6 +62,7 @@
    "ge_codes": [],
    "number": "202",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in games and playable media and serious games or by permission of the instructor.",
    "repeatable": false,
@@ -64,6 +73,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME210",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Teaches the basic vocabulary, concepts, and practices of creating 2D and 3D art assets for games, as well as their management and integration into game engines. Includes sprites, models, textures, animations, and an introduction to effects.",
@@ -74,6 +85,7 @@
    "ge_codes": [],
    "number": "210",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media and serious game graduate students; others by interview.",
    "repeatable": false,
@@ -84,6 +96,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME215",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces fundamentals of digital audio and its implementation into a game project. Explores elements of acoustic audio therapy, musical theory, and digital audio theory, coupled with hands-on creation. Students work with audio software, synthesis, plug-in processing and microphones to develop and create an audio direction.",
@@ -94,6 +108,7 @@
    "ge_codes": [],
    "number": "215",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media and serious games graduate students, or by permission of the instructor.",
    "repeatable": false,
@@ -104,6 +119,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME221",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Professional preparation for students in Games and Playable Media, and Serious Games master's degree programs. Includes entrepreneurship, employment rights, IP law, interview skills, business analysis, and other topics aligned with the dynamic industry of computer games.",
@@ -114,6 +131,7 @@
    "ge_codes": [],
    "number": "221",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media and serious games graduate students; others by interview.",
    "repeatable": false,
@@ -124,6 +142,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME222",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Second course in a three-course sequence covering the game industry, game jobs, current thinking on games, and becoming a professional game maker. Focus on design considerations and methodologies employed in the game industry with emphasis placed upon the student's ability to develop designs beyond mere ideas through to execution.",
@@ -134,6 +154,7 @@
    "ge_codes": [],
    "number": "222",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media graduate students.",
    "repeatable": false,
@@ -144,6 +165,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME223",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "The third course in a three-course sequence covering the game industry, game jobs, current thinking on games, and becoming a professional game maker. Focuses on the business of the game industry, including funding, corporation types and formation, budgeting and burn rates, pitch decks, and marketing.",
@@ -154,6 +177,7 @@
    "ge_codes": [],
    "number": "223",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media graduate students.",
    "repeatable": false,
@@ -164,6 +188,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME230",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Deep introduction to technologies used in the construction of computer games. Principles of 2D game engine design, including architecture, object-oriented design patterns, collision detection, particle systems. Also examines artificial intelligence techniques including pathfinding, state machines, and behavior trees.",
@@ -174,6 +200,7 @@
    "ge_codes": [],
    "number": "230",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media graduate students.",
    "repeatable": false,
@@ -184,6 +211,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME231",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Learn the fundamentals of at least two contemporary game engines. Develop 3D game prototypes using custom-level geometry and shaders. Understand common features of the engines and how engine-specific features shape the space games that are reasonable to implement.",
@@ -195,13 +224,15 @@
    "number": "231",
    "prereq_groups": [
     [
-     "GAME230"
+     "GAME230",
+     "GAME235"
     ],
     [
-     "GAME235",
+     "GAME230",
      "GAME236"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 230 ; or GAME 235 and GAME 236 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -212,6 +243,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME232",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Exposes students to cutting-edge research technologies enabling the creation of games not possible with off-the-shelf techniques. Students learn how understand research to incorporate such technologies into a game. Students create rapid prototypes using several different technologies.",
@@ -223,13 +256,15 @@
    "number": "232",
    "prereq_groups": [
     [
-     "GAME230"
+     "GAME230",
+     "GAME235"
     ],
     [
-     "GAME235",
+     "GAME230",
      "GAME236"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 230 ; or GAME 235 and GAME 236 . Enrollment is restricted graduate students.",
    "repeatable": false,
@@ -240,6 +275,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME235",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "First in a two-course sequence providing an introduction to game programming using a modern object-oriented language. Introduces the technologies used in the construction of computer games. Introduces the principles of 2D game engine design, including architecture, object-oriented design patterns, and collision detection. Students may not receive credit for this course and GAME 230 .",
@@ -250,6 +287,7 @@
    "ge_codes": [],
    "number": "235",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -260,6 +298,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME236",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Second in a two-course sequence providing an introduction to game programming using a modern object-oriented language. Intermediate technologies are used in the construction of computer games. Includes NPC behavior, scenes and shaders, physics, debugging, and managing game code. Students may not receive credit for this course and GAME 230 .",
@@ -274,6 +314,7 @@
      "GAME235"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 235 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -284,6 +325,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME238",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Advanced computer-graphics techniques for computer games. Covers a range of computer graphics techniques used in contemporary computer games, with emphasis on those that complement existing game engines. Subjects covered include: lighting for models and scenes, shader programming (including several visual effects), procedural mesh manipulation, advanced use of particle systems, and non-photorealistic rendering techniques.",
@@ -299,6 +342,7 @@
      "GAME235"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 230 or GAME 235 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -309,6 +353,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME240",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Research approaches to game usability, from direct interaction with players to game instrumentation methods. Students learn to understand, select between, and adapt research designs and analysis approaches. Includes defining and measuring impact and effect size of serious games.",
@@ -319,6 +365,7 @@
    "ge_codes": [],
    "number": "240",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -329,6 +376,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME250",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Provides an overview of serious games and its applications in health, education, training, and advertisements. Further, it introduces gamification and discusses various examples of gamifications used in the market today in various industries including social media, retail, health trackers, and food industry. Course also provides a practical guide of the process of design and development of serious games and gamification techniques. Through projects students apply these lessons and develop two serious games or gamification projects. (Formerly offered as Foundations of Serious Games.)",
@@ -339,6 +388,7 @@
    "ge_codes": [],
    "number": "250",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in games and playable media, human computer interaction, and serious games, or by permission of the instructor",
    "repeatable": false,
@@ -349,6 +399,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME251",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Research approaches to user experience of games, from direct interaction with players to game instrumentation methods. Students learn to understand, select between, and adapt research designs and analysis approaches. Includes defining and measuring impact and effect size of serious games.",
@@ -359,6 +411,7 @@
    "ge_codes": [],
    "number": "251",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media, computational media, serious games, and human computer interaction graduate students.",
    "repeatable": false,
@@ -369,6 +422,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME252",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Introduces the concepts of models, including how models are created and represented both conceptually and computationally. Also delves into practical aspects of developing and evaluating simulations. Students introduced to the value of simulations for what-if analysis as well as a way to explore and derive models around specific phenomena such as social and cultural structures, global warming, weather systems, among other applications within the field of serious games. Students introduced to various theoretical concepts and then asked to implement a project involving developing a model and simulation given a particular topic.",
@@ -379,6 +434,7 @@
    "ge_codes": [],
    "number": "252",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to computational media graduate students.",
    "repeatable": false,
@@ -389,6 +445,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME255",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Focuses on developing innovative project concepts, rapid prototyping and playtesting, and the creation of concept presentations. Students identify appropriate sources of subject matter expertise, elicit knowledge to inform a game project, and integrate that knowledge into the core gameplay experience.",
@@ -406,6 +464,7 @@
      "GAME250"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 200 , or GAME 230 , or GAME 236 , or GAME 250 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -416,6 +475,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME256",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to develop serious games. Involves multiple aspects of game production with emphasis on initiating production and coordination between requirements and design, and preparing a game iteration for efficacy measurement. Students receive frequent critiques on emerging game projects.",
@@ -430,6 +491,7 @@
      "GAME255"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 255 . Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -440,6 +502,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME257",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "Students work in teams to develop serious games. Involves multiple aspects of game production with emphasis on performing efficacy measurements and responding through iteration. Students receive frequent critiques on final game projects.",
@@ -454,6 +518,7 @@
      "GAME256"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 256 . Enrollment is restricted to serious games graduate students.",
    "repeatable": false,
@@ -464,6 +529,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME270",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "First course in a three-course sequence covering the fundamentals and advanced topics in game and playable-media development. Focuses on developing innovative project concepts using methods ranging from prototyping to design documents, planning, and initiating project development.",
@@ -474,6 +541,7 @@
    "ge_codes": [],
    "number": "270",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media graduate students; others by interview.",
    "repeatable": false,
@@ -484,6 +552,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME271",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The second course in a three-course sequence in which students work in teams to develop an innovative computer game. Coursework involves multiple aspects of game production, including agile methodology; game and level design; development of code to implement game behavior; art direction; and audio design. Students receive frequent critiques on emerging game projects.",
@@ -498,6 +568,7 @@
      "GAME270"
     ]
    ],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Prerequisite(s): GAME 270 . Enrollment is restricted to games and playable media graduate students.",
    "repeatable": false,
@@ -508,6 +579,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME272",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "The third course in a four-course sequence in which students work in teams to develop an innovative computer game. Coursework involves multiple aspects of game production including agile methodology; game and level design; development of code to implement game behavior; art direction; and audio design. Students receive frequent critiques on emerging game projects.",
@@ -518,6 +591,7 @@
    "ge_codes": [],
    "number": "272",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in the games and playable media program.",
    "repeatable": false,
@@ -528,6 +602,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME273",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "10",
    "cross_listed": [],
    "description": "Fourth course in a four-course sequence in which students work in teams to launch an innovative computer game. Coursework involves multiple aspects of game production, including agile methodology, game and level design, development of code to implement game behavior, art direction, and audio design. The emphasis is on interacting with game media to publicize the game. Students receive frequent critiques on emerging game projects.",
@@ -538,6 +614,7 @@
    "ge_codes": [],
    "number": "273",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students in the games and playable media program.",
    "repeatable": false,
@@ -548,6 +625,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME280A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Students learn through guest speakers, design exercises, master classes, and interactive group activities. Students prepare through reading texts, playing games, and developing their own materials. Features visitors from small and large developers, game scholars, and those using games in general. Can be taken for Satisfactory/Unsatisfactory credit only.",
@@ -558,6 +637,7 @@
    "ge_codes": [],
    "number": "280A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to games and playable media and serious games graduate students, or by permission of the instructor.",
    "repeatable": true,
@@ -568,6 +648,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME280Y",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "2",
    "cross_listed": [],
    "description": "Examines games that produce novel experiences. Each session consists of game play and discussion of associated readings. Students learn to appreciate the range of possible game experiences, and understand key design ideas that enable those experiences.",
@@ -578,6 +660,7 @@
    "ge_codes": [],
    "number": "280Y",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": false,
@@ -588,6 +671,8 @@
   {
    "catalog_instructor": null,
    "code": "GAME290A",
+   "concurrent_ok": [],
+   "coreqs": [],
    "credits": "5",
    "cross_listed": [],
    "description": "In-depth study of current topics in digital and non-digital games. Topics vary, but are expected to include virtual reality, augmented reality, novel game interfaces, advanced computer graphics techniques, advanced game-design techniques, advanced procedural content generation, and autonomous characters.",
@@ -598,6 +683,7 @@
    "ge_codes": [],
    "number": "290A",
    "prereq_groups": [],
+   "prereq_source": "parser",
    "quarters_offered_text": null,
    "raw_requirements": "Enrollment is restricted to graduate students.",
    "repeatable": true,
@@ -606,11 +692,10 @@
    "url": "/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-290a"
   }
  ],
- "origin": "local-llm-pipeline",
+ "origin": "deterministic-pipeline",
  "provenance": {
-  "model": "qwen3:4b",
-  "prompt_version": "prereq_v1",
-  "snapshot": "20260726T025021Z"
+  "overrides_sha1": "cda1f61f9d715ac5484b24a34dab4de819806deb",
+  "parser_version": "prereq_parse_v1"
  },
  "subject": "GAME"
 }

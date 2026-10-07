@@ -1,0 +1,11 @@
+{
+ "program": "italian-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "4c1b8714dd7e73f9b4e9ec8703c0b9ee88f047aee2fe44def375cc055db52b3f",
+ "skeleton_sha256": "bf98c135f357c1df0f9641a2cfe581d5adebb0d79e3e7a2a29622e947bf2e881",
+ "status": "verified",
+ "authored_at": "2026-10-06T01:03:45Z",
+ "verified_at": "2026-10-06T23:45:53Z",
+ "notes": "verified line by line against sources/italian-studies-minor.md; five category slots in one allocation; external course list -> unlisted UD courses are wildcards (cannot-check); LIT 102 substitute (literature/history/art) and LIT 102 as taught-in-Italian are attestations; taught-in-Italian counted among the five, extra courses outside the five -> cannot-check; ITAL 1B = level 3.; reviewed 2026-10-06: external Italian studies course list -> per-category declared choices (undeclared still cannot-check)"
+}

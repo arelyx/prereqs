@@ -1,0 +1,11 @@
+{
+ "program": "ecology-and-evolution-bs",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "291eca59819cc79acac5d3e2091d1ee8b5195ef5a1f939991cd94ed2b8880755",
+ "skeleton_sha256": "a1fcaf4bbee47cb8ba20bf2ce2f18756f52fee159fb255ee7c8a5fac60a04782",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:48:55Z",
+ "verified_at": "2026-10-06T23:40:49Z",
+ "notes": "verified line by line against sources/ecology-and-evolution-bs.md; eleven UD courses as one exclusive allocation (core/physiology/organism/topical/general), lab-field, DC and comprehensive as overlays; required-concurrent 2-credit labs from catalog coreqs; 5-credit labs count as their own courses; lab/field = page's field/lab list or lecture+lab, else cannot-check when a course description mentions lab/field; NRS/BIOL 188 half-DC is cannot-check; math series strict (no transition note on this page); reviewed 2026-10-06: transfer STAT 5 cannot-check; mixed MATH 11/19 cannot-check; ENVS 115L optional (not a catalog coreq); P research + other-dept research comprehensive cannot-check; catalog no-credit-for-both pairs count once; electives prefer lab/field courses; qualification info; 28 tests"
+}

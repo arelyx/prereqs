@@ -3,8 +3,8 @@
     python -m ucsc.pisa_offerings.run --terms 2260,2262
     python -m ucsc.pisa_offerings.run --from 2048 --to 2268
 
-One POST per term (see fetch.py), so even a full 2004-2026 backfill is under
-90 requests. Any guard violation aborts the run and discards the staging dir;
+Paginated POSTs per term (300 rows/page, see fetch.py); use backfill.py for
+long ranges. Any guard violation aborts the run and discards the staging dir;
 a snapshot only becomes visible if every term passed every guard
 (docs/ARCHITECTURE.md fail-fast contract).
 """
@@ -25,7 +25,7 @@ from . import fetch, parse, terms
 # Plausible primary-section counts per term. Fall/winter/spring quarters run
 # ~1,400-1,700 sections back to 2004; summer is far smaller. Below the floor
 # means the search silently narrowed (e.g. reg_status default snapped back to
-# open-only); above the cap means rec_dur is no longer generous enough.
+# open-only); above the cap means the query widened (or paging double-counted).
 ROW_COUNT_RANGE: dict[str, tuple[int, int]] = {
     "winter": (200, 3000),
     "spring": (200, 3000),
@@ -37,7 +37,7 @@ ROW_COUNT_RANGE: dict[str, tuple[int, int]] = {
 def run(term_codes: list[str], min_interval: float = 1.5) -> Path:
     """Fetch, parse, and snapshot the given terms. Returns the snapshot dir."""
     term_codes = sorted(set(term_codes), key=terms.sort_key)
-    session = PoliteSession(min_interval=min_interval, timeout=120, retries=5)  # ~5-7 MB pages; upstream 504s/timeouts under backfill load
+    session = PoliteSession(min_interval=min_interval, timeout=120, retries=5)  # upstream 504s/timeouts under sustained load
     writer = SnapshotWriter("ucsc", "pisa_offerings")
     try:
         rows_by_term = fetch.fetch_terms(session, term_codes, writer)

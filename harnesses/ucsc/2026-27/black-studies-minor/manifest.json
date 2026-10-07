@@ -1,0 +1,11 @@
+{
+ "program": "black-studies-minor",
+ "edition": "2026-27",
+ "approach": "c-code",
+ "source_sha256": "cd472c62b1447faa86a79aa2f5ef2fa43a810f6987bfe24b816dc4e8cb878960",
+ "skeleton_sha256": "32130adedc196979566e0b1a47b79312b9cad84b778cfa9a5fe9d449f76e382b",
+ "status": "verified",
+ "authored_at": "2026-10-06T00:53:22Z",
+ "verified_at": "2026-10-06T23:45:04Z",
+ "notes": "verified line by line against sources/black-studies-minor.md; CRES 68 + five listed electives with atLeast 2 CRES (CRES prefix or catalog cross-listing with CRES; bracket aliases included); P/NP allowed; petitions noted only; lint clean; reviewed 2026-10-06: removed partner-code aliases and unknownOk (library cross-listing); 8 adversarial tests"
+}

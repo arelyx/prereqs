@@ -1,0 +1,14 @@
+{
+ "program": "latin-american-and-latino-studieseducation-democracy-and-justice-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "c985567e2cfd0c911a7de330245c2f88f8a610b900094ebbeda08b4644588ade",
+ "skeleton_sha256": "d0b44a33894100da121045bf95182957606102e6e5190235418bbad408b154c2",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:12Z",
+ "verified_at": "2026-10-06T23:53:33Z",
+ "notes": "ported from 2026-27 (reviewed); differences: Spanish-language LALS list adds LALS 129S; LALS 127 (on the 2025-26 LALS B.A. Spanish-taught list) joins LALS 147 as cannot-check (tests added); honors/planner wording only",
+ "depends_on": {
+  "latin-american-and-latino-studies-ba": "7f04bb7458ecee773596474cb034df6795a58448ca9a64ba60b3f11d3fdc7de3"
+ }
+}
