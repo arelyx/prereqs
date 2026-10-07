@@ -1,0 +1,11 @@
+{
+ "program": "environmental-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "a17de8f7fe2eb932b3d219fb22ece09a9f6064d60e8491432e9bc8c3e58b735d",
+ "skeleton_sha256": "e07b2b6e59fae4651dc0c940c5264b5c158416d9e51a203ed4cce032826a16b4",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:54Z",
+ "verified_at": "2026-10-07T00:06:02Z",
+ "notes": "ported from 2026-27 (reviewed); differences: electives ENVS 101-179 only (no 183A/195A); natural list +BIOE 125 -ENVS 142; social course +BME 80G/PHIL 22/24/28; CSP electives +BIOE 125, field +BIOE 145/145L; ENVS 196G only as GIS comprehensive (GIS DC lists ENVS 196); CHEM 3BL required or CHEM 1A; up to two substitution courses from the dept pre-approved list/petition (free choice; undeclared outside candidates = cannot-check)"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "environmental-studiesbiology-combined-major-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "4327bb852f4092cae69c31340ce0f6fb8ba400978bd2ad65b4c45457bafe790e",
+ "skeleton_sha256": "03082a0452e7c4cbf353e15a4a396ec96a0eabf59587429621233721cabbfb48",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:55Z",
+ "verified_at": "2026-10-07T00:06:02Z",
+ "notes": "ported from 2026-27 (reviewed); differences: BIOL 105 required (no BIOE 106); social +PHIL 22/24/28, BME 80G; BIOE 145+145L on lab-based and DC lists; no ENVS 196G; CHEM 3BL/3CL required (fall-2026+ = cannot-check) or CHEM 1A/1B/1C/1N"
+}

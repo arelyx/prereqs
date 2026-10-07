@@ -1,0 +1,11 @@
+{
+ "program": "agroecology-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "560e4abd565b63345423aaaa16e77d82d3090d3316ba63a3aa5082c7d29b648b",
+ "skeleton_sha256": "041700d85d5835bc90dfb42cb4a364f63521997d96bee6427340217e83e04dca",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:54Z",
+ "verified_at": "2026-10-07T00:06:02Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHEM 3A+3B+3BL (fall-2026+ 3B without lab = cannot-check) or CHEM 1A; social list + BME 80G/PHIL 22/24/28; ENVS 183A/195A/BIOE 145 not electives (no not-both rule); ENVS 183 not an internship option; comprehensive = 183A+183B/190/195A+195B/196 (no 196G); DC drops 196G; petition text"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "environmental-studieseconomics-combined-major-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "4ed3e42f7e6c794f808f8059974d60fdca923ab1580518cee530578fe4e0081c",
+ "skeleton_sha256": "aef6f1aa3be170a7453e1ea3fb954599a23a705efbec0549e6a9e5d7fd13331e",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:50:57Z",
+ "verified_at": "2026-10-07T00:06:03Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CHEM 3A+3B+3BL (fall-2026+ 3B without lab = cannot-check); social +BME 80G/PHIL 22/24/28; natural list +BIOE 125 -ENVS 142; no ENVS 196G"
+}
