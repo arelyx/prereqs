@@ -1,0 +1,11 @@
+{
+ "program": "music-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "9261d60f1962df5633607e5397b34b620ec4ba43cf326c97312866a08f60cb88",
+ "skeleton_sha256": "4a74622fefa9ecee47a0662d84da64bb32adf67cd0946fd7a9347b72d72bdec0",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:08Z",
+ "verified_at": "2026-10-07T00:01:21Z",
+ "notes": "ported from 2026-27 (reviewed); differences: CP elective ensembles add MUSC 54 and drop MUSC 72; GM elective ensembles add MUSC 54, 150J, 203H; GM UD electives drop MUSC 203F/203H; GM module UD courses exclude MUSC 120; GM creative portfolio drops MUSC 150J/150K; WM theory is core MUSC 150H plus one elective (not two elective lists); MUSC 31 failed-section exception absent (CP and WM); proficiency audition tied to MUSC 150H; placement into 30A needs A/A+ in MUSC 14 (info); C-ID note absent"
+}

@@ -1,0 +1,11 @@
+{
+ "program": "critical-race-and-ethnic-studies-ba",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "a550bf49b9cc20d2e8cd4528306bbc302bd2ee2f8a4caea7c2e536e5bf26a34f",
+ "skeleton_sha256": "ce378aaf3466ec815deb4c6bb59f805014cf7cd4f83cc2c449d9cac8ecb3335a",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:11Z",
+ "verified_at": "2026-10-07T00:01:22Z",
+ "notes": "ported from 2026-27 (reviewed); differences: restructured: elective lists printed on the page (closed lists, no declared choices); six electives (no separate LD elective), at most one lower-division; at least two Transnational, one Social Movements, two CRES courses; no rule barring senior comprehensive courses from Transnational/Social Movements; comprehensive list adds CRES 190S, FMST 194R/U/V"
+}

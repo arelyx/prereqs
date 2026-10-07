@@ -1,0 +1,11 @@
+{
+ "program": "jazz-spontaneous-composition-and-improvisation-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "2a111157601bd8f0028550478f6d7460ef893532d330fe6dd073cb20ff78b6f0",
+ "skeleton_sha256": "f54cfa7c4b01916d59ea9e5d3838de152862601ef88298dd579abaaca4636649",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:07Z",
+ "verified_at": "2026-10-07T00:01:20Z",
+ "notes": "ported from 2026-27 (reviewed); differences: MUSC 54 added to elective ensembles; MUSC 31 failed-section note and C-ID articulation note absent"
+}

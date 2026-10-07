@@ -1,0 +1,11 @@
+{
+ "program": "black-studies-minor",
+ "edition": "2025-26",
+ "approach": "c-code",
+ "source_sha256": "75c1868340ec85b02634a823a67b27be9d98a48cb531c674129b4e2289c6ee7f",
+ "skeleton_sha256": "8be16ec4281ea409e7790da677da1ae61ac92979ec295700b27c4159cee87bf4",
+ "status": "verified",
+ "authored_at": "2026-10-06T23:51:10Z",
+ "verified_at": "2026-10-07T00:01:21Z",
+ "notes": "ported from 2026-27 (reviewed); differences: General Electives list: no CRES 124/129/144/183/190W, HIS 121A, THEA 100A/151/161B; adds FMST 125 and THEA 151A"
+}
